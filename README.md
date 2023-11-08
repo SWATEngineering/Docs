@@ -1,5 +1,5 @@
 <div style="display: flex; flex-flow: column; align-items: center">
-    <img src="./Logo/LogoWhiteBg.png" style="width:160px">
+    <img src="./logo/LogoWhiteBg.png" style="width:160px">
 </div>
 <h1 style="text-align: center">SWAT Engineering (Gruppo 1)</h1>
 <p style="text-align: center">
