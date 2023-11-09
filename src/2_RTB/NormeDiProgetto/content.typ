@@ -35,7 +35,7 @@ Lo scopo del seguente processo è la definizione degli standard e degli strument
 / Done: attività le cui modifiche sono state revisionate e accettate.
 
 Ogni nuovo documento segue le fasi del seguente #glossary[workflow]:
-+ Si crea un branch per lo sviluppo del nuovo documento e si mette in uso.
++ Si crea un branch per lo sviluppo del documento e si mette in uso.
 + Si copia dall'apposita repository `Templates` il template relativo al file che si deve redigere, e lo si inserisce nella cartella appropriata.
 + Si redige il documento o una sua sezione.
 + Nel file `changelog.typ` si aggiunge una riga *in coda*, secondo il seguente formato: `<versione>,<data-modifica>,<descrizione-modifica>,<nome-autore>,<ruolo-autore>`; la versione segue le regole descritte nella @versionamento.
