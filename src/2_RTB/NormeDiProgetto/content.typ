@@ -26,7 +26,7 @@ Il presente documento ha come scopo la definizione delle #glossary[best practice
 Lo scopo del seguente processo è la definizione degli standard e degli strumenti utili alla stesura di tutti i documenti, necessari alla buona riuscita del progetto.
 
 === Ciclo di Vita del Documento
-/ Corsie di Stato: descrivono lo stato attuale del documento.
+/ #glossary[Corsie di Stato]: descrivono lo stato attuale del documento.
 / Backlog: attività individuate da svolgere.
 / Ready: attività individuate per il completamento durante il prossimo #glossary[sprint].
 / In Progress: attività che sono in corso d'opera da parte dei redattori.
