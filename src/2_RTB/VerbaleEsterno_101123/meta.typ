@@ -1,0 +1,5 @@
+#let data_incontro = "10-11-2023"
+#let inizio_incontro = "10:30"
+#let fine_incontro = "11:10"
+#let luogo_incontro = "Chiamata Google Meet"
+#let company = "Sync Lab"
