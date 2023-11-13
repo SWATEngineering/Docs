@@ -96,7 +96,7 @@ Versione: #version
     #set align(center)
     #set text(13pt)
     #counter(page).display(
-      "1/1",
+      "1 of 1",
       both: true,
     )
   ]
