@@ -25,7 +25,7 @@ Su proposta dei componenti è stata assegnata questa prima distribuzione dei ruo
 Per il momento i ruoli di Progettista e Programmatore non sono stati assegnati, in quanto per il momento hanno operatività limitata.
 
 == Verbali degli Stand-Up
-Data l'importanza di registrare le decisioni prese durante gli incontri, si è sollevato il dibattito sulla necessità di verbalizzare gli Stand-Up. La decisione è stata quella di verbalizzare solo gli incontri Stand-Up in cui siano state prese le decisioni più importanti, di conseguenza con la presenza di quattro o più partecipanti, che quindi coinvolgano la maggior parte del gruppo di lavoro. Questa prassi dovrà essere aggiunta alle #glossary("NdP") e il compito è stato assegnato a Matteo Rango.
+Data l'importanza di registrare le decisioni prese durante gli incontri, si è sollevato il dibattito sulla necessità di verbalizzare gli Stand-Up. La decisione è stata quella di verbalizzare esclusivamente gli incontri Stand-Up in cui si affrontano decisioni di particolare rilevanza. Si è concordato che, per prendere una decisione, è necessaria la presenza di almeno 4 membri del team. Pertanto, saranno documentati soltanto gli Stand-Up che coinvolgono almeno 4 componenti, assicurando così la registrazione delle decisioni più significative. Questa prassi dovrà essere aggiunta alle #glossary("NdP") e il compito è stato assegnato a Matteo Rango.
 
 #pagebreak()
 
@@ -49,7 +49,7 @@ In seguito ai suggerimenti del committente, si è deciso di modificare i nomi de
 #pagebreak()
 
 == Sostituzione note taking system
-Attualmente il Notion condiviso viene utilizzato per prendere note relative ai meeting, all'organizzazione dell'_ordine del giorno_ per questi ultimi e per l'allocazione delle risorse temporali dei componenti. Tuttavia, la sua limitatezza a 1000 _blocchi_, con il piano gratuito attualmente utilizzato, rischia in un futuro di non essere più sufficiente. La responsabilità di trovare un sistema alternativo è stata assegnata a Giacomo D'Ovidio e Riccardo Toniolo.
+Attualmente Notion viene utilizzato per prendere note relative ai meeting, all'organizzazione dell'_ordine del giorno_ per questi ultimi, per l'allocazione delle risorse temporali dei componenti e in generale come strumento di condivisione di idee e informazione. Tuttavia, la sua limitatezza a 1000 _blocchi_, con il piano gratuito attualmente utilizzato, rischia in un futuro di non essere più sufficiente. La responsabilità di trovare un sistema alternativo è stata assegnata a Giacomo D'Ovidio e Riccardo Toniolo.
 
 == Transizione a Typst
 Per quanto riguarda la stesura dei documenti, è stata presa la decisione di cambiare il linguaggio utilizzato, passando da _LatTex_ a _Typst_. Di seguito sono riportati i motivi di questa scelta:
