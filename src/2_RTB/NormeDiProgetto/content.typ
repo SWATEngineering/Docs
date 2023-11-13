@@ -19,14 +19,10 @@ Il presente documento ha come scopo la definizione delle #glossary[best practice
 
 = Processi di Supporto
 
-== Documentazione
+== Issue Tracking System
 
-=== Scopo
-
-Lo scopo del seguente processo è la definizione degli standard e degli strumenti utili alla stesura di tutti i documenti, necessari alla buona riuscita del progetto.
-
-=== Ciclo di Vita del Documento
-/ #glossary[Corsie di Stato]: descrivono lo stato attuale del documento.
+=== #glossary[Corsie di Stato]
+Descrivono lo stato attuale delle attività:
 / Backlog: attività individuate da svolgere.
 / Ready: attività individuate per il completamento durante il prossimo #glossary[sprint].
 / In Progress: attività che sono in corso d'opera da parte dei redattori.
@@ -34,13 +30,34 @@ Lo scopo del seguente processo è la definizione degli standard e degli strument
 / In Review: attività in corso di revisione da parte dei revisori.
 / Done: attività le cui modifiche sono state revisionate e accettate.
 
-Ogni nuovo documento segue le fasi del seguente #glossary[workflow]:
+=== Oggetti esterni al repository
+Vi possono essere delle issue aperte all'interno dell'ITS che non hanno un corrispondente documento o prodotto in generale, all'interno del repository, ma servono più come attività di gestione. Per queste, il ciclo di vita segue il normale flusso attraverso i diversi stati elencati nella @ciclo-vita-documento. La revisione viene effettuata attraverso i commenti della issue stessa, che avranno la seguente forma:
+- caso _richiesta cambiamenti_:
+  ```
+  [REV]
+  - richiesta 1;
+  - richiesta 2;
+  ```
+- caso _approvazione_:
+  ```
+  [REV] done
+  ```
+
+== Documentazione
+
+=== Scopo
+
+Lo scopo del seguente processo è la definizione degli standard e degli strumenti utili alla stesura di tutti i documenti, necessari alla buona riuscita del progetto.
+
+=== Ciclo di Vita del Documento <ciclo-vita-documento>
+
+Ogni documento segue le fasi del seguente #glossary[workflow]:
 + Si crea un branch per lo sviluppo del documento e si mette in uso.
 + Si copia dall'apposita repository `Templates` il template relativo al file che si deve redigere, e lo si inserisce nella cartella appropriata.
 + Si redige il documento o una sua sezione.
 + Nel file `changelog.typ` si aggiunge una riga *in coda*, secondo il seguente formato: `<versione>,<data-modifica>,<descrizione-modifica>,<nome-autore>,<ruolo-autore>`; la versione segue le regole descritte nella @versionamento.
 + Si esegue la commit sul branch creato.
-+ Si apre una _pull request_ dal branch appena creato verso il branch `main`: se il documento non è pronto per la revisione, ma ha bisogno di ulteriori modifiche, si apre la _pull request_ in modalità `draft`, altrimenti in modalità normale.
++ Si apre una _pull request_ dal branch appena creato verso il branch `main`: se il documento non è pronto per la revisione, ma ha bisogno di ulteriori modifiche, si apre la _pull request_ in modalità `draft`, altrimenti in modalità normale, spostando la issue nell'apposita corsia _Ready to Review_.
 + Per ulteriori modifiche richieste dal revisore si ripetono i punti, *in ordine*, dal punto _3_ al punto _5_.
 + Si elimina, *solo quando la pull request viene chiusa o risolta*, il branch creato.
 
@@ -50,6 +67,7 @@ La revisione del documento avviene tramite apposito metodo nell'ITS, attraverso 
 
 === Nomenclatura
 La consueta nomeclatura per i documenti si ottiene unendo, attraverso un underscore (`_`), il nome del file in _CamelCase_ senza spazi (`NomeDelFile`) e la sua versione (`3.5`). Ad esempio `NormeDiProgetto_2.6.pdf`.
+Nel caso di documenti il cui nome contiene una data, essa si inserisce dopo il nome, ma prima della versione, sempre separandolo con gli underscores, nella forma `ggmmaa` senza separatori tra i singoli componenti della data: `gg` rappresenta il giorno, sempre scritto in due cifre, allo stesso modo `mm` rappresenta il mese, mentre l'anno è rappresentato da `aa`, che corrisponde alle ultime due cifre dell'anno corrente.
 
 === Versionamento <versionamento>
 Il versionamento avviene secondo il seguente formato *x.y*:
@@ -66,3 +84,6 @@ Due modifiche, fatte in momenti diversi, differiscono l'una dall'altra solo se h
 Per poter prendere una qualsiasi decisione è necessario vi siano due condizioni:
 + Si deve raggiungere il #glossary[quorum] di quattro persone su sei;
 + La decisione deve essere verbalizzata e motivata.
+
+=== Tracciamento del Tempo Speso
+Al fine di tracciare il tempo speso nel corso del progetto, nei diversi ruoli, si userà uno spreadsheet appositamente creato, disponibile all'interno di _Google Drive_ dove, a fine giornata, ogni membro del team, individualmente, andrà ad inserire le proprie ore *produttive* svolte quel giorno, secondo la sua miglior stima del rapporto tra ore di orologio e ore produttive. Si inserisce _una sola_ riga per ogni giornata e nella descrizione si andranno ad inserire dei brevi titoli rappresentativi delle attività svolte.
