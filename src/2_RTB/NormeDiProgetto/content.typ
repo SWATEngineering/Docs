@@ -30,7 +30,7 @@ Descrivono lo stato attuale delle attività:
 / In Review: attività in corso di revisione da parte dei revisori.
 / Done: attività le cui modifiche sono state revisionate e accettate.
 
-=== Oggetti esterni al repository
+=== Oggetti Esterni al Repository
 Vi possono essere delle issue aperte all'interno dell'ITS che non hanno un corrispondente documento o prodotto in generale, all'interno del repository, ma servono più come attività di gestione. Per queste, il ciclo di vita segue il normale flusso attraverso i diversi stati elencati nella @ciclo-vita-documento. La revisione viene effettuata attraverso i commenti della issue stessa, che avranno la seguente forma:
 - caso _richiesta cambiamenti_:
   ```
