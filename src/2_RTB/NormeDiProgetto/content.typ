@@ -69,7 +69,7 @@ Ogni cambiamento di stato è accompagnato dal conseguente movimento della issue,
 == Gestione della Configurazione
 
 === Issue Tracking System <its>
-Come ITS si utilizza _Github_, attraverso le funzioni di _Project_, _Issues_ e _Pull requests_, che garantisce una struttura all'organizzazione di progetto.
+Come ITS si utilizza _Github_ che, attraverso le funzioni di _Project_, _Issues_ e _Pull requests_, garantisce una struttura all'organizzazione di progetto.
 
 Le #glossary[Corsie di Stato] descrivono lo stato attuale delle attività, all'interno del _Project_ nell'_ITS_ sono presenti:
 / Backlog: attività individuate da svolgere.
@@ -80,7 +80,7 @@ Le #glossary[Corsie di Stato] descrivono lo stato attuale delle attività, all'i
 / Done: attività le cui modifiche sono state verificate e accettate.
 
 === Strumento di Condivisione
-Per la condivisione veloce o la creazione di bozze si utilizza _Google Drive_. Uno dei suoi principali casi d'uso comprende la collaborazione in tempo reale a grandi parti di testo che poi andranno inserite all'interno della documentazione (ad esempio durante la creazione di un nuovo documento). Viene inoltre utilizzato come sistema per l'immagazzinamento di conoscenze acquisite durante il corso dello svolgimento del progetto.
+Per la condivisione veloce o la creazione di bozze si utilizza _Google Drive_. Uno dei suoi principali casi d'uso consiste nella collaborazione in tempo reale nella stesura di sezioni testuali ampie, da inserire successivamente nella documentazione (questo risulta particolarmente utile nel momento in cui il documento è alla sua prima stesura). Viene inoltre utilizzato come sistema per l'immagazzinamento di conoscenze acquisite durante lo svolgimento del progetto.
 
 === Tracciamento del Tempo Speso
 Al fine di tracciare il tempo speso nel corso del progetto, nei diversi ruoli, si userà uno spreadsheet appositamente creato, disponibile all'interno di _Google Drive_ dove, a fine giornata, ogni membro del team, individualmente, andrà ad inserire le proprie ore *produttive* svolte quel giorno, secondo la sua miglior stima del rapporto tra ore di orologio e ore produttive. Si inserisce _una sola_ riga per ogni giornata e nella descrizione si andranno ad inserire dei brevi titoli rappresentativi delle attività svolte.
