@@ -60,6 +60,6 @@ Per migliorare l'accessibilità ai documenti è stato deciso di creare un sito w
 Lo strumento che verrà utilizzato sarà _GitHub.io_: uno strumento offerto dalla piattaforma GitHub.
 
 == Passaggio dall'uso di Notion alla Google Suite
-A causa delle notevoli limitaizioni imposte dal piano gratuito di Notion, si è deciso di rimpiazzarlo con la Google Suite. Ora documenti come note e appunti verranno redatti in Google Documents mentre gli elementi di natura tabellare verranno realizzati mediante l’uso di Google Fogli.
+A causa delle notevoli limitazioni imposte dal piano gratuito di Notion, si è deciso di rimpiazzarlo con la Google Suite. Ora documenti come note e appunti verranno redatti in Google Documents mentre gli elementi di natura tabellare verranno realizzati mediante l’uso di Google Fogli.
 
 Erano state prese in considerazione altre scelte come #link("https://coda.io/welcome")[Coda] o #link("https://clickup.com/")[ClickUp], tuttavia impongono vincoli ancora più stringenti rispetto a quelli ritrovati in Notion, nelle versioni gratuite, e quindi sono state considerate non adeguate.
