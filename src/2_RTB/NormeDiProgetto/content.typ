@@ -9,8 +9,8 @@
 == Glossario
 Al fine di evitare possibili ambiguità relative al linguaggio utilizzato nei documenti, viene
 fornito il _Glossario_, nel quale sono presenti tutte le definizioni di termini aventi uno
-specifico significato che vuole essere disambiguato. Tali termini, sono scritti in _corsivo_ e
-marcati con una #sub("G") a pedice.
+specifico significato che vuole essere disambiguato. Tali termini, sono scritti in _corsivo_ e marcati con una #sub("G") a pedice.
+Un'attività che comprende l'inserimento di un termine di glossario può considerarsi conclusa, nella sua interezza, solo nel momento in cui il termine viene scritto e spiegato nel _Glossario_.
 
 == Scopo del Documento
 Il presente documento ha come scopo la definizione delle #glossary[best practices] e del #glossary[way of working] che ogni componente del #team ha l'obbligo di rispettare durante l'intero svolgimento del progetto. In questo modo si prova a garantire un metodo di lavoro omogeneo, verificabile e miglorabile nel tempo.
