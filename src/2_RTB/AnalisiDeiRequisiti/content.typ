@@ -51,7 +51,7 @@ La Proponente consiglia l'utilizzo delle seguenti tecnologie per la realizzazion
 - Dashboard di visualizzazione. Tecnologia consigliata: Grafana.
 
 == Utenti e caratteristiche
-Il prodotto è destinato ad amministratori pubblici, consentendo loro di ottenere una panoramica sulle condizioni della città. Questo permetterà loro di prendere decisioni ben informate sulla gestione delle risorse e sull'implementazione dei servizi, inclusa la possibilità di rispondere prontamente in situazioni di emergenza e di identificare opportunità di miglioramento che potrebbero altrimenti passare inosservate. L'utente finale potrebbe anche essere un dirigente aziendale interessato a ottenere informazioni rilevanti per gli obiettivi e gli interessi dell'azienda, come riduzione dei costi, miglioramento dell'efficienza e della produttività.
+Il prodotto è destinato ad amministratori pubblici, consentendo loro di ottenere una panoramica sulle condizioni della città. Ciò fornisce loro una base solida per prendere decisioni ponderate sulla gestione delle risorse e sull'implementazione dei servizi, il che risulta cruciale nel miglioramento dell'efficacia complessiva della gestione urbana. La ricezione tempestiva dei dati aggiornati migliora la capacità di risposta immediata in situazioni di emergenza, migliorando la gestione di eventi critici, in modo più efficiente e mirato. L'utente finale potrebbe anche essere un dirigente aziendale interessato a ottenere informazioni rilevanti per gli obiettivi e gli interessi dell'azienda, come riduzione dei costi, miglioramento dell'efficienza e della produttività.
 
 = Casi d'uso
 == Scopo
