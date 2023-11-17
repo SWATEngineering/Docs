@@ -38,7 +38,7 @@ L'obiettivo del prodotto è la creazione di una piattaforma che funga da monitor
 == Funzionalità del prodotto
 Il prodotto si compone di due parti principali:
 - *Un simulatore* che produce dei dati realistici, di svariate tipologie. Con realistici si intende verosimili in base al tipo di dato, ad es. un #glossary("sensore") della temperatura avrà un andamento di dati rilevati approssimabile ad una sinusoide.
-  - Questi dati che vengono raccolti e archiviati in un database #glossary("OLAP") e vengono passati ad un sistema di stream processing che permette di disaccoppiare lo stream di informazioni raccolto.
+  - Questi dati che vengono raccolti e archiviati in un database #glossary("OLAP") e vengono passati ad un sistema di stream processing che permette di disaccoppiare lo stream di informazioni raccolto in #glossary("real-time").
 - *Una dashboard* che permette di visualizzare i dati accumulati, sottoforma di grafici.
 
 La piattaforma prevede fondamentalmente una tipologia di utente: l'amministratore pubblico. Questo utente avrà accesso alla dashboard e visualizzerà il sommario di diverse metriche e indicatori sullo stato della città, sottoforma di grafici.
