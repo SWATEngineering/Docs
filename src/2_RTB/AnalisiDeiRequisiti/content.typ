@@ -223,16 +223,6 @@ La motivazione della mancanza di altri attori è dovuta al fatto che, per il mom
       + l'utente riceve le notifiche di allarme per le anomalie.
   - *Estensioni*: il sistema registra e mantiene un log delle anomalie rilevate per analisi e archiviazione [UC10].
 
-/ UC10 : - Archiviazione delle anomalie rilevate
-  - *Attore Principale*: sistema.
-  - *Precondizioni*: il sistema ha rilevato un'anomalia significativa.
-  - *Postcondizioni*: l'anomalia rilevata è stata registrata e archiviata per futura analisi.
-  - *Scenario Principale*:
-    - Il sistema:
-      + rileva un'anomalia significativa durante l'analisi dei dati sensoriali [UC9.1];
-      + registra i dettagli dell'anomalia rilevata, inclusi dati, orario, tipo di anomalia e sensore coinvolto;
-      + l'anomalia viene archiviata all'interno di un registro dedicato per le anomalie.
-
 / UC9.2 : - Allarmi per superamento soglie
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate [UC9].
@@ -243,6 +233,16 @@ La motivazione della mancanza di altri attori è dovuta al fatto che, per il mom
       + quando i dati del sensore superano le soglie predefinite, il sistema genera automaticamente una notifica di allarme;
       + l'utente riceve le notifiche di allarme per il superamento delle soglie e prende misure opportune di conseguenza.
   - *Estensioni*: il sistema consente agli utenti di modificare o aggiornare le soglie in base alle esigenze in qualsiasi momento [UC11].
+
+/ UC10 : - Archiviazione delle anomalie rilevate
+  - *Attore Principale*: sistema.
+  - *Precondizioni*: il sistema ha rilevato un'anomalia significativa.
+  - *Postcondizioni*: l'anomalia rilevata è stata registrata e archiviata per futura analisi.
+  - *Scenario Principale*:
+    - Il sistema:
+      + rileva un'anomalia significativa durante l'analisi dei dati sensoriali [UC9.1];
+      + registra i dettagli dell'anomalia rilevata, inclusi dati, orario, tipo di anomalia e sensore coinvolto;
+      + l'anomalia viene archiviata all'interno di un registro dedicato per le anomalie.
 
 / UC11 : - Modifica delle soglie dei dati sensoriali
   - *Attore Principale*: utente generico.
