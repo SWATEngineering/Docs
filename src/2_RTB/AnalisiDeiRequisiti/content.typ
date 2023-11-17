@@ -10,7 +10,7 @@
 Il presente documento ha lo scopo di fornire una descrizione dettagliata dei casi d'uso e dei requisiti del progetto _InnovaCity_. Questi risultano dall'analisi del capitolato C6 presentato dalla Proponente _Sync_ Lab e dalla successiva interazione diretta con essa attraverso gli incontri svolti.
 
 == Scopo del prodotto
-Lo scopo del prodotto è la realizzazione di una piattaforma di monitoraggio, che metta insieme i dati prodotti da dispositivi (IoT e non) e sensori di una città. Questa piattaforma permetterà all'#glossary("amministratore pubblico") di ottenere una visione d'insieme della condizione della città e, in base a questo, prendere decisioni informate e tempestive sulla gestione delle risorse e sull'implementazione di servizi. I dati visualizzati da questa piattaforma dovranno venire prodotti con una simulazione randomica che sia verosimile. In alternativa, potranno essere utilizzati dati reali accessibili liberamente.
+Lo scopo del prodotto è la realizzazione di una piattaforma di monitoraggio, che metta insieme i dati prodotti da dispositivi (IoT e non) e sensori di una città. Questa piattaforma permetterà all'#glossary("amministratore pubblico") di ottenere una visione d'insieme della condizione della città e, in base a questo, prendere decisioni informate e tempestive sulla gestione delle risorse e sull'implementazione di servizi. I dati visualizzati tramite questa piattaforma saranno generati mediante un processo di simulazione randomica accuratamente progettato per avvicinarsi il più possibile alla realtà. In alternativa, sarà possibile utilizzare dati reali liberamente accessibili per garantire una rappresentazione ancor più autentica delle condizioni della città.
 
 == Riferimenti
 
