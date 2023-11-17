@@ -394,11 +394,11 @@ La motivazione della mancanza di altri attori è dovuta al fatto che, per il mom
   [*ROV3*],[Obbligatorio],[I dati vanno raccolti in un database OLAP],
   [*ROV4*],[Obbligatorio],[I dati vanno passati ad un sistema di stream processing],
   [*ROV5*],[Obbligatorio],[Una dashboard che riporti almeno i dati di un sensore],
-  [*RDV6*],[Obbligatorio],[La simulazione di più sorgenti dati],
-  [*RPV7*],[Obbligatorio],[L'evidenziazione di relazioni tra dati provenienti da sorgenti diverse],
-  [*RPV8*],[Obbligatorio],[Un sistema di allerta che notifichi l'utente in caso di anomalie o eventi critici],
-  [*RPV9*],[Obbligatorio],[La previsione di eventi futuri, basata su dati storici e attuali],
-  [*RDV10*],[Obbligatorio],[Una dashboard avanzata contenente: una mappa della città, widget e informazioni sui sensori (ad esempio il tipo di sensore, il modello, ecc.).]
+  [*RDV6*],[Desiderabile],[La simulazione di più sorgenti dati],
+  [*RPV7*],[Opzionale],[L'evidenziazione di relazioni tra dati provenienti da sorgenti diverse],
+  [*RPV8*],[Opzionale],[Un sistema di allerta che notifichi l'utente in caso di anomalie o eventi critici],
+  [*RPV9*],[Opzionale],[La previsione di eventi futuri, basata su dati storici e attuali],
+  [*RDV10*],[Desiderabile],[Una dashboard avanzata contenente: una mappa della città, widget e informazioni sui sensori (ad esempio il tipo di sensore, il modello, ecc.).]
 )
 
 == Tracciamento
