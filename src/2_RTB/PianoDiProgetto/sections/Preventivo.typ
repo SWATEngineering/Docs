@@ -6,10 +6,10 @@ La suddivisione dei ruoli è stata fatta nel modo più equo possibile, per dare 
 
 Per praticità, verranno utilizzate le seguenti abbreviazioni:
 - *Re*: Responsabile;
-- *Ad*: Analista;
-- *An*: Analisi;
+- *Am*: Amministratore;
+- *An*: Analista;
 - *Pt*: Progettista;
 - *Pr*: Programmatore;
 - *Ve*: Verificatore.
 
-#include "PreventivoIncrementi/PrimoIncremento.typ"
+#include "PreventivoSprint/PrimoSprint.typ"

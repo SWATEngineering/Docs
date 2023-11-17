@@ -1,8 +1,9 @@
 #import "../../const.typ": Re_cost, Am_cost, An_cost, Ve_cost, Pr_cost, Pt_cost 
 
-== Primo incremento
+#pagebreak()
+== Primo sprint
 === Prospetto orario
-I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, durante questo incremento:
+I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, durante questo sprint:
 #table(
   columns: (170pt,auto,auto,auto,auto,auto,auto,70pt),
   align: center,
@@ -15,7 +16,7 @@ I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, dura
   [Riccardo Toniolo],[5],[-],[-],[-],[-],[-],[5]
 )
 === Prospetto economico
-In questo incremento, il costo per ogni ruolo sarà come da tabella:
+In questo sprint, il costo per ogni ruolo sarà come da tabella:
 #table(
   columns: (120pt,60pt,100pt),
   align: center,
