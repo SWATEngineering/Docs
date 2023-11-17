@@ -80,7 +80,7 @@ La motivazione della mancanza di altri attori è dovuta al fatto che, per il mom
 
 / UC1.1 : - Visualizzazione della mappa della città 
   - *Attore Principale*: utente generico.
-  - *Precondizioni*: l’utente accede alla dashboard.
+  - *Precondizioni*: l'utente accede alla dashboard.
   - *Postcondizioni*: l'utente visualizza la mappa della città che evidenzia la suddivisione in celle e il posizionamento dei sensori.
   - *Scenario Principale*:
     - L'utente:
@@ -93,9 +93,9 @@ La motivazione della mancanza di altri attori è dovuta al fatto che, per il mom
       + interagisce con la mappa per visualizzare lo stato di una singola cella [UC2];
       + interagisce con la mappa per selezionare un singolo sensore [UC4].
 
-/ UC1.2 - Visualizzazione di indicatori numerici 
+/ UC1.2 : - Visualizzazione di indicatori numerici
   - *Attore Principale*: utente generico.
-  - *Precondizioni*: l’utente accede alla dashboard.
+  - *Precondizioni*: l'utente accede alla dashboard.
   - *Postcondizioni*: l'utente ottiene una visualizzazione istantanea dei valori correnti dei sensori distribuiti nella città.
   - *Scenario Principale*:
     - L'utente:
@@ -118,15 +118,15 @@ La motivazione della mancanza di altri attori è dovuta al fatto che, per il mom
     - Visualizzazione della mappa della cella [UC2.1]
     - Visualizzazione di indicatori numerici della cella [UC2.2]
 
-/ UC2.1 - Visualizzazione della mappa della cella
+/ UC2.1 : - Visualizzazione della mappa della cella
   - *Attore Principale*: utente generico.
-  - *Precondizioni*: l’utente ha visualizzato la mappa della città e selezionato una cella.
+  - *Precondizioni*: l'utente ha visualizzato la mappa della città e selezionato una cella.
   - *Postcondizioni*: la mappa si ingrandisce per mostrare dettagli specifici della cella selezionata.
   - *Scenario Principale*:
     - L'utente:
       + seleziona una cella dalla mappa della città [UC2];
       + la visualizzazione sulla dashboard si adatta per concentrarsi sulla cella scelta, offrendo maggiori dettagli visivi della zona selezionata.
-  - *Estensioni*: l’utente interagisce con la mappa per selezionare un singolo sensore [UC4].
+  - *Estensioni*: l'utente interagisce con la mappa per selezionare un singolo sensore [UC4].
 
 / UC3 : - Visualizzazione del complesso di sensori
   - *Attore Principale*: utente generico.
@@ -164,7 +164,7 @@ La motivazione della mancanza di altri attori è dovuta al fatto che, per il mom
       + modifica lo stato del sensore;
       + salva le modifiche apportate allo stato del sensore.
 
-/ UC6 - Impostazione del periodo temporale per visualizzare i dati storici
+/ UC6 : - Impostazione del periodo temporale per visualizzare i dati storici
   - *Attore principale*: utente generico.
   - *Precondizioni*: l'utente sta visualizzando i dati storici di un sensore.
   - *Postcondizioni*: l'utente ha impostato con successo il periodo temporale per l'analisi dei dati storici.
@@ -178,7 +178,7 @@ La motivazione della mancanza di altri attori è dovuta al fatto che, per il mom
       + inserisce date non valide [UC7];
       + visualizza i dati storici del sensore [UC8].
 
-/ UC7 - Inserimento di date non valide 
+/ UC7 :- Inserimento di date non valide
   - *Attore Principale*: utente generico.
   - *Precondizioni*: l'utente ha selezionato un sensore per visualizzare i dati storici e ha tentato di impostare un periodo temporale.
   - *Postcondizioni*: l'utente è stato notificato riguardo all'inserimento di date non valide.
@@ -223,7 +223,7 @@ La motivazione della mancanza di altri attori è dovuta al fatto che, per il mom
       + l'utente riceve le notifiche di allarme per le anomalie.
   - *Estensioni*: il sistema registra e mantiene un log delle anomalie rilevate per analisi e archiviazione [UC10].
 
-/ UC10 - Archiviazione delle anomalie rilevate
+/ UC10 : - Archiviazione delle anomalie rilevate
   - *Attore Principale*: sistema.
   - *Precondizioni*: il sistema ha rilevato un'anomalia significativa.
   - *Postcondizioni*: l'anomalia rilevata è stata registrata e archiviata per futura analisi.
@@ -244,7 +244,7 @@ La motivazione della mancanza di altri attori è dovuta al fatto che, per il mom
       + l'utente riceve le notifiche di allarme per il superamento delle soglie e prende misure opportune di conseguenza.
   - *Estensioni*: il sistema consente agli utenti di modificare o aggiornare le soglie in base alle esigenze in qualsiasi momento [UC11].
 
-/ UC11 - Modifica delle soglie dei dati sensoriali
+/ UC11 : - Modifica delle soglie dei dati sensoriali
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sistema è operativo e l'utente ha accesso alle impostazioni delle soglie.
   - *Postcondizioni*: le soglie dei dati del sensore vengono modificate con successo.
@@ -263,7 +263,7 @@ La motivazione della mancanza di altri attori è dovuta al fatto che, per il mom
       + visualizza i dati storici del sensore di interesse [UC8];
       + visualizza grafici che evidenziano i trend dei dati sensoriali durante il periodo selezionato.
 
-/ UC13 - Analisi avanzata dei sensori
+/ UC13 : - Analisi avanzata dei sensori
   - *Attore Principale*: utente generico.
   - *Precondizioni*: i dati sensoriali sono sufficientemente distribuiti per poter effettuare analisi significative.
   - *Postcondizioni*: l'utente ha analizzato e confrontato i dati tra sensori di diverse tipologie o tra celle della città, ottenendo visualizzazioni e statistiche dettagliate.
@@ -277,7 +277,7 @@ La motivazione della mancanza di altri attori è dovuta al fatto che, per il mom
     - Correlazione tra tipologie di sensori [UC13.1];
     - Confronto tra celle della città [UC13.2].
 
-/ UC13.1 - Correlazione tra tipologie di sensori
+/ UC13.1 : - Correlazione tra tipologie di sensori
   - *Attore Principale*: utente generico.
   - *Precondizioni*: dati disponibili per i sensori selezionati. Almeno due tipi diversi di sensori attivi.
   - *Postcondizioni*: l'utente ottiene una visualizzazione dettagliata e comparativa dei dati tra due diverse tipologie di sensori.
@@ -288,7 +288,7 @@ La motivazione della mancanza di altri attori è dovuta al fatto che, per il mom
       + il sistema elabora i dati dei sensori selezionati e mostra una rappresentazione grafica comparativa.
   - *Estensioni*: il sistema consente all'utente di salvare i risultati dell'analisi per future consultazioni.
 
-/ UC13.2 - Confronto tra celle della città
+/ UC13.2 : - Confronto tra celle della città
   - *Attore Principale*: utente generico.
   - *Precondizioni*: la piattaforma dispone dei dati sensoriali di almeno due celle della città.
   - *Postcondizioni*: l'utente ha accesso ai dati confrontati o alle statistiche relative alle celle selezionate.
@@ -299,7 +299,7 @@ La motivazione della mancanza di altri attori è dovuta al fatto che, per il mom
       + visualizza i dati o le statistiche comparate per le celle selezionate.
   - *Estensioni*: se l'utente seleziona celle non comparabili, riceve una notifica di errore [UC14].
 
-/ UC14 - Selezione di celle non comparabili
+/ UC14 : - Selezione di celle non comparabili
   - *Attore Principale*: utente generico.
   - *Precondizioni*: l’utente seleziona due celle diverse per effettuare un’analisi di confronto.
   - *Postcondizioni*: l’utente riceve una notifica riguardo alla selezione di celle non comparabili.
