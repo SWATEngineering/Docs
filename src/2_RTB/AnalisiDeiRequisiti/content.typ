@@ -16,19 +16,19 @@ Lo scopo del prodotto è la realizzazione di una piattaforma di monitoraggio,che
 
 === Riferimenti normativi
 - Capitolato C6 - InnovaCity: Smart city monitoring platform:
-https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf \
-https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6p.pdf
+#link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf")\
+#link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6p.pdf")
 
 - Norme di Progetto
 
 - Regolamento progetto didattico:
-https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf
+#link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf")
 
 === Riferimenti informativi
 Analisi dei requisiti - corso di Ingegneria del Software a.a. 2023/2024: \
-https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T5.pdf \
+link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T5.pdf") \
 Cardin	Analisi e descrizione delle funzionalità: Use Case e relativi diagammi (UML) - corso di Ingegneria del Software a.a. 2023/2024: \
-https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20di%20Attivit%C3%A0.pdf
+link("https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20di%20Attivit%C3%A0.pdf")
 
 = Descrizione
 
