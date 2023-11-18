@@ -68,28 +68,26 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
   caption: [Gerarchia degli attori]
 )
 
-/ UC1 : - Visualizzazione della dashboard sullo stato della città
+/ UC1 : - Visualizzazione della Dashboard. 
   - *Attore Principale*: utente generico.
   - *Precondizioni*: almeno uno dei sensori è attivo e trasmette dati.
-  - *Postcondizioni*: l'utente ha un'istantanea chiara e aggiornata dello stato generale della città attraverso dati e informazioni presentati sulla dashboard.
+  - *Postcondizioni*: la dashboard mostra un'istantanea chiara e aggiornata dello stato generale della città attraverso dati e informazioni.
   - *Scenario Principale*:
-    - L'utente:
-      + accede alla piattaforma per la visualizzazione dello stato attuale della città;
-      + i dati provenienti da sensori e dispositivi installati in varie zone della città vengono visualizzati istantaneamente sulla dashboard.
+    + l'utente accede alla Dashboard; 
+    + il sistema elabora i dati provenienti dai sensori e li visualizza istantaneamente sulla dashboard.
   - *Generalizzazioni*:
-    - Visualizzazione della mappa della città  [UC1.1]
+    - Visualizzazione della mappa della città [UC1.1]
     - Visualizzazione di indicatori numerici [UC1.2]
 
 / UC1.1 : - Visualizzazione della mappa della città 
   - *Attore Principale*: utente generico.
-  - *Precondizioni*: l'utente accede alla dashboard.
-  - *Postcondizioni*: l'utente visualizza la mappa della città che evidenzia la suddivisione in celle e il posizionamento dei sensori.
+  - *Precondizioni*: almeno uno dei sensori è attivo e trasmette dati.
+  - *Postcondizioni*: il sistema mostra la mappa della città che evidenzia la suddivisione in celle e il posizionamento dei sensori.
   - *Scenario Principale*:
-    - L'utente:
-      + accede alla dashboard iniziale dell'applicazione [UC1];
-      + la mappa della città viene visualizzata sullo schermo;
-      + la posizione dei sensori distribuiti nella città viene evidenziata tramite icone;
-      + la suddivisione in celle viene evidenziata delineandone il perimetro.
+    + l'utente accede alla Dashboard; 
+    + la mappa della città viene visualizzata; 
+    + la posizione dei sensori distribuiti nella città viene evidenziata tramite icone;
+    + la suddivisione in celle viene evidenziata delineandone il perimetro.
   - *Estensioni*:
     - L'utente:
       + interagisce con la mappa per visualizzare lo stato di una singola cella [UC2];
@@ -97,25 +95,23 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
 
 / UC1.2 : - Visualizzazione di indicatori numerici
   - *Attore Principale*: utente generico.
-  - *Precondizioni*: l'utente accede alla dashboard.
-  - *Postcondizioni*: l'utente ottiene una visualizzazione istantanea dei valori correnti dei sensori distribuiti nella città.
+  - *Precondizioni*: almeno uno dei sensori è attivo e trasmette dati.
+  - *Postcondizioni*: il sistema mostra i valori correnti di tutti i sensori.
   - *Scenario Principale*:
-    - L'utente:
-      + accede alla dashboard iniziale dell'applicazione [UC1];
-      + vengono mostrati pannelli con indicatori numerici che rappresentano i dati attuali misurati da ciascun tipo di sensore distribuito nella città;
-      + gli indicatori numerici si aggiornano automaticamente per riflettere i dati più recenti provenienti dai sensori.
+    + l'utente accede alla Dashboard; 
+    + vengono mostrati pannelli con indicatori numerici che rappresentano i dati attuali misurati da ciascun tipo di sensore distribuito nella città;
+    + gli indicatori numerici si aggiornano automaticamente per riflettere i dati più recenti provenienti dai sensori.
 
 / UC2 : - Visualizzazione dello stato di una #glossary("cella")
   - *Attore Principale*: utente generico.
   - *Precondizioni*:
     - almeno uno dei sensori all'interno della cella è attivo e trasmette dati;
-    - la piattaforma contiene dati aggiornati e in tempo reale dei sensori nella cella selezionata.
-  - *Postcondizioni*: l'utente ha visualizzato lo stato attuale della cella selezionata attraverso la piattaforma, basandosi sui dati forniti dai sensori e dispositivi all'interno della stessa.
+    - la piattaforma contiene dati aggiornati e in tempo reale dei sensori nella cella selezionata.  (revisore: dimmi se è toglibile questa precondizione)
+  - *Postcondizioni*: il sistema mostra lo stato attuale della cella selezionata attraverso la piattaforma, basandosi sui dati forniti dai sensori e dispositivi all'interno della stessa.
   - *Scenario Principale*:
-    - L'utente:
-      + visualizza la mappa della città [UC1.1];
-      + seleziona una cella specifica;
-      + visualizza i dati aggregati provenienti dai sensori e dai dispositivi all'interno della cella selezionata sulla dashboard.
+    + l'utente visualizza la mappa della città [UC1.1];
+    + l'utente seleziona una cella specifica;
+    + il sistema mostra i #glossary("dati aggregati") provenienti dai sensori e dai dispositivi all'interno della cella selezionata sulla dashboard.
   - *Generalizzazioni*:
     - Visualizzazione della mappa della cella [UC2.1]
     - Visualizzazione di indicatori numerici della cella [UC2.2]
@@ -123,12 +119,22 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
 / UC2.1 : - Visualizzazione della mappa della cella
   - *Attore Principale*: utente generico.
   - *Precondizioni*: l'utente ha visualizzato la mappa della città e selezionato una cella.
-  - *Postcondizioni*: la mappa si ingrandisce per mostrare dettagli specifici della cella selezionata.
+  - *Postcondizioni*: la visualizzazione si contentra sulla cella selezionata, ingrandendola, per mostrare dettagli specifici della cella selezionata.
   - *Scenario Principale*:
-    - L'utente:
-      + seleziona una cella dalla mappa della città [UC2];
-      + la visualizzazione sulla dashboard si adatta per concentrarsi sulla cella scelta, offrendo maggiori dettagli visivi della zona selezionata.
+    + l'utente visualizza la mappa della città [UC1.1];
+    + l'utente seleziona una cella specifica;
+    + il sistema ingrandisce la cella selezionata.
   - *Estensioni*: l'utente interagisce con la mappa per selezionare un singolo sensore [UC4].
+
+/ UC2.2 : - Visualizzazione di indicatori numerici della cella
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: l'utente ha visualizzato la mappa della città e selezionato una cella.
+  - *Postcondizioni*: gli indicatori numerici mostrano i dati dei sensori situati nella cella selezionata.
+  - *Scenario Principale*:
+    + l'utente visualizza la mappa della città [UC1.1];
+    + l'utente seleziona una cella specifica;
+    + gli indicatori numerici sulla dashboard si aggiornano per riflettere i dati provenienti dai sensori situati nella cella selezionata.
+  
 
 / UC3 : - Visualizzazione del complesso di sensori
   - *Attore Principale*: utente generico.
