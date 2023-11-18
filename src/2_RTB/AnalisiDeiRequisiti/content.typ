@@ -33,7 +33,7 @@ https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20di%20Attivit%C3%A0.pdf
 = Descrizione
 
 == Obiettivi del prodotto
-L'obbiettivo consiste nella creazione di una piattaforma di monitoraggio e gestione una Smart City. L'utente, individuato nell'amministratore pubblico, potrà farne impiego per migliorare la qualità generale della vita e l'efficenza dei servizi nel contesto di un'area urbana. L'utente sarà in grado di controllare, attraverso la consultazione di una dashboard, lo stato della città, sotto i punti di vista ambientali, logistici e di sicurezza. Questo cruscotto includerà rappresentazioni grafiche basate su dati generati da una simulazione realistica, specificamente sviluppata per il progetto in questione.
+L'obbiettivo consiste nella creazione di una piattaforma di monitoraggio e gestione una Smart City. L'utente, individuato nell'amministratore pubblico, potrà farne impiego per migliorare la qualità generale della vita e l'efficienza dei servizi nel contesto di un'area urbana. L'utente sarà in grado di controllare, attraverso la consultazione di una dashboard, lo stato della città, sotto i punti di vista ambientali, logistici e di sicurezza. Questo cruscotto includerà rappresentazioni grafiche basate su dati generati da una simulazione realistica, specificamente sviluppata per il progetto in questione.
 
 == Funzionalità del prodotto
 Il prodotto si compone di due parti principali:
