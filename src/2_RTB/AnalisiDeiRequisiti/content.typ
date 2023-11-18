@@ -308,7 +308,7 @@ La motivazione della mancanza di altri attori è dovuta al fatto che, per il mom
       + seleziona almeno due celle diverse per l’analisi comparativa [UC13.2];
       + il sistema esegue controlli sui dati disponibili all’interno delle celle selezionate per determinare la comparabilità;
       + una o entrambe le celle presentano una delle seguenti situazioni: viene rilevata un’insufficienza di dati per i tipi di sensori desiderati oppure una variazione significativa nei tipi di sensori presenti all’interno delle celle selezionate;
-      +il sistema notifica l’utente riguardo alla presenza di celle non comparabili e fornisce dettagli sul motivo per cui non sono adatte per un confronto accurato.
+      + il sistema notifica l’utente riguardo alla presenza di celle non comparabili e fornisce dettagli sul motivo per cui non sono adatte per un confronto accurato.
 
 / UC15 : - Filtraggio dei sensori
   - *Attore Principale*: utente generico.
@@ -355,7 +355,7 @@ La motivazione della mancanza di altri attori è dovuta al fatto che, per il mom
   [*ROF8*],[Obbligatorio],[L’utente deve poter visualizzare una panoramica di tutti i sensori all’interno della rete.],
   [*ROF9*],[Obbligatorio],[L’utente deve poter selezionare un singolo sensore.],
   [*ROF10*],[Obbligatorio],[L’utente deve poter visualizzare le informazioni pertinenti al sensore selezionato.],
-  [*ROF11*],[Obbligatorio],[L’utente deve poter modificare lo stato operativo del sensore selezionato.],
+  [*ROF11*],[Desiderabile],[L’utente deve poter modificare lo stato operativo del sensore selezionato.],
   [*ROF12*],[Obbligatorio],[L’utente deve poter impostare il periodo temporale per visualizzare i dati storici del sensore.],
   [*ROF13*],[Obbligatorio],[Il sistema notifica l’utente in caso di inserimento di date non valide.],
   [*ROF14*],[Obbligatorio],[L’utente deve poter visualizzare i dati storici del sensore selezionato.],
