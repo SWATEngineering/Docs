@@ -82,7 +82,10 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
   - *Generalizzazioni*:
     - Visualizzazione della mappa della città [UC1.1]
     - Visualizzazione di indicatori numerici [UC1.2]
-
+#figure(
+  image("assets/uc2.png", height:24%),
+  caption: [visualizzazione mappa e indicatori]
+)
 / UC1.1 : - Visualizzazione della mappa della città 
   - *Attore Principale*: utente generico.
   - *Precondizioni*: almeno uno dei sensori è attivo e trasmette dati.
