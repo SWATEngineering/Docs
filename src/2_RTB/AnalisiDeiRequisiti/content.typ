@@ -69,6 +69,10 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
 )
 
 / UC1 : - Visualizzazione della Dashboard. 
+#figure(
+  image("assets/uc1.png",height: 12%),
+  caption: [UC1]
+)
   - *Attore Principale*: utente generico.
   - *Precondizioni*: almeno uno dei sensori è attivo e trasmette dati.
   - *Postcondizioni*: la dashboard mostra un'istantanea chiara e aggiornata dello stato generale della città attraverso dati e informazioni.
