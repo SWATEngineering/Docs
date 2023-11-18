@@ -26,9 +26,9 @@ Lo scopo del prodotto è la realizzazione di una piattaforma di monitoraggio,che
 
 === Riferimenti informativi
 Analisi dei requisiti - corso di Ingegneria del Software a.a. 2023/2024: \
-link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T5.pdf") \
+#link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T5.pdf") \
 Cardin	Analisi e descrizione delle funzionalità: Use Case e relativi diagammi (UML) - corso di Ingegneria del Software a.a. 2023/2024: \
-link("https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20di%20Attivit%C3%A0.pdf")
+#link("https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20di%20Attivit%C3%A0.pdf")
 
 = Descrizione
 
@@ -37,8 +37,8 @@ L'obbiettivo consiste nella creazione di una piattaforma di monitoraggio e gesti
 
 == Funzionalità del prodotto
 Il prodotto si compone di due parti principali:
-- *Un simulatore* che produce dei dati realistici, di svariate tipologie. Con realistici si intende verosimili in base al tipo di dato, ad es. un #glossary("sensore") della temperatura avrà un andamento di dati rilevati approssimabile ad una sinusoide.
-  - Questi dati che vengono raccolti e archiviati in un database #glossary("OLAP") e vengono passati ad un sistema di stream processing che permette di disaccoppiare lo stream di informazioni raccolto in #glossary("real-time").
+-*Un simulatore* che genera dati il più verosimili possibile, cercando di riflettere con precisione le caratteristiche tipiche dei dati di diverse tipologie. Ad esempio, un    #glossary("sensore") di temperatura potrebbe essere modellato per produrre dati che seguano fedelmente un andamento simile a una sinusoide, per avvicinarsi il più possibile alle variazioni reali della temperatura.
+  - I dati vengono inviati ad un sistema di stream processing che permetta di disaccoppiare lo stream di informazioni raccolto in #glossary("real-time"), e successivamente essere archiviati in un database OLAP.
 - *Una dashboard* che permette di visualizzare i dati accumulati, sottoforma di grafici.
 
 La piattaforma prevede fondamentalmente una tipologia di utente: l'amministratore pubblico. Questo utente avrà accesso alla dashboard e visualizzerà il sommario di diverse metriche e indicatori sullo stato della città, sottoforma di grafici.
