@@ -48,19 +48,21 @@ La Proponente consiglia l'utilizzo delle seguenti tecnologie per la realizzazion
 - Implementazione dei simulatori. Tecnologia consigliata: *Python*;
 - Database OLAP utilizzato per lo storage dei dati.  Tecnologia consigliata: *ClickHouse*;
 - Piattaforma di stream processing. Tecnologia consigliata: *Kafka*.
-- Dashboard di visualizzazione. Tecnologia consigliata: Grafana.
+- Dashboard di visualizzazione. Tecnologia consigliata: *Grafana*.
 
 == Utenti e caratteristiche
-Il prodotto è destinato ad amministratori pubblici, consentendo loro di ottenere una panoramica sulle condizioni della città. Ciò fornisce loro una base solida per prendere decisioni ponderate sulla gestione delle risorse e sull'implementazione dei servizi, il che risulta cruciale nel miglioramento dell'efficacia complessiva della gestione urbana. La ricezione tempestiva dei dati aggiornati migliora la capacità di risposta immediata in situazioni di emergenza, migliorando la gestione di eventi critici, in modo più efficiente e mirato. Un'altra figura che potrebbe essere interessata all'utilizzo del prodotto potrebbe essere quella del dirigente aziendale: gli sarebbe permesso di ottenere informazioni rilevanti per gli obiettivi e gli interessi dell'azienda, come riduzione dei costi, miglioramento dell'efficienza e della produttività.
+Il prodotto è destinato ad amministratori pubblici, consentendo loro di ottenere una panoramica sulle condizioni della città. Ciò fornisce loro una base solida per prendere decisioni ponderate sulla gestione delle risorse e sull'implementazione dei servizi, il che risulta cruciale nel miglioramento dell'efficacia complessiva della gestione urbana. La ricezione tempestiva dei dati aggiornati migliora la capacità di risposta immediata in situazioni di emergenza, migliorando la gestione di eventi critici, in modo più efficiente e mirato. Un'altra figura che potrebbe essere interessata all'utilizzo del prodotto, potrebbe essere quella del dirigente aziendale: gli sarebbe permesso di ottenere informazioni rilevanti per gli obiettivi e gli interessi dell'azienda, come riduzione dei costi, miglioramento dell'efficienza e della produttività.
 
 = Casi d'uso
 == Scopo
-La presente sezione ha come obbiettivo la descrizione di tutti i casi d'uso individuati dall'analisi effettuata dal gruppo, basandosi sul capitolato e sulle interazioni con la Proponente. In particolare, si individuano gli #glossary("attori") e le funzionalità che questi possono svolgere. Ogni caso d'uso possiede un codice, la cui struttura è descritta nelle Norme di Progetto.
+In questa sezione si vogliono elencare e descrivere tutti i casi d'uso individuati dall'analisi effettuata dal gruppo, basandosi sul capitolato e sulle interazioni con la Proponente. In particolare, si individuano gli #glossary("attori") e le funzionalità che questi possono svolgere. Ogni caso d'uso possiede un codice, la cui struttura è descritta nelle Norme di Progetto.
 e
 == Attori
 L'applicativo si interfaccerà con un solo tipo di attore:
 - *Utente generico*: è un utente che ha accesso alla dashboard in tutte le sue funzionalità e può visualizzare i dati raccolti dai sensori.
-La motivazione della mancanza di altri attori è dovuta al fatto che, per il momento, non sono state individuate altre figure che possano interagire con il sistema e non sono previste interfacce differenti per utenti con altri ruoli.
+
+La decisione di non inserire un utente con privilegi è da ricollegare al fatto che il prodotto ha comunque un target d'utenza limitato, che si compone di persone generalmente dotate di competenze tecniche e dunque in grado di interagire con il sistema in tutte le sue funzionalità.
+
 #figure(
   image("assets/UtenteUC.png", width: 12%),
   caption: [Gerarchia degli attori]
