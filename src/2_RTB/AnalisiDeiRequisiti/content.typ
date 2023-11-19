@@ -378,21 +378,20 @@ UC8 : - Archiviazione delle anomalie rilevate
 
 / UC13 : - Filtraggio dei sensori
   - *Attore Principale*: utente generico.
-  - *Precondizioni*: la rete di sensori contiene almeno un sensore.
-  - *Postcondizioni*: l'utente ha una visualizzazione dei sensori filtrati in base ai criteri selezionati.
+  - *Precondizioni*: è attivo almeno un sensore.
+  - *Postcondizioni*: il sistema mostra all'utente una visualizzazione dei sensori filtrati in base ai criteri selezionati.
   - *Scenario Principale*:
-    - L'utente:
-      + accede alla piattaforma di gestione dei sensori [UC3];
-      + seleziona le caratteristiche per il filtraggio dei sensori:
+    + L'utente accede alla piattaforma di gestione dei sensori [UC3];
+    + l'utente seleziona le caratteristiche per il filtraggio dei sensori:
         - Identificativo univoco;
         - Tipologia;
         - Stato;
         - Posizione geografica;
         - Cella di appartenenza;
         - Codice di fabbrica.
-      + applica i filtri e visualizza solo i sensori che soddisfano i criteri selezionati.
+    + il sistema applica i filtri e mostra all'utente solo i sensori che soddisfino i criteri selezionati.
 
-/ UC15 : - Aggiunta di un sensore reale
+/ UC14 : - Aggiunta di un sensore reale
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sensore fisico è disponibile e pronto per l'installazione.
   - *Postcondizioni*: il nuovo sensore reale è stato correttamente aggiunto alla rete e i suoi dati sono ora disponibili nella piattaforma per l'analisi e la visualizzazione.
@@ -402,7 +401,7 @@ UC8 : - Archiviazione delle anomalie rilevate
       + registra il nuovo sensore specificando le informazioni necessarie;
       + il sistema verifica e riconosce il nuovo sensore nella rete.
   - *Estensioni*: se il sistema non riesce a riconoscere o integrare correttamente il nuovo sensore, l'utente riceve una notifica di errore.
-
+/* Bisogna capire se tenere la UC14 */
 = Requisiti
 
 == Requisiti funzionali (obbligatori e desiderabili)
