@@ -236,7 +236,7 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
   - *Estensioni*: l’utente visualizza i trend dei dati storici del sensore durante il periodo selezionato [UC10].
 */
 
-/ UC7 : - Allarmi e notifiche del sistema
+/ UC7 : - Allarmi  del sistema
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate.
   - *Postcondizioni*: Il sistema notifica l'utente in caso di allarmi. La notifica comprende dati rilevanti e informazioni contestuali per consentire azioni o analisi    aggiuntive.
@@ -249,7 +249,7 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
       - Allarmi per rilevazione anomalie [UC7.1]
       - Allarmi per superamento soglie [UC7.2]
 
-/ UC7.1 : - Allarmi per rilevazione anomalie e archiviazione
+/ UC7.1 : - Allarmi per rilevazione anomalie 
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate.
   - *Postcondizioni*: il sistema  notifica l'utente  in modo appropriato quando vengono attivati gli allarmi per rilevazioni anomale e successivamente viene aggiornato l'archivio delle anomalie.
@@ -259,7 +259,18 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
     + l'utente riceve le notifiche di allarme per l'anomalia.
     + l'utente visualizza l'allarme.
     + il sistema archivia l'anomalia in un registro dedicato, includendo dati, ora, tipologia anomalia e sensore coinvolto.
-  
+/*
+UC7.1 : - Allarmi per rilevazione anomalie
+  - *Attore Principale*: sistema.
+  - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate [UC9].
+  - *Postcondizioni*: l'utente viene notificato in modo appropriato quando vengono attivati gli allarmi per rilevazioni anomale.
+  - *Scenario Principale*:
+    - Il sistema:
+      + analizza costantemente i dati provenienti dai sensori per rilevare deviazioni o pattern insoliti;
+      + quando viene identificata un'anomalia significativa, il sistema genera automaticamente una notifica di allarme;
+      + l'utente riceve le notifiche di allarme per le anomalie.
+  - *Estensioni*: il sistema registra e mantiene un log delle anomalie rilevate per analisi e archiviazione [UC10].
+*/
 
 / UC7.2 : - Allarmi per superamento soglie
   - *Attore Principale*: utente generico.
@@ -273,16 +284,29 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
   - *Estensioni*: il sistema consente agli utenti di modificare o aggiornare le soglie in base alle esigenze in qualsiasi momento [UC9].
 
 / UC8 : - Accesso all'archivio delle anomalie rilevate
-  - *Attore Principale*: utente generico .
-  - *Precondizioni*: il sistema ha rilevato un'anomalia.
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate.
   - *Postcondizioni*: il sistema mostra all'utente l'archivio delle anomalie.
   - *Scenario Principale*:
     + l'utente accede alla sezione riguardante le anomalie sulla dashboard  
     + l'utente seleziona l'icona per visualizzare il registro
-    + il sistema mostra all'utente il registro delle anomalie, visualizzandone  dati, orario e tipologia sensore.
-  -*Estensione*: l'esportazione del registro in uno specifico formato
+    + il sistema mostra all'utente il registro delle anomalie, visualizzandone  dati, orario e tipologia sensore dalla dashboard.
+ /* -*Estensione*: l'esportazione del registro in uno specifico formato*/
 /* ci potrebbe essere un caso d'uso riguardo l'accesso all'archivio */
 /* ci potrebbe essere un caso d'uso riguardo l'esportazione dei dati in un formato del tipo .....*/
+
+/*
+UC8 : - Archiviazione delle anomalie rilevate
+  - *Attore Principale*: sistema.
+  - *Precondizioni*: il sistema ha rilevato un'anomalia significativa.
+  - *Postcondizioni*: l'anomalia rilevata è stata registrata e archiviata per futura analisi.
+  - *Scenario Principale*:
+    - Il sistema:
+      + rileva un'anomalia significativa durante l'analisi dei dati sensoriali [UC9.1];
+      + registra i dettagli dell'anomalia rilevata, inclusi dati, orario, tipo di anomalia e sensore coinvolto;
+      + l'anomalia viene archiviata all'interno di un registro dedicato per le anomalie.
+*/
+
 
 / UC9 : - Modifica delle soglie dei dati sensoriali
   - *Attore Principale*: utente generico.
