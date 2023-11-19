@@ -288,8 +288,7 @@ UC7.1 : - Allarmi per rilevazione anomalie
   - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate.
   - *Postcondizioni*: il sistema mostra all'utente l'archivio delle anomalie.
   - *Scenario Principale*:
-    + l'utente accede alla sezione riguardante le anomalie sulla dashboard  
-    + l'utente seleziona l'icona per visualizzare il registro
+    + l'utente accede alla sezione riguardante le anomalie sulla dashboard. 
     + il sistema mostra all'utente il registro delle anomalie, visualizzandone  dati, orario e tipologia sensore dalla dashboard.
  /* -*Estensione*: l'esportazione del registro in uno specifico formato*/
 /* ci potrebbe essere un caso d'uso riguardo l'accesso all'archivio */
