@@ -170,23 +170,25 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
   - *Precondizioni*: il sensore è già registrato nella piattaforma.
   - *Postcondizioni*: le modifiche apportate allo stato del sensore sono state applicate con successo e il sensore riflette le nuove informazioni nello stato operativo.
   - *Scenario Principale*:
-    - L'utente:
-      + seleziona il sensore il cui stato desidera modificare [UC4];
-      + modifica lo stato del sensore;
-      + salva le modifiche apportate allo stato del sensore.
+    + L'utente seleziona il sensore di cui desidera modificare lo stato[UC4];
+    + L'utente modifica lo stato del sensore;
+    + Il sistema registra le modifiche apportate allo stato del sensore.
 
 / UC6 : - Impostazione del periodo temporale 
   - *Attore principale*: utente generico.
-  - *Precondizioni*: viene selezionato un sensore [UC4]
-  - *Postcondizioni*:   il periodo temporale per l'analisi dei dati storici è  impostato con successo.
+  - *Precondizioni*: viene selezionato un sensore [UC4].
+  - *Postcondizioni*: il periodo temporale per l'analisi dei dati storici è impostato con successo.
   - *Scenario Principale*:
-      + L'utente accede all'opzione per l'impostazione del periodo temporale per l'analisi storica;
-      + seleziona l'inizio e la fine del periodo desiderato per l'analisi;
-      + conferma le impostazioni per il periodo temporale.
+    + L'utente accede all'opzione per l'impostazione del periodo temporale per l'analisi storica;
+    + seleziona l'inizio e la fine del periodo desiderato per l'analisi;
+    + conferma le impostazioni per il periodo temporale.
   - *Scenari secondari*:
-     + se viene selezionata una data non valida, il sistema rifiuta l'input e fornisce un messaggio d'errore.
+     + L'utente accede all'opzione per l'impostazione del periodo temporale per l'analisi storica;
+     + L'utente seleziona una data non valida; 
+     + il sistema rifiuta l'input e fornisce un messaggio d'errore.
   - *Estensioni*:
-       + visualizza i dati storici del sensore [UC8].
+       + visualizzazione dei dati storici del sensore [UC8].
+       
 /*********************************************/
 /*viene rimosso in quanto presente come caso d'uso secondario del uc6*/
 /* UC7 :- Inserimento di date non valide */
