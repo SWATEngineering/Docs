@@ -143,31 +143,27 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
     + gli indicatori numerici sulla dashboard si aggiornano per riflettere i dati provenienti dai sensori situati nella cella selezionata.
   
 
-/ UC3 : - Visualizzazione del complesso di sensori
+/ UC3 : - Visualizzazione del registro dei sensori
   - *Attore Principale*: utente generico.
-  - *Precondizioni*: la rete dei sensori contiene almeno un sensore.
-  - *Postcondizioni*: l'utente ha una visione complessiva dei sensori e della loro distribuzione all'interno della città.
+  - *Precondizioni*: almeno un sensore è attivo.
+  - *Postcondizioni*: il sistema mostra un elenco organizzato contenente le informazione relative a tutti i sensori installati. 
   - *Scenario Principale*:
-    - L'utente:
-      + accede alla sezione dedicata alla visualizzazione dei sensori tramite la dashboard dell'applicazione;
-      + i sensori sono inizialmente filtrati per tipologia in una visualizzazione tabellare, consentendo una rapida identificazione e analisi.
+    + L'utente accede alla sezione dedicata alla visualizzazione dei sensori tramite la dashboard dell'applicazione;
+    + i sensori sono inizialmente filtrati per tipologia in una visualizzazione tabellare, consentendo una rapida identificazione e analisi.
   - *Estensioni*: 
-    - L'utente:
-      + seleziona un sensore [UC4];
-      + filtra i sensori della rete in base alle loro caratteristiche [UC15].
+    + selezione un sensore [UC4];
+    + filtraggio dei sensori in base alle loro caratteristiche [UC15].
 
 / UC4 : - Selezione di un sensore
   - *Attore Principale*: utente generico.
-  - *Precondizioni*: almeno un sensore è attivo e ha trasmesso dati.
-  - *Postcondizioni*: l'utente ottiene informazioni dettagliate sul sensore selezionato e relativi dati storici.
+  - *Precondizioni*: almeno un sensore è attivo e trasmette dati.
+  - *Postcondizioni*: vengono mostrate le informazioni relative al sensore selezionato e relativi dati storici.
   - *Scenario Principale*:
-    - L'utente:
-      + interagisce con la mappa [UC1.1, UC2.1] o, in alternativa, visualizza il complesso di sensori [UC3] e seleziona un sensore specifico;
-      + visualizza i dettagli del sensore selezionato e i valori attuali.
+    + L'utente interagisce con la mappa [UC1.1, UC2.1] o, in alternativa, visualizza il registro di sensori [UC3] e seleziona un sensore specifico;
+    + il sistema mostra i dettagli del sensore selezionato.
    - *Estensioni*: 
-    - L'utente:
-      + modifica lo stato del sensore selezionato [UC5];
-      + imposta il periodo temporale per visualizzare i dati storici del sensore selezionato [UC6].
+    + modifica dello stato del sensore selezionato[UC5];
+    + impostazione del periodo temporale al fine visualizzare i dati storici relativi a quel periodo e al sensore selezionato sensore selezionato [UC6].
 
 / UC5 : - Modifica dello #glossary("stato di un sensore")
   - *Attore Principale*: utente generico.
