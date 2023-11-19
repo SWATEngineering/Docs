@@ -8,12 +8,12 @@ I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, dura
   columns: (170pt,auto,auto,auto,auto,auto,auto,70pt),
   align: center,
   [*Nominativo*],[*Re*],[*Am*],[*An*],[*Pt*],[*Pr*],[*Ve*],[*Ore totali*],
-  [Simone Caregnato],[-],[-],[5],[-],[-],[-],[5],
-  [Riccardo Alberto Costantin],[-],[-],[-],[-],[-],[5],[5],
-  [Giacomo D'Ovidio],[-],[-],[-],[-],[-],[5],[5],
-  [Nancy Kalaj],[-],[-],[5],[-],[-],[-],[5],
-  [Matteo Rango],[-],[5],[-],[-],[-],[-],[5],
-  [Riccardo Toniolo],[5],[-],[-],[-],[-],[-],[5]
+  [Simone Caregnato],[-],[5],[5],[-],[-],[-],[10],
+  [Riccardo Alberto Costantin],[-],[-],[5],[-],[-],[5],[10],
+  [Giacomo D'Ovidio],[-],[-],[5],[-],[-],[5],[10],
+  [Nancy Kalaj],[5],[-],[5],[-],[-],[-],[10],
+  [Matteo Rango],[-],[5],[-],[-],[-],[5],[10],
+  [Riccardo Toniolo],[5],[-],[-],[-],[5],[-],[10]
 )
 === Prospetto economico
 In questo sprint, il costo per ogni ruolo sarà come da tabella:
@@ -21,11 +21,11 @@ In questo sprint, il costo per ogni ruolo sarà come da tabella:
   columns: (120pt,60pt,100pt),
   align: center,
   [*Ruolo*],[*Ore*],[*Costo*],
-  [Responsabile],[5],[#(Re_cost * 5)€],
-  [Amministratore],[5],[#(Am_cost * 5)€],
-  [Analista],[10],[#(An_cost * 10)€],
+  [Responsabile],[10],[#(Re_cost * 10)€],
+  [Amministratore],[10],[#(Am_cost * 10)€],
+  [Analista],[20],[#(An_cost * 20)€],
   [Progettista],[-],[-],
-  [Programmatore],[-],[-],
-  [Verificatore],[10],[#(Ve_cost * 10)€],
-  [*Totale*],[30],[650€]
+  [Programmatore],[5],[#(Pr_cost * 5)€],
+  [Verificatore],[15],[#(Ve_cost * 15)€],
+  [*Totale*],[60],[1300€]
 )
