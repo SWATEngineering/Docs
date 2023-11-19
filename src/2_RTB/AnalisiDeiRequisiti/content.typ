@@ -174,6 +174,25 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
     + L'utente modifica lo stato del sensore;
     + Il sistema registra le modifiche apportate allo stato del sensore.
 
+/ UC6 : - Visualizzazione dati in intervalli seleziati
+  - *Attore principale*: utente generico.
+  - *Precondizioni*: viene selezionato un sensore [UC4].
+  - *Postcondizioni*: il sistema mostra i dati storici relativi all'intervallo temporale selezionato.
+  - *Scenario Principale*:
+    + L'utente accede all'opzione per l'impostazione del periodo temporale per l'analisi storica;
+    + L'utente seleziona l'inizio e la fine del periodo desiderato per l'analisi;
+    + L'utente conferma le impostazioni per il periodo temporale.
+    + Il sistema mostra i dati relativi.
+  - *Scenari secondari*:
+     + L'utente accede all'opzione per l'impostazione del periodo temporale per l'analisi storica;
+     + L'utente seleziona una data non valida; 
+     + il sistema rifiuta l'input e fornisce un messaggio d'errore.
+  - *Estensioni*:
+       + visualizzazione dei dati storici del sensore [UC8].
+
+
+
+/*
 / UC6 : - Impostazione del periodo temporale 
   - *Attore principale*: utente generico.
   - *Precondizioni*: viene selezionato un sensore [UC4].
@@ -188,20 +207,22 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
      + il sistema rifiuta l'input e fornisce un messaggio d'errore.
   - *Estensioni*:
        + visualizzazione dei dati storici del sensore [UC8].
-       
-/*********************************************/
-/*viene rimosso in quanto presente come caso d'uso secondario del uc6*/
-/* UC7 :- Inserimento di date non valide */
-/*  - *Attore Principale*: utente generico.*/
-/*  - *Precondizioni*: viene selezionato un sensore per la visualizzazione dei dati storici e si è tentato di impostare un periodo temporale.*/
-/*  - *Postcondizioni*: l'utente è stato notificato riguardo all'inserimento di date non valide.*/
-/*  - *Scenario Principale*:*/
-/*    - L'utente:*/
-/*      + imposta un periodo temporale per visualizzare i dati storici del sensore [UC6];*/
-/*      + durante l'inserimento delle date, l'utente fornisce date non valide;*/
-/*      + il sistema notifica l'utente sull'errore riguardante le date non valide.*/
-/*************************************************************************************/
+*/     
 
+/*
+viene rimosso in quanto presente come caso d'uso secondario del uc6
+ UC7 :- Inserimento di date non valide 
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: viene selezionato un sensore per la visualizzazione dei dati storici e si è tentato di impostare un periodo temporale.
+  - *Postcondizioni*: l'utente è stato notificato riguardo all'inserimento di date non valide.
+  - *Scenario Principale*:
+    - L'utente:
+      + imposta un periodo temporale per visualizzare i dati storici del sensore [UC6];
+      + durante l'inserimento delle date, l'utente fornisce date non valide;
+      + il sistema notifica l'utente sull'errore riguardante le date non valide.
+*/
+
+/*
 / UC8 : - Visualizzazione dei dati storici di un sensore
   - *Attore Principale*: utente generico.
   - *Precondizioni*: la piattaforma ha archiviato e conservato dati storici dei sensori.
@@ -212,6 +233,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
       + imposta il periodo temporale desiderato per visualizzare i dati storici [UC6];
       + visualizza una tabella contenenti i dati storici del sensore selezionato.
   - *Estensioni*: l’utente visualizza i trend dei dati storici del sensore durante il periodo selezionato [UC12].
+*/
 
 / UC9 : - Allarmi e notifiche del sistema
   - *Attore Principale*: utente generico.
