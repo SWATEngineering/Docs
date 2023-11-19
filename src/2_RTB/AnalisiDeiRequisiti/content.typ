@@ -152,7 +152,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
     + i sensori sono inizialmente filtrati per tipologia in una visualizzazione tabellare, consentendo una rapida identificazione e analisi.
   - *Estensioni*: 
     + selezione un sensore [UC4];
-    + filtraggio dei sensori in base alle loro caratteristiche [UC15].
+    + filtraggio dei sensori in base alle loro caratteristiche [UC13].
 
 / UC4 : - Selezione di un sensore
   - *Attore Principale*: utente generico.
@@ -188,7 +188,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
      + L'utente seleziona una data non valida; 
      + il sistema rifiuta l'input e fornisce un messaggio d'errore.
   - *Estensioni*:
-       + visualizzazione dei dati storici del sensore [UC8].
+       + l'utente analizza i trend nel periodo selezionato[UC10]
 
 
 
@@ -232,10 +232,10 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
       + seleziona il sensore di interesse per l'analisi storica [UC4];
       + imposta il periodo temporale desiderato per visualizzare i dati storici [UC6];
       + visualizza una tabella contenenti i dati storici del sensore selezionato.
-  - *Estensioni*: l’utente visualizza i trend dei dati storici del sensore durante il periodo selezionato [UC12].
+  - *Estensioni*: l’utente visualizza i trend dei dati storici del sensore durante il periodo selezionato [UC10].
 */
 
-/ UC9 : - Allarmi e notifiche del sistema
+/ UC7 : - Allarmi e notifiche del sistema
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate.
   - *Postcondizioni*: l’utente viene notificato quando vengono attivati gli allarmi. Gli allarmi sono accompagnati da dati pertinenti e informazioni contestuali per ulteriore analisi. Gli allarmi sono accompagnati da dati pertinenti e informazioni contestuali per ulteriori azioni o analisi.
@@ -245,42 +245,42 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
       + quando viene rilevata un'anomalia, un evento critico o viene superata una soglia, il sistema attiva un allarme;
       + gli allarmi vengono inviati attraverso un canale designato (dashboard) all’utente.
   - *Generalizzazioni*:
-      - Allarmi per rilevazione anomalie [UC9.1]
-      - Allarmi per superamento soglie [UC9.2]
+      - Allarmi per rilevazione anomalie [UC7.1]
+      - Allarmi per superamento soglie [UC7.2]
 
-/ UC9.1 : - Allarmi per rilevazione anomalie
+/ UC7.1 : - Allarmi per rilevazione anomalie
   - *Attore Principale*: sistema.
-  - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate [UC9].
+  - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate [UC7].
   - *Postcondizioni*: l'utente viene notificato in modo appropriato quando vengono attivati gli allarmi per rilevazioni anomale.
   - *Scenario Principale*:
     - Il sistema:
       + analizza costantemente i dati provenienti dai sensori per rilevare deviazioni o pattern insoliti;
       + quando viene identificata un'anomalia significativa, il sistema genera automaticamente una notifica di allarme;
       + l'utente riceve le notifiche di allarme per le anomalie.
-  - *Estensioni*: il sistema registra e mantiene un log delle anomalie rilevate per analisi e archiviazione [UC10].
+  - *Estensioni*: il sistema registra e mantiene un log delle anomalie rilevate per analisi e archiviazione [UC8].
 
-/ UC9.2 : - Allarmi per superamento soglie
+/ UC7.2 : - Allarmi per superamento soglie
   - *Attore Principale*: utente generico.
-  - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate [UC9].
+  - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate [UC7].
   - *Postcondizioni*: l'utente viene notificato in modo appropriato quando vengono attivati gli allarmi per superamento delle soglie.
   - *Scenario Principale*:
     - L'utente:
       + imposta manualmente le soglie per i dati del sensore desiderato;
       + quando i dati del sensore superano le soglie predefinite, il sistema genera automaticamente una notifica di allarme;
       + l'utente riceve le notifiche di allarme per il superamento delle soglie e prende misure opportune di conseguenza.
-  - *Estensioni*: il sistema consente agli utenti di modificare o aggiornare le soglie in base alle esigenze in qualsiasi momento [UC11].
+  - *Estensioni*: il sistema consente agli utenti di modificare o aggiornare le soglie in base alle esigenze in qualsiasi momento [UC9].
 
-/ UC10 : - Archiviazione delle anomalie rilevate
+/ UC8 : - Archiviazione delle anomalie rilevate
   - *Attore Principale*: sistema.
   - *Precondizioni*: il sistema ha rilevato un'anomalia significativa.
   - *Postcondizioni*: l'anomalia rilevata è stata registrata e archiviata per futura analisi.
   - *Scenario Principale*:
     - Il sistema:
-      + rileva un'anomalia significativa durante l'analisi dei dati sensoriali [UC9.1];
+      + rileva un'anomalia significativa durante l'analisi dei dati sensoriali [UC7.1];
       + registra i dettagli dell'anomalia rilevata, inclusi dati, orario, tipo di anomalia e sensore coinvolto;
       + l'anomalia viene archiviata all'interno di un registro dedicato per le anomalie.
 
-/ UC11 : - Modifica delle soglie dei dati sensoriali
+/ UC9 : - Modifica delle soglie dei dati sensoriali
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sistema è operativo e l'utente ha accesso alle impostazioni delle soglie.
   - *Postcondizioni*: le soglie dei dati del sensore vengono modificate con successo.
@@ -290,7 +290,7 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
       + modifica manualmente i valori delle soglie per il sensore selezionato;
       + conferma le nuove impostazioni delle soglie per il sensore.
 
-/ UC12 : - Analisi dei trend
+/ UC10 : - Analisi dei trend
   - *Attore Principale*: utente generico.
   - *Precondizioni*: dati storici disponibili per il periodo specificato.
   - *Postcondizioni*: l'utente ottiene una rappresentazione visuale dei trend dei dati sensoriali durante il periodo selezionato.
@@ -299,7 +299,7 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
       + visualizza i dati storici del sensore di interesse [UC8];
       + visualizza grafici che evidenziano i trend dei dati sensoriali durante il periodo selezionato.
 
-/ UC13 : - Analisi avanzata dei sensori
+/ UC11 : - Analisi avanzata dei sensori
   - *Attore Principale*: utente generico.
   - *Precondizioni*: i dati sensoriali sono sufficientemente distribuiti per poter effettuare analisi significative.
   - *Postcondizioni*: l'utente ha analizzato e confrontato i dati tra sensori di diverse tipologie o tra celle della città, ottenendo visualizzazioni e statistiche dettagliate.
@@ -310,43 +310,43 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
       + configura i parametri dell’analisi desiderata;
       + il sistema elabora i dati e visualizza i risultati.
   - *Generalizzazioni*:
-    - Correlazione tra tipologie di sensori [UC13.1];
-    - Confronto tra celle della città [UC13.2].
+    - Correlazione tra tipologie di sensori [UC11.1];
+    - Confronto tra celle della città [UC11.2].
 
-/ UC13.1 : - Correlazione tra tipologie di sensori
+/ UC11.1 : - Correlazione tra tipologie di sensori
   - *Attore Principale*: utente generico.
   - *Precondizioni*: dati disponibili per i sensori selezionati. Almeno due tipi diversi di sensori attivi.
   - *Postcondizioni*: l'utente ottiene una visualizzazione dettagliata e comparativa dei dati tra due diverse tipologie di sensori.
   - *Scenario Principale*:
     - L'utente:
-      + accede all'area dedicata all'analisi avanzata dei sensori [UC13];
+      + accede all'area dedicata all'analisi avanzata dei sensori [UC11];
       + seleziona almeno due tipologie diverse di sensori tra quelle disponibili nell'area di analisi;
       + il sistema elabora i dati dei sensori selezionati e mostra una rappresentazione grafica comparativa.
   - *Estensioni*: il sistema consente all'utente di salvare i risultati dell'analisi per future consultazioni.
 
-/ UC13.2 : - Confronto tra celle della città
+/ UC11.2 : - Confronto tra celle della città
   - *Attore Principale*: utente generico.
   - *Precondizioni*: la piattaforma dispone dei dati sensoriali di almeno due celle della città.
   - *Postcondizioni*: l'utente ha accesso ai dati confrontati o alle statistiche relative alle celle selezionate.
   - *Scenario Principale*:
     - L'utente:
-      + accede all'area dedicata all'analisi avanzata dei sensori [UC13];
+      + accede all'area dedicata all'analisi avanzata dei sensori [UC11];
       + seleziona almeno due celle diverse tra quelle disponibili nell’area di analisi;
       + visualizza i dati o le statistiche comparate per le celle selezionate.
-  - *Estensioni*: se l'utente seleziona celle non comparabili, riceve una notifica di errore [UC14].
+  - *Estensioni*: se l'utente seleziona celle non comparabili, riceve una notifica di errore [UC12].
 
-/ UC14 : - Selezione di celle non comparabili
+/ UC12 : - Selezione di celle non comparabili
   - *Attore Principale*: utente generico.
   - *Precondizioni*: l’utente seleziona due celle diverse per effettuare un’analisi di confronto.
   - *Postcondizioni*: l’utente riceve una notifica riguardo alla selezione di celle non comparabili.
   - *Scenario Principale*:
     - L’utente:
-      + seleziona almeno due celle diverse per l’analisi comparativa [UC13.2];
+      + seleziona almeno due celle diverse per l’analisi comparativa [UC11.2];
       + il sistema esegue controlli sui dati disponibili all’interno delle celle selezionate per determinare la comparabilità;
       + una o entrambe le celle presentano una delle seguenti situazioni: viene rilevata un’insufficienza di dati per i tipi di sensori desiderati oppure una variazione significativa nei tipi di sensori presenti all’interno delle celle selezionate;
       + il sistema notifica l’utente riguardo alla presenza di celle non comparabili e fornisce dettagli sul motivo per cui non sono adatte per un confronto accurato.
 
-/ UC15 : - Filtraggio dei sensori
+/ UC13 : - Filtraggio dei sensori
   - *Attore Principale*: utente generico.
   - *Precondizioni*: la rete di sensori contiene almeno un sensore.
   - *Postcondizioni*: l'utente ha una visualizzazione dei sensori filtrati in base ai criteri selezionati.
@@ -362,7 +362,7 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
         - Codice di fabbrica.
       + applica i filtri e visualizza solo i sensori che soddisfano i criteri selezionati.
 
-/ UC16 : - Aggiunta di un sensore reale
+/ UC14 : - Aggiunta di un sensore reale
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sensore fisico è disponibile e pronto per l'installazione.
   - *Postcondizioni*: il nuovo sensore reale è stato correttamente aggiunto alla rete e i suoi dati sono ora disponibili nella piattaforma per l'analisi e la visualizzazione.
@@ -458,16 +458,16 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
   [ROF12], [UC6],
   [RDF13], [UC7],
   [ROF14], [UC8],
-  [RPF15], [UC9, UC9.1],
-  [ROF16], [UC10],
-  [RPF17], [UC9, UC9.2],
-  [RDF18], [UC11],
-  [ROF19], [UC12],
-  [RDF20], [UC13, UC13.1],
-  [RDF21], [UC13, UC13.2],
-  [RDF22], [UC14],
-  [ROF23], [UC15],
-  [RDF24], [UC16],
+  [RPF15], [UC7, UC7.1],
+  [ROF16], [UC8],
+  [RPF17], [UC7, UC7.2],
+  [RDF18], [UC9],
+  [ROF19], [UC10],
+  [RDF20], [UC11, UC11.1],
+  [RDF21], [UC11, UC11.2],
+  [RDF22], [UC12],
+  [ROF23], [UC13],
+  [RDF24], [UC14],
   [ROQ1], [Capitolato],
   [ROQ2], [Capitolato],
   [ROQ3], [Capitolato],
