@@ -173,6 +173,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
     + L'utente seleziona il sensore di cui desidera modificare lo stato[UC4];
     + L'utente modifica lo stato del sensore;
     + Il sistema registra le modifiche apportate allo stato del sensore.
+  
 
 / UC6 : - Visualizzazione dati in intervalli seleziati
   - *Attore principale*: utente generico.
@@ -238,36 +239,35 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
 / UC7 : - Allarmi e notifiche del sistema
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate.
-  - *Postcondizioni*: l’utente viene notificato quando vengono attivati gli allarmi. Gli allarmi sono accompagnati da dati pertinenti e informazioni contestuali per ulteriore analisi. Gli allarmi sono accompagnati da dati pertinenti e informazioni contestuali per ulteriori azioni o analisi.
+  - *Postcondizioni*: Il sistema notifica l'utente in caso di allarmi. La notifica comprende dati rilevanti e informazioni contestuali per consentire azioni o analisi    aggiuntive.
   - *Scenario Principale*:
-    - Il sistema:
-      + monitora continuamente i dati dei sensori;
-      + quando viene rilevata un'anomalia, un evento critico o viene superata una soglia, il sistema attiva un allarme;
-      + gli allarmi vengono inviati attraverso un canale designato (dashboard) all’utente.
+    + Il sistema monitora continuamente i dati dei sensori;
+    + quando viene rilevata un'anomalia, un evento critico o viene superata una soglia, il sistema attiva un allarme;
+    + l'allarme viene inviato attraverso un canale designato.
+    + l'utente visualizza l'allarme sulla dashboard.
   - *Generalizzazioni*:
       - Allarmi per rilevazione anomalie [UC7.1]
       - Allarmi per superamento soglie [UC7.2]
 
 / UC7.1 : - Allarmi per rilevazione anomalie
-  - *Attore Principale*: sistema.
-  - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate [UC7].
-  - *Postcondizioni*: l'utente viene notificato in modo appropriato quando vengono attivati gli allarmi per rilevazioni anomale.
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate.
+  - *Postcondizioni*: il sistema  notifica l'utente  in modo appropriato quando vengono attivati gli allarmi per rilevazioni anomale.
   - *Scenario Principale*:
-    - Il sistema:
-      + analizza costantemente i dati provenienti dai sensori per rilevare deviazioni o pattern insoliti;
-      + quando viene identificata un'anomalia significativa, il sistema genera automaticamente una notifica di allarme;
-      + l'utente riceve le notifiche di allarme per le anomalie.
+    + Il sistema analizza costantemente i dati provenienti dai sensori per rilevare deviazioni o pattern insoliti;
+    + quando viene identificata un'anomalia significativa, il sistema genera automaticamente una notifica di allarme;
+    + l'utente riceve le notifiche di allarme per le anomalie.
   - *Estensioni*: il sistema registra e mantiene un log delle anomalie rilevate per analisi e archiviazione [UC8].
 
 / UC7.2 : - Allarmi per superamento soglie
   - *Attore Principale*: utente generico.
-  - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate [UC7].
-  - *Postcondizioni*: l'utente viene notificato in modo appropriato quando vengono attivati gli allarmi per superamento delle soglie.
+  - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate.
+  - *Postcondizioni*: il sistema notifica l'utente in modo appropriato quando vengono attivati gli allarmi per superamento delle soglie.
   - *Scenario Principale*:
-    - L'utente:
-      + imposta manualmente le soglie per i dati del sensore desiderato;
-      + quando i dati del sensore superano le soglie predefinite, il sistema genera automaticamente una notifica di allarme;
-      + l'utente riceve le notifiche di allarme per il superamento delle soglie e prende misure opportune di conseguenza.
+    + L'utente imposta manualmente le soglie per i dati del sensore desiderato;
+    + quando i dati del sensore superano le soglie predefinite, il sistema genera automaticamente una notifica di allarme;
+    + l'utente riceve le notifiche di allarme per il superamento delle soglie
+    + l'utente prende misure opportune di conseguenza.
   - *Estensioni*: il sistema consente agli utenti di modificare o aggiornare le soglie in base alle esigenze in qualsiasi momento [UC9].
 
 / UC8 : - Archiviazione delle anomalie rilevate
