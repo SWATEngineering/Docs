@@ -307,15 +307,14 @@ UC8 : - Archiviazione delle anomalie rilevate
 */
 
 
-/ UC9 : - Modifica delle soglie dei dati sensoriali
+/ UC9 : - Modifica della soglia di rilevazione sensoriale
   - *Attore Principale*: utente generico.
-  - *Precondizioni*: il sistema è operativo e l'utente ha accesso alle impostazioni delle soglie.
-  - *Postcondizioni*: le soglie dei dati del sensore vengono modificate con successo.
+  - *Precondizioni*: il sistema è operativo.
+  - *Postcondizioni*: la soglia di rilevazione del sensore viene modificata con successo.
   - *Scenario Principale*:
-    - L'utente:
-      + seleziona il sensore per il quale desidera modificare le soglie;
-      + modifica manualmente i valori delle soglie per il sensore selezionato;
-      + conferma le nuove impostazioni delle soglie per il sensore.
+      + L'utente seleziona il sensore per il quale desidera modificare le soglia;
+      + L'Utente modifica manualmente i valori delle soglia;
+      + L'utente conferma le nuove impostazioni.
 
 / UC10 : - Analisi dei trend
   - *Attore Principale*: utente generico.
