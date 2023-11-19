@@ -177,16 +177,14 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
 
 / UC6 : - Impostazione del periodo temporale per visualizzare i dati storici
   - *Attore principale*: utente generico.
-  - *Precondizioni*: l'utente sta visualizzando i dati storici di un sensore.
-  - *Postcondizioni*: l'utente ha impostato con successo il periodo temporale per l'analisi dei dati storici.
+  - *Precondizioni*: vengono visualizzati i dati storici di un sensore.
+  - *Postcondizioni*:   il periodo temporale per l'analisi dei dati storici è stato impostato con successo.
   - *Scenario Principale*:
-    - L'utente:
-      + accede all'opzione per l'impostazione del periodo temporale per l'analisi storica;
+      + L'utente accede all'opzione per l'impostazione del periodo temporale per l'analisi storica;
       + seleziona l'inizio e la fine del periodo desiderato per l'analisi;
       + conferma le impostazioni per il periodo temporale.
   - *Estensioni*:
-    - L’utente:
-      + inserisce date non valide [UC7];
+      + inserimento date non valide [UC7];
       + visualizza i dati storici del sensore [UC8].
 
 / UC7 :- Inserimento di date non valide
