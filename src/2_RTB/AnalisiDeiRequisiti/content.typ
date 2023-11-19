@@ -184,7 +184,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
     + L'utente seleziona l'inizio e la fine del periodo desiderato per l'analisi;
     + L'utente conferma le impostazioni per il periodo temporale.
     + Il sistema mostra i dati relativi.
-  - *Scenari secondari*:
+  - *Scenari secondario*: 
      + L'utente accede all'opzione per l'impostazione del periodo temporale per l'analisi storica;
      + L'utente seleziona una data non valida; 
      + il sistema rifiuta l'input e fornisce un messaggio d'errore.
@@ -319,47 +319,50 @@ UC8 : - Archiviazione delle anomalie rilevate
 / UC10 : - Analisi dei trend
   - *Attore Principale*: utente generico.
   - *Precondizioni*: dati storici disponibili per il periodo specificato.
-  - *Postcondizioni*: l'utente ottiene una rappresentazione visuale dei trend dei dati sensoriali durante il periodo selezionato.
+  - *Postcondizioni*: il sistema mostra una rappresentazione visuale dei trend dei dati sensoriali durante il periodo selezionato.
   - *Scenario Principale*:
-    - L'utente:
-      + visualizza i dati storici del sensore di interesse [UC8];
-      + visualizza grafici che evidenziano i trend dei dati sensoriali durante il periodo selezionato.
+      + L'utente visualizza i dati storici del sensore di interesse [UC6];
+      + L'utente visualizza grafici che evidenziano i trend dei dati sensoriali durante il periodo selezionato.
+
+
 
 / UC11 : - Analisi avanzata dei sensori
   - *Attore Principale*: utente generico.
   - *Precondizioni*: i dati sensoriali sono sufficientemente distribuiti per poter effettuare analisi significative.
-  - *Postcondizioni*: l'utente ha analizzato e confrontato i dati tra sensori di diverse tipologie o tra celle della città, ottenendo visualizzazioni e statistiche dettagliate.
+  - *Postcondizioni*: il sistema ha analizzato e confrontato i dati tra sensori di diverse tipologie o tra celle della città, mostrando all'utente visualizzazioni e statistiche dettagliate.
   - *Scenario Principale*: 
-    - L’utente:
-      + accede all'area dedicata all'analisi avanzata dei sensori tramite la dashboard dell'applicazione;
-      + seleziona l’opzione per effettuare analisi avanzate tra sensori di tipologie diverse o per confrontare i dati di celle diverse della città;
-      + configura i parametri dell’analisi desiderata;
-      + il sistema elabora i dati e visualizza i risultati.
+    + L'utente accede dalla dashboard all'area dedicata all' analisi avanzata tra sensori.
+    + L'utente configura i parametri dell’analisi desiderata;
+    + Il sistema elabora i dati e visualizza i risultati.
   - *Generalizzazioni*:
     - Correlazione tra tipologie di sensori [UC11.1];
     - Confronto tra celle della città [UC11.2].
 
 / UC11.1 : - Correlazione tra tipologie di sensori
   - *Attore Principale*: utente generico.
-  - *Precondizioni*: dati disponibili per i sensori selezionati. Almeno due tipi diversi di sensori attivi.
-  - *Postcondizioni*: l'utente ottiene una visualizzazione dettagliata e comparativa dei dati tra due diverse tipologie di sensori.
+  - *Precondizioni*: i dati sono disponibili per i sensori che si vogliono analizzare. Almeno due tipi diversi di sensori attivi.
+  - *Postcondizioni*: il sistema mostra all'utente una visualizzazione dettagliata e comparativa dei dati tra due diverse tipologie di sensori.
   - *Scenario Principale*:
-    - L'utente:
-      + accede all'area dedicata all'analisi avanzata dei sensori [UC11];
-      + seleziona almeno due tipologie diverse di sensori tra quelle disponibili nell'area di analisi;
+      + L'utente accede dalla dashboard all'area dedicata all' analisi avanzata tra sensori;
+      + L'utente seleziona due tipologie diverse di sensori tra quelle disponibili nell'area di analisi;
       + il sistema elabora i dati dei sensori selezionati e mostra una rappresentazione grafica comparativa.
   - *Estensioni*: il sistema consente all'utente di salvare i risultati dell'analisi per future consultazioni.
 
 / UC11.2 : - Confronto tra celle della città
   - *Attore Principale*: utente generico.
   - *Precondizioni*: la piattaforma dispone dei dati sensoriali di almeno due celle della città.
-  - *Postcondizioni*: l'utente ha accesso ai dati confrontati o alle statistiche relative alle celle selezionate.
+  - *Postcondizioni*: il sistema mostra all'utente i dati confrontati e le statistiche relative alle celle selezionate.
   - *Scenario Principale*:
-    - L'utente:
-      + accede all'area dedicata all'analisi avanzata dei sensori [UC11];
-      + seleziona almeno due celle diverse tra quelle disponibili nell’area di analisi;
-      + visualizza i dati o le statistiche comparate per le celle selezionate.
-  - *Estensioni*: se l'utente seleziona celle non comparabili, riceve una notifica di errore [UC12].
+    + L'utente accede dalla dashboard all'area dedicata all' analisi avanzata tra sensori;
+    + L'utente seleziona due diverse celle di analisi; 
+    + il sistema elabora i dati o le statistiche comparate per le celle selezionate.
+  -*Scenario Secondario*: 
+    + L'utente accede dalla dashboard all'area dedicata all' analisi avanzata tra sensori;
+    + il sistema esegue controlli sui dati disponibili all’interno delle celle selezionate per determinare la comparabilità;
+    + le celle presentano una variazione significativa nei tipi di sensori presenti all’interno;
+    + il sistema notifica l’utente riguardo alla presenza di celle non comparabili e fornisce dettagli sul motivo per cui non sono adatte per un confronto accurato.
+/*
+- *Estensioni*: se l'utente seleziona celle non comparabili, riceve una notifica di errore [UC12].
 
 / UC12 : - Selezione di celle non comparabili
   - *Attore Principale*: utente generico.
@@ -371,6 +374,7 @@ UC8 : - Archiviazione delle anomalie rilevate
       + il sistema esegue controlli sui dati disponibili all’interno delle celle selezionate per determinare la comparabilità;
       + una o entrambe le celle presentano una delle seguenti situazioni: viene rilevata un’insufficienza di dati per i tipi di sensori desiderati oppure una variazione significativa nei tipi di sensori presenti all’interno delle celle selezionate;
       + il sistema notifica l’utente riguardo alla presenza di celle non comparabili e fornisce dettagli sul motivo per cui non sono adatte per un confronto accurato.
+*/
 
 / UC13 : - Filtraggio dei sensori
   - *Attore Principale*: utente generico.
@@ -388,7 +392,7 @@ UC8 : - Archiviazione delle anomalie rilevate
         - Codice di fabbrica.
       + applica i filtri e visualizza solo i sensori che soddisfano i criteri selezionati.
 
-/ UC14 : - Aggiunta di un sensore reale
+/ UC15 : - Aggiunta di un sensore reale
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sensore fisico è disponibile e pronto per l'installazione.
   - *Postcondizioni*: il nuovo sensore reale è stato correttamente aggiunto alla rete e i suoi dati sono ora disponibili nella piattaforma per l'analisi e la visualizzazione.
