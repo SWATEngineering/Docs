@@ -38,7 +38,7 @@ Questa aggiunta di dettagli sul ruolo del responsabile è stata ritenuta necessa
 == Cambiamento dei ruoli straordinaro
 
 È stato ritenuto necessario un cambiamento dei ruoli per via dei seguenti motivi:
-- La proponente ha suggerito la stesura del _Proof of Concept_ in contemporanea alla definizione dell'analisi dei requisiti e non era stata prevista la figura del progettista nello sprint attuale;
+- La proponente ha suggerito la stesura del _Proof of Concept_ in contemporanea alla definizione dell'analisi dei requisiti e non era stata prevista la figura del programmatore nello sprint attuale;
 - Si ritiene che un verificatore sia più che sufficiente per lo sprint attuale. Le motivazioni a riguardo sono:
   - Quantità limitata di documenti da verificare;
   - Semplicità organizzativa. Con un numero ridotto di documenti, la gestione delle attività di verifica risulta semplificata. Un solo verificatore può concentrarsi sull'assicurare che i pochi documenti prodotti rispettino gli standard stabiliti.
@@ -50,7 +50,7 @@ La nuova assegnazione dei ruoli è la seguente:
 - *Giacomo D'Ovidio*: Analista;
 - *Nancy Kalaj*: Responsabile;
 - *Matteo Rango*: Verificatore;
-- *Riccardo Toniolo*: Progettista.
+- *Riccardo Toniolo*: Programmatore.
 
 Si vuole comunque ribadire che d'ora in poi il team si impegnerà a mantenere la suddivisione dei ruoli per l'intera durata dello sprint, facendo maggiore attenzione a questo aspetto durante il planning.
 
