@@ -37,8 +37,8 @@ L'obbiettivo consiste nella creazione di una piattaforma di monitoraggio e gesti
 
 == Funzionalità del prodotto
 Il prodotto si compone di due parti principali:
--*Un simulatore* che genera dati il più verosimili possibile, cercando di riflettere con precisione le caratteristiche tipiche dei dati di diverse tipologie. Ad esempio, un    #glossary("sensore") di temperatura potrebbe essere modellato per produrre dati che seguano fedelmente un andamento simile a una sinusoide, per avvicinarsi il più possibile alle variazioni reali della temperatura.
-  - I dati vengono inviati ad un sistema di stream processing che permetta di disaccoppiare lo stream di informazioni raccolto in #glossary("real-time"), e successivamente essere archiviati in un database OLAP.
+- *Un simulatore* che genera dati il più verosimili possibile, cercando di riflettere con precisione le caratteristiche tipiche dei dati di diverse tipologie. Ad esempio, un    #glossary("sensore") di temperatura potrebbe essere modellato per produrre dati che seguano fedelmente un andamento simile a una sinusoide, per avvicinarsi il più possibile alle variazioni reali della temperatura.
+- I dati vengono inviati ad un sistema di stream processing che permetta di disaccoppiare lo stream di informazioni raccolto in #glossary("real-time"), e successivamente essere archiviati in un database OLAP.
 - *Una dashboard* che permette di visualizzare i dati accumulati, sottoforma di grafici.
 
 La piattaforma prevede fondamentalmente una tipologia di utente: l'amministratore pubblico. Questo utente avrà accesso alla dashboard e visualizzerà il sommario di diverse metriche e indicatori sullo stato della città, sottoforma di grafici.
@@ -56,7 +56,7 @@ Il prodotto è destinato ad amministratori pubblici, consentendo loro di ottener
 = Casi d'uso
 == Scopo
 In questa sezione si vogliono elencare e descrivere tutti i casi d'uso individuati dall'analisi effettuata dal gruppo, basandosi sul capitolato e sulle interazioni con la Proponente. In particolare, si individuano gli #glossary("attori") e le funzionalità che questi possono svolgere. Ogni caso d'uso possiede un codice, la cui struttura è descritta nelle Norme di Progetto.
-e
+
 == Attori
 L'applicativo si interfaccerà con un solo tipo di attore:
 - *Utente generico*: è un utente che ha accesso alla dashboard in tutte le sue funzionalità e può visualizzare i dati raccolti dai sensori.
@@ -162,7 +162,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
     + L'utente interagisce con la mappa [UC1.1, UC2.1] o, in alternativa, visualizza il registro di sensori [UC3] e seleziona un sensore specifico;
     + il sistema mostra i dettagli del sensore selezionato.
    - *Estensioni*: 
-    + modifica dello stato del sensore selezionato[UC5];
+    + modifica dello stato del sensore selezionato [UC5];
     + impostazione del periodo temporale al fine visualizzare i dati storici relativi a quel periodo e al sensore selezionato sensore selezionato [UC6].
 
 / UC5 : - Modifica dello #glossary("stato di un sensore")
@@ -170,7 +170,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
   - *Precondizioni*: il sensore è già registrato nella piattaforma.
   - *Postcondizioni*: le modifiche apportate allo stato del sensore sono state applicate con successo e il sensore riflette le nuove informazioni nello stato operativo.
   - *Scenario Principale*:
-    + L'utente seleziona il sensore di cui desidera modificare lo stato[UC4];
+    + L'utente seleziona il sensore di cui desidera modificare lo stato [UC4];
     + L'utente modifica lo stato del sensore;
     + Il sistema registra le modifiche apportate allo stato del sensore.
   
@@ -189,7 +189,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
      + L'utente seleziona una data non valida; 
      + il sistema rifiuta l'input e fornisce un messaggio d'errore.
   - *Estensioni*:
-       + l'utente analizza i trend nel periodo selezionato[UC10]
+       + l'utente analizza i trend nel periodo selezionato [UC10]
 
 
 
@@ -460,7 +460,7 @@ UC8 : - Archiviazione delle anomalie rilevate
   [*ROV4*],[Obbligatorio],[I dati vanno passati ad un sistema di stream processing],
   [*ROV5*],[Obbligatorio],[Una dashboard che riporti almeno i dati di un sensore],
   [*RDV6*],[Desiderabile],[La simulazione di più sorgenti dati],
-  [*RPV7*],[Opzionale],[L'evidenziazione di relazioni tra dati provenienti da sorgenti diverse],
+  [*RPV7*],[Opzionale],[Messa in evidenza di relazioni tra dati provenienti da sorgenti diverse],
   [*RPV8*],[Opzionale],[Un sistema di allerta che notifichi l'utente in caso di anomalie o eventi critici],
   [*RPV9*],[Opzionale],[La previsione di eventi futuri, basata su dati storici e attuali],
   [*RDV10*],[Desiderabile],[Una dashboard avanzata contenente: una mappa della città, widget e informazioni sui sensori (ad esempio il tipo di sensore, il modello, ecc.).]
@@ -518,7 +518,7 @@ UC8 : - Archiviazione delle anomalie rilevate
   inset: 10pt,
   align: horizon,
   [*Tipologia*], [*Obbligatori*], [*Desiderabili*], [*Opzionali*], [*Totale*],
-  [funzionali], [11], [4], [3], [18],
+  [funzionali], [16], [8], [0], [24],
   [di qualità], [4], [0], [0], [4],
   [di vincolo], [5], [3], [2], [10]
 )
