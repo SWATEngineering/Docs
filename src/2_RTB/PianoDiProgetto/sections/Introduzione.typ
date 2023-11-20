@@ -1,18 +1,17 @@
 = Introduzione
 == Scopo del documento
-Questo documento ha lo scopo di stabilire con chiarezza le modalità con la quale verranno eseguite le attività dai membri del gruppo _SWAT Engineering_. In parrticolare verranno trattati i seguenti temi:
+Questo documento ha lo scopo di stabilire con chiarezza le modalità con la quale verranno eseguite le attività dai membri del gruppo _SWAT Engineering_. In particolare verranno trattati i seguenti temi:
 - Analisi dei rischi;
 - Organizzazione temporale delle attività;
 - Ripartizione dei compiti tra i componenti del gruppo;
 - Stima dei costi e delle risorse delle varie iterazioni.
 
 == Scopo del prodotto
-Lo scopo è realizzare una _data pipeline#sub[G]_, che partendo dalla generazione di dati proveniente da dei sensori simulati, sia in grado di gestire, immagazzinare, analizzare e mostrare il flusso dati in tempo reale.
+Lo scopo è realizzare una _data pipeline#sub[G]_ che, partendo dalla generazione di dati proveniente da dei sensori simulati, sia in grado di gestire, immagazzinare, analizzare e mostrare il flusso dati in tempo reale.
 I sensori andranno a simulare il campionamento di alcune proprietà registrate dalla città, come temperatura, vento, traffico, e simili.
 
 == Glossario
-Per evitare un'interpretazione ambigua dei termini utilizzati nei documenti redatti, viene fornito in allegato anche il _Glossario_ dove vengono definiti tutti i termini con significati particolari.
-I termini ritrovabili nel _Glossario_ sono contrassegnati nei vari documenti dal corsivo e da una 'G' al pedice della parola.
+Al fine di evitare possibili ambiguità relative al linguaggio utilizzato nei documenti, viene fornito il Glossario, nel quale sono presenti tutte le definizioni di termini aventi uno specifico significato che vuole essere chiarito. Tali termini, sono scritti in corsivo e marcati con una G a pedice.
 
 == Riferimenti
 === Normativi
