@@ -144,6 +144,10 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
   
 
 / UC3 : - Visualizzazione del registro dei sensori
+#figure(
+  image("assets/uc3.png", height:24%),
+  caption: [visualizzazione registro sensori]
+)
   - *Attore Principale*: utente generico.
   - *Precondizioni*: almeno un sensore è attivo.
   - *Postcondizioni*: il sistema mostra un elenco organizzato contenente le informazione relative a tutti i sensori installati. 
@@ -155,6 +159,10 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
     + filtraggio dei sensori in base alle loro caratteristiche [UC13].
 
 / UC4 : - Selezione di un sensore
+#figure(
+  image("assets/uc4.png", height:24%),
+  caption: [Selezione sensore]
+)
   - *Attore Principale*: utente generico.
   - *Precondizioni*: almeno un sensore è attivo e trasmette dati.
   - *Postcondizioni*: vengono mostrate le informazioni relative al sensore selezionato e relativi dati storici.
