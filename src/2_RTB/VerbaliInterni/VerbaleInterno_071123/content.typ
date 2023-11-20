@@ -25,7 +25,7 @@ Su proposta dei componenti è stata assegnata questa prima distribuzione dei ruo
 Per il momento i ruoli di Progettista e Programmatore non sono stati assegnati, in quanto per il momento hanno operatività limitata.
 
 == Verbali degli Stand-Up
-Data l'importanza di registrare le decisioni prese durante gli incontri, si è sollevato il dibattito sulla necessità di verbalizzare gli Stand-Up. La decisione è stata quella di verbalizzare esclusivamente gli incontri Stand-Up in cui si affrontano decisioni di particolare rilevanza. Si è concordato che, per prendere una decisione, è necessaria la presenza di almeno 4 membri del team. Pertanto, saranno documentati soltanto gli Stand-Up che coinvolgono almeno 4 componenti, assicurando così la registrazione delle decisioni più significative. Questa prassi dovrà essere aggiunta alle NdP e il compito è stato assegnato a Matteo Rango.
+Data l'importanza di registrare le decisioni prese durante gli incontri, si è sollevato il dibattito sulla necessità di verbalizzare gli Stand-Up. La decisione è stata quella di verbalizzare esclusivamente gli incontri Stand-Up in cui si affrontano decisioni di particolare rilevanza. Si è concordato che, per prendere una decisione, è necessaria la presenza di almeno 4 membri del team. Pertanto, saranno documentati soltanto gli Stand-Up che coinvolgono almeno 4 componenti, assicurando così la registrazione delle decisioni più significative. Questa prassi dovrà essere aggiunta alle NdP (Note di Progetto) e il compito è stato assegnato a Matteo Rango.
 
 #pagebreak()
 
@@ -33,7 +33,7 @@ Data l'importanza di registrare le decisioni prese durante gli incontri, si è s
 Per quanto riguarda questo aspetto, abbiamo optato per la suddivisione in due repository distinte: una dedicata al codice, denominata _InnovaCity_, e un'altra per la documentazione, chiamata _Docs_. Questa scelta mira a semplificare la gestione complessiva del progetto e a evitare dispersione all'interno di una singola repository.
 
 == Presentazione del prossimo diario di bordo
-Riccardo Toniolo, nel ruolo di responsabile, si occupa della redazione e della presentazione del prossimo (Diario Di Bordo) in data 13/11/2023.
+Riccardo Toniolo, nel ruolo di responsabile, si occupa della redazione e della presentazione del prossimo DDB (Diario Di Bordo) in data 13/11/2023.
 
 == Corrispondenza con Sync Lab
 A seguito dell'assegnazione del capitolato, si è deciso di contattare l'azienda Sync Lab per chiedere un incontro organizzativo e di chiarimento. L'azienda ha risposto positivamente alla richiesta e ha proposto un incontro in data 10/11/2023 alle ore 10:30. L'incontro si terrà in modalità remota tramite la piattaforma _Google Meet_.
@@ -42,7 +42,7 @@ A seguito dell'assegnazione del capitolato, si è deciso di contattare l'azienda
 Si è deciso di modificare il versionamento del progetto, in risposta ai suggerimenti del committente. Il nuovo versionamento avrà la forma X.Y, dove:
 - X viene cambiato una volta che il documento è pronto per la revisione di avanzamento;
 - Y viene cambiato ad ogni modifica successiva apportata dai redattori.
-La responsabilità della modifica della sezione Versionamento nelle NdP (Note di Progetto) è stata assegnata a Matteo Rango.
+La responsabilità della modifica della sezione Versionamento nelle NdP è stata assegnata a Matteo Rango.
 
 == Modifica dei nomi dei documenti
 In seguito ai suggerimenti del committente, si è deciso di modificare i nomi dei documenti, in modo che contengano la versione attuale. Inoltre, sempre sotto suggerimento del committente, verranno rimosse, dalle tabelle change log, le entry relative alle revisioni.
