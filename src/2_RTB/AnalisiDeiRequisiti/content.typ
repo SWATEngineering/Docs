@@ -245,6 +245,10 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
 */
 
 / UC7 : - Allarmi  del sistema
+#figure(
+  image("assets/uc7.png", height:24%),
+  caption: [Visualizzazione allarmi]
+)
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate.
   - *Postcondizioni*: Il sistema notifica l'utente in caso di allarmi. La notifica comprende dati rilevanti e informazioni contestuali per consentire azioni o analisi    aggiuntive.
