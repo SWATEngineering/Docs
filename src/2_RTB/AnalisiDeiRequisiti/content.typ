@@ -69,15 +69,12 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
 )
 
 #figure(
-  image("assets/USECASES.png",height:24%),
-  caption: [Prova]
+  image("assets/USECASES.png",width:130%),
+  caption: [USECASE]
 )
 
 / UC1 : - Visualizzazione della Dashboard. 
-#figure(
-  image("assets/uc1.png",height: 12%),
-  caption: [UC1]
-)
+
   - *Attore Principale*: utente generico.
   - *Precondizioni*: almeno uno dei sensori è attivo e trasmette dati.
   - *Postcondizioni*: la dashboard mostra un'istantanea chiara e aggiornata dello stato generale della città attraverso dati e informazioni.
@@ -87,10 +84,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
   - *Generalizzazioni*:
     - Visualizzazione della mappa della città [UC1.1]
     - Visualizzazione di indicatori numerici [UC1.2]
-#figure(
-  image("assets/uc2.png", height:24%),
-  caption: [visualizzazione mappa e indicatori]
-)
+
 / UC1.1 : - Visualizzazione della mappa della città 
   - *Attore Principale*: utente generico.
   - *Precondizioni*: almeno uno dei sensori è attivo e trasmette dati.
@@ -149,10 +143,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
   
 
 / UC3 : - Visualizzazione del registro dei sensori
-#figure(
-  image("assets/uc3.png", height:24%),
-  caption: [visualizzazione registro sensori]
-)
+
   - *Attore Principale*: utente generico.
   - *Precondizioni*: almeno un sensore è attivo.
   - *Postcondizioni*: il sistema mostra un elenco organizzato contenente le informazione relative a tutti i sensori installati. 
@@ -164,10 +155,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
     + filtraggio dei sensori in base alle loro caratteristiche [UC13].
 
 / UC4 : - Selezione di un sensore
-#figure(
-  image("assets/uc4.png", height:24%),
-  caption: [Selezione sensore]
-)
+
   - *Attore Principale*: utente generico.
   - *Precondizioni*: almeno un sensore è attivo e trasmette dati.
   - *Postcondizioni*: vengono mostrate le informazioni relative al sensore selezionato e relativi dati storici.
@@ -253,10 +241,7 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
 */
 
 / UC7 : - Allarmi  del sistema
-#figure(
-  image("assets/uc7.png", height:24%),
-  caption: [Visualizzazione allarmi]
-)
+
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate.
   - *Postcondizioni*: Il sistema notifica l'utente in caso di allarmi. La notifica comprende dati rilevanti e informazioni contestuali per consentire azioni o analisi    aggiuntive.
