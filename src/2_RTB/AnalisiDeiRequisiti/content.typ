@@ -81,7 +81,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
   - *Scenario Principale*:
     + l'utente accede alla Dashboard; 
     + il sistema elabora i dati provenienti dai sensori e li visualizza istantaneamente sulla dashboard.
-  - *Generalizzazioni*:
+  - *Specializzazioni*:
     - Visualizzazione della mappa della città [UC1.1]
     - Visualizzazione di indicatori numerici [UC1.2]
 
@@ -118,7 +118,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
     + l'utente visualizza la mappa della città [UC1.1];
     + l'utente seleziona una cella specifica;
     + il sistema mostra i #glossary("dati aggregati") provenienti dai sensori e dai dispositivi all'interno della cella selezionata sulla dashboard.
-  - *Generalizzazioni*:
+  - *Specializzazioni*:
     - Visualizzazione della mappa della cella [UC2.1]
     - Visualizzazione di indicatori numerici della cella [UC2.2]
 
@@ -250,7 +250,7 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
     + quando viene rilevata un'anomalia, un evento critico o viene superata una soglia, il sistema attiva un allarme;
     + l'allarme viene inviato attraverso un canale designato.
     + l'utente visualizza l'allarme sulla dashboard.
-  - *Generalizzazioni*:
+  - *Specializzazioni*:
       - Allarmi per rilevazione anomalie [UC7.1]
       - Allarmi per superamento soglie [UC7.2]
 
@@ -339,7 +339,7 @@ UC8 : - Archiviazione delle anomalie rilevate
     + L'utente accede dalla dashboard all'area dedicata all' analisi avanzata tra sensori.
     + L'utente configura i parametri dell’analisi desiderata;
     + Il sistema elabora i dati e visualizza i risultati.
-  - *Generalizzazioni*:
+  - *Specializzazioni*:
     - Correlazione tra tipologie di sensori [UC11.1];
     - Confronto tra celle della città [UC11.2].
 
