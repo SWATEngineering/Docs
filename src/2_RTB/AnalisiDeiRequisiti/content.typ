@@ -69,7 +69,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
 )
 
 #figure(
-  image("assets/USERCASE.png",height:24%),
+  image("assets/USECASES.png",height:24%),
   caption: [Prova]
 )
 
