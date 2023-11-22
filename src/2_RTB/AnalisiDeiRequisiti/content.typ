@@ -68,6 +68,11 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
   caption: [Gerarchia degli attori]
 )
 
+#figure(
+  image("assets/USERCASE.png",height:24%),
+  caption: [Prova]
+)
+
 / UC1 : - Visualizzazione della Dashboard. 
 #figure(
   image("assets/uc1.png",height: 12%),
@@ -172,6 +177,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
    - *Estensioni*: 
     + modifica dello stato del sensore selezionato [UC5];
     + impostazione del periodo temporale al fine visualizzare i dati storici relativi a quel periodo e al sensore selezionato sensore selezionato [UC6].
+    + il sistema consente agli utenti di modificare o aggiornare le soglie in base alle esigenze in qualsiasi momento. [UC9]
 
 / UC5 : - Modifica dello #glossary("stato di un sensore")
   - *Attore Principale*: utente generico.
@@ -182,8 +188,10 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
     + L'utente modifica lo stato del sensore;
     + Il sistema registra le modifiche apportate allo stato del sensore.
   
+    
+  
 
-/ UC6 : - Visualizzazione dati in intervalli seleziati
+/ UC6 : - Visualizzazione dati in intervalli selezionati
   - *Attore principale*: utente generico.
   - *Precondizioni*: viene selezionato un sensore [UC4].
   - *Postcondizioni*: il sistema mostra i dati storici relativi all'intervallo temporale selezionato.
@@ -293,7 +301,7 @@ UC7.1 : - Allarmi per rilevazione anomalie
     + quando i dati del sensore superano le soglie predefinite, il sistema genera automaticamente una notifica di allarme;
     + l'utente riceve le notifiche di allarme per il superamento delle soglie
     + l'utente prende misure opportune di conseguenza.
-  - *Estensioni*: il sistema consente agli utenti di modificare o aggiornare le soglie in base alle esigenze in qualsiasi momento [UC9].
+  
 
 / UC8 : - Accesso all'archivio delle anomalie rilevate
   - *Attore Principale*: utente generico.
@@ -358,7 +366,7 @@ UC8 : - Archiviazione delle anomalie rilevate
       + L'utente accede dalla dashboard all'area dedicata all' analisi avanzata tra sensori;
       + L'utente seleziona due tipologie diverse di sensori tra quelle disponibili nell'area di analisi;
       + il sistema elabora i dati dei sensori selezionati e mostra una rappresentazione grafica comparativa.
-  - *Estensioni*: il sistema consente all'utente di salvare i risultati dell'analisi per future consultazioni.
+  /*- *Estensioni*: il sistema consente all'utente di salvare i risultati dell'analisi per future consultazioni.*/
 
 / UC11.2 : - Confronto tra celle della città
   - *Attore Principale*: utente generico.
@@ -388,7 +396,7 @@ UC8 : - Archiviazione delle anomalie rilevate
       + il sistema notifica l’utente riguardo alla presenza di celle non comparabili e fornisce dettagli sul motivo per cui non sono adatte per un confronto accurato.
 */
 
-/ UC13 : - Filtraggio dei sensori
+/ UC12 : - Filtraggio dei sensori
   - *Attore Principale*: utente generico.
   - *Precondizioni*: è attivo almeno un sensore.
   - *Postcondizioni*: il sistema mostra all'utente una visualizzazione dei sensori filtrati in base ai criteri selezionati.
@@ -402,7 +410,7 @@ UC8 : - Archiviazione delle anomalie rilevate
         - Cella di appartenenza;
         - Codice di fabbrica.
     + il sistema applica i filtri e mostra all'utente solo i sensori che soddisfino i criteri selezionati.
-
+/*
 / UC14 : - Aggiunta di un sensore reale
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sensore fisico è disponibile e pronto per l'installazione.
@@ -413,6 +421,7 @@ UC8 : - Archiviazione delle anomalie rilevate
       + registra il nuovo sensore specificando le informazioni necessarie;
       + il sistema verifica e riconosce il nuovo sensore nella rete.
   - *Estensioni*: se il sistema non riesce a riconoscere o integrare correttamente il nuovo sensore, l'utente riceve una notifica di errore.
+  */
 /* Bisogna capire se tenere la UC14 */
 = Requisiti
 

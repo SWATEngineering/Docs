@@ -12,8 +12,8 @@ skinparam actor {
 
 skinparam usecase{
   
-  FontSize 14
-  FontStyle bold
+  FontSize 18
+  
   BorderStyle solid
   BorderThickness 2
 }
@@ -27,26 +27,26 @@ skinparam rectangle {
 actor amministratorepubblico as "Amministratore pubblico" #FFE600
 
 rectangle "System" {
-  usecase "UC1.1: Visualizzazione della \n mappa della città" as UC1.1
-  usecase "UC1.2: Visualizzazione di \n indicatori numerici" as UC1.2
-  usecase "UC1: Visualizzazione della \n Dashboard" as UC1
-  usecase "UC2.1: Visualizzazione della \n mappa della cella" as UC2.1
-  usecase "UC2.2: Visualizzazione di \n indicatori numerici della cella" as UC2.2
-  usecase "UC2: Visualizzazione dello \n stato di una cella" as UC2
-  usecase "UC3: Visualizzazione del \n registro dei sensori" as UC3
-  usecase "UC4: Selezione di \n un sensore" as UC4
-  usecase "UC5: Modifica dello \n stato di un sensore" as UC5
-  usecase "UC6: Visualizzazione dati \n in intervalli selezionati" as UC6
-  usecase "UC7: Allarmi del sistema" as UC7
-  usecase "UC7.1: Allarmi per \n rilevazione anomalie" as UC7.1
-  usecase "UC7.2: Allarmi per \n superamento soglie" as UC7.2
-  usecase "UC8: Accesso all'archivio \n delle anomalie rilevate" as UC8
-  usecase "UC9: Modifica della soglia \n di rilevazione sensoriale" as UC9
-  usecase "UC10: Analisi dei trend" as UC10
-  usecase "UC11: Analisi avanzata \n dei sensori" as UC11
-  usecase "UC11.1: Correlazione tra \n tipologie di sensori" as UC11.1
-  usecase "UC11.2: Confronto tra \n celle della città" as UC11.2
-  usecase "UC12: Filtraggio \n dei sensori" as UC12
+  usecase "UC1.1:\n Visualizzazione della \n mappa della città" as UC1.1
+  usecase "UC1.2:\n Visualizzazione di \n indicatori numerici" as UC1.2
+  usecase "UC1:\n Visualizzazione della \n Dashboard" as UC1
+  usecase "UC2.1:\n Visualizzazione della \n mappa della cella" as UC2.1
+  usecase "UC2.2:\n Visualizzazione di \n indicatori numerici\n della cella" as UC2.2
+  usecase "UC2:\n Visualizzazione dello \n stato di una cella" as UC2
+  usecase "UC3:\n Visualizzazione del \n registro dei sensori" as UC3
+  usecase "UC4:\n Selezione di \n un sensore" as UC4
+  usecase "UC5:\n Modifica dello \n stato di un sensore" as UC5
+  usecase "UC6:\n Visualizzazione dati \n in intervalli selezionati" as UC6
+  usecase "UC7:\n Allarmi del sistema" as UC7
+  usecase "UC7.1:\n Allarmi per \n rilevazione anomalie" as UC7.1
+  usecase "UC7.2:\n Allarmi per \n superamento soglie" as UC7.2
+  usecase "UC8:\n Accesso all'archivio \n delle anomalie rilevate" as UC8
+  usecase "UC9:\n Modifica della soglia \n di rilevazione sensoriale" as UC9
+  usecase "UC10:\n Analisi dei trend" as UC10
+  usecase "UC11:\n Analisi avanzata \n dei sensori" as UC11
+  usecase "UC11.1:\n Correlazione tra \n tipologie di sensori" as UC11.1
+  usecase "UC11.2:\n Confronto tra \n celle della città" as UC11.2
+  usecase "UC12:\n Filtraggio \n dei sensori" as UC12
  
 
   amministratorepubblico - UC1
@@ -58,12 +58,13 @@ rectangle "System" {
   UC2 <|- UC2.2
   UC4 .up.> UC2.2 :<<extend>>
   UC4 .up.> UC3 :<<extend>>
+  UC9 .up.> UC4 :<<extend>>
   UC12 .up.> UC3 :<<extend>>
   UC5 .up.> UC4 :<<extend>>
   UC6 .up.> UC4 :<<extend>>
   UC10 .up.> UC6 :<<extend>>
   amministratorepubblico - UC7
-  amministratorepubblico - UC9
+  
   amministratorepubblico - UC8
   amministratorepubblico - UC11
   UC7 <|--- UC7.2
