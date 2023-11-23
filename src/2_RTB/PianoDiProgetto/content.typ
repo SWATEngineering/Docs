@@ -1,5 +1,3 @@
-#import "functions.typ": glossary, team
-
 /*************************************/
 /*    INSERIRE SOTTO IL CONTENUTO    */ 
 /*************************************/

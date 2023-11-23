@@ -1,5 +1,7 @@
+#import "../functions.typ": glossary, team
+
 = Analisi dei rischi
-L'attività di analisi dei rischi mira a anticipare possibili situazioni avverse che potrebbero emergere durante l'iter del progetto. Questa pratica consiste nel riconoscere, comprendere e classificare tali rischi in base alla loro probabilità di occorrenza e all'impatto sullo sviluppo del lavoro, cercando, nel contempo, soluzioni preventive per mitigarne gli effetti dannosi. L'analisi dettagliata dei rischi è orientata a ottimizzare il progresso del progetto, consentendo di individuare nuove situazioni critiche e perfezionare le strategie atte a minimizzarne gli impatti, mediante un costante monitoraggio. Nei seguenti schemi tabellari, sono presentati i rischi identificati attraverso un processo di valutazione strutturato, che consente di evidenziare le fasi di individuazione, valutazione e prevenzione di tali rischi.
+L'attività di analisi dei rischi mira a anticipare possibili situazioni avverse che potrebbero emergere durante l'iter del progetto. Questa pratica consiste nel riconoscere, comprendere e classificare tali rischi in base alla loro probabilità di occorrenza e all'impatto sullo sviluppo del lavoro, cercando, nel contempo, soluzioni preventive per mitigarne gli effetti dannosi. L'analisi dettagliata dei rischi è orientata a ottimizzare il progresso del progetto, consentendo di individuare nuove situazioni critiche e perfezionare le strategie atte a minimizzarne gli impatti, mediante un costante monitoraggio. Di seguito vengono presentati i rischi identificati attraverso un processo di valutazione strutturato, che consente di evidenziare le fasi di individuazione, valutazione e prevenzione di tali rischi:
 
 
   - *Identificazione*: coinvolge il riconoscimento e l'enumerazione delle possibili situazioni sfavorevoli che potrebbero verificarsi durante il progetto. È il processo di individuare e catalogare in modo esauriente tutti i possibili elementi che potrebbero rappresentare una minaccia;
@@ -19,11 +21,11 @@ La mancanza di familiarità o esperienza con le tecnologie specifiche impiegate 
   - *Valutazione*: Pericolosità: alta; Occorrenza: alta.
   - *Prevenzione*:
     - Formazione da parte della Proponente: la Proponente organizza incontri periodici di formazione focalizzati sulle tecnologie specifiche utilizzate nel progetto, offrendo così al team la possibilità di colmare le lacune e approfondire le conoscenze;
-    - Workshop interni: il team organizza workshop interni guidati dai membri più esperti su determinate tecnologie, consentendo loro di condividere conoscenze e esperienze con gli altri membri del team e favorendo l'apprendimento reciproco;
+    - #glossary("Workshop") interni: il team organizza workshop interni guidati dai membri più esperti su determinate tecnologie, consentendo loro di condividere conoscenze e esperienze con gli altri membri del team e favorendo l'apprendimento reciproco;
     - Lavoro in coppia: durante le fasi in cui lo sviluppo di codice richiede un contributo più rilevante, il team adotterà un approccio di lavoro in coppia. Questa pratica consentirà ai membri del team di condividere conoscenze e competenze, aiutandosi reciprocamente a superare le lacune individuali nelle conoscenze tecnologiche.
 
 === *RT2 - Difficoltà nell'adozione degli strumenti di gestione del progetto*
-Il team potrebbe incontrare sfide nell'apprendere l'utilizzo e nell'integrazione dei nuovi strumenti di gestione del progetto, causando ritardi nell'effettiva implementazione di un _way of working_ efficiente.
+Il team potrebbe incontrare sfide nell'apprendere l'utilizzo e nell'integrazione dei nuovi strumenti di gestione del progetto, causando ritardi nell'effettiva implementazione di un #glossary("Way of working") efficiente.
   - *Identificazione*: la difficoltà nell'adozione degli strumenti può manifestarsi quando i membri del team incontrano dubbi o incertezze riguardo alle procedure da seguire o all'utilizzo degli strumenti stessi.
   - *Valutazione*: Pericolosità: media; Occorrenza: bassa.
   - *Prevenzione*:
@@ -36,8 +38,8 @@ La mancata organizzazione della comunicazione interna si riferisce a situazioni 
   - *Identificazione*: questo rischio si manifesta quando non esiste una struttura chiara per la comunicazione all'interno del team, può essere riconosciuto attraverso il sovrapporsi di messaggi, discussioni disordinate o mancanza di canali dedicati.
   - *Valutazione*: Pericolosità: bassa; Occorrenza: bassa.
   - *Prevenzione*:
-    - Pianificazione della comunicazione: Stabilire canali di comunicazione specifici per diversi tipi di messaggi (ad esempio discussioni generali, questioni urgenti, cambiamenti dello stato delle _issue_ nell'ITS, proposte per l'ordine del giorno e altro);
-    - Ordine del giorno: Definire un ordine del giorno chiaro per i meeting interni settimanali, con tempi stabiliti per ciascun argomento;
+    - Pianificazione della comunicazione: stabilire canali di comunicazione specifici per diversi tipi di messaggi (ad esempio discussioni generali, questioni urgenti, cambiamenti dello stato delle _issue_ nell'ITS, proposte per l'ordine del giorno e altro);
+    - Ordine del giorno: definire un ordine del giorno chiaro per i meeting interni settimanali, con tempi stabiliti per ciascun argomento;
     - Stand-up meeting giornalieri: riunioni brevi e quotidiane favoriscono una migliore comprensione dello stato del progetto, consentendo a ciascun membro del team di aggiornare gli altri sui progressi, sulle sfide incontrate e sui prossimi passi. Questa pratica aiuta a identificare i problemi in modo tempestivo, a fornire supporto reciproco e a mantenere il team allineato con gli obiettivi comuni.
 
 === *RC2 - Esacerbazione di conflitti interni*
@@ -63,9 +65,9 @@ La comprensione erronea dei requisiti indica il potenziale malinteso o fraintend
   - *Identificazione*: questo rischio può manifestarsi quando ci sono ambiguità nei requisiti documentati o quando i membri del team interpretano in modo differente i requisiti. È evidente quando emergono domande costanti riguardo ai requisiti durante le discussioni o quando si presentano discrepanze nelle interpretazioni durante le attività di progettazione.
   - *Valutazione*: Pericolosità: alta; Occorrenza: media.
   - *Prevenzione*: 
-    - Analisi dei Requisiti: creazione di un documento chiaroo e dettagliato contenente casi d'uso, requisiti funzionali e non funzionali, in modo da offrire una visione esaustiva e condivisa dei requisiti del progetto;
+    - Analisi dei Requisiti: creazione di un documento chiaro e dettagliato contenente casi d'uso, requisiti funzionali e non funzionali, in modo da offrire una visione esaustiva e condivisa dei requisiti del progetto;
     - Sessioni di analisi e confronto dei requisiti con la Proponente: organizzazione di incontri regolari con la Proponente, durante i quali verranno presentati i requisiti identificati, discusse le interpretazioni e validate le esigenze. Queste sessioni permetteranno di raffinare e chiarire i requisiti iniziali, riducendo il rischio di interpretazioni erronee e garantendo una comprensione accurata delle necessità del cliente;
-    - Adozione del _framework_ Scrum: l'implementazione del framework Scrum fornisce continui momenti di verifica e adattamento durante lo sviluppo del progetto. Tale approccio offre l'opportunità di identificare tempestivamente eventuali fraintendimenti o ambiguità nei requisiti, permettendo al team di chiarirli e correggerli nel minor tempo possibile.
+    - Adozione del #glossary("Framework Scrum"): l'implementazione del framework Scrum fornisce continui momenti di verifica e adattamento durante lo sviluppo del progetto. Tale approccio offre l'opportunità di identificare tempestivamente eventuali fraintendimenti o ambiguità nei requisiti, permettendo al team di chiarirli e correggerli nel minor tempo possibile.
 
 === *RP2 - Disallineamento delle componenti architetturali*
 Questo rischio riguarda la possibilità di progettare componenti all'interno dell'architettura del sistema che potrebbero risultare incompatibili o in disaccordo una volta integrate o combinate. Ciò può generare conflitti nell'interoperabilità delle parti e compromettere la coesione del sistema nel suo insieme.
@@ -82,7 +84,7 @@ Questo rischio si riferisce alla possibilità di variazioni significative rispet
   - *Valutazione*: Pericolosità: alta; Occorrenza: media.
   - *Prevenzione*: 
     - Pianificazione flessibile: adottare una pianificazione flessibile che preveda margini di tempo e costi per eventuali imprevisti o variazioni;
-    - Rendicontazione di ore produttive: si utilizza uno spreadsheet dedicato nel quale ciascun membro del team registra quotidianamente le ore produttive utilizzate, specificando le attività svolte e il ruolo assunto. Questo approccio consente di trarre conclusioni riguardo allo stato delle ore totali impiegate e al budget iniziale disponibile, permettendo una migliore gestione delle risorse nel progetto;
+    - Rendicontazione di ore produttive: si utilizza uno _spreadsheet_ dedicato nel quale ciascun membro del team registra quotidianamente le ore produttive utilizzate, specificando le attività svolte e il ruolo assunto. Questo approccio consente di trarre conclusioni riguardo allo stato delle ore totali impiegate e al _budget_ iniziale disponibile, permettendo una migliore gestione delle risorse nel progetto;
     - Monitoraggio Costante: si mantiene un monitoraggio costante del progresso del progetto, permettendo l'aggiornamento della pianificazione in caso di variazioni significative. In particolare, all'interno dell'ITS si effettua un costante aggiornamento delle date di inizio e fine per ogni _issue_, riflettendo con precisione le tempistiche effettive. Inoltre, si utilizza regolarmente la vista Gantt all'interno della Kanban Board del progetto in GitHub per visualizzare la pianificazione temporale e individuare potenziali variazioni o sovrapposizioni nelle attività pianificate.
 
 == Tabella riassuntiva

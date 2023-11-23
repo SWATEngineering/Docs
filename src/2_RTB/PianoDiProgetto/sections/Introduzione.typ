@@ -1,3 +1,5 @@
+#import "../functions.typ": glossary, team
+
 = Introduzione
 == Scopo del documento
 Questo documento ha lo scopo di stabilire con chiarezza le modalità con la quale verranno eseguite le attività dai membri del gruppo _SWAT Engineering_. In particolare verranno trattati i seguenti temi:
@@ -7,7 +9,7 @@ Questo documento ha lo scopo di stabilire con chiarezza le modalità con la qual
 - Stima dei costi e delle risorse delle varie iterazioni.
 
 == Scopo del prodotto
-Lo scopo è realizzare una _data pipeline#sub[G]_ che, partendo dalla generazione di dati proveniente da dei sensori simulati, sia in grado di gestire, immagazzinare, analizzare e mostrare il flusso dati in tempo reale.
+Lo scopo è realizzare una #glossary("Data pipeline") che, partendo dalla generazione di dati proveniente da dei sensori simulati, sia in grado di gestire, immagazzinare, analizzare e mostrare il flusso dati in tempo reale.
 I sensori andranno a simulare il campionamento di alcune proprietà registrate dalla città, come temperatura, vento, traffico, e simili.
 
 == Glossario
