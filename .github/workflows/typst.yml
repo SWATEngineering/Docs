@@ -37,8 +37,8 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: SWATEngineering/SWATEngineering.github.io
-      - name: Check WFT is going on
+      - name: Clean Artifacts
         run: |
-          ls -la ..
-          ls -la .
-          ls -la ../Documentazione
+          ls -la ../Documentazione/2_RTB/
+          rm -r ../Documentazione/2_RTB/VerbaliEsterni
+          ls -la ../Documentazione/2_RTB/
