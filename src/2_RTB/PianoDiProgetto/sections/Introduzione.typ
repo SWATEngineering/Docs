@@ -13,7 +13,7 @@ Lo scopo è realizzare una #glossary("Data pipeline") che, partendo dalla genera
 I sensori andranno a simulare il campionamento di alcune proprietà registrate dalla città, come temperatura, vento, traffico, e simili.
 
 == Glossario
-Al fine di evitare possibili ambiguità relative al linguaggio utilizzato nei documenti, viene fornito il Glossario, nel quale sono presenti tutte le definizioni di termini aventi uno specifico significato che vuole essere chiarito. Tali termini, sono scritti in corsivo e marcati con una G a pedice.
+Al fine di evitare possibili ambiguità relative al linguaggio utilizzato nei documenti, viene fornito il _Glossario_, nel quale sono presenti tutte le definizioni di termini aventi uno specifico significato che vuole essere disambiguato. Tali termini, sono scritti in _corsivo_ e marcati con una #sub("G") a pedice.
 
 == Riferimenti
 === Normativi
@@ -36,5 +36,5 @@ Al fine di evitare possibili ambiguità relative al linguaggio utilizzato nei do
 == Scadenze
 Di seguito sono riportate le date di scadenza che il gruppo _SWAT Engineering_ si impegna a rispettare per lo sviluppo del progetto _InnovaCity_:
 - *Prima revisione (Avanzamento RTB):* 18 Dicembre 2023;
-- *Seconda revisione (Avanzamento PB):*
-- *Terza revisione (Avanzamento CA):*
+- *Seconda revisione (Avanzamento PB):* da definire;
+- *Terza revisione (Avanzamento CA):* da definire.

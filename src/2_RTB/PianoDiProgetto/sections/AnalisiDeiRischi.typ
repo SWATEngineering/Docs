@@ -1,7 +1,7 @@
 #import "../functions.typ": glossary, team
 
 = Analisi dei rischi
-L'attività di analisi dei rischi mira a anticipare possibili situazioni avverse che potrebbero emergere durante l'iter del progetto. Questa pratica consiste nel riconoscere, comprendere e classificare tali rischi in base alla loro probabilità di occorrenza e all'impatto sullo sviluppo del lavoro, cercando, nel contempo, soluzioni preventive per mitigarne gli effetti dannosi. L'analisi dettagliata dei rischi è orientata a ottimizzare il progresso del progetto, consentendo di individuare nuove situazioni critiche e perfezionare le strategie atte a minimizzarne gli impatti, mediante un costante monitoraggio. Di seguito vengono presentati i rischi identificati attraverso un processo di valutazione strutturato, che consente di evidenziare le fasi di individuazione, valutazione e prevenzione di tali rischi:
+L'attività di analisi dei rischi mira ad anticipare possibili situazioni avverse che potrebbero emergere durante l'iter del progetto. Questa pratica consiste nel riconoscere, comprendere e classificare tali rischi in base alla loro probabilità di occorrenza e all'impatto sullo sviluppo del lavoro, cercando, nel contempo, soluzioni preventive per mitigarne gli effetti dannosi. L'analisi dettagliata dei rischi è orientata a ottimizzare il progresso del progetto, consentendo di individuare nuove situazioni critiche e perfezionare le strategie atte a minimizzarne gli impatti, mediante un costante monitoraggio. Di seguito vengono presentati i rischi identificati attraverso un processo di valutazione strutturato, che consente di evidenziare le fasi di individuazione, valutazione e prevenzione di tali rischi:
 
 
   - *Identificazione*: coinvolge il riconoscimento e l'enumerazione delle possibili situazioni sfavorevoli che potrebbero verificarsi durante il progetto. È il processo di individuare e catalogare in modo esauriente tutti i possibili elementi che potrebbero rappresentare una minaccia;
@@ -42,7 +42,7 @@ La mancata organizzazione della comunicazione interna si riferisce a situazioni 
     - Ordine del giorno: definire un ordine del giorno chiaro per i meeting interni settimanali, con tempi stabiliti per ciascun argomento;
     - Stand-up meeting giornalieri: riunioni brevi e quotidiane favoriscono una migliore comprensione dello stato del progetto, consentendo a ciascun membro del team di aggiornare gli altri sui progressi, sulle sfide incontrate e sui prossimi passi. Questa pratica aiuta a identificare i problemi in modo tempestivo, a fornire supporto reciproco e a mantenere il team allineato con gli obiettivi comuni.
 
-=== *RC2 - Esacerbazione di conflitti interni*
+=== *RC2 - Esasperazione di conflitti interni*
 Questi rischi emergono quando diversi punti di vista, preferenze o approcci all'interno del team conducono a tensioni, disaccordi o scontri tra i membri. Questi conflitti possono manifestarsi in varie forme, come contrasti di opinione riguardo alle metodologie di lavoro, differenze nell'interpretazione dei requisiti del progetto o incomprensioni personali.
 - *Identificazione*: i conflitti interni possono essere riconosciuti attraverso segnali come un clima di tensione durante le discussioni, resistenze persistenti ad adottare soluzioni comuni, ritardi o difficoltà nella presa di decisioni.
 - *Valutazione*: Pericolosità: media; Occorrenza: bassa.
@@ -90,13 +90,13 @@ Questo rischio si riferisce alla possibilità di variazioni significative rispet
 == Tabella riassuntiva
 I rischi individuati vengono riportati in tabella, assieme alla loro pericolosità e occorrenza:
 #table(
-  columns: (325pt, 65pt, 65pt),
+  columns: (60%, 20%, 20%),
   align: (left, center, center),
   [*Rischio*], [*Pericolosità*], [*Occorrenza*],
   [*RT1* - Conoscenza tecnologica limitata], [Alta], [Alta],
   [*RT2* - Difficoltà nell'adozione degli strumenti di gestione del progetto], [Media], [Bassa],
   [*RC1* - Mancata organizzazione della comunicazione interna], [Bassa], [Bassa],
-  [*RC2* - Esacerbazione di conflitti interni], [Media],  [Bassa],
+  [*RC2* - Esasperazione di conflitti interni], [Media],  [Bassa],
   [*RC3* - Frequenza limitata nella comunicazione con la Proponente], [Media], [Bassa],
   [*RP1* - Comprensione erronea dei requisiti], [Alta], [Media],
   [*RP2* - Disallineamento delle componenti architetturali], [Media], [Media],

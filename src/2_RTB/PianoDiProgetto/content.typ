@@ -3,8 +3,17 @@
 /*************************************/
 
 #include "sections/Introduzione.typ" 
+#pagebreak()
+
 #include "sections/AnalisiDeiRischi.typ" 
+#pagebreak()
+
 #include "sections/ModelloDiSviluppo.typ" 
-#include "sections/Pianificazione.typ" 
+#pagebreak()
+
+//#include "sections/Pianificazione.typ"
+
 #include "sections/Preventivo.typ" 
-#include "sections/Consuntivo.typ" 
+#pagebreak()
+
+//#include "sections/Consuntivo.typ" 
