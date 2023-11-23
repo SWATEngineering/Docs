@@ -1,8 +1,12 @@
-name: Typst
-run-name: Compiling Typst & Build Artifacts
-on: [push]
+name: Development
+run-name: Test & Publish
+on:
+  push:
+    branches:    
+      - '**'        # matches every branch
+      - '!main'     # exept for main
 jobs:
-  compile-typst-build-artifacts:
+  test-and-publish:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Homebrew
@@ -13,7 +17,7 @@ jobs:
             brew install typst
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Compile documents and set up artifacts
+      - name: Compile documents
         run: |
           cd ${{ github.workspace }}/src
           chmod +x *.sh
