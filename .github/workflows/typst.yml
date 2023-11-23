@@ -41,6 +41,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: SWATEngineering/SWATEngineering.github.io
+          token: ${{ secrets.PUSH_TOKEN }}
       - name: Clean Artifacts
         continue-on-error: true
         run: |
@@ -53,8 +54,10 @@ jobs:
       - name: Update Facing Repo
         run: |
           mkdir -p "./2_RTB" && cp -r ../Documentazione/2_RTB/* ./2_RTB/
-      - name: Check Test
+      - name: Commit changes
         run: |
-          ls -la
-          ls -la ./2_RTB
-          git status
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "[BOT] Aggiornamento documentazione"
+          git push
