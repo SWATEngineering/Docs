@@ -1,6 +1,10 @@
 name: Typst
 run-name: Test, Publish & Deploy
 on: [push]
+#on:
+#  push:
+#    branches:
+#      - main
 jobs:
   test-and-publish:
     runs-on: ubuntu-latest
@@ -38,15 +42,17 @@ jobs:
         with:
           repository: SWATEngineering/SWATEngineering.github.io
       - name: Clean Artifacts
+        continue-on-error: true
         run: |
           rm -r ../Documentazione/2_RTB/VerbaliEsterni
       - name: Clean Facing Repo
+        continue-on-error: true
         # Elimino tutti i file dalla repo di vetrina tranne i Verbali Esterni, essendo quelli firmati da tenere
         run: |
-          find 2_RTB -mindepth 1 -not -path '2_RTB/VerbaliEsterni/*' -delete
+          find ./2_RTB -mindepth 1 -not -path './2_RTB/VerbaliEsterni/*' -delete
       - name: Update Facing Repo
         run: |
-          cp -r ../Documentazione/2_RTB/* ./2_RTB/
+          mkdir -p "./2_RTB" && cp -r ../Documentazione/2_RTB/* ./2_RTB/
       - name: Check Test
         run: |
           ls -la
