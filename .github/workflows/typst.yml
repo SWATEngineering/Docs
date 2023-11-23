@@ -39,6 +39,16 @@ jobs:
           repository: SWATEngineering/SWATEngineering.github.io
       - name: Clean Artifacts
         run: |
-          ls -la ../Documentazione/2_RTB/
           rm -r ../Documentazione/2_RTB/VerbaliEsterni
-          ls -la ../Documentazione/2_RTB/
+      - name: Clean Facing Repo
+        # Elimino tutti i file dalla repo di vetrina tranne i Verbali Esterni, essendo quelli firmati da tenere
+        run: |
+          find 2_RTB -mindepth 1 -not -path '2_RTB/VerbaliEsterni/*' -delete
+      - name: Update Facing Repo
+        run: |
+          cp -r ../Documentazione/2_RTB/* ./2_RTB/
+      - name: Check Test
+        run: |
+          ls -la
+          ls -la ./2_RTB
+          git status
