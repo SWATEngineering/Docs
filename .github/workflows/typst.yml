@@ -1,8 +1,8 @@
 name: Typst
-run-name: Compiling Typst & Build Artifacts
+run-name: Test, Publish & Deploy
 on: [push]
 jobs:
-  compile-typst-build-artifacts:
+  test-and-publish:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Homebrew
@@ -13,7 +13,7 @@ jobs:
             brew install typst
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Compile documents and set up artifacts
+      - name: Compile documents
         run: |
           cd ${{ github.workspace }}/src
           chmod +x *.sh
@@ -24,3 +24,21 @@ jobs:
           name: Documentazione
           path: |
             build
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test-and-publish
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: Documentazione
+          path: /home/runner/work/Docs/Documentazione
+      - name: Download Facing Repo
+        uses: actions/checkout@v2
+        with:
+          repository: SWATEngineering/SWATEngineering.github.io
+      - name: Check WFT is going on
+        run: |
+          ls -la ..
+          ls -la .
+          ls -la ../Documentazione
