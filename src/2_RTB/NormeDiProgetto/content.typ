@@ -71,15 +71,15 @@ I casi d'uso sono strutturati nel seguente modo:
 
 I requisiti trovati vengono classificati nei seguenti modi:
 
-    / Funzionali
+    - Funzionali
 
         un requisito funzionale specifica una funzionalità che il sistema deve essere in grado di svolgere.
 
-    / Qualità
+    - Qualità
 
         Un requisito di qualità stabilisce gli standard e i criteri che il sistema deve soddisfare per garantire prestazioni, affidabilità, sicurezza e altri aspetti relativi alla qualità.
 
-    / Vincolo
+    - Vincolo
 
         Un requisito di vincolo è una restrizione o una condizione imposte al progetto
 
@@ -101,7 +101,7 @@ I requisiti trovati avranno un codice univoco con la seguente sintassi:
         - Numero:
                 per ogni requisito aggiunto incremento il numero
      
-     
+
 #pagebreak()
 
 = Processi di Supporto
