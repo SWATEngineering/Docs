@@ -34,9 +34,14 @@ I _Feature branch_ vengono aperti a partire dalle issue create nell' _Issue Trac
 
 Nel caso del repository _InnovaCity_ il branch _main_ viene utilizzato per la pubblicazione di cambiamenti _major_, cioè quando si è implementato un numero di funzionalità significativo all'avanzamento del progetto. In quel caso è il responsabile che esegue l'approvazione finale.
 
+
 === Analisi dei Requisiti
+
+
 L’analisi dei requisiti, condotta dagli Analisti, rappresenta un’attività preliminare nello sviluppo di un sistema software. Questa attività mira a definire le funzionalità che il nuovo prodotto deve offrire. L'obiettivo principale è quello di identificare, in modo chiaro e completo, i requisiti che il software sviluppato deve soddisfare, al fine di rispondere adeguatamente alle esigenze degli utenti e della Proponente.
+
 L'analisi si compone di varie fasi:
+
   - scopo del prodotto: si devono soddisfare le esigenze della Proponente.
   - definizione degli attori: entità o persone che interagiscono con il software.
   - definizione dei casi d'uso: rappresentazione di uno scenario specifico che descrive come un attore interagisce con il software.
@@ -48,6 +53,7 @@ L'interazione con la Proponente è indispensabile per una precisa interpretazion
 ==== Identificazione caso d'uso
 
   I casi d'uso sono identificati nel seguente modo:
+
           *UC[Numero].[Numero sottocaso] [Titolo]*
         
         *legenda*:
@@ -71,15 +77,15 @@ I casi d'uso sono strutturati nel seguente modo:
 
 I requisiti trovati vengono classificati nei seguenti modi:
 
-    - Funzionali
+    - *Funzionali*
 
         un requisito funzionale specifica una funzionalità che il sistema deve essere in grado di svolgere.
 
-    - Qualità
+    - *Qualità*
 
         Un requisito di qualità stabilisce gli standard e i criteri che il sistema deve soddisfare per garantire prestazioni, affidabilità, sicurezza e altri aspetti relativi alla qualità.
 
-    - Vincolo
+    - *Vincolo*
 
         Un requisito di vincolo è una restrizione o una condizione imposte al progetto
 
@@ -90,6 +96,7 @@ I requisiti trovati avranno un codice univoco con la seguente sintassi:
         *R[Importanza][Tipo][Numero]*
 
         *legenda*:
+        
         - Importanza:
                 - O -> se il requisito è obbligatorio
                 - D -> se requisito desiderabile
