@@ -13,3 +13,4 @@ Stato di un Sensore;Parametro che indica se il sensore è attivo e funzionante, 
 Dati aggregati;Ricostruzione sintetica, fatta a partire da un insieme di dati, utile a fornirne un'interpretazione più comprensibile.
 Test end-to-end;Test che valuta l'intero flusso dell'applicazione, in modo tale da verificare che tutti i componenti funzionino correttamente.
 Documentazione;Insieme di documenti che forniscono spiegazioni su un determinato prodotto.
+Sistema; Insieme organizzato di componenti interconnesse e interagenti, che lavorano per raggiungere un obiettivo comune o eseguire specifiche funzioni.

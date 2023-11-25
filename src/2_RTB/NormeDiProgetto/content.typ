@@ -42,13 +42,13 @@ L’analisi dei requisiti, condotta dagli Analisti, rappresenta un’attività p
 
 L'analisi si compone di varie fasi:
 
-  - scopo del prodotto: si devono soddisfare le esigenze della Proponente.
-  - definizione degli attori: entità o persone che interagiscono con il software.
-  - definizione dei casi d'uso: rappresentazione di uno scenario specifico che descrive come un attore interagisce con il software.
-  - definizione di requisiti obbligatori, opzionali, di vincolo.
-  - confronti interni ed esterni.
+  - Scopo del prodotto: si devono soddisfare le esigenze della Proponente;
+  - Definizione degli attori: entità o persone che interagiscono con il #glossary[sistema];
+  - Definizione dei casi d'uso: rappresentazione di uno scenario specifico che descrive come un attore interagisce con il sistema;
+  - Definizione di requisiti obbligatori, opzionali, di vincolo;
+  - Confronti interni ed esterni.
 
-L'interazione con la Proponente è indispensabile per una precisa interpretazione ed espansione dettagliata della realizzazione.
+La collaborazione con la Proponente è essenziale per comprendere in modo accurato e approfondire dettagliatamente il processo di realizzazione del prodotto.
 
 ==== Identificazione caso d'uso
 
@@ -57,21 +57,21 @@ L'interazione con la Proponente è indispensabile per una precisa interpretazion
           *UC[Numero].[Numero sottocaso] [Titolo]*
         
         *legenda*:
-        - Numero: numero del caso d'uso
-        - Numero sottocaso: numero del sottocaso del caso d'uso generale se presente
-        - Titolo: breve titolo che riassuma lo scopo del caso d'uso in questione
+        - *Numero*: numero del caso d'uso;
+        - *Numero sottocaso*: numero del sottocaso del caso d'uso generale se presente;
+        - *Titolo*: breve titolo che descrive il contesto del caso d'uso in questione.
 
 ==== Struttura dei casi d'uso
 
 I casi d'uso sono strutturati nel seguente modo:
 
-    - Attore 
-    - Precondizioni
-    - Postcondizioni
-    - Scenario Principale
-    - Scenari Secondari (ove necessario)
-    - Estensioni, se presenti
-    - Specializzazioni, se presenti
+    - Attore;
+    - Precondizioni;
+    - Postcondizioni;
+    - Scenario Principale;
+    - Scenari Secondari (ove necessario);
+    - Estensioni, se presenti;
+    - Specializzazioni, se presenti.
 
 ==== Requisiti 
 
@@ -79,15 +79,15 @@ I requisiti trovati vengono classificati nei seguenti modi:
 
     - *Funzionali*
 
-        un requisito funzionale specifica una funzionalità che il sistema deve essere in grado di svolgere.
+        un requisito funzionale specifica una funzionalità che il sistema deve essere in grado di svolgere;
 
     - *Qualità*
 
-        Un requisito di qualità stabilisce gli standard e i criteri che il sistema deve soddisfare per garantire prestazioni, affidabilità, sicurezza e altri aspetti relativi alla qualità.
+        Un requisito di qualità stabilisce gli standard e i criteri che il sistema deve soddisfare per garantire prestazioni, affidabilità, sicurezza e altri aspetti relativi alla qualità;
 
     - *Vincolo*
 
-        Un requisito di vincolo è una restrizione o una condizione imposte al progetto
+        Un requisito di vincolo è una restrizione o una condizione imposta al progetto.
 
 ==== Identificazione Requisiti
 
@@ -97,16 +97,16 @@ I requisiti trovati avranno un codice univoco con la seguente sintassi:
 
         *legenda*:
         
-        - Importanza:
-                - O -> se il requisito è obbligatorio
-                - D -> se requisito desiderabile
-                - P -> se requisito opzionale
-        - Tipo:
-                - F -> se funzionale
-                - Q -> se qualità
-                - V -> se vincolo
-        - Numero:
-                per ogni requisito aggiunto incremento il numero
+        - *Importanza*:
+                - O -> se requisito obbligatorio;
+                - D -> se requisito desiderabile;
+                - P -> se requisito opzionale.
+        - *Tipo*:
+                - F -> se funzionale;
+                - Q -> se qualità;
+                - V -> se di vincolo.
+        - *Numero*:
+                per ogni requisito aggiunto il numero viene incrementato.
      
 
 #pagebreak()
