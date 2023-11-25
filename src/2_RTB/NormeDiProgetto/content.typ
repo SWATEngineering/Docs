@@ -186,3 +186,79 @@ Potrebbero esservi delle issue aperte all'interno dell'_ITS_ che non hanno un co
 Per poter prendere una qualsiasi decisione è necessario vi siano due condizioni:
 + Si deve raggiungere il #glossary[quorum] di quattro persone su sei;
 + La decisione deve essere verbalizzata e motivata.
+
+=== Ruoli Progetto
+
+Durante il periodo di sviluppo del progetto, ogni membro assumerà 6 ruoli distinti con compiti diversificati, al fine di garantire una gestione completa ed efficace delle diverse fasi e aspetti del lavoro. Questi ruoli contribuiranno a promuovere la collaborazione sinergica e l'ottimizzazione delle risorse all'interno del team. 
+
+I ruoli assunti sono i seguenti:
+
+==== Responsabile  
+
+        Figura chiave nell'ambito della gestione di progetti. Ha la responsabilità sul controllo, coordinamento e relazioni esterne.
+        I suoi compiti sono:
+
+         - Gestione della comunicazione con la Proponente (si fa uso della piattaforma Element);
+         - Preparazione dell'ordine del giorno per la successiva riunione, anche sulla base
+           dei punti individuati dagli altri componenti;
+         - Redazione dei verbali interni ed esterni;
+         - Stesura e e avanzamento del documento “Piano di progetto”;
+         - Creazione dei diari di bordo;
+         - Scaricamento dei verbali esterni convalidati e immagazzinamento dentro la cartella IncontriAziende/VerbaliEsterni_Convalidati su Google Drive.
+
+==== Amministratore 
+        
+        Figura con l'incarico di controllo e amministrazione dell'ambiente di lavoro.
+
+        I suoi compiti sono:
+         - Creazione delle issue e loro assegnazione ai membri;
+         - Stesura e avanzamento del documento "Norme di Progetto" (way of working);
+         - Automatizzazione dell'ambiente di lavoro con script specifici;
+         - Gestione del versionamento dei documenti.
+
+==== Analista
+     
+     Figura professionale che si occupa di analizzare, comprendere e definire i requisiti e le specifiche di un sistema software prima che venga sviluppato. Questa figura svolge un ruolo fondamentale nel processo di sviluppo del software, contribuendo a garantire che il prodotto finale soddisfi le esigenze e le aspettative degli utenti e della Proponente.
+
+     I suoi compiti:
+        - Studio del contesto applicativo e relativa complessità;
+        - Raccolta dei Requisiti;
+        - Stesura del documento Analisi dei Requisiti;
+        - Creazione diagrammi UML;
+
+==== Progettista
+
+        Figura professionale che si occupa della progettazione architetturale e struttura di un sistema. Si concentra sulla definizione di come il sistema dovrebbe essere organizzato.
+
+        I suoi compiti sono:
+
+        - Scelta degli aspetti tecnici e tecnologici;
+        - Progettazione architetturale che miri all'economicità e alla manutenibilità del sistema;
+        - Ottimizzazione delle prestazioni usando algoritmi efficienti e gestione memoria;
+        - Gestione dei rischi: cerca di mitigare problemi che possono sorgere durante lo sviluppo;
+        - Redazione della Specifica tecnica e di una parte del documento Piano di Qualifica.
+
+==== Programmatore
+
+        Figura professionale che si occupa della codifica del sistema. 
+
+        I suoi compiti:
+
+        - Ampliamento delle Specifiche Tecniche;
+        - Scrittura codice pulito;
+        - Redazione di test per validare e verificare il codice;
+        - Redazione del Manuale Utente.
+
+==== Verificatore
+
+        Figura professionale che si occupa di esaminare il lavoro prodotto dagli altri membri del team.
+
+        I suoi compiti:
+        - Esaminare documenti e verbali;
+        - Esaminare codice;
+        - Trovare errori e segnalarli attraverso le pull request di github.
+
+
+=== Cambio dei ruoli
+
+Per fare in modo che ogni membro svolga almeno 1 volta tutti i ruoli di cui sopra, il team si impegna a cambiarli ogni 2 settimane (da definire nella prossima riunione se 1 o 2 settimane)
