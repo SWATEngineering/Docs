@@ -55,7 +55,7 @@ La proponente ha accettato la proposta e ne è stata fissata la data: il 29 nove
 === Obbiettivi dello Sprint
 L'intenzione iniziale della proponente per questo sprint era quello di introdurre nel sistema la componente di persistenza dei dati simulati.
 
-Confermata l'intenzione del team di effettuare la prima revisione entro il 18 dicembre, è stato invece deciso di accorpare nel backlog dello sprint anche componente di dashboarding era stata inizialmente pensata come parte dello sprint successivo. Presumibilmente entro il 7 dicembre il team avrà quindì realizzato una prima versione completa del _Proof of Concept_. 
+Confermata l'intenzione del team di effettuare la prima revisione entro il 18 dicembre, è stato invece deciso di accorpare nel backlog dello sprint anche la componente di visualizzazione che era stata inizialmente pianificata come parte dello sprint successivo. Presumibilmente entro il 7 dicembre il team avrà quindì realizzato una prima versione completa del _Proof of Concept_. 
 
 La decisione di cui sopra è stata motivata dalla volontà di consentire un ulteriore sprint, seppure di durata ridotta, dedicato alla risoluzione di eventuali problemi.
 
