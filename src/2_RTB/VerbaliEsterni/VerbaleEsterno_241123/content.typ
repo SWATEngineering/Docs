@@ -50,5 +50,17 @@ Si riportano gli argomenti salienti:
 - *Sistemi di Allerting*: la proponente ha invitato il team a riflettere sulle modalità di Allerting in quanto non erano state definite all'interno del documento. Si sono poi discusse alcune strategie per poter generare dati che effettivamente potessero andare ad innescare questi sistemi. 
 La proponente afferma che tali dati non siano necessariamente da ricondurre alla produzione effettuata dai simulatore, ma possano essere trasmessi a kafka manualmente. 
 
-Non è stata espressa una vera e propria opinione ma i requisiti riportati nel documento sembrano essere in linea con l'idea della proponente. 
+Non è stata espressa una vera e propria opinione, ma i requisiti riportati nel documento sembrano essere in linea con l'idea della proponente. 
+
+== Workshop su Docker
+Alla luce del fatto che la quasi totalità dei componenti del nostro team ritiene che le proprie competenze in ambito Docker e tecnologie di containerizzazione siano ridotte, e che l'impiego di tali tecnologie rimane fondamentale al fine della buona riuscita del progetto, è stata avanzata l'idea di organizzare un workshop di allineamento sul tema in maniera tale da colmare le lacune esistenti. 
+La proponente ha accettato la proposta e ne è stata fissata la data: il 29 novembre alle ore 15.30. 
+
+
+== Obbiettivi dello Sprint
+L'intenzione iniziale della proponente per questo sprint era quello di introdurre nel sistema la componente di persistenza dei dati simulati.
+
+Confermata l'intenzione del team di effettuare la prima revisione entro il 18 dicembre, è stato invece deciso di accorpare nel backlog dello sprint anche componente di dashboarding era stata inizialmente pensata come parte dello sprint successivo. 
+
+La scelta è stata motivata dalla volontà di avere a disposizione un ulteriore sprint, seppure di durata ridotta, da dedicare alla risoluzione di eventuali problemi.
 
