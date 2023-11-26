@@ -19,6 +19,52 @@ Il presente documento ha come scopo la definizione delle #glossary[best practice
 
 = Processi Primari
 
+== Fornitura
+
+=== Descrizione e scopo
+
+Il processo di fornitura si propone di dettagliare le attività del fornitore per comprendere e soddisfare le richieste della Proponente.
+Dopo la completa comprensione delle esigenze, il fornitore, in collaborazione con la Proponente, stabilisce, tramite contratto, la data di consegna del prodotto e la gestione della manutenzione. Successivamente, viene redatto il Piano di Progetto per scaglionare le varie attività da svolgere, garantendo un chiaro processo di sviluppo del prodotto finale. L'obiettivo principale è soddisfare in modo chiaro le richieste della Proponente, evitando possibili incomprensioni, attraverso una collaborazione continua.
+
+Il processo è caratterizzato da varie fasi:
+
+        - Determinare chiaramente i bisogni soddisfatti dal prodotto finale;
+        - Contrattazione: 
+                + Ottenere feedback sulle tecnologie utilizzate;
+                + Chiarire dubbi o difficoltà riscontrate.
+                + Richiedere incontri di formazione sulle tecnologie consigliate per uno sviluppo migliore.
+        - Stima dei costi;
+        - Effettuare verifica continua;
+        - Consegna e completamento.
+
+=== Documenti
+
+==== Piano di progetto
+
+Documento redatto dal responsabile che offre una visione dettagliata dell'intero processo di sviluppo di un progetto, fornendo al team coinvolto una guida approfondita per mantenere l'allineamento con gli obiettivi, gestire le risorse in modo efficace e affrontare le sfide che potrebbero emergere durante lo sviluppo del progetto.
+
+Si compone di:
+
+        - *Analisi dei rischi*:   identifica, valuta e gestisce i potenziali rischi che potrebbero influenzare il successo di un progetto o di un'attività. È essenziale per anticipare e affrontare le sfide che potrebbero emergere durante lo sviluppo di un progetto, consentendo al team di adottare misure preventive o di pianificare strategie di mitigazione;
+        - *Modello di sviluppo*: approccio metodologico che viene scelto per guidare il processo di sviluppo del prodotto. Definisce la struttura di lavoro che sarà seguita durante l'intero ciclo di vita del progetto;
+        - *Pianificazione*: fornisce una roadmap dettagliata delle attività, delle risorse, e delle scadenze associate al progetto;
+        - *Preventivo*:cstima dei costi, delle risorse e delle attività necessarie per completare un'attività;
+        
+
+
+==== Piano di Qualifica
+
+Documento che descrive le strategie e gli approcci adottati per garantire la qualità del prodotto o del servizio che si sta sviluppando. Il suo scopo principale è quello di definire le modalità di verifica e validazione, nonché gli standard e le procedure di qualità che verranno seguite durante l'intero ciclo di vita del progetto.
+
+È caratterizzata da:
+
+        - *Qualità del processo*: standard e  procedure adottate per garantire la qualità durante lo sviluppo del progetto. Informazioni sulle attività di gestione della qualità, le metodologie utilizzate, e come vengono misurati e migliorati i processi stessi;
+        - *Qualità di prodotto*: standard, le specifiche e le caratteristiche che il prodotto deve soddisfare per essere considerato di alta qualità. Include anche le metriche e i criteri di valutazione utilizzati per misurare la qualità del prodotto;
+        - *Specifiche dei test*: specifiche dettagliate dei test che verranno condotti durante lo sviluppo del progetto;
+        - *Resoconto e valutazioni*: resoconto delle attività svolte e delle valutazioni effettuate durante il progetto. Utili per capire come il progetto si sta sviluppando rispetto agli obiettivi e alle aspettative, e per identificare eventuali azioni correttive necessarie.
+
+
+
 == Sviluppo
 
 === Codifica e Verifica
@@ -140,6 +186,14 @@ Ogni documento segue le fasi del seguente #glossary[workflow]:
 
 La modifica di un documento avviene allo stesso modo, saltando il passo 2.
 Ogni cambiamento di stato è accompagnato dal conseguente movimento della issue, associata allo sviluppo, attraverso le diverse corsie dell'issue tracking system.
+
+=== Strumenti 
+
+Il gruppo utilizza:
+
+        - *Typst*: linguaggio per la stesura dei documenti, valida alternativa a Latex;
+        - *Google Docs*: per la stesura di bozze e appunti;
+        - *PlantUML*: linguaggio usato per la creazione dei diagrammi UML.
 
 == Gestione della Configurazione
 
