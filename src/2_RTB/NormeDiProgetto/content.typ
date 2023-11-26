@@ -195,7 +195,8 @@ I ruoli assunti sono i seguenti:
 
 ==== Responsabile  
 
-        Figura chiave nell'ambito della gestione di progetti. Ha la responsabilità sul controllo, coordinamento e relazioni esterne.
+        Figura chiave che supervisiona, coordina e gestisce le attività del team. Si occupa di garantire l'allineamento tra gli obiettivi del progetto e le azioni intraprese, gestisce le risorse disponibili, stabilisce e mantiene le relazioni esterne con la Proponente e assicura il flusso efficace delle informazioni all'interno del team e al di fuori di esso.
+
         I suoi compiti sono:
 
          - Gestione della comunicazione con la Proponente (si fa uso della piattaforma Element);
@@ -204,16 +205,20 @@ I ruoli assunti sono i seguenti:
          - Redazione dei verbali interni ed esterni;
          - Stesura e e avanzamento del documento “Piano di progetto”;
          - Creazione dei diari di bordo;
-         - Scaricamento dei verbali esterni convalidati e immagazzinamento dentro la cartella IncontriAziende/VerbaliEsterni_Convalidati su Google Drive.
+         - Upload dei verbali esterni convalidati, tramite firma, dalla Proponente in una cartella apposita su Google Drive.
 
 ==== Amministratore 
         
-        Figura con l'incarico di controllo e amministrazione dell'ambiente di lavoro.
+        Figura professionale con la responsabilità della creazione, manutenzione e ottimizzazione degli strumenti, delle risorse e dei processi necessari per il corretto svolgimento del progetto.
 
         I suoi compiti sono:
-         - Creazione delle issue e loro assegnazione ai membri;
-         - Stesura e avanzamento del documento "Norme di Progetto" (way of working);
-         - Automatizzazione dell'ambiente di lavoro con script specifici;
+
+         - Configurazione e gestione gli ambienti di sviluppo;
+         - Implementazione delle procedure operative;
+         - Assicurare la disponibilità degli strumenti necessari per la collaborazione e la comunicazione all'interno del team;
+         - Creazione e assegnazione delle issue ai membri del team;
+         - Stesura e avanzamento del documento "Norme di Progetto";
+         - Implementazione di script dedicati per automatizzare processi nell'ambiente di lavoro;
          - Gestione del versionamento dei documenti.
 
 ==== Analista
@@ -221,14 +226,16 @@ I ruoli assunti sono i seguenti:
      Figura professionale che si occupa di analizzare, comprendere e definire i requisiti e le specifiche di un sistema software prima che venga sviluppato. Questa figura svolge un ruolo fondamentale nel processo di sviluppo del software, contribuendo a garantire che il prodotto finale soddisfi le esigenze e le aspettative degli utenti e della Proponente.
 
      I suoi compiti:
+
         - Studio del contesto applicativo e relativa complessità;
-        - Raccolta dei Requisiti;
+        - Specifica dei casi d'uso per comprendere in dettaglio i requisiti funzionali del sistema;
+        - Raccolta dei requisiti per definire le necessità e le funzionalità richieste;
         - Stesura del documento Analisi dei Requisiti;
         - Creazione diagrammi UML;
 
 ==== Progettista
 
-        Figura professionale che si occupa della progettazione architetturale e struttura di un sistema. Si concentra sulla definizione di come il sistema dovrebbe essere organizzato.
+        Figura professionale specializzata nella progettazione architetturale e strutturale di sistemi. La sua responsabilità principale è definire la configurazione, la disposizione e l'organizzazione dei vari componenti del sistema, concentrandosi su come questi elementi interagiscono tra loro per raggiungere determinati obiettivi di funzionalità, prestazioni e scalabilità.
 
         I suoi compiti sono:
 
@@ -240,25 +247,30 @@ I ruoli assunti sono i seguenti:
 
 ==== Programmatore
 
-        Figura professionale che si occupa della codifica del sistema. 
+        Figura professionale incaricata di trasformare le specifiche tecniche in codice eseguibile, garantendo un'implementazione efficiente e accurata delle funzionalità richieste dal progetto.
 
         I suoi compiti:
 
-        - Ampliamento delle Specifiche Tecniche;
-        - Scrittura codice pulito;
-        - Redazione di test per validare e verificare il codice;
-        - Redazione del Manuale Utente.
+        - Traduzione delle specifiche tecniche in codice funzionante;
+        - Scrittura di codice chiaro, leggibile e mantenibile;
+        - Creazione di test per la verifica del software;
+        - Ampliamento delle Specifiche Tecniche conforme alle esigenze del progetto.
+        - Risoluzione di bug e problemi di performance;
+        - Realizzazione del Manuale Utente;
+        - Collaborazione con il team per l'integrazione del codice e il mantenimento della coerenza del progetto.
 
 ==== Verificatore
 
         Figura professionale che si occupa di esaminare il lavoro prodotto dagli altri membri del team.
 
         I suoi compiti:
-        - Esaminare documenti e verbali;
-        - Esaminare codice;
-        - Trovare errori e segnalarli attraverso le pull request di github.
+        
+        - Revisione e valutazione della documentazione prodotta dal team;
+        - Analisi critica del codice per individuare errori, discrepanze o possibili miglioramenti;
+        - Identificazione e segnalazione di problemi;
+        - Collaborazione con il team per garantire che il lavoro sia conforme alle linee guida e agli standard richiesti.
 
 
 === Cambio dei ruoli
 
-Per fare in modo che ogni membro svolga almeno 1 volta tutti i ruoli di cui sopra, il team si impegna a cambiarli ogni 2 settimane (da definire nella prossima riunione se 1 o 2 settimane)
+Per fare in modo che ogni membro svolga almeno 1 volta tutti i ruoli di cui sopra, il team si impegna a cambiarli ogni settimana.
