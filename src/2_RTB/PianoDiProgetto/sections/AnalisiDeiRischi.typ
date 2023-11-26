@@ -75,7 +75,7 @@ I diversi livelli di competenze, esperienze negative passate e una comunicazione
   -*Identificazione*: la mancanza di fiducia può essere rilevata in presenza di segnali specifici come reticenza nella collaborazione o nell'assunzione di responsabilità condivise. In aggiunta, alcuni membri potrebbero dimostrarsi poco attivi nelle discussioni di gruppo o nelle attività cooperative. 
   - *Valutazione*: Pericolosità: media; Occorrenza: bassa.
   - *Prevenzione*: 
-    -Promuovere incontri periodici: i membri del team hanno la possibilità di esprimere dubbi e preucupazioni, avere una discussione aperta su aspetti rilevanti del progetto e ricevere feedback sul lavoro fatto. In questo contesto va precisato che la costruzione del feedback gioca un ruolo fondamentale, dev'essere formulato in maniera tale da essere il più positivo possibile facendo si che non sia visto come una critica ma come un opportunità di miglioramento;
+    -Promuovere incontri periodici: i membri del team hanno la possibilità di esprimere dubbi e preocupazioni, avere una discussione aperta su aspetti rilevanti del progetto e ricevere feedback sul lavoro fatto. In questo contesto va precisato che la costruzione del feedback gioca un ruolo fondamentale, dev'essere formulato in maniera tale da essere il più positivo possibile facendo sì che non sia visto come una critica ma come un opportunità di miglioramento;
     -Promuovere la comprensione reciproca: il team si deve sforzare nel comprendere le condizioni e i punti di vista degli altri componenti per creare un clima di progetto positivo indirizzato verso il miglioramento.
 
 
