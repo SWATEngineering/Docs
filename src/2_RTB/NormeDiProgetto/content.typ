@@ -216,7 +216,7 @@ I ruoli assunti sono i seguenti:
          - Configurazione e gestione gli ambienti di sviluppo;
          - Implementazione delle procedure operative;
          - Assicurare la disponibilità degli strumenti necessari per la collaborazione e la comunicazione all'interno del team;
-         - Creazione e assegnazione delle issue ai membri del team;
+         - Creazione e assegnazione delle _issue_ ai membri del team;
          - Stesura e avanzamento del documento "Norme di Progetto";
          - Implementazione di script dedicati per automatizzare processi nell'ambiente di lavoro;
          - Gestione del versionamento dei documenti.
@@ -264,7 +264,7 @@ I ruoli assunti sono i seguenti:
         Figura professionale che si occupa di esaminare il lavoro prodotto dagli altri membri del team.
 
         I suoi compiti:
-        
+
         - Revisione e valutazione della documentazione prodotta dal team;
         - Analisi critica del codice per individuare errori, discrepanze o possibili miglioramenti;
         - Identificazione e segnalazione di problemi;
