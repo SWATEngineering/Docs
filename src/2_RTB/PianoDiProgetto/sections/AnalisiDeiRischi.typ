@@ -32,6 +32,17 @@ Il team potrebbe incontrare sfide nell'apprendere l'utilizzo e nell'integrazione
     - Norme di Progetto: tutti i dettagli del _way of working_ vengono concordati durante i meeting interni e normati all'interno delle Norme di Progetto. In caso di dubbi o incertezze, il riferimento a queste norme o la richiesta di chiarimenti all'Amministratore del progetto rappresentano un'importante risorsa per la risoluzione tempestiva di problemi legati agli strumenti e alle procedure;
     - Inclusione di dubbi nell'Ordine del giorno: l'inclusione dei dubbi e delle incertezze nelle proposte dell'ordine del giorno del meeting interno successivo consente al team di affrontare in modo strutturato e tempestivo le difficoltà riscontrate, garantendo un ambiente in cui tali problemi possano essere risolti in modo collaborativo e efficiente.
 
+=== *RT3 - Produzione di codice poco comprensibile*
+Data l'inesperienza dei membri che lo compongono, il team potrebbe produrre codice difficile da comprendere, contorto. Questo unito ad un'eventuale carenza di relativa documentazione potrebbe influenzare negaitivamente i tempi di sviluppo. 
+  - *Identificazione*: un segnale evidente della manifestazione di questo rischio è la crescità delle discussioni relative all'interpretazione del codice tra i componenti del team.
+  - *Valutazione*:  Pericolosità: media; Occorrenza: media.
+  - *Prevenzione*: 
+    - Code Reviews: effettuare revisioni regolari del codice; 
+    - Continuo Refactoring: integrando all'interno del processo di sviluppo frequenti attività di Refractoring si migliora notevolmente la comprensibilità del codice; 
+    - Documentazione Adeguata: incoraggiare la produzione di una documentazione approfondita per il codice; 
+    - _Convenzioni di codifica_:  seguire le stesse linee guida porta il team a standardizzare il modo in cui il codice viene scritto, di conseguenza ne aumenta la chiarezza e la mantenibilità. 
+
+
 == Rischi di Comunicazione
 === *RC1 - Mancata organizzazione della comunicazione interna*
 La mancata organizzazione della comunicazione interna si riferisce a situazioni in cui non esiste una struttura definita o linee guida chiare per la trasmissione efficace delle informazioni all'interno del team. Questa mancanza di direzione può portare a fraintendimenti, confusione o ritardi nella comunicazione.
@@ -58,6 +69,16 @@ Si tratta della ridotta frequenza o della mancanza di contatti regolari e tempes
     - Aggiornamenti regolari: mantenere la Proponente informata sugli sviluppi in modo regolare (almeno una volta alla settimana) e chiedere _feedback_ quando necessario;
     - Invio anticipato di domande: invio di email prima di ogni meeting esterno con la Proponente, presentando in anticipo le domande o i punti da discutere durante il meeting. Questo offre alla Proponente il tempo di prepararsi adeguatamente e fornire risposte dettagliate durante il meeting;
     - Consegna anticipata di materiale: quando si tratta di _Sprint retrospective_ o di qualsiasi revisione congiunta, fornire la documentazione o il codice prodotto nel rispettivo Sprint il prima possibile, in modo che la Proponente abbia tempo sufficiente per esaminarlo in modo approfondito prima del meeting. Ciò permette una discussione più efficace e informativa durante il meeting stesso.
+
+=== *RC4 - Mancanza di fiducia*
+I diversi livelli di competenze, esperienze negative passate e una comunicazione poco trasparente possono portare allo sviluppo di un clima di sfiducia reciproca tra i membri del team: ciò potrebbe compromettere il successo del progetto.  
+  -*Identificazione*: la mancanza di fiducia può essere rilevata in presenza di segnali specifici come reticenza nella collaborazione o nell'assunzione di responsabilità condivise. In aggiunta, alcuni membri potrebbero dimostrarsi poco attivi nelle discussioni di gruppo o nelle attività cooperative. 
+  - *Valutazione*: Pericolosità: media; Occorrenza: bassa.
+  - *Prevenzione*: 
+    -Promuovere incontri periodici: i membri del team hanno la possibilità di esprimere dubbi e preucupazioni, avere una discussione aperta su aspetti rilevanti del progetto e ricevere feedback sul lavoro fatto. In questo contesto va precisato che la costruzione del feedback gioca un ruolo fondamentale, dev'essere formulato in maniera tale da essere il più positivo possibile facendo si che non sia visto come una critica ma come un opportunità di miglioramento;
+    -Promuovere la comprensione reciproca: il team si deve sforzare nel comprendere le condizioni e i punti di vista degli altri componenti per creare un clima di progetto positivo indirizzato verso il miglioramento.
+
+
 
 == Rischi di Pianificazione
 === *RP1 - Comprensione erronea dei requisiti*
