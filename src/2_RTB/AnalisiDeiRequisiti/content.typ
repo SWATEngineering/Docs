@@ -33,7 +33,7 @@ Cardin	Analisi e descrizione delle funzionalità: Use Case e relativi diagammi (
 = Descrizione
 
 == Obiettivi del prodotto
-L'obbiettivo consiste nella creazione di una piattaforma di monitoraggio e gestione di una Smart City. L'utente, individuato nell'amministratore pubblico, potrà farne impiego per migliorare la qualità generale della vita e l'efficienza dei servizi nel contesto di un'area urbana. L'utente sarà in grado di controllare, attraverso la consultazione di una dashboard, lo stato della città, sotto i punti di vista ambientali, logistici e di sicurezza. Questo cruscotto includerà rappresentazioni grafiche basate su dati generati da una simulazione realistica, specificamente sviluppata per il progetto in questione.
+L'obiettivo consiste nella creazione di una piattaforma di monitoraggio e gestione di una Smart City. L'utente, individuato nell'amministratore pubblico, potrà farne impiego per migliorare la qualità generale della vita e l'efficienza dei servizi nel contesto di un'area urbana. L'utente sarà in grado di controllare, attraverso la consultazione di una dashboard, lo stato della città, sotto i punti di vista ambientali, logistici e di sicurezza. Questo cruscotto includerà rappresentazioni grafiche basate su dati generati da una simulazione realistica, specificamente sviluppata per il progetto in questione.
 
 == Funzionalità del prodotto
 Il prodotto si compone di due parti principali:
@@ -42,13 +42,6 @@ Il prodotto si compone di due parti principali:
 - *Una dashboard* che permette di visualizzare i dati accumulati, sottoforma di grafici.
 
 La piattaforma prevede fondamentalmente una tipologia di utente: l'amministratore pubblico. Questo utente avrà accesso alla dashboard e visualizzerà il sommario di diverse metriche e indicatori sullo stato della città, sottoforma di grafici.
-
-== Tecnologie consigliate
-La Proponente consiglia l'utilizzo delle seguenti tecnologie per la realizzazione del progetto:
-- Implementazione dei simulatori. Tecnologia consigliata: *Python*;
-- Database OLAP utilizzato per lo storage dei dati.  Tecnologia consigliata: *ClickHouse*;
-- Piattaforma di stream processing. Tecnologia consigliata: *Kafka*;
-- Dashboard di visualizzazione. Tecnologia consigliata: *Grafana*.
 
 == Utenti e caratteristiche
 Il prodotto, destinato ad amministratori pubblici, consente loro di ottenere una panoramica sulle condizioni della città. Ciò fornisce loro una base solida per prendere decisioni ponderate sulla gestione delle risorse e sull'implementazione dei servizi, il che risulta cruciale nel miglioramento dell'efficacia complessiva della gestione urbana. La ricezione tempestiva dei dati aggiornati migliora la capacità di risposta immediata in situazioni di emergenza, migliorando la gestione di eventi critici, in modo più efficiente e mirato. Un'altra figura che potrebbe essere interessata all'utilizzo del prodotto, potrebbe essere quella del dirigente aziendale: gli sarebbe permesso di ottenere informazioni rilevanti per gli obiettivi e gli interessi dell'azienda, come riduzione dei costi, miglioramento dell'efficienza e della produttività.
@@ -470,8 +463,8 @@ UC8 : - Archiviazione delle anomalie rilevate
   - *Scenario Principale*:
     - Il simulatore:
       + si connette al sistema;
-      + avvia la simulazione dell' umidità;
-      + inserisce il #glossary("dato sintetico") relativo all' umidità all'interno del sistema.
+      + avvia la simulazione dello #glossary("stato del cielo");
+      + inserisce il #glossary("dato sintetico") relativo allo #glossary("stato del cielo") all'interno del sistema.
 
 / UC13.5 : - Inserimento dati vento
   - *Attore Principale*: Simulatore.
