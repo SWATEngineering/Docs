@@ -33,7 +33,7 @@ Cardin	Analisi e descrizione delle funzionalità: Use Case e relativi diagammi (
 = Descrizione
 
 == Obiettivi del prodotto
-L'obbiettivo consiste nella creazione di una piattaforma di monitoraggio e gestione una Smart City. L'utente, individuato nell'amministratore pubblico, potrà farne impiego per migliorare la qualità generale della vita e l'efficienza dei servizi nel contesto di un'area urbana. L'utente sarà in grado di controllare, attraverso la consultazione di una dashboard, lo stato della città, sotto i punti di vista ambientali, logistici e di sicurezza. Questo cruscotto includerà rappresentazioni grafiche basate su dati generati da una simulazione realistica, specificamente sviluppata per il progetto in questione.
+L'obbiettivo consiste nella creazione di una piattaforma di monitoraggio e gestione di una Smart City. L'utente, individuato nell'amministratore pubblico, potrà farne impiego per migliorare la qualità generale della vita e l'efficienza dei servizi nel contesto di un'area urbana. L'utente sarà in grado di controllare, attraverso la consultazione di una dashboard, lo stato della città, sotto i punti di vista ambientali, logistici e di sicurezza. Questo cruscotto includerà rappresentazioni grafiche basate su dati generati da una simulazione realistica, specificamente sviluppata per il progetto in questione.
 
 == Funzionalità del prodotto
 Il prodotto si compone di due parti principali:
@@ -47,7 +47,7 @@ La piattaforma prevede fondamentalmente una tipologia di utente: l'amministrator
 La Proponente consiglia l'utilizzo delle seguenti tecnologie per la realizzazione del progetto:
 - Implementazione dei simulatori. Tecnologia consigliata: *Python*;
 - Database OLAP utilizzato per lo storage dei dati.  Tecnologia consigliata: *ClickHouse*;
-- Piattaforma di stream processing. Tecnologia consigliata: *Kafka*.
+- Piattaforma di stream processing. Tecnologia consigliata: *Kafka*;
 - Dashboard di visualizzazione. Tecnologia consigliata: *Grafana*.
 
 == Utenti e caratteristiche
@@ -57,14 +57,15 @@ Il prodotto, destinato ad amministratori pubblici, consente loro di ottenere una
 == Scopo
 In questa sezione si vogliono elencare e descrivere tutti i casi d'uso individuati dall'analisi effettuata dal gruppo, basandosi sul capitolato e sulle interazioni con la Proponente. In particolare, si individuano gli #glossary("attori") e le funzionalità che questi possono svolgere. Ogni caso d'uso possiede un codice, la cui struttura è descritta nelle Norme di Progetto.
 
-== Attori
-L'applicativo si interfaccerà con un solo tipo di attore:
-- *Utente generico*: è un utente che ha accesso alla dashboard in tutte le sue funzionalità e può visualizzare i dati raccolti dai sensori.
+=== Attori
+L'applicativo si interfaccerà con due tipi di attore:
+- *Amministratore pubblico*: è un utente generico che ha accesso alla dashboard in tutte le sue funzionalità e può visualizzare i dati raccolti dai sensori;
+- *Simulatore*: è un utente artificiale che ha accesso allo stream dati sotto il punto di vista dell'inserimento, in quanto può effettuare azioni di #glossary("data entry").
 
 La decisione di non inserire un utente con privilegi è da ricollegare al fatto che il prodotto ha comunque un target d'utenza limitato, che si compone di persone generalmente dotate di competenze tecniche e dunque in grado di interagire con il sistema in tutte le sue funzionalità.
 
 #figure(
-  image("assets/UtenteUC.png", width: 12%),
+  image("assets/Utenti.png", width: 15%),
   caption: [Gerarchia degli attori]
 )
 
@@ -408,6 +409,150 @@ UC8 : - Archiviazione delle anomalie rilevate
   - *Estensioni*: se il sistema non riesce a riconoscere o integrare correttamente il nuovo sensore, l'utente riceve una notifica di errore.
   */
 /* Bisogna capire se tenere la UC14 */
+
+/ UC13 : - Inserimento dati
+  - *Attore Principale*: Simulatore.
+  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso i dati.
+  - *Scenario Principale*:
+    - Il simulatore:
+      + si connette al sistema;
+      + avvia la simulazione di un particolare tipo di dato;
+      + inserisce il #glossary("dato sintetico") all'interno del sistema.
+  - *Specializzazioni*:
+    - Inserimento dati temperatura [UC13.1];
+    - Inserimento dati precipitazioni [UC13.2];
+    - Inserimento dati umidità [UC13.3];
+    - Inserimento dati #glossary("stato del cielo") [UC13.4];
+    - Inserimento dati vento [UC13.5];
+    - Inserimento dati inquinamento dell'aria [UC13.6];
+    - Inserimento dati indice UV [UC13.7];
+    - Inserimento dati posizione biciclette elettriche [UC13.8];
+    - Inserimento dati congestione stradale [UC13.9];
+    - Inserimento dati rumore [UC13.10];
+    - Inserimento dati scosse sismiche [UC13.11];
+    - Inserimento dati connessione alla Wi-Fi pubblica [UC13.12];
+
+/ UC13.1 : - Inserimento dati temperatura
+  - *Attore Principale*: Simulatore.
+  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi alla temperatura.
+  - *Scenario Principale*:
+    - Il simulatore:
+      + si connette al sistema;
+      + avvia la simulazione della temperatura;
+      + inserisce il #glossary("dato sintetico") relativo alla temperatura all'interno del sistema.
+
+/ UC13.2 : - Inserimento dati precipitazioni
+  - *Attore Principale*: Simulatore.
+  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi alle precipitazioni.
+  - *Scenario Principale*:
+    - Il simulatore:
+      + si connette al sistema;
+      + avvia la simulazione delle precipitazioni;
+      + inserisce il #glossary("dato sintetico") relativo alle precipitazioni all'interno del sistema.
+
+/ UC13.3 : - Inserimento dati umidità
+  - *Attore Principale*: Simulatore.
+  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi all' umidità.
+  - *Scenario Principale*:
+    - Il simulatore:
+      + si connette al sistema;
+      + avvia la simulazione dell' umidità;
+      + inserisce il #glossary("dato sintetico") relativo all' umidità all'interno del sistema.
+
+/ UC13.4 : - Inserimento dati #glossary("stato del cielo")
+  - *Attore Principale*: Simulatore.
+  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi allo #glossary("stato del cielo").
+  - *Scenario Principale*:
+    - Il simulatore:
+      + si connette al sistema;
+      + avvia la simulazione dell' umidità;
+      + inserisce il #glossary("dato sintetico") relativo all' umidità all'interno del sistema.
+
+/ UC13.5 : - Inserimento dati vento
+  - *Attore Principale*: Simulatore.
+  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi al vento.
+  - *Scenario Principale*:
+    - Il simulatore:
+      + si connette al sistema;
+      + avvia la simulazione del vento;
+      + inserisce il #glossary("dato sintetico") relativo al vento all'interno del sistema.
+
+/ UC13.6 : - Inserimento dati inquinamento dell'aria
+  - *Attore Principale*: Simulatore.
+  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi all'inquinamento dell'aria.
+  - *Scenario Principale*:
+    - Il simulatore:
+      + si connette al sistema;
+      + avvia la simulazione dell'inquinamento dell'aria;
+      + inserisce il #glossary("dato sintetico") relativo all'inquinamento dell'aria all'interno del sistema.
+
+/ UC13.7 : - Inserimento dati indice UV
+  - *Attore Principale*: Simulatore.
+  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi all'indice UV.
+  - *Scenario Principale*:
+    - Il simulatore:
+      + si connette al sistema;
+      + avvia la simulazione dell'indice UV;
+      + inserisce il #glossary("dato sintetico") relativo all'indice UV all'interno del sistema.
+
+/ UC13.8 : - Inserimento dati posizione biciclette elettriche
+  - *Attore Principale*: Simulatore.
+  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi alla posizione delle biciclette elettriche.
+  - *Scenario Principale*:
+    - Il simulatore:
+      + si connette al sistema;
+      + avvia la simulazione della posizione delle biciclette elettriche;
+      + inserisce il #glossary("dato sintetico") relativo alla posizione delle biciclette elettriche all'interno del sistema.
+
+/ UC13.9 : - Inserimento dati congestione stradale
+  - *Attore Principale*: Simulatore.
+  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi alla congestione stradale.
+  - *Scenario Principale*:
+    - Il simulatore:
+      + si connette al sistema;
+      + avvia la simulazione della congestione stradale;
+      + inserisce il #glossary("dato sintetico") relativo alla congestione stradale all'interno del sistema.
+
+/ UC13.10 : - Inserimento dati rumore
+  - *Attore Principale*: Simulatore.
+  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi al rumore.
+  - *Scenario Principale*:
+    - Il simulatore:
+      + si connette al sistema;
+      + avvia la simulazione del rumore;
+      + inserisce il #glossary("dato sintetico") relativo al rumore all'interno del sistema.
+
+/ UC13.11 : - Inserimento dati scosse sismiche
+  - *Attore Principale*: Simulatore.
+  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi alle scosse sismiche.
+  - *Scenario Principale*:
+    - Il simulatore:
+      + si connette al sistema;
+      + avvia la simulazione delle scosse sismiche;
+      + inserisce il #glossary("dato sintetico") relativo alle scosse sismiche all'interno del sistema.
+
+/ UC13.11 : - Inserimento dati connessione Wi-Fi pubblica
+  - *Attore Principale*: Simulatore.
+  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi alle connessioni alla Wi-Fi pubblica.
+  - *Scenario Principale*:
+    - Il simulatore:
+      + si connette al sistema;
+      + avvia la simulazione delle connessioni alla Wi-Fi pubblica;
+      + inserisce il #glossary("dato sintetico") relativo alle connessioni alla Wi-Fi pubblica all'interno del sistema.
+
 = Requisiti
 
 == Requisiti funzionali (obbligatori e desiderabili)
@@ -438,8 +583,8 @@ UC8 : - Archiviazione delle anomalie rilevate
   [*RDF20*],[Desiderabile],[L’utente deve poter analizzare la correlazione tra dati provenienti da tipi diversi di sensori.],
   [*RDF21*],[Desiderabile],[L’utente deve poter confrontare dati provenienti da celle diverse.],
   [*RDF22*],[Desiderabile],[Il sistema notifica l’utente in caso di selezione di celle non comparabili.],
-  [*ROF23*],[Obbligatorio],[L’utente deve poter filtrare i sensori in base alle loro caratteristiche.],
-  [*RDF24*],[Desiderabile],[L’utente deve poter aggiungere un sensore reale alla rete di sensori esistenti.]
+  [*ROF23*],[Obbligatorio],[L’utente deve poter filtrare i sensori in base alle loro caratteristiche.]
+  /*[*RDF24*],[Desiderabile],[L’utente deve poter aggiungere un sensore reale alla rete di sensori esistenti.]*/
 )
 
 == Requisiti di qualità

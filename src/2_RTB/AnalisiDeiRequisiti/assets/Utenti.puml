@@ -1,0 +1,12 @@
+@startuml Utenti
+skinparam actor {
+  FontSize 14
+  FontStyle bold
+}
+
+left to right direction
+
+actor Simulatore as "Simulatore" #FFE600
+actor AmministratorePubblico as "Amministratore pubblico" #FFFFFF 
+
+@enduml

@@ -14,3 +14,6 @@ Dati aggregati;Ricostruzione sintetica, fatta a partire da un insieme di dati, u
 Test end-to-end;Test che valuta l'intero flusso dell'applicazione, in modo tale da verificare che tutti i componenti funzionino correttamente.
 Documentazione;Insieme di documenti che forniscono spiegazioni su un determinato prodotto.
 Sistema; Insieme organizzato di componenti interconnesse e interagenti, che lavorano per raggiungere un obiettivo comune o eseguire specifiche funzioni.
+Data entry; Azione che prevede l'inserimento di dati all'interno del sistema, con lo scopo di popolare una base di dati.
+Dato sintetico; Dato artificiale che cerca di emulare le caratteristiche della sua controparte reale.
+Stato del cielo; Si intende lo stato in cui si trova il cielo (E.g. soleggiato, nuvoloso, tempestoso).
