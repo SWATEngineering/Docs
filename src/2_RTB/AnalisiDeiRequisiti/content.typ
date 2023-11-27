@@ -581,8 +581,19 @@ UC8 : - Archiviazione delle anomalie rilevate
   [*RDF20*],[Desiderabile],[L’utente deve poter analizzare la correlazione tra dati provenienti da tipi diversi di sensori.],[UC11, UC11.1],
   [*RDF21*],[Desiderabile],[L’utente deve poter confrontare dati provenienti da celle diverse.],[UC11, UC11.2],
   [*RDF22*],[Desiderabile],[Il sistema notifica l’utente in caso di selezione di celle non comparabili.],[UC11.2],
-  [*ROF23*],[Obbligatorio],[L’utente deve poter filtrare i sensori in base alle loro caratteristiche.],[UC12]
-  /*[*RDF24*],[Desiderabile],[L’utente deve poter aggiungere un sensore reale alla rete di sensori esistenti.]*/
+  [*ROF23*],[Obbligatorio],[L’utente deve poter filtrare i sensori in base alle loro caratteristiche.],[UC12],
+  [*ROF24*],[Obbligatorio],[L'utente deve poter visualizzare dei dati realistici emulanti l'andamento della temperatura, generati dal simulatore.],[UC13, UC13.1],
+  [*ROF25*],[Obbligatorio],[L'utente deve poter visualizzare dei dati realistici emulanti l'andamento delle precipitazioni, generati dal simulatore.],[UC13, UC13.2],
+  [*ROF26*],[Obbligatorio],[L'utente deve poter visualizzare dei dati realistici emulanti l'andamento dell' umidità, generati dal simulatore.],[UC13, UC13.3],
+  [*ROF27*],[Obbligatorio],[L'utente deve poter visualizzare dei dati realistici emulanti l'andamento dello stato del cielo, generati dal simulatore.],[UC13, UC13.4],
+  [*ROF28*],[Obbligatorio],[L'utente deve poter visualizzare dei dati realistici emulanti l'andamento del vento, generati dal simulatore.],[UC13, UC13.5],
+  [*ROF29*],[Obbligatorio],[L'utente deve poter visualizzare dei dati realistici emulanti l'andamento dell'inquinamento dell'aria, generati dal simulatore.],[UC13, UC13.6],
+  [*ROF30*],[Obbligatorio],[L'utente deve poter visualizzare dei dati realistici emulanti l'andamento dell'indice UV, generati dal simulatore.],[UC13, UC13.7],
+  [*ROF31*],[Obbligatorio],[L'utente deve poter visualizzare dei dati realistici emulanti il movimento di biciclette elettriche, generati dal simulatore.],[UC13, UC13.8],
+  [*ROF32*],[Obbligatorio],[L'utente deve poter visualizzare dei dati realistici emulanti l'andamento della congestione stradale, generati dal simulatore.],[UC13, UC13.9],
+  [*ROF33*],[Obbligatorio],[L'utente deve poter visualizzare dei dati realistici emulanti l'andamento del rumore, generati dal simulatore.],[UC13, UC13.10],
+  [*ROF34*],[Obbligatorio],[L'utente deve poter visualizzare dei dati realistici emulanti l'andamento delle scosse sismiche, generati dal simulatore.],[UC13, UC13.10],
+  [*ROF35*],[Obbligatorio],[L'utente deve poter visualizzare dei dati realistici emulanti l'andamento delle connessioni alla Wi-Fi pubblica, generati dal simulatore.],[UC13, UC13.12]
 )
 
 == Requisiti di qualità
