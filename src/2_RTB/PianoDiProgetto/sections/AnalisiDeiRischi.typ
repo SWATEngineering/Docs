@@ -34,7 +34,7 @@ Il team potrebbe incontrare sfide nell'apprendere l'utilizzo e nell'integrazione
 
 === *RT3 - Produzione di codice poco comprensibile*
 Data l'inesperienza dei membri che lo compongono, il team potrebbe produrre codice difficile da comprendere, contorto. Questo unito ad un'eventuale carenza di relativa documentazione potrebbe influenzare negaitivamente i tempi di sviluppo. 
-  - *Identificazione*: un segnale evidente della manifestazione di questo rischio è la crescità delle discussioni relative all'interpretazione del codice tra i componenti del team.
+  - *Identificazione*: un segnale evidente della manifestazione di questo rischio è la crescita delle discussioni relative all'interpretazione del codice tra i componenti del team.
   - *Valutazione*:  Pericolosità: media; Occorrenza: media.
   - *Prevenzione*: 
     - Code Reviews: effettuare revisioni regolari del codice; 
@@ -71,8 +71,8 @@ Si tratta della ridotta frequenza o della mancanza di contatti regolari e tempes
     - Consegna anticipata di materiale: quando si tratta di _Sprint retrospective_ o di qualsiasi revisione congiunta, fornire la documentazione o il codice prodotto nel rispettivo Sprint il prima possibile, in modo che la Proponente abbia tempo sufficiente per esaminarlo in modo approfondito prima del meeting. Ciò permette una discussione più efficace e informativa durante il meeting stesso.
 
 === *RC4 - Mancanza di fiducia*
-I diversi livelli di competenze, esperienze negative passate e una comunicazione poco trasparente possono portare allo sviluppo di un clima di sfiducia reciproca tra i membri del team: ciò potrebbe compromettere il successo del progetto.  
-  -*Identificazione*: la mancanza di fiducia può essere rilevata in presenza di segnali specifici come reticenza nella collaborazione o nell'assunzione di responsabilità condivise. In aggiunta, alcuni membri potrebbero dimostrarsi poco attivi nelle discussioni di gruppo o nelle attività cooperative. 
+I diversi livelli di competenze e una comunicazione poco trasparente possono portare allo sviluppo di un clima di sfiducia reciproca tra i membri del team: ciò potrebbe compromettere il successo del progetto.  
+  -*Identificazione*: la mancanza di fiducia può essere rilevata in presenza di segnali specifici come la reticenza nella collaborazione o nell'assunzione di responsabilità condivise. In aggiunta, alcuni membri potrebbero dimostrarsi poco attivi nelle discussioni di gruppo o nelle attività cooperative. 
   - *Valutazione*: Pericolosità: media; Occorrenza: bassa.
   - *Prevenzione*: 
     -Promuovere incontri periodici: i membri del team hanno la possibilità di esprimere dubbi e preocupazioni, avere una discussione aperta su aspetti rilevanti del progetto e ricevere feedback sul lavoro fatto. In questo contesto va precisato che la costruzione del feedback gioca un ruolo fondamentale, dev'essere formulato in maniera tale da essere il più positivo possibile facendo sì che non sia visto come una critica ma come un opportunità di miglioramento;
@@ -116,9 +116,11 @@ I rischi individuati vengono riportati in tabella, assieme alla loro pericolosit
   [*Rischio*], [*Pericolosità*], [*Occorrenza*],
   [*RT1* - Conoscenza tecnologica limitata], [Alta], [Alta],
   [*RT2* - Difficoltà nell'adozione degli strumenti di gestione del progetto], [Media], [Bassa],
+  [*RT3* - Produzione di codice poco comprensibile], [Media], [Media],
   [*RC1* - Mancata organizzazione della comunicazione interna], [Bassa], [Bassa],
   [*RC2* - Esasperazione di conflitti interni], [Media],  [Bassa],
   [*RC3* - Frequenza limitata nella comunicazione con la Proponente], [Media], [Bassa],
+  [*RC4* - Mancanza di fiducia], [Media], [Bassa],
   [*RP1* - Comprensione erronea dei requisiti], [Alta], [Media],
   [*RP2* - Disallineamento delle componenti architetturali], [Media], [Media],
   [*RP3* - Variazioni nei tempi e costi del progetto], [Alta], [Media]
