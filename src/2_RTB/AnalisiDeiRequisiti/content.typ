@@ -556,109 +556,109 @@ UC8 : - Archiviazione delle anomalie rilevate
 == Requisiti funzionali (obbligatori e desiderabili)
 #let requisiti_funzionali = (
   (
-     "ROF1 ", "Obbligatorio ", "L’utente deve poter accedere all’applicazione senza dover effettuare l’autenticazione. ", "Capitolato "
+     "ROF1 ", "Obbligatorio", "L’utente deve poter accedere all’applicazione senza dover effettuare l’autenticazione. ", "Capitolato "
   ),
   (
-     "ROF2 ", "Obbligatorio ", "L’utente deve poter monitorare i dati provenienti dai sensori distribuiti nella città in tempo reale tramite una dashboard. ", "UC1 "
+     "ROF2 ", "Obbligatorio", "L’utente deve poter monitorare i dati provenienti dai sensori distribuiti nella città in tempo reale tramite una dashboard. ", "UC1 "
   ),
   (
-     "ROF3 ", "Obbligatorio ", "L’utente deve poter visualizzare una mappa della città con evidenziati la suddivisione in celle e il posizionamento dei sensori. ", "UC1.1 "
+     "ROF3 ", "Obbligatorio", "L’utente deve poter visualizzare una mappa della città con evidenziati la suddivisione in celle e il posizionamento dei sensori. ", "UC1.1 "
   ),
   (
-     "ROF4 ", "Obbligatorio ", "L’utente deve poter visualizzare indicatori numerici che rappresentano i dati correnti dei sensori nella città. ", "UC1.2 "
+     "ROF4 ", "Obbligatorio", "L’utente deve poter visualizzare indicatori numerici che rappresentano i dati correnti dei sensori nella città. ", "UC1.2 "
   ),
   (
-     "ROF5 ", "Obbligatorio ", "L’utente deve poter monitorare i dati provenienti dai sensori distribuiti in una cella in tempo reale tramite una dashboard. ", "UC2 "
+     "ROF5 ", "Obbligatorio", "L’utente deve poter monitorare i dati provenienti dai sensori distribuiti in una cella in tempo reale tramite una dashboard. ", "UC2 "
   ),
   (
-     "ROF6 ", "Obbligatorio ", "L’utente deve poter visualizzare una mappa della cella con evidenziato il posizionamento dei sensori. ", "UC2.2 "
+     "ROF6 ", "Obbligatorio", "L’utente deve poter visualizzare una mappa della cella con evidenziato il posizionamento dei sensori. ", "UC2.2 "
   ),
   (
-     "ROF7 ", "Obbligatorio ", "L’utente deve poter visualizzare indicatori numerici che rappresentano i dati correnti dei sensori nella cella. ", "UC2.2 "
+     "ROF7 ", "Obbligatorio", "L’utente deve poter visualizzare indicatori numerici che rappresentano i dati correnti dei sensori nella cella. ", "UC2.2 "
   ),
   (
-     "ROF8 ", "Obbligatorio ", "L’utente deve poter visualizzare un registro di tutti i sensori all’interno della rete. ", "UC3 ",
+     "ROF8 ", "Obbligatorio", "L’utente deve poter visualizzare un registro di tutti i sensori all’interno della rete. ", "UC3 ",
   ),
   (
-     "ROF9 ", "Obbligatorio ", "L’utente deve poter selezionare un singolo sensore. ", "UC4 ",
+     "ROF9 ", "Obbligatorio", "L’utente deve poter selezionare un singolo sensore. ", "UC4 ",
   ),
   (
-     "ROF10 ", "Obbligatorio ", "L’utente deve poter visualizzare le informazioni pertinenti al sensore selezionato. ", "UC4 ",
+     "ROF10 ", "Obbligatorio", "L’utente deve poter visualizzare le informazioni pertinenti al sensore selezionato. ", "UC4 ",
   ),
   (
-     "ROF11 ", "Desiderabile ", "L’utente deve poter modificare lo stato operativo del sensore selezionato. ", "UC5 ",
+     "ROF11 ", "Desiderabile", "L’utente deve poter modificare lo stato operativo del sensore selezionato. ", "UC5 ",
   ),
   (
-     "ROF12 ", "Obbligatorio ", "L’utente deve poter impostare il periodo temporale per visualizzare i dati storici del sensore. ", "UC6 ",
+     "ROF12 ", "Obbligatorio", "L’utente deve poter impostare il periodo temporale per visualizzare i dati storici del sensore. ", "UC6 ",
   ),
   (
-     "ROF13 ", "Obbligatorio ", "Il sistema notifica l’utente in caso di inserimento di date non valide. ", "UC6 ",
+     "ROF13 ", "Obbligatorio", "Il sistema notifica l’utente in caso di inserimento di date non valide. ", "UC6 ",
   ),
   (
-     "ROF14 ", "Obbligatorio ", "L’utente deve poter visualizzare i dati storici del sensore selezionato. ", "UC6 ",
+     "ROF14 ", "Obbligatorio", "L’utente deve poter visualizzare i dati storici del sensore selezionato. ", "UC6 ",
   ),
   (
-     "ROF15 ", "Obbligatorio ", "Il sistema notifica l’utente in caso di rilevazione di anomalie nei dati sensoriali. ", "UC7, UC7.1 ",
+     "ROF15 ", "Obbligatorio", "Il sistema notifica l’utente in caso di rilevazione di anomalie nei dati sensoriali. ", "UC7, UC7.1 ",
   ),
   (
-     "RDF16 ", "Desiderabile ", "Il sistema registra le anomalie rilevate nei dati sensoriali all’interno di un log. ", "UC7.1 ",
+     "RDF16 ", "Desiderabile", "Il sistema registra le anomalie rilevate nei dati sensoriali all’interno di un log. ", "UC7.1 ",
   ),
   (
-     "ROF17 ", "Obbligatorio ", "Il sistema notifica l’utente quando i dati sensoriali superano soglie predefinite. ", "UC7, UC7.2 ",
+     "ROF17 ", "Obbligatorio", "Il sistema notifica l’utente quando i dati sensoriali superano soglie predefinite. ", "UC7, UC7.2 ",
   ),
   (
-     "RDF18 ", "Desiderabile ", "L’utente deve poter configurare le soglie di monitoraggio dei dati sensoriali. ", "UC9 ",
+     "RDF18 ", "Desiderabile", "L’utente deve poter configurare le soglie di monitoraggio dei dati sensoriali. ", "UC9 ",
   ),
   (
-     "ROF19 ", "Desiderabile ", "L’utente deve poter visualizzare i trend temporali dei dati sensoriali. ", "UC10 ",
+     "ROF19 ", "Desiderabile", "L’utente deve poter visualizzare i trend temporali dei dati sensoriali. ", "UC10 ",
   ),
   (
-     "RDF20 ", "Desiderabile ", "L’utente deve poter analizzare la correlazione tra dati provenienti da tipi diversi di sensori. ", "UC11, UC11.1 ",
+     "RDF20 ", "Desiderabile", "L’utente deve poter analizzare la correlazione tra dati provenienti da tipi diversi di sensori. ", "UC11, UC11.1 ",
   ),
   (
-     "RDF21 ", "Desiderabile ", "L’utente deve poter confrontare dati provenienti da celle diverse. ", "UC11, UC11.2 ",
+     "RDF21 ", "Desiderabile", "L’utente deve poter confrontare dati provenienti da celle diverse. ", "UC11, UC11.2 ",
   ),
   (
-     "RDF22 ", "Desiderabile ", "Il sistema notifica l’utente in caso di selezione di celle non comparabili. ", "UC11.2 ",
+     "RDF22 ", "Desiderabile", "Il sistema notifica l’utente in caso di selezione di celle non comparabili. ", "UC11.2 ",
   ),
   (
-     "ROF23 ", "Obbligatorio ", "L’utente deve poter filtrare i sensori in base alle loro caratteristiche. ", "UC12 ",
+     "ROF23 ", "Obbligatorio", "L’utente deve poter filtrare i sensori in base alle loro caratteristiche. ", "UC12 ",
   ),
   (
-     "ROF24 ", "Obbligatorio ", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento della temperatura, generati dal simulatore. ", "UC13, UC13.1 ",
+     "ROF24 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento della temperatura, generati dal simulatore. ", "UC13, UC13.1 ",
   ),
   (
-     "ROF25 ", "Obbligatorio ", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento delle precipitazioni, generati dal simulatore. ", "UC13, UC13.2 ",
+     "ROF25 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento delle precipitazioni, generati dal simulatore. ", "UC13, UC13.2 ",
   ),
   (
-     "ROF26 ", "Obbligatorio ", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento dell' umidità, generati dal simulatore. ", "UC13, UC13.3 ",
+     "ROF26 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento dell' umidità, generati dal simulatore. ", "UC13, UC13.3 ",
   ),
   (
-     "ROF27 ", "Obbligatorio ", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento dello stato del cielo, generati dal simulatore. ", "UC13, UC13.4 ",
+     "ROF27 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento dello stato del cielo, generati dal simulatore. ", "UC13, UC13.4 ",
   ),
   (
-     "ROF28 ", "Obbligatorio ", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento del vento, generati dal simulatore. ", "UC13, UC13.5 ",
+     "ROF28 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento del vento, generati dal simulatore. ", "UC13, UC13.5 ",
   ),
   (
-     "ROF29 ", "Obbligatorio ", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento dell'inquinamento dell'aria, generati dal simulatore. ", "UC13, UC13.6 ",
+     "ROF29 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento dell'inquinamento dell'aria, generati dal simulatore. ", "UC13, UC13.6 ",
   ),
   (
-     "ROF30 ", "Obbligatorio ", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento dell'indice UV, generati dal simulatore. ", "UC13, UC13.7 ",
+     "ROF30 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento dell'indice UV, generati dal simulatore. ", "UC13, UC13.7 ",
   ),
   (
-     "ROF31 ", "Obbligatorio ", "L'utente deve poter visualizzare dei dati realistici emulanti il movimento di biciclette elettriche, generati dal simulatore. ", "UC13, UC13.8 ",
+     "ROF31 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti il movimento di biciclette elettriche, generati dal simulatore. ", "UC13, UC13.8 ",
   ),
   (
-     "ROF32 ", "Obbligatorio ", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento della congestione stradale, generati dal simulatore. ", "UC13, UC13.9 ",
+     "ROF32 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento della congestione stradale, generati dal simulatore. ", "UC13, UC13.9 ",
   ),
   (
-     "ROF33 ", "Obbligatorio ", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento del rumore, generati dal simulatore. ", "UC13, UC13.10 ",
+     "ROF33 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento del rumore, generati dal simulatore. ", "UC13, UC13.10 ",
   ),
   (
-     "ROF34 ", "Obbligatorio ", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento delle scosse sismiche, generati dal simulatore. ", "UC13, UC13.10 ",
+     "ROF34 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento delle scosse sismiche, generati dal simulatore. ", "UC13, UC13.10 ",
   ),
   (
-     "ROF35 ", "Obbligatorio ", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento delle connessioni alla Wi-Fi pubblica, generati dal simulatore. ", "UC13, UC13.12 "
+     "ROF35 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento delle connessioni alla Wi-Fi pubblica, generati dal simulatore. ", "UC13, UC13.12 "
   )
 )
 
@@ -678,33 +678,81 @@ UC8 : - Archiviazione delle anomalie rilevate
 )
 
 == Requisiti di qualità
+#let requisiti_qualità = (
+  (
+  "ROQ1","Obbligatorio","Il superamento di test che dimostrino il corretto funzionamento dei servizi utilizzati e delle funzionalità implementate. La copertura di test deve essere almeno dell'80% e deve essere dimostrata tramite report.","Capitolato",
+  ),
+  (
+  "ROQ2","Obbligatorio",[Il sistema deve essere testato nella sua interezza tramite #glossary("test end-to-end")],"Capitolato",
+  ),
+  (
+  "ROQ3","Obbligatorio", [Viene richiesta una #glossary("documentazione") sulle scelte implementative e progettuali, che dovranno essere accompagnate da motivazioni.],"Capitolato",
+  ),
+  (
+  "ROQ4","Obbligatorio","La documentazione dovrà riguardare anche problemi aperti ed eventuali possibili soluzioni da approfondire in futuro.","Capitolato"
+  ),
+)
+
 #table(
   columns: (auto, auto, 2fr,auto),
   inset: 10pt,
   align: horizon,
   [*Codice*], [*Importanza*], [*Descrizione*],[*Fonti*],
-  [*ROQ1*],[Obbligatorio],[Il superamento di test che dimostrino il corretto funzionamento dei servizi utilizzati e delle funzionalità implementate. La copertura di test deve essere almeno dell'80% e deve essere dimostrata tramite report.],[Capitolato],
-  [*ROQ2*],[Obbligatorio],[Il sistema deve essere testato nella sua interezza tramite #glossary("test end-to-end")],[Capitolato],
-  [*ROQ3*],[Obbligatorio], [Viene richiesta una #glossary("documentazione") sulle scelte implementative e progettuali, che dovranno essere accompagnate da motivazioni.],[Capitolato],
-  [*ROQ4*],[Obbligatorio],[La documentazione dovrà riguardare anche problemi aperti ed eventuali possibili soluzioni da approfondire in futuro.],[Capitolato]
+  ..requisiti_qualità.flatten().flatten().enumerate().map(content => {
+      if (int(content.at(0) / 4) == content.at(0) / 4) {
+        return [*#content.at(1)*]
+      } else {
+        return [#content.at(1)]
+      }
+    })
 )
 
 == Requisiti di vincolo
+#let requisiti_vincolo = (
+  (
+  "ROV1","Obbligatorio","La creazione di un simulatore di almeno una sorgente dati","Capitolato",
+  ),
+  (
+  "ROV2","Obbligatorio","La simulazione deve produrre dati realistici","Capitolato",
+  ),
+  (
+  "ROV3","Obbligatorio","I dati vanno raccolti in un database OLAP","Capitolato",
+  ),
+  (
+  "ROV4","Obbligatorio","I dati vanno passati ad un sistema di stream processing","Capitolato",
+  ),
+  (
+  "ROV5","Obbligatorio","Una dashboard che riporti almeno i dati di un sensore","Capitolato",
+  ),
+  (
+  "RDV6","Desiderabile","La simulazione di più sorgenti dati","Capitolato",
+  ),
+  (
+  "RPV7","Opzionale","Messa in evidenza di relazioni tra dati provenienti da sorgenti diverse","Capitolato",
+  ),
+  (
+  "RPV8","Opzionale","Un sistema di allerta che notifichi l'utente in caso di anomalie o eventi critici","Verbale esterno",
+  ),
+  (
+  "RPV9","Opzionale","La previsione di eventi futuri, basata su dati storici e attuali","Capitolato",
+  ),
+  (
+  "RDV10","Desiderabile","Una dashboard avanzata contenente: una mappa della città, widget e informazioni sui sensori (ad esempio il tipo di sensore, il modello, ecc.).","Capitolato"
+  )
+)
+
 #table(
   columns: (auto, auto, 2fr,auto),
   inset: 10pt,
   align: horizon,
   [*Codice*], [*Importanza*], [*Descrizione*],[*Fonti*],
-  [*ROV1*],[Obbligatorio],[La creazione di un simulatore di almeno una sorgente dati],[Capitolato],
-  [*ROV2*],[Obbligatorio],[La simulazione deve produrre dati realistici],[Capitolato],
-  [*ROV3*],[Obbligatorio],[I dati vanno raccolti in un database OLAP],[Capitolato],
-  [*ROV4*],[Obbligatorio],[I dati vanno passati ad un sistema di stream processing],[Capitolato],
-  [*ROV5*],[Obbligatorio],[Una dashboard che riporti almeno i dati di un sensore],[Capitolato],
-  [*RDV6*],[Desiderabile],[La simulazione di più sorgenti dati],[Capitolato],
-  [*RPV7*],[Opzionale],[Messa in evidenza di relazioni tra dati provenienti da sorgenti diverse],[Capitolato],
-  [*RPV8*],[Opzionale],[Un sistema di allerta che notifichi l'utente in caso di anomalie o eventi critici],[Verbale esterno],
-  [*RPV9*],[Opzionale],[La previsione di eventi futuri, basata su dati storici e attuali],[Capitolato],
-  [*RDV10*],[Desiderabile],[Una dashboard avanzata contenente: una mappa della città, widget e informazioni sui sensori (ad esempio il tipo di sensore, il modello, ecc.).],[Capitolato]
+  ..requisiti_vincolo.flatten().flatten().enumerate().map(content => {
+      if (int(content.at(0) / 4) == content.at(0) / 4) {
+        return [*#content.at(1)*]
+      } else {
+        return [#content.at(1)]
+      }
+    })
 )
 
 == Tracciamento
@@ -718,10 +766,20 @@ UC8 : - Archiviazione delle anomalie rilevate
 )
 
 == Riepilogo
-#let funzionale_obb = requisiti_funzionali.filter(content => content.at(1) == "Obbligatorio ").len()
-#let funzionale_des = requisiti_funzionali.filter(content => content.at(1) == "Desiderabile ").len()
-#let funzionale_opz = requisiti_funzionali.filter(content => content.at(1) == "Opzionale ").len()
+#let funzionale_obb = requisiti_funzionali.filter(content => content.at(1) == "Obbligatorio").len()
+#let funzionale_des = requisiti_funzionali.filter(content => content.at(1) == "Desiderabile").len()
+#let funzionale_opz = requisiti_funzionali.filter(content => content.at(1) == "Opzionale").len()
 #let funzionale_tot = funzionale_des + funzionale_obb + funzionale_opz
+
+#let qualità_obb = requisiti_qualità.filter(content => content.at(1) == "Obbligatorio").len()
+#let qualità_des = requisiti_qualità.filter(content => content.at(1) == "Desiderabile").len()
+#let qualità_opz = requisiti_qualità.filter(content => content.at(1) == "Opzionale").len()
+#let qualità_tot = qualità_des + qualità_obb + qualità_opz
+
+#let vincolo_obb = requisiti_vincolo.filter(content => content.at(1) == "Obbligatorio").len()
+#let vincolo_des = requisiti_vincolo.filter(content => content.at(1) == "Desiderabile").len()
+#let vincolo_opz = requisiti_vincolo.filter(content => content.at(1) == "Opzionale").len()
+#let vincolo_tot = vincolo_des + vincolo_obb + vincolo_opz
 
 #table(
   columns: (auto, auto, auto, auto, auto),
@@ -729,6 +787,6 @@ UC8 : - Archiviazione delle anomalie rilevate
   align: horizon,
   [*Tipologia*], [*Obbligatori*], [*Desiderabili*], [*Opzionali*], [*Totale*],
   [funzionali], [#funzionale_obb], [#funzionale_des], [#funzionale_opz], [#funzionale_tot],
-  [di qualità], [4], [0], [0], [4],
-  [di vincolo], [5], [3], [2], [10]
+  [di qualità], [#qualità_obb], [#qualità_des], [#qualità_opz], [#qualità_tot],
+  [di vincolo], [#vincolo_obb], [#vincolo_des], [#vincolo_opz], [#vincolo_tot]
 )
