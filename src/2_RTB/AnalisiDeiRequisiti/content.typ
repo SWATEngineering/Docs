@@ -403,6 +403,11 @@ UC8 : - Archiviazione delle anomalie rilevate
   */
 /* Bisogna capire se tenere la UC14 */
 
+#figure(
+  image("assets/UC13.png",width:60%),
+  caption: [UC13 e relative specializzazioni]
+)
+
 / UC13 : - Inserimento dati
   - *Attore Principale*: simulatore.
   - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
