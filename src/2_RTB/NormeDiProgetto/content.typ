@@ -230,7 +230,7 @@ Ogni cambiamento di stato è accompagnato dal conseguente movimento della issue,
         - *Versione*: l'ultima versione del documento;
         - *logo università*: in basso a destra.
 
-==== Formato data
+==== Formato data <formato>
 
 Si seguirà il formato GG-MM-AAAA
 
