@@ -404,14 +404,14 @@ UC8 : - Archiviazione delle anomalie rilevate
 /* Bisogna capire se tenere la UC14 */
 
 / UC13 : - Inserimento dati
-  - *Attore Principale*: Simulatore.
+  - *Attore Principale*: simulatore.
   - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
   - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso i dati.
   - *Scenario Principale*:
     - Il simulatore:
-      + si connette al sistema;
-      + avvia la simulazione di un particolare tipo di dato;
-      + inserisce il #glossary("dato sintetico") all'interno del sistema.
+      + Si connette al sistema;
+      + Avvia la simulazione di un particolare tipo di dato;
+      + Inserisce il #glossary("dato sintetico") all'interno del sistema.
   - *Specializzazioni*:
     - Inserimento dati temperatura [UC13.1];
     - Inserimento dati precipitazioni [UC13.2];
@@ -427,124 +427,124 @@ UC8 : - Archiviazione delle anomalie rilevate
     - Inserimento dati connessione alla Wi-Fi pubblica [UC13.12];
 
 / UC13.1 : - Inserimento dati temperatura
-  - *Attore Principale*: Simulatore.
+  - *Attore Principale*: simulatore.
   - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
   - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi alla temperatura.
   - *Scenario Principale*:
     - Il simulatore:
-      + si connette al sistema;
-      + avvia la simulazione della temperatura;
-      + inserisce il #glossary("dato sintetico") relativo alla temperatura all'interno del sistema.
+      + Si connette al sistema;
+      + Avvia la simulazione della temperatura;
+      + Inserisce il #glossary("dato sintetico") relativo alla temperatura all'interno del sistema.
 
 / UC13.2 : - Inserimento dati precipitazioni
-  - *Attore Principale*: Simulatore.
+  - *Attore Principale*: simulatore.
   - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
   - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi alle precipitazioni.
   - *Scenario Principale*:
     - Il simulatore:
-      + si connette al sistema;
-      + avvia la simulazione delle precipitazioni;
-      + inserisce il #glossary("dato sintetico") relativo alle precipitazioni all'interno del sistema.
+      + Si connette al sistema;
+      + Avvia la simulazione delle precipitazioni;
+      + Inserisce il #glossary("dato sintetico") relativo alle precipitazioni all'interno del sistema.
 
 / UC13.3 : - Inserimento dati umidità
-  - *Attore Principale*: Simulatore.
+  - *Attore Principale*: simulatore.
   - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
   - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi all' umidità.
   - *Scenario Principale*:
     - Il simulatore:
-      + si connette al sistema;
-      + avvia la simulazione dell' umidità;
-      + inserisce il #glossary("dato sintetico") relativo all' umidità all'interno del sistema.
+      + Si connette al sistema;
+      + Avvia la simulazione dell' umidità;
+      + Inserisce il #glossary("dato sintetico") relativo all' umidità all'interno del sistema.
 
 / UC13.4 : - Inserimento dati #glossary("stato del cielo")
-  - *Attore Principale*: Simulatore.
+  - *Attore Principale*: simulatore.
   - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
   - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi allo #glossary("stato del cielo").
   - *Scenario Principale*:
     - Il simulatore:
-      + si connette al sistema;
-      + avvia la simulazione dello #glossary("stato del cielo");
-      + inserisce il #glossary("dato sintetico") relativo allo #glossary("stato del cielo") all'interno del sistema.
+      + Si connette al sistema;
+      + Avvia la simulazione dello #glossary("stato del cielo");
+      + Inserisce il #glossary("dato sintetico") relativo allo #glossary("stato del cielo") all'interno del sistema.
 
 / UC13.5 : - Inserimento dati vento
-  - *Attore Principale*: Simulatore.
+  - *Attore Principale*: simulatore.
   - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
   - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi al vento.
   - *Scenario Principale*:
     - Il simulatore:
-      + si connette al sistema;
-      + avvia la simulazione del vento;
-      + inserisce il #glossary("dato sintetico") relativo al vento all'interno del sistema.
+      + Si connette al sistema;
+      + Avvia la simulazione del vento;
+      + Inserisce il #glossary("dato sintetico") relativo al vento all'interno del sistema.
 
 / UC13.6 : - Inserimento dati inquinamento dell'aria
-  - *Attore Principale*: Simulatore.
+  - *Attore Principale*: simulatore.
   - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
   - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi all'inquinamento dell'aria.
   - *Scenario Principale*:
     - Il simulatore:
-      + si connette al sistema;
-      + avvia la simulazione dell'inquinamento dell'aria;
-      + inserisce il #glossary("dato sintetico") relativo all'inquinamento dell'aria all'interno del sistema.
+      + Si connette al sistema;
+      + Avvia la simulazione dell'inquinamento dell'aria;
+      + Inserisce il #glossary("dato sintetico") relativo all'inquinamento dell'aria all'interno del sistema.
 
 / UC13.7 : - Inserimento dati indice UV
-  - *Attore Principale*: Simulatore.
+  - *Attore Principale*: simulatore.
   - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
   - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi all'indice UV.
   - *Scenario Principale*:
     - Il simulatore:
-      + si connette al sistema;
-      + avvia la simulazione dell'indice UV;
-      + inserisce il #glossary("dato sintetico") relativo all'indice UV all'interno del sistema.
+      + Si connette al sistema;
+      + Avvia la simulazione dell'indice UV;
+      + Inserisce il #glossary("dato sintetico") relativo all'indice UV all'interno del sistema.
 
 / UC13.8 : - Inserimento dati posizione biciclette elettriche
-  - *Attore Principale*: Simulatore.
+  - *Attore Principale*: simulatore.
   - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
   - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi alla posizione delle biciclette elettriche.
   - *Scenario Principale*:
     - Il simulatore:
-      + si connette al sistema;
-      + avvia la simulazione della posizione delle biciclette elettriche;
-      + inserisce il #glossary("dato sintetico") relativo alla posizione delle biciclette elettriche all'interno del sistema.
+      + Si connette al sistema;
+      + Avvia la simulazione della posizione delle biciclette elettriche;
+      + Inserisce il #glossary("dato sintetico") relativo alla posizione delle biciclette elettriche all'interno del sistema.
 
 / UC13.9 : - Inserimento dati congestione stradale
-  - *Attore Principale*: Simulatore.
+  - *Attore Principale*: simulatore.
   - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
   - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi alla congestione stradale.
   - *Scenario Principale*:
     - Il simulatore:
-      + si connette al sistema;
-      + avvia la simulazione della congestione stradale;
-      + inserisce il #glossary("dato sintetico") relativo alla congestione stradale all'interno del sistema.
+      + Si connette al sistema;
+      + Avvia la simulazione della congestione stradale;
+      + Inserisce il #glossary("dato sintetico") relativo alla congestione stradale all'interno del sistema.
 
 / UC13.10 : - Inserimento dati rumore
-  - *Attore Principale*: Simulatore.
+  - *Attore Principale*: simulatore.
   - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
   - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi al rumore.
   - *Scenario Principale*:
     - Il simulatore:
-      + si connette al sistema;
-      + avvia la simulazione del rumore;
-      + inserisce il #glossary("dato sintetico") relativo al rumore all'interno del sistema.
+      + Si connette al sistema;
+      + Avvia la simulazione del rumore;
+      + Inserisce il #glossary("dato sintetico") relativo al rumore all'interno del sistema.
 
 / UC13.11 : - Inserimento dati scosse sismiche
-  - *Attore Principale*: Simulatore.
+  - *Attore Principale*: simulatore.
   - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
   - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi alle scosse sismiche.
   - *Scenario Principale*:
     - Il simulatore:
-      + si connette al sistema;
-      + avvia la simulazione delle scosse sismiche;
-      + inserisce il #glossary("dato sintetico") relativo alle scosse sismiche all'interno del sistema.
+      + Si connette al sistema;
+      + Avvia la simulazione delle scosse sismiche;
+      + Inserisce il #glossary("dato sintetico") relativo alle scosse sismiche all'interno del sistema.
 
 / UC13.11 : - Inserimento dati connessione Wi-Fi pubblica
-  - *Attore Principale*: Simulatore.
+  - *Attore Principale*: simulatore.
   - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
   - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi alle connessioni alla Wi-Fi pubblica.
   - *Scenario Principale*:
     - Il simulatore:
-      + si connette al sistema;
-      + avvia la simulazione delle connessioni alla Wi-Fi pubblica;
-      + inserisce il #glossary("dato sintetico") relativo alle connessioni alla Wi-Fi pubblica all'interno del sistema.
+      + Si connette al sistema;
+      + Avvia la simulazione delle connessioni alla Wi-Fi pubblica;
+      + Inserisce il #glossary("dato sintetico") relativo alle connessioni alla Wi-Fi pubblica all'interno del sistema.
 
 = Requisiti
 
