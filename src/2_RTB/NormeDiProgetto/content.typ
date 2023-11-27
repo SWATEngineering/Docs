@@ -24,18 +24,18 @@ Il presente documento ha come scopo la definizione delle #glossary[best practice
 === Descrizione e scopo
 
 Il processo di fornitura si propone di dettagliare le attività del fornitore per comprendere e soddisfare le richieste della Proponente.
-Dopo la completa comprensione delle esigenze, il fornitore, in collaborazione con la Proponente, stabilisce, tramite contratto, la data di consegna del prodotto e la gestione della manutenzione. Successivamente, viene redatto il Piano di Progetto per scaglionare le varie attività da svolgere, garantendo un chiaro processo di sviluppo del prodotto finale. L'obiettivo principale è soddisfare in modo chiaro le richieste della Proponente, evitando possibili incomprensioni, attraverso una collaborazione continua.
+Dopo la completa comprensione delle esigenze, il fornitore, in collaborazione con la Proponente, stabilisce, tramite contratto, la data di consegna del prodotto. Successivamente, viene redatto il Piano di Progetto per scaglionare le varie attività da svolgere, garantendo un chiaro processo di sviluppo del prodotto finale. L'obiettivo principale è soddisfare in modo chiaro le richieste della Proponente, evitando possibili incomprensioni, attraverso una collaborazione continua.
 
 Il processo è caratterizzato da varie fasi:
 
         - Determinare chiaramente i bisogni soddisfatti dal prodotto finale;
         - Contrattazione: 
                 + Ottenere feedback sulle tecnologie utilizzate;
-                + Chiarire dubbi o difficoltà riscontrate.
-                + Richiedere incontri di formazione sulle tecnologie consigliate per uno sviluppo migliore.
+                + Chiarire dubbi o difficoltà riscontrate;
+                + Richiedere incontri di formazione sulle tecnologie consigliate per ottimizzare lo sviluppo.
         - Stima dei costi;
-        - Effettuare verifica continua;
-        - Consegna e completamento.
+        - Continua verifica e controllo;
+        - Completamento e consegna.
 
 === Documenti
 
@@ -48,7 +48,7 @@ Si compone di:
         - *Analisi dei rischi*:   identifica, valuta e gestisce i potenziali rischi che potrebbero influenzare il successo di un progetto o di un'attività. È essenziale per anticipare e affrontare le sfide che potrebbero emergere durante lo sviluppo di un progetto, consentendo al team di adottare misure preventive o di pianificare strategie di mitigazione;
         - *Modello di sviluppo*: approccio metodologico che viene scelto per guidare il processo di sviluppo del prodotto. Definisce la struttura di lavoro che sarà seguita durante l'intero ciclo di vita del progetto;
         - *Pianificazione*: fornisce una roadmap dettagliata delle attività, delle risorse, e delle scadenze associate al progetto;
-        - *Preventivo*:cstima dei costi, delle risorse e delle attività necessarie per completare un'attività;
+        - *Preventivo*: stima dei costi per portare a termine il progetto.
         
 
 
