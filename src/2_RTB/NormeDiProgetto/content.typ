@@ -271,7 +271,7 @@ Il verbale esterno oltre alle sezioni sopra elencate ha una pagina per la conval
 ===== Elenchi puntati
 
 Le voci di ogni elenco iniziano con lettera maiuscola e terminano con punto e virgola ';', eccetto l'ultima voce che terminerà con punto normale '.'.
-Nel caso di una definizione il termine andrà posto in grassetto con '*' ad inizio e fine.
+Nel caso di una definizione il termine andrà posto in grassetto.
 
 
 === Strumenti 
