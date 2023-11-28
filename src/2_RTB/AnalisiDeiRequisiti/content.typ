@@ -104,6 +104,139 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
     + l'utente accede alla Dashboard; 
     + vengono mostrati pannelli con indicatori numerici che rappresentano i dati attuali misurati da ciascun tipo di sensore distribuito nella città;
     + gli indicatori numerici si aggiornano automaticamente per riflettere i dati più recenti provenienti dai sensori.
+  - *Inclusioni*:
+    - Visualizzazione dati temperatura [UC1.2.1];
+    - Visualizzazione dati precipitazioni [UC1.2.2];
+    - Visualizzazione dati umidità [UC1.2.3];
+    - Visualizzazione dati #glossary("stato del cielo") [UC1.2.4];
+    - Visualizzazione dati vento [UC1.2.5];
+    - Visualizzazione dati inquinamento dell'aria [UC1.2.6];
+    - Visualizzazione dati indice UV [UC1.2.7];
+    - Visualizzazione dati posizione biciclette elettriche [UC1.2.8];
+    - Visualizzazione dati congestione stradale [UC1.2.9];
+    - Visualizzazione dati rumore [UC1.2.10];
+    - Visualizzazione dati scosse sismiche [UC1.2.11];
+    - Visualizzazione dati connessione alla Wi-Fi pubblica [UC1.2.12];
+
+=== UC1.2.1 - Visualizzazione dati temperatura
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore di temperatura è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi alla temperatura;
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi alla temperatura;
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC1.2.2 - Visualizzazione dati precipitazioni
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore di precipitazioni è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi alle precipitazioni.
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi alle precipitazioni;
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC1.2.3 - Visualizzazione dati umidità
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore di umidità è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi all' umidità.
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi all'umidità;
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC1.2.4 - Visualizzazione dati #glossary("stato del cielo")
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore per lo #glossary("stato del cielo") è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi allo #glossary("stato del cielo").
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi allo #glossary("stato del cielo");
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC1.2.5 - Visualizzazione dati vento
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore del vento è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi al vento.
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi al vento;
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC1.2.6 - Visualizzazione dati inquinamento dell'aria
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore di inquinamento dell'aria è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi all'inquinamento dell'aria.
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi all'inquinamento dell'aria;
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC1.2.7 - Visualizzazione dati indice UV
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore di indice UV è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi all'indice UV.
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi all'indice UV;
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC1.2.8 - Visualizzazione dati posizione biciclette elettriche
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore di posizione della bicicletta elettrica è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi alla posizione delle biciclette elettriche.
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi alle biciclette elettriche;
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC1.2.9 - Visualizzazione dati congestione stradale
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore di congestione stradale è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi alla congestione stradale.
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi alla congestione stradale;
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC1.2.10 - Visualizzazione dati rumore
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore del rumore è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi al rumore.
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi al rumore;
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC1.2.11 - Visualizzazione dati scosse sismiche
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore delle scosse sismiche è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi alle scosse sismiche.
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi alle scosse sismiche;
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC1.2.12 - Visualizzazione dati connessione Wi-Fi pubblica
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore delle connessioni alla Wi-Fi pubblica è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi alle connessioni alla Wi-Fi pubblica.
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi alle connessioni alla Wi-Fi pubblica;
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
 
 === UC2 - Visualizzazione dello stato di una #glossary("cella")
   - *Attore Principale*: utente generico.
@@ -149,7 +282,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
     + i sensori sono inizialmente filtrati per tipologia in una visualizzazione tabellare, consentendo una rapida identificazione e analisi.
   - *Estensioni*: 
     + selezione un sensore [UC4];
-    + filtraggio dei sensori in base alle loro caratteristiche [UC13].
+    + filtraggio dei sensori in base alle loro caratteristiche.
 
 === UC4 - Selezione di un sensore
 
@@ -358,7 +491,7 @@ UC8 - Archiviazione delle anomalie rilevate
     + L'utente accede dalla dashboard all'area dedicata all' analisi avanzata tra sensori;
     + L'utente seleziona due diverse celle di analisi; 
     + il sistema elabora i dati o le statistiche comparate per le celle selezionate.
-  -*Scenario Secondario*: 
+  - *Scenario Secondario*: 
     + L'utente accede dalla dashboard all'area dedicata all' analisi avanzata tra sensori;
     + il sistema esegue controlli sui dati disponibili all’interno delle celle selezionate per determinare la comparabilità;
     + le celle presentano una variazione significativa nei tipi di sensori presenti all’interno;
@@ -392,167 +525,7 @@ UC8 - Archiviazione delle anomalie rilevate
         - Cella di appartenenza;
         - Codice di fabbrica.
     + il sistema applica i filtri e mostra all'utente solo i sensori che soddisfino i criteri selezionati.
-/*
-=== UC14 - Aggiunta di un sensore reale
-  - *Attore Principale*: utente generico.
-  - *Precondizioni*: il sensore fisico è disponibile e pronto per l'installazione.
-  - *Postcondizioni*: il nuovo sensore reale è stato correttamente aggiunto alla rete e i suoi dati sono ora disponibili nella piattaforma per l'analisi e la visualizzazione.
-  - *Scenario Principale*:
-    - L'utente:
-      + accede alla sezione di gestione dei sensori [UC3];
-      + registra il nuovo sensore specificando le informazioni necessarie;
-      + il sistema verifica e riconosce il nuovo sensore nella rete.
-  - *Estensioni*: se il sistema non riesce a riconoscere o integrare correttamente il nuovo sensore, l'utente riceve una notifica di errore.
-  */
-/* Bisogna capire se tenere la UC14 */
 
-#figure(
-  image("assets/UC13.png",width:60%),
-  caption: [UC13 e relative specializzazioni]
-)
-
-=== UC13 - Inserimento dati
-  - *Attore Principale*: simulatore.
-  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
-  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso i dati.
-  - *Scenario Principale*:
-    - Il simulatore:
-      + Si connette al sistema;
-      + Avvia la simulazione di un particolare tipo di dato;
-      + Inserisce il #glossary("dato sintetico") all'interno del sistema.
-  - *Specializzazioni*:
-    - Inserimento dati temperatura [UC13.1];
-    - Inserimento dati precipitazioni [UC13.2];
-    - Inserimento dati umidità [UC13.3];
-    - Inserimento dati #glossary("stato del cielo") [UC13.4];
-    - Inserimento dati vento [UC13.5];
-    - Inserimento dati inquinamento dell'aria [UC13.6];
-    - Inserimento dati indice UV [UC13.7];
-    - Inserimento dati posizione biciclette elettriche [UC13.8];
-    - Inserimento dati congestione stradale [UC13.9];
-    - Inserimento dati rumore [UC13.10];
-    - Inserimento dati scosse sismiche [UC13.11];
-    - Inserimento dati connessione alla Wi-Fi pubblica [UC13.12];
-
-=== UC13.1 - Inserimento dati temperatura
-  - *Attore Principale*: simulatore.
-  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
-  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi alla temperatura.
-  - *Scenario Principale*:
-    - Il simulatore:
-      + Si connette al sistema;
-      + Avvia la simulazione della temperatura;
-      + Inserisce il #glossary("dato sintetico") relativo alla temperatura all'interno del sistema.
-
-=== UC13.2 - Inserimento dati precipitazioni
-  - *Attore Principale*: simulatore.
-  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
-  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi alle precipitazioni.
-  - *Scenario Principale*:
-    - Il simulatore:
-      + Si connette al sistema;
-      + Avvia la simulazione delle precipitazioni;
-      + Inserisce il #glossary("dato sintetico") relativo alle precipitazioni all'interno del sistema.
-
-=== UC13.3 - Inserimento dati umidità
-  - *Attore Principale*: simulatore.
-  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
-  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi all' umidità.
-  - *Scenario Principale*:
-    - Il simulatore:
-      + Si connette al sistema;
-      + Avvia la simulazione dell' umidità;
-      + Inserisce il #glossary("dato sintetico") relativo all' umidità all'interno del sistema.
-
-=== UC13.4 - Inserimento dati #glossary("stato del cielo")
-  - *Attore Principale*: simulatore.
-  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
-  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi allo #glossary("stato del cielo").
-  - *Scenario Principale*:
-    - Il simulatore:
-      + Si connette al sistema;
-      + Avvia la simulazione dello #glossary("stato del cielo");
-      + Inserisce il #glossary("dato sintetico") relativo allo #glossary("stato del cielo") all'interno del sistema.
-
-=== UC13.5 - Inserimento dati vento
-  - *Attore Principale*: simulatore.
-  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
-  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi al vento.
-  - *Scenario Principale*:
-    - Il simulatore:
-      + Si connette al sistema;
-      + Avvia la simulazione del vento;
-      + Inserisce il #glossary("dato sintetico") relativo al vento all'interno del sistema.
-
-=== UC13.6 - Inserimento dati inquinamento dell'aria
-  - *Attore Principale*: simulatore.
-  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
-  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi all'inquinamento dell'aria.
-  - *Scenario Principale*:
-    - Il simulatore:
-      + Si connette al sistema;
-      + Avvia la simulazione dell'inquinamento dell'aria;
-      + Inserisce il #glossary("dato sintetico") relativo all'inquinamento dell'aria all'interno del sistema.
-
-=== UC13.7 - Inserimento dati indice UV
-  - *Attore Principale*: simulatore.
-  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
-  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi all'indice UV.
-  - *Scenario Principale*:
-    - Il simulatore:
-      + Si connette al sistema;
-      + Avvia la simulazione dell'indice UV;
-      + Inserisce il #glossary("dato sintetico") relativo all'indice UV all'interno del sistema.
-
-=== UC13.8 - Inserimento dati posizione biciclette elettriche
-  - *Attore Principale*: simulatore.
-  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
-  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi alla posizione delle biciclette elettriche.
-  - *Scenario Principale*:
-    - Il simulatore:
-      + Si connette al sistema;
-      + Avvia la simulazione della posizione delle biciclette elettriche;
-      + Inserisce il #glossary("dato sintetico") relativo alla posizione delle biciclette elettriche all'interno del sistema.
-
-=== UC13.9 - Inserimento dati congestione stradale
-  - *Attore Principale*: simulatore.
-  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
-  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi alla congestione stradale.
-  - *Scenario Principale*:
-    - Il simulatore:
-      + Si connette al sistema;
-      + Avvia la simulazione della congestione stradale;
-      + Inserisce il #glossary("dato sintetico") relativo alla congestione stradale all'interno del sistema.
-
-=== UC13.10 - Inserimento dati rumore
-  - *Attore Principale*: simulatore.
-  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
-  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi al rumore.
-  - *Scenario Principale*:
-    - Il simulatore:
-      + Si connette al sistema;
-      + Avvia la simulazione del rumore;
-      + Inserisce il #glossary("dato sintetico") relativo al rumore all'interno del sistema.
-
-=== UC13.11 - Inserimento dati scosse sismiche
-  - *Attore Principale*: simulatore.
-  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
-  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi alle scosse sismiche.
-  - *Scenario Principale*:
-    - Il simulatore:
-      + Si connette al sistema;
-      + Avvia la simulazione delle scosse sismiche;
-      + Inserisce il #glossary("dato sintetico") relativo alle scosse sismiche all'interno del sistema.
-
-=== UC13.11 - Inserimento dati connessione Wi-Fi pubblica
-  - *Attore Principale*: simulatore.
-  - *Precondizioni*: il simulatore è stato attivato e si è connesso al sistema.
-  - *Postcondizioni*: il simulatore è connesso al sistema ed ha immesso dati relativi alle connessioni alla Wi-Fi pubblica.
-  - *Scenario Principale*:
-    - Il simulatore:
-      + Si connette al sistema;
-      + Avvia la simulazione delle connessioni alla Wi-Fi pubblica;
-      + Inserisce il #glossary("dato sintetico") relativo alle connessioni alla Wi-Fi pubblica all'interno del sistema.
 
 #set heading(numbering: "1.1")
 = Requisiti
@@ -629,40 +602,40 @@ UC8 - Archiviazione delle anomalie rilevate
      "ROF23 ", "Obbligatorio", "L’utente deve poter filtrare i sensori in base alle loro caratteristiche. ", "UC12 ",
   ),
   (
-     "ROF24 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento della temperatura, generati dal simulatore. ", "UC13, UC13.1 ",
+     "ROF24 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti l'andamento della temperatura. ", "UC1.2, UC1.2.1 ",
   ),
   (
-     "ROF25 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento delle precipitazioni, generati dal simulatore. ", "UC13, UC13.2 ",
+     "ROF25 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti l'andamento delle precipitazioni. ", "UC1.2, UC1.2.2 ",
   ),
   (
-     "ROF26 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento dell' umidità, generati dal simulatore. ", "UC13, UC13.3 ",
+     "ROF26 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti l'andamento dell' umidità. ", "UC1.2, UC1.2.3 ",
   ),
   (
-     "ROF27 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento dello stato del cielo, generati dal simulatore. ", "UC13, UC13.4 ",
+     "ROF27 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti l'andamento dello stato del cielo. ", "UC1.2, UC1.2.4 ",
   ),
   (
-     "ROF28 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento del vento, generati dal simulatore. ", "UC13, UC13.5 ",
+     "ROF28 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti l'andamento del vento. ", "UC1.2, UC1.2.5 ",
   ),
   (
-     "ROF29 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento dell'inquinamento dell'aria, generati dal simulatore. ", "UC13, UC13.6 ",
+     "ROF29 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti l'andamento dell'inquinamento dell'aria. ", "UC1.2, UC1.2.6 ",
   ),
   (
-     "ROF30 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento dell'indice UV, generati dal simulatore. ", "UC13, UC13.7 ",
+     "ROF30 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti l'andamento dell'indice UV. ", "UC1.2, UC1.2.7 ",
   ),
   (
-     "ROF31 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti il movimento di biciclette elettriche, generati dal simulatore. ", "UC13, UC13.8 ",
+     "ROF31 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti il movimento di biciclette elettriche. ", "UC1.2, UC1.2.8 ",
   ),
   (
-     "ROF32 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento della congestione stradale, generati dal simulatore. ", "UC13, UC13.9 ",
+     "ROF32 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti l'andamento della congestione stradale. ", "UC1.2, UC1.2.9 ",
   ),
   (
-     "ROF33 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento del rumore, generati dal simulatore. ", "UC13, UC13.10 ",
+     "ROF33 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti l'andamento del rumore. ", "UC1.2, UC1.2.10 ",
   ),
   (
-     "ROF34 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento delle scosse sismiche, generati dal simulatore. ", "UC13, UC13.10 ",
+     "ROF34 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti l'andamento delle scosse sismiche. ", "UC1.2, UC1.2.10 ",
   ),
   (
-     "ROF35 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati realistici emulanti l'andamento delle connessioni alla Wi-Fi pubblica, generati dal simulatore. ", "UC13, UC13.12 "
+     "ROF35 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti l'andamento delle connessioni alla Wi-Fi pubblica. ", "UC1.2, UC1.2.12 "
   )
 )
 
