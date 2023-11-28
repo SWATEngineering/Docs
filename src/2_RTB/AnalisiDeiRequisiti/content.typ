@@ -760,13 +760,31 @@ UC8 - Archiviazione delle anomalie rilevate
 )
 
 == Tracciamento
-=== Requisiti - Fonti
+=== Requisiti funzionali - Fonti
 #table(
   columns: (auto, auto),
   inset: 10pt,
   align: horizon,
   [*Requisiti*], [*Fonti*],
   ..requisiti_funzionali.map(content => (content.at(0),content.at(3))).flatten().map(content => [#content])
+)
+
+=== Requisiti qualità - Fonti
+#table(
+  columns: (auto, auto),
+  inset: 10pt,
+  align: horizon,
+  [*Requisiti*], [*Fonti*],
+  ..requisiti_qualità.map(content => (content.at(0),content.at(3))).flatten().map(content => [#content])
+)
+
+=== Requisiti vincolo - Fonti
+#table(
+  columns: (auto, auto),
+  inset: 10pt,
+  align: horizon,
+  [*Requisiti*], [*Fonti*],
+  ..requisiti_vincolo.map(content => (content.at(0),content.at(3))).flatten().map(content => [#content])
 )
 
 == Riepilogo
