@@ -62,7 +62,7 @@ Le metriche di progetto usate nella fornitura sono misure utilizzate per valutar
 
 Le metriche della qualità di processo verrano identificate con:
 
-                     MPC-[Nome abbreviato]
+                     *MPC-[Nome abbreviato]*
 
 *Leggenda*:
 
@@ -71,7 +71,7 @@ Le metriche della qualità di processo verrano identificate con:
 #table(
       columns:(auto,auto,auto,auto),
       align: (x, y) => (center, center, center,center).at(x),
-      fill:(_,row) => if calc.odd(row) { luma(240)} else {white},
+      fill:(_,row) =>if row==0 {luma(150)}, else if calc.odd(row) { luma(220)} else {white},
       [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
       ..fornitura.flatten()  
 )
@@ -94,7 +94,7 @@ Sono state individuate 2 metriche principali:
 #table(
       columns:(auto,auto,auto,auto),
       align: (x, y) => (center, center, center,center).at(x),
-      fill:(_,row) => if calc.odd(row) { luma(240)} else {white},
+      fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
       [MPC-FIN], [Structure Fan In], [?], [?], 
       [MPC-FOUT], [Structure Fan Out], [?], [?]
@@ -118,7 +118,7 @@ Sono state individuate 2 metriche principali:
       - *IG* _Indice Gulpease_ metrica utilizzata per valutare la leggibilità di un testo in lingua italiana.
              L'Indice Gulpease tiene conto di due variabili linguistiche: la lunghezza delle parole e la lunghezza delle frasi. La formula per calcolare l'indice è la seguente:
 
-             $ "IG" = 89 + (300 dot "_Nf_" - "_Nl_")/"Np"$
+             $ "IG" = 89 + (300 dot "Nf" - "Nl")/"Np"$
 
              Dove:
 
