@@ -1,11 +1,11 @@
-MPC-EV,Earned Value,\u{2265}\%0 ,\u{2264} EAC
-MPC-PV,Planned Value,\u{2265}0, \u{2264}BAC
-MPC-AC,Actual Cost,\u{2265}0 ,\u{2264} EAC
+MPC-EV,Earned Value,≥0 ,≤ EAC
+MPC-PV,Planned Value,≥ 0, ≤ BAC
+MPC-AC,Actual Cost,≥ 0 ,≤ EAC
 MPC-CPI,Cost Performance Index,tra 0.95 e 1.05, > 1
 MPC-SPI,Schedule Performance Index,tra 0.95 e 1.05, >1
-MPC-EAC,Estimated at Completion, deviazione del \u{00B1}5\%,=BAC
-MPC-ETC,Estimated To Completion,\u{2265}\%0,\u{2264} EAC
-MPC-VAC,Variance at Completion,deviazione del \u{00B1}5\% budget,\u{2265}0
-MPC-SV,Schedule Variance,tra -5\% e +5\%,>0
-MPC-CV,Cost Variance,tra -5\% e +5\%,>0
-MPC-BV,Budget Variance,\u{00B1}5\%,<0%
+MPC-EAC,Estimated at Completion, deviazione del ± 5%,=BAC
+MPC-ETC,Estimated To Completion,≥ 0,≤ EAC
+MPC-VAC,Variance at Completion,deviazione del ± 5% budget,≥ 0
+MPC-SV,Schedule Variance,tra -5% e +5%,>0
+MPC-CV,Cost Variance,tra -5% e +5%,>0
+MPC-BV,Budget Variance,± 5%,<0%

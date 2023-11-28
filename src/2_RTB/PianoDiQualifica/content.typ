@@ -70,11 +70,82 @@ Le metriche della qualità di processo verrano identificate con:
 
 #table(
       columns:(auto,auto,auto,auto),
-      align: horizon,
-      fill:(row,_) => if calc.odd(row) { luma(240)} else {white},
+      align: (x, y) => (center, center, center,center).at(x),
+      fill:(_,row) => if calc.odd(row) { luma(240)} else {white},
       [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
       ..fornitura.flatten()  
 )
+
+=== Sviluppo 
+
+
+==== Progettazione architteturale 
+
+Sono state individuate 2 metriche principali:
+
+            + *SFIN*: _Structure Fan In_;
+                  - *_Descrizione_*: Rappresenta il numero di moduli o componenti che chiamano un modulo o una funzione specifica;
+                  - *_Significato_*: Un fan-in elevato indica che molte parti del sistema dipendono da un particolare modulo. Questo può essere un segno positivo di riusabilità, in quanto il modulo è utilizzato in molte parti del sistema.
+            + *SFOUT*: _Structure Fan Out_;
+                  - *_Descrizione_*:rappresenta il numero di moduli o funzioni chiamati da un modulo o una funzione specifica.;
+                  - *_Significato_*:Un fan-out elevato può indicare che un modulo ha molte dipendenze da altri moduli. Questo può portare a una maggiore complessità del sistema, poiché le modifiche in un modulo possono richiedere modifiche in molti altri moduli.
+
+
+#table(
+      columns:(auto,auto,auto,auto),
+      align: (x, y) => (center, center, center,center).at(x),
+      fill:(_,row) => if calc.odd(row) { luma(240)} else {white},
+      [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
+      [MPC-FIN], [Structure Fan In], [?], [?], 
+      [MPC-FOUT], [Structure Fan Out], [?], [?]
+)
+
+
+
+
+==== Codifica  
+
+      - *Complessità Ciclomatica*: quantifica la complessità del codice misurando il numero di percorsi linearmente indipendenti attraverso il grafo di controllo di flusso del programma. Più è alta la complessità ciclomatica, maggiore è la complessità del codice;
+      - *Numero di violazioni delle regole di codifica*: conta il numero di violazioni delle regole di codifica stabilite per il progetto;
+      - *Numero di bug per linea di codice*: misura la densità di difetti nel codice, espressa come il numero di #glossary("bug") riscontrati per ogni 1000 linee di codice (KLOC);
+      - *Cicli di complessità essenziale*: Misura la complessità intrinseca del software, escludendo la complessità dovuta alle scelte di implementazione;
+      - *Rapporto di churn del codice*: Indica la frequenza con cui le linee di codice sono modificate nel tempo, fornendo informazioni sulla stabilità del codice e sulla necessità di frequenti modifiche.
+
+== Processi di Supporto
+
+=== Documentazione  
+
+      - *IG* _Indice Gulpease_ metrica utilizzata per valutare la leggibilità di un testo in lingua italiana.
+             L'Indice Gulpease tiene conto di due variabili linguistiche: la lunghezza delle parole e la lunghezza delle frasi. La formula per calcolare l'indice è la seguente:
+
+             $ "IG" = 89 + (300 dot "_Nf_" - "_Nl_")/"Np"$
+
+             Dove:
+
+             - *Nf* \u{27F6} indica il numero delle frasi;
+             - *Nl* \u{27F6} indica il numero delle lettere;
+             - *Np* \u{27F6} indica il numero delle parole.
+
+             L'indice fornisce un punteggio che varia da 0 a 100. Di seguito le possibili interpretazioni:
+
+                  - 0-29: Testo difficile da leggere;
+                  - 30-49: Testo leggibile con sforzo;
+                  - 50-59: Testo abbastanza leggibile;
+                  - 60-69: Testo leggibile;
+                  - 70-79: Testo facile da leggere;
+                  - 80-89: Testo molto facile da leggere;
+                  - 90-100: Testo estremamente facile da leggere. 
+      - *Correttezza ortografica*: Numero errori grammaticali o ortografici per documento.
+
+
+
+
+
+
+
+
+
+
 
 
 
