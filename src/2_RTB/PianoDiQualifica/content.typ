@@ -1,4 +1,5 @@
 #import "functions.typ": glossary, team
+#let fornitura=csv("Mfornitura.csv")
 
 /*************************************/
 /*    INSERIRE SOTTO IL CONTENUTO    */ 
@@ -20,7 +21,7 @@ Il presente documento ha i seguenti scopi:
           - Gestione dei Difetti e delle Anomalie riscontrate durante le attività di verifica;
           - Miglioramento continuo attraverso l'adattamento del piano in base alle esperienze acquisite e alle modifiche nei requisiti del progetto. 
 
-
+#pagebreak()
 = Qualità di Processo 
 
 == Obiettivi 
@@ -37,15 +38,45 @@ Le metriche di progetto usate nella fornitura sono misure utilizzate per valutar
   - *TCP*: _Total Cost Project_  indica la somma totale dei costi associati al progetto;
   - *BAC*: _Budget At Completion_  indica il budget totale pianificato per il completamento del progetto;
   - *EV*: _Earned Value_  rappresenta il valore prodotto dal progetto ossia il valore dei _deliverable_ rilasciati fino al momento della misurazione in seguito alle attività    svolte;
-      + Formula:  EV = Percentuale di completamento del lavoro * BAC.
+      - Formula:  $"EV" = "Percentuale di completamento del lavoro" dot "BAC"$.
   - *PV*: _Planned Value_ Il valore del lavoro pianificato fino a un dato momento;
-        + Formula: PV = Percentuale di pianificazione del lavoro * BAC.
+        - Formula: $"PV" = "Percentuale di pianificazione del lavoro" dot "BAC"$.
   - *AC*: _Actual Cost_ Il costo effettivo sostenuto fino a un dato momento;
   - *CPI*:_Cost Performance Index_ Misura l'efficienza del costo del lavoro svolto fino a un dato momento;
-          + Formula: CPI = EV / AC.
+          - Formula: $"CPI" = "EV" / "AC"$.
   - *SPI*: _Schedule Performance Index_ Misura l'efficienza del tempo rispetto alla pianificazione;
-        + Formula: SPI = EV / PV.
+        - Formula: $"SPI" = "EV" / "PV"$.
   - *EAC*: _Estimated at Completion_ Stima del costo totale previsto per completare il progetto;
-        + Formula: EAC = BAC / CPI.
+        - Formula: $"EAC" = "BAC" / "CPI"$.
   - *ETC*: _Estimated To Completion_ Stima del costo aggiuntivo necessario per completare il progetto;
-        + Formula: 
+        - Formula: $"ETC" = "EAC" - "AC"$.
+  - *VAC*: _Variance at Completion_ La differenza tra il budget previsto e il budget attuale alla fine del progetto;
+        - Formula: $"VAC" = "BAC" - "EAC"$.
+  - *SV*:_Schedule Variance_ Indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate nella baseline;
+        - Formula: $"SV" = "EV" - "PV"$.
+  - *CV*:_Cost Variance_ La differenza tra il valore del lavoro effettivamente svolto e il costo effettivo del lavoro svolto fino a un dato momento;
+        - Formula: $ "CV" = "EV" - "AC"$.
+  - *BV*:_Budget Variance_ Indica se alla data corrente si è speso di più o di meno rispetto a quanto previsto a budget alla data corrente;
+        - Formula: $"BV" = "PV" - "AC"$.
+
+
+Le metriche della qualità di processo verrano identificate con:
+
+                     MPC-[Nome abbreviato]
+
+*Leggenda*:
+
+      - *Nome abbreviato*: Nome della metrica specifica abbreviata.
+
+#table(
+      columns:(auto,auto,auto,auto),
+      align: horizon,
+      fill:(row,_) => if calc.odd(row) { luma(240)} else {white},
+      [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
+      ..fornitura.flatten()  
+)
+
+
+
+
+      
