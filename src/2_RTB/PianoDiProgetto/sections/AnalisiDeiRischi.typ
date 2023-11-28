@@ -33,14 +33,14 @@ Il team potrebbe incontrare sfide nell'apprendere l'utilizzo e nell'integrazione
     - Inclusione di dubbi nell'Ordine del giorno: l'inclusione dei dubbi e delle incertezze nelle proposte dell'ordine del giorno del meeting interno successivo consente al team di affrontare in modo strutturato e tempestivo le difficoltà riscontrate, garantendo un ambiente in cui tali problemi possano essere risolti in modo collaborativo e efficiente.
 
 === *RT3 - Produzione di codice poco comprensibile*
-Data l'inesperienza dei membri che lo compongono, il team potrebbe produrre codice difficile da comprendere, contorto. Questo unito ad un'eventuale carenza di relativa documentazione potrebbe influenzare negaitivamente i tempi di sviluppo. 
+Il team, data l'inesperienza dei suoi componenti, potrebbe produrre codice difficile da comprendere o contorto. Questo unito ad un'eventuale carenza di relativa documentazione potrebbe influenzare negativamente i tempi di sviluppo. 
   - *Identificazione*: un segnale evidente della manifestazione di questo rischio è la crescita delle discussioni relative all'interpretazione del codice tra i componenti del team.
   - *Valutazione*:  Pericolosità: media; Occorrenza: media.
   - *Prevenzione*: 
-    - Code Reviews: effettuare revisioni regolari del codice; 
-    - Continuo Refactoring: integrando all'interno del processo di sviluppo frequenti attività di Refractoring si migliora notevolmente la comprensibilità del codice; 
-    - Documentazione Adeguata: incoraggiare la produzione di una documentazione approfondita per il codice; 
-    - _Convenzioni di codifica_:  seguire le stesse linee guida porta il team a standardizzare il modo in cui il codice viene scritto, di conseguenza ne aumenta la chiarezza e la mantenibilità. 
+    - Code reviews: effettuare revisioni regolari del codice; 
+    - Continuo _refactoring_: integrare  all'interno del processo di sviluppo frequenti attività di _refactoring_ mirate alla semplificazione del codice, in modo tale da aumentarne la comprensibilità.
+    - Documentazione adeguata: incoraggiare la produzione di una documentazione approfondita per il codice; 
+    - Convenzioni di codifica: seguire le stesse linee guida porta il team a standardizzare il modo in cui il codice viene scritto, di conseguenza ne aumenta la chiarezza e la mantenibilità. 
 
 
 == Rischi di Comunicazione
@@ -75,8 +75,8 @@ I diversi livelli di competenze e una comunicazione poco trasparente possono por
   -*Identificazione*: la mancanza di fiducia può essere rilevata in presenza di segnali specifici come la reticenza nella collaborazione o nell'assunzione di responsabilità condivise. In aggiunta, alcuni membri potrebbero dimostrarsi poco attivi nelle discussioni di gruppo o nelle attività cooperative. 
   - *Valutazione*: Pericolosità: media; Occorrenza: bassa.
   - *Prevenzione*: 
-    -Promuovere incontri periodici: i membri del team hanno la possibilità di esprimere dubbi e preocupazioni, avere una discussione aperta su aspetti rilevanti del progetto e ricevere feedback sul lavoro fatto. In questo contesto va precisato che la costruzione del feedback gioca un ruolo fondamentale, dev'essere formulato in maniera tale da essere il più positivo possibile facendo sì che non sia visto come una critica ma come un opportunità di miglioramento;
-    -Promuovere la comprensione reciproca: il team si deve sforzare nel comprendere le condizioni e i punti di vista degli altri componenti per creare un clima di progetto positivo indirizzato verso il miglioramento.
+    - Promuovere incontri periodici: i membri del team hanno la possibilità di esprimere dubbi e preocupazioni, avere una discussione aperta su aspetti rilevanti del progetto e ricevere feedback sul lavoro fatto. In questo contesto va precisato che la costruzione del feedback assume un ruolo fondamentale, in quanto deve essere formulato in maniera tale da risultare costruttivo e presentato come un opportunità di miglioramento anziché una critica;
+    - Promuovere la comprensione reciproca: il team si deve sforzare nel comprendere le condizioni e i punti di vista degli altri componenti per creare un clima di progetto positivo indirizzato verso il miglioramento.
 
 
 
