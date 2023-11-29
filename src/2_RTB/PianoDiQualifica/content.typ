@@ -71,7 +71,7 @@ Le metriche della qualità di processo verrano identificate con:
 #table(
       columns:(auto,auto,auto,auto),
       align: (x, y) => (center, center, center,center).at(x),
-      fill:(_,row) =>if row==0 {luma(150)}, else if calc.odd(row) { luma(220)} else {white},
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
       ..fornitura.flatten()  
 )
