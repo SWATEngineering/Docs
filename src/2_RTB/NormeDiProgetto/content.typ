@@ -163,8 +163,7 @@ I requisiti trovati avranno un codice univoco con la seguente sintassi:
 
 === Descrizione 
 
-La documentazione è l'insieme di informazioni rappresentate sotto forma di testo scritto che accompagna un software, svolgendo un ruolo essenziale nella descrizione del prodotto per coloro che lo sviluppano, lo distribuiscono e lo utilizzano. Il suo obiettivo primario è facilitare i membri del team durante l'intero ciclo di sviluppo, tracciando e documentando tutti i processi e le attività coinvolte per migliorare la qualità del risultato finale e semplificare la manutenzione.
-La documentazione, inoltre, svolge un ruolo cruciale nel garantire la coerenza durante il processo di sviluppo. L'implementazione di regole chiare e di una struttura uniforme non solo migliora l'accessibilità e la comprensione, ma favorisce anche la collaborazione all'interno del team, contribuendo in modo significativo al successo complessivo del progetto software.
+La documentazione è l'insieme di informazioni rappresentate sotto forma di testo scritto che accompagna un prodotto software, svolgendo un ruolo essenziale nella descrizione del prodotto per coloro che lo sviluppano, lo distribuiscono e lo utilizzano. Il suo obiettivo primario è facilitare l'attività di sviluppo  ai membri del team durante l'intero ciclo di vita del progetto e garantirne la coerenza,tracciando tutti i processi e le attività coinvolte per migliorare la qualità del risultato finale e semplificare la manutenzione. L'implementazione di regole chiare e di una struttura uniforme non solo migliora la fruibilità e la comprensione, ma favorisce anche la collaborazione all'interno del team, contribuendo in modo significativo al successo complessivo del progetto software.
 
 === Lista Documenti
 
@@ -181,7 +180,7 @@ I documenti che verranno prodotti sono:
 
 === Template 
 
-Per la stesura dei documenti viene usato un template in formato _Typst_. Il template fornisce una struttura e un formato predefinito per semplificare la creazione di documenti. Serve a garantire coerenza, risparmiare tempo, standardizzare la presentazione, facilitare l'uso e contribuire a una produzione di documenti più efficiente e professionale.
+Per la stesura dei documenti viene usato un template in formato _Typst_. Il template fornisce una struttura e un formato predefinito per semplificare la creazione di documenti. Serve a garantire coerenza, risparmiare tempo, standardizzare la presentazione e contribuire a una produzione di documenti più efficiente e professionale.
 Sono stati sviluppati quattro template distinti per adattarsi alle diverse esigenze di documentazione: 
           - documentazione ufficiale;
           - lettere di presentazione;
@@ -232,20 +231,20 @@ Ogni cambiamento di stato è accompagnato dal conseguente movimento della issue,
 
 ==== Formato data <formato>
 
-Si seguirà il formato GG-MM-AAAA
+Si seguirà il formato GG-MM-AAAA.
 
 ==== Intestazione
 
-Su ogni pagina del documento,eccetto la prima, si trova il titolo del documento seguito dalla sua versione e il logo del team.
+Su ogni pagina del documento, eccetto la prima, si trova il titolo del documento seguito dalla sua versione e il logo del team.
 
 ==== Registro delle modifiche
 
-Presente una tabella con l'intestazione: 
-        - *versione*: versione del documento;
-        - *data*: data della modifica apportata;
-        - *descrizione*: cosa è stato modificato o aggiunto al file;
-        - *autore*: l'autore della modifica;
-        - *ruolo*: ruolo del membro al momento della modifica.
+Tabella con l'intestazione: 
+        - *Versione*: versione del documento;
+        - *Data*: data della modifica apportata;
+        - *Descrizione*: cosa è stato modificato o aggiunto al file;
+        - *Autore*: l'autore della modifica;
+        - *Ruolo*: ruolo dell'autore al momento della modifica.
 
 ==== Indice 
 
@@ -256,7 +255,7 @@ In una nuova pagina deve essere presente l'indice, utile per facilitare la ricer
 I verbali differiscono leggermente da un documento ufficiale, in quanto non evolvibili nel tempo.
 
 Si compongono principalmente di 2 sezioni:
-        - *Partecipanti*: si indica data di inizio e fine incontro e il luogo in cui si è svolta. Successivamente è rappresentata una tabella indicante i nomi dei partecipanti e la durata della presenza. Se è esterno si indicano anche i partecipanti della Proponente;
+        - *Partecipanti*: si indica data di inizio e fine incontro e il luogo in cui si è svolto. A seguire, i nomi dei partecipanti del team e la durata della presenza di ciascuno vengono rappresentati in forma tabellare. Se il verbale è esterno si indicano anche i partecipanti della Proponente;
         - *Sintesi dell'incontro*: Riassunto degli argomenti trattati durante la riunione.
 
 
@@ -266,12 +265,12 @@ Il verbale esterno oltre alle sezioni sopra elencate ha una pagina per la conval
 
 ===== Stili 
         - *Grassetto*: titoli delle sezioni o parole rilevanti;
-        - *Corsivo*: per enfatizzare le parole o per definire nomi dei documenti o di prodotti.
+        - *Corsivo*: per enfatizzare le parole, per i termini inglesi e per specificare parole destinate ad essere aggiunte al glossario per definirne la definizione.
 
 ===== Elenchi puntati
 
-Le voci di ogni elenco iniziano con lettera maiuscola e terminano con punto e virgola ';', eccetto l'ultima voce che terminerà con punto normale '.'.
-Nel caso di una definizione il termine andrà posto in grassetto.
+Le voci di ogni elenco iniziano con lettera maiuscola e terminano con punto e virgola ';', eccetto l'ultima voce che termina con punto normale '.'.
+
 
 
 === Strumenti 
