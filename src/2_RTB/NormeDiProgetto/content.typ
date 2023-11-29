@@ -510,7 +510,7 @@ Riguardano esclusivamente i membri del Team e si svolgono tramite:
 
 Le comunicazioni esterne vengono affidate al _Responsabile_ attraverso i seguenti mezzi:
 
-        - _Email_ : si usa l'email di gruppo swateng.team@gmail.com;
+        - _Email_ : si usa l'email di gruppo swateng.team\@gmail.com;
         - _Element_: si usa il canale creato apposta dall'azienda Synclab per avere una comunicazione diretta.
 
 ==== Gestione degli Incontri 
