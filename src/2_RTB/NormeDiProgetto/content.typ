@@ -161,6 +161,34 @@ I requisiti trovati avranno un codice univoco con la seguente sintassi:
 
 == Documentazione
 
+=== Descrizione 
+
+La documentazione è l'insieme di informazioni rappresentate sotto forma di testo scritto che accompagna un prodotto software, svolgendo un ruolo essenziale nella descrizione del prodotto per coloro che lo sviluppano, lo distribuiscono e lo utilizzano. Il suo obiettivo primario è facilitare l'attività di sviluppo  ai membri del team durante l'intero ciclo di vita del progetto e garantirne la coerenza,tracciando tutti i processi e le attività coinvolte per migliorare la qualità del risultato finale e semplificare la manutenzione. L'implementazione di regole chiare e di una struttura uniforme non solo migliora la fruibilità e la comprensione, ma favorisce anche la collaborazione all'interno del team, contribuendo in modo significativo al successo complessivo del progetto software.
+
+=== Lista Documenti
+
+I documenti che verranno prodotti sono:
+
+        - _Norme di Progetto_;
+        - _Piano di Progetto_;
+        - _Piano di Qualifica_;
+        - _Analisi dei Requisiti_;
+        - _Glossario_;
+        - _Verbali_:
+                + _Interni_;
+                + _Esterni_.
+
+=== Template 
+
+Per la stesura dei documenti viene usato un template in formato _Typst_. Il template fornisce una struttura e un formato predefinito per semplificare la creazione di documenti. Serve a garantire coerenza, risparmiare tempo, standardizzare la presentazione e contribuire a una produzione di documenti più efficiente e professionale.
+Sono stati sviluppati quattro template distinti per adattarsi alle diverse esigenze di documentazione: 
+          - documentazione ufficiale;
+          - lettere di presentazione;
+          - verbali per incontri interni ed esterni.
+
+ Ogni template è progettato per garantire coerenza e facilità d'uso, con piccole modifiche per rispecchiare le specificità di ciascun tipo di documento.
+
+
 === Nomenclatura
 La consueta nomeclatura per i documenti si ottiene unendo, attraverso un underscore (`_`), il nome del file in _CamelCase_ senza spazi (`NomeDelFile`) e la sua versione (`3.5`). Ad esempio `NormeDiProgetto_2.6.pdf`.
 Nel caso di documenti il cui nome contiene una data, essa si inserisce dopo il nome, ma prima della versione, sempre separandolo con gli underscores, nella forma `ggmmaa` senza separatori tra i singoli componenti della data: `gg` rappresenta il giorno, sempre scritto in due cifre, allo stesso modo `mm` rappresenta il mese, mentre l'anno è rappresentato da `aa`, corrispondente alle ultime due cifre dell'anno corrente.
@@ -186,6 +214,64 @@ Ogni documento segue le fasi del seguente #glossary[workflow]:
 
 La modifica di un documento avviene allo stesso modo, saltando il passo 2.
 Ogni cambiamento di stato è accompagnato dal conseguente movimento della issue, associata allo sviluppo, attraverso le diverse corsie dell'issue tracking system.
+
+=== Struttura 
+
+==== Prima Pagina 
+
+        - *logo team*: situato in alto a destra;
+        - *Titolo*: 
+                - Nome del documento, se diverso dai verbali;
+                - per i verbali interni: Verbale Interno;
+                - per i verbali esterni: Verbale Esterno;
+        - *Data*: solo se si tratta di verbali, vedere @formato;
+        - *Contatti*: l'email del team;
+        - *Versione*: l'ultima versione del documento;
+        - *logo università*: in basso a destra.
+
+==== Formato data <formato>
+
+Si seguirà il formato GG-MM-AAAA.
+
+==== Intestazione
+
+Su ogni pagina del documento, eccetto la prima, si trova il titolo del documento seguito dalla sua versione e il logo del team.
+
+==== Registro delle modifiche
+
+Tabella con l'intestazione: 
+        - *Versione*: versione del documento;
+        - *Data*: data della modifica apportata;
+        - *Descrizione*: cosa è stato modificato o aggiunto al file;
+        - *Autore*: l'autore della modifica;
+        - *Ruolo*: ruolo dell'autore al momento della modifica.
+
+==== Indice 
+
+In una nuova pagina deve essere presente l'indice, utile per facilitare la ricerca e la navigazione all'interno del documento.
+
+==== Verbali 
+
+I verbali differiscono leggermente da un documento ufficiale, in quanto non evolvibili nel tempo.
+
+Si compongono principalmente di 2 sezioni:
+        - *Partecipanti*: si indica data di inizio e fine incontro e il luogo in cui si è svolto. A seguire, i nomi dei partecipanti del team e la durata della presenza di ciascuno vengono rappresentati in forma tabellare. Se il verbale è esterno si indicano anche i partecipanti della Proponente;
+        - *Sintesi dell'incontro*: Riassunto degli argomenti trattati durante la riunione.
+
+
+Il verbale esterno oltre alle sezioni sopra elencate ha una pagina per la convalida, attraverso firma, del documento.
+
+==== Norme tipografiche
+
+===== Stili 
+        - *Grassetto*: titoli delle sezioni o parole rilevanti;
+        - *Corsivo*: per enfatizzare le parole, per i termini inglesi e per specificare parole destinate ad essere aggiunte al glossario per definirne la definizione.
+
+===== Elenchi puntati
+
+Le voci di ogni elenco iniziano con lettera maiuscola e terminano con punto e virgola ';', eccetto l'ultima voce che termina con punto normale '.'.
+
+
 
 === Strumenti 
 
