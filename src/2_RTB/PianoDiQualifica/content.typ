@@ -16,7 +16,7 @@ Il presente documento ha i seguenti scopi:
 
           - Definizione standard di qualità;
           - Definizione metriche e criteri quantitativi per valutare l'efficacia del processo e del prodotto;
-          - Gestione dei test: definizione di test, la pianificazione delle attività di test, la valutazione dei risultati.
+          - Gestione dei test: definizione di test, la pianificazione delle attività di test, la valutazione dei risultati;
           - Verifica e validazione del prodotto includendo test di unità, di integrazione, di sistema, di accettazione;           
           - Gestione dei Difetti e delle Anomalie riscontrate durante le attività di verifica;
           - Miglioramento continuo attraverso l'adattamento del piano in base alle esperienze acquisite e alle modifiche nei requisiti del progetto. 
@@ -26,7 +26,7 @@ Il presente documento ha i seguenti scopi:
 
 == Obiettivi 
 
-Si riferisce all'efficacia ed efficienza dei processi e delle metodologie impiegate nello sviluppo, testing e mantenimento del software. Essa abbraccia l'insieme di attività, pratiche e metodi utilizzati lungo l'intero ciclo di vita dello sviluppo del software al fine di garantire che il prodotto finale soddisfi i requisiti specificati e venga consegnato puntualmente e entro il budget previsto. In questo contesto, la qualità di processo è fondamentale per assicurare un'implementazione coerente, misurabile e ottimizzata delle fasi di sviluppo, contribuendo a conseguire gli obiettivi di qualità complessivi.
+Si riferisce all'efficacia ed efficienza dei processi e delle metodologie impiegate nello sviluppo, testing e mantenimento del software. Essa abbraccia l'insieme di attività, pratiche e metodi utilizzati lungo l'intero ciclo di vita dello sviluppo del software al fine di garantire che il prodotto finale soddisfi i requisiti specificati e venga consegnato puntualmente ed entro il budget previsto. In questo contesto, la qualità di processo è fondamentale per assicurare un'implementazione coerente, misurabile e ottimizzata delle fasi di sviluppo, contribuendo a conseguire gli obiettivi di qualità complessivi.
 
 
 == Processi Primari  
@@ -37,26 +37,26 @@ Le metriche di progetto usate nella fornitura sono misure utilizzate per valutar
 
   - *TCP*: _Total Cost Project_  indica la somma totale dei costi associati al progetto;
   - *BAC*: _Budget At Completion_  indica il budget totale pianificato per il completamento del progetto;
-  - *EV*: _Earned Value_  rappresenta il valore prodotto dal progetto ossia il valore dei _deliverable_ rilasciati fino al momento della misurazione in seguito alle attività    svolte;
+  - *EV*: _Earned Value_  rappresenta il valore prodotto dal progetto ossia il valore dei #glossary("_deliverable_") rilasciati fino al momento della misurazione in seguito alle attività svolte;
       - Formula:  $"EV" = "Percentuale di completamento del lavoro" dot "BAC"$.
-  - *PV*: _Planned Value_ Il valore del lavoro pianificato fino a un dato momento;
+  - *PV*: _Planned Value_ il valore del lavoro pianificato fino a un dato momento;
         - Formula: $"PV" = "Percentuale di pianificazione del lavoro" dot "BAC"$.
-  - *AC*: _Actual Cost_ Il costo effettivo sostenuto fino a un dato momento;
-  - *CPI*:_Cost Performance Index_ Misura l'efficienza del costo del lavoro svolto fino a un dato momento;
+  - *AC*: _Actual Cost_ il costo effettivo sostenuto fino a un dato momento;
+  - *CPI*: _Cost Performance Index_ misura l'efficienza del costo del lavoro svolto fino a un dato momento;
           - Formula: $"CPI" = "EV" / "AC"$.
-  - *SPI*: _Schedule Performance Index_ Misura l'efficienza del tempo rispetto alla pianificazione;
+  - *SPI*: _Schedule Performance Index_ misura l'efficienza del tempo rispetto alla pianificazione del progetto. Fornisce un indicatore numerico che rappresenta il rapporto tra il lavoro effettivamente eseguito (o il valore guadagnato) e il lavoro pianificato fino a un determinato punto nel tempo.  Aiuta a valutare quanto il progetto sta rispettando il programma pianificato;
         - Formula: $"SPI" = "EV" / "PV"$.
-  - *EAC*: _Estimated at Completion_ Stima del costo totale previsto per completare il progetto;
+  - *EAC*: _Estimated at Completion_ revisione del valore stimato per la realizzazione del progetto, ossia il BAC rivisto allo stato corrente del progetto;
         - Formula: $"EAC" = "BAC" / "CPI"$.
-  - *ETC*: _Estimated To Completion_ Stima del costo aggiuntivo necessario per completare il progetto;
+  - *ETC*: _Estimated To Completion_ stima del costo aggiuntivo necessario per completare il progetto;
         - Formula: $"ETC" = "EAC" - "AC"$.
-  - *VAC*: _Variance at Completion_ La differenza tra il budget previsto e il budget attuale alla fine del progetto;
+  - *VAC*: _Variance at Completion_ la differenza tra il budget previsto e il budget attuale alla fine del progetto;
         - Formula: $"VAC" = "BAC" - "EAC"$.
-  - *SV*:_Schedule Variance_ Indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate nella baseline;
+  - *SV*: _Schedule Variance_ indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate nella baseline;
         - Formula: $"SV" = "EV" - "PV"$.
-  - *CV*:_Cost Variance_ La differenza tra il valore del lavoro effettivamente svolto e il costo effettivo del lavoro svolto fino a un dato momento;
+  - *CV*: _Cost Variance_ la differenza tra il valore del lavoro effettivamente svolto e il costo effettivo del lavoro svolto fino a un dato momento;
         - Formula: $ "CV" = "EV" - "AC"$.
-  - *BV*:_Budget Variance_ Indica se alla data corrente si è speso di più o di meno rispetto a quanto previsto a budget alla data corrente;
+  - *BV*: _Budget Variance_ indica se alla data corrente si è speso di più o di meno rispetto a quanto inizialmente previsto nel budget.
         - Formula: $"BV" = "PV" - "AC"$.
 
 
@@ -64,7 +64,7 @@ Le metriche della qualità di processo verrano identificate con:
 
                      *MPC-[Nome abbreviato]*
 
-*Leggenda*:
+*Legenda*:
 
       - *Nome abbreviato*: Nome della metrica specifica abbreviata.
 
@@ -81,14 +81,14 @@ Le metriche della qualità di processo verrano identificate con:
 
 ==== Progettazione architteturale 
 
-Sono state individuate 2 metriche principali:
+Sono state individuate due metriche principali:
 
             + *SFIN*: _Structure Fan In_;
-                  - *_Descrizione_*: Rappresenta il numero di moduli o componenti che chiamano un modulo o una funzione specifica;
-                  - *_Significato_*: Un fan-in elevato indica che molte parti del sistema dipendono da un particolare modulo. Questo può essere un segno positivo di riusabilità, in quanto il modulo è utilizzato in molte parti del sistema.
+                  - *_Descrizione_*: rappresenta il numero di moduli o componenti che chiamano un modulo o una funzione specifica;
+                  - *_Significato_*: un fan-in elevato indica che molte parti del sistema dipendono da un particolare modulo. Questo può essere un segno positivo di riusabilità, in quanto il modulo è utilizzato in molte parti del sistema.
             + *SFOUT*: _Structure Fan Out_;
-                  - *_Descrizione_*:rappresenta il numero di moduli o funzioni chiamati da un modulo o una funzione specifica.;
-                  - *_Significato_*:Un fan-out elevato può indicare che un modulo ha molte dipendenze da altri moduli. Questo può portare a una maggiore complessità del sistema, poiché le modifiche in un modulo possono richiedere modifiche in molti altri moduli.
+                  - *_Descrizione_*: rappresenta il numero di moduli o funzioni chiamati da un modulo o una funzione specifica;
+                  - *_Significato_*: un fan-out elevato può indicare che un modulo ha molte dipendenze da altri moduli. Questo può portare a una maggiore complessità del sistema, poiché le modifiche in un modulo possono richiedere modifiche in molti altri moduli.
 
 
 #table(
@@ -108,14 +108,14 @@ Sono state individuate 2 metriche principali:
       - *Complessità Ciclomatica*: quantifica la complessità del codice misurando il numero di percorsi linearmente indipendenti attraverso il grafo di controllo di flusso del programma. Più è alta la complessità ciclomatica, maggiore è la complessità del codice;
       - *Numero di violazioni delle regole di codifica*: conta il numero di violazioni delle regole di codifica stabilite per il progetto;
       - *Numero di bug per linea di codice*: misura la densità di difetti nel codice, espressa come il numero di #glossary("bug") riscontrati per ogni 1000 linee di codice (KLOC);
-      - *Cicli di complessità essenziale*: Misura la complessità intrinseca del software, escludendo la complessità dovuta alle scelte di implementazione;
-      - *Rapporto di churn del codice*: Indica la frequenza con cui le linee di codice sono modificate nel tempo, fornendo informazioni sulla stabilità del codice e sulla necessità di frequenti modifiche.
+      - *Cicli di complessità essenziale*: misura la complessità intrinseca del software, escludendo la complessità dovuta alle scelte di implementazione;
+      - *Rapporto di churn del codice*: indica la frequenza con cui le linee di codice sono modificate nel tempo, fornendo informazioni sulla stabilità del codice e sulla necessità di frequenti modifiche.
 
 == Processi di Supporto
 
 === Documentazione  
 
-      - *IG* _Indice Gulpease_ metrica utilizzata per valutare la leggibilità di un testo in lingua italiana.
+      - *IG*: _Indice Gulpease_ metrica utilizzata per valutare la leggibilità di un testo in lingua italiana.
              L'Indice Gulpease tiene conto di due variabili linguistiche: la lunghezza delle parole e la lunghezza delle frasi. La formula per calcolare l'indice è la seguente:
 
              $ "IG" = 89 + (300 dot "Nf" - "Nl")/"Np"$
