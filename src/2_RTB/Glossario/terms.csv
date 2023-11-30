@@ -14,3 +14,5 @@ Dati aggregati;Ricostruzione sintetica, fatta a partire da un insieme di dati, u
 Test end-to-end;Test che valuta l'intero flusso dell'applicazione, in modo tale da verificare che tutti i componenti funzionino correttamente.
 Documentazione;Insieme di documenti che forniscono spiegazioni su un determinato prodotto.
 Sistema; Insieme organizzato di componenti interconnesse e interagenti, che lavorano per raggiungere un obiettivo comune o eseguire specifiche funzioni.
+Deliverable; Ogni prodotto e servizio rilasciato o da rilasciare, include software e documentazione.
+Bug; Errore, difetto o falla nel design, sviluppo o funzionamento del software informatico che provoca la produzione di risultati errati o inaspettati, o che fa comportare il software in modi non previsti.

@@ -1,0 +1,1 @@
+#let title = "Piano di Qualifica"
