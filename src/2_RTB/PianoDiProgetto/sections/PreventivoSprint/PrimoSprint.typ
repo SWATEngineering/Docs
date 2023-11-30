@@ -1,6 +1,5 @@
 #import "../../const.typ": Re_cost, Am_cost, An_cost, Ve_cost, Pr_cost, Pt_cost 
 
-#pagebreak()
 == Primo sprint
 === Prospetto orario
 I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, durante questo sprint:
@@ -28,4 +27,11 @@ In questo sprint, il costo per ogni ruolo sarà come da tabella:
   [Programmatore],[5],[#(Pr_cost * 5)€],
   [Verificatore],[15],[#(Ve_cost * 15)€],
   [*Totale*],[60],[1300€]
+)
+
+#figure(
+  image("../../assets/AreogrammiPartizioneOre/AreogrammaSprint1.png", width: 50%),
+  caption: [Areogramma partizione ore primo sprint
+     
+  ],
 )
