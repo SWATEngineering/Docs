@@ -153,7 +153,58 @@ I requisiti trovati avranno un codice univoco con la seguente sintassi:
                 - V -> se di vincolo.
         - *Numero*:
                 per ogni requisito aggiunto il numero viene incrementato.
-     
+
+
+=== Progettazione 
+
+==== Scopo 
+
+L'attività di progettazione verrà svolta dai Progettisti, i quali avranno il compito di definire le caratteristiche del prodotto finale, basandosi sui requisiti specificati nel documento _Analisi dei Requisiti_. 
+La fase di progettazione segue l'analisi dei requisiti, nella quale sono definite le necessità e le aspettative per il prodotto. I Progettisti traducono queste informazioni in una struttura architteturale definita, organizzando il sistema in componenti specifici e definendo le interazioni tra di essi. In tal modo, la progettazione costituisce un passo essenziale nel percorso di sviluppo, contribuendo a trasformare i requisiti in un piano tangibile per la creazione del prodotto finale.
+
+==== Descrizione 
+
+Si definiscono tre sottoattività: 
+
+        + *_Technology Baseline_*: scelta e definizione delle tecnologie di base che saranno utilizzate per la realizzazione del sistema, comprende decisioni riguardanti linguaggi di programmazione, librerie e #glossary("framework"). Tale processo porterà alla creazione di un Proof of Concept(#glossary("PoC"));
+        + *_Progettazione Architteturale_*: definizione ad alto livello dell'archittettura del prodotto, include test di integrazione;
+        + *_Product Baseline_*: segna un punto stabile nel processo di progettazione, in cui le specifiche tecniche, le funzionalità principali e l'architettura del prodotto sono definite in modo dettagliato e accettate dalle parti coinvolte. Include tutti gli elementi essenziali e i requisiti chiave del prodotto che devono essere soddisfatti, fornendo una base solida per lo sviluppo continuo del prodotto. Questo processo porterà infine alla realizzazione di un _Minimum Viable Product_ (#glossary("MVP"));
+                                Include:
+                                - #glossary("Design Patterns") e Package;
+                                - Definizione classi;
+                                - Diagrammi UML che includono:
+                                        - classi;
+                                        - package;
+                                        - sequenze: utilizzato per descrivere uno scenario che costituisce una determinata sequenza di azioni in cui tutte le scelte sono state già effettuate;
+                                        - attività: diagramma comportamentale che illustra il flusso delle attività attraverso un sistema.
+                                - Test di Unità su ogni componente.
+
+=== Codifica 
+
+==== Scopo 
+
+L'attività di codifica viene svolta dai Programmatori, che hanno come compito la traduzione delle decisioni progettuali in codice sorgente.
+I programmatori seguono le linea guida e le _best practices_ stabilite durante la fase di progettazione architteturale.
+
+==== Aspettative 
+
+Ci si aspetta che il codice sviluppato rispetti determinate caratteristiche:
+
+        - Conformità alle specifiche;
+        - Chiarezza e comprensibilità;
+        - Ottimizzazione delle prestazioni;
+        - Supplemento di test per verificare la correttezza e il funzionamento;
+        - Conformita' agli standard di qualita' caratteristici del prodotto.
+
+
+==== Stili di codifica 
+
+[Verrano scritti in seguito.]
+
+
+
+
+
 
 #pagebreak()
 
@@ -318,6 +369,36 @@ Potrebbero esservi delle issue aperte all'interno dell'_ITS_ che non hanno un co
   [REV] done
   ```
 
+== Gestione della Qualità 
+
+=== Descrizione 
+
+La gestione della qualità è un insieme di processi e attività volte a garantire che un prodotto soddisfi gli standard di qualità definiti, assicurando che il prodotto sviluppato sia affidabile ed efficiente.  È fondamentale garantire che il prodotto soddisfi a pieno i requisiti funzionali e non, stabiliti durante la fase di progettazione.
+
+=== Obiettivi 
+
+        - Controllo continuo della qualità del prodotto, verificando che rispetti le aspettative della Proponente;
+        - Minimizzare la presenza di errori o anomalie nel prodotto;
+        - Riduzione dei rischi che potrebbero influenzare la qualità;
+        - Consegna del progetto rispettando il budget preventivato inizialmente e i requisiti individuati assieme alla Proponente.
+
+Per la valutazione della qualità viene fornito il documento _Piano di Qualifica_, in cui sono presenti varie metriche con le relative soglie di valori accettabili ed ideali.
+
+
+=== Denominazione Metriche 
+
+Per identificare  le metriche si usa la seguente formattazione:
+
+#align(center)[*M[Tipo]-[Nome]*]
+
+*legenda*:
+        - *Tipo*: specifica la tipologia di metrica:
+                        + *PC* se si tratta di qualità di processo;
+                        + *PD* se si tratta di qualità di prodotto;
+        - *Nome*: abbreviazione del nome della metrica.
+
+
+
 = Processi Organizzativi
 
 == Gestione Organizzativa
@@ -414,3 +495,49 @@ I ruoli assunti sono i seguenti:
 === Cambio dei ruoli
 
 Per fare in modo che ogni membro svolga almeno 1 volta tutti i ruoli di cui sopra, il team si impegna a cambiarli ogni settimana.
+
+=== Procedure 
+
+==== Gestione delle comunicazioni
+
+===== Comunicazioni Interne 
+
+Riguardano esclusivamente i membri del Team e si svolgono tramite:
+
+        - *_Whatsapp_*: utilizzato per messaggistica istantanea e una comunicazione veloce;
+        - *_Discord_*: piattaforma utilizzata per:
+                + Creare server suddivisibili in vari canali testuali o vocali, dove verranno svolte le riunioni;
+                + Supplementare la comunicazione all'interno della piattaforma con funzionalita' offerte da servizi esterni quali GitHub
+
+===== Comunicazioni Esterne
+
+Le comunicazioni esterne vengono affidate al Responsabile attraverso i seguenti mezzi:
+
+        - _Email_ : si usa l'email di gruppo swateng.team\@gmail.com;
+        - _Element_: si usa il canale creato appositamente dalla Proponente per avere una comunicazione diretta.
+
+==== Gestione degli Incontri 
+
+===== Incontri Interni 
+
+Negli incontri interni possono partecipare solamente i membri del gruppo. Si svolgono principalmente una volta a settimana, il giorno può variare in caso di imprevisti, ma solitamente si tiene il venerdì mattina in modalità sincrona.
+
+Le linee guida per le riunioni:
+                + Prima dell'incontro avere un ordine del giorno, ovvero i punti eventuali da discutere;
+                + Discussione dei punti;
+                + Pianificazione attività per la settimana e assegnazione issue.
+                
+        Alla fine dell'incontro:
+                + Il responsabile ha il compito della stesura del verbale interno, fornendo una sintesi dei punti salienti dell'incontro. 
+
+Gli incontri hanno due modalità:
+
+        - *Fisici*: per gli stand-up meeting quotidiani (#glossary("Daily Scrum")) di 5 minuti in cui si discutono brevemente le attività completate il giorno precedente e si espongono le attività pianificate per il futuro;
+        - *Virtuali*: si svolgono chiamate o video di gruppo in cui si discutono eventuali dubbi o difficoltà riscontrate. Lo strumento adatto per questo scopo è Discord.
+
+===== Incontri Esterni 
+
+Negli incontri esterni i partecipanti sono i membri del team e i referenti della Proponente. Questi incontri sono pianificati ogni due settimane in concomitanza con l'inizio e fine sprint. Durante queste sessioni, i partecipanti del team hanno l'opportunità di presentare gli sviluppi recenti, condividere i progressi raggiunti e discutere eventuali sfide o questioni emerse nel corso del lavoro. 
+Inoltre si possono richiedere incontri di formazione specifici su particolari tecnologie, il che offre al team l'opportunità di approfondire la comprensione di una tecnologia specifica, imparare le _best practice_ e acquisire competenze più avanzate.
+
+Il responsabile ha il compito della stesura del verbale esterno, che viene successivamente convalidato, con firma, dalla Proponente.
