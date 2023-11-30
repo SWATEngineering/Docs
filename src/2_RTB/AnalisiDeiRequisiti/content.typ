@@ -33,7 +33,7 @@ Cardin	Analisi e descrizione delle funzionalità: Use Case e relativi diagammi (
 = Descrizione
 
 == Obiettivi del prodotto
-L'obbiettivo consiste nella creazione di una piattaforma di monitoraggio e gestione una Smart City. L'utente, individuato nell'amministratore pubblico, potrà farne impiego per migliorare la qualità generale della vita e l'efficienza dei servizi nel contesto di un'area urbana. L'utente sarà in grado di controllare, attraverso la consultazione di una dashboard, lo stato della città, sotto i punti di vista ambientali, logistici e di sicurezza. Questo cruscotto includerà rappresentazioni grafiche basate su dati generati da una simulazione realistica, specificamente sviluppata per il progetto in questione.
+L'obiettivo consiste nella creazione di una piattaforma di monitoraggio e gestione di una Smart City. L'utente, individuato nell'amministratore pubblico, potrà farne impiego per migliorare la qualità generale della vita e l'efficienza dei servizi nel contesto di un'area urbana. L'utente sarà in grado di controllare, attraverso la consultazione di una dashboard, lo stato della città, sotto i punti di vista ambientali, logistici e di sicurezza. Questo cruscotto includerà rappresentazioni grafiche basate su dati generati da una simulazione realistica, specificamente sviluppata per il progetto in questione.
 
 == Funzionalità del prodotto
 Il prodotto si compone di due parti principali:
@@ -43,13 +43,6 @@ Il prodotto si compone di due parti principali:
 
 La piattaforma prevede fondamentalmente una tipologia di utente: l'amministratore pubblico. Questo utente avrà accesso alla dashboard e visualizzerà il sommario di diverse metriche e indicatori sullo stato della città, sottoforma di grafici.
 
-== Tecnologie consigliate
-La Proponente consiglia l'utilizzo delle seguenti tecnologie per la realizzazione del progetto:
-- Implementazione dei simulatori. Tecnologia consigliata: *Python*;
-- Database OLAP utilizzato per lo storage dei dati.  Tecnologia consigliata: *ClickHouse*;
-- Piattaforma di stream processing. Tecnologia consigliata: *Kafka*.
-- Dashboard di visualizzazione. Tecnologia consigliata: *Grafana*.
-
 == Utenti e caratteristiche
 Il prodotto, destinato ad amministratori pubblici, consente loro di ottenere una panoramica sulle condizioni della città. Ciò fornisce loro una base solida per prendere decisioni ponderate sulla gestione delle risorse e sull'implementazione dei servizi, il che risulta cruciale nel miglioramento dell'efficacia complessiva della gestione urbana. La ricezione tempestiva dei dati aggiornati migliora la capacità di risposta immediata in situazioni di emergenza, migliorando la gestione di eventi critici, in modo più efficiente e mirato. Un'altra figura che potrebbe essere interessata all'utilizzo del prodotto, potrebbe essere quella del dirigente aziendale: gli sarebbe permesso di ottenere informazioni rilevanti per gli obiettivi e gli interessi dell'azienda, come riduzione dei costi, miglioramento dell'efficienza e della produttività.
 
@@ -58,22 +51,26 @@ Il prodotto, destinato ad amministratori pubblici, consente loro di ottenere una
 In questa sezione si vogliono elencare e descrivere tutti i casi d'uso individuati dall'analisi effettuata dal gruppo, basandosi sul capitolato e sulle interazioni con la Proponente. In particolare, si individuano gli #glossary("attori") e le funzionalità che questi possono svolgere. Ogni caso d'uso possiede un codice, la cui struttura è descritta nelle Norme di Progetto.
 
 == Attori
-L'applicativo si interfaccerà con un solo tipo di attore:
-- *Utente generico*: è un utente che ha accesso alla dashboard in tutte le sue funzionalità e può visualizzare i dati raccolti dai sensori.
+L'applicativo si interfaccerà con due tipi di attore:
+- *Amministratore pubblico*: è un utente generico che ha accesso alla dashboard in tutte le sue funzionalità e può visualizzare i dati raccolti dai sensori;
+- *Simulatore*: è un utente artificiale che ha accesso allo stream dati sotto il punto di vista dell'inserimento, in quanto può effettuare azioni di #glossary("data entry").
 
 La decisione di non inserire un utente con privilegi è da ricollegare al fatto che il prodotto ha comunque un target d'utenza limitato, che si compone di persone generalmente dotate di competenze tecniche e dunque in grado di interagire con il sistema in tutte le sue funzionalità.
 
 #figure(
-  image("assets/UtenteUC.png", width: 12%),
+  image("assets/Utenti.png", width: 15%),
   caption: [Gerarchia degli attori]
 )
+
+== Elenco dei casi d'uso
 
 #figure(
   image("assets/USECASES.png",width:130%),
   caption: [USECASE]
 )
 
-/ UC1 : - Visualizzazione della Dashboard. 
+#set heading(numbering: none)
+=== UC1 - Visualizzazione della Dashboard. 
 
   - *Attore Principale*: utente generico.
   - *Precondizioni*: almeno uno dei sensori è attivo e trasmette dati.
@@ -85,7 +82,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
     - Visualizzazione della mappa della città [UC1.1]
     - Visualizzazione di indicatori numerici [UC1.2]
 
-/ UC1.1 : - Visualizzazione della mappa della città 
+=== UC1.1 - Visualizzazione della mappa della città 
   - *Attore Principale*: utente generico.
   - *Precondizioni*: almeno uno dei sensori è attivo e trasmette dati.
   - *Postcondizioni*: il sistema mostra la mappa della città che evidenzia la suddivisione in celle e il posizionamento dei sensori.
@@ -99,7 +96,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
       + interagisce con la mappa per visualizzare lo stato di una singola cella [UC2];
       + interagisce con la mappa per selezionare un singolo sensore [UC4].
 
-/ UC1.2 : - Visualizzazione di indicatori numerici
+=== UC1.2 - Visualizzazione di indicatori numerici
   - *Attore Principale*: utente generico.
   - *Precondizioni*: almeno uno dei sensori è attivo e trasmette dati.
   - *Postcondizioni*: il sistema mostra i valori correnti di tutti i sensori.
@@ -107,8 +104,141 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
     + l'utente accede alla Dashboard; 
     + vengono mostrati pannelli con indicatori numerici che rappresentano i dati attuali misurati da ciascun tipo di sensore distribuito nella città;
     + gli indicatori numerici si aggiornano automaticamente per riflettere i dati più recenti provenienti dai sensori.
+  - *Inclusioni*:
+    - Visualizzazione dati temperatura [UC1.2.1];
+    - Visualizzazione dati precipitazioni [UC1.2.2];
+    - Visualizzazione dati umidità [UC1.2.3];
+    - Visualizzazione dati #glossary("stato del cielo") [UC1.2.4];
+    - Visualizzazione dati vento [UC1.2.5];
+    - Visualizzazione dati inquinamento dell'aria [UC1.2.6];
+    - Visualizzazione dati indice UV [UC1.2.7];
+    - Visualizzazione dati posizione biciclette elettriche [UC1.2.8];
+    - Visualizzazione dati congestione stradale [UC1.2.9];
+    - Visualizzazione dati rumore [UC1.2.10];
+    - Visualizzazione dati scosse sismiche [UC1.2.11];
+    - Visualizzazione dati connessione alla Wi-Fi pubblica [UC1.2.12];
 
-/ UC2 : - Visualizzazione dello stato di una #glossary("cella")
+=== UC1.2.1 - Visualizzazione dati temperatura
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore di temperatura è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi alla temperatura;
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi alla temperatura;
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC1.2.2 - Visualizzazione dati precipitazioni
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore di precipitazioni è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi alle precipitazioni.
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi alle precipitazioni;
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC1.2.3 - Visualizzazione dati umidità
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore di umidità è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi all' umidità.
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi all'umidità;
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC1.2.4 - Visualizzazione dati #glossary("stato del cielo")
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore per lo #glossary("stato del cielo") è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi allo #glossary("stato del cielo").
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi allo #glossary("stato del cielo");
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC1.2.5 - Visualizzazione dati vento
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore del vento è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi al vento.
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi al vento;
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC1.2.6 - Visualizzazione dati inquinamento dell'aria
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore di inquinamento dell'aria è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi all'inquinamento dell'aria.
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi all'inquinamento dell'aria;
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC1.2.7 - Visualizzazione dati indice UV
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore di indice UV è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi all'indice UV.
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi all'indice UV;
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC1.2.8 - Visualizzazione dati posizione biciclette elettriche
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore di posizione della bicicletta elettrica è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi alla posizione delle biciclette elettriche.
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi alle biciclette elettriche;
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC1.2.9 - Visualizzazione dati congestione stradale
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore di congestione stradale è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi alla congestione stradale.
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi alla congestione stradale;
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC1.2.10 - Visualizzazione dati rumore
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore del rumore è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi al rumore.
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi al rumore;
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC1.2.11 - Visualizzazione dati scosse sismiche
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore delle scosse sismiche è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi alle scosse sismiche.
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi alle scosse sismiche;
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC1.2.12 - Visualizzazione dati connessione Wi-Fi pubblica
+  - *Attore Principale*: utente generico.
+  - *Precondizioni*: il sensore delle connessioni alla Wi-Fi pubblica è stato attivato e si è connesso al sistema.
+  - *Postcondizioni*: vengono mostrati dati, provenienti dal corrispondente sensore, relativi alle connessioni alla Wi-Fi pubblica.
+  - *Scenario Principale*:
+    - l'utente accede alla Dashboard;
+    - viene mostrato un pannello dedicato al mostrare i dati relativi alle connessioni alla Wi-Fi pubblica;
+    - tale pannello viene aggiornato automaticamente per riflettere i dati più recenti provanienti dal sensore;
+
+
+=== UC2 - Visualizzazione dello stato di una #glossary("cella")
   - *Attore Principale*: utente generico.
   - *Precondizioni*:
     - almeno uno dei sensori all'interno della cella è attivo e trasmette dati;
@@ -122,7 +252,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
     - Visualizzazione della mappa della cella [UC2.1]
     - Visualizzazione di indicatori numerici della cella [UC2.2]
 
-/ UC2.1 : - Visualizzazione della mappa della cella
+=== UC2.1 - Visualizzazione della mappa della cella
   - *Attore Principale*: utente generico.
   - *Precondizioni*: l'utente ha visualizzato la mappa della città e selezionato una cella.
   - *Postcondizioni*: la visualizzazione si contentra sulla cella selezionata, ingrandendola, per mostrare dettagli specifici della cella selezionata.
@@ -132,7 +262,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
     + il sistema ingrandisce la cella selezionata.
   - *Estensioni*: l'utente interagisce con la mappa per selezionare un singolo sensore [UC4].
 
-/ UC2.2 : - Visualizzazione di indicatori numerici della cella
+=== UC2.2 - Visualizzazione di indicatori numerici della cella
   - *Attore Principale*: utente generico.
   - *Precondizioni*: l'utente ha visualizzato la mappa della città e selezionato una cella.
   - *Postcondizioni*: gli indicatori numerici mostrano i dati dei sensori situati nella cella selezionata.
@@ -142,7 +272,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
     + gli indicatori numerici sulla dashboard si aggiornano per riflettere i dati provenienti dai sensori situati nella cella selezionata.
   
 
-/ UC3 : - Visualizzazione del registro dei sensori
+=== UC3 - Visualizzazione del registro dei sensori
 
   - *Attore Principale*: utente generico.
   - *Precondizioni*: almeno un sensore è attivo.
@@ -152,9 +282,9 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
     + i sensori sono inizialmente filtrati per tipologia in una visualizzazione tabellare, consentendo una rapida identificazione e analisi.
   - *Estensioni*: 
     + selezione un sensore [UC4];
-    + filtraggio dei sensori in base alle loro caratteristiche [UC13].
+    + filtraggio dei sensori in base alle loro caratteristiche.
 
-/ UC4 : - Selezione di un sensore
+=== UC4 - Selezione di un sensore
 
   - *Attore Principale*: utente generico.
   - *Precondizioni*: almeno un sensore è attivo e trasmette dati.
@@ -167,7 +297,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
     + impostazione del periodo temporale al fine visualizzare i dati storici relativi a quel periodo e al sensore selezionato sensore selezionato [UC6].
     + il sistema consente agli utenti di modificare o aggiornare le soglie in base alle esigenze in qualsiasi momento. [UC9]
 
-/ UC5 : - Modifica dello #glossary("stato di un sensore")
+=== UC5 - Modifica dello #glossary("stato di un sensore")
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sensore è già registrato nella piattaforma.
   - *Postcondizioni*: le modifiche apportate allo stato del sensore sono state applicate con successo e il sensore riflette le nuove informazioni nello stato operativo.
@@ -179,7 +309,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
     
   
 
-/ UC6 : - Visualizzazione dati in intervalli selezionati
+=== UC6 - Visualizzazione dati in intervalli selezionati
   - *Attore principale*: utente generico.
   - *Precondizioni*: viene selezionato un sensore [UC4].
   - *Postcondizioni*: il sistema mostra i dati storici relativi all'intervallo temporale selezionato.
@@ -198,7 +328,7 @@ La decisione di non inserire un utente con privilegi è da ricollegare al fatto 
 
 
 /*
-/ UC6 : - Impostazione del periodo temporale 
+=== UC6 - Impostazione del periodo temporale 
   - *Attore principale*: utente generico.
   - *Precondizioni*: viene selezionato un sensore [UC4].
   - *Postcondizioni*: il periodo temporale per l'analisi dei dati storici è impostato con successo.
@@ -228,7 +358,7 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
 */
 
 /*
-/ UC8 : - Visualizzazione dei dati storici di un sensore
+=== UC8 - Visualizzazione dei dati storici di un sensore
   - *Attore Principale*: utente generico.
   - *Precondizioni*: la piattaforma ha archiviato e conservato dati storici dei sensori.
   - *Postcondizioni*: l'utente ha visualizzato e analizzato i dati storici del sensore selezionato.
@@ -240,7 +370,7 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
   - *Estensioni*: l’utente visualizza i trend dei dati storici del sensore durante il periodo selezionato [UC10].
 */
 
-/ UC7 : - Allarmi  del sistema
+=== UC7 - Allarmi  del sistema
 
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate.
@@ -254,7 +384,7 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
       - Allarmi per rilevazione anomalie [UC7.1]
       - Allarmi per superamento soglie [UC7.2]
 
-/ UC7.1 : - Allarmi per rilevazione anomalie 
+=== UC7.1 - Allarmi per rilevazione anomalie 
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate.
   - *Postcondizioni*: il sistema  notifica l'utente  in modo appropriato quando vengono attivati gli allarmi per rilevazioni anomale e successivamente viene aggiornato l'archivio delle anomalie.
@@ -265,7 +395,7 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
     + l'utente visualizza l'allarme.
     + il sistema archivia l'anomalia in un registro dedicato, includendo dati, ora, tipologia anomalia e sensore coinvolto.
 /*
-UC7.1 : - Allarmi per rilevazione anomalie
+UC7.1 - Allarmi per rilevazione anomalie
   - *Attore Principale*: sistema.
   - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate [UC9].
   - *Postcondizioni*: l'utente viene notificato in modo appropriato quando vengono attivati gli allarmi per rilevazioni anomale.
@@ -277,7 +407,7 @@ UC7.1 : - Allarmi per rilevazione anomalie
   - *Estensioni*: il sistema registra e mantiene un log delle anomalie rilevate per analisi e archiviazione [UC10].
 */
 
-/ UC7.2 : - Allarmi per superamento soglie
+=== UC7.2 - Allarmi per superamento soglie
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate.
   - *Postcondizioni*: il sistema notifica l'utente in modo appropriato quando vengono attivati gli allarmi per superamento delle soglie.
@@ -288,7 +418,7 @@ UC7.1 : - Allarmi per rilevazione anomalie
     + l'utente prende misure opportune di conseguenza.
   
 
-/ UC8 : - Accesso all'archivio delle anomalie rilevate
+=== UC8 - Accesso all'archivio delle anomalie rilevate
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate.
   - *Postcondizioni*: il sistema mostra all'utente l'archivio delle anomalie.
@@ -300,7 +430,7 @@ UC7.1 : - Allarmi per rilevazione anomalie
 /* ci potrebbe essere un caso d'uso riguardo l'esportazione dei dati in un formato del tipo .....*/
 
 /*
-UC8 : - Archiviazione delle anomalie rilevate
+UC8 - Archiviazione delle anomalie rilevate
   - *Attore Principale*: sistema.
   - *Precondizioni*: il sistema ha rilevato un'anomalia significativa.
   - *Postcondizioni*: l'anomalia rilevata è stata registrata e archiviata per futura analisi.
@@ -312,7 +442,7 @@ UC8 : - Archiviazione delle anomalie rilevate
 */
 
 
-/ UC9 : - Modifica della soglia di rilevazione sensoriale
+=== UC9 - Modifica della soglia di rilevazione sensoriale
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sistema è operativo.
   - *Postcondizioni*: la soglia di rilevazione del sensore viene modificata con successo.
@@ -321,7 +451,7 @@ UC8 : - Archiviazione delle anomalie rilevate
       + L'Utente modifica manualmente i valori delle soglia;
       + L'utente conferma le nuove impostazioni.
 
-/ UC10 : - Analisi dei trend
+=== UC10 - Analisi dei trend
   - *Attore Principale*: utente generico.
   - *Precondizioni*: dati storici disponibili per il periodo specificato.
   - *Postcondizioni*: il sistema mostra una rappresentazione visuale dei trend dei dati sensoriali durante il periodo selezionato.
@@ -331,7 +461,7 @@ UC8 : - Archiviazione delle anomalie rilevate
 
 
 
-/ UC11 : - Analisi avanzata dei sensori
+=== UC11 - Analisi avanzata dei sensori
   - *Attore Principale*: utente generico.
   - *Precondizioni*: i dati sensoriali sono sufficientemente distribuiti per poter effettuare analisi significative.
   - *Postcondizioni*: il sistema ha analizzato e confrontato i dati tra sensori di diverse tipologie o tra celle della città, mostrando all'utente visualizzazioni e statistiche dettagliate.
@@ -343,7 +473,7 @@ UC8 : - Archiviazione delle anomalie rilevate
     - Correlazione tra tipologie di sensori [UC11.1];
     - Confronto tra celle della città [UC11.2].
 
-/ UC11.1 : - Correlazione tra tipologie di sensori
+=== UC11.1 - Correlazione tra tipologie di sensori
   - *Attore Principale*: utente generico.
   - *Precondizioni*: i dati sono disponibili per i sensori che si vogliono analizzare. Almeno due tipi diversi di sensori attivi.
   - *Postcondizioni*: il sistema mostra all'utente una visualizzazione dettagliata e comparativa dei dati tra due diverse tipologie di sensori.
@@ -353,7 +483,7 @@ UC8 : - Archiviazione delle anomalie rilevate
       + il sistema elabora i dati dei sensori selezionati e mostra una rappresentazione grafica comparativa.
   /*- *Estensioni*: il sistema consente all'utente di salvare i risultati dell'analisi per future consultazioni.*/
 
-/ UC11.2 : - Confronto tra celle della città
+=== UC11.2 - Confronto tra celle della città
   - *Attore Principale*: utente generico.
   - *Precondizioni*: la piattaforma dispone dei dati sensoriali di almeno due celle della città.
   - *Postcondizioni*: il sistema mostra all'utente i dati confrontati e le statistiche relative alle celle selezionate.
@@ -361,7 +491,7 @@ UC8 : - Archiviazione delle anomalie rilevate
     + L'utente accede dalla dashboard all'area dedicata all' analisi avanzata tra sensori;
     + L'utente seleziona due diverse celle di analisi; 
     + il sistema elabora i dati o le statistiche comparate per le celle selezionate.
-  -*Scenario Secondario*: 
+  - *Scenario Secondario*: 
     + L'utente accede dalla dashboard all'area dedicata all' analisi avanzata tra sensori;
     + il sistema esegue controlli sui dati disponibili all’interno delle celle selezionate per determinare la comparabilità;
     + le celle presentano una variazione significativa nei tipi di sensori presenti all’interno;
@@ -369,7 +499,7 @@ UC8 : - Archiviazione delle anomalie rilevate
 /*
 - *Estensioni*: se l'utente seleziona celle non comparabili, riceve una notifica di errore [UC12].
 
-/ UC12 : - Selezione di celle non comparabili
+=== UC12 - Selezione di celle non comparabili
   - *Attore Principale*: utente generico.
   - *Precondizioni*: l’utente seleziona due celle diverse per effettuare un’analisi di confronto.
   - *Postcondizioni*: l’utente riceve una notifica riguardo alla selezione di celle non comparabili.
@@ -381,7 +511,7 @@ UC8 : - Archiviazione delle anomalie rilevate
       + il sistema notifica l’utente riguardo alla presenza di celle non comparabili e fornisce dettagli sul motivo per cui non sono adatte per un confronto accurato.
 */
 
-/ UC12 : - Filtraggio dei sensori
+=== UC12 - Filtraggio dei sensori
   - *Attore Principale*: utente generico.
   - *Precondizioni*: è attivo almeno un sensore.
   - *Postcondizioni*: il sistema mostra all'utente una visualizzazione dei sensori filtrati in base ai criteri selezionati.
@@ -395,136 +525,263 @@ UC8 : - Archiviazione delle anomalie rilevate
         - Cella di appartenenza;
         - Codice di fabbrica.
     + il sistema applica i filtri e mostra all'utente solo i sensori che soddisfino i criteri selezionati.
-/*
-/ UC14 : - Aggiunta di un sensore reale
-  - *Attore Principale*: utente generico.
-  - *Precondizioni*: il sensore fisico è disponibile e pronto per l'installazione.
-  - *Postcondizioni*: il nuovo sensore reale è stato correttamente aggiunto alla rete e i suoi dati sono ora disponibili nella piattaforma per l'analisi e la visualizzazione.
-  - *Scenario Principale*:
-    - L'utente:
-      + accede alla sezione di gestione dei sensori [UC3];
-      + registra il nuovo sensore specificando le informazioni necessarie;
-      + il sistema verifica e riconosce il nuovo sensore nella rete.
-  - *Estensioni*: se il sistema non riesce a riconoscere o integrare correttamente il nuovo sensore, l'utente riceve una notifica di errore.
-  */
-/* Bisogna capire se tenere la UC14 */
+
+
+#set heading(numbering: "1.1")
 = Requisiti
 
 == Requisiti funzionali (obbligatori e desiderabili)
+#let requisiti_funzionali = (
+  (
+     "ROF1 ", "Obbligatorio", "L’utente deve poter accedere all’applicazione senza dover effettuare l’autenticazione. ", "Capitolato "
+  ),
+  (
+     "ROF2 ", "Obbligatorio", "L’utente deve poter monitorare i dati provenienti dai sensori distribuiti nella città in tempo reale tramite una dashboard. ", "UC1 "
+  ),
+  (
+     "ROF3 ", "Obbligatorio", "L’utente deve poter visualizzare una mappa della città con evidenziati la suddivisione in celle e il posizionamento dei sensori. ", "UC1.1 "
+  ),
+  (
+     "ROF4 ", "Obbligatorio", "L’utente deve poter visualizzare indicatori numerici che rappresentano i dati correnti dei sensori nella città. ", "UC1.2 "
+  ),
+  (
+     "ROF5 ", "Obbligatorio", "L’utente deve poter monitorare i dati provenienti dai sensori distribuiti in una cella in tempo reale tramite una dashboard. ", "UC2 "
+  ),
+  (
+     "ROF6 ", "Obbligatorio", "L’utente deve poter visualizzare una mappa della cella con evidenziato il posizionamento dei sensori. ", "UC2.2 "
+  ),
+  (
+     "ROF7 ", "Obbligatorio", "L’utente deve poter visualizzare indicatori numerici che rappresentano i dati correnti dei sensori nella cella. ", "UC2.2 "
+  ),
+  (
+     "ROF8 ", "Obbligatorio", "L’utente deve poter visualizzare un registro di tutti i sensori all’interno della rete. ", "UC3 ",
+  ),
+  (
+     "ROF9 ", "Obbligatorio", "L’utente deve poter selezionare un singolo sensore. ", "UC4 ",
+  ),
+  (
+     "ROF10 ", "Obbligatorio", "L’utente deve poter visualizzare le informazioni pertinenti al sensore selezionato. ", "UC4 ",
+  ),
+  (
+     "ROF11 ", "Desiderabile", "L’utente deve poter modificare lo stato operativo del sensore selezionato. ", "UC5 ",
+  ),
+  (
+     "ROF12 ", "Obbligatorio", "L’utente deve poter impostare il periodo temporale per visualizzare i dati storici del sensore. ", "UC6 ",
+  ),
+  (
+     "ROF13 ", "Obbligatorio", "Il sistema notifica l’utente in caso di inserimento di date non valide. ", "UC6 ",
+  ),
+  (
+     "ROF14 ", "Obbligatorio", "L’utente deve poter visualizzare i dati storici del sensore selezionato. ", "UC6 ",
+  ),
+  (
+     "ROF15 ", "Obbligatorio", "Il sistema notifica l’utente in caso di rilevazione di anomalie nei dati sensoriali. ", "UC7, UC7.1 ",
+  ),
+  (
+     "RDF16 ", "Desiderabile", "Il sistema registra le anomalie rilevate nei dati sensoriali all’interno di un log. ", "UC7.1 ",
+  ),
+  (
+     "ROF17 ", "Obbligatorio", "Il sistema notifica l’utente quando i dati sensoriali superano soglie predefinite. ", "UC7, UC7.2 ",
+  ),
+  (
+     "RDF18 ", "Desiderabile", "L’utente deve poter configurare le soglie di monitoraggio dei dati sensoriali. ", "UC9 ",
+  ),
+  (
+     "ROF19 ", "Desiderabile", "L’utente deve poter visualizzare i trend temporali dei dati sensoriali. ", "UC10 ",
+  ),
+  (
+     "RDF20 ", "Desiderabile", "L’utente deve poter analizzare la correlazione tra dati provenienti da tipi diversi di sensori. ", "UC11, UC11.1 ",
+  ),
+  (
+     "RDF21 ", "Desiderabile", "L’utente deve poter confrontare dati provenienti da celle diverse. ", "UC11, UC11.2 ",
+  ),
+  (
+     "RDF22 ", "Desiderabile", "Il sistema notifica l’utente in caso di selezione di celle non comparabili. ", "UC11.2 ",
+  ),
+  (
+     "ROF23 ", "Obbligatorio", "L’utente deve poter filtrare i sensori in base alle loro caratteristiche. ", "UC12 ",
+  ),
+  (
+     "ROF24 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti l'andamento della temperatura. ", "UC1.2, UC1.2.1 ",
+  ),
+  (
+     "ROF25 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti l'andamento delle precipitazioni. ", "UC1.2, UC1.2.2 ",
+  ),
+  (
+     "ROF26 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti l'andamento dell' umidità. ", "UC1.2, UC1.2.3 ",
+  ),
+  (
+     "ROF27 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti l'andamento dello stato del cielo. ", "UC1.2, UC1.2.4 ",
+  ),
+  (
+     "ROF28 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti l'andamento del vento. ", "UC1.2, UC1.2.5 ",
+  ),
+  (
+     "ROF29 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti l'andamento dell'inquinamento dell'aria. ", "UC1.2, UC1.2.6 ",
+  ),
+  (
+     "ROF30 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti l'andamento dell'indice UV. ", "UC1.2, UC1.2.7 ",
+  ),
+  (
+     "ROF31 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti il movimento di biciclette elettriche. ", "UC1.2, UC1.2.8 ",
+  ),
+  (
+     "ROF32 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti l'andamento della congestione stradale. ", "UC1.2, UC1.2.9 ",
+  ),
+  (
+     "ROF33 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti l'andamento del rumore. ", "UC1.2, UC1.2.10 ",
+  ),
+  (
+     "ROF34 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti l'andamento delle scosse sismiche. ", "UC1.2, UC1.2.10 ",
+  ),
+  (
+     "ROF35 ", "Obbligatorio", "L'utente deve poter visualizzare dei dati mostranti l'andamento delle connessioni alla Wi-Fi pubblica. ", "UC1.2, UC1.2.12 "
+  )
+)
+
+
 #table(
-  columns: (auto, auto, 2fr),
+  columns: (auto, auto, 2fr,auto),
   inset: 10pt,
   align: horizon,
-  [*Codice*], [*Importanza*], [*Descrizione*],
-  [*ROF1*],[Obbligatorio],[L’utente deve poter accedere all’applicazione senza dover effettuare l’autenticazione.],
-  [*ROF2*],[Obbligatorio],[L’utente deve poter monitorare i dati provenienti dai sensori distribuiti nella città in tempo reale tramite una dashboard.],
-  [*ROF3*],[Obbligatorio],[L’utente deve poter visualizzare una mappa della città con evidenziati la suddivisione in celle e il posizionamento dei sensori.],
-  [*ROF4*],[Obbligatorio],[L’utente deve poter visualizzare indicatori numerici che rappresentano i dati correnti dei sensori nella città.],
-  [*ROF5*],[Obbligatorio],[L’utente deve poter monitorare i dati provenienti dai sensori distribuiti in una cella in tempo reale tramite una dashboard.],
-  [*ROF6*],[Obbligatorio],[L’utente deve poter visualizzare una mappa della cella con evidenziato il posizionamento dei sensori.],
-  [*ROF7*],[Obbligatorio],[L’utente deve poter visualizzare indicatori numerici che rappresentano i dati correnti dei sensori nella cella.],
-  [*ROF8*],[Obbligatorio],[L’utente deve poter visualizzare un registro di tutti i sensori all’interno della rete.],
-  [*ROF9*],[Obbligatorio],[L’utente deve poter selezionare un singolo sensore.],
-  [*ROF10*],[Obbligatorio],[L’utente deve poter visualizzare le informazioni pertinenti al sensore selezionato.],
-  [*ROF11*],[Desiderabile],[L’utente deve poter modificare lo stato operativo del sensore selezionato.],
-  [*ROF12*],[Obbligatorio],[L’utente deve poter impostare il periodo temporale per visualizzare i dati storici del sensore.],
-  [*ROF13*],[Obbligatorio],[Il sistema notifica l’utente in caso di inserimento di date non valide.],
-  [*ROF14*],[Obbligatorio],[L’utente deve poter visualizzare i dati storici del sensore selezionato.],
-  [*ROF15*],[Obbligatorio],[Il sistema notifica l’utente in caso di rilevazione di anomalie nei dati sensoriali.],
-  [*RDF16*],[Desiderabile],[Il sistema registra le anomalie rilevate nei dati sensoriali all’interno di un log.],
-  [*ROF17*],[Obbligatorio],[Il sistema notifica l’utente quando i dati sensoriali superano soglie predefinite.],
-  [*RDF18*],[Desiderabile],[L’utente deve poter configurare le soglie di monitoraggio dei dati sensoriali.],
-  [*ROF19*],[Desiderabile],[L’utente deve poter visualizzare i trend temporali dei dati sensoriali.],
-  [*RDF20*],[Desiderabile],[L’utente deve poter analizzare la correlazione tra dati provenienti da tipi diversi di sensori.],
-  [*RDF21*],[Desiderabile],[L’utente deve poter confrontare dati provenienti da celle diverse.],
-  [*RDF22*],[Desiderabile],[Il sistema notifica l’utente in caso di selezione di celle non comparabili.],
-  [*ROF23*],[Obbligatorio],[L’utente deve poter filtrare i sensori in base alle loro caratteristiche.],
-  [*RDF24*],[Desiderabile],[L’utente deve poter aggiungere un sensore reale alla rete di sensori esistenti.]
+  [*Codice*], [*Importanza*], [*Descrizione*],[*Fonti*],
+  ..requisiti_funzionali.flatten().flatten().enumerate().map(content => {
+      if (int(content.at(0) / 4) == content.at(0) / 4) {
+        return [*#content.at(1)*]
+      } else {
+        return [#content.at(1)]
+      }
+    })
 )
 
 == Requisiti di qualità
+#let requisiti_qualità = (
+  (
+  "ROQ1","Obbligatorio","Il superamento di test che dimostrino il corretto funzionamento dei servizi utilizzati e delle funzionalità implementate. La copertura di test deve essere almeno dell'80% e deve essere dimostrata tramite report.","Capitolato",
+  ),
+  (
+  "ROQ2","Obbligatorio",[Il sistema deve essere testato nella sua interezza tramite #glossary("test end-to-end")],"Capitolato",
+  ),
+  (
+  "ROQ3","Obbligatorio", [Viene richiesta una #glossary("documentazione") sulle scelte implementative e progettuali, che dovranno essere accompagnate da motivazioni.],"Capitolato",
+  ),
+  (
+  "ROQ4","Obbligatorio","La documentazione dovrà riguardare anche problemi aperti ed eventuali possibili soluzioni da approfondire in futuro.","Capitolato"
+  ),
+)
+
 #table(
-  columns: (auto, auto, 2fr),
+  columns: (auto, auto, 2fr,auto),
   inset: 10pt,
   align: horizon,
-  [*Codice*], [*Importanza*], [*Descrizione*],
-  [*ROQ1*],[Obbligatorio],[Il superamento di test che dimostrino il corretto funzionamento dei servizi utilizzati e delle funzionalità implementate. La copertura di test deve essere almeno dell'80% e deve essere dimostrata tramite report.],
-  [*ROQ2*],[Obbligatorio],[Il sistema deve essere testato nella sua interezza tramite #glossary("test end-to-end")],
-  [*ROQ3*],[Obbligatorio], [Viene richiesta una #glossary("documentazione") sulle scelte implementative e progettuali, che dovranno essere accompagnate da motivazioni.],
-  [*ROQ4*],[Obbligatorio],[La documentazione dovrà riguardare anche problemi aperti ed eventuali possibili soluzioni da approfondire in futuro.]
+  [*Codice*], [*Importanza*], [*Descrizione*],[*Fonti*],
+  ..requisiti_qualità.flatten().flatten().enumerate().map(content => {
+      if (int(content.at(0) / 4) == content.at(0) / 4) {
+        return [*#content.at(1)*]
+      } else {
+        return [#content.at(1)]
+      }
+    })
 )
 
 == Requisiti di vincolo
+#let requisiti_vincolo = (
+  (
+  "ROV1","Obbligatorio","La creazione di un simulatore di almeno una sorgente dati","Capitolato",
+  ),
+  (
+  "ROV2","Obbligatorio","La simulazione deve produrre dati realistici","Capitolato",
+  ),
+  (
+  "ROV3","Obbligatorio","I dati vanno raccolti in un database OLAP","Capitolato",
+  ),
+  (
+  "ROV4","Obbligatorio","I dati vanno passati ad un sistema di stream processing","Capitolato",
+  ),
+  (
+  "ROV5","Obbligatorio","Una dashboard che riporti almeno i dati di un sensore","Capitolato",
+  ),
+  (
+  "RDV6","Desiderabile","La simulazione di più sorgenti dati","Capitolato",
+  ),
+  (
+  "RPV7","Opzionale","Messa in evidenza di relazioni tra dati provenienti da sorgenti diverse","Capitolato",
+  ),
+  (
+  "RPV8","Opzionale","Un sistema di allerta che notifichi l'utente in caso di anomalie o eventi critici","Verbale esterno",
+  ),
+  (
+  "RPV9","Opzionale","La previsione di eventi futuri, basata su dati storici e attuali","Capitolato",
+  ),
+  (
+  "RDV10","Desiderabile","Una dashboard avanzata contenente: una mappa della città, widget e informazioni sui sensori (ad esempio il tipo di sensore, il modello, ecc.).","Capitolato"
+  )
+)
+
 #table(
-  columns: (auto, auto, 2fr),
+  columns: (auto, auto, 2fr,auto),
   inset: 10pt,
   align: horizon,
-  [*Codice*], [*Importanza*], [*Descrizione*],
-  [*ROV1*],[Obbligatorio],[La creazione di un simulatore di almeno una sorgente dati],
-  [*ROV2*],[Obbligatorio],[La simulazione deve produrre dati realistici],
-  [*ROV3*],[Obbligatorio],[I dati vanno raccolti in un database OLAP],
-  [*ROV4*],[Obbligatorio],[I dati vanno passati ad un sistema di stream processing],
-  [*ROV5*],[Obbligatorio],[Una dashboard che riporti almeno i dati di un sensore],
-  [*RDV6*],[Desiderabile],[La simulazione di più sorgenti dati],
-  [*RPV7*],[Opzionale],[Messa in evidenza di relazioni tra dati provenienti da sorgenti diverse],
-  [*RPV8*],[Opzionale],[Un sistema di allerta che notifichi l'utente in caso di anomalie o eventi critici],
-  [*RPV9*],[Opzionale],[La previsione di eventi futuri, basata su dati storici e attuali],
-  [*RDV10*],[Desiderabile],[Una dashboard avanzata contenente: una mappa della città, widget e informazioni sui sensori (ad esempio il tipo di sensore, il modello, ecc.).]
+  [*Codice*], [*Importanza*], [*Descrizione*],[*Fonti*],
+  ..requisiti_vincolo.flatten().flatten().enumerate().map(content => {
+      if (int(content.at(0) / 4) == content.at(0) / 4) {
+        return [*#content.at(1)*]
+      } else {
+        return [#content.at(1)]
+      }
+    })
 )
 
 == Tracciamento
-=== Requisiti - Fonti
+=== Requisiti funzionali - Fonti
 #table(
   columns: (auto, auto),
   inset: 10pt,
   align: horizon,
   [*Requisiti*], [*Fonti*],
-  [ROF1], [Capitolato],
-  [ROF2], [UC1],
-  [ROF3], [UC1.1],
-  [ROF4], [UC1.2],
-  [ROF5], [UC2],
-  [ROF6], [UC2.2],
-  [ROF7], [UC2.2],
-  [RPF8], [UC3],
-  [ROF9], [UC4],
-  [ROF10], [UC4],
-  [RDF11], [UC5],
-  [ROF12], [UC6],
-  [RDF13], [UC6],
-  [ROF14], [UC6],
-  [RPF15], [UC7, UC7.1],
-  [ROF16], [UC7.1],
-  [RPF17], [UC7, UC7.2],
-  [RDF18], [UC9],
-  [ROF19], [UC10],
-  [RDF20], [UC11, UC11.1],
-  [RDF21], [UC11, UC11.2],
-  [RDF22], [UC11.2],
-  [ROF23], [UC13],
-  [RDF24], [UC14],
-  [ROQ1], [Capitolato],
-  [ROQ2], [Capitolato],
-  [ROQ3], [Capitolato],
-  [ROQ4], [Capitolato],
-  [ROV1], [Capitolato],
-  [ROV2], [Capitolato],
-  [ROV3], [Capitolato],
-  [ROV4], [Capitolato],
-  [RDV5], [Capitolato],
-  [RPV6], [Capitolato],
-  [RPV7], [Capitolato],
-  [RPV8], [Verbale esterno],
-  [RPV9], [Capitolato]
+  ..requisiti_funzionali.map(content => (content.at(0),content.at(3))).flatten().map(content => [#content])
+)
+
+=== Requisiti qualità - Fonti
+#table(
+  columns: (auto, auto),
+  inset: 10pt,
+  align: horizon,
+  [*Requisiti*], [*Fonti*],
+  ..requisiti_qualità.map(content => (content.at(0),content.at(3))).flatten().map(content => [#content])
+)
+
+=== Requisiti vincolo - Fonti
+#table(
+  columns: (auto, auto),
+  inset: 10pt,
+  align: horizon,
+  [*Requisiti*], [*Fonti*],
+  ..requisiti_vincolo.map(content => (content.at(0),content.at(3))).flatten().map(content => [#content])
 )
 
 == Riepilogo
+#let funzionale_obb = requisiti_funzionali.filter(content => content.at(1) == "Obbligatorio").len()
+#let funzionale_des = requisiti_funzionali.filter(content => content.at(1) == "Desiderabile").len()
+#let funzionale_opz = requisiti_funzionali.filter(content => content.at(1) == "Opzionale").len()
+#let funzionale_tot = funzionale_des + funzionale_obb + funzionale_opz
+
+#let qualità_obb = requisiti_qualità.filter(content => content.at(1) == "Obbligatorio").len()
+#let qualità_des = requisiti_qualità.filter(content => content.at(1) == "Desiderabile").len()
+#let qualità_opz = requisiti_qualità.filter(content => content.at(1) == "Opzionale").len()
+#let qualità_tot = qualità_des + qualità_obb + qualità_opz
+
+#let vincolo_obb = requisiti_vincolo.filter(content => content.at(1) == "Obbligatorio").len()
+#let vincolo_des = requisiti_vincolo.filter(content => content.at(1) == "Desiderabile").len()
+#let vincolo_opz = requisiti_vincolo.filter(content => content.at(1) == "Opzionale").len()
+#let vincolo_tot = vincolo_des + vincolo_obb + vincolo_opz
+
 #table(
   columns: (auto, auto, auto, auto, auto),
   inset: 10pt,
   align: horizon,
   [*Tipologia*], [*Obbligatori*], [*Desiderabili*], [*Opzionali*], [*Totale*],
-  [funzionali], [16], [8], [0], [24],
-  [di qualità], [4], [0], [0], [4],
-  [di vincolo], [5], [3], [2], [10]
+  [funzionali], [#funzionale_obb], [#funzionale_des], [#funzionale_opz], [#funzionale_tot],
+  [di qualità], [#qualità_obb], [#qualità_des], [#qualità_opz], [#qualità_tot],
+  [di vincolo], [#vincolo_obb], [#vincolo_des], [#vincolo_opz], [#vincolo_tot]
 )

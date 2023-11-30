@@ -1,4 +1,4 @@
-@startuml USERCASES
+@startuml USECASES
 
 
 
@@ -7,13 +7,10 @@ left to right direction
 skinparam actor {
   FontSize 14
   FontStyle bold
-  
-  }
+}
 
 skinparam usecase{
-  
   FontSize 18
-  
   BorderStyle solid
   BorderThickness 2
 }
@@ -24,7 +21,7 @@ skinparam rectangle {
 }
 
 
-actor amministratorepubblico as "Amministratore pubblico" #FFE600
+actor amministratorepubblico as "Amministratore pubblico" #FFFFFF
 
 rectangle "System" {
   usecase "UC1.1:\n Visualizzazione della \n mappa della città" as UC1.1
