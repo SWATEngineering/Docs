@@ -37,7 +37,7 @@ Le metriche di progetto usate nella fornitura sono misure utilizzate per valutar
 
   - *TCP*: _Total Cost Project_  indica la somma totale dei costi associati al progetto;
   - *BAC*: _Budget At Completion_  indica il budget totale pianificato per il completamento del progetto;
-  - *EV*: _Earned Value_  rappresenta il valore prodotto dal progetto ossia il valore dei #glossary("_deliverable_") rilasciati fino al momento della misurazione in seguito alle attività svolte;
+  - *EV*: _Earned Value_  rappresenta il valore prodotto dal progetto ossia il valore dei #glossary("deliverable") rilasciati fino al momento della misurazione in seguito alle attività svolte;
       - Formula:  $"EV" = "Percentuale di completamento del lavoro" dot "BAC"$.
   - *PV*: _Planned Value_ il valore del lavoro pianificato fino a un dato momento;
         - Formula: $"PV" = "Percentuale di pianificazione del lavoro" dot "BAC"$.
@@ -107,7 +107,7 @@ Sono state individuate due metriche principali:
 
       - *Complessità Ciclomatica*: quantifica la complessità del codice misurando il numero di percorsi linearmente indipendenti attraverso il grafo di controllo di flusso del programma. Più è alta la complessità ciclomatica, maggiore è la complessità del codice;
       - *Numero di violazioni delle regole di codifica*: conta il numero di violazioni delle regole di codifica stabilite per il progetto;
-      - *Numero di bug per linea di codice*: misura la densità di difetti nel codice, espressa come il numero di #glossary("_bug_") riscontrati per ogni 1000 linee di codice (KLOC);
+      - *Numero di bug per linea di codice*: misura la densità di difetti nel codice, espressa come il numero di #glossary("bug") riscontrati per ogni 1000 linee di codice (KLOC);
       - *Cicli di complessità essenziale*: misura la complessità intrinseca del software, escludendo la complessità dovuta alle scelte di implementazione;
       - *Rapporto di churn del codice*: indica la frequenza con cui le linee di codice sono modificate nel tempo, fornendo informazioni sulla stabilità del codice e sulla necessità di frequenti modifiche.
 
