@@ -9,9 +9,9 @@ Sulla base delle scadenze riportate nella sezione _scadenze_ si pianificano:
 
 Relativamente all’intervallo di tempo tra revisione RTB e PB si è pianificato di interrompere lo sviluppo per due settimane (definire le date), tra lo sprint numero e lo sprint numero in maniera che il team riesca a dedicarsi agli altri impegni di studio che il percorso di studio impone. 
 
-== Requirements and Technology Baseline
-=== Primo Sprint
+Per ciascun Sprint, vengono stabilite le date di inizio e fine, insieme alle attività pianificate, rappresentate in un diagramma di Gantt.
 
-- Data inizio: 10-11-2023; 
-- Data conclusione: 24-1-2023; 
-==== Obbiettivi
+== Requirements and Technology Baseline
+#include "PresentazioneSprint/PrimoSprint.typ"
+== Product Baseline
+== Custumer Acceptane Baseline  
