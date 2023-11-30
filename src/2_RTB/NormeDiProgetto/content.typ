@@ -159,40 +159,43 @@ I requisiti trovati avranno un codice univoco con la seguente sintassi:
 
 ==== Scopo 
 
-L'attività di progettazione verrà svolta dai _Progettisti_, i quali avranno il compito di definire le caratteristiche del prodotto finale, basandosi sui requisiti specificati nel documento _Analisi dei Requisiti_. 
-La fase di progettazione segue l'analisi dei requisiti, nella quale si sono definite le necessità e le aspettative per il prodotto. I Progettisti traducono queste informazioni in una struttura definita, organizzando il sistema in componenti specifici e definendo le interazioni tra di essi. In tal modo, la progettazione costituisce un passo essenziale nel percorso di sviluppo, contribuendo a trasformare i requisiti in un piano tangibile per la creazione del prodotto finale.
+L'attività di progettazione verrà svolta dai Progettisti, i quali avranno il compito di definire le caratteristiche del prodotto finale, basandosi sui requisiti specificati nel documento _Analisi dei Requisiti_. 
+La fase di progettazione segue l'analisi dei requisiti, nella quale sono definite le necessità e le aspettative per il prodotto. I Progettisti traducono queste informazioni in una struttura architteturale definita, organizzando il sistema in componenti specifici e definendo le interazioni tra di essi. In tal modo, la progettazione costituisce un passo essenziale nel percorso di sviluppo, contribuendo a trasformare i requisiti in un piano tangibile per la creazione del prodotto finale.
 
 ==== Descrizione 
 
 Si definiscono tre sottoattività: 
 
-        + *_Technology Baseline_*: scelta e definizione delle tecnologie di base che saranno utilizzate per la realizzazione del sistema, comprendendo decisioni riguardanti linguaggi di programmazione, librerie e framework. Questo approccio porterà alla creazione di un Proof of Concept(#glossary("_PoC_"));
-        + *_Progettazione Architteturale_*: definizione ad alto livello dell'archittettura del prodotto includendo test di integrazione;
-        + *_Product Baseline_*: raffinazione ulteriore dell'attività di progettazione del prodotto e delle sue componenti;
+        + *_Technology Baseline_*: scelta e definizione delle tecnologie di base che saranno utilizzate per la realizzazione del sistema, comprende decisioni riguardanti linguaggi di programmazione, librerie e #glossary("framework"). Tale processo porterà alla creazione di un Proof of Concept(#glossary("PoC"));
+        + *_Progettazione Architteturale_*: definizione ad alto livello dell'archittettura del prodotto, include test di integrazione;
+        + *_Product Baseline_*: segna un punto stabile nel processo di progettazione, in cui le specifiche tecniche, le funzionalità principali e l'architettura del prodotto sono definite in modo dettagliato e accettate dalle parti coinvolte. Include tutti gli elementi essenziali e i requisiti chiave del prodotto che devono essere soddisfatti, fornendo una base solida per lo sviluppo continuo del prodotto. Questo processo porterà infine alla realizzazione di un _Minimum Viable Product_ (#glossary("MVP"));
                                 Include:
-                                - Design Patterns;
+                                - #glossary("Design Patterns") e Package;
                                 - Definizione classi;
                                 - Diagrammi UML che includono:
                                         - classi;
                                         - package;
-                                        - sequenze;
-                                        - attività.
+                                        - sequenze: utilizzato per descrivere uno scenario che costituisce una determinata sequenza di azioni in cui tutte le scelte sono state già effettuate;
+                                        - attività: diagramma comportamentale che illustra il flusso delle attività attraverso un sistema.
                                 - Test di Unità su ogni componente.
 
 === Codifica 
 
 ==== Scopo 
 
-L'attività di codifica viene svolta dai Programmatori, che hanno come compito la traduzione delle decisioni progettuali prese in precedenza, in codice sorgente.
-I programmatori seguono le linea guida e le best practices stabilite durante la fase di progettazione architteturale.
+L'attività di codifica viene svolta dai Programmatori, che hanno come compito la traduzione delle decisioni progettuali in codice sorgente.
+I programmatori seguono le linea guida e le _best practices_ stabilite durante la fase di progettazione architteturale.
 
 ==== Aspettative 
 
+Ci si aspetta che il codice sviluppato rispetti determinate caratteristiche:
+
         - Conformità alle specifiche;
-        - Il codice deve essere chiaro e comprensibile;
-        - Ottimizzare le prestazioni;
-        - Test per verificare se funziona correttamente;
-        - Garantire qualità del prodotto.
+        - Chiarezza e comprensibilità;
+        - Ottimizzazione delle prestazioni;
+        - Supplemento di test per verificare la correttezza e il funzionamento;
+        - Conformita' agli standard di qualita' caratteristici del prodotto.
+
 
 ==== Stili di codifica 
 
@@ -377,7 +380,7 @@ La gestione della qualità è un insieme di processi e attività volte a garanti
         - Controllo continuo della qualità del prodotto, verificando che rispetti le aspettative della Proponente;
         - Minimizzare la presenza di errori o anomalie nel prodotto;
         - Riduzione dei rischi che potrebbero influenzare la qualità;
-        - Consegna del progetto rispettando il budget e i requisiti della Proponente.
+        - Consegna del progetto rispettando il budget preventivato inizialmente e i requisiti individuati assieme alla Proponente.
 
 Per la valutazione della qualità viene fornito il documento _Piano di Qualifica_, in cui sono presenti varie metriche con le relative soglie di valori accettabili ed ideali.
 
@@ -501,17 +504,17 @@ Per fare in modo che ogni membro svolga almeno 1 volta tutti i ruoli di cui sopr
 
 Riguardano esclusivamente i membri del Team e si svolgono tramite:
 
-        - *_Whatsapp_*: per una comunicazione veloce;
-        - *_Discord_*: piattaforma per comunicare che permette di:
+        - *_Whatsapp_*: utilizzato per messaggistica istantanea e una comunicazione veloce;
+        - *_Discord_*: piattaforma utilizzata per:
                 + Creare server suddivisibili in vari canali testuali o vocali, dove verranno svolte le riunioni;
-                + Integrazioni con servizi esterni ad esempio Github.
+                + Supplementare la comunicazione all'interno della piattaforma con funzionalita' offerte da servizi esterni quali GitHub
 
 ===== Comunicazioni Esterne
 
-Le comunicazioni esterne vengono affidate al _Responsabile_ attraverso i seguenti mezzi:
+Le comunicazioni esterne vengono affidate al Responsabile attraverso i seguenti mezzi:
 
         - _Email_ : si usa l'email di gruppo swateng.team\@gmail.com;
-        - _Element_: si usa il canale creato apposta dall'azienda Synclab per avere una comunicazione diretta.
+        - _Element_: si usa il canale creato appositamente dalla Proponente per avere una comunicazione diretta.
 
 ==== Gestione degli Incontri 
 
@@ -529,14 +532,12 @@ Le linee guida per le riunioni:
 
 Gli incontri hanno due modalità:
 
-        - *Fisici*: per gli stand-up meeting quotidiani (#glossary("Daily Scrum_")) di 5 minuti in cui si discutono brevemente le attività completate il giorno precedente e si espongono le attività pianificate per il futuro;
+        - *Fisici*: per gli stand-up meeting quotidiani (#glossary("Daily Scrum")) di 5 minuti in cui si discutono brevemente le attività completate il giorno precedente e si espongono le attività pianificate per il futuro;
         - *Virtuali*: si svolgono chiamate o video di gruppo in cui si discutono eventuali dubbi o difficoltà riscontrate. Lo strumento adatto per questo scopo è Discord.
 
 ===== Incontri Esterni 
 
-Negli incontri esterni i partecipanti sono i membri del team e il/i referenti della Proponente. Questi incontri sono pianificati ogni due settimane in concomitanza con l'inizio e fine sprint. Durante queste sessioni, i partecipanti hanno l'opportunità di presentare gli sviluppi recenti, condividere i progressi raggiunti e discutere eventuali sfide o questioni emerse nel corso del lavoro. 
-Inoltre si possono richiedere incontri di formazione specifici su particolari tecnologie, questo offre al team l'opportunità di approfondire la comprensione di una tecnologia specifica, imparare le best practice e acquisire competenze più avanzate.
-
-Gli incontri sono prevalentemente in modalità sincrona.
+Negli incontri esterni i partecipanti sono i membri del team e i referenti della Proponente. Questi incontri sono pianificati ogni due settimane in concomitanza con l'inizio e fine sprint. Durante queste sessioni, i partecipanti del team hanno l'opportunità di presentare gli sviluppi recenti, condividere i progressi raggiunti e discutere eventuali sfide o questioni emerse nel corso del lavoro. 
+Inoltre si possono richiedere incontri di formazione specifici su particolari tecnologie, il che offre al team l'opportunità di approfondire la comprensione di una tecnologia specifica, imparare le _best practice_ e acquisire competenze più avanzate.
 
 Il responsabile ha il compito della stesura del verbale esterno, che viene successivamente convalidato, con firma, dalla Proponente.
