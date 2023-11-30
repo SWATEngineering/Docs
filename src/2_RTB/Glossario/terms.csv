@@ -17,8 +17,7 @@ Sistema; Insieme organizzato di componenti interconnesse e interagenti, che lavo
 Deliverable; Ogni prodotto e servizio rilasciato o da rilasciare, include software e documentazione.
 Bug; Errore, difetto o falla nel design, sviluppo o funzionamento del software informatico che provoca la produzione di risultati errati o inaspettati, o che fa comportare il software in modi non previsti.
 Framework; Architettura logica di supporto sulla quale un software può essere progettato e realizzato, spesso facilitandone lo sviluppo da parte del programmatore.
-PoC; Acronimo di Proof of Concept, indica un prototipo o una demo che cerca di dimostrare il funzionamento del prodotto e che abbia un potenziale pratico.
+PoC; Acronimo di Proof of Concept, indica un prototipo iniziale che verifica la fattibilita' tecnica di un prodotto dimostrandone alcune funzionalita' essenziali, e delineandone il potenziale di realizzazione.
 MVP; Acronimo di Minimal Viable Product, indica una versione di prodotto che include solamente le funzionalità essenziali per soddisfare le esigenze iniziali degli utenti.
-Design Pattern; descrizione o modello logico da applicare per la risoluzione di un problema che può presentarsi in diverse situazioni durante le fasi di progettazione e sviluppo del software.
-Daily Scrum; breve riunione quotidiana nel framework Scrum, in cui il team di sviluppo si incontra per sincronizzarsi, pianificare le attività giornaliere e affrontare eventuali ostacoli nel percorso dello sviluppo del prodotto.
- 
+Design Pattern; Descrizione o modello logico da applicare per la risoluzione di un problema che può presentarsi in diverse situazioni durante le fasi di progettazione e sviluppo del software.
+Daily Scrum; Breve riunione quotidiana nel framework Scrum, in cui il team di sviluppo si incontra per sincronizzarsi, pianificare le attività giornaliere e affrontare eventuali ostacoli nel percorso dello sviluppo del prodotto.
