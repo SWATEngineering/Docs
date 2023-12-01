@@ -12,4 +12,8 @@ Per praticità, verranno utilizzate le seguenti abbreviazioni:
 - *Pr*: Programmatore;
 - *Ve*: Verificatore.
 
+
+Questa sezione vuole essere una proiezione finanziaria dettagliata del intero progetto, delineando chiaramente le risorse preventivate per ciascun ciclo di sprint. 
+
+
 #include "PreventivoSprint/PrimoSprint.typ"
