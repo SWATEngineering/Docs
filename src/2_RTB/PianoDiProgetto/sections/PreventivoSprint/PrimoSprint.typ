@@ -31,6 +31,6 @@ In questo sprint, il costo per ogni ruolo sarà come da tabella:
 )
 
 #figure(
-  image("../../assets/AreogrammiPartizioneOre/AreogrammaPrimoSprint.png", width: 100%),
+  image("../../assets/AreogrammiPartizioneOre/AreogrammaPrimoSprint.png", width: 80%),
   caption: [Areogramma partizione ore preventivate per lo sprint sprint],
 )
