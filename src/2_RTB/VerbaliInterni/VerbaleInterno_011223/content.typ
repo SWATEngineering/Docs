@@ -70,6 +70,4 @@ Si è discusso se si devono intendere gli incontri settimanali con la Proponente
 Si è discusso sulla necessità di creare diagrammi di Gantt per l'intero periodo, suddividendo il progetto in tre macro milestone, che verranno scomposte in milestone più piccole definite per funzioni relative ai ruoli da usare. Questo compito verrà preso in carico dal responsabile, dall'amministratore e dal verificatore.
 Come strumento per la creazione dei diagrammi si è deciso di usare onlinegantt.
 
-== Incontro per l'Analisi dei Requisiti 
 
-Si è deciso di contattare la Proponente per organizzare un incontro, dedicato alla discussione dell'Analisi dei Requisiti, al fine di verificare l'allineamento delle esigenze del progetto e assicurare chiarezza su dettagli critici. 
