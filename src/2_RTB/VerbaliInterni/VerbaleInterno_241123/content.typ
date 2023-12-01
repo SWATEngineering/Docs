@@ -34,7 +34,7 @@ Si precisa che il cambio dei ruoli è opzionale e non necessariamente riguarda l
 I membri coinvolti nello scambio devono però aver almeno concluso le _issue_ assegnate e già cominciate.  
 
 == Sprint Planning
-Al termine della riunione odierna il team ha proceduto alla creazione dello _Sprint Backlog_.
+Al termine dell'incontro il team ha proceduto alla creazione dello _Sprint Backlog_.
 Inizialmente si sono rilevate le nuove issue a seguito dell'incontro con la proponente avvenuto la mattinata stessa e sono state inserite nel _Product Backlog_.
 Successivamente le issue sono state selezionate e inserite nello _Sprint Backlog_ e ad ognuna è stata assegnata _size_ e _priority_. 
 Sulla base della somma delle _size_ delle _issues_ selezionate il nuovo sprint risulta decisamente più corposo di quello precedente. 
