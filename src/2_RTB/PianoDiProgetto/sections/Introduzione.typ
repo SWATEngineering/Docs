@@ -36,5 +36,5 @@ Al fine di evitare possibili ambiguità relative al linguaggio utilizzato nei do
 == Scadenze
 Di seguito sono riportate le date di scadenza che il gruppo _SWAT Engineering_ si impegna a rispettare per lo sviluppo del progetto _InnovaCity_:
 - *Prima revisione (Avanzamento RTB):* 18 Dicembre 2023;
-- *Seconda revisione (Avanzamento PB):* da definire;
-- *Terza revisione (Avanzamento CA):* da definire.
+- *Seconda revisione (Avanzamento PB):* 15 Marzo 2024;
+- *Terza revisione (Avanzamento CA):* 1 Aprile 2024; 
