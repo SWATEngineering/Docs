@@ -17,6 +17,7 @@ Per ciascun Sprint, vengono stabilite le date di inizio e di fine, l'insieme del
 == Requirements and Technology Baseline
 #include "PianificazioneSprint/PrimoSprint.typ"
 #include "PianificazioneSprint/SecondoSprint.typ"
+#include "PianificazioneSprint/TerzoSprint.typ"
 
 == Product Baseline
 
