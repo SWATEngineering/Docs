@@ -1,18 +1,24 @@
 #import "../../const.typ": Re_cost, Am_cost, An_cost, Ve_cost, Pr_cost, Pt_cost 
 
-== Primo sprint
+== Secondo sprint
 === Prospetto orario
 I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, durante questo sprint:
 #table(
-  columns: (170pt,auto,auto,auto,auto,auto,auto,70pt),
+  columns: (160pt,auto,auto,auto,auto,auto,auto,120pt),
   align: center,
-  [*Nominativo*],               [*Re*],[*Am*],[*An*],[*Pt*],[*Pr*],[*Ve*],[*Ore totali*],
-  [Simone Caregnato],           [-],    [-],    [-],    [-],  [10],    [-],    [10],
-  [Riccardo Alberto Costantin], [-],    [10],    [-],    [-],  [-],    [-]    ,[10],
-  [Giacomo D'Ovidio],           [10],    [-],    [-],    [-],  [-],    [-]    ,[10],
-  [Nancy Kalaj],                [-],    [-],    [-]    ,[-]  ,[-]    ,[10]    ,[10],
-  [Matteo Rango],               [-],    [-]    ,[-]    ,[-]  ,[10]    ,[-]    ,[10],
-  [Riccardo Toniolo],           [-]    ,[-]    ,[10]    ,[-]  ,[-]    ,[-]    ,[10]
+  [*Nominativo*],[*Re*],[*Am*],[*An*],[*Pt*],[*Pr*],[*Ve*],[*Totale per persona*],
+  [Simone Caregnato],[-],[-],[-],[-],[6],[-],[6],
+  [Riccardo Alberto Costantin],[-],[3],[-],[-],[-],[-],[3],
+  [Giacomo D'Ovidio],[3],[-],[-],[-],[-],[-],[3],
+  [Nancy Kalaj],[-],[-],[-],[-],[-],[5],[5],
+  [Matteo Rango],[-],[-],[-],[-],[6],[-],[6],
+  [Riccardo Toniolo],[-],[-],[4],[-],[-],[-],[4],
+  [*Totale per ruolo*],[3],[3],[4],[-],[12],[5],[27]
+)
+
+#figure(
+  image("../../assets/AreogrammiPartizioneOre/Preventivato/AreogrammaOreSecondoSprint.png", width: 75%),
+  caption: [Areogramma della partizione delle ore per ruolo nel secondo sprint.],
 )
 
 === Prospetto economico
@@ -21,16 +27,17 @@ In questo sprint, il costo per ogni ruolo sarà come da tabella:
   columns: (120pt,60pt,100pt),
   align: center,
   [*Ruolo*],[*Ore*],[*Costo*],
-  [Responsabile],[10],[#(Re_cost * 10)€],
-  [Amministratore],[10],[#(Am_cost * 10)€],
-  [Analista],[10],[#(An_cost * 10)€],
+  [Responsabile],[3],[#(Re_cost * 3)€],
+  [Amministratore],[3],[#(Am_cost * 3)€],
+  [Analista],[4],[#(An_cost * 4)€],
   [Progettista],[-],[-],
-  [Programmatore],[20],[#(Pr_cost * 20)€],
-  [Verificatore],[10],[#(Ve_cost * 10)€],
-  [*Totale*],[60],[1200€]
+  [Programmatore],[12],[#(Pr_cost * 12)€],
+  [Verificatore],[5],[#(Ve_cost * 5)€],
+  [*Totale*],[27],[505€],
+  [*Rimanente*],[512],[9940€]
 )
 
 #figure(
-  image("../../assets/AreogrammiPartizioneOre/AreogrammaSecondoSprint.png", width: 80%),
-  caption: [Areogramma partizione ore preventivate per lo sprint],
+  image("../../assets/AreogrammiPartizioneCosti/Preventivato/AreogrammaCostiSecondoSprint.png", width: 75%),
+  caption: [Areogramma del budget speso e rimanente preventivato per il secondo sprint.],
 )

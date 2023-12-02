@@ -13,7 +13,8 @@ Per praticità, verranno utilizzate le seguenti abbreviazioni:
 - *Ve*: Verificatore.
 
 
-Questa sezione vuole essere una proiezione finanziaria dettagliata del intero progetto, delineando chiaramente le risorse preventivate per ciascun ciclo di sprint. 
+Questa sezione vuole essere una proiezione finanziaria dettagliata dell'intero progetto, delineando chiaramente le risorse preventivate per ciascuno sprint. 
 
 
 #include "PreventivoSprint/PrimoSprint.typ"
+#include "PreventivoSprint/SecondoSprint.typ"
