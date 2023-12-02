@@ -4,7 +4,7 @@ Corsie di Stato;Contenitori di _Issue_ che le suddividono logicamente secondo il
 Sprint;Singolo periodo temporale, solitamente breve, per il quale sono fissati delle attività da portare a termine.
 Workflow;Sistema per gestire processi ripetitivi e attività che necessitano di uno specifico ordine.
 Quorum;Numero minimo accettabile di persone che possono prendere decisioni a nome del gruppo.
-Amministratore Pubblico;Figura che opera nel settore pubblico responsabile della gestione delle risorse e dell'amministrazione dei servizi pubblici. 
+Amministratore Pubblico;Figura che opera nel settore pubblico responsabile della gestione delle risorse e dell'amministrazione dei servizi pubblici, relativamente ad una determinata regione geografica. 
 Sensore;Dispositivo elettronico in grado di rilevare e misurare diverse tipologie di grandezze.
 Real-Time;Aggettivo utillizzato per definire che un attività in risposta ad un evento avviene immediatamente,o con ritardi trascurabili. 
 Attore;Entità esterna al sistema che interagisce con esso al fine di realizzare scopo specifico.
@@ -21,3 +21,5 @@ PoC; Acronimo di Proof of Concept, indica un prototipo iniziale che verifica la 
 MVP; Acronimo di Minimal Viable Product, indica una versione di prodotto che include solamente le funzionalità essenziali per soddisfare le esigenze iniziali degli utenti.
 Design Pattern; Descrizione o modello logico da applicare per la risoluzione di un problema che può presentarsi in diverse situazioni durante le fasi di progettazione e sviluppo del software.
 Daily Scrum; Breve riunione quotidiana nel framework Scrum, in cui il team di sviluppo si incontra per sincronizzarsi, pianificare le attività giornaliere e affrontare eventuali ostacoli nel percorso dello sviluppo del prodotto.
+Smart City; Città popolata di sensori, i quali permettono di raccogliere dati di diverse categorie, per poi poter attuare scelte o strategie, supportate dai dati stessi, per vari fini di natura logistica, organizzativa e qualitativa.
+Data pipeline; Un sistema in grado di atturare processi di raccolta, elaborazione, trasformazione e spostamento dei dati da una sorgente a una destinazione.

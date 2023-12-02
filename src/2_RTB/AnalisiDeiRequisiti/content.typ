@@ -10,7 +10,7 @@
 Il presente documento ha lo scopo di fornire una descrizione dettagliata dei casi d'uso e dei requisiti del progetto _InnovaCity_. Questi risultano dall'analisi del capitolato C6 presentato dalla Proponente _Sync_ Lab e dalla successiva interazione diretta con essa attraverso gli incontri svolti.
 
 == Scopo del prodotto
-Lo scopo del prodotto è la realizzazione di una piattaforma di monitoraggio,che generi dati provenienti da varie tipologie di dispositivi IoT e sensori dislocati nella città. Tale piattaforma consentirà all'#glossary("amministratore pubblico") di acquisire una panoramica completa delle condizioni della città, facilitando così la presa di decisioni informate e tempestive riguardo alla gestione delle risorse e all'implementazione di servizi. I dati visualizzati tramite questa piattaforma saranno generati mediante un processo di simulazione randomica accuratamente progettato per avvicinarsi il più possibile alla realtà. In alternativa, sarà possibile utilizzare dati reali liberamente accessibili per garantire una rappresentazione ancor più autentica delle condizioni della città.
+Lo scopo del prodotto è la realizzazione di un sistema di persistenza dati e successiva visualizzazione di questi, provenienti da sensori dislocati geograficamente. Tale piattaforma consentirà all'#glossary("amministratore pubblico") di acquisire una panoramica completa delle condizioni della città, facilitando così la presa di decisioni informate e tempestive riguardo alla gestione delle risorse e all'implementazione di servizi.
 
 == Riferimenti
 
@@ -33,35 +33,28 @@ Cardin	Analisi e descrizione delle funzionalità: Use Case e relativi diagammi (
 = Descrizione
 
 == Obiettivi del prodotto
-L'obbiettivo consiste nella creazione di una piattaforma di monitoraggio e gestione una Smart City. L'utente, individuato nell'amministratore pubblico, potrà farne impiego per migliorare la qualità generale della vita e l'efficienza dei servizi nel contesto di un'area urbana. L'utente sarà in grado di controllare, attraverso la consultazione di una dashboard, lo stato della città, sotto i punti di vista ambientali, logistici e di sicurezza. Questo cruscotto includerà rappresentazioni grafiche basate su dati generati da una simulazione realistica, specificamente sviluppata per il progetto in questione.
+L'obbiettivo consiste nella creazione di una piattaforma di monitoraggio e gestione di una #glossary("Smart City"). L'utente, individuato nell'#glossary("amministratore pubblico"), potrà farne impiego per migliorare la qualità generale della vita e l'efficienza dei servizi nel contesto di un'area urbana. L'utente sarà in grado di monitorare, attraverso la consultazione di una dashboard, lo stato della città, sotto i punti di vista ambientali, logistici e di sicurezza. Questo cruscotto includerà rappresentazioni grafiche basate su dati provenienti da dei sensori installati all'interno dell'area geografica della città.
 
 == Funzionalità del prodotto
 Il prodotto si compone di due parti principali:
-- *Un simulatore* che genera dati il più verosimili possibile, cercando di riflettere con precisione le caratteristiche tipiche dei dati di diverse tipologie. Ad esempio, un    #glossary("sensore") di temperatura potrebbe essere modellato per produrre dati che seguano fedelmente un andamento simile a una sinusoide, per avvicinarsi il più possibile alle variazioni reali della temperatura.
-- I dati vengono inviati ad un sistema di stream processing che permetta di disaccoppiare lo stream di informazioni raccolto in #glossary("real-time"), e successivamente essere archiviati in un database OLAP.
-- *Una dashboard* che permette di visualizzare i dati accumulati, sottoforma di grafici.
+- *Una #glossary("data pipeline")* in grado di raccogliere, persistere e processare dati provenienti da più sorgenti (ovvero i #glossary("sensori")) in #glossary("real-time");
+- *Una dashboard* che permette di visualizzare i dati raccolti.
 
-La piattaforma prevede fondamentalmente una tipologia di utente: l'amministratore pubblico. Questo utente avrà accesso alla dashboard e visualizzerà il sommario di diverse metriche e indicatori sullo stato della città, sottoforma di grafici.
-
-== Tecnologie consigliate
-La Proponente consiglia l'utilizzo delle seguenti tecnologie per la realizzazione del progetto:
-- Implementazione dei simulatori. Tecnologia consigliata: *Python*;
-- Database OLAP utilizzato per lo storage dei dati.  Tecnologia consigliata: *ClickHouse*;
-- Piattaforma di stream processing. Tecnologia consigliata: *Kafka*.
-- Dashboard di visualizzazione. Tecnologia consigliata: *Grafana*.
+La piattaforma prevede fondamentalmente una tipologia di utente: l'#glossary("amministratore pubblico"). Questo utente avrà accesso alla dashboard e prenderà visione di diverse metriche e indicatori sullo stato della città, mediante diversi strumenti di visualizzazione.
 
 == Utenti e caratteristiche
-Il prodotto, destinato ad amministratori pubblici, consente loro di ottenere una panoramica sulle condizioni della città. Ciò fornisce loro una base solida per prendere decisioni ponderate sulla gestione delle risorse e sull'implementazione dei servizi, il che risulta cruciale nel miglioramento dell'efficacia complessiva della gestione urbana. La ricezione tempestiva dei dati aggiornati migliora la capacità di risposta immediata in situazioni di emergenza, migliorando la gestione di eventi critici, in modo più efficiente e mirato. Un'altra figura che potrebbe essere interessata all'utilizzo del prodotto, potrebbe essere quella del dirigente aziendale: gli sarebbe permesso di ottenere informazioni rilevanti per gli obiettivi e gli interessi dell'azienda, come riduzione dei costi, miglioramento dell'efficienza e della produttività.
+Il prodotto, destinato ad #glossary("amministratori pubblici"), consente loro di ottenere una panoramica sulle condizioni della città. Ciò fornisce loro una base solida per prendere decisioni ponderate sulla gestione delle risorse e sull'implementazione dei servizi, il che risulta cruciale nel miglioramento dell'efficienza complessiva della gestione urbana. Si presuppone che l' #glossary("amministratore pubblico") abbia conoscenze di analisi e di interpretazione dei dati, tali da poter trarre un concreto beneficio dal controllo della dashboard.
 
 = Casi d'uso
 == Scopo
-In questa sezione si vogliono elencare e descrivere tutti i casi d'uso individuati dall'analisi effettuata dal gruppo, basandosi sul capitolato e sulle interazioni con la Proponente. In particolare, si individuano gli #glossary("attori") e le funzionalità che questi possono svolgere. Ogni caso d'uso possiede un codice, la cui struttura è descritta nelle Norme di Progetto.
+In questa sezione si vogliono elencare e descrivere tutti i casi d'uso individuati dall'analisi del capitolato e dalle interazioni avute con la Proponente. In particolare, si individuano gli #glossary("attori") e le funzionalità che questi possono svolgere. Ogni caso d'uso possiede un codice, la cui struttura è descritta nelle Norme di Progetto.
 
 == Attori
-L'applicativo si interfaccerà con un solo tipo di attore:
-- *Utente generico*: è un utente che ha accesso alla dashboard in tutte le sue funzionalità e può visualizzare i dati raccolti dai sensori.
+Il sistema si interfaccerà con due attori diveri:
+- *#glossary("Amministratore pubblico")*: è un utente che ha accesso alla dashboard in tutte le sue funzionalità e può visualizzare i dati raccolti dai sensori, mediante quest'ultima;
+- *#glossary("Sensore")*: è un dispositivo in grado di raccogliere dati relativi al proprio dominio di interesse e di inserirli all'interno del sistema per far si che vengano persistiti.
 
-La decisione di non inserire un utente con privilegi è da ricollegare al fatto che il prodotto ha comunque un target d'utenza limitato, che si compone di persone generalmente dotate di competenze tecniche e dunque in grado di interagire con il sistema in tutte le sue funzionalità.
+Relativamente all'utilizzo della dashboard, viene definito un unico attore con accesso completo alle funzionalità, in quanto per sua natura l' #glossary("amministratore pubblico") possiede le competenze tecniche necessarie per poter interagire con essa in tutte le sue parti.
 
 #figure(
   image("assets/UtenteUC.png", width: 12%),
