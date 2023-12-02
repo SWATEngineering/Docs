@@ -78,6 +78,16 @@ I diversi livelli di competenze e una comunicazione poco trasparente possono por
     - Promuovere incontri periodici: i membri del team hanno la possibilità di esprimere dubbi e preocupazioni, avere una discussione aperta su aspetti rilevanti del progetto e ricevere feedback sul lavoro fatto. In questo contesto va precisato che la costruzione del feedback assume un ruolo fondamentale, in quanto deve essere formulato in maniera tale da risultare costruttivo e presentato come un opportunità di miglioramento anziché una critica;
     - Promuovere la comprensione reciproca: il team si deve sforzare nel comprendere le condizioni e i punti di vista degli altri componenti per creare un clima di progetto positivo indirizzato verso il miglioramento.
 
+=== *RC5 - Context Switch*
+
+Per #glossary("Context Switch") ci si riferisce al cambiamento dei ruoli all'interno del team. Questo passaggio da un ruolo ad un altro comporta la necessità di adattarsi rapidamente alle nuove responsabilità e di comprendere appieno ciò che è stato svolto dal membro del team precedentemente.
+  - *Identificazione*: Difficoltà nel capire cosa è stato fatto precedentmente. 
+  - *Valutazione*: Pericolosità: bassa; Occorenza: alta.
+  - *Prevenzione*:
+      - La persona che ha precedentemente occupato quel ruolo specifico, offre supporto al membro del team che ha assunto ora quella posizione, facilitandone la transizione;
+      - Assistere il responsabile o l'amministratore nella creazione delle attività per il prossimo sprint;
+      - Dedicare il primo giorno  unicamente allo studio di quanto fatto precedentemente per riuscire a sincronizzarsi con il contesto del ruolo.
+
 
 
 == Rischi di Pianificazione
@@ -121,6 +131,7 @@ I rischi individuati vengono riportati in tabella, assieme alla loro pericolosit
   [*RC2* - Esasperazione di conflitti interni], [Media],  [Bassa],
   [*RC3* - Frequenza limitata nella comunicazione con la Proponente], [Media], [Bassa],
   [*RC4* - Mancanza di fiducia], [Media], [Bassa],
+  [*RC5* - Context Switch],[Bassa],[Alta],
   [*RP1* - Comprensione erronea dei requisiti], [Alta], [Media],
   [*RP2* - Disallineamento delle componenti architetturali], [Media], [Media],
   [*RP3* - Variazioni nei tempi e costi del progetto], [Alta], [Media]
