@@ -5,3 +5,18 @@
 *Fine*: Giovedì 28/12/2023 
 
 *Obiettivi dello sprint*: 
+  
+    - Inizio stesura Specifiche Tecniche:
+      + Sezione Introduzione;
+      + Sezione Tecnologie.
+    - Studio dell'archittetura del sistema;
+    - Studio dei design pattern migliori;
+    - Continuazione Piano di Progetto;
+    - Continuazione della correzione sull'Analisi Requisiti;
+
+
+
+
+*Suddivisione lavoro*:
+
+

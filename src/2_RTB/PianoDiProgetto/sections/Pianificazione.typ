@@ -21,4 +21,8 @@ Per ciascun Sprint, vengono stabilite le date di inizio e di fine, l'insieme del
 
 == Product Baseline
 
+=== Sessione d'esame
+
+In vista della sessione invernale viene prevista una sospensione temporanea dal progetto in cui i membri del team daranno priorità allo studio.
+
 == Customer Acceptance Baseline  
