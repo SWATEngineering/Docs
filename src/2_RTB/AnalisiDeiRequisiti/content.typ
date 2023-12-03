@@ -71,8 +71,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 #set heading(numbering: none)
 === UC1 - Visualizzazione della Dashboard. 
 
-  - *Attore Principale*: utente generico.
-  - *Precondizioni*: almeno uno dei sensori è attivo e trasmette dati.
+  - *Attore Principale*: #glossary("amministratore pubblico").
+  - *Precondizioni*: il sistema è acceso e correttamente configurato.
   - *Postcondizioni*: la dashboard mostra un'istantanea chiara e aggiornata dello stato generale della città attraverso dati e informazioni.
   - *Scenario Principale*:
     + l'utente accede alla Dashboard; 
@@ -82,7 +82,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     - Visualizzazione di indicatori numerici [UC1.2]
 
 === UC1.1 - Visualizzazione della mappa della città 
-  - *Attore Principale*: utente generico.
+  - *Attore Principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: almeno uno dei sensori è attivo e trasmette dati.
   - *Postcondizioni*: il sistema mostra la mappa della città che evidenzia la suddivisione in celle e il posizionamento dei sensori.
   - *Scenario Principale*:
@@ -96,7 +96,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
       + interagisce con la mappa per selezionare un singolo sensore [UC4].
 
 === UC1.2 - Visualizzazione di indicatori numerici
-  - *Attore Principale*: utente generico.
+  - *Attore Principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: almeno uno dei sensori è attivo e trasmette dati.
   - *Postcondizioni*: il sistema mostra i valori correnti di tutti i sensori.
   - *Scenario Principale*:
@@ -105,7 +105,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     + gli indicatori numerici si aggiornano automaticamente per riflettere i dati più recenti provenienti dai sensori.
 
 === UC2 - Visualizzazione dello stato di una #glossary("cella")
-  - *Attore Principale*: utente generico.
+  - *Attore Principale*: #glossary("amministratore pubblico").
   - *Precondizioni*:
     - almeno uno dei sensori all'interno della cella è attivo e trasmette dati;
     - la piattaforma contiene dati aggiornati e in tempo reale dei sensori nella cella selezionata.  (revisore: dimmi se è toglibile questa precondizione)
@@ -119,7 +119,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     - Visualizzazione di indicatori numerici della cella [UC2.2]
 
 === UC2.1 - Visualizzazione della mappa della cella
-  - *Attore Principale*: utente generico.
+  - *Attore Principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: l'utente ha visualizzato la mappa della città e selezionato una cella.
   - *Postcondizioni*: la visualizzazione si contentra sulla cella selezionata, ingrandendola, per mostrare dettagli specifici della cella selezionata.
   - *Scenario Principale*:
@@ -129,7 +129,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   - *Estensioni*: l'utente interagisce con la mappa per selezionare un singolo sensore [UC4].
 
 === UC2.2 - Visualizzazione di indicatori numerici della cella
-  - *Attore Principale*: utente generico.
+  - *Attore Principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: l'utente ha visualizzato la mappa della città e selezionato una cella.
   - *Postcondizioni*: gli indicatori numerici mostrano i dati dei sensori situati nella cella selezionata.
   - *Scenario Principale*:
@@ -140,7 +140,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 === UC3 - Visualizzazione del registro dei sensori
 
-  - *Attore Principale*: utente generico.
+  - *Attore Principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: almeno un sensore è attivo.
   - *Postcondizioni*: il sistema mostra un elenco organizzato contenente le informazione relative a tutti i sensori installati. 
   - *Scenario Principale*:
@@ -152,7 +152,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 === UC4 - Selezione di un sensore
 
-  - *Attore Principale*: utente generico.
+  - *Attore Principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: almeno un sensore è attivo e trasmette dati.
   - *Postcondizioni*: vengono mostrate le informazioni relative al sensore selezionato e relativi dati storici.
   - *Scenario Principale*:
@@ -164,7 +164,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     + il sistema consente agli utenti di modificare o aggiornare le soglie in base alle esigenze in qualsiasi momento. [UC9]
 
 === UC5 - Modifica dello #glossary("stato di un sensore")
-  - *Attore Principale*: utente generico.
+  - *Attore Principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: il sensore è già registrato nella piattaforma.
   - *Postcondizioni*: le modifiche apportate allo stato del sensore sono state applicate con successo e il sensore riflette le nuove informazioni nello stato operativo.
   - *Scenario Principale*:
@@ -176,7 +176,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   
 
 === UC6 - Visualizzazione dati in intervalli selezionati
-  - *Attore principale*: utente generico.
+  - *Attore principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: viene selezionato un sensore [UC4].
   - *Postcondizioni*: il sistema mostra i dati storici relativi all'intervallo temporale selezionato.
   - *Scenario Principale*:
@@ -195,7 +195,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 /*
 === UC6 - Impostazione del periodo temporale 
-  - *Attore principale*: utente generico.
+  - *Attore principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: viene selezionato un sensore [UC4].
   - *Postcondizioni*: il periodo temporale per l'analisi dei dati storici è impostato con successo.
   - *Scenario Principale*:
@@ -213,7 +213,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 /*
 viene rimosso in quanto presente come caso d'uso secondario del uc6
  UC7 :- Inserimento di date non valide 
-  - *Attore Principale*: utente generico.
+  - *Attore Principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: viene selezionato un sensore per la visualizzazione dei dati storici e si è tentato di impostare un periodo temporale.
   - *Postcondizioni*: l'utente è stato notificato riguardo all'inserimento di date non valide.
   - *Scenario Principale*:
@@ -225,7 +225,7 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
 
 /*
 === UC8 - Visualizzazione dei dati storici di un sensore
-  - *Attore Principale*: utente generico.
+  - *Attore Principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: la piattaforma ha archiviato e conservato dati storici dei sensori.
   - *Postcondizioni*: l'utente ha visualizzato e analizzato i dati storici del sensore selezionato.
   - *Scenario Principale*:
@@ -238,7 +238,7 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
 
 === UC7 - Allarmi  del sistema
 
-  - *Attore Principale*: utente generico.
+  - *Attore Principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate.
   - *Postcondizioni*: Il sistema notifica l'utente in caso di allarmi. La notifica comprende dati rilevanti e informazioni contestuali per consentire azioni o analisi    aggiuntive.
   - *Scenario Principale*:
@@ -251,7 +251,7 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
       - Allarmi per superamento soglie [UC7.2]
 
 === UC7.1 - Allarmi per rilevazione anomalie 
-  - *Attore Principale*: utente generico.
+  - *Attore Principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate.
   - *Postcondizioni*: il sistema  notifica l'utente  in modo appropriato quando vengono attivati gli allarmi per rilevazioni anomale e successivamente viene aggiornato l'archivio delle anomalie.
   - *Scenario Principale*:
@@ -274,7 +274,7 @@ UC7.1 - Allarmi per rilevazione anomalie
 */
 
 === UC7.2 - Allarmi per superamento soglie
-  - *Attore Principale*: utente generico.
+  - *Attore Principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate.
   - *Postcondizioni*: il sistema notifica l'utente in modo appropriato quando vengono attivati gli allarmi per superamento delle soglie.
   - *Scenario Principale*:
@@ -285,7 +285,7 @@ UC7.1 - Allarmi per rilevazione anomalie
   
 
 === UC8 - Accesso all'archivio delle anomalie rilevate
-  - *Attore Principale*: utente generico.
+  - *Attore Principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate.
   - *Postcondizioni*: il sistema mostra all'utente l'archivio delle anomalie.
   - *Scenario Principale*:
@@ -309,7 +309,7 @@ UC8 - Archiviazione delle anomalie rilevate
 
 
 === UC9 - Modifica della soglia di rilevazione sensoriale
-  - *Attore Principale*: utente generico.
+  - *Attore Principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: il sistema è operativo.
   - *Postcondizioni*: la soglia di rilevazione del sensore viene modificata con successo.
   - *Scenario Principale*:
@@ -318,7 +318,7 @@ UC8 - Archiviazione delle anomalie rilevate
       + L'utente conferma le nuove impostazioni.
 
 === UC10 - Analisi dei trend
-  - *Attore Principale*: utente generico.
+  - *Attore Principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: dati storici disponibili per il periodo specificato.
   - *Postcondizioni*: il sistema mostra una rappresentazione visuale dei trend dei dati sensoriali durante il periodo selezionato.
   - *Scenario Principale*:
@@ -328,7 +328,7 @@ UC8 - Archiviazione delle anomalie rilevate
 
 
 === UC11 - Analisi avanzata dei sensori
-  - *Attore Principale*: utente generico.
+  - *Attore Principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: i dati sensoriali sono sufficientemente distribuiti per poter effettuare analisi significative.
   - *Postcondizioni*: il sistema ha analizzato e confrontato i dati tra sensori di diverse tipologie o tra celle della città, mostrando all'utente visualizzazioni e statistiche dettagliate.
   - *Scenario Principale*: 
@@ -340,7 +340,7 @@ UC8 - Archiviazione delle anomalie rilevate
     - Confronto tra celle della città [UC11.2].
 
 === UC11.1 - Correlazione tra tipologie di sensori
-  - *Attore Principale*: utente generico.
+  - *Attore Principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: i dati sono disponibili per i sensori che si vogliono analizzare. Almeno due tipi diversi di sensori attivi.
   - *Postcondizioni*: il sistema mostra all'utente una visualizzazione dettagliata e comparativa dei dati tra due diverse tipologie di sensori.
   - *Scenario Principale*:
@@ -350,7 +350,7 @@ UC8 - Archiviazione delle anomalie rilevate
   /*- *Estensioni*: il sistema consente all'utente di salvare i risultati dell'analisi per future consultazioni.*/
 
 === UC11.2 - Confronto tra celle della città
-  - *Attore Principale*: utente generico.
+  - *Attore Principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: la piattaforma dispone dei dati sensoriali di almeno due celle della città.
   - *Postcondizioni*: il sistema mostra all'utente i dati confrontati e le statistiche relative alle celle selezionate.
   - *Scenario Principale*:
@@ -366,7 +366,7 @@ UC8 - Archiviazione delle anomalie rilevate
 - *Estensioni*: se l'utente seleziona celle non comparabili, riceve una notifica di errore [UC12].
 
 === UC12 - Selezione di celle non comparabili
-  - *Attore Principale*: utente generico.
+  - *Attore Principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: l’utente seleziona due celle diverse per effettuare un’analisi di confronto.
   - *Postcondizioni*: l’utente riceve una notifica riguardo alla selezione di celle non comparabili.
   - *Scenario Principale*:
@@ -378,7 +378,7 @@ UC8 - Archiviazione delle anomalie rilevate
 */
 
 === UC12 - Filtraggio dei sensori
-  - *Attore Principale*: utente generico.
+  - *Attore Principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: è attivo almeno un sensore.
   - *Postcondizioni*: il sistema mostra all'utente una visualizzazione dei sensori filtrati in base ai criteri selezionati.
   - *Scenario Principale*:
@@ -393,7 +393,7 @@ UC8 - Archiviazione delle anomalie rilevate
     + il sistema applica i filtri e mostra all'utente solo i sensori che soddisfino i criteri selezionati.
 /*
 === UC14 - Aggiunta di un sensore reale
-  - *Attore Principale*: utente generico.
+  - *Attore Principale*: #glossary("amministratore pubblico").
   - *Precondizioni*: il sensore fisico è disponibile e pronto per l'installazione.
   - *Postcondizioni*: il nuovo sensore reale è stato correttamente aggiunto alla rete e i suoi dati sono ora disponibili nella piattaforma per l'analisi e la visualizzazione.
   - *Scenario Principale*:
