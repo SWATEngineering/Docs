@@ -66,7 +66,10 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [USECASE]
 )
 
-/ UC1 : - Visualizzazione della Dashboard. 
+== Elenco dei casi d'uso
+
+#set heading(numbering: none)
+=== UC1 - Visualizzazione della Dashboard. 
 
   - *Attore Principale*: utente generico.
   - *Precondizioni*: almeno uno dei sensori è attivo e trasmette dati.
@@ -78,7 +81,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     - Visualizzazione della mappa della città [UC1.1]
     - Visualizzazione di indicatori numerici [UC1.2]
 
-/ UC1.1 : - Visualizzazione della mappa della città 
+=== UC1.1 - Visualizzazione della mappa della città 
   - *Attore Principale*: utente generico.
   - *Precondizioni*: almeno uno dei sensori è attivo e trasmette dati.
   - *Postcondizioni*: il sistema mostra la mappa della città che evidenzia la suddivisione in celle e il posizionamento dei sensori.
@@ -92,7 +95,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
       + interagisce con la mappa per visualizzare lo stato di una singola cella [UC2];
       + interagisce con la mappa per selezionare un singolo sensore [UC4].
 
-/ UC1.2 : - Visualizzazione di indicatori numerici
+=== UC1.2 - Visualizzazione di indicatori numerici
   - *Attore Principale*: utente generico.
   - *Precondizioni*: almeno uno dei sensori è attivo e trasmette dati.
   - *Postcondizioni*: il sistema mostra i valori correnti di tutti i sensori.
@@ -101,7 +104,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     + vengono mostrati pannelli con indicatori numerici che rappresentano i dati attuali misurati da ciascun tipo di sensore distribuito nella città;
     + gli indicatori numerici si aggiornano automaticamente per riflettere i dati più recenti provenienti dai sensori.
 
-/ UC2 : - Visualizzazione dello stato di una #glossary("cella")
+=== UC2 - Visualizzazione dello stato di una #glossary("cella")
   - *Attore Principale*: utente generico.
   - *Precondizioni*:
     - almeno uno dei sensori all'interno della cella è attivo e trasmette dati;
@@ -115,7 +118,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     - Visualizzazione della mappa della cella [UC2.1]
     - Visualizzazione di indicatori numerici della cella [UC2.2]
 
-/ UC2.1 : - Visualizzazione della mappa della cella
+=== UC2.1 - Visualizzazione della mappa della cella
   - *Attore Principale*: utente generico.
   - *Precondizioni*: l'utente ha visualizzato la mappa della città e selezionato una cella.
   - *Postcondizioni*: la visualizzazione si contentra sulla cella selezionata, ingrandendola, per mostrare dettagli specifici della cella selezionata.
@@ -125,7 +128,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     + il sistema ingrandisce la cella selezionata.
   - *Estensioni*: l'utente interagisce con la mappa per selezionare un singolo sensore [UC4].
 
-/ UC2.2 : - Visualizzazione di indicatori numerici della cella
+=== UC2.2 - Visualizzazione di indicatori numerici della cella
   - *Attore Principale*: utente generico.
   - *Precondizioni*: l'utente ha visualizzato la mappa della città e selezionato una cella.
   - *Postcondizioni*: gli indicatori numerici mostrano i dati dei sensori situati nella cella selezionata.
@@ -135,7 +138,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     + gli indicatori numerici sulla dashboard si aggiornano per riflettere i dati provenienti dai sensori situati nella cella selezionata.
   
 
-/ UC3 : - Visualizzazione del registro dei sensori
+=== UC3 - Visualizzazione del registro dei sensori
 
   - *Attore Principale*: utente generico.
   - *Precondizioni*: almeno un sensore è attivo.
@@ -147,7 +150,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     + selezione un sensore [UC4];
     + filtraggio dei sensori in base alle loro caratteristiche [UC13].
 
-/ UC4 : - Selezione di un sensore
+=== UC4 - Selezione di un sensore
 
   - *Attore Principale*: utente generico.
   - *Precondizioni*: almeno un sensore è attivo e trasmette dati.
@@ -160,7 +163,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     + impostazione del periodo temporale al fine visualizzare i dati storici relativi a quel periodo e al sensore selezionato sensore selezionato [UC6].
     + il sistema consente agli utenti di modificare o aggiornare le soglie in base alle esigenze in qualsiasi momento. [UC9]
 
-/ UC5 : - Modifica dello #glossary("stato di un sensore")
+=== UC5 - Modifica dello #glossary("stato di un sensore")
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sensore è già registrato nella piattaforma.
   - *Postcondizioni*: le modifiche apportate allo stato del sensore sono state applicate con successo e il sensore riflette le nuove informazioni nello stato operativo.
@@ -172,7 +175,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     
   
 
-/ UC6 : - Visualizzazione dati in intervalli selezionati
+=== UC6 - Visualizzazione dati in intervalli selezionati
   - *Attore principale*: utente generico.
   - *Precondizioni*: viene selezionato un sensore [UC4].
   - *Postcondizioni*: il sistema mostra i dati storici relativi all'intervallo temporale selezionato.
@@ -191,7 +194,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 
 /*
-/ UC6 : - Impostazione del periodo temporale 
+=== UC6 - Impostazione del periodo temporale 
   - *Attore principale*: utente generico.
   - *Precondizioni*: viene selezionato un sensore [UC4].
   - *Postcondizioni*: il periodo temporale per l'analisi dei dati storici è impostato con successo.
@@ -221,7 +224,7 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
 */
 
 /*
-/ UC8 : - Visualizzazione dei dati storici di un sensore
+=== UC8 - Visualizzazione dei dati storici di un sensore
   - *Attore Principale*: utente generico.
   - *Precondizioni*: la piattaforma ha archiviato e conservato dati storici dei sensori.
   - *Postcondizioni*: l'utente ha visualizzato e analizzato i dati storici del sensore selezionato.
@@ -233,7 +236,7 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
   - *Estensioni*: l’utente visualizza i trend dei dati storici del sensore durante il periodo selezionato [UC10].
 */
 
-/ UC7 : - Allarmi  del sistema
+=== UC7 - Allarmi  del sistema
 
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate.
@@ -247,7 +250,7 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
       - Allarmi per rilevazione anomalie [UC7.1]
       - Allarmi per superamento soglie [UC7.2]
 
-/ UC7.1 : - Allarmi per rilevazione anomalie 
+=== UC7.1 - Allarmi per rilevazione anomalie 
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate.
   - *Postcondizioni*: il sistema  notifica l'utente  in modo appropriato quando vengono attivati gli allarmi per rilevazioni anomale e successivamente viene aggiornato l'archivio delle anomalie.
@@ -258,7 +261,7 @@ viene rimosso in quanto presente come caso d'uso secondario del uc6
     + l'utente visualizza l'allarme.
     + il sistema archivia l'anomalia in un registro dedicato, includendo dati, ora, tipologia anomalia e sensore coinvolto.
 /*
-UC7.1 : - Allarmi per rilevazione anomalie
+UC7.1 - Allarmi per rilevazione anomalie
   - *Attore Principale*: sistema.
   - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate [UC9].
   - *Postcondizioni*: l'utente viene notificato in modo appropriato quando vengono attivati gli allarmi per rilevazioni anomale.
@@ -270,7 +273,7 @@ UC7.1 : - Allarmi per rilevazione anomalie
   - *Estensioni*: il sistema registra e mantiene un log delle anomalie rilevate per analisi e archiviazione [UC10].
 */
 
-/ UC7.2 : - Allarmi per superamento soglie
+=== UC7.2 - Allarmi per superamento soglie
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate.
   - *Postcondizioni*: il sistema notifica l'utente in modo appropriato quando vengono attivati gli allarmi per superamento delle soglie.
@@ -281,7 +284,7 @@ UC7.1 : - Allarmi per rilevazione anomalie
     + l'utente prende misure opportune di conseguenza.
   
 
-/ UC8 : - Accesso all'archivio delle anomalie rilevate
+=== UC8 - Accesso all'archivio delle anomalie rilevate
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sistema è operativo e raccoglie attivamente i dati dai sensori. Soglie e condizioni per la rilevazione delle anomalie sono definite e configurate.
   - *Postcondizioni*: il sistema mostra all'utente l'archivio delle anomalie.
@@ -293,7 +296,7 @@ UC7.1 : - Allarmi per rilevazione anomalie
 /* ci potrebbe essere un caso d'uso riguardo l'esportazione dei dati in un formato del tipo .....*/
 
 /*
-UC8 : - Archiviazione delle anomalie rilevate
+UC8 - Archiviazione delle anomalie rilevate
   - *Attore Principale*: sistema.
   - *Precondizioni*: il sistema ha rilevato un'anomalia significativa.
   - *Postcondizioni*: l'anomalia rilevata è stata registrata e archiviata per futura analisi.
@@ -305,7 +308,7 @@ UC8 : - Archiviazione delle anomalie rilevate
 */
 
 
-/ UC9 : - Modifica della soglia di rilevazione sensoriale
+=== UC9 - Modifica della soglia di rilevazione sensoriale
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sistema è operativo.
   - *Postcondizioni*: la soglia di rilevazione del sensore viene modificata con successo.
@@ -314,7 +317,7 @@ UC8 : - Archiviazione delle anomalie rilevate
       + L'Utente modifica manualmente i valori delle soglia;
       + L'utente conferma le nuove impostazioni.
 
-/ UC10 : - Analisi dei trend
+=== UC10 - Analisi dei trend
   - *Attore Principale*: utente generico.
   - *Precondizioni*: dati storici disponibili per il periodo specificato.
   - *Postcondizioni*: il sistema mostra una rappresentazione visuale dei trend dei dati sensoriali durante il periodo selezionato.
@@ -324,7 +327,7 @@ UC8 : - Archiviazione delle anomalie rilevate
 
 
 
-/ UC11 : - Analisi avanzata dei sensori
+=== UC11 - Analisi avanzata dei sensori
   - *Attore Principale*: utente generico.
   - *Precondizioni*: i dati sensoriali sono sufficientemente distribuiti per poter effettuare analisi significative.
   - *Postcondizioni*: il sistema ha analizzato e confrontato i dati tra sensori di diverse tipologie o tra celle della città, mostrando all'utente visualizzazioni e statistiche dettagliate.
@@ -336,7 +339,7 @@ UC8 : - Archiviazione delle anomalie rilevate
     - Correlazione tra tipologie di sensori [UC11.1];
     - Confronto tra celle della città [UC11.2].
 
-/ UC11.1 : - Correlazione tra tipologie di sensori
+=== UC11.1 - Correlazione tra tipologie di sensori
   - *Attore Principale*: utente generico.
   - *Precondizioni*: i dati sono disponibili per i sensori che si vogliono analizzare. Almeno due tipi diversi di sensori attivi.
   - *Postcondizioni*: il sistema mostra all'utente una visualizzazione dettagliata e comparativa dei dati tra due diverse tipologie di sensori.
@@ -346,7 +349,7 @@ UC8 : - Archiviazione delle anomalie rilevate
       + il sistema elabora i dati dei sensori selezionati e mostra una rappresentazione grafica comparativa.
   /*- *Estensioni*: il sistema consente all'utente di salvare i risultati dell'analisi per future consultazioni.*/
 
-/ UC11.2 : - Confronto tra celle della città
+=== UC11.2 - Confronto tra celle della città
   - *Attore Principale*: utente generico.
   - *Precondizioni*: la piattaforma dispone dei dati sensoriali di almeno due celle della città.
   - *Postcondizioni*: il sistema mostra all'utente i dati confrontati e le statistiche relative alle celle selezionate.
@@ -362,7 +365,7 @@ UC8 : - Archiviazione delle anomalie rilevate
 /*
 - *Estensioni*: se l'utente seleziona celle non comparabili, riceve una notifica di errore [UC12].
 
-/ UC12 : - Selezione di celle non comparabili
+=== UC12 - Selezione di celle non comparabili
   - *Attore Principale*: utente generico.
   - *Precondizioni*: l’utente seleziona due celle diverse per effettuare un’analisi di confronto.
   - *Postcondizioni*: l’utente riceve una notifica riguardo alla selezione di celle non comparabili.
@@ -374,7 +377,7 @@ UC8 : - Archiviazione delle anomalie rilevate
       + il sistema notifica l’utente riguardo alla presenza di celle non comparabili e fornisce dettagli sul motivo per cui non sono adatte per un confronto accurato.
 */
 
-/ UC12 : - Filtraggio dei sensori
+=== UC12 - Filtraggio dei sensori
   - *Attore Principale*: utente generico.
   - *Precondizioni*: è attivo almeno un sensore.
   - *Postcondizioni*: il sistema mostra all'utente una visualizzazione dei sensori filtrati in base ai criteri selezionati.
@@ -389,7 +392,7 @@ UC8 : - Archiviazione delle anomalie rilevate
         - Codice di fabbrica.
     + il sistema applica i filtri e mostra all'utente solo i sensori che soddisfino i criteri selezionati.
 /*
-/ UC14 : - Aggiunta di un sensore reale
+=== UC14 - Aggiunta di un sensore reale
   - *Attore Principale*: utente generico.
   - *Precondizioni*: il sensore fisico è disponibile e pronto per l'installazione.
   - *Postcondizioni*: il nuovo sensore reale è stato correttamente aggiunto alla rete e i suoi dati sono ora disponibili nella piattaforma per l'analisi e la visualizzazione.
@@ -401,6 +404,9 @@ UC8 : - Archiviazione delle anomalie rilevate
   - *Estensioni*: se il sistema non riesce a riconoscere o integrare correttamente il nuovo sensore, l'utente riceve una notifica di errore.
   */
 /* Bisogna capire se tenere la UC14 */
+
+#set heading(numbering: "1.1")
+
 = Requisiti
 
 == Requisiti funzionali (obbligatori e desiderabili)
