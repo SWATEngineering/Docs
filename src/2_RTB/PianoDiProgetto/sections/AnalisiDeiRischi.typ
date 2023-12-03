@@ -72,7 +72,7 @@ Si tratta della ridotta frequenza o della mancanza di contatti regolari e tempes
 
 === *RC4 - Mancanza di fiducia*
 I diversi livelli di competenze e una comunicazione poco trasparente possono portare allo sviluppo di un clima di sfiducia reciproca tra i membri del team: ciò potrebbe compromettere il successo del progetto.  
-  -*Identificazione*: la mancanza di fiducia può essere rilevata in presenza di segnali specifici come la reticenza nella collaborazione o nell'assunzione di responsabilità condivise. In aggiunta, alcuni membri potrebbero dimostrarsi poco attivi nelle discussioni di gruppo o nelle attività cooperative. 
+  - *Identificazione*: la mancanza di fiducia può essere rilevata in presenza di segnali specifici come la reticenza nella collaborazione o nell'assunzione di responsabilità condivise. In aggiunta, alcuni membri potrebbero dimostrarsi poco attivi nelle discussioni di gruppo o nelle attività cooperative. 
   - *Valutazione*: Pericolosità: media; Occorrenza: bassa.
   - *Prevenzione*: 
     - Promuovere incontri periodici: i membri del team hanno la possibilità di esprimere dubbi e preocupazioni, avere una discussione aperta su aspetti rilevanti del progetto e ricevere feedback sul lavoro fatto. In questo contesto va precisato che la costruzione del feedback assume un ruolo fondamentale, in quanto deve essere formulato in maniera tale da risultare costruttivo e presentato come un opportunità di miglioramento anziché una critica;

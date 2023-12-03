@@ -7,9 +7,25 @@
 *Obiettivi dello sprint*: 
 
     - Implementazione del producer in kafka:
-        + Bisogna inviare i dati dei simulatori al topic corretto del broker di kafka.
+        + Inviare i dati dei simulatori al topic corretto del broker di kafka.
     - Realizzazione di altri tipi di sensori:
-        + Rifiuti, indicare se il cassonetto è pieno o vuoto;
-        + 
+        + traffico;
+        + lavori in corso;
+        + incidenti;
+        + posizione colonne ricarica;
+        + guasti elettrici colonne;
+        + parcheggi nella cella;
+        + posizione dei ponti e strutture critiche;
+
     - Continuazione Specifiche Tecniche;
+    - Continuazione Manuale Sviluppatore;
     - Inizio stesura Manuale Utente;
+
+*Suddivisione lavoro*:
+
+#figure(
+  image("../../assets/DiagrammiGantt/DiagrammaSestoSprint.png", width: 100%),
+  caption: [
+    Diagramma di Gantt per le attività del sesto sprint.
+  ],
+)

@@ -10,9 +10,19 @@
   - Classe per realizzazione dei sensori:
               + temperatura;
               + umidità;
+              + polveri sottili;
+              + livelli acqua;
               + precipitazioni;
-              + qualità dell'aria;
-              + rumore;
-              + livello dell'acqua.
+              + lavori rete idrica;
+              + stato riempimento cassonetti.
   - Continuazione documento Specifiche Tecniche;
   - Continuazione Manuale Sviluppatore;
+
+  *Suddivisione lavoro*:
+
+#figure(
+  image("../../assets/DiagrammiGantt/DiagrammaSestoSprint.png", width: 100%),
+  caption: [
+    Diagramma di Gantt per le attività del sesto sprint.
+  ],
+)
