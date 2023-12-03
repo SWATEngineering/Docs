@@ -22,3 +22,10 @@
 
 
 *Suddivisione lavoro*:
+
+#figure(
+  image("../../assets/DiagrammiGantt/DiagrammaSestoSprint.png", width: 100%),
+  caption: [
+    Diagramma di Gantt per le attività del sesto sprint.
+  ],
+)
