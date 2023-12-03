@@ -32,7 +32,7 @@ I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, dura
   [Nancy Kalaj],[-],[-],[-],[-],[-],[],[],
   [Matteo Rango],[-],[-],[-],[-],[],[-],[],
   [Riccardo Toniolo],[-],[-],[],[-],[-],[-],[],
-  [*Totale per ruolo*],[3],[2],[2],[18],[-],[6],[#ruoli_ore.values().sum()]
+  [*Totale per ruolo*],[#ruoli_ore.at("Re")],[#ruoli_ore.at("Am")],[#ruoli_ore.at("An")],[#ruoli_ore.at("Pt")],[#ruoli_ore.at("Pr")],[#ruoli_ore.at("Ve")],[#ruoli_ore.values().sum()]
 )
 
 /* #figure(
