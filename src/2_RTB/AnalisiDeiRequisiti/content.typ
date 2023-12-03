@@ -57,7 +57,7 @@ Il sistema si interfaccerà con due attori diveri:
 Relativamente all'utilizzo della dashboard, viene definito un unico attore con accesso completo alle funzionalità, in quanto per sua natura l' #glossary("amministratore pubblico") possiede le competenze tecniche necessarie per poter interagire con essa in tutte le sue parti.
 
 #figure(
-  image("assets/UtenteUC.png", width: 12%),
+  image("assets/attori.png", width: 40%),
   caption: [Gerarchia degli attori]
 )
 
