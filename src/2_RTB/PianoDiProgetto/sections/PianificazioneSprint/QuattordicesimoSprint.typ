@@ -7,6 +7,16 @@
 *Obiettivi dello sprint*: 
 
         - Revisione di tutta la documentazione;
-        - Correzione dei possibili bug riscontrati;
-        - tutti andati fuori di testa non rimane più lucidità;
+        - Rifnire quello che manca;
+        - Correzione dei possibili bug riscontrati.
+
+*Suddivisione lavori*
+
+#figure(
+  image("../../assets/DiagrammiGantt/DiagrammaQuattordicesimoSprint.png", width: 100%),
+  caption: [
+    Diagramma di Gantt per le attività del quattordicesimo sprint.
+  ],
+)
+        
 

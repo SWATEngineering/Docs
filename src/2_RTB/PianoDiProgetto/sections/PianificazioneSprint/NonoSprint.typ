@@ -9,6 +9,7 @@
   - Continuazione Specifiche Tecniche;
   - Continuazione Manuale Utente;
   - Continuazione Manuale Sviluppatore;
+  - Inviare i dati dei simulatori al topic corretto del broker di kafka;
   - Impostare numero appropriato di partizioni dei topic per garantire scalabilità e  portabilità;
   - Configurazione della retention policy dei messaggi;
   - Impostazione della dimensione del batch e l'intervallo di invio per ottimizzazione latenza ed efficienza;
@@ -18,8 +19,8 @@
 *Suddivisione lavoro*:
 
 #figure(
-  image("../../assets/DiagrammiGantt/DiagrammaSestoSprint.png", width: 100%),
+  image("../../assets/DiagrammiGantt/DiagrammaNonoSprint.png", width: 100%),
   caption: [
-    Diagramma di Gantt per le attività del sesto sprint.
+    Diagramma di Gantt per le attività del nono sprint.
   ],
 )

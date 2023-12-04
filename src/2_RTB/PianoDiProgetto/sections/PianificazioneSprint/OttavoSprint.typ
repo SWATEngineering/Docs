@@ -6,8 +6,7 @@
 
 *Obiettivi dello sprint*: 
 
-    - Implementazione del producer in kafka:
-        + Inviare i dati dei simulatori al topic corretto del broker di kafka.
+    
     - Realizzazione di altri tipi di sensori:
         + traffico;
         + lavori in corso;
@@ -24,8 +23,8 @@
 *Suddivisione lavoro*:
 
 #figure(
-  image("../../assets/DiagrammiGantt/DiagrammaSestoSprint.png", width: 100%),
+  image("../../assets/DiagrammiGantt/DiagrammaOttavoSprint.png", width: 100%),
   caption: [
-    Diagramma di Gantt per le attività del sesto sprint.
+    Diagramma di Gantt per le attività del ottavo sprint.
   ],
 )

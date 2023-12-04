@@ -17,6 +17,13 @@
           + Cassonetti;
           + Incidenti;
           + Guasti elettrici;
-          + Parcheggi nelle celle;
           + Traffico.
-          
+
+*Suddivisione lavori*
+
+#figure(
+  image("../../assets/DiagrammiGantt/DiagrammaTredicesimoSprint.png", width: 100%),
+  caption: [
+    Diagramma di Gantt per le attività del tredicesimo sprint.
+  ],
+)

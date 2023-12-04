@@ -18,11 +18,24 @@ Per ciascun Sprint, vengono stabilite le date di inizio e di fine, l'insieme del
 #include "PianificazioneSprint/PrimoSprint.typ"
 #include "PianificazioneSprint/SecondoSprint.typ"
 #include "PianificazioneSprint/TerzoSprint.typ"
+#include "PianificazioneSprint/QuartoSprint.typ"
 
 == Product Baseline
+
+#include "PianificazioneSprint/QuintoSprint.typ"
+#include "PianificazioneSprint/SestoSprint.typ"
+#include "PianificazioneSprint/SettimoSprint.typ"
+#include "PianificazioneSprint/OttavoSprint.typ"
 
 === Sessione d'esame
 
 In vista della sessione invernale viene prevista una sospensione temporanea dal progetto in cui i membri del team daranno priorità allo studio.
+
+#include "PianificazioneSprint/NonoSprint.typ"
+#include "PianificazioneSprint/DecimoSprint.typ"
+#include "PianificazioneSprint/UndicesimoSprint.typ"
+#include "PianificazioneSprint/DodicesimoSprint.typ"
+#include "PianificazioneSprint/TredicesimoSprint.typ"
+#include "PianificazioneSprint/QuattordicesimoSprint.typ"
 
 == Customer Acceptance Baseline  

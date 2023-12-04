@@ -9,12 +9,20 @@
     - Continuazione Specifiche Tecniche;
     - Continuazione Manuale Utente e Sviluppatore;
     - Visualizzazione dei dati inerenti:
-              + temperatura;
               + umidità;
               + polveri sottili e di conseguenza qualità dell'aria;
+              + Parcheggi nelle celle;
               + precipitazioni;
               + lavori alla rete idrica;
               + lavori in corso;
-              + posizionamento colonnine ricarica.
+    - Analisi dei dati.
+              
 
 *Suddivisione lavori*
+
+#figure(
+  image("../../assets/DiagrammiGantt/DiagrammaDodicesimoSprint.png", width: 100%),
+  caption: [
+    Diagramma di Gantt per le attività del dodicesimo sprint.
+  ],
+)

@@ -6,7 +6,7 @@
 
 *Obiettivi dello sprint*: 
 
-  - Iniziare la nuova versione dell'_Analisi dei Requisiti_;
+  - Finire la correzione dell'_Analisi dei Requisiti_;
   - Classe per realizzazione dei sensori:
               + temperatura;
               + umidità;
@@ -21,8 +21,8 @@
   *Suddivisione lavoro*:
 
 #figure(
-  image("../../assets/DiagrammiGantt/DiagrammaSestoSprint.png", width: 100%),
+  image("../../assets/DiagrammiGantt/DiagrammaSettimoSprint.png", width: 100%),
   caption: [
-    Diagramma di Gantt per le attività del sesto sprint.
+    Diagramma di Gantt per le attività del settimo sprint.
   ],
 )
