@@ -1,0 +1,22 @@
+=== Tredicesimo Sprint
+
+*Inizio*: Venerdì 01/03/2024
+
+*Fine*: Giovedì 07/03/2024 
+
+*Obiettivi dello sprint*: 
+
+    - Ultimazione delle nuove versioni di:
+          + Piano Qualifica;
+          + Norme di Progetto;
+    - Completamento di:
+          + Specifiche Tecniche;
+          + Manuale Utente;
+          + Manuale Sviluppatore.
+    - Finire la visualizzazione di tutti i dati su Grafana:
+          + Cassonetti;
+          + Incidenti;
+          + Guasti elettrici;
+          + Parcheggi nelle celle;
+          + Traffico.
+          
