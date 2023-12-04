@@ -2,11 +2,11 @@
 
 #let ruoli_ore = (
   Re: 1,
-  Am:2,
-  An:12,
-  Pt:7,
-  Pr:0,
-  Ve:6,
+  Am:1,
+  An:0,
+  Pt:4,
+  Pr:14,
+  Ve:10,
 
 )
 
@@ -19,7 +19,7 @@
    Costo_Ve: Ve_cost * ruoli_ore.at("Ve"),
 )
 
-== Quinto sprint
+== Undicesimo sprint
 === Prospetto orario
 I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, durante questo sprint:
 #table(

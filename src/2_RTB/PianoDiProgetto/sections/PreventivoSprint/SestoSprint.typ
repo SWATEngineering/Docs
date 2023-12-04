@@ -1,12 +1,12 @@
 #import "../../const.typ": Re_cost, Am_cost, An_cost, Ve_cost, Pr_cost, Pt_cost 
 
 #let ruoli_ore = (
-  Re: 2,
-  Am:2,
-  An:0,
-  Pt:6,
-  Pr:10,
-  Ve:4,
+  Re: 1,
+  Am:1,
+  An:2,
+  Pt:15,
+  Pr:3,
+  Ve:5,
 
 )
 

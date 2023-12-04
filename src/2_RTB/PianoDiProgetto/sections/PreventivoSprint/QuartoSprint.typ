@@ -2,10 +2,10 @@
 #let ruoli_ore = (
   Re: 3,
   Am:3,
-  An:3,
-  Pt:12,
-  Pr:0,
-  Ve:5,
+  An:10,
+  Pt:0,
+  Pr:3,
+  Ve:10,
 
 )
 
