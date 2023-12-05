@@ -84,9 +84,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   - *Inclusioni*: nessuno; 
   - *Estensioni*: nessuna; 
 
+
+
 / UC1.1 : Visualizzazione posizione sensori su mappa
 
-- *Attore Principale*: amministrato pubblico. 
+- *Attore Principale*: amministratore pubblico. 
   - *Precondizioni*: nessuna.
   - *Postcondizioni*: l'attore visualizza le posizioni dei sensori come icone su una mappa. 
   - *Scenario Principale*:
@@ -95,7 +97,34 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     + il sistema elabora i dati e renderizza il pannello; 
     + l'attore visualizza il pannelo.
   - *Specializzazioni*: nessuna; 
-  - *Inclusioni*: nessuno; 
+  - *Inclusioni*: nessuna; 
+  - *Estensioni*:  UC9 Visualizzazione errore nessun dato; 
+
+
+/ UC1.2 : Visualizzazione tabella sensori
+
+- *Attore Principale*: amministratore pubblico. 
+  - *Precondizioni*: nessuna.
+  - *Postcondizioni*: l'attore visualizza le posizioni dei sensori come icone su una mappa. 
+  - *Scenario Principale*:
+    + l'attore accede al sistema; 
+    + l'attore seleziona la visualizzazione della panoramica generale dei sensori;
+    + il sistema elabora i dati e renderizza la tabella; 
+    + l'attore visualizza il pannelo.
+  - *Specializzazioni*: nessuna; 
+  - *Inclusioni*: nessuna; 
+  - *Estensioni*:  UC9 Visualizzazione errore nessun dato; 
+
+
+/UC9 :  Visualizzazione errore nessun dato
+- *Attore Principale*: amministratore pubblico. 
+  - *Precondizioni*: il sistema non ha i dati necessari alla renderizzazione di un pannello. 
+  - *Postcondizioni*: l'attore visualizza il messaggio di errore.
+  - *Scenario Principale*:
+    + l'attore vuole visualizzare qualche pannello [UC1.2] [UC1.1] [UC]; 
+    + il sistema non ha i dati per renderizzarlo e mostra un messaggio di errore; . 
+  - *Specializzazioni*: nessuna; 
+  - *Inclusioni*: nessuna; 
   - *Estensioni*: nessuna; 
 
 
