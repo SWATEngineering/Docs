@@ -70,62 +70,79 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 #set heading(numbering: none)
 
-/ UC1 : - Visualizzazione Panoramica Generale Sensori
+=== UC1: Visualizzazione Panoramica Generale Sensori
+- *Attore Principale*: amministrato pubblico. 
+- *Precondizioni*: nessuna.
+- *Postcondizioni*: l'attore visualizza i panelli relativi ai dati dati propri dei sensori. 
+- *Scenario Principale*:
+  + l'attore accede al sistema; 
+  + l'attore seleziona la visualizzazione della panoramica generale dei sensori;
+  + il sistema elabora i dati e renderizza i pannelli; 
+  + l'attore visualizza i panelli.
+- *Specializzazioni*: nessuna; 
+- *Inclusioni*: nessuno; 
+- *Estensioni*: nessuna; 
 
-  - *Attore Principale*: amministrato pubblico. 
-  - *Precondizioni*: nessuna.
-  - *Postcondizioni*: l'attore visualizza i panelli relativi ai dati dati propri dei sensori. 
-  - *Scenario Principale*:
-    + l'attore accede al sistema; 
-    + l'attore seleziona la visualizzazione della panoramica generale dei sensori;
-    + il sistema elabora i dati e renderizza i pannelli; 
-    + l'attore visualizza i panelli.
-  - *Specializzazioni*: nessuna; 
-  - *Inclusioni*: nessuno; 
-  - *Estensioni*: nessuna; 
-
-
-
-/ UC1.1 : Visualizzazione posizione sensori su mappa
-
+=== UC1.1: Visualizzazione posizione sensori su mappa
 - *Attore Principale*: amministratore pubblico. 
-  - *Precondizioni*: nessuna.
-  - *Postcondizioni*: l'attore visualizza le posizioni dei sensori come icone su una mappa. 
-  - *Scenario Principale*:
-    + l'attore accede al sistema; 
-    + l'attore seleziona la visualizzazione della panoramica generale dei sensori;
-    + il sistema elabora i dati e renderizza il pannello; 
-    + l'attore visualizza il pannelo.
-  - *Specializzazioni*: nessuna; 
-  - *Inclusioni*: nessuna; 
-  - *Estensioni*:  UC9 Visualizzazione errore nessun dato; 
+- *Precondizioni*: nessuna.
+- *Postcondizioni*: l'attore visualizza le posizioni dei sensori come icone su una mappa. 
+- *Scenario Principale*:
+  + l'attore accede al sistema; 
+  + l'attore seleziona la visualizzazione della panoramica generale dei sensori;
+  + il sistema elabora i dati e renderizza il pannello; 
+  + l'attore visualizza il pannelo.
+- *Specializzazioni*: nessuna; 
+- *Inclusioni*: nessuna; 
+- *Estensioni*:  UC9 Visualizzazione errore nessun dato; 
 
-
-/ UC1.2 : Visualizzazione tabella sensori
-
+=== UC1.2: Visualizzazione tabella sensori
 - *Attore Principale*: amministratore pubblico. 
-  - *Precondizioni*: nessuna.
-  - *Postcondizioni*: l'attore visualizza le posizioni dei sensori come icone su una mappa. 
-  - *Scenario Principale*:
-    + l'attore accede al sistema; 
-    + l'attore seleziona la visualizzazione della panoramica generale dei sensori;
-    + il sistema elabora i dati e renderizza la tabella; 
-    + l'attore visualizza il pannelo.
-  - *Specializzazioni*: nessuna; 
-  - *Inclusioni*: nessuna; 
-  - *Estensioni*:  UC9 Visualizzazione errore nessun dato; 
+- *Precondizioni*: nessuna.
+- *Postcondizioni*: l'attore visualizza le posizioni dei sensori come icone su una mappa. 
+- *Scenario Principale*:
+  + l'attore accede al sistema; 
+  + l'attore seleziona la visualizzazione della panoramica generale dei sensori;
+  + il sistema elabora i dati e renderizza la tabella; 
+  + l'attore visualizza il pannelo.
+- *Specializzazioni*: nessuna; 
+- *Inclusioni*: nessuna; 
+- *Estensioni*:  UC9 Visualizzazione errore nessun dato; 
 
+=== UC2: Visualizzazione Dati Ambientali
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: nessuna.
+- *Postcondizioni*: l'attore visualizza pannelli contenenti dati relativi al dominio ambientale.
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio ambientale;
+  + il sistema elabora i dati e renderizza i pannelli relativi;
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
 
-/UC9 :  Visualizzazione errore nessun dato
+=== UC2.1: Visualizzazione Pannello Dati Ambientali
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi al dominio ambientale.
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio ambientale;
+  + il sistema elabora i dati e renderizza il pannello relativo;
+- *Specializzazioni*: [UC2.2],[UC2.3],[UC2.4],[UC2.5],[UC2.6],[UC2.7],[UC2.8],[UC2.9],[UC2.10],[UC2.11],[UC2.12],[UC2.13],[UC2.14],[UC2.15],[UC2.16].
+- *Inclusioni*: nessuna.
+- *Estensioni*: [UC9].
+
+=== UC9: Visualizzazione errore nessun dato
 - *Attore Principale*: amministratore pubblico. 
-  - *Precondizioni*: il sistema non ha i dati necessari alla renderizzazione di un pannello. 
-  - *Postcondizioni*: l'attore visualizza il messaggio di errore.
-  - *Scenario Principale*:
-    + l'attore vuole visualizzare qualche pannello [UC1.2] [UC1.1] [UC]; 
-    + il sistema non ha i dati per renderizzarlo e mostra un messaggio di errore; . 
-  - *Specializzazioni*: nessuna; 
-  - *Inclusioni*: nessuna; 
-  - *Estensioni*: nessuna; 
+- *Precondizioni*: il sistema non ha i dati necessari alla renderizzazione di un pannello. 
+- *Postcondizioni*: l'attore visualizza il messaggio di errore.
+- *Scenario Principale*:
+  + l'attore vuole visualizzare qualche pannello [UC1.2] [UC1.1] [UC]; 
+  + il sistema non ha i dati per renderizzarlo e mostra un messaggio di errore; . 
+- *Specializzazioni*: nessuna; 
+- *Inclusioni*: nessuna; 
+- *Estensioni*: nessuna; 
 
 
 #set heading(numbering: "1.1")
