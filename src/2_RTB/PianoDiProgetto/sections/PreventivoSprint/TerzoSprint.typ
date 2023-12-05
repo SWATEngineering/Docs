@@ -22,12 +22,12 @@ I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, dura
 )
 
 #let ruoli_ore = (
-  Re: 3,
-  Am:3,
-  An:15,
+  Re: 5,
+  Am:8,
+  An:7,
   Pt:0,
-  Pr:3,
-  Ve:5,
+  Pr:0,
+  Ve:14,
 
 )
 

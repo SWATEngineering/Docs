@@ -1,12 +1,12 @@
 #import "../../const.typ": Re_cost, Am_cost, An_cost, Ve_cost, Pr_cost, Pt_cost 
 
 #let ruoli_ore = (
-  Re: 4,
-  Am:5,
+  Re: 1,
+  Am:3,
   An:0,
-  Pt:6,
-  Pr:11,
-  Ve:6,
+  Pt:0,
+  Pr:20,
+  Ve:10,
 
 )
 
@@ -19,7 +19,7 @@
    Costo_Ve: Ve_cost * ruoli_ore.at("Ve"),
 )
 
-== Nono sprint
+== Quindicesimo sprint
 === Prospetto orario
 I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, durante questo sprint:
 #table(
