@@ -133,6 +133,175 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Inclusioni*: nessuna.
 - *Estensioni*: [UC9].
 
+=== UC2.2: Visualizzazione pannello #glossary("time series") temperature
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alla temperatura, in gradi celsius, in formato _time series_.
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio ambientale;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC2.3: Visualizzazione pannello _time series_ umidità
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi all'umidità, in percentuale, in formato _time series_.
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio ambientale;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC2.4: Visualizzazione grafico a mappa velocità e direzione del vento
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alla velocità e alla direzione del vento, in chilometri orari, su di una mappa, che mostra delle frecce direzionate e colorate in base alla velocità.
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio ambientale;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC2.5: Visualizzazione pannello _time series_ precipitazioni
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alle precipitazioni, in millimetri di pioggia, in formato _time series_.
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio ambientale;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC2.6: Visualizzazione pannello precipitazioni medie
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alle precipitazioni, in millimetri di pioggia, media tra tutti i sensori attivi negli ultimi cinque minuti, in formato numerico.
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio ambientale;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC2.7: Visualizzazione pannello _time series_ inquinamento dell'aria
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi all'inquinamento dell'aria, in $#sym.mu g\/m^3$, in formato _time series_.
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio ambientale;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC2.8: Visualizzazione pannello inquinamento dell'aria medio
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi all'inquinamento dell'aria, in $#sym.mu g\/m^3$, media tra tutti i sensori attivi negli ultimi 5 minuti, in formato numerico.
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio ambientale;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC2.9: Visualizzazione pannello _time series_ dell'indice UV
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi all'indice UV, in formato _time series_.
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio ambientale;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC2.10: Visualizzazione pannello indice UV medio
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi all'indice UV, media tra tutti i sensori attivi negli ultimi 5 minuti, in formato numerico.
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio ambientale;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC2.11: Visualizzazione pannello _time series_ del rumore
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi al rumore, in decibels, in formato _time series_.
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio ambientale;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC2.12: Visualizzazione pannello _time series_ del livello dei bacini idrici
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi al riempimento, in percentuale, dei bacini idrici, in formato _time series_.
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio ambientale;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC2.13: Visualizzazione pannello stato cielo corrente
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
+- *Postcondizioni*: l'attore visualizza un pannello contenente un'icona relativa allo stato del cielo.
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio ambientale;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC2.14: Visualizzazione pannello temperatura media
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alla temperatura, in gradi celsius, media tra tutti i sensori attivi negli ultimi 5 minuti, in formato numerico.
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio ambientale;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC2.15: Visualizzazione pannello inquinamento massimo dell'aria
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi all'inquinamento dell'aria, in $#sym.mu g\/m^3$, massimo tra tutti i sensori attivi negli ultimi 5 minuti, in formato numerico.
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio ambientale;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+
 === UC3: Visualizzazione dati urbanistici
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
@@ -295,17 +464,89 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
 
-
-=== UC7: Applicazione ordinamento colonne tabelle
-- *Attore Principale*: amministratore pubblico. 
-- *Precondizioni*: il sistema mostra una qualsisi tabella. 
-- *Postcondizioni*: l'attore visualizza la tabella ordinata sulla base del valore della colonna selezionata.
+=== UC6: Applicazione filtri
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: 
+  + l'attore sta visualizzando uno o più pannelli con i dati.
+  + il pannello offre la funzionalità di filtro dei dati al suo interno.
+- *Postcondizioni*: l'attore visualizza solamente i dati relativi al filtro applicato (oppure ai filtri applicati).
 - *Scenario Principale*:
-  + l'attore clicca sull'opzione per ordinare la tabella sulla base di qualche valore;  
-  + il sistema ordina la tabella sulla base del valore voluto.
-- *Specializzazioni*: .nessuna. 
-- *Inclusioni*: nessuna. 
-- *Estensioni*: nessuna. 
+  + l'attore seleziona l'icona o il pulsante relativo al filtro dei dati;
+  + l'attore seleziona secondo quali valori filtrare il pannello (o i pannelli).
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC6.1: Filtro sotto-insieme di sensori su grafici _time series_
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: 
+  + l'attore sta visualizzando uno o più pannelli _time series_ con i dati;
+  + il pannello offre la funzionalità di filtro dei dati tramite selezione di uno o più sensori.
+- *Postcondizioni*: l'attore visualizza solamente i dati relativi al filtro applicato.
+- *Scenario Principale*:
+  + l'attore seleziona il sensore (o i sensori) da visualizzare tramite la legenda.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC6.2: Filtro tipologia sensore su tabella
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: 
+  + l'attore sta visualizzando uno o più pannelli tabellari con i dati;
+  + il pannello offre la funzionalità di filtro dei dati tramite apposita icona o pulsante.
+- *Postcondizioni*: l'attore visualizza solamente i dati relativi al filtro applicato.
+- *Scenario Principale*:
+  + l'attore seleziona la funzionalità relativa al filtro dei dati;
+  + l'attore seleziona i valori delle tipologie di sensore desiderati.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: [UC6.5].
+- *Estensioni*: nessuna.
+
+=== UC6.3: Filtro per nome sensore su tabella
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: 
+  + l'attore ha scelto un pannello su cui effettuare l'operazione di filtro;
+  + il pannello offre la funzionalità di filtro dei dati.
+- *Postcondizioni*: l'attore visualizza solamente i dati relativi al filtro applicato.
+- *Scenario Principale*:
+  + l'attore seleziona la funzionalità relativa al filtro dei dati;
+  + l'attore seleziona i valori dei nomi dei sensori desiderati.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: [UC6.5].
+- *Estensioni*: nessuna.
+
+=== UC6.4: Filtro per intervallo temporale
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore sta visualizzando uno o più pannelli.
+- *Postcondizioni*: l'attore visualizza solamente i dati relativi al all'intervallo temporale selezionato.
+- *Scenario Principale*:
+  + l'attore seleziona la funzionalità relativa al filtro dei dati per intervallo temporale;
+  + l'attore seleziona l'intervallo temporale desiderato.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: [UC6.5].
+- *Estensioni*: nessuna.
+
+=== UC6.5: Filtro pannelli collegati
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: 
+  + l'attore ha filtrato i dati in un pannello;
+  + altri pannelli sono collegati a quello filtrato.
+- *Postcondizioni*: l'attore visualizza, in tutti i pannelli collegati, solamente i dati relativi al filtro applicato (o ai filtri applicati).
+- *Scenario Principale*:
+  + il sistema aggiorna tutti i pannelli collegati.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC7: Ordinamento pannelli tabellari
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha scelto e sta visualizzando un pannello da ordinare.
+- *Postcondizioni*: l'attore visualizza i dati ordinati.
+- *Scenario Principale*:
+  + l'attore seleziona i campi secondo cui ordinare i dati, in modo ascendente o discendente.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
 
 === UC8: Modifica layout pannelli
 - *Attore Principale*: amministratore pubblico. 
@@ -336,7 +577,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione della temperatura;
-  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema;
   + il sensore invia il messaggio al sistema. 
 - *Specializzazioni*: nessuna. 
 - *Inclusioni*: UC27.
@@ -348,7 +589,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione dell'umidità;
-  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema;
   + il sensore invia il messaggio al sistema. 
 - *Specializzazioni*: nessuna. 
 - *Inclusioni*: UC27. 
@@ -360,7 +601,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione della velocità e della direzione del vento;
-  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema;
   + il sensore invia il messaggio al sistema. 
 - *Specializzazioni*: nessuna. 
 - *Inclusioni*: UC27. 
@@ -372,7 +613,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione qauntitativa delle precipitazioni;
-  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema;
   + il sensore invia il messaggio al sistema. 
 - *Specializzazioni*: nessuna. 
 - *Inclusioni*: UC27. 
@@ -384,7 +625,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione quantitativa dell'inquinamento dell'aria;
-  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema;
   + il sensore invia il messaggio al sistema. 
 - *Specializzazioni*: nessuna. 
 - *Inclusioni*: UC27. 
@@ -396,7 +637,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione dell'indice di Radiazione Ultravioletta (UV);
-  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema;
   + il sensore invia il messaggio al sistema. 
 - *Specializzazioni*: nessuna. 
 - *Inclusioni*: UC27. 
@@ -408,7 +649,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione  del livello sonoro;
-  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema;
   + il sensore invia il messaggio al sistema. 
 - *Specializzazioni*: nessuna. 
 - *Inclusioni*: UC27. 
@@ -420,7 +661,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione del livello del bacino idrico in cui è installato;
-  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema;
   + il sensore invia il messaggio al sistema. 
 - *Specializzazioni*: nessuna. 
 - *Inclusioni*: UC27. 
@@ -432,7 +673,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione qualitativa dello stato del cielo;
-  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema;
   + il sensore invia il messaggio al sistema. 
 - *Specializzazioni*: nessuna. 
 - *Inclusioni*: UC27. 
@@ -444,7 +685,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore rileva ingressi e uscite del parcheggio in cui è insallato;
-  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema;
   + il sensore invia il messaggio al sistema. 
 - *Specializzazioni*: nessuna. 
 - *Inclusioni*: UC27. 
@@ -456,7 +697,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione del voltaggio erogato dalla colonna di ricarica;
-  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema;
   + il sensore invia il messaggio al sistema. 
 - *Specializzazioni*: nessuna. 
 - *Inclusioni*: UC27. 
@@ -468,74 +709,85 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione della posizione e della percentuale della batteria della bicicletta elettrica su cui è installato;
-  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema;
   + il sensore invia il messaggio al sistema. 
 - *Specializzazioni*: nessuna. 
 - *Inclusioni*: UC27. 
 - *Estensioni*: nessuna.
 
-=== UC22: inserimento dati  connessioni hotspot
+=== UC22: Inserimento dati  connessioni hotspot
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione della quantità di connessioni sul hotspot a cui è associato;  
-  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema;
   + il sensore invia il messaggio al sistema. 
 - *Specializzazioni*: nessuna. 
 - *Inclusioni*: UC27. 
 - *Estensioni*: nessuna.
 
-=== UC23: inserimento dati riempimento zone ecologiche
+=== UC23: Inserimento dati riempimento zone ecologiche
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione del livello di riempimento del contenitore ecologico a cui è associato; 
-  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema;
   + il sensore invia il messaggio al sistema. 
 - *Specializzazioni*: nessuna. 
 - *Inclusioni*: UC27. 
 - *Estensioni*: nessuna.
 
-=== UC24: inserimento dati consumo elettrico 
+=== UC24: Inserimento dati consumo elettrico 
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione del consumo elettrico dell'edificio in cui è installato; 
-  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema;
   + il sensore invia il messaggio al sistema. 
 - *Specializzazioni*: nessuna. 
 - *Inclusioni*: UC27. 
 - *Estensioni*: nessuna.
 
-=== UC25: inserimento dati consumo idrico 
+=== UC25: Inserimento dati consumo idrico 
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione del consumo idrico dell'edificio in cui è installato; 
-  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema;
   + il sensore invia il messaggio al sistema. 
 - *Specializzazioni*: nessuna. 
 - *Inclusioni*: UC27. 
 - *Estensioni*: nessuna.
 
-=== UC26: inserimento dati consumo di gas
+=== UC26: Inserimento dati consumo di gas
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione del consumo di gas dell'edificio in cui è installato; 
-  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema;
   + il sensore invia il messaggio al sistema. 
 - *Specializzazioni*: nessuna. 
 - *Inclusioni*: UC27. 
 - *Estensioni*: nessuna
 
+=== UC27: Inserimento dati propri sensore
+- *Attore Principale*: sensore. 
+- *Precondizioni*: il sensore è acceso e collegato al sistema. 
+- *Postcondizioni*: il sensore allega i dati relativi al proprio stato al messaggio da inviare al sistema.
+- *Scenario Principale*:
+  + il sensore prende i dati relativi al proprio stato.
+- *Specializzazioni*: nessuna. 
+- *Inclusioni*: UC27. 
+- *Estensioni*: nessuna
 
 
+S -> P -> S
+/* TODO da rifare secondo i nuovi UC sopra
 #set heading(numbering: "1.1")
 
 = Requisiti
@@ -658,3 +910,4 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   [di qualità], [4], [0], [0], [4],
   [di vincolo], [5], [3], [2], [10]
 )
+*/
