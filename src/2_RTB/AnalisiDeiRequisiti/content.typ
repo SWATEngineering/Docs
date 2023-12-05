@@ -79,9 +79,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'attore seleziona la visualizzazione della panoramica generale dei sensori;
   + il sistema elabora i dati e renderizza i pannelli; 
   + l'attore visualizza i panelli.
-- *Specializzazioni*: nessuna; 
-- *Inclusioni*: nessuno; 
-- *Estensioni*: nessuna; 
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuno.
+- *Estensioni*: nessuna.
 
 === UC1.1: Visualizzazione posizione sensori su mappa
 - *Attore Principale*: amministratore pubblico. 
@@ -92,9 +92,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'attore seleziona la visualizzazione della panoramica generale dei sensori;
   + il sistema elabora i dati e renderizza il pannello; 
   + l'attore visualizza il pannelo.
-- *Specializzazioni*: nessuna; 
-- *Inclusioni*: nessuna; 
-- *Estensioni*:  UC9 Visualizzazione errore nessun dato; 
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna. 
+- *Estensioni*:  UC9 Visualizzazione errore nessun dato.
 
 === UC1.2: Visualizzazione tabella sensori
 - *Attore Principale*: amministratore pubblico. 
@@ -105,11 +105,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'attore seleziona la visualizzazione della panoramica generale dei sensori;
   + il sistema elabora i dati e renderizza la tabella; 
   + l'attore visualizza il pannelo.
-- *Specializzazioni*: nessuna; 
-- *Inclusioni*: nessuna; 
-- *Estensioni*:  UC9 Visualizzazione errore nessun dato; 
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*:  UC9 Visualizzazione errore nessun dato. 
 
-=== UC2: Visualizzazione Dati Ambientali
+=== UC2: Visualizzazione dati ambientali
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'attore visualizza pannelli contenenti dati relativi al dominio ambientale.
@@ -121,7 +121,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
 
-=== UC2.1: Visualizzazione Pannello Dati Ambientali
+=== UC2.1: Visualizzazione pannello dati ambientali
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi al dominio ambientale.
@@ -133,7 +133,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Inclusioni*: nessuna.
 - *Estensioni*: [UC9].
 
-=== UC3: Visualizzazione Dati Urbanistici
+=== UC3: Visualizzazione dati urbanistici
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'attore visualizza pannelli contenenti dati relativi al dominio urbanistico.
@@ -145,7 +145,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
 
-=== UC3.1: Visualizzazione Pannello Dati Urbanistici
+=== UC3.1: Visualizzazione pannello dati urbanistici
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
 - *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi al dominio urbanistico.
@@ -273,7 +273,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
 
-=== UC 3.12: Visualizzazione time series del consumo idrico
+=== UC3.12: Visualizzazione time series del consumo idrico
 *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
 - *Postcondizioni*: l'attore visualizza un pannello contenente i dati relativi al consumo idrico in formato _time series_.
@@ -296,7 +296,27 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Estensioni*: nessuna.
 
 
+=== UC7: Applicazione ordinamento colonne tabelle
+- *Attore Principale*: amministratore pubblico. 
+- *Precondizioni*: il sistema mostra una qualsisi tabella. 
+- *Postcondizioni*: l'attore visualizza la tabella ordinata sulla base del valore della colonna selezionata.
+- *Scenario Principale*:
+  + l'attore clicca sull'opzione per ordinare la tabella sulla base di qualche valore;  
+  + il sistema ordina la tabella sulla base del valore voluto.
+- *Specializzazioni*: .nessuna. 
+- *Inclusioni*: nessuna. 
+- *Estensioni*: nessuna. 
 
+=== UC8: Modifica layout pannelli
+- *Attore Principale*: amministratore pubblico. 
+- *Precondizioni*: l'attore sta visualizzando almeno un pannello. 
+- *Postcondizioni*: l'attore visualizza il nuovo layout.
+- *Scenario Principale*:
+  + l'attore sposta o ridimensiona i pannelli a suo piacimento; 
+  + il sistema renderizza i pannelli con il nuovo layout. 
+- *Specializzazioni*: nessuna. 
+- *Inclusioni*: nessuna. 
+- *Estensioni*: nessuna.
 
 
 === UC9: Visualizzazione errore nessun dato
@@ -306,9 +326,214 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore vuole visualizzare qualche pannello [UC1.2] [UC1.1] [UC2.1] [UC3.1]; 
   + il sistema non ha i dati per renderizzarlo e mostra un messaggio di errore. 
-- *Specializzazioni*: nessuna; 
-- *Inclusioni*: nessuna; 
-- *Estensioni*: nessuna; 
+- *Specializzazioni*: nessuna. 
+- *Inclusioni*: nessuna. 
+- *Estensioni*: nessuna. 
+
+=== UC10: Inserimento dati temperatura
+- *Attore Principale*: sensore. 
+- *Precondizioni*: il sensore è acceso e collegato al sistema. 
+- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Scenario Principale*:
+  + il sensore effettua una rilevazione della temperatura;
+  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore invia il messaggio al sistema. 
+- *Specializzazioni*: nessuna. 
+- *Inclusioni*: UC27.
+- *Estensioni*: nessuna. 
+
+=== UC11: Inserimento dati umidità
+- *Attore Principale*: sensore. 
+- *Precondizioni*: il sensore è acceso e collegato al sistema. 
+- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Scenario Principale*:
+  + il sensore effettua una rilevazione dell'umidità;
+  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore invia il messaggio al sistema. 
+- *Specializzazioni*: nessuna. 
+- *Inclusioni*: UC27. 
+- *Estensioni*: nessuna. 
+
+=== UC12: Inserimento dati velocità e direzione del vento
+- *Attore Principale*: sensore. 
+- *Precondizioni*: il sensore è acceso e collegato al sistema. 
+- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Scenario Principale*:
+  + il sensore effettua una rilevazione della velocità e della direzione del vento;
+  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore invia il messaggio al sistema. 
+- *Specializzazioni*: nessuna. 
+- *Inclusioni*: UC27. 
+- *Estensioni*: nessuna.
+
+=== UC13: Inserimento dati precipitazioni
+- *Attore Principale*: sensore. 
+- *Precondizioni*: il sensore è acceso e collegato al sistema. 
+- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Scenario Principale*:
+  + il sensore effettua una rilevazione qauntitativa delle precipitazioni;
+  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore invia il messaggio al sistema. 
+- *Specializzazioni*: nessuna. 
+- *Inclusioni*: UC27. 
+- *Estensioni*: nessuna.
+
+=== UC14: Inserimento dati inquinamento aria
+- *Attore Principale*: sensore. 
+- *Precondizioni*: il sensore è acceso e collegato al sistema. 
+- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Scenario Principale*:
+  + il sensore effettua una rilevazione quantitativa dell'inquinamento dell'aria;
+  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore invia il messaggio al sistema. 
+- *Specializzazioni*: nessuna. 
+- *Inclusioni*: UC27. 
+- *Estensioni*: nessuna.
+
+=== UC15: Inserimento dati indice UV
+- *Attore Principale*: sensore. 
+- *Precondizioni*: il sensore è acceso e collegato al sistema. 
+- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Scenario Principale*:
+  + il sensore effettua una rilevazione dell'indice di Radiazione Ultravioletta (UV);
+  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore invia il messaggio al sistema. 
+- *Specializzazioni*: nessuna. 
+- *Inclusioni*: UC27. 
+- *Estensioni*: nessuna.
+
+=== UC16: Inserimento dati intensità acustica
+- *Attore Principale*: sensore. 
+- *Precondizioni*: il sensore è acceso e collegato al sistema. 
+- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Scenario Principale*:
+  + il sensore effettua una rilevazione  del livello sonoro;
+  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore invia il messaggio al sistema. 
+- *Specializzazioni*: nessuna. 
+- *Inclusioni*: UC27. 
+- *Estensioni*: nessuna.
+
+=== UC17: Inserimento dati livello bacini idrici
+- *Attore Principale*: sensore. 
+- *Precondizioni*: il sensore è acceso e collegato al sistema. 
+- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Scenario Principale*:
+  + il sensore effettua una rilevazione del livello del bacino idrico in cui è installato;
+  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore invia il messaggio al sistema. 
+- *Specializzazioni*: nessuna. 
+- *Inclusioni*: UC27. 
+- *Estensioni*: nessuna.
+
+=== UC18: Inserimento dati stato cielo
+- *Attore Principale*: sensore. 
+- *Precondizioni*: il sensore è acceso e collegato al sistema. 
+- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Scenario Principale*:
+  + il sensore effettua una rilevazione qualitativa dello stato del cielo;
+  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore invia il messaggio al sistema. 
+- *Specializzazioni*: nessuna. 
+- *Inclusioni*: UC27. 
+- *Estensioni*: nessuna.
+
+=== UC19: Inserimento dati disponibilità parcheggi
+- *Attore Principale*: sensore. 
+- *Precondizioni*: il sensore è acceso e collegato al sistema. 
+- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Scenario Principale*:
+  + il sensore rileva ingressi e uscite del parcheggio in cui è insallato;
+  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore invia il messaggio al sistema. 
+- *Specializzazioni*: nessuna. 
+- *Inclusioni*: UC27. 
+- *Estensioni*: nessuna.
+
+=== UC20: Inserimento dati colonne di ricarica
+- *Attore Principale*: sensore. 
+- *Precondizioni*: il sensore è acceso e collegato al sistema. 
+- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Scenario Principale*:
+  + il sensore effettua una rilevazione del voltaggio erogato dalla colonna di ricarica;
+  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore invia il messaggio al sistema. 
+- *Specializzazioni*: nessuna. 
+- *Inclusioni*: UC27. 
+- *Estensioni*: nessuna.
+
+=== UC21: Inserimento dati biciclette elettriche
+- *Attore Principale*: sensore. 
+- *Precondizioni*: il sensore è acceso e collegato al sistema. 
+- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Scenario Principale*:
+  + il sensore effettua una rilevazione della posizione e della percentuale della batteria della bicicletta elettrica su cui è installato;
+  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore invia il messaggio al sistema. 
+- *Specializzazioni*: nessuna. 
+- *Inclusioni*: UC27. 
+- *Estensioni*: nessuna.
+
+=== UC22: inserimento dati  connessioni hotspot
+- *Attore Principale*: sensore. 
+- *Precondizioni*: il sensore è acceso e collegato al sistema. 
+- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Scenario Principale*:
+  + il sensore effettua una rilevazione della quantità di connessioni sul hotspot a cui è associato;  
+  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore invia il messaggio al sistema. 
+- *Specializzazioni*: nessuna. 
+- *Inclusioni*: UC27. 
+- *Estensioni*: nessuna.
+
+=== UC23: inserimento dati riempimento zone ecologiche
+- *Attore Principale*: sensore. 
+- *Precondizioni*: il sensore è acceso e collegato al sistema. 
+- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Scenario Principale*:
+  + il sensore effettua una rilevazione del livello di riempimento del contenitore ecologico a cui è associato; 
+  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore invia il messaggio al sistema. 
+- *Specializzazioni*: nessuna. 
+- *Inclusioni*: UC27. 
+- *Estensioni*: nessuna.
+
+=== UC24: inserimento dati consumo elettrico 
+- *Attore Principale*: sensore. 
+- *Precondizioni*: il sensore è acceso e collegato al sistema. 
+- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Scenario Principale*:
+  + il sensore effettua una rilevazione del consumo elettrico dell'edificio in cui è installato; 
+  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore invia il messaggio al sistema. 
+- *Specializzazioni*: nessuna. 
+- *Inclusioni*: UC27. 
+- *Estensioni*: nessuna.
+
+=== UC25: inserimento dati consumo idrico 
+- *Attore Principale*: sensore. 
+- *Precondizioni*: il sensore è acceso e collegato al sistema. 
+- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Scenario Principale*:
+  + il sensore effettua una rilevazione del consumo idrico dell'edificio in cui è installato; 
+  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore invia il messaggio al sistema. 
+- *Specializzazioni*: nessuna. 
+- *Inclusioni*: UC27. 
+- *Estensioni*: nessuna.
+
+=== UC26: inserimento dati consumo di gas
+- *Attore Principale*: sensore. 
+- *Precondizioni*: il sensore è acceso e collegato al sistema. 
+- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Scenario Principale*:
+  + il sensore effettua una rilevazione del consumo di gas dell'edificio in cui è installato; 
+  + il sensore formatta un messaggio da inviare al sistema;
+  + il sensore invia il messaggio al sistema. 
+- *Specializzazioni*: nessuna. 
+- *Inclusioni*: UC27. 
+- *Estensioni*: nessuna
+
 
 
 #set heading(numbering: "1.1")
