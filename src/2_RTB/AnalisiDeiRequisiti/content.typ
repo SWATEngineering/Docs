@@ -116,7 +116,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale;
-  + il sistema elabora i dati e renderizza i pannelli relativi;
+  + il sistema elabora i dati e renderizza i pannelli relativi.
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
@@ -128,18 +128,184 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale;
-  + il sistema elabora i dati e renderizza il pannello relativo;
+  + il sistema elabora i dati e renderizza il pannello relativo.
 - *Specializzazioni*: [UC2.2],[UC2.3],[UC2.4],[UC2.5],[UC2.6],[UC2.7],[UC2.8],[UC2.9],[UC2.10],[UC2.11],[UC2.12],[UC2.13],[UC2.14],[UC2.15],[UC2.16].
 - *Inclusioni*: nessuna.
 - *Estensioni*: [UC9].
+
+=== UC3: Visualizzazione Dati Urbanistici
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: nessuna.
+- *Postcondizioni*: l'attore visualizza pannelli contenenti dati relativi al dominio urbanistico.
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio urbanistico;
+  + il sistema elabora i dati e renderizza i pannelli relativi.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC3.1: Visualizzazione Pannello Dati Urbanistici
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi al dominio urbanistico.
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio urbanistico;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: [UC3.2],[UC3.3],[UC3.4],[UC3.5],[UC3.6],[UC3.7],[UC3.8],[UC3.9],[UC3.10],[UC3.11],[UC3.12],[UC3.13],[UC3.14],[UC3.15],[UC3.16].
+- *Inclusioni*: nessuna.
+- *Estensioni*: [UC9].
+
+=== UC3.2: Visualizzazione grafico a mappa della disponibilità parcheggi
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
+- *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare le disponibilità nei parcheggi. 
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio urbanistico;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna. 
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC3.3: Visualizzazione posizione e stato colonne ricarica
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
+- *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare il wattaggio erogato e la disponibilità delle colonnine.  
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio urbanistico;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC3.4: Visualizzazione grafico a mappa intensità traffico
+*Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
+- *Postcondizioni*: l'attore visualizza un grafico a mappa atto indicatere la distribuzione della congestione del traffico.
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio urbanistico;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC3.5: Visualizzazione posizione real time delle biciclette elettriche e relativa percentuale batteria
+*Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
+- *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare la posizione e la percentuale delle batterie delle biciclette elettriche. 
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio urbanistico;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+
+=== UC3.6: Visualizzazione grafico a mappa relativo al numero connessioni a hotspot pubblici
+*Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
+- *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare la densità delle conessioni a hotspot pubblici. 
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio urbanistico;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC3.7: Visualizzazione indicatore percentuale su mappa riempimento zone rifiuti
+*Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
+- *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare lo stato di riempimento delle zone rifiuti. 
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio urbanistico;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC3.8: Visualizzazione grafico a mappa relativo al consumo elettrico
+*Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
+- *Postcondizioni*: l'attore visualizza un grafico a mappa atto mostrare la distribuzione geografica del consumo elettrico rilevato da ogni sensore.
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio urbanistico;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC3.9: Visualizzazione grafico a mappa relativo al consumo idrico
+*Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
+- *Postcondizioni*: l'attore visualizza un grafico a mappa atto mostrare la distribuzione geografica del consumo idrico rilevato da ogni sensore.
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio urbanistico;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC3.10: Visualizzazione grafico a mappa relativo al consumo del gas
+*Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
+- *Postcondizioni*: l'attore visualizza un grafico a mappa atto mostrare la distribuzione geografica del consumo del gas rilevato da ogni sensore.
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio urbanistico;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC 3.11: Visualizzazione time series del consumo elettrico
+*Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
+- *Postcondizioni*: l'attore visualizza un pannello contenente i dati relativi al consumo elettrico in formato _time series_.
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio urbanistico;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC 3.12: Visualizzazione time series del consumo idrico
+*Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
+- *Postcondizioni*: l'attore visualizza un pannello contenente i dati relativi al consumo idrico in formato _time series_.
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio urbanistico;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC3.13: Visualizzazione time series del consumo del gas
+*Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
+- *Postcondizioni*: l'attore visualizza un pannello contenente i dati relativi al consumo del gas in formato _time series_.
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio urbanistico;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+
+
+
 
 === UC9: Visualizzazione errore nessun dato
 - *Attore Principale*: amministratore pubblico. 
 - *Precondizioni*: il sistema non ha i dati necessari alla renderizzazione di un pannello. 
 - *Postcondizioni*: l'attore visualizza il messaggio di errore.
 - *Scenario Principale*:
-  + l'attore vuole visualizzare qualche pannello [UC1.2] [UC1.1] [UC]; 
-  + il sistema non ha i dati per renderizzarlo e mostra un messaggio di errore; . 
+  + l'attore vuole visualizzare qualche pannello [UC1.2] [UC1.1] [UC2.1] [UC3.1]; 
+  + il sistema non ha i dati per renderizzarlo e mostra un messaggio di errore. 
 - *Specializzazioni*: nessuna; 
 - *Inclusioni*: nessuna; 
 - *Estensioni*: nessuna; 
