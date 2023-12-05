@@ -39,6 +39,10 @@ I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, dura
   caption: [Areogramma della partizione delle ore per ruolo nel terzo sprint.],
 )
 
+#figure(
+  image("../../assets/IstogrammiOreMembro/Preventivate/IstogrammaQuartoSprint.png", width: 75%),
+  caption: [Isotgramma delle ore per membro nel quarto sprint.],
+)
 
 
 === Prospetto economico
@@ -54,10 +58,15 @@ In questo sprint, il costo per ogni ruolo sarà come da tabella:
   [Programmatore],[#ruoli_ore.at("Pr")],[#costo_ruoli_ore.at("Costo_Pr") €],
   [Verificatore],[#ruoli_ore.at("Ve")],[#costo_ruoli_ore.at("Costo_Ve")€],
   [*Totale*],[#ruoli_ore.values().sum()],[#costo_ruoli_ore.values().sum()],
-  [*Rimanente*],[],[]
+  [*Rimanente*],[404],[7555€]
 )
 
 #figure(
   image("../../assets/AreogrammiPartizioneCosti/Preventivato/AreogrammaCostiQuartoSprint.png", width: 75%),
   caption: [Areogramma del budget speso e rimanente preventivato per il quarto sprint.],
+)
+
+#figure(
+  image("../../assets/AreogrammiTotaliOre/Preventive/AreogrammaTotaleQuartoSprint.png", width: 75%),
+  caption: [Areogramma delle ore totali e rimanenti nel quarto sprint.],
 )

@@ -35,11 +35,14 @@ I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, dura
   [*Totale per ruolo*],[#ruoli_ore.at("Re")],[#ruoli_ore.at("Am")],[#ruoli_ore.at("An")],[#ruoli_ore.at("Pt")],[#ruoli_ore.at("Pr")],[#ruoli_ore.at("Ve")],[#ruoli_ore.values().sum()]
 )
 
-/* #figure(
-  image("../../assets/AreogrammiPartizioneOre/Preventivato/AreogrammaOreQuartoSprint.png", width: 75%),
-  caption: [Areogramma della partizione delle ore per ruolo nel quinto sprint.],
-) */
-
+#figure(
+  image("../../assets/AreogrammiPartizioneOre/Preventivato/AreogrammaOreTredicesimoSprint.png", width: 75%),
+  caption: [Areogramma della partizione delle ore per ruolo nel tredicesimo sprint.],
+) 
+#figure(
+  image("../../assets/IstogrammiOreMembro/Preventivate/IstogrammaTredicesimoSprint.png", width: 75%),
+  caption: [Isotgramma delle ore per membro nel tredicesimo sprint.],
+)
 
 
 === Prospetto economico
@@ -55,10 +58,15 @@ In questo sprint, il costo per ogni ruolo sarà come da tabella:
   [Programmatore],[#ruoli_ore.at("Pr")],[#costo_ruoli_ore.at("Costo_Pr") €],
   [Verificatore],[#ruoli_ore.at("Ve")],[#costo_ruoli_ore.at("Costo_Ve")€],
   [*Totale*],[#ruoli_ore.values().sum()],[#costo_ruoli_ore.values().sum()],
-  [*Rimanente*],[],[]
+  [*Rimanente*],[104],[1650€]
 )
 
-/* #figure(
-  image("../../assets/AreogrammiPartizioneCosti/Preventivato/AreogrammaCostiQuartoSprint.png", width: 75%),
-  caption: [Areogramma del budget speso e rimanente preventivato per il quinto sprint.],
-) */
+#figure(
+  image("../../assets/AreogrammiPartizioneCosti/Preventivato/AreogrammaCostiTredicesimoSprint.png", width: 75%),
+  caption: [Areogramma del budget speso e rimanente preventivato per il tredicesimo sprint.],
+) 
+
+#figure(
+  image("../../assets/AreogrammiTotaliOre/Preventive/AreogrammaTotaleTredicesimoSprint.png", width: 75%),
+  caption: [Areogramma delle ore totali e rimanenti nel tredicesimo sprint.],
+)
