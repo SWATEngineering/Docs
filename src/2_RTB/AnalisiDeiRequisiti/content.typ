@@ -229,10 +229,10 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
 
-=== UC3.8: Visualizzazione grafico a mappa relativo al consumo elettrico
+=== UC3.8: Visualizzazione grafico a mappa sul consumo elettrico
 *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
-- *Postcondizioni*: l'attore visualizza un grafico a mappa atto mostrare la distribuzione geografica del consumo elettrico rilevato da ogni sensore.
+- *Postcondizioni*: l'attore visualizza un grafico a mappa atto mostrare la distribuzione geografica del consumo elettrico.
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio urbanistico;
   + il sistema elabora i dati e renderizza il pannello relativo.
@@ -240,10 +240,10 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
 
-=== UC3.9: Visualizzazione grafico a mappa relativo al consumo idrico
+=== UC3.9: Visualizzazione grafico a mappa sul consumo idrico
 *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
-- *Postcondizioni*: l'attore visualizza un grafico a mappa atto mostrare la distribuzione geografica del consumo idrico rilevato da ogni sensore.
+- *Postcondizioni*: l'attore visualizza un grafico a mappa atto mostrare la distribuzione geografica del consumo idrico.
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio urbanistico;
   + il sistema elabora i dati e renderizza il pannello relativo.
@@ -251,10 +251,10 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
 
-=== UC3.10: Visualizzazione grafico a mappa relativo al consumo del gas
+=== UC3.10: Visualizzazione grafico a mappa sul consumo del gas
 *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
-- *Postcondizioni*: l'attore visualizza un grafico a mappa atto mostrare la distribuzione geografica del consumo del gas rilevato da ogni sensore.
+- *Postcondizioni*: l'attore visualizza un grafico a mappa atto mostrare la distribuzione geografica del consumo del gas.
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio urbanistico;
   + il sistema elabora i dati e renderizza il pannello relativo.
