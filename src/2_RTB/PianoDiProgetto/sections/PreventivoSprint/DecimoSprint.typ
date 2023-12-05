@@ -26,12 +26,12 @@ I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, dura
   columns: (160pt,auto,auto,auto,auto,auto,auto,120pt),
   align: center,
   [*Nominativo*],[*Re*],[*Am*],[*An*],[*Pt*],[*Pr*],[*Ve*],[*Totale per persona*],
-  [Simone Caregnato],[-],[-],[-],[-],[-],[-],[-],
-  [Riccardo Alberto Costantin],[-],[-],[-],[-],[-],[-],[],
-  [Giacomo D'Ovidio],[],[-],[-],[-],[-],[-],[],
-  [Nancy Kalaj],[-],[-],[-],[-],[-],[],[],
-  [Matteo Rango],[-],[-],[-],[-],[],[-],[],
-  [Riccardo Toniolo],[-],[-],[],[-],[-],[-],[],
+  [Simone Caregnato],[-],[2],[-],[-],[3],[-],[5],
+  [Riccardo Alberto Costantin],[-],[-],[-],[5],[1],[-],[6],
+  [Giacomo D'Ovidio],[-],[-],[-],[-],[5],[-],[5],
+  [Nancy Kalaj],[3],[-],[-],[2],[-],[-],[5],
+  [Matteo Rango],[-],[-],[-],[-],[-],[5],[5],
+  [Riccardo Toniolo],[-],[-],[-],[-],[6],[-],[6],
   [*Totale per ruolo*],[#ruoli_ore.at("Re")],[#ruoli_ore.at("Am")],[#ruoli_ore.at("An")],[#ruoli_ore.at("Pt")],[#ruoli_ore.at("Pr")],[#ruoli_ore.at("Ve")],[#ruoli_ore.values().sum()]
 )
 
