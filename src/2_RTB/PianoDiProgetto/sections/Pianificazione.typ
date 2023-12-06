@@ -15,12 +15,27 @@ Relativamente all’intervallo di tempo tra revisione RTB e la revisione PB si �
 Per ciascun Sprint, vengono stabilite le date di inizio e di fine, l'insieme delle attività pianificate, rappresentate tramite diagrammi di Gantt.
 
 == Requirements and Technology Baseline
+#figure(
+  image("../assets/DiagrammiGantt/RTB.png", width: 100%),
+  caption: [
+    Diagramma di Gantt per le attività da svolgere per la RTB.
+  ],
+)
+
 #include "PianificazioneSprint/PrimoSprint.typ"
 #include "PianificazioneSprint/SecondoSprint.typ"
 #include "PianificazioneSprint/TerzoSprint.typ"
 #include "PianificazioneSprint/QuartoSprint.typ"
 
 == Product Baseline
+
+#figure(
+  image("../assets/DiagrammiGantt/PB.png", width: 100%),
+  caption: [
+    Diagramma di Gantt per le attività da svolgere per la PB.
+  ],
+)
+
 
 #include "PianificazioneSprint/QuintoSprint.typ"
 #include "PianificazioneSprint/SestoSprint.typ"

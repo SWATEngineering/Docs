@@ -1,5 +1,24 @@
 #import "../../const.typ": Re_cost, Am_cost, An_cost, Ve_cost, Pr_cost, Pt_cost 
 
+#let ruoli_ore = (
+  Re: 6,
+  Am:8,
+  An:16,
+  Pt:0,
+  Pr:4,
+  Ve:13,
+
+)
+
+#let costo_ruoli_ore=(
+   Costo_Re: Re_cost * ruoli_ore.at("Re"),
+   Costo_Am: Am_cost * ruoli_ore.at("Am"),
+   Costo_An: An_cost * ruoli_ore.at("An"),
+   Costo_Pt: Pt_cost * ruoli_ore.at("Pt"),
+   Costo_Pr: Pr_cost * ruoli_ore.at("Pr"),
+   Costo_Ve: Ve_cost * ruoli_ore.at("Ve"),
+)
+
 == Primo sprint
 === Rendicontazione ore a posteriori
 I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, durante questo sprint:
@@ -7,13 +26,13 @@ I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, dura
   columns: (160pt,auto,auto,auto,auto,auto,auto,120pt),
   align: center,
   [*Nominativo*],[*Re*],[*Am*],[*An*],[*Pt*],[*Pr*],[*Ve*],[*Totale per persona*],
-  [Simone Caregnato],[-],[3 (+3)],[6 (+1)],[-],[-],[-],[9 (+4)],
-  [Riccardo Alberto Costantin],[-],[-],[3 (+3)],[-],[-],[4 (-3)],[7],
+  [Simone Caregnato],[-],[3 (+3)],[6 (-4)],[-],[-],[-],[9 (-1)],
+  [Riccardo Alberto Costantin],[-],[-],[3 (+3)],[-],[-],[4 (-4)],[7(-1)],
   [Giacomo D'Ovidio],[-],[-],[3 (+3)],[-],[-],[4 (-4)],[7 (-1)],
-  [Nancy Kalaj],[3 (+3)],[-],[4 (-1)],[-],[-],[-],[7 (+2)],
-  [Matteo Rango],[-],[5 (+2)],[-],[-],[-],[5 (+5)],[10 (+7)],
-  [Riccardo Toniolo],[3],[-],[-],[-],[4 (+4)],[-],[7 (+4)],
-  [*Totale per ruolo*],[6 (+3)],[8 (+5)],[16 (+6)],[-],[4 (+4)],[13 (-2)],[47 (+16)]
+  [Nancy Kalaj],[3 (+3)],[-],[4 (-3)],[-],[-],[-],[7],
+  [Matteo Rango],[-],[5 (-1)],[-],[-],[-],[5 (+5)],[10 (+4)],
+  [Riccardo Toniolo],[3 (-3)],[-],[-],[-],[4 (+4)],[-],[7 (+1)],
+  [*Totale per ruolo*],[#ruoli_ore.at("Re")],[#ruoli_ore.at("Am")],[#ruoli_ore.at("An")],[#ruoli_ore.at("Pt")],[#ruoli_ore.at("Pr")],[#ruoli_ore.at("Ve")],[#ruoli_ore.values().sum()]
 )
 
 #figure(
@@ -26,15 +45,15 @@ In questo sprint, il costo per ogni ruolo assunto viene riportato in tabella:
 #table(
   columns: (120pt,60pt,100pt),
   align: center,
-  [*Ruolo*],[*Ore*],[*Costo [€]*],
-  [Responsabile],[6 (+3)],[#(Re_cost * 6) (+90)],
-  [Amministratore],[8 (+5)],[#(Am_cost * 8) (+100)],
-  [Analista],[16 (+6)],[#(An_cost * 16) (+150)],
-  [Progettista],[-],[-],
-  [Programmatore],[4 (+4)],[#(Pr_cost * 4) (+60)],
-  [Verificatore],[13 (-2)],[#(Ve_cost * 13) (-30)],
-  [*Totale*],[47 (+16)],[995 (+370)],
-  [*Rimanente*],[523],[10075]
+  [*Ruolo*],[*Ore*],[*Costo*],
+  [Responsabile],[#ruoli_ore.at("Re")],[#costo_ruoli_ore.at("Costo_Re")€],
+  [Amministratore],[#ruoli_ore.at("Am") (+2)],[#costo_ruoli_ore.at("Costo_Am")€ (+40€)],
+  [Analista],[#ruoli_ore.at("An") (-1)],[#costo_ruoli_ore.at("Costo_An")€ (-25€)],
+  [Progettista],[#ruoli_ore.at("Pt")],[#costo_ruoli_ore.at("Costo_Pt") €],
+  [Programmatore],[#ruoli_ore.at("Pr") (+4)],[#costo_ruoli_ore.at("Costo_Pr") € (+60€)],
+  [Verificatore],[#ruoli_ore.at("Ve") (-3)],[#costo_ruoli_ore.at("Costo_Ve")€ (-45€)],
+  [*Totale*],[#ruoli_ore.values().sum() (+2)],[#costo_ruoli_ore.values().sum() (+30)],
+  [*Rimanente*],[523],[10.075€]
 )
 
 #figure(

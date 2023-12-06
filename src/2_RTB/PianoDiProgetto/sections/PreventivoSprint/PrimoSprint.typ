@@ -29,7 +29,7 @@ I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, dura
   [*Nominativo*],[*Re*],[*Am*],[*An*],[*Pt*],[*Pr*],[*Ve*],[*Totale per persona*],
   [Simone Caregnato],[-],[-],[10],[-],[-],[-],[10],
   [Riccardo Alberto Costantin],[-],[-],[-],[-],[-],[8],[8],
-  [Giacomo D'Ovidio],[],[-],[-],[-],[-],[8],[8],
+  [Giacomo D'Ovidio],[-],[-],[-],[-],[-],[8],[8],
   [Nancy Kalaj],[-],[-],[7],[-],[-],[],[7],
   [Matteo Rango],[-],[6],[-],[-],[],[-],[6],
   [Riccardo Toniolo],[6],[-],[],[-],[-],[-],[6],
