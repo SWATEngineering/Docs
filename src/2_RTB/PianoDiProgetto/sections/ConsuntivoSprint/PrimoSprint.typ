@@ -40,6 +40,11 @@ I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, dura
   caption: [Areogramma della partizione delle ore per ruolo nel primo sprint.],
 )
 
+#figure(
+  image("../../assets/IstogrammiOreMembro/Effettive/IstogrammaPrimoSprint.png", width: 75%),
+  caption: [Istogramma delle ore svolte per persona nel primo sprint.],
+)
+
 === Rendicontazione costi a posteriori
 In questo sprint, il costo per ogni ruolo assunto viene riportato in tabella:
 #table(
@@ -59,6 +64,11 @@ In questo sprint, il costo per ogni ruolo assunto viene riportato in tabella:
 #figure(
   image("../../assets/AreogrammiPartizioneCosti/Effettivo/AreogrammaCostiPrimoSprint.png", width: 75%),
   caption: [Areogramma del budget speso e rimanente preventivato per il primo sprint.],
+)
+
+#figure(
+  image("../../assets/AreogrammiTotaliOre/Effettive/AreogrammaTotalePrimoSprint.png", width: 75%),
+  caption: [Areogramma delle ore svolte e rimanenti nel primo sprint.],
 )
 
 
