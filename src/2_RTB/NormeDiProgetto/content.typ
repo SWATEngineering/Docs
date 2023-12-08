@@ -422,7 +422,7 @@ Il verbale esterno oltre alle sezioni sopra elencate ha una pagina per la conval
 
 Le voci di ogni elenco iniziano con lettera maiuscola e terminano con punto e virgola ';', eccetto l'ultima voce che termina con punto normale '.'.
 
-==== Formato delle date
+==== Formato delle date <formato>
 Viene adottato il formato "DD-MM-YYYY":
         - DD: giorno con 2 cifre;
         - MM: mese con 2 cifre;
