@@ -7,10 +7,10 @@
 
 *Obiettivi dello sprint*: 
   - Normare le modalità di lavoro attualmente in uso all'interno delle Norme di Progetto; 
-  - Iniziare la stesura dell'Analisi dei Requisiti, ideando i primi *Casi d'uso*;
-  - Iniziare la stesura del Piano di Progetto, ponendo particolare attenzione su *Analisi dei Rischi* e *Modello di Sviluppo*;
-  - Iniziare la stesura del Glossario;
-  - Iniziare la realizzazione del PoC: 
+  - Inizio  della redazione dell'_Analisi dei Requisiti_, ideando i primi *Casi d'uso*;
+  - Inizio della stesura del _Piano di Progetto_, ponendo particolare attenzione su *Analisi dei Rischi* e *Modello di Sviluppo*;
+  - Avvio della scrittura del Glossario;
+  - Principio di realizzazione del PoC: 
     - Creazione modulo di simulazione di sensori di temperatura;
     - Creazione modulo di inserimento dei dati simulati all'interno di Kafka;
     - Containerizzazione dei moduli realizzati.

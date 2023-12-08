@@ -6,13 +6,13 @@
 
 *Obiettivi dello sprint*: 
 
-    - Inizio stesura diagrammi attività e sequenze;
-    - Ampliamento Specifiche tecniche;
+    - Avvio della realizzazione dei diagrammi _attività_ e _sequenze_;
+    - Ampliamento _Specifiche tecniche_;
     - Partendo dal PoC, iniziare lo sviluppo della prima versione del prodotto;
-    - Classe per importazione dati anagrafici sensori dal file CSV;
-    - Classe per implementazioni dati strutturati Json;
-    - Continuare il piano di progetto;
-    - Iniziare a stendere l'introduzione del manuale sviluppatore;
+    - Realizzazione della classe per l'importazione dei dati anagrafici dei sensori, da file in formato CSV;
+    - Creazione della classe che permette  l'implementazione di dati, strutturati in formato Json;
+    - Prosecuzione _Piano di Progetto_;
+    - Inizio della stesura dell'introduzione del _Manuale Sviluppatore_;
 
 
 

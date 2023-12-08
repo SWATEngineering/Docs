@@ -7,16 +7,16 @@
 *Obiettivi dello sprint*: 
 
   - Finire la correzione dell'_Analisi dei Requisiti_;
-  - Classe per realizzazione dei sensori:
+  - Creazione della classe per la realizzazione di sensori di tipo::
               + temperatura;
               + umidità;
               + polveri sottili;
               + livelli acqua;
               + precipitazioni;
-              + lavori rete idrica;
+              + presenza di lavori sulla rete idrica;
               + stato riempimento cassonetti.
-  - Continuazione documento Specifiche Tecniche;
-  - Continuazione Manuale Sviluppatore;
+  - Continuazione documento _Specifiche Tecniche_;
+  - Continuazione _Manuale Sviluppatore_;
 
   *Suddivisione lavoro*:
 

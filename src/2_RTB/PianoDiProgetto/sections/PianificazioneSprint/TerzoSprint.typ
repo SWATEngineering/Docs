@@ -6,11 +6,11 @@
 
 *Obiettivi dello sprint*: 
 
-  - Finire il documento _Norme di progetto_ con la  stesura della sezione "Verifica";
-  - Finire il documento _Piano di Qualifica_ con la stesura delle sezioni "Qualità prodotto" e "Test" con le relative metriche;
+  - Terminare il documento _Norme di progetto_ con la  stesura della sezione "Verifica";
+  - Completare il documento _Piano di Qualifica_ con la stesura delle sezioni "Qualità prodotto" e "Test" con le relative metriche;
   - Ultimare il documento _Piano di progetto_;
-  - Ulteriore sistemazione all'_Analisi dei Requisiti_.
-  - Ampliamento del _Glossario_
+  - Ulteriore perfezionamento dell'_Analisi dei Requisiti_;
+  - Ampliamento del _Glossario_.
 
 
 *Suddivisione lavoro*:

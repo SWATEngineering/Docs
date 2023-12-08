@@ -6,16 +6,15 @@
 
 *Obiettivi dello sprint*: 
 
-    - Continuazione Specifiche Tecniche;
-    - Continuazione Manuale Utente;
-    - Continuazione Manuale Sviluppatore;
+    - Continuazione _Specifiche Tecniche_;
+    - Continuazione _Manuale Utente_;
+    - Continuazione _Manuale Sviluppatore_;
     - Creazione della mappa della _città in grafana_;
     - Divisione in celle della città;
-    - visualizzazione dei punti critici della città;
-    - visualizzazione posizionamento colonnine ricarica;
-    - visualizzazione temperatura;
-    - creazione degli allarmi rilevazioni anomale e superamento soglie.
-
+    - Visualizzazione dei punti critici della città;
+    - Visualizzazione posizionamento colonnine ricarica;
+    - Visualizzazione temperatura media della città;
+    - Realizzazione degli allarmi che segnalano anomalie e superamento soglie.
 
 
 *Suddivisione lavoro*:

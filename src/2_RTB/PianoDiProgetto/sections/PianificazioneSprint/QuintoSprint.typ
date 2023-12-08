@@ -1,3 +1,4 @@
+#import "../../functions.typ": glossary
 === Quinto Sprint
 
 *Inizio*: Venerdì 22/12/2023
@@ -6,13 +7,13 @@
 
 *Obiettivi dello sprint*: 
   
-    - Inizio stesura Specifiche Tecniche:
+    - Inizio della stesura del documento _Specifiche Tecniche_:
       + Sezione Introduzione;
       + Sezione Tecnologie.
-    - Studio dell'archittetura del sistema;
-    - Studio dei design pattern migliori;
+    - Studio dell'#glossary("archittetura") del sistema;
+    - Studio dei #glossary("design pattern") più adeguati;
     - Continuazione Piano di Progetto;
-    - Continuazione della correzione sull'Analisi Requisiti;
+    - Continuazione della correzione sull'_Analisi Requisiti_;
 
 
 

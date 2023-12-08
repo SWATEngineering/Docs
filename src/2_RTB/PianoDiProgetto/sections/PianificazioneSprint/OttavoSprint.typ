@@ -7,7 +7,7 @@
 *Obiettivi dello sprint*: 
 
     
-    - Realizzazione di altri tipi di sensori:
+    - Implementazione di altri tipi di sensori:
         + traffico;
         + lavori in corso;
         + incidenti;
@@ -16,9 +16,9 @@
         + parcheggi nella cella;
         + posizione dei ponti e strutture critiche;
 
-    - Continuazione Specifiche Tecniche;
-    - Continuazione Manuale Sviluppatore;
-    - Inizio stesura Manuale Utente;
+    - Continuazione _Specifiche Tecniche_;
+    - Continuazione _Manuale Sviluppatore_;
+    - Inizio stesura _Manuale Utente_;
 
 *Suddivisione lavoro*:
 

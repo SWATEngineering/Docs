@@ -19,7 +19,7 @@
    Costo_Ve: Ve_cost * ruoli_ore.at("Ve"),
 )
 
-== Quattordicesimo sprint
+== Sedicesimo sprint
 === Prospetto orario
 I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, durante questo sprint:
 #table(
@@ -27,7 +27,7 @@ I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, dura
   align: center,
   [*Nominativo*],[*Re*],[*Am*],[*An*],[*Pt*],[*Pr*],[*Ve*],[*Totale per persona*],
   [Simone Caregnato],[-],[-],[-],[-],[-],[6],[6],
-  [Riccardo Alberto Costantin],[-],[-],[-],[-],[-],[6],[-],
+  [Riccardo Alberto Costantin],[-],[-],[-],[-],[-],[6],[6],
   [Giacomo D'Ovidio],[-],[-],[-],[-],[6],[-],[6],
   [Nancy Kalaj],[1],[-],[-],[-],[1],[4],[6],
   [Matteo Rango],[-],[-],[-],[-],[],[6],[6],

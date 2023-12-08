@@ -7,13 +7,13 @@
 *Obiettivi dello sprint*: 
 
     - Ultimazione delle nuove versioni di:
-          + Piano Qualifica;
-          + Norme di Progetto;
+          + _Piano Qualifica_;
+          + _Norme di Progetto_;
     - Completamento di:
-          + Specifiche Tecniche;
-          + Manuale Utente;
-          + Manuale Sviluppatore.
-    - Finire la visualizzazione di tutti i dati su Grafana:
+          + _Specifiche Tecniche_;
+          + _Manuale Utente_;
+          + _Manuale Sviluppatore_.
+    - Finire la visualizzazione dei dati su Grafana:
           + Cassonetti;
           + Incidenti;
           + Guasti elettrici;

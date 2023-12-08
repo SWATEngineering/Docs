@@ -7,7 +7,7 @@
 *Obiettivi dello sprint*: 
 
         - Revisione di tutta la documentazione;
-        - Rifnire quello che manca;
+        - Rifinire quello che manca;
         - Correzione dei possibili bug riscontrati.
 
 *Suddivisione lavori*

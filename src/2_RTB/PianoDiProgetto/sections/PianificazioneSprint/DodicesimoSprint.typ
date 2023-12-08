@@ -6,15 +6,15 @@
 
 *Obiettivi dello sprint*: 
 
-    - Continuazione Specifiche Tecniche;
-    - Continuazione Manuale Utente e Sviluppatore;
+    - Continuazione _Specifiche Tecniche_;
+    - Continuazione _Manuale Utente_ e _Manuale Sviluppatore_;
     - Visualizzazione dei dati inerenti:
               + umidità;
-              + polveri sottili e di conseguenza qualità dell'aria;
+              + polveri sottili e conseguente qualità dell'aria;
               + Parcheggi nelle celle;
               + precipitazioni;
-              + lavori alla rete idrica;
-              + lavori in corso;
+              + presenza di lavori sulla rete idrica;
+              + presenza di lavori in corso;
     - Analisi dei dati.
               
 

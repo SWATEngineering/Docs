@@ -7,12 +7,12 @@
 *Obiettivi dello sprint*: 
 
 Superata la prima fase del RTB, il team si concentrerà maggiormente sulla fase di progettazione.
-  - Iniziare la fase di progettazione;
-  - Definire la struttura architteturale del prodotto;
-  - Diagrammi delle classi;
-  - Correzione documenti:
-     + Correzione dell'_Analisi dei Requisiti_  in seguito ad eventuali correzioni ricevute dalla prima revisione ("RTB");
-     + Correzione del _Piano di Qualifica_ in seguito ad eventuali correzioni ricevute dalla prima revisione ("RTB");
+  - Avvio della fase di progettazione;
+  - Definizione della struttura architteturale del prodotto;
+  - Realizzazione dei diagrammi delle classi;
+  - Correzione documenti, sulla base del feedback ricevuto nella prima revisione ("RTB")::
+     + Correzione dell'_Analisi dei Requisiti_;
+     + Correzione del _Piano di Qualifica_;
 
 
 *Suddivisione lavoro*:
