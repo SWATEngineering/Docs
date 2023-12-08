@@ -74,7 +74,7 @@ In questo sprint, il costo per ogni ruolo assunto viene riportato in tabella:
 
 === Analisi a posteriori
 
-Il team a seguito dell'incontro con la proponente si è accorto che sarebbero state necessarie delle ore da programmatore, per affrontarla il team ha avviato una turnazione dei ruoli straordinaria. 
+Dopo l'incontro con la Proponente, il team ha identificato la necessità di impiegare delle ore da programmatore. Di conseguenza, il team ha avviato una turnazione straordinaria dei ruoli per gestire questa richiesta.
 Durante lo sprint non si sono manifestati problemi, tutti gli obiettivi sono stati raggiunti con successo. 
 
 

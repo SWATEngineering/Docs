@@ -1,6 +1,6 @@
 #import "../functions.typ": glossary, team
 
-= Analisi dei rischi
+= Analisi dei rischi  
 L'attività di analisi dei rischi mira ad anticipare possibili situazioni avverse che potrebbero emergere durante l'iter del progetto. Questa pratica consiste nel riconoscere, comprendere e classificare tali rischi in base alla loro probabilità di occorrenza e all'impatto sullo sviluppo del lavoro, cercando, nel contempo, soluzioni preventive per mitigarne gli effetti dannosi. L'analisi dettagliata dei rischi è orientata a ottimizzare il progresso del progetto, consentendo di individuare nuove situazioni critiche e perfezionare le strategie atte a minimizzarne gli impatti, mediante un costante monitoraggio. Di seguito vengono presentati i rischi identificati attraverso un processo di valutazione strutturato, che consente di evidenziare le fasi di individuazione, valutazione e prevenzione di tali rischi:
 
 
@@ -82,18 +82,18 @@ I diversi livelli di competenze e una comunicazione poco trasparente possono por
   - *Identificazione*: la mancanza di fiducia può essere rilevata in presenza di segnali specifici come la reticenza nella collaborazione o nell'assunzione di responsabilità condivise. In aggiunta, alcuni membri potrebbero dimostrarsi poco attivi nelle discussioni di gruppo o nelle attività cooperative. 
   - *Valutazione*: Pericolosità: media; Occorrenza: bassa.
   - *Prevenzione*: 
-    - Promuovere incontri periodici: i membri del team hanno la possibilità di esprimere dubbi e preocupazioni, avere una discussione aperta su aspetti rilevanti del progetto e ricevere feedback sul lavoro fatto. In questo contesto va precisato che la costruzione del feedback assume un ruolo fondamentale, in quanto deve essere formulato in maniera tale da risultare costruttivo e presentato come un opportunità di miglioramento anziché una critica;
-    - Promuovere la comprensione reciproca: il team si deve sforzare nel comprendere le condizioni e i punti di vista degli altri componenti per creare un clima di progetto positivo indirizzato verso il miglioramento.
+    - Promuovere incontri periodici: i membri del team hanno la possibilità di esprimere dubbi e preocupazioni, avere una discussione aperta su aspetti rilevanti del progetto e ricevere feedback sul lavoro fatto. In questo contesto va precisato che la costruzione del feedback assume un ruolo fondamentale, in quanto deve essere formulato in maniera tale da risultare costruttivo e presentato come un opportunità di miglioramento, anziché solamente come critica;
+    - Promuovere la comprensione reciproca: il team si deve sforzare nel comprendere le condizioni e i punti di vista degli altri componenti per creare un clima di progetto positivo, indirizzato verso il miglioramento.
 
 === *RC5 - Context Switch*
 
 Per #glossary("Context Switch") ci si riferisce al cambiamento dei ruoli all'interno del team. Questo passaggio da un ruolo ad un altro comporta la necessità di adattarsi rapidamente alle nuove responsabilità e di comprendere appieno ciò che è stato svolto dal membro del team precedentemente.
-  - *Identificazione*: Difficoltà nel capire cosa è stato fatto precedentmente. 
+  - *Identificazione*: Difficoltà  nella comprensione del lavoro svolto fino al quel momento; 
   - *Valutazione*: Pericolosità: bassa; Occorenza: alta.
   - *Prevenzione*:
-      - La persona che ha precedentemente occupato quel ruolo specifico, offre supporto al membro del team che ha assunto ora quella posizione, facilitandone la transizione;
-      - Assistere il responsabile o l'amministratore nella creazione delle attività per il prossimo sprint;
-      - Dedicare il primo giorno  unicamente allo studio di quanto fatto precedentemente per riuscire a sincronizzarsi con il contesto del ruolo.
+      - La persona, che ha precedentemente occupato quel ruolo specifico, offre supporto al membro del team che ha assunto ora quella posizione, facilitandone la transizione;
+      - Assistere l'amministratore nella creazione delle attività per il prossimo sprint;
+      - Dedicare il primo giorno  unicamente allo studio di quanto fatto precedentemente, in modo da riuscire a sincronizzarsi con il contesto del ruolo.
 
 
 

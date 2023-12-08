@@ -1,18 +1,19 @@
+#import "../functions.typ": glossary, team
+
 = Pianificazione
 
-Stabilite come _milestone_ principali le _baseline_ corrispondenti alle revisioni del progetto, gli sprint consentono di mantenere un approccio agile e permettono di essere reattivi rispetto ai cambiamenti nelle esigenze o nei requisiti del progetto. Ciascuno sprint contribuirà in modo incrementale al raggiungimento delle _milestone_ e al successo complessivo del progetto.
+Stabilite come #glossary("milestone") principali le #glossary("baseline"), corrispondenti alle revisioni del progetto, gli sprint consentono di mantenere un approccio agile e permettono di essere reattivi rispetto ai cambiamenti nelle esigenze o nei requisiti del progetto. Ciascuno sprint contribuirà in modo incrementale al raggiungimento delle milestone e al successo complessivo del progetto.
 Sulla base delle scadenze riportate nella sezione *Scadenze* si pianificano: 
 
 - 2 sprint di due settimane e 2 sprint da una settimana per arrivare alla revisione RTB; 
 - 10 sprint della durata di una settimana per arrivare alla revisione PB; 
 - 2 sprint della durata di una settimana per arrivare alla revisione CA. 
 
-Inizialmente il team aveva pianificato di mantenere sprint della durata di due settimane ma ci si è accorti che sarebbe stato preferibile passare a sprint della durata di una settimana. Il documento Piano di progetto, in particolare la sezione *Pianificazione* e *Preventivo* vengono aggiornate di conseguenza. 
-Il documento Piano di Progetto si evolve durante tutto il ciclo di vita del progetto, la modifica della pianificazione deriva dall'esigenza di reagire ai problemi introdotti dalla durata dello sprint inizialmente pianificata. 
+Inizialmente, il team aveva pianificato sprint della durata di due settimane. Tuttavia, durante lo svolgimento, è risultato preferibile passare a sprint della durata di una settimana. Di conseguenza, il documento del Piano di progetto, in particolare nelle sezioni *Pianificazione* e *Preventivo*, viene aggiornato in base a questa modifica stabilita. 
+Il documento Piano di Progetto si evolve durante tutto il ciclo di vita del progetto, la modifica della pianificazione deriva dall'esigenza di reagire ai problemi, dovuti ad una durata degli sprint inadeguata. 
+Nell’intervallo di tempo tra revisione RTB e revisione PB, è stata pianificata una diminuzione del carico di lavoro nelle ultime due settimane del mese di Gennaio, permettendo ai membri del team di potersi dedicare agli altri impegni che il percorso di studio richiede. 
 
-Relativamente all’intervallo di tempo tra revisione RTB e la revisione PB si è pianificato di interrompere lo sviluppo nelle ultime due settimane del mese di Gennaio, in maniera che il team riesca a dedicarsi agli altri impegni che il percorso di studio impone. 
-
-Per ciascun Sprint, vengono stabilite le date di inizio e di fine, l'insieme delle attività pianificate, rappresentate tramite diagrammi di Gantt.
+Per ciascun Sprint, vengono stabilite le date di inizio e di fine,e il relativo insieme delle attività pianificate, rappresentate tramite diagrammi di Gantt.
 
 == Requirements and Technology Baseline
 #figure(
@@ -44,7 +45,7 @@ Per ciascun Sprint, vengono stabilite le date di inizio e di fine, l'insieme del
 
 === Sessione d'esame
 
-In vista della sessione invernale viene prevista una sospensione temporanea dal progetto in cui i membri del team daranno priorità allo studio.
+In vista della sessione invernale di esami, è prevista una sospensione temporanea dello sviluppo del progetto. Questo permette ai membri del gruppo di potersi dedicare allo studio individuale.
 
 #include "PianificazioneSprint/NonoSprint.typ"
 #include "PianificazioneSprint/DecimoSprint.typ"
