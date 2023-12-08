@@ -13,7 +13,7 @@
     - Continuazione _Manuale Sviluppatore_;
     - Codifica del design scelto per la rappresentazione e storage dei dati aggregati su _Clickhouse_;
     - Utilizzo delle #glossary("Materialized Views") per pre-aggregare dati frequentemente richiesti, migliorando le prestazioni delle query;
-    - Configurazione dei motori interni a _Clickhouse_;
+    - Configurazione dei motori interni ( _engine_) a _Clickhouse_;
     - Inizio della configurazione di Grafana per la visualizzazione dei dati.
 
     *Suddivisione lavoro*:
