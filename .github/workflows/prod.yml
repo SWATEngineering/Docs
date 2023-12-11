@@ -17,7 +17,7 @@ jobs:
               with:
                   python-version: ${{ matrix.python-version }}
             - name: Check Glossary
-              run: python3 glossary_check.py
+              run: python3 src/glossary_check.py
 
     test-and-publish:
         runs-on: ubuntu-latest
