@@ -1,3 +1,5 @@
+#import "../../functions.typ" : glossary
+
 === Undicesimo Sprint
 
 *Inizio*: Venerdì 16/02/2024
@@ -10,7 +12,7 @@
     - Continuazione _Manuale Utente_;
     - Continuazione _Manuale Sviluppatore_;
     - Creazione della mappa della _città in grafana_;
-    - Divisione in celle della città;
+    - Suddivisione dell'area della città in #glossary("celle");
     - Visualizzazione dei punti critici della città;
     - Visualizzazione posizionamento colonnine ricarica;
     - Visualizzazione temperatura media della città;

@@ -14,7 +14,7 @@
   - Implementare l'invio dei dati dei simulatori al #glossary("topic") corretto del #glossary("broker") di Kafka;
   - Impostare numero appropriato di partizioni dei topic per garantire #glossary("scalabilità") e  #glossary("portabilità");
   - Configurazione della #glossary("retention policy")  dei messaggi;
-  - Impostazione della dimensione del #glossary("batch") e dell'intervallo di invio, per l'ottimizzazione della latenza ed dell'efficienza;
+  - Impostazione della dimensione del #glossary("batch") e dell'intervallo di invio, per l'ottimizzazione della latenza ed dell'#glossary("efficienza");
   - Certificati di sicurezza per la comunicazione dati? [Revisore]
   - Esecuzione di test specifici per la scalabilità del sistema.
 
