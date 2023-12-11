@@ -99,7 +99,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'attore visualizza il pannello.
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna. 
-- *Estensioni*:  UC9 Visualizzazione errore nessun dato.
+- *Estensioni*: [UC9].
 
 #figure(
   image("assets/UML/UC1.1_Visualizzazione-posizione-sensori-su-mappa.png",width:100%),
@@ -116,7 +116,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + il sistema elabora i dati e renderizza la tabella; 
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
-- *Estensioni*:  UC9 Visualizzazione errore nessun dato. 
+- *Estensioni*: [UC9].
 
 #figure(
   image("assets/UML/UC1.2_Visualizzazione-tabella-sensori.png",width:100%),
@@ -444,6 +444,27 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   image("assets/UML/UC3.6_Visualizzazione-indicatore-percentuale-su-mappa-riempimento-zone-rifiuti.png",width:100%),
   caption: [UC3.6 Visualizzazione indicatore percentuale su mappa riempimento zone rifiuti]
 )
+
+=== UC4: Visualizzazione dati anomali rilevati
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore sta usando il sistema.
+- *Postcondizioni*: l'attore visualizza, in forma tabellare, la lista ordinata di anomalie nei dati rilevati dal sistema.
+- *Scenario Principale*:
+  + l'attore seleziona la visualizzazione delle anomalie;
+  + il sistema elabora i dati e renderizza il pannello relativo.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
+
+=== UC5: Visualizzazione allerte superamento soglie
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: nessuna.
+- *Postcondizioni*: l'attore riceve una notifica di superamento di una soglia impostata.
+- *Scenario Principale*:
+  + il sistema rileva delle condizioni per le quali si deve inviare una notifica che avverta di un superamento di una soglia impostata.
+- *Specializzazioni*: nessuna.
+- *Inclusioni*: nessuna.
+- *Estensioni*: nessuna.
 
 === UC6: Applicazione filtri
 - *Attore Principale*: amministratore pubblico.
