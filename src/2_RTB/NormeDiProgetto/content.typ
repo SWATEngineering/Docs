@@ -15,25 +15,28 @@ Il progetto "InnovaCity" si concentra sulla creazione di una dashboard intuitiva
 == Glossario
 Al fine di evitare possibili ambiguità relative al linguaggio utilizzato nei documenti, viene
 fornito il _Glossario_, nel quale sono presenti tutte le definizioni di termini aventi un significato specifico che vuole essere disambiguato. Tali termini, sono scritti in _corsivo_ e marcati con una #sub("G") a pedice.
-Un'attività che comprende l'inserimento di un termine di glossario può considerarsi conclusa, nella sua interezza, solo nel momento in cui il termine viene scritto e spiegato nel _Glossario_.
+Un'attività che comprende l'inserimento di un termine di glossario può considerarsi conclusa solo nel momento in cui il termine viene scritto e spiegato nel _Glossario_.
 
 == Riferimenti
 
 === Riferimenti normativi
         - Capitolato d'appalto C6 - InnovaCity:
-        https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf
+                #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf")
 
 === Riferimenti informativi
         - Documentazione git:
-        https://git-scm.com/docs
+                #link("https://git-scm.com/docs")
+
         - Documentazione GitHub:
-        https://docs.github.com/en
+                #link("https://docs.github.com/en")
+
         - Materiale didattico del corso Metodi e Tecnologie per lo Sviluppo Software 2022/2023:
-        https://stem.elearning.unipd.it/course/view.php?id=5359
+                #link("https://stem.elearning.unipd.it/course/view.php?id=5359")
+
                 - Lezione 4: GIT;
                 - Laboratorio 2: GitHub Version Control System.
         - Documentazione Typst:
-        https://typst.app/docs
+                #link("https://typst.app/docs")
 
 #pagebreak()
 
@@ -44,39 +47,39 @@ Un'attività che comprende l'inserimento di un termine di glossario può conside
 === Descrizione e scopo
 
 Il processo di fornitura si propone di dettagliare le attività del fornitore per comprendere e soddisfare le richieste della Proponente.
-Dopo la completa comprensione delle esigenze, il fornitore, in collaborazione con la Proponente, stabilisce tramite contratto la data di consegna del prodotto. Successivamente, viene redatto il Piano di Progetto per pianificare dettagliatamente le varie attività da svolgere, garantendo un chiaro processo di sviluppo del prodotto finale. L'obiettivo principale è soddisfare in modo chiaro le richieste della Proponente evitando possibili incomprensioni attraverso una collaborazione continua.
+Dopo la completa comprensione delle esigenze, il fornitore, in collaborazione con la Proponente, stabilisce tramite contratto la data di consegna del prodotto. Successivamente, viene redatto il Piano di Progetto per pianificare dettagliatamente le varie attività da svolgere, garantendo un chiaro processo di sviluppo del prodotto finale. L'obiettivo principale è soddisfare in modo chiaro le richieste della Proponente, evitando possibili incomprensioni attraverso una collaborazione continua.
 
 Il processo si articola in diverse fasi:
 
         - Definizione chiara dei requisiti soddisfatti dal prodotto finale;
-        - Contrattazione, durante la quale ci si propone di: 
-                + Richiedere incontri di formazione sulle tecnologie consigliate per ottimizzare lo sviluppo;
-                + Ottenere _feedback_ approfondito sull'utilizzo delle tecnologie proposte.
-        - Pianificazione: consiste nell'individuare a priori una ripartizione esatta di tutte le ore produttive a disposizione con conseguente stima dei costi per ciascun incremento di lavoro (sprint);
-        - Esecuzione: la progettazione e il conseguente sviluppo del prodotto vengono svolti parallelamente alla stesura della documentazione relativa al progetto;
+        - Contrattazione, con l'obiettivo di: 
+                + Richiesta di incontri di formazione sulle tecnologie consigliate per ottimizzare lo sviluppo;
+                + Ricezione di un feedback approfondito sull'utilizzo delle tecnologie proposte.
+        - Pianificazione: consiste nell'individuare preventivamente una suddivisione precisa di tutte le ore produttive disponibili, seguita da una stima dei costi per ciascun incremento di lavoro (sprint);
+        - Esecuzione: la progettazione e il conseguente sviluppo del prodotto procedono di pari passo con la stesura della documentazione relativa al progetto;
         - Continuo controllo e verifica;
         - Completamento e consegna.
 
 === Rapporti con la Proponente
-La Proponente si è resa disponibile attraverso vari canali, come e-mail, _Google Meet_ e _Element_, per stabilire una comunicazione frequente e risolvere prontamente eventuali dubbi o domande che possono emergere durante lo svolgimento del progetto. Sin dall'inizio è stato concordato di organizzare incontri regolari, in particolare al termine di ciascuno sprint, fissati per il venerdì alle 10:30. Questi incontri assumono la forma di una sessione di _Sprint Review_, in cui il team esibisce quanto prodotto e ottiene _feedback_ sull'andamento del lavoro.
+La Proponente si è resa disponibile attraverso vari canali, come e-mail, _Google Meet_ e _Element_, per stabilire una comunicazione frequente e risolvere prontamente eventuali dubbi o domande che possono emergere durante lo svolgimento del progetto. Sin dall'inizio è stato concordato di organizzare incontri regolari, in particolare al termine di ciascuno sprint, fissati per il venerdì alle 10:30. Questi incontri assumono la forma di una sessione di _Sprint Review_, in cui il team esibisce quanto prodotto e ottiene feedback sull'andamento del lavoro.
 
 Gli incontri con la Proponente si suddividono principalmente in tre categorie:
 
         - Incontri di formazione: utilizzati per acquisire familiarità con nuove tecnologie, approfondire determinati concetti o migliorare competenze specifiche richieste dal progetto;
         - Incontri di analisi dei requisiti: mirati a chiarire, discutere e validare i requisiti del progetto, garantendo una comprensione chiara e condivisa tra il team e la Proponente;
-        - Sprint Review: momenti conclusivi di ciascuno sprint in cui vengono presentati i risultati ottenuti, con l'obiettivo di ricevere _feedback_ da parte della Proponente.
+        - Sprint Review: fase conclusiva di ogni sprint durante la quale vengono presentati i risultati ottenuti, con l'intento di ricevere feedback dalla Proponente.
 
-Ogni incontro con la Proponente sarà sintetizzato e documentato all'interno del Verbale Esterno di riferimento. Il verbale verrà successivamente presentato alla Proponente per essere validato tramite firma, ottenendo in tal modo un'approvazione formale del resoconto delle discussioni avvenute all'incontro.
+Ogni incontro con la Proponente viene sintetizzato e documentato nel Verbale Esterno di riferimento. Il verbale viene successivamente presentato alla Proponente per essere validato tramite firma, ottenendo così un'approvazione formale del resoconto delle discussioni avvenute all'incontro.
 
 === Documentazione fornita
 Di seguito si elencano i documenti che il team #team si impegna a consegnare ai Committenti Prof. Tullio Vardanega e Prof. Riccardo Cardin e alla Proponente Sync Lab.
 
 ==== Analisi dei Requisiti
-L’analisi dei requisiti, svolta dagli Analisti, costituisce una fase cruciale nello sviluppo del sistema software. Il suo obiettivo principale è definire in dettaglio le funzionalità necessarie affinché il prodotto soddisfi pienamente le richieste della Proponente. Il documento omonimo comprenderà una serie di elementi essenziali:
+L’analisi dei requisiti, svolta dagli Analisti, costituisce una fase cruciale nello sviluppo del sistema software. Il suo obiettivo principale è definire in dettaglio le funzionalità necessarie affinché il prodotto soddisfi pienamente le richieste della Proponente. Il documento omonimo comprende una serie di elementi essenziali:
 
         - Descrizione e scopo del prodotto;
         - *Definizione degli attori*: entità o persone che interagiscono con il #glossary[sistema];
-        - *Definizione dei casi d'uso*: rappresentazione narrativa di scenari specifici che descrivono come gli attori interagiscono con il sistema. I casi d'uso offrono una visione chiara delle azioni che possono essere eseguite all'interno del sistema e come gli utenti interagiscono con esso; un elenco preciso di azioni intraprese dall'attore per provocare un determinato caso d'uso viene fornito all'interno dello stesso, in modo da facilitare l'estrazione dei requisiti corrispondenti;
+        - *Definizione dei casi d'uso*: rappresentazione narrativa di scenari specifici che descrivono come gli attori interagiscono con il sistema. I casi d'uso offrono una visione chiara delle azioni che possono essere eseguite all'interno del sistema e come gli utenti interagiscono con esso; un elenco preciso di azioni intraprese dall'attore per provocare un determinato caso d'uso viene fornito all'interno dello stesso, al fine di facilitare l'estrazione dei requisiti corrispondenti;
         - *Definizione di requisiti*: individuazione dei requisiti obbligatori e desiderabili e loro categorizzazione in:
                 - Requisiti funzionali: specificano le operazioni che il sistema deve essere in grado di eseguire;
                 - Requisiti di qualità: riguardano gli aspetti di qualità del software, inclusi gli attributi prestazionali, affidabilità, usabilità e sicurezza;
@@ -84,15 +87,15 @@ L’analisi dei requisiti, svolta dagli Analisti, costituisce una fase cruciale 
 
 ==== Piano di Progetto
 
-Documento redatto dal Responsabile che offre una visione dettagliata dell'intero processo di sviluppo di un progetto, fornendo al team coinvolto una guida approfondita per mantenere l'allineamento con gli obiettivi, gestire le risorse in modo efficace e affrontare le sfide che potrebbero emergere durante lo sviluppo del progetto.
+Documento redatto dal Responsabile che offre una visione dettagliata dell'intero processo di sviluppo di un progetto. Esso fornisce al team una guida approfondita per mantenere l'allineamento con gli obiettivi, gestire le risorse in modo efficace e affrontare le sfide che potrebbero emergere durante lo sviluppo del progetto.
 
-Si compone di:
+È composto da:
 
-        - *Analisi dei rischi*: identifica, valuta e gestisce i potenziali rischi che potrebbero influenzare il successo del progetto; è  essenziale per consentire al team di adottare misure preventive. I rischi vengono categorizzati in rischi tecnologici, di comunicazione e di pianificazione e per ogni rischio si compie un analisi mirata ad individuarne i segnali di manifestazione, valutarne l'occorrenza e la pericolosità, pianificare strategie di mitigazione e valutare l'efficacia di tali strategie nel contenere gli effetti del rischio in esame;
-        - *Modello di sviluppo*: approccio metodologico che viene scelto per guidare il processo di sviluppo del prodotto; definisce la struttura di lavoro che sarà seguita durante l'intero ciclo di vita del progetto. Avendo adottato il modello di sviluppo agile Scrum, questa sezione descrive le pratiche e gli eventi principali del _framework_ per come vengono utilizzati ed implementati da parte del team;
-        - *Pianificazione*: fornisce una roadmap dettagliata delle attività, delle risorse, e delle scadenze associate al progetto; in particolare, vengono pianificate le attività necessarie per raggiungere gli obiettivi previsti per ogni sprint dall'inizio al termine del progetto e la loro distribuzione temporale;
-        - *Preventivo*: a partire dalla pianificazione eseguita a priori, determina la ripartizione delle ore produttive a disposizione di ogni componente del team nei vari ruoli per ogni sprint, in modo da garantire il raggiungimento degli obiettivi prefissati e un utilizzo accorto delle risorse; la ripartizione delle ore determina anche il costo preventivato per ogni sprint;
-        - *Consuntivo*: a partire dalla rendicontazione delle ore produttive impiegate da ciascun componente del team eseguita a posteriori, determina la ripartizione effettiva delle ore osservata durante lo sprint e, di conseguenza, anche il costo effettivo; inoltre, viene eseguita una breve analisi a posteriori per motivare le scelte eseguite nel preventivo, evidenziare eventuali discostamenti e delineare i cambiamenti nella strategia utilizzata per pianificare il resto del lavoro, qualora dovessero rendersi necessari.
+        - *Analisi dei rischi*: identifica, valuta e gestisce i potenziali rischi che potrebbero influenzare il successo del progetto. Questo processo è essenziale per consentire al team di adottare misure preventive. I rischi vengono categorizzati in rischi tecnologici, di comunicazione e di pianificazione. Per ogni rischio, si compie un analisi mirata per individuarne i segnali di manifestazione, valutarne l'occorrenza e la pericolosità, pianificare strategie di mitigazione e valutare l'efficacia di tali strategie nel contenere gli effetti del rischio preso in esame;
+        - *Modello di sviluppo*: approccio metodologico che viene scelto per guidare il processo di sviluppo del prodotto. Esso definisce la struttura di lavoro che viene seguita per l'intero ciclo di vita del progetto. Con l'adozione del modello di sviluppo agile Scrum, questa sezione descrive le pratiche e gli eventi principali del _framework_, illustrando il modo in cui vengono utilizzati ed implementati dal team;
+        - *Pianificazione*: fornisce una roadmap dettagliata delle attività, delle risorse, e delle scadenze associate al progetto. In particolare, vengono pianificate le attività necessarie per raggiungere gli obiettivi previsti per ogni sprint, dall'inizio sino al termine del progetto, e la loro distribuzione temporale;
+        - *Preventivo*: basandosi sulla pianificazione eseguita a priori, determina la ripartizione delle ore produttive a disposizione di ogni componente del team nei vari ruoli per ogni sprint. Questo assicura il conseguimento degli obiettivi prefissati e un utilizzo oculato delle risorse. La suddivisione delle ore determina altresì il costo preventivato per ogni sprint;
+        - *Consuntivo*: partendo dalla rendicontazione delle ore produttive impiegate da ciascun membro del team eseguita a posteriori, determina la ripartizione effettiva delle ore osservata durante lo sprint e, di conseguenza, anche il costo effettivo. Inoltre, si conduce una breve analisi retrospettiva per giustificare le scelte effettuate nel preventivo, evidenziare eventuali discostamenti e delineare i cambiamenti nella strategia utilizzata per pianificare il resto del lavoro,  qualora dovessero rendersi necessari.
         
 ==== Piano di Qualifica
 
@@ -121,7 +124,7 @@ Strumento di calendario, utilizzato dal team per gestire impegni e attività in 
 Servizio di creazione di presentazioni multimediali, utilizzato dal team per assemblare i diari di bordo.
 
 ==== Google Sheets
-Servizio di creazione di _spreadsheet_, utilizzato dal team per la rendicontazione delle ore produttive impiegate da ciascun componente nel corso di uno sprint.
+Servizio di creazione di #glossary[spreadsheet], utilizzato dal team per la rendicontazione delle ore produttive impiegate da ciascun componente nel corso di uno sprint.
 
 ==== Google Meet
 Servizio per creare e partecipare a videochiamate, utilizzato dal team per gli incontri telematici con la Proponente.
@@ -135,7 +138,7 @@ Software per creare diagrammi e grafici di varia natura, utilizzato dagli Analis
 == Sviluppo
 
 === Descrizione e scopo
-Il processo di sviluppo include la serie di attività che devono essere svolte da parte del team #team affinchè questo possa riuscire nell'implementazione del prodotto software rispettando i requisiti e le date di scadenza concordate con la Proponente. In particolare, si ha:
+Il processo di sviluppo rappresenta la serie di attività che il team #team deve svolgere affinché, successivamente, riesca nell'implementazione del prodotto software, rispettando i requisiti e le date di scadenza concordate con la Proponente. In particolare, si ha:
         - *Analisi dei Requisiti*;
         - *Progettazione*;
         - *Codifica*;
@@ -183,7 +186,7 @@ I requisiti trovati vengono classificati nei seguenti modi:
 
     - *Qualità*:
 
-        un requisito di qualità stabilisce gli standard e i criteri che il sistema deve soddisfare per garantire prestazioni, affidabilità, sicurezza e altri aspetti relativi alla qualità;
+        un requisito di qualità stabilisce gli standard e i criteri che il sistema deve soddisfare per garantire prestazioni, affidabilità, sicurezza e altri aspetti correlati alla qualità;
 
     - *Vincolo*:
 
@@ -191,7 +194,7 @@ I requisiti trovati vengono classificati nei seguenti modi:
 
 ==== Identificazione dei requisiti
 
-I requisiti trovati avranno un codice univoco con la seguente sintassi:
+I requisiti trovati hanno un codice univoco con la seguente sintassi:
 
         *R[Importanza][Tipo][Numero]*
 
@@ -217,17 +220,18 @@ I requisiti trovati avranno un codice univoco con la seguente sintassi:
 
 ==== Descrizione e scopo 
 
-L'attività di progettazione verrà svolta dai Progettisti, i quali avranno il compito di definire le caratteristiche del prodotto finale basandosi sui requisiti specificati nel documento _Analisi dei Requisiti_. 
-La fase di progettazione segue l'analisi dei requisiti, nella quale sono definite le necessità e le aspettative per il prodotto. I Progettisti traducono queste informazioni in una struttura architteturale definita, organizzando il sistema in componenti specifici e definendo le interazioni tra di essi. In tal modo, la progettazione costituisce un passo essenziale nel percorso di sviluppo, contribuendo a trasformare i requisiti in un piano tangibile per la creazione del prodotto finale.
+L'attività di progettazione è affidata ai Progettisti, i quali devono definire le caratteristiche del prodotto finale basandosi sui requisiti specificati nel documento _Analisi dei Requisiti_. 
+La fase di progettazione segue l'analisi dei requisiti, dove sono definite le necessità e le aspettative per il prodotto. I Progettisti traducono queste informazioni in una struttura architteturale definita, organizzando il sistema in componenti specifici e definendo le interazioni tra di essi. In questo modo, la progettazione costituisce un passo essenziale nel percorso di sviluppo, contribuendo a trasformare i requisiti in un piano tangibile per la creazione del prodotto finale.
 
 Si definiscono tre sottoattività: 
 
-        + *_Technology Baseline_*: scelta e definizione delle tecnologie di base che saranno utilizzate per la realizzazione del sistema, comprende decisioni riguardanti linguaggi di programmazione, librerie e #glossary("framework"). Tale processo porterà alla creazione di un Proof of Concept(#glossary("PoC"));
+        + *_Technology Baseline_*: implica la selezione e la definizione delle tecnologie di base utilizzate per la realizzazione del sistema. Questo comprende decisioni relative a linguaggi di programmazione, librerie e _framework_. Tale processo porta alla creazione di un Proof of Concept (#glossary("PoC"));
+
                 Include:
-                - *Proof of Concept*: consiste nella creazione di una versione parziale del prodotto con alcune delle funzionalità determinate durante l'analisi dei requisiti con lo scopo di valutare la fattibilità del prodotto completo;
+                - *Proof of Concept*: consiste nella creazione di una versione parziale del prodotto, includendo alcune delle funzionalità stabilite durante l'analisi dei requisiti. L'obiettivo è valutare la fattibilità del prodotto completo;
                 - *scelte tecnologiche*: consiste nello stabilire quali tecnologie adottare per lo sviluppo del Poc, anche su consiglio della Proponente.
-        + *_Progettazione Architteturale_*: definizione ad alto livello dell'archittettura del sistema; si concentra sulla suddivisione del sistema in componenti e moduli, definendo le relazioni tra di essi e specificando le linee guida per l'organizzazione e l'interazione delle varie parti;
-        + *_Product Baseline_*: segna un punto stabile nel processo di progettazione, in cui le specifiche tecniche, le funzionalità principali e l'architettura del prodotto sono definite in modo dettagliato e accettate dalle parti coinvolte. Include tutti gli elementi essenziali e i requisiti chiave del prodotto che devono essere soddisfatti, fornendo una base solida per lo sviluppo continuo del prodotto. Questo processo porterà infine alla realizzazione di un _Minimum Viable Product_ (#glossary("MVP"));
+        + *_Progettazione Architetturale_*: definizione ad alto livello dell'architettura del sistema; si concentra sulla suddivisione del sistema in componenti e moduli, definendo le relazioni tra di essi e specificando le linee guida per l'organizzazione e l'interazione delle varie parti;
+        + *_Product Baseline_*: segna un punto stabile nel processo di progettazione, in cui le specifiche tecniche, le funzionalità principali e l'architettura del prodotto sono definite in modo dettagliato e accettate dalle parti coinvolte. Include tutti gli elementi essenziali e i requisiti chiave del prodotto che devono essere soddisfatti, fornendo una base solida per lo sviluppo continuo del prodotto. Questo processo porta infine alla realizzazione di un _Minimum Viable Product_ (#glossary("MVP"));
                 Include:
                 - #glossary("Design Patterns");
                 - Definizione delle classi;
@@ -250,8 +254,8 @@ Si definiscono tre sottoattività:
 === Codifica 
 
 ==== Descrizione e scopo 
-L'attività di codifica viene svolta dai Programmatori, che hanno come compito la traduzione delle decisioni progettuali in codice sorgente.
-I Programmatori seguono le linea guida e le _best practices_ stabilite durante la fase di progettazione architteturale.
+L'attività di codifica viene svolta dai Programmatori, i quali sono responsabili della traduzione delle decisioni progettuali nel codice sorgente.
+I Programmatori seguono le linea guida e le _best practices_ stabilite durante la fase di progettazione architetturale.
 
 ==== Aspettative 
 Ci si aspetta che il codice sviluppato rispetti determinate caratteristiche:
@@ -282,12 +286,12 @@ Questo impone quindi che, prima di andare ad effettuare la chiusura di una _Pull
 
 I _Feature branch_ vengono aperti a partire dalle issue create nell' _Issue Tracking System_ (vedi @its). Si procede poi ad associare una _Pull request_, a una o più issue collegate tra loro, per effettuare la verifica.
 
-Nel caso del repository _InnovaCity_ il branch _main_ viene utilizzato per la pubblicazione di cambiamenti _major_, cioè quando si è implementato un numero di funzionalità significativo all'avanzamento del progetto. In quel caso è il Responsabile che esegue l'approvazione finale.
+Nel caso del repository _InnovaCity_ il branch _main_ viene utilizzato per la pubblicazione di cambiamenti _major_, ovvero quando sono state implementate diverse funzionalità significative che contribuiscono all'avanzamento del progetto. In questa circostanza, è compito del Responsabile eseguire l'approvazione finale.
 
 ==== Analisi statica
-L'analisi statica rappresenta un'esplorazione approfondita del codice o della documentazione associata al prodotto. Questa metodologia mira a individuare potenziali problemi o irregolarità, senza attivare effettivamente il sistema software. Quando si tratta di documentazione, l'analisi statica si concentra sulla struttura, sulla coerenza, sulla completezza e sulla chiarezza del testo. In particolare, verifica la presenza di errori grammaticali, di formattazione e concettuali, garantendo un livello ottimale di qualità nel materiale consegnato.
+L'analisi statica rappresenta un'esplorazione approfondita del codice o della documentazione associata al prodotto. Questa metodologia mira a individuare potenziali problemi o irregolarità, senza eseguire effettivamente il sistema software. Quando si tratta di documentazione, l'analisi statica si concentra sulla struttura, sulla coerenza, sulla completezza e sulla chiarezza del testo. In particolare, verifica la presenza di errori grammaticali, di formattazione e concettuali, garantendo un livello ottimale di qualità nel materiale consegnato.
 
-Il Verificatore, nel contesto della documentazione o del codice, è tenuto a condurre un #glossary[walkthrough], o lettura a pettine, se tali elementi non sono mai stati verificati precedentemente. Tale processo prevede una revisione completa e ha come obiettivo una valutazione approfondita della struttura e del contenuto dell'intero documento. Di conseguenza, i walkthrough vengono effettuati soprattutto all'inzio e al termine del lavoro su un particolare documento, quando ci si avvicina ad una revisione.
+Il Verificatore, nel contesto della documentazione o del codice, ha l'incarico di condurre un #glossary[walkthrough], o lettura a pettine, se tali elementi non sono mai stati verificati precedentemente. Tale processo prevede una revisione completa e ha come obiettivo una valutazione approfondita della struttura e del contenuto dell'intero documento. Di conseguenza, i walkthrough vengono effettuati soprattutto all'inzio e al termine del lavoro su un particolare documento, quando ci si avvicina ad una revisione.
 
 GitHub offre una funzionalità di "review" all'interno delle Pull request, permettendo al Verificatore di visualizzare facilmente le ultime modifiche apportate al prodotto. Il Verificatore inserisce commenti specifici che indicano le correzioni o le migliorie necessarie e, al termine della review, la invia richiedendo le modifiche indicate; in seguito all'intervento correttivo dell'autore, il Verificatore esegue ulteriori revisioni fino a quando il documento non presenta più errori e rispetta i criteri di conformità richiesti.
 
@@ -331,10 +335,10 @@ I documenti che verranno prodotti sono:
 Ogni documento segue le fasi del seguente #glossary[workflow]:
 + Si crea un branch per lo sviluppo del documento nell'apposita repository _Docs_ e si mette in uso.
 + Si copia dall'apposita repository `Templates` il template relativo al file che si deve redigere, e lo si inserisce nella cartella appropriata.
-+ Si redige il documento o una sua sezione. Nel caso di documenti nuovi, in cui è necessario un elevato parallelismo di lavoro, è possibile usare _Google Drive_ per la prima stesura e successivamente caricare il documento all'interno del branch.
++ Si redige il documento o una sua sezione. Nel caso di documenti nuovi, in cui è necessario un elevato parallelismo di lavoro, è possibile usare Google Drive per la prima stesura e successivamente caricare il documento all'interno del branch.
 + Nel file `changelog.typ` si aggiunge una riga *in coda*, secondo il seguente formato: `<versione>,<data-modifica>,<descrizione-modifica>,<nome-autore>,<ruolo-autore>`; la versione segue le regole descritte nella @versionamento.
 + Si esegue la commit sul branch creato.
-+ Si apre una _pull request_ dal branch appena creato verso il branch `main`: se il documento non è pronto per la verifica, ma ha bisogno di ulteriori modifiche, si apre la _pull request_ in modalità `draft`, altrimenti in modalità normale, spostando la issue nell'apposita corsia _Ready to Review_.
++ Si apre una pull request dal branch appena creato verso il branch `main`: se il documento non è pronto per la verifica, ma ha bisogno di ulteriori modifiche, si apre la pull request in modalità `draft`, altrimenti in modalità normale, spostando la issue nell'apposita corsia "Ready to Review".
 + Per ulteriori modifiche richieste dal/dai verificatore/i si ripetono i punti, *in ordine*, dal punto _3_ al punto _5_.
 + Si elimina, *solo quando la pull request viene chiusa o risolta*, il branch creato.
 
@@ -461,14 +465,16 @@ Le #glossary[Corsie di Stato] descrivono lo stato attuale delle attività, all'i
 Per la condivisione veloce o la creazione di bozze si utilizza _Google Drive_. Uno dei suoi principali casi d'uso consiste nella collaborazione in tempo reale nella stesura di sezioni testuali ampie, da inserire successivamente nella documentazione (questo risulta particolarmente utile nel momento in cui il documento è alla sua prima stesura). Viene inoltre utilizzato come sistema per l'immagazzinamento di conoscenze acquisite durante lo svolgimento del progetto.
 
 === Tracciamento del Tempo Speso
-Al fine di tracciare il tempo speso nel corso del progetto, nei diversi ruoli, si userà uno spreadsheet appositamente creato, disponibile all'interno di _Google Drive_ dove, a fine giornata, ogni membro del team andrà ad inserire le proprie ore *produttive* svolte quel giorno, secondo la sua miglior stima del rapporto tra ore di orologio e ore produttive. Si inserisce _una sola_ riga per ogni giornata e nella descrizione si andranno ad inserire dei brevi titoli rappresentativi delle attività svolte.
+Al fine di tracciare il tempo speso nel corso del progetto, nei diversi ruoli, si utilizza uno spreadsheet appositamente creato, disponibile all'interno di Google Drive. A fine giornata, ogni membro del team inserisce le proprie ore *produttive* svolte quel giorno, secondo la sua miglior stima del rapporto tra ore di orologio e ore produttive. Si inserisce una sola riga per ogni giornata e nella descrizione si aggiungono brevi titoli rappresentativi delle attività svolte.
 
 === Repository
 
 Vengono utilizzate le seguenti _repository_:
-        - https://github.com/SWATEngineering/Docs: questa repository viene impiegata dal team per condividere e revisionare il codice sorgente legato alla documentazione del progetto. Viene utilizzata per collaborare, revisionare e mantenere aggiornati i documenti di lavoro, consentendo ai membri del team di contribuire e gestire in modo efficiente la documentazione;
-        - https://github.com/SWATEngineering/SWATEngineering.github.io: questa repository funge da piattaforma per i documenti compilati e approvati. Il sito web https://swatengineering.github.io/ rappresenta la versione web della documentazione finale e approvata dal team. È utilizzata per presentare al pubblico una visione consolidata e approvata dei documenti di progetto;
-        - https://github.com/SWATEngineering/InnovaCity: questa repository è dedicata alla condivisione e revisione del codice sorgente relativo al prodotto software "InnovaCity". È qui che il team lavora e collabora sul codice del prodotto stesso, consentendo una gestione centralizzata del lavoro di sviluppo e delle modifiche apportate al software.
+        - #link("https://github.com/SWATEngineering/Docs"): questa repository viene impiegata dal team per condividere e revisionare il codice sorgente legato alla documentazione del progetto. Viene utilizzata per collaborare, revisionare e mantenere aggiornati i documenti di lavoro, consentendo ai membri del team di contribuire e gestire in modo efficiente la documentazione;
+
+        - #link("https://github.com/SWATEngineering/SWATEngineering.github.io"): questa repository funge da piattaforma per i documenti compilati e approvati. Il sito web #link("https://swatengineering.github.io/") rappresenta la versione web della documentazione finale e approvata dal team. È utilizzata per presentare al pubblico una visione consolidata dei documenti di progetto;
+
+        - #link("https://github.com/SWATEngineering/InnovaCity"): questa repository è dedicata alla condivisione e revisione del codice sorgente relativo al prodotto software "InnovaCity". È qui che il team lavora e collabora sul codice del prodotto stesso, consentendo una gestione centralizzata del lavoro di sviluppo e delle modifiche apportate al software.
 
 == Verifica
 
@@ -530,15 +536,15 @@ Per poter prendere una qualsiasi decisione è necessario vi siano due condizioni
 === Pianificazione
 
 ==== Descrizione e scopo
-Il Responsabile assume il ruolo cruciale di pianificare dettagliatamente gli obiettivi per ciascuno sprint fino alla conclusione del progetto. Questo implica una distribuzione coerente del lavoro in linea con le scadenze fissate per le revisioni RTB, PB e CA. Il suo compito principale è delineare chiaramente come il team dovrebbe gestire e completare le attività relative allo sviluppo del software e alla redazione della documentazione in periodi di tempo specifici.
+Il Responsabile assume il ruolo cruciale di pianificare dettagliatamente gli obiettivi per ciascuno sprint fino alla conclusione del progetto. Questo implica una distribuzione coerente del lavoro in linea con le scadenze fissate per le revisioni RTB, PB e CA. Il suo compito principale consiste nel delineare chiaramente come il team dovrebbe gestire e completare le attività relative allo sviluppo del software e alla redazione della documentazione in periodi di tempo specifici.
 
-Oltre a definire gli obiettivi per ogni sprint, il Responsabile si occupa di stimare accuratamente il tempo necessario per ciascuna attività e di pianificare la distribuzione dei ruoli all'interno del team. Questa pianificazione è sensata rispetto all'andamento generale del progetto e agli obiettivi imminenti. Queste previsioni vengono formalizzate nel Piano di Progetto, diventando il punto di riferimento durante l'evento di Sprint Planning per definire gli obiettivi del successivo sprint.
+Oltre a definire gli obiettivi per ogni sprint, il Responsabile si occupa di stimare accuratamente il tempo necessario per ciascuna attività e di pianificare la distribuzione dei ruoli all'interno del team. Questa pianificazione è sensata rispetto all'andamento generale del progetto e agli obiettivi imminenti. Queste previsioni vengono formalizzate nel _Piano di Progetto_, diventando il punto di riferimento durante l'evento di Sprint Planning per definire gli obiettivi del successivo sprint.
 
-Eventuali variazioni nella distribuzione dei ruoli, rispetto alla pianificazione iniziale, vengono documentate e giustificate nel Consuntivo del Piano di Progetto. Questo approccio consente al team di adattarsi in modo flessibile alle esigenze emergenti, mantenendo sempre un quadro chiaro delle variazioni e delle ragioni che stanno dietro a queste modifiche.
+Eventuali variazioni nella distribuzione dei ruoli, rispetto alla pianificazione iniziale, vengono documentate e giustificate nel *Consuntivo* del _Piano di Progetto_. Questo approccio consente al team di adattarsi in modo flessibile alle esigenze emergenti, mantenendo costantemente un quadro chiaro delle variazioni e delle ragioni sottendono a tali modifiche.
 
 ==== Ruoli Progetto
 
-Durante il periodo di sviluppo del progetto, ogni membro assumerà 6 ruoli distinti con compiti diversificati, al fine di garantire una gestione completa ed efficace delle diverse fasi e aspetti del lavoro. Questi ruoli contribuiranno a promuovere la collaborazione sinergica e l'ottimizzazione delle risorse all'interno del team. 
+Durante il periodo di sviluppo del progetto, ciascun membro assume sei ruoli distinti, con compiti diversificati, al fine di garantire una gestione completa ed efficace delle diverse fasi e aspetti del lavoro. Questi ruoli contribuiscono a promuovere la collaborazione sinergica e l'ottimizzazione delle risorse all'interno del team.
 
 I ruoli assunti sono i seguenti:
 
@@ -579,7 +585,7 @@ I ruoli assunti sono i seguenti:
         - Studio del contesto applicativo e relativa complessità;
         - Specifica dei casi d'uso per comprendere in dettaglio i requisiti funzionali del sistema;
         - Raccolta dei requisiti per definire le necessità e le funzionalità richieste;
-        - Stesura del documento Analisi dei Requisiti;
+        - Stesura del documento _Analisi dei Requisiti_;
         - Creazione diagrammi UML;
 
 ===== Progettista
@@ -592,7 +598,7 @@ I ruoli assunti sono i seguenti:
         - Progettazione architetturale che miri all'economicità e alla manutenibilità del sistema;
         - Ottimizzazione delle prestazioni usando algoritmi efficienti e gestione memoria;
         - Gestione dei rischi: cerca di mitigare problemi che possono sorgere durante lo sviluppo;
-        - Redazione della Specifica tecnica e di una parte del documento Piano di Qualifica.
+        - Redazione del documento _Specifiche Tecniche_ e di una parte del documento _Piano di Qualifica_.
 
 ===== Programmatore
 
@@ -603,9 +609,9 @@ I ruoli assunti sono i seguenti:
         - Traduzione delle specifiche tecniche in codice funzionante;
         - Scrittura di codice chiaro, leggibile e mantenibile;
         - Creazione di test per la verifica del software;
-        - Ampliamento delle Specifiche Tecniche conforme alle esigenze del progetto.
+        - Ampliamento delle _Specifiche Tecniche_ conforme alle esigenze del progetto.
         - Risoluzione di bug e problemi di performance;
-        - Realizzazione del Manuale Utente;
+        - Realizzazione del _Manuale Utente_;
         - Collaborazione con il team per l'integrazione del codice e il mantenimento della coerenza del progetto.
 
 ===== Verificatore
@@ -622,7 +628,7 @@ I ruoli assunti sono i seguenti:
 
 ==== Cambio dei ruoli
 
-Per fare in modo che ogni membro svolga almeno 1 volta tutti i ruoli di cui sopra, il team si impegna a cambiarli ogni settimana.
+Per garantire che ogni membro svolga almeno una volta tutti i ruoli menzionati, il team si impegna a cambiarli ogni settimana.
 
 === Procedure 
 
@@ -653,7 +659,7 @@ Negli incontri interni possono partecipare solamente i membri del gruppo. Si svo
 Le linee guida per le riunioni:
                 + Prima dell'incontro avere un ordine del giorno, ovvero i punti eventuali da discutere;
                 + Discussione dei punti;
-                + Pianificazione attività per la settimana (valutate rispetto a quanto pianificato nel Piano di Progetto) e assegnazione issue.
+                + Pianificazione attività per la settimana (valutate rispetto a quanto pianificato nel _Piano di Progetto_) e assegnazione issue.
                 
         Alla fine dell'incontro:
                 + Il Responsabile ha il compito della stesura del verbale interno, fornendo una sintesi dei punti salienti dell'incontro. 
@@ -665,9 +671,8 @@ Gli incontri hanno due modalità:
 
 ===== Incontri Esterni 
 
-Negli incontri esterni i partecipanti sono i membri del team e i referenti della Proponente. Questi incontri sono pianificati ogni due settimane in concomitanza con l'inizio e fine sprint. Durante queste sessioni, i partecipanti del team hanno l'opportunità di presentare gli sviluppi recenti, condividere i progressi raggiunti e discutere eventuali sfide o questioni emerse nel corso del lavoro. 
-Inoltre si possono richiedere incontri di formazione specifici su particolari tecnologie, il che offre al team l'opportunità di approfondire la comprensione di una tecnologia specifica, imparare le _best practice_ e acquisire competenze più avanzate.
-
+Negli incontri esterni i partecipanti includono i membri del team e i referenti della Proponente. Questi incontri sono pianificati in concomitanza con l'inizio e la fine dello sprint. Durante queste sessioni, i partecipanti del team hanno l'opportunità di presentare gli sviluppi recenti, condividere i progressi raggiunti e discutere eventuali sfide o questioni emerse nel corso del lavoro. 
+In aggiunta, è possibile richiedere sessioni di formazione mirate su tecnologie specifiche, offrendo al team l'opportunità di approfondire la comprensione di una particolare tecnologia, imparare le _best practice_ e acquisire competenze più avanzate.
 Il Responsabile ha il compito della stesura del verbale esterno, che viene successivamente convalidato, con firma, dalla Proponente.
 
 === Metriche
