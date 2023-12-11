@@ -73,7 +73,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC1: Visualizzazione panoramica generale sensori
 - *Attore Principale*: amministrato pubblico. 
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'attore visualizza i panelli relativi ai dati dati propri dei sensori. 
+- *Postcondizioni*: l'attore visualizza i panelli relativi ai dati propri dei sensori. 
 - *Scenario Principale*:
   + l'attore accede al sistema; 
   + l'attore seleziona la visualizzazione della panoramica generale dei sensori;
@@ -228,7 +228,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC2.6: Visualizzazione pannello precipitazioni medie
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alle precipitazioni, in millimetri di pioggia, media tra tutti i sensori attivi negli ultimi cinque minuti, in formato numerico.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alle precipitazioni, in millimetri di pioggia, medie tra tutti i sensori attivi negli ultimi cinque minuti, in formato numerico.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale;
@@ -456,6 +456,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
 
+#figure(
+  image("assets/UML/UC4_Visualizzazione-dati-anomali-rilevati.png",width:70%),
+  caption: [UC4 Visualizzazione dati anomali rilevati]
+)
+
 === UC5: Visualizzazione allerte superamento soglie
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
@@ -465,6 +470,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
+
+#figure(
+  image("assets/UML/UC5_Visualizzazione-allerte-superamento-soglie.png",width:70%),
+  caption: [UC5 Visualizzazione allerte superamento soglie]
+)
 
 === UC6: Applicazione filtri
 - *Attore Principale*: amministratore pubblico.
@@ -619,6 +629,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Inclusioni*: UC21.
 - *Estensioni*: nessuna. 
 
+#figure(
+  image("assets/UML/UC10_Inserimento-dati-temperatura.png",width:100%),
+  caption: [UC10 Inserimento dati temperatura]
+)
+
 === UC11: Inserimento dati umidità
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
@@ -630,6 +645,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Specializzazioni*: nessuna. 
 - *Inclusioni*: UC21. 
 - *Estensioni*: nessuna. 
+
+#figure(
+  image("assets/UML/UC11_Inserimento-dati-umidità.png",width:100%),
+  caption: [UC11 Inserimento dati umidità]
+)
 
 === UC12: Inserimento dati velocità e direzione del vento
 - *Attore Principale*: sensore. 
@@ -643,6 +663,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Inclusioni*: UC21. 
 - *Estensioni*: nessuna.
 
+#figure(
+  image("assets/UML/UC12_Inserimento-dati-velocità-e-direzione-del-vento.png",width:120%),
+  caption: [UC12 Inserimento dati velocità e direzione del vento]
+)
+
 === UC13: Inserimento dati precipitazioni
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
@@ -655,7 +680,12 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Inclusioni*: UC21. 
 - *Estensioni*: nessuna.
 
-=== UC14: Inserimento dati inquinamento aria
+#figure(
+  image("assets/UML/UC13_Inserimento-dati-precipitazioni.png",width:100%),
+  caption: [UC13 Inserimento dati precipitazioni]
+)
+
+=== UC14: Inserimento dati inquinamento dell'aria
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
@@ -666,6 +696,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Specializzazioni*: nessuna. 
 - *Inclusioni*: UC21. 
 - *Estensioni*: nessuna.
+
+#figure(
+  image("assets/UML/UC14_Inserimento-dati-inquinamento-dell-aria.png",width:100%),
+  caption: [UC14 Inserimento dati inquinamento dell'aria]
+)
 
 === UC15: Inserimento dati livello bacini idrici
 - *Attore Principale*: sensore. 
@@ -679,6 +714,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Inclusioni*: UC21. 
 - *Estensioni*: nessuna.
 
+#figure(
+  image("assets/UML/UC15_Inserimento-dati-livello-bacini-idrici.png",width:100%),
+  caption: [UC15 Inserimento dati livello bacini idrici]
+)
+
 === UC16: Inserimento dati disponibilità parcheggi
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
@@ -690,6 +730,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Specializzazioni*: nessuna. 
 - *Inclusioni*: UC21. 
 - *Estensioni*: nessuna.
+
+#figure(
+  image("assets/UML/UC16_Inserimento-dati-disponibilità-parcheggi.png",width:100%),
+  caption: [UC16 Inserimento dati disponibilità parcheggi]
+)
 
 === UC17: Inserimento dati colonne di ricarica
 - *Attore Principale*: sensore. 
@@ -703,6 +748,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Inclusioni*: UC21. 
 - *Estensioni*: nessuna.
 
+#figure(
+  image("assets/UML/UC17_Inserimento-dati-colonne-di-ricarica.png",width:100%),
+  caption: [UC17 Inserimento dati colonne di ricarica]
+)
+
 === UC18: Inserimento dati biciclette elettriche
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
@@ -714,6 +764,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Specializzazioni*: nessuna. 
 - *Inclusioni*: UC21. 
 - *Estensioni*: nessuna.
+
+#figure(
+  image("assets/UML/UC18_Inserimento-dati-biciclette-elettriche.png",width:100%),
+  caption: [UC18 Inserimento dati biciclette elettriche]
+)
 
 === UC19: Inserimento dati riempimento zone ecologiche
 - *Attore Principale*: sensore. 
@@ -727,6 +782,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Inclusioni*: UC21. 
 - *Estensioni*: nessuna.
 
+#figure(
+  image("assets/UML/UC19_Inserimento-dati-riempimento-zone-ecologiche.png",width:100%),
+  caption: [UC19 Inserimento dati riempimento zone ecologiche]
+)
+
 === UC20: Inserimento dati congestione stradale
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
@@ -739,7 +799,12 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Inclusioni*: UC21. 
 - *Estensioni*: nessuna.
 
-=== UC21: Inserimento dati propri sensore
+#figure(
+  image("assets/UML/UC20_Inserimento-dati-congestione-stradale.png",width:100%),
+  caption: [UC20 Inserimento dati congestione stradale]
+)
+
+=== UC21: Inserimento dati relativi al sensore
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sensore allega i dati relativi al proprio stato al messaggio da inviare al sistema.
