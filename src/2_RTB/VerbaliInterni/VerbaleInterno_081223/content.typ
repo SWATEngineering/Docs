@@ -3,9 +3,9 @@
 #let participants = csv("participants.csv")
 
 = Partecipanti
-/ Inizio incontro: 10:30
-/ Fine incontro: 12:00
-/ Luogo incontro: Discord
+/ Inizio incontro: #inizio_incontro
+/ Fine incontro: #fine_incontro
+/ Luogo incontro: #luogo_incontro
 
 #table(
   columns: (3fr, 1fr),
