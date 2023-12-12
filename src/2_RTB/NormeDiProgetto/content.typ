@@ -83,7 +83,7 @@ Nel caso del repository _InnovaCity_ il branch _main_ viene utilizzato per la pu
 
 === Analisi dei Requisiti
 
-
+==== Scopo
 L’analisi dei requisiti, condotta dagli Analisti, rappresenta un’attività preliminare nello sviluppo di un sistema software. Questa attività mira a definire le funzionalità che il nuovo prodotto deve offrire. L'obiettivo principale è quello di identificare, in modo chiaro e completo, i requisiti che il software sviluppato deve soddisfare, al fine di rispondere adeguatamente alle esigenze degli utenti e della Proponente.
 
 L'analisi si compone di varie fasi:
@@ -330,7 +330,87 @@ Il gruppo utilizza:
 
         - *Typst*: linguaggio per la stesura dei documenti, valida alternativa a Latex;
         - *Google Docs*: per la stesura di bozze e appunti;
-        - *PlantUML*: linguaggio usato per la creazione dei diagrammi UML.
+        - *Draw.io*: linguaggio usato per la creazione dei diagrammi UML.
+
+==== Diagrammi dei casi d'uso
+
+Un diagramma dei casi d'uso rappresenta uno strumento di modellazione ampiamente impiegato per documentare e delineare le funzionalità di un sistema. La sua utilità risiede nel tracciare i flussi operativi attraverso una rappresentazione visiva, descrivendo il modo in cui un utente interagisce con il sistema.
+
+Gli scenari d'uso sono organizzati in sequenze di azioni, illustrando le operazioni necessarie per consentire a un utente di portare a termine una specifica attività (realizzare uno scopo), e sono interconnessi mediante linee. Questo tipo di diagramma risulta particolarmente prezioso nella progettazione di sistemi, in quanto offre un'illustrazione rapida e intuitiva delle dinamiche di lavoro e delle interazioni tra l'utente e il sistema.
+
+È fondamentale notare che la rappresentazione fornita dai diagrammi dei casi d'uso non si occupa di discutere dettagli implementativi, poiché il loro scopo principale è descrivere la funzionalità, considerandola come un elemento esterno al sistema.
+
+I diagrammi dei casi d'uso contengono:
+        - *Attore*: è un agente esterno che interagisce con il sistema. Un attore è una qualsiasi entità che può interagire con il sistema, infatti ogni caso d'uso determina una funzionalità che viene messa a disposizione di tale attore, senza fornire però dettagli implementativi.
+                
+                A livello di diagramma, l'attore viene rappresentato come un omino stilizzato, identificabile mediante un'etichetta univoca e rappresentativa, al disotto di tale figura.
+
+                #figure(
+                        image(
+                                "assets/imgs/Attore.png",
+                                width: 15%
+                        ),
+                        caption: "Figura rappresentante un attore."
+                )
+
+        - *Caso d'uso*: delineano le operazioni eseguibili dall'utente sul sistema. Un singolo caso d'uso si compone di una breve esposizione delle funzioni messe a disposizione del sistema per uno o più utenti nell'ambito di un software. In modo specifico, offre una descrizione dettagliata del comportamento dell'utente interagendo con il software.
+
+                Generalmente, un caso d'uso è costituito da una sequenza di situazioni che esplicitano le diverse eventualità che possono manifestarsi durante l'interazione tra l'utente e il software. La sua rappresentazione comprende un'identificazione univoca, ovvero UCx.y (dove x indica il numero del caso d'uso, e y indica il fatto che stiamo trattando un eventuale sotto-caso d'uso del caso d'uso UCx), seguita da una concisa ma completa descrizione della funzione stessa.
+
+                Ogni caso d'uso discuterà i seguenti punti:
+                        - *Attore principale*: l'attore che desidera compiere lo scopo rappresentato dal caso d'uso;
+                        - *Precondizioni*: stato in cui il sistema si deve trovare prima che la funzionalità rappresentata dal caso d'uso venga iniziata;
+                        - *Postcondizioni*: stato in cui il sistema si troverà una volta compiuta la funzionalità rappresentata dal caso d'uso;
+                        - *Scenario principale*: descizione accurata della funzionalità rappresentata dal caso d'uso;
+                        - *Specializzazioni*: nel caso di uno use case generale, vengono indicati i codici dei casi d'uso che lo specializzano;
+                        - *Inclusioni*: vengono specificati i codici dei casi d'uso che vengono inclusi nel caso d'uso trattato;
+                        - *Estensioni*: vengono specificati i codici dei casi d'uso che rappresentano scenari secondari.
+
+                Ciascun caso d'uso sarà connesso attraverso una linea continua agli attori che hanno autorizzazioni per accedere a quella particolare funzione.
+
+                #figure(
+                        image(
+                                "assets/imgs/UseCase.png",
+                                width: 70%
+                        ),
+                        caption: "Figura rappresentante un caso d'uso."
+                )
+
+In ogni diagramma dei casi d'uso possono essere definite:
+        - *Generalizzazioni*: 
+                il concetto di generalizzazione può essere esteso sia agli attori che ai casi d'uso. La generalizzazione di un attore si verifica quando un attore di livello superiore, dotato di abilità più generiche, viene specializzato in comportamenti più specifici nei sottostanti attori. Ogni attore sottostante eredita le funzionalità dal suo attore padre, integrandole con ulteriori aspetti rilevanti al proprio contesto.
+
+                Per quanto riguarda i casi d'uso, i casi figli hanno la possibilità di aggiungere o modificare il comportamento dei casi d'uso ereditati dal caso padre. Tutte le funzionalità non ridefinite nei casi figlio mantengono la definizione ereditata. La generalizzazione degli attori e dei casi d'uso è simboleggiata da una freccia continua con triangolo vuoto bianco, che si estende da un elemento figlio a un elemento padre.
+                #figure(
+                        image(
+                                "assets/imgs/GeneralizzazioneAttore.png",
+                                width: 40%
+                        ),
+                        caption: "Figura rappresentante una generalizzazione tra attori."
+                )
+                #figure(
+                        image(
+                                "assets/imgs/GeneralizzazioneUseCase.png",
+                                width: 70%
+                        ),
+                        caption: "Figura rappresentante una generalizzazione tra casi d'uso."
+                )
+        - *Inclusioni*: Supponiamo che vi sia una relazione di inclusione tra un caso d'uso A e un caso d'uso B se ogni istanza del caso d'uso A deve necessariamente eseguire le istanze del caso d'uso B. Questo assegna al caso d'uso A la responsabilità di eseguire il caso d'uso B, eliminando la duplicazione e favorendo il riutilizzo di una struttura comune. La connessione di inclusione viene simboleggiata da una freccia tratteggiata che collega il caso d'uso A a tutti i casi d'uso inclusi, come nel caso del caso d'uso B nell'esempio. Sopra la freccia verrà annotata la direttiva "include".
+                #figure(
+                        image(
+                                "assets/imgs/UseCaseInclude.png",
+                                width: 70%
+                        ),
+                        caption: "Figura rappresentante un' inclusione tra casi d'uso."
+                )
+        - *Estensioni*: Supponiamo che nell'ambito dei diagrammi dei casi d'uso UML, l'estensione rappresenti una connessione tra due casi d'uso, A e B, indicando che ogni istanza del caso d'uso A può eseguire anche il caso d'uso B in maniera condizionata. L'esecuzione del caso d'uso B avviene soltanto in specifiche circostanze o sotto condizioni particolari durante l'esecuzione del caso d'uso A, interrompendo temporaneamente il flusso del caso d'uso A. La responsabilità dell'esecuzione del caso d'uso esteso (B) ricade su chi estende (nel caso, il caso d'uso B). Questa relazione viene visualizzata graficamente con una freccia tratteggiata dal caso d'uso esteso (B) al caso d'uso base (A), con l'etichetta "extend".
+                #figure(
+                        image(
+                                "assets/imgs/UseCaseExtend.png",
+                                width: 70%
+                        ),
+                        caption: "Figura rappresentante un' estensione tra casi d'uso."
+                )
 
 == Gestione della Configurazione
 
