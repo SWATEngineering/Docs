@@ -16,7 +16,7 @@
 
 == Piano di Progetto
 === Dettaglio pianificazione
-Gli analisti hanno trovato difficoltà nel riuscire a pianificare gli sprint con lunga prospettiva, sia nel determinare il tempo necessario per le attività, sia nello stimare il progresso raggiunto in sprint molto lontani. Per questo motivo, è stato stabilito che si chiederà al Committente dei chiarimenti sul livello di dettaglio richiesto in tale sezione.
+Il Responsabile ha riscontrato difficoltà nella pianificazione degli sprint a lungo termine, sia nella definizione del tempo necessario per le attività, sia nell'effettuare stime accurate del progresso in sprint distanti nel tempo. Di conseguenza, si è deciso di richiedere al Committente ulteriori chiarimenti in merito al livello di dettaglio richiesto per questa sezione.
 
 === Analisi dei rischi
 Durante l'incontro, è stato suggerito e concordato che, all'interno dell'analisi dei rischi del PdP, andrà aggiunta come problematica la sessione di esami che i membri del gruppo dovranno sostenere, in un momento che sta all'interno del periodo di lavoro del gruppo. Questo perché è stato rilevato che in questo periodo, i membri del gruppo avranno meno tempo da dedicare al progetto e quindi potrebbero esserci dei ritardi.
