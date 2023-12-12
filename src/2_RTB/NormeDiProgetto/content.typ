@@ -360,7 +360,7 @@ I diagrammi dei casi d'uso sono composti da:
                 Ogni caso d'uso discuterà i seguenti punti:
                         - *Attore principale*: l'attore che desidera compiere lo scopo rappresentato dal caso d'uso;
                         - *Precondizioni*: stato in cui il sistema si deve trovare prima dell'avvio della funzionalità rappresentata dal caso d'uso;
-                        - *Postcondizioni*: stato in cui il sistema si troverà una volta compiuta la funzionalità rappresentata dal caso d'uso;
+                        - *Postcondizioni*: stato in cui il sistema si troverà dopo che l'utente avrà portato a termine lo scopo rappresentato dal caso d'uso;
                         - *Scenario principale*: descizione accurata della funzionalità rappresentata dal caso d'uso;
                         - *Specializzazioni*: nel caso di uno use case generale, vengono indicati i codici dei casi d'uso che lo specializzano;
                         - *Inclusioni*: vengono specificati i codici dei casi d'uso che vengono inclusi nel caso d'uso trattato;
