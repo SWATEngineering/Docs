@@ -358,7 +358,7 @@ I diagrammi dei casi d'uso sono composti da:
                 Generalmente, un caso d'uso è costituito da una sequenza di situazioni che esplicitano le diverse eventualità che possono manifestarsi durante l'interazione tra l'utente e il software. La sua rappresentazione comprende un'identificazione univoca, espressa come UCx.y (dove x indica il numero del caso d'uso, e y indica il fatto che stiamo trattando un eventuale sotto-caso d'uso del caso d'uso UCx), seguita da una concisa ma completa descrizione della funzione stessa.
 
                 Ogni caso d'uso discute i seguenti punti:
-                        - *Attore principale*: l'attore che desidera compiere lo scopo rappresentato dal caso d'uso;
+                        - *Attore principale*: l'attore che intende compiere lo scopo rappresentato dal caso d'uso;
                         - *Precondizioni*: stato in cui il sistema si deve trovare prima dell'avvio della funzionalità rappresentata dal caso d'uso;
                         - *Postcondizioni*: stato in cui il sistema si troverà dopo che l'utente avrà portato a termine lo scopo rappresentato dal caso d'uso;
                         - *Scenario principale*: descizione accurata della funzionalità rappresentata dal caso d'uso;
