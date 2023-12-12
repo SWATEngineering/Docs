@@ -338,7 +338,7 @@ Un diagramma dei casi d'uso rappresenta uno strumento di modellazione ampiamente
 
 Gli scenari d'uso sono organizzati in sequenze di azioni, illustrando le operazioni necessarie per consentire a un utente di portare a termine una specifica attività (realizzare uno scopo), e sono interconnessi mediante linee. Questo tipo di diagramma risulta particolarmente prezioso nella progettazione di sistemi, in quanto offre un'illustrazione rapida e intuitiva delle dinamiche di lavoro e delle interazioni tra l'utente e il sistema.
 
-È fondamentale notare che la rappresentazione fornita dai diagrammi dei casi d'uso non si occupa di discutere dettagli implementativi, poiché il loro scopo principale è descrivere la funzionalità, considerandola come un elemento esterno al sistema.
+È fondamentale notare che la rappresentazione fornita dai diagrammi dei casi d'uso non si addentra nei dettagli implementativi, poiché il loro scopo principale è descrivere la funzionalità, considerandola come un elemento esterno al sistema.
 
 I diagrammi dei casi d'uso contengono:
         - *Attore*: è un agente esterno che interagisce con il sistema. Un attore è una qualsiasi entità che può interagire con il sistema, infatti ogni caso d'uso determina una funzionalità che viene messa a disposizione di tale attore, senza fornire però dettagli implementativi.
