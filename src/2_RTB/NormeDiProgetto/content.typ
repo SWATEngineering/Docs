@@ -212,9 +212,9 @@ I requisiti trovati hanno un codice univoco con la seguente sintassi:
                 per ogni requisito aggiunto il numero viene incrementato.
 
 ==== Metriche
-        - *MROS*: requisiti obbligatori soddisfatti;
-        - *MRDS*: requisiti desiderabili soddisfatti;
-        - *MROPZS*: requisiti opzionali soddisfatti.
+        - *ROS*: Requisiti Obbligatori Soddisfatti;
+        - *RDS*: Requisiti Desiderabili Soddisfatti;
+        - *ROPS*: Requisiti Opzionali Soddisfatti.
 
 === Progettazione 
 
@@ -243,10 +243,11 @@ Si definiscono tre sottoattività:
                 - Test di Unità su ogni componente.
 
 ==== Metriche
-        - *MAC*: accoppiamento tra classi;
-        - *MATC*: attributi per classe;
-        - *MPM*: parametri per metodo;
-        - *MLCM*: linee di codice per metodo.
+        - *SFIN*: Structure Fan In;
+        - *SFOUT*: Structure Fan Out;
+        - *ATC*: Attributi per Classe;
+        - *PM*: Parametri per Metodo;
+        - *LCM*: Linee di Codice per Metodo.
 
 ==== Diagrammi UML dei casi d'uso
 [...]
@@ -269,10 +270,10 @@ Ci si aspetta che il codice sviluppato rispetti determinate caratteristiche:
 [...]
 
 ==== Metriche
-        - *MCCM*: Complessità Ciclomatica per metodo;
-        - *MCC*: Code Coverage;
-        - *MSC*: Statement Coverage;
-        - *MBC*: Branch Coverage.
+        - *MCCM*: complessità ciclomatica per metodo;
+        - *MCC*: code coverage;
+        - *MSC*: statement coverage;
+        - *MBC*: branch coverage.
 
 === Verifica
 
@@ -443,8 +444,9 @@ Il gruppo utilizza:
         - *GitHub*: una piattaforma di hosting per progetti di sviluppo software basati su Git. Fornisce un sistema di controllo delle versioni distribuito e strumenti per la gestione del codice sorgente, delle issue e delle pull request, facilitando la collaborazione all'interno di un team di sviluppo.
 
 === Metriche
-        - *MCO*: correttezza ortografica;
-        - *MIG*: indice di Gulpease.
+        - *IG*: Indice Gulpease;
+        - *CO*: Correttezza Ortografica.
+        
 
 == Gestione della Configurazione
 
@@ -676,12 +678,129 @@ In aggiunta, è possibile richiedere sessioni di formazione mirate su tecnologie
 Il Responsabile ha il compito della stesura del verbale esterno, che viene successivamente convalidato, con firma, dalla Proponente.
 
 === Metriche
+        - *BAC*: Budget At Completion;
+        - *EV*: Earned Value; 
+        - *PV*: Planned Value;
+        - *SPI*: Schedule Performance Index;
+        - *SV*: Schedule Variance.
 
-        - *MVP*: Valore Pianificato;
-        - *MCE*: Costo Effettivo;
-        - *MVdP*: Variazione di Piano;
-        - *MVC*: Variazione di Costo;
-        - *MVR*: Variazione dei Requisiti.
 
 = Metriche per la qualità
-[...]
+
+== Metriche per la qualità di processo
+
+=== Fornitura
+
+        - *BAC*: Budget At Completion - indica il budget totale pianificato per il completamento del progetto;
+
+        - *EV*: Earned Value - rappresenta il valore prodotto dal progetto ossia il valore dei #glossary("deliverable") rilasciati fino al momento della misurazione in seguito alle attività svolte
+
+                Formula:  $"EV" = "Percentuale di completamento del lavoro" dot "BAC"$;
+
+        - *PV*: Planned Value - il valore del lavoro pianificato fino a un dato momento
+
+                Formula: $"PV" = "Percentuale di pianificazione del lavoro" dot "BAC"$;
+
+        - *AC*: Actual Cost - il costo effettivo sostenuto fino a un dato momento;
+
+        - *CPI*: Cost Performance Index - misura l'efficienza del costo del lavoro svolto fino a un dato momento
+                
+                Formula: $"CPI" = "EV" / "AC"$;
+
+        - *SPI*: Schedule Performance Index - misura l'efficienza del tempo rispetto alla pianificazione del progetto. Fornisce un indicatore numerico che rappresenta il rapporto tra il lavoro effettivamente eseguito (o il valore guadagnato) e il lavoro pianificato fino a un determinato punto nel tempo. Aiuta a valutare quanto il progetto sta rispettando il programma pianificato
+
+                Formula: $"SPI" = "EV" / "PV"$;
+
+        - *EAC*: Estimated at Completion - revisione del valore stimato per la realizzazione del progetto, ossia il BAC rivisto allo stato corrente del progetto
+
+                Formula: $"EAC" = "BAC" / "CPI"$;
+
+        - *ETC*: Estimated To Completion - stima del costo aggiuntivo necessario per completare il progetto
+
+                Formula: $"ETC" = "EAC" - "AC"$;
+
+        - *VAC*: Variance at Completion - la differenza tra il budget previsto e il budget attuale alla fine del progetto
+
+                Formula: $"VAC" = "BAC" - "EAC"$;
+
+        - *SV*: Schedule Variance - indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate
+
+                Formula: $"SV" = "EV" - "PV"$;
+
+        - *CV*: Cost Variance - la differenza tra il valore del lavoro effettivamente svolto e il costo effettivo del lavoro svolto fino a un dato momento
+                
+                Formula: $ "CV" = "EV" - "AC"$;
+
+        - *BV*: Budget Variance - indica se alla data corrente si è speso di più o di meno rispetto a quanto inizialmente previsto nel budget
+                
+                Formula: $"BV" = "PV" - "AC"$.
+
+=== Codifica
+
+      -  *CCM*: Complessità Ciclomatica per Metodo - quantifica la complessità del codice misurando il numero di percorsi linearmente indipendenti attraverso il grafo di controllo di flusso del metodo. Più è alta la complessità ciclomatica, maggiore è la complessità del codice
+
+                Formula: $"MCCM" = "e" − "n" + 2$, con:
+
+                        - e: numero di archi del grafo del flusso di esecuzione del metodo;
+                        - n: numero di vertici del grafo del flusso di esecuzione del metodo.
+
+        - *CC*: Code Coverage - numero di linee di codice convalidate con successo nell'ambito di una procedura di test
+
+                Formula: $"MCC" = "linee di codice percorse" / "linee di codice totali" dot 100$;
+
+        - *PTCP*: Passed Test Cases Percentage - rappresenta la percentuale di casi di test che sono stati eseguiti con successo rispetto al totale dei casi di test previsti
+
+                Formula: $"PTCP" = "test superati" / "test totali" dot 100$;
+
+        - *FTCP*: Failed Test Cases Percentage - rappresenta la percentuale di casi di test che non sono stati superati rispetto al totale dei casi di test previsti
+
+                Formula: $"FTCP" = "test falliti" / "test totali" dot 100$.
+
+=== Documentazione
+
+        - *IG*: Indice Gulpease - metrica utilizzata per valutare la leggibilità di un testo in lingua italiana.
+             L'Indice Gulpease tiene conto di due variabili linguistiche: la lunghezza delle parole e la lunghezza delle frasi. La formula per calcolare l'indice è la seguente:
+
+             $ "IG" = 89 + (300 dot "Nf" - "Nl")/"Np"$, con:
+
+                - *Nf* \u{27F6} indica il numero delle frasi;
+                - *Nl* \u{27F6} indica il numero delle lettere;
+                - *Np* \u{27F6} indica il numero delle parole.
+
+                L'indice fornisce un punteggio che varia da 0 a 100. Di seguito le possibili interpretazioni:
+
+                        - 0-29: Testo difficile da leggere;
+                        - 30-49: Testo leggibile con sforzo;
+                        - 50-59: Testo abbastanza leggibile;
+                        - 60-69: Testo leggibile;
+                        - 70-79: Testo facile da leggere;
+                        - 80-89: Testo molto facile da leggere;
+                        - 90-100: Testo estremamente facile da leggere. 
+
+        - *CO*: Correttezza ortografica - numero errori grammaticali ed ortografici in un documento.
+
+== Metriche per la qualità di prodotto
+
+        - *ROS*: Requisiti Obbligatori Soddisfatti - la percentuale di requisiti obbligatori soddisfatti dal prodotto
+
+                Formula: $"ROS" = "requisiti obbligatori soddisfatti" / "requisiti obbligatori totali" dot 100$;
+
+        - *RDS*: Requisiti Desiderabili Soddisfatti - la perecentuale di requisiti desiderabili soddisfatti dal prodotto
+
+                Formula: $"RDS" =  "requisiti desiderabili soddisfatti" / "requisiti desiderabili totali" dot 100$;
+
+        - *ROPS*: Requisiti Opzionali Soddisfatti - la percentuale di requisiti opzionali soddisfatti dal prodotto
+
+                Formula: $"ROPS" = "requisiti opzionali soddisfatti" / "requisiti opzionali totali" dot 100$;
+
+        - *FU*: Facilità di utilizzo - quantità di click che l'utente deve effettuare per raggiungere un obiettivo desiderato;
+
+        - *SFIN*: Structure Fan In - rappresenta il numero di moduli o componenti che chiamano un modulo o una funzione specifica; un fan-in elevato indica che molte parti del sistema dipendono da un particolare modulo. Questo può essere un segno positivo di riusabilità, in quanto il modulo è utilizzato in molte parti del sistema;
+
+        - *SFOUT*: Structure Fan Out - rappresenta il numero di moduli o funzioni chiamati da un modulo o una funzione specifica; un fan-out elevato può indicare che un modulo ha molte dipendenze da altri moduli. Questo può portare a una maggiore complessità del sistema, poiché le modifiche in un modulo possono richiedere modifiche in molti altri moduli;
+
+        - *ATC*: Attributi per Classe - rappresenta il numero di attributi appartenenti ad una classe;
+
+        - *PM*: Parametri per Metodo - rappresenta il numero di parametri appartenenti ad un metodo;
+
+        - *LCM*: Linee di Codice per Metodo - rappresenta il numero di linee di codice che costituiscono un metodo.
