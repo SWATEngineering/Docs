@@ -353,7 +353,7 @@ I diagrammi dei casi d'uso sono composti da:
                         caption: "Figura rappresentante un attore."
                 )
 
-        - *Caso d'uso*: delineano le operazioni eseguibili dall'utente sul sistema. Un singolo caso d'uso si compone di una breve esposizione delle funzioni messe a disposizione del sistema per uno o più utenti nell'ambito di un software. In modo specifico, offre una descrizione dettagliata del comportamento dell'utente interagendo con il software.
+        - *Caso d'uso*: delinea le operazioni eseguibili dall'utente sul sistema. Un singolo caso d'uso si compone di una breve esposizione delle funzioni messe a disposizione del sistema per uno o più utenti nell'ambito di un software. In modo specifico, offre una descrizione dettagliata del comportamento dell'utente mentre interagisce con il software.
 
                 Generalmente, un caso d'uso è costituito da una sequenza di situazioni che esplicitano le diverse eventualità che possono manifestarsi durante l'interazione tra l'utente e il software. La sua rappresentazione comprende un'identificazione univoca, ovvero UCx.y (dove x indica il numero del caso d'uso, e y indica il fatto che stiamo trattando un eventuale sotto-caso d'uso del caso d'uso UCx), seguita da una concisa ma completa descrizione della funzione stessa.
 
