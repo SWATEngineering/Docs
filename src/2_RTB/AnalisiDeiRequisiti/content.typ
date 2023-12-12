@@ -1,5 +1,5 @@
 #import "meta.typ" : title
-#import "functions.typ" : glossary, team, modulo, requirements_table
+#import "functions.typ" : glossary, team, modulo, requirements_table, generate_requirements_array
 
 #set list(marker: ([•], [--]))
 #set enum(numbering: "1.a.")
@@ -912,11 +912,12 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   )
 )
 
-#requirements_table("ROF", requisiti_funzionali)
+#let requisiti_funzionali_con_codice = generate_requirements_array("F", requisiti_funzionali)
+#requirements_table(requisiti_funzionali_con_codice)
 
 
 == Requisiti di qualità
-#let requisiti_qualità = (
+#let requisiti_qualita = (
   (
   "Obbligatorio","Il superamento di test che dimostrino il corretto funzionamento dei servizi utilizzati e delle funzionalità implementate. La copertura di test deve essere almeno dell'80% e deve essere dimostrata tramite report.","Capitolato",
   ),
@@ -931,7 +932,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   )
 )
 
-#requirements_table("ROQ", requisiti_qualità)
+#let requisiti_qualita_con_codice = generate_requirements_array("Q", requisiti_qualita)
+#requirements_table(requisiti_qualita_con_codice)
 
 == Requisiti di vincolo
 #let requisiti_vincolo = (
@@ -967,7 +969,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   )
 )
 
-#requirements_table("RDV", requisiti_vincolo)
+#let requisiti_vincolo_con_codice = generate_requirements_array("V", requisiti_vincolo)
+#requirements_table(requisiti_vincolo_con_codice)
 
 == Tracciamento
 === Requisiti funzionali - Fonti
@@ -976,7 +979,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   inset: 10pt,
   align: horizon,
   [*Requisiti*], [*Fonti*],
-  ..requisiti_funzionali.map(content => (content.at(0),content.at(2))).flatten().map(content => [#content])
+  ..requisiti_funzionali_con_codice.map(content => (content.at(0),content.at(3))).flatten().map(content => [#content])
 )
 
 === Requisiti qualità - Fonti
@@ -985,7 +988,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   inset: 10pt,
   align: horizon,
   [*Requisiti*], [*Fonti*],
-  ..requisiti_qualità.map(content => (content.at(0),content.at(2))).flatten().map(content => [#content])
+  ..requisiti_qualita_con_codice.map(content => (content.at(0),content.at(3))).flatten().map(content => [#content])
 )
 
 === Requisiti vincolo - Fonti
@@ -994,23 +997,23 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   inset: 10pt,
   align: horizon,
   [*Requisiti*], [*Fonti*],
-  ..requisiti_vincolo.map(content => (content.at(0),content.at(2))).flatten().map(content => [#content])
+  ..requisiti_vincolo_con_codice.map(content => (content.at(0),content.at(3))).flatten().map(content => [#content])
 )
 
 == Riepilogo
-#let funzionale_obb = requisiti_funzionali.filter(content => content.at(1) == "Obbligatorio").len()
-#let funzionale_des = requisiti_funzionali.filter(content => content.at(1) == "Desiderabile").len()
-#let funzionale_opz = requisiti_funzionali.filter(content => content.at(1) == "Opzionale").len()
+#let funzionale_obb = requisiti_funzionali.filter(content => content.at(0) == "Obbligatorio").len()
+#let funzionale_des = requisiti_funzionali.filter(content => content.at(0) == "Desiderabile").len()
+#let funzionale_opz = requisiti_funzionali.filter(content => content.at(0) == "Opzionale").len()
 #let funzionale_tot = funzionale_des + funzionale_obb + funzionale_opz
 
-#let qualità_obb = requisiti_qualità.filter(content => content.at(1) == "Obbligatorio").len()
-#let qualità_des = requisiti_qualità.filter(content => content.at(1) == "Desiderabile").len()
-#let qualità_opz = requisiti_qualità.filter(content => content.at(1) == "Opzionale").len()
+#let qualità_obb = requisiti_qualita.filter(content => content.at(0) == "Obbligatorio").len()
+#let qualità_des = requisiti_qualita.filter(content => content.at(0) == "Desiderabile").len()
+#let qualità_opz = requisiti_qualita.filter(content => content.at(0) == "Opzionale").len()
 #let qualità_tot = qualità_des + qualità_obb + qualità_opz
 
-#let vincolo_obb = requisiti_vincolo.filter(content => content.at(1) == "Obbligatorio").len()
-#let vincolo_des = requisiti_vincolo.filter(content => content.at(1) == "Desiderabile").len()
-#let vincolo_opz = requisiti_vincolo.filter(content => content.at(1) == "Opzionale").len()
+#let vincolo_obb = requisiti_vincolo.filter(content => content.at(0) == "Obbligatorio").len()
+#let vincolo_des = requisiti_vincolo.filter(content => content.at(0) == "Desiderabile").len()
+#let vincolo_opz = requisiti_vincolo.filter(content => content.at(0) == "Opzionale").len()
 #let vincolo_tot = vincolo_des + vincolo_obb + vincolo_opz
 
 #table(
