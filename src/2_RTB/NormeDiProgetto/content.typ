@@ -366,7 +366,7 @@ I diagrammi dei casi d'uso sono composti da:
                         - *Inclusioni*: vengono specificati i codici dei casi d'uso che vengono inclusi nel caso d'uso trattato;
                         - *Estensioni*: vengono specificati i codici dei casi d'uso che rappresentano scenari secondari.
 
-                Ciascun caso d'uso sarà connesso attraverso una linea continua agli attori che hanno autorizzazioni per accedere a quella particolare funzione.
+                Ciascun caso d'uso è connesso, attraverso una linea continua, agli attori che hanno autorizzazioni per accedere a quella particolare funzione.
 
                 #figure(
                         image(
