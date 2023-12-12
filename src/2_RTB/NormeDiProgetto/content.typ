@@ -403,7 +403,7 @@ In ogni diagramma dei casi d'uso possono essere definite:
                         ),
                         caption: "Figura rappresentante un' inclusione tra casi d'uso."
                 )
-        - *Estensioni*: Supponiamo che nell'ambito dei diagrammi dei casi d'uso UML, l'estensione rappresenti una connessione tra due casi d'uso, A e B, indicando che ogni istanza del caso d'uso A può eseguire anche il caso d'uso B in maniera condizionata. L'esecuzione del caso d'uso B avviene soltanto in specifiche circostanze o sotto condizioni particolari durante l'esecuzione del caso d'uso A, interrompendo temporaneamente il flusso del caso d'uso A. La responsabilità dell'esecuzione del caso d'uso esteso (B) ricade su chi estende (nel caso, il caso d'uso B). Questa relazione viene visualizzata graficamente con una freccia tratteggiata dal caso d'uso esteso (B) al caso d'uso base (A), con l'etichetta "extend".
+        - *Estensioni*: nel contesto dei diagrammi dei casi d'uso UML, la relazione di estensione indica una connessione tra due casi d'uso, A e B, segnalando che ogni istanza del caso d'uso A può condizionalmente eseguire anche il caso d'uso B. L'esecuzione del caso d'uso B avviene soltanto in specifiche circostanze o sotto condizioni particolari durante l'esecuzione del caso d'uso A, interrompendo temporaneamente il flusso del caso d'uso A. La responsabilità dell'esecuzione del caso d'uso esteso (B) ricade su chi estende (nel caso, il caso d'uso B). Questa relazione viene visualizzata graficamente con una freccia tratteggiata dal caso d'uso esteso (B) al caso d'uso base (A), con l'etichetta "extend".
                 #figure(
                         image(
                                 "assets/imgs/UseCaseExtend.png",
