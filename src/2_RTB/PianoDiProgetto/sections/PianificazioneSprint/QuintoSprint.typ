@@ -10,7 +10,7 @@
     - Inizio della stesura del documento _Specifiche Tecniche_:
       + Sezione Introduzione;
       + Sezione Tecnologie.
-    - Studio dell'#glossary("archittetura") del sistema;
+    - Studio dell'#glossary("architettura") del sistema;
     - Studio dei #glossary("design pattern") più adeguati;
     - Continuazione Piano di Progetto;
     - Continuazione della correzione sull'_Analisi Requisiti_;
