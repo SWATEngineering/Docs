@@ -25,7 +25,7 @@ Durante l'incontro, è stato suggerito e concordato che, all'interno dell'analis
 È stato discusso come trattare, all'interno del PdP, la distribuzione delle ore, soprattutto in caso di modifiche non previste. La decisione è stata quella di mantenere nel preventivo le ore previste per ogni ruolo, mentre nel consuntivo vanno indicati eventuali cambiamenti, motivandone la scelta. Un'altra necessità che è emersa è quella di giustificare, all'interno del preventivo, la distribuzione delle ore tra i ruoli, in particolare nel loro andamento rispetto al proseguire degli sprint.
 
 == Modifica sito vetrina
-È stato deciso di modificare il sito vetrina, in particolare raggruppando la documentazione in "Documentazione esterna" e "Documentazione interna" e adattare di conseguenza la struttura delle cartelle nella repository. Questo, in modo da facilitare la consultazione dei documenti.
+È stato deciso di apportare modifiche al sito vetrina, concentrandosi principalmente sulla riorganizzazione della documentazione in due categorie, ovvero "Documentazione esterna" e "Documentazione interna". In concomitanza con questa modifica, si adeguerà, di conseguenza, la struttura delle cartelle nella repository. L'obiettivo di questa iniziativa è semplificare il processo di consultazione dei documenti.
 
 == Discordanza tra sprint e RTB
 È stato fatto notare la discrepanza tra la data di fine sprint e la data di consegna dell'RTB, infatti la prima è prevista per il 21/12/2023, mentre la seconda per lunedì 18/12/2023. È stato quindi deciso di spostare la data dell'RTB al 22/12/2023, in modo da migliorare la pianificazione e avere un giorno disponibili in più per eventuali ritardi e per mettere a punto la presentazione dell'RTB.
