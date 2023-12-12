@@ -47,5 +47,5 @@ Su proposta dei componenti e a seguito di quanto indicato precedentemente, è st
 - Nancy Kalaj: Analista, amministratore;
 - Matteo Rango: Analista, amministratore;
 - Riccardo Toniolo: Verificatore, amministratore; 
-Il ruolo di progettista non è ancora stato assegnato, in
+Il ruolo di Progettista non è ancora stato assegnato, in
 quanto si ritiene non necessario in questa fase di avanzamento del progetto.
