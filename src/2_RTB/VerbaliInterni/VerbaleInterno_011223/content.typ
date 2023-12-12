@@ -20,7 +20,6 @@
 
 == Sprint di una settimana 
 
-
 Nell'incontro è stata discussa la proposta di modificare la durata degli sprint, attualmente fissata a due settimane. È stato deciso che la durata dello sprint corrente rimarrà invariata e, come precedentemente pianificato, terminerà il giorno 7/12/2023.
 Tuttavia, a partire dal prossimo sprint, effettueremo una transizione a sprint settimanali. Tale decisione è motivata dalla volontà di ottimizzare la sincronizzazione con il cambio dei ruoli, e di favorire un aumento degli incontri con la Proponente. Inoltre, questa modifica è stata raccomandata dalla Proponente stessa, riflettendo la volontà di adottare un approccio più flessibile e adattabile. L'unico svantaggio, che è stato evidenziato per gli sprint settimanali, riguarda la pianificazione a lungo termine, poiché la loro frequenza potrebbe complicare la formulazione di piani dettagliati. 
 In aggiunta, si rende necessario rivedere la pianificazione nel piano di progetto per adeguarla agli sprint settimanali.
