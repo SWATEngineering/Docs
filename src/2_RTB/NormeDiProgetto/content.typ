@@ -687,6 +687,14 @@ Il Responsabile ha il compito della stesura del verbale esterno, che viene succe
 
 = Metriche per la qualità
 
+Le metriche della qualità di processo vengono identificate con:
+
+                     *MPC-[Nome abbreviato]*
+
+*Legenda*: 
+
+*Nome abbreviato*: Nome della metrica specifica abbreviata.
+
 == Metriche per la qualità di processo
 
 === Fornitura
@@ -737,7 +745,7 @@ Il Responsabile ha il compito della stesura del verbale esterno, che viene succe
 
 === Codifica
 
-      -  *CCM*: Complessità Ciclomatica per Metodo - quantifica la complessità del codice misurando il numero di percorsi linearmente indipendenti attraverso il grafo di controllo di flusso del metodo. Più è alta la complessità ciclomatica, maggiore è la complessità del codice
+        -  *CCM*: Complessità Ciclomatica per Metodo - quantifica la complessità del codice misurando il numero di percorsi linearmente indipendenti attraverso il grafo di controllo di flusso del metodo. Più è alta la complessità ciclomatica, maggiore è la complessità del codice
 
                 Formula: $"MCCM" = "e" − "n" + 2$, con:
 
@@ -781,11 +789,19 @@ Il Responsabile ha il compito della stesura del verbale esterno, che viene succe
 
 == Metriche per la qualità di prodotto
 
+Le metriche della qualità di prodotto vengono identificate con:
+
+                     *MPR-[Nome abbreviato]*
+
+*Legenda*: 
+
+*Nome abbreviato*: Nome della metrica specifica abbreviata.
+
         - *ROS*: Requisiti Obbligatori Soddisfatti - la percentuale di requisiti obbligatori soddisfatti dal prodotto
 
                 Formula: $"ROS" = "requisiti obbligatori soddisfatti" / "requisiti obbligatori totali" dot 100$;
 
-        - *RDS*: Requisiti Desiderabili Soddisfatti - la perecentuale di requisiti desiderabili soddisfatti dal prodotto
+        - *RDS*: Requisiti Desiderabili Soddisfatti - la percentuale di requisiti desiderabili soddisfatti dal prodotto
 
                 Formula: $"RDS" =  "requisiti desiderabili soddisfatti" / "requisiti desiderabili totali" dot 100$;
 
@@ -803,4 +819,4 @@ Il Responsabile ha il compito della stesura del verbale esterno, che viene succe
 
         - *PM*: Parametri per Metodo - rappresenta il numero di parametri appartenenti ad un metodo;
 
-        - *LCM*: Linee di Codice per Metodo - rappresenta il numero di linee di codice che costituiscono un metodo.
+        - *LCM*: Linee di Codice per Metodo - rappresenta il numero di linee di codice che costituiscono un metodo. 
