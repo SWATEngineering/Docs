@@ -821,70 +821,70 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 == Requisiti funzionali (obbligatori e desiderabili)
 #let requisiti_funzionali = (
   (
-     "Obbligatorio", "L’utente deve poter accedere all’applicazione senza dover effettuare l’autenticazione.", "Capitolato"
+     "Obbligatorio", "L'utente deve poter accedere all'applicazione senza dover effettuare l'autenticazione.", "Capitolato"
   ),
   (
-     "Obbligatorio", "L’utente deve poter visualizzare una panoramica generale dei sensori.", "UC1"
+     "Obbligatorio", "L'utente deve poter visualizzare una panoramica generale dei sensori.", "UC1"
   ),
   (
-      "Obbligatorio", "L’utente deve poter visualizzare le posizioni dei sensori come icone su una mappa.", "UC1.1"
+     "Obbligatorio", "L'utente deve poter visualizzare le posizioni dei sensori come icone su una mappa.", "UC1.1"
   ),
   (
-    "Obbligatorio", "L’utente deve poter visualizzare, in forma tabellare, una panoramica generale dei sensori.", "UC1.2"
+    "Obbligatorio", "L'utente deve poter visualizzare, in forma tabellare, una panoramica generale dei sensori.", "UC1.2"
   ),
   (
-    "Obbligatorio", "L’utente deve poter monitorare i dati provenienti dai sensori relativi ai dati ambientali.", "UC2"
+    "Obbligatorio", "L'utente deve poter monitorare i dati provenienti dai sensori relativi ai dati ambientali.", "UC2"
   ),
   (
-    "Obbligatorio", "L’utente deve poter visualizzare un pannello in formato time series con dati relativi alla temperatura.", "UC2.2"
+    "Obbligatorio", "L'utente deve poter visualizzare un pannello in formato time series con dati relativi alla temperatura.", "UC2.2"
   ),
   (
-    "Obbligatorio", "L’utente deve poter visualizzare un pannello in formato time series con dati relativi all’umidità.", "UC2.3"
+    "Obbligatorio", "L'utente deve poter visualizzare un pannello in formato time series con dati relativi all'umidità.", "UC2.3"
   ),
   (
-    "Obbligatorio", "L’utente deve poter visualizzare un grafico a mappa che evidenzi velocità e direzione del vento.", "UC2.4"
+    "Opzionale", "L'utente deve poter visualizzare un grafico a mappa che evidenzi velocità e direzione del vento.", "UC2.4"
   ),
   (
-    "Obbligatorio", "L’utente deve poter visualizzare un pannello in formato time series con dati relativi alle precipitazioni.", "UC2.5"
+    "Obbligatorio", "L'utente deve poter visualizzare un pannello in formato time series con dati relativi alle precipitazioni.", "UC2.5"
   ),
   (
-    "Obbligatorio", "L’utente deve poter visualizzare un pannello che evidenzi le precipitazioni medie negli ultimi 5 minuti.", "UC2.6"
+    "Desiderabile", "L'utente deve poter visualizzare un pannello che evidenzi le precipitazioni medie negli ultimi 5 minuti.", "UC2.6"
   ),
   (
-    "Obbligatorio", "L’utente deve poter visualizzare un pannello in formato time series con dati relativi all’inquinamento dell’aria. ", "UC2.7"
+    "Obbligatorio", "L'utente deve poter visualizzare un pannello in formato time series con dati relativi all'inquinamento dell'aria. ", "UC2.7"
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare un pannello che evidenzi l'inquinamento dell'aria medio negli ultimi 5 minuti.", "2.8"
+    "Desiderabile", "L'utente deve poter visualizzare un pannello che evidenzi l'inquinamento dell'aria medio negli ultimi 5 minuti.", "2.8"
   ),
   (
     "Obbligatorio", "L'utente deve poter visualizzare un pannello in formato time series con dati relativi al livello dei bacini idrici.", "2.9"
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare un pannello che evidenzi la temperatura media negli ultimi 5 minuti.", "2.10"
+    "Desiderabile", "L'utente deve poter visualizzare un pannello che evidenzi la temperatura media negli ultimi 5 minuti.", "2.10"
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare un pannello che evidenzi l'inquinamento dell'aria massimo negli ultimi 5 minuti.", "2.11"
+    "Desiderabile", "L'utente deve poter visualizzare un pannello che evidenzi l'inquinamento dell'aria massimo negli ultimi 5 minuti.", "2.11"
   ),
   (
     "Obbligatorio", "L'utente deve poter monitorare i dati provenienti dai sensori relativi ai dati urbanistici.", "UC3"
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare un grafico a mappa che evidenzi la disponibilità dei parcheggi.", "UC3.2"
+    "Desiderabile", "L'utente deve poter visualizzare un grafico a mappa che evidenzi la disponibilità dei parcheggi.", "UC3.2"
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare un grafico a mappa che evidenzi la posizione e lo stato delle colonne di ricarica.", "UC3.3"
+    "Desiderabile", "L'utente deve poter visualizzare un grafico a mappa che evidenzi la posizione e lo stato delle colonne di ricarica.", "UC3.3"
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare un grafico a mappa che evidenzi l'intensità del traffico.", "UC3.4"
+    "Opzionale", "L'utente deve poter visualizzare un grafico a mappa che evidenzi l'intensità del traffico.", "UC3.4"
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare un grafico a mappa che evidenzi la posizione real time delle biciclette elettriche e relativa percentuale della batteria.", "UC3.5"
+    "Opzionale", "L'utente deve poter visualizzare un grafico a mappa che evidenzi la posizione real time delle biciclette elettriche e relativa percentuale della batteria.", "UC3.5"
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare un grafico a mappa che riporti un indicatore percentuale di riempimento delle zone rifiuti", "UC3.6"
+    "Desiderabile", "L'utente deve poter visualizzare un grafico a mappa che riporti un indicatore percentuale di riempimento delle zone rifiuti", "UC3.6"
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare i dati anomali rilevati.", "UC4"
+    "Desiderabile", "L'utente deve poter visualizzare i dati anomali rilevati.", "UC4"
   ),
   (
     "Obbligatorio",  "L'utente deve poter visualizzare le allerte di superamento delle soglie.", "UC5"
@@ -902,13 +902,46 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     "Obbligatorio", "L'utente deve poter filtrare i dati in base ad un intervallo temporale.", "UC6.4"
   ),
   (
-    "Obbligatorio", "L'utente deve poter ordinare i dati in pannelli di tipo tabellare.", "UC7"
+    "Desiderabile", "L'utente deve poter ordinare i dati in pannelli di tipo tabellare.", "UC7"
   ),
   (
-    "Obbligatorio", "L'utente deve poter modificare il layout dei pannelli.", "UC8"
+    "Desiderabile", "L'utente deve poter modificare il layout dei pannelli.", "UC8"
   ),
   (
     "Obbligatorio", "L'utente deve poter visualizzare un messaggio di errore qualora non vi siano dati a disposizione.", "UC9"
+  ),
+  (
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla temperatura.", "UC10"
+  ),
+  (
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi all'umidità.", "UC11"
+  ),
+  (
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla velocità e alla direzione del vento.", "UC12"
+  ),
+  (
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi alle precipitazioni.", "UC13"
+  ),
+  (
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi all'inquinamento dell'aria.", "UC14"
+  ),
+  (
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi al livello dei bacini idrici.", "UC15"
+  ),
+  (
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla disponibilità dei parcheggi.", "UC16"
+  ),
+  (
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi alle colonne di ricarica.", "UC17"
+  ),
+  (
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi alle biciclette elettriche.", "UC18"
+  ),
+  (
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi al riempimento delle zone ecologiche.", "UC19"
+  ),
+  (
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla congestione stradale.", "UC20"
   )
 )
 
