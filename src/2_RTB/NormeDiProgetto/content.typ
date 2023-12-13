@@ -133,7 +133,7 @@ Servizio per creare e partecipare a videochiamate, utilizzato dal team per gli i
 Online software per creare diagrammi di Gantt, utilizzato dal Responsabile per delineare la distribuzione temporale delle attività pianificate per ogni sprint nella sezione di *Pianificazione* del Piano di Progetto.
 
 ==== Draw.io
-Software per creare diagrammi e grafici di varia natura, utilizzato dagli Analisti per creare i diagrammi UML dei casi d'uso nella sezione *Casi d'uso* dell'Analisi dei Requisiti.
+Software per creare diagrammi e grafici di varia natura, utilizzato dagli Analisti per creare i diagrammi UML dei casi d'uso nella sezione *Casi d'uso* (@c.uso) dell'Analisi dei Requisiti.
 
 == Sviluppo
 
@@ -153,7 +153,7 @@ L'Analisi dei Requisiti viene redatta dagli Analisti e contiene:
         - *Casi d'uso*: individua gli attori e tutte le interazioni che possono avere con il sistema;
         - *Requisiti*: le caratteristiche da soddisfare e le fonti da cui sono state estratte.
 
-==== Identificazione dei casi d'uso
+==== Identificazione dei casi d'uso <c.uso>
 
   I casi d'uso sono identificati nel seguente modo:
 
@@ -221,7 +221,7 @@ I requisiti trovati hanno un codice univoco con la seguente sintassi:
 ==== Descrizione e scopo 
 
 L'attività di progettazione è affidata ai Progettisti, i quali devono definire le caratteristiche del prodotto finale basandosi sui requisiti specificati nel documento _Analisi dei Requisiti_. 
-La fase di progettazione segue l'analisi dei requisiti, dove sono definite le necessità e le aspettative per il prodotto. I Progettisti traducono queste informazioni in una struttura architteturale definita, organizzando il sistema in componenti specifici e definendo le interazioni tra di essi. In questo modo, la progettazione costituisce un passo essenziale nel percorso di sviluppo, contribuendo a trasformare i requisiti in un piano tangibile per la creazione del prodotto finale.
+La fase di progettazione segue l'analisi dei requisiti, dove sono definite le necessità e le aspettative per il prodotto. I Progettisti traducono queste informazioni in una struttura architetturale definita, organizzando il sistema in componenti specifici e definendo le interazioni tra di essi. In questo modo, la progettazione costituisce un passo essenziale nel percorso di sviluppo, contribuendo a trasformare i requisiti in un piano tangibile per la creazione del prodotto finale.
 
 Si definiscono tre sottoattività: 
 
