@@ -212,9 +212,18 @@ I requisiti trovati hanno un codice univoco con la seguente sintassi:
                 per ogni requisito aggiunto il numero viene incrementato.
 
 ==== Metriche
-        - *ROS*: Requisiti Obbligatori Soddisfatti;
-        - *RDS*: Requisiti Desiderabili Soddisfatti;
-        - *ROPS*: Requisiti Opzionali Soddisfatti.
+
+La definizione delle metriche seguenti si può trovare nella @metriche_codifica.
+
+#table(
+      columns:(auto,auto),
+      align: (x, y) => (center, center).at(x),
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Metrica*],[*Descrizione*],
+      [*ROS*],[Requisiti Obbligatori Soddisfatti],
+      [*RDS*],[Requisiti Desiderabili Soddisfatti],
+      [*ROPS*],[Requisiti Opzionali Soddisfatti] 
+)
 
 === Progettazione 
 
@@ -243,11 +252,20 @@ Si definiscono tre sottoattività:
                 - Test di Unità su ogni componente.
 
 ==== Metriche
-        - *SFIN*: Structure Fan In;
-        - *SFOUT*: Structure Fan Out;
-        - *ATC*: Attributi per Classe;
-        - *PM*: Parametri per Metodo;
-        - *LCM*: Linee di Codice per Metodo.
+
+La definizione delle metriche seguenti si può trovare nella @metriche_codifica.
+
+ #table(
+      columns:(auto,auto),
+      align: (x, y) => (center, center).at(x),
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Metrica*],[*Descrizione*],
+      [*SFIN*],[Structure Fan In],
+      [*SFOUT*],[Structure Fan Out],
+      [*ATC*],[Attributi per Classe],
+      [*PM*],[Parametri per Metodo],
+      [*LCM*],[Linee di Codice per Metodo]
+)
 
 ==== Diagrammi UML dei casi d'uso
 [...]
@@ -270,10 +288,17 @@ Ci si aspetta che il codice sviluppato rispetti determinate caratteristiche:
 [...]
 
 ==== Metriche
-        - *MCCM*: complessità ciclomatica per metodo;
-        - *MCC*: code coverage;
-        - *MSC*: statement coverage;
-        - *MBC*: branch coverage.
+
+La definizione delle metriche seguenti si può trovare nella @metriche_codifica.
+
+#table(
+      columns:(auto,auto),
+      align: (x, y) => (center, center).at(x),
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Metrica*],[*Descrizione*],
+      [*CCM*],[Complessità Ciclomatica per Metodo],
+      [*CC*],[Code Coverage]
+)
 
 === Verifica
 
@@ -444,8 +469,17 @@ Il gruppo utilizza:
         - *GitHub*: una piattaforma di hosting per progetti di sviluppo software basati su Git. Fornisce un sistema di controllo delle versioni distribuito e strumenti per la gestione del codice sorgente, delle issue e delle pull request, facilitando la collaborazione all'interno di un team di sviluppo.
 
 === Metriche
-        - *IG*: Indice Gulpease;
-        - *CO*: Correttezza Ortografica.
+
+La definizione delle metriche seguenti si può trovare nella @metriche_documentazione.
+
+#table(
+      columns:(auto,auto),
+      align: (x, y) => (center, center).at(x),
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Metrica*],[*Descrizione*],
+      [*IG*],[Indice Gulpease],
+      [*CO*],[Correttezza Ortografica]
+)
         
 
 == Gestione della Configurazione
@@ -678,18 +712,26 @@ In aggiunta, è possibile richiedere sessioni di formazione mirate su tecnologie
 Il Responsabile ha il compito della stesura del verbale esterno, che viene successivamente convalidato, con firma, dalla Proponente.
 
 === Metriche
-        - *BAC*: Budget At Completion;
-        - *EV*: Earned Value; 
-        - *PV*: Planned Value;
-        - *SPI*: Schedule Performance Index;
-        - *SV*: Schedule Variance.
 
+La definizione delle metriche seguenti si può trovare nella @metriche_fornitura.
+
+#table(
+      columns:(auto,auto),
+      align: (x, y) => (center, center).at(x),
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Metrica*],[*Descrizione*],
+      [*BAC*],[Budget At Completion],
+      [*EV*],[Earned Value],
+      [*PV*],[Planned Value],
+      [*SPI*],[Schedule Performance Index],
+      [*SV*],[Schedule Variance]
+)
 
 = Metriche per la qualità
 
-== Metriche per la qualità di processo
+== Metriche per la qualità di processo <metriche_qualità-processo>
 
-=== Fornitura
+=== Fornitura <metriche_fornitura>
 
         - *BAC*: Budget At Completion - indica il budget totale pianificato per il completamento del progetto;
 
@@ -735,7 +777,7 @@ Il Responsabile ha il compito della stesura del verbale esterno, che viene succe
                 
                 Formula: $"BV" = "PV" - "AC"$.
 
-=== Codifica
+=== Codifica <metriche_codifica>
 
       -  *CCM*: Complessità Ciclomatica per Metodo - quantifica la complessità del codice misurando il numero di percorsi linearmente indipendenti attraverso il grafo di controllo di flusso del metodo. Più è alta la complessità ciclomatica, maggiore è la complessità del codice
 
@@ -756,7 +798,7 @@ Il Responsabile ha il compito della stesura del verbale esterno, che viene succe
 
                 Formula: $"FTCP" = "test falliti" / "test totali" dot 100$.
 
-=== Documentazione
+=== Documentazione <metriche_documentazione>
 
         - *IG*: Indice Gulpease - metrica utilizzata per valutare la leggibilità di un testo in lingua italiana.
              L'Indice Gulpease tiene conto di due variabili linguistiche: la lunghezza delle parole e la lunghezza delle frasi. La formula per calcolare l'indice è la seguente:
@@ -779,7 +821,7 @@ Il Responsabile ha il compito della stesura del verbale esterno, che viene succe
 
         - *CO*: Correttezza ortografica - numero errori grammaticali ed ortografici in un documento.
 
-== Metriche per la qualità di prodotto
+== Metriche per la qualità di prodotto <metriche_qualità-prodotto>
 
         - *ROS*: Requisiti Obbligatori Soddisfatti - la percentuale di requisiti obbligatori soddisfatti dal prodotto
 
