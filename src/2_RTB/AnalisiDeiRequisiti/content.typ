@@ -33,7 +33,7 @@ Cardin	Analisi e descrizione delle funzionalità: Use Case e relativi diagammi (
 = Descrizione
 
 == Obiettivi del prodotto
-L'obbiettivo consiste nella creazione di una piattaforma di monitoraggio e gestione di una #glossary("Smart City"). L'utente, individuato nell'#glossary("amministratore pubblico"), potrà farne impiego per migliorare la qualità generale della vita e l'efficienza dei servizi nel contesto di un'area urbana. L'utente sarà in grado di monitorare, attraverso la consultazione di una dashboard, lo stato della città, sotto i punti di vista ambientali, logistici e di sicurezza. Questo cruscotto includerà rappresentazioni grafiche basate su dati provenienti da dei sensori installati all'interno dell'area geografica della città.
+L'obiettivo consiste nella creazione di una piattaforma di monitoraggio e gestione di una #glossary("Smart City"). L'utente, individuato nell'#glossary("amministratore pubblico"), potrà farne impiego per migliorare la qualità generale della vita e l'efficienza dei servizi nel contesto di un'area urbana. L'utente sarà in grado di monitorare, attraverso la consultazione di una dashboard, lo stato della città, esaminando aspetti ambientali, logistici e di sicurezza. Questo cruscotto includerà rappresentazioni grafiche basate su dati provenienti da dei sensori installati all'interno dell'area geografica della città.
 
 == Funzionalità del prodotto
 Il prodotto si compone di due parti principali:
@@ -43,16 +43,16 @@ Il prodotto si compone di due parti principali:
 La piattaforma prevede fondamentalmente una tipologia di utente: l'#glossary("amministratore pubblico"). Questo utente avrà accesso alla dashboard e prenderà visione di diverse metriche e indicatori sullo stato della città, mediante diversi strumenti di visualizzazione.
 
 == Utenti e caratteristiche
-Il prodotto, destinato ad #glossary("amministratori pubblici"), consente loro di ottenere una panoramica sulle condizioni della città. Ciò fornisce loro una base solida per prendere decisioni ponderate sulla gestione delle risorse e sull'implementazione dei servizi, il che risulta cruciale nel miglioramento dell'efficienza complessiva della gestione urbana. Si presuppone che l' #glossary("amministratore pubblico") abbia conoscenze di analisi e di interpretazione dei dati, tali da poter trarre un concreto beneficio dal controllo della dashboard.
+Il prodotto, destinato ad #glossary("amministratori pubblici"), consente loro di ottenere una panoramica sulle condizioni della città. Ciò fornisce loro una base solida per prendere decisioni ponderate riguardo la gestione delle risorse e sull'implementazione dei servizi, risultando cruciale per il miglioramento dell'efficienza complessiva della gestione urbana. Si presuppone che l' #glossary("amministratore pubblico") abbia conoscenze di analisi e di interpretazione dei dati, tali da poter trarre un concreto beneficio dal controllo della dashboard.
 
 = Casi d'uso
 == Scopo
-In questa sezione si vogliono elencare e descrivere tutti i casi d'uso individuati dall'analisi del capitolato e dalle interazioni avute con la Proponente. In particolare, si individuano gli #glossary("attori") e le funzionalità che questi possono svolgere. Ogni caso d'uso possiede un codice, la cui struttura è descritta nelle Norme di Progetto.
+In questa sezione si vogliono elencare e descrivere tutti i casi d'uso individuati dall'analisi del capitolato e dalle interazioni avute con la Proponente. In particolare, si individuano gli #glossary("attori") e le funzionalità che questi possono svolgere. Ogni caso d'uso possiede un codice, la cui struttura è descritta nelle _Norme di Progetto_.
 
 == Attori
-Il sistema si interfaccerà con due attori diveri:
+Il sistema si interfaccerà con due attori diversi:
 - *#glossary("Amministratore pubblico")*: è un utente che ha accesso alla dashboard in tutte le sue funzionalità e può visualizzare i dati raccolti dai sensori, mediante quest'ultima;
-- *#glossary("Sensore")*: è un dispositivo in grado di raccogliere dati relativi al proprio dominio di interesse e di inserirli all'interno del sistema per far si che vengano persistiti.
+- *#glossary("Sensore")*: è un dispositivo in grado di raccogliere dati relativi al proprio dominio di interesse e di inserirli all'interno del sistema garantendone la persistenza.
 
 Relativamente all'utilizzo della dashboard, viene definito un unico attore con accesso completo alle funzionalità, in quanto per sua natura l' #glossary("amministratore pubblico") possiede le competenze tecniche necessarie per poter interagire con essa in tutte le sue parti.
 
@@ -61,19 +61,14 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [Gerarchia degli attori]
 )
 
-#figure(
-  image("assets/USECASES.png",width:130%),
-  caption: [USECASE]
-)
-
 == Elenco dei casi d'uso
 
 #set heading(numbering: none)
 
 === UC1: Visualizzazione panoramica generale sensori
-- *Attore Principale*: amministrato pubblico. 
+- *Attore Principale*: amministratore pubblico. 
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'attore visualizza i panelli relativi ai dati propri dei sensori. 
+- *Postcondizioni*: l'attore visualizza i pannelli relativi ai dati propri dei sensori. 
 - *Scenario Principale*:
   + l'attore accede al sistema; 
   + l'attore seleziona la visualizzazione della panoramica generale dei sensori;
@@ -194,7 +189,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC2.4: Visualizzazione grafico a mappa velocità e direzione del vento
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alla velocità e alla direzione del vento, in chilometri orari, su di una mappa, che mostra delle frecce direzionate e colorate in base alla velocità.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alla velocità, espressa in chilometri orari, e alla direzione del vento, su di una mappa che mostra delle frecce direzionate e colorate in base alla velocità.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale;
@@ -228,7 +223,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC2.6: Visualizzazione pannello precipitazioni medie
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alle precipitazioni, in millimetri di pioggia, medie tra tutti i sensori attivi negli ultimi cinque minuti, in formato numerico.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alle precipitazioni medie, espressi in formato numerico (millimetri di pioggia), provenienti dai sensori attivi negli ultimi cinque minuti.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale;
@@ -262,7 +257,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC2.8: Visualizzazione pannello inquinamento dell'aria medio
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi all'inquinamento dell'aria, in $#sym.mu g\/m^3$, media tra tutti i sensori attivi negli ultimi 5 minuti, in formato numerico.
+- *Postcondizioni*: l'attore visualizza un pannello contenente la media della concentrazione di inquinanti dell'aria, in $#sym.mu g\/m^3$, considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale;
@@ -381,7 +376,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC3.3: Visualizzazione posizione e stato colonne ricarica
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
-- *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare il wattaggio erogato e la disponibilità delle colonnine.  
+- *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare il wattaggio erogato e la disponibilità delle colonne di ricarica.  
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio urbanistico;
@@ -398,7 +393,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC3.4: Visualizzazione grafico a mappa intensità traffico
 *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
-- *Postcondizioni*: l'attore visualizza un grafico a mappa atto indicatere la distribuzione della congestione del traffico.
+- *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare la distribuzione della congestione del traffico.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio urbanistico;
@@ -466,7 +461,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'attore riceve una notifica di superamento di una soglia impostata.
 - *Scenario Principale*:
-  + il sistema rileva delle condizioni per le quali si deve inviare una notifica che avverta di un superamento di una soglia impostata.
+  + il sistema rileva condizioni che richiedono l'invio di una notifica per segnalare il superamento di una soglia impostata.
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
@@ -620,7 +615,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC10: Inserimento dati temperatura
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
-- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione della temperatura;
   + il sensore formatta il messaggio da inviare al sistema;
@@ -637,7 +632,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC11: Inserimento dati umidità
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
-- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione dell'umidità;
   + il sensore formatta il messaggio da inviare al sistema;
@@ -654,7 +649,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC12: Inserimento dati velocità e direzione del vento
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
-- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione della velocità e della direzione del vento;
   + il sensore formatta il messaggio da inviare al sistema;
@@ -671,7 +666,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC13: Inserimento dati precipitazioni
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
-- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione quantitativa delle precipitazioni;
   + il sensore formatta il messaggio da inviare al sistema;
@@ -688,7 +683,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC14: Inserimento dati inquinamento dell'aria
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
-- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione quantitativa dell'inquinamento dell'aria;
   + il sensore formatta il messaggio da inviare al sistema;
@@ -705,7 +700,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC15: Inserimento dati livello bacini idrici
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
-- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione del livello del bacino idrico in cui è installato;
   + il sensore formatta il messaggio da inviare al sistema;
@@ -722,9 +717,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC16: Inserimento dati disponibilità parcheggi
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
-- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
-  + il sensore rileva ingressi e uscite del parcheggio in cui è insallato;
+   + il sensore rileva gli ingressi e le uscite del parcheggio in cui è installato;
   + il sensore formatta il messaggio da inviare al sistema;
   + il sensore invia il messaggio al sistema. 
 - *Specializzazioni*: nessuna. 
@@ -739,9 +734,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC17: Inserimento dati colonne di ricarica
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
-- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
-  + il sensore effettua una rilevazione del voltaggio erogato dalla colonna di ricarica;
+  + il sensore effettua una rilevazione del wattaggio erogato dalla colonna di ricarica;
   + il sensore formatta il messaggio da inviare al sistema;
   + il sensore invia il messaggio al sistema. 
 - *Specializzazioni*: nessuna. 
@@ -756,7 +751,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC18: Inserimento dati biciclette elettriche
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
-- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione della posizione e della percentuale della batteria della bicicletta elettrica su cui è installato;
   + il sensore formatta il messaggio da inviare al sistema;
@@ -773,9 +768,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC19: Inserimento dati riempimento zone ecologiche
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
-- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
-  + il sensore effettua una rilevazione del livello di riempimento del contenitore ecologico a cui è associato; 
+  + il sensore effettua una rilevazione del livello di riempimento del contenitore ecologico associato; 
   + il sensore formatta il messaggio da inviare al sistema;
   + il sensore invia il messaggio al sistema. 
 - *Specializzazioni*: nessuna. 
@@ -790,9 +785,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC20: Inserimento dati congestione stradale
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
-- *Postcondizioni*: il sistema ha persitito i dati inviati dal sensore.
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
-  + il sensore effettua una rilevazione del livello di congestione della strada in cui è installato; 
+  + il sensore effettua una rilevazione del livello di congestione della strada su cui è installato; 
   + il sensore formatta il messaggio da inviare al sistema;
   + il sensore invia il messaggio al sistema. 
 - *Specializzazioni*: nessuna. 
