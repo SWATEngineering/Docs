@@ -1,6 +1,9 @@
-#import "../../const.typ": Re_cost, Am_cost, An_cost, Ve_cost, Pr_cost, Pt_cost, toDel
+#import "../../const.typ": Re_cost, Am_cost, An_cost, Ve_cost, Pr_cost, Pt_cost
 
-#let franco=16
+//residuo
+#let trace = csv("../../trace.csv")
+#let residuo_ore = trace.at(1).at(0)
+#let residuo_costi = trace.at(1).at(1)
 
 #let costo_ora = ( Re: Re_cost, Am: Am_cost, An: An_cost, Pt: Pt_cost, Pr: Pr_cost, Ve: Ve_cost )
 
@@ -162,6 +165,13 @@
   }
 }
 
+#let ore_totali = ruoli_ore.values().sum()
+#let costi_totali = costo_ruoli_ore.values().sum()
+
+#let ore_rimanenti = float(residuo_ore) - ore_totali
+#let costi_rimanenti = str(float(residuo_costi) - costi_totali) + " €"
+
+
 == Primo sprint
 === Rendicontazione ore a posteriori
 I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, durante questo sprint:
@@ -201,8 +211,8 @@ In questo sprint, il costo per ogni ruolo assunto viene riportato in tabella:
   [Progettista],[#tab_costi.at("Pt").at(0)],[#tab_costi.at("Pt").at(1)],
   [Programmatore],[#tab_costi.at("Pr").at(0)],[#tab_costi.at("Pr").at(1)],
   [Verificatore],[#tab_costi.at("Ve").at(0)],[#tab_costi.at("Ve").at(1)],
-  [*Totale*],[#ruoli_ore.values().sum()],[#costo_ruoli_ore.values().sum()],
-  [*Rimanente*],[523],[10.075€]
+  [*Totale*],[#ore_totali],[#costi_totali],
+  [*Rimanente*],[#ore_rimanenti],[#costi_rimanenti]
 )
 
 #figure(
