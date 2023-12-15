@@ -142,14 +142,93 @@ Sono state individuate due metriche principali:
 = Qualità di Prodotto 
 
 
+= Strategie di testing
 
+In questa sezione viene esposto il piano di testing che verrà utilizzato per garantire la correttezza finale del prodotto.
+Come enunciato nel documento _Norme di Progetto_, il piano segue il #glossary("modello a V"), il quale associa ad ogni fase di sviluppo, una corrispondente tipologia di testing. Tali tipologie sono le seguenti:
+- *Test di unità*: si verifica il corretto funzionamento delle unità componenti il sistema. Un'unità rappresenta un elemento indivisibile e indipendente del sistema;
+- *Test di integrazione*: si verifica il corretto funzionamento di più unità che cooperano per svolgere uno specifico compito (tali unità devono certamente aver superato i loro test di unità precedentemente);
+- *Test di sistema*: si verifica il corretto funzionamento del sistema nella sua interezza. I requisiti funzionali obbligatori, di vincolo, di qualità e di prestazione, precedentemente concordati con il committente mediante stipulazione del contratto, devono essere soddisfatti per intero;
+- *Test di accettazione*: si verifica il soddisfacimento del committente rispetto al prodotto software. Il loro superamento permette di procedere con il rilascio del prodotto.
 
+== Test di accettazione
+In questa sezione vengono descritti i test di accettazione del prodotto software, eseguiti sia dal gruppo #team che dalla Proponente sotto la supervisione del gruppo.
+Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
 
+#let test_di_accettazione = (
+      ()
+)
 
+== Test di sistema
 
+#let test_di_sistema = (
+      ()
+)
 
+== Liste di controllo
 
+Le liste di controllo sono uno strumento che i verificatori possono utilizzare al fine di individuare errori ricorrenti nella documentazione. Tali liste prevedono anche una descrizione del problema al fine di poter fornire una spiegazione della richiesta di cambiamenti durante la fase di revisione.
+Le liste di controllo possono essere aggiornate durante tutto il corso del progetto dai Verificatori, man mano che vengono notati errori ricorrenti.
 
+=== Struttura dei documenti
 
+#figure(
+table(
+      columns: (1fr, 2fr),
+      inset: 10pt,
+      align: (center, left),
+      [*Aspetto*],[*Spiegazione*],
+      [Vuoti documentativi],[Tutte le sezioni che non si intende completare, e che quindi devono rimanere vuote, devono essere cancellate.],
+      [Didascalia assente],[Tutte le tabelle e le immagini devono avere una didascalia descrittiva.],
+      [Ripetizione di elementi ricorrenti],[Ogni elemento che viene usato più di una volta, soprattutto se si sa a priori che verrà usato più volte, deve essere creato da una funzione #glossary("Typst").],
+      [Ordine non alfabetico],[I nomi dei componenti devono essere riportati in ordine alfabetico, in qualsiasi documento dove compaiono come elenco non numerato.],
+      [Aggiornamento fantasma],[Ad ogni insieme di modifiche ai documenti che devono essere aggiunte assieme, deve corrispondere una riga nella tabella del changelog, con un univoco numero di versione.],
+),
+caption: [Lista di controllo per la struttura dei documenti]
+)
 
-      
+=== Errori ortografici, di lingua italiana e di forma
+
+#figure(
+table(
+      columns: (1fr, 2fr),
+      inset: 10pt,
+      align: (center, left),
+      [*Aspetto*],[*Spiegazione*],
+      [Errori di battitura],[Gli errori di battitura, di distrazione o di ignoranza devono essere rimossi.],
+      [Errori di coniugazione],[Gli errori di coniugazione devono essere rimossi.],
+      [Forma verbale],[Il presente indicativo è da preferire.],
+      [Forma non concise],[Le espressioni troppo verbose, ove possibile, devono essere ridotte a forme più concise.],
+      [Non formalità],[Le espressioni non formali devono essere sostituite con le corrispondenti espressioni formali.],
+),
+caption: [Lista di controllo per gli errori ortografici, di lingua italiana e di forma]
+)
+
+=== Non conformità con le Norme di Progetto
+
+#figure(
+table(
+      columns: (1fr, 2fr),
+      inset: 10pt,
+      align: (center, left),
+      [*Aspetto*],[*Spiegazione*],
+      [Formato date errato],[Il formato delle date deve essere *dd-mm-aaaa* all'interno dei documenti, oppure *dd-mm-aa* all'interno dei nomi dei documenti.],
+      [Punteggiatura scorretta negli elenchi],[Ogni elemento di un elenco, numerato o non, deve terminare con un *;*, ad eccezione dell'ultima riga, la quale deve terminare con *.*.],
+      [: in grassetto negli elenchi],[Gli elenchi nella forma "*termine*: testo", non devono includere il ":" nel grassetto.],
+      [Maiuscole nei titoli],[La prima lettera di ogni titolo deve essere maiuscola. Il resto del titolo dovrebbe essere in minuscolo (tolte particolari eccezioni).],
+      [Maiuscole negli elenchi],[],
+),
+caption: [Lista di controllo per le non conformità con le Norme di Progetto]
+)
+
+=== Analisi dei Requisiti
+
+#figure(
+table(
+      columns: (1fr, 2fr),
+      inset: 10pt,
+      align: (center, left),
+      [*Aspetto*],[*Spiegazione*],
+),
+caption: [Lista di controllo per l’Analisi dei Requisiti]
+)
