@@ -222,13 +222,13 @@ In questo sprint, il costo per ogni ruolo assunto viene riportato in tabella:
 )
 
 #figure(
-  image("../../assets/AreogrammiPartizioneCosti/Effettivo/AreogrammaCostiPrimoSprint.png", width: 75%),
-  caption: [Areogramma del budget speso e rimanente preventivato per il primo sprint.],
+  image("../../assets/AreogrammiPartizioneCosti/Effettivo/AreogrammaCostiSecondoSprint.svg", width: 75%),
+  caption: [Areogramma del budget speso e rimanente preventivato per il secondo sprint.],
 )
 
 #figure(
   image("../../assets/AreogrammiTotaliOre/Effettive/AreogrammaTotalePrimoSprint.png", width: 75%),
-  caption: [Areogramma delle ore svolte e rimanenti nel primo sprint.],
+  caption: [Areogramma delle ore svolte e rimanenti nel secondo sprint.],
 )
 
 
