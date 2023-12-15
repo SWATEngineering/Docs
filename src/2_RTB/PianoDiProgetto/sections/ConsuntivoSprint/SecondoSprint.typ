@@ -42,7 +42,13 @@
   }
 }
 
-//ore totali per membro
+//ore totali previste per membro
+#let membri_tot_prev = ( Simone:0, RiccardoC:0, Giacomo:0, Nancy:0, Matteo:0, RiccardoT:0 )
+#for m in membri_ore.keys() {
+  membri_tot_prev.at(m) = ore_preventivo.at(m).sum()
+}
+
+//ore totali effettive per membro
 #let membri_tot = ( Simone:0, RiccardoC:0, Giacomo:0, Nancy:0, Matteo:0, RiccardoT:0 )
 #for m in membri_ore.keys() {
   membri_tot.at(m) = membri_ore.at(m).sum()
@@ -130,7 +136,8 @@
         tab_content.at(m).at(r) += " (" + str(membri_ore_extra.at(m).at(r)) + ")"
       }
     }
-    tab_content.at(m).at(6) = str(membri_tot.at(m))
+    //totali: ore previste (+extra)
+    tab_content.at(m).at(6) = str(membri_tot_prev.at(m))
     if membri_tot_extra.at(m) != 0 {
       if membri_tot_extra.at(m) > 0 {
         tab_content.at(m).at(6) += " (" + "+" + str(membri_tot_extra.at(m)) + ")"
@@ -171,8 +178,7 @@
 #let ore_rimanenti = float(residuo_ore) - ore_totali
 #let costi_rimanenti = str(float(residuo_costi) - costi_totali) + " €"
 
-
-== Primo sprint
+== Secondo sprint
 === Rendicontazione ore a posteriori
 I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, durante questo sprint:
 #table(
@@ -190,13 +196,13 @@ I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, dura
 )
 
 #figure(
-  image("../../assets/AreogrammiPartizioneOre/Effettivo/AreogrammaOrePrimoSprint.png", width: 75%),
-  caption: [Areogramma della partizione delle ore per ruolo nel primo sprint.],
+  image("../../assets/AreogrammiPartizioneOre/Effettivo/AreogrammaOreSecondoSprint.svg", width: 75%),
+  caption: [Areogramma della partizione delle ore per ruolo nel secondo sprint.],
 )
 
 #figure(
   image("../../assets/IstogrammiOreMembro/Effettive/IstogrammaPrimoSprint.png", width: 75%),
-  caption: [Istogramma delle ore svolte per persona nel primo sprint.],
+  caption: [Istogramma delle ore svolte per persona nel secondo sprint.],
 )
 
 === Rendicontazione costi a posteriori
