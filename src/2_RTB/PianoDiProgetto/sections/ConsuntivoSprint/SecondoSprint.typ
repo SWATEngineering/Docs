@@ -137,7 +137,7 @@
       }
     }
     //totali: ore previste (+extra)
-    tab_content.at(m).at(6) = str(membri_tot_prev.at(m))
+    tab_content.at(m).at(6) = str(membri_tot.at(m))
     if membri_tot_extra.at(m) != 0 {
       if membri_tot_extra.at(m) > 0 {
         tab_content.at(m).at(6) += " (" + "+" + str(membri_tot_extra.at(m)) + ")"
@@ -153,9 +153,9 @@
   //ore
   if ruoli_ore_extra.at(r) != 0 {
     if ruoli_ore_extra.at(r) > 0 {
-      tab_costi.at(r).at(0) = str(ruoli_ore_prev.at(r)) + " (" + "+" + str(ruoli_ore_extra.at(r)) + ")"
+      tab_costi.at(r).at(0) = str(ruoli_ore.at(r)) + " (" + "+" + str(ruoli_ore_extra.at(r)) + ")"
     } else {
-      tab_costi.at(r).at(0) = str(ruoli_ore_prev.at(r)) + " (" + str(ruoli_ore_extra.at(r)) + ")"
+      tab_costi.at(r).at(0) = str(ruoli_ore.at(r)) + " (" + str(ruoli_ore_extra.at(r)) + ")"
     }
   } else {
     tab_costi.at(r).at(0) = ruoli_ore.at(r)
@@ -201,7 +201,7 @@ I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, dura
 )
 
 #figure(
-  image("../../assets/IstogrammiOreMembro/Effettive/IstogrammaPrimoSprint.png", width: 75%),
+  image("../../assets/IstogrammiOreMembro/Effettive/IstogrammaSecondoSprint.svg", width: 75%),
   caption: [Istogramma delle ore svolte per persona nel secondo sprint.],
 )
 
