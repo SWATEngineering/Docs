@@ -45,3 +45,5 @@ Batch; In Kafka, un "batch" si riferisce a un insieme o a un gruppo di messaggi 
 Broker; In Kafka, un "broker" è un nodo individuale all'interno di un cluster Kafka responsabile della gestione e dell'elaborazione dei dati. Ogni broker svolge il ruolo di server Kafka e contribuisce al mantenimento e al funzionamento del sistema.
 Topic; In Apache Kafka, un "topic" è una categoria o una suddivisione logica dei dati che consente di organizzare e suddividere i flussi di messaggi. I topic sono fondamentali nel modello di pubblicazione/sottoscrizione di Kafka, dove i produttori inviano messaggi a specifici topic e i consumatori si sottoscrivono a tali topic per ricevere i messaggi di loro interesse.
 Architettura; Definizione della struttura, dei componenti e delle interazioni fondamentali del sistema. 
+Smart City; area urbana che implementa tecnologie avanzate per gestire in modo intelligente le risorse e creare un ambiente di vita più sostenibile, efficiente e abitabile.
+Time series; formato che rappresenta dati organizzati sequenzialmente in base al tempo, dove ogni punto dati è associato a un timestamp o a un intervallo temporale specifico.
