@@ -47,7 +47,17 @@ Inoltre, è stata proposta l'implementazione della capacità di filtraggio in Gr
 
 == Obiettivo del prossimo sprint     
 
-La Proponente ha mostrato un forte entusiasmo per i progressi raggiunti in poche settimane, indicando che, dal loro punto di vista, si era già pronti per il PoC. In vista del prossimo sprint, hanno suggerito alcune potenziali migliorie estetiche per rendere più comprnesibile il prodotto e la possiblità di aggiungere già un altra tipologia di sensore.
+La Proponente ha mostrato un forte entusiasmo per i progressi raggiunti in poche settimane, indicando che, dal loro punto di vista, si era già pronti per il PoC. In vista del prossimo sprint, hanno suggerito alcune potenziali migliorie estetiche per rendere più comprensibile il prodotto e la possiblità di aggiungere già un altra tipologia di sensore.
+
+Gli obbiettivi da raggiungere:
+
+  - Differenziazione delle onde sinusoidali dei vari sensori;
+  - Accelerazione del ciclo rappresentativo della giornata;
+  - Aggiunta di un pannello descrittivo;
+  - Rinomina del nome dei sensori;
+  - Integrazione delle funzioni movingAverage di Clickhouse;
+  - Aggiunta di un nuovo tipo di sensore.
+
 
 == Documentazione  
 
