@@ -9,6 +9,8 @@
 /*
 copiare incollare
 
+#import "../../const.typ": Re_cost, Am_cost, An_cost, Ve_cost, Pr_cost, Pt_cost
+
 //residuo
 #let trace = csv("../../trace.csv")
 #let residuo_ore = trace.at(1).at(0)
@@ -16,6 +18,7 @@ copiare incollare
 
 #let costo_ora = ( Re: Re_cost, Am: Am_cost, An: An_cost, Pt: Pt_cost, Pr: Pr_cost, Ve: Ve_cost )
 
+//IMMETTERE DATI
 #let ore_preventivo = (
   Simone: (0, 0, 0, 0, 10, 0),
   RiccardoC: (0, 8, 0, 0, 0, 0),
@@ -25,12 +28,13 @@ copiare incollare
   RiccardoT: (0, 0, 8, 0, 0, 0)
 )
 
+//IMMETTERE DATI
 //ore effettive
 #let membri_ore = (
   Simone: (0, 0.5, 0, 0, 5.5, 4),
   RiccardoC: (5.5, 5.5, 0.5, 0, 0, 0),
-  Giacomo: (4.5, 0, 6, 0, 0, 0),
-  Nancy: (0.5, 2, 0, 0, 0, 2.5),
+  Giacomo: (4.5, 0, 6, 0, 5, 0),
+  Nancy: (0.5, 4.5, 0, 0, 0, 5),
   Matteo: (0, 0, 5, 0, 5, 0.5),
   RiccardoT: (0, 2, 8, 0, 0.5, 2.5)
 )
@@ -51,7 +55,13 @@ copiare incollare
   }
 }
 
-//ore totali per membro
+//ore totali previste per membro
+#let membri_tot_prev = ( Simone:0, RiccardoC:0, Giacomo:0, Nancy:0, Matteo:0, RiccardoT:0 )
+#for m in membri_ore.keys() {
+  membri_tot_prev.at(m) = ore_preventivo.at(m).sum()
+}
+
+//ore totali effettive per membro
 #let membri_tot = ( Simone:0, RiccardoC:0, Giacomo:0, Nancy:0, Matteo:0, RiccardoT:0 )
 #for m in membri_ore.keys() {
   membri_tot.at(m) = membri_ore.at(m).sum()
@@ -139,6 +149,7 @@ copiare incollare
         tab_content.at(m).at(r) += " (" + str(membri_ore_extra.at(m).at(r)) + ")"
       }
     }
+    //totali: ore previste (+extra)
     tab_content.at(m).at(6) = str(membri_tot.at(m))
     if membri_tot_extra.at(m) != 0 {
       if membri_tot_extra.at(m) > 0 {
@@ -155,9 +166,9 @@ copiare incollare
   //ore
   if ruoli_ore_extra.at(r) != 0 {
     if ruoli_ore_extra.at(r) > 0 {
-      tab_costi.at(r).at(0) = str(ruoli_ore_prev.at(r)) + " (" + "+" + str(ruoli_ore_extra.at(r)) + ")"
+      tab_costi.at(r).at(0) = str(ruoli_ore.at(r)) + " (" + "+" + str(ruoli_ore_extra.at(r)) + ")"
     } else {
-      tab_costi.at(r).at(0) = str(ruoli_ore_prev.at(r)) + " (" + str(ruoli_ore_extra.at(r)) + ")"
+      tab_costi.at(r).at(0) = str(ruoli_ore.at(r)) + " (" + str(ruoli_ore_extra.at(r)) + ")"
     }
   } else {
     tab_costi.at(r).at(0) = ruoli_ore.at(r)
@@ -181,7 +192,7 @@ copiare incollare
 #let costi_rimanenti = str(float(residuo_costi) - costi_totali) + " €"
 
 #table(
-  columns: (160pt,auto,auto,auto,auto,auto,auto,120pt),
+  columns: (130pt,40pt,40pt,40pt,40pt,40pt,40pt,80pt),
   align: center,
   [*Nominativo*],[*Re*],[*Am*],[*An*],[*Pt*],[*Pr*],[*Ve*],[*Totale per persona*],
 
