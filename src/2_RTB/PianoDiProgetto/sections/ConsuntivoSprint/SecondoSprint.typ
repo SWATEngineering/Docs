@@ -184,7 +184,7 @@
 === Rendicontazione ore a posteriori
 I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, durante questo sprint:
 #table(
-  columns: (160pt,auto,auto,auto,auto,auto,auto,120pt),
+  columns: (130pt,40pt,40pt,40pt,40pt,40pt,40pt,80pt),
   align: center,
   [*Nominativo*],[*Re*],[*Am*],[*An*],[*Pt*],[*Pr*],[*Ve*],[*Totale per persona*],
 
