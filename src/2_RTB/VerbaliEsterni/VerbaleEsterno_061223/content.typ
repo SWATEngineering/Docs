@@ -51,19 +51,18 @@ La Proponente ha mostrato un forte entusiasmo per i progressi raggiunti in poche
 
 Gli obbiettivi da raggiungere:
 
-  - Differenziazione delle onde sinusoidali dei vari sensori;
-  - Accelerazione del ciclo rappresentativo della giornata;
+  - Differenziazione dei sensori nel modo in cui generano l’onda;
+  - Visualizzazione di un maggiore lasso temporale di dati;
   - Aggiunta di un pannello descrittivo;
   - Rinomina del nome dei sensori;
-  - Integrazione delle funzioni movingAverage di Clickhouse;
   - Aggiunta di un nuovo tipo di sensore.
 
 
 == Documentazione  
 
 La proponente risultava essere soddisfatta anche della nuova versione dell'Analisi dei Requisiti, l'unica perplessità riguardava il numero complessivo della tipoliogia di sensori, ritenuto eccessivamente elevato anche in termini di visualizzazione sulla dashboard, e alcuni casi d'uso considerati ridondanti. 
-Da notare che la proponente ha sottolineato la preferenza per la qualità rispetto alla quantità. In altre parole, si è manifestato un interesse più marcato verso sensori altamente efficaci e pertinenti piuttosto che un vasto assortimento che potrebbe risultare difficile da gestire o che include elementi superflui.
-La proponente ha anche sottolineato che l'individuazione dei casi d'uso risulta essere più complessa a causa del fatto che il sistema è quasi esclusivamente backend. In questo contesto, la natura prevalentemente di backend potrebbe rendere più sfumata la comprensione e l'identificazione dei casi d'uso
+Da notare che la proponente ha sottolineato la preferenza per la qualità rispetto alla quantità. In altre parole, si è manifestato un interesse più marcato verso sensori altamente efficaci e pertinenti piuttosto che un vasto assortimento che potrebbe risultare difficile da gestire o che potrebbe includere elementi superflui.
+La proponente ha anche sottolineato che l'individuazione dei casi d'uso risulta essere più complessa a causa del fatto che il sistema è quasi esclusivamente backend. 
 
 
 
