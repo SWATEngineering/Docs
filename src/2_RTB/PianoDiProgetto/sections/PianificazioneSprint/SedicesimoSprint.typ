@@ -7,7 +7,7 @@
 *Obiettivi dello sprint*: 
 - conclusione revisione documenti CA;
 - conclusione controllo e miglioramento aspetto e paginazione dei documenti;
-- preparazione candidatura CA.
+- preparazione presentazione CA.
 
 *Suddivisione lavori*
 
