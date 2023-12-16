@@ -125,6 +125,14 @@ Questo rischio si riferisce alla possibilità di variazioni significative rispet
     - Rendicontazione di ore produttive: si utilizza uno _spreadsheet_ dedicato nel quale ciascun membro del team registra quotidianamente le ore produttive utilizzate, specificando le attività svolte e il ruolo assunto. Questo approccio consente di trarre conclusioni riguardo allo stato delle ore totali impiegate e al _budget_ iniziale disponibile, permettendo una migliore gestione delle risorse nel progetto;
     - Monitoraggio Costante: si mantiene un monitoraggio costante del progresso del progetto, permettendo l'aggiornamento della pianificazione in caso di variazioni significative. In particolare, all'interno dell'ITS si effettua un costante aggiornamento delle date di inizio e fine per ogni _issue_, riflettendo con precisione le tempistiche effettive. Inoltre, si utilizza regolarmente la vista Gantt all'interno della Kanban Board del progetto in GitHub per visualizzare la pianificazione temporale e individuare potenziali variazioni o sovrapposizioni nelle attività pianificate.
 
+=== *RP4 - Impegni universitari*
+Questo rischio si riferisce alla possibilità che i membri del team non riescano a dedicare il tempo necessario al progetto a causa di impegni universitari. Tra questi risulta rilevante la sessione di esami invernale, che si svolge in concomitanza con il periodo del progetto.
+  - *Identificazione*:
+    - questo rischio è individuabile attraverso l'osservazione di un rallentamento delle attività di progetto;
+    - in fase di pianificazione viene identificato il periodo in cui è prevista la fase di preparazione per gli esami.
+  - *Valutazione*: Pericolosità: alta; Occorrenza: alta.
+  - *Prevenzione*: nei periodi più intensi verranno ridotte le ore di lavoro dedicate al progetto, in modo da permettere ai membri del team di concentrarsi sullo studio.
+
 == Tabella riassuntiva
 I rischi individuati vengono riportati in tabella, assieme alla loro pericolosità e occorrenza:
 #table(
@@ -141,5 +149,6 @@ I rischi individuati vengono riportati in tabella, assieme alla loro pericolosit
   [*RC5* - Context Switch],[Bassa],[Alta],
   [*RP1* - Comprensione erronea dei requisiti], [Alta], [Media],
   [*RP2* - Disallineamento delle componenti architetturali], [Media], [Media],
-  [*RP3* - Variazioni nei tempi e costi del progetto], [Alta], [Media]
+  [*RP3* - Variazioni nei tempi e costi del progetto], [Alta], [Media],
+  [*RP4* - Impegni universitari], [Alta], [Alta]
 )
