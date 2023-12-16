@@ -7,6 +7,7 @@
 
 #let costo_ora = ( Re: Re_cost, Am: Am_cost, An: An_cost, Pt: Pt_cost, Pr: Pr_cost, Ve: Ve_cost )
 
+//IMMETTERE DATI
 #let ore_preventivo = (
   Simone: (0, 0, 0, 0, 10, 0),
   RiccardoC: (0, 8, 0, 0, 0, 0),
@@ -16,12 +17,13 @@
   RiccardoT: (0, 0, 8, 0, 0, 0)
 )
 
+//IMMETTERE DATI
 //ore effettive
 #let membri_ore = (
   Simone: (0, 0.5, 0, 0, 5.5, 4),
   RiccardoC: (5.5, 5.5, 0.5, 0, 0, 0),
-  Giacomo: (4.5, 0, 6, 0, 0, 0),
-  Nancy: (0.5, 2, 0, 0, 0, 2.5),
+  Giacomo: (4.5, 0, 6, 0, 5, 0),
+  Nancy: (0.5, 4.5, 0, 0, 0, 5),
   Matteo: (0, 0, 5, 0, 5, 0.5),
   RiccardoT: (0, 2, 8, 0, 0.5, 2.5)
 )
