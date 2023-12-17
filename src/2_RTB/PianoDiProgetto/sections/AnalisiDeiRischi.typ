@@ -126,12 +126,12 @@ Questo rischio si riferisce alla possibilità di variazioni significative rispet
     - Monitoraggio Costante: si mantiene un monitoraggio costante del progresso del progetto, permettendo l'aggiornamento della pianificazione in caso di variazioni significative. In particolare, all'interno dell'ITS si effettua un costante aggiornamento delle date di inizio e fine per ogni _issue_, riflettendo con precisione le tempistiche effettive. Inoltre, si utilizza regolarmente la vista Gantt all'interno della Kanban Board del progetto in GitHub per visualizzare la pianificazione temporale e individuare potenziali variazioni o sovrapposizioni nelle attività pianificate.
 
 === *RP4 - Impegni universitari*
-Questo rischio si riferisce alla possibilità che i membri del team non riescano a dedicare il tempo necessario al progetto a causa di impegni universitari. Tra questi risulta rilevante la sessione di esami invernale, che si svolge in concomitanza con il periodo del progetto.
+Questo rischio riguarda la potenziale difficoltà dei membri del team, nel dedicare il tempo richiesto al progetto a causa degli impegni universitari, con particolare riferimento alla sessione di esami invernale che si sovrappone al periodo del progetto.
   - *Identificazione*:
     - questo rischio è individuabile attraverso l'osservazione di un rallentamento delle attività di progetto;
-    - in fase di pianificazione viene identificato il periodo in cui è prevista la fase di preparazione per gli esami.
+    - nella fase di pianificazione viene identificato il periodo in cui è prevista la fase di preparazione per gli esami.
   - *Valutazione*: Pericolosità: alta; Occorrenza: alta.
-  - *Prevenzione*: nei periodi più intensi verranno ridotte le ore di lavoro dedicate al progetto, in modo da permettere ai membri del team di concentrarsi sullo studio.
+  - *Prevenzione*: nei periodi più intensi, si procederà a ridurre le ore di lavoro dedicate al progetto, consentendo così ai membri del team di concentrarsi sugli studi.
 
 == Tabella riassuntiva
 I rischi individuati vengono riportati in tabella, assieme alla loro pericolosità e occorrenza:
