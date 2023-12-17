@@ -1,30 +1,45 @@
 name: Development
 run-name: Test & Publish
 on:
-  push:
-    branches:    
-      - '**'        # matches every branch
-      - '!main'     # exept for main
+    push:
+        branches:
+            - '**' # matches every branch
+            - '!main' # exept for main
 jobs:
-  test-and-publish:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Set up Homebrew
-        id: set-up-homebrew
-        uses: Homebrew/actions/setup-homebrew@master
-      - name: Installing Typst
-        run: |
-            brew install typst
-      - name: Checkout repository
-        uses: actions/checkout@v4
-      - name: Compile documents
-        run: |
-          cd ${{ github.workspace }}/src
-          chmod +x *.sh
-          ./build_all.sh
-      - name: Publish artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: Documentazione
-          path: |
-            build
+    check-glossary:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                python-version: ['3.11']
+        steps:
+            - uses: actions/checkout@v4
+            - name: Set up Python ${{ matrix.python-version }}
+              uses: actions/setup-python@v4
+              with:
+                  python-version: ${{ matrix.python-version }}
+            - name: Check Glossary
+              run: python3 src/glossary_check.py
+
+    test-and-publish:
+        runs-on: ubuntu-latest
+        needs: check-glossary
+        steps:
+            - name: Set up Homebrew
+              id: set-up-homebrew
+              uses: Homebrew/actions/setup-homebrew@master
+            - name: Installing Typst
+              run: |
+                  brew install typst
+            - name: Checkout repository
+              uses: actions/checkout@v4
+            - name: Compile documents
+              run: |
+                  cd ${{ github.workspace }}/src
+                  chmod +x *.sh
+                  ./build_all.sh
+            - name: Publish artifacts
+              uses: actions/upload-artifact@v3
+              with:
+                  name: Documentazione
+                  path: |
+                      build

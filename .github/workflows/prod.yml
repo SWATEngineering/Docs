@@ -1,62 +1,77 @@
 name: Production
 run-name: Test, Publish & Deploy
 on:
-  push:
-    branches:
-      - main
+    push:
+        branches:
+            - main
 jobs:
-  test-and-publish:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Set up Homebrew
-        id: set-up-homebrew
-        uses: Homebrew/actions/setup-homebrew@master
-      - name: Installing Typst
-        run: |
-            brew install typst
-      - name: Checkout repository
-        uses: actions/checkout@v4
-      - name: Compile documents
-        run: |
-          cd ${{ github.workspace }}/src
-          chmod +x *.sh
-          ./build_all.sh
-      - name: Publish artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: Documentazione
-          path: |
-            build
-  deploy:
-    runs-on: ubuntu-latest
-    needs: test-and-publish
-    steps:
-      - name: Download Artifacts
-        uses: actions/download-artifact@v2
-        with:
-          name: Documentazione
-          path: /home/runner/work/Docs/Documentazione
-      - name: Download Facing Repo
-        uses: actions/checkout@v2
-        with:
-          repository: SWATEngineering/SWATEngineering.github.io
-          token: ${{ secrets.PUSH_TOKEN }}
-      - name: Clean Artifacts
-        continue-on-error: true
-        run: |
-          rm -r ../Documentazione/2_RTB/VerbaliEsterni
-      - name: Clean Facing Repo
-        continue-on-error: true
-        # Elimino tutti i file dalla repo di vetrina tranne i Verbali Esterni, essendo quelli firmati da tenere
-        run: |
-          find ./2_RTB -mindepth 1 -not -path './2_RTB/VerbaliEsterni/*' -delete
-      - name: Update Facing Repo
-        run: |
-          mkdir -p "./2_RTB" && cp -r ../Documentazione/2_RTB/* ./2_RTB/
-      - name: Commit changes
-        run: |
-          git config user.name github-actions
-          git config user.email swateng.team@gmail.com
-          git add .
-          git commit -m "[BOT] Aggiornamento documentazione"
-          git push
+    check-glossary:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                python-version: ['3.11']
+        steps:
+            - uses: actions/checkout@v4
+            - name: Set up Python ${{ matrix.python-version }}
+              uses: actions/setup-python@v4
+              with:
+                  python-version: ${{ matrix.python-version }}
+            - name: Check Glossary
+              run: python3 src/glossary_check.py
+
+    test-and-publish:
+        runs-on: ubuntu-latest
+        needs: check-glossary
+        steps:
+            - name: Set up Homebrew
+              id: set-up-homebrew
+              uses: Homebrew/actions/setup-homebrew@master
+            - name: Installing Typst
+              run: |
+                  brew install typst
+            - name: Checkout repository
+              uses: actions/checkout@v4
+            - name: Compile documents
+              run: |
+                  cd ${{ github.workspace }}/src
+                  chmod +x *.sh
+                  ./build_all.sh
+            - name: Publish artifacts
+              uses: actions/upload-artifact@v3
+              with:
+                  name: Documentazione
+                  path: |
+                      build
+    deploy:
+        runs-on: ubuntu-latest
+        needs: test-and-publish
+        steps:
+            - name: Download Artifacts
+              uses: actions/download-artifact@v2
+              with:
+                  name: Documentazione
+                  path: /home/runner/work/Docs/Documentazione
+            - name: Download Facing Repo
+              uses: actions/checkout@v2
+              with:
+                  repository: SWATEngineering/SWATEngineering.github.io
+                  token: ${{ secrets.PUSH_TOKEN }}
+            - name: Clean Artifacts
+              continue-on-error: true
+              run: |
+                  rm -r ../Documentazione/2_RTB/VerbaliEsterni
+            - name: Clean Facing Repo
+              continue-on-error: true
+              # Elimino tutti i file dalla repo di vetrina tranne i Verbali Esterni, essendo quelli firmati da tenere
+              run: |
+                  find ./2_RTB -mindepth 1 -not -path './2_RTB/VerbaliEsterni/*' -delete
+            - name: Update Facing Repo
+              run: |
+                  mkdir -p "./2_RTB" && cp -r ../Documentazione/2_RTB/* ./2_RTB/
+            - name: Commit changes
+              run: |
+                  git config user.name github-actions
+                  git config user.email swateng.team@gmail.com
+                  git add .
+                  git commit -m "[BOT] Aggiornamento documentazione"
+                  git push

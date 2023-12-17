@@ -12,4 +12,23 @@ Per praticità, verranno utilizzate le seguenti abbreviazioni:
 - *Pr*: Programmatore;
 - *Ve*: Verificatore.
 
+
+Questa sezione vuole essere una proiezione finanziaria dettagliata dell'intero progetto, delineando chiaramente le risorse preventivate per ciascuno sprint. 
+
+
 #include "PreventivoSprint/PrimoSprint.typ"
+#include "PreventivoSprint/SecondoSprint.typ"
+#include "PreventivoSprint/TerzoSprint.typ"
+#include "PreventivoSprint/QuartoSprint.typ"
+#include "PreventivoSprint/QuintoSprint.typ"
+#include "PreventivoSprint/SestoSprint.typ"
+#include "PreventivoSprint/SettimoSprint.typ"
+#include "PreventivoSprint/OttavoSprint.typ"
+#include "PreventivoSprint/NonoSprint.typ"
+#include "PreventivoSprint/DecimoSprint.typ"
+#include "PreventivoSprint/UndicesimoSprint.typ"
+#include "PreventivoSprint/DodicesimoSprint.typ"
+#include "PreventivoSprint/TredicesimoSprint.typ"
+#include "PreventivoSprint/QuattordicesimoSprint.typ"
+#include "PreventivoSprint/QuindicesimoSprint.typ"
+#include "PreventivoSprint/SedicesimoSprint.typ"

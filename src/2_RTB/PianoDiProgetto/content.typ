@@ -11,9 +11,13 @@
 #include "sections/ModelloDiSviluppo.typ" 
 #pagebreak()
 
-//#include "sections/Pianificazione.typ"
+#include "sections/Pianificazione.typ" 
+#pagebreak()
 
 #include "sections/Preventivo.typ" 
+#pagebreak()
+
+#include "sections/Consuntivo.typ" 
 #pagebreak()
 
 //#include "sections/Consuntivo.typ" 
