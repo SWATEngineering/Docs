@@ -47,3 +47,6 @@ Topic; In Apache Kafka, un "topic" è una categoria o una suddivisione logica de
 Architettura; Definizione della struttura, dei componenti e delle interazioni fondamentali del sistema. 
 Smart City; area urbana che implementa tecnologie avanzate per gestire in modo intelligente le risorse e creare un ambiente di vita più sostenibile, efficiente e abitabile.
 Time series; formato che rappresenta dati organizzati sequenzialmente in base al tempo, dove ogni punto dati è associato a un timestamp o a un intervallo temporale specifico.
+Spreadsheet; applicazione software che organizza dati in una tabella, utilizzata per gestire, manipolare e analizzare dati numerici o testuali, consentendo operazioni di calcolo, formattazione e rappresentazione visiva dei dati.
+Repository; spazio di archiviazione digitale, spesso utilizzato nel contesto dello sviluppo software, dove vengono conservati e gestiti file, documenti, codice sorgente o altri dati correlati a un progetto.
+Walkthrough; esaminazione approfondita di un documento o codice, senza l'uso di una checklist predefinita. Durante questa revisione, ci si concentra sul contenuto per individuare e correggere errori, mettendo in risalto aspetti critici e identificando potenziali problematiche senza seguire rigidi parametri di valutazione.

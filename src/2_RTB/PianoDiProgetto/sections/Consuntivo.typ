@@ -6,3 +6,4 @@ Si riportano inoltre gli elementi positivi e negativi emersi all'interno delle r
 
 
 #include "ConsuntivoSprint/PrimoSprint.typ"
+#include "ConsuntivoSprint/SecondoSprint.typ"
