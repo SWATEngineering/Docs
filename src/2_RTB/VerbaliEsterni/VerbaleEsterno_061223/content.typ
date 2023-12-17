@@ -49,15 +49,6 @@ Inoltre, è stata proposta l'implementazione della capacità di filtraggio in Gr
 
 La Proponente ha mostrato un forte entusiasmo per i progressi raggiunti in poche settimane, indicando che, dal loro punto di vista, si era già pronti per il PoC. In vista del prossimo sprint, hanno suggerito alcune potenziali migliorie estetiche per rendere più comprensibile il prodotto e la possiblità di aggiungere già un altra tipologia di sensore.
 
-Gli obbiettivi da raggiungere:
-
-  - Differenziazione dei sensori nel modo in cui generano l’onda;
-  - Visualizzazione di un maggiore lasso temporale di dati;
-  - Aggiunta di un pannello descrittivo;
-  - Rinomina del nome dei sensori;
-  - Aggiunta di un nuovo tipo di sensore.
-
-
 == Documentazione  
 
 La proponente risultava essere soddisfatta anche della nuova versione dell'Analisi dei Requisiti, l'unica perplessità riguardava il numero complessivo della tipoliogia di sensori, ritenuto eccessivamente elevato anche in termini di visualizzazione sulla dashboard, e alcuni casi d'uso considerati ridondanti. 
