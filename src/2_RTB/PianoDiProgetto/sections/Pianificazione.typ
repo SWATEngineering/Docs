@@ -54,4 +54,7 @@ In vista della sessione invernale di esami, è prevista una sospensione temporan
 #include "PianificazioneSprint/TredicesimoSprint.typ"
 #include "PianificazioneSprint/QuattordicesimoSprint.typ"
 
-== Customer Acceptance Baseline  
+== Customer Acceptance Baseline
+
+#include "PianificazioneSprint/QuindicesimoSprint.typ"
+#include "PianificazioneSprint/SedicesimoSprint.typ"
