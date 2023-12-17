@@ -7,7 +7,7 @@
 *Obiettivi dello sprint*: 
 
     - Ultimazione delle nuove versioni di:
-          + _Piano Qualifica_;
+          + _Piano di Qualifica_;
           + _Norme di Progetto_;
     - Completamento di:
           + _Specifiche Tecniche_;
