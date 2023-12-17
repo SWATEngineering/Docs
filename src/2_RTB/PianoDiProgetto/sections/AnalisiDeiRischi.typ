@@ -131,7 +131,7 @@ Questo rischio riguarda la potenziale difficoltà dei membri del team, nel dedic
     - questo rischio è individuabile attraverso l'osservazione di un rallentamento delle attività di progetto;
     - nella fase di pianificazione viene identificato il periodo in cui è prevista la fase di preparazione per gli esami.
   - *Valutazione*: Pericolosità: alta; Occorrenza: alta.
-  - *Prevenzione*: nei periodi più intensi verranno ridotte le ore di lavoro dedicate al progetto, in modo da permettere ai membri del team di concentrarsi sullo studio.
+  - *Prevenzione*: nei periodi più intensi, si procederà a ridurre le ore di lavoro dedicate al progetto, consentendo così ai membri del team di concentrarsi sugli studi.
 
 == Tabella riassuntiva
 I rischi individuati vengono riportati in tabella, assieme alla loro pericolosità e occorrenza:
