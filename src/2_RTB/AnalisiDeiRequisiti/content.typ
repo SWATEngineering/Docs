@@ -25,7 +25,11 @@ disambiguato. Tali termini, sono scritti in corsivo e marcati con una G a pedice
 #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf")\
 #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6p.pdf")
 
-- Norme di Progetto
+- _Norme di Progetto_
+
+- _Verbale Esterno 10-11-2023_
+- _Verbale Esterno 24-11-2023_
+- _Verbale Esterno 06-12-2023_
 
 - Regolamento progetto didattico:
 #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf")
