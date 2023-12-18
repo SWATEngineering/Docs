@@ -78,7 +78,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC1: Visualizzazione panoramica generale sensori
 - *Attore Principale*: amministratore pubblico. 
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'attore visualizza i pannelli relativi ai dati propri dei sensori. 
+- *Postcondizioni*: l'attore visualizza i pannelli relativi ai dati prodotti dai sensori. 
 - *Scenario Principale*:
   + l'attore accede al sistema; 
   + l'attore seleziona la visualizzazione della panoramica generale dei sensori;
@@ -369,7 +369,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC3.2: Visualizzazione grafico a mappa disponibilità dei parcheggi
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
-- *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare le disponibilità nei parcheggi. 
+- *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare la disponibilità di parcheggi nella zona visualizzata e la loro occupazione. 
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio urbanistico;
