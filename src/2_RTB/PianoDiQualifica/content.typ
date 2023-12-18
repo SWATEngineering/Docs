@@ -180,6 +180,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
 Le liste di controllo sono uno strumento che i verificatori possono utilizzare al fine di individuare errori ricorrenti nella documentazione. Tali liste prevedono anche una descrizione del problema al fine di poter fornire una spiegazione della richiesta di cambiamenti durante la fase di revisione.
 Le liste di controllo possono essere aggiornate durante tutto il corso del progetto dai Verificatori, man mano che vengono notati errori ricorrenti.
 
+#pagebreak()
 === Struttura dei documenti
 
 #figure(
@@ -199,6 +200,7 @@ table(
 caption: [Lista di controllo per la struttura dei documenti]
 )
 
+#pagebreak()
 === Errori ortografici, di lingua italiana e di forma
 
 #figure(
