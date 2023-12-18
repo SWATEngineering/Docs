@@ -5,9 +5,9 @@
 *Fine*: Giovedì 28/03/2024
 
 *Obiettivi dello sprint*: 
-- conclusione revisione documenti CA;
-- conclusione controllo e miglioramento aspetto e paginazione dei documenti;
-- preparazione presentazione CA.
+- Conclusione revisione documenti CA;
+- Conclusione controllo e miglioramento aspetto e paginazione dei documenti;
+- Preparazione presentazione CA.
 
 *Suddivisione lavori*
 

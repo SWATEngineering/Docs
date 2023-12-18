@@ -5,11 +5,11 @@
 *Fine*: Giovedì 14/03/2024 
 
 *Obiettivi dello sprint*: 
-- controllo e integrazione del contenuto dei documenti;
-- revisione della documentazione;
-- verifica e test del prodotto;
-- correzione di eventuali bug riscontrati;
-- preparazione presentazione PB.
+- Controllo e integrazione del contenuto dei documenti;
+- Revisione della documentazione;
+- Verifica e test del prodotto;
+- Correzione di eventuali bug riscontrati;
+- Preparazione presentazione PB.
 
 *Suddivisione lavori*
 
