@@ -157,15 +157,54 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
 
 #let test_di_accettazione = (
       ([
-            
-      ],"N/I"),
+          Verificare che l'amministratore pubblico senza autenticazione possa:
+            1. usufruire dell'applicazione senza doversi autenticare.
+      ],"N/I",[
+            UC1
+            UC2
+            UC3
+            UC4
+            UC5
+            UC6
+            UC7
+            UC8
+      ]),
+      ([
+          Verificare che l'amministratore pubblico, una volta entrato nell'applicazione, possa:
+            1. aprire il menu di selezione delle dashboard;
+            2. selezionare la dashboard per visualizzare la panoramica generale dei sensori;
+            3. visualizzare la relativa dashboard;
+            4. visualizzare sulla mappa la posizione di tutti i sensori;
+            5. visualizzare un messaggio di avvertenza di dati mancanti, nella mappa, nel caso il sistema non riesca a raggiungere i dati;
+            6. visualizzare su una tabella lo stato di tutti i sensori.
+            7. visualizzare un messaggio di avvertenza di dati mancanti, nella tabella, nel caso il sistema non riesca a raggiungere i dati.
+      ],"N/I",[
+            UC1
+            UC1.1
+            UC1.2
+      ]),
+      ([
+          Verificare che l'amministratore pubblico, una volta entrato nell'applicazione, possa:
+            1. aprire il menu di selezione delle dashboard;
+            2. selezionare la dashboard per visualizzare i dati ambientali;
+            3. visualizzare la relativa dashboard;
+            4. visualizzare sulla mappa la posizione di tutti i sensori;
+            5. visualizzare su una tabella lo stato di tutti i sensori.
+      ],"N/I",[
+            UC1
+            UC1.1
+            UC1.2
+      ]),
 ).enumerate(start:1).map(test => ("TA"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1)));
 
-#table(
-      columns: (1fr,2fr,1fr),
-      [*Codice del test*],[*Descrizione*],[*Stato*],
+#figure(
+table(
+      columns: (2fr,7fr,2fr),
+      align: (center,left,center),
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Codice test*],[*Descrizione*],[*Stato*],
       ..test_di_accettazione.flatten().map(item => [#item])
-)
+),caption: "Test di accetazione.")
 
 == Test di sistema
 
