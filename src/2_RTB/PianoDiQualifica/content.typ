@@ -183,6 +183,8 @@ table(
       [Ripetizione di elementi ricorrenti],[Ogni elemento che viene usato più di una volta, soprattutto se si sa a priori che verrà usato più volte, deve essere creato da una funzione #glossary("Typst").],
       [Ordine non alfabetico],[I nomi dei componenti devono essere riportati in ordine alfabetico, in qualsiasi documento dove compaiono come elenco non numerato.],
       [Aggiornamento fantasma],[Ad ogni insieme di modifiche ai documenti che devono essere aggiunte assieme, deve corrispondere una riga nella tabella del changelog, con un univoco numero di versione.],
+      [Titolo principali in mezzo alla pagina],[Tutti i titoli principali devono iniziare la pagina nella quale vengono inseriti.],
+
 ),
 caption: [Lista di controllo per la struttura dei documenti]
 )
@@ -204,6 +206,7 @@ table(
 caption: [Lista di controllo per gli errori ortografici, di lingua italiana e di forma]
 )
 
+#pagebreak()
 === Non conformità con le Norme di Progetto
 
 #figure(
@@ -216,11 +219,14 @@ table(
       [Punteggiatura scorretta negli elenchi],[Ogni elemento di un elenco, numerato o non, deve terminare con un *;*, ad eccezione dell'ultima riga, la quale deve terminare con *.*.],
       [: in grassetto negli elenchi],[Gli elenchi nella forma "*termine*: testo", non devono includere il ":" nel grassetto.],
       [Maiuscole nei titoli],[La prima lettera di ogni titolo deve essere maiuscola. Il resto del titolo dovrebbe essere in minuscolo (tolte particolari eccezioni).],
-      [Maiuscole negli elenchi],[],
+      [Maiuscole negli elenchi],[Le prime lettere di ogni elenco devono essere maiuscole.],
+      [Ruoli in minuscolo],[Tutti i ruoli del progetto devono avere la prima lettera in maiuscolo.],
+      [Termine non presente nel glossario],[Ogni termine segnato con la formattazione da glossario deve essere effettivamente presente nel glossario con la relativa descrizione.],
 ),
 caption: [Lista di controllo per le non conformità con le Norme di Progetto]
 )
 
+#pagebreak()
 === Analisi dei Requisiti
 
 #figure(
@@ -229,6 +235,10 @@ table(
       inset: 10pt,
       align: (center, left),
       [*Aspetto*],[*Spiegazione*],
+      [Tracciamento caso d'uso - requisito],[Per ciascun caso d'uso deve corrispondere almeno un requisito.],
+      [Struttura errata dei requisiti],[I requisiti devono essere scritti nella forma: "\<soggetto\> deve/devono \<verbo all'infinito\>"],
+      [Numerazione errata dei casi d'uso],[La numerazione dei casi d'uso deve seguire la crescita dei numeri interi naturali. Se si tratta di un sotto-caso d'uso, il sotto-caso deve ereditare, come prefisso del proprio codice, il codice del caso d'uso a cui appartiene, e ne aggiunge una cifra.],
+      [UML dei casi d'uso],[Le estensioni e le inclusioni di un caso d'uso vanno nello stesso diagramma UML del caso d'uso stesso.],
 ),
 caption: [Lista di controllo per l’Analisi dei Requisiti]
 )
