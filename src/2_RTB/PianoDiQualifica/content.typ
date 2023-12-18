@@ -12,14 +12,31 @@ Il _Piano di Qualifica_ è un documento fondamentale che delinea le strategie e 
 
 == Scopo 
 
-Il presente documento ha i seguenti scopi:
+Questo documento ha lo scopo di garantire la qualità del processo e del prodotto attraverso diversi passaggi fondamentali. Prima di tutto, stabilisce gli standard di qualità da seguire. Successivamente, definisce i criteri e le misure che verranno utilizzati per valutare quanto sia efficace il processo e il risultato ottenuto.
 
-          - Definizione standard di qualità;
-          - Definizione metriche e criteri quantitativi per valutare l'efficacia del processo e del prodotto;
-          - Gestione dei test: definizione di test, la pianificazione delle attività di test, la valutazione dei risultati;
-          - Verifica e validazione del prodotto includendo test di unità, di integrazione, di sistema, di accettazione;           
-          - Gestione dei Difetti e delle Anomalie riscontrate durante le attività di verifica;
-          - Miglioramento continuo attraverso l'adattamento del piano in base alle esperienze acquisite e alle modifiche nei requisiti del progetto. 
+Inoltre, gestisce tutte le fasi del testing: dalla pianificazione dei test fino alla valutazione dei risultati ottenuti. Include anche verifiche e controlli approfonditi del prodotto, che comprendono test specifici su varie parti (come unità, integrazione, sistema e accettazione). Questo processo di verifica aiuta anche a gestire eventuali difetti o anomalie rilevate durante le attività di test.
+
+Infine, è orientato al miglioramento costante: si adatta in base alle esperienze acquisite e a eventuali modifiche richieste nel progetto, garantendo così che il processo e il prodotto crescano e si evolvano con il tempo.
+
+== Riferimenti
+=== Normativi
+- _Norme di progetto_;
+- Documento e presentazione di capitolato d'appalto C6 - InnovaCity:
+  - _ https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf _
+  - _ https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6p.pdf _
+- Regolamento di progetto:
+  - _ https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf _
+
+=== Informativi
+- Slide dell'insegnamento di Ingegneria del Software:
+  - Qualità del software:
+    - _ https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T7.pdf _
+  - Qualità di processo:
+    - _ https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T8.pdf _
+  - Verifica e Validazione:
+    - _ https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T9.pdf _
+    - _ https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T10.pdf _
+    - _ https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf _
 
 #pagebreak()
 = Qualità di Processo 
