@@ -1,0 +1,5 @@
+#let data_incontro = "06-12-2023"
+#let inizio_incontro = "15:30"
+#let fine_incontro = "16:45"
+#let luogo_incontro = "Sede Sync Lab, via Galleria Spagna, 28"
+#let company = "Sync Lab"
