@@ -38,7 +38,7 @@ Gli obiettivi prefissati comprendevano l'archiviazione dei dati provenienti da K
 
 == FeedBack della proponente
 
-La Proponente ha sollevato una critica sostanziale in merito alla comprensibilità della dashboard, evidenziando la difficoltà di interpretare il grafico sinusoidale a causa della sovrapposizione di dati. La soluzione proposta è quella di rendere le temperature più singolari e differenziare il modo in cui i sensori generino l'onda sinusoidale, accelerando il ciclo per rappresentare una "giornata" in pochi minuti e aumentare il tasso di generazione dei dati per una rappresentazione più dinamica, inoltre è stato consigliato di aggiungere un pannello descrittivo.
+La Proponente ha sollevato una critica sostanziale in merito alla comprensibilità della dashboard, evidenziando la difficoltà di interpretare il grafico sinusoidale a causa della sovrapposizione di dati. La soluzione proposta è quella di rendere le temperature più singolari e differenziare il modo in cui i sensori generano l'onda sinusoidale, accelerando il ciclo per rappresentare una "giornata" in pochi minuti, aumentando il tasso di generazione dei dati per una rappresentazione più dinamica. È stato inoltre consigliato di aggiungere un pannello descrittivo.
 
 Per ottimizzare le query, è stato suggerito di integrare, ove necessario, le funzioni aggregate di movingAverage e di ridurre l'intervallo per una maggior visuale.
 
