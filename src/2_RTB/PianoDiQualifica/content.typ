@@ -92,7 +92,7 @@ Si riferisce all'efficacia ed efficienza dei processi e delle metodologie impieg
 #pagebreak()
 = Cruscotto delle metriche
 
-== Fornitura
+== Qualità di Processo - Fornitura
 
 === Estimated at Completion
 
@@ -103,7 +103,20 @@ Si riferisce all'efficacia ed efficienza dei processi e delle metodologie impieg
   ],
 )
 
-== Actual Cost e Estimate To Complete
+L'EAC rappresenta una revisione del valore stimato per la realizzazione del progetto, ossia il BAC (Budget At Completion) rivisto allo stato corrente del progetto; il fattore che incide maggiormente sull'andamento dell'EAC è il rapporto tra EV (Estimated Value) e AC (Actual Cost), per cui tanto più queste metriche sono vicine l'una all'altra, tanto più l'EAC risulterà vicino al BAC pianificato inizialmente. Come viene evidenziato dal grafico l'EAC calcolato al termine dei primi sprint risulta essere relativamente vicino al BAC preventivato inizialmente e si mantiene entro i limiti accettabili; in particolare, il fatto che l'EAC fosse minore del BAC al termine del primo sprint ha portato il team a rivedere la percentuale di lavoro preventivata ed effettivamente eseguita negli sprint successivi in modo da mantenere un ritmo di lavoro quanto più possibile costante e riavvicinare l'EAC al BAC. 
+
+=== Budget Variance e Schedule Variance
+
+#figure(
+  image("./assets/valutazione-metriche/BV_SV.png", width: 80%),
+  caption: [
+    Valutazione Budget Variance e Schedule Variance.
+  ],
+)
+
+Il BV indica se alla data corrente si è speso di più o di meno rispetto a quanto inizialmente previsto nel budget; il SV indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate. Come evidenziato dal grafico, il BV è negativo e sembra diminuire progressivamente nel tempo, segno che i costi effettivamente sostenuti sono maggiori rispetto a quanto preventivato. Il SV è invece positivo e sembra aumentare progressivamente nel tempo, segno che la percentuale di lavoro preventivato è tendenzialmente minore rispetto a quella del lavoro portato a compimento. Questo denota una sottostima del lavoro che si è preventivato di riuscire a portare a termine nei primi sprint, rispetto a quanto effettivamente prodotto dal team.
+
+=== Actual Cost e Estimate To Complete
 
 #figure(
   image("./assets/valutazione-metriche/AC_ETC.png", width: 80%),
@@ -112,7 +125,10 @@ Si riferisce all'efficacia ed efficienza dei processi e delle metodologie impieg
   ],
 )
 
-== Earned Value e Planned Value
+L'AC rappresenta il costo effettivo sostenuto fino a un dato momento, mentre l'ETC rappresenta la stima del costo aggiuntivo necessario per
+completare il progetto; di conseguenza, ci si aspetta che l'AC cresca e che l'ETC diminuisca in modo sostanzialmente lineare, segno che il progetto ha mantenuto un ritmo regolare di avanzamento. Stabilire l'andamento delle due metriche al momento dell'RTB è alquanto prematuro, dati i pochi data points a disposizione.
+
+=== Earned Value e Planned Value
 
 #figure(
   image("./assets/valutazione-metriche/EV_PV.png", width: 80%),
@@ -120,6 +136,37 @@ Si riferisce all'efficacia ed efficienza dei processi e delle metodologie impieg
     Valutazione Earned Value e Planned Value.
   ],
 )
+
+L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[deliverable] rilasciati fino al momento della misurazione in seguito alle attività svolte; il PV rappresenta invece il valore del lavoro pianificato fino a un dato momento. Nonostante sia ancora prematuro confrontare le due metriche con l'EAC, si può notare che il PV si mantiene al di sotto dell'EV, seppur di poco, segno che i preventivi fatti finora sono stati leggermente ottimistici rispetto alla spesa effettiva. 
+
+== Qualità di Processo - Codifica
+
+== Qualità di Processo - Documentazione
+
+=== Indice Gulpease
+
+#figure(
+  image("./assets/valutazione-metriche/IG.png", width: 80%),
+  caption: [
+    Valutazione Indice Gulpease.
+  ],
+)
+
+Al termine del secondo sprint, tutti i documenti in corso di preparazione in vista dell'RTB possiedono un IG al di sopra del limite accettabile inferiore di 60; in particolare, l'_Analisi dei Requisiti_ ha raggiunto il valore ideale. 
+
+=== Correttezza ortografica
+
+#figure(
+  image("./assets/valutazione-metriche/CO.png", width: 80%),
+  caption: [
+    Valutazione correttezza Ortografica.
+  ],
+)
+
+Seppur i documenti presentavano alcuni errori ortografici al termine dei primi sprint, da quando si è adottato uno strumento di controllo dell'ortografia sia in fase di stesura che in fase di revisione (al termine del secondo sprint) gli errori sono diminuiti significativamente come ci si attendeva. L'obiettivo principale è fare in modo che non vi siano errori in alcuno dei documenti prima della revisione RTB.
+
+== Qualità di prodotto
+
 
 
 
