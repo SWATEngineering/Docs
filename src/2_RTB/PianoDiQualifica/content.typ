@@ -156,17 +156,15 @@ In questa sezione vengono descritti i test di accettazione del prodotto software
 Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
 
 #let test_di_accettazione = (
-      ("Prova descrizione:
-                  1. ciao;
-                  2. ciao;
-                 3. come stai?
-      ","N/I")
-).enumerate().map(test => ([TA#(test.at(0)+1)]));
+      ([
+            
+      ],"N/I"),
+).enumerate(start:1).map(test => ("TA"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1)));
 
 #table(
       columns: (1fr,2fr,1fr),
       [*Codice del test*],[*Descrizione*],[*Stato*],
-      test_di_accettazione
+      ..test_di_accettazione.flatten().map(item => [#item])
 )
 
 == Test di sistema
