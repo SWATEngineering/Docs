@@ -12,6 +12,12 @@ Il presente documento ha lo scopo di fornire una descrizione dettagliata dei cas
 == Scopo del prodotto
 Lo scopo del prodotto è la realizzazione di un sistema di persistenza dati e successiva visualizzazione di questi, provenienti da sensori dislocati geograficamente. Tale piattaforma consentirà all'#glossary("amministratore pubblico") di acquisire una panoramica completa delle condizioni della città, facilitando così la presa di decisioni informate e tempestive riguardo alla gestione delle risorse e all'implementazione di servizi.
 
+== Glossario
+Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei
+documenti, viene fornito il Glossario, nel quale sono presenti tutte le
+deﬁnizioni di termini aventi uno specifico signiﬁcato che vuole essere
+disambiguato. Tali termini, sono scritti in corsivo e marcati con una G a pedice.
+
 == Riferimenti
 
 === Riferimenti normativi
