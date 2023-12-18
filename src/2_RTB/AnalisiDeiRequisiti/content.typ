@@ -366,10 +366,10 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC3.1 Visualizzazione pannello dati urbanistici]
 )
 
-=== UC3.2: Visualizzazione grafico a mappa disponibilità dei parcheggi
+=== UC3.2: Visualizzazione grafico a mappa disponibilità e occupazione parcheggi
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
-- *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare la disponibilità di parcheggi nella zona visualizzata e la loro occupazione. 
+- *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare la disponibilità di parcheggi nella zona visualizzata e la loro occupazione, in termini di parcheggi liberi.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio urbanistico;
@@ -380,7 +380,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 #figure(
   image("assets/UML/UC3.2_Visualizzazione-grafico-a-mappa-disponibilità-dei-parcheggi.png",width:100%),
-  caption: [UC3.2 Visualizzazione grafico a mappa disponibilità dei parcheggi]
+  caption: [UC3.2 Visualizzazione grafico a mappa disponibilità e occupazione dei parcheggi]
 )
 
 === UC3.3: Visualizzazione posizione e stato colonne ricarica
@@ -724,7 +724,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC15 Inserimento dati livello bacini idrici]
 )
 
-=== UC16: Inserimento dati disponibilità parcheggi
+=== UC16: Inserimento dati disponibilità e occupazione parcheggi
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
@@ -738,7 +738,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 #figure(
   image("assets/UML/UC16_Inserimento-dati-disponibilità-parcheggi.png",width:100%),
-  caption: [UC16 Inserimento dati disponibilità parcheggi]
+  caption: [UC16 Inserimento dati disponibilità e occupazione parcheggi]
 )
 
 === UC17: Inserimento dati colonne di ricarica
@@ -875,7 +875,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     "Obbligatorio", "L'utente deve poter monitorare i dati provenienti dai sensori relativi ai dati urbanistici.", "UC3"
   ),
   (
-    "Desiderabile", "L'utente deve poter visualizzare un grafico a mappa che evidenzi la disponibilità dei parcheggi.", "UC3.2"
+    "Desiderabile", "L'utente deve poter visualizzare un grafico a mappa che evidenzi la disponibilità e l'occupazione dei parcheggi, in termini di posti liberi.", "UC3.2"
   ),
   (
     "Desiderabile", "L'utente deve poter visualizzare un grafico a mappa che evidenzi la posizione e lo stato delle colonne di ricarica.", "UC3.3"
@@ -935,7 +935,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     "Obbligatorio", "Il sistema deve poter gestire dati relativi al livello dei bacini idrici.", "UC15"
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla disponibilità dei parcheggi.", "UC16"
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla disponibilità e l'occupazione dei parcheggi.", "UC16"
   ),
   (
     "Obbligatorio", "Il sistema deve poter gestire dati relativi alle colonne di ricarica.", "UC17"
