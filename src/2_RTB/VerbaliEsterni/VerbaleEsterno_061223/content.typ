@@ -33,7 +33,7 @@ In seguito, la riunione è proseguita con una dettagliata discussione riguardo l
 
 == Avanzamento del codice        
  
-Gli obiettivi prefissati comprendevano l'archiviazione dei dati provenienti da Kafka nel database OLAP ClickHouse, nonché lo sviluppo di una dashboard in Grafana. La dashboard avrebbe dovuto visualizzare una mappa della città indicando la posizione dei sensori di temperatura e presentare in modo chiaro le temperature medie rilevate e un grafico che mostrasse l'andamento sinusoidale della temperatura.
+Gli obiettivi prefissati comprendevano l'archiviazione dei dati provenienti da Kafka nel database OLAP ClickHouse, nonché lo sviluppo di una dashboard in Grafana. La dashboard avrebbe dovuto visualizzare una mappa della città indicando la posizione dei sensori di temperatura, presentare in modo chiaro le temperature medie rilevate e un grafico che mostrasse l'andamento sinusoidale della temperatura.
 
 
 == FeedBack della proponente
