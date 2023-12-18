@@ -62,9 +62,9 @@ In questa sezione si vogliono elencare e descrivere tutti i casi d'uso individua
 == Attori
 Il sistema si interfaccerà con due attori diversi:
 - *_Amministratore pubblico_*: è un utente che ha accesso alla dashboard in tutte le sue funzionalità e può visualizzare i dati raccolti dai sensori, mediante quest'ultima;
-- *#glossary("Sensore")*: è un dispositivo in grado di raccogliere dati relativi al proprio dominio di interesse e di inserirli all'interno del sistema garantendone la persistenza.
+- *#glossary("Sensore")*: è un dispositivo in grado di raccogliere dati, relativi al proprio dominio di interesse, che possano essere letti ed inseriti all'interno della pipeline, garantendone la persistenza.
 
-Relativamente all'utilizzo della dashboard, viene definito un unico attore con accesso completo alle funzionalità, in quanto per sua natura l' _amministratore pubblico_ possiede le competenze tecniche necessarie per poter interagire con essa in tutte le sue parti.
+Relativamente all'utilizzo della dashboard, viene definito un unico attore con accesso completo alle funzionalità, in quanto per sua natura l' amministratore pubblico possiede le competenze tecniche necessarie per poter interagire con essa in tutte le sue parti.
 
 #figure(
   image("assets/attori.png", width: 40%),
