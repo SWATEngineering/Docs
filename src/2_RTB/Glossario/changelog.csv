@@ -1,7 +1,7 @@
-0.1,15-11-2023,Struttura documento e inserimento termini: "Best Practices"; "Way of Working"; "Corsie di Stato"; "Sprint"; "Workflow"; "Quorum".,Matteo Rango,Amministratore
-0.2,21-11-2023,Inserimento termini:"Amministratore Pubblico";"Sensore";"Real-Time";"Attore";"Cella";"Stato di un Sensore";"Dati aggregati";"Test end-to-end";"Documentazione".,Giacomo D'Ovidio, Analista
+0.1,15-11-2023, Struttura documento e inserimento termini: "Best Practices"; "Way of Working"; "Corsie di Stato"; "Sprint"; "Workflow"; "Quorum".,Matteo Rango,Amministratore
+0.2,21-11-2023, Inserimento termini:"Amministratore Pubblico";"Sensore";"Real-Time";"Attore";"Cella";"Stato di un Sensore";"Dati aggregati";"Test end-to-end";"Documentazione".,Giacomo D'Ovidio, Analista
 0.3,29-11-2023, Inserimento termini: "Bug"; "Deliverable",Riccardo Costantin,Amministratore
 0.4,30-11-2023, Inserimento "Framework" "PoC" "MVP" "Design Pattern" "Daily Scrum",Riccardo Costatin,Amministratore
-0.5,11-12-2023, Inserimento "Data pipeline" "Workshop" "Framework Scrum" "Product backlog" "Sprint backlog" "Design patterns" "Rebase workflow" "Corsia",Riccardo Toniolo,Amministratore
-0.6,12-12-2023, Inserimento "Requirements and technology baseline" "Customer acceptance" "Product baseline" "Milestone" "Baseline" "Context switch" "Item" "ITS" "Sprint retrospective" "Sprint review" "Materialized views" "Scalabilità" "Retention policy" "Batch" "Broker" "Efficienza" "Portabilità" "Topic" "Architettura",Riccardo Toniolo,Amministratore
-0.7, 17-12-2023,Inserimento "Smart city" "Time series" "Spreadsheet" "Repository" "Walkthrough",Nancy Kalaj,Analista
+0.7,12-12-2023, Inserimento "Requirements and technology baseline" "Customer acceptance" "Product baseline" "Milestone" "Baseline" "Context switch" "Item" "ITS" "Sprint retrospective" "Sprint review" "Materialized views" "Scalabilità" "Retention policy" "Batch" "Broker" "Efficienza" "Portabilità" "Topic" "Architettura",Riccardo Toniolo,Amministratore
+0.8, 17-12-2023, Inserimento "Smart city" "Time series" "Spreadsheet" "Repository" "Walkthrough",Nancy Kalaj,Analista
+0.9, 17-12-2023, Aggiunta suddivisione per lettere e pulizia termini,Riccardo Toniolo,Amministratore
