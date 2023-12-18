@@ -196,10 +196,9 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             1. aprire il menu di selezione delle dashboard;
             2. selezionare la dashboard per visualizzare la panoramica generale dei sensori;
             3. visualizzare la relativa dashboard;
-            4. visualizzare sulla mappa la posizione di tutti i sensori;
-            5. visualizzare un messaggio di avvertenza di dati mancanti, nella mappa, nel caso il sistema non riesca a raggiungere i dati;
-            6. visualizzare su una tabella lo stato di tutti i sensori.
-            7. visualizzare un messaggio di avvertenza di dati mancanti, nella tabella, nel caso il sistema non riesca a raggiungere i dati.
+            4. visualizzare un pannello con una mappa indicante la posizione di tutti i sensori;
+            5. visualizzare un pannello con una tabella che mostra lo stato di tutti i sensori.
+            6. visualizzare un messaggio di avvertenza di dati mancanti, nei vari pannelli, nel caso il sistema non riesca ad ottenere i dati;
       ],"N/I",[
             UC1
             UC1.1
@@ -210,15 +209,52 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             1. aprire il menu di selezione delle dashboard;
             2. selezionare la dashboard per visualizzare i dati ambientali;
             3. visualizzare la relativa dashboard;
-            4. visualizzare sulla mappa la posizione di tutti i sensori;
-            5. visualizzare su una tabella lo stato di tutti i sensori.
+            4. visualizzare un pannello con la serie storica delle temperature rilevate dai ciascun sensore;
+            5. visualizzare un pannello con la serie storica delle percentuali di umidità rilevate da ciascun sensore;
+            6. visualizzare un pannello con una mappa mostrante velocità e direzione del vento rilevato da ciascun sensore;
+            7. visualizzare un pannello con la serie storica dei millimetri di pioggia rilevati dai ciascun sensore;
+            8. visualizzare un pannello con la serie storica (in formato aggregato, andando a fare la media degli ultimi cinque minuti) dei millimetri di pioggia rilevati dai ciascun sensore;
+            9. visualizzare un pannello con la serie storica relativa ai dati sull'inquinamento dell'aria rilevati dai ciascun sensore; /*TODO: sostituire con l'unità di misura/metrica giusta*/
+            10. visualizzare un pannello con la serie storica (in formato aggregato, andando a fare la media degli ultimi cinque minuti) dei dati sull'inquinamento dell'aria rilevati dai ciascun sensore; /*TODO: sostituire con l'unità di misura/metrica giusta*/
+            11. visualizzare un pannello con la serie storica delle percentuali di riempimento dei bacini idrici rilevate dai ciascun sensore;
+            12. visualizzare un pannello con la serie storica (in formato aggregato, andando a fare la media degli ultimi cinque minuti) delle temperature rilevate dai ciascun sensore;
+            13. visualizzare un pannello con il valore massimo negli ultimi 5 minuti relativo all'inquinamento dell'aria. /*TODO: sistemare con le unità di misura giuste*/
+            14. visualizzare un messaggio di avvertenza di dati mancanti, nei vari pannelli, nel caso il sistema non riesca ad ottenere i dati;
+      ],"N/I",[
+            UC2
+            UC2.1
+            UC2.2
+            UC2.3
+            UC2.4
+            UC2.5
+            UC2.6
+            UC2.7
+            UC2.8
+            UC2.9
+            UC2.10
+            UC2.11
+      ]),
+      ([
+          Verificare che l'amministratore pubblico, una volta entrato nell'applicazione, possa:
+            1. aprire il menu di selezione delle dashboard;
+            2. selezionare la dashboard per visualizzare i dati urbanistici;
+            3. visualizzare la relativa dashboard;
+            4. visualizzare un pannello con ;
+
+            LAST. visualizzare un messaggio di avvertenza di dati mancanti, nei vari pannelli, nel caso il sistema non riesca ad ottenere i dati;
       ],"N/I",[
             UC1
-            UC1.1
-            UC1.2
+            UC2
+            UC3
+            UC4
+            UC5
+            UC6
+            UC7
+            UC8
       ]),
 ).enumerate(start:1).map(test => ("TA"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1)));
 
+#show figure: set block(breakable: true)
 #figure(
 table(
       columns: (2fr,7fr,2fr),
