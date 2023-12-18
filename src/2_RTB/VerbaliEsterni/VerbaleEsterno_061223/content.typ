@@ -27,7 +27,7 @@
 
 == Esposizione dei progressi raggiunti 
 
-Nell'incontro con la Proponente, il team ha illustrato in dettaglio l'evoluzione del Proof of Concept, evidenziandone gli importanti progressi compiuti nel corso dello sprint. La Proponente ha manifestato un apprezzamento molto positivo per i risultati raggiunti finora, confermando la validità della direzione intrapresa per il successo del progetto.Inoltre, sono stati  dati feedback per migliorare quanto sviluppato, a livello grafico, per rendere più veloce e facile la comprensione dei vari pannelli.
+Nell'incontro con la Proponente, il team ha illustrato in dettaglio l'evoluzione del Proof of Concept, evidenziandone gli importanti progressi compiuti nel corso dello sprint. La Proponente ha manifestato un apprezzamento molto positivo per i risultati raggiunti finora, confermando la validità della direzione intrapresa per il successo del progetto. Inoltre, sono stati  dati feedback per migliorare quanto sviluppato, a livello grafico, per rendere più veloce e facile la comprensione dei vari pannelli.
 
 In seguito, la riunione è proseguita con una dettagliata discussione riguardo la parte inerente la documentazione, ponendo particolare enfasi sull'Analisi dei Requisiti.
 
