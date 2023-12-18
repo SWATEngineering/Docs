@@ -14,7 +14,7 @@ Lo scopo del prodotto è la realizzazione di un sistema di persistenza dati e su
 
 == Glossario
 Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei
-documenti, viene fornito il Glossario, nel quale sono presenti tutte le
+documenti, viene fornito il _Glossario_, nel quale sono presenti tutte le
 deﬁnizioni di termini aventi uno specifico signiﬁcato che vuole essere
 disambiguato. Tali termini, sono scritti in corsivo e marcati con una G a pedice.
 
