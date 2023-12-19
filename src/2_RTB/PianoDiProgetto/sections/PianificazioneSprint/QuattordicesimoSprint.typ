@@ -4,7 +4,7 @@
 
 *Fine*: Giovedì 14/03/2024 
 
-*Obiettivi dello sprint*: 
+*Obiettivi dello sprint*:
 - Controllo e integrazione del contenuto dei documenti;
 - Revisione della documentazione;
 - Verifica e test del prodotto;

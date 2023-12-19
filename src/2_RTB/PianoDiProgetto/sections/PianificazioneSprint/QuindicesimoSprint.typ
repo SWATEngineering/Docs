@@ -4,7 +4,7 @@
 
 *Fine*: Giovedì 21/03/2024 
 
-*Obiettivi dello sprint*: 
+*Obiettivi dello sprint*:
 - Verifica e test del codice;
 - Correzione di eventuali bug riscontrati;
 - Inizio revisione documenti CA;
