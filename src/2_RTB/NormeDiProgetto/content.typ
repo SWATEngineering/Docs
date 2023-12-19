@@ -573,31 +573,44 @@ Nel caso del repository _InnovaCity_ il branch _main_ viene utilizzato per la pu
 
 == Verifica
 
-
 === Descrizione e Scopo
-Qualsiasi processo istanziato durante lo svolgimento del progetto, prima di potersi considerare completato, deve essere sottoposto a verifica. 
-Lo scopo primario di questo processo è garantire la corettezza dei prodotti e la loro adesione ai vincoli di qualità individuati e elencati all'interno del doumento _Piano di Qualifica_. 
+Qualsiasi processo istanziato durante lo svolgimento del progetto, prima di potersi considerare completato, dev’essere sottoposto a verifica.
+Lo scopo primario di questo processo è garantire la correttezza dei prodotti e la loro adesione ai vincoli di qualità individuati ed elencati all'interno del documento _Piano di Qualifica_. 
+Il _Piano di Qualifica_ funge da punto di riferimento per il revisore: in esso vengono fornite tutte le linee guida a cui il revisore deve aderire  garantendo uniformità e coerenza al processo di revisione e garantendone la ripetibilità.
 
-=== Elementi Interni al Repository
-La verifica del prodotto avviene tramite apposito metodo nell'ITS, attraverso la _Pull request_: il verificatore indica i punti di cui richiede la modifica, le motivazioni alla base e eventuali proposte. Il verificatore si occupa di spostare la issue di riferimento nelle corsie appropriate, chiudendola se la verifica è terminata con successo, o spostandola nuovamente nella corsia _In Progress_ in caso siano richieste modifiche.
 
-=== Elementi Esterni al Repository
-Potrebbero esservi delle issue aperte all'interno dell'_ITS_ che non hanno un corrispondente documento o prodotto in generale, all'interno del repository. Per queste, il ciclo di vita segue il normale flusso attraverso i diversi stati elencati nella @its. La verifica viene effettuata attraverso i commenti della issue stessa, che avranno la seguente forma:
-- caso _richiesta cambiamenti_:
+=== Strumenti
+Gli strumenti adottati per agevolare il processo di verifica sono i seguenti:
+==== GitHub
+GitHub offre una funzionalità di _review_ all'interno del meccanismo di _pull request_, permettendo al Verificatore di visualizzare facilmente le ultime modifiche apportate al prodotto. Il Verificatore inserisce commenti specifici che indicano le correzioni o le migliorie necessarie e, al termine della review, la invia richiedendo le modifiche indicate; in seguito all'intervento correttivo dell'autore, il Verificatore esegue ulteriori revisioni fino a quando il documento non presenta più errori e rispetta i criteri di conformità richiesti.
+A seguito del processo di verifica il Verificatore si occupa di spostare la issue nella corsia adeguata all'interno della _Kanban Board_:
+- _done_ qualora la revisione abbia avuto esito positivo; 
+- _in progress_ in caso siano richieste modifiche.
+
+L'utilizzo delle review in GitHub non solo facilita il tracciamento del processo di verifica, ma consente anche al team di accedere e consultare facilmente l'intera cronologia del codice o documento di interesse all'interno della #glossary[repository] del progetto. Questo approccio garantisce un processo di verifica trasparente, tracciabile e conforme alle linee guida stabilite.
+Inoltre GitHub impedisce che i rami oggetto di pull request possano essere uniti fino a quando l'ultimo commit non viene revisionato e approvato. 
+Ciò garantisce che ogni prodotto che viene integrato al ramo principale sia effettivamente revisionato da almeno un membro del team, riducendo il rischio di introduzione di errori. 
+
+===== Elementi Esterni al Repository
+Potrebbero esservi delle issue aperte all'interno dell'@its che non hanno un corrispondente documento o prodotto in generale, all'interno del repository. Per queste, il ciclo di vita segue il normale flusso attraverso i diversi stati elencati nella @its. La verifica viene effettuata attraverso i commenti della issue stessa, che avranno la seguente forma:
+- richiesta cambiamenti:
   ```
   [REV]
   - richiesta 1;
   - richiesta 2;
   ```
-- caso _approvazione_:
+- approvazione:
   ```
   [REV] done
   ```
+===
+
+
 
 ==== Analisi statica
 L'analisi statica rappresenta un'esplorazione approfondita del codice o della documentazione associata al prodotto. Questa metodologia mira a individuare potenziali problemi o irregolarità, senza mai eseguire effettivamente il sistema software. Quando si tratta di documentazione, l'analisi statica si concentra sulla struttura, sulla coerenza, sulla completezza e sulla chiarezza del testo. In particolare, verifica la presenza di errori grammaticali, di formattazione e concettuali, garantendo un livello ottimale di qualità nel materiale consegnato. 
 
-Il verificatore, nel contesto della documentazione o del codice, può condurre l'analisi statica tramite due tecniche: _Walkthrough_ o _Inspection_.
+Il verificatore, nel contesto della documentazione o del codice, può condurre l'analisi statica tramite due tecniche: #glossary[Walkthrough] o #glossary[Inspection].
 
 ==== Inspection
 
@@ -605,19 +618,20 @@ In questo processo, il verificatore adotta un approccio strutturato, seguendo un
 
 ==== Walkthrough
 
-Contrariamente all'_inspection_, il _walkthrough_ è un processo più esplorativo e collaborativo. Questa metodologie prevede una lettura a pettine del prodotto con l'obiettivo di comprendere la sua struttura e contenuto nel loro insieme. 
+Contrariamente all'_Inspection_ il _Walkthrough_ è un approccio più esplorativo e che lascia maggiore spazio alla collaborazione tra l’autore e il revisore. Questa metodologia prevede una lettura a pettine del prodotto con l'obiettivo di analizzare struttura e contenuto nel loro insieme. 
 
-Il team ha valutato l'utilizzo del metodo _Inspection_ come preferibile: la sceltà è motivata dall'alto grado di rigore offerto e dalla conseguente maggiore efficacia nel individuare tutte le inconsistenze.
-Tuttavia, il metodo _Walkthrough_ conserva la sua rilevanza e rimane una valida alternativa di cui il verificatore può avvalersi specialmente nelle fasi iniziali e finali del lavoro su un determinato prodotto, dove la sua natura collaborativa può facilitare la rilevazione di criticità. 
-
-=== Strumenti
-Gli strumenti adottati per agevolare il processo di verifica sono i seguenti:
-==== GitHub
-GitHub offre una funzionalità di "review" all'interno delle Pull request, permettendo al Verificatore di visualizzare facilmente le ultime modifiche apportate al prodotto. Il Verificatore inserisce commenti specifici che indicano le correzioni o le migliorie necessarie e, al termine della review, la invia richiedendo le modifiche indicate; in seguito all'intervento correttivo dell'autore, il Verificatore esegue ulteriori revisioni fino a quando il documento non presenta più errori e rispetta i criteri di conformità richiesti.
-
-L'utilizzo delle review in GitHub non solo facilita il tracciamento dell processo di verifica, ma consente anche al team di accedere e consultare facilmente l'intera cronologia del codice o documento di interesse all'interno della #glossary[repository] del progetto. Questo approccio garantisce un processo di verifica trasparente, tracciabile e conforme alle linee guida stabilite.
+Il team ha valutato l'utilizzo del metodo _Inspection_ come preferibile: la scelta è motivata dall'alto grado di rigore offerto e dalla conseguente maggiore efficacia nel individuare tutte le inconsistenze.
+Tuttavia, il metodo _Walkthrough_ conserva la sua rilevanza e rimane una valida alternativa di cui ci si può avvalere specialmente nelle fasi iniziali e finali del lavoro su un determinato prodotto: l’approccio pragmatico del metodo risulta infatti adeguato a rilevare criticità e peculiarità che potrebbero non essere rilevate da metodi più formali.  
 
 ==== Analisi dinamica
+L'analisi dinamica si riferisce all'osservazione e alla conseguente valutazione del comportamento di un sistema in esecuzione, ne risulta che l'oggetto esclusivo di questa metodologia di analisi nel contesto progettuale sia il prodotto risultante dal processo di codifica, il _software_. 
+Nel campo dello sviluppo software l'analisi dinamica si realizza attraverso l'impiego di varie categorie di test. 
+I test, costruiti a partire da requisiti funzionali e non, rendono il processo di analisi dinamica ripetibile, e il conseguente risultato oggettivo. 
+La redazione dei test, e la conseguente loro esecuzione segue le asserzioni del #glossary[Modello a V]. 
+Il Verificatore si impegna a definire dei casi di test per ognuna delle categorie sottoelencate, garantendo così una copertura completa e dettagliata del software.
+La totalità dei test individuati viene riportata all'interno del documento _Piano di Qualifica_.
+In sede di verifica sulla base del dominio esaminato il Verificatore dovrà eseguire tali test in maniera rigorosa e riportarne gli esiti all'interno del _Piano di Qualifica_.
+
 
 ===== Test di unità
 
