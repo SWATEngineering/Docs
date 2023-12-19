@@ -141,8 +141,7 @@ Software per creare diagrammi e grafici di varia natura, utilizzato dagli Analis
 Il processo di sviluppo rappresenta la serie di attività che il team #team deve svolgere affinché, successivamente, riesca nell'implementazione del prodotto software, rispettando i requisiti e le date di scadenza concordate con la Proponente. In particolare, si ha:
         - *Analisi dei Requisiti*;
         - *Progettazione*;
-        - *Codifica*;
-        - *Verifica*.
+        - *Codifica*.
 
 === Analisi dei Requisiti
 
@@ -603,14 +602,10 @@ Potrebbero esservi delle issue aperte all'interno dell'@its che non hanno un cor
   ```
   [REV] done
   ```
-===
-
-
-
 ==== Analisi statica
 L'analisi statica rappresenta un'esplorazione approfondita del codice o della documentazione associata al prodotto. Questa metodologia mira a individuare potenziali problemi o irregolarità, senza mai eseguire effettivamente il sistema software. Quando si tratta di documentazione, l'analisi statica si concentra sulla struttura, sulla coerenza, sulla completezza e sulla chiarezza del testo. In particolare, verifica la presenza di errori grammaticali, di formattazione e concettuali, garantendo un livello ottimale di qualità nel materiale consegnato. 
 
-Il verificatore, nel contesto della documentazione o del codice, può condurre l'analisi statica tramite due tecniche: #glossary[Walkthrough] o #glossary[Inspection].
+Il verificatore, nel contesto della documentazione o del codice, può condurre l'analisi statica tramite due metodologie: #glossary[Walkthrough] o #glossary[Inspection].
 
 ==== Inspection
 
@@ -628,18 +623,16 @@ L'analisi dinamica si riferisce all'osservazione e alla conseguente valutazione 
 Nel campo dello sviluppo software l'analisi dinamica si realizza attraverso l'impiego di varie categorie di test. 
 I test, costruiti a partire da requisiti funzionali e non, rendono il processo di analisi dinamica ripetibile, e il conseguente risultato oggettivo. 
 La redazione dei test, e la conseguente loro esecuzione segue le asserzioni del #glossary[Modello a V]. 
-Il Verificatore si impegna a definire dei casi di test per ognuna delle categorie sottoelencate, garantendo così una copertura completa e dettagliata del software.
+Il Verificatore si impegna a definire casi di test per ognuna delle seguenti categorie, garantendo così una copertura completa e dettagliata del software: 
+- Test di unità; 
+- Test di integrazione; 
+- Test di sistema; 
+- Test di accettazione.
+
 La totalità dei test individuati viene riportata all'interno del documento _Piano di Qualifica_.
-In sede di verifica sulla base del dominio esaminato il Verificatore dovrà eseguire tali test in maniera rigorosa e riportarne gli esiti all'interno del _Piano di Qualifica_.
+In sede di verifica sulla base del dominio esaminato il Verificatore dovrà eseguire tali test in maniera rigorosa e riportarne gli esiti all'interno del _Piano di Qualifica_. 
 
 
-===== Test di unità
-
-===== Test di integrazione
-
-===== Test di sistema
-
-===== Test di accettazione
 
 == Gestione della Qualità 
 
