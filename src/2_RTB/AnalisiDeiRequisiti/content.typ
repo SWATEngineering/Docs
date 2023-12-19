@@ -247,10 +247,10 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2.6 Visualizzazione pannello precipitazioni medie]
 )
 
-=== UC2.7: Visualizzazione pannello _time series_ per inquinamento dell'aria
+=== UC2.7: Visualizzazione pannello _time series_ per la qualità dell'aria, contenente il livello di polveri sottili
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi all'inquinamento dell'aria, in $#sym.mu g\/m^3$, in formato _time series_.
+- *Postcondizioni*: l'attore visualizza un pannello sull'inquinamento dell'aria, basato sulle rilevazione di polveri sottili in $#sym.mu g\/m^3$, in formato _time series_.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale;
