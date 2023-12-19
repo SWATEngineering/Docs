@@ -14,7 +14,7 @@ Lo scopo del prodotto è la realizzazione di un sistema di persistenza dati e su
 
 == Glossario
 Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei
-documenti, viene fornito il _Glossario_, nel quale sono presenti tutte le
+documenti, viene fornito il _Glossario v1.0_, nel quale sono presenti tutte le
 deﬁnizioni di termini aventi uno specifico signiﬁcato che vuole essere
 disambiguato. Tali termini, sono scritti in corsivo e marcati con una G a pedice.
 
@@ -25,11 +25,11 @@ disambiguato. Tali termini, sono scritti in corsivo e marcati con una G a pedice
 #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf")\
 #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6p.pdf")
 
-- _Norme di Progetto_
+- _Norme di Progetto v1.0_
 
-- _Verbale Esterno 10-11-2023_
-- _Verbale Esterno 24-11-2023_
-- _Verbale Esterno 06-12-2023_
+- _Verbale Esterno 10-11-2023 v1.0_
+- _Verbale Esterno 24-11-2023 v1.0_
+- _Verbale Esterno 06-12-2023 v1.0_
 
 - Regolamento progetto didattico:
 #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf")
@@ -57,7 +57,7 @@ Il prodotto, destinato ad amministratori pubblici, consente loro di ottenere una
 
 = Casi d'uso
 == Scopo
-In questa sezione si vogliono elencare e descrivere tutti i casi d'uso individuati dall'analisi del capitolato e dalle interazioni avute con la Proponente. In particolare, si individuano gli #glossary("attori") e le funzionalità che questi possono svolgere. Ogni caso d'uso possiede un codice, la cui struttura è descritta nelle _Norme di Progetto_.
+In questa sezione si vogliono elencare e descrivere tutti i casi d'uso individuati dall'analisi del capitolato e dalle interazioni avute con la Proponente. In particolare, si individuano gli #glossary("attori") e le funzionalità che questi possono svolgere. Ogni caso d'uso possiede un codice, la cui struttura è descritta nelle _Norme di Progetto v1.0_.
 
 == Attori
 Il sistema si interfaccerà con due attori diversi:
@@ -165,7 +165,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC2.2: Visualizzazione pannello #glossary("time series") per temperatura
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alla temperatura, in gradi celsius, in formato _time series_.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alla temperatura, in gradi celsius, in formato time series.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale;
@@ -176,13 +176,13 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 #figure(
   image("assets/UML/UC2.2_Visualizzazion-pannello-time-series-per-temperatura.png",width:100%),
-  caption: [UC2.2 Visualizzazione pannello _time series_ per temperatura]
+  caption: [UC2.2 Visualizzazione pannello time series per temperatura]
 )
 
-=== UC2.3: Visualizzazione pannello _time series_ per umidità
+=== UC2.3: Visualizzazione pannello time series per umidità
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi all'umidità, in percentuale, in formato _time series_.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi all'umidità, in percentuale, in formato time series.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale;
@@ -193,7 +193,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 #figure(
   image("assets/UML/UC2.3_Visualizzazione-pannello-time-series-umidità.png",width:100%),
-  caption: [UC2.3 Visualizzazione pannello _time series_ per umidità]
+  caption: [UC2.3 Visualizzazione pannello time series per umidità]
 )
 
 === UC2.4: Visualizzazione grafico a mappa velocità e direzione del vento
@@ -213,10 +213,10 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2.4 Visualizzazione grafico a mappa velocità e direzione del vento]
 )
 
-=== UC2.5: Visualizzazione pannello _time series_ per precipitazioni
+=== UC2.5: Visualizzazione pannello time series per precipitazioni
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alle precipitazioni, in millimetri di pioggia, in formato _time series_.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alle precipitazioni, in millimetri di pioggia, in formato time series.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale;
@@ -227,7 +227,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 #figure(
   image("assets/UML/UC2.5_Visualizzazione-pannello-time-series-per-precipitazioni.png",width:100%),
-  caption: [UC2.5 Visualizzazione pannello _time series_ per precipitazioni]
+  caption: [UC2.5 Visualizzazione pannello time series per precipitazioni]
 )
 
 === UC2.6: Visualizzazione pannello precipitazioni medie
@@ -247,10 +247,10 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2.6 Visualizzazione pannello precipitazioni medie]
 )
 
-=== UC2.7: Visualizzazione pannello _time series_ per la qualità dell'aria, contenente il livello di polveri sottili
+=== UC2.7: Visualizzazione pannello time series per inquinamento dell'aria
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello sull'inquinamento dell'aria, basato sulle rilevazione di polveri sottili in $#sym.mu g\/m^3$, in formato _time series_.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi all'inquinamento dell'aria, in $#sym.mu g\/m^3$, in formato time series.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale;
@@ -261,7 +261,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 #figure(
   image("assets/UML/UC2.7_Visualizzazione-pannello-time-series-per-inquinamento-dell-aria.png",width:100%),
-  caption: [UC2.7 Visualizzazione pannello _time series_ per inquinamento dell'aria]
+  caption: [UC2.7 Visualizzazione pannello time series per inquinamento dell'aria]
 )
 
 === UC2.8: Visualizzazione pannello inquinamento dell'aria medio
@@ -281,10 +281,10 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2.8 Visualizzazione pannello inquinamento dell'aria medio]
 )
 
-=== UC2.9: Visualizzazione pannello _time series_ per livello dei bacini idrici
+=== UC2.9: Visualizzazione pannello time series per livello dei bacini idrici
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi al riempimento, in percentuale, dei bacini idrici, in formato _time series_.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi al riempimento, in percentuale, dei bacini idrici, in formato time series.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale;
@@ -295,7 +295,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 #figure(
   image("assets/UML/UC2.9_Visualizzazione-pannello-time-series-per-livello-dei-bacini-idrici.png",width:100%),
-  caption: [UC2.9 Visualizzazione pannello _time series_ per livello dei bacini idrici]
+  caption: [UC2.9 Visualizzazione pannello time series per livello dei bacini idrici]
 )
 
 === UC2.10: Visualizzazione pannello temperatura media
@@ -499,10 +499,10 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC6 Applicazione filtri]
 )
 
-=== UC6.1: Filtro sotto-insieme di sensori su grafici _time series_
+=== UC6.1: Filtro sotto-insieme di sensori su grafici time series
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: 
-  + l'attore sta visualizzando uno o più pannelli _time series_ con i dati;
+  + l'attore sta visualizzando uno o più pannelli time series con i dati;
   + il pannello offre la funzionalità di filtro dei dati tramite selezione di uno o più sensori.
 - *Postcondizioni*: l'attore visualizza solamente i dati relativi al filtro applicato.
 - *Scenario Principale*:
@@ -513,7 +513,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 #figure(
   image("assets/UML/UC6.1_Filtro-sotto-insieme-di-sensori-su-grafici-time-series.png",width:70%),
-  caption: [UC6.1 Filtro sotto-insieme di sensori su grafici _time series_]
+  caption: [UC6.1 Filtro sotto-insieme di sensori su grafici time series]
 )
 
 === UC6.2: Filtro per tipologia sensore su tabella
