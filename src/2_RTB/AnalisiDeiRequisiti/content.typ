@@ -82,7 +82,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore accede al sistema; 
   + l'attore seleziona la visualizzazione della panoramica generale dei sensori;
-  + il sistema elabora i dati e renderizza i pannelli; 
   + l'attore visualizza i panelli.
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
@@ -100,7 +99,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore accede al sistema; 
   + l'attore seleziona la visualizzazione della panoramica generale dei sensori;
-  + il sistema elabora i dati e renderizza il pannello; 
   + l'attore visualizza il pannello.
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna. 
@@ -118,7 +116,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore accede al sistema; 
   + l'attore seleziona la visualizzazione della panoramica generale dei sensori;
-  + il sistema elabora i dati e renderizza la tabella; 
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
 - *Estensioni*: [UC9].
@@ -134,8 +131,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza pannelli contenenti dati relativi al dominio ambientale.
 - *Scenario Principale*:
   + l'attore accede al sistema;
-  + l'attore seleziona la visualizzazione del dominio ambientale;
-  + il sistema elabora i dati e renderizza i pannelli relativi.
+  + l'attore seleziona la visualizzazione del dominio ambientale.
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
@@ -151,8 +147,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi al dominio ambientale.
 - *Scenario Principale*:
   + l'attore accede al sistema;
-  + l'attore seleziona la visualizzazione del dominio ambientale;
-  + il sistema elabora i dati e renderizza il pannello relativo.
+  + l'attore seleziona la visualizzazione del dominio ambientale.
 - *Specializzazioni*: [UC2.2],[UC2.3],[UC2.4],[UC2.5],[UC2.6],[UC2.7],[UC2.8],[UC2.9],[UC2.10],[UC2.11].
 - *Inclusioni*: nessuna.
 - *Estensioni*: [UC9].
@@ -168,8 +163,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alla temperatura, in gradi celsius, in formato time series.
 - *Scenario Principale*:
   + l'attore accede al sistema;
-  + l'attore seleziona la visualizzazione del dominio ambientale;
-  + il sistema elabora i dati e renderizza il pannello relativo.
+  + l'attore seleziona la visualizzazione del dominio ambientale.
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
@@ -185,8 +179,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi all'umidità, in percentuale, in formato time series.
 - *Scenario Principale*:
   + l'attore accede al sistema;
-  + l'attore seleziona la visualizzazione del dominio ambientale;
-  + il sistema elabora i dati e renderizza il pannello relativo.
+  + l'attore seleziona la visualizzazione del dominio ambientale.
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
@@ -202,8 +195,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alla velocità, espressa in chilometri orari, e alla direzione del vento, su di una mappa che mostra delle frecce direzionate e colorate in base alla velocità.
 - *Scenario Principale*:
   + l'attore accede al sistema;
-  + l'attore seleziona la visualizzazione del dominio ambientale;
-  + il sistema elabora i dati e renderizza il pannello relativo.
+  + l'attore seleziona la visualizzazione del dominio ambientale.
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
@@ -219,8 +211,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alle precipitazioni, in millimetri di pioggia, in formato time series.
 - *Scenario Principale*:
   + l'attore accede al sistema;
-  + l'attore seleziona la visualizzazione del dominio ambientale;
-  + il sistema elabora i dati e renderizza il pannello relativo.
+  + l'attore seleziona la visualizzazione del dominio ambientale.
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
@@ -236,8 +227,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alle precipitazioni medie, espressi in formato numerico (millimetri di pioggia), provenienti dai sensori attivi negli ultimi cinque minuti.
 - *Scenario Principale*:
   + l'attore accede al sistema;
-  + l'attore seleziona la visualizzazione del dominio ambientale;
-  + il sistema elabora i dati e renderizza il pannello relativo.
+  + l'attore seleziona la visualizzazione del dominio ambientale.
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
@@ -253,8 +243,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi all'inquinamento dell'aria, in $#sym.mu g\/m^3$, in formato time series.
 - *Scenario Principale*:
   + l'attore accede al sistema;
-  + l'attore seleziona la visualizzazione del dominio ambientale;
-  + il sistema elabora i dati e renderizza il pannello relativo.
+  + l'attore seleziona la visualizzazione del dominio ambientale.
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
@@ -270,8 +259,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza un pannello contenente la media della concentrazione di inquinanti dell'aria, in $#sym.mu g\/m^3$, considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
 - *Scenario Principale*:
   + l'attore accede al sistema;
-  + l'attore seleziona la visualizzazione del dominio ambientale;
-  + il sistema elabora i dati e renderizza il pannello relativo.
+  + l'attore seleziona la visualizzazione del dominio ambientale.
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
@@ -287,8 +275,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi al riempimento, in percentuale, dei bacini idrici, in formato time series.
 - *Scenario Principale*:
   + l'attore accede al sistema;
-  + l'attore seleziona la visualizzazione del dominio ambientale;
-  + il sistema elabora i dati e renderizza il pannello relativo.
+  + l'attore seleziona la visualizzazione del dominio ambientale.
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
@@ -304,8 +291,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alla temperatura, in gradi celsius, media tra tutti i sensori attivi negli ultimi 5 minuti, in formato numerico.
 - *Scenario Principale*:
   + l'attore accede al sistema;
-  + l'attore seleziona la visualizzazione del dominio ambientale;
-  + il sistema elabora i dati e renderizza il pannello relativo.
+  + l'attore seleziona la visualizzazione del dominio ambientale.
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
@@ -321,8 +307,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi all'inquinamento dell'aria, in $#sym.mu g\/m^3$, massimo tra tutti i sensori attivi negli ultimi 5 minuti, in formato numerico.
 - *Scenario Principale*:
   + l'attore accede al sistema;
-  + l'attore seleziona la visualizzazione del dominio ambientale;
-  + il sistema elabora i dati e renderizza il pannello relativo.
+  + l'attore seleziona la visualizzazione del dominio ambientale.
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
@@ -338,8 +323,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza pannelli contenenti dati relativi al dominio urbanistico.
 - *Scenario Principale*:
   + l'attore accede al sistema;
-  + l'attore seleziona la visualizzazione del dominio urbanistico;
-  + il sistema elabora i dati e renderizza i pannelli relativi.
+  + l'attore seleziona la visualizzazione del dominio urbanistico.
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
@@ -355,8 +339,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi al dominio urbanistico.
 - *Scenario Principale*:
   + l'attore accede al sistema;
-  + l'attore seleziona la visualizzazione del dominio urbanistico;
-  + il sistema elabora i dati e renderizza il pannello relativo.
+  + l'attore seleziona la visualizzazione del dominio urbanistico.
 - *Specializzazioni*: [UC3.2],[UC3.3],[UC3.4],[UC3.5],[UC3.6].
 - *Inclusioni*: nessuna.
 - *Estensioni*: [UC9].
@@ -372,8 +355,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare la disponibilità di parcheggi nella zona visualizzata e la loro occupazione, in termini di parcheggi liberi.
 - *Scenario Principale*:
   + l'attore accede al sistema;
-  + l'attore seleziona la visualizzazione del dominio urbanistico;
-  + il sistema elabora i dati e renderizza il pannello relativo.
+  + l'attore seleziona la visualizzazione del dominio urbanistico.
 - *Specializzazioni*: nessuna. 
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
@@ -389,8 +371,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare il wattaggio erogato e la disponibilità delle colonne di ricarica.  
 - *Scenario Principale*:
   + l'attore accede al sistema;
-  + l'attore seleziona la visualizzazione del dominio urbanistico;
-  + il sistema elabora i dati e renderizza il pannello relativo.
+  + l'attore seleziona la visualizzazione del dominio urbanistico.
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
@@ -406,8 +387,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare la distribuzione della congestione del traffico.
 - *Scenario Principale*:
   + l'attore accede al sistema;
-  + l'attore seleziona la visualizzazione del dominio urbanistico;
-  + il sistema elabora i dati e renderizza il pannello relativo.
+  + l'attore seleziona la visualizzazione del dominio urbanistico.
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
@@ -423,8 +403,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare la posizione e la percentuale delle batterie delle biciclette elettriche. 
 - *Scenario Principale*:
   + l'attore accede al sistema;
-  + l'attore seleziona la visualizzazione del dominio urbanistico;
-  + il sistema elabora i dati e renderizza il pannello relativo.
+  + l'attore seleziona la visualizzazione del dominio urbanistico.
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
@@ -439,8 +418,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
 - *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare lo stato di riempimento delle zone rifiuti. 
   + l'attore accede al sistema;
-  + l'attore seleziona la visualizzazione del dominio urbanistico;
-  + il sistema elabora i dati e renderizza il pannello relativo.
+  + l'attore seleziona la visualizzazione del dominio urbanistico.
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
@@ -455,8 +433,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Precondizioni*: l'attore sta usando il sistema.
 - *Postcondizioni*: l'attore visualizza, in forma tabellare, la lista ordinata di anomalie nei dati rilevati dal sistema.
 - *Scenario Principale*:
-  + l'attore seleziona la visualizzazione delle anomalie;
-  + il sistema elabora i dati e renderizza il pannello relativo.
+  + l'attore seleziona la visualizzazione delle anomalie.
 - *Specializzazioni*: nessuna.
 - *Inclusioni*: nessuna.
 - *Estensioni*: nessuna.
