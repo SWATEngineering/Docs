@@ -182,93 +182,163 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
           Verificare che l'amministratore pubblico senza autenticazione possa:
             1. usufruire dell'applicazione senza doversi autenticare.
       ],"N/I",[
-            UC1
-            UC2
-            UC3
-            UC4
-            UC5
-            UC6
-            UC7
+            UC1\
+            UC2\
+            UC3\
+            UC4\
+            UC5\
+            UC6\
+            UC7\
             UC8
       ]),
       ([
           Verificare che l'amministratore pubblico, una volta entrato nell'applicazione, possa:
-            1. aprire il menu di selezione delle dashboard;
-            2. selezionare la dashboard per visualizzare la panoramica generale dei sensori;
-            3. visualizzare la relativa dashboard;
-            4. visualizzare un pannello con una mappa indicante la posizione di tutti i sensori;
-            5. visualizzare un pannello con una tabella che mostra lo stato di tutti i sensori.
-            6. visualizzare un messaggio di avvertenza di dati mancanti, nei vari pannelli, nel caso il sistema non riesca ad ottenere i dati;
+            1. aprire il menu di selezione delle #glossary("dashboard");
+            2. selezionare la #glossary("dashboard") per visualizzare la panoramica generale dei sensori;
+            3. visualizzare la relativa #glossary("dashboard");
+            4. visualizzare un #glossary("pannello") con una mappa indicante la posizione di tutti i sensori;
+            5. visualizzare un #glossary("pannello") con una tabella che mostra lo stato di tutti i sensori.
+            6. visualizzare un messaggio di avvertenza di dati mancanti, nei vari #glossary("pannelli"), nel caso il sistema non riesca ad ottenere i dati.
       ],"N/I",[
-            UC1
-            UC1.1
+            UC1\
+            UC1.1\
             UC1.2
       ]),
       ([
           Verificare che l'amministratore pubblico, una volta entrato nell'applicazione, possa:
-            1. aprire il menu di selezione delle dashboard;
-            2. selezionare la dashboard per visualizzare i dati ambientali;
-            3. visualizzare la relativa dashboard;
-            4. visualizzare un pannello con la serie storica delle temperature rilevate dai ciascun sensore;
-            5. visualizzare un pannello con la serie storica delle percentuali di umidità rilevate da ciascun sensore;
-            6. visualizzare un pannello con una mappa mostrante velocità e direzione del vento rilevato da ciascun sensore;
-            7. visualizzare un pannello con la serie storica dei millimetri di pioggia rilevati dai ciascun sensore;
-            8. visualizzare un pannello con la serie storica (in formato aggregato, andando a fare la media degli ultimi cinque minuti) dei millimetri di pioggia rilevati dai ciascun sensore;
-            9. visualizzare un pannello con la serie storica relativa ai dati sull'inquinamento dell'aria rilevati dai ciascun sensore; /*TODO: sostituire con l'unità di misura/metrica giusta*/
-            10. visualizzare un pannello con la serie storica (in formato aggregato, andando a fare la media degli ultimi cinque minuti) dei dati sull'inquinamento dell'aria rilevati dai ciascun sensore; /*TODO: sostituire con l'unità di misura/metrica giusta*/
-            11. visualizzare un pannello con la serie storica delle percentuali di riempimento dei bacini idrici rilevate dai ciascun sensore;
-            12. visualizzare un pannello con la serie storica (in formato aggregato, andando a fare la media degli ultimi cinque minuti) delle temperature rilevate dai ciascun sensore;
-            13. visualizzare un pannello con il valore massimo negli ultimi 5 minuti relativo all'inquinamento dell'aria. /*TODO: sistemare con le unità di misura giuste*/
-            14. visualizzare un messaggio di avvertenza di dati mancanti, nei vari pannelli, nel caso il sistema non riesca ad ottenere i dati;
+            1. aprire il menu di selezione delle #glossary("dashboard");
+            2. selezionare la #glossary("dashboard") per visualizzare i dati ambientali;
+            3. visualizzare la relativa #glossary("dashboard");
+            4. visualizzare un #glossary("pannello") con la #glossary("serie storica") delle temperature rilevate dai ciascun sensore;
+            5. visualizzare un #glossary("pannello") con la #glossary("serie storica") delle percentuali di umidità rilevate da ciascun sensore;
+            6. visualizzare un #glossary("pannello") con una mappa mostrante velocità e direzione del vento rilevato da ciascun sensore;
+            7. visualizzare un #glossary("pannello") con la #glossary("serie storica") dei millimetri di pioggia rilevati dai ciascun sensore;
+            8. visualizzare un #glossary("pannello") con la #glossary("serie storica") (in formato aggregato, andando a fare la media degli ultimi cinque minuti) dei millimetri di pioggia rilevati dai ciascun sensore;
+            9. visualizzare un #glossary("pannello") con la #glossary("serie storica") relativa ai dati sull'inquinamento dell'aria rilevati dai ciascun sensore; /*TODO: sostituire con l'unità di misura/metrica giusta*/
+            10. visualizzare un #glossary("pannello") con la #glossary("serie storica") (in formato aggregato, andando a fare la media degli ultimi cinque minuti) dei dati sull'inquinamento dell'aria rilevati dai ciascun sensore; /*TODO: sostituire con l'unità di misura/metrica giusta*/
+            11. visualizzare un #glossary("pannello") con la #glossary("serie storica") delle percentuali di riempimento dei bacini idrici rilevate dai ciascun sensore;
+            12. visualizzare un #glossary("pannello") con la #glossary("serie storica") (in formato aggregato, andando a fare la media degli ultimi cinque minuti) delle temperature rilevate dai ciascun sensore;
+            13. visualizzare un #glossary("pannello") con il valore massimo negli ultimi 5 minuti relativo all'inquinamento dell'aria. /*TODO: sistemare con le unità di misura giuste*/
+            14. visualizzare un messaggio di avvertenza di dati mancanti, nei vari #glossary("pannelli"), nel caso il sistema non riesca ad ottenere i dati.
       ],"N/I",[
-            UC2
-            UC2.1
-            UC2.2
-            UC2.3
-            UC2.4
-            UC2.5
-            UC2.6
-            UC2.7
-            UC2.8
-            UC2.9
-            UC2.10
+            UC2\
+            UC2.1\
+            UC2.2\
+            UC2.3\
+            UC2.4\
+            UC2.5\
+            UC2.6\
+            UC2.7\
+            UC2.8\
+            UC2.9\
+            UC2.10\
             UC2.11
       ]),
       ([
           Verificare che l'amministratore pubblico, una volta entrato nell'applicazione, possa:
-            1. aprire il menu di selezione delle dashboard;
-            2. selezionare la dashboard per visualizzare i dati urbanistici;
-            3. visualizzare la relativa dashboard;
-            4. visualizzare un pannello con ;
-
-            LAST. visualizzare un messaggio di avvertenza di dati mancanti, nei vari pannelli, nel caso il sistema non riesca ad ottenere i dati;
+            1. aprire il menu di selezione delle #glossary("dashboard");
+            2. selezionare la #glossary("dashboard") per visualizzare i dati urbanistici;
+            3. visualizzare la relativa #glossary("dashboard");
+            4. visualizzare un #glossary("pannello") con una mappa indicante la quantità di posti liberi per ogni parcheggio controllato da un sensore;
+            5. visualizzare un #glossary("pannello") con una mappa indicante i watt erogati da ciascuna colonnina di ricarica controllata, indicando se è occupata o meno;
+            6. visualizzare un #glossary("pannello") con una mappa indicante l'intensità del traffico sulle strade controllate; /*TODO: andare a specificare come questa intesità viene espressa (anche in adr)*/
+            7. visualizzare un #glossary("pannello") con una mappa indicante la posizione di ciascuna bicicletta elettrica controllata, con la relativa percentuale di batteria;
+            8. visualizzare un #glossary("pannello") con una mappa indicante la percentuale di riempimento di ogni zona rifiuti controllata;
+            9. visualizzare un messaggio di avvertenza di dati mancanti, nei vari #glossary("pannelli"), nel caso il sistema non riesca ad ottenere i dati.
       ],"N/I",[
-            UC1
-            UC2
-            UC3
+            UC3\
+            UC3.2\
+            UC3.3\
+            UC3.4\
+            UC3.5\
+            UC3.6
+      ]),
+      ([
+          Verificare che l'amministratore pubblico, una volta entrato nell'applicazione, possa:
+            1. aprire il menu di selezione delle #glossary("dashboard");
+            2. selezionare la #glossary("dashboard") per visualizzare i dati anomali prodotti dai sensori;
+            3. visualizzare la relativa #glossary("dashboard");
+            4. visualizzare una tabella contenente per ogni anomalia rilevata, il relativo sensore di riferimento. La tabella deve essere ordinata in base all'orario di registrazione dei dati.
+      ],"N/I",[
             UC4
+      ]),
+      ([
+          Verificare che l'amministratore pubblico, una volta entrato nell'applicazione, possa:
+            1. ricevere notifiche relative al superamento di un qualche valore di soglia, impostato per determinati tipi di sensori. /*TODO: specificare i sensori (anche in adr)*/
+      ],"N/I",[
             UC5
-            UC6
+      ]),
+      ([
+          Verificare che l'amministratore pubblico, una volta entrato nell'applicazione, possa:
+            1. Scegliere una #glossary("dashboard") da visualizzare;
+            2. Applicare dei filtri, per selezionare un sottoinsieme di sensori da visualizzare, nel caso di #glossary("pannelli") di tipo #glossary("serie storica");
+            3. Applicare dei filtri, per selezionare solo particolari tipologie di sensori da considerare, nel caso di #glossary("pannelli") contenenti tabelle, le quali comprendono più tipologie di sensori al loro interno; /*TODO: non ho idea se la mia interpretazione sia corretta o meno.*/
+            4. Applicare dei filtri, per selezionare solo particolari sensori, mediante il nome, nel caso di #glossary("pannelli") contenenti tabelle;
+            5. Applicare dei filtri, per selezionare solo i dati relativi ad un definito intervallo di tempo, all'interno di un'intera #glossary("dashboard");
+            6. Applicare i filtri come #glossary("side effect") anche a tutti quei #glossary("pannelli") collegati ai #glossary("pannelli") filtrati attivamente dall'utente.
+      ],"N/I",[
+            UC6\
+            UC6.1\
+            UC6.2\
+            UC6.3\
+            UC6.4\
+            UC6.5
+      ]),
+      ([
+          Verificare che l'amministratore pubblico, una volta entrato nell'applicazione, possa:
+            1. Scegliere una tabella da ordinare;
+            2. Ordinare le righe di tale tabella per ciascuna sua colonna, in modo ascendente o discendente, secondo #glossary("ordinamento lessicografico") (nel caso di valori espressi in stringhe) o per confronto di valore numerico.
+      ],"N/I",[
             UC7
+      ]),
+      ([
+          Verificare che l'amministratore pubblico, una volta entrato nell'applicazione, possa:
+            1. Scegliere una #glossary("dashboard") da modificare nel layout;
+            2. Modificare il layout dei #glossary("pannelli") in termini di posizione di tali #glossary("pannelli") e di dimensioni.
+      ],"N/I",[
             UC8
       ]),
-).enumerate(start:1).map(test => ("TA"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1)));
+).enumerate(start:1).map(test => ("TA"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1),test.at(1).at(2)));
 
 #show figure: set block(breakable: true)
 #figure(
 table(
-      columns: (2fr,7fr,2fr),
+      columns: (2fr,7fr,1fr),
       align: (center,left,center),
       fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Codice test*],[*Descrizione*],[*Stato*],
-      ..test_di_accettazione.flatten().map(item => [#item])
+      ..test_di_accettazione.map(item => (item.at(0),item.at(1),item.at(2))).flatten().map(item => [#item])
 ),caption: "Test di accetazione.")
+
+=== Tracciamento dei test di accettazione
+#show figure: set block(breakable: true)
+#figure(
+table(
+      columns: (80pt,80pt),
+      align: (center,center),
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Codice test*],[*Codice caso d'uso*],
+      ..test_di_accettazione.map(item => (item.at(0),item.at(3))).flatten().map(item => [#item])
+),caption: "Tracciamento dei test di accetazione.")
 
 == Test di sistema
 
 #let test_di_sistema = (
-      ()
-)
+      ([
+            Verificare che l'utente possa accedere all'applicazione senza dover effettuare l'autenticazione.
+      ],"N/I",[ROF1]),
+).enumerate(start:1).map(test => ("TS"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1),test.at(1).at(2)));
+
+#show figure: set block(breakable: true)
+#figure(
+table(
+      columns: (2fr,7fr,1fr),
+      align: (center,left,center),
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Codice test*],[*Descrizione*],[*Stato*],
+      ..test_di_sistema.map(item => (item.at(0),item.at(1),item.at(2))).flatten().map(item => [#item])
+),caption: "Test di sistema.")
+
 
 == Liste di controllo
 
