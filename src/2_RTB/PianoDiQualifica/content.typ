@@ -122,6 +122,7 @@ Sono state individuate due metriche principali:
 
              Dove:
 
+            /*TODO: sistemare il simbolo (che non esiste)*/
              - *Nf* \u{27F6} indica il numero delle frasi;
              - *Nl* \u{27F6} indica il numero delle lettere;
              - *Np* \u{27F6} indica il numero delle parole.
@@ -303,9 +304,72 @@ table(
 
 #let test_di_sistema = (
       ([
-            Verificare che l'utente possa accedere all'applicazione senza dover effettuare l'autenticazione.
-      ],"N/I",[ROF1]),
-).enumerate(start:1).map(test => ("TS"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1),test.at(1).at(2)));
+            Verificare che l'amministratore pubblico possa accedere all'applicazione senza dover effettuare l'autenticazione.
+      ],"N/I","ROF"),
+      ([
+            Verificare che l'amministratore pubblico possa visualizzare una #glossary("dashboard") dedicata a fornire una panoramica generale dei sensori.
+      ],"N/I","ROF"),
+      ([
+            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a fornire una panoramica generale dei sensori, una mappa indicante le posizioni dei vari sensori, mediante icone.
+      ],"N/I","ROF"),
+      ([
+            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a fornire una panoramica generale dei sensori, una tabella che riporti una panoramica generale dei sensori. /*TODO: disambiguare "panoramica generale dei sensori"*/
+      ],"N/I","ROF"),
+      ([
+            Verificare che l'amministratore pubblico possa visualizzare una #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori.
+      ],"N/I","ROF"),
+      ([
+            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare l'andamento delle temperature in formato #glossary("serie storica").
+      ],"N/I","ROF"),
+      ([
+            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare l'andamento dell'umidità in formato #glossary("serie storica"). /*TODO: disambiguare umidità.*/
+      ],"N/I","ROF"),
+      ([
+            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello contenente una mappa che evidenzi velocità e direzione del vento.
+      ],"N/I","ROP"),
+      ([
+            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare l'andamento delle precipitazioni in formato #glossary("serie storica").
+      ],"N/I","ROF"), /*TODO: disambiguare misura delle precipitazioni*/
+      ([
+            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare la media delle precipitazioni registrate negli utlimi 5 minuti tra tutti i sensori. 
+      ],"N/I","RDF"),
+      ([
+            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare l'andamento dell'inquinamento dell'aria in formato #glossary("serie storica"). /*TODO: disambiguare la misura dell'inquinamento*/
+      ],"N/I","ROF"),
+      ([
+            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare la media dell'inquinamento dell'aria registrato negli ultimi 5 minuti tra tutti i sensori. /*TODO: disambiguare la misura dell'inquinamento*/
+      ],"N/I","RDF"),
+      ([
+            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare l'andamento dei dati relativi al livello dei bacini idrici in formato #glossary("serie storica"). /*TODO: disambiguare l'espressione di livello*/
+      ],"N/I","ROF"),
+      ([
+            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare la media della temperatura registrata negli ultimi 5 minuti tra tutti i sensori.
+      ],"N/I","RDF"),
+      ([
+            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare dell'inquinamento dell'aria registrato negli ultimi 5 minuti tra tutti i sensori.
+      ],"N/I","RDF"),
+      ([
+            Verificare che l'amministratore pubblico possa visualizzare una #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori.
+      ],"N/I","ROF"),
+      ([
+            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori, un pannello contenente una mappa che evidenzi la disponibilità dei parcheggi, intesa come numero di parcheggi liberi, nei parcheggi controllati.
+      ],"N/I","RDF"),
+      ([
+            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori, un pannello contenente una mappa che evidenzi la posizione e i watt erogati dalle varie colonnine di ricarica controllate.
+      ],"N/I","RDF"),
+      ([
+            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori, un pannello contenente una mappa che evidenzi l'intensità del traffico. /*TODO: disambiguare metrica misurativa dell'intensità di traffico*/
+      ],"N/I","RPF"),
+      ([
+            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori, un pannello contenente una mappa che evidenzi la posizione, in tempo reale, delle biciclette elettrice controllate assieme alla relativa percentuale di batteria.
+      ],"N/I","RPF"),
+      ([
+            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori, un pannello contenente una mappa che evidenzi la percentuale di riempimento delle zone rifiuti.
+      ],"N/I","RDF"),
+      ([
+            Verificare che l'amministratore pubblico possa visualizzare una #glossary("dashboard") dedicata a visualizzare i dati anomali provenienti dai sensori.
+      ],"N/I","RDF"),
+).enumerate(start:1).map(test => ("TS"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1),test.at(1).at(2))).enumerate(start:1).map(test => (test.at(1).at(0),test.at(1).at(1),test.at(1).at(2),test.at(1).at(3) + str(test.at(0))));
 
 #show figure: set block(breakable: true)
 #figure(
