@@ -277,6 +277,83 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ],"N/I",[
             UC8
       ]),
+      ([
+          Verificare che un sensore, una volta connesso al sistema, possa:
+            1. Inseirire dati relativi alla temperatura, da esso controllata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
+      ],"N/I",[
+            U10\
+            U21
+      ]),
+      ([
+          Verificare che un sensore, una volta connesso al sistema, possa:
+            1. Inseirire dati relativi all'umidità, da esso controllata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
+      ],"N/I",[
+            U11\
+            U21
+      ]),
+      ([
+          Verificare che un sensore, una volta connesso al sistema, possa:
+            1. Inseirire dati relativi alla velocità e direzione del vento, da esso controllata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
+      ],"N/I",[
+            U12\
+            U21
+      ]),
+      ([
+          Verificare che un sensore, una volta connesso al sistema, possa:
+            1. Inseirire dati relativi alle precipitazioni, da esso controllate, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/ /*TODO: disambiguare la metrica delle precipitazioni*/
+      ],"N/I",[
+            U13\
+            U21
+      ]),
+      ([
+          Verificare che un sensore, una volta connesso al sistema, possa:
+            1. Inseirire dati relativi all'inquinamento dell'aria, da esso controllata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/ /*TODO: disambiguare la metrica dell'inquinamento dell'aria*/
+      ],"N/I",[
+            U14\
+            U21
+      ]),
+      ([
+          Verificare che un sensore, una volta connesso al sistema, possa:
+            1. Inseirire dati relativi al livello del bacino idrico, da esso controllato, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/ /*TODO: disambiguare la metrica del livello dei bacini idrici*/
+      ],"N/I",[
+            U15\
+            U21
+      ]),
+      ([
+          Verificare che un sensore, una volta connesso al sistema, possa:
+            1. Inseirire dati relativi alla disponibilità dei parcheggi, inteso come numero di posti disponibili in un parcheggio da esso controllato, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
+      ],"N/I",[
+            U16\
+            U21
+      ]),
+      ([
+          Verificare che un sensore, una volta connesso al sistema, possa:
+            1. Inseirire dati relativi alla disponibilità e ai watt erogati da una colonna di ricarica, da esso controllata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
+      ],"N/I",[
+            U17\
+            U21
+      ]),
+      ([
+          Verificare che un sensore, una volta connesso al sistema, possa:
+            1. Inseirire dati relativi alla posizione e alla percentuale di batteria della bicicletta, da esso controllata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
+      ],"N/I",[
+            U18\
+            U21
+      ]),
+      ([
+          Verificare che un sensore, una volta connesso al sistema, possa:
+            1. Inseirire dati relativi alla percentuale di riempimento di una zona ecologica, da esso controllata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
+      ],"N/I",[
+            U19\
+            U21
+      ]),
+      ([
+          Verificare che un sensore, una volta connesso al sistema, possa:
+            1. Inseirire dati relativi alla congestione della strada, da esso controllata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/ /*TODO: disambiguare la metrica della congestione stradale*/
+      ],"N/I",[
+            U20\
+            U21
+      ]),
 ).enumerate(start:1).map(test => ("TA"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1),test.at(1).at(2)));
 
 #show figure: set block(breakable: true)
@@ -301,6 +378,8 @@ table(
 ),caption: "Tracciamento dei test di accetazione.")
 
 == Test di sistema
+
+/*TODO: per chi andrà a toccare questo documento per raffinarlo, andare a specificare meglio i vari punti singoli. Molto probabilmente l'automatismo per calcolare automaticamente il codice del requisito funzionale di riferimento andrà rimosso, e il codice inserito a mano, poichè ho come l'impressione che bisogna entrare molto di più nel dettaglio della verifica*/
 
 #let test_di_sistema = (
       ([
@@ -439,6 +518,17 @@ table(
       [*Codice test*],[*Descrizione*],[*Stato*],
       ..test_di_sistema.map(item => (item.at(0),item.at(1),item.at(2))).flatten().map(item => [#item])
 ),caption: "Test di sistema.")
+
+=== Tracciamento dei test di sistema
+#show figure: set block(breakable: true)
+#figure(
+table(
+      columns: (80pt,80pt),
+      align: (center,center),
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Codice test*],[*Codice caso d'uso*],
+      ..test_di_sistema.map(item => (item.at(0),item.at(3))).flatten().map(item => [#item])
+),caption: "Tracciamento dei test di sistema.")
 
 
 == Liste di controllo
