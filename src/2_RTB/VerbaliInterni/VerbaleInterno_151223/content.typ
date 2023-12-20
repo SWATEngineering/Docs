@@ -16,23 +16,20 @@
 = Sintesi Elaborazione Incontro
 
 == Controllo Ortografico
-Durante l'incontro, uno dei punti centrali è stato l'introduzione di un sistema automatizzato per il controllo ortografico all'interno della repository. Seguirà una fase di studio da parte del team per capire quale strumento può essere il più adaatto.
+Durante l'incontro, uno dei punti centrali è stato l'introduzione di un sistema automatizzato per il controllo ortografico all'interno della repository. Il team procederà con una fase di valutazione per determinare quale strumento possa risultare più idoneo.
 
 == Gestione delle issue
-Una proposta significativa è emersa per gestire le attività in modo più efficiente: creare issue man mano che emergono le necessità, facendo anche tutto il lavoro di assegnazione della priorità, della grandezza e del nuovo tag "ruolo", sia durante le riunioni, sia durante stand-up. La decisione è stata accolta positivamente dai partecipanti, che hanno visto in questa pratica un modo per ottimizzare il tempo durante le riunioni.
+È emersa una proposta significativa è emersa per la gestione delle attività con maggior efficienza: creare issue al manifestarsi delle necessità, svolgendo anche tutto il lavoro di assegnazione delle priorità, delle grandezze, sia durante le riunioni, sia durante gli stand-up. Inoltre è stato creato il nuovo tag "Ruolo" all'interno delle issue al fine di agevolare coloro responsabili di quella attività. La decisione è stata accolta positivamente dai partecipanti, che hanno visto in questa pratica un modo per ottimizzare il tempo durante le riunioni.
 
 == Tecnologie
-La tecnologia "Pydantic" per il linguaggio Python è stata riconosciuta come parte integrante per l'MVP, in modo da semplificare la verifica e la validazione del software.
+La tecnologia "Pydantic" per il linguaggio Python è stata riconosciuta come parte integrante per l'MVP, in modo da semplificare la verifica e la validazione del software, anche attraverso l'ampio uso di type hints, facilitando la dichiarazione e l'uso di tipi di dati all'interno del codice.
 
 == Gestione del tempo
-Altra decisione è stata quella di adottare una assegnazione delle ore in multipli di trenta minuti (0.5 h), all'interno del foglio condiviso di time tracking, con l'obiettivo di evitare complicazioni non necessarie e garantire una gestione più precisa del tempo.
-A questo si collega uno sviluppo di una automazione in grado di aggiornare il Piano di Progetto secondo quanto svolto dal team durante gli sprint. Oltre che a far risparmiare tempo ai responabili e agli amministratori, questo porterà un grande vantaggio in termini di sicurezza che i calcoli del consuntivo siano corretti.
+È stata presa un'altra significativa decisione riguardo l'adozione dell'assegnazione delle ore in multipli di trenta minuti (0.5 h), all'interno del foglio condiviso di time tracking, con l'obiettivo di evitare complicazioni non necessarie e garantire una gestione più precisa del tempo.
+A questo si collega lo sviluppo di un'automazione in grado di aggiornare il _Piano di Progetto_ secondo quanto svolto dal team durante gli sprint. Oltre che a far risparmiare tempo ai Responabili e agli Amministratori, questo script comporterà un notevole vantaggio in termini di sicurezza nell'elaborazione dei calcoli del consuntivo.
 
 == Terminologia
-Una discussione approfondita ha riguardato la terminologia utilizzata nei documenti, con un consenso raggiunto sul termine "Verificatore" anziché "Revisore".
-
-== Durata degli Sprint
-Infine, sono state decise modifiche significative riguardanti la durata dello sprint, riducendola da due a una settimana, per adattarsi meglio alla flessibilià richiesta in questo periodo e al ritmo del team.
+Una discussione è stata condotta per esaminare la terminologia utilizzata nei documenti, e si è raggiunto un consenso sull'adozione del termine "Verificatore" anziché "Revisore", per essere più consistenti in tutti i documenti.
 
 == Assegnazione dei ruoli
 Su proposta dei componenti e a seguito di quanto indicato precedentemente, è stata assegnata la seguente distribuzione dei ruoli:
