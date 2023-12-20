@@ -589,6 +589,7 @@ A seguito del processo di verifica il Verificatore si occupa di spostare la issu
 L'utilizzo delle review in GitHub non solo facilita il tracciamento del processo di verifica, ma consente anche al team di accedere e consultare facilmente l'intera cronologia del codice o documento di interesse all'interno della #glossary[repository] del progetto. Questo approccio garantisce un processo di verifica trasparente, tracciabile e conforme alle linee guida stabilite.
 Inoltre GitHub impedisce che i rami oggetto di pull request possano essere uniti fino a quando l'ultimo commit non viene revisionato e approvato. 
 Ciò garantisce che ogni prodotto che viene integrato al ramo principale sia effettivamente revisionato da almeno un membro del team, riducendo il rischio di introduzione di errori. 
+Il Verificatore, a seguito di una revisione positiva, accetta la pull request con la metodologia _Squash and merge_. Nell'eventualità il branch presenti dei confitti, il Verificatore deve informare l'autore, che si occuperà di risolverli e  dell'unione del branch.  
 
 ===== Elementi Esterni al Repository
 Potrebbero esservi delle issue aperte all'interno dell'@its che non hanno un corrispondente documento o prodotto in generale, all'interno del repository. Per queste, il ciclo di vita segue il normale flusso attraverso i diversi stati elencati nella @its. La verifica viene effettuata attraverso i commenti della issue stessa, che avranno la seguente forma:
@@ -607,11 +608,11 @@ L'analisi statica rappresenta un'esplorazione approfondita del codice o della do
 
 Il verificatore, nel contesto della documentazione o del codice, può condurre l'analisi statica tramite due metodologie: #glossary[Walkthrough] o #glossary[Inspection].
 
-==== Inspection
+===== Inspection
 
 In questo processo, il verificatore adotta un approccio strutturato, seguendo una sequenza di passaggi ben definiti. Utilizza liste di controllo per esaminare in dettaglio il documento o il codice in esame. Per dettagli specifici su queste checklist, si rimanda al documento _Piano di Qualifica_. 
 
-==== Walkthrough
+===== Walkthrough
 
 Contrariamente all'_Inspection_ il _Walkthrough_ è un approccio più esplorativo e che lascia maggiore spazio alla collaborazione tra l’autore e il revisore. Questa metodologia prevede una lettura a pettine del prodotto con l'obiettivo di analizzare struttura e contenuto nel loro insieme. 
 
@@ -629,8 +630,30 @@ Il Verificatore si impegna a definire casi di test per ognuna delle seguenti cat
 - Test di sistema; 
 - Test di accettazione.
 
-La totalità dei test individuati viene riportata all'interno del documento _Piano di Qualifica_.
+La totalità dei test individuati va riportata all'interno del documento _Piano di Qualifica_.
 In sede di verifica sulla base del dominio esaminato il Verificatore dovrà eseguire tali test in maniera rigorosa e riportarne gli esiti all'interno del _Piano di Qualifica_. 
+
+==== Classificazione dei test
+I test vengono identificati sulla base della tipologia a cui appartengono e sulla base di un codice numerico. 
+Nello specifico devono avere la seguente forma: *T[Tipologia Test] [Codice]*
+
+Tipologia: 
+- *U*: unità; 
+- *I*: integrazione;
+- *S*: sistema;
+- *A*: accettazione.
+
+Il codice numerico è seriale all'interno della categoria.
+
+==== Stato dei test
+
+Nella sezione relativa ai test in _Piano di Qualifica_ a ogni test verrà affiancato il suo stato: 
+- *N-A* : Il test non è applicabile al contesto attuale o alle funzionalità correnti; 
+- *N-I* : Il test non è stato implementato; 
+- *Passato*: Il test ha dato esito positivo;  
+- *Non Passato*: il test ha dato esito negativo. 
+
+
 
 
 
