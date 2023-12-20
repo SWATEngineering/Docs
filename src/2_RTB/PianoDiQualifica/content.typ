@@ -18,6 +18,11 @@ Inoltre, gestisce tutte le fasi del testing: dalla pianificazione dei test fino 
 
 Infine, è orientato al miglioramento costante: si adatta in base alle esperienze acquisite e a eventuali modifiche richieste nel progetto, garantendo così che il processo e il prodotto crescano e si evolvano con il tempo.
 
+== Glossario
+Al fine di evitare possibili ambiguità relative al linguaggio utilizzato nei documenti, viene
+fornito il _Glossario_, nel quale sono presenti tutte le definizioni di termini aventi un significato specifico che vuole essere disambiguato. Tali termini, sono scritti in _corsivo_ e marcati con una #sub("G") a pedice.
+Un'attività che comprende l'inserimento di un termine di glossario può considerarsi conclusa solo nel momento in cui il termine viene scritto e spiegato nel _Glossario_.
+
 == Riferimenti
 === Normativi
 - _Norme di progetto_;
