@@ -19,7 +19,7 @@
 Durante l'incontro, uno dei punti centrali è stato l'introduzione di un sistema automatizzato per il controllo ortografico all'interno della repository. Il team procederà con una fase di valutazione per determinare quale strumento possa risultare più idoneo.
 
 == Gestione delle issue
-È emersa una proposta significativa è emersa per la gestione delle attività con maggior efficienza: creare issue al manifestarsi delle necessità, svolgendo anche tutto il lavoro di assegnazione delle priorità, delle grandezze, sia durante le riunioni, sia durante gli stand-up. Inoltre è stato creato il nuovo tag "Ruolo" all'interno delle issue al fine di agevolare coloro responsabili di quella attività. La decisione è stata accolta positivamente dai partecipanti, che hanno visto in questa pratica un modo per ottimizzare il tempo durante le riunioni.
+È emersa una proposta significativa per la gestione delle attività con maggior efficienza: creare issue al manifestarsi delle necessità, svolgendo anche tutto il lavoro di assegnazione delle priorità, delle grandezze, sia durante le riunioni, sia durante gli stand-up. Inoltre è stato creato il nuovo tag "Ruolo" all'interno delle issue al fine di agevolare coloro responsabili di quella attività. La decisione è stata accolta positivamente dai partecipanti, che hanno visto in questa pratica un modo per ottimizzare il tempo durante le riunioni.
 
 == Tecnologie
 La tecnologia "Pydantic" per il linguaggio Python è stata riconosciuta come parte integrante per l'MVP, in modo da semplificare la verifica e la validazione del software, anche attraverso l'ampio uso di type hints, facilitando la dichiarazione e l'uso di tipi di dati all'interno del codice.
