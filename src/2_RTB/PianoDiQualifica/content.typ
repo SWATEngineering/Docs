@@ -241,7 +241,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             2. selezionare la #glossary("dashboard") per visualizzare i dati urbanistici;
             3. visualizzare la relativa #glossary("dashboard");
             4. visualizzare un #glossary("pannello") con una mappa indicante la quantità di posti liberi per ogni parcheggio controllato da un sensore;
-            5. visualizzare un #glossary("pannello") con una mappa indicante i watt erogati da ciascuna colonnina di ricarica controllata, indicando se è occupata o meno;
+            5. visualizzare un #glossary("pannello") con una mappa indicante i watt erogati da ciascuna colonna di ricarica controllata, indicando se è occupata o meno;
             6. visualizzare un #glossary("pannello") con una mappa indicante l'intensità del traffico sulle strade controllate; /*TODO: andare a specificare come questa intesità viene espressa (anche in adr)*/
             7. visualizzare un #glossary("pannello") con una mappa indicante la posizione di ciascuna bicicletta elettrica controllata, con la relativa percentuale di batteria;
             8. visualizzare un #glossary("pannello") con una mappa indicante la percentuale di riempimento di ogni zona rifiuti controllata;
@@ -389,8 +389,67 @@ table(
             Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori, un pannello contenente una mappa che evidenzi la percentuale di riempimento delle zone rifiuti.
       ],"N/I","RDF"),
       ([
-            Verificare che l'amministratore pubblico possa visualizzare una #glossary("dashboard") dedicata a visualizzare i dati anomali provenienti dai sensori.
+            Verificare che l'amministratore pubblico possa visualizzare una #glossary("dashboard") dedicata a visualizzare i dati anomali provenienti dai sensori, mediante un unico pannello a tabella.
       ],"N/I","RDF"),
+      ([
+            Verificare che l'amministratore pubblico possa visualizzare delle notifiche, nel caso del superamento di determinate soglie impostate per determinate tipologie di sensore. /*TODO: discutere di quale tipi si tratta e come e chi imposta le soglie*/
+      ],"N/I","ROF"),
+      ([
+            Verificare che l'amministratore pubblico possa filtrare i dati, visualizzando i dati solo di un sottoinsieme di sensori selezionato per nome, nel caso di grafici di tipo #glossary("serie storica").
+      ],"N/I","ROF"),
+      ([
+            Verificare che l'amministratore pubblico possa filtrare i dati, visualizzando i dati solo di un sottoinsieme di sensori selezionato per tipologia, nel caso di pannelli contenenti tabelle, che raggruppano più tipi di sensori.
+      ],"N/I","ROF"),
+      ([
+            Verificare che l'amministratore pubblico possa filtrare i dati, visualizzando i dati solo di un sottoinsieme di sensori selezionato per nome, nel caso di pannelli contenenti tabelle.
+      ],"N/I","ROF"),
+      ([
+            Verificare che l'amministratore pubblico possa filtrare i dati di un'intera #glossary("dashboard"), visualizzando i dati appartenenti ad un determinato intervallo di tempo selezionato.
+      ],"N/I","ROF"),
+      ([
+            Verificare che l'amministratore pubblico possa, nel caso di pannelli contenenti tabelle, ordinare le tabelle in base alle colonne di tali tabelle.
+      ],"N/I","RDF"),
+      ([
+            Verificare che l'amministratore pubblico possa modificare il layout dei pannelli presenti in una dashboard aperta, modificando posizione e dimensione dei pannelli contenuti in essa.
+      ],"N/I","RDF"),
+      ([
+            Verificare che l'amministratore pubblico riceva un messaggio che notifichi l'assenza di dati da visualizzare, qualora non vi siano dati a disposizione.
+      ],"N/I","ROF"),
+      /*TODO: capire se i test di sistema vanno anche per i requisiti relativi ai soli sensori (dovrebbero essere relativi in generale ai requisiti funzionali, ma non so)*/
+      ([
+            Verificare che un sensore possa inserire nel sistema dati relativi alla temperatura, controllata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
+      ],"N/I","ROF"),
+      ([
+            Verificare che un sensore possa inserire nel sistema dati relativi all'umidità, controllata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
+      ],"N/I","ROF"),
+      ([
+            Verificare che un sensore possa inserire nel sistema dati relativi alla velocità e direzione del vento, controllata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
+      ],"N/I","ROF"),
+      ([
+            Verificare che un sensore possa inserire nel sistema dati relativi alle precipitazioni, controllate dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione. /*TODO: disambiguare la metrica delle precipitazioni*/
+      ],"N/I","ROF"),
+      ([
+            Verificare che un sensore possa inserire nel sistema dati relativi all'inquinamento dell'aria, controllata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione. /*TODO: disambiguare la metrica dell'inquinamento dell'aria*/
+      ],"N/I","ROF"),
+      ([
+            Verificare che un sensore possa inserire nel sistema dati relativi al livello del bacino idrico, controllato dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione. /*TODO: disambiguare la metrica del livello dei bacini idrici*/
+      ],"N/I","ROF"),
+      ([
+            Verificare che un sensore possa inserire nel sistema dati relativi alla disponibilità del parcheggio, controllato dal sensore, intesa come numero di posti liberi in tale parcheggio, registrata, con annesso coordinate e #glossary("timestamp") della misurazione.
+      ],"N/I","ROF"),
+      ([
+            Verificare che un sensore possa inserire nel sistema dati relativi watt erogati per la colonna di ricarica, controllata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
+      ],"N/I","ROF"),
+      ([
+            Verificare che un sensore possa inserire nel sistema dati relativi al livello di carica della bicicletta elettrica, controllata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
+      ],"N/I","ROF"),
+      ([
+            Verificare che un sensore possa inserire nel sistema dati relativi al riempimento della zona ecologica, controllata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione. /*TODO: disambiguare la metrica per il riempimento della zona ecologica*/
+      ],"N/I","ROF"),
+      ([
+            Verificare che un sensore possa inserire nel sistema dati relativi congestione della strada, controllata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
+      ],"N/I","ROF"),
+      /*TODO: manca test (poichè manca requisito relativo) che vada a controllare che il senosre annetta anche dati relativi al suo stato personale */
 ).enumerate(start:1).map(test => ("TS"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1),test.at(1).at(2))).enumerate(start:1).map(test => (test.at(1).at(0),test.at(1).at(1),test.at(1).at(2),test.at(1).at(3) + str(test.at(0))));
 
 #show figure: set block(breakable: true)
