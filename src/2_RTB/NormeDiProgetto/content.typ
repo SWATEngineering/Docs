@@ -622,7 +622,7 @@ Tuttavia, il metodo #glossary[Walkthrough] conserva la sua rilevanza e rimane un
 ==== Analisi dinamica
 L'analisi dinamica si riferisce all'osservazione e alla conseguente valutazione del comportamento di un sistema in esecuzione. Ne risulta che l'oggetto esclusivo di questa metodologia di analisi nel contesto progettuale sia il prodotto risultante dal processo di codifica, il _software_. 
 Nello sviluppo software, l'analisi dinamica è implementata mediante diverse categorie di test.
-I test, sviluppati a partire da requisiti, funzionali e non, rendono il processo di analisi dinamica ripetibile, e il conseguente risultato oggettivo. 
+I test, sviluppati a partire da requisiti, funzionali e non, rendono il processo di analisi dinamica ripetibile, e  producono un risultato oggettivo. 
 La redazione dei test, e la loro conseguente  esecuzione seguono i principi del #glossary[Modello a V]. 
 Il Verificatore si impegna a definire casi di test per ognuna delle seguenti categorie, garantendo così una copertura completa e dettagliata del software: 
 - Test di unità; 
