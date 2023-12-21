@@ -75,7 +75,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 #set heading(numbering: none)
 
-=== UC1: Visualizzazione panoramica generale dei sensori
+=== UC1: Visualizzazione panoramica generale sensori
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'attore visualizza i grafici relativi ai dati prodotti dai sensori, all'interno di un unica dashboard. 
