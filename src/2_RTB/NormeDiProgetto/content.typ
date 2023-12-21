@@ -409,7 +409,7 @@ Ogni documento segue le fasi del seguente #glossary[workflow]:
 + Si redige il documento o una sua sezione. Nel caso di documenti nuovi, in cui è necessario un elevato parallelismo di lavoro, è possibile usare Google Drive per la prima stesura e successivamente caricare il documento all'interno del branch.
 + Nel file `changelog.typ` si aggiunge una riga *in coda*, secondo il seguente formato: `<versione>,<data-modifica>,<descrizione-modifica>,<nome-autore>,<ruolo-autore>`; la versione segue le regole descritte nella @versionamento.
 + Si esegue la commit sul branch creato.
-+ Si apre una pull request dal branch appena creato verso il branch `main`: se il documento non è pronto per la verifica, ma ha bisogno di ulteriori modifiche, si apre la pull request in modalità `draft`, altrimenti in modalità normale, spostando la issue nell'apposita corsia "Ready to Review".
++ Si apre una pull request dal branch appena creato verso il branch `main`: se il documento non è pronto per la verifica, ma ha bisogno di ulteriori modifiche, si apre la pull request in modalità `draft`, altrimenti in modalità normale, spostando la issue nell'apposita #glossary[corsia di stato] "Ready to Review".
 + Per ulteriori modifiche richieste dal/dai verificatore/i si ripetono i punti, *in ordine*, dal punto _3_ al punto _5_.
 + Si elimina, *solo quando la pull request viene chiusa o risolta*, il branch creato.
 
@@ -582,7 +582,7 @@ Il _Piano di Qualifica_ funge da punto di riferimento per il Verificatore: in es
 Gli strumenti adottati per agevolare il processo di verifica sono i seguenti:
 ==== GitHub
 GitHub offre una funzionalità di _review_ all'interno del meccanismo di _pull request_, permettendo al Verificatore di visualizzare facilmente le ultime modifiche apportate al prodotto. Il Verificatore inserisce commenti specifici che indicano le correzioni o le migliorie necessarie e, al termine della review, la invia richiedendo le modifiche indicate; in seguito all'intervento correttivo dell'autore, il Verificatore esegue ulteriori revisioni fino a quando il documento non presenta più errori e rispetta i criteri di conformità richiesti.
-A seguito del processo di verifica il Verificatore si occupa di spostare la issue nella corsia adeguata all'interno della _Kanban Board_:
+A seguito del processo di verifica il Verificatore si occupa di spostare la issue nella #glossary[corsia di stato] adeguata all'interno della _Kanban Board_:
 - _done_ qualora la revisione abbia avuto esito positivo; 
 - _in progress_ in caso siano richieste modifiche.
 
@@ -592,7 +592,7 @@ Ciò garantisce che ogni prodotto, che viene integrato al ramo principale, sia e
 Il Verificatore, a seguito di una revisione positiva, accetta la pull request con la metodologia _Squash and merge_. Nell'eventualità il branch presenti dei confitti, l'autore si occuperà di risolverli e successivamente dell'unione del branch.  
 
 ===== Elementi Esterni al Repository
-Potrebbero esservi delle issue aperte all'interno dell'@its che non hanno un corrispondente documento o prodotto in generale, all'interno del repository. Per queste, il ciclo di vita segue il normale flusso attraverso i diversi stati elencati nella @its. La verifica viene effettuata attraverso i commenti della issue stessa, che avranno la seguente forma:
+Potrebbero esservi delle issue aperte all'interno del _Its_ che non hanno un corrispondente documento o prodotto in generale, all'interno del repository. Per queste, il ciclo di vita segue il normale flusso attraverso i diversi stati elencati nella @its. La verifica viene effettuata attraverso i commenti della issue stessa, che avranno la seguente forma:
 - richiesta cambiamenti:
   ```
   [REV]
