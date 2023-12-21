@@ -567,7 +567,7 @@ Questo impone quindi che, prima di andare ad effettuare la chiusura di una _Pull
 
 I _Feature branch_ vengono aperti a partire dalle issue create nell' _Issue Tracking System_ (vedi @its). Si procede poi ad associare una _Pull request_, a una o più issue collegate tra loro, per effettuare la verifica.
 
-Nel caso del repository _InnovaCity_ il branch _main_ viene utilizzato per la pubblicazione di cambiamenti _major_, ovvero quando sono state implementate diverse funzionalità significative che contribuiscono all'avanzamento del progetto. In questa circostanza, è compito del Responsabile eseguire l'approvazione finale.
+Nel caso del repository _InnovaCity_, il branch _main_ viene utilizzato per la pubblicazione di cambiamenti _major_, ovvero quando sono state implementate diverse funzionalità significative che contribuiscono all'avanzamento del progetto. In questa circostanza, è compito del Responsabile eseguire l'approvazione finale.
 
 
 == Verifica
