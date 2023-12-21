@@ -589,7 +589,7 @@ A seguito del processo di verifica il Verificatore si occupa di spostare la issu
 L'utilizzo delle review in GitHub non solo facilita il tracciamento del processo di verifica, ma consente anche al team di accedere e consultare facilmente l'intera cronologia del codice o del documento di interesse all'interno della #glossary[repository] del progetto. Questo approccio garantisce un processo di verifica trasparente, tracciabile e conforme alle linee guida stabilite.
 Inoltre GitHub impedisce  l'unione dei rami oggetto di pull request fino a quando l'ultimo commit non viene verificato e approvato.
 Ciò garantisce che ogni prodotto, che viene integrato al ramo principale, sia effettivamente revisionato da almeno un membro del team, riducendo il rischio di introduzione di errori. 
-Il Verificatore, a seguito di una revisione positiva, accetta la pull request con la metodologia _Squash and merge_. Nell'eventualità il branch presenti dei confitti, il Verificatore deve informare l'autore, che si occuperà di risolverli e  dell'unione del branch.  
+Il Verificatore, a seguito di una revisione positiva, accetta la pull request con la metodologia _Squash and merge_. Nell'eventualità il branch presenti dei confitti, l'autore si occuperà di risolverli e successivamente dell'unione del branch.  
 
 ===== Elementi Esterni al Repository
 Potrebbero esservi delle issue aperte all'interno dell'@its che non hanno un corrispondente documento o prodotto in generale, all'interno del repository. Per queste, il ciclo di vita segue il normale flusso attraverso i diversi stati elencati nella @its. La verifica viene effettuata attraverso i commenti della issue stessa, che avranno la seguente forma:
@@ -614,15 +614,15 @@ In questo processo, il Verificatore adotta un approccio strutturato, seguendo un
 
 ===== Walkthrough
 
-Contrariamente all'_Inspection_, il _Walkthrough_ è un approccio più esplorativo e che lascia maggiore spazio alla collaborazione tra l’autore e il Verificatore. Questa metodologia prevede una lettura a pettine del prodotto con l'obiettivo di analizzare struttura e contenuto nel loro insieme. 
+Contrariamente all'#glossary[Inspection], il #glossary[Walkthrough] è un approccio più esplorativo e che lascia maggiore spazio alla collaborazione tra l’autore e il Verificatore. Questa metodologia prevede una lettura a pettine del prodotto con l'obiettivo di analizzare struttura e contenuto nel loro insieme. 
 
-Il team ha valutato l'utilizzo del metodo _Inspection_ come preferibile: la scelta è motivata dall'alto grado di rigore offerto e dalla conseguente maggiore efficacia nel individuare tutte le inconsistenze.
-Tuttavia, il metodo _Walkthrough_ conserva la sua rilevanza e rimane una valida alternativa di cui ci si può avvalere specialmente nelle fasi iniziali e finali del lavoro su un determinato prodotto: l’approccio pragmatico del metodo risulta infatti adeguato a rilevare criticità e peculiarità che potrebbero non essere rilevate da metodi più formali.  
+La decisione del team di preferire il metodo #glossary[Inspection] è giustificata dall'alto grado di rigore che questo approccio offre e dalla conseguente maggiore efficacia nell' individuazione di tutte le inconsistenze. L'#glossary[Inspection] fornisce una revisione più strutturata e dettagliata,  guidata da liste di controllo specifiche, contribuendo a garantire una maggiore completezza e coerenza.
+Tuttavia, il metodo #glossary[Walkthrough] conserva la sua rilevanza e rimane una valida alternativa di cui ci si può avvalere specialmente nelle fasi iniziali e finali del lavoro su un determinato prodotto: l’approccio pragmatico del metodo risulta infatti adeguato a rilevare criticità e peculiarità che potrebbero non essere rilevate da metodi più formali.  
 
 ==== Analisi dinamica
 L'analisi dinamica si riferisce all'osservazione e alla conseguente valutazione del comportamento di un sistema in esecuzione, ne risulta che l'oggetto esclusivo di questa metodologia di analisi nel contesto progettuale sia il prodotto risultante dal processo di codifica, il _software_. 
-Nel campo dello sviluppo software l'analisi dinamica si realizza attraverso l'impiego di varie categorie di test. 
-I test, costruiti a partire da requisiti funzionali e non, rendono il processo di analisi dinamica ripetibile, e il conseguente risultato oggettivo. 
+Nello sviluppo software, l'analisi dinamica è implementata mediante diverse categorie di test.
+I test, sviluppati a partire da requisiti, funzionali e non, rendono il processo di analisi dinamica ripetibile, e il conseguente risultato oggettivo. 
 La redazione dei test, e la loro conseguente  esecuzione seguono i principi del #glossary[Modello a V]. 
 Il Verificatore si impegna a definire casi di test per ognuna delle seguenti categorie, garantendo così una copertura completa e dettagliata del software: 
 - Test di unità; 
