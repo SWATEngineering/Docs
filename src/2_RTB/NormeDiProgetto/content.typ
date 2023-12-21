@@ -588,7 +588,7 @@ A seguito del processo di verifica il Verificatore si occupa di spostare la issu
 
 L'utilizzo delle review in GitHub non solo facilita il tracciamento del processo di verifica, ma consente anche al team di accedere e consultare facilmente l'intera cronologia del codice o del documento di interesse all'interno della #glossary[repository] del progetto. Questo approccio garantisce un processo di verifica trasparente, tracciabile e conforme alle linee guida stabilite.
 Inoltre GitHub impedisce  l'unione dei rami oggetto di pull request fino a quando l'ultimo commit non viene verificato e approvato.
-Ciò garantisce che ogni prodotto che viene integrato al ramo principale sia effettivamente revisionato da almeno un membro del team, riducendo il rischio di introduzione di errori. 
+Ciò garantisce che ogni prodotto, che viene integrato al ramo principale, sia effettivamente revisionato da almeno un membro del team, riducendo il rischio di introduzione di errori. 
 Il Verificatore, a seguito di una revisione positiva, accetta la pull request con la metodologia _Squash and merge_. Nell'eventualità il branch presenti dei confitti, il Verificatore deve informare l'autore, che si occuperà di risolverli e  dell'unione del branch.  
 
 ===== Elementi Esterni al Repository
