@@ -647,7 +647,7 @@ Il codice numerico è seriale all'interno della categoria.
 
 ==== Stato dei test
 
-Nella sezione relativa ai test in _Piano di Qualifica_ a ogni test verrà affiancato il suo stato: 
+Nella sezione relativa ai test nel _Piano di Qualifica_ a ogni test viene affiancato il suo stato: 
 - *N-A* : Il test non è applicabile al contesto attuale o alle funzionalità correnti; 
 - *N-I* : Il test non è stato implementato; 
 - *Passato*: Il test ha dato esito positivo;  
