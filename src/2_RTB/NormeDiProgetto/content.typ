@@ -634,7 +634,7 @@ La totalità dei test individuati viene riportata all'interno del documento _Pia
 In sede di verifica, sulla base del dominio esaminato, il Verificatore è tenuto ad eseguire tali test in maniera rigorosa e riportarne gli esiti all'interno del _Piano di Qualifica_. 
 
 ==== Classificazione dei test
-I test vengono identificati sulla base della tipologia a cui appartengono e sulla base di un codice numerico. 
+I test vengono identificati in base alla loro tipologia e tramite un codice numerico. 
 Nello specifico devono avere la seguente forma: *T[Tipologia Test] [Codice]*
 
 Tipologia: 
