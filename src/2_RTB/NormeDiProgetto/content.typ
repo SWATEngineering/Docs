@@ -575,7 +575,7 @@ Nel caso del repository _InnovaCity_ il branch _main_ viene utilizzato per la pu
 === Descrizione e Scopo
 Qualsiasi processo istanziato durante lo svolgimento del progetto, prima di potersi considerare completato, dev’essere sottoposto a verifica.
 Lo scopo primario di questo processo è garantire la correttezza dei prodotti e la loro adesione ai vincoli di qualità individuati ed elencati all'interno del documento _Piano di Qualifica_. 
-Il _Piano di Qualifica_ funge da punto di riferimento per il revisore: in esso vengono fornite tutte le linee guida a cui il revisore deve aderire  garantendo uniformità e coerenza al processo di revisione e garantendone la ripetibilità.
+Il _Piano di Qualifica_ funge da punto di riferimento per il Verificatore: in esso vengono fornite tutte le linee guida a cui il Verificatore deve aderire  garantendo uniformità e coerenza al processo di verifica e garantendone la ripetibilità.
 
 
 === Strumenti
