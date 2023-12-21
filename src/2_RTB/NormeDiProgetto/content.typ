@@ -623,7 +623,7 @@ Tuttavia, il metodo _Walkthrough_ conserva la sua rilevanza e rimane una valida 
 L'analisi dinamica si riferisce all'osservazione e alla conseguente valutazione del comportamento di un sistema in esecuzione, ne risulta che l'oggetto esclusivo di questa metodologia di analisi nel contesto progettuale sia il prodotto risultante dal processo di codifica, il _software_. 
 Nel campo dello sviluppo software l'analisi dinamica si realizza attraverso l'impiego di varie categorie di test. 
 I test, costruiti a partire da requisiti funzionali e non, rendono il processo di analisi dinamica ripetibile, e il conseguente risultato oggettivo. 
-La redazione dei test, e la conseguente loro esecuzione segue le asserzioni del #glossary[Modello a V]. 
+La redazione dei test, e la loro conseguente  esecuzione seguono i principi del #glossary[Modello a V]. 
 Il Verificatore si impegna a definire casi di test per ognuna delle seguenti categorie, garantendo così una copertura completa e dettagliata del software: 
 - Test di unità; 
 - Test di integrazione; 
