@@ -610,7 +610,7 @@ Il verificatore, nel contesto della documentazione o del codice, può condurre l
 
 ===== Inspection
 
-In questo processo, il verificatore adotta un approccio strutturato, seguendo una sequenza di passaggi ben definiti. Utilizza liste di controllo per esaminare in dettaglio il documento o il codice in esame. Per dettagli specifici su queste checklist, si rimanda al documento _Piano di Qualifica_. 
+In questo processo, il Verificatore adotta un approccio strutturato, seguendo una sequenza di passaggi ben definiti. Utilizza liste di controllo per esaminare in dettaglio il documento o il codice. Per dettagli specifici sulle checklist usate, si rimanda al documento _Piano di Qualifica_. 
 
 ===== Walkthrough
 
