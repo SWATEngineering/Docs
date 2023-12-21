@@ -620,7 +620,7 @@ La decisione del team di preferire il metodo #glossary[Inspection] è giustifica
 Tuttavia, il metodo #glossary[Walkthrough] conserva la sua rilevanza e rimane una valida alternativa di cui ci si può avvalere specialmente nelle fasi iniziali e finali del lavoro su un determinato prodotto: l’approccio pragmatico del metodo risulta infatti adeguato a rilevare criticità e peculiarità che potrebbero non essere rilevate da metodi più formali.  
 
 ==== Analisi dinamica
-L'analisi dinamica si riferisce all'osservazione e alla conseguente valutazione del comportamento di un sistema in esecuzione, ne risulta che l'oggetto esclusivo di questa metodologia di analisi nel contesto progettuale sia il prodotto risultante dal processo di codifica, il _software_. 
+L'analisi dinamica si riferisce all'osservazione e alla conseguente valutazione del comportamento di un sistema in esecuzione. Ne risulta che l'oggetto esclusivo di questa metodologia di analisi nel contesto progettuale sia il prodotto risultante dal processo di codifica, il _software_. 
 Nello sviluppo software, l'analisi dinamica è implementata mediante diverse categorie di test.
 I test, sviluppati a partire da requisiti, funzionali e non, rendono il processo di analisi dinamica ripetibile, e il conseguente risultato oggettivo. 
 La redazione dei test, e la loro conseguente  esecuzione seguono i principi del #glossary[Modello a V]. 
