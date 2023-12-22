@@ -631,7 +631,7 @@ Il Verificatore si impegna a definire casi di test per ognuna delle seguenti cat
 - Test di accettazione.
 
 La totalità dei test individuati viene riportata all'interno del documento _PianoDiQualifica\_v1.0_.
-In sede di verifica, sulla base del dominio esaminato, il Verificatore è tenuto ad eseguire tali test in maniera rigorosa e a riportarne gli esiti all'interno del _Piano di Qualifica_. 
+In sede di verifica, sulla base del dominio esaminato, il Verificatore è tenuto ad eseguire tali test in maniera rigorosa e a riportarne gli esiti all'interno del _PianoDiQualifica\_v1.0_. 
 
 ==== Classificazione dei test
 I test vengono identificati in base alla loro tipologia e tramite un codice numerico. 
