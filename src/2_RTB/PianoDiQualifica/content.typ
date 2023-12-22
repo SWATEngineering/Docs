@@ -55,41 +55,6 @@ Si riferisce all'efficacia ed efficienza dei processi e delle metodologie impieg
 
 === Fornitura 
 
-Le metriche di progetto usate nella fornitura sono misure utilizzate per valutare diversi aspetti del processo di sviluppo e del prodotto risultante. Alcune delle metriche comuni utilizzate nella fornitura di progetti software includono:
-
-  - *TCP*: _Total Cost Project_  indica la somma totale dei costi associati al progetto;
-  - *BAC*: _Budget At Completion_  indica il budget totale pianificato per il completamento del progetto;
-  - *EV*: _Earned Value_  rappresenta il valore prodotto dal progetto ossia il valore dei #glossary("deliverable") rilasciati fino al momento della misurazione in seguito alle attività svolte;
-      - Formula:  $"EV" = "Percentuale di completamento del lavoro" dot "BAC"$.
-  - *PV*: _Planned Value_ il valore del lavoro pianificato fino a un dato momento;
-        - Formula: $"PV" = "Percentuale di pianificazione del lavoro" dot "BAC"$.
-  - *AC*: _Actual Cost_ il costo effettivo sostenuto fino a un dato momento;
-  - *CPI*: _Cost Performance Index_ misura l'efficienza del costo del lavoro svolto fino a un dato momento;
-          - Formula: $"CPI" = "EV" / "AC"$.
-  - *SPI*: _Schedule Performance Index_ misura l'efficienza del tempo rispetto alla pianificazione del progetto. Fornisce un indicatore numerico che rappresenta il rapporto tra il lavoro effettivamente eseguito (o il valore guadagnato) e il lavoro pianificato fino a un determinato punto nel tempo.  Aiuta a valutare quanto il progetto sta rispettando il programma pianificato;
-        - Formula: $"SPI" = "EV" / "PV"$.
-  - *EAC*: _Estimated at Completion_ revisione del valore stimato per la realizzazione del progetto, ossia il BAC rivisto allo stato corrente del progetto;
-        - Formula: $"EAC" = "BAC" / "CPI"$.
-  - *ETC*: _Estimated To Completion_ stima del costo aggiuntivo necessario per completare il progetto;
-        - Formula: $"ETC" = "EAC" - "AC"$.
-  - *VAC*: _Variance at Completion_ la differenza tra il budget previsto e il budget attuale alla fine del progetto;
-        - Formula: $"VAC" = "BAC" - "EAC"$.
-  - *SV*: _Schedule Variance_ indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate nella baseline;
-        - Formula: $"SV" = "EV" - "PV"$.
-  - *CV*: _Cost Variance_ la differenza tra il valore del lavoro effettivamente svolto e il costo effettivo del lavoro svolto fino a un dato momento;
-        - Formula: $ "CV" = "EV" - "AC"$.
-  - *BV*: _Budget Variance_ indica se alla data corrente si è speso di più o di meno rispetto a quanto inizialmente previsto nel budget.
-        - Formula: $"BV" = "PV" - "AC"$.
-
-
-Le metriche della qualità di processo verrano identificate con:
-
-                     *MPC-[Nome abbreviato]*
-
-*Legenda*:
-
-      - *Nome abbreviato*: Nome della metrica specifica abbreviata.
-
 #table(
       columns:(auto,auto,auto,auto),
       align: (x, y) => (center, center, center,center).at(x),
@@ -98,70 +63,137 @@ Le metriche della qualità di processo verrano identificate con:
       ..fornitura.flatten()  
 )
 
-=== Sviluppo 
-
-
-==== Progettazione architteturale 
-
-Sono state individuate due metriche principali:
-
-            + *SFIN*: _Structure Fan In_;
-                  - *_Descrizione_*: rappresenta il numero di moduli o componenti che chiamano un modulo o una funzione specifica;
-                  - *_Significato_*: un fan-in elevato indica che molte parti del sistema dipendono da un particolare modulo. Questo può essere un segno positivo di riusabilità, in quanto il modulo è utilizzato in molte parti del sistema.
-            + *SFOUT*: _Structure Fan Out_;
-                  - *_Descrizione_*: rappresenta il numero di moduli o funzioni chiamati da un modulo o una funzione specifica;
-                  - *_Significato_*: un fan-out elevato può indicare che un modulo ha molte dipendenze da altri moduli. Questo può portare a una maggiore complessità del sistema, poiché le modifiche in un modulo possono richiedere modifiche in molti altri moduli.
-
+=== Codifica 
 
 #table(
       columns:(auto,auto,auto,auto),
       align: (x, y) => (center, center, center,center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-      [MPC-FIN], [Structure Fan In], [?], [?], 
-      [MPC-FOUT], [Structure Fan Out], [?], [?]
+      [MPC-CCM], [Complessità Ciclomatica per Metodo], [≤ 5], [≤ 3],
+      [MPC-CC], [Code Coverage], [≥80%], [100%],
+      [MPC-PTCP], [Passed Test Cases Percentage], [≥ 80%], [100%],
+      [MPC-FTCP], [Failed Test Cases Percentage], [≤ 20%], [0%]
 )
 
+== Processi di supporto
 
+==== Documentazione
 
-
-==== Codifica  
-
-      - *Complessità Ciclomatica*: quantifica la complessità del codice misurando il numero di percorsi linearmente indipendenti attraverso il grafo di controllo di flusso del programma. Più è alta la complessità ciclomatica, maggiore è la complessità del codice;
-      - *Numero di violazioni delle regole di codifica*: conta il numero di violazioni delle regole di codifica stabilite per il progetto;
-      - *Numero di bug per linea di codice*: misura la densità di difetti nel codice, espressa come il numero di #glossary("bug") riscontrati per ogni 1000 linee di codice (KLOC);
-      - *Cicli di complessità essenziale*: misura la complessità intrinseca del software, escludendo la complessità dovuta alle scelte di implementazione;
-      - *Rapporto di churn del codice*: indica la frequenza con cui le linee di codice sono modificate nel tempo, fornendo informazioni sulla stabilità del codice e sulla necessità di frequenti modifiche.
-
-== Processi di Supporto
-
-=== Documentazione  
-
-      - *IG*: _Indice Gulpease_ metrica utilizzata per valutare la leggibilità di un testo in lingua italiana.
-             L'Indice Gulpease tiene conto di due variabili linguistiche: la lunghezza delle parole e la lunghezza delle frasi. La formula per calcolare l'indice è la seguente:
-
-             $ "IG" = 89 + (300 dot "Nf" - "Nl")/"Np"$
-
-             Dove:
-
-             - *Nf* \u{27F6} indica il numero delle frasi;
-             - *Nl* \u{27F6} indica il numero delle lettere;
-             - *Np* \u{27F6} indica il numero delle parole.
-
-             L'indice fornisce un punteggio che varia da 0 a 100. Di seguito le possibili interpretazioni:
-
-                  - 0-29: Testo difficile da leggere;
-                  - 30-49: Testo leggibile con sforzo;
-                  - 50-59: Testo abbastanza leggibile;
-                  - 60-69: Testo leggibile;
-                  - 70-79: Testo facile da leggere;
-                  - 80-89: Testo molto facile da leggere;
-                  - 90-100: Testo estremamente facile da leggere. 
-      - *Correttezza ortografica*: Numero errori grammaticali o ortografici per documento.
-
+#table(
+      columns:(auto,auto,auto,auto),
+      align: (x, y) => (center, center, center,center).at(x),
+      fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
+      [MPC-IG], [Indice Gulpease], [≥ 60], [100],
+      [MPC-CO], [Correttezza Ortografica], [0], [0]
+)
 
 #pagebreak()
 = Qualità di Prodotto 
+
+#table(
+      columns:(auto,auto,auto,auto),
+      align: (x, y) => (center, center, center,center).at(x),
+      fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
+      [MPR-ROS], [Requisiti Obbligatori Soddisfatti], [100%], [100%],
+      [MPR-RDS], [Requisiti Desiderabili Soddisfatti], [≥ 0%], [≥ 75%],
+      [MPR-ROPS], [Requisiti Opzionali Soddisfatti], [≥ 0%], [≥ 50%],
+      [MPR-FU], [Facilità di utilizzo], [≤ 7 click], [≤ 5 click],
+      [MPR-FIN], [Structure Fan In], [da determinare], [da determinare], 
+      [MPR-FOUT], [Structure Fan Out], [da determinare], [da determinare],
+      [MPR-ATC], [Attributi per Classe], [≤ 6], [≤ 4],
+      [MPR-PM], [Parametri per Metodo], [≤ 5], [≤ 4],
+      [MPR-LCM], [Linee di Codice per Metodo], [≤ 25], [≤ 20]
+)
+
+#pagebreak()
+= Specifica dei test
+
+#pagebreak()
+= Cruscotto delle metriche
+
+== Qualità di Processo - Fornitura
+
+=== Estimated at Completion
+
+#figure(
+  image("./assets/valutazione-metriche/EAC.png", width: 80%),
+  caption: [
+    Valutazione Estimated At Completion.
+  ],
+)
+
+L'EAC rappresenta una revisione del valore stimato per la realizzazione del progetto, ossia il BAC (Budget At Completion) rivisto allo stato corrente del progetto; il fattore che incide maggiormente sull'andamento dell'EAC è il rapporto tra EV (Estimated Value) e AC (Actual Cost), per cui tanto più queste metriche sono vicine l'una all'altra, tanto più l'EAC risulterà vicino al BAC pianificato inizialmente. Come viene evidenziato dal grafico l'EAC calcolato al termine dei primi sprint risulta essere relativamente vicino al BAC preventivato inizialmente e si mantiene entro i limiti accettabili; in particolare, il fatto che l'EAC fosse minore del BAC al termine del primo sprint ha portato il team a rivedere la percentuale di lavoro preventivata ed effettivamente eseguita negli sprint successivi in modo da mantenere un ritmo di lavoro quanto più possibile costante e riavvicinare l'EAC al BAC. 
+
+=== Budget Variance e Schedule Variance
+
+#figure(
+  image("./assets/valutazione-metriche/BV_SV.png", width: 80%),
+  caption: [
+    Valutazione Budget Variance e Schedule Variance.
+  ],
+)
+
+Il BV indica se alla data corrente si è speso di più o di meno rispetto a quanto inizialmente previsto nel budget; il SV indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate. Come evidenziato dal grafico, il BV è negativo e sembra diminuire progressivamente nel tempo, segno che i costi effettivamente sostenuti sono maggiori rispetto a quanto preventivato. Il SV è invece positivo e sembra aumentare progressivamente nel tempo, segno che la percentuale di lavoro preventivato è tendenzialmente minore rispetto a quella del lavoro portato a compimento. Questo denota una sottostima del lavoro che si è preventivato di riuscire a portare a termine nei primi sprint, rispetto a quanto effettivamente prodotto dal team.
+
+=== Actual Cost e Estimate To Complete
+
+#figure(
+  image("./assets/valutazione-metriche/AC_ETC.png", width: 80%),
+  caption: [
+    Valutazione Actual Cost e Estimate To Complete.
+  ],
+)
+
+L'AC rappresenta il costo effettivo sostenuto fino a un dato momento, mentre l'ETC rappresenta la stima del costo aggiuntivo necessario per
+completare il progetto; di conseguenza, ci si aspetta che l'AC cresca e che l'ETC diminuisca in modo sostanzialmente lineare, segno che il progetto ha mantenuto un ritmo regolare di avanzamento. Stabilire l'andamento delle due metriche al momento dell'RTB è alquanto prematuro, dati i pochi data points a disposizione.
+
+=== Earned Value e Planned Value
+
+#figure(
+  image("./assets/valutazione-metriche/EV_PV.png", width: 80%),
+  caption: [
+    Valutazione Earned Value e Planned Value.
+  ],
+)
+
+L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[deliverable] rilasciati fino al momento della misurazione in seguito alle attività svolte; il PV rappresenta invece il valore del lavoro pianificato fino a un dato momento. Nonostante sia ancora prematuro confrontare le due metriche con l'EAC, si può notare che il PV si mantiene al di sotto dell'EV, seppur di poco, segno che i preventivi fatti finora sono stati leggermente ottimistici rispetto alla spesa effettiva. 
+
+== Qualità di Processo - Codifica
+
+== Qualità di Processo - Documentazione
+
+=== Indice Gulpease
+
+#figure(
+  image("./assets/valutazione-metriche/IG.png", width: 80%),
+  caption: [
+    Valutazione Indice Gulpease.
+  ],
+)
+
+Al termine del secondo sprint, tutti i documenti in corso di preparazione in vista dell'RTB possiedono un IG al di sopra del limite accettabile inferiore di 60; in particolare, l'_Analisi dei Requisiti_ ha raggiunto il valore ideale. 
+
+=== Correttezza ortografica
+
+#figure(
+  image("./assets/valutazione-metriche/CO.png", width: 80%),
+  caption: [
+    Valutazione correttezza Ortografica.
+  ],
+)
+
+Seppur i documenti presentavano alcuni errori ortografici al termine dei primi sprint, da quando si è adottato uno strumento di controllo dell'ortografia sia in fase di stesura che in fase di revisione (al termine del secondo sprint) gli errori sono diminuiti significativamente come ci si attendeva. L'obiettivo principale è fare in modo che non vi siano errori in alcuno dei documenti prima della revisione RTB.
+
+== Qualità di prodotto
+
+
+
+
+
+
 
 
 
