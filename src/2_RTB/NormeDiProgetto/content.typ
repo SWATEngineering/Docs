@@ -616,7 +616,7 @@ In questo processo, il Verificatore adotta un approccio strutturato, seguendo un
 
 Contrariamente all'#glossary[inspection], il #glossary[walkthrough] è un approccio più esplorativo e che lascia maggiore spazio alla collaborazione tra l’autore e il Verificatore. Questa metodologia prevede una lettura a pettine del prodotto con l'obiettivo di analizzare struttura e contenuto nel loro insieme. 
 
-La decisione del team di preferire il metodo #glossary[Inspection] è giustificata dall'alto grado di rigore che questo approccio offre e dalla conseguente maggiore efficacia nell' individuazione di tutte le inconsistenze. L'#glossary[Inspection] fornisce una revisione più strutturata e dettagliata,  guidata da liste di controllo specifiche, contribuendo a garantire una maggiore completezza e coerenza.
+La decisione del team di preferire il metodo #glossary[inspection] è giustificata dall'alto grado di rigore che questo approccio offre e dalla conseguente maggiore efficacia nell' individuazione di tutte le inconsistenze. L'#glossary[inspection] fornisce una revisione più strutturata e dettagliata,  guidata da liste di controllo specifiche, contribuendo a garantire una maggiore completezza e coerenza.
 Tuttavia, il metodo #glossary[walkthrough] conserva la sua rilevanza e rimane una valida alternativa di cui ci si può avvalere specialmente nelle fasi iniziali e finali del lavoro su un determinato prodotto: l’approccio pragmatico del metodo risulta infatti adeguato a rilevare criticità e peculiarità che potrebbero non essere rilevate da metodi più formali.  
 
 ==== Analisi dinamica
