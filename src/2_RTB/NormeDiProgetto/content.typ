@@ -592,7 +592,7 @@ Ciò garantisce che ogni prodotto, che viene integrato al ramo principale, sia e
 Il Verificatore, a seguito di una revisione positiva, accetta la pull request con la metodologia _Squash and merge_. Nell'eventualità in cui il branch presenti dei confitti, l'autore si occuperà di risolverli e successivamente dell'unione del branch.  
 
 ===== Elementi Esterni al Repository
-Potrebbero esservi delle issue aperte all'interno dell' _Its_ che non hanno un corrispondente documento o prodotto in generale, all'interno del repository. Per queste, il ciclo di vita segue il normale flusso attraverso i diversi stati elencati nella @its. La verifica viene effettuata attraverso i commenti della issue stessa, che avranno la seguente forma:
+Potrebbero esservi delle issue aperte all'interno dell' #glossary("ITS") che non hanno un corrispondente documento o prodotto in generale, all'interno del repository. Per queste, il ciclo di vita segue il normale flusso attraverso i diversi stati elencati nella @its. La verifica viene effettuata attraverso i commenti della issue stessa, che avranno la seguente forma:
 - richiesta cambiamenti:
   ```
   [REV]
