@@ -133,7 +133,7 @@ Servizio per creare e partecipare a videochiamate, utilizzato dal team per gli i
 Online software per creare diagrammi di Gantt, utilizzato dal Responsabile per delineare la distribuzione temporale delle attività pianificate per ogni sprint nella sezione di *Pianificazione* del Piano di Progetto.
 
 ==== Draw.io
-Software per creare diagrammi e grafici di varia natura, utilizzato dagli Analisti per creare i diagrammi UML dei casi d'uso nella sezione *Casi d'uso* dell'Analisi dei Requisiti.
+Software per creare diagrammi e grafici di varia natura, utilizzato dagli Analisti per creare i diagrammi UML dei casi d'uso nella sezione *Casi d'uso* (@c.uso) dell'Analisi dei Requisiti.
 
 == Sviluppo
 
@@ -153,7 +153,7 @@ L'Analisi dei Requisiti viene redatta dagli Analisti e contiene:
         - *Casi d'uso*: individua gli attori e tutte le interazioni che possono avere con il sistema;
         - *Requisiti*: le caratteristiche da soddisfare e le fonti da cui sono state estratte.
 
-==== Identificazione dei casi d'uso
+==== Identificazione dei casi d'uso <c.uso>
 
   I casi d'uso sono identificati nel seguente modo:
 
@@ -212,16 +212,25 @@ I requisiti trovati hanno un codice univoco con la seguente sintassi:
                 per ogni requisito aggiunto il numero viene incrementato.
 
 ==== Metriche
-        - *ROS*: Requisiti Obbligatori Soddisfatti;
-        - *RDS*: Requisiti Desiderabili Soddisfatti;
-        - *ROPS*: Requisiti Opzionali Soddisfatti.
+
+La definizione delle metriche seguenti si può trovare nella @metriche_codifica.
+
+#table(
+      columns:(auto,auto),
+      align: (x, y) => (center, center).at(x),
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Metrica*],[*Descrizione*],
+      [*ROS*],[Requisiti Obbligatori Soddisfatti],
+      [*RDS*],[Requisiti Desiderabili Soddisfatti],
+      [*ROPS*],[Requisiti Opzionali Soddisfatti] 
+)
 
 === Progettazione 
 
 ==== Descrizione e scopo 
 
 L'attività di progettazione è affidata ai Progettisti, i quali devono definire le caratteristiche del prodotto finale basandosi sui requisiti specificati nel documento _Analisi dei Requisiti_. 
-La fase di progettazione segue l'analisi dei requisiti, dove sono definite le necessità e le aspettative per il prodotto. I Progettisti traducono queste informazioni in una struttura architteturale definita, organizzando il sistema in componenti specifici e definendo le interazioni tra di essi. In questo modo, la progettazione costituisce un passo essenziale nel percorso di sviluppo, contribuendo a trasformare i requisiti in un piano tangibile per la creazione del prodotto finale.
+La fase di progettazione segue l'analisi dei requisiti, dove sono definite le necessità e le aspettative per il prodotto. I Progettisti traducono queste informazioni in una struttura architetturale definita, organizzando il sistema in componenti specifici e definendo le interazioni tra di essi. In questo modo, la progettazione costituisce un passo essenziale nel percorso di sviluppo, contribuendo a trasformare i requisiti in un piano tangibile per la creazione del prodotto finale.
 
 Si definiscono tre sottoattività: 
 
@@ -243,14 +252,100 @@ Si definiscono tre sottoattività:
                 - Test di Unità su ogni componente.
 
 ==== Metriche
-        - *SFIN*: Structure Fan In;
-        - *SFOUT*: Structure Fan Out;
-        - *ATC*: Attributi per Classe;
-        - *PM*: Parametri per Metodo;
-        - *LCM*: Linee di Codice per Metodo.
+
+La definizione delle metriche seguenti si può trovare nella @metriche_codifica.
+
+ #table(
+      columns:(auto,auto),
+      align: (x, y) => (center, center).at(x),
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Metrica*],[*Descrizione*],
+      [*SFIN*],[Structure Fan In],
+      [*SFOUT*],[Structure Fan Out],
+      [*ATC*],[Attributi per Classe],
+      [*PM*],[Parametri per Metodo],
+      [*LCM*],[Linee di Codice per Metodo]
+)
 
 ==== Diagrammi UML dei casi d'uso
-[...]
+
+Un diagramma dei casi d'uso rappresenta uno strumento di modellazione ampiamente impiegato per documentare e delineare le funzionalità di un sistema. La sua utilità risiede nel tracciare i flussi operativi attraverso una rappresentazione visiva, descrivendo il modo in cui un utente interagisce con il sistema.
+
+Gli scenari d'uso sono organizzati in sequenze di azioni, illustrando le operazioni necessarie per consentire a un utente di portare a termine una specifica attività (realizzare uno scopo), e sono interconnessi mediante linee. Questo tipo di diagramma risulta particolarmente prezioso nella progettazione di sistemi, in quanto offre un'illustrazione rapida e intuitiva delle dinamiche di lavoro e delle interazioni tra l'utente e il sistema.
+
+È fondamentale notare che la rappresentazione fornita dai diagrammi dei casi d'uso non si addentra nei dettagli implementativi, poiché il loro scopo principale è descrivere la funzionalità, considerandola come un elemento esterno al sistema.
+
+I diagrammi dei casi d'uso sono composti da:
+        - *Attore*: rappresenta un agente esterno coinvolto nelle interazioni con il sistema. Si tratta di una qualsiasi entità in grado di interagire con il sistema, infatti ogni caso d'uso determina una funzionalità che viene messa a disposizione di tale attore, tuttavia, senza entrare nei dettagli implementativi.
+                
+                A livello di diagramma, l'attore è simboleggiato da un' icona umana stilizzata, identificabile mediante un'etichetta univoca e rappresentativa, posizionata al disotto di tale figura.
+
+                #figure(
+                        image(
+                                "assets/imgs/Attore.png",
+                                width: 15%
+                        ),
+                        caption: "Figura rappresentante un attore."
+                )
+
+        - *Caso d'uso*: delinea le operazioni eseguibili dall'utente sul sistema. Un singolo caso d'uso si compone di una breve esposizione delle funzioni messe a disposizione del sistema per uno o più utenti nell'ambito di un software. In modo specifico, offre una descrizione dettagliata del comportamento dell'utente mentre interagisce con il software.
+
+                Generalmente, un caso d'uso è costituito da una sequenza di situazioni che esplicitano le diverse eventualità che possono manifestarsi durante l'interazione tra l'utente e il software. La sua rappresentazione comprende un'identificazione univoca, espressa come UCx.y (dove x indica il numero del caso d'uso, e y indica il fatto che stiamo trattando un eventuale sotto-caso d'uso del caso d'uso UCx), seguita da una concisa ma completa descrizione della funzione stessa.
+
+                Ogni caso d'uso discute i seguenti punti:
+                        - *Attore principale*: l'attore che intende compiere lo scopo rappresentato dal caso d'uso;
+                        - *Precondizioni*: stato in cui il sistema si deve trovare prima dell'avvio della funzionalità rappresentata dal caso d'uso;
+                        - *Postcondizioni*: stato in cui il sistema si troverà dopo che l'utente avrà portato a termine lo scopo rappresentato dal caso d'uso;
+                        - *Scenario principale*: descizione accurata della funzionalità rappresentata dal caso d'uso;
+                        - *Specializzazioni*: nel caso di uno use case generale, vengono indicati i codici dei casi d'uso che lo specializzano;
+                        - *Inclusioni*: vengono specificati i codici dei casi d'uso che vengono inclusi nel caso d'uso trattato;
+                        - *Estensioni*: vengono specificati i codici dei casi d'uso che rappresentano scenari secondari.
+
+                Ciascun caso d'uso è connesso, attraverso una linea continua, agli attori che hanno autorizzazioni per accedere a quella particolare funzione.
+
+                #figure(
+                        image(
+                                "assets/imgs/UseCase.png",
+                                width: 70%
+                        ),
+                        caption: "Figura rappresentante un caso d'uso."
+                )
+
+In ogni diagramma dei casi d'uso possono essere definite:
+        - *Generalizzazioni*: 
+                il concetto di generalizzazione può essere esteso sia agli attori che ai casi d'uso. La generalizzazione di un attore si verifica quando un attore di livello superiore, dotato di abilità più generiche, viene specializzato in comportamenti più specifici nei sottostanti attori. Ogni attore sottostante eredita le funzionalità dal suo attore padre, integrandole con ulteriori aspetti rilevanti al proprio contesto.
+
+                Per quanto riguarda i casi d'uso, i casi figli hanno la possibilità di aggiungere o modificare il comportamento dei casi d'uso ereditati dal caso padre. Tutte le funzionalità non ridefinite nei casi figlio mantengono la definizione ereditata. La generalizzazione degli attori e dei casi d'uso è simboleggiata da una freccia continua con triangolo vuoto bianco, che si estende da un elemento figlio a un elemento padre.
+                #figure(
+                        image(
+                                "assets/imgs/GeneralizzazioneAttore.png",
+                                width: 40%
+                        ),
+                        caption: "Figura rappresentante una generalizzazione tra attori."
+                )
+                #figure(
+                        image(
+                                "assets/imgs/GeneralizzazioneUseCase.png",
+                                width: 70%
+                        ),
+                        caption: "Figura rappresentante una generalizzazione tra casi d'uso."
+                )
+        - *Inclusioni*: supponiamo che vi sia una relazione di inclusione tra un caso d'uso A e un caso d'uso B se ogni istanza del caso d'uso A deve necessariamente eseguire le istanze del caso d'uso B. Questo assegna al caso d'uso A la responsabilità di eseguire il caso d'uso B, eliminando la duplicazione e favorendo il riutilizzo di una struttura comune. La connessione di inclusione viene simboleggiata da una freccia tratteggiata che collega il caso d'uso A a tutti i casi d'uso inclusi, come nel caso del caso d'uso B nell'esempio. Sopra la freccia verrà annotata la direttiva "include".
+                #figure(
+                        image(
+                                "assets/imgs/UseCaseInclude.png",
+                                width: 70%
+                        ),
+                        caption: "Figura rappresentante un' inclusione tra casi d'uso."
+                )
+        - *Estensioni*: nel contesto dei diagrammi dei casi d'uso UML, la relazione di estensione indica una connessione tra due casi d'uso, A e B, segnalando che ogni istanza del caso d'uso A può condizionalmente eseguire anche il caso d'uso B. L'esecuzione del caso d'uso B avviene soltanto in specifiche circostanze o sotto condizioni particolari durante l'esecuzione del caso d'uso A, interrompendo temporaneamente il flusso del caso d'uso A. La responsabilità dell'esecuzione del caso d'uso esteso (B) ricade su chi estende (nel caso, il caso d'uso B). Questa relazione viene visualizzata graficamente con una freccia tratteggiata dal caso d'uso esteso (B) al caso d'uso base (A), con l'etichetta "extend".
+                #figure(
+                        image(
+                                "assets/imgs/UseCaseExtend.png",
+                                width: 70%
+                        ),
+                        caption: "Figura rappresentante un' estensione tra casi d'uso."
+                )
 
 === Codifica 
 
@@ -270,10 +365,17 @@ Ci si aspetta che il codice sviluppato rispetti determinate caratteristiche:
 [...]
 
 ==== Metriche
-        - *MCCM*: complessità ciclomatica per metodo;
-        - *MCC*: code coverage;
-        - *MSC*: statement coverage;
-        - *MBC*: branch coverage.
+
+La definizione delle metriche seguenti si può trovare nella @metriche_codifica.
+
+#table(
+      columns:(auto,auto),
+      align: (x, y) => (center, center).at(x),
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Metrica*],[*Descrizione*],
+      [*CCM*],[Complessità Ciclomatica per Metodo],
+      [*CC*],[Code Coverage]
+)
 
 === Verifica
 
@@ -444,8 +546,17 @@ Il gruppo utilizza:
         - *GitHub*: una piattaforma di hosting per progetti di sviluppo software basati su Git. Fornisce un sistema di controllo delle versioni distribuito e strumenti per la gestione del codice sorgente, delle issue e delle pull request, facilitando la collaborazione all'interno di un team di sviluppo.
 
 === Metriche
-        - *IG*: Indice Gulpease;
-        - *CO*: Correttezza Ortografica.
+
+La definizione delle metriche seguenti si può trovare nella @metriche_documentazione.
+
+#table(
+      columns:(auto,auto),
+      align: (x, y) => (center, center).at(x),
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Metrica*],[*Descrizione*],
+      [*IG*],[Indice Gulpease],
+      [*CO*],[Correttezza Ortografica]
+)
         
 
 == Gestione della Configurazione
@@ -678,26 +789,26 @@ In aggiunta, è possibile richiedere sessioni di formazione mirate su tecnologie
 Il Responsabile ha il compito della stesura del verbale esterno, che viene successivamente convalidato, con firma, dalla Proponente.
 
 === Metriche
-        - *BAC*: Budget At Completion;
-        - *EV*: Earned Value; 
-        - *PV*: Planned Value;
-        - *SPI*: Schedule Performance Index;
-        - *SV*: Schedule Variance.
 
+La definizione delle metriche seguenti si può trovare nella @metriche_fornitura.
+
+#table(
+      columns:(auto,auto),
+      align: (x, y) => (center, center).at(x),
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Metrica*],[*Descrizione*],
+      [*BAC*],[Budget At Completion],
+      [*EV*],[Earned Value],
+      [*PV*],[Planned Value],
+      [*SPI*],[Schedule Performance Index],
+      [*SV*],[Schedule Variance]
+)
 
 = Metriche per la qualità
 
-Le metriche della qualità di processo vengono identificate con:
+== Metriche per la qualità di processo <metriche_qualità-processo>
 
-                     *MPC-[Nome abbreviato]*
-
-*Legenda*: 
-
-*Nome abbreviato*: Nome della metrica specifica abbreviata.
-
-== Metriche per la qualità di processo
-
-=== Fornitura
+=== Fornitura <metriche_fornitura>
 
         - *BAC*: Budget At Completion - indica il budget totale pianificato per il completamento del progetto;
 
@@ -743,9 +854,9 @@ Le metriche della qualità di processo vengono identificate con:
                 
                 Formula: $"BV" = "PV" - "AC"$.
 
-=== Codifica
+=== Codifica <metriche_codifica>
 
-        -  *CCM*: Complessità Ciclomatica per Metodo - quantifica la complessità del codice misurando il numero di percorsi linearmente indipendenti attraverso il grafo di controllo di flusso del metodo. Più è alta la complessità ciclomatica, maggiore è la complessità del codice
+      -  *CCM*: Complessità Ciclomatica per Metodo - quantifica la complessità del codice misurando il numero di percorsi linearmente indipendenti attraverso il grafo di controllo di flusso del metodo. Più è alta la complessità ciclomatica, maggiore è la complessità del codice
 
                 Formula: $"MCCM" = "e" − "n" + 2$, con:
 
@@ -764,7 +875,7 @@ Le metriche della qualità di processo vengono identificate con:
 
                 Formula: $"FTCP" = "test falliti" / "test totali" dot 100$.
 
-=== Documentazione
+=== Documentazione <metriche_documentazione>
 
         - *IG*: Indice Gulpease - metrica utilizzata per valutare la leggibilità di un testo in lingua italiana.
              L'Indice Gulpease tiene conto di due variabili linguistiche: la lunghezza delle parole e la lunghezza delle frasi. La formula per calcolare l'indice è la seguente:
@@ -787,21 +898,13 @@ Le metriche della qualità di processo vengono identificate con:
 
         - *CO*: Correttezza ortografica - numero errori grammaticali ed ortografici in un documento.
 
-== Metriche per la qualità di prodotto
-
-Le metriche della qualità di prodotto vengono identificate con:
-
-                     *MPR-[Nome abbreviato]*
-
-*Legenda*: 
-
-*Nome abbreviato*: Nome della metrica specifica abbreviata.
+== Metriche per la qualità di prodotto <metriche_qualità-prodotto>
 
         - *ROS*: Requisiti Obbligatori Soddisfatti - la percentuale di requisiti obbligatori soddisfatti dal prodotto
 
                 Formula: $"ROS" = "requisiti obbligatori soddisfatti" / "requisiti obbligatori totali" dot 100$;
 
-        - *RDS*: Requisiti Desiderabili Soddisfatti - la percentuale di requisiti desiderabili soddisfatti dal prodotto
+        - *RDS*: Requisiti Desiderabili Soddisfatti - la perecentuale di requisiti desiderabili soddisfatti dal prodotto
 
                 Formula: $"RDS" =  "requisiti desiderabili soddisfatti" / "requisiti desiderabili totali" dot 100$;
 
@@ -819,4 +922,4 @@ Le metriche della qualità di prodotto vengono identificate con:
 
         - *PM*: Parametri per Metodo - rappresenta il numero di parametri appartenenti ad un metodo;
 
-        - *LCM*: Linee di Codice per Metodo - rappresenta il numero di linee di codice che costituiscono un metodo. 
+        - *LCM*: Linee di Codice per Metodo - rappresenta il numero di linee di codice che costituiscono un metodo.
