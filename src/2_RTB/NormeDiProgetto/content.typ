@@ -606,7 +606,7 @@ Potrebbero esservi delle issue aperte all'interno dell' #glossary("ITS") che non
 ==== Analisi statica
 L'analisi statica rappresenta un'esplorazione approfondita del codice o della documentazione associata al prodotto. Questa metodologia mira a individuare potenziali problemi o irregolarità, senza mai eseguire effettivamente il sistema software. Nel caso della documentazione, l'analisi statica si concentra sulla struttura, sulla coerenza, sulla completezza e sulla chiarezza del testo. In particolare, verifica la presenza di errori grammaticali, di formattazione e concettuali, garantendo un livello ottimale di qualità nel materiale consegnato. 
 
-Il verificatore, nel contesto della documentazione o del codice, può condurre l'analisi statica tramite due metodologie: #glossary[Walkthrough] o #glossary[Inspection].
+l verificatore, nel contesto della documentazione o del codice, può condurre l'analisi statica tramite due metodologie: #glossary[walkthrough] o #glossary[inspection]. Nel caso del nostro progetto, la metodologia prediletta è l' #glossary[inspection].
 
 ===== Inspection
 
