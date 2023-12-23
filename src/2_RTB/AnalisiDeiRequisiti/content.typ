@@ -240,7 +240,7 @@ delle precipitazioni, in millimetri di pioggia.
 === UC2.9: Visualizzazione pannello time series per livello dei bacini idrici
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi al riempimento, in percentuale, dei bacini idrici, in formato time series.
+- *Postcondizioni*: l'attore visualizza un pannello in formato time series, relativo alle misurazioni del livello di riempimento dei bacini idrici, indicate in valori percentuale.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
