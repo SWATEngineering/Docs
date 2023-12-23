@@ -746,16 +746,16 @@ delle precipitazioni, in millimetri di pioggia.
     "Opzionale", "L'utente deve poter visualizzare un grafico a mappa che evidenzi la posizione real time delle biciclette elettriche e relativa percentuale della batteria.", "UC3.5"
   ),
   (
-    "Desiderabile", "L'utente deve poter visualizzare un grafico a mappa che riporti un indicatore percentuale di riempimento delle zone rifiuti", "UC3.6"
+    "Desiderabile", "L'utente deve poter visualizzare un grafico a mappa che riporti un indicatore percentuale di riempimento delle zone rifiuti.", "UC3.6"
   ),
   (
-    "Desiderabile", "L'utente deve poter visualizzare i dati anomali rilevati.", "UC4"
+    "Desiderabile", "L'utente deve poter visualizzare i dati anomali rilevati, sottoforma di tabellare.", "UC4"
   ),
   (
     "Obbligatorio",  "L'utente deve poter visualizzare le allerte di superamento delle soglie.", "UC5"
   ),
   (
-    "Obbligatorio", "L'utente deve poter filtrare un sotto-insieme di sensori in grafici di tipo time series.", "UC6.1"
+    "Obbligatorio", "L'utente deve poter filtrare un sottoinsieme di sensori in grafici di tipo time series.", "UC6.1"
   ),
   (
     "Obbligatorio", "L'utente deve poter filtrare un sotto-insieme di sensori in base alla tipologia in pannelli di tipo tabellare.", "UC6.2"
@@ -767,10 +767,10 @@ delle precipitazioni, in millimetri di pioggia.
     "Obbligatorio", "L'utente deve poter filtrare i dati in base ad un intervallo temporale.", "UC6.4"
   ),
   (
-    "Desiderabile", "L'utente deve poter ordinare i dati in pannelli di tipo tabellare.", "UC7"
+    "Desiderabile", "Nei pannelli con tabelle, l'utente deve poter ordinare i dati in base alle loro colonne.", "UC7"
   ),
   (
-    "Desiderabile", "L'utente deve poter modificare il layout dei pannelli.", "UC8"
+    "Desiderabile", "L'utente deve poter modificare il layout della dashboard visualizzata, agendo su posizione e dimensione dei pannelli.", "UC8"
   ),
   (
     "Obbligatorio", "L'utente deve poter visualizzare un messaggio di errore qualora non vi siano dati a disposizione.", "UC9"
