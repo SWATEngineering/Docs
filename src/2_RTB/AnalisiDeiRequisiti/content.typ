@@ -806,6 +806,9 @@ delle precipitazioni, in millimetri di pioggia.
   ),
   (
     "Obbligatorio", "Il sistema deve poter gestire dati relativi alla congestione stradale.", "UC20"
+  ),
+  (
+    "Desiderabile", "Ogni sensore insieme ai dati invia al sistema anche il proprio stato, che contiene il livello della batteria, nel caso ne abbia una e l'utilizzo del processore.", "UC21"
   )
 )
 
