@@ -74,3 +74,34 @@
   row.push(str(sum_list.sum()))
   return row
 }
+
+#let create_rule_rows(rules, preventivoSumList, consuntivoSumList, h_cost) = {
+  let rows = ()
+  for rule in rules.enumerate() {
+    let r = rule.at(0)
+    rows.push(rules.at(r))
+
+    let diff = consuntivoSumList.at(r) - preventivoSumList.at(r)
+    let tot = consuntivoSumList.at(r)
+    let cost = h_cost.at(r)*tot //costo totale del ruolo
+    if(diff > 0) {
+      rows.push(str(tot) + " (+" + str(diff) + ")")
+      rows.push(str(cost) + "€ (+" + str(diff*h_cost.at(r)) + "€)")
+    } else if (diff < 0) {
+      rows.push(str(tot) + " (" + str(diff) + ")")
+      rows.push(str(cost) + "€ (" + str(diff*h_cost.at(r)) + "€)")
+    } else {
+      rows.push(str(tot))
+      rows.push(str(cost) + "€")
+    }
+  }
+  return rows
+}
+
+#let total_cost(consuntivoSumList, h_cost) = {
+  let tot = 0
+  for i in range(consuntivoSumList.len()) {
+    tot += consuntivoSumList.at(i)*h_cost.at(i)
+  }
+  return tot
+}
