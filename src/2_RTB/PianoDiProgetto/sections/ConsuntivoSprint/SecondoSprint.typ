@@ -187,7 +187,6 @@ I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, dura
   columns: (130pt,40pt,40pt,40pt,40pt,40pt,40pt,80pt),
   align: center,
   [*Nominativo*],[*Re*],[*Am*],[*An*],[*Pt*],[*Pr*],[*Ve*],[*Totale per persona*],
-
   [Simone Caregnato],[#tab_content.at("Simone").at(0)],[#tab_content.at("Simone").at(1)],[#tab_content.at("Simone").at(2)],[#tab_content.at("Simone").at(3)],[#tab_content.at("Simone").at(4)], [#tab_content.at("Simone").at(5)], [#tab_content.at("Simone").at(6)],
   [Riccardo Alberto Costantin],[#tab_content.at("RiccardoC").at(0)],[#tab_content.at("RiccardoC").at(1)],[#tab_content.at("RiccardoC").at(2)],[#tab_content.at("RiccardoC").at(3)],[#tab_content.at("RiccardoC").at(4)], [#tab_content.at("RiccardoC").at(5)], [#tab_content.at("RiccardoC").at(6)],
   [Giacomo D'Ovidio],[#tab_content.at("Giacomo").at(0)],[#tab_content.at("Giacomo").at(1)],[#tab_content.at("Giacomo").at(2)],[#tab_content.at("Giacomo").at(3)],[#tab_content.at("Giacomo").at(4)], [#tab_content.at("Giacomo").at(5)], [#tab_content.at("Giacomo").at(6)],
