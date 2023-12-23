@@ -490,8 +490,7 @@ delle precipitazioni, in millimetri di pioggia.
 - *Precondizioni*: l'attore sta visualizzando almeno un pannello. 
 - *Postcondizioni*: l'attore visualizza il nuovo layout.
 - *Scenario Principale*:
-  + l'attore sposta o ridimensiona i pannelli a suo piacimento; 
-  + il sistema renderizza i pannelli con il nuovo layout. 
+  + l'attore sposta o ridimensiona i pannelli a suo piacimento.
 
 #figure(
   image("assets/UML/UC8_Modifica-layout-pannelli.png",width:70%),
