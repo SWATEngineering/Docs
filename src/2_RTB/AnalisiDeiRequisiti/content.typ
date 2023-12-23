@@ -187,7 +187,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC2.5: Visualizzazione pannello time series per precipitazioni
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alle precipitazioni, in millimetri di pioggia, in formato time series.
+- *Postcondizioni*: l'attore visualizza un pannello in formato time series, relativo all'intensità 
+delle precipitazioni, in millimetri di pioggia.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
@@ -709,7 +710,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     "Opzionale", "L'utente deve poter visualizzare un grafico a mappa che evidenzi velocità e direzione del vento.", "UC2.4"
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare un pannello in formato time series con dati relativi alle precipitazioni.", "UC2.5"
+    "Obbligatorio", "L'utente deve poter visualizzare un pannello in formato time series relativo all'intensità delle precipitazioni.", "UC2.5"
   ),
   (
     "Desiderabile", "L'utente deve poter visualizzare un pannello che evidenzi le precipitazioni medie negli ultimi 5 minuti.", "UC2.6"
