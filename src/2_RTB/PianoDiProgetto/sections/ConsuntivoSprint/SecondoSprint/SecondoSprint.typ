@@ -1,11 +1,11 @@
-#import "../../functions.typ" : read_values, create_members_rows, role_sum, sum_row, create_rule_rows, total_cost
-#import "../../const.typ": Re_cost, Am_cost, An_cost, Ve_cost, Pr_cost, Pt_cost
+#import "../../../functions.typ" : read_values, create_members_rows, role_sum, sum_row, create_rule_rows, total_cost
+#import "../../../const.typ": Re_cost, Am_cost, An_cost, Ve_cost, Pr_cost, Pt_cost
 
 #let h_cost  = ( Re_cost,Am_cost,An_cost,Pt_cost,Pr_cost,Ve_cost )
 
-#let csvPreventivo = csv("../../ore_preventivo.csv")
-#let csvConsuntivo = csv("../../ore_consuntivo.csv")
-#let trace = csv("../../trace.csv")
+#let csvPreventivo = csv("ore_preventivo.csv")
+#let csvConsuntivo = csv("ore_consuntivo.csv")
+#let trace = csv("../../../trace.csv")
 
 #let sprint = trace.at(2)
 #let hours = sprint.at(0)
@@ -35,12 +35,12 @@ I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, dura
 )
 
 #figure(
-  image("../../assets/AreogrammiPartizioneOre/Effettivo/AreogrammaOreSecondoSprint.svg", width: 75%),
+  image("../../../assets/AreogrammiPartizioneOre/Effettivo/AreogrammaOreSecondoSprint.svg", width: 75%),
   caption: [Areogramma della partizione delle ore per ruolo nel secondo sprint.],
 )
 
 #figure(
-  image("../../assets/IstogrammiOreMembro/Effettive/IstogrammaSecondoSprint.svg", width: 75%),
+  image("../../../assets/IstogrammiOreMembro/Effettive/IstogrammaSecondoSprint.svg", width: 75%),
   caption: [Istogramma delle ore svolte per persona nel secondo sprint.],
 )
 
@@ -59,12 +59,12 @@ In questo sprint, il costo per ogni ruolo assunto viene riportato in tabella:
 )
 
 #figure(
-  image("../../assets/AreogrammiPartizioneCosti/Effettivo/AreogrammaCostiSecondoSprint.svg", width: 75%),
+  image("../../../assets/AreogrammiPartizioneCosti/Effettivo/AreogrammaCostiSecondoSprint.svg", width: 75%),
   caption: [Areogramma del budget speso e rimanente preventivato per il secondo sprint.],
 )
 
 #figure(
-  image("../../assets/AreogrammiTotaliOre/Effettive/AreogrammaTotaleSecondoSprint.svg", width: 75%),
+  image("../../../assets/AreogrammiTotaliOre/Effettive/AreogrammaTotaleSecondoSprint.svg", width: 75%),
   caption: [Areogramma delle ore svolte e rimanenti nel secondo sprint.],
 )
 

@@ -1,4 +1,4 @@
-#import "../../const.typ": Re_cost, Am_cost, An_cost, Ve_cost, Pr_cost, Pt_cost 
+#import "../../../const.typ": Re_cost, Am_cost, An_cost, Ve_cost, Pr_cost, Pt_cost 
 
 #let ruoli_ore = (
   Re: 6,
@@ -36,12 +36,12 @@ I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, dura
 )
 
 #figure(
-  image("../../assets/AreogrammiPartizioneOre/Effettivo/AreogrammaOrePrimoSprint.png", width: 75%),
+  image("../../../assets/AreogrammiPartizioneOre/Effettivo/AreogrammaOrePrimoSprint.png", width: 75%),
   caption: [Areogramma della partizione delle ore per ruolo nel primo sprint.],
 )
 
 #figure(
-  image("../../assets/IstogrammiOreMembro/Effettive/IstogrammaPrimoSprint.png", width: 75%),
+  image("../../../assets/IstogrammiOreMembro/Effettive/IstogrammaPrimoSprint.png", width: 75%),
   caption: [Istogramma delle ore svolte per persona nel primo sprint.],
 )
 
@@ -62,12 +62,12 @@ In questo sprint, il costo per ogni ruolo assunto viene riportato in tabella:
 )
 
 #figure(
-  image("../../assets/AreogrammiPartizioneCosti/Effettivo/AreogrammaCostiPrimoSprint.png", width: 75%),
+  image("../../../assets/AreogrammiPartizioneCosti/Effettivo/AreogrammaCostiPrimoSprint.png", width: 75%),
   caption: [Areogramma del budget speso e rimanente preventivato per il primo sprint.],
 )
 
 #figure(
-  image("../../assets/AreogrammiTotaliOre/Effettive/AreogrammaTotalePrimoSprint.png", width: 75%),
+  image("../../../assets/AreogrammiTotaliOre/Effettive/AreogrammaTotalePrimoSprint.png", width: 75%),
   caption: [Areogramma delle ore svolte e rimanenti nel primo sprint.],
 )
 
