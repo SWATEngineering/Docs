@@ -20,6 +20,9 @@
   row.push(consuntivoRow.enumerate().map(el => {
     let index = el.at(0)
     let content = str(el.at(1))
+    if(content == "0") {
+      content = "-"
+    }
 
     if(preventivoRow.at(index) != consuntivoRow.at(index)) {
       let diff = consuntivoRow.at(index) - preventivoRow.at(index)
