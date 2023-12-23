@@ -1,4 +1,4 @@
-#import "../../functions.typ" : read_values, create_member_row, role_sum, sum_row, create_rule_rows, total_cost
+#import "../../functions.typ" : read_values, create_members_rows, role_sum, sum_row, create_rule_rows, total_cost
 #import "../../const.typ": Re_cost, Am_cost, An_cost, Ve_cost, Pr_cost, Pt_cost
 
 #let h_cost  = ( Re_cost,Am_cost,An_cost,Pt_cost,Pr_cost,Ve_cost )
@@ -17,10 +17,7 @@
 #let valuesConsuntivo = read_values(csvConsuntivo)
 #let valuesPreventivo = read_values(csvPreventivo)
 
-#let members_table = ()
-#for i in range(names.len()) {
-  members_table.push(create_member_row(names.at(i),valuesPreventivo.at(i), valuesConsuntivo.at(i)))
-}
+#let members_rows = create_members_rows(names, valuesPreventivo, valuesConsuntivo)
 
 #let consuntivoSumList = role_sum(valuesConsuntivo)
 #let sum_row = sum_row(consuntivoSumList)
@@ -33,7 +30,7 @@ I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, dura
   columns: (130pt,40pt,40pt,40pt,40pt,40pt,40pt,80pt),
   align: center,
   [*Nominativo*],[*Re*],[*Am*],[*An*],[*Pt*],[*Pr*],[*Ve*],[*Totale per persona*],
-  ..members_table.flatten(),
+  ..members_rows.flatten(),
   [*Totale per ruolo*],..sum_row.flatten()
 )
 

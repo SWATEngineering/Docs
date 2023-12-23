@@ -48,6 +48,15 @@
   }
   return row
 }
+
+#let create_members_rows(names, valuesPreventivo, valuesConsuntivo) = {
+  let rows = ()
+  for i in range(names.len()) {
+    rows.push(create_member_row(names.at(i),valuesPreventivo.at(i), valuesConsuntivo.at(i)))
+  }
+  return rows
+} 
+
 //viene passata una lista di liste di valori
 #let role_sum(role_list) = {
   //vengono sommati i valori in colonna, per ruolo
