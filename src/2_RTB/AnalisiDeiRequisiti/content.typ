@@ -401,7 +401,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: 
   + l'attore sta visualizzando uno o più pannelli con i dati.
-  + il pannello offre la funzionalità di filtro dei dati al suo interno.
 - *Postcondizioni*: l'attore visualizza solamente i dati relativi al filtro applicato (oppure ai filtri applicati).
 - *Scenario Principale*:
   + l'attore seleziona l'icona o il pulsante relativo al filtro dei dati;
