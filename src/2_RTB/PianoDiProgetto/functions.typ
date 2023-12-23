@@ -45,3 +45,29 @@
   }
   return row
 }
+//viene passata una lista di liste di valori
+#let role_sum(role_list) = {
+  //vengono sommati i valori in colonna, per ruolo
+  let sum_list = ()
+  for i in range(role_list.at(0).len()) {  //scorre colonne
+    sum_list.push(0)
+    for m in role_list.enumerate() {  //scorre righe
+      let content = m.at(1)
+      sum_list.at(i)+=content.at(i)
+    }
+  }
+  return sum_list
+}
+
+#let sum_row(sum_list) = {
+  let row = ()
+  row.push(sum_list.map(el => {
+    if(el == 0) {
+      return "-"
+    } else {
+      return str(el)
+    }
+  }))
+  row.push(str(sum_list.sum()))
+  return row
+}
