@@ -110,7 +110,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza il pannello relativo ai dati sensori, in forma tabellare.
 - *Scenario Principale*:
   + l'attore accede al sistema; 
-  + l'attore seleziona la visualizzazione della panoramica generale dei sensori;
+  + l'attore seleziona la visualizzazione della dashboard generale relativa ai sensori;
 - *Estensioni*: [UC9].
 
 #figure(
