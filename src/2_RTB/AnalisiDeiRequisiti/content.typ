@@ -75,18 +75,18 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 #set heading(numbering: none)
 
-=== UC1: Visualizzazione dashboard sensori
+=== UC1: Visualizzazione dashboard generale sensori
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'attore visualizza i grafici relativi ai dati prodotti dai sensori, all'interno di un unica dashboard. 
 - *Scenario Principale*:
   + l'attore accede al sistema; 
-  + l'attore seleziona la visualizzazione della panoramica generale dei sensori;
+  + l'attore seleziona la visualizzazione della dashboard generale relativa ai sensori;
   + l'attore visualizza la dashboard contenente i grafici.
 
 #figure(
   image("assets/UML/UC1_Visualizzazione-panoramica-generale-sensori.png",width:70%),
-  caption: [UC1 Visualizzazione panoramica generale sensori]
+  caption: [UC1 Visualizzazione dashboard generale sensori]
 )
 
 === UC1.1: Visualizzazione posizione sensori su mappa
@@ -95,7 +95,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza le posizioni dei sensori come icone su una mappa. 
 - *Scenario Principale*:
   + l'attore accede al sistema; 
-  + l'attore seleziona la visualizzazione della panoramica generale dei sensori;
+  + l'attore seleziona la visualizzazione della dashboard generale relativa ai sensori;
   + l'attore visualizza il pannello.
 - *Estensioni*: [UC9].
 
@@ -162,7 +162,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC2.3: Visualizzazione pannello time series per umidità
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi all'umidità, in percentuale, in formato time series.
+- *Postcondizioni*: l'attore visualizza un pannello contenente un grafico, in formato time series, con indicazioni percentuali, relative a misurazioni di umidità.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
@@ -405,9 +405,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore seleziona l'icona o il pulsante relativo al filtro dei dati;
   + l'attore seleziona secondo quali valori filtrare il pannello (o i pannelli).
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC6_Applicazione-filtri.png",width:70%),
@@ -745,13 +742,13 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
      "Obbligatorio", "L'utente deve poter accedere all'applicazione senza dover effettuare l'autenticazione.", "Capitolato"
   ),
   (
-     "Obbligatorio", "L'utente deve poter visualizzare una panoramica generale dei sensori.", "UC1"
+     "Obbligatorio", "L'utente deve poter visualizzare una dashboard generale relativa ai sensori.", "UC1"
   ),
   (
      "Obbligatorio", "L'utente deve poter visualizzare le posizioni dei sensori come icone su una mappa.", "UC1.1"
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare, in forma tabellare, una panoramica generale dei sensori.", "UC1.2"
+    "Obbligatorio", "L'utente deve poter visualizzare, in forma tabellare, una dashboard generale relativa ai sensori.", "UC1.2"
   ),
   (
     "Obbligatorio", "L'utente deve poter monitorare i dati provenienti dai sensori relativi ai dati ambientali.", "UC2"
@@ -760,7 +757,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     "Obbligatorio", "L'utente deve poter visualizzare un pannello in formato time series con dati relativi alla temperatura.", "UC2.2"
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare un pannello in formato time series con dati relativi all'umidità.", "UC2.3"
+    "Obbligatorio", "L'utente deve poter visualizzare un pannello in formato time series con misurazioni in percentuale sull'umidità.", "UC2.3"
   ),
   (
     "Opzionale", "L'utente deve poter visualizzare un grafico a mappa che evidenzi velocità e direzione del vento.", "UC2.4"
