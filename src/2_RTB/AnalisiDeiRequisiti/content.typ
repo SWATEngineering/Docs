@@ -97,8 +97,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'attore accede al sistema; 
   + l'attore seleziona la visualizzazione della panoramica generale dei sensori;
   + l'attore visualizza il pannello.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna. 
 - *Estensioni*: [UC9].
 
 #figure(
@@ -109,12 +107,10 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC1.2: Visualizzazione tabella sensori
 - *Attore Principale*: amministratore pubblico. 
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'attore visualizza il pannello in forma tabellare.
+- *Postcondizioni*: l'attore visualizza il pannello relativo ai dati sensori, in forma tabellare.
 - *Scenario Principale*:
   + l'attore accede al sistema; 
   + l'attore seleziona la visualizzazione della panoramica generale dei sensori;
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
 - *Estensioni*: [UC9].
 
 #figure(
@@ -129,9 +125,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC2_Visualizzazione-dati-ambientali.png",width:70%),
@@ -146,7 +139,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
 - *Specializzazioni*: [UC2.2],[UC2.3],[UC2.4],[UC2.5],[UC2.6],[UC2.7],[UC2.8],[UC2.9],[UC2.10],[UC2.11].
-- *Inclusioni*: nessuna.
 - *Estensioni*: [UC9].
 
 #figure(
@@ -161,9 +153,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC2.2_Visualizzazion-pannello-time-series-per-temperatura.png",width:100%),
@@ -209,9 +198,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC2.5_Visualizzazione-pannello-time-series-per-precipitazioni.png",width:100%),
@@ -225,9 +211,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC2.6_Visualizzazione-pannello-precipitazioni-medie.png",width:100%),
@@ -237,13 +220,10 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC2.7: Visualizzazione pannello time series per inquinamento dell'aria
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi all'inquinamento dell'aria, in $#sym.mu g\/m^3$, in formato time series.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi al livello di polveri sottili nell'aria, in $#sym.mu g\/m^3$, in formato time series.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC2.7_Visualizzazione-pannello-time-series-per-inquinamento-dell-aria.png",width:100%),
@@ -257,9 +237,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC2.8_Visualizzazione-pannello-inquinamento-dell-aria-medio.png",width:100%),
@@ -273,9 +250,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC2.9_Visualizzazione-pannello-time-series-per-livello-dei-bacini-idrici.png",width:100%),
@@ -285,13 +259,10 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC2.10: Visualizzazione pannello temperatura media
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alla temperatura, in gradi celsius, media tra tutti i sensori attivi negli ultimi 5 minuti, in formato numerico.
+- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alla temperatura media, in gradi celsius, tra tutti i sensori attivi negli ultimi 5 minuti, in formato numerico.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC2.10_Visualizzazione-pannello-temperatura-media.png",width:100%),
@@ -305,9 +276,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC2.11_Visualizzazione-pannello-inquinamento-dell-aria-massimo.png",width:100%),
@@ -321,9 +289,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio urbanistico.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC3_Visualizzazione-dati-urbanistici.png",width:70%),
@@ -338,7 +303,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio urbanistico.
 - *Specializzazioni*: [UC3.2],[UC3.3],[UC3.4],[UC3.5],[UC3.6].
-- *Inclusioni*: nessuna.
 - *Estensioni*: [UC9].
 
 #figure(
@@ -353,9 +317,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio urbanistico.
-- *Specializzazioni*: nessuna. 
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC3.2_Visualizzazione-grafico-a-mappa-disponibilità-dei-parcheggi.png",width:100%),
@@ -365,13 +326,10 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC3.3: Visualizzazione posizione e stato colonne ricarica
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
-- *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare il wattaggio erogato e la disponibilità delle colonne di ricarica.  
+- *Postcondizioni*: l'attore visualizza un grafico a mappa relativo alle colonne, atto ad indicarne la posizione ,il tipo, in termini di rapidità di ricarica, e la disponibilità.  
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio urbanistico.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC3.3_Visualizzazione-posizione-e-stato-colonne-ricarica.png",width:100%),
