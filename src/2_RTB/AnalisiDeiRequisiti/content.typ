@@ -166,10 +166,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
-
 #figure(
   image("assets/UML/UC2.3_Visualizzazione-pannello-time-series-umidità.png",width:100%),
   caption: [UC2.3 Visualizzazione pannello time series per umidità]
@@ -182,9 +178,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC2.4_Visualizzazione-grafico-a-mappa-velocità-e-direzione-del-vento.png",width:100%),
@@ -419,9 +412,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza solamente i dati relativi al filtro applicato.
 - *Scenario Principale*:
   + l'attore seleziona il sensore (o i sensori) da visualizzare tramite la legenda.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC6.1_Filtro-sotto-insieme-di-sensori-su-grafici-time-series.png",width:70%),
@@ -437,10 +427,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore seleziona la funzionalità relativa al filtro dei dati;
   + l'attore seleziona i valori delle tipologie di sensore desiderati.
-- *Specializzazioni*: nessuna.
 - *Inclusioni*: [UC6.5].
-- *Estensioni*: nessuna.
-
 #figure(
   image("assets/UML/UC6.2_Filtro-per-tipologia-sensore-su-tabella.png",width:100%),
   caption: [UC6.2 Filtro per tipologia sensore su tabella]
@@ -455,9 +442,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore seleziona la funzionalità relativa al filtro dei dati;
   + l'attore seleziona i valori dei nomi dei sensori desiderati.
-- *Specializzazioni*: nessuna.
 - *Inclusioni*: [UC6.5].
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC6.3_Filtro-per-nome-sensore-su-tabella.png",width:100%),
@@ -471,9 +456,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore seleziona la funzionalità relativa al filtro dei dati per intervallo temporale;
   + l'attore seleziona l'intervallo temporale desiderato.
-- *Specializzazioni*: nessuna.
 - *Inclusioni*: [UC6.5].
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC6.4_Filtro-per-intervallo-temporale.png",width:100%),
@@ -488,9 +471,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza, in tutti i pannelli collegati, solamente i dati relativi al filtro applicato (o ai filtri applicati).
 - *Scenario Principale*:
   + il sistema aggiorna tutti i pannelli collegati.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
 
 === UC7: Ordinamento pannelli tabellari
 - *Attore Principale*: amministratore pubblico.
@@ -498,9 +478,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza i dati ordinati.
 - *Scenario Principale*:
   + l'attore seleziona i campi secondo cui ordinare i dati, in modo ascendente o discendente.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC7_Ordinamento-pannelli-tabellari.png",width:70%),
@@ -514,9 +491,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore sposta o ridimensiona i pannelli a suo piacimento; 
   + il sistema renderizza i pannelli con il nuovo layout. 
-- *Specializzazioni*: nessuna. 
-- *Inclusioni*: nessuna. 
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC8_Modifica-layout-pannelli.png",width:70%),
@@ -529,10 +503,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza il messaggio di errore.
 - *Scenario Principale*:
   + l'attore vuole visualizzare qualche pannello [UC1.2] [UC1.1] [UC2.1] [UC3.1]; 
-  + il sistema non ha i dati per renderizzarlo e mostra un messaggio di errore. 
-- *Specializzazioni*: nessuna. 
-- *Inclusioni*: nessuna. 
-- *Estensioni*: nessuna. 
+  + il sistema non ha i dati per renderizzarlo e mostra un messaggio di errore.
 
 === UC10: Inserimento dati temperatura
 - *Attore Principale*: sensore. 
@@ -541,10 +512,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + il sensore effettua una rilevazione della temperatura;
   + il sensore formatta il messaggio da inviare al sistema;
-  + il sensore invia il messaggio al sistema. 
-- *Specializzazioni*: nessuna. 
+  + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
-- *Estensioni*: nessuna. 
 
 #figure(
   image("assets/UML/UC10_Inserimento-dati-temperatura.png",width:100%),
@@ -558,10 +527,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + il sensore effettua una rilevazione dell'umidità;
   + il sensore formatta il messaggio da inviare al sistema;
-  + il sensore invia il messaggio al sistema. 
-- *Specializzazioni*: nessuna. 
-- *Inclusioni*: UC21. 
-- *Estensioni*: nessuna. 
+  + il sensore invia il messaggio al sistema.
+- *Inclusioni*: UC21.
 
 #figure(
   image("assets/UML/UC11_Inserimento-dati-umidità.png",width:100%),
@@ -575,10 +542,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + il sensore effettua una rilevazione della velocità e della direzione del vento;
   + il sensore formatta il messaggio da inviare al sistema;
-  + il sensore invia il messaggio al sistema. 
-- *Specializzazioni*: nessuna. 
-- *Inclusioni*: UC21. 
-- *Estensioni*: nessuna.
+  + il sensore invia il messaggio al sistema.
+- *Inclusioni*: UC21.
 
 #figure(
   image("assets/UML/UC12_Inserimento-dati-velocità-e-direzione-del-vento.png",width:120%),
@@ -592,10 +557,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + il sensore effettua una rilevazione quantitativa delle precipitazioni;
   + il sensore formatta il messaggio da inviare al sistema;
-  + il sensore invia il messaggio al sistema. 
-- *Specializzazioni*: nessuna. 
-- *Inclusioni*: UC21. 
-- *Estensioni*: nessuna.
+  + il sensore invia il messaggio al sistema.
+- *Inclusioni*: UC21.
 
 #figure(
   image("assets/UML/UC13_Inserimento-dati-precipitazioni.png",width:100%),
@@ -609,10 +572,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + il sensore effettua una rilevazione quantitativa dell'inquinamento dell'aria;
   + il sensore formatta il messaggio da inviare al sistema;
-  + il sensore invia il messaggio al sistema. 
-- *Specializzazioni*: nessuna. 
-- *Inclusioni*: UC21. 
-- *Estensioni*: nessuna.
+  + il sensore invia il messaggio al sistema.
+- *Inclusioni*: UC21.
 
 #figure(
   image("assets/UML/UC14_Inserimento-dati-inquinamento-dell-aria.png",width:100%),
@@ -626,10 +587,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + il sensore effettua una rilevazione del livello del bacino idrico in cui è installato;
   + il sensore formatta il messaggio da inviare al sistema;
-  + il sensore invia il messaggio al sistema. 
-- *Specializzazioni*: nessuna. 
-- *Inclusioni*: UC21. 
-- *Estensioni*: nessuna.
+  + il sensore invia il messaggio al sistema.
+- *Inclusioni*: UC21.
 
 #figure(
   image("assets/UML/UC15_Inserimento-dati-livello-bacini-idrici.png",width:100%),
@@ -643,10 +602,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
    + il sensore rileva gli ingressi e le uscite del parcheggio in cui è installato;
   + il sensore formatta il messaggio da inviare al sistema;
-  + il sensore invia il messaggio al sistema. 
-- *Specializzazioni*: nessuna. 
-- *Inclusioni*: UC21. 
-- *Estensioni*: nessuna.
+  + il sensore invia il messaggio al sistema.
+- *Inclusioni*: UC21.
 
 #figure(
   image("assets/UML/UC16_Inserimento-dati-disponibilità-parcheggi.png",width:100%),
@@ -660,10 +617,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + il sensore effettua una rilevazione del wattaggio erogato dalla colonna di ricarica;
   + il sensore formatta il messaggio da inviare al sistema;
-  + il sensore invia il messaggio al sistema. 
-- *Specializzazioni*: nessuna. 
-- *Inclusioni*: UC21. 
-- *Estensioni*: nessuna.
+  + il sensore invia il messaggio al sistema.
+- *Inclusioni*: UC21.
 
 #figure(
   image("assets/UML/UC17_Inserimento-dati-colonne-di-ricarica.png",width:100%),
@@ -677,10 +632,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + il sensore effettua una rilevazione della posizione e della percentuale della batteria della bicicletta elettrica su cui è installato;
   + il sensore formatta il messaggio da inviare al sistema;
-  + il sensore invia il messaggio al sistema. 
-- *Specializzazioni*: nessuna. 
-- *Inclusioni*: UC21. 
-- *Estensioni*: nessuna.
+  + il sensore invia il messaggio al sistema.
+- *Inclusioni*: UC21.
 
 #figure(
   image("assets/UML/UC18_Inserimento-dati-biciclette-elettriche.png",width:100%),
@@ -694,10 +647,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + il sensore effettua una rilevazione del livello di riempimento del contenitore ecologico associato; 
   + il sensore formatta il messaggio da inviare al sistema;
-  + il sensore invia il messaggio al sistema. 
-- *Specializzazioni*: nessuna. 
-- *Inclusioni*: UC21. 
-- *Estensioni*: nessuna.
+  + il sensore invia il messaggio al sistema.
+- *Inclusioni*: UC21.
 
 #figure(
   image("assets/UML/UC19_Inserimento-dati-riempimento-zone-ecologiche.png",width:100%),
@@ -711,10 +662,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + il sensore effettua una rilevazione del livello di congestione della strada su cui è installato; 
   + il sensore formatta il messaggio da inviare al sistema;
-  + il sensore invia il messaggio al sistema. 
-- *Specializzazioni*: nessuna. 
-- *Inclusioni*: UC21. 
-- *Estensioni*: nessuna.
+  + il sensore invia il messaggio al sistema.
+- *Inclusioni*: UC21.
 
 #figure(
   image("assets/UML/UC20_Inserimento-dati-congestione-stradale.png",width:100%),
@@ -727,9 +676,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sensore allega i dati relativi al proprio stato al messaggio da inviare al sistema.
 - *Scenario Principale*:
   + il sensore prende i dati relativi al proprio stato.
-- *Specializzazioni*: nessuna. 
-- *Inclusioni*: nessuna. 
-- *Estensioni*: nessuna.
 
 #set heading(numbering: "1.1")
 #pagebreak()
