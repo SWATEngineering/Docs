@@ -75,7 +75,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 #set heading(numbering: none)
 
-=== UC1: Visualizzazione panoramica generale sensori
+=== UC1: Visualizzazione dashboard sensori
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'attore visualizza i grafici relativi ai dati prodotti dai sensori, all'interno di un unica dashboard. 
@@ -339,13 +339,10 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC3.4: Visualizzazione grafico a mappa intensità traffico
 *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
-- *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare la distribuzione della congestione del traffico.
+- *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad illustrare il flusso del traffico ed eventuali congestioni.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio urbanistico.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC3.4_Visualizzazione-grafico-a-mappa-intensità-traffico.png",width:100%),
@@ -359,9 +356,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio urbanistico.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC3.5_Visualizzazione-posizione-real-time-delle-biciclette-elettriche-e-relativa-percentuale-batteria.png",width:100%),
@@ -371,12 +365,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC3.6: Visualizzazione indicatore percentuale su mappa riempimento zone rifiuti
 *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
-- *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare lo stato di riempimento delle zone rifiuti. 
+- *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare lo stato di riempimento, in percentuale, delle zone rifiuti. 
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio urbanistico.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC3.6_Visualizzazione-indicatore-percentuale-su-mappa-riempimento-zone-rifiuti.png",width:100%),
@@ -389,9 +380,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore visualizza, in forma tabellare, la lista ordinata di anomalie nei dati rilevati dal sistema.
 - *Scenario Principale*:
   + l'attore seleziona la visualizzazione delle anomalie.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC4_Visualizzazione-dati-anomali-rilevati.png",width:70%),
@@ -404,10 +392,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'attore riceve una notifica di superamento di una soglia impostata.
 - *Scenario Principale*:
   + il sistema rileva condizioni che richiedono l'invio di una notifica per segnalare il superamento di una soglia impostata.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
-
 #figure(
   image("assets/UML/UC5_Visualizzazione-allerte-superamento-soglie.png",width:70%),
   caption: [UC5 Visualizzazione allerte superamento soglie]
