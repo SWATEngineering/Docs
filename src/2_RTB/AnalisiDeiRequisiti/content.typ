@@ -83,9 +83,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'attore accede al sistema; 
   + l'attore seleziona la visualizzazione della panoramica generale dei sensori;
   + l'attore visualizza la dashboard contenente i grafici.
-- *Specializzazioni*: nessuna.
-- *Inclusioni*: nessuna.
-- *Estensioni*: nessuna.
 
 #figure(
   image("assets/UML/UC1_Visualizzazione-panoramica-generale-sensori.png",width:70%),
