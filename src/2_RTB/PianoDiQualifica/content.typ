@@ -180,7 +180,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
 
 #let test_di_accettazione = (
       ([
-          Verificare che l'amministratore pubblico senza autenticazione possa:
+          Verificare che l'#glossary("amministratore pubblico") senza autenticazione possa:
             1. usufruire dell'applicazione senza doversi autenticare.
       ],"N/I",[
             UC1\
@@ -193,34 +193,34 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             UC8
       ]),
       ([
-          Verificare che l'amministratore pubblico, una volta entrato nell'applicazione, possa:
+          Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
             1. aprire il menu di selezione delle #glossary("dashboard");
             2. selezionare la #glossary("dashboard") per visualizzare la panoramica generale dei sensori;
             3. visualizzare la relativa #glossary("dashboard");
             4. visualizzare un #glossary("pannello") con una mappa indicante la posizione di tutti i sensori;
             5. visualizzare un #glossary("pannello") con una tabella che mostra lo stato di tutti i sensori.
-            6. visualizzare un messaggio di avvertenza di dati mancanti, nei vari #glossary("pannelli"), nel caso il sistema non riesca ad ottenere i dati.
+            6. visualizzare un messaggio di avvertenza di dati mancanti, nei vari #glossary("pannelli"), nel caso il sistema non riesca a reperire i dati.
       ],"N/I",[
             UC1\
             UC1.1\
             UC1.2
       ]),
       ([
-          Verificare che l'amministratore pubblico, una volta entrato nell'applicazione, possa:
+          Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
             1. aprire il menu di selezione delle #glossary("dashboard");
             2. selezionare la #glossary("dashboard") per visualizzare i dati ambientali;
             3. visualizzare la relativa #glossary("dashboard");
             4. visualizzare un #glossary("pannello") con la #glossary("serie storica") delle temperature rilevate dai ciascun sensore;
             5. visualizzare un #glossary("pannello") con la #glossary("serie storica") delle percentuali di umidità rilevate da ciascun sensore;
             6. visualizzare un #glossary("pannello") con una mappa mostrante velocità e direzione del vento rilevato da ciascun sensore;
-            7. visualizzare un #glossary("pannello") con la #glossary("serie storica") dei millimetri di pioggia rilevati dai ciascun sensore;
-            8. visualizzare un #glossary("pannello") con la #glossary("serie storica") (in formato aggregato, andando a fare la media degli ultimi cinque minuti) dei millimetri di pioggia rilevati dai ciascun sensore;
-            9. visualizzare un #glossary("pannello") con la #glossary("serie storica") relativa ai dati sull'inquinamento dell'aria rilevati dai ciascun sensore; /*TODO: sostituire con l'unità di misura/metrica giusta*/
-            10. visualizzare un #glossary("pannello") con la #glossary("serie storica") (in formato aggregato, andando a fare la media degli ultimi cinque minuti) dei dati sull'inquinamento dell'aria rilevati dai ciascun sensore; /*TODO: sostituire con l'unità di misura/metrica giusta*/
+            7. visualizzare un #glossary("pannello") con la #glossary("serie storica") dei millimetri di pioggia rilevati da ciascun sensore;
+            8. visualizzare un #glossary("pannello") con la #glossary("serie storica") (in formato aggregato, andando a fare la media degli ultimi cinque minuti) dei millimetri di pioggia rilevati da ciascun sensore;
+            9. visualizzare un #glossary("pannello") con la #glossary("serie storica") relativa ai dati sull'inquinamento dell'aria rilevati da ciascun sensore; /*TODO: sostituire con l'unità di misura/metrica giusta*/
+            10. visualizzare un #glossary("pannello") con la #glossary("serie storica") (in formato aggregato, andando a fare la media degli ultimi cinque minuti) dei dati sull'inquinamento dell'aria rilevati da ciascun sensore; /*TODO: sostituire con l'unità di misura/metrica giusta*/
             11. visualizzare un #glossary("pannello") con la #glossary("serie storica") delle percentuali di riempimento dei bacini idrici rilevate dai ciascun sensore;
             12. visualizzare un #glossary("pannello") con la #glossary("serie storica") (in formato aggregato, andando a fare la media degli ultimi cinque minuti) delle temperature rilevate dai ciascun sensore;
             13. visualizzare un #glossary("pannello") con il valore massimo negli ultimi 5 minuti relativo all'inquinamento dell'aria. /*TODO: sistemare con le unità di misura giuste*/
-            14. visualizzare un messaggio di avvertenza di dati mancanti, nei vari #glossary("pannelli"), nel caso il sistema non riesca ad ottenere i dati.
+            14. visualizzare un messaggio di avvertenza di dati mancanti, nei vari #glossary("pannelli"), nel caso il sistema non riesca a reperire i dati.
       ],"N/I",[
             UC2\
             UC2.1\
@@ -236,7 +236,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             UC2.11
       ]),
       ([
-          Verificare che l'amministratore pubblico, una volta entrato nell'applicazione, possa:
+          Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
             1. aprire il menu di selezione delle #glossary("dashboard");
             2. selezionare la #glossary("dashboard") per visualizzare i dati urbanistici;
             3. visualizzare la relativa #glossary("dashboard");
@@ -245,9 +245,10 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             6. visualizzare un #glossary("pannello") con una mappa indicante l'intensità del traffico sulle strade controllate; /*TODO: andare a specificare come questa intesità viene espressa (anche in adr)*/
             7. visualizzare un #glossary("pannello") con una mappa indicante la posizione di ciascuna bicicletta elettrica controllata, con la relativa percentuale di batteria;
             8. visualizzare un #glossary("pannello") con una mappa indicante la percentuale di riempimento di ogni zona rifiuti controllata;
-            9. visualizzare un messaggio di avvertenza di dati mancanti, nei vari #glossary("pannelli"), nel caso il sistema non riesca ad ottenere i dati.
+            9. visualizzare un messaggio di avvertenza di dati mancanti, nei vari #glossary("pannelli"), nel caso il sistema non riesca a reperire i dati.
       ],"N/I",[
             UC3\
+            UC3.1\
             UC3.2\
             UC3.3\
             UC3.4\
@@ -255,22 +256,22 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             UC3.6
       ]),
       ([
-          Verificare che l'amministratore pubblico, una volta entrato nell'applicazione, possa:
+          Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
             1. aprire il menu di selezione delle #glossary("dashboard");
             2. selezionare la #glossary("dashboard") per visualizzare i dati anomali prodotti dai sensori;
             3. visualizzare la relativa #glossary("dashboard");
-            4. visualizzare una tabella contenente per ogni anomalia rilevata, il relativo sensore di riferimento. La tabella deve essere ordinata in base all'orario di registrazione dei dati.
+            4. visualizzare una tabella contenente per ogni anomalia rilevata, il nome del sensore che l'ha rilevata. La tabella deve essere ordinata in base all'orario di registrazione dei dati.
       ],"N/I",[
             UC4
       ]),
       ([
-          Verificare che l'amministratore pubblico, una volta entrato nell'applicazione, possa:
+          Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
             1. ricevere notifiche relative al superamento di un qualche valore di soglia, impostato per determinati tipi di sensori. /*TODO: specificare i sensori (anche in adr)*/
       ],"N/I",[
             UC5
       ]),
       ([
-          Verificare che l'amministratore pubblico, una volta entrato nell'applicazione, possa:
+          Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
             1. Scegliere una #glossary("dashboard") da visualizzare;
             2. Applicare dei filtri, per selezionare un sottoinsieme di sensori da visualizzare, nel caso di #glossary("pannelli") di tipo #glossary("serie storica");
             3. Applicare dei filtri, per selezionare solo particolari tipologie di sensori da considerare, nel caso di #glossary("pannelli") contenenti tabelle, le quali comprendono più tipologie di sensori al loro interno; /*TODO: non ho idea se la mia interpretazione sia corretta o meno.*/
@@ -286,92 +287,92 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             UC6.5
       ]),
       ([
-          Verificare che l'amministratore pubblico, una volta entrato nell'applicazione, possa:
+          Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
             1. Scegliere una tabella da ordinare;
             2. Ordinare le righe di tale tabella per ciascuna sua colonna, in modo ascendente o discendente, secondo #glossary("ordinamento lessicografico") (nel caso di valori espressi in stringhe) o per confronto di valore numerico.
       ],"N/I",[
             UC7
       ]),
       ([
-          Verificare che l'amministratore pubblico, una volta entrato nell'applicazione, possa:
-            1. Scegliere una #glossary("dashboard") da modificare nel layout;
+          Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
+            1. Scegliere una #glossary("dashboard") di cui modificare nel layout;
             2. Modificare il layout dei #glossary("pannelli") in termini di posizione di tali #glossary("pannelli") e di dimensioni.
       ],"N/I",[
             UC8
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inseirire dati relativi alla temperatura, da esso controllata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
+            1. Inserire dati relativi alla temperatura, da esso monitorata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
       ],"N/I",[
             U10\
             U21
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inseirire dati relativi all'umidità, da esso controllata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
+            1. Inserire dati relativi all'umidità, da esso monitorata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
       ],"N/I",[
             U11\
             U21
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inseirire dati relativi alla velocità e direzione del vento, da esso controllata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
+            1. Inserire dati relativi alla velocità e direzione del vento, da esso monitorata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
       ],"N/I",[
             U12\
             U21
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inseirire dati relativi alle precipitazioni, da esso controllate, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/ /*TODO: disambiguare la metrica delle precipitazioni*/
+            1. Inserire dati relativi alle precipitazioni, da esso monitorate, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/ /*TODO: disambiguare la metrica delle precipitazioni*/
       ],"N/I",[
             U13\
             U21
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inseirire dati relativi all'inquinamento dell'aria, da esso controllata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/ /*TODO: disambiguare la metrica dell'inquinamento dell'aria*/
+            1. Inserire dati relativi all'inquinamento dell'aria, da esso monitorata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/ /*TODO: disambiguare la metrica dell'inquinamento dell'aria*/
       ],"N/I",[
             U14\
             U21
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inseirire dati relativi al livello del bacino idrico, da esso controllato, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/ /*TODO: disambiguare la metrica del livello dei bacini idrici*/
+            1. Inserire dati relativi al livello del bacino idrico, da esso monitorato, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/ /*TODO: disambiguare la metrica del livello dei bacini idrici*/
       ],"N/I",[
             U15\
             U21
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inseirire dati relativi alla disponibilità dei parcheggi, inteso come numero di posti disponibili in un parcheggio da esso controllato, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
+            1. Inserire dati relativi alla disponibilità dei parcheggi, inteso come numero di posti disponibili in un parcheggio da esso monitorato, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
       ],"N/I",[
             U16\
             U21
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inseirire dati relativi alla disponibilità e ai watt erogati da una colonna di ricarica, da esso controllata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
+            1. Inserire dati relativi alla disponibilità e ai watt erogati da una colonna di ricarica, da esso monitorata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
       ],"N/I",[
             U17\
             U21
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inseirire dati relativi alla posizione e alla percentuale di batteria della bicicletta, da esso controllata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
+            1. Inserire dati relativi alla posizione e alla percentuale di batteria della bicicletta, da esso monitorata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
       ],"N/I",[
             U18\
             U21
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inseirire dati relativi alla percentuale di riempimento di una zona ecologica, da esso controllata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
+            1. Inserire dati relativi alla percentuale di riempimento di una zona ecologica, da esso monitorata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
       ],"N/I",[
             U19\
             U21
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inseirire dati relativi alla congestione della strada, da esso controllata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/ /*TODO: disambiguare la metrica della congestione stradale*/
+            1. Inserire dati relativi alla congestione stradale, da esso monitorata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/ /*TODO: disambiguare la metrica della congestione stradale*/
       ],"N/I",[
             U20\
             U21
@@ -405,94 +406,94 @@ table(
 
 #let test_di_sistema = (
       ([
-            Verificare che l'amministratore pubblico possa accedere all'applicazione senza dover effettuare l'autenticazione.
+            Verificare che l'#glossary("amministratore pubblico") possa accedere all'applicazione senza dover effettuare l'autenticazione.
       ],"N/I","ROF"),
       ([
-            Verificare che l'amministratore pubblico possa visualizzare una #glossary("dashboard") dedicata a fornire una panoramica generale dei sensori.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare una #glossary("dashboard") dedicata a fornire una panoramica generale dei sensori.
       ],"N/I","ROF"),
       ([
-            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a fornire una panoramica generale dei sensori, una mappa indicante le posizioni dei vari sensori, mediante icone.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a fornire una panoramica generale dei sensori, una mappa indicante le posizioni dei vari sensori, mediante icone.
       ],"N/I","ROF"),
       ([
-            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a fornire una panoramica generale dei sensori, una tabella che riporti una panoramica generale dei sensori. /*TODO: disambiguare "panoramica generale dei sensori"*/
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a fornire una panoramica generale dei sensori, una tabella che riporti una panoramica generale dei sensori. /*TODO: disambiguare "panoramica generale dei sensori"*/
       ],"N/I","ROF"),
       ([
-            Verificare che l'amministratore pubblico possa visualizzare una #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare una #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori.
       ],"N/I","ROF"),
       ([
-            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare l'andamento delle temperature in formato #glossary("serie storica").
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare l'andamento delle temperature in formato #glossary("serie storica").
       ],"N/I","ROF"),
       ([
-            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare l'andamento dell'umidità in formato #glossary("serie storica"). /*TODO: disambiguare umidità.*/
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare l'andamento dell'umidità in formato #glossary("serie storica"). /*TODO: disambiguare umidità.*/
       ],"N/I","ROF"),
       ([
-            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello contenente una mappa che evidenzi velocità e direzione del vento.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello contenente una mappa che evidenzi velocità e direzione del vento.
       ],"N/I","ROP"),
       ([
-            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare l'andamento delle precipitazioni in formato #glossary("serie storica").
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare l'andamento delle precipitazioni in formato #glossary("serie storica").
       ],"N/I","ROF"), /*TODO: disambiguare misura delle precipitazioni*/
       ([
-            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare la media delle precipitazioni registrate negli utlimi 5 minuti tra tutti i sensori. 
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare la media delle precipitazioni registrate negli utlimi 5 minuti tra tutti i sensori. 
       ],"N/I","RDF"),
       ([
-            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare l'andamento dell'inquinamento dell'aria in formato #glossary("serie storica"). /*TODO: disambiguare la misura dell'inquinamento*/
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare l'andamento dell'inquinamento dell'aria in formato #glossary("serie storica"). /*TODO: disambiguare la misura dell'inquinamento*/
       ],"N/I","ROF"),
       ([
-            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare la media dell'inquinamento dell'aria registrato negli ultimi 5 minuti tra tutti i sensori. /*TODO: disambiguare la misura dell'inquinamento*/
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare la media dell'inquinamento dell'aria registrato negli ultimi 5 minuti tra tutti i sensori. /*TODO: disambiguare la misura dell'inquinamento*/
       ],"N/I","RDF"),
       ([
-            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare l'andamento dei dati relativi al livello dei bacini idrici in formato #glossary("serie storica"). /*TODO: disambiguare l'espressione di livello*/
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare l'andamento dei dati relativi al livello dei bacini idrici in formato #glossary("serie storica"). /*TODO: disambiguare l'espressione di livello*/
       ],"N/I","ROF"),
       ([
-            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare la media della temperatura registrata negli ultimi 5 minuti tra tutti i sensori.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare la media della temperatura registrata negli ultimi 5 minuti tra tutti i sensori.
       ],"N/I","RDF"),
       ([
-            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare dell'inquinamento dell'aria registrato negli ultimi 5 minuti tra tutti i sensori.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare dell'inquinamento dell'aria registrato negli ultimi 5 minuti tra tutti i sensori.
       ],"N/I","RDF"),
       ([
-            Verificare che l'amministratore pubblico possa visualizzare una #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare una #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori.
       ],"N/I","ROF"),
       ([
-            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori, un pannello contenente una mappa che evidenzi la disponibilità dei parcheggi, intesa come numero di parcheggi liberi, nei parcheggi controllati.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori, un pannello contenente una mappa che evidenzi la disponibilità dei parcheggi, intesa come numero di parcheggi liberi, nei parcheggi controllati.
       ],"N/I","RDF"),
       ([
-            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori, un pannello contenente una mappa che evidenzi la posizione e i watt erogati dalle varie colonnine di ricarica controllate.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori, un pannello contenente una mappa che evidenzi la posizione e i watt erogati dalle varie colonnine di ricarica controllate.
       ],"N/I","RDF"),
       ([
-            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori, un pannello contenente una mappa che evidenzi l'intensità del traffico. /*TODO: disambiguare metrica misurativa dell'intensità di traffico*/
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori, un pannello contenente una mappa che evidenzi l'intensità del traffico. /*TODO: disambiguare metrica misurativa dell'intensità di traffico*/
       ],"N/I","RPF"),
       ([
-            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori, un pannello contenente una mappa che evidenzi la posizione, in tempo reale, delle biciclette elettrice controllate assieme alla relativa percentuale di batteria.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori, un pannello contenente una mappa che evidenzi la posizione, in tempo reale, delle biciclette elettrice controllate assieme alla relativa percentuale di batteria.
       ],"N/I","RPF"),
       ([
-            Verificare che l'amministratore pubblico possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori, un pannello contenente una mappa che evidenzi la percentuale di riempimento delle zone rifiuti.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori, un pannello contenente una mappa che evidenzi la percentuale di riempimento delle zone rifiuti.
       ],"N/I","RDF"),
       ([
-            Verificare che l'amministratore pubblico possa visualizzare una #glossary("dashboard") dedicata a visualizzare i dati anomali provenienti dai sensori, mediante un unico pannello a tabella.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare una #glossary("dashboard") dedicata a visualizzare i dati anomali provenienti dai sensori, mediante un unico pannello a tabella.
       ],"N/I","RDF"),
       ([
-            Verificare che l'amministratore pubblico possa visualizzare delle notifiche, nel caso del superamento di determinate soglie impostate per determinate tipologie di sensore. /*TODO: discutere di quale tipi si tratta e come e chi imposta le soglie*/
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche, nel caso del superamento di determinate soglie impostate per determinate tipologie di sensore. /*TODO: discutere di quale tipi si tratta e come e chi imposta le soglie*/
       ],"N/I","ROF"),
       ([
-            Verificare che l'amministratore pubblico possa filtrare i dati, visualizzando i dati solo di un sottoinsieme di sensori selezionato per nome, nel caso di grafici di tipo #glossary("serie storica").
+            Verificare che l'#glossary("amministratore pubblico") possa filtrare i dati, visualizzando i dati solo di un sottoinsieme di sensori selezionato per nome, nel caso di grafici di tipo #glossary("serie storica").
       ],"N/I","ROF"),
       ([
-            Verificare che l'amministratore pubblico possa filtrare i dati, visualizzando i dati solo di un sottoinsieme di sensori selezionato per tipologia, nel caso di pannelli contenenti tabelle, che raggruppano più tipi di sensori.
+            Verificare che l'#glossary("amministratore pubblico") possa filtrare i dati, visualizzando i dati solo di un sottoinsieme di sensori selezionato per tipologia, nel caso di pannelli contenenti tabelle, che raggruppano più tipi di sensori.
       ],"N/I","ROF"),
       ([
-            Verificare che l'amministratore pubblico possa filtrare i dati, visualizzando i dati solo di un sottoinsieme di sensori selezionato per nome, nel caso di pannelli contenenti tabelle.
+            Verificare che l'#glossary("amministratore pubblico") possa filtrare i dati, visualizzando i dati solo di un sottoinsieme di sensori selezionato per nome, nel caso di pannelli contenenti tabelle.
       ],"N/I","ROF"),
       ([
-            Verificare che l'amministratore pubblico possa filtrare i dati di un'intera #glossary("dashboard"), visualizzando i dati appartenenti ad un determinato intervallo di tempo selezionato.
+            Verificare che l'#glossary("amministratore pubblico") possa filtrare i dati di un'intera #glossary("dashboard"), visualizzando i dati appartenenti ad un determinato intervallo di tempo selezionato.
       ],"N/I","ROF"),
       ([
-            Verificare che l'amministratore pubblico possa, nel caso di pannelli contenenti tabelle, ordinare le tabelle in base alle colonne di tali tabelle.
+            Verificare che l'#glossary("amministratore pubblico") possa, nel caso di un pannello contenente una tabella, ordinare le righe di tale tabella in base ai valori di una colonna di interese.
       ],"N/I","RDF"),
       ([
-            Verificare che l'amministratore pubblico possa modificare il layout dei pannelli presenti in una dashboard aperta, modificando posizione e dimensione dei pannelli contenuti in essa.
+            Verificare che l'#glossary("amministratore pubblico") possa modificare il layout dei pannelli presenti in una dashboard aperta, modificando posizione e dimensione dei pannelli contenuti in essa.
       ],"N/I","RDF"),
       ([
-            Verificare che l'amministratore pubblico riceva un messaggio che notifichi l'assenza di dati da visualizzare, qualora non vi siano dati a disposizione.
+            Verificare che l'#glossary("amministratore pubblico") riceva un messaggio che notifichi l'assenza di dati da visualizzare, qualora non vi siano dati a disposizione.
       ],"N/I","ROF"),
       /*TODO: capire se i test di sistema vanno anche per i requisiti relativi ai soli sensori (dovrebbero essere relativi in generale ai requisiti funzionali, ma non so)*/
       ([
@@ -526,7 +527,7 @@ table(
             Verificare che un sensore possa inserire nel sistema dati relativi al riempimento della zona ecologica, controllata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione. /*TODO: disambiguare la metrica per il riempimento della zona ecologica*/
       ],"N/I","ROF"),
       ([
-            Verificare che un sensore possa inserire nel sistema dati relativi congestione della strada, controllata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
+            Verificare che un sensore possa inserire nel sistema dati relativi congestione stradale, controllata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
       ],"N/I","ROF"),
       /*TODO: manca test (poichè manca requisito relativo) che vada a controllare che il senosre annetta anche dati relativi al suo stato personale */
 ).enumerate(start:1).map(test => ("TS"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1),test.at(1).at(2))).enumerate(start:1).map(test => (test.at(1).at(0),test.at(1).at(1),test.at(1).at(2),test.at(1).at(3) + str(test.at(0))));
@@ -555,7 +556,7 @@ table(
 
 == Liste di controllo
 
-Le liste di controllo sono uno strumento che i verificatori possono utilizzare al fine di individuare errori ricorrenti nella documentazione. Tali liste prevedono anche una descrizione del problema al fine di poter fornire una spiegazione della richiesta di cambiamenti durante la fase di revisione.
+Le liste di controllo sono uno strumento che i Verificatori possono utilizzare al fine di individuare errori ricorrenti nella documentazione o nel codice. Tali liste prevedono anche una descrizione del problema al fine di poter fornire una spiegazione della richiesta di cambiamenti durante la fase di revisione.
 Le liste di controllo possono essere aggiornate durante tutto il corso del progetto dai Verificatori, man mano che vengono notati errori ricorrenti.
 
 #pagebreak()
@@ -567,7 +568,7 @@ table(
       inset: 10pt,
       align: (center, left),
       [*Aspetto*],[*Spiegazione*],
-      [Vuoti documentativi],[Tutte le sezioni che non si intende completare, e che quindi devono rimanere vuote, devono essere cancellate.],
+      [Vuoti documentativi],[Non devono essere presenti sezioni senza contenuto.],
       [Didascalia assente],[Tutte le tabelle e le immagini devono avere una didascalia descrittiva.],
       [Ripetizione di elementi ricorrenti],[Ogni elemento che viene usato più di una volta, soprattutto se si sa a priori che verrà usato più volte, deve essere creato da una funzione #glossary("Typst").],
       [Ordine non alfabetico],[I nomi dei componenti devono essere riportati in ordine alfabetico, in qualsiasi documento dove compaiono come elenco non numerato.],
@@ -587,7 +588,7 @@ table(
       inset: 10pt,
       align: (center, left),
       [*Aspetto*],[*Spiegazione*],
-      [Errori di battitura],[Gli errori di battitura, di distrazione o di ignoranza devono essere rimossi.],
+      [Errori di sintassi],[Gli errori di sintassi (battitura o distrazione) devono essere rimossi.],
       [Errori di coniugazione],[Gli errori di coniugazione devono essere rimossi.],
       [Forma verbale],[Il presente indicativo è da preferire.],
       [Forma non concise],[Le espressioni troppo verbose, ove possibile, devono essere ridotte a forme più concise.],
@@ -611,7 +612,7 @@ table(
       [Formato date errato],[Il formato delle date deve essere *dd-mm-aaaa* all'interno dei documenti, oppure *dd-mm-aa* all'interno dei nomi dei documenti.],
       [Punteggiatura scorretta negli elenchi],[Ogni elemento di un elenco, numerato o non, deve terminare con un *;*, ad eccezione dell'ultima riga, la quale deve terminare con *.*.],
       [: in grassetto negli elenchi],[Gli elenchi nella forma "*termine*: testo", non devono includere il ":" nel grassetto.],
-      [Maiuscole nei titoli],[La prima lettera di ogni titolo deve essere maiuscola. Il resto del titolo dovrebbe essere in minuscolo (tolte particolari eccezioni).],
+      [Maiuscole nei titoli],[La prima lettera di ogni titolo deve essere maiuscola. Il resto del titolo dovrebbe essere in minuscolo (tolte particolari eccezioni, come ad esempio nomi di documenti).],
       [Maiuscole negli elenchi],[Le prime lettere di ogni elenco devono essere maiuscole.],
       [Ruoli in minuscolo],[Tutti i ruoli del progetto devono avere la prima lettera in maiuscolo.],
       [Termine non presente nel glossario],[Ogni termine segnato con la formattazione da glossario deve essere effettivamente presente nel glossario con la relativa descrizione.],
@@ -630,7 +631,7 @@ table(
       [*Aspetto*],[*Spiegazione*],
       [Tracciamento caso d'uso - requisito],[Per ciascun caso d'uso deve corrispondere almeno un requisito.],
       [Struttura errata dei requisiti],[I requisiti devono essere scritti nella forma: "\<soggetto\> deve/devono \<verbo all'infinito\>"],
-      [Numerazione errata dei casi d'uso],[La numerazione dei casi d'uso deve seguire la crescita dei numeri interi naturali. Se si tratta di un sotto-caso d'uso, il sotto-caso deve ereditare, come prefisso del proprio codice, il codice del caso d'uso a cui appartiene, e ne aggiunge una cifra.],
+      [Numerazione errata dei casi d'uso],[La numerazione dei casi d'uso deve seguire la crescita dei numeri interi naturali. Se si tratta di un sotto-caso d'uso, il sotto-caso deve ereditare, come prefisso del proprio codice, il codice del caso d'uso a cui appartiene, e ne aggiunge una cifra. Fare riferimento alle _NormeDiProgetto\_v1.0_ per una descrizione più approfondita.],
       [UML dei casi d'uso],[Le estensioni e le inclusioni di un caso d'uso vanno nello stesso diagramma UML del caso d'uso stesso.],
 ),
 caption: [Lista di controllo per l’Analisi dei Requisiti]
