@@ -18,7 +18,7 @@ Nancy K.,Analista,1.0,17/11/2023,"AdR, ampliamento casi d'uso con estensioni",25
 Matteo R.,Verificatore,0.5,18/11/2023,AdR e PdP,75,55450,10715,46
 Riccardo C.,Verificatore,4.0,17/11/2023,revisione documenti settimana,60,55050,10655,46
 Riccardo T.,Programmatore,0.5,18/11/2023,Creazione modulo kafka + risoluzione dei problemi con i simulatori,75,55000,106475,46
-Giacomo D.,Verificatore,0.04,17/11/2023,Attività di revisione della settimana,60,54600,105875,46
+Giacomo D.,Verificatore,4.0,17/11/2023,Attività di revisione della settimana,60,54600,105875,46
 Giacomo D.,Analista,2.0,19/11/2023,Lavoro su AdR,50,54400,105375,47
 Riccardo C.,Analista,2.0,19/11/2023,AdR,50,54200,104875,47
 Matteo R.,Verificatore,1.5,20/11/2023,"AdR, codice, glossario",225,54050,10465,47
@@ -35,7 +35,7 @@ Riccardo T.,Programmatore,0.5,22/11/2023,Docker compose funzionante per importaz
 Nancy K.,Responsabile,1.0,22/11/2023,"PdP, Analisi dei rischi",30,53250,102925,47
 Nancy K.,Responsabile,0.5,23/11/2023,"PdP, Modello di sviluppo",15,53200,102775,47
 Matteo R.,Verificatore,1.0,23/11/2023,"PdP, codice python docker kafka",15,53100,102625,47
-Matteo R.,Programmatore,0.05,23/11/2023,Python-Kafka su docker,75,53050,10255,47
+Matteo R.,Programmatore,0.5,23/11/2023,Python-Kafka su docker,75,53050,10255,47
 Matteo R.,Amministratore,1.0,23/11/2023,Script deploy documentazione in vetrina,20,52950,10235,47
 Simone C.,Analista,1.0,12/11/2023,Modifica documenti,25,52850,10210,46
 Simone C.,Analista,1.0,13/11/2023,Redazione verbale 07/11,25,52750,10185,46

@@ -16,6 +16,12 @@ PROGRAMMATORE = "Programmatore"
 RESPONSABILE = "Responsabile"
 VERIFICATORE = "Verificatore"
 
+COST_AMMINISTRATORE = 20
+COST_ANALISTA = 25
+COST_PROGETTISTA = 25
+COST_PROGRAMMATORE = 15
+COST_RESPONSABILE = 30
+COST_VERIFICATORE = 15
 
 import json
 import pandas as pd
@@ -87,6 +93,10 @@ for week in range(50, max_week + 1):
     ] = non_empty_records[week == non_empty_records["Week"]]
 
 os.makedirs("sprintData", exist_ok=True)
+
+remaining_time = 570
+remaining_cash = 11070
+
 for sprint_key in sprints:
     # Creating folders for each sprint recorded
     os.makedirs(os.path.join("sprintData", sprint_key), exist_ok=True)
@@ -231,3 +241,55 @@ for sprint_key in sprints:
         os.path.join("sprintData", sprint_key, "RendicontazioneRuoliIstogramma.png")
     )
     plt.clf()
+
+    # Creating costs analysis
+    time_costs_per_role = [
+        tot_ore_amministratore * COST_AMMINISTRATORE,
+        tot_ore_analista * COST_ANALISTA,
+        tot_ore_progettista * COST_PROGETTISTA,
+        tot_ore_programmatore * COST_PROGRAMMATORE,
+        tot_ore_responsabile * COST_RESPONSABILE,
+        tot_ore_verificatore * COST_VERIFICATORE,
+    ]
+    remaining_cash -= sum(time_costs_per_role)
+    remaining_time -= tot_ore
+    costs_table = {
+        "Ruolo": [
+            AMMINISTRATORE,
+            ANALISTA,
+            PROGETTISTA,
+            PROGRAMMATORE,
+            RESPONSABILE,
+            VERIFICATORE,
+            "Totale",
+            "Rimanente",
+        ],
+        "Ore": [
+            tot_ore_amministratore,
+            tot_ore_analista,
+            tot_ore_progettista,
+            tot_ore_programmatore,
+            tot_ore_responsabile,
+            tot_ore_verificatore,
+            float("{:.2f}".format(tot_ore)),
+            float("{:.2f}".format(remaining_time)),
+        ],
+        "Costo": [
+            tot_ore_amministratore * COST_AMMINISTRATORE,
+            tot_ore_analista * COST_ANALISTA,
+            tot_ore_progettista * COST_PROGETTISTA,
+            tot_ore_programmatore * COST_PROGRAMMATORE,
+            tot_ore_responsabile * COST_RESPONSABILE,
+            tot_ore_verificatore * COST_VERIFICATORE,
+            float("{:.2f}".format(sum(time_costs_per_role))),
+            float("{:.2f}".format(remaining_cash)),
+        ],
+    }
+    df_cost_table = pd.DataFrame(costs_table)
+    df_cost_table.to_csv(
+        os.path.join(
+            "sprintData", sprint_key, ("RendicontazioneCosti" + sprint_key + ".csv")
+        ),
+        index=False,
+        header=False,
+    )
