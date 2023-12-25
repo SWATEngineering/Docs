@@ -7,35 +7,38 @@
 = Introduzione
 
 == Scopo del Documento
-Il presente documento ha come scopo la definizione delle #glossary[best practices] e del #glossary[way of working] che ogni componente del team #team ha l'obbligo di rispettare durante l'intero svolgimento del progetto. In questo modo si prova a garantire un metodo di lavoro omogeneo, verificabile e migliorabile nel tempo. La formulazione delle norme avviene in modo progressivo, consentendo al team di apportare aggiornamenti continui in base alle attività e agli strumenti di utilizzo concordati nel corso del lavoro.
+
+Il presente documento ha l'obiettivo di definire le #glossary[best practices] e la #glossary[way of working] che ogni componente del team #team ha l'obbligo di rispettare durante l'intero svolgimento del progetto. In questo modo si prova a garantire un metodo di lavoro omogeneo, verificabile e migliorabile nel tempo. La formulazione delle norme avviene in modo progressivo, consentendo al team di apportare aggiornamenti continui in linea con le attività e gli strumenti concordati nel corso del lavoro.
 
 == Scopo del progetto
-Il progetto "InnovaCity" si concentra sulla creazione di una dashboard intuitiva che permetta a personale amministrativo di monitorare e analizzare il continuo sviluppo di una #glossary[smart city]. L'applicazione comprende una #glossary[data pipeline] progettata per elaborare dati provenienti da una varietà di simulatori di sensori. Questa pipeline consente la gestione e la visualizzazione ottimale di tali dati, permettendo agli utenti di ottenere rapidamente informazioni rilevanti. L'obiettivo finale è fornire uno strumento per prendere decisioni informate riguardo alla gestione delle risorse della città.
+
+Il progetto "InnovaCity" si concentra sulla creazione di una dashboard intuitiva, ovvero facilmente comprensibile e accessibile, che permetta al personale amministrativo di monitorare e analizzare il continuo sviluppo di una #glossary[smart city]. L'applicazione comprende una #glossary[data pipeline], appositamente progettata per elaborare dati provenienti da una varietà di simulatori di sensori. Questa pipeline consente la gestione e la visualizzazione ottimale di tali dati, permettendo agli utenti di ottenere rapidamente informazioni rilevanti. L'obiettivo finale è fornire uno strumento per prendere decisioni informate riguardo alla gestione delle risorse della città.
 
 == Glossario
+
 Al fine di evitare possibili ambiguità relative al linguaggio utilizzato nei documenti, viene
-fornito il _Glossario_, nel quale sono presenti tutte le definizioni di termini aventi un significato specifico che vuole essere disambiguato. Tali termini, sono scritti in _corsivo_ e marcati con una #sub("G") a pedice.
-Un'attività che comprende l'inserimento di un termine di glossario può considerarsi conclusa solo nel momento in cui il termine viene scritto e spiegato nel _Glossario_.
+fornito il _Glossario v1.0_, nel quale sono presenti tutte le definizioni di termini aventi un significato specifico che vuole essere disambiguato. Tali termini, sono scritti in _corsivo_ e marcati con una #sub("G") a pedice.
+L'attività di inserimento di un termine nel glossario può considerarsi completata solo quando il termine viene correttamente definito e spiegato all'interno del _Glossario v1.0_.
 
 == Riferimenti
 
 === Riferimenti normativi
-        - Capitolato d'appalto C6 - InnovaCity:
+        - *Capitolato d'appalto C6 - InnovaCity*:
                 #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf")
 
 === Riferimenti informativi
-        - Documentazione git:
+        - *Documentazione git*:
                 #link("https://git-scm.com/docs")
 
-        - Documentazione GitHub:
+        - *Documentazione GitHub*:
                 #link("https://docs.github.com/en")
 
-        - Materiale didattico del corso Metodi e Tecnologie per lo Sviluppo Software 2022/2023:
+        - *Materiale didattico del corso Metodi e Tecnologie per lo Sviluppo Software 2022/2023*:
                 #link("https://stem.elearning.unipd.it/course/view.php?id=5359")
 
                 - Lezione 4: GIT;
                 - Laboratorio 2: GitHub Version Control System.
-        - Documentazione Typst:
+        - *Documentazione Typst*:
                 #link("https://typst.app/docs")
 
 #pagebreak()
@@ -47,69 +50,71 @@ Un'attività che comprende l'inserimento di un termine di glossario può conside
 === Descrizione e scopo
 
 Il processo di fornitura si propone di dettagliare le attività del fornitore per comprendere e soddisfare le richieste della Proponente.
-Dopo la completa comprensione delle esigenze, il fornitore, in collaborazione con la Proponente, stabilisce tramite contratto la data di consegna del prodotto. Successivamente, viene redatto il Piano di Progetto per pianificare dettagliatamente le varie attività da svolgere, garantendo un chiaro processo di sviluppo del prodotto finale. L'obiettivo principale è soddisfare in modo chiaro le richieste della Proponente, evitando possibili incomprensioni attraverso una collaborazione continua.
+Dopo la completa comprensione delle esigenze, il fornitore, in collaborazione con la Proponente, stabilisce tramite contratto la data di consegna del prodotto. Successivamente, si procede con la redazione del _Piano di Progetto v1.0_, per pianificare dettagliatamente le varie attività da svolgere, garantendo un chiaro processo di sviluppo del prodotto finale. L'obiettivo principale è soddisfare in modo chiaro le richieste della Proponente, evitando possibili incomprensioni attraverso una collaborazione continua.
 
 Il processo si articola in diverse fasi:
 
         - Definizione chiara dei requisiti soddisfatti dal prodotto finale;
-        - Contrattazione, con l'obiettivo di: 
+        - *Contrattazione*: 
                 + Richiesta di incontri di formazione sulle tecnologie consigliate per ottimizzare lo sviluppo;
                 + Ricezione di un feedback approfondito sull'utilizzo delle tecnologie proposte.
-        - Pianificazione: consiste nell'individuare preventivamente una suddivisione precisa di tutte le ore produttive disponibili, seguita da una stima dei costi per ciascun incremento di lavoro (sprint);
-        - Esecuzione: la progettazione e il conseguente sviluppo del prodotto procedono di pari passo con la stesura della documentazione relativa al progetto;
+        - *Pianificazione*: individuazione preventiva di una suddivisione precisa di tutte le ore produttive disponibili, seguita da una stima dei costi per ciascun incremento di lavoro (sprint);
+        - *Esecuzione*: progettazione e sviluppo del prodotto procedono di pari passo con la stesura della documentazione relativa al progetto;
         - Continuo controllo e verifica;
         - Completamento e consegna.
 
 === Rapporti con la Proponente
-La Proponente si è resa disponibile attraverso vari canali, come e-mail, _Google Meet_ e _Element_, per stabilire una comunicazione frequente e risolvere prontamente eventuali dubbi o domande che possono emergere durante lo svolgimento del progetto. Sin dall'inizio è stato concordato di organizzare incontri regolari, in particolare al termine di ciascuno sprint, fissati per il venerdì alle 10:30. Questi incontri assumono la forma di una sessione di _Sprint Review_, in cui il team esibisce quanto prodotto e ottiene feedback sull'andamento del lavoro.
+La Proponente si è resa disponibile attraverso vari canali, come e-mail, _Google Meet_ e _Element_, per stabilire una comunicazione frequente e risolvere prontamente eventuali dubbi o domande che possono emergere durante lo svolgimento del progetto. Sin dall'inizio è stato concordato di organizzare incontri regolari, in particolare al termine di ciascuno sprint, fissati per il venerdì alle 10:30.  Questi incontri, che assumono la forma di sessioni di _Sprint Review_, consentono al team di esporre quanto realizzato e di ricevere feedback sull'andamento del lavoro.
 
 Gli incontri con la Proponente si suddividono principalmente in tre categorie:
 
-        - Incontri di formazione: utilizzati per acquisire familiarità con nuove tecnologie, approfondire determinati concetti o migliorare competenze specifiche richieste dal progetto;
-        - Incontri di analisi dei requisiti: mirati a chiarire, discutere e validare i requisiti del progetto, garantendo una comprensione chiara e condivisa tra il team e la Proponente;
-        - Sprint Review: fase conclusiva di ogni sprint durante la quale vengono presentati i risultati ottenuti, con l'intento di ricevere feedback dalla Proponente.
+        - *Incontri di formazione*: finalizzati ad acquisire familiarità con nuove tecnologie, approfondire concetti specifici o migliorare competenze richieste dal progetto;
+        - *Incontri di analisi dei requisiti*: mirati a chiarire, discutere e validare i requisiti del progetto, garantendo una comprensione chiara e condivisa tra il team e la Proponente;
+        - *Sprint Review*: fase conclusiva di ogni sprint durante la quale vengono presentati i risultati ottenuti, con l'intento di ricevere feedback dalla Proponente.
 
 Ogni incontro con la Proponente viene sintetizzato e documentato nel Verbale Esterno di riferimento. Il verbale viene successivamente presentato alla Proponente per essere validato tramite firma, ottenendo così un'approvazione formale del resoconto delle discussioni avvenute all'incontro.
 
 === Documentazione fornita
-Di seguito si elencano i documenti che il team #team si impegna a consegnare ai Committenti Prof. Tullio Vardanega e Prof. Riccardo Cardin e alla Proponente Sync Lab.
+
+Di seguito vengono elencati i documenti che il team #team si impegna a consegnare ai Committenti Prof. Tullio Vardanega e Prof. Riccardo Cardin, nonché alla Proponente Sync Lab.
 
 ==== Analisi dei Requisiti
 L’analisi dei requisiti, svolta dagli Analisti, costituisce una fase cruciale nello sviluppo del sistema software. Il suo obiettivo principale è definire in dettaglio le funzionalità necessarie affinché il prodotto soddisfi pienamente le richieste della Proponente. Il documento omonimo comprende una serie di elementi essenziali:
 
         - Descrizione e scopo del prodotto;
         - *Definizione degli attori*: entità o persone che interagiscono con il #glossary[sistema];
-        - *Definizione dei casi d'uso*: rappresentazione narrativa di scenari specifici che descrivono come gli attori interagiscono con il sistema. I casi d'uso offrono una visione chiara delle azioni che possono essere eseguite all'interno del sistema e come gli utenti interagiscono con esso; un elenco preciso di azioni intraprese dall'attore per provocare un determinato caso d'uso viene fornito all'interno dello stesso, al fine di facilitare l'estrazione dei requisiti corrispondenti;
+        - *Definizione dei casi d'uso*: rappresentazione narrativa di scenari specifici che descrivono come gli attori interagiscono con il sistema. I casi d'uso offrono una visione chiara delle azioni eseguibili all'interno del sistema e delle interazioni degli utenti con esso. All'interno di ciascun caso d'uso, viene fornito un elenco preciso delle azioni intraprese dall'attore per attivare il caso d'uso, facilitando così l'estrazione dei requisiti corrispondenti;
         - *Definizione di requisiti*: individuazione dei requisiti obbligatori e desiderabili e loro categorizzazione in:
-                - Requisiti funzionali: specificano le operazioni che il sistema deve essere in grado di eseguire;
-                - Requisiti di qualità: riguardano gli aspetti di qualità del software, inclusi gli attributi prestazionali, affidabilità, usabilità e sicurezza;
-                - Requisiti di vincolo: delineano vincoli e limitazioni che il sistema deve rispettare. Possono includere restrizioni tecnologiche, normative o di risorse.
+                - *Requisiti funzionali*: specificano le operazioni che il sistema deve essere in grado di eseguire;
+                - *Requisiti di qualità*: riguardano gli aspetti di qualità del software, inclusi gli attributi prestazionali, affidabilità, usabilità e sicurezza;
+                - *Requisiti di vincolo*: delineano vincoli e limitazioni che il sistema deve rispettare. Possono includere restrizioni tecnologiche, normative o di risorse.
 
 ==== Piano di Progetto
 
-Documento redatto dal Responsabile che offre una visione dettagliata dell'intero processo di sviluppo di un progetto. Esso fornisce al team una guida approfondita per mantenere l'allineamento con gli obiettivi, gestire le risorse in modo efficace e affrontare le sfide che potrebbero emergere durante lo sviluppo del progetto.
+Documento redatto dal Responsabile che offre una visione dettagliata dell'intero processo di sviluppo di un progetto. Esso fornisce al team una guida approfondita per mantenere l'allineamento con gli obiettivi, gestire le risorse in modo efficace e affrontare le sfide che possono emergere durante lo sviluppo del progetto.
 
 È composto da:
 
-        - *Analisi dei rischi*: identifica, valuta e gestisce i potenziali rischi che potrebbero influenzare il successo del progetto. Questo processo è essenziale per consentire al team di adottare misure preventive. I rischi vengono categorizzati in rischi tecnologici, di comunicazione e di pianificazione. Per ogni rischio, si compie un analisi mirata per individuarne i segnali di manifestazione, valutarne l'occorrenza e la pericolosità, pianificare strategie di mitigazione e valutare l'efficacia di tali strategie nel contenere gli effetti del rischio preso in esame;
+        - *Analisi dei rischi*: identifica, valuta e gestisce i potenziali rischi che possono influenzare il successo del progetto. Questo processo è essenziale per consentire al team di adottare misure preventive. I rischi vengono categorizzati in rischi tecnologici, di comunicazione e di pianificazione. Per ogni rischio, si compie un'analisi mirata per individuarne i segnali di manifestazione, valutarne l'occorrenza e la pericolosità, pianificare strategie di mitigazione e valutare l'efficacia di tali strategie nel contenere gli effetti del rischio preso in esame;
         - *Modello di sviluppo*: approccio metodologico che viene scelto per guidare il processo di sviluppo del prodotto. Esso definisce la struttura di lavoro che viene seguita per l'intero ciclo di vita del progetto. Con l'adozione del modello di sviluppo agile Scrum, questa sezione descrive le pratiche e gli eventi principali del _framework_, illustrando il modo in cui vengono utilizzati ed implementati dal team;
         - *Pianificazione*: fornisce una roadmap dettagliata delle attività, delle risorse, e delle scadenze associate al progetto. In particolare, vengono pianificate le attività necessarie per raggiungere gli obiettivi previsti per ogni sprint, dall'inizio sino al termine del progetto, e la loro distribuzione temporale;
-        - *Preventivo*: basandosi sulla pianificazione eseguita a priori, determina la ripartizione delle ore produttive a disposizione di ogni componente del team nei vari ruoli per ogni sprint. Questo assicura il conseguimento degli obiettivi prefissati e un utilizzo oculato delle risorse. La suddivisione delle ore determina altresì il costo preventivato per ogni sprint;
-        - *Consuntivo*: partendo dalla rendicontazione delle ore produttive impiegate da ciascun membro del team eseguita a posteriori, determina la ripartizione effettiva delle ore osservata durante lo sprint e, di conseguenza, anche il costo effettivo. Inoltre, si conduce una breve analisi retrospettiva per giustificare le scelte effettuate nel preventivo, evidenziare eventuali discostamenti e delineare i cambiamenti nella strategia utilizzata per pianificare il resto del lavoro,  qualora dovessero rendersi necessari.
+        - *Preventivo*: basandosi sulla pianificazione eseguita a priori, determina la ripartizione delle ore produttive a disposizione di ogni componente del team nei vari ruoli per ogni sprint. Questo assicura il conseguimento degli obiettivi prefissati e un utilizzo oculato delle risorse. La suddivisione delle ore determina altresì, il costo preventivato per ogni sprint;
+        - *Consuntivo*: partendo dalla rendicontazione delle ore produttive impiegate da ciascun membro del team eseguita a posteriori, determina la ripartizione effettiva delle ore osservata durante lo sprint e, di conseguenza, anche il costo effettivo. Inoltre, si conduce una breve analisi retrospettiva per giustificare le scelte effettuate nel preventivo, evidenziare eventuali deviazioni e delineare i cambiamenti nella strategia utilizzata per pianificare il resto del lavoro,  qualora dovessero rendersi necessari.
         
 ==== Piano di Qualifica
 
-Documento che descrive le strategie e gli approcci adottati per garantire la qualità del prodotto o del servizio che si sta sviluppando. Il suo scopo principale è quello di definire le modalità di verifica e validazione, nonché gli standard e le procedure di qualità che verranno seguite durante l'intero ciclo di vita del progetto.
+Documento, redatto dall'Amministratore, che descrive le strategie e gli approcci adottati per garantire la qualità del prodotto o del servizio che si sta sviluppando. Il suo scopo principale è quello di definire le modalità di verifica e validazione, nonché gli standard e le procedure di qualità che verranno seguite durante l'intero ciclo di vita del progetto.
 
 È caratterizzato da:
 
-        - *Qualità di processo*: standard e procedure adottate per garantire la qualità durante lo sviluppo del progetto. Informazioni sulle attività di gestione della qualità, le metodologie utilizzate, e come vengono misurati e migliorati i processi stessi;
+        - *Qualità di processo*: standard e procedure adottate per garantire la qualità durante lo sviluppo del progetto. Include informazioni sulle attività di gestione della qualità, le metodologie utilizzate, e come vengono misurati e migliorati i processi stessi;
         - *Qualità di prodotto*: standard, specifiche e caratteristiche che il prodotto deve soddisfare per essere considerato di qualità. Include anche le metriche e i criteri di valutazione utilizzati per misurare la qualità del prodotto;
         - *Specifiche dei test*: specifiche dettagliate dei test che verranno condotti durante lo sviluppo del progetto;
-        - *Resoconto e valutazioni*: resoconto delle attività svolte e delle valutazioni effettuate durante il progetto. Utili per capire come il progetto si sta sviluppando rispetto agli obiettivi e alle aspettative, e per identificare eventuali azioni correttive necessarie.
+        - *Resoconto e valutazioni*: resoconto delle attività svolte e delle valutazioni effettuate durante il progetto. Utili per capire come il progetto si sta sviluppando rispetto agli obiettivi e alle aspettative. Inoltre, aiutano a identificare eventuali azioni correttive necessarie per mantenere o migliorare la qualità complessiva del progetto.
 
 ==== Glossario
-Il Glossario funge da catalogo esaustivo che raccoglie i termini tecnici impiegati all'interno del progetto, offrendo definizioni chiare e precise. Questo documento non solo previene fraintendimenti e ambiguità ma favorisce anche una comprensione condivisa della terminologia propria del settore, migliorando la coerenza e la qualità della documentazione prodotta. Inoltre, contribuisce a garantire un allineamento efficace tra tutti i partecipanti al progetto, consentendo un flusso di lavoro più efficiente e risultati più accurati.
+
+Il Glossario funge da catalogo esaustivo che raccoglie i termini tecnici impiegati all'interno del progetto, offrendo definizioni chiare e precise. Questo documento previene fraintendimenti, promuove una comprensione condivisa della terminologia specifica del settore, migliorando così la coerenza e la qualità della documentazione prodotta tra i partecipanti al progetto.
 
 ==== Lettera di Presentazione
 La Lettera di Presentazione accompagna la consegna del prodotto software e della documentazione pertinente ad ogni revisione e sottolinea l'impegno che il team #team si assume nel completare e consegnare il prodotto entro le scadenze concordate. Inoltre, espone un preventivo aggiornato rispetto a quello presentato in occasione dell'ultima revisione, dove costo e data di consegna del progetto vengono analizzati rispetto all'andamento corrente e confermati, o eventualmente modificati, in seguito a scelte ragionate.
@@ -580,6 +585,7 @@ Il _Piano di Qualifica_ funge da punto di riferimento per il Verificatore: in es
 
 === Strumenti
 Gli strumenti adottati per agevolare il processo di verifica sono i seguenti:
+
 ==== GitHub
 GitHub offre una funzionalità di _review_ all'interno del meccanismo di _pull request_, permettendo al Verificatore di visualizzare facilmente le ultime modifiche apportate al prodotto. Il Verificatore inserisce commenti specifici che indicano le correzioni o le migliorie necessarie e, al termine della review, la invia richiedendo le modifiche indicate; in seguito all'intervento correttivo dell'autore, il Verificatore esegue ulteriori revisioni fino a quando il documento non presenta più errori e rispetta i criteri di conformità richiesti.
 A seguito del processo di verifica il Verificatore si occupa di spostare la issue nella corsia di stato adeguata all'interno della _Kanban Board_:
