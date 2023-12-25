@@ -1,0 +1,55 @@
+Nancy K.,Ve,1.5,26/11/2023,"Revisione NdP, verbale esterno 24/11",225,51550,9925,48
+Riccardo C.,Am,2.5,26/11/2023,"Ndp analisi requisiti, ruoli progetto, fornitura",50,51300,9875,48
+Riccardo T.,An,1.5,26/11/2023,Redazione use-case simulatori,375,51150,98375,48
+Riccardo T.,An,1.5,27/11/2023,Automazione analisi requisiti + finalizzazione casi d'uso e uml relativo ai sensori,375,51000,9800,48
+Matteo R.,Pr,0.5,27/11/2023,Collegamento Kafka Clickhouse,75,50900,9785,48
+Giacomo D.,Re,1.0,27/11/2023,Stesura verbale esterno ,30,50800,9755,48
+Giacomo D.,Re,0.5,27/11/2023,aggiornamento analisi dei rischi ,15,50750,9740,48
+Riccardo C.,Am,1.0,27/11/2023,NdP ampliata e inizio PdQ,20,50650,9720,48
+Nancy K.,Ve,2.0,28/11/2023,"Revisione PdP, NdP, AdR, PdQ, codice",30,50450,9690,48
+Riccardo T.,An,1.0,28/11/2023,Cambiamento analisi requisiti (Inclusioni di UC1.2 + rimozione UC13 e specializzazioni),25,50350,9665,48
+Matteo R.,Pr,1.0,28/11/2023,Studio e test Grafana + bug fix,15,50250,9650,48
+Matteo R.,Pr,1.0,29/11/2023,Bug fix e features ai simulatori,15,50150,9635,48
+Riccardo C.,Am,2.0,29/11/2023,"PdQ qualità processo, ampliamento NdP",40,49950,9595,48
+Riccardo T.,Am,2.0,29/11/2023,Creazione server JSON per scraping della repository + pagina di vetrina auto idratante,40,49750,9555,48
+Giacomo D.,Re,0.5,28/11/2023,verbale interno,15,49700,9540,48
+Nancy K.,Ve,1.0,30/11/2023,"Revisione NdP, verbale interno",15,49600,9525,48
+Matteo R.,An,0.5,01/12/2023,Meeting,125,49550,95125,48
+Nancy K.,Ve,0.5,01/12/2023,Meeting,75,49500,9505,48
+Riccardo T.,An,0.5,01/12/2023,Meeting,125,49450,94925,48
+Giacomo D.,Re,0.5,01/12/2023,Metting,15,49400,94775,48
+Giacomo D.,Re,1.5,01/12/2023,Pdp,45,49250,94325,48
+Nancy K.,Am,2.5,01/12/2023,"Pianificazione, Preventivo PdP",50,49000,93825,48
+Riccardo T.,An,0.5,02/12/2023,Modifica e perfezionamento introduzione analisi dei requisiti,125,48950,9370,48
+Riccardo C.,Am,0.5,01/12/2023,Meeting,10,48900,9360,48
+Riccardo C.,Re,0.5,01/12/2023,Verbale interno 01_12,15,48850,9345,48
+Nancy K.,Am,2.0,02/12/2023,Studio e aggiornamento NdP,40,48650,9305,48
+Riccardo C.,Re,1.0,02/12/2023,"Aggiornamento PdP, tabella automatizzata, grafici",30,48550,9275,48
+Matteo R.,An,0.5,03/12/2023,Analisi use case (Da zero),125,48500,92625,49
+Riccardo T.,An,0.5,03/12/2023,Analisi use case (Da zero),125,48450,9250,49
+Matteo R.,Pr,1.0,03/12/2023,Clean up POC,15,48350,9235,49
+Simone C.,Pr,1.0,27/11/2023,Studio soluzione Grafana Docker,15,48250,9220,48
+Giacomo D.,Re,0.5,29/11/2023,crezione ddb,15,48200,9205,48
+Simone C.,Pr,1.0,28/11/2023,Studio soluzione Grafana Docker,15,48100,9190,48
+Simone C.,Pr,1.0,29/11/2023,Test e correzione soluzione Grafana,15,48000,9175,48
+Simone C.,Pr,0.5,01/12/2023,Meeting,75,47950,91675,48
+Simone C.,Pr,1.0,01/12/2023,Test e correzione soluzione Grafana,15,47850,91525,48
+Simone C.,Pr,1.0,02/12/2023,Soluzione Grafana funzionante,15,47750,91375,48
+Riccardo C.,Re,1.5,04/12/2023,Pdp pianificazione con i diagrammi di gantt,45,47600,90925,49
+Riccardo T.,An,2.5,05/12/2023,"UML, UC e AdR",625,47350,9030,49
+Giacomo D.,An,3.0,05/12/2023,"UML, UC e AdR",75,47050,8955,49
+Matteo R.,An,4.0,05/12/2023,"UML, UC e AdR",100,46650,8855,49
+Matteo R.,Pr,1.0,05/12/2023,Dashboard con mappa e miglioramento prestazioni,15,46550,8840,49
+Giacomo D.,An,2.5,03/12/2023,Analisi use case (Da zero),625,46300,87775,49
+Riccardo T.,Ve,2.5,03/12/2023,Supervisione del lavoro all'AdR,375,46050,8740,49
+Riccardo C.,Re,2.0,03/12/2023,Preventivo e consuntivo grafici PdP,60,45850,8680,49
+Simone C.,Ve,1.0,04/12/2023,Revisione verbale 1/12,15,45750,8665,49
+Simone C.,Ve,1.0,06/12/2023,Revisione PdP,15,45650,8650,49
+Simone C.,Ve,0.5,07/12/2023,Revisione PdP,75,45600,86425,49
+Simone C.,Ve,1.0,07/12/2023,Revisione PdP,15,45500,86275,49
+Simone C.,Ve,0.5,07/12/2023,Meeting,75,45450,8620,49
+Riccardo C.,Re,0.5,07/12/2023,verbale esterno 6/12,15,45400,8605,49
+Riccardo C.,Re,0.5,08/12/2023,meeting,15,45350,8590,49
+Nancy K.,Am,2.0,08/12/2023,Ampliate NdP + meeting,40,45150,8550,49
+Nancy K.,An,1.0,09/12/2023,AdR: eliminati UC extra e aggiunti UML individuali,25,45050,8525,49
+Riccardo C.,Ve,1.0,09/12/2023,revisione NdP,15,44950,8510,49

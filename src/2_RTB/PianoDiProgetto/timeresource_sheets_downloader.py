@@ -9,12 +9,12 @@
 #    all'interno, il contenuto messo nel canale testuale "accounts" sul server discord di SWAT Engineering
 # 3. python3 timeresource_sheets_downloader.py
 
-AMMINISTRATORE = "Amministratore"
-ANALISTA = "Analista"
-PROGETTISTA = "Progettista"
-PROGRAMMATORE = "Programmatore"
-RESPONSABILE = "Responsabile"
-VERIFICATORE = "Verificatore"
+AMMINISTRATORE = "Am"
+ANALISTA = "An"
+PROGETTISTA = "Pt"
+PROGRAMMATORE = "Pr"
+RESPONSABILE = "Re"
+VERIFICATORE = "Ve"
 
 COST_AMMINISTRATORE = 20
 COST_ANALISTA = 25
@@ -22,6 +22,10 @@ COST_PROGETTISTA = 25
 COST_PROGRAMMATORE = 15
 COST_RESPONSABILE = 30
 COST_VERIFICATORE = 15
+
+BUDGET_CASH = 11070
+BUDGET_TIME = 570
+
 
 import json
 import pandas as pd
@@ -50,7 +54,22 @@ worksheet = spreadsheet.get_worksheet(0)
 records_data = worksheet.get_all_records()
 records_df = pd.DataFrame.from_dict(records_data)
 records_df["Ruolo"] = records_df["Ruolo"].replace(
-    "Revisore", "Verificatore"
+    "Revisore", VERIFICATORE
+)  # Changing with proper role
+records_df["Ruolo"] = records_df["Ruolo"].replace(
+    "Responsabile", RESPONSABILE
+)  # Changing with proper role
+records_df["Ruolo"] = records_df["Ruolo"].replace(
+    "Progettista", PROGETTISTA
+)  # Changing with proper role
+records_df["Ruolo"] = records_df["Ruolo"].replace(
+    "Programmatore", PROGRAMMATORE
+)  # Changing with proper role
+records_df["Ruolo"] = records_df["Ruolo"].replace(
+    "Analista", ANALISTA
+)  # Changing with proper role
+records_df["Ruolo"] = records_df["Ruolo"].replace(
+    "Amministratore", AMMINISTRATORE
 )  # Changing with proper role
 records_df["OreProduttive"] = records_df["OreProduttive"].replace(
     "", "0"
@@ -94,8 +113,8 @@ for week in range(50, max_week + 1):
 
 os.makedirs("sprintData", exist_ok=True)
 
-remaining_time = 570
-remaining_cash = 11070
+remaining_time = BUDGET_TIME
+remaining_cash = BUDGET_CASH
 
 for sprint_key in sprints:
     # Creating folders for each sprint recorded
@@ -104,7 +123,7 @@ for sprint_key in sprints:
     sprint = sprints[sprint_key]
     # Inserting in corresponding folders, raw sprint data
     sprint.to_csv(
-        os.path.join("sprintData", sprint_key, (sprint_key + ".csv")),
+        os.path.join("sprintData", sprint_key, "sprintData.csv"),
         index=False,
         header=False,
     )
@@ -116,6 +135,7 @@ for sprint_key in sprints:
         .unstack(fill_value=0)
         .reset_index()
     )
+    rendicontazione_ore = rendicontazione_ore.sort_values(by="Nominativo")
 
     # Adding non existing columns
     if AMMINISTRATORE not in rendicontazione_ore.columns:
@@ -172,9 +192,7 @@ for sprint_key in sprints:
 
     # Saving sprint related analyzed data to csv
     rendicontazione_ore.to_csv(
-        os.path.join(
-            "sprintData", sprint_key, ("RendicontazioneOre" + sprint_key + ".csv")
-        ),
+        os.path.join("sprintData", sprint_key, ("RendicontazioneOre.csv")),
         index=False,
     )
 
@@ -204,13 +222,14 @@ for sprint_key in sprints:
     time_values, role_values, role_colors = zip(*filtered_values)
 
     # Creating the time pie chart
-    plt.pie(
+    fig, ax = plt.subplots()
+    wedges, texts, autotexts = ax.pie(
         time_values,
-        labels=role_values,
         autopct="%1.1f%%",
         startangle=90,
         colors=role_colors,
     )
+    ax.legend(wedges, role_values, loc="upper right", bbox_to_anchor=(0.7, 0.1, 0.5, 1))
     plt.tight_layout()
     plt.savefig(os.path.join("sprintData", sprint_key, "RendicontazioneRuoliTorta.png"))
     plt.clf()
@@ -287,9 +306,40 @@ for sprint_key in sprints:
     }
     df_cost_table = pd.DataFrame(costs_table)
     df_cost_table.to_csv(
-        os.path.join(
-            "sprintData", sprint_key, ("RendicontazioneCosti" + sprint_key + ".csv")
-        ),
+        os.path.join("sprintData", sprint_key, ("RendicontazioneCosti.csv")),
         index=False,
-        header=False,
+        header=True,
     )
+
+    # Creating the cost cash pie chart
+    fig, ax = plt.subplots()
+    wedges, texts, autotexts = ax.pie(
+        [BUDGET_CASH - remaining_cash, remaining_cash],
+        labels=None,
+        autopct=lambda p: "{:.1f}€ ({:.1f}%)".format(p * BUDGET_CASH / 100, p),
+        startangle=90,
+        colors=["#FFB6C1", "#ADD8E6"],
+    )
+    cash_labels = ["Budget speso", "Budget rimanente"]
+    ax.legend(wedges, cash_labels, loc="upper right", bbox_to_anchor=(0.7, 0, 0.5, 1))
+    plt.tight_layout()
+    plt.savefig(
+        os.path.join("sprintData", sprint_key, "RendicontazioneCostiCashTorta.png")
+    )
+    plt.clf()
+
+    # Creating the cost time pie chart
+    fig, ax = plt.subplots()
+    wedges, texts, autotexts = ax.pie(
+        [BUDGET_TIME - remaining_time, remaining_time],
+        autopct=lambda p: "{:.1f} ({:.1f}%)".format(p * BUDGET_TIME / 100, p),
+        startangle=90,
+        colors=["#FFB6C1", "#ADD8E6"],
+    )
+    time_labels = ["Tempo speso", "Tempo rimanente"]
+    ax.legend(wedges, time_labels, loc="upper right", bbox_to_anchor=(0.7, 0, 0.5, 1))
+    plt.tight_layout()
+    plt.savefig(
+        os.path.join("sprintData", sprint_key, "RendicontazioneCostiTimeTorta.png")
+    )
+    plt.clf()
