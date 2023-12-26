@@ -142,12 +142,13 @@ Servizio per creare e partecipare a videochiamate, utilizzato dal team per gli i
 Online software per creare diagrammi di Gantt, utilizzato dal Responsabile per delineare la distribuzione temporale delle attività pianificate per ogni sprint nella sezione di Pianificazione del _Piano di Progetto v1.0_.
 
 ==== Draw.io
-Software per creare diagrammi e grafici di varia natura, utilizzato dagli Analisti per creare i diagrammi UML dei casi d'uso nella sezione *Casi d'uso* (@c.uso) dell'Analisi dei Requisiti.
-#pagebreak()
+Software per creare diagrammi e grafici di varia natura, utilizzato dagli Analisti per creare i diagrammi UML dei casi d'uso nella sezione Casi d'uso (@c.uso) dell'_Analisi dei Requisiti v1.0_.
+
 
 == Sviluppo
 
 === Descrizione e scopo
+
 Il processo di sviluppo rappresenta la serie di attività che il team #team deve svolgere affinché, successivamente, riesca nell'implementazione del prodotto software, rispettando i requisiti e le date di scadenza concordate con la Proponente. In particolare, si ha:
         - *Analisi dei Requisiti*;
         - *Progettazione*;
@@ -155,12 +156,25 @@ Il processo di sviluppo rappresenta la serie di attività che il team #team deve
 
 === Analisi dei Requisiti
 
-==== Descrizione e scopo
-L'Analisi dei Requisiti viene redatta dagli Analisti e contiene:
+==== Descrizione 
+
+L'_Analisi dei Requisiti v1.0_ viene redatta dagli Analisti e contiene:
         - *Introduzione*: esplicita lo scopo del documento, lo scopo del prodotto e i riferimenti utilizzati;
         - *Descrizione*: esplicita le funzionalità attese del prodotto e le caratteristiche degli utenti;
+        - *Attori*: gli utilizzatori del prodotto finale;
         - *Casi d'uso*: individua gli attori e tutte le interazioni che possono avere con il sistema;
         - *Requisiti*: le caratteristiche da soddisfare e le fonti da cui sono state estratte.
+
+==== Scopo   
+
+Lo scopo dell'_Analisi dei Requisiti v1.0_ è definire in modo dettagliato e chiaro le funzionalità e le caratteristiche che il prodotto software dovrà soddisfare. Questo processo mira a comprendere a fondo le esigenze degli utenti, gli obiettivi del sistema e le condizioni in cui dovrà operare. Gli obiettivi principali dell'Analisi dei Requisiti includono:
+
+        - Identificare e chiarire gli obiettivi e le finalità del prodotto che si intende sviluppare;
+        - Fornire ai progettisti una base chiara e comprensibile per la definizione dell'architettura e del design del sistema;
+        - Fornire una base per la pianificazione mediante i requisiti raccolti;
+        - Facilitare la comunicazione tra Proponente e fornitori;
+        - Fornire riferimenti per la verifica.
+
 
 ==== Identificazione dei casi d'uso <c.uso>
 
