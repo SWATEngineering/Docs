@@ -622,16 +622,19 @@ Nel caso del repository _InnovaCity_, il branch _main_ viene utilizzato per la p
 == Verifica
 
 === Descrizione e Scopo
+
 Qualsiasi processo istanziato durante lo svolgimento del progetto, prima di potersi considerare completato, dev’essere sottoposto a verifica.
-Lo scopo primario di questo processo è garantire la correttezza dei prodotti e la loro adesione ai vincoli di qualità individuati ed elencati all'interno del documento _Piano di Qualifica_. 
-Il _Piano di Qualifica_ funge da punto di riferimento per il Verificatore: in esso vengono fornite tutte le linee guida a cui il Verificatore deve aderire  garantendo uniformità e coerenza al processo di verifica e garantendone la ripetibilità.
+Lo scopo primario di questo processo è garantire la correttezza dei prodotti e la loro adesione ai vincoli di qualità individuati ed elencati all'interno del documento _Piano di Qualifica v1.0_. 
+Il _Piano di Qualifica v1.0_ funge da punto di riferimento per il Verificatore: in esso vengono fornite tutte le linee guida a cui il Verificatore deve aderire  garantendo uniformità e coerenza al processo di verifica e garantendone la ripetibilità.
 
 
 === Strumenti
+
 Gli strumenti adottati per agevolare il processo di verifica sono i seguenti:
 
 ==== GitHub
-GitHub offre una funzionalità di _review_ all'interno del meccanismo di _pull request_, permettendo al Verificatore di visualizzare facilmente le ultime modifiche apportate al prodotto. Il Verificatore inserisce commenti specifici che indicano le correzioni o le migliorie necessarie e, al termine della review, la invia richiedendo le modifiche indicate; in seguito all'intervento correttivo dell'autore, il Verificatore esegue ulteriori revisioni fino a quando il documento non presenta più errori e rispetta i criteri di conformità richiesti.
+
+GitHub offre una funzionalità di _review_ all'interno del meccanismo di _pull request_, permettendo al Verificatore di visualizzare facilmente le ultime modifiche apportate al prodotto. Il Verificatore inserisce commenti specifici che indicano le correzioni o le migliorie necessarie e, al termine della review, la invia richiedendo le modifiche indicate. In seguito all'intervento correttivo dell'autore, il Verificatore esegue ulteriori revisioni fino a quando il documento non presenta più errori e rispetta i criteri di conformità richiesti.
 A seguito del processo di verifica il Verificatore si occupa di spostare la issue nella corsia di stato adeguata all'interno della _Kanban Board_:
 - _done_ qualora la revisione abbia avuto esito positivo; 
 - _in progress_ in caso siano richieste modifiche.
@@ -639,9 +642,10 @@ A seguito del processo di verifica il Verificatore si occupa di spostare la issu
 L'utilizzo delle review in GitHub non solo facilita il tracciamento del processo di verifica, ma consente anche al team di accedere e consultare facilmente l'intera cronologia del codice o del documento di interesse all'interno della #glossary[repository] del progetto. Questo approccio garantisce un processo di verifica trasparente, tracciabile e conforme alle linee guida stabilite.
 Inoltre GitHub impedisce  l'unione dei rami oggetto di pull request fino a quando l'ultimo commit non viene verificato e approvato.
 Ciò garantisce che ogni prodotto, che viene integrato al ramo principale, sia effettivamente revisionato da almeno un membro del team, riducendo il rischio di introduzione di errori. 
-Il Verificatore, a seguito di una revisione positiva, accetta la pull request con la metodologia "squash and merge". Nell'eventualità in cui il branch presenti dei confitti, l'autore si occuperà di risolverli e successivamente dell'unione del branch.  
+Il Verificatore, a seguito di una revisione positiva, accetta la pull request con la metodologia "squash and merge". Nell'eventualità in cui il branch presenti dei confitti, l'autore è responsabile di risolverli prima di procedere con l'unione del branch.  
 
 ===== Elementi Esterni al Repository
+
 Potrebbero esservi delle issue aperte all'interno dell' #glossary("ITS") che non hanno un corrispondente documento o prodotto in generale, all'interno del repository. Per queste, il ciclo di vita segue il normale flusso attraverso i diversi stati elencati nella @its. La verifica viene effettuata attraverso i commenti della issue stessa, che avranno la seguente forma:
 - richiesta cambiamenti:
   ```
@@ -653,12 +657,13 @@ Potrebbero esservi delle issue aperte all'interno dell' #glossary("ITS") che non
   ```
   [REV] done
   ```
-==== Analisi statica
+=== Analisi statica
+
 L'analisi statica rappresenta un'esplorazione approfondita del codice o della documentazione associata al prodotto. Questa metodologia mira a individuare potenziali problemi o irregolarità, senza mai eseguire effettivamente il sistema software. Nel caso della documentazione, l'analisi statica si concentra sulla struttura, sulla coerenza, sulla completezza e sulla chiarezza del testo. In particolare, verifica la presenza di errori grammaticali, di formattazione e concettuali, garantendo un livello ottimale di qualità nel materiale consegnato. 
 
-l verificatore, nel contesto della documentazione o del codice, può condurre l'analisi statica tramite due metodologie: #glossary[walkthrough] o #glossary[inspection]. Nel caso del nostro progetto, la metodologia prediletta è l' #glossary[inspection].
+Il verificatore, nel contesto della documentazione o del codice, può condurre l'analisi statica tramite due metodologie: #glossary[walkthrough] o #glossary[inspection]. Nel caso del nostro progetto, la metodologia prediletta è l' #glossary[inspection].
 
-===== Inspection
+==== Inspection
 
 In questo processo, il Verificatore adotta un approccio strutturato, seguendo una sequenza di passaggi ben definiti. Utilizza liste di controllo per esaminare in dettaglio il documento o il codice. Per dettagli specifici sulle checklist usate, si rimanda al documento _PianoDiQualifica\_v1.0_. 
 
@@ -670,11 +675,12 @@ La decisione del team di preferire il metodo #glossary[inspection] è giustifica
 Tuttavia, il metodo #glossary[walkthrough] conserva la sua rilevanza e rimane una valida alternativa di cui ci si può avvalere specialmente nelle fasi iniziali e finali del lavoro su un determinato prodotto: l’approccio pragmatico del metodo risulta infatti adeguato a rilevare criticità e peculiarità che potrebbero non essere rilevate da metodi più formali.  
 
 ==== Analisi dinamica
-L'analisi dinamica si riferisce all'osservazione e alla conseguente valutazione del comportamento di un sistema in esecuzione. Ne risulta che l'oggetto esclusivo di questa metodologia di analisi nel contesto progettuale sia il prodotto risultante dal processo di codifica, il _software_. 
-Nello sviluppo software, l'analisi dinamica è implementata mediante diverse categorie di test.
-I test, sviluppati a partire da requisiti, funzionali e non, rendono il processo di analisi dinamica ripetibile, e  producono un risultato oggettivo. 
-La redazione dei test, e la loro conseguente  esecuzione seguono i principi del #glossary[Modello a V]. 
-Il Verificatore si impegna a definire casi di test per ognuna delle seguenti categorie, garantendo così una copertura completa e dettagliata del software: 
+
+L'analisi dinamica nel contesto dello sviluppo software si concentra sull'osservazione e valutazione del comportamento del sistema durante l'esecuzione. Questa metodologia è specificamente rivolta al prodotto software risultante dal processo di codifica.
+Nel processo di sviluppo, l'analisi dinamica è attuata attraverso varie categorie di test. I test, derivati dai requisiti, siano essi funzionali o non funzionali, rendono il processo di analisi dinamica ripetibile. Questo significa che è possibile eseguire i test più volte con gli stessi input e condizioni, ottenendo risultati coerenti e affidabili. La ripetibilità dei test è fondamentale per confermare la coerenza delle funzionalità del software in diverse situazioni e sotto diverse condizioni operative. La definizione e l'esecuzione dei test seguono i principi del #glossary[Modello a V].
+Per queste ragioni, l'analisi dinamica non può essere applicata alla documentazione.
+
+Il Verificatore assume l'impegno di elaborare casi di test per ciascuna delle seguenti categorie, garantendo una copertura completa e dettagliata del software:
 - Test di unità; 
 - Test di integrazione; 
 - Test di sistema; 
@@ -682,6 +688,35 @@ Il Verificatore si impegna a definire casi di test per ognuna delle seguenti cat
 
 La totalità dei test individuati viene riportata all'interno del documento _PianoDiQualifica\_v1.0_.
 In sede di verifica, sulla base del dominio esaminato, il Verificatore è tenuto ad eseguire tali test in maniera rigorosa e a riportarne gli esiti all'interno del _PianoDiQualifica\_v1.0_. 
+
+==== Test di Unità  
+
+Il test di unità è una fase del processo di testing software che si concentra sulla verifica delle singole unità o componenti del software. Un'unità è la più piccola parte di un'applicazione che può essere testata isolatamente.
+Gli obiettivi principali:
+
+        - Testare ogni unità in modo separato, isolando le influenze esterne e garantendo che ciascuna parte del software funzioni correttamente da sola;
+        - Accertarsi che ciascuna unità esegua le operazioni specificate nel suo design;
+        - Identificare precocemente i possibili errori.
+
+I test di unità si dividono principalemente in due categorie:
+
+        - *Test Funzionali*: verificano che ciascuna unità esegua le funzioni specificate nel design, concentrandosi sulla logica interna dell'unità e testando i casi in cui la funzione produce i risultati desiderati;
+        - *Test Strutturali*: verificano la struttura interna dell'unità, compresa la logica di controllo e il flusso dei dati, esaminando il codice sorgente dell'unità.
+
+==== Test di Integrazione   
+
+I test di integrazione, eseguiti successivamente ai test unitari, sono cruciali per valutare il comportamento delle unità software quando vengono combinate. Una volta confermato il corretto funzionamento delle singole unità in isolamento, i test di integrazione mirano a identificare possibili problemi nelle interazioni tra le unità integrate. Questi test, automatizzati il più possibile, verificano se le componenti del software collaborano efficacemente e se il sistema integrato soddisfa le specifiche di progetto. L'obiettivo è garantire che, quando le unità sono combinate, il software funzioni senza intoppi e risponda alle esigenze dell'applicazione in modo coerente.
+
+==== Test di Sistema 
+
+I test di sistema vengono definiti durante la fase di Analisi dei Requisiti con l'obiettivo di misurare la copertura dei requisiti specificati nel capitolato d'appalto. Questa fase del processo di testing software mira a verificare l'intero sistema come un'entità unificata. Durante il test di sistema, il software viene valutato nella sua completezza, con l'obiettivo di accertare che tutte le componenti integrate funzionino insieme in modo coerente per soddisfare gli obiettivi e i requisiti del sistema.
+Per la definizione dei test si rimanda al _Piano di Qualifica v1.0_.
+
+==== Test di accettazione  
+
+Il superamento dei test di accettazione è fondamentale poiché dimostra il soddisfacimento del committente rispetto al prodotto software. L'esito positivo di questi test fornisce l'approvazione finale e la conferma che il software sia conforme alle aspettative. Solo dopo il superamento dei test di accettazione il team #team può procedere con il rilascio ufficiale del prodotto, garantendo che sia pronto per l'utilizzo nell'ambiente operativo previsto.
+
+
 
 ==== Classificazione dei test
 I test vengono identificati in base alla loro tipologia e tramite un codice numerico. 
@@ -697,7 +732,7 @@ Il codice numerico è seriale all'interno della categoria.
 
 ==== Stato dei test
 
-Nella sezione relativa ai test nel _Piano di Qualifica_ a ogni test viene affiancato il suo stato: 
+Nella sezione relativa ai test nel _Piano di Qualifica v1.0_ a ogni test viene affiancato il suo stato: 
 - *N-A* : Il test non è applicabile al contesto attuale o alle funzionalità correnti; 
 - *N-I* : Il test non è stato implementato; 
 - *Passato*: Il test ha dato esito positivo;  
