@@ -178,7 +178,8 @@ Lo scopo dell'_Analisi dei Requisiti v1.0_ è definire in modo dettagliato e chi
 
 ==== Identificazione dei casi d'uso <c.uso>
 
-  I casi d'uso sono identificati nel seguente modo:
+Un caso d'uso rappresenta un singolo scenario o interazione tra un attore e il sistema software, focalizzandosi sulle azioni compiute dall'attore e sulle risposte del sistema a tali azioni.
+I casi d'uso sono identificati nel seguente modo:
 
           *UC[Numero].[Numero sottocaso] [Titolo]*
         
@@ -237,8 +238,8 @@ I requisiti trovati hanno un codice univoco con la seguente sintassi:
 ==== Metriche
 
 La definizione delle metriche seguenti si può trovare nella @metriche_codifica.
-
-#table(
+#figure(
+table(
       columns:(auto,auto),
       align: (x, y) => (center, center).at(x),
       fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
@@ -246,18 +247,20 @@ La definizione delle metriche seguenti si può trovare nella @metriche_codifica.
       [*ROS*],[Requisiti Obbligatori Soddisfatti],
       [*RDS*],[Requisiti Desiderabili Soddisfatti],
       [*ROPS*],[Requisiti Opzionali Soddisfatti] 
+),
+caption:[Metriche Requisiti],
 )
 
 === Progettazione 
 
 ==== Descrizione e scopo 
 
-L'attività di progettazione è affidata ai Progettisti, i quali devono definire le caratteristiche del prodotto finale basandosi sui requisiti specificati nel documento _Analisi dei Requisiti_. 
+L'attività di progettazione è affidata ai Progettisti, i quali devono definire le caratteristiche del prodotto finale basandosi sui requisiti specificati nel documento _Analisi dei Requisiti v1.0_. 
 La fase di progettazione segue l'analisi dei requisiti, dove sono definite le necessità e le aspettative per il prodotto. I Progettisti traducono queste informazioni in una struttura architetturale definita, organizzando il sistema in componenti specifici e definendo le interazioni tra di essi. In questo modo, la progettazione costituisce un passo essenziale nel percorso di sviluppo, contribuendo a trasformare i requisiti in un piano tangibile per la creazione del prodotto finale.
 
 Si definiscono tre sottoattività: 
 
-        + *_Technology Baseline_*: implica la selezione e la definizione delle tecnologie di base utilizzate per la realizzazione del sistema. Questo comprende decisioni relative a linguaggi di programmazione, librerie e _framework_. Tale processo porta alla creazione di un Proof of Concept (#glossary("PoC"));
+        + *_Technology Baseline_*: implica la selezione e la definizione delle tecnologie di base utilizzate per la realizzazione del sistema. Questo comprende decisioni relative a linguaggi di programmazione, librerie e framework. Tale processo porta alla creazione di un Proof of Concept (#glossary("PoC"));
 
                 Include:
                 - *Proof of Concept*: consiste nella creazione di una versione parziale del prodotto, includendo alcune delle funzionalità stabilite durante l'analisi dei requisiti. L'obiettivo è valutare la fattibilità del prodotto completo;
@@ -269,16 +272,17 @@ Si definiscono tre sottoattività:
                 - Definizione delle classi;
                 - Diagrammi UML che includono:
                         - classi;
-                        - _package_;
-                        - sequenze: utilizzato per descrivere uno scenario che costituisce una determinata sequenza di azioni in cui tutte le scelte sono state già effettuate;
-                        - attività: diagramma comportamentale che illustra il flusso delle attività attraverso un sistema.
+                        - package;
+                        - *sequenze*: utilizzato per descrivere uno scenario che costituisce una determinata sequenza di azioni in cui tutte le scelte sono state già effettuate;
+                        - *attività*: diagramma comportamentale che illustra il flusso delle attività attraverso un sistema.
                 - Test di Unità su ogni componente.
 
 ==== Metriche
 
 La definizione delle metriche seguenti si può trovare nella @metriche_codifica.
 
- #table(
+#figure(
+ table(
       columns:(auto,auto),
       align: (x, y) => (center, center).at(x),
       fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
@@ -288,6 +292,8 @@ La definizione delle metriche seguenti si può trovare nella @metriche_codifica.
       [*ATC*],[Attributi per Classe],
       [*PM*],[Parametri per Metodo],
       [*LCM*],[Linee di Codice per Metodo]
+),
+caption:[Metriche progettazione],
 )
 
 ==== Diagrammi UML dei casi d'uso
@@ -384,20 +390,22 @@ Ci si aspetta che il codice sviluppato rispetti determinate caratteristiche:
         - Ottimizzazione delle prestazioni;
         - Supplemento di test per verificare la correttezza e il funzionamento.
 
-==== Stile di codifica 
-[...]
+
 
 ==== Metriche
 
 La definizione delle metriche seguenti si può trovare nella @metriche_codifica.
 
-#table(
+#figure(
+table(
       columns:(auto,auto),
       align: (x, y) => (center, center).at(x),
       fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Metrica*],[*Descrizione*],
       [*CCM*],[Complessità Ciclomatica per Metodo],
       [*CC*],[Code Coverage]
+),
+caption: [Metriche Codifica],
 )
 
 
@@ -416,11 +424,11 @@ La documentazione è l'insieme di informazioni rappresentate sotto forma di test
 
 I documenti che verranno prodotti sono:
 
-        - _Norme di Progetto_;
-        - _Piano di Progetto_;
-        - _Piano di Qualifica_;
-        - _Analisi dei Requisiti_;
-        - _Glossario_;
+        - _Norme di Progetto v1.0_;
+        - _Piano di Progetto v1.0_;
+        - _Piano di Qualifica v1.0_;
+        - _Analisi dei Requisiti v1.0_;
+        - _Glossario v1.0_;
         - _Verbali_:
                 + _Interni_;
                 + _Esterni_.
@@ -431,11 +439,11 @@ Ogni documento segue le fasi del seguente #glossary[workflow]:
 + Si crea un branch per lo sviluppo del documento nell'apposita repository _Docs_ e si mette in uso.
 + Si copia dall'apposita repository `Templates` il template relativo al file che si deve redigere, e lo si inserisce nella cartella appropriata.
 + Si redige il documento o una sua sezione. Nel caso di documenti nuovi, in cui è necessario un elevato parallelismo di lavoro, è possibile usare Google Drive per la prima stesura e successivamente caricare il documento all'interno del branch.
-+ Nel file `changelog.typ` si aggiunge una riga *in coda*, secondo il seguente formato: `<versione>,<data-modifica>,<descrizione-modifica>,<nome-autore>,<ruolo-autore>`; la versione segue le regole descritte nella @versionamento.
++ Nel file `changelog.typ` si aggiunge una riga in coda, secondo il seguente formato: `<versione>,<data-modifica>,<descrizione-modifica>,<nome-autore>,<ruolo-autore>`; la versione segue le regole descritte nella @versionamento.
 + Si esegue la commit sul branch creato.
 + Si apre una pull request dal branch appena creato verso il branch `main`: se il documento non è pronto per la verifica, ma ha bisogno di ulteriori modifiche, si apre la pull request in modalità `draft`, altrimenti in modalità normale, spostando la issue nell'apposita corsia di stato "Ready to Review".
-+ Per ulteriori modifiche richieste dal/dai verificatore/i si ripetono i punti, *in ordine*, dal punto _3_ al punto _5_.
-+ Si elimina, *solo quando la pull request viene chiusa o risolta*, il branch creato.
++ Per ulteriori modifiche richieste dal/dai verificatore/i si ripetono i punti, in ordine, dal punto 3 al punto 5.
++ Si elimina, solo quando la pull request viene chiusa o risolta, il branch creato.
 
 La modifica di un documento avviene allo stesso modo, saltando il passo 2.
 Ogni cambiamento di stato è accompagnato dal conseguente movimento della issue, associata allo sviluppo, attraverso le diverse corsie dell'issue tracking system.
@@ -456,8 +464,8 @@ Nel caso di documenti il cui nome contiene una data, essa si inserisce dopo il n
 
 === Versionamento <versionamento>
 Il versionamento avviene secondo il seguente formato *x.y*:
-- *y* si incrementa una volta effettuata una modifica e la sua conseguente verifica;
-- *x* si incrementa quando si effettua la modifica definitiva in vista di una verifica di avanzamento, questo comporta l'azzeramento di *y*.
+- *y*: si incrementa una volta effettuata una modifica e la sua conseguente verifica;
+- *x*: si incrementa quando si effettua la modifica definitiva in vista di una verifica di avanzamento, questo comporta l'azzeramento di y.
 
 Due modifiche, fatte in momenti diversi, differiscono l'una dall'altra solo se hanno scopi diversi. Ad esempio non è necessario incrementare la versione se viene fatta una modifica alla stessa sezione in due giorni differenti; anche se faccio una modifica, ed essa non viene approvata, non è necessario incrementare la versione con le nuove modifiche proposte dal/dai verificatore/i, dal momento che modifica e verifica "viaggiano" parallelamente.
 
@@ -481,7 +489,10 @@ Su ogni pagina del documento, eccetto la prima, si trova il titolo del documento
 
 ==== Registro delle modifiche
 
-Tabella con l'intestazione: 
+Il registro delle modifiche è un elenco dettagliato che tiene traccia di tutte le modifiche apportate al documento nel corso del tempo. 
+È utile per tenere traccia dell'evoluzione del documento e per consentire a chiunque stia lavorando sul progetto di comprendere quali modifiche sono state apportate e quando.
+
+Si compone di una tabella con l'intestazione: 
         - *Versione*: versione del documento;
         - *Data*: data della modifica apportata;
         - *Descrizione*: cosa è stato modificato o aggiunto al file;
@@ -490,7 +501,7 @@ Tabella con l'intestazione:
 
 ==== Indice 
 
-In una nuova pagina deve essere presente l'indice, utile per facilitare la ricerca e la navigazione all'interno del documento.
+Nella pagina successiva al registro delle modifiche deve essere presente l'indice, utile per facilitare la ricerca e la navigazione all'interno del documento.
 
 ==== Verbali 
 
@@ -509,17 +520,22 @@ Il verbale esterno oltre alle sezioni sopra elencate ha una pagina per la conval
                 - Parole a cui si vuole dare enfasi;
                 - Definizioni di termini negli elenchi puntati.
         - *Corsivo*: 
-                - I nomi dei documenti;
+                - I nomi dei documenti con relativa versione;
                 - I termini di glossario (seguiti da #sub[G]).
         - *Caratteri maiuscoli*: 
                 - Le iniziali dei nomi;
                 - Le lettere che compongono un acronimo;
                 - Le iniziali dei ruoli svolti dai componenti del gruppo;
-                - L'iniziale del termine "Proponente".
+                - L'iniziale del termine "Proponente";
+                - Prima lettera di ogni elenco puntato.
 
 ==== Elenchi puntati
 
 Le voci di ogni elenco iniziano con lettera maiuscola e terminano con punto e virgola ';', eccetto l'ultima voce che termina con punto normale '.'.
+
+==== Caption 
+
+Ogni immagine o tabella deve avere obbligatoriamente una caption associata, utile per fornire una breve descrizione o spiegazione del contenuto visivo.
 
 ==== Formato delle date <formato>
 Viene adottato il formato "DD-MM-YYYY":
@@ -541,44 +557,53 @@ Il gruppo utilizza:
 
 La definizione delle metriche seguenti si può trovare nella @metriche_documentazione.
 
-#table(
+#figure(
+table(
       columns:(auto,auto),
       align: (x, y) => (center, center).at(x),
       fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Metrica*],[*Descrizione*],
       [*IG*],[Indice Gulpease],
       [*CO*],[Correttezza Ortografica]
+),
+caption:[Metriche Documentazione],
 )
-        
+
+#pagebreak()
 
 == Gestione della Configurazione
 
 === Descrizione e scopo
 
+La gestione della configurazione (Configuration Management) è una pratica fondamentale nell'ambito dello sviluppo software, specialmente quando si tratta di gestire e controllare configurazioni complesse di prodotti. Essa riguarda il processo di identificazione e controllo delle componenti di un sistema, così come delle relazioni tra di esse, durante tutto il ciclo di vita del prodotto. Consente di mantenere la tracciabilità, la coerenza e la comprensione chiara delle relazioni tra le varie parti del sistema.
+
 === Issue Tracking System <its>
-Come ITS si utilizza _Github_ che, attraverso le funzioni di _Project_, _Issues_ e _Pull requests_, garantisce una struttura all'organizzazione di progetto.
+
+Come ITS si utilizza _Github_ che, attraverso le funzioni di Project, Issues e Pull requests, garantisce una struttura all'organizzazione di progetto.
 
 Le #glossary[Corsie di Stato] descrivono lo stato attuale delle attività, all'interno del _Project_ nell'_ITS_ sono presenti:
 / Backlog: attività individuate da svolgere.
 / Ready: attività individuate per il completamento durante il prossimo #glossary[sprint].
 / In Progress: attività che sono in corso d'opera da parte dei redattori.
 / Ready to Review: attività svolte che sono pronte per essere verificate.
-/ In Review: attività in corso di verifica da parte dei verificatori.
+/ In Review: attività in corso di verifica da parte dei Verificatori.
 / Done: attività le cui modifiche sono state verificate e accettate.
 
 === Strumento di Condivisione
-Per la condivisione veloce o la creazione di bozze si utilizza _Google Drive_. Uno dei suoi principali casi d'uso consiste nella collaborazione in tempo reale nella stesura di sezioni testuali ampie, da inserire successivamente nella documentazione (questo risulta particolarmente utile nel momento in cui il documento è alla sua prima stesura). Viene inoltre utilizzato come sistema per l'immagazzinamento di conoscenze acquisite durante lo svolgimento del progetto.
+
+Per la condivisione veloce o la creazione di bozze si utilizza Google Drive. Uno dei suoi principali casi d'uso consiste nella collaborazione in tempo reale nella stesura di sezioni testuali ampie, da inserire successivamente nella documentazione (questo risulta particolarmente utile nel momento in cui il documento è alla sua prima stesura). Viene inoltre utilizzato come sistema per l'immagazzinamento di conoscenze acquisite durante lo svolgimento del progetto.
 
 === Tracciamento del Tempo Speso
+
 Al fine di tracciare il tempo speso nel corso del progetto, nei diversi ruoli, si utilizza uno spreadsheet appositamente creato, disponibile all'interno di Google Drive. A fine giornata, ogni membro del team inserisce le proprie ore *produttive* svolte quel giorno, secondo la sua miglior stima del rapporto tra ore di orologio e ore produttive. Si inserisce una sola riga per ogni giornata e nella descrizione si aggiungono brevi titoli rappresentativi delle attività svolte.
 
 
 === Controllo di versione e repository
 
-Come sistema di controllo di versione si utilizza _Git_.
+Come sistema di controllo di versione si utilizza Git.
  
 
-Vengono utilizzate le seguenti _repository_:
+Vengono utilizzate le seguenti repository:
         - #link("https://github.com/SWATEngineering/Docs"): questa repository viene impiegata dal team per condividere e revisionare il codice sorgente legato alla documentazione del progetto. Viene utilizzata per collaborare, revisionare e mantenere aggiornati i documenti di lavoro, consentendo ai membri del team di contribuire e gestire in modo efficiente la documentazione;
 
         - #link("https://github.com/SWATEngineering/SWATEngineering.github.io"): questa repository funge da piattaforma per i documenti compilati e approvati. Il sito web #link("https://swatengineering.github.io/") rappresenta la versione web della documentazione finale e approvata dal team. È utilizzata per presentare al pubblico una visione consolidata dei documenti di progetto;
@@ -586,8 +611,8 @@ Vengono utilizzate le seguenti _repository_:
         - #link("https://github.com/SWATEngineering/InnovaCity"): questa repository è dedicata alla condivisione e revisione del codice sorgente relativo al prodotto software "InnovaCity". È qui che il team lavora e collabora sul codice del prodotto stesso, consentendo una gestione centralizzata del lavoro di sviluppo e delle modifiche apportate al software.
 
 
-All'interno dei repository _Docs_ e _Innovacity_ si utilizza il #glossary[Rebase workflow] come metodo di gestione, con l'utilizzo dei _Feature branch_ per separare logicamente il lavoro da svolgere. Nel primo repository però, i _Feature branch_ si derivano direttamente dal _main_, mentre nel secondo si derivano dal branch _dev_.
-Questo impone quindi che, prima di andare ad effettuare la chiusura di una _Pull request_, si vada ad effettuare un _rebase_ del branch di derivazione, per rendere il nostro branch di sviluppo aggiornato rispetto alla base.
+All'interno dei repository _Docs_ e _Innovacity_ si utilizza il #glossary[Rebase workflow] come metodo di gestione, con l'utilizzo dei Feature branch per separare logicamente il lavoro da svolgere. Nel primo repository però, i Feature branch si derivano direttamente dal main, mentre nel secondo si derivano dal branch dev.
+Questo impone quindi che, prima di andare ad effettuare la chiusura di una Pull request, si vada ad effettuare un _rebase_ del branch di derivazione, per rendere il nostro branch di sviluppo aggiornato rispetto alla base.
 
 I _Feature branch_ vengono aperti a partire dalle issue create nell' _Issue Tracking System_ (vedi @its). Si procede poi ad associare una _Pull request_, a una o più issue collegate tra loro, per effettuare la verifica.
 
