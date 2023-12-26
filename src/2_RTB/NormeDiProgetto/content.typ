@@ -717,7 +717,6 @@ Per la definizione dei test si rimanda al _Piano di Qualifica v1.0_.
 Il superamento dei test di accettazione è fondamentale poiché dimostra il soddisfacimento del committente rispetto al prodotto software. L'esito positivo di questi test fornisce l'approvazione finale e la conferma che il software sia conforme alle aspettative. Solo dopo il superamento dei test di accettazione il team #team può procedere con il rilascio ufficiale del prodotto, garantendo che sia pronto per l'utilizzo nell'ambiente operativo previsto.
 
 
-
 ==== Classificazione dei test
 I test vengono identificati in base alla loro tipologia e tramite un codice numerico. 
 Nello specifico devono avere la seguente forma: *T[Tipologia Test] [Codice]*
