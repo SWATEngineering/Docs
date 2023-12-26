@@ -79,7 +79,7 @@ Ogni incontro con la Proponente viene sintetizzato e documentato nel Verbale Est
 Di seguito vengono elencati i documenti che il team #team si impegna a consegnare ai Committenti Prof. Tullio Vardanega e Prof. Riccardo Cardin, nonché alla Proponente Sync Lab.
 
 ==== Analisi dei Requisiti
-L’analisi dei requisiti, svolta dagli Analisti, costituisce una fase cruciale nello sviluppo del sistema software. Il suo obiettivo principale è definire in dettaglio le funzionalità necessarie affinché il prodotto soddisfi pienamente le richieste della Proponente. Il documento omonimo comprende una serie di elementi essenziali:
+L’_Analisi dei requisiti v1.0_, redatto dagli Analisti, rappresenta un documento fondamentale nello sviluppo del sistema software. Il suo obiettivo principale è definire in dettaglio le funzionalità necessarie affinché il prodotto soddisfi pienamente le richieste della Proponente. Il documento omonimo comprende una serie di elementi essenziali:
 
         - Descrizione e scopo del prodotto;
         - *Definizione degli attori*: entità o persone che interagiscono con il #glossary[sistema];
@@ -114,31 +114,36 @@ Documento, redatto dall'Amministratore, che descrive le strategie e gli approcci
 
 ==== Glossario
 
-Il Glossario funge da catalogo esaustivo che raccoglie i termini tecnici impiegati all'interno del progetto, offrendo definizioni chiare e precise. Questo documento previene fraintendimenti, promuove una comprensione condivisa della terminologia specifica del settore, migliorando così la coerenza e la qualità della documentazione prodotta tra i partecipanti al progetto.
+Il _Glossario v1.0_ funge da catalogo esaustivo che raccoglie i termini tecnici impiegati all'interno del progetto, offrendo definizioni chiare e precise. Questo documento previene fraintendimenti, promuove una comprensione condivisa della terminologia specifica del settore, migliorando così la coerenza e la qualità della documentazione prodotta tra i partecipanti al progetto.
 
 ==== Lettera di Presentazione
-La Lettera di Presentazione accompagna la consegna del prodotto software e della documentazione pertinente ad ogni revisione e sottolinea l'impegno che il team #team si assume nel completare e consegnare il prodotto entro le scadenze concordate. Inoltre, espone un preventivo aggiornato rispetto a quello presentato in occasione dell'ultima revisione, dove costo e data di consegna del progetto vengono analizzati rispetto all'andamento corrente e confermati, o eventualmente modificati, in seguito a scelte ragionate.
+La Lettera di Presentazione accompagna la consegna del prodotto software e della documentazione pertinente, sottolineando l'impegno che il team #team si assume nel completare e consegnare il prodotto entro le scadenze concordate. Inoltre, espone un preventivo aggiornato rispetto a quello presentato in occasione dell'ultima revisione. In questo contesto, costo e data di consegna del progetto sono attentamente valutati in relazione all'andamento corrente e vengono confermati o eventualmente modificati attraverso scelte ragionate effettuate durante lo sviluppo.
 
 === Strumenti
+
 Gli strumenti adottati per agevolare il processo di fornitura sono i seguenti:
 
 ==== Google Calendar
+
 Strumento di calendario, utilizzato dal team per gestire impegni e attività in modo organizzato, oltre che per condividere eventi con la Proponente.
 
 ==== Google Slides
+
 Servizio di creazione di presentazioni multimediali, utilizzato dal team per assemblare i diari di bordo.
 
 ==== Google Sheets
+
 Servizio di creazione di #glossary[spreadsheet], utilizzato dal team per la rendicontazione delle ore produttive impiegate da ciascun componente nel corso di uno sprint.
 
 ==== Google Meet
 Servizio per creare e partecipare a videochiamate, utilizzato dal team per gli incontri telematici con la Proponente.
 
 ==== Online Gantt
-Online software per creare diagrammi di Gantt, utilizzato dal Responsabile per delineare la distribuzione temporale delle attività pianificate per ogni sprint nella sezione di *Pianificazione* del Piano di Progetto.
+Online software per creare diagrammi di Gantt, utilizzato dal Responsabile per delineare la distribuzione temporale delle attività pianificate per ogni sprint nella sezione di Pianificazione del _Piano di Progetto v1.0_.
 
 ==== Draw.io
 Software per creare diagrammi e grafici di varia natura, utilizzato dagli Analisti per creare i diagrammi UML dei casi d'uso nella sezione *Casi d'uso* (@c.uso) dell'Analisi dei Requisiti.
+#pagebreak()
 
 == Sviluppo
 
