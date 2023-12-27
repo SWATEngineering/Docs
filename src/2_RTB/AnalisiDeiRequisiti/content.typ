@@ -188,7 +188,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'attore visualizza un pannello in formato time series, relativo all'intensità 
-delle precipitazioni, in millimetri di pioggia.
+delle precipitazioni, in millimetri orari di pioggia.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
