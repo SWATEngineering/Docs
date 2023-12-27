@@ -79,6 +79,7 @@ Ogni incontro con la Proponente viene sintetizzato e documentato nel Verbale Est
 Di seguito vengono elencati i documenti che il team #team si impegna a consegnare ai Committenti Prof. Tullio Vardanega e Prof. Riccardo Cardin, nonché alla Proponente Sync Lab.
 
 ==== Analisi dei Requisiti
+
 L’_Analisi dei requisiti v1.0_, redatto dagli Analisti, rappresenta un documento fondamentale nello sviluppo del sistema software. Il suo obiettivo principale è definire in dettaglio le funzionalità necessarie affinché il prodotto soddisfi pienamente le richieste della Proponente. Il documento omonimo comprende una serie di elementi essenziali:
 
         - Descrizione e scopo del prodotto;
@@ -181,7 +182,7 @@ Lo scopo dell'_Analisi dei Requisiti v1.0_ è definire in modo dettagliato e chi
 Un caso d'uso rappresenta un singolo scenario o interazione tra un attore e il sistema software, focalizzandosi sulle azioni compiute dall'attore e sulle risposte del sistema a tali azioni.
 I casi d'uso sono identificati nel seguente modo:
 
-          *UC[Numero].[Numero sottocaso] [Titolo]*
+         #align(center)[*UC[Numero].[Numero sottocaso] [Titolo]*]
         
         *legenda*:
         - *Numero*: numero del caso d'uso;
@@ -220,7 +221,7 @@ I requisiti trovati vengono classificati nei seguenti modi:
 
 I requisiti trovati hanno un codice univoco con la seguente sintassi:
 
-        *R[Importanza][Tipo][Numero]*
+        #align(center)[*R[Importanza][Tipo][Numero]*]
 
         *legenda*:
         
@@ -305,7 +306,7 @@ Gli scenari d'uso sono organizzati in sequenze di azioni, illustrando le operazi
 I diagrammi dei casi d'uso sono composti da:
         - *Attore*: rappresenta un agente esterno coinvolto nelle interazioni con il sistema. Si tratta di una qualsiasi entità in grado di interagire con il sistema, infatti ogni caso d'uso determina una funzionalità che viene messa a disposizione di tale attore, tuttavia, senza entrare nei dettagli implementativi.
                 
-                A livello di diagramma, l'attore è simboleggiato da un' icona umana stilizzata, identificabile mediante un'etichetta univoca e rappresentativa, posizionata al disotto di tale figura.
+                A livello di diagramma, l'attore è simboleggiato da un' icona umana stilizzata, identificabile mediante un'etichetta univoca e rappresentativa, posizionata al di sotto di tale figura.
 
                 #figure(
                         image(
@@ -323,7 +324,7 @@ I diagrammi dei casi d'uso sono composti da:
                         - *Attore principale*: l'attore che intende compiere lo scopo rappresentato dal caso d'uso;
                         - *Precondizioni*: stato in cui il sistema si deve trovare prima dell'avvio della funzionalità rappresentata dal caso d'uso;
                         - *Postcondizioni*: stato in cui il sistema si troverà dopo che l'utente avrà portato a termine lo scopo rappresentato dal caso d'uso;
-                        - *Scenario principale*: descizione accurata della funzionalità rappresentata dal caso d'uso;
+                        - *Scenario principale*: descrizione accurata della funzionalità rappresentata dal caso d'uso;
                         - *Specializzazioni*: nel caso di uno use case generale, vengono indicati i codici dei casi d'uso che lo specializzano;
                         - *Inclusioni*: vengono specificati i codici dei casi d'uso che vengono inclusi nel caso d'uso trattato;
                         - *Estensioni*: vengono specificati i codici dei casi d'uso che rappresentano scenari secondari.
@@ -378,7 +379,7 @@ In ogni diagramma dei casi d'uso possono essere definite:
 
 ==== Descrizione e scopo 
 L'attività di codifica viene svolta dai Programmatori, i quali sono responsabili della traduzione delle decisioni progettuali nel codice sorgente.
-I Programmatori seguono le linea guida e le _best practices_ stabilite durante la fase di progettazione architetturale.
+I Programmatori seguono le linee guida e le _best practices_ stabilite durante la fase di progettazione architetturale.
 
 ==== Aspettative 
 Ci si aspetta che il codice sviluppato rispetti determinate caratteristiche:
@@ -419,7 +420,7 @@ caption: [Metriche Codifica],
 
 === Descrizione e scopo
 
-La documentazione è l'insieme di informazioni rappresentate sotto forma di testo scritto che accompagna un prodotto software, svolgendo un ruolo essenziale nella descrizione del prodotto per coloro che lo sviluppano, lo distribuiscono e lo utilizzano. Il suo obiettivo primario è facilitare l'attività di sviluppo  ai membri del team durante l'intero ciclo di vita del progetto e garantirne la coerenza,tracciando tutti i processi e le attività coinvolte per migliorare la qualità del risultato finale e semplificare la manutenzione. L'implementazione di regole chiare e di una struttura uniforme non solo migliora la fruibilità e la comprensione, ma favorisce anche la collaborazione all'interno del team, contribuendo in modo significativo al successo complessivo del progetto software.
+La documentazione è l'insieme di informazioni rappresentate sotto forma di testo scritto che accompagna un prodotto software, svolgendo un ruolo essenziale nella descrizione del prodotto per coloro che lo sviluppano, lo distribuiscono e lo utilizzano. Il suo obiettivo primario è facilitare l'attività di sviluppo ai membri del team durante l'intero ciclo di vita del progetto, garantendone la coerenza mediante il tracciamento di tutti i processi e le attività coinvolte. Ciò mira a migliorare la qualità del risultato finale e semplificare la manutenzione. L'implementazione di regole chiare e di una struttura uniforme non solo migliora la fruibilità e la comprensione, ma favorisce anche la collaborazione all'interno del team, contribuendo in modo significativo al successo complessivo del progetto software.
 
 === Lista Documenti
 
@@ -460,7 +461,7 @@ Sono stati sviluppati quattro template distinti per adattarsi alle diverse esige
  Ogni template è progettato per garantire coerenza e facilità d'uso, con piccole modifiche per rispecchiare le specificità di ciascun tipo di documento.
 
 === Nomenclatura
-La consueta nomeclatura per i documenti si ottiene unendo, attraverso un underscore (`_`), il nome del file in _CamelCase_ senza spazi (`NomeDelFile`) e la sua versione (`3.5`). Ad esempio `NormeDiProgetto_2.6.pdf`.
+La consueta nomenclatura per i documenti si ottiene unendo, attraverso un underscore (`_`), il nome del file in _CamelCase_ senza spazi (`NomeDelFile`) e la sua versione (`3.5`). Ad esempio `NormeDiProgetto_2.6.pdf`.
 Nel caso di documenti il cui nome contiene una data, essa si inserisce dopo il nome, ma prima della versione, sempre separandolo con gli underscores, nella forma `ggmmaa` senza separatori tra i singoli componenti della data: `gg` rappresenta il giorno, sempre scritto in due cifre, allo stesso modo `mm` rappresenta il mese, mentre l'anno è rappresentato da `aa`, corrispondente alle ultime due cifre dell'anno corrente.
 
 === Versionamento <versionamento>
@@ -644,7 +645,7 @@ A seguito del processo di verifica il Verificatore si occupa di spostare la issu
 L'utilizzo delle review in GitHub non solo facilita il tracciamento del processo di verifica, ma consente anche al team di accedere e consultare facilmente l'intera cronologia del codice o del documento di interesse all'interno della #glossary[repository] del progetto. Questo approccio garantisce un processo di verifica trasparente, tracciabile e conforme alle linee guida stabilite.
 Inoltre GitHub impedisce  l'unione dei rami oggetto di pull request fino a quando l'ultimo commit non viene verificato e approvato.
 Ciò garantisce che ogni prodotto, che viene integrato al ramo principale, sia effettivamente revisionato da almeno un membro del team, riducendo il rischio di introduzione di errori. 
-Il Verificatore, a seguito di una revisione positiva, accetta la pull request con la metodologia "squash and merge". Nell'eventualità in cui il branch presenti dei confitti, l'autore è responsabile di risolverli prima di procedere con l'unione del branch. Il Verificatore si occupa, successivamente, dell'eliminazione sicura del branch dopo il merge.  
+Il Verificatore, a seguito di una revisione positiva, accetta la pull request con la metodologia "squash and merge". Nell'eventualità in cui il branch presenti dei conflitti, l'autore è responsabile di risolverli prima di procedere con l'unione del branch. Il Verificatore si occupa, successivamente, dell'eliminazione sicura del branch dopo il merge.  
 
 ===== Elementi Esterni al Repository
 
@@ -700,7 +701,7 @@ Gli obiettivi principali:
         - Accertarsi che ciascuna unità esegua le operazioni specificate nel suo design;
         - Identificare precocemente i possibili errori.
 
-I test di unità si dividono principalemente in due categorie:
+I test di unità si dividono principalmente in due categorie:
 
         - *Test Funzionali*: verificano che ciascuna unità esegua le funzioni specificate nel design, concentrandosi sulla logica interna dell'unità e testando i casi in cui la funzione produce i risultati desiderati;
         - *Test Strutturali*: verificano la struttura interna dell'unità, compresa la logica di controllo e il flusso dei dati, esaminando il codice sorgente dell'unità.
@@ -805,7 +806,15 @@ Il Responsabile assume il ruolo cruciale di pianificare dettagliatamente gli obi
 
 Oltre a definire gli obiettivi per ogni sprint, il Responsabile si occupa di stimare accuratamente il tempo necessario per ciascuna attività e di pianificare la distribuzione dei ruoli all'interno del team. Questa pianificazione è sensata rispetto all'andamento generale del progetto e agli obiettivi imminenti. Queste previsioni vengono formalizzate nel _Piano di Progetto v1.0_, diventando il punto di riferimento durante l'evento di Sprint Planning per definire gli obiettivi del successivo sprint.
 
-Eventuali variazioni nella distribuzione dei ruoli, rispetto alla pianificazione iniziale, vengono documentate e giustificate nel *Consuntivo* del _Piano di Progetto v1.0_. Questo approccio consente al team di adattarsi in modo flessibile alle esigenze emergenti, mantenendo costantemente un quadro chiaro delle variazioni e delle ragioni sottendono a tali modifiche.
+Eventuali variazioni nella distribuzione dei ruoli, rispetto alla pianificazione iniziale, vengono documentate e giustificate nel *Consuntivo* del _Piano di Progetto v1.0_. Questo approccio consente al team di adattarsi in modo flessibile alle esigenze emergenti, mantenendo costantemente un quadro chiaro delle variazioni e delle ragioni che sottendono a tali modifiche.
+
+==== Documentazione Fine Sprint
+
+Il Responsabile è incaricato di sviluppare un preventivo dettagliato per le successive due settimane subito dopo la conclusione dello sprint attuale, fornendo una guida chiara al team su aspettative e obiettivi.
+
+Nel contesto della gestione dello sprint, il Responsabile si impegna anche a compilare un consuntivo dettagliato dello sprint appena concluso. Si analizzano le attività svolte, i tempi impiegati rispetto alle stime previste e qualsiasi deviazione dai piani originali. Tale consuntivo rappresenta una preziosa fonte di apprendimento per il team, consentendo di identificare aree di miglioramento e di ottimizzare la pianificazione futura.
+
+Per garantire un monitoraggio efficace delle prestazioni, il Responsabile utilizza e calcola le metriche, presenti nel documento _Piano di Qualifica v1.0_, rispetto allo sprint appena concluso, valutando l'efficacia del processo e apportando eventuali correzioni o miglioramenti per il successo continuo del progetto.
 
 
 
@@ -841,7 +850,8 @@ I ruoli assunti sono i seguenti:
          - Creazione e assegnazione delle _issue_ ai membri del team;
          - Stesura e avanzamento del documento "Norme di Progetto";
          - Implementazione di script dedicati per automatizzare processi nell'ambiente di lavoro;
-         - Gestione del versionamento dei documenti.
+         - Gestione del versionamento dei documenti;
+         - Stesura e avanzamento del documento _Piano di Qualifica v1.0_.
 
 ===== Analista
      
@@ -852,7 +862,7 @@ I ruoli assunti sono i seguenti:
         - Studio del contesto applicativo e relativa complessità;
         - Specifica dei casi d'uso per comprendere in dettaglio i requisiti funzionali del sistema;
         - Raccolta dei requisiti per definire le necessità e le funzionalità richieste;
-        - Stesura del documento _Analisi dei Requisiti_;
+        - Stesura del documento _Analisi dei Requisiti v1.0_;
         - Creazione diagrammi UML;
 
 ===== Progettista
@@ -865,7 +875,7 @@ I ruoli assunti sono i seguenti:
         - Progettazione architetturale che miri all'economicità e alla manutenibilità del sistema;
         - Ottimizzazione delle prestazioni usando algoritmi efficienti e gestione memoria;
         - Gestione dei rischi: cerca di mitigare problemi che possono sorgere durante lo sviluppo;
-        - Redazione del documento _Specifiche Tecniche_ e di una parte del documento _Piano di Qualifica_.
+        - Redazione del documento _Specifiche Tecniche_.
 
 ===== Programmatore
 
@@ -908,7 +918,7 @@ Riguardano esclusivamente i membri del Team e si svolgono tramite:
         - *_Whatsapp_*: utilizzato per messaggistica istantanea e una comunicazione veloce;
         - *_Discord_*: piattaforma utilizzata per:
                 + Creare server suddivisibili in vari canali testuali o vocali, dove verranno svolte le riunioni;
-                + Supplementare la comunicazione all'interno della piattaforma con funzionalita' offerte da servizi esterni quali GitHub.
+                + Supplementare la comunicazione all'interno della piattaforma con funzionalità offerte da servizi esterni quali GitHub.
 
 ===== Comunicazioni Esterne
 
@@ -945,8 +955,8 @@ Il Responsabile ha il compito della stesura del verbale esterno, che viene succe
 === Metriche 
 
 La definizione delle metriche seguenti si può trovare nella @metriche_fornitura.
-
-#table(
+#figure(
+table(
       columns:(auto,auto),
       align: (x, y) => (center, center).at(x),
       fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
@@ -956,8 +966,11 @@ La definizione delle metriche seguenti si può trovare nella @metriche_fornitura
       [*PV*],[Planned Value],
       [*SPI*],[Schedule Performance Index],
       [*SV*],[Schedule Variance]
+),
+caption:[Metriche Fornitura],
 )
 
+#pagebreak()
 = Metriche per la qualità <metriche>
 
 == Metriche per la qualità di processo <metriche_qualità-processo>
@@ -1071,7 +1084,7 @@ La definizione delle metriche seguenti si può trovare nella @metriche_fornitura
 
                 Formula: $"ROS" = "requisiti obbligatori soddisfatti" / "requisiti obbligatori totali" dot 100$;
 
-        - *RDS*: Requisiti Desiderabili Soddisfatti - la perecentuale di requisiti desiderabili soddisfatti dal prodotto
+        - *RDS*: Requisiti Desiderabili Soddisfatti - la percentuale di requisiti desiderabili soddisfatti dal prodotto
 
                 Formula: $"RDS" =  "requisiti desiderabili soddisfatti" / "requisiti desiderabili totali" dot 100$;
 
