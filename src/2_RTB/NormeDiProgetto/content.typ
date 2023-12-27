@@ -378,17 +378,59 @@ In ogni diagramma dei casi d'uso possono essere definite:
 === Codifica 
 
 ==== Descrizione e scopo 
+
 L'attività di codifica viene svolta dai Programmatori, i quali sono responsabili della traduzione delle decisioni progettuali nel codice sorgente.
-I Programmatori seguono le linee guida e le _best practices_ stabilite durante la fase di progettazione architetturale.
+I Programmatori operano all'interno di un contesto ben definito seguendo le linee guida stabilite durante la fase di progettazione architetturale. Questo approccio garantisce una coerenza nell'implementazione del design e l'applicazione di best practices, favorendo la creazione di un codice robusto, manutenibile e di alta qualità.
+
+Nel perseguire gli obiettivi di qualità, i Programmatori sono tenuti a rispettare le metriche definite nel _Piano di Qualifica v1.0_.
 
 ==== Aspettative 
-Ci si aspetta che il codice sviluppato rispetti determinate caratteristiche:
+
+La fase di codifica è intrinsecamente orientata alla creazione di un prodotto software che soddisfi pienamente le esigenze e le aspettative della Proponente.
+Di seguito sono elencate le principali aspettative:
 
         - Conformità alle specifiche;
         - Chiarezza e comprensibilità;
         - Ottimizzazione delle prestazioni;
         - Supplemento di test per verificare la correttezza e il funzionamento.
 
+==== Stile di codifica   
+
+Il team #team, nella decisione di realizzare il prodotto software, ha scelto di adottare il linguaggio di programmazione Python.
+Questa scelta strategica è motivata da diverse considerazioni che conferiscono a Python un ruolo privilegiato all'interno del contesto di sviluppo.
+La familiarità che molti membri del team hanno con Python è un elemento chiave. La mancanza di una curva di apprendimento ripida consente al team di concentrarsi direttamente sulla realizzazione del prodotto, senza spendere tempo significativo nell'apprendimento di un nuovo linguaggio. 
+Python, inoltre, promuove uno stile di scrittura del codice uniforme e facilita la comprensione della struttura del programma, mediante la rigida struttura dell'identazione.
+
+===== Lunghezza metodi  
+
+Sono da preferire metodi di limitata lunghezza per diverse ragioni tra cui:
+        - Leggibilità;
+        - Manutenibilità;
+        - Riusabilità;
+        - Testabilità; 
+        - Analisi statica semplificata.
+
+===== Singola Responsabilità   
+
+Ogni classe o singola funzione dovrebbe avere una sola responsabilità. Ciascuna entità deve svolgere un compito specifico e ben definito, garantendo così una singola ragione per essere modificata. Questa pratica non solo promuove la chiarezza e la manutenibilità del codice, ma contribuisce anche a ridurre la complessità ciclomatica del software.
+
+
+===== Parametri per metodo    
+
+Preferire l'uso di metodi con un numero limitato di parametri quando possibile. Questo approccio offre diversi vantaggi che contribuiscono alla chiarezza, manutenibilità e testabilità del codice.
+
+===== Univocità dei nomi    
+
+Tutte le variabili, i metodi e le classi dovranno avere un nome che li distinguono univocamente, per limitare la possibilità di ambiguità del codice.
+
+===== Forzatura tipo ritorno   
+
+In python, si adotta la pratica di utilizzare il tipo di ritorno forzato per ogni funzione o metodo, questo contribuisce ad una migliore robustezza del codice fornendo alcuni vantaggi:
+
+        - Analisi statica avanzata;
+        - Riduzione errori;
+        - Contratto esplicito tra chiamante e funzione;
+        - Facilità di manutenzione.
 
 
 ==== Metriche
