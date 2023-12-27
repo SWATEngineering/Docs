@@ -237,7 +237,7 @@ I requisiti trovati hanno un codice univoco con la seguente sintassi:
 
 ==== Metriche
 
-La definizione delle metriche seguenti si può trovare nella @metriche_codifica.
+La definizione delle metriche seguenti si può trovare nella @metriche_qualità-prodotto.
 #figure(
 table(
       columns:(auto,auto),
@@ -279,7 +279,7 @@ Si definiscono tre sottoattività:
 
 ==== Metriche
 
-La definizione delle metriche seguenti si può trovare nella @metriche_codifica.
+La definizione delle metriche seguenti si può trovare nella @metriche_progettazione.
 
 #figure(
  table(
@@ -288,10 +288,8 @@ La definizione delle metriche seguenti si può trovare nella @metriche_codifica.
       fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Metrica*],[*Descrizione*],
       [*SFIN*],[Structure Fan In],
-      [*SFOUT*],[Structure Fan Out],
-      [*ATC*],[Attributi per Classe],
-      [*PM*],[Parametri per Metodo],
-      [*LCM*],[Linee di Codice per Metodo]
+      [*SFOUT*],[Structure Fan Out]
+      
 ),
 caption:[Metriche progettazione],
 )
@@ -403,7 +401,10 @@ table(
       fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Metrica*],[*Descrizione*],
       [*CCM*],[Complessità Ciclomatica per Metodo],
-      [*CC*],[Code Coverage]
+      [*CC*],[Code Coverage],
+      [*ATC*],[Attributi per Classe],
+      [*PM*],[Parametri per Metodo],
+      [*LCM*],[Linee di Codice per Metodo]
 ),
 caption: [Metriche Codifica],
 )
@@ -538,6 +539,7 @@ Le voci di ogni elenco iniziano con lettera maiuscola e terminano con punto e vi
 Ogni immagine o tabella deve avere obbligatoriamente una caption associata, utile per fornire una breve descrizione o spiegazione del contenuto visivo.
 
 ==== Formato delle date <formato>
+
 Viene adottato il formato "DD-MM-YYYY":
         - DD: giorno con 2 cifre;
         - MM: mese con 2 cifre;
@@ -642,7 +644,7 @@ A seguito del processo di verifica il Verificatore si occupa di spostare la issu
 L'utilizzo delle review in GitHub non solo facilita il tracciamento del processo di verifica, ma consente anche al team di accedere e consultare facilmente l'intera cronologia del codice o del documento di interesse all'interno della #glossary[repository] del progetto. Questo approccio garantisce un processo di verifica trasparente, tracciabile e conforme alle linee guida stabilite.
 Inoltre GitHub impedisce  l'unione dei rami oggetto di pull request fino a quando l'ultimo commit non viene verificato e approvato.
 Ciò garantisce che ogni prodotto, che viene integrato al ramo principale, sia effettivamente revisionato da almeno un membro del team, riducendo il rischio di introduzione di errori. 
-Il Verificatore, a seguito di una revisione positiva, accetta la pull request con la metodologia "squash and merge". Nell'eventualità in cui il branch presenti dei confitti, l'autore è responsabile di risolverli prima di procedere con l'unione del branch.  
+Il Verificatore, a seguito di una revisione positiva, accetta la pull request con la metodologia "squash and merge". Nell'eventualità in cui il branch presenti dei confitti, l'autore è responsabile di risolverli prima di procedere con l'unione del branch. Il Verificatore si occupa, successivamente, dell'eliminazione sicura del branch dopo il merge.  
 
 ===== Elementi Esterni al Repository
 
@@ -715,9 +717,11 @@ Per la definizione dei test si rimanda al _Piano di Qualifica v1.0_.
 ==== Test di accettazione  
 
 Il superamento dei test di accettazione è fondamentale poiché dimostra il soddisfacimento del committente rispetto al prodotto software. L'esito positivo di questi test fornisce l'approvazione finale e la conferma che il software sia conforme alle aspettative. Solo dopo il superamento dei test di accettazione il team #team può procedere con il rilascio ufficiale del prodotto, garantendo che sia pronto per l'utilizzo nell'ambiente operativo previsto.
+Per la definizione dei test si rimanda al _Piano di Qualifica v1.0_.
 
 
 ==== Classificazione dei test
+
 I test vengono identificati in base alla loro tipologia e tramite un codice numerico. 
 Nello specifico devono avere la seguente forma: *T[Tipologia Test] [Codice]*
 
@@ -732,13 +736,10 @@ Il codice numerico è seriale all'interno della categoria.
 ==== Stato dei test
 
 Nella sezione relativa ai test nel _Piano di Qualifica v1.0_ a ogni test viene affiancato il suo stato: 
-- *N-A* : Il test non è applicabile al contesto attuale o alle funzionalità correnti; 
-- *N-I* : Il test non è stato implementato; 
+- *N-A*: Il test non è applicabile al contesto attuale o alle funzionalità correnti; 
+- *N-I*: Il test non è stato implementato; 
 - *Passato*: Il test ha dato esito positivo;  
 - *Non Passato*: il test ha dato esito negativo. 
-
-
-
 
 
 == Gestione della Qualità 
@@ -749,6 +750,8 @@ La gestione della qualità è un insieme di processi e attività volte a garanti
 
 === Obiettivi 
 
+La gestione della qualità si propone di raggiungere i seguenti obiettivi:
+
         - Controllo continuo della qualità del prodotto, verificando che rispetti le aspettative della Proponente;
         - Minimizzare la presenza di errori o anomalie nel prodotto;
         - Riduzione dei rischi che potrebbero influenzare la qualità;
@@ -756,6 +759,7 @@ La gestione della qualità è un insieme di processi e attività volte a garanti
 
 Per la valutazione della qualità viene fornito il documento _Piano di Qualifica_, in cui sono presenti varie metriche con le relative soglie di valori accettabili ed ideali.
 
+ 
 
 === Denominazione Metriche 
 
@@ -769,13 +773,26 @@ Per identificare  le metriche si usa la seguente formattazione:
                         + *PD* se si tratta di qualità di prodotto;
         - *Nome*: abbreviazione del nome della metrica.
 
+=== Struttura obiettivi   
 
+Nel _Piano di Qualifica v1.0_ sono descritti gli obiettivi di ciascuna metrica mediante delle tabelle organizzate secondo questa struttura:
+
+   - *Metrica*: il codice della metrica seguendo il codice identificativo;
+   - *Descrizione*: il nome della metrica;
+   - *Valore di accettazione*: valore considerato accettabile;
+   - *Valore ideale*: valore ideale che dovrebbe essere assunto dalla metrica.
+
+=== Grafici Metriche
+
+Per realizzare i grafici relativi alle metriche e all'andamento del progetto, si usa Google Sheets.
+La descrizione delle metriche usate e  si trova nella  @metriche.
 
 = Processi Organizzativi
 
 == Gestione Organizzativa
 
 === Decisioni
+
 Per poter prendere una qualsiasi decisione è necessario vi siano due condizioni:
 + Si deve raggiungere il #glossary[quorum] di quattro persone su sei;
 + La decisione deve essere verbalizzata e motivata.
@@ -783,11 +800,14 @@ Per poter prendere una qualsiasi decisione è necessario vi siano due condizioni
 === Pianificazione
 
 ==== Descrizione e scopo
+
 Il Responsabile assume il ruolo cruciale di pianificare dettagliatamente gli obiettivi per ciascuno sprint fino alla conclusione del progetto. Questo implica una distribuzione coerente del lavoro in linea con le scadenze fissate per le revisioni RTB, PB e CA. Il suo compito principale consiste nel delineare chiaramente come il team dovrebbe gestire e completare le attività relative allo sviluppo del software e alla redazione della documentazione in periodi di tempo specifici.
 
-Oltre a definire gli obiettivi per ogni sprint, il Responsabile si occupa di stimare accuratamente il tempo necessario per ciascuna attività e di pianificare la distribuzione dei ruoli all'interno del team. Questa pianificazione è sensata rispetto all'andamento generale del progetto e agli obiettivi imminenti. Queste previsioni vengono formalizzate nel _Piano di Progetto_, diventando il punto di riferimento durante l'evento di Sprint Planning per definire gli obiettivi del successivo sprint.
+Oltre a definire gli obiettivi per ogni sprint, il Responsabile si occupa di stimare accuratamente il tempo necessario per ciascuna attività e di pianificare la distribuzione dei ruoli all'interno del team. Questa pianificazione è sensata rispetto all'andamento generale del progetto e agli obiettivi imminenti. Queste previsioni vengono formalizzate nel _Piano di Progetto v1.0_, diventando il punto di riferimento durante l'evento di Sprint Planning per definire gli obiettivi del successivo sprint.
 
-Eventuali variazioni nella distribuzione dei ruoli, rispetto alla pianificazione iniziale, vengono documentate e giustificate nel *Consuntivo* del _Piano di Progetto_. Questo approccio consente al team di adattarsi in modo flessibile alle esigenze emergenti, mantenendo costantemente un quadro chiaro delle variazioni e delle ragioni sottendono a tali modifiche.
+Eventuali variazioni nella distribuzione dei ruoli, rispetto alla pianificazione iniziale, vengono documentate e giustificate nel *Consuntivo* del _Piano di Progetto v1.0_. Questo approccio consente al team di adattarsi in modo flessibile alle esigenze emergenti, mantenendo costantemente un quadro chiaro delle variazioni e delle ragioni sottendono a tali modifiche.
+
+
 
 ==== Ruoli Progetto
 
@@ -922,7 +942,7 @@ Negli incontri esterni i partecipanti includono i membri del team e i referenti 
 In aggiunta, è possibile richiedere sessioni di formazione mirate su tecnologie specifiche, offrendo al team l'opportunità di approfondire la comprensione di una particolare tecnologia, imparare le _best practice_ e acquisire competenze più avanzate.
 Il Responsabile ha il compito della stesura del verbale esterno, che viene successivamente convalidato, con firma, dalla Proponente.
 
-=== Metriche
+=== Metriche 
 
 La definizione delle metriche seguenti si può trovare nella @metriche_fornitura.
 
@@ -938,7 +958,7 @@ La definizione delle metriche seguenti si può trovare nella @metriche_fornitura
       [*SV*],[Schedule Variance]
 )
 
-= Metriche per la qualità
+= Metriche per la qualità <metriche>
 
 == Metriche per la qualità di processo <metriche_qualità-processo>
 
@@ -988,6 +1008,13 @@ La definizione delle metriche seguenti si può trovare nella @metriche_fornitura
                 
                 Formula: $"BV" = "PV" - "AC"$.
 
+=== Progettazione <metriche_progettazione>
+
+        - *SFIN*: Structure Fan In - rappresenta il numero di moduli o componenti che chiamano un modulo o una funzione specifica; un fan-in elevato indica che molte parti del sistema dipendono da un particolare modulo. Questo può essere un segno positivo di riusabilità, in quanto il modulo è utilizzato in molte parti del sistema;
+
+        - *SFOUT*: Structure Fan Out - rappresenta il numero di moduli o funzioni chiamati da un modulo o una funzione specifica; un fan-out elevato può indicare che un modulo ha molte dipendenze da altri moduli. Questo può portare a una maggiore complessità del sistema, poiché le modifiche in un modulo possono richiedere modifiche in molti altri moduli;
+
+
 === Codifica <metriche_codifica>
 
       -  *CCM*: Complessità Ciclomatica per Metodo - quantifica la complessità del codice misurando il numero di percorsi linearmente indipendenti attraverso il grafo di controllo di flusso del metodo. Più è alta la complessità ciclomatica, maggiore è la complessità del codice
@@ -1007,7 +1034,13 @@ La definizione delle metriche seguenti si può trovare nella @metriche_fornitura
 
         - *FTCP*: Failed Test Cases Percentage - rappresenta la percentuale di casi di test che non sono stati superati rispetto al totale dei casi di test previsti
 
-                Formula: $"FTCP" = "test falliti" / "test totali" dot 100$.
+                Formula: $"FTCP" = "test falliti" / "test totali" dot 100$;
+        
+        - *ATC*: Attributi per Classe - rappresenta il numero di attributi appartenenti ad una classe;
+
+        - *PM*: Parametri per Metodo - rappresenta il numero di parametri appartenenti ad un metodo;
+
+        - *LCM*: Linee di Codice per Metodo - rappresenta il numero di linee di codice che costituiscono un metodo.
 
 === Documentazione <metriche_documentazione>
 
@@ -1048,12 +1081,6 @@ La definizione delle metriche seguenti si può trovare nella @metriche_fornitura
 
         - *FU*: Facilità di utilizzo - quantità di click che l'utente deve effettuare per raggiungere un obiettivo desiderato;
 
-        - *SFIN*: Structure Fan In - rappresenta il numero di moduli o componenti che chiamano un modulo o una funzione specifica; un fan-in elevato indica che molte parti del sistema dipendono da un particolare modulo. Questo può essere un segno positivo di riusabilità, in quanto il modulo è utilizzato in molte parti del sistema;
+        
 
-        - *SFOUT*: Structure Fan Out - rappresenta il numero di moduli o funzioni chiamati da un modulo o una funzione specifica; un fan-out elevato può indicare che un modulo ha molte dipendenze da altri moduli. Questo può portare a una maggiore complessità del sistema, poiché le modifiche in un modulo possono richiedere modifiche in molti altri moduli;
-
-        - *ATC*: Attributi per Classe - rappresenta il numero di attributi appartenenti ad una classe;
-
-        - *PM*: Parametri per Metodo - rappresenta il numero di parametri appartenenti ad un metodo;
-
-        - *LCM*: Linee di Codice per Metodo - rappresenta il numero di linee di codice che costituiscono un metodo.
+        
