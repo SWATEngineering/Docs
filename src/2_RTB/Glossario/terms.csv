@@ -5,7 +5,7 @@ Sprint;Singolo periodo temporale, solitamente breve, per il quale sono fissati d
 Workflow;Sistema per gestire processi ripetitivi e attività che necessitano di uno specifico ordine.
 Quorum;Numero minimo accettabile di persone che possono prendere decisioni a nome del gruppo.
 Amministratore Pubblico;Figura che opera nel settore pubblico responsabile della gestione delle risorse e dell'amministrazione dei servizi pubblici, relativamente ad una determinata regione geografica. 
-Sensore;Dispositivo elettronico in grado di rilevare e misurare diverse tipologie di grandezze.
+Sensore;Dispositivo in grado di effettuare misurazioni relative al proprio dominio di interesse. Questi dati possono essere letti ed utilizzati dal sistema.
 Real-Time;Aggettivo utillizzato per definire che un attività in risposta ad un evento avviene immediatamente,o con ritardi trascurabili. 
 Attore;Entità esterna al sistema che interagisce con esso al fine di realizzare scopo specifico.
 Cella;Termine utilizzato per indicare un area geografica risultante dalla divisione di un territorio tramite l'applicazione di un griglia. 
