@@ -304,7 +304,7 @@ delle precipitazioni, in millimetri orari di pioggia.
   caption: [UC3.1 Visualizzazione pannello dati urbanistici]
 )
 
-=== UC3.2: Visualizzazione grafico a mappa disponibilità e occupazione parcheggi
+=== UC3.2: Visualizzazione grafico a mappa disponibilità  parcheggi
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
 - *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare la disponibilità di parcheggi nella zona visualizzata e la loro occupazione, in termini di parcheggi liberi.
@@ -314,7 +314,7 @@ delle precipitazioni, in millimetri orari di pioggia.
 
 #figure(
   image("assets/UML/UC3.2_Visualizzazione-grafico-a-mappa-disponibilità-dei-parcheggi.png",width:100%),
-  caption: [UC3.2 Visualizzazione grafico a mappa disponibilità e occupazione dei parcheggi]
+  caption: [UC3.2 Visualizzazione grafico a mappa disponibilità di parcheggi]
 )
 
 === UC3.3: Visualizzazione posizione e stato colonne ricarica
