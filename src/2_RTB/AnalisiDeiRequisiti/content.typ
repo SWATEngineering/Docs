@@ -748,7 +748,7 @@ delle precipitazioni, in millimetri di pioggia.
     "Desiderabile", "L'utente deve poter visualizzare un grafico a mappa che riporti un indicatore percentuale di riempimento delle zone rifiuti.", "UC3.6"
   ),
   (
-    "Desiderabile", "L'utente deve poter visualizzare i dati anomali rilevati, sottoforma di tabellare.", "UC4"
+    "Desiderabile", "L'utente deve poter visualizzare i dati anomali rilevati, in forma tabellare.", "UC4"
   ),
   (
     "Obbligatorio",  "L'utente deve poter visualizzare le allerte di superamento delle soglie.", "UC5"
