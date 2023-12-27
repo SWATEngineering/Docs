@@ -760,7 +760,7 @@ Il _Piano di Qualifica v1.0_ funge da punto di riferimento per il Verificatore: 
 
 Gli strumenti adottati per agevolare il processo di verifica sono i seguenti:
 
-==== GitHub
+==== GitHub <revisione_pull>
 
 GitHub offre una funzionalità di _review_ all'interno del meccanismo di _pull request_, permettendo al Verificatore di visualizzare facilmente le ultime modifiche apportate al prodotto. Il Verificatore inserisce commenti specifici che indicano le correzioni o le migliorie necessarie e, al termine della review, la invia richiedendo le modifiche indicate. In seguito all'intervento correttivo dell'autore, il Verificatore esegue ulteriori revisioni fino a quando il documento non presenta più errori e rispetta i criteri di conformità richiesti.
 A seguito del processo di verifica il Verificatore si occupa di spostare la issue nella corsia di stato adeguata all'interno della _Kanban Board_:
@@ -1027,6 +1027,37 @@ I ruoli assunti sono i seguenti:
         - Identificazione e segnalazione di problemi;
         - Collaborazione con il team per garantire che il lavoro sia conforme alle linee guida e agli standard richiesti.
 
+==== Ticketing    
+
+L'amministratore crea e gestisce le varie task in modo tale che si sappia quello che si deve fare durante lo sprint e ogni mebro può visualizzare il progresso svolto.
+
+Si segue questa metodo:
+      + L'amministratore crea la issue su Github;
+      + Assegna il task al membro, con la relativa priorità e grandezza;
+      + Imposta una data di inizio e fine del task e lo marca nella corsia Ready;
+      + Assegna l'issue alla milestone dello sprint attuale;
+      + Il membro incaricato della task, appena inizia a lavorarci la sposta nella corsia In Progress;
+      + A task concluso viene spostata nella corsia Ready To Review;
+      + Successivamente il Verificatore segue i passi definiti nella @revisione_pull.
+
+Ogni issue è composta da:
+
+        - *Titolo*: titolo significativo;
+        - *Descrizione*: una breve descrizione o checklist delle cose da fare;
+        - *Asignee*: membro/membri incaricati;
+        - *Priority*: la priorità, può essere:
+                        + Low;
+                        + Medium;
+                        + High;
+                        + Urgent.
+        - *Size*: la grandezza del lavoro da svolgere:
+                        + Tiny;
+                        + Small;
+                        + Medium;
+                        + High;
+                        + Large;
+        - *intervallo Temporale*: una data di inizio e una di fine;
+        - *Milestone*: milestone associata alla issue, se il completamento non è possibile entro lo sprint attuale, è necessario spostare l'issue nella milestone successiva.
 
 ==== Cambio dei ruoli
 
