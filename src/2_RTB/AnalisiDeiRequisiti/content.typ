@@ -694,7 +694,7 @@ delle precipitazioni, in millimetri di pioggia.
      "Obbligatorio", "L'utente deve poter visualizzare le posizioni dei sensori come icone su una mappa.", "UC1.1"
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare, in forma tabellare, una dashboard generale relativa ai sensori.", "UC1.2"
+    "Obbligatorio", "L'utente deve poter visualizzare, in forma tabellare, l'elenco dei sensori", "UC1.2"
   ),
   (
     "Obbligatorio", "L'utente deve poter monitorare i dati provenienti dai sensori relativi ai dati ambientali.", "UC2"
