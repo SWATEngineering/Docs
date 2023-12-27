@@ -375,6 +375,83 @@ In ogni diagramma dei casi d'uso possono essere definite:
                         caption: "Figura rappresentante un' estensione tra casi d'uso."
                 )
 
+==== Diagrammi UML delle classi    
+
+Il diagramma delle classi è uno dei diagrammi UML che rappresenta la struttura statica di un sistema orientato agli oggetti. Esso visualizza le classi del sistema, insieme ai loro attributi, metodi e le relazioni tra di esse. Le classi sono rappresentate tramite rettangoli divisi in tre sezioni: la parte superiore contiene il nome della classe, la sezione centrale include gli attributi della classe e quella inferiore elenca i metodi.
+
+        - *Nome*: nome della classe, scritto in grassetto, se la classe è astratta va in corsivo mantendo il grassetto;
+        - *Attributi*: 
+                #align(center)[*Visibilità* *Nome* : *Tipo* [Molteplicità] = {Default}] 
+
+                *Legenda*:
+                        - *Visibilità*: può essere di 3 tipi;
+                                + Privata, viene indicata con il -;
+                                + Protetta, viene indicata con il \#; 
+                                + Pubblica, viene indicata con il +.
+                        - *Nome*: il nome dell'attributo, se statico viene sottolineato;
+                        - *Tipo*: rappresenta il tipo di dato dell'elemento;
+                        - *Molteplicità*: quante istanze dell'elemento possono esistere in relazione ad altri elementi;
+                        - *Default*: se configurato, indica il valore predefinito per l'elemento.
+        - *Metodi*: 
+                #align(center)[*Visibilità* *Nome*  *(Lista-Parametri)* : *Ritorno* ]
+
+                *Legenda*:
+                        - *Visibilità*: segue quanto sopra;
+                        - *Nome*: nome del metodo, se statico viene sottolineato;
+                        - *Lista-Parametri*: se la funzione prevede input, vengono separati tramite ",";
+                        - *Ritorno*: che tipo di oggetto verrà ritornato.
+
+I diagrammi delle classi sono interconnessi tra di loro attraverso varie frecce. Di seguito si elencano le possibili relazioni:
+
+        - *Dipendenza*: una dipendenza normale tra due classi è indicata da una freccia tratteggiata con la punta, che punta dalla classe che dipende verso la classe dipendente. Questa dipendenza indica che un cambiamento nella classe dalla parte della freccia può influenzare la classe alla cui direzione punta la freccia;
+        #figure(
+                        image(
+                                "assets/imgs/Dipendenza.png",
+                                width: 70%
+                        ),
+                        caption: "Figura rappresentante la relazione di dipendenza."
+                )
+
+        - *Aggregazione*: una classe A contiene un oggetto B ma condivide la reference ad esso con altre classi. Vuol dire che A contiene dentro un campo di tipo B che viene assegnato da fuori. L'oggetto di tipo B può essere utilizzato anche da altre parti del sistema.Si usa una freccia a rombo vuoto, A rappresenta il contenitore, B il contenuto;
+                #figure(
+                        image(
+                                "assets/imgs/Aggregazione.png",
+                                width: 70%
+                        ),
+                        caption: "Figura rappresentante relazione di aggregazione."
+                )
+        - *Composizione*: una classe A contiene un oggetto di tipo B, nel senso che dentro ad A c’è un campo di tipo B.  A ha la responsabilità di creare e gestire B. La classe B dipende strettamente dalla classe A, infatti se quest'ultima viene eliminata anche la classe B viene cancellata. Si usa una freccia a rombo pieno, A rappresenta il contenitore, B il contenuto;
+                #figure(
+                        image(
+                                "assets/imgs/Composizione.png",
+                                width: 70%
+                        ),
+                        caption: "Figura rappresentante relazione di composizione."
+                )
+
+        - *Associazione*: le classi sono indipendenti l'una dall'altra. Una classe A contiene dei campi o istanze della classe B.
+        Si può rappresentare la molteplicità di associazione mediante dei valori situati agli estremi della freccia.
+        Viene rappresentata con una freccia;
+                #figure(
+                        image(
+                                "assets/imgs/Associazione.png",
+                                width: 70%
+                        ),
+                        caption: "Figura rappresentante relazione di associazione."
+                )
+
+        - *Generalizzazione*: ogni oggetto della classe B eredita le caratteristiche della classe A. L'oggetto B è anche un oggetto A. Si indica con una freccia vuota;
+                #figure(
+                        image(
+                                "assets/imgs/Generalizzazione.png",
+                                width: 70%
+                        ),
+                        caption: "Figura rappresentante relazione di generalizzazione."
+                )
+
+        
+
+
 === Codifica 
 
 ==== Descrizione e scopo 
