@@ -621,6 +621,12 @@ I _Feature branch_ vengono aperti a partire dalle issue create nell' _Issue Trac
 
 Nel caso del repository _InnovaCity_, il branch _main_ viene utilizzato per la pubblicazione di cambiamenti _major_, ovvero quando sono state implementate diverse funzionalità significative che contribuiscono all'avanzamento del progetto. In questa circostanza, è compito del Responsabile eseguire l'approvazione finale.
 
+=== Sito Vetrina   
+
+Il sito vetrina ospitato sulla seguente pagina #link("https://swatengineering.github.io/") è progettato per garantire un'esperienza aggiornata e intuitiva agli utenti. Grazie all'integrazione di una GitHub Action, il sito si aggiorna automaticamente ogni volta che vengono apportate modifiche al branch principale "main" del repository Docs.
+Lo script, realizzato in JavaScript, avvia una richiesta GET a un server esterno per ottenere la struttura aggiornata delle directory e dei file. Questa operazione consente al sito di rimanere sempre allineato con le modifiche apportate al repository principale, fornendo agli utenti una rappresentazione accurata e immediata della sua struttura.
+Per garantire la coerenza e la tempestività delle informazioni, il servizio esterno esegue un aggiornamento periodico, verosimilmente ogni 5 minuti. Questo processo automatico consente al sito di riflettere dinamicamente qualsiasi modifica rilevante nel repository Docs, garantendo un'esperienza utente sempre aggiornata e completa.
+
 
 == Verifica
 
