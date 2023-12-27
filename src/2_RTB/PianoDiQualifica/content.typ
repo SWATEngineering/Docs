@@ -72,9 +72,22 @@ Si riferisce all'efficacia ed efficienza dei processi e delle metodologie impieg
       [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
       [MPC-CCM], [Complessità Ciclomatica per Metodo], [≤ 5], [≤ 3],
       [MPC-CC], [Code Coverage], [≥80%], [100%],
-      [MPC-PTCP], [Passed Test Cases Percentage], [≥ 80%], [100%],
-      [MPC-FTCP], [Failed Test Cases Percentage], [≤ 20%], [0%]
+      [MPC-ATC], [Attributi per Classe], [≤ 6], [≤ 4],
+      [MPC-PM], [Parametri per Metodo], [≤ 5], [≤ 4],
+      [MPC-LCM], [Linee di Codice per Metodo], [≤ 25], [≤ 20]
 )
+
+=== Progettazione
+
+#table(
+      columns:(auto,auto,auto,auto),
+      align: (x, y) => (center, center, center,center).at(x),
+      fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
+      [MPR-FIN], [Structure Fan In], [da determinare], [da determinare], 
+      [MPR-FOUT], [Structure Fan Out], [da determinare], [da determinare]
+)
+
 
 == Processi di supporto
 
@@ -100,94 +113,14 @@ Si riferisce all'efficacia ed efficienza dei processi e delle metodologie impieg
       [MPR-ROS], [Requisiti Obbligatori Soddisfatti], [100%], [100%],
       [MPR-RDS], [Requisiti Desiderabili Soddisfatti], [≥ 0%], [≥ 75%],
       [MPR-ROPS], [Requisiti Opzionali Soddisfatti], [≥ 0%], [≥ 50%],
-      [MPR-FU], [Facilità di utilizzo], [≤ 7 click], [≤ 5 click],
-      [MPR-FIN], [Structure Fan In], [da determinare], [da determinare], 
-      [MPR-FOUT], [Structure Fan Out], [da determinare], [da determinare],
-      [MPR-ATC], [Attributi per Classe], [≤ 6], [≤ 4],
-      [MPR-PM], [Parametri per Metodo], [≤ 5], [≤ 4],
-      [MPR-LCM], [Linee di Codice per Metodo], [≤ 25], [≤ 20]
+      [MPR-FU], [Facilità di utilizzo], [≤ 7 click], [≤ 5 click], 
+      [MPR-PTCP], [Passed Test Cases Percentage], [≥ 80%], [100%]
 )
+
+
 
 #pagebreak()
-= Specifica dei test
 
-#pagebreak()
-= Cruscotto delle metriche
-
-== Qualità di Processo - Fornitura
-
-=== Estimated at Completion
-
-#figure(
-  image("./assets/valutazione-metriche/EAC.png", width: 80%),
-  caption: [
-    Valutazione Estimated At Completion.
-  ],
-)
-
-L'EAC rappresenta una revisione del valore stimato per la realizzazione del progetto, ossia il BAC (Budget At Completion) rivisto allo stato corrente del progetto; il fattore che incide maggiormente sull'andamento dell'EAC è il rapporto tra EV (Estimated Value) e AC (Actual Cost), per cui tanto più queste metriche sono vicine l'una all'altra, tanto più l'EAC risulterà vicino al BAC pianificato inizialmente. Come viene evidenziato dal grafico l'EAC calcolato al termine dei primi sprint risulta essere relativamente vicino al BAC preventivato inizialmente e si mantiene entro i limiti accettabili; in particolare, il fatto che l'EAC fosse minore del BAC al termine del primo sprint ha portato il team a rivedere la percentuale di lavoro preventivata ed effettivamente eseguita negli sprint successivi in modo da mantenere un ritmo di lavoro quanto più possibile costante e riavvicinare l'EAC al BAC. 
-
-=== Budget Variance e Schedule Variance
-
-#figure(
-  image("./assets/valutazione-metriche/BV_SV.png", width: 80%),
-  caption: [
-    Valutazione Budget Variance e Schedule Variance.
-  ],
-)
-
-Il BV indica se alla data corrente si è speso di più o di meno rispetto a quanto inizialmente previsto nel budget; il SV indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate. Come evidenziato dal grafico, il BV è negativo e sembra diminuire progressivamente nel tempo, segno che i costi effettivamente sostenuti sono maggiori rispetto a quanto preventivato. Il SV è invece positivo e sembra aumentare progressivamente nel tempo, segno che la percentuale di lavoro preventivato è tendenzialmente minore rispetto a quella del lavoro portato a compimento. Questo denota una sottostima del lavoro che si è preventivato di riuscire a portare a termine nei primi sprint, rispetto a quanto effettivamente prodotto dal team.
-
-=== Actual Cost e Estimate To Complete
-
-#figure(
-  image("./assets/valutazione-metriche/AC_ETC.png", width: 80%),
-  caption: [
-    Valutazione Actual Cost e Estimate To Complete.
-  ],
-)
-
-L'AC rappresenta il costo effettivo sostenuto fino a un dato momento, mentre l'ETC rappresenta la stima del costo aggiuntivo necessario per
-completare il progetto; di conseguenza, ci si aspetta che l'AC cresca e che l'ETC diminuisca in modo sostanzialmente lineare, segno che il progetto ha mantenuto un ritmo regolare di avanzamento. Stabilire l'andamento delle due metriche al momento dell'RTB è alquanto prematuro, dati i pochi data points a disposizione.
-
-=== Earned Value e Planned Value
-
-#figure(
-  image("./assets/valutazione-metriche/EV_PV.png", width: 80%),
-  caption: [
-    Valutazione Earned Value e Planned Value.
-  ],
-)
-
-L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[deliverable] rilasciati fino al momento della misurazione in seguito alle attività svolte; il PV rappresenta invece il valore del lavoro pianificato fino a un dato momento. Nonostante sia ancora prematuro confrontare le due metriche con l'EAC, si può notare che il PV si mantiene al di sotto dell'EV, seppur di poco, segno che i preventivi fatti finora sono stati leggermente ottimistici rispetto alla spesa effettiva. 
-
-== Qualità di Processo - Codifica
-
-== Qualità di Processo - Documentazione
-
-=== Indice Gulpease
-
-#figure(
-  image("./assets/valutazione-metriche/IG.png", width: 80%),
-  caption: [
-    Valutazione Indice Gulpease.
-  ],
-)
-
-Al termine del secondo sprint, tutti i documenti in corso di preparazione in vista dell'RTB possiedono un IG al di sopra del limite accettabile inferiore di 60; in particolare, l'_Analisi dei Requisiti_ ha raggiunto il valore ideale. 
-
-=== Correttezza ortografica
-
-#figure(
-  image("./assets/valutazione-metriche/CO.png", width: 80%),
-  caption: [
-    Valutazione correttezza Ortografica.
-  ],
-)
-
-Seppur i documenti presentavano alcuni errori ortografici al termine dei primi sprint, da quando si è adottato uno strumento di controllo dell'ortografia sia in fase di stesura che in fase di revisione (al termine del secondo sprint) gli errori sono diminuiti significativamente come ci si attendeva. L'obiettivo principale è fare in modo che non vi siano errori in alcuno dei documenti prima della revisione RTB.
-
-== Qualità di prodotto
 
 
 
@@ -416,7 +349,7 @@ table(
       fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Codice test*],[*Descrizione*],[*Stato*],
       ..test_di_accettazione.map(item => (item.at(0),item.at(1),item.at(2))).flatten().map(item => [#item])
-),caption: "Test di accetazione.")
+),caption: "Test di accettazione.")
 
 === Tracciamento dei test di accettazione
 #show figure: set block(breakable: true)
@@ -427,7 +360,7 @@ table(
       fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Codice test*],[*Codice caso d'uso*],
       ..test_di_accettazione.map(item => (item.at(0),item.at(3))).flatten().map(item => [#item])
-),caption: "Tracciamento dei test di accetazione.")
+),caption: "Tracciamento dei test di accettazione.")
 
 == Test di sistema
 
@@ -444,7 +377,7 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a fornire una panoramica generale dei sensori, una mappa indicante le posizioni dei vari sensori, mediante icone.
       ],"N/I","ROF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a fornire una panoramica generale dei sensori, una tabella che riporti una panoramica generale dei sensori. /*TODO: disambiguare "panoramica generale dei sensori"*/
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a fornire una panoramica generale dei sensori, una tabella contenente l'elenco dei sensori. /*TODO: disambiguare "panoramica generale dei sensori": ho provato a disambiguare, credo così vada bene*/
       ],"N/I","ROF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare una #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori.
@@ -453,16 +386,16 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare l'andamento delle temperature in formato #glossary("serie storica").
       ],"N/I","ROF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare l'andamento dell'umidità in formato #glossary("serie storica"). /*TODO: disambiguare umidità.*/
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare l'andamento espresso in percentuale dell'umidità in formato #glossary("serie storica"). 
       ],"N/I","ROF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello contenente una mappa che evidenzi velocità e direzione del vento.
       ],"N/I","ROP"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare l'andamento delle precipitazioni in formato #glossary("serie storica").
-      ],"N/I","ROF"), /*TODO: disambiguare misura delle precipitazioni*/
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare l'andamento delle precipitazioni misurato in millimetri orari in formato #glossary("serie storica").
+      ],"N/I","ROF"), 
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare la media delle precipitazioni registrate negli utlimi 5 minuti tra tutti i sensori. 
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare la media delle precipitazioni registrate negli ultimi 5 minuti tra tutti i sensori. 
       ],"N/I","RDF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare l'andamento dell'inquinamento dell'aria in formato #glossary("serie storica"). /*TODO: disambiguare la misura dell'inquinamento*/
@@ -471,7 +404,7 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare la media dell'inquinamento dell'aria registrato negli ultimi 5 minuti tra tutti i sensori. /*TODO: disambiguare la misura dell'inquinamento*/
       ],"N/I","RDF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare l'andamento dei dati relativi al livello dei bacini idrici in formato #glossary("serie storica"). /*TODO: disambiguare l'espressione di livello*/
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare le percentuali di riempimento dei bacini idrici in formato #glossary("serie storica"). 
       ],"N/I","ROF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati ambientali provenienti dai sensori, un pannello dedicato a mostrare la media della temperatura registrata negli ultimi 5 minuti tra tutti i sensori.
@@ -489,7 +422,7 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori, un pannello contenente una mappa che evidenzi la posizione e i watt erogati dalle varie colonnine di ricarica controllate.
       ],"N/I","RDF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori, un pannello contenente una mappa che evidenzi l'intensità del traffico. /*TODO: disambiguare metrica misurativa dell'intensità di traffico*/
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori, un pannello contenente una mappa che evidenzi l'intensità del traffico. 
       ],"N/I","RPF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare, nella #glossary("dashboard") dedicata a visualizzare i dati urbanistici provenienti dai sensori, un pannello contenente una mappa che evidenzi la posizione, in tempo reale, delle biciclette elettrice controllate assieme alla relativa percentuale di batteria.
@@ -516,7 +449,7 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa filtrare i dati di un'intera #glossary("dashboard"), visualizzando i dati appartenenti ad un determinato intervallo di tempo selezionato.
       ],"N/I","ROF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa, nel caso di un pannello contenente una tabella, ordinare le righe di tale tabella in base ai valori di una colonna di interese.
+            Verificare che l'#glossary("amministratore pubblico") possa, nel caso di un pannello contenente una tabella, ordinare le righe di tale tabella in base ai valori di una colonna di interesse.
       ],"N/I","RDF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa modificare il layout dei pannelli presenti in una dashboard aperta, modificando posizione e dimensione dei pannelli contenuti in essa.
@@ -526,38 +459,42 @@ table(
       ],"N/I","ROF"),
       /*TODO: capire se i test di sistema vanno anche per i requisiti relativi ai soli sensori (dovrebbero essere relativi in generale ai requisiti funzionali, ma non so)*/
       ([
-            Verificare che un sensore possa inserire nel sistema dati relativi alla temperatura, controllata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
+            Verificare che un sensore possa inserire nel sistema dati relativi alla temperatura, rilevati dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
       ],"N/I","ROF"),
       ([
-            Verificare che un sensore possa inserire nel sistema dati relativi all'umidità, controllata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
+            Verificare che un sensore possa inserire nel sistema dati relativi alla percentuale di umidità, rilevati dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
       ],"N/I","ROF"),
       ([
-            Verificare che un sensore possa inserire nel sistema dati relativi alla velocità e direzione del vento, controllata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
+            Verificare che un sensore possa inserire nel sistema dati relativi alla velocità e direzione del vento, rilevati dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
       ],"N/I","ROF"),
       ([
-            Verificare che un sensore possa inserire nel sistema dati relativi alle precipitazioni, controllate dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione. /*TODO: disambiguare la metrica delle precipitazioni*/
+            Verificare che un sensore possa inserire nel sistema il quantitativo orario di precipitazione, in millimetri orari (mm/h), con annesso coordinate e #glossary("timestamp") della misurazione. 
       ],"N/I","ROF"),
       ([
-            Verificare che un sensore possa inserire nel sistema dati relativi all'inquinamento dell'aria, controllata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione. /*TODO: disambiguare la metrica dell'inquinamento dell'aria*/
+            Verificare che un sensore possa inserire nel sistema dati relativi all'inquinamento dell'aria, rilevato dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione. /*TODO: disambiguare la metrica dell'inquinamento dell'aria*/
       ],"N/I","ROF"),
       ([
-            Verificare che un sensore possa inserire nel sistema dati relativi al livello del bacino idrico, controllato dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione. /*TODO: disambiguare la metrica del livello dei bacini idrici*/
+            Verificare che un sensore possa inserire nel sistema la percentuale di riempimento della bacino idrico a cui è associato con annesso coordinate e #glossary("timestamp") della misurazione.
       ],"N/I","ROF"),
       ([
             Verificare che un sensore possa inserire nel sistema dati relativi alla disponibilità del parcheggio, controllato dal sensore, intesa come numero di posti liberi in tale parcheggio, registrata, con annesso coordinate e #glossary("timestamp") della misurazione.
       ],"N/I","ROF"),
       ([
-            Verificare che un sensore possa inserire nel sistema dati relativi watt erogati per la colonna di ricarica, controllata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
+            Verificare che un sensore possa inserire nel sistema la rilevazione dei watt erogati dalla colonna, monitorata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
       ],"N/I","ROF"),
       ([
             Verificare che un sensore possa inserire nel sistema dati relativi al livello di carica della bicicletta elettrica, controllata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
       ],"N/I","ROF"),
       ([
-            Verificare che un sensore possa inserire nel sistema dati relativi al riempimento della zona ecologica, controllata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione. /*TODO: disambiguare la metrica per il riempimento della zona ecologica*/
+            Verificare che un sensore possa inserire nel sistema la percentuale di riempimento della zona ecologica a cui è associato, con annesso coordinate e #glossary("timestamp") della misurazione. 
       ],"N/I","ROF"),
       ([
             Verificare che un sensore possa inserire nel sistema dati relativi congestione stradale, controllata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
-      ],"N/I","ROF"),
+      ],"N/I","ROF"),/*TODO: capire se tenere uniti i requisiti relativi al traffico e di conseguenza anche il test di sistema */
+      ([
+            Verificare che ogni sensore invii oltre ai dati di misurazione, i dati relativi al livello della batteria e all'utilizzo del processore, con annesso coordinate e #glossary("timestamp") della misurazione.
+      ],"N/I","ROF")
+
       /*TODO: manca test (poichè manca requisito relativo) che vada a controllare che il senosre annetta anche dati relativi al suo stato personale */
 ).enumerate(start:1).map(test => ("TS"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1),test.at(1).at(2))).enumerate(start:1).map(test => (test.at(1).at(0),test.at(1).at(1),test.at(1).at(2),test.at(1).at(3) + str(test.at(0))));
 
@@ -582,6 +519,90 @@ table(
       ..test_di_sistema.map(item => (item.at(0),item.at(3))).flatten().map(item => [#item])
 ),caption: "Tracciamento dei test di sistema.")
 
+
+
+
+#pagebreak()
+= Cruscotto delle metriche
+
+== Qualità di Processo - Fornitura
+
+=== Estimated at Completion
+ 
+#figure(
+  image("./assets/valutazione-metriche/EAC.png", width: 80%),
+  caption: [
+    Valutazione Estimated At Completion.
+  ],
+)
+
+L'EAC rappresenta una revisione del valore stimato per la realizzazione del progetto, ossia il BAC (Budget At Completion) rivisto allo stato corrente del progetto; il fattore che incide maggiormente sull'andamento dell'EAC è il rapporto tra EV (Estimated Value) e AC (Actual Cost), per cui tanto più queste metriche sono vicine l'una all'altra, tanto più l'EAC risulterà vicino al BAC pianificato inizialmente. Come viene evidenziato dal grafico l'EAC calcolato al termine dei primi sprint risulta essere relativamente vicino al BAC preventivato inizialmente e si mantiene entro i limiti accettabili; in particolare, il fatto che l'EAC fosse minore del BAC al termine del primo sprint ha portato il team a rivedere la percentuale di lavoro preventivata ed effettivamente eseguita negli sprint successivi in modo da mantenere un ritmo di lavoro quanto più possibile costante e riavvicinare l'EAC al BAC. 
+
+=== Budget Variance e Schedule Variance
+
+#figure(
+  image("./assets/valutazione-metriche/BV_SV.png", width: 80%),
+  caption: [
+    Valutazione Budget Variance e Schedule Variance.
+  ],
+)
+
+Il BV indica se alla data corrente si è speso di più o di meno rispetto a quanto inizialmente previsto nel budget; il SV indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate. Come evidenziato dal grafico, il BV è negativo e sembra diminuire progressivamente nel tempo, segno che i costi effettivamente sostenuti sono maggiori rispetto a quanto preventivato. Il SV è invece positivo e sembra aumentare progressivamente nel tempo, segno che la percentuale di lavoro preventivato è tendenzialmente minore rispetto a quella del lavoro portato a compimento. Questo denota una sottostima del lavoro che si è preventivato di riuscire a portare a termine nei primi sprint, rispetto a quanto effettivamente prodotto dal team.
+
+=== Actual Cost e Estimate To Complete
+
+#figure(
+  image("./assets/valutazione-metriche/AC_ETC.png", width: 80%),
+  caption: [
+    Valutazione Actual Cost e Estimate To Complete.
+  ],
+)
+
+L'AC rappresenta il costo effettivo sostenuto fino a un dato momento, mentre l'ETC rappresenta la stima del costo aggiuntivo necessario per
+completare il progetto; di conseguenza, ci si aspetta che l'AC cresca e che l'ETC diminuisca in modo sostanzialmente lineare, segno che il progetto ha mantenuto un ritmo regolare di avanzamento. Stabilire l'andamento delle due metriche al momento della revisione RTB è alquanto prematuro, dati i pochi data points a disposizione.
+
+=== Earned Value e Planned Value
+
+#figure(
+  image("./assets/valutazione-metriche/EV_PV.png", width: 80%),
+  caption: [
+    Valutazione Earned Value e Planned Value.
+  ],
+)
+
+L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[deliverable] rilasciati fino al momento della misurazione in seguito alle attività svolte; il PV rappresenta invece il valore del lavoro pianificato fino a un dato momento. Nonostante sia ancora prematuro confrontare le due metriche con l'EAC, si può notare che il PV si mantiene al di sotto dell'EV, seppur di poco, segno che i preventivi fatti finora sono stati leggermente ottimistici rispetto alla spesa effettiva. 
+
+== Qualità di Processo - Codifica
+
+== Qualità di Processo - Documentazione
+
+=== Indice Gulpease
+
+#figure(
+  image("./assets/valutazione-metriche/IG.png", width: 80%),
+  caption: [
+    Valutazione Indice Gulpease.
+  ],
+)
+
+Al termine del secondo sprint, tutti i documenti in corso di preparazione in vista dell'RTB possiedono un IG al di sopra del limite accettabile inferiore di 60; in particolare, l'_Analisi dei Requisiti_ ha raggiunto il valore ideale. 
+
+=== Correttezza ortografica
+
+#figure(
+  image("./assets/valutazione-metriche/CO.png", width: 80%),
+  caption: [
+    Valutazione correttezza Ortografica.
+  ],
+)
+
+Seppur i documenti presentavano alcuni errori ortografici al termine dei primi sprint, da quando si è adottato uno strumento di controllo dell'ortografia sia in fase di stesura che in fase di revisione (al termine del secondo sprint) gli errori sono diminuiti significativamente come ci si attendeva. L'obiettivo principale è fare in modo che non vi siano errori in alcuno dei documenti prima della revisione RTB.
+
+// == Qualità di prodotto
+
+
+
+#pagebreak()
 
 == Liste di controllo
 
