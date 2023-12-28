@@ -114,7 +114,7 @@ Si compone delle seguenti sezioni:
         - *Qualità di processo*: standard e procedure adottate per garantire la qualità durante lo sviluppo del progetto. Include informazioni sulle attività di gestione della qualità, le metodologie utilizzate, e come vengono misurati e migliorati i processi stessi;
         - *Qualità di prodotto*: standard, specifiche e caratteristiche che il prodotto deve soddisfare per essere considerato di qualità. Include anche le metriche e i criteri di valutazione utilizzati per misurare la qualità del prodotto;
         - *Specifiche dei test*: specifiche dettagliate dei test che verranno condotti durante lo sviluppo del progetto;
-        - *Resoconto e valutazioni*: resoconto delle attività svolte e delle valutazioni effettuate durante il progetto. Utili per capire come il progetto si sta sviluppando rispetto agli obiettivi e alle aspettative. Inoltre, aiutano a identificare eventuali azioni correttive necessarie per mantenere o migliorare la qualità complessiva del progetto.
+        - *Resoconto e valutazioni*: resoconto delle attività di valutazione effettuate durante il progetto. Le valutazioni risultano fondamentali a tracciare l'andamento del progetto rispetto agli obiettivi e alle aspettative, e a identificare prontamente eventuali azioni correttive necessarie a garantire la qualità complessiva del progetto.
 
 ==== Glossario
 
