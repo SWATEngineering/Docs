@@ -8,7 +8,7 @@
 
 = Introduzione
 
-== Scopo del Documento
+== Scopo del documento
 
 Il presente documento ha l'obiettivo di definire le #glossary[best practices] e la #glossary[way of working] che ogni componente del team #team ha l'obbligo di rispettare durante l'intero svolgimento del progetto. In questo modo si prova a garantire un metodo di lavoro omogeneo, verificabile e migliorabile nel tempo. La formulazione delle norme avviene in modo progressivo, consentendo al team di apportare aggiornamenti continui in linea con le attività e gli strumenti concordati nel corso del lavoro.
 
