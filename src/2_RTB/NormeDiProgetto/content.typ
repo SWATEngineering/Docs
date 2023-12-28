@@ -309,7 +309,7 @@ Gli scenari d'uso sono organizzati in sequenze di azioni, illustrando le operazi
 I diagrammi dei casi d'uso sono composti da:
         - *Attore*: rappresenta un agente esterno coinvolto nelle interazioni con il sistema. Si tratta di una qualsiasi entità in grado di interagire con il sistema, infatti ogni caso d'uso determina una funzionalità che viene messa a disposizione di tale attore, tuttavia, senza entrare nei dettagli implementativi.
                 
-                A livello di diagramma, l'attore è simboleggiato da un' icona umana stilizzata, identificabile mediante un'etichetta univoca e rappresentativa, posizionata al di sotto di tale figura.
+                A livello di diagramma, l'attore è simboleggiato da un' icona umana stilizzata, identificabile mediante un'etichetta univoca e rappresentativa, posizionata sotto di essa.
 
                 #figure(
                         image(
