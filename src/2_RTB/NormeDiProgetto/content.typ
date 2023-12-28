@@ -404,7 +404,7 @@ Il diagramma delle classi è uno dei diagrammi UML che rappresenta la struttura 
                         - *Lista-Parametri*: se la funzione prevede input, vengono separati tramite ",";
                         - *Ritorno*: che tipo di oggetto verrà ritornato.
 
-I diagrammi delle classi sono interconnessi tra di loro attraverso varie frecce. Di seguito si elencano le possibili relazioni:
+Di seguito si elencano le possibili relazioni:
 
         - *Dipendenza*: una dipendenza normale tra due classi è indicata da una freccia tratteggiata con la punta, che punta dalla classe che dipende verso la classe dipendente. Questa dipendenza indica che un cambiamento nella classe dalla parte della freccia può influenzare la classe alla cui direzione punta la freccia;
         #figure(
