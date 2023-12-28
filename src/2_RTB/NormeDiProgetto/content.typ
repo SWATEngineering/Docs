@@ -67,7 +67,7 @@ Il processo si articola in diverse fasi:
         - Completamento e consegna.
 
 === Rapporti con la Proponente
-La Proponente si è resa disponibile attraverso vari canali, come e-mail, _Google Meet_ e _Element_, per stabilire una comunicazione frequente e risolvere prontamente eventuali dubbi o domande che possono emergere durante lo svolgimento del progetto. Sin dall'inizio è stato concordato di organizzare incontri regolari, in particolare al termine di ciascuno sprint, fissati per il venerdì alle 10:30.  Questi incontri, che assumono la forma di sessioni di _Sprint Review_, consentono al team di esporre quanto realizzato e di ricevere feedback sull'andamento del lavoro.
+La Proponente si è resa disponibile attraverso vari canali, come e-mail, Google Meet e Element, per stabilire una comunicazione frequente e risolvere prontamente eventuali dubbi o domande che possono emergere durante lo svolgimento del progetto. Sin dall'inizio si è concordato di organizzare incontri regolari, in particolare al termine di ciascuno sprint, fissati per il venerdì alle 10:30.  Questi incontri, che assumono la forma di sessioni di #glossary[Sprint Review], consentono al team di esporre quanto realizzato e di ricevere feedback sull'andamento del lavoro.
 
 Gli incontri con la Proponente si suddividono principalmente in tre categorie:
 
