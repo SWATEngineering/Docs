@@ -25,7 +25,7 @@ Un'attività che comprende l'inserimento di un termine di glossario può conside
 
 == Riferimenti
 === Normativi
-- _Norme di progetto_;
+- _NormeDiProgetto\_v1.0_;
 - Documento e presentazione di capitolato d'appalto C6 - InnovaCity:
   - _ https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf _
   - _ https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6p.pdf _
@@ -50,22 +50,46 @@ Un'attività che comprende l'inserimento di un termine di glossario può conside
 
 Si riferisce all'efficacia ed efficienza dei processi e delle metodologie impiegate nello sviluppo, testing e mantenimento del software. Essa abbraccia l'insieme di attività, pratiche e metodi utilizzati lungo l'intero ciclo di vita dello sviluppo del software al fine di garantire che il prodotto finale soddisfi i requisiti specificati e venga consegnato puntualmente ed entro il budget previsto. In questo contesto, la qualità di processo è fondamentale per assicurare un'implementazione coerente, misurabile e ottimizzata delle fasi di sviluppo, contribuendo a conseguire gli obiettivi di qualità complessivi.
 
+Come presentato nel documento _NormeDiProgetto\_v1.0_ la sigla MPC sta ad indicare le metriche di processo.
+
 
 == Processi Primari  
 
 === Fornitura 
 
-#table(
+
+
+#figure(
+table(
       columns:(auto,auto,auto,auto),
       align: (x, y) => (center, center, center,center).at(x),
       fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
       ..fornitura.flatten()  
+),
+caption: [Tabella metriche per il processo di fornitura]
 )
 
-=== Codifica 
+// 
+// stavo vedendo le metriche per il piano di qualifica, nello specifico quelle di fornitura.Le nostre si basano tutte su il concetto di EV (earned value), il fatto è che il modo  in cui lo calcoliamo non rispecchia proprio il valore in un determinato momento ([ore_svolte]/[ore_totali])*[budjet_totale].
+// Analizando le alternative ci sono tre strade percorribili:
+// 1 Continuare cosi come stiamo lavorando. 
+// 2 Cambiare il metodo in cui calcolare EV: 
+// l'idea sarebbe quella di calcolarlo sulla base delle issue nel ITS.
+// Ogni issue completata apporta valore come, sua grandezza in termini di ore produttive X il prezzo orario di quel ruolo.
+// In questo caso sarebbe da inserire il ruolo a tutte le issue in done.
+// 
+// 3 Un altro idea potrebbe essere proprio cambiare le metriche a qualcosa che ci potrebbe essere d'aiuto concretamente, un paio di esempi:
+//             
+// Velocity: Misura la quantità di lavoro (spesso in punti storia) completato in un singolo sprint. È utile per
+//            prevedere la capacità di lavoro futura del team.
+// Tempo di Ciclo: Il tempo impiegato per completare un'attività dal momento in cui inizia
+//             fino al suo completamento. Aiuta a capire l'efficienza del processo di
+//             lavoro.
 
-#table(
+=== Codifica 
+#figure(
+table(
       columns:(auto,auto,auto,auto),
       align: (x, y) => (center, center, center,center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
@@ -75,55 +99,89 @@ Si riferisce all'efficacia ed efficienza dei processi e delle metodologie impieg
       [MPC-ATC], [Attributi per Classe], [≤ 6], [≤ 4],
       [MPC-PM], [Parametri per Metodo], [≤ 5], [≤ 4],
       [MPC-LCM], [Linee di Codice per Metodo], [≤ 25], [≤ 20]
-)
+), 
+caption: [Tabella delle metriche per il processo di codifica])
 
 === Progettazione
 
-#table(
+#figure(
+table(
       columns:(auto,auto,auto,auto),
       align: (x, y) => (center, center, center,center).at(x),
-      fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-      [MPR-FIN], [Structure Fan In], [da determinare], [da determinare], 
-      [MPR-FOUT], [Structure Fan Out], [da determinare], [da determinare]
+      [MPC-FIN], [Structure Fan In], [da determinare], [da determinare], 
+      [MPC-FOUT], [Structure Fan Out], [da determinare], [da determinare]
+      ), 
+caption: [Tabella metriche per il processo di progettazione]
 )
 
 
 == Processi di supporto
 
 ==== Documentazione
-
-#table(
+#figure(
+table(
       columns:(auto,auto,auto,auto),
       align: (x, y) => (center, center, center,center).at(x),
-      fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
       [MPC-IG], [Indice Gulpease], [≥ 60], [100],
       [MPC-CO], [Correttezza Ortografica], [0], [0]
+      ), 
+caption: [Tabella metriche per il processo di documentazione]
 )
-
-#pagebreak()
-= Qualità di Prodotto 
-
-#table(
-      columns:(auto,auto,auto,auto),
-      align: (x, y) => (center, center, center,center).at(x),
-      fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
-      [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-      [MPR-ROS], [Requisiti Obbligatori Soddisfatti], [100%], [100%],
-      [MPR-RDS], [Requisiti Desiderabili Soddisfatti], [≥ 0%], [≥ 75%],
-      [MPR-ROPS], [Requisiti Opzionali Soddisfatti], [≥ 0%], [≥ 50%],
-      [MPR-FU], [Facilità di utilizzo], [≤ 7 click], [≤ 5 click], 
-      [MPR-PTCP], [Passed Test Cases Percentage], [≥ 80%], [100%]
-)
-
 
 
 #pagebreak()
 
+= Qualità di prodotto 
+
+La qualità di prodotto è volta alla valutazione del software realizzato: l'attenzione è rivolta ad attributi quali usabilità, funzionalità, affidabilità, ma più in generale alle prestazione del prodotto. 
+L'obiettivo  è, dunque, assicurare che il software non solo implementi le funzionalità volute dal cliente e funzioni correttamente, ma che lo faccia seguendo le indicazioni di precisi standard di qualità.
+
+Come presentato nel documento _NormeDiProgetto\_v1.0_ la sigla MPR sta ad indicare le metriche di prodotto.
+
+== Funzionalità
+
+#figure(
+      table(
+            columns:(auto,auto,auto,auto),
+            align: (x, y) => (center, center, center,center).at(x),
+            fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+            [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
+            [MPR-ROS], [Requisiti Obbligatori Soddisfatti], [100%], [100%],
+            [MPR-RDS], [Requisiti Desiderabili Soddisfatti], [≥ 0%], [≥ 75%],
+            [MPR-ROPS], [Requisiti Opzionali Soddisfatti], [≥ 0%], [≥ 50%],
+      ),
+caption: [Tabella metriche per la funzionalità del prodotto])
+
+== Usabilità
+
+#figure(
+      table(
+            columns:(auto,auto,auto,auto),
+            align: (x, y) => (center, center, center,center).at(x),
+            fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+            [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
+            [MPR-FU], [Facilità di utilizzo], [≤ 7 click], [≤ 5 click]
+      ),
+caption: [Tabella metriche per l'usabilità del prodotto])
+
+== Affidabilità
+
+#figure(
+      table(
+            columns:(auto,auto,auto,auto),
+            align: (x, y) => (center, center, center,center).at(x),
+            fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+            [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
+            [MPR-PTCP], [Passed Test Cases Percentage], [≥ 80%], [100%]
+      ),
+caption: [Tabella metriche per l'affidabilità del prodotto])
 
 
-
+#pagebreak()
 
 
 
@@ -495,7 +553,7 @@ table(
             Verificare che ogni sensore invii oltre ai dati di misurazione, i dati relativi al livello della batteria e all'utilizzo del processore, con annesso coordinate e #glossary("timestamp") della misurazione.
       ],"N/I","ROF")
 
-      /*TODO: manca test (poichè manca requisito relativo) che vada a controllare che il senosre annetta anche dati relativi al suo stato personale */
+      /*TODO: disambiguare sulla base ai  cambiamenti al requisito in Adr */
 ).enumerate(start:1).map(test => ("TS"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1),test.at(1).at(2))).enumerate(start:1).map(test => (test.at(1).at(0),test.at(1).at(1),test.at(1).at(2),test.at(1).at(3) + str(test.at(0))));
 
 #show figure: set block(breakable: true)
@@ -572,7 +630,7 @@ completare il progetto; di conseguenza, ci si aspetta che l'AC cresca e che l'ET
 
 L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[deliverable] rilasciati fino al momento della misurazione in seguito alle attività svolte; il PV rappresenta invece il valore del lavoro pianificato fino a un dato momento. Nonostante sia ancora prematuro confrontare le due metriche con l'EAC, si può notare che il PV si mantiene al di sotto dell'EV, seppur di poco, segno che i preventivi fatti finora sono stati leggermente ottimistici rispetto alla spesa effettiva. 
 
-== Qualità di Processo - Codifica
+// == Qualità di Processo - Codifica TODO: non ha senso in questa fase del progetto
 
 == Qualità di Processo - Documentazione
 
