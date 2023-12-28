@@ -5,5 +5,5 @@ Si esaminano attentamente le risorse effettivamente impiegate durante ciascun sp
 Si riportano inoltre gli elementi positivi e negativi emersi all'interno delle retrospettive di ogni sprint, eventuali rischi incorsi e la valutazione del relativo processo di mitigazione, in modo tale da portare eventuali miglioramenti alla sezione *Analisi dei rischi*. 
 
 
-#include "ConsuntivoSprint/PrimoSprint.typ"
-#include "ConsuntivoSprint/SecondoSprint.typ"
+#include "ConsuntivoSprint/PrimoSprint/PrimoSprint.typ"
+#include "ConsuntivoSprint/SecondoSprint/SecondoSprint.typ"
