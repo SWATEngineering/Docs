@@ -118,10 +118,10 @@ Si compone delle seguenti sezioni:
 
 ==== Glossario
 
-Il _Glossario v1.0_ funge da catalogo esaustivo che raccoglie i termini tecnici impiegati all'interno del progetto, offrendo definizioni chiare e precise. Questo documento previene fraintendimenti, promuove una comprensione condivisa della terminologia specifica del settore, migliorando così la coerenza e la qualità della documentazione prodotta tra i partecipanti al progetto.
+Il _Glossario v1.0_ funge da catalogo esaustivo che raccoglie i termini tecnici impiegati all'interno del progetto, offrendo definizioni chiare e precise. Questo documento previene fraintendimenti e promuove una comprensione condivisa della terminologia specifica del settore, migliorando così la coerenza e la qualità della documentazione prodotta dal team.
 
 ==== Lettera di Presentazione
-La Lettera di Presentazione accompagna la consegna del prodotto software e della documentazione pertinente, sottolineando l'impegno che il team #team si assume nel completare e consegnare il prodotto entro le scadenze concordate. Inoltre, espone un preventivo aggiornato rispetto a quello presentato in occasione dell'ultima revisione. In questo contesto, costo e data di consegna del progetto sono attentamente valutati in relazione all'andamento corrente e vengono confermati o eventualmente modificati attraverso scelte ragionate effettuate durante lo sviluppo.
+La _Lettera di Presentazione_ accompagna la consegna del prodotto software e della documentazione pertinente, sottolineando l'impegno che il team #team si assume nel completare e consegnare il prodotto entro le scadenze concordate. Inoltre, espone un preventivo aggiornato rispetto a quello presentato in occasione dell'ultima revisione. In questo contesto, costo e data di consegna del progetto sono attentamente valutati in relazione all'andamento corrente e vengono confermati o eventualmente modificati in risposta alle dinamiche emergenti durante l'evoluzione del progetto.
 
 === Strumenti
 
@@ -153,7 +153,7 @@ Software per creare diagrammi e grafici di varia natura, utilizzato dagli Analis
 
 === Descrizione e scopo
 
-Il processo di sviluppo rappresenta la serie di attività che il team #team deve svolgere affinché, successivamente, riesca nell'implementazione del prodotto software, rispettando i requisiti e le date di scadenza concordate con la Proponente. In particolare, si ha:
+Il processo di sviluppo rappresenta la serie di attività che devono essere svolte affinché il team #team riesca nell'implementazione del prodotto software, rispettando i requisiti e le date di scadenza concordate con la Proponente. In particolare, si ha:
         - *Analisi dei Requisiti*;
         - *Progettazione*;
         - *Codifica*.
@@ -171,12 +171,12 @@ L'_Analisi dei Requisiti v1.0_ viene redatta dagli Analisti e contiene:
 
 ==== Scopo   
 
-Lo scopo dell'_Analisi dei Requisiti v1.0_ è definire in modo dettagliato e chiaro le funzionalità e le caratteristiche che il prodotto software dovrà soddisfare. Questo processo mira a comprendere a fondo le esigenze degli utenti, gli obiettivi del sistema e le condizioni in cui dovrà operare. Gli obiettivi principali dell'Analisi dei Requisiti includono:
+Lo scopo dell'_Analisi dei Requisiti v1.0_ è definire in modo dettagliato e chiaro le funzionalità e le caratteristiche che il prodotto software deve soddisfare. Questo processo mira a comprendere a fondo le esigenze degli utenti, gli obiettivi del sistema e le condizioni in cui dovrà operare. Gli obiettivi principali del processo di analisi dei requisiti includono:
 
         - Identificare e chiarire gli obiettivi e le finalità del prodotto che si intende sviluppare;
-        - Fornire ai progettisti una base chiara e comprensibile per la definizione dell'architettura e del design del sistema;
+        - Fornire ai Progettisti una base chiara e comprensibile per la definizione dell'architettura e il design del sistema;
         - Fornire una base per la pianificazione mediante i requisiti raccolti;
-        - Facilitare la comunicazione tra Proponente e fornitori;
+        - Facilitare la comunicazione tra fornitori e Proponente;
         - Fornire riferimenti per la verifica.
 
 
@@ -252,7 +252,7 @@ table(
       [*RDS*],[Requisiti Desiderabili Soddisfatti],
       [*ROPS*],[Requisiti Opzionali Soddisfatti] 
 ),
-caption:[Metriche Requisiti],
+caption:[Metriche sui requisiti],
 )
 
 === Progettazione 
@@ -264,7 +264,7 @@ La fase di progettazione segue l'analisi dei requisiti, dove sono definite le ne
 
 Si definiscono tre sottoattività: 
 
-        + *_Technology Baseline_*: implica la selezione e la definizione delle tecnologie di base utilizzate per la realizzazione del sistema. Questo comprende decisioni relative a linguaggi di programmazione, librerie e framework. Tale processo porta alla creazione di un Proof of Concept (#glossary("PoC"));
+        + *Technology Baseline*: implica la selezione e la definizione delle tecnologie di base utilizzate per la realizzazione del sistema. Questo comprende decisioni relative a linguaggi di programmazione, librerie e _framework_. Tale processo porta alla creazione di un Proof of Concept (#glossary("PoC"));
 
                 Include:
                 - *Proof of Concept*: consiste nella creazione di una versione parziale del prodotto, includendo alcune delle funzionalità stabilite durante l'analisi dei requisiti. L'obiettivo è valutare la fattibilità del prodotto completo;
@@ -279,7 +279,7 @@ Si definiscono tre sottoattività:
                         - package;
                         - *sequenze*: utilizzato per descrivere uno scenario che costituisce una determinata sequenza di azioni in cui tutte le scelte sono state già effettuate;
                         - *attività*: diagramma comportamentale che illustra il flusso delle attività attraverso un sistema.
-                - Test di Unità su ogni componente.
+                - Test di unità su ogni componente.
 
 ==== Metriche
 
@@ -382,7 +382,7 @@ In ogni diagramma dei casi d'uso possono essere definite:
 
 Il diagramma delle classi è una tipologia di diagramma UML utile a rappresentare la struttura statica di un sistema orientato agli oggetti. Esso visualizza le classi del sistema, insieme ai loro attributi, metodi e le relazioni tra di esse. Le classi sono rappresentate tramite rettangoli divisi in tre sezioni: la parte superiore contiene il nome della classe, la sezione centrale include gli attributi della classe e quella inferiore ne elenca i metodi.
 
-        - *Nome*: nome della classe, scritto in grassetto, se la classe è astratta va in corsivo mantendo il grassetto;
+        - *Nome*: nome della classe in grassetto, se la classe è astratta viene scritto in corsivo oltre che in grassetto;
         - *Attributi*: 
                 #align(center)[*Visibilità* *Nome* : *Tipo* [Molteplicità] = {Default}] 
 
@@ -401,12 +401,12 @@ Il diagramma delle classi è una tipologia di diagramma UML utile a rappresentar
                 *Legenda*:
                         - *Visibilità*: segue quanto sopra;
                         - *Nome*: nome del metodo, se statico viene sottolineato;
-                        - *Lista-Parametri*: se la funzione prevede input, vengono separati tramite ",";
-                        - *Ritorno*: che tipo di oggetto verrà ritornato.
+                        - *Lista-Parametri*: se la funzione prevede più di un parametro, questi vengono separati tramite ",";
+                        - *Ritorno*: il tipo restituito dal metodo.
 
 Di seguito si elencano le possibili relazioni:
 
-        - *Dipendenza*: una dipendenza normale tra due classi è indicata da una freccia tratteggiata con la punta, che punta dalla classe che dipende verso la classe dipendente. Questa dipendenza indica che un cambiamento nella classe dalla parte della freccia può influenzare la classe alla cui direzione punta la freccia;
+        - *Dipendenza*: una dipendenza tra due classi è indicata da una freccia tratteggiata con la punta, che parte dalla classe dipendente A e punta alla classe da cui si origina la dipendenza B. Questa freccia simbolizza il fatto che un cambiamento nella classe B può avere un impatto o influenzare la classe A;
         #figure(
                         image(
                                 "assets/imgs/Dipendenza.png",
@@ -415,24 +415,26 @@ Di seguito si elencano le possibili relazioni:
                         caption: "Figura rappresentante la relazione di dipendenza."
                 )
 
-        - *Aggregazione*: una classe A contiene un oggetto B ma condivide la reference ad esso con altre classi. Vuol dire che A contiene dentro un campo di tipo B che viene assegnato da fuori. L'oggetto di tipo B può essere utilizzato anche da altre parti del sistema.Si usa una freccia a rombo vuoto, A rappresenta il contenitore, B il contenuto;
+        - *Aggregazione*: una classe A contiene un riferimento a un oggetto di tipo B, condividendo questo riferimento con altre classi. In sostanza, la classe A possiede un campo di tipo B che viene assegnato da una fonte esterna. L'oggetto di tipo B può essere utilizzato anche da altre parti del sistema, non solo dalla classe A. Questa relazione è indicata da una freccia a rombo vuoto, in cui A rappresenta l'oggetto contenitore e B il contenuto;
                 #figure(
                         image(
                                 "assets/imgs/Aggregazione.png",
                                 width: 70%
                         ),
-                        caption: "Figura rappresentante relazione di aggregazione."
+                        caption: "Figura rappresentante la relazione di aggregazione."
                 )
-        - *Composizione*: una classe A contiene un oggetto di tipo B, nel senso che dentro ad A c’è un campo di tipo B.  A ha la responsabilità di creare e gestire B. La classe B dipende strettamente dalla classe A, infatti se quest'ultima viene eliminata anche la classe B viene cancellata. Si usa una freccia a rombo pieno, A rappresenta il contenitore, B il contenuto;
+        - *Composizione*: una classe A contiene un oggetto di tipo B. In questa relazione, la classe A ha la responsabilità di creare e gestire l'oggetto di tipo B. È una relazione "parte-tutto", in cui l'oggetto di tipo B esiste solo all'interno dell'oggetto di tipo A e dipende strettamente da esso. Se la classe A viene eliminata, anche la classe B associata viene cancellata. Questa relazione è indicata da una freccia a rombo pieno, dove A rappresenta l'oggetto contenitore e B il contenuto;
                 #figure(
                         image(
                                 "assets/imgs/Composizione.png",
                                 width: 70%
                         ),
-                        caption: "Figura rappresentante relazione di composizione."
+                        caption: "Figura rappresentante la relazione di composizione."
                 )
 
-        - *Associazione*: le classi sono indipendenti l'una dall'altra. Una classe A contiene dei campi o istanze della classe B.
+        - *Associazione*: una classe A contiene riferimenti o istanze di un'altra classe B. Questa relazione non implica una dipendenza stretta o un'inclusione di un'istanza all'interno dell'altra.
+
+La rappresentazione grafica di un'associazione consiste in una linea tra le classi coinvolte, spesso accompagnata da moltiplicità che indica quanti oggetti di una classe sono associati a quanti oggetti dell'altra classe. Questi valori di moltiplicità possono essere situati agli estremi della linea che collega le classi.
         Si può rappresentare la molteplicità di associazione mediante dei valori situati agli estremi della freccia.
         Viene rappresentata con una freccia;
                 #figure(
@@ -440,7 +442,7 @@ Di seguito si elencano le possibili relazioni:
                                 "assets/imgs/Associazione.png",
                                 width: 70%
                         ),
-                        caption: "Figura rappresentante relazione di associazione."
+                        caption: "Figura rappresentante la relazione di associazione."
                 )
 
         - *Generalizzazione*: ogni oggetto della classe B eredita le caratteristiche della classe A. L'oggetto B è anche un oggetto A. Si indica con una freccia vuota;
@@ -449,7 +451,7 @@ Di seguito si elencano le possibili relazioni:
                                 "assets/imgs/Generalizzazione.png",
                                 height:70%
                         ),
-                        caption: "Figura rappresentante relazione di generalizzazione."
+                        caption: "Figura rappresentante la relazione di generalizzazione."
                 )
 
         
@@ -467,7 +469,7 @@ Nel perseguire gli obiettivi di qualità, i Programmatori sono tenuti a rispetta
 ==== Aspettative 
 
 La fase di codifica è intrinsecamente orientata alla creazione di un prodotto software che soddisfi pienamente le esigenze e le aspettative della Proponente.
-Di seguito sono elencate le principali aspettative:
+Ci si aspetta che il codice sviluppato rispetti determinate caratteristiche:
 
         - Conformità alle specifiche;
         - Chiarezza e comprensibilità;
@@ -477,22 +479,22 @@ Di seguito sono elencate le principali aspettative:
 ==== Stile di codifica   
 
 Il team #team, nella decisione di realizzare il prodotto software, ha scelto di adottare il linguaggio di programmazione Python.
-Questa scelta strategica è motivata da diverse considerazioni che conferiscono a Python un ruolo privilegiato all'interno del contesto di sviluppo.
-La familiarità che molti membri del team hanno con Python è un elemento chiave. La mancanza di una curva di apprendimento ripida consente al team di concentrarsi direttamente sulla realizzazione del prodotto, senza spendere tempo significativo nell'apprendimento di un nuovo linguaggio. 
-Python, inoltre, promuove uno stile di scrittura del codice uniforme e facilita la comprensione della struttura del programma, mediante la rigida struttura dell'identazione.
+Questa scelta tecnologica è motivata da diverse considerazioni che conferiscono a Python un ruolo privilegiato nel contesto di sviluppo.
+La familiarità che molti membri del team hanno con Python è un elemento chiave. La mancanza di una curva di apprendimento ripida consente al team di concentrarsi direttamente sulla realizzazione del prodotto, risparmiando una quantità significativa di tempo che altrimenti sarebbe stato utilizzato per apprendere un nuovo linguaggio.
+Inoltre, Python promuove uno stile di codifica uniforme e leggibile. La sua struttura rigida basata sull'indentazione agevola la comprensione della struttura del programma, contribuendo a una maggiore chiarezza all'interno del codice. 
 
 ===== Lunghezza metodi  
 
-Sono da preferire metodi di limitata lunghezza per diverse ragioni tra cui:
+Sono da preferire metodi di lunghezza limitata per diverse ragioni tra cui:
         - Leggibilità;
         - Manutenibilità;
         - Riusabilità;
         - Testabilità; 
         - Analisi statica semplificata.
 
-===== Singola Responsabilità   
+===== Singola responsabilità   
 
-Ogni classe o singola funzione dovrebbe avere una sola responsabilità. Ciascuna entità deve svolgere un compito specifico e ben definito, garantendo così una singola ragione per essere modificata. Questa pratica non solo promuove la chiarezza e la manutenibilità del codice, ma contribuisce anche a ridurre la complessità ciclomatica del software.
+Ogni classe o funzione deve avere un unico obiettivo ben definito. Quando ogni entità nel codice svolge un compito specifico, ciò garantisce che ci sia un motivo chiaro e singolare per apportare modifiche. Questo approccio non solo promuove la chiarezza e la manutenibilità del codice, ma contribuisce anche a ridurre la complessità ciclomatica del software.
 
 
 ===== Parametri per metodo    
@@ -501,11 +503,11 @@ Preferire l'uso di metodi con un numero limitato di parametri quando possibile. 
 
 ===== Univocità dei nomi    
 
-Tutte le variabili, i metodi e le classi dovranno avere un nome che li distinguono univocamente, per limitare la possibilità di ambiguità del codice.
+Tutte le variabili, i metodi e le classi devono avere un nome che li distingue univocamente, per limitare la possibilità di ambiguità del codice.
 
 ===== Forzatura tipo ritorno   
 
-In python, si adotta la pratica di utilizzare il tipo di ritorno forzato per ogni funzione o metodo, questo contribuisce ad una migliore robustezza del codice fornendo alcuni vantaggi:
+Utilizzare un tipo di ritorno forzato per ogni funzione o metodo, pratica comunemente utilizzata in Python, contribuisce ad una migliore robustezza del codice fornendo alcuni vantaggi:
 
         - Analisi statica avanzata;
         - Riduzione errori;
@@ -529,7 +531,7 @@ table(
       [*PM*],[Parametri per Metodo],
       [*LCM*],[Linee di Codice per Metodo]
 ),
-caption: [Metriche Codifica],
+caption: [Metriche di codifica],
 )
 
 
@@ -560,7 +562,7 @@ I documenti che verranno prodotti sono:
 === Ciclo di vita dei documenti
 
 Ogni documento segue le fasi del seguente #glossary[workflow]:
-+ Si crea un branch per lo sviluppo del documento nell'apposita repository _Docs_ e si mette in uso.
++ Si crea un branch per lo sviluppo del documento nell'apposita repository Docs e si mette in uso.
 + Si copia dall'apposita repository `Templates` il template relativo al file che si deve redigere, e lo si inserisce nella cartella appropriata.
 + Si redige il documento o una sua sezione. Nel caso di documenti nuovi, in cui è necessario un elevato parallelismo di lavoro, è possibile usare Google Drive per la prima stesura e successivamente caricare il documento all'interno del branch.
 + Nel file `changelog.typ` si aggiunge una riga in coda, secondo il seguente formato: `<versione>,<data-modifica>,<descrizione-modifica>,<nome-autore>,<ruolo-autore>`; la versione segue le regole descritte nella @versionamento.
@@ -644,7 +646,7 @@ Il verbale esterno oltre alle sezioni sopra elencate ha una pagina per la conval
                 - Parole a cui si vuole dare enfasi;
                 - Definizioni di termini negli elenchi puntati.
         - *Corsivo*: 
-                - I nomi dei documenti con relativa versione;
+                - I nomi dei documenti;
                 - I termini di glossario (seguiti da #sub[G]).
         - *Caratteri maiuscoli*: 
                 - Le iniziali dei nomi;
@@ -659,7 +661,7 @@ Le voci di ogni elenco iniziano con lettera maiuscola e terminano con punto e vi
 
 ==== Caption 
 
-Ogni immagine o tabella deve avere obbligatoriamente una caption associata, utile per fornire una breve descrizione o spiegazione del contenuto visivo.
+Ogni immagine o tabella deve avere obbligatoriamente una caption associata, utile a fornire una breve descrizione o spiegazione del contenuto visivo.
 
 ==== Formato delle date <formato>
 
@@ -714,13 +716,13 @@ Le #glossary[Corsie di Stato] descrivono lo stato attuale delle attività, all'i
 / In Review: attività in corso di verifica da parte dei Verificatori.
 / Done: attività le cui modifiche sono state verificate e accettate.
 
-=== Strumento di Condivisione
+=== Strumento di condivisione
 
 Per la condivisione veloce o la creazione di bozze si utilizza Google Drive. Uno dei suoi principali casi d'uso consiste nella collaborazione in tempo reale nella stesura di sezioni testuali ampie, da inserire successivamente nella documentazione (questo risulta particolarmente utile nel momento in cui il documento è alla sua prima stesura). Viene inoltre utilizzato come sistema per l'immagazzinamento di conoscenze acquisite durante lo svolgimento del progetto.
 
-=== Tracciamento del Tempo Speso
+=== Tracciamento del tempo speso
 
-Al fine di tracciare il tempo speso nel corso del progetto, nei diversi ruoli, si utilizza uno spreadsheet appositamente creato, disponibile all'interno di Google Drive. A fine giornata, ogni membro del team inserisce le proprie ore *produttive* svolte quel giorno, secondo la sua miglior stima del rapporto tra ore di orologio e ore produttive. Si inserisce una sola riga per ogni giornata e nella descrizione si aggiungono brevi titoli rappresentativi delle attività svolte.
+Al fine di tracciare il tempo speso nel corso del progetto, nei diversi ruoli, si utilizza uno _spreadsheet_ appositamente creato, disponibile all'interno di Google Drive. A fine giornata, ogni membro del team inserisce le proprie ore *produttive* svolte quel giorno, secondo la sua miglior stima del rapporto tra ore di orologio e ore produttive. Si inserisce una sola riga per ogni giornata e nella descrizione si aggiungono brevi titoli rappresentativi delle attività svolte.
 
 
 === Controllo di versione e repository
@@ -736,17 +738,17 @@ Vengono utilizzate le seguenti repository:
         - #link("https://github.com/SWATEngineering/InnovaCity"): questa repository è dedicata alla condivisione e revisione del codice sorgente relativo al prodotto software "InnovaCity". È qui che il team lavora e collabora sul codice del prodotto stesso, consentendo una gestione centralizzata del lavoro di sviluppo e delle modifiche apportate al software.
 
 
-All'interno dei repository _Docs_ e _Innovacity_ si utilizza il #glossary[Rebase workflow] come metodo di gestione, con l'utilizzo dei Feature branch per separare logicamente il lavoro da svolgere. Nel primo repository però, i Feature branch si derivano direttamente dal main, mentre nel secondo si derivano dal branch dev.
-Questo impone quindi che, prima di andare ad effettuare la chiusura di una Pull request, si vada ad effettuare un _rebase_ del branch di derivazione, per rendere il nostro branch di sviluppo aggiornato rispetto alla base.
+All'interno dei repository Docs e Innovacity si utilizza il #glossary[Rebase workflow] come metodo di gestione, con l'utilizzo dei Feature branch per separare logicamente il lavoro da svolgere. Nel primo repository però, i Feature branch si derivano direttamente dal main, mentre nel secondo si derivano dal branch dev.
+Questo impone quindi che, prima di andare ad effettuare la chiusura di una Pull request, si vada ad effettuare un _rebase_ del branch di derivazione, per rendere il branch di sviluppo aggiornato rispetto alla base.
 
-I _Feature branch_ vengono aperti a partire dalle issue create nell' _Issue Tracking System_ (vedi @its). Si procede poi ad associare una _Pull request_, a una o più issue collegate tra loro, per effettuare la verifica.
+I Feature branch vengono aperti a partire dalle issue create nell' _Issue Tracking System_ (vedi @its). Si procede poi ad associare una Pull request, a una o più issue collegate tra loro, per effettuare la verifica.
 
-Nel caso del repository _InnovaCity_, il branch _main_ viene utilizzato per la pubblicazione di cambiamenti _major_, ovvero quando sono state implementate diverse funzionalità significative che contribuiscono all'avanzamento del progetto. In questa circostanza, è compito del Responsabile eseguire l'approvazione finale.
+Nel caso del repository _InnovaCity_, il branch main viene utilizzato per la pubblicazione di cambiamenti major, ovvero quando sono state implementate diverse funzionalità significative che contribuiscono all'avanzamento del progetto. In questa circostanza, è compito del Responsabile eseguire l'approvazione finale.
 
-=== Sito Vetrina   
+=== Sito vetrina   
 
-Il sito vetrina ospitato sulla seguente pagina #link("https://swatengineering.github.io/") è progettato per garantire un'esperienza aggiornata e intuitiva agli utenti. Grazie all'integrazione di una GitHub Action, il sito si aggiorna automaticamente ogni volta che vengono apportate modifiche al branch principale "main" del repository Docs.
-Lo script, realizzato in JavaScript, avvia una richiesta GET a un server esterno per ottenere la struttura aggiornata delle directory e dei file. Questa operazione consente al sito di rimanere sempre allineato con le modifiche apportate al repository principale, fornendo agli utenti una rappresentazione accurata e immediata della sua struttura.
+Il sito vetrina consultabile al seguente link #link("https://swatengineering.github.io/") è progettato per garantire un'esperienza aggiornata e intuitiva agli utenti. Grazie all'integrazione di una GitHub Action, il sito si aggiorna automaticamente ogni volta che vengono apportate modifiche al branch principale "main" del repository Docs.
+Lo script, realizzato in JavaScript, avvia una richiesta GET a un server esterno per ottenere la struttura aggiornata delle directory e dei file. Questa operazione consente al sito di rimanere sempre allineato con le modifiche apportate al repository principale.
 Per garantire la coerenza e la tempestività delle informazioni, il servizio esterno esegue un aggiornamento periodico, verosimilmente ogni 5 minuti. Questo processo automatico consente al sito di riflettere dinamicamente qualsiasi modifica rilevante nel repository Docs, garantendo un'esperienza utente sempre aggiornata e completa.
 
 
@@ -756,7 +758,7 @@ Per garantire la coerenza e la tempestività delle informazioni, il servizio est
 
 Qualsiasi processo istanziato durante lo svolgimento del progetto, prima di potersi considerare completato, dev’essere sottoposto a verifica.
 Lo scopo primario di questo processo è garantire la correttezza dei prodotti e la loro adesione ai vincoli di qualità individuati ed elencati all'interno del documento _Piano di Qualifica v1.0_. 
-Il _Piano di Qualifica v1.0_ funge da punto di riferimento per il Verificatore: in esso vengono fornite tutte le linee guida a cui il Verificatore deve aderire  garantendo uniformità e coerenza al processo di verifica e garantendone la ripetibilità.
+Il _Piano di Qualifica v1.0_ funge da punto di riferimento per il Verificatore: in esso vengono fornite tutte le linee guida a cui il Verificatore deve aderire, garantendo uniformità, coerenza e ripetibilità al processo di verifica.
 
 
 === Strumenti
@@ -765,15 +767,16 @@ Gli strumenti adottati per agevolare il processo di verifica sono i seguenti:
 
 ==== GitHub <revisione_pull>
 
-GitHub offre una funzionalità di _review_ all'interno del meccanismo di _pull request_, permettendo al Verificatore di visualizzare facilmente le ultime modifiche apportate al prodotto. Il Verificatore inserisce commenti specifici che indicano le correzioni o le migliorie necessarie e, al termine della review, la invia richiedendo le modifiche indicate. In seguito all'intervento correttivo dell'autore, il Verificatore esegue ulteriori revisioni fino a quando il documento non presenta più errori e rispetta i criteri di conformità richiesti.
+GitHub offre una funzionalità di review all'interno del meccanismo di pull request, permettendo al Verificatore di visualizzare facilmente le ultime modifiche apportate al prodotto. Il Verificatore inserisce commenti specifici che indicano le correzioni o le migliorie necessarie e, al termine della review, la invia richiedendo le modifiche indicate. In seguito all'intervento correttivo dell'autore, il Verificatore esegue nuovamente la revisione.
+Il processo viene ripetuto fino a che la revisione non da esito positivo.
 A seguito del processo di verifica il Verificatore si occupa di spostare la issue nella corsia di stato adeguata all'interno della _Kanban Board_:
-- _done_ qualora la revisione abbia avuto esito positivo; 
-- _in progress_ in caso siano richieste modifiche.
+- "Done": qualora la revisione abbia avuto esito positivo; 
+- "In progress": in caso siano richieste modifiche.
 
 L'utilizzo delle review in GitHub non solo facilita il tracciamento del processo di verifica, ma consente anche al team di accedere e consultare facilmente l'intera cronologia del codice o del documento di interesse all'interno della #glossary[repository] del progetto. Questo approccio garantisce un processo di verifica trasparente, tracciabile e conforme alle linee guida stabilite.
 Inoltre GitHub impedisce  l'unione dei rami oggetto di pull request fino a quando l'ultimo commit non viene verificato e approvato.
-Ciò garantisce che ogni prodotto, che viene integrato al ramo principale, sia effettivamente revisionato da almeno un membro del team, riducendo il rischio di introduzione di errori. 
-Il Verificatore, a seguito di una revisione positiva, accetta la pull request con la metodologia "squash and merge". Nell'eventualità in cui il branch presenti dei conflitti, l'autore è responsabile di risolverli prima di procedere con l'unione del branch. Il Verificatore si occupa, successivamente, dell'eliminazione sicura del branch dopo il merge.  
+Ciò garantisce che ogni prodotto che viene integrato nel ramo principale, sia stato effettivamente revisionato da almeno un membro del team, riducendo il rischio di introdurre errori. 
+Il Verificatore, a seguito di una revisione positiva, accetta la pull request con la metodologia "squash and merge". Nell'eventualità in cui il branch presenti dei conflitti, è responsabilità dell'autore risolverli prima di procedere con l'unione del branch. Una volta effettuato il merge, il Verificatore si occupa dell'eliminazione sicura del branch. 
 
 ===== Elementi Esterni al Repository
 
@@ -792,7 +795,7 @@ Potrebbero esservi delle issue aperte all'interno dell' #glossary("ITS") che non
 
 L'analisi statica rappresenta un'esplorazione approfondita del codice o della documentazione associata al prodotto. Questa metodologia mira a individuare potenziali problemi o irregolarità, senza mai eseguire effettivamente il sistema software. Nel caso della documentazione, l'analisi statica si concentra sulla struttura, sulla coerenza, sulla completezza e sulla chiarezza del testo. In particolare, verifica la presenza di errori grammaticali, di formattazione e concettuali, garantendo un livello ottimale di qualità nel materiale consegnato. 
 
-Il verificatore, nel contesto della documentazione o del codice, può condurre l'analisi statica tramite due metodologie: #glossary[walkthrough] o #glossary[inspection]. Nel caso del nostro progetto, la metodologia prediletta è l' #glossary[inspection].
+Il Verificatore, nel contesto della documentazione o del codice, può condurre l'analisi statica tramite due metodologie: #glossary[walkthrough] o #glossary[inspection]. La metodologia preferita dal team, e utilizzata con maggior frequenza, è l'#glossary[inspection].
 
 ==== Inspection
 
@@ -820,9 +823,9 @@ Il Verificatore assume l'impegno di elaborare casi di test per ciascuna delle se
 La totalità dei test individuati viene riportata all'interno del documento _PianoDiQualifica\_v1.0_.
 In sede di verifica, sulla base del dominio esaminato, il Verificatore è tenuto ad eseguire tali test in maniera rigorosa e a riportarne gli esiti all'interno del _PianoDiQualifica\_v1.0_. 
 
-==== Test di Unità  
+==== Test di unità  
 
-Il test di unità è una fase del processo di testing software che si concentra sulla verifica delle singole unità o componenti del software. Un'unità è la più piccola parte di un'applicazione che può essere testata isolatamente.
+Il test di unità è una fase del processo di software testing che si concentra sulla verifica delle singole unità o componenti del software. Un'unità è la più piccola parte di un'applicazione che può essere testata isolatamente.
 Gli obiettivi principali:
 
         - Testare ogni unità in modo separato, isolando le influenze esterne e garantendo che ciascuna parte del software funzioni correttamente da sola;
@@ -840,7 +843,7 @@ I test di integrazione, eseguiti successivamente ai test unitari, sono cruciali 
 
 ==== Test di Sistema 
 
-I test di sistema vengono definiti durante la fase di Analisi dei Requisiti con l'obiettivo di misurare la copertura dei requisiti specificati nel capitolato d'appalto. Questa fase del processo di testing software mira a verificare l'intero sistema come un'entità unificata. Durante il test di sistema, il software viene valutato nella sua completezza, con l'obiettivo di accertare che tutte le componenti integrate funzionino insieme in modo coerente per soddisfare gli obiettivi e i requisiti del sistema.
+I test di sistema vengono definiti durante la fase di analisi dei requisiti con l'obiettivo di misurare la copertura dei requisiti derivati dal capitolato d'appalto. Questa fase del processo di software testing mira a verificare l'intero sistema come entità unificata. Durante il test di sistema, il software viene valutato nella sua completezza, con l'obiettivo di accertare che tutte le componenti integrate funzionino insieme in modo coerente per soddisfare gli obiettivi e i requisiti del sistema.
 Per la definizione dei test si rimanda al _Piano di Qualifica v1.0_.
 
 ==== Test di accettazione  
@@ -865,9 +868,9 @@ Il codice numerico è seriale all'interno della categoria.
 ==== Stato dei test
 
 Nella sezione relativa ai test nel _Piano di Qualifica v1.0_ a ogni test viene affiancato il suo stato: 
-- *N-A*: Il test non è applicabile al contesto attuale o alle funzionalità correnti; 
-- *N-I*: Il test non è stato implementato; 
-- *Passato*: Il test ha dato esito positivo;  
+- *N-A*: il test non è applicabile al contesto attuale o alle funzionalità correnti; 
+- *N-I*: il test non è stato implementato; 
+- *Passato*: il test ha dato esito positivo;  
 - *Non Passato*: il test ha dato esito negativo. 
 
 
@@ -886,7 +889,7 @@ La gestione della qualità si propone di raggiungere i seguenti obiettivi:
         - Riduzione dei rischi che potrebbero influenzare la qualità;
         - Consegna del progetto rispettando il budget preventivato inizialmente e i requisiti individuati assieme alla Proponente.
 
-Per la valutazione della qualità viene fornito il documento _Piano di Qualifica_, in cui sono presenti varie metriche con le relative soglie di valori accettabili ed ideali.
+Per la valutazione della qualità viene fornito il documento _Piano di Qualifica v1.0_, in cui sono presenti varie metriche con le relative soglie di valori accettabili ed ideali.
 
  
 
@@ -904,7 +907,7 @@ Per identificare  le metriche si usa la seguente formattazione:
 
 === Struttura obiettivi   
 
-Nel _Piano di Qualifica v1.0_ sono descritti gli obiettivi di ciascuna metrica mediante delle tabelle organizzate secondo questa struttura:
+Nel _Piano di Qualifica v1.0_  le varie metriche sono descritte mediante delle tabelle organizzate secondo la seguente struttura:
 
    - *Metrica*: il codice della metrica seguendo il codice identificativo;
    - *Descrizione*: il nome della metrica;
@@ -914,7 +917,7 @@ Nel _Piano di Qualifica v1.0_ sono descritti gli obiettivi di ciascuna metrica m
 === Grafici Metriche
 
 Per realizzare i grafici relativi alle metriche e all'andamento del progetto, si usa Google Sheets.
-La descrizione delle metriche usate e  si trova nella  @metriche.
+La descrizione delle metriche usate si trova nella  @metriche.
 
 = Processi Organizzativi
 
@@ -932,7 +935,7 @@ Per poter prendere una qualsiasi decisione è necessario vi siano due condizioni
 
 Il Responsabile assume il ruolo cruciale di pianificare dettagliatamente gli obiettivi per ciascuno sprint fino alla conclusione del progetto. Questo implica una distribuzione coerente del lavoro in linea con le scadenze fissate per le revisioni RTB, PB e CA. Il suo compito principale consiste nel delineare chiaramente come il team dovrebbe gestire e completare le attività relative allo sviluppo del software e alla redazione della documentazione in periodi di tempo specifici.
 
-Oltre a definire gli obiettivi per ogni sprint, il Responsabile si occupa di stimare accuratamente il tempo necessario per ciascuna attività e di pianificare la distribuzione dei ruoli all'interno del team. Questa pianificazione è sensata rispetto all'andamento generale del progetto e agli obiettivi imminenti. Queste previsioni vengono formalizzate nel _Piano di Progetto v1.0_, diventando il punto di riferimento durante l'evento di Sprint Planning per definire gli obiettivi del successivo sprint.
+Oltre a definire gli obiettivi per ogni sprint, il Responsabile si occupa di stimare accuratamente il tempo necessario per ciascuna attività e di pianificare la distribuzione dei ruoli all'interno del team. Questa pianificazione deve sempre rimanere aggiornata e sensata rispetto all'andamento generale del progetto e agli obiettivi imminenti. Queste previsioni vengono formalizzate nel _Piano di Progetto v1.0_, che diventa un punto di riferimento durante l'evento di Sprint Planning per definire gli obiettivi del successivo sprint.
 
 Eventuali variazioni nella distribuzione dei ruoli, rispetto alla pianificazione iniziale, vengono documentate e giustificate nel *Consuntivo* del _Piano di Progetto v1.0_. Questo approccio consente al team di adattarsi in modo flessibile alle esigenze emergenti, mantenendo costantemente un quadro chiaro delle variazioni e delle ragioni che sottendono a tali modifiche.
 
@@ -989,7 +992,7 @@ I ruoli assunti sono i seguenti:
          - Implementazione delle procedure operative;
          - Assicurare la disponibilità degli strumenti necessari per la collaborazione e la comunicazione all'interno del team;
          - Creazione e assegnazione delle _issue_ ai membri del team;
-         - Stesura e avanzamento del documento "Norme di Progetto";
+         - Stesura e avanzamento del documento _Norme di Progetto v1.0_;
          - Implementazione di script dedicati per automatizzare processi nell'ambiente di lavoro;
          - Gestione del versionamento dei documenti;
          - Stesura e avanzamento del documento _Piano di Qualifica v1.0_.
@@ -1045,10 +1048,10 @@ I ruoli assunti sono i seguenti:
 
 ==== Ticketing    
 
-L'amministratore crea e gestisce le varie task in modo tale che si sappia quello che si deve fare durante lo sprint e ogni mebro può visualizzare il progresso svolto.
+L'Amministratore crea e gestisce le varie task in modo tale ogni membro del team sia informato su ciò che ci si propone di fare durante lo sprint e sia in grado di verificare il progresso effettuato in qualsiasi momento.
 
-Si segue questa metodo:
-      + L'amministratore crea la issue su Github;
+Si segue il seguente metodo:
+      + L'Amministratore crea la issue su Github;
       + Assegna il task al membro, con la relativa priorità e grandezza;
       + Imposta una data di inizio e fine del task e lo marca nella corsia Ready;
       + Assegna l'issue alla milestone dello sprint attuale;
@@ -1087,8 +1090,8 @@ Per garantire che ogni membro svolga almeno una volta tutti i ruoli menzionati, 
 
 Riguardano esclusivamente i membri del Team e si svolgono tramite:
 
-        - *_Whatsapp_*: utilizzato per messaggistica istantanea e una comunicazione veloce;
-        - *_Discord_*: piattaforma utilizzata per:
+        - *Whatsapp*: utilizzato per messaggistica istantanea e una comunicazione veloce;
+        - *Discord*: piattaforma utilizzata per:
                 + Creare server suddivisibili in vari canali testuali o vocali, dove verranno svolte le riunioni;
                 + Supplementare la comunicazione all'interno della piattaforma con funzionalità offerte da servizi esterni quali GitHub.
 
