@@ -83,7 +83,7 @@ Di seguito vengono elencati i documenti che il team #team si impegna a consegnar
 
 ==== Analisi dei Requisiti
 
-L’_Analisi dei requisiti v1.0_, redatto dagli Analisti, rappresenta un documento fondamentale nello sviluppo del sistema software. Il suo obiettivo principale è definire in dettaglio le funzionalità necessarie affinché il prodotto soddisfi pienamente le richieste della Proponente. Il documento omonimo comprende una serie di elementi essenziali:
+L’_Analisi dei requisiti v1.0_, redatto dagli Analisti, rappresenta un documento fondamentale per lo sviluppo del sistema software. Il suo obiettivo principale è definire in dettaglio le funzionalità necessarie affinché il prodotto soddisfi pienamente le richieste della Proponente. Il documento omonimo comprende una serie di elementi essenziali:
 
         - Descrizione e scopo del prodotto;
         - *Definizione degli attori*: entità o persone che interagiscono con il #glossary[sistema];
