@@ -109,7 +109,7 @@ Si compone delle seguenti sezioni:
 
 Documento, redatto dall'Amministratore, che descrive le strategie e gli approcci adottati per garantire la qualità del prodotto o del servizio che si sta sviluppando. Il suo scopo principale è quello di definire le modalità di verifica e validazione, nonché gli standard e le procedure di qualità che verranno seguite durante l'intero ciclo di vita del progetto.
 
-È caratterizzato da:
+Si compone delle seguenti sezioni:
 
         - *Qualità di processo*: standard e procedure adottate per garantire la qualità durante lo sviluppo del progetto. Include informazioni sulle attività di gestione della qualità, le metodologie utilizzate, e come vengono misurati e migliorati i processi stessi;
         - *Qualità di prodotto*: standard, specifiche e caratteristiche che il prodotto deve soddisfare per essere considerato di qualità. Include anche le metriche e i criteri di valutazione utilizzati per misurare la qualità del prodotto;
