@@ -380,7 +380,7 @@ In ogni diagramma dei casi d'uso possono essere definite:
 
 ==== Diagrammi UML delle classi    
 
-Il diagramma delle classi è uno dei diagrammi UML che rappresenta la struttura statica di un sistema orientato agli oggetti. Esso visualizza le classi del sistema, insieme ai loro attributi, metodi e le relazioni tra di esse. Le classi sono rappresentate tramite rettangoli divisi in tre sezioni: la parte superiore contiene il nome della classe, la sezione centrale include gli attributi della classe e quella inferiore elenca i metodi.
+Il diagramma delle classi è una tipologia di diagramma UML utile a rappresentare la struttura statica di un sistema orientato agli oggetti. Esso visualizza le classi del sistema, insieme ai loro attributi, metodi e le relazioni tra di esse. Le classi sono rappresentate tramite rettangoli divisi in tre sezioni: la parte superiore contiene il nome della classe, la sezione centrale include gli attributi della classe e quella inferiore ne elenca i metodi.
 
         - *Nome*: nome della classe, scritto in grassetto, se la classe è astratta va in corsivo mantendo il grassetto;
         - *Attributi*: 
