@@ -25,22 +25,23 @@ L'attività di inserimento di un termine nel glossario può considerarsi complet
 == Riferimenti
 
 === Riferimenti normativi
-        - *Capitolato d'appalto C6 - InnovaCity*:
+        - *Capitolato d'appalto C6 - InnovaCity*:\
+
                 #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf")
 
 === Riferimenti informativi
-        - *Documentazione git*:
+        - *Documentazione git*:\
                 #link("https://git-scm.com/docs")
 
-        - *Documentazione GitHub*:
+        - *Documentazione GitHub*:\
                 #link("https://docs.github.com/en")
 
-        - *Materiale didattico del corso Metodi e Tecnologie per lo Sviluppo Software 2022/2023*:
+        - *Materiale didattico del corso Metodi e Tecnologie per lo Sviluppo Software 2022/2023*:\
                 #link("https://stem.elearning.unipd.it/course/view.php?id=5359")
 
                 - Lezione 4: GIT;
                 - Laboratorio 2: GitHub Version Control System.
-        - *Documentazione Typst*:
+        - *Documentazione Typst*:\
                 #link("https://typst.app/docs")
 
 #pagebreak()
@@ -446,7 +447,7 @@ I diagrammi delle classi sono interconnessi tra di loro attraverso varie frecce.
                 #figure(
                         image(
                                 "assets/imgs/Generalizzazione.png",
-                                width: 70%
+                                height:70%
                         ),
                         caption: "Figura rappresentante relazione di generalizzazione."
                 )
@@ -942,6 +943,19 @@ Il Responsabile è incaricato di sviluppare un preventivo dettagliato per le suc
 Nel contesto della gestione dello sprint, il Responsabile si impegna anche a compilare un consuntivo dettagliato dello sprint appena concluso. Si analizzano le attività svolte, i tempi impiegati rispetto alle stime previste e qualsiasi deviazione dai piani originali. Tale consuntivo rappresenta una preziosa fonte di apprendimento per il team, consentendo di identificare aree di miglioramento e di ottimizzare la pianificazione futura.
 
 Per garantire un monitoraggio efficace delle prestazioni, il Responsabile utilizza e calcola le metriche, presenti nel documento _Piano di Qualifica v1.0_, rispetto allo sprint appena concluso, valutando l'efficacia del processo e apportando eventuali correzioni o miglioramenti per il successo continuo del progetto.
+
+==== Consuntivo   
+
+È stato sviluppato uno script in Python, integrato con Typst, per semplificare la generazione automatica di tabelle e grafici relativi al consuntivo di ogni singolo sprint del progetto. L'automazione coinvolge l'estrazione dei dati dal foglio di calcolo condiviso, dove vengono registrate le ore produttive del team. I dati vengono successivamente organizzati per sprint e archiviati in file CSV.
+
+L'elaborazione comprende la creazione di un DataFrame consolidato che rappresenta le ore lavorate per ogni ruolo e membro del team durante uno sprint, includendo anche i costi associati. I risultati di questa analisi vengono salvati in un file CSV.
+
+Per visualizzare i dati aggiornati relativi a ciascuno sprint, è possibile utilizzare le seguenti funzioni all'interno del file:
+
+\#rendicontazioneOreAPosteriori(sprintNumber: "number")
+\#rendicontazioneCostiAPosteriori(sprintNumber: "number")
+
+Dove "number" rappresenta il numero specifico dello sprint di interesse. Queste funzioni consentono di ottenere report aggiornati sulla distribuzione delle ore per ruolo e persona, nonché sui costi associati, semplificando la gestione.
 
 
 
