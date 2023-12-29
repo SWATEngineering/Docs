@@ -154,7 +154,7 @@ Software per creare diagrammi e grafici di varia natura, utilizzato dagli Analis
 === Descrizione e scopo
 
 Il processo di sviluppo rappresenta la serie di attività che devono essere svolte affinché il team #team riesca nell'implementazione del prodotto software, rispettando i requisiti e le date di scadenza concordate con la Proponente. In particolare, si ha:
-        - *Analisi dei Requisiti*;
+        - *Analisi dei requisiti*;
         - *Progettazione*;
         - *Codifica*.
 
@@ -445,7 +445,9 @@ La rappresentazione grafica di un'associazione consiste in una linea tra le clas
                         caption: "Figura rappresentante la relazione di associazione."
                 )
 
-        - *Generalizzazione*: ogni oggetto della classe B eredita le caratteristiche della classe A. L'oggetto B è anche un oggetto A. Si indica con una freccia vuota;
+        - *Generalizzazione*:  una classe B eredita attributi, comportamenti e relazioni dalla classe genitore A. In altre parole, ogni istanza di B è anche un'istanza di A (subtyping), ma con specificità o dettagli aggiuntivi propri di B.
+
+Nella rappresentazione grafica, si utilizza una freccia vuota che punta dalla classe figlia (Classe B) alla classe genitore (Classe A).
                 #figure(
                         image(
                                 "assets/imgs/Generalizzazione.png",
@@ -754,7 +756,7 @@ Per garantire la coerenza e la tempestività delle informazioni, il servizio est
 
 == Verifica
 
-=== Descrizione e Scopo
+=== Descrizione e scopo
 
 Qualsiasi processo istanziato durante lo svolgimento del progetto, prima di potersi considerare completato, dev’essere sottoposto a verifica.
 Lo scopo primario di questo processo è garantire la correttezza dei prodotti e la loro adesione ai vincoli di qualità individuati ed elencati all'interno del documento _Piano di Qualifica v1.0_. 
@@ -778,7 +780,7 @@ Inoltre GitHub impedisce  l'unione dei rami oggetto di pull request fino a quand
 Ciò garantisce che ogni prodotto che viene integrato nel ramo principale, sia stato effettivamente revisionato da almeno un membro del team, riducendo il rischio di introdurre errori. 
 Il Verificatore, a seguito di una revisione positiva, accetta la pull request con la metodologia "squash and merge". Nell'eventualità in cui il branch presenti dei conflitti, è responsabilità dell'autore risolverli prima di procedere con l'unione del branch. Una volta effettuato il merge, il Verificatore si occupa dell'eliminazione sicura del branch. 
 
-===== Elementi Esterni al Repository
+===== Elementi esterni al repository
 
 Potrebbero esservi delle issue aperte all'interno dell' #glossary("ITS") che non hanno un corrispondente documento o prodotto in generale, all'interno del repository. Per queste, il ciclo di vita segue il normale flusso attraverso i diversi stati elencati nella @its. La verifica viene effettuata attraverso i commenti della issue stessa, che avranno la seguente forma:
 - richiesta cambiamenti:
