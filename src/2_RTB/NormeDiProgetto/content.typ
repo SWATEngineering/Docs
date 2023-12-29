@@ -451,7 +451,7 @@ Nella rappresentazione grafica, si utilizza una freccia vuota che punta dalla cl
                 #figure(
                         image(
                                 "assets/imgs/Generalizzazione.png",
-                                height:70%
+                                height:38%
                         ),
                         caption: "Figura rappresentante la relazione di generalizzazione."
                 )
@@ -464,7 +464,7 @@ Nella rappresentazione grafica, si utilizza una freccia vuota che punta dalla cl
 ==== Descrizione e scopo 
 
 L'attività di codifica viene svolta dai Programmatori, i quali sono responsabili della traduzione delle decisioni progettuali nel codice sorgente.
-I Programmatori operano all'interno di un contesto ben definito seguendo le linee guida stabilite durante la fase di progettazione architetturale. Questo approccio garantisce una coerenza nell'implementazione del design e l'applicazione di best practices, favorendo la creazione di un codice robusto, manutenibile e di alta qualità.
+I Programmatori operano all'interno di un contesto ben definito seguendo le linee guida stabilite durante la fase di progettazione architetturale. Questo approccio garantisce coerenza nell'implementazione del design e nell'applicazione delle best practices, favorendo la creazione di codice robusto, manutenibile e di alta qualità.
 
 Nel perseguire gli obiettivi di qualità, i Programmatori sono tenuti a rispettare le metriche definite nel _Piano di Qualifica v1.0_.
 
@@ -480,10 +480,11 @@ Ci si aspetta che il codice sviluppato rispetti determinate caratteristiche:
 
 ==== Stile di codifica   
 
-Il team #team, nella decisione di realizzare il prodotto software, ha scelto di adottare il linguaggio di programmazione Python.
+Il team #team ha deciso di adottare il linguaggio di programmazione Python per la creazione dei simulatori di sensori.
 Questa scelta tecnologica è motivata da diverse considerazioni che conferiscono a Python un ruolo privilegiato nel contesto di sviluppo.
 La familiarità che molti membri del team hanno con Python è un elemento chiave. La mancanza di una curva di apprendimento ripida consente al team di concentrarsi direttamente sulla realizzazione del prodotto, risparmiando una quantità significativa di tempo che altrimenti sarebbe stato utilizzato per apprendere un nuovo linguaggio.
 Inoltre, Python promuove uno stile di codifica uniforme e leggibile. La sua struttura rigida basata sull'indentazione agevola la comprensione della struttura del programma, contribuendo a una maggiore chiarezza all'interno del codice. 
+Il team si impegna ad utilizzare i seguenti stili di codifica:
 
 ===== Lunghezza metodi  
 
@@ -507,7 +508,7 @@ Preferire l'uso di metodi con un numero limitato di parametri quando possibile. 
 
 Tutte le variabili, i metodi e le classi devono avere un nome che li distingue univocamente, per limitare la possibilità di ambiguità del codice.
 
-===== Forzatura tipo ritorno   
+===== Type hint  
 
 Utilizzare un tipo di ritorno forzato per ogni funzione o metodo, pratica comunemente utilizzata in Python, contribuisce ad una migliore robustezza del codice fornendo alcuni vantaggi:
 
@@ -564,13 +565,13 @@ I documenti che verranno prodotti sono:
 === Ciclo di vita dei documenti
 
 Ogni documento segue le fasi del seguente #glossary[workflow]:
-+ Si crea un branch per lo sviluppo del documento nell'apposita repository Docs e si mette in uso.
-+ Si copia dall'apposita repository `Templates` il template relativo al file che si deve redigere, e lo si inserisce nella cartella appropriata.
-+ Si redige il documento o una sua sezione. Nel caso di documenti nuovi, in cui è necessario un elevato parallelismo di lavoro, è possibile usare Google Drive per la prima stesura e successivamente caricare il documento all'interno del branch.
-+ Nel file `changelog.typ` si aggiunge una riga in coda, secondo il seguente formato: `<versione>,<data-modifica>,<descrizione-modifica>,<nome-autore>,<ruolo-autore>`; la versione segue le regole descritte nella @versionamento.
-+ Si esegue la commit sul branch creato.
-+ Si apre una pull request dal branch appena creato verso il branch `main`: se il documento non è pronto per la verifica, ma ha bisogno di ulteriori modifiche, si apre la pull request in modalità `draft`, altrimenti in modalità normale, spostando la issue nell'apposita corsia di stato "Ready to Review".
-+ Per ulteriori modifiche richieste dal/dai verificatore/i si ripetono i punti, in ordine, dal punto 3 al punto 5.
++ Si crea un branch per lo sviluppo del documento nell'apposita repository Docs e si mette in uso;
++ Si copia dall'apposita repository `Templates` il template relativo al file che si deve redigere, e lo si inserisce nella cartella appropriata;
++ Si redige il documento o una sua sezione. Nel caso di documenti nuovi, in cui è necessario un elevato parallelismo di lavoro, è possibile usare Google Drive per la prima stesura e successivamente caricare il documento all'interno del branch;
++ Nel file `changelog.typ` si aggiunge una riga in coda, secondo il seguente formato: `<versione>,<data-modifica>,<descrizione-modifica>,<nome-autore>,<ruolo-autore>`; la versione segue le regole descritte nella @versionamento;
++ Si esegue la commit sul branch creato;
++ Si apre una pull request dal branch appena creato verso il branch `main`: se il documento non è pronto per la verifica, ma ha bisogno di ulteriori modifiche, si apre la pull request in modalità `draft`, altrimenti in modalità normale, spostando la issue nell'apposita corsia di stato "Ready to Review";
++ Per ulteriori modifiche richieste dal/dai verificatore/i si ripetono i punti, in ordine, dal punto 3 al punto 5;
 + Si elimina, solo quando la pull request viene chiusa o risolta, il branch creato.
 
 La modifica di un documento avviene allo stesso modo, saltando il passo 2.
@@ -803,20 +804,19 @@ Il Verificatore, nel contesto della documentazione o del codice, può condurre l
 
 In questo processo, il Verificatore adotta un approccio strutturato, seguendo una sequenza di passaggi ben definiti. Utilizza liste di controllo per esaminare in dettaglio il documento o il codice. Per dettagli specifici sulle checklist usate, si rimanda al documento _PianoDiQualifica\_v1.0_. 
 
-===== Walkthrough
+==== Walkthrough
 
 Contrariamente all'#glossary[inspection], il #glossary[walkthrough] è un approccio più esplorativo e che lascia maggiore spazio alla collaborazione tra l’autore e il Verificatore. Questa metodologia prevede una lettura a pettine del prodotto con l'obiettivo di analizzare struttura e contenuto nel loro insieme. 
 
 La decisione del team di preferire il metodo #glossary[inspection] è giustificata dall'alto grado di rigore che questo approccio offre e dalla conseguente maggiore efficacia nell' individuazione di tutte le inconsistenze. L'#glossary[inspection] fornisce una revisione più strutturata e dettagliata,  guidata da liste di controllo specifiche, contribuendo a garantire una maggiore completezza e coerenza.
 Tuttavia, il metodo #glossary[walkthrough] conserva la sua rilevanza e rimane una valida alternativa di cui ci si può avvalere specialmente nelle fasi iniziali e finali del lavoro su un determinato prodotto: l’approccio pragmatico del metodo risulta infatti adeguato a rilevare criticità e peculiarità che potrebbero non essere rilevate da metodi più formali.  
 
-==== Analisi dinamica
+=== Analisi dinamica
 
 L'analisi dinamica nel contesto dello sviluppo software si concentra sull'osservazione e valutazione del comportamento del sistema durante l'esecuzione. Questa metodologia è specificamente rivolta al prodotto software risultante dal processo di codifica.
 Nel processo di sviluppo, l'analisi dinamica è attuata attraverso varie categorie di test. I test, derivati dai requisiti, siano essi funzionali o non funzionali, rendono il processo di analisi dinamica ripetibile. Questo significa che è possibile eseguire i test più volte con gli stessi input e condizioni, ottenendo risultati coerenti e affidabili. La ripetibilità dei test è fondamentale per confermare la coerenza delle funzionalità del software in diverse situazioni e sotto diverse condizioni operative. La definizione e l'esecuzione dei test seguono i principi del #glossary[Modello a V].
-Per queste ragioni, l'analisi dinamica non può essere applicata alla documentazione.
 
-Il Verificatore assume l'impegno di elaborare casi di test per ciascuna delle seguenti categorie, garantendo una copertura completa e dettagliata del software:
+Il Verificatore si impegna a elaborare casi di test per ciascuna delle seguenti categorie, garantendo una copertura completa e dettagliata del software:
 - Test di unità; 
 - Test di integrazione; 
 - Test di sistema; 
@@ -854,7 +854,7 @@ Il superamento dei test di accettazione è fondamentale poiché dimostra il sodd
 Per la definizione dei test si rimanda al _Piano di Qualifica v1.0_.
 
 
-==== Classificazione dei test
+=== Classificazione dei test
 
 I test vengono identificati in base alla loro tipologia e tramite un codice numerico. 
 Nello specifico devono avere la seguente forma: *T[Tipologia Test] [Codice]*
@@ -867,7 +867,7 @@ Tipologia:
 
 Il codice numerico è seriale all'interno della categoria.
 
-==== Stato dei test
+=== Stato dei test
 
 Nella sezione relativa ai test nel _Piano di Qualifica v1.0_ a ogni test viene affiancato il suo stato: 
 - *N-A*: il test non è applicabile al contesto attuale o alle funzionalità correnti; 
@@ -945,11 +945,13 @@ Eventuali variazioni nella distribuzione dei ruoli, rispetto alla pianificazione
 
 Il Responsabile è incaricato di sviluppare un preventivo dettagliato per le successive due settimane subito dopo la conclusione dello sprint attuale, fornendo una guida chiara al team su aspettative e obiettivi.
 
-Nel contesto della gestione dello sprint, il Responsabile si impegna anche a compilare un consuntivo dettagliato dello sprint appena concluso. Si analizzano le attività svolte, i tempi impiegati rispetto alle stime previste e qualsiasi deviazione dai piani originali. Tale consuntivo rappresenta una preziosa fonte di apprendimento per il team, consentendo di identificare aree di miglioramento e di ottimizzare la pianificazione futura.
+Nel contesto della gestione dello sprint, il Responsabile si impegna anche a compilare un consuntivo dettagliato dello sprint appena concluso. 
 
 Per garantire un monitoraggio efficace delle prestazioni, il Responsabile utilizza e calcola le metriche, presenti nel documento _Piano di Qualifica v1.0_, rispetto allo sprint appena concluso, valutando l'efficacia del processo e apportando eventuali correzioni o miglioramenti per il successo continuo del progetto.
 
-==== Consuntivo   
+==== Consuntivo 
+
+Si analizzano le attività svolte, i tempi impiegati rispetto alle stime previste e qualsiasi deviazione dai piani originali. Tale consuntivo rappresenta una preziosa fonte di apprendimento per il team, consentendo di identificare aree di miglioramento e di ottimizzare la pianificazione futura.
 
 È stato sviluppato uno script in Python, integrato con Typst, per semplificare la generazione automatica di tabelle e grafici relativi al consuntivo di ogni singolo sprint del progetto. L'automazione coinvolge l'estrazione dei dati dal foglio di calcolo condiviso, dove vengono registrate le ore produttive del team. I dati vengono successivamente organizzati per sprint e archiviati in file CSV.
 
@@ -1055,11 +1057,12 @@ L'Amministratore crea e gestisce le varie task in modo tale ogni membro del team
 Si segue il seguente metodo:
       + L'Amministratore crea la issue su Github;
       + Assegna il task al membro, con la relativa priorità e grandezza;
-      + Imposta una data di inizio e fine del task e lo marca nella corsia Ready;
+      + Imposta una data di inizio e fine del task e lo sposta nella corsia Ready;
       + Assegna l'issue alla milestone dello sprint attuale;
-      + Il membro incaricato della task, appena inizia a lavorarci la sposta nella corsia In Progress;
-      + A task concluso viene spostata nella corsia Ready To Review;
-      + Successivamente il Verificatore segue i passi definiti nella @revisione_pull.
+      + Il membro incaricato della issue la sposta nella corsia "In Progress" nel momento in cui inizia a lavorarci;
+      + Una volta concluso il task, la issue viene spostata nella corsia "Ready To Review";
+      + Successivamente il Verificatore segue i passi definiti nella @revisione_pull;
+      + La issue viene chiusa in automatico, se linkata ad una pull request che viene mergiata nel ramo principale main, altrimenti si procede manualmente.
 
 Ogni issue è composta da:
 
@@ -1200,32 +1203,24 @@ caption:[Metriche Fornitura],
 
 === Progettazione <metriche_progettazione>
 
-        - *SFIN*: Structure Fan In - rappresenta il numero di moduli o componenti che chiamano un modulo o una funzione specifica; un fan-in elevato indica che molte parti del sistema dipendono da un particolare modulo. Questo può essere un segno positivo di riusabilità, in quanto il modulo è utilizzato in molte parti del sistema;
+        - *SFIN*: Structure Fan In - rappresenta il numero di moduli o componenti che chiamano un modulo o una funzione specifica; un fan-in elevato indica che molte parti del sistema dipendono da un particolare modulo;
 
-        - *SFOUT*: Structure Fan Out - rappresenta il numero di moduli o funzioni chiamati da un modulo o una funzione specifica; un fan-out elevato può indicare che un modulo ha molte dipendenze da altri moduli. Questo può portare a una maggiore complessità del sistema, poiché le modifiche in un modulo possono richiedere modifiche in molti altri moduli;
+        - *SFOUT*: Structure Fan Out - rappresenta il numero di moduli o funzioni chiamati da un modulo o una funzione specifica; un fan-out elevato può indicare che un modulo ha molte dipendenze da altri moduli.
 
 
 === Codifica <metriche_codifica>
 
       -  *CCM*: Complessità Ciclomatica per Metodo - quantifica la complessità del codice misurando il numero di percorsi linearmente indipendenti attraverso il grafo di controllo di flusso del metodo. Più è alta la complessità ciclomatica, maggiore è la complessità del codice
 
-                Formula: $"MCCM" = "e" − "n" + 2$, con:
+                Formula: $"CCM" = "e" − "n" + 2$, con:
 
                         - e: numero di archi del grafo del flusso di esecuzione del metodo;
                         - n: numero di vertici del grafo del flusso di esecuzione del metodo.
 
         - *CC*: Code Coverage - numero di linee di codice convalidate con successo nell'ambito di una procedura di test
 
-                Formula: $"MCC" = "linee di codice percorse" / "linee di codice totali" dot 100$;
-
-        - *PTCP*: Passed Test Cases Percentage - rappresenta la percentuale di casi di test che sono stati eseguiti con successo rispetto al totale dei casi di test previsti
-
-                Formula: $"PTCP" = "test superati" / "test totali" dot 100$;
-
-        - *FTCP*: Failed Test Cases Percentage - rappresenta la percentuale di casi di test che non sono stati superati rispetto al totale dei casi di test previsti
-
-                Formula: $"FTCP" = "test falliti" / "test totali" dot 100$;
-        
+                Formula: $"CC" = "linee di codice percorse" / "linee di codice totali" dot 100$;
+                
         - *ATC*: Attributi per Classe - rappresenta il numero di attributi appartenenti ad una classe;
 
         - *PM*: Parametri per Metodo - rappresenta il numero di parametri appartenenti ad un metodo;
@@ -1270,6 +1265,14 @@ caption:[Metriche Fornitura],
                 Formula: $"ROPS" = "requisiti opzionali soddisfatti" / "requisiti opzionali totali" dot 100$;
 
         - *FU*: Facilità di utilizzo - quantità di click che l'utente deve effettuare per raggiungere un obiettivo desiderato;
+
+        - *PTCP*: Passed Test Cases Percentage - rappresenta la percentuale di casi di test che sono stati eseguiti con successo rispetto al totale dei casi di test previsti
+
+                Formula: $"PTCP" = "test superati" / "test totali" dot 100$;
+
+        - *FTCP*: Failed Test Cases Percentage - rappresenta la percentuale di casi di test che non sono stati superati rispetto al totale dei casi di test previsti
+
+                Formula: $"FTCP" = "test falliti" / "test totali" dot 100$.
 
         
 
