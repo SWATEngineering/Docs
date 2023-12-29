@@ -5,8 +5,8 @@
 Stabilite come #glossary("milestone") principali le #glossary("baseline"), corrispondenti alle revisioni del progetto, gli sprint consentono di mantenere un approccio agile e permettono di essere reattivi rispetto ai cambiamenti nelle esigenze o nei requisiti del progetto. Ciascuno sprint contribuirà in modo incrementale al raggiungimento delle milestone e al successo complessivo del progetto.
 Sulla base delle scadenze riportate nella sezione *Scadenze* si pianificano: 
 
-- 2 sprint di due settimane e 2 sprint da una settimana per arrivare alla revisione RTB; 
-- 10 sprint della durata di una settimana per arrivare alla revisione PB; 
+- 2 sprint di due settimane e 4 sprint da una settimana per arrivare alla revisione RTB; 
+- 8 sprint della durata di una settimana per arrivare alla revisione PB; 
 - 2 sprint della durata di una settimana per arrivare alla revisione CA. 
 
 Inizialmente, il team aveva pianificato sprint della durata di due settimane. Tuttavia, durante lo svolgimento, è risultato preferibile passare a sprint della durata di una settimana. Di conseguenza, il documento del Piano di progetto, in particolare nelle sezioni *Pianificazione* e *Preventivo*, viene aggiornato in base a questa modifica stabilita. 
@@ -23,10 +23,14 @@ Per ciascun Sprint, vengono stabilite le date di inizio e di fine,e il relativo 
   ],
 )
 
-#include "PianificazioneSprint/PrimoSprint.typ"
-#include "PianificazioneSprint/SecondoSprint.typ"
-#include "PianificazioneSprint/TerzoSprint.typ"
-#include "PianificazioneSprint/QuartoSprint.typ"
+*Inizio*: 10/11/2023
+
+*Fine*: 12/01/2024 
+
+La definizione delle _Norme di Progetto_ è alla base di questa fase, per rendere chiare a tutti le modalità di lavoro. Parallelamente hanno inizio anche il _Piano di Progetto_, con particolare attenzione all'analisi dei rischi e al modello di sviluppo, l'_Analisi dei Requisiti_, il _Piano di Qualifica_ e il _Glossario_. I documenti in questa fase sono in continua crescita, data la loro natura incrementale.
+Per favorire la consultazione online della documentazione stessa si prevede la creazione di un sito web "vetrina".
+Si programma di sviluppare in _Proof of Concept_ (POC) del progetto secondo le indicazioni della _Proponente_, che sia in grado di veficare la coesione dello stack tecnologico, i suoi punti di forza e le sue carenze.
+Durante questa fase il colloquio con la _Proponente_ e il _Committente_ viene mantenuto costante, in questo modo, e grazie anche alle conoscenze acquisite dalla costruzione del POC,sarà possibile adattare e migliorare l'_Analisi dei Requisiti_.
 
 == Product Baseline
 
@@ -37,24 +41,19 @@ Per ciascun Sprint, vengono stabilite le date di inizio e di fine,e il relativo 
   ],
 )
 
+*Inizio*: 12/01/2024
 
-#include "PianificazioneSprint/QuintoSprint.typ"
-#include "PianificazioneSprint/SestoSprint.typ"
-#include "PianificazioneSprint/SettimoSprint.typ"
-#include "PianificazioneSprint/OttavoSprint.typ"
+*Fine*: 14/03/2024 
 
-=== Sessione d'esame
-
+In questa fase la concentrazione, soprattutto nel periodo iniziale, si focalizza sulla progettazione. Si inizia la stesura del documento delle _Specifiche Tecniche_ e lo studio di un'architettura adeguata. Iniziano il loro ciclo di vita anche il _Manuale Sviluppatore_ e il _Manuale Utente_.
+Attraverso le fasi di progettazione e sviluppo ha inizio la creazione del progetto vero e proprio, utilizzando le conoscenze acquisitie durante la creazione del POC. Lo sviluppo al suo interno conterrà anche le fasi di testing del prodotto.
 In vista della sessione invernale di esami, è prevista una sospensione temporanea dello sviluppo del progetto. Questo permette ai membri del gruppo di potersi dedicare allo studio individuale.
 
-#include "PianificazioneSprint/NonoSprint.typ"
-#include "PianificazioneSprint/DecimoSprint.typ"
-#include "PianificazioneSprint/UndicesimoSprint.typ"
-#include "PianificazioneSprint/DodicesimoSprint.typ"
-#include "PianificazioneSprint/TredicesimoSprint.typ"
-#include "PianificazioneSprint/QuattordicesimoSprint.typ"
+== Customer Acceptance
 
-== Customer Acceptance Baseline
+*Inizio*: 14/03/2024 
 
-#include "PianificazioneSprint/QuindicesimoSprint.typ"
-#include "PianificazioneSprint/SedicesimoSprint.typ"
+*Fine*: 28/03/2024
+
+La fase di _Customer Acceptance_ si basa su una verifica e miglioramento di tutti i documenti citati nelle altre revisioni.
+Il prodotto è considerato alla sua fase finale e si programma di modificarlo solamente per la risoluzione di bug o l'aggiunta di funzionalità richieste durante la revisione della fase precedente.
