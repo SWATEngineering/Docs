@@ -75,7 +75,7 @@ Gli incontri con la Proponente si suddividono principalmente in tre categorie:
         - *Incontri di analisi dei requisiti*: mirati a chiarire, discutere e validare i requisiti del progetto, garantendo una comprensione chiara e condivisa tra il team e la Proponente;
         - *Sprint Review*: fase conclusiva di ogni sprint durante la quale vengono presentati i risultati ottenuti, con l'intento di ricevere feedback dalla Proponente.
 
-Ogni incontro con la Proponente viene sintetizzato e documentato nel Verbale Esterno di riferimento. Il verbale viene successivamente presentato alla Proponente per essere validato tramite firma, ottenendo così un'approvazione formale del resoconto delle discussioni avvenute all'incontro.
+Ogni incontro con la Proponente viene sintetizzato e documentato nel verbale esterno di riferimento. Il verbale viene successivamente presentato alla Proponente per essere validato tramite firma, ottenendo così un'approvazione formale del resoconto delle discussioni avvenute all'incontro.
 
 === Documentazione fornita
 
@@ -85,7 +85,6 @@ Di seguito vengono elencati i documenti che il team #team si impegna a consegnar
 
 L’_Analisi dei requisiti v1.0_, redatto dagli Analisti, rappresenta un documento fondamentale per lo sviluppo del sistema software. Il suo obiettivo principale è definire in dettaglio le funzionalità necessarie affinché il prodotto soddisfi pienamente le richieste della Proponente. Il documento omonimo comprende una serie di elementi essenziali:
 
-        - Descrizione e scopo del prodotto;
         - *Definizione degli attori*: entità o persone che interagiscono con il #glossary[sistema];
         - *Definizione dei casi d'uso*: rappresentazione narrativa di scenari specifici che descrivono come gli attori interagiscono con il sistema. I casi d'uso offrono una visione chiara delle azioni eseguibili all'interno del sistema e delle interazioni degli utenti con esso. All'interno di ciascun caso d'uso, viene fornito un elenco preciso delle azioni intraprese dall'attore per attivare il caso d'uso, facilitando così l'estrazione dei requisiti corrispondenti;
         - *Definizione di requisiti*: individuazione dei requisiti obbligatori e desiderabili e loro categorizzazione in:
@@ -850,7 +849,7 @@ Per la definizione dei test si rimanda al _Piano di Qualifica v1.0_.
 
 ==== Test di accettazione  
 
-Il superamento dei test di accettazione è fondamentale poiché dimostra il soddisfacimento del committente rispetto al prodotto software. L'esito positivo di questi test fornisce l'approvazione finale e la conferma che il software sia conforme alle aspettative. Solo dopo il superamento dei test di accettazione il team #team può procedere con il rilascio ufficiale del prodotto, garantendo che sia pronto per l'utilizzo nell'ambiente operativo previsto.
+Il superamento dei test di accettazione è fondamentale poiché dimostra il soddisfacimento della Proponente rispetto al prodotto software. L'esito positivo di questi test fornisce l'approvazione finale e la conferma che il software è conforme alle aspettative. Solo dopo il superamento dei test di accettazione il team #team potrà procedere con il rilascio ufficiale del prodotto, garantendo che sia pronto all'utilizzo nell'ambiente operativo previsto.
 Per la definizione dei test si rimanda al _Piano di Qualifica v1.0_.
 
 
