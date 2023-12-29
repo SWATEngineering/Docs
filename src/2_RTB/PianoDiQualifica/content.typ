@@ -585,6 +585,9 @@ table(
 
 == Qualità di Processo - Fornitura
 
+// TODO: QUI MANCA DA AGGIORNARE I GRAFICI E LE VALUTAZIONI: non lo faccio adesso per il discorso da presentare sulle metriche. 
+// Inoltre forse non è il modo giusto di calcolare EV -> AEC sta sopra il valore accettato, questo è dovuto dal fatto che stiamo utilizzando principalmente ruoli costosi e quindi AC è SEMPRE MOLTO SOPRA EV. 
+
 === Estimated at Completion
  
 #figure(
