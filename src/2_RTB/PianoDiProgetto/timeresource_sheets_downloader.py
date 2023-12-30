@@ -1,7 +1,8 @@
 # to install:
 # 1. Collocatevi nella cartella di questo script python con il terminale
 # 2. Comando: python3 -m venv ./venv
-# 3. Comando: pip install -r requirements.txt
+# 3. Comando: source ./venv/bin/activate
+# 4. Comando: pip install -r requirements.txt
 #
 # to use:
 # 1. Assicurarsi di avere una cartella "Credentials" nella stessa directory dove è posizionato lo script python
