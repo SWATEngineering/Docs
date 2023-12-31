@@ -437,6 +437,10 @@ Il versionamento avviene secondo il seguente formato *x.y*:
 
 Due modifiche, fatte in momenti diversi, differiscono l'una dall'altra solo se hanno scopi diversi. Ad esempio non è necessario incrementare la versione se viene fatta una modifica alla stessa sezione in due giorni differenti; anche se faccio una modifica, ed essa non viene approvata, non è necessario incrementare la versione con le nuove modifiche proposte dal/dai verificatore/i, dal momento che modifica e verifica "viaggiano" parallelamente.
 
+=== Documentazione fine sprint
+A fine sprint il Responsabile deve aggiornare i documenti: _Piano di progetto_ e _Piano di qualifica_, con le informazioni riguardanti il periodo appena concluso.
+- *Piano di progetto*: richiede l'aggiornamento del consuntivo appena concluso. Per produrre il consuntivo, nella rendicontazione delle ore produttive, inclusi i grafici, è sufficiente che il Responsabile esegua lo script Python timeresource_sheets_downloader.py, seguendo le istruzioni riportate come commento all'inizio del file, lo script eseguirà il fetch dei dati relativi allo sprint dal foglio Time & Resources, presente sul Google Drive del team, e produrrà le tabelle e i grafici necessari. Infine, il Responsabile deve creare il file typst del consuntivo di riferimento e collegare le risorse appena generate, redigendo la parte di analisi a posteriori.
+- *Piano di qualifica*:
 === Struttura 
 
 ==== Prima Pagina 
