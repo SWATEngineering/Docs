@@ -1055,7 +1055,7 @@ I ruoli assunti sono i seguenti:
 
 ==== Ticketing    
 
-L'Amministratore crea e gestisce le varie task in modo tale ogni membro del team sia informato su ciò che ci si propone di fare durante lo sprint e sia in grado di verificare il progresso effettuato in qualsiasi momento.
+L'Amministratore crea, durante gli incontri interni, e gestisce le varie task in modo tale ogni membro del team sia informato su ciò che ci si propone di fare durante lo sprint e sia in grado di verificare il progresso effettuato in qualsiasi momento.
 
 Si segue il seguente metodo:
       + L'Amministratore crea la issue su Github;
@@ -1107,8 +1107,8 @@ Riguardano esclusivamente i membri del Team e si svolgono tramite:
 
 Le comunicazioni esterne vengono affidate al Responsabile attraverso i seguenti mezzi:
 
-        - _Email_ : si usa l'email di gruppo swateng.team\@gmail.com;
-        - _Element_: si usa il canale creato appositamente dalla Proponente per avere una comunicazione diretta.
+        - Email : si usa l'email di gruppo swateng.team\@gmail.com;
+        - Element: si usa il canale creato appositamente dalla Proponente per avere una comunicazione diretta.
 
 ==== Gestione degli Incontri 
 
@@ -1206,9 +1206,9 @@ caption:[Metriche Fornitura],
 
 === Progettazione <metriche_progettazione>
 
-        - *SFIN*: Structure Fan In - rappresenta il numero di moduli o componenti che chiamano un modulo o una funzione specifica; un fan-in elevato indica che molte parti del sistema dipendono da un particolare modulo;
+        - *SFIN*: Structure Fan In - rappresenta il numero di moduli o componenti direttamente collegati o dipendenti da un modulo o una funzione specifica; un fan-in elevato indica che molte parti del sistema dipendono da un particolare modulo;
 
-        - *SFOUT*: Structure Fan Out - rappresenta il numero di moduli o funzioni chiamati da un modulo o una funzione specifica; un fan-out elevato può indicare che un modulo ha molte dipendenze da altri moduli.
+        - *SFOUT*: Structure Fan Out - rappresenta il numero di dipendenze o connessioni che un componente o modulo particolare ha con altri componenti o moduli. Misura quanti altri elementi dipendono o interagiscono con un dato elemento all'interno di un sistema; un fan-out elevato può indicare che un modulo ha molte dipendenze da altri moduli.
 
 
 === Codifica <metriche_codifica>
