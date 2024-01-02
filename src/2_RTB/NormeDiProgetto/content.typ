@@ -440,7 +440,6 @@ Due modifiche, fatte in momenti diversi, differiscono l'una dall'altra solo se h
 === Documentazione fine sprint
 A fine sprint il Responsabile deve aggiornare i documenti: _Piano di progetto_ e _Piano di qualifica_, con le informazioni riguardanti il periodo appena concluso.
 - *Piano di progetto*: richiede l'aggiornamento del consuntivo appena concluso. Per produrre il consuntivo, nella rendicontazione delle ore produttive, inclusi i grafici, è sufficiente che il Responsabile esegua lo script Python timeresource_sheets_downloader.py, seguendo le istruzioni riportate come commento all'inizio del file, lo script eseguirà il fetch dei dati relativi allo sprint dal foglio Time & Resources, presente sul Google Drive del team, e produrrà le tabelle e i grafici necessari. Infine, il Responsabile deve creare il file typst del consuntivo di riferimento e collegare le risorse appena generate, redigendo la parte di analisi a posteriori.
-- *Piano di qualifica*:
 === Struttura 
 
 ==== Prima Pagina 
@@ -550,8 +549,7 @@ Le #glossary[Corsie di Stato] descrivono lo stato attuale delle attività, all'i
 Per la condivisione veloce o la creazione di bozze si utilizza _Google Drive_. Uno dei suoi principali casi d'uso consiste nella collaborazione in tempo reale nella stesura di sezioni testuali ampie, da inserire successivamente nella documentazione (questo risulta particolarmente utile nel momento in cui il documento è alla sua prima stesura). Viene inoltre utilizzato come sistema per l'immagazzinamento di conoscenze acquisite durante lo svolgimento del progetto.
 
 === Tracciamento del Tempo Speso
-Al fine di tracciare il tempo speso nel corso del progetto, nei diversi ruoli, si utilizza uno spreadsheet appositamente creato, disponibile all'interno di Google Drive. A fine giornata, ogni membro del team inserisce le proprie ore *produttive* svolte quel giorno, secondo la sua miglior stima del rapporto tra ore di orologio e ore produttive. Si inserisce una sola riga per ogni giornata e nella descrizione si aggiungono brevi titoli rappresentativi delle attività svolte.
-
+Al fine di tracciare il tempo speso nel corso del progetto, nei diversi ruoli, si utilizza uno spreadsheet chiamato "Time & Resource Manager", disponibile all'interno di Google Drive. A fine giornata, ogni membro del team inserisce le proprie ore produttive svolte quel giorno, secondo la sua miglior stima del rapporto tra ore di orologio e ore produttive. Si inserisce una sola riga per ogni giornata e nella descrizione si aggiungono brevi titoli rappresentativi delle attività svolte. Nell'eventuale caso in cui le ore vengano riportate con un ritardo tale da oltrepassare la fine dello sprint, sarà responsabilità del membro del team informare prontamente il Responsabile, in quanto il ritardo potrebbe compromettere la rendicontazione delle ore e di conseguenza il consuntivo di fine sprint.
 
 === Controllo di versione e repository
 
