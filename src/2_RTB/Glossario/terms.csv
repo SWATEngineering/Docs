@@ -11,7 +11,7 @@ Attore;Entità esterna al sistema che interagisce con esso al fine di realizzare
 Cella;Termine utilizzato per indicare un area geografica risultante dalla divisione di un territorio tramite l'applicazione di un griglia. 
 Test end-to-end;Test che valuta l'intero flusso dell'applicazione, in modo tale da verificare che tutti i componenti funzionino correttamente.
 Documentazione;Insieme di documenti che forniscono spiegazioni su un determinato prodotto.
-Sistema; Insieme organizzato di componenti interconnesse e interagenti, che lavorano per raggiungere un obiettivo comune o eseguire specifiche funzioni.
+Sistema; Insieme organizzato di componenti interconnesse e interagenti, che lavorano per raggiungere un obiettivo comune o eseguire specifiche funzioni. Nello specifico del progetto per sistema si intende l'insieme connesso della dashboard di visualizzazione, del database per la persistenza ed analisi dei dati e della piattaforma di streaming di dati in tempo reale per gestire i dati in entrata.
 Deliverable; Ogni prodotto e servizio rilasciato o da rilasciare, include software e documentazione.
 Bug; Errore, difetto o falla nel design, sviluppo o funzionamento del software informatico che provoca la produzione di risultati errati o inaspettati, o che fa comportare il software in modi non previsti.
 Framework; Architettura logica di supporto sulla quale un software può essere progettato e realizzato, spesso facilitandone lo sviluppo da parte del programmatore.
