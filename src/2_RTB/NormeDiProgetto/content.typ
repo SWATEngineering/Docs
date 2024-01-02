@@ -113,7 +113,7 @@ Si compone delle seguenti sezioni:
         - *Qualità di processo*: standard e procedure adottate per garantire la qualità durante lo sviluppo del progetto. Include informazioni sulle attività di gestione della qualità, le metodologie utilizzate, e come vengono misurati e migliorati i processi stessi;
         - *Qualità di prodotto*: standard, specifiche e caratteristiche che il prodotto deve soddisfare per essere considerato di qualità. Include anche le metriche e i criteri di valutazione utilizzati per misurare la qualità del prodotto;
         - *Specifiche dei test*: specifiche dettagliate dei test che verranno condotti durante lo sviluppo del progetto;
-        - *Resoconto e valutazioni*: resoconto delle attività di valutazione effettuate durante il progetto. Le valutazioni risultano fondamentali a tracciare l'andamento del progetto rispetto agli obiettivi e alle aspettative, e a identificare prontamente eventuali azioni correttive necessarie a garantire la qualità complessiva del progetto.
+        - *Cruscotto delle metriche*: resoconto delle attività di valutazione effettuate durante il progetto. Le valutazioni risultano fondamentali a tracciare l'andamento del progetto rispetto agli obiettivi e alle aspettative, e a identificare prontamente eventuali azioni correttive necessarie a garantire la qualità complessiva del progetto.
 
 ==== Glossario
 
@@ -379,7 +379,7 @@ In ogni diagramma dei casi d'uso possono essere definite:
 
 ==== Diagrammi UML delle classi    
 
-Il diagramma delle classi è una tipologia di diagramma UML utile a rappresentare la struttura statica di un sistema orientato agli oggetti. Esso visualizza le classi del sistema, insieme ai loro attributi, metodi e le relazioni tra di esse. Le classi sono rappresentate tramite rettangoli divisi in tre sezioni: la parte superiore contiene il nome della classe, la sezione centrale include gli attributi della classe e quella inferiore ne elenca i metodi.
+Il diagramma delle classi è una tipologia di diagramma UML utile a rappresentare la struttura statica di un sistema orientato agli oggetti. Esso visualizza le classi del sistema, insieme ai loro attributi e metodi, e le relazioni tra di esse. Le classi sono rappresentate tramite rettangoli divisi in tre sezioni: la parte superiore contiene il nome della classe, la sezione centrale include gli attributi della classe e quella inferiore ne elenca i metodi.
 
         - *Nome*: nome della classe in grassetto, se la classe è astratta viene scritto in corsivo oltre che in grassetto;
         - *Attributi*: 
@@ -463,7 +463,7 @@ Nella rappresentazione grafica, si utilizza una freccia vuota che punta dalla cl
 ==== Descrizione e scopo 
 
 L'attività di codifica viene svolta dai Programmatori, i quali sono responsabili della traduzione delle decisioni progettuali nel codice sorgente.
-I Programmatori operano all'interno di un contesto ben definito seguendo le linee guida stabilite durante la fase di progettazione architetturale. Questo approccio garantisce coerenza nell'implementazione del design e nell'applicazione delle best practices, favorendo la creazione di codice robusto, manutenibile e di alta qualità.
+I Programmatori operano all'interno di un contesto ben definito seguendo le linee guida stabilite durante la fase di progettazione architetturale. Questo approccio garantisce coerenza nell'implementazione del design e nell'applicazione delle #glossary[best practices], favorendo la creazione di codice robusto, manutenibile e di alta qualità.
 
 Nel perseguire gli obiettivi di qualità, i Programmatori sono tenuti a rispettare le metriche definite nel _Piano di Qualifica v1.0_.
 
@@ -724,7 +724,7 @@ Per la condivisione veloce o la creazione di bozze si utilizza Google Drive. Uno
 
 === Tracciamento del tempo speso
 
-Al fine di tracciare il tempo speso nel corso del progetto, nei diversi ruoli, si utilizza uno _spreadsheet_ appositamente creato, disponibile all'interno di Google Drive. A fine giornata, ogni membro del team inserisce le proprie ore *produttive* svolte quel giorno, secondo la sua miglior stima del rapporto tra ore di orologio e ore produttive. Si inserisce una sola riga per ogni giornata e nella descrizione si aggiungono brevi titoli rappresentativi delle attività svolte.
+Al fine di tracciare il tempo speso nel corso del progetto, nei diversi ruoli, si utilizza uno #glossary[spreadsheet] appositamente creato, disponibile all'interno di Google Drive. A fine giornata, ogni membro del team inserisce le proprie ore *produttive* svolte quel giorno, secondo la sua miglior stima del rapporto tra ore di orologio e ore produttive. Si inserisce una sola riga per ogni giornata e nella descrizione si aggiungono brevi titoli rappresentativi delle attività svolte.
 
 
 === Controllo di versione e repository
@@ -1132,7 +1132,7 @@ Gli incontri hanno due modalità:
 ===== Incontri Esterni 
 
 Negli incontri esterni i partecipanti includono i membri del team e i referenti della Proponente. Questi incontri sono pianificati in concomitanza con l'inizio e la fine dello sprint. Durante queste sessioni, i partecipanti del team hanno l'opportunità di presentare gli sviluppi recenti, condividere i progressi raggiunti e discutere eventuali sfide o questioni emerse nel corso del lavoro. 
-In aggiunta, è possibile richiedere sessioni di formazione mirate su tecnologie specifiche, offrendo al team l'opportunità di approfondire la comprensione di una particolare tecnologia, imparare le _best practice_ e acquisire competenze più avanzate.
+In aggiunta, è possibile richiedere sessioni di formazione mirate su tecnologie specifiche, offrendo al team l'opportunità di approfondire la comprensione di una particolare tecnologia, imparare le #glossary[best practices] e acquisire competenze più avanzate.
 Il Responsabile ha il compito della stesura del verbale esterno, che viene successivamente convalidato, con firma, dalla Proponente.
 
 === Metriche 
