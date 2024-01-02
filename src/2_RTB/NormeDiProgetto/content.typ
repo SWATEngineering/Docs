@@ -985,7 +985,7 @@ I ruoli assunti sono i seguenti:
          - Preparazione dell'ordine del giorno per la successiva riunione, anche sulla base
            dei punti individuati dagli altri componenti;
          - Redazione dei verbali interni ed esterni;
-         - Stesura e e avanzamento del documento “Piano di progetto”;
+         - Stesura e e avanzamento del documento “_Piano di progetto v1.0_”;
          - Creazione dei diari di bordo;
          - Upload dei verbali esterni convalidati, tramite firma, dalla Proponente in una cartella apposita su Google Drive.
 
@@ -1119,7 +1119,7 @@ Negli incontri interni possono partecipare solamente i membri del gruppo. Si svo
 Le linee guida per le riunioni:
                 + Prima dell'incontro avere un ordine del giorno, ovvero i punti eventuali da discutere;
                 + Discussione dei punti;
-                + Pianificazione attività per la settimana (valutate rispetto a quanto pianificato nel _Piano di Progetto_) e assegnazione issue.
+                + Pianificazione attività per la settimana (valutate rispetto a quanto pianificato nel _Piano di Progetto v1.0_) e assegnazione issue.
                 
         Alla fine dell'incontro:
                 + Il Responsabile ha il compito della stesura del verbale interno, fornendo una sintesi dei punti salienti dell'incontro. 
