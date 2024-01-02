@@ -439,7 +439,8 @@ Due modifiche, fatte in momenti diversi, differiscono l'una dall'altra solo se h
 
 === Documentazione fine sprint
 A fine sprint il Responsabile deve aggiornare il documento _Piano di progetto_, con le informazioni riguardanti il periodo appena concluso.
-- *Piano di progetto*: richiede l'aggiornamento del consuntivo appena concluso. Per produrre il consuntivo, nella rendicontazione delle ore produttive, inclusi i grafici, è sufficiente che il Responsabile esegua lo script Python "timeresource_sheets_downloader.py", seguendo le istruzioni riportate come commento all'inizio del file, lo script eseguirà il fetch dei dati relativi allo sprint dallo spreadsheet "Time & Resource Mananger" e produrrà le tabelle e i grafici necessari. Infine, il Responsabile si occupa di creare il file typst del consuntivo di riferimento e collegare le risorse appena generate, redigendo la parte di analisi a posteriori.
+- *Piano di progetto*: richiede l'aggiornamento del consuntivo appena concluso. Per produrre il consuntivo, nella rendicontazione delle ore produttive, inclusi i grafici, è sufficiente che il Responsabile esegua lo script Python "timeresource_sheets_downloader.py", seguendo le istruzioni riportate come commento all'inizio del file. Lo script eseguirà il fetch dei dati relativi allo sprint dallo spreadsheet "Time & Resource Mananger" e produrrà automaticamente le tabelle e i grafici necessari. Infine, il Responsabile si occupa di creare il file typst del consuntivo di riferimento e collegare le risorse appena generate, redigendo la parte di analisi a posteriori.
+
 === Struttura 
 
 ==== Prima Pagina 
