@@ -304,7 +304,7 @@ delle precipitazioni, in millimetri orari di pioggia.
   caption: [UC3.1 Visualizzazione pannello dati urbanistici]
 )
 
-=== UC3.2: Visualizzazione grafico a mappa disponibilità  parcheggi
+=== UC3.2: Visualizzazione grafico a mappa disponibilità parcheggi
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
 - *Postcondizioni*: l'attore visualizza un grafico a mappa atto ad indicare la disponibilità di parcheggi nella zona visualizzata e la loro occupazione, in termini di parcheggi liberi.
@@ -317,14 +317,43 @@ delle precipitazioni, in millimetri orari di pioggia.
   caption: [UC3.2 Visualizzazione grafico a mappa disponibilità di parcheggi]
 )
 
-=== UC3.3: Visualizzazione posizione e stato colonne ricarica
+=== UC3.3: Visualizzazione informazioni delle colonne di ricarica
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
-- *Postcondizioni*: l'attore visualizza un grafico a mappa relativo alle colonne, atto ad indicarne la posizione ,il tipo, in termini di rapidità di ricarica, e la disponibilità.  
+- *Postcondizioni*: l'attore visualizza dei #glossary("pannelli"), adatti al reperimento di informazioni relative alle colonne di ricarica.
+/*un grafico a mappa relativo alle colonne, atto ad indicarne la posizione ,il tipo, in termini di rapidità di ricarica, e la disponibilità*/
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio urbanistico.
 
+#figure(
+  image("assets/UML/UC3.3_Visualizzazione-posizione-e-stato-colonne-ricarica.png",width:100%),
+  caption: [UC3.3 Visualizzazione posizione e stato colonne ricarica]
+)
+
+=== UC3.3.1: Visualizzazione posizione e disponibilità delle colonne ricarica
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
+- *Postcondizioni*: l'attore visualizza una mappa indicante la posizione delle colonne, mediante indicatori, i quali indicheranno la disponibilità della colonna corrisponente.
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio urbanistico.
+
+/* TODO: cambiare l'immagine con una creata apposta per il caso d'uso*/
+#figure(
+  image("assets/UML/UC3.3_Visualizzazione-posizione-e-stato-colonne-ricarica.png",width:100%),
+  caption: [UC3.3 Visualizzazione posizione e stato colonne ricarica]
+)
+
+=== UC3.3.2: Visualizzazione tabella descrittiva delle colonne di ricarica
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
+- *Postcondizioni*: l'attore visualizza una tabella indicante la rapidità di ricarica delle colonne.
+- *Scenario Principale*:
+  + l'attore accede al sistema;
+  + l'attore seleziona la visualizzazione del dominio urbanistico.
+
+/* TODO: cambiare l'immagine con una creata apposta per il caso d'uso*/
 #figure(
   image("assets/UML/UC3.3_Visualizzazione-posizione-e-stato-colonne-ricarica.png",width:100%),
   caption: [UC3.3 Visualizzazione posizione e stato colonne ricarica]
