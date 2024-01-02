@@ -61,19 +61,19 @@ Il processo si articola in diverse fasi:
         - *Contrattazione*: 
                 + Richiesta di incontri di formazione sulle tecnologie consigliate per ottimizzare lo sviluppo;
                 + Ricezione di un feedback approfondito sull'utilizzo delle tecnologie proposte.
-        - *Pianificazione*: individuazione preventiva di una suddivisione precisa di tutte le ore produttive disponibili, seguita da una stima dei costi per ciascun incremento di lavoro (sprint);
+        - *Pianificazione*: individuazione preventiva di una suddivisione precisa di tutte le ore produttive disponibili, seguita da una stima dei costi per ciascun incremento di lavoro (#glossary[sprint]);
         - *Esecuzione*: progettazione e sviluppo del prodotto procedono di pari passo con la stesura della #glossary[documentazione] relativa al progetto;
         - Continuo controllo e verifica;
         - Completamento e consegna.
 
 === Rapporti con la Proponente
-La Proponente si è resa disponibile attraverso vari canali, come e-mail, Google Meet e Element, per stabilire una comunicazione frequente e risolvere prontamente eventuali dubbi o domande che possono emergere durante lo svolgimento del progetto. Sin dall'inizio si è concordato di organizzare incontri regolari, in particolare al termine di ciascuno sprint, fissati per il venerdì alle 10:30.  Questi incontri, che assumono la forma di sessioni di #glossary[Sprint Review], consentono al team di esporre quanto realizzato e di ricevere feedback sull'andamento del lavoro.
+La Proponente si è resa disponibile attraverso vari canali, come e-mail, Google Meet e Element, per stabilire una comunicazione frequente e risolvere prontamente eventuali dubbi o domande che possono emergere durante lo svolgimento del progetto. Sin dall'inizio si è concordato di organizzare incontri regolari, in particolare al termine di ciascuno #glossary[sprint], fissati per il venerdì alle 10:30.  Questi incontri, che assumono la forma di sessioni di #glossary[Sprint Review], consentono al team di esporre quanto realizzato e di ricevere feedback sull'andamento del lavoro.
 
 Gli incontri con la Proponente si suddividono principalmente in tre categorie:
 
         - *Incontri di formazione*: finalizzati ad acquisire familiarità con nuove tecnologie, approfondire concetti specifici o migliorare competenze richieste dal progetto;
         - *Incontri di analisi dei requisiti*: mirati a chiarire, discutere e validare i requisiti del progetto, garantendo una comprensione chiara e condivisa tra il team e la Proponente;
-        - *#glossary[Sprint Review]*: fase conclusiva di ogni sprint durante la quale vengono presentati i risultati ottenuti, con l'intento di ricevere feedback dalla Proponente.
+        - *#glossary[Sprint Review]*: fase conclusiva di ogni #glossary[sprint] durante la quale vengono presentati i risultati ottenuti, con l'intento di ricevere feedback dalla Proponente.
 
 Ogni incontro con la Proponente viene sintetizzato e documentato nel verbale esterno di riferimento. Il verbale viene successivamente presentato alla Proponente per essere validato tramite firma, ottenendo così un'approvazione formale del resoconto delle discussioni avvenute all'incontro.
 
@@ -100,9 +100,9 @@ Si compone delle seguenti sezioni:
 
         - *Analisi dei rischi*: identifica, valuta e gestisce i potenziali rischi che possono influenzare il successo del progetto. Questo processo è essenziale per consentire al team di adottare misure preventive. I rischi vengono categorizzati in rischi tecnologici, di comunicazione e di pianificazione. Per ogni rischio, si compie un'analisi mirata per individuarne i segnali di manifestazione, valutarne l'occorrenza e la pericolosità e pianificare strategie di mitigazione;
         - *Modello di sviluppo*: approccio metodologico scelto per guidare il processo di sviluppo del prodotto. Esso definisce la struttura di lavoro che viene seguita per l'intero ciclo di vita del progetto. Con l'adozione del modello di sviluppo agile Scrum, questa sezione descrive le pratiche e gli eventi principali del #glossary[framework], illustrando il modo in cui vengono utilizzati ed implementati dal team;
-        - *Pianificazione*: fornisce una roadmap dettagliata delle attività, delle risorse, e delle scadenze associate al progetto. In particolare, vengono pianificate le attività necessarie per raggiungere gli obiettivi previsti per ogni sprint, dall'inizio sino al termine del progetto, e la loro distribuzione temporale;
-        - *Preventivo*: basandosi sulla pianificazione eseguita a priori, determina la ripartizione delle ore produttive a disposizione di ogni componente del team nei vari ruoli per ogni sprint. Questo assicura il conseguimento degli obiettivi prefissati e un utilizzo oculato delle risorse. La suddivisione delle ore determina altresì, il costo preventivato per ogni sprint;
-        - *Consuntivo*: partendo dalla rendicontazione delle ore produttive impiegate da ciascun membro del team eseguita a posteriori, determina la ripartizione effettiva delle ore osservata durante lo sprint e, di conseguenza, anche il costo effettivo. Inoltre, si conduce una breve analisi retrospettiva per giustificare le scelte effettuate nel preventivo, evidenziare eventuali deviazioni e delineare i cambiamenti nella strategia utilizzata per pianificare il resto del lavoro,  qualora dovessero rendersi necessari.
+        - *Pianificazione*: fornisce una roadmap dettagliata delle attività, delle risorse, e delle scadenze associate al progetto. In particolare, vengono pianificate le attività necessarie per raggiungere gli obiettivi previsti per ogni #glossary[sprint], dall'inizio sino al termine del progetto, e la loro distribuzione temporale;
+        - *Preventivo*: basandosi sulla pianificazione eseguita a priori, determina la ripartizione delle ore produttive a disposizione di ogni componente del team nei vari ruoli per ogni #glossary[sprint]. Questo assicura il conseguimento degli obiettivi prefissati e un utilizzo oculato delle risorse. La suddivisione delle ore determina altresì, il costo preventivato per ogni #glossary[sprint];
+        - *Consuntivo*: partendo dalla rendicontazione delle ore produttive impiegate da ciascun membro del team eseguita a posteriori, determina la ripartizione effettiva delle ore osservata durante lo #glossary[sprint] e, di conseguenza, anche il costo effettivo. Inoltre, si conduce una breve analisi retrospettiva per giustificare le scelte effettuate nel preventivo, evidenziare eventuali deviazioni e delineare i cambiamenti nella strategia utilizzata per pianificare il resto del lavoro,  qualora dovessero rendersi necessari.
         
 ==== Piano di Qualifica
 
@@ -136,13 +136,13 @@ Servizio di creazione di presentazioni multimediali, utilizzato dal team per ass
 
 ==== Google Sheets
 
-Servizio di creazione di #glossary[spreadsheet], utilizzato dal team per la rendicontazione delle ore produttive impiegate da ciascun componente nel corso di uno sprint.
+Servizio di creazione di #glossary[spreadsheet], utilizzato dal team per la rendicontazione delle ore produttive impiegate da ciascun componente nel corso di uno #glossary[sprint].
 
 ==== Google Meet
 Servizio per creare e partecipare a videochiamate, utilizzato dal team per gli incontri telematici con la Proponente.
 
 ==== Online Gantt
-Online software per creare diagrammi di Gantt, utilizzato dal Responsabile per delineare la distribuzione temporale delle attività pianificate per ogni sprint nella sezione di Pianificazione del _Piano di Progetto v1.0_.
+Online software per creare diagrammi di Gantt, utilizzato dal Responsabile per delineare la distribuzione temporale delle attività pianificate per ogni #glossary[sprint] nella sezione di Pianificazione del _Piano di Progetto v1.0_.
 
 ==== Draw.io
 Software per creare diagrammi e grafici di varia natura, utilizzato dagli Analisti per creare i diagrammi UML dei casi d'uso nella sezione Casi d'uso (@c.uso) dell'_Analisi dei Requisiti v1.0_.
@@ -939,34 +939,34 @@ Per poter prendere una qualsiasi decisione è necessario vi siano due condizioni
 
 ==== Descrizione e scopo
 
-Il Responsabile assume il ruolo cruciale di pianificare dettagliatamente gli obiettivi per ciascuno sprint fino alla conclusione del progetto. Questo implica una distribuzione coerente del lavoro in linea con le scadenze fissate per le revisioni RTB, PB e CA. Il suo compito principale consiste nel delineare chiaramente come il team dovrebbe gestire e completare le attività relative allo sviluppo del software e alla redazione della #glossary[documentazione] in periodi di tempo specifici.
+Il Responsabile assume il ruolo cruciale di pianificare dettagliatamente gli obiettivi per ciascuno #glossary[sprint] fino alla conclusione del progetto. Questo implica una distribuzione coerente del lavoro in linea con le scadenze fissate per le revisioni RTB, PB e CA. Il suo compito principale consiste nel delineare chiaramente come il team dovrebbe gestire e completare le attività relative allo sviluppo del software e alla redazione della #glossary[documentazione] in periodi di tempo specifici.
 
-Oltre a definire gli obiettivi per ogni sprint, il Responsabile si occupa di stimare accuratamente il tempo necessario per ciascuna attività e di pianificare la distribuzione dei ruoli all'interno del team. Questa pianificazione deve sempre rimanere aggiornata e sensata rispetto all'andamento generale del progetto e agli obiettivi imminenti. Queste previsioni vengono formalizzate nel _Piano di Progetto v1.0_, che diventa un punto di riferimento durante l'evento di #glossary[Sprint Planning] per definire gli obiettivi del successivo sprint.
+Oltre a definire gli obiettivi per ogni #glossary[sprint], il Responsabile si occupa di stimare accuratamente il tempo necessario per ciascuna attività e di pianificare la distribuzione dei ruoli all'interno del team. Questa pianificazione deve sempre rimanere aggiornata e sensata rispetto all'andamento generale del progetto e agli obiettivi imminenti. Queste previsioni vengono formalizzate nel _Piano di Progetto v1.0_, che diventa un punto di riferimento durante l'evento di #glossary[Sprint Planning] per definire gli obiettivi del successivo #glossary[sprint].
 
 Eventuali variazioni nella distribuzione dei ruoli, rispetto alla pianificazione iniziale, vengono documentate e giustificate nel *Consuntivo* del _Piano di Progetto v1.0_. Questo approccio consente al team di adattarsi in modo flessibile alle esigenze emergenti, mantenendo costantemente un quadro chiaro delle variazioni e delle ragioni che sottendono a tali modifiche.
 
 ==== Documentazione Fine Sprint
 
-Il Responsabile è incaricato di sviluppare un preventivo dettagliato per le successive due settimane subito dopo la conclusione dello sprint attuale, fornendo una guida chiara al team su aspettative e obiettivi.
+Il Responsabile è incaricato di sviluppare un preventivo dettagliato per le successive due settimane subito dopo la conclusione dello #glossary[sprint] attuale, fornendo una guida chiara al team su aspettative e obiettivi.
 
-Nel contesto della gestione dello sprint, il Responsabile si impegna anche a compilare un consuntivo dettagliato dello sprint appena concluso. 
+Nel contesto della gestione dello #glossary[sprint], il Responsabile si impegna anche a compilare un consuntivo dettagliato dello sprint appena concluso. 
 
-Per garantire un monitoraggio efficace delle prestazioni, il Responsabile utilizza e calcola le metriche, presenti nel documento _Piano di Qualifica v1.0_, rispetto allo sprint appena concluso, valutando l'efficacia del processo e apportando eventuali correzioni o miglioramenti per il successo continuo del progetto.
+Per garantire un monitoraggio efficace delle prestazioni, il Responsabile utilizza e calcola le metriche, presenti nel documento _Piano di Qualifica v1.0_, rispetto allo #glossary[sprint] appena concluso, valutando l'efficacia del processo e apportando eventuali correzioni o miglioramenti per il successo continuo del progetto.
 
 ==== Consuntivo 
 
 Si analizzano le attività svolte, i tempi impiegati rispetto alle stime previste e qualsiasi deviazione dai piani originali. Tale consuntivo rappresenta una preziosa fonte di apprendimento per il team, consentendo di identificare aree di miglioramento e di ottimizzare la pianificazione futura.
 
-È stato sviluppato uno script in Python, integrato con #glossary[Typst], per semplificare la generazione automatica di tabelle e grafici relativi al consuntivo di ogni singolo sprint del progetto. L'automazione coinvolge l'estrazione dei dati dal foglio di calcolo condiviso, dove vengono registrate le ore produttive del team. I dati vengono successivamente organizzati per sprint e archiviati in file CSV.
+È stato sviluppato uno script in Python, integrato con #glossary[Typst], per semplificare la generazione automatica di tabelle e grafici relativi al consuntivo di ogni singolo #glossary[sprint] del progetto. L'automazione coinvolge l'estrazione dei dati dal foglio di calcolo condiviso, dove vengono registrate le ore produttive del team. I dati vengono successivamente organizzati per #glossary[sprint] e archiviati in file CSV.
 
-L'elaborazione comprende la creazione di un DataFrame consolidato che rappresenta le ore lavorate per ogni ruolo e membro del team durante uno sprint, includendo anche i costi associati. I risultati di questa analisi vengono salvati in un file CSV.
+L'elaborazione comprende la creazione di un DataFrame consolidato che rappresenta le ore lavorate per ogni ruolo e membro del team durante uno #glossary[sprint], includendo anche i costi associati. I risultati di questa analisi vengono salvati in un file CSV.
 
-Per visualizzare i dati aggiornati relativi a ciascuno sprint, è possibile utilizzare le seguenti funzioni all'interno del file:
+Per visualizzare i dati aggiornati relativi a ciascuno #glossary[sprint], è possibile utilizzare le seguenti funzioni all'interno del file:
 
 \#rendicontazioneOreAPosteriori(sprintNumber: "number")
 \#rendicontazioneCostiAPosteriori(sprintNumber: "number")
 
-Dove "number" rappresenta il numero specifico dello sprint di interesse. Queste funzioni consentono di ottenere report aggiornati sulla distribuzione delle ore per ruolo e persona, nonché sui costi associati, semplificando la gestione.
+Dove "number" rappresenta il numero specifico dello #glossary[sprint] di interesse. Queste funzioni consentono di ottenere report aggiornati sulla distribuzione delle ore per ruolo e persona, nonché sui costi associati, semplificando la gestione.
 
 
 
@@ -1056,13 +1056,13 @@ I ruoli assunti sono i seguenti:
 
 ==== Ticketing    
 
-L'Amministratore crea, durante gli incontri interni, e gestisce le varie task in modo tale ogni membro del team sia informato su ciò che ci si propone di fare durante lo sprint e sia in grado di verificare il progresso effettuato in qualsiasi momento.
+L'Amministratore crea, durante gli incontri interni, e gestisce le varie task in modo tale ogni membro del team sia informato su ciò che ci si propone di fare durante lo #glossary[sprint] e sia in grado di verificare il progresso effettuato in qualsiasi momento.
 
 Si segue il seguente metodo:
       + L'Amministratore crea la issue su Github;
       + Assegna il task al membro, con la relativa priorità e grandezza;
       + Imposta una data di inizio e fine del task e lo sposta nella #glossary[corsia] Ready;
-      + Assegna l'issue alla #glossary[milestone] dello sprint attuale;
+      + Assegna l'issue alla #glossary[milestone] dello #glossary[sprint] attuale;
       + Il membro incaricato della issue la sposta nella #glossary[corsia] "In Progress" nel momento in cui inizia a lavorarci;
       + Una volta concluso il task, la issue viene spostata nella #glossary[corsia] "Ready To Review";
       + Successivamente il Verificatore segue i passi definiti nella @revisione_pull;
@@ -1085,7 +1085,7 @@ Ogni issue è composta da:
                         + High;
                         + Large;
         - *intervallo Temporale*: una data di inizio e una di fine;
-        - *#glossary[Milestone]*: #glossary[milestone] associata alla issue, se il completamento non è possibile entro lo sprint attuale, è necessario spostare l'issue nella #glossary[milestone] successiva.
+        - *#glossary[Milestone]*: #glossary[milestone] associata alla issue, se il completamento non è possibile entro lo #glossary[sprint] attuale, è necessario spostare l'issue nella #glossary[milestone] successiva.
 
 ==== Cambio dei ruoli
 
@@ -1132,7 +1132,7 @@ Gli incontri hanno due modalità:
 
 ===== Incontri Esterni 
 
-Negli incontri esterni i partecipanti includono i membri del team e i referenti della Proponente. Questi incontri sono pianificati in concomitanza con l'inizio e la fine dello sprint. Durante queste sessioni, i partecipanti del team hanno l'opportunità di presentare gli sviluppi recenti, condividere i progressi raggiunti e discutere eventuali sfide o questioni emerse nel corso del lavoro. 
+Negli incontri esterni i partecipanti includono i membri del team e i referenti della Proponente. Questi incontri sono pianificati in concomitanza con l'inizio e la fine dello #glossary[sprint]. Durante queste sessioni, i partecipanti del team hanno l'opportunità di presentare gli sviluppi recenti, condividere i progressi raggiunti e discutere eventuali sfide o questioni emerse nel corso del lavoro. 
 In aggiunta, è possibile richiedere sessioni di formazione mirate su tecnologie specifiche, offrendo al team l'opportunità di approfondire la comprensione di una particolare tecnologia, imparare le #glossary[best practices] e acquisire competenze più avanzate.
 Il Responsabile ha il compito della stesura del verbale esterno, che viene successivamente convalidato, con firma, dalla Proponente.
 
