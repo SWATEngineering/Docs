@@ -19,7 +19,7 @@ Il progetto "InnovaCity" si concentra sulla creazione di una #glossary[dashboard
 == Glossario
 
 Al fine di evitare possibili ambiguità relative al linguaggio utilizzato nei documenti, viene
-fornito il _Glossario v1.0_, nel quale sono presenti tutte le definizioni di termini aventi un significato specifico che vuole essere disambiguato. Tali termini, sono scritti in _corsivo_ e marcati con una #sub("G") a pedice.
+fornito il _Glossario v1.0_, nel quale sono presenti tutte le definizioni di termini aventi un significato specifico che vuole essere disambiguato. Tali termini, sono scritti in corsivo e marcati con una #sub("G") a pedice.
 L'attività di inserimento di un termine nel glossario può considerarsi completata solo quando il termine viene correttamente definito e spiegato all'interno del _Glossario v1.0_.
 
 == Riferimenti
@@ -741,11 +741,11 @@ Vengono utilizzate le seguenti repository:
 
 
 All'interno dei repository Docs e Innovacity si utilizza il #glossary[Rebase workflow] come metodo di gestione, con l'utilizzo dei Feature branch per separare logicamente il lavoro da svolgere. Nel primo repository però, i Feature branch si derivano direttamente dal main, mentre nel secondo si derivano dal branch dev.
-Questo impone quindi che, prima di andare ad effettuare la chiusura di una Pull request, si vada ad effettuare un _rebase_ del branch di derivazione, per rendere il branch di sviluppo aggiornato rispetto alla base.
+Questo impone quindi che, prima di andare ad effettuare la chiusura di una Pull request, si vada ad effettuare un rebase del branch di derivazione, per rendere il branch di sviluppo aggiornato rispetto alla base.
 
-I Feature branch vengono aperti a partire dalle issue create nell' _Issue Tracking System_ (vedi @its). Si procede poi ad associare una Pull request, a una o più issue collegate tra loro, per effettuare la verifica.
+I Feature branch vengono aperti a partire dalle issue create nell'Issue Tracking System (vedi @its). Si procede poi ad associare una Pull request, a una o più issue collegate tra loro, per effettuare la verifica.
 
-Nel caso del repository _InnovaCity_, il branch main viene utilizzato per la pubblicazione di cambiamenti major, ovvero quando sono state implementate diverse funzionalità significative che contribuiscono all'avanzamento del progetto. In questa circostanza, è compito del Responsabile eseguire l'approvazione finale.
+Nel caso del repository InnovaCity, il branch main viene utilizzato per la pubblicazione di cambiamenti major, ovvero quando sono state implementate diverse funzionalità significative che contribuiscono all'avanzamento del progetto. In questa circostanza, è compito del Responsabile eseguire l'approvazione finale.
 
 === Sito vetrina   
 
