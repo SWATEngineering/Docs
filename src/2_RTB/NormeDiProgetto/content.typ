@@ -14,7 +14,7 @@ Il presente documento ha l'obiettivo di definire le #glossary[best practices] e 
 
 == Scopo del progetto
 
-Il progetto "InnovaCity" si concentra sulla creazione di una dashboard intuitiva, ovvero facilmente comprensibile e accessibile, che permetta al personale amministrativo di monitorare e analizzare il continuo sviluppo di una #glossary[smart city]. L'applicazione comprende una #glossary[data pipeline], appositamente progettata per elaborare dati provenienti da una varietà di simulatori di sensori. Questa pipeline consente la gestione e la visualizzazione ottimale di tali dati, permettendo agli utenti di ottenere rapidamente informazioni rilevanti. L'obiettivo finale è fornire uno strumento per prendere decisioni informate riguardo alla gestione delle risorse della città.
+Il progetto "InnovaCity" si concentra sulla creazione di una #glossary[dashboard] intuitiva, ovvero facilmente comprensibile e accessibile, che permetta al personale amministrativo di monitorare e analizzare il continuo sviluppo di una #glossary[smart city]. L'applicazione comprende una #glossary[data pipeline], appositamente progettata per elaborare dati provenienti da una varietà di simulatori di sensori. Questa pipeline consente la gestione e la visualizzazione ottimale di tali dati, permettendo agli utenti di ottenere rapidamente informazioni rilevanti. L'obiettivo finale è fornire uno strumento per prendere decisioni informate riguardo alla gestione delle risorse della città.
 
 == Glossario
 
@@ -30,10 +30,10 @@ L'attività di inserimento di un termine nel glossario può considerarsi complet
                 #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf")
 
 === Riferimenti informativi
-        - *Documentazione git*:\
+        - *#glossary[Documentazione] git*:\
                 #link("https://git-scm.com/docs")
 
-        - *Documentazione GitHub*:\
+        - *#glossary[Documentazione] GitHub*:\
                 #link("https://docs.github.com/en")
 
         - *Materiale didattico del corso Metodi e Tecnologie per lo Sviluppo Software 2022/2023*:\
@@ -41,7 +41,7 @@ L'attività di inserimento di un termine nel glossario può considerarsi complet
 
                 - Lezione 4: GIT;
                 - Laboratorio 2: GitHub Version Control System.
-        - *Documentazione Typst*:\
+        - *#glossary[Documentazione] #glossary[Typst]*:\
                 #link("https://typst.app/docs")
 
 #pagebreak()
@@ -62,7 +62,7 @@ Il processo si articola in diverse fasi:
                 + Richiesta di incontri di formazione sulle tecnologie consigliate per ottimizzare lo sviluppo;
                 + Ricezione di un feedback approfondito sull'utilizzo delle tecnologie proposte.
         - *Pianificazione*: individuazione preventiva di una suddivisione precisa di tutte le ore produttive disponibili, seguita da una stima dei costi per ciascun incremento di lavoro (sprint);
-        - *Esecuzione*: progettazione e sviluppo del prodotto procedono di pari passo con la stesura della documentazione relativa al progetto;
+        - *Esecuzione*: progettazione e sviluppo del prodotto procedono di pari passo con la stesura della #glossary[documentazione] relativa al progetto;
         - Continuo controllo e verifica;
         - Completamento e consegna.
 
@@ -73,7 +73,7 @@ Gli incontri con la Proponente si suddividono principalmente in tre categorie:
 
         - *Incontri di formazione*: finalizzati ad acquisire familiarità con nuove tecnologie, approfondire concetti specifici o migliorare competenze richieste dal progetto;
         - *Incontri di analisi dei requisiti*: mirati a chiarire, discutere e validare i requisiti del progetto, garantendo una comprensione chiara e condivisa tra il team e la Proponente;
-        - *Sprint Review*: fase conclusiva di ogni sprint durante la quale vengono presentati i risultati ottenuti, con l'intento di ricevere feedback dalla Proponente.
+        - *#glossary[Sprint Review]*: fase conclusiva di ogni sprint durante la quale vengono presentati i risultati ottenuti, con l'intento di ricevere feedback dalla Proponente.
 
 Ogni incontro con la Proponente viene sintetizzato e documentato nel verbale esterno di riferimento. Il verbale viene successivamente presentato alla Proponente per essere validato tramite firma, ottenendo così un'approvazione formale del resoconto delle discussioni avvenute all'incontro.
 
@@ -86,7 +86,7 @@ Di seguito vengono elencati i documenti che il team #team si impegna a consegnar
 L’_Analisi dei requisiti v1.0_, redatto dagli Analisti, rappresenta un documento fondamentale per lo sviluppo del sistema software. Il suo obiettivo principale è definire in dettaglio le funzionalità necessarie affinché il prodotto soddisfi pienamente le richieste della Proponente. Il documento omonimo comprende una serie di elementi essenziali:
 
         - *Definizione degli attori*: entità o persone che interagiscono con il #glossary[sistema];
-        - *Definizione dei casi d'uso*: rappresentazione narrativa di scenari specifici che descrivono come gli attori interagiscono con il sistema. I casi d'uso offrono una visione chiara delle azioni eseguibili all'interno del sistema e delle interazioni degli utenti con esso. All'interno di ciascun caso d'uso, viene fornito un elenco preciso delle azioni intraprese dall'attore per attivare il caso d'uso, facilitando così l'estrazione dei requisiti corrispondenti;
+        - *Definizione dei casi d'uso*: rappresentazione narrativa di scenari specifici che descrivono come gli attori interagiscono con il sistema. I casi d'uso offrono una visione chiara delle azioni eseguibili all'interno del sistema e delle interazioni degli utenti con esso. All'interno di ciascun caso d'uso, viene fornito un elenco preciso delle azioni intraprese dall'#glossary[attore] per attivare il caso d'uso, facilitando così l'estrazione dei requisiti corrispondenti;
         - *Definizione di requisiti*: individuazione dei requisiti obbligatori e desiderabili e loro categorizzazione in:
                 - *Requisiti funzionali*: specificano le operazioni che il sistema deve essere in grado di eseguire;
                 - *Requisiti di qualità*: si concentrano sulla definizione degli standard e degli attributi che il software deve possedere per garantire prestazioni, affidabilità, usabilità e sicurezza ottimali;
@@ -117,10 +117,10 @@ Si compone delle seguenti sezioni:
 
 ==== Glossario
 
-Il _Glossario v1.0_ funge da catalogo esaustivo che raccoglie i termini tecnici impiegati all'interno del progetto, offrendo definizioni chiare e precise. Questo documento previene fraintendimenti e promuove una comprensione condivisa della terminologia specifica del settore, migliorando così la coerenza e la qualità della documentazione prodotta dal team.
+Il _Glossario v1.0_ funge da catalogo esaustivo che raccoglie i termini tecnici impiegati all'interno del progetto, offrendo definizioni chiare e precise. Questo documento previene fraintendimenti e promuove una comprensione condivisa della terminologia specifica del settore, migliorando così la coerenza e la qualità della #glossary[documentazione] prodotta dal team.
 
 ==== Lettera di Presentazione
-La _Lettera di Presentazione_ accompagna la consegna del prodotto software e della documentazione pertinente, sottolineando l'impegno che il team #team si assume nel completare e consegnare il prodotto entro le scadenze concordate. Inoltre, espone un preventivo aggiornato rispetto a quello presentato in occasione dell'ultima revisione. In questo contesto, costo e data di consegna del progetto sono attentamente valutati in relazione all'andamento corrente e vengono confermati o eventualmente modificati in risposta alle dinamiche emergenti durante l'evoluzione del progetto.
+La _Lettera di Presentazione_ accompagna la consegna del prodotto software e della #glossary[documentazione] pertinente, sottolineando l'impegno che il team #team si assume nel completare e consegnare il prodotto entro le scadenze concordate. Inoltre, espone un preventivo aggiornato rispetto a quello presentato in occasione dell'ultima revisione. In questo contesto, costo e data di consegna del progetto sono attentamente valutati in relazione all'andamento corrente e vengono confermati o eventualmente modificati in risposta alle dinamiche emergenti durante l'evoluzione del progetto.
 
 === Strumenti
 
@@ -173,7 +173,7 @@ L'_Analisi dei Requisiti v1.0_ viene redatta dagli Analisti e contiene:
 Lo scopo dell'_Analisi dei Requisiti v1.0_ è definire in modo dettagliato e chiaro le funzionalità e le caratteristiche che il prodotto software deve soddisfare. Questo processo mira a comprendere a fondo le esigenze degli utenti, gli obiettivi del sistema e le condizioni in cui dovrà operare. Gli obiettivi principali del processo di analisi dei requisiti includono:
 
         - Identificare e chiarire gli obiettivi e le finalità del prodotto che si intende sviluppare;
-        - Fornire ai Progettisti una base chiara e comprensibile per la definizione dell'architettura e il design del sistema;
+        - Fornire ai Progettisti una base chiara e comprensibile per la definizione dell'#glossary[architettura] e il design del sistema;
         - Fornire una base per la pianificazione mediante i requisiti raccolti;
         - Facilitare la comunicazione tra fornitori e Proponente;
         - Fornire riferimenti per la verifica.
@@ -181,7 +181,7 @@ Lo scopo dell'_Analisi dei Requisiti v1.0_ è definire in modo dettagliato e chi
 
 ==== Identificazione dei casi d'uso <c.uso>
 
-Un caso d'uso rappresenta un singolo scenario o interazione tra un attore e il sistema software, focalizzandosi sulle azioni compiute dall'attore e sulle risposte del sistema a tali azioni.
+Un caso d'uso rappresenta un singolo scenario o interazione tra un #glossary[attore] e il sistema software, focalizzandosi sulle azioni compiute dall'#glossary[attore] e sulle risposte del sistema a tali azioni.
 I casi d'uso sono identificati nel seguente modo:
 
          #align(center)[*UC[Numero].[Numero sottocaso] [Titolo]*]
@@ -195,7 +195,7 @@ I casi d'uso sono identificati nel seguente modo:
 
 I casi d'uso sono strutturati nel seguente modo:
 
-    - Attore;
+    - #glossary[Attore];
     - Precondizioni;
     - Postcondizioni;
     - Scenario Principale;
@@ -263,13 +263,13 @@ La fase di progettazione segue l'analisi dei requisiti, dove sono definite le ne
 
 Si definiscono tre sottoattività: 
 
-        + *Technology Baseline*: implica la selezione e la definizione delle tecnologie di base utilizzate per la realizzazione del sistema. Questo comprende decisioni relative a linguaggi di programmazione, librerie e _framework_. Tale processo porta alla creazione di un Proof of Concept (#glossary("PoC"));
+        + *Technology #glossary[Baseline]*: implica la selezione e la definizione delle tecnologie di base utilizzate per la realizzazione del sistema. Questo comprende decisioni relative a linguaggi di programmazione, librerie e #glossary[framework]. Tale processo porta alla creazione di un Proof of Concept (#glossary("PoC"));
 
                 Include:
                 - *Proof of Concept*: consiste nella creazione di una versione parziale del prodotto, includendo alcune delle funzionalità stabilite durante l'analisi dei requisiti. L'obiettivo è valutare la fattibilità del prodotto completo;
                 - *scelte tecnologiche*: consiste nello stabilire quali tecnologie adottare per lo sviluppo del Poc, anche su consiglio della Proponente.
-        + *_Progettazione Architetturale_*: definizione ad alto livello dell'architettura del sistema; si concentra sulla suddivisione del sistema in componenti e moduli, definendo le relazioni tra di essi e specificando le linee guida per l'organizzazione e l'interazione delle varie parti;
-        + *_Product Baseline_*: segna un punto stabile nel processo di progettazione, in cui le specifiche tecniche, le funzionalità principali e l'architettura del prodotto sono definite in modo dettagliato e accettate dalle parti coinvolte. Include tutti gli elementi essenziali e i requisiti chiave del prodotto che devono essere soddisfatti, fornendo una base solida per lo sviluppo continuo del prodotto. Questo processo porta infine alla realizzazione di un _Minimum Viable Product_ (#glossary("MVP"));
+        + *Progettazione Architetturale*: definizione ad alto livello dell'#glossary[architettura] del sistema; si concentra sulla suddivisione del sistema in componenti e moduli, definendo le relazioni tra di essi e specificando le linee guida per l'organizzazione e l'interazione delle varie parti;
+        + *#glossary[Product Baseline]*: segna un punto stabile nel processo di progettazione, in cui le specifiche tecniche, le funzionalità principali e l'#glossary[architettura] del prodotto sono definite in modo dettagliato e accettate dalle parti coinvolte. Include tutti gli elementi essenziali e i requisiti chiave del prodotto che devono essere soddisfatti, fornendo una base solida per lo sviluppo continuo del prodotto. Questo processo porta infine alla realizzazione di un _Minimum Viable Product_ (#glossary("MVP"));
                 Include:
                 - #glossary("Design Patterns");
                 - Definizione delle classi;
@@ -294,7 +294,7 @@ La definizione delle metriche seguenti si può trovare nella @metriche_progettaz
       [*SFOUT*],[Structure Fan Out]
       
 ),
-caption:[Metriche progettazione],
+caption:[Metriche relative alla progettazione],
 )
 
 ==== Diagrammi UML dei casi d'uso
@@ -306,9 +306,9 @@ Gli scenari d'uso sono organizzati in sequenze di azioni, illustrando le operazi
 È fondamentale notare che la rappresentazione fornita dai diagrammi dei casi d'uso non si addentra nei dettagli implementativi, poiché il loro scopo principale è descrivere la funzionalità, considerandola come un elemento esterno al sistema.
 
 I diagrammi dei casi d'uso sono composti da:
-        - *Attore*: rappresenta un agente esterno coinvolto nelle interazioni con il sistema. Si tratta di una qualsiasi entità in grado di interagire con il sistema, infatti ogni caso d'uso determina una funzionalità che viene messa a disposizione di tale attore, tuttavia, senza entrare nei dettagli implementativi.
+        - *#glossary[Attore]*: rappresenta un agente esterno coinvolto nelle interazioni con il sistema. Si tratta di una qualsiasi entità in grado di interagire con il sistema, infatti ogni caso d'uso determina una funzionalità che viene messa a disposizione di tale #glossary[attore], tuttavia, senza entrare nei dettagli implementativi.
                 
-                A livello di diagramma, l'attore è simboleggiato da un' icona umana stilizzata, identificabile mediante un'etichetta univoca e rappresentativa, posizionata sotto di essa.
+                A livello di diagramma, l'#glossary[attore] è simboleggiato da un' icona umana stilizzata, identificabile mediante un'etichetta univoca e rappresentativa, posizionata sotto di essa.
 
                 #figure(
                         image(
@@ -323,7 +323,7 @@ I diagrammi dei casi d'uso sono composti da:
                 Generalmente, un caso d'uso è costituito da una sequenza di situazioni che esplicitano le diverse eventualità che possono manifestarsi durante l'interazione tra l'utente e il software. La sua rappresentazione comprende un'identificazione univoca, espressa come UCx.y (dove x indica il numero del caso d'uso, e y indica il fatto che stiamo trattando un eventuale sotto-caso d'uso del caso d'uso UCx), seguita da una concisa ma completa descrizione della funzione stessa.
 
                 Ogni caso d'uso discute i seguenti punti:
-                        - *Attore principale*: l'attore che intende compiere lo scopo rappresentato dal caso d'uso;
+                        - *#glossary[Attore] principale*: l'#glossary[attore] che intende compiere lo scopo rappresentato dal caso d'uso;
                         - *Precondizioni*: stato in cui il sistema si deve trovare prima dell'avvio della funzionalità rappresentata dal caso d'uso;
                         - *Postcondizioni*: stato in cui il sistema si troverà dopo che l'utente avrà portato a termine lo scopo rappresentato dal caso d'uso;
                         - *Scenario principale*: descrizione accurata della funzionalità rappresentata dal caso d'uso;
@@ -343,7 +343,7 @@ I diagrammi dei casi d'uso sono composti da:
 
 In ogni diagramma dei casi d'uso possono essere definite:
         - *Generalizzazioni*: 
-                il concetto di generalizzazione può essere esteso sia agli attori che ai casi d'uso. La generalizzazione di un attore si verifica quando un attore di livello superiore, dotato di abilità più generiche, viene specializzato in comportamenti più specifici nei sottostanti attori. Ogni attore sottostante eredita le funzionalità dal suo attore padre, integrandole con ulteriori aspetti rilevanti al proprio contesto.
+                il concetto di generalizzazione può essere esteso sia agli attori che ai casi d'uso. La generalizzazione di un #glossary[attore] si verifica quando un #glossary[attore] di livello superiore, dotato di abilità più generiche, viene specializzato in comportamenti più specifici nei sottostanti attori. Ogni #glossary[attore] sottostante eredita le funzionalità dal suo #glossary[attore] padre, integrandole con ulteriori aspetti rilevanti al proprio contesto.
 
                 Per quanto riguarda i casi d'uso, i casi figli hanno la possibilità di aggiungere o modificare il comportamento dei casi d'uso ereditati dal caso padre. Tutte le funzionalità non ridefinite nei casi figlio mantengono la definizione ereditata. La generalizzazione degli attori e dei casi d'uso è simboleggiata da una freccia continua con triangolo vuoto bianco, che si estende da un elemento figlio a un elemento padre.
                 #figure(
@@ -546,7 +546,7 @@ caption: [Metriche di codifica],
 
 === Descrizione e scopo
 
-La documentazione è l'insieme di informazioni rappresentate sotto forma di testo scritto che accompagna un prodotto software, svolgendo un ruolo essenziale nella descrizione del prodotto per coloro che lo sviluppano, lo distribuiscono e lo utilizzano. Il suo obiettivo primario è facilitare l'attività di sviluppo ai membri del team durante l'intero ciclo di vita del progetto, garantendone la coerenza mediante il tracciamento di tutti i processi e le attività coinvolte. Ciò mira a migliorare la qualità del risultato finale e semplificare la manutenzione. L'implementazione di regole chiare e di una struttura uniforme non solo migliora la fruibilità e la comprensione, ma favorisce anche la collaborazione all'interno del team, contribuendo in modo significativo al successo complessivo del progetto software.
+La #glossary[documentazione] è l'insieme di informazioni rappresentate sotto forma di testo scritto che accompagna un prodotto software, svolgendo un ruolo essenziale nella descrizione del prodotto per coloro che lo sviluppano, lo distribuiscono e lo utilizzano. Il suo obiettivo primario è facilitare l'attività di sviluppo ai membri del team durante l'intero ciclo di vita del progetto, garantendone la coerenza mediante il tracciamento di tutti i processi e le attività coinvolte. Ciò mira a migliorare la qualità del risultato finale e semplificare la manutenzione. L'implementazione di regole chiare e di una struttura uniforme non solo migliora la fruibilità e la comprensione, ma favorisce anche la collaborazione all'interno del team, contribuendo in modo significativo al successo complessivo del progetto software.
 
 === Lista Documenti
 
@@ -569,7 +569,7 @@ Ogni documento segue le fasi del seguente #glossary[workflow]:
 + Si redige il documento o una sua sezione. Nel caso di documenti nuovi, in cui è necessario un elevato parallelismo di lavoro, è possibile usare Google Drive per la prima stesura e successivamente caricare il documento all'interno del branch;
 + Nel file `changelog.typ` si aggiunge una riga in coda, secondo il seguente formato: `<versione>,<data-modifica>,<descrizione-modifica>,<nome-autore>,<ruolo-autore>`; la versione segue le regole descritte nella @versionamento;
 + Si esegue la commit sul branch creato;
-+ Si apre una pull request dal branch appena creato verso il branch `main`: se il documento non è pronto per la verifica, ma ha bisogno di ulteriori modifiche, si apre la pull request in modalità `draft`, altrimenti in modalità normale, spostando la issue nell'apposita corsia di stato "Ready to Review";
++ Si apre una pull request dal branch appena creato verso il branch `main`: se il documento non è pronto per la verifica, ma ha bisogno di ulteriori modifiche, si apre la pull request in modalità `draft`, altrimenti in modalità normale, spostando la issue nell'apposita #glossary[corsia] di stato "Ready to Review";
 + Per ulteriori modifiche richieste dal/dai verificatore/i si ripetono i punti, in ordine, dal punto 3 al punto 5;
 + Si elimina, solo quando la pull request viene chiusa o risolta, il branch creato.
 
@@ -578,9 +578,9 @@ Ogni cambiamento di stato è accompagnato dal conseguente movimento della issue,
 
 === Template Typst
 
-Per la stesura dei documenti viene usato un template in formato _Typst_. Il template fornisce una struttura e un formato predefinito per semplificare la creazione di documenti. Serve a garantire coerenza, risparmiare tempo, standardizzare la presentazione e contribuire a una produzione di documenti più efficiente e professionale.
-Sono stati sviluppati quattro template distinti per adattarsi alle diverse esigenze di documentazione: 
-          - documentazione ufficiale;
+Per la stesura dei documenti viene usato un template in formato #glossary[Typst]. Il template fornisce una struttura e un formato predefinito per semplificare la creazione di documenti. Serve a garantire coerenza, risparmiare tempo, standardizzare la presentazione e contribuire a una produzione di documenti più efficiente e professionale.
+Sono stati sviluppati quattro template distinti per adattarsi alle diverse esigenze di #glossary[documentazione]: 
+          - #glossary[documentazione] ufficiale;
           - lettere di presentazione;
           - verbali per incontri interni ed esterni.
 
@@ -676,7 +676,7 @@ Viene adottato il formato "DD-MM-YYYY":
 
 Il gruppo utilizza:
 
-        - *Typst*: linguaggio di markup utilizzato per la redazione di documenti, noto per la sua semplicità e flessibilità nella formattazione di testi strutturati;
+        - *#glossary[Typst]*: linguaggio di markup utilizzato per la redazione di documenti, noto per la sua semplicità e flessibilità nella formattazione di testi strutturati;
 
         - *Visual Studio Code*: un popolare ambiente di sviluppo integrato (IDE), noto per la sua leggerezza, versatilità e la vasta gamma di estensioni che permettono la personalizzazione e offrono supporto per numerosi linguaggi di programmazione;
 
@@ -695,7 +695,7 @@ table(
       [*IG*],[Indice Gulpease],
       [*CO*],[Correttezza Ortografica]
 ),
-caption:[Metriche Documentazione],
+caption:[Metriche relative alla documentazione],
 )
 
 #pagebreak()
@@ -720,7 +720,7 @@ Le #glossary[Corsie di Stato] descrivono lo stato attuale delle attività, all'i
 
 === Strumento di condivisione
 
-Per la condivisione veloce o la creazione di bozze si utilizza Google Drive. Uno dei suoi principali casi d'uso consiste nella collaborazione in tempo reale nella stesura di sezioni testuali ampie, da inserire successivamente nella documentazione (questo risulta particolarmente utile nel momento in cui il documento è alla sua prima stesura). Viene inoltre utilizzato come sistema per l'immagazzinamento di conoscenze acquisite durante lo svolgimento del progetto.
+Per la condivisione veloce o la creazione di bozze si utilizza Google Drive. Uno dei suoi principali casi d'uso consiste nella collaborazione in tempo reale nella stesura di sezioni testuali ampie, da inserire successivamente nella #glossary[documentazione] (questo risulta particolarmente utile nel momento in cui il documento è alla sua prima stesura). Viene inoltre utilizzato come sistema per l'immagazzinamento di conoscenze acquisite durante lo svolgimento del progetto.
 
 === Tracciamento del tempo speso
 
@@ -733,9 +733,9 @@ Come sistema di controllo di versione si utilizza Git.
  
 
 Vengono utilizzate le seguenti repository:
-        - #link("https://github.com/SWATEngineering/Docs"): questa repository viene impiegata dal team per condividere e revisionare il codice sorgente legato alla documentazione del progetto. Viene utilizzata per collaborare, revisionare e mantenere aggiornati i documenti di lavoro, consentendo ai membri del team di contribuire e gestire in modo efficiente la documentazione;
+        - #link("https://github.com/SWATEngineering/Docs"): questa repository viene impiegata dal team per condividere e revisionare il codice sorgente legato alla #glossary[documentazione] del progetto. Viene utilizzata per collaborare, revisionare e mantenere aggiornati i documenti di lavoro, consentendo ai membri del team di contribuire e gestire in modo efficiente la #glossary[documentazione];
 
-        - #link("https://github.com/SWATEngineering/SWATEngineering.github.io"): questa repository funge da piattaforma per i documenti compilati e approvati. Il sito web #link("https://swatengineering.github.io/") rappresenta la versione web della documentazione finale e approvata dal team. È utilizzata per presentare al pubblico una visione consolidata dei documenti di progetto;
+        - #link("https://github.com/SWATEngineering/SWATEngineering.github.io"): questa repository funge da piattaforma per i documenti compilati e approvati. Il sito web #link("https://swatengineering.github.io/") rappresenta la versione web della #glossary[documentazione] finale e approvata dal team. È utilizzata per presentare al pubblico una visione consolidata dei documenti di progetto;
 
         - #link("https://github.com/SWATEngineering/InnovaCity"): questa repository è dedicata alla condivisione e revisione del codice sorgente relativo al prodotto software "InnovaCity". È qui che il team lavora e collabora sul codice del prodotto stesso, consentendo una gestione centralizzata del lavoro di sviluppo e delle modifiche apportate al software.
 
@@ -753,6 +753,10 @@ Il sito vetrina consultabile al seguente link #link("https://swatengineering.git
 Lo script, realizzato in JavaScript, avvia una richiesta GET a un server esterno per ottenere la struttura aggiornata delle directory e dei file. Questa operazione consente al sito di rimanere sempre allineato con le modifiche apportate al repository principale.
 Per garantire la coerenza e la tempestività delle informazioni, il servizio esterno esegue un aggiornamento periodico, verosimilmente ogni 5 minuti. Questo processo automatico consente al sito di riflettere dinamicamente qualsiasi modifica rilevante nel repository Docs, garantendo un'esperienza utente sempre aggiornata e completa.
 
+=== Controllo termini glossario    
+
+È stato sviluppato uno script in python per verificare la corrispondenza tra i termini presenti in un documento e quelli presenti nel _Glossario v1.0_.
+Lo script, utilizzando espressioni regolari, confronta i termini indicati nei documenti, formattati secondo lo standard del glossario, con quelli presenti nel _Glossario v1.0_. In presenza di discrepanze, genera un messaggio di errore specificando i termini mancanti nel _Glossario v1.0_. In caso contrario, l'esecuzione avviene senza problemi, indicando che i termini nel documento sono in linea con quelli del _Glossario v1.0_.
 
 == Verifica
 
@@ -771,7 +775,7 @@ Gli strumenti adottati per agevolare il processo di verifica sono i seguenti:
 
 GitHub offre una funzionalità di review all'interno del meccanismo di pull request, permettendo al Verificatore di visualizzare facilmente le ultime modifiche apportate al prodotto. Il Verificatore inserisce commenti specifici che indicano le correzioni o le migliorie necessarie e, al termine della review, la invia richiedendo le modifiche indicate. In seguito all'intervento correttivo dell'autore, il Verificatore esegue nuovamente la revisione.
 Il processo viene ripetuto fino a che la revisione non da esito positivo.
-A seguito del processo di verifica il Verificatore si occupa di spostare la issue nella corsia di stato adeguata all'interno della _Kanban Board_:
+A seguito del processo di verifica il Verificatore si occupa di spostare la issue nella #glossary[corsia] di stato adeguata all'interno della _Kanban Board_:
 - "Done": qualora la revisione abbia avuto esito positivo; 
 - "In progress": in caso siano richieste modifiche.
 
@@ -795,9 +799,9 @@ Potrebbero esservi delle issue aperte all'interno dell' #glossary("ITS") che non
   ```
 === Analisi statica
 
-L'analisi statica rappresenta un'esplorazione approfondita del codice o della documentazione associata al prodotto. Questa metodologia mira a individuare potenziali problemi o irregolarità, senza mai eseguire effettivamente il sistema software. Nel caso della documentazione, l'analisi statica si concentra sulla struttura, sulla coerenza, sulla completezza e sulla chiarezza del testo. In particolare, verifica la presenza di errori grammaticali, di formattazione e concettuali, garantendo un livello ottimale di qualità nel materiale consegnato. 
+L'analisi statica rappresenta un'esplorazione approfondita del codice o della #glossary[documentazione] associata al prodotto. Questa metodologia mira a individuare potenziali problemi o irregolarità, senza mai eseguire effettivamente il sistema software. Nel caso della #glossary[documentazione], l'analisi statica si concentra sulla struttura, sulla coerenza, sulla completezza e sulla chiarezza del testo. In particolare, verifica la presenza di errori grammaticali, di formattazione e concettuali, garantendo un livello ottimale di qualità nel materiale consegnato. 
 
-Il Verificatore, nel contesto della documentazione o del codice, può condurre l'analisi statica tramite due metodologie: #glossary[walkthrough] o #glossary[inspection]. La metodologia preferita dal team, e utilizzata con maggior frequenza, è l'#glossary[inspection].
+Il Verificatore, nel contesto della #glossary[documentazione] o del codice, può condurre l'analisi statica tramite due metodologie: #glossary[walkthrough] o #glossary[inspection]. La metodologia preferita dal team, e utilizzata con maggior frequenza, è l'#glossary[inspection].
 
 ==== Inspection
 
@@ -934,7 +938,7 @@ Per poter prendere una qualsiasi decisione è necessario vi siano due condizioni
 
 ==== Descrizione e scopo
 
-Il Responsabile assume il ruolo cruciale di pianificare dettagliatamente gli obiettivi per ciascuno sprint fino alla conclusione del progetto. Questo implica una distribuzione coerente del lavoro in linea con le scadenze fissate per le revisioni RTB, PB e CA. Il suo compito principale consiste nel delineare chiaramente come il team dovrebbe gestire e completare le attività relative allo sviluppo del software e alla redazione della documentazione in periodi di tempo specifici.
+Il Responsabile assume il ruolo cruciale di pianificare dettagliatamente gli obiettivi per ciascuno sprint fino alla conclusione del progetto. Questo implica una distribuzione coerente del lavoro in linea con le scadenze fissate per le revisioni RTB, PB e CA. Il suo compito principale consiste nel delineare chiaramente come il team dovrebbe gestire e completare le attività relative allo sviluppo del software e alla redazione della #glossary[documentazione] in periodi di tempo specifici.
 
 Oltre a definire gli obiettivi per ogni sprint, il Responsabile si occupa di stimare accuratamente il tempo necessario per ciascuna attività e di pianificare la distribuzione dei ruoli all'interno del team. Questa pianificazione deve sempre rimanere aggiornata e sensata rispetto all'andamento generale del progetto e agli obiettivi imminenti. Queste previsioni vengono formalizzate nel _Piano di Progetto v1.0_, che diventa un punto di riferimento durante l'evento di Sprint Planning per definire gli obiettivi del successivo sprint.
 
@@ -952,7 +956,7 @@ Per garantire un monitoraggio efficace delle prestazioni, il Responsabile utiliz
 
 Si analizzano le attività svolte, i tempi impiegati rispetto alle stime previste e qualsiasi deviazione dai piani originali. Tale consuntivo rappresenta una preziosa fonte di apprendimento per il team, consentendo di identificare aree di miglioramento e di ottimizzare la pianificazione futura.
 
-È stato sviluppato uno script in Python, integrato con Typst, per semplificare la generazione automatica di tabelle e grafici relativi al consuntivo di ogni singolo sprint del progetto. L'automazione coinvolge l'estrazione dei dati dal foglio di calcolo condiviso, dove vengono registrate le ore produttive del team. I dati vengono successivamente organizzati per sprint e archiviati in file CSV.
+È stato sviluppato uno script in Python, integrato con #glossary[Typst], per semplificare la generazione automatica di tabelle e grafici relativi al consuntivo di ogni singolo sprint del progetto. L'automazione coinvolge l'estrazione dei dati dal foglio di calcolo condiviso, dove vengono registrate le ore produttive del team. I dati vengono successivamente organizzati per sprint e archiviati in file CSV.
 
 L'elaborazione comprende la creazione di un DataFrame consolidato che rappresenta le ore lavorate per ogni ruolo e membro del team durante uno sprint, includendo anche i costi associati. I risultati di questa analisi vengono salvati in un file CSV.
 
@@ -1034,7 +1038,7 @@ I ruoli assunti sono i seguenti:
         - Scrittura di codice chiaro, leggibile e mantenibile;
         - Creazione di test per la verifica del software;
         - Ampliamento delle _Specifiche Tecniche_ conforme alle esigenze del progetto.
-        - Risoluzione di bug e problemi di performance;
+        - Risoluzione di #glossary[bug] e problemi di performance;
         - Realizzazione del _Manuale Utente_;
         - Collaborazione con il team per l'integrazione del codice e il mantenimento della coerenza del progetto.
 
@@ -1044,7 +1048,7 @@ I ruoli assunti sono i seguenti:
 
         I suoi compiti:
 
-        - Revisione e valutazione della documentazione prodotta dal team;
+        - Revisione e valutazione della #glossary[documentazione] prodotta dal team;
         - Analisi critica del codice per individuare errori, discrepanze o possibili miglioramenti;
         - Identificazione e segnalazione di problemi;
         - Collaborazione con il team per garantire che il lavoro sia conforme alle linee guida e agli standard richiesti.
@@ -1056,10 +1060,10 @@ L'Amministratore crea e gestisce le varie task in modo tale ogni membro del team
 Si segue il seguente metodo:
       + L'Amministratore crea la issue su Github;
       + Assegna il task al membro, con la relativa priorità e grandezza;
-      + Imposta una data di inizio e fine del task e lo sposta nella corsia Ready;
-      + Assegna l'issue alla milestone dello sprint attuale;
-      + Il membro incaricato della issue la sposta nella corsia "In Progress" nel momento in cui inizia a lavorarci;
-      + Una volta concluso il task, la issue viene spostata nella corsia "Ready To Review";
+      + Imposta una data di inizio e fine del task e lo sposta nella #glossary[corsia] Ready;
+      + Assegna l'issue alla #glossary[milestone] dello sprint attuale;
+      + Il membro incaricato della issue la sposta nella #glossary[corsia] "In Progress" nel momento in cui inizia a lavorarci;
+      + Una volta concluso il task, la issue viene spostata nella #glossary[corsia] "Ready To Review";
       + Successivamente il Verificatore segue i passi definiti nella @revisione_pull;
       + La issue viene chiusa in automatico, se linkata ad una pull request che viene mergiata nel ramo principale main, altrimenti si procede manualmente.
 
@@ -1080,7 +1084,7 @@ Ogni issue è composta da:
                         + High;
                         + Large;
         - *intervallo Temporale*: una data di inizio e una di fine;
-        - *Milestone*: milestone associata alla issue, se il completamento non è possibile entro lo sprint attuale, è necessario spostare l'issue nella milestone successiva.
+        - *#glossary[Milestone]*: #glossary[milestone] associata alla issue, se il completamento non è possibile entro lo sprint attuale, è necessario spostare l'issue nella #glossary[milestone] successiva.
 
 ==== Cambio dei ruoli
 
