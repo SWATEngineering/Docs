@@ -78,7 +78,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC1: Visualizzazione dashboard generale sensori
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'attore visualizza i grafici relativi ai dati prodotti dai sensori, all'interno di un unica dashboard. 
+- *Postcondizioni*: l'attore visualizza i grafici relativi ai dati prodotti dai sensori, all'interno di un'unica dashboard. 
 - *Scenario Principale*:
   + l'attore accede al sistema; 
   + l'attore seleziona la visualizzazione della dashboard generale relativa ai sensori;
@@ -96,7 +96,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + l'attore accede al sistema; 
   + l'attore seleziona la visualizzazione della dashboard generale relativa ai sensori;
-  + l'attore visualizza il pannello.
+  + l'attore visualizza il #glossary("pannello").
 - *Estensioni*: [UC9].
 
 #figure(
@@ -107,7 +107,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC1.2: Visualizzazione tabella sensori
 - *Attore Principale*: amministratore pubblico. 
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'attore visualizza il pannello relativo ai dati sensori, in forma tabellare.
+- *Postcondizioni*: l'attore visualizza il #glossary("pannello") relativo ai dati sensori, in forma tabellare.
 - *Scenario Principale*:
   + l'attore accede al sistema; 
   + l'attore seleziona la visualizzazione della dashboard generale relativa ai sensori;
@@ -121,7 +121,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC2: Visualizzazione dati ambientali
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'attore visualizza pannelli contenenti dati relativi al dominio ambientale.
+- *Postcondizioni*: l'attore visualizza #glossary("pannelli") contenenti dati relativi al dominio ambientale.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
@@ -131,10 +131,10 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2 Visualizzazione dati ambientali]
 )
 
-=== UC2.1: Visualizzazione pannello dati ambientali
+=== UC2.1: Visualizzazione #glossary("pannello") dati ambientali
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi al dominio ambientale.
+- *Postcondizioni*: l'attore visualizza un #glossary("pannello") contenente dati relativi al dominio ambientale.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
@@ -143,38 +143,38 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 #figure(
   image("assets/UML/UC2.1_Visualizzazione-pannello-dati-ambientali.png",width:100%),
-  caption: [UC2.1 Visualizzazione pannello dati ambientali]
+  caption: [UC2.1 Visualizzazione #glossary("pannello") dati ambientali]
 )
 
-=== UC2.2: Visualizzazione pannello #glossary("time series") per temperatura
+=== UC2.2: Visualizzazione #glossary("pannello") #glossary("time series") per temperatura
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alla temperatura, in gradi celsius, in formato time series.
+- *Postcondizioni*: l'attore visualizza un #glossary("pannello") contenente dati relativi alla temperatura, in gradi celsius, in formato time series.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
 
 #figure(
   image("assets/UML/UC2.2_Visualizzazion-pannello-time-series-per-temperatura.png",width:100%),
-  caption: [UC2.2 Visualizzazione pannello time series per temperatura]
+  caption: [UC2.2 Visualizzazione #glossary("pannello") time series per temperatura]
 )
 
-=== UC2.3: Visualizzazione pannello time series per umidità
+=== UC2.3: Visualizzazione #glossary("pannello") time series per umidità
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente un grafico, in formato time series, con indicazioni percentuali, relative a misurazioni di umidità.
+- *Postcondizioni*: l'attore visualizza un #glossary("pannello") contenente un grafico, in formato time series, con indicazioni percentuali, relative a misurazioni di umidità.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
 #figure(
   image("assets/UML/UC2.3_Visualizzazione-pannello-time-series-umidità.png",width:100%),
-  caption: [UC2.3 Visualizzazione pannello time series per umidità]
+  caption: [UC2.3 Visualizzazione #glossary("pannello") time series per umidità]
 )
 
 === UC2.4: Visualizzazione grafico a mappa velocità e direzione del vento
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alla velocità, espressa in chilometri orari, e alla direzione del vento, su di una mappa che mostra delle frecce direzionate e colorate in base alla velocità.
+- *Postcondizioni*: l'attore visualizza un #glossary("pannello") contenente dati relativi alla velocità, espressa in chilometri orari, e alla direzione del vento, su di una mappa che mostra delle frecce direzionate e colorate in base alla velocità.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
@@ -184,10 +184,10 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2.4 Visualizzazione grafico a mappa velocità e direzione del vento]
 )
 
-=== UC2.5: Visualizzazione pannello time series per precipitazioni
+=== UC2.5: Visualizzazione #glossary("pannello") time series per precipitazioni
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello in formato time series, relativo all'intensità 
+- *Postcondizioni*: l'attore visualizza un #glossary("pannello") in formato time series, relativo all'intensità 
 delle precipitazioni, in millimetri orari di pioggia.
 - *Scenario Principale*:
   + l'attore accede al sistema;
@@ -195,91 +195,91 @@ delle precipitazioni, in millimetri orari di pioggia.
 
 #figure(
   image("assets/UML/UC2.5_Visualizzazione-pannello-time-series-per-precipitazioni.png",width:100%),
-  caption: [UC2.5 Visualizzazione pannello time series per precipitazioni]
+  caption: [UC2.5 Visualizzazione #glossary("pannello") time series per precipitazioni]
 )
 
-=== UC2.6: Visualizzazione pannello precipitazioni medie
+=== UC2.6: Visualizzazione #glossary("pannello") precipitazioni medie
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alle precipitazioni medie, espressi in formato numerico (millimetri di pioggia), provenienti dai sensori attivi negli ultimi cinque minuti.
+- *Postcondizioni*: l'attore visualizza un #glossary("pannello") contenente dati relativi alle precipitazioni medie, espressi in formato numerico (millimetri di pioggia), provenienti dai sensori attivi negli ultimi cinque minuti.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
 
 #figure(
   image("assets/UML/UC2.6_Visualizzazione-pannello-precipitazioni-medie.png",width:100%),
-  caption: [UC2.6 Visualizzazione pannello precipitazioni medie]
+  caption: [UC2.6 Visualizzazione #glossary("pannello") precipitazioni medie]
 )
 
-=== UC2.7: Visualizzazione pannello time series per inquinamento dell'aria
+=== UC2.7: Visualizzazione #glossary("pannello") time series per inquinamento dell'aria
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi al livello di polveri sottili nell'aria, in $#sym.mu g\/m^3$, in formato time series.
+- *Postcondizioni*: l'attore visualizza un #glossary("pannello") contenente dati relativi al livello di polveri sottili nell'aria, in $#sym.mu g\/m^3$, in formato time series.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
 
 #figure(
   image("assets/UML/UC2.7_Visualizzazione-pannello-time-series-per-inquinamento-dell-aria.png",width:100%),
-  caption: [UC2.7 Visualizzazione pannello time series per inquinamento dell'aria]
+  caption: [UC2.7 Visualizzazione #glossary("pannello") time series per inquinamento dell'aria]
 )
 
-=== UC2.8: Visualizzazione pannello inquinamento dell'aria medio
+=== UC2.8: Visualizzazione #glossary("pannello") inquinamento dell'aria medio
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente la media della concentrazione di inquinanti dell'aria, in $#sym.mu g\/m^3$, considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
+- *Postcondizioni*: l'attore visualizza un #glossary("pannello") contenente la media della concentrazione di inquinanti dell'aria, in $#sym.mu g\/m^3$, considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
 
 #figure(
   image("assets/UML/UC2.8_Visualizzazione-pannello-inquinamento-dell-aria-medio.png",width:100%),
-  caption: [UC2.8 Visualizzazione pannello inquinamento dell'aria medio]
+  caption: [UC2.8 Visualizzazione #glossary("pannello") inquinamento dell'aria medio]
 )
 
-=== UC2.9: Visualizzazione pannello time series per livello dei bacini idrici
+=== UC2.9: Visualizzazione #glossary("pannello") time series per livello dei bacini idrici
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello in formato time series, relativo alle misurazioni del livello di riempimento dei bacini idrici, indicate in valori percentuale.
+- *Postcondizioni*: l'attore visualizza un #glossary("pannello") in formato time series, relativo alle misurazioni del livello di riempimento dei bacini idrici, indicate in valori percentuale.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
 
 #figure(
   image("assets/UML/UC2.9_Visualizzazione-pannello-time-series-per-livello-dei-bacini-idrici.png",width:100%),
-  caption: [UC2.9 Visualizzazione pannello time series per livello dei bacini idrici]
+  caption: [UC2.9 Visualizzazione #glossary("pannello") time series per livello dei bacini idrici]
 )
 
-=== UC2.10: Visualizzazione pannello temperatura media
+=== UC2.10: Visualizzazione #glossary("pannello") temperatura media
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi alla temperatura media, in gradi celsius, tra tutti i sensori attivi negli ultimi 5 minuti, in formato numerico.
+- *Postcondizioni*: l'attore visualizza un #glossary("pannello") contenente dati relativi alla temperatura media, in gradi celsius, tra tutti i sensori attivi negli ultimi 5 minuti, in formato numerico.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
 
 #figure(
   image("assets/UML/UC2.10_Visualizzazione-pannello-temperatura-media.png",width:100%),
-  caption: [UC2.10 Visualizzazione pannello temperatura media]
+  caption: [UC2.10 Visualizzazione #glossary("pannello") temperatura media]
 )
 
-=== UC2.11: Visualizzazione pannello inquinamento dell'aria massimo
+=== UC2.11: Visualizzazione #glossary("pannello") inquinamento dell'aria massimo
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi all'inquinamento dell'aria, in $#sym.mu g\/m^3$, massimo tra tutti i sensori attivi negli ultimi 5 minuti, in formato numerico.
+- *Postcondizioni*: l'attore visualizza un #glossary("pannello") contenente dati relativi all'inquinamento dell'aria, in $#sym.mu g\/m^3$, massimo tra tutti i sensori attivi negli ultimi 5 minuti, in formato numerico.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio ambientale.
 
 #figure(
   image("assets/UML/UC2.11_Visualizzazione-pannello-inquinamento-dell-aria-massimo.png",width:100%),
-  caption: [UC2.11 Visualizzazione pannello inquinamento dell'aria massimo]
+  caption: [UC2.11 Visualizzazione #glossary("pannello") inquinamento dell'aria massimo]
 )
 
 === UC3: Visualizzazione dati urbanistici
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'attore visualizza pannelli contenenti dati relativi al dominio urbanistico.
+- *Postcondizioni*: l'attore visualizza #glossary("pannelli") contenenti dati relativi al dominio urbanistico.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio urbanistico.
@@ -289,10 +289,10 @@ delle precipitazioni, in millimetri orari di pioggia.
   caption: [UC3 Visualizzazione dati urbanistici]
 )
 
-=== UC3.1: Visualizzazione pannello dati urbanistici
+=== UC3.1: Visualizzazione #glossary("pannello") dati urbanistici
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'attore ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
-- *Postcondizioni*: l'attore visualizza un pannello contenente dati relativi al dominio urbanistico.
+- *Postcondizioni*: l'attore visualizza un #glossary("pannello") contenente dati relativi al dominio urbanistico.
 - *Scenario Principale*:
   + l'attore accede al sistema;
   + l'attore seleziona la visualizzazione del dominio urbanistico.
@@ -301,7 +301,7 @@ delle precipitazioni, in millimetri orari di pioggia.
 
 #figure(
   image("assets/UML/UC3.1_Visualizzazione-pannello-dati-urbanistici.png",width:100%),
-  caption: [UC3.1 Visualizzazione pannello dati urbanistici]
+  caption: [UC3.1 Visualizzazione #glossary("pannello") dati urbanistici]
 )
 
 === UC3.2: Visualizzazione grafico a mappa disponibilità parcheggi
@@ -423,11 +423,11 @@ delle precipitazioni, in millimetri orari di pioggia.
 === UC6: Applicazione filtri
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: 
-  + l'attore sta visualizzando uno o più pannelli con i dati.
+  + l'attore sta visualizzando uno o più #glossary("pannelli") con i dati.
 - *Postcondizioni*: l'attore visualizza solamente i dati relativi al filtro applicato (oppure ai filtri applicati).
 - *Scenario Principale*:
   + l'attore seleziona l'icona o il pulsante relativo al filtro dei dati;
-  + l'attore seleziona secondo quali valori filtrare il pannello (o i pannelli).
+  + l'attore seleziona secondo quali valori filtrare il #glossary("pannello") (o i #glossary("pannelli")).
 
 #figure(
   image("assets/UML/UC6_Applicazione-filtri.png",width:70%),
@@ -437,8 +437,8 @@ delle precipitazioni, in millimetri orari di pioggia.
 === UC6.1: Filtro sotto-insieme di sensori su grafici time series
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: 
-  + l'attore sta visualizzando uno o più pannelli time series con i dati;
-  + il pannello offre la funzionalità di filtro dei dati tramite selezione di uno o più sensori.
+  + l'attore sta visualizzando uno o più #glossary("pannelli") time series con i dati;
+  + il #glossary("pannello") offre la funzionalità di filtro dei dati tramite selezione di uno o più sensori.
 - *Postcondizioni*: l'attore visualizza solamente i dati relativi al filtro applicato.
 - *Scenario Principale*:
   + l'attore seleziona il sensore (o i sensori) da visualizzare tramite la legenda.
@@ -451,8 +451,8 @@ delle precipitazioni, in millimetri orari di pioggia.
 === UC6.2: Filtro per tipologia sensore su tabella
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: 
-  + l'attore sta visualizzando uno o più pannelli tabellari con i dati;
-  + il pannello offre la funzionalità di filtro dei dati tramite apposita icona o pulsante.
+  + l'attore sta visualizzando uno o più #glossary("pannelli") tabellari con i dati;
+  + il #glossary("pannello") offre la funzionalità di filtro dei dati tramite apposita icona o pulsante.
 - *Postcondizioni*: l'attore visualizza solamente i dati relativi al filtro applicato.
 - *Scenario Principale*:
   + l'attore seleziona la funzionalità relativa al filtro dei dati;
@@ -466,8 +466,8 @@ delle precipitazioni, in millimetri orari di pioggia.
 === UC6.3: Filtro per nome sensore su tabella
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: 
-  + l'attore ha scelto un pannello su cui effettuare l'operazione di filtro;
-  + il pannello offre la funzionalità di filtro dei dati.
+  + l'attore ha scelto un #glossary("pannello") su cui effettuare l'operazione di filtro;
+  + il #glossary("pannello") offre la funzionalità di filtro dei dati.
 - *Postcondizioni*: l'attore visualizza solamente i dati relativi al filtro applicato.
 - *Scenario Principale*:
   + l'attore seleziona la funzionalità relativa al filtro dei dati;
@@ -481,7 +481,7 @@ delle precipitazioni, in millimetri orari di pioggia.
 
 === UC6.4: Filtro per intervallo temporale
 - *Attore Principale*: amministratore pubblico.
-- *Precondizioni*: l'attore sta visualizzando uno o più pannelli.
+- *Precondizioni*: l'attore sta visualizzando uno o più #glossary("pannelli").
 - *Postcondizioni*: l'attore visualizza solamente i dati relativi all'intervallo temporale selezionato.
 - *Scenario Principale*:
   + l'attore seleziona la funzionalità relativa al filtro dei dati per intervallo temporale;
@@ -493,45 +493,45 @@ delle precipitazioni, in millimetri orari di pioggia.
   caption: [UC6.4 Filtro per intervallo temporale]
 )
 
-=== UC6.5: Filtro pannelli collegati
+=== UC6.5: Filtro #glossary("pannelli") collegati
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: 
-  + l'attore ha filtrato i dati in un pannello;
-  + altri pannelli sono collegati a quello filtrato.
-- *Postcondizioni*: l'attore visualizza, in tutti i pannelli collegati, solamente i dati relativi al filtro applicato (o ai filtri applicati).
+  + l'attore ha filtrato i dati in un #glossary("pannello");
+  + altri #glossary("pannelli") sono collegati a quello filtrato.
+- *Postcondizioni*: l'attore visualizza, in tutti i #glossary("pannelli") collegati, solamente i dati relativi al filtro applicato (o ai filtri applicati).
 - *Scenario Principale*:
-  + il sistema aggiorna tutti i pannelli collegati.
+  + il sistema aggiorna tutti i #glossary("pannelli") collegati.
 
-=== UC7: Ordinamento pannelli tabellari
+=== UC7: Ordinamento #glossary("pannelli") tabellari
 - *Attore Principale*: amministratore pubblico.
-- *Precondizioni*: l'attore ha scelto e sta visualizzando un pannello da ordinare.
+- *Precondizioni*: l'attore ha scelto e sta visualizzando un #glossary("pannello") da ordinare.
 - *Postcondizioni*: l'attore visualizza i dati ordinati.
 - *Scenario Principale*:
   + l'attore seleziona i campi secondo cui ordinare i dati, in modo ascendente o discendente.
 
 #figure(
   image("assets/UML/UC7_Ordinamento-pannelli-tabellari.png",width:70%),
-  caption: [UC7 Ordinamento pannelli tabellari]
+  caption: [UC7 Ordinamento #glossary("pannelli") tabellari]
 )
 
-=== UC8: Modifica layout pannelli
+=== UC8: Modifica layout #glossary("pannelli")
 - *Attore Principale*: amministratore pubblico. 
-- *Precondizioni*: l'attore sta visualizzando almeno un pannello. 
+- *Precondizioni*: l'attore sta visualizzando almeno un #glossary("pannello"). 
 - *Postcondizioni*: l'attore visualizza il nuovo layout.
 - *Scenario Principale*:
-  + l'attore sposta o ridimensiona i pannelli a suo piacimento.
+  + l'attore sposta o ridimensiona i #glossary("pannelli") a suo piacimento.
 
 #figure(
   image("assets/UML/UC8_Modifica-layout-pannelli.png",width:70%),
-  caption: [UC8 Modifica layout pannelli]
+  caption: [UC8 Modifica layout #glossary("pannelli")]
 )
 
 === UC9: Visualizzazione errore nessun dato
 - *Attore Principale*: amministratore pubblico. 
-- *Precondizioni*: il sistema non ha i dati necessari alla renderizzazione di un pannello. 
+- *Precondizioni*: il sistema non ha i dati necessari alla renderizzazione di un #glossary("pannello"). 
 - *Postcondizioni*: l'attore visualizza il messaggio di errore.
 - *Scenario Principale*:
-  + l'attore vuole visualizzare qualche pannello [UC1.2] [UC1.1] [UC2.1] [UC3.1]; 
+  + l'attore vuole visualizzare qualche #glossary("pannello") [UC1.2] [UC1.1] [UC2.1] [UC3.1]; 
   + il sistema non ha i dati per renderizzarlo e mostra un messaggio di errore.
 
 === UC10: Inserimento dati temperatura
@@ -729,34 +729,34 @@ delle precipitazioni, in millimetri orari di pioggia.
     "Obbligatorio", "L'utente deve poter monitorare i dati provenienti dai sensori relativi ai dati ambientali.", "UC2"
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare un pannello in formato time series con dati relativi alla temperatura.", "UC2.2"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") in formato time series con dati relativi alla temperatura.], "UC2.2"
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare un pannello in formato time series con misurazioni in percentuale sull'umidità.", "UC2.3"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") in formato time series con misurazioni in percentuale sull'umidità.], "UC2.3"
   ),
   (
     "Opzionale", "L'utente deve poter visualizzare un grafico a mappa che evidenzi velocità e direzione del vento.", "UC2.4"
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare un pannello in formato time series relativo all'intensità delle precipitazioni.", "UC2.5"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") in formato time series relativo all'intensità delle precipitazioni.], "UC2.5"
   ),
   (
-    "Desiderabile", "L'utente deve poter visualizzare un pannello che evidenzi le precipitazioni medie negli ultimi 5 minuti.", "UC2.6"
+    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") che evidenzi le precipitazioni medie negli ultimi 5 minuti.], "UC2.6"
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare un pannello in formato time series con dati relativi all'inquinamento dell'aria. ", "UC2.7"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") in formato time series con dati relativi all'inquinamento dell'aria.], "UC2.7"
   ),
   (
-    "Desiderabile", "L'utente deve poter visualizzare un pannello che evidenzi l'inquinamento dell'aria medio negli ultimi 5 minuti.", "2.8"
+    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") che evidenzi l'inquinamento dell'aria medio negli ultimi 5 minuti.], "2.8"
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare un pannello in formato time series con dati relativi al livello dei bacini idrici.", "2.9"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") in formato time series con dati relativi al livello dei bacini idrici.], "2.9"
   ),
   (
-    "Desiderabile", "L'utente deve poter visualizzare un pannello che evidenzi la temperatura media negli ultimi 5 minuti.", "2.10"
+    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") che evidenzi la temperatura media negli ultimi 5 minuti.], "2.10"
   ),
   (
-    "Desiderabile", "L'utente deve poter visualizzare un pannello che evidenzi l'inquinamento dell'aria massimo negli ultimi 5 minuti.", "2.11"
+    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") che evidenzi l'inquinamento dell'aria massimo negli ultimi 5 minuti.], "2.11"
   ),
   (
     "Obbligatorio", "L'utente deve poter monitorare i dati provenienti dai sensori relativi ai dati urbanistici.", "UC3"
@@ -786,19 +786,19 @@ delle precipitazioni, in millimetri orari di pioggia.
     "Obbligatorio", "L'utente deve poter filtrare un sottoinsieme di sensori in grafici di tipo time series.", "UC6.1"
   ),
   (
-    "Obbligatorio", "L'utente deve poter filtrare un sotto-insieme di sensori in base alla tipologia in pannelli di tipo tabellare.", "UC6.2"
+    "Obbligatorio", [L'utente deve poter filtrare un sotto-insieme di sensori in base alla tipologia in #glossary("pannelli") di tipo tabellare.], "UC6.2"
   ),
   (
-    "Obbligatorio", "L'utente deve poter filtrare un sotto-insieme di sensori in base al nome in pannelli di tipo tabellare.", "UC6.3"
+    "Obbligatorio", [L'utente deve poter filtrare un sotto-insieme di sensori in base al nome in #glossary("pannelli") di tipo tabellare.], "UC6.3"
   ),
   (
     "Obbligatorio", "L'utente deve poter filtrare i dati in base ad un intervallo temporale.", "UC6.4"
   ),
   (
-    "Desiderabile", "Nei pannelli con tabelle, l'utente deve poter ordinare i dati in base alle loro colonne.", "UC7"
+    "Desiderabile", [Nei #glossary("pannelli") con tabelle, l'utente deve poter ordinare i dati in base alle loro colonne.], "UC7"
   ),
   (
-    "Desiderabile", "L'utente deve poter modificare il layout della dashboard visualizzata, agendo su posizione e dimensione dei pannelli.", "UC8"
+    "Desiderabile", [L'utente deve poter modificare il layout della dashboard visualizzata, agendo su posizione e dimensione dei #glossary("pannelli").], "UC8"
   ),
   (
     "Obbligatorio", "L'utente deve poter visualizzare un messaggio di errore qualora non vi siano dati a disposizione.", "UC9"
