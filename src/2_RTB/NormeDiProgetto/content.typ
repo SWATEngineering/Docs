@@ -83,14 +83,14 @@ Di seguito vengono elencati i documenti che il team #team si impegna a consegnar
 
 ==== Analisi dei Requisiti
 
-L’_Analisi dei requisiti v1.0_, redatto dagli Analisti, rappresenta un documento fondamentale per lo sviluppo del sistema software. Il suo obiettivo principale è definire in dettaglio le funzionalità necessarie affinché il prodotto soddisfi pienamente le richieste della Proponente. Il documento omonimo comprende una serie di elementi essenziali:
+L’_Analisi dei requisiti v1.0_, redatto dagli Analisti, rappresenta un documento fondamentale per lo sviluppo del #glossary[sistema] software. Il suo obiettivo principale è definire in dettaglio le funzionalità necessarie affinché il prodotto soddisfi pienamente le richieste della Proponente. Il documento omonimo comprende una serie di elementi essenziali:
 
         - *Definizione degli attori*: entità o persone che interagiscono con il #glossary[sistema];
-        - *Definizione dei casi d'uso*: rappresentazione narrativa di scenari specifici che descrivono come gli attori interagiscono con il sistema. I casi d'uso offrono una visione chiara delle azioni eseguibili all'interno del sistema e delle interazioni degli utenti con esso. All'interno di ciascun caso d'uso, viene fornito un elenco preciso delle azioni intraprese dall'#glossary[attore] per attivare il caso d'uso, facilitando così l'estrazione dei requisiti corrispondenti;
+        - *Definizione dei casi d'uso*: rappresentazione narrativa di scenari specifici che descrivono come gli attori interagiscono con il #glossary[sistema]. I casi d'uso offrono una visione chiara delle azioni eseguibili all'interno del #glossary[sistema] e delle interazioni degli utenti con esso. All'interno di ciascun caso d'uso, viene fornito un elenco preciso delle azioni intraprese dall'#glossary[attore] per attivare il caso d'uso, facilitando così l'estrazione dei requisiti corrispondenti;
         - *Definizione di requisiti*: individuazione dei requisiti obbligatori e desiderabili e loro categorizzazione in:
-                - *Requisiti funzionali*: specificano le operazioni che il sistema deve essere in grado di eseguire;
+                - *Requisiti funzionali*: specificano le operazioni che il #glossary[sistema] deve essere in grado di eseguire;
                 - *Requisiti di qualità*: si concentrano sulla definizione degli standard e degli attributi che il software deve possedere per garantire prestazioni, affidabilità, usabilità e sicurezza ottimali;
-                - *Requisiti di vincolo*: delineano vincoli e limitazioni che il sistema deve rispettare. Possono includere restrizioni tecnologiche, normative o di risorse.
+                - *Requisiti di vincolo*: delineano vincoli e limitazioni che il #glossary[sistema] deve rispettare. Possono includere restrizioni tecnologiche, normative o di risorse.
 
 ==== Piano di Progetto
 
@@ -165,15 +165,15 @@ L'_Analisi dei Requisiti v1.0_ viene redatta dagli Analisti e contiene:
         - *Introduzione*: esplicita lo scopo del documento, lo scopo del prodotto e i riferimenti utilizzati;
         - *Descrizione*: esplicita le funzionalità attese del prodotto e le caratteristiche degli utenti;
         - *Attori*: gli utilizzatori del prodotto finale;
-        - *Casi d'uso*: individua gli attori e tutte le interazioni che possono avere con il sistema;
+        - *Casi d'uso*: individua gli attori e tutte le interazioni che possono avere con il #glossary[sistema];
         - *Requisiti*: le caratteristiche da soddisfare e le fonti da cui sono state estratte.
 
 ==== Scopo   
 
-Lo scopo dell'_Analisi dei Requisiti v1.0_ è definire in modo dettagliato e chiaro le funzionalità e le caratteristiche che il prodotto software deve soddisfare. Questo processo mira a comprendere a fondo le esigenze degli utenti, gli obiettivi del sistema e le condizioni in cui dovrà operare. Gli obiettivi principali del processo di analisi dei requisiti includono:
+Lo scopo dell'_Analisi dei Requisiti v1.0_ è definire in modo dettagliato e chiaro le funzionalità e le caratteristiche che il prodotto software deve soddisfare. Questo processo mira a comprendere a fondo le esigenze degli utenti, gli obiettivi del #glossary[sistema] e le condizioni in cui dovrà operare. Gli obiettivi principali del processo di analisi dei requisiti includono:
 
         - Identificare e chiarire gli obiettivi e le finalità del prodotto che si intende sviluppare;
-        - Fornire ai Progettisti una base chiara e comprensibile per la definizione dell'#glossary[architettura] e il design del sistema;
+        - Fornire ai Progettisti una base chiara e comprensibile per la definizione dell'#glossary[architettura] e il design del #glossary[sistema];
         - Fornire una base per la pianificazione mediante i requisiti raccolti;
         - Facilitare la comunicazione tra fornitori e Proponente;
         - Fornire riferimenti per la verifica.
@@ -181,7 +181,7 @@ Lo scopo dell'_Analisi dei Requisiti v1.0_ è definire in modo dettagliato e chi
 
 ==== Identificazione dei casi d'uso <c.uso>
 
-Un caso d'uso rappresenta un singolo scenario o interazione tra un #glossary[attore] e il sistema software, focalizzandosi sulle azioni compiute dall'#glossary[attore] e sulle risposte del sistema a tali azioni.
+Un caso d'uso rappresenta un singolo scenario o interazione tra un #glossary[attore] e il #glossary[sistema] software, focalizzandosi sulle azioni compiute dall'#glossary[attore] e sulle risposte del #glossary[sistema] a tali azioni.
 I casi d'uso sono identificati nel seguente modo:
 
          #align(center)[*UC[Numero].[Numero sottocaso] [Titolo]*]
@@ -209,11 +209,11 @@ I requisiti trovati vengono classificati nei seguenti modi:
 
     - *Funzionali*:
 
-        un requisito funzionale specifica una funzionalità che il sistema deve essere in grado di svolgere;
+        un requisito funzionale specifica una funzionalità che il #glossary[sistema] deve essere in grado di svolgere;
 
     - *Qualità*:
 
-        un requisito di qualità stabilisce gli standard e i criteri che il sistema deve soddisfare per garantire prestazioni, affidabilità, sicurezza e altri aspetti correlati alla qualità;
+        un requisito di qualità stabilisce gli standard e i criteri che il #glossary[sistema] deve soddisfare per garantire prestazioni, affidabilità, sicurezza e altri aspetti correlati alla qualità;
 
     - *Vincolo*:
 
@@ -259,16 +259,16 @@ caption:[Metriche sui requisiti],
 ==== Descrizione e scopo 
 
 L'attività di progettazione è affidata ai Progettisti, i quali devono definire le caratteristiche del prodotto finale basandosi sui requisiti specificati nel documento _Analisi dei Requisiti v1.0_. 
-La fase di progettazione segue l'analisi dei requisiti, dove sono definite le necessità e le aspettative per il prodotto. I Progettisti traducono queste informazioni in una struttura architetturale definita, organizzando il sistema in componenti specifici e definendo le interazioni tra di essi. In questo modo, la progettazione costituisce un passo essenziale nel percorso di sviluppo, contribuendo a trasformare i requisiti in un piano tangibile per la creazione del prodotto finale.
+La fase di progettazione segue l'analisi dei requisiti, dove sono definite le necessità e le aspettative per il prodotto. I Progettisti traducono queste informazioni in una struttura architetturale definita, organizzando il #glossary[sistema] in componenti specifici e definendo le interazioni tra di essi. In questo modo, la progettazione costituisce un passo essenziale nel percorso di sviluppo, contribuendo a trasformare i requisiti in un piano tangibile per la creazione del prodotto finale.
 
 Si definiscono tre sottoattività: 
 
-        + *Technology #glossary[Baseline]*: implica la selezione e la definizione delle tecnologie di base utilizzate per la realizzazione del sistema. Questo comprende decisioni relative a linguaggi di programmazione, librerie e #glossary[framework]. Tale processo porta alla creazione di un Proof of Concept (#glossary("PoC"));
+        + *Technology #glossary[Baseline]*: implica la selezione e la definizione delle tecnologie di base utilizzate per la realizzazione del #glossary[sistema]. Questo comprende decisioni relative a linguaggi di programmazione, librerie e #glossary[framework]. Tale processo porta alla creazione di un Proof of Concept (#glossary("PoC"));
 
                 Include:
                 - *Proof of Concept*: consiste nella creazione di una versione parziale del prodotto, includendo alcune delle funzionalità stabilite durante l'analisi dei requisiti. L'obiettivo è valutare la fattibilità del prodotto completo;
-                - *scelte tecnologiche*: consiste nello stabilire quali tecnologie adottare per lo sviluppo del Poc, anche su consiglio della Proponente.
-        + *Progettazione Architetturale*: definizione ad alto livello dell'#glossary[architettura] del sistema; si concentra sulla suddivisione del sistema in componenti e moduli, definendo le relazioni tra di essi e specificando le linee guida per l'organizzazione e l'interazione delle varie parti;
+                - *scelte tecnologiche*: consiste nello stabilire quali tecnologie adottare per lo sviluppo del #glossary[Poc], anche su consiglio della Proponente.
+        + *Progettazione Architetturale*: definizione ad alto livello dell'#glossary[architettura] del #glossary[sistema]; si concentra sulla suddivisione del #glossary[sistema] in componenti e moduli, definendo le relazioni tra di essi e specificando le linee guida per l'organizzazione e l'interazione delle varie parti;
         + *#glossary[Product Baseline]*: segna un punto stabile nel processo di progettazione, in cui le specifiche tecniche, le funzionalità principali e l'#glossary[architettura] del prodotto sono definite in modo dettagliato e accettate dalle parti coinvolte. Include tutti gli elementi essenziali e i requisiti chiave del prodotto che devono essere soddisfatti, fornendo una base solida per lo sviluppo continuo del prodotto. Questo processo porta infine alla realizzazione di un _Minimum Viable Product_ (#glossary("MVP"));
                 Include:
                 - #glossary("Design Patterns");
@@ -277,7 +277,7 @@ Si definiscono tre sottoattività:
                         - classi;
                         - package;
                         - *sequenze*: utilizzato per descrivere uno scenario che costituisce una determinata sequenza di azioni in cui tutte le scelte sono state già effettuate;
-                        - *attività*: diagramma comportamentale che illustra il flusso delle attività attraverso un sistema.
+                        - *attività*: diagramma comportamentale che illustra il flusso delle attività attraverso un #glossary[sistema].
                 - Test di unità su ogni componente.
 
 ==== Metriche
@@ -299,14 +299,14 @@ caption:[Metriche relative alla progettazione],
 
 ==== Diagrammi UML dei casi d'uso
 
-Un diagramma dei casi d'uso rappresenta uno strumento di modellazione ampiamente impiegato per documentare e delineare le funzionalità di un sistema. La sua utilità risiede nel tracciare i flussi operativi attraverso una rappresentazione visiva, descrivendo il modo in cui un utente interagisce con il sistema.
+Un diagramma dei casi d'uso rappresenta uno strumento di modellazione ampiamente impiegato per documentare e delineare le funzionalità di un #glossary[sistema]. La sua utilità risiede nel tracciare i flussi operativi attraverso una rappresentazione visiva, descrivendo il modo in cui un utente interagisce con il #glossary[sistema].
 
-Gli scenari d'uso sono organizzati in sequenze di azioni, illustrando le operazioni necessarie per consentire a un utente di portare a termine una specifica attività (realizzare uno scopo), e sono interconnessi mediante linee. Questo tipo di diagramma risulta particolarmente prezioso nella progettazione di sistemi, in quanto offre un'illustrazione rapida e intuitiva delle dinamiche di lavoro e delle interazioni tra l'utente e il sistema.
+Gli scenari d'uso sono organizzati in sequenze di azioni, illustrando le operazioni necessarie per consentire a un utente di portare a termine una specifica attività (realizzare uno scopo), e sono interconnessi mediante linee. Questo tipo di diagramma risulta particolarmente prezioso nella progettazione di sistemi, in quanto offre un'illustrazione rapida e intuitiva delle dinamiche di lavoro e delle interazioni tra l'utente e il #glossary[sistema].
 
-È fondamentale notare che la rappresentazione fornita dai diagrammi dei casi d'uso non si addentra nei dettagli implementativi, poiché il loro scopo principale è descrivere la funzionalità, considerandola come un elemento esterno al sistema.
+È fondamentale notare che la rappresentazione fornita dai diagrammi dei casi d'uso non si addentra nei dettagli implementativi, poiché il loro scopo principale è descrivere la funzionalità, considerandola come un elemento esterno al #glossary[sistema].
 
 I diagrammi dei casi d'uso sono composti da:
-        - *#glossary[Attore]*: rappresenta un agente esterno coinvolto nelle interazioni con il sistema. Si tratta di una qualsiasi entità in grado di interagire con il sistema, infatti ogni caso d'uso determina una funzionalità che viene messa a disposizione di tale #glossary[attore], tuttavia, senza entrare nei dettagli implementativi.
+        - *#glossary[Attore]*: rappresenta un agente esterno coinvolto nelle interazioni con il #glossary[sistema]. Si tratta di una qualsiasi entità in grado di interagire con il #glossary[sistema], infatti ogni caso d'uso determina una funzionalità che viene messa a disposizione di tale #glossary[attore], tuttavia, senza entrare nei dettagli implementativi.
                 
                 A livello di diagramma, l'#glossary[attore] è simboleggiato da un' icona umana stilizzata, identificabile mediante un'etichetta univoca e rappresentativa, posizionata sotto di essa.
 
@@ -318,14 +318,14 @@ I diagrammi dei casi d'uso sono composti da:
                         caption: "Figura rappresentante un attore."
                 )
 
-        - *Caso d'uso*: delinea le operazioni eseguibili dall'utente sul sistema. Un singolo caso d'uso si compone di una breve esposizione delle funzioni messe a disposizione del sistema per uno o più utenti nell'ambito di un software. In modo specifico, offre una descrizione dettagliata del comportamento dell'utente mentre interagisce con il software.
+        - *Caso d'uso*: delinea le operazioni eseguibili dall'utente sul #glossary[sistema]. Un singolo caso d'uso si compone di una breve esposizione delle funzioni messe a disposizione del #glossary[sistema] per uno o più utenti nell'ambito di un software. In modo specifico, offre una descrizione dettagliata del comportamento dell'utente mentre interagisce con il software.
 
                 Generalmente, un caso d'uso è costituito da una sequenza di situazioni che esplicitano le diverse eventualità che possono manifestarsi durante l'interazione tra l'utente e il software. La sua rappresentazione comprende un'identificazione univoca, espressa come UCx.y (dove x indica il numero del caso d'uso, e y indica il fatto che stiamo trattando un eventuale sotto-caso d'uso del caso d'uso UCx), seguita da una concisa ma completa descrizione della funzione stessa.
 
                 Ogni caso d'uso discute i seguenti punti:
                         - *#glossary[Attore] principale*: l'#glossary[attore] che intende compiere lo scopo rappresentato dal caso d'uso;
-                        - *Precondizioni*: stato in cui il sistema si deve trovare prima dell'avvio della funzionalità rappresentata dal caso d'uso;
-                        - *Postcondizioni*: stato in cui il sistema si troverà dopo che l'utente avrà portato a termine lo scopo rappresentato dal caso d'uso;
+                        - *Precondizioni*: stato in cui il #glossary[sistema] si deve trovare prima dell'avvio della funzionalità rappresentata dal caso d'uso;
+                        - *Postcondizioni*: stato in cui il #glossary[sistema] si troverà dopo che l'utente avrà portato a termine lo scopo rappresentato dal caso d'uso;
                         - *Scenario principale*: descrizione accurata della funzionalità rappresentata dal caso d'uso;
                         - *Specializzazioni*: nel caso di uno use case generale, vengono indicati i codici dei casi d'uso che lo specializzano;
                         - *Inclusioni*: vengono specificati i codici dei casi d'uso che vengono inclusi nel caso d'uso trattato;
@@ -379,7 +379,7 @@ In ogni diagramma dei casi d'uso possono essere definite:
 
 ==== Diagrammi UML delle classi    
 
-Il diagramma delle classi è una tipologia di diagramma UML utile a rappresentare la struttura statica di un sistema orientato agli oggetti. Esso visualizza le classi del sistema, insieme ai loro attributi e metodi, e le relazioni tra di esse. Le classi sono rappresentate tramite rettangoli divisi in tre sezioni: la parte superiore contiene il nome della classe, la sezione centrale include gli attributi della classe e quella inferiore ne elenca i metodi.
+Il diagramma delle classi è una tipologia di diagramma UML utile a rappresentare la struttura statica di un #glossary[sistema] orientato agli oggetti. Esso visualizza le classi del #glossary[sistema], insieme ai loro attributi e metodi, e le relazioni tra di esse. Le classi sono rappresentate tramite rettangoli divisi in tre sezioni: la parte superiore contiene il nome della classe, la sezione centrale include gli attributi della classe e quella inferiore ne elenca i metodi.
 
         - *Nome*: nome della classe in grassetto, se la classe è astratta viene scritto in corsivo oltre che in grassetto;
         - *Attributi*: 
@@ -414,7 +414,7 @@ Di seguito si elencano le possibili relazioni:
                         caption: "Figura rappresentante la relazione di dipendenza."
                 )
 
-        - *Aggregazione*: una classe A contiene un riferimento a un oggetto di tipo B, condividendo questo riferimento con altre classi. In sostanza, la classe A possiede un campo di tipo B che viene assegnato da una fonte esterna. L'oggetto di tipo B può essere utilizzato anche da altre parti del sistema, non solo dalla classe A. Questa relazione è indicata da una freccia a rombo vuoto, in cui A rappresenta l'oggetto contenitore e B il contenuto;
+        - *Aggregazione*: una classe A contiene un riferimento a un oggetto di tipo B, condividendo questo riferimento con altre classi. In sostanza, la classe A possiede un campo di tipo B che viene assegnato da una fonte esterna. L'oggetto di tipo B può essere utilizzato anche da altre parti del #glossary[sistema], non solo dalla classe A. Questa relazione è indicata da una freccia a rombo vuoto, in cui A rappresenta l'oggetto contenitore e B il contenuto;
                 #figure(
                         image(
                                 "assets/imgs/Aggregazione.png",
@@ -433,7 +433,7 @@ Di seguito si elencano le possibili relazioni:
 
         - *Associazione*: una classe A contiene riferimenti o istanze di un'altra classe B. Questa relazione non implica una dipendenza stretta o un'inclusione di un'istanza all'interno dell'altra.
 
-La rappresentazione grafica di un'associazione consiste in una linea tra le classi coinvolte, spesso accompagnata da moltiplicità che indica quanti oggetti di una classe sono associati a quanti oggetti dell'altra classe. Questi valori di moltiplicità possono essere situati agli estremi della linea che collega le classi.
+La rappresentazione grafica di un'associazione consiste in una linea tra le classi coinvolte, spesso accompagnata da molteplicità che indica quanti oggetti di una classe sono associati a quanti oggetti dell'altra classe. Questi valori di molteplicità possono essere situati agli estremi della linea che collega le classi.
         
         Viene rappresentata con una freccia;
                 #figure(
@@ -569,8 +569,8 @@ I documenti che verranno prodotti sono:
 === Ciclo di vita dei documenti
 
 Ogni documento segue le fasi del seguente #glossary[workflow]:
-+ Si crea un branch per lo sviluppo del documento nell'apposita repository Docs e si mette in uso;
-+ Si copia dall'apposita repository `Templates` il template relativo al file che si deve redigere, e lo si inserisce nella cartella appropriata;
++ Si crea un branch per lo sviluppo del documento nell'apposita #glossary[repository] Docs e si mette in uso;
++ Si copia dall'apposita #glossary[repository] `Templates` il template relativo al file che si deve redigere, e lo si inserisce nella cartella appropriata;
 + Si redige il documento o una sua sezione. Nel caso di documenti nuovi, in cui è necessario un elevato parallelismo di lavoro, è possibile usare Google Drive per la prima stesura e successivamente caricare il documento all'interno del branch;
 + Nel file `changelog.typ` si aggiunge una riga in coda, secondo il seguente formato: `<versione>,<data-modifica>,<descrizione-modifica>,<nome-autore>,<ruolo-autore>`; la versione segue le regole descritte nella @versionamento;
 + Si esegue la commit sul branch creato;
@@ -685,7 +685,7 @@ Il gruppo utilizza:
 
         - *Visual Studio Code*: un popolare ambiente di sviluppo integrato (IDE), noto per la sua leggerezza, versatilità e la vasta gamma di estensioni che permettono la personalizzazione e offrono supporto per numerosi linguaggi di programmazione;
 
-        - *GitHub*: una piattaforma di hosting per progetti di sviluppo software basati su Git. Fornisce un sistema di controllo delle versioni distribuito e strumenti per la gestione del codice sorgente, delle issue e delle pull request, facilitando la collaborazione all'interno di un team di sviluppo.
+        - *GitHub*: una piattaforma di hosting per progetti di sviluppo software basati su Git. Fornisce un #glossary[sistema] di controllo delle versioni distribuito e strumenti per la gestione del codice sorgente, delle issue e delle pull request, facilitando la collaborazione all'interno di un team di sviluppo.
 
 === Metriche
 
@@ -709,7 +709,7 @@ caption:[Metriche relative alla documentazione],
 
 === Descrizione e scopo
 
-La gestione della configurazione (Configuration Management) è una pratica fondamentale nell'ambito dello sviluppo software, specialmente quando si tratta di gestire e controllare configurazioni complesse di prodotti. Essa riguarda il processo di identificazione e controllo delle componenti di un sistema, così come delle relazioni tra di esse, durante tutto il ciclo di vita del prodotto. Consente di mantenere la tracciabilità, la coerenza e la comprensione chiara delle relazioni tra le varie parti del sistema.
+La gestione della configurazione (Configuration Management) è una pratica fondamentale nell'ambito dello sviluppo software, specialmente quando si tratta di gestire e controllare configurazioni complesse di prodotti. Essa riguarda il processo di identificazione e controllo delle componenti di un #glossary[sistema], così come delle relazioni tra di esse, durante tutto il ciclo di vita del prodotto. Consente di mantenere la tracciabilità, la coerenza e la comprensione chiara delle relazioni tra le varie parti del #glossary[sistema].
 
 === Issue Tracking System <its>
 
@@ -737,26 +737,26 @@ Al fine di tracciare il tempo speso nel corso del progetto, nei diversi ruoli, s
 Come sistema di controllo di versione si utilizza Git.
  
 
-Vengono utilizzate le seguenti repository:
-        - #link("https://github.com/SWATEngineering/Docs"): questa repository viene impiegata dal team per condividere e revisionare il codice sorgente legato alla #glossary[documentazione] del progetto. Viene utilizzata per collaborare, revisionare e mantenere aggiornati i documenti di lavoro, consentendo ai membri del team di contribuire e gestire in modo efficiente la #glossary[documentazione];
+Vengono utilizzate le seguenti #glossary[repository]:
+        - #link("https://github.com/SWATEngineering/Docs"): questa #glossary[repository] viene impiegata dal team per condividere e revisionare il codice sorgente legato alla #glossary[documentazione] del progetto. Viene utilizzata per collaborare, revisionare e mantenere aggiornati i documenti di lavoro, consentendo ai membri del team di contribuire e gestire in modo efficiente la #glossary[documentazione];
 
-        - #link("https://github.com/SWATEngineering/SWATEngineering.github.io"): questa repository funge da piattaforma per i documenti compilati e approvati. Il sito web #link("https://swatengineering.github.io/") rappresenta la versione web della #glossary[documentazione] finale e approvata dal team. È utilizzata per presentare al pubblico una visione consolidata dei documenti di progetto;
+        - #link("https://github.com/SWATEngineering/SWATEngineering.github.io"): questa #glossary[repository] funge da piattaforma per i documenti compilati e approvati. Il sito web #link("https://swatengineering.github.io/") rappresenta la versione web della #glossary[documentazione] finale e approvata dal team. È utilizzata per presentare al pubblico una visione consolidata dei documenti di progetto;
 
-        - #link("https://github.com/SWATEngineering/InnovaCity"): questa repository è dedicata alla condivisione e revisione del codice sorgente relativo al prodotto software "InnovaCity". È qui che il team lavora e collabora sul codice del prodotto stesso, consentendo una gestione centralizzata del lavoro di sviluppo e delle modifiche apportate al software.
+        - #link("https://github.com/SWATEngineering/InnovaCity"): questa #glossary[repository] è dedicata alla condivisione e revisione del codice sorgente relativo al prodotto software "InnovaCity". È qui che il team lavora e collabora sul codice del prodotto stesso, consentendo una gestione centralizzata del lavoro di sviluppo e delle modifiche apportate al software.
 
 
-All'interno dei repository Docs e Innovacity si utilizza il #glossary[Rebase workflow] come metodo di gestione, con l'utilizzo dei Feature branch per separare logicamente il lavoro da svolgere. Nel primo repository però, i Feature branch si derivano direttamente dal main, mentre nel secondo si derivano dal branch dev.
+All'interno dei #glossary[repository] Docs e Innovacity si utilizza il #glossary[Rebase workflow] come metodo di gestione, con l'utilizzo dei Feature branch per separare logicamente il lavoro da svolgere. Nel primo #glossary[repository] però, i Feature branch si derivano direttamente dal main, mentre nel secondo si derivano dal branch dev.
 Questo impone quindi che, prima di andare ad effettuare la chiusura di una Pull request, si vada ad effettuare un rebase del branch di derivazione, per rendere il branch di sviluppo aggiornato rispetto alla base.
 
 I Feature branch vengono aperti a partire dalle issue create nell'Issue Tracking System (vedi @its). Si procede poi ad associare una Pull request, a una o più issue collegate tra loro, per effettuare la verifica.
 
-Nel caso del repository InnovaCity, il branch main viene utilizzato per la pubblicazione di cambiamenti major, ovvero quando sono state implementate diverse funzionalità significative che contribuiscono all'avanzamento del progetto. In questa circostanza, è compito del Responsabile eseguire l'approvazione finale.
+Nel caso del #glossary[repository] InnovaCity, il branch main viene utilizzato per la pubblicazione di cambiamenti major, ovvero quando sono state implementate diverse funzionalità significative che contribuiscono all'avanzamento del progetto. In questa circostanza, è compito del Responsabile eseguire l'approvazione finale.
 
 === Sito vetrina   
 
-Il sito vetrina consultabile al seguente link #link("https://swatengineering.github.io/") è progettato per garantire un'esperienza aggiornata e intuitiva agli utenti. Grazie all'integrazione di una GitHub Action, il sito si aggiorna automaticamente ogni volta che vengono apportate modifiche al branch principale "main" del repository Docs.
-Lo script, realizzato in JavaScript, avvia una richiesta GET a un server esterno per ottenere la struttura aggiornata delle directory e dei file. Questa operazione consente al sito di rimanere sempre allineato con le modifiche apportate al repository principale.
-Per garantire la coerenza e la tempestività delle informazioni, il servizio esterno esegue un aggiornamento periodico, verosimilmente ogni 5 minuti. Questo processo automatico consente al sito di riflettere dinamicamente qualsiasi modifica rilevante nel repository Docs, garantendo un'esperienza utente sempre aggiornata e completa.
+Il sito vetrina consultabile al seguente link #link("https://swatengineering.github.io/") è progettato per garantire un'esperienza aggiornata e intuitiva agli utenti. Grazie all'integrazione di una GitHub Action, il sito si aggiorna automaticamente ogni volta che vengono apportate modifiche al branch principale "main" del #glossary[repository] Docs.
+Lo script, realizzato in JavaScript, avvia una richiesta GET a un server esterno per ottenere la struttura aggiornata delle directory e dei file. Questa operazione consente al sito di rimanere sempre allineato con le modifiche apportate al #glossary[repository] principale.
+Per garantire la coerenza e la tempestività delle informazioni, il servizio esterno esegue un aggiornamento periodico, verosimilmente ogni 5 minuti. Questo processo automatico consente al sito di riflettere dinamicamente qualsiasi modifica rilevante nel #glossary[repository] Docs, garantendo un'esperienza utente sempre aggiornata e completa.
 
 === Controllo termini glossario    
 
@@ -780,7 +780,7 @@ Gli strumenti adottati per agevolare il processo di verifica sono i seguenti:
 ==== GitHub <revisione_pull>
 
 GitHub offre una funzionalità di review all'interno del meccanismo di pull request, permettendo al Verificatore di visualizzare facilmente le ultime modifiche apportate al prodotto. Il Verificatore inserisce commenti specifici che indicano le correzioni o le migliorie necessarie e, al termine della review, la invia richiedendo le modifiche indicate. In seguito all'intervento correttivo dell'autore, il Verificatore esegue nuovamente la revisione.
-Il processo viene ripetuto fino a che la revisione non da esito positivo.
+Il processo viene ripetuto fino a che la revisione non dà esito positivo.
 A seguito del processo di verifica il Verificatore si occupa di spostare la issue nella #glossary[corsia] di stato adeguata all'interno della _Kanban Board_:
 - "Done": qualora la revisione abbia avuto esito positivo; 
 - "In progress": in caso siano richieste modifiche.
@@ -792,7 +792,7 @@ Il Verificatore, a seguito di una revisione positiva, accetta la pull request co
 
 ===== Elementi esterni al repository
 
-Potrebbero esservi delle issue aperte all'interno dell' #glossary("ITS") che non hanno un corrispondente documento o prodotto in generale, all'interno del repository. Per queste, il ciclo di vita segue il normale flusso attraverso i diversi stati elencati nella @its. La verifica viene effettuata attraverso i commenti della issue stessa, che avranno la seguente forma:
+Potrebbero esservi delle issue aperte all'interno dell' #glossary("ITS") che non hanno un corrispondente documento o prodotto in generale, all'interno del #glossary[repository]. Per queste, il ciclo di vita segue il normale flusso attraverso i diversi stati elencati nella @its. La verifica viene effettuata attraverso i commenti della issue stessa, che avranno la seguente forma:
 - richiesta cambiamenti:
   ```
   [REV]
@@ -805,7 +805,7 @@ Potrebbero esservi delle issue aperte all'interno dell' #glossary("ITS") che non
   ```
 === Analisi statica
 
-L'analisi statica rappresenta un'esplorazione approfondita del codice o della #glossary[documentazione] associata al prodotto. Questa metodologia mira a individuare potenziali problemi o irregolarità, senza mai eseguire effettivamente il sistema software. Nel caso della #glossary[documentazione], l'analisi statica si concentra sulla struttura, sulla coerenza, sulla completezza e sulla chiarezza del testo. In particolare, verifica la presenza di errori grammaticali, di formattazione e concettuali, garantendo un livello ottimale di qualità nel materiale consegnato. 
+L'analisi statica rappresenta un'esplorazione approfondita del codice o della #glossary[documentazione] associata al prodotto. Questa metodologia mira a individuare potenziali problemi o irregolarità, senza mai eseguire effettivamente il #glossary[sistema] software. Nel caso della #glossary[documentazione], l'analisi statica si concentra sulla struttura, sulla coerenza, sulla completezza e sulla chiarezza del testo. In particolare, verifica la presenza di errori grammaticali, di formattazione e concettuali, garantendo un livello ottimale di qualità nel materiale consegnato. 
 
 Il Verificatore, nel contesto della #glossary[documentazione] o del codice, può condurre l'analisi statica tramite due metodologie: #glossary[walkthrough] o #glossary[inspection]. La metodologia preferita dal team, e utilizzata con maggior frequenza, è l'#glossary[inspection].
 
@@ -822,7 +822,7 @@ Tuttavia, il metodo #glossary[walkthrough] conserva la sua rilevanza e rimane un
 
 === Analisi dinamica
 
-L'analisi dinamica nel contesto dello sviluppo software si concentra sull'osservazione e valutazione del comportamento del sistema durante l'esecuzione. Questa metodologia è specificamente rivolta al prodotto software risultante dal processo di codifica.
+L'analisi dinamica nel contesto dello sviluppo software si concentra sull'osservazione e valutazione del comportamento del #glossary[sistema] durante l'esecuzione. Questa metodologia è specificamente rivolta al prodotto software risultante dal processo di codifica.
 Nel processo di sviluppo, l'analisi dinamica è attuata attraverso varie categorie di test. I test, derivati dai requisiti, siano essi funzionali o non funzionali, rendono il processo di analisi dinamica ripetibile. Questo significa che è possibile eseguire i test più volte con gli stessi input e condizioni, ottenendo risultati coerenti e affidabili. La ripetibilità dei test è fondamentale per confermare la coerenza delle funzionalità del software in diverse situazioni e sotto diverse condizioni operative. La definizione e l'esecuzione dei test seguono i principi del #glossary[Modello a V].
 
 Il Verificatore si impegna a elaborare casi di test per ciascuna delle seguenti categorie, garantendo una copertura completa e dettagliata del software:
@@ -854,7 +854,7 @@ I test di integrazione sono cruciali per valutare il comportamento delle unità 
 
 ==== Test di Sistema 
 
-I test di sistema vengono definiti durante la fase di analisi dei requisiti con l'obiettivo di misurare la copertura dei requisiti derivati dal capitolato d'appalto. Questa fase del processo di software testing mira a verificare l'intero sistema come entità unificata. Durante il test di sistema, il software viene valutato nella sua completezza, con l'obiettivo di accertare che tutte le componenti integrate funzionino insieme in modo coerente per soddisfare gli obiettivi e i requisiti del sistema.
+I test di sistema vengono definiti durante la fase di analisi dei requisiti con l'obiettivo di misurare la copertura dei requisiti derivati dal capitolato d'appalto. Questa fase del processo di software testing mira a verificare l'intero #glossary[sistema] come entità unificata. Durante il test di sistema, il software viene valutato nella sua completezza, con l'obiettivo di accertare che tutte le componenti integrate funzionino insieme in modo coerente per soddisfare gli obiettivi e i requisiti del #glossary[sistema].
 Per la definizione dei test si rimanda al _Piano di Qualifica v1.0_.
 
 ==== Test di accettazione  
@@ -1012,24 +1012,24 @@ I ruoli assunti sono i seguenti:
 
 ===== Analista
      
-     Figura professionale che si occupa di analizzare, comprendere e definire i requisiti e le specifiche di un sistema software prima che venga sviluppato. Questa figura svolge un ruolo fondamentale nel processo di sviluppo del software, contribuendo a garantire che il prodotto finale soddisfi le esigenze e le aspettative degli utenti e della Proponente.
+     Figura professionale che si occupa di analizzare, comprendere e definire i requisiti e le specifiche di un #glossary[sistema] software prima che venga sviluppato. Questa figura svolge un ruolo fondamentale nel processo di sviluppo del software, contribuendo a garantire che il prodotto finale soddisfi le esigenze e le aspettative degli utenti e della Proponente.
 
      I suoi compiti:
 
         - Studio del contesto applicativo e relativa complessità;
-        - Specifica dei casi d'uso per comprendere in dettaglio i requisiti funzionali del sistema;
+        - Specifica dei casi d'uso per comprendere in dettaglio i requisiti funzionali del #glossary[sistema];
         - Raccolta dei requisiti per definire le necessità e le funzionalità richieste;
         - Stesura del documento _Analisi dei Requisiti v1.0_;
         - Creazione diagrammi UML;
 
 ===== Progettista
 
-        Figura professionale specializzata nella progettazione architetturale e strutturale di sistemi. La sua responsabilità principale è definire la configurazione, la disposizione e l'organizzazione dei vari componenti del sistema, concentrandosi su come questi elementi interagiscono tra loro per raggiungere determinati obiettivi di funzionalità, prestazioni e scalabilità.
+        Figura professionale specializzata nella progettazione architetturale e strutturale di sistemi. La sua responsabilità principale è definire la configurazione, la disposizione e l'organizzazione dei vari componenti del #glossary[sistema], concentrandosi su come questi elementi interagiscono tra loro per raggiungere determinati obiettivi di funzionalità, prestazioni e scalabilità.
 
         I suoi compiti sono:
 
         - Scelta degli aspetti tecnici e tecnologici;
-        - Progettazione architetturale che miri all'economicità e alla manutenibilità del sistema;
+        - Progettazione architetturale che miri all'economicità e alla manutenibilità del #glossary[sistema];
         - Ottimizzazione delle prestazioni usando algoritmi efficienti e gestione memoria;
         - Gestione dei rischi: cerca di mitigare problemi che possono sorgere durante lo sviluppo;
         - Redazione del documento _Specifiche Tecniche_.
@@ -1077,7 +1077,7 @@ Ogni issue è composta da:
 
         - *Titolo*: titolo significativo;
         - *Descrizione*: una breve descrizione o checklist delle cose da fare;
-        - *Asignee*: membro/membri incaricati;
+        - *Assignee*: membro/membri incaricati;
         - *Priority*: la priorità, può essere:
                         + Low;
                         + Medium;
@@ -1212,9 +1212,9 @@ caption:[Metriche Fornitura],
 
 === Progettazione <metriche_progettazione>
 
-        - *SFIN*: Structure Fan In - rappresenta il numero di moduli o componenti direttamente collegati o dipendenti da un modulo o una funzione specifica; un fan-in elevato indica che molte parti del sistema dipendono da un particolare modulo;
+        - *SFIN*: Structure Fan In - rappresenta il numero di moduli o componenti direttamente collegati o dipendenti da un modulo o una funzione specifica; un fan-in elevato indica che molte parti del #glossary[sistema] dipendono da un particolare modulo;
 
-        - *SFOUT*: Structure Fan Out - rappresenta il numero di dipendenze o connessioni che un componente o modulo particolare ha con altri componenti o moduli. Misura quanti altri elementi dipendono o interagiscono con un dato elemento all'interno di un sistema; un fan-out elevato può indicare che un modulo ha molte dipendenze da altri moduli.
+        - *SFOUT*: Structure Fan Out - rappresenta il numero di dipendenze o connessioni che un componente o modulo particolare ha con altri componenti o moduli. Misura quanti altri elementi dipendono o interagiscono con un dato elemento all'interno di un #glossary[sistema]; un fan-out elevato può indicare che un modulo ha molte dipendenze da altri moduli.
 
 
 === Codifica <metriche_codifica>
