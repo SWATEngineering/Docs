@@ -480,8 +480,7 @@ Ci si aspetta che il codice sviluppato rispetti determinate caratteristiche:
 ==== Stile di codifica   
 
 Il team #team ha deciso di adottare il linguaggio di programmazione Python per la creazione dei simulatori di sensori.
-Questa scelta tecnologica è motivata da diverse considerazioni che conferiscono a Python un ruolo privilegiato nel contesto di sviluppo.
-La familiarità che molti membri del team hanno con Python è un elemento chiave. La mancanza di una curva di apprendimento ripida consente al team di concentrarsi direttamente sulla realizzazione del prodotto, risparmiando una quantità significativa di tempo che altrimenti sarebbe stato utilizzato per apprendere un nuovo linguaggio.
+Questa scelta tecnologica è motivata dalla familiarità che molti membri del team hanno con il linguaggio in questione, ciò consente al team di concentrarsi direttamente sulla realizzazione del prodotto, risparmiando una quantità significativa risorse. 
 Inoltre, Python promuove uno stile di codifica uniforme e leggibile. La sua struttura rigida basata sull'indentazione agevola la comprensione della struttura del programma, contribuendo a una maggiore chiarezza all'interno del codice. 
 Il team si impegna ad utilizzare i seguenti stili di codifica:
 
@@ -708,7 +707,7 @@ La gestione della configurazione (Configuration Management) è una pratica fonda
 
 === Issue Tracking System <its>
 
-Come ITS si utilizza _Github_ che, attraverso le funzioni di Project, Issues e Pull requests, garantisce una struttura all'organizzazione di progetto.
+Come ITS si utilizza _Github_ che, attraverso le funzioni di "Project", "Issue" e "Pull request", garantisce una struttura all'organizzazione di progetto.
 
 Le #glossary[Corsie di Stato] descrivono lo stato attuale delle attività, all'interno del _Project_ nell'_ITS_ sono presenti:
 / Backlog: attività individuate da svolgere.
