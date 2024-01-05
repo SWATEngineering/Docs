@@ -434,7 +434,7 @@ Di seguito si elencano le possibili relazioni:
         - *Associazione*: una classe A contiene riferimenti o istanze di un'altra classe B. Questa relazione non implica una dipendenza stretta o un'inclusione di un'istanza all'interno dell'altra.
 
 La rappresentazione grafica di un'associazione consiste in una linea tra le classi coinvolte, spesso accompagnata da moltiplicità che indica quanti oggetti di una classe sono associati a quanti oggetti dell'altra classe. Questi valori di moltiplicità possono essere situati agli estremi della linea che collega le classi.
-        Si può rappresentare la molteplicità di associazione mediante dei valori situati agli estremi della freccia.
+        
         Viene rappresentata con una freccia;
                 #figure(
                         image(
@@ -508,12 +508,18 @@ Tutte le variabili, i metodi e le classi devono avere un nome che li distingue u
 
 ===== Type hint  
 
-Utilizzare un tipo di ritorno forzato per ogni funzione o metodo, pratica comunemente utilizzata in Python, contribuisce ad una migliore robustezza del codice fornendo alcuni vantaggi:
+L'utilizzo dei type hint, ossia l'annotazione dei tipi di dati nelle firme delle funzioni o dei metodi, pratica comunemente utilizzata in Python, contribuisce ad una migliore robustezza del codice fornendo alcuni vantaggi: 
 
         - Analisi statica avanzata;
         - Riduzione errori;
         - Contratto esplicito tra chiamante e funzione;
         - Facilità di manutenzione.
+
+I type hint non impongono un ritorno specifico, ma forniscono informazioni chiare sui tipi di dati attesi nei parametri e nei risultati delle funzioni.
+
+===== Strumenti   
+
+Si è deciso di integrare il linter PEP8 come fondamentale strumento nel processo di sviluppo. Questo strumento svolge un ruolo di rilievo nel garantire la coerenza e l'adesione alle linee guida di formattazione del codice Python, stabilite nella PEP 8, contribuendo in modo significativo a mantenere uno standard uniforme nella base di codice.
 
 
 ==== Metriche
@@ -647,7 +653,7 @@ Il verbale esterno oltre alle sezioni sopra elencate ha una pagina per la conval
                 - Parole a cui si vuole dare enfasi;
                 - Definizioni di termini negli elenchi puntati.
         - *Corsivo*: 
-                - I nomi dei documenti;
+                - I nomi dei documenti, seguiti dalla loro versione(in questo caso 1.0);
                 - I termini di glossario (seguiti da #sub[G]).
         - *Caratteri maiuscoli*: 
                 - Le iniziali dei nomi;
@@ -844,7 +850,7 @@ I test di unità si dividono principalmente in due categorie:
 
 ==== Test di Integrazione   
 
-I test di integrazione, eseguiti successivamente ai test unitari, sono cruciali per valutare il comportamento delle unità software quando vengono combinate. Una volta confermato il corretto funzionamento delle singole unità in isolamento, i test di integrazione mirano a identificare possibili problemi nelle interazioni tra le unità integrate. Questi test, automatizzati il più possibile, verificano se le componenti del software collaborano efficacemente e se il sistema integrato soddisfa le specifiche di progetto. L'obiettivo è garantire che, quando le unità sono combinate, il software funzioni senza intoppi e risponda alle esigenze dell'applicazione in modo coerente.
+I test di integrazione sono cruciali per valutare il comportamento delle unità software quando vengono combinate. Una volta confermato il corretto funzionamento delle singole unità in isolamento, i test di integrazione mirano a identificare possibili problemi nelle interazioni tra le unità integrate. Questi test, automatizzati il più possibile, verificano se le componenti del software collaborano efficacemente e se il sistema integrato soddisfa le specifiche di progetto. L'obiettivo è garantire che, quando le unità sono combinate, il software funzioni senza intoppi e risponda alle esigenze dell'applicazione in modo coerente.
 
 ==== Test di Sistema 
 
