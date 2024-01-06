@@ -2,27 +2,14 @@
 
 *Inizio*: Venerdì 05/01/2024
 
-*Fine*: Giovedì 11/01/2024
+*Fine*: Giovedì 11/01/2024 
 
 *Obiettivi dello sprint*: 
 
-  - Finire la correzione dell'_Analisi dei Requisiti_;
-  - Creazione della classe per la realizzazione di sensori di tipo::
-              + temperatura;
-              + umidità;
-              + polveri sottili;
-              + livelli acqua;
-              + precipitazioni;
-              + presenza di lavori sulla rete idrica;
-              + stato riempimento cassonetti.
-  - Continuazione documento _Specifiche Tecniche_;
-  - Continuazione _Manuale Sviluppatore_;
-
-  *Suddivisione lavoro*:
-
-#figure(
-  image("../../assets/DiagrammiGantt/DiagrammaSettimoSprint.png", width: 100%),
-  caption: [
-    Diagramma di Gantt per le attività del settimo sprint.
-  ],
-)
+  - Proseguire la revisione in stile "walkthrough" delle _Norme di Progetto_;
+  - Proseguire la stesura del _Piano di Progetto_, con:
+    - Aggiornamento di pianificazione e preventivo pertinenti allo sprint 7 e l'inserimento del consuntivo pertinente allo sprint 6;
+    - Reinserimento pianificazione a priori ma a breve termine (2 sprint in avanti) con pianificazione e preventivo degli sprint 8 e 9.
+  - Inizio revisione in stile "walkthrough" del _Piano di Qualifica_;
+  - Ripresa revisione in stile "walkthrough" dell'_Analisi dei Requisiti_;
+  - Ripresa preparazione della presentazione per la prima revisione RTB in vista dell'apertura dello sportello.
