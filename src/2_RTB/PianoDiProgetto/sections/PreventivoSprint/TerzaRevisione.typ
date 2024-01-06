@@ -1,5 +1,5 @@
 #import "../../const.typ": Re_cost, Am_cost, An_cost, Ve_cost, Pr_cost, Pt_cost 
-#import "SecondoSprint.typ": rimanente_ore, rimanente_soldi
+#import "SecondaRevisione.typ": rimanente_ore, rimanente_soldi
 
 #let ruoli_ore = (
   Re: 2,

@@ -32,6 +32,14 @@ Per favorire la consultazione online della documentazione stessa si prevede la c
 Si programma di sviluppare il _Proof of Concept_ (POC) del progetto secondo le indicazioni della Proponente, il cui feedback è fondamentale per verificare la coesione dello stack tecnologico, i suoi punti di forza e le sue carenze.
 Durante questa fase il colloquio con la Proponente e il Committente viene mantenuto costante; in questo modo, e grazie anche alle conoscenze acquisite dalla costruzione del POC, sarà possibile adattare e migliorare l'_Analisi dei Requisiti_.
 
+#include "PianificazioneSprint/PrimoSprint.typ"
+#include "PianificazioneSprint/SecondoSprint.typ"
+#include "PianificazioneSprint/TerzoSprint.typ"
+#include "PianificazioneSprint/QuartoSprint.typ"
+#include "PianificazioneSprint/QuintoSprint.typ"
+#include "PianificazioneSprint/SestoSprint.typ"
+#include "PianificazioneSprint/SettimoSprint.typ"
+
 == Product Baseline
 
 #figure(

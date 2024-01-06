@@ -1,5 +1,5 @@
 #import "../../const.typ": Re_cost, Am_cost, An_cost, Ve_cost, Pr_cost, Pt_cost
-#import "../../functions.typ": rendicontazioneOreAPosteriori, rendicontazioneCostiAPosteriori
+#import "../../functions.typ": rendicontazioneOreAPosteriori, rendicontazioneCostiAPosteriori, glossary
 
 
 == Terzo sprint

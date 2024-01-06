@@ -15,9 +15,14 @@ Per praticità, verranno utilizzate le seguenti abbreviazioni:
 
 Questa sezione vuole essere una proiezione finanziaria dettagliata dell'intero progetto, delineando chiaramente le risorse preventivate per ciascuno sprint. 
 
+#include "PreventivoSprint/PrimaRevisione.typ"
 
-#include "PreventivoSprint/PrimoSprint.typ"
+//#include "PreventivoSprint/PrimoSprint.typ"
+//#include "PreventivoSprint/SecondoSprint.typ"
+//#include "PreventivoSprint/TerzoSprint.typ"
+//#include "PreventivoSprint/QuartoSprint.typ"
+//#include "PreventivoSprint/QuintoSprint.typ"
+//#include "PreventivoSprint/SestoSprint.typ"
 
-#include "PreventivoSprint/SecondoSprint.typ"
-
-#include "PreventivoSprint/TerzoSprint.typ"
+#include "PreventivoSprint/SecondaRevisione.typ"
+#include "PreventivoSprint/TerzaRevisione.typ"

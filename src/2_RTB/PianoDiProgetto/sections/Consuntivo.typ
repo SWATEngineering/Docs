@@ -1,3 +1,4 @@
+#import "../functions.typ": glossary, team
 
 = Consuntivo
 
