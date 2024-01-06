@@ -29,8 +29,8 @@ Per ciascun Sprint, vengono stabilite le date di inizio e di fine,e il relativo 
 
 La definizione delle _Norme di Progetto_ è alla base di questa fase, per rendere chiare a tutti le modalità di lavoro. Parallelamente hanno inizio anche il _Piano di Progetto_, con particolare attenzione all'analisi dei rischi e al modello di sviluppo, l'_Analisi dei Requisiti_, il _Piano di Qualifica_ e il _Glossario_. I documenti in questa fase sono in continua crescita, data la loro natura incrementale.
 Per favorire la consultazione online della documentazione stessa si prevede la creazione di un sito web "vetrina".
-Si programma di sviluppare in _Proof of Concept_ (POC) del progetto secondo le indicazioni della _Proponente_, che sia in grado di veficare la coesione dello stack tecnologico, i suoi punti di forza e le sue carenze.
-Durante questa fase il colloquio con la _Proponente_ e il _Committente_ viene mantenuto costante, in questo modo, e grazie anche alle conoscenze acquisite dalla costruzione del POC,sarà possibile adattare e migliorare l'_Analisi dei Requisiti_.
+Si programma di sviluppare il _Proof of Concept_ (POC) del progetto secondo le indicazioni della Proponente, il cui feedback è fondamentale per verificare la coesione dello stack tecnologico, i suoi punti di forza e le sue carenze.
+Durante questa fase il colloquio con la Proponente e il Committente viene mantenuto costante; in questo modo, e grazie anche alle conoscenze acquisite dalla costruzione del POC, sarà possibile adattare e migliorare l'_Analisi dei Requisiti_.
 
 == Product Baseline
 
@@ -46,7 +46,7 @@ Durante questa fase il colloquio con la _Proponente_ e il _Committente_ viene ma
 *Fine*: 14/03/2024 
 
 In questa fase la concentrazione, soprattutto nel periodo iniziale, si focalizza sulla progettazione. Si inizia la stesura del documento delle _Specifiche Tecniche_ e lo studio di un'architettura adeguata. Iniziano il loro ciclo di vita anche il _Manuale Sviluppatore_ e il _Manuale Utente_.
-Attraverso le fasi di progettazione e sviluppo ha inizio la creazione del progetto vero e proprio, utilizzando le conoscenze acquisitie durante la creazione del POC. Lo sviluppo al suo interno conterrà anche le fasi di testing del prodotto.
+Attraverso le fasi di progettazione e sviluppo ha inizio la creazione del progetto vero e proprio, utilizzando le conoscenze acquisite durante la creazione del POC. Lo sviluppo includerà anche le fasi di testing del prodotto.
 In vista della sessione invernale di esami, è prevista una sospensione temporanea dello sviluppo del progetto. Questo permette ai membri del gruppo di potersi dedicare allo studio individuale.
 
 == Customer Acceptance
