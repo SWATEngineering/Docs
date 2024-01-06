@@ -6,8 +6,7 @@ L'attività di analisi dei rischi mira ad anticipare possibili situazioni avvers
 
   - *Identificazione*: coinvolge il riconoscimento e l'enumerazione delle possibili situazioni sfavorevoli che potrebbero verificarsi durante il progetto. È il processo di individuare e catalogare in modo esauriente tutti i possibili elementi che potrebbero rappresentare una minaccia;
   - *Valutazione*: implica l'analisi dettagliata di ciascuna situazione rilevata durante l'identificazione, assegnando loro un grado di probabilità e impatto per comprendere meglio il loro potenziale effetto sul progetto. Questo processo aiuta a classificare i rischi in base alla loro gravità e alla loro probabilità di manifestarsi;
-  - *Prevenzione*: coinvolge l'adozione di misure o strategie proattive per ridurre o mitigare l'incidenza e l'impatto dei rischi individuati. Questo comprende l'implementazione di azioni preventive e la messa in atto di piani di contingenza per affrontare efficacemente eventuali situazioni avverse;
-  - *Efficacia della prevenzione*: stima qualitativa della capacità effettiva delle misure preventive adottate dal team per limitare gli effetti del rischio in esame effettuata a posteriori.
+  - *Prevenzione*: coinvolge l'adozione di misure o strategie proattive per ridurre o mitigare l'incidenza e l'impatto dei rischi individuati. Questo comprende l'implementazione di azioni preventive e la messa in atto di piani di contingenza per affrontare efficacemente eventuali situazioni avverse.
 
 I rischi sono stati suddivisi a seconda della loro sfera di impatto:
   - Rischi Tecnologici;
@@ -23,11 +22,7 @@ La mancanza di familiarità o esperienza con le tecnologie specifiche impiegate 
     - Formazione da parte della Proponente: la Proponente organizza incontri periodici di formazione focalizzati sulle tecnologie specifiche utilizzate nel progetto, offrendo così al team la possibilità di colmare le lacune e approfondire le conoscenze;
     - #glossary("Workshop") interni: il team organizza workshop interni guidati dai membri più esperti su determinate tecnologie, consentendo loro di condividere conoscenze e esperienze con gli altri membri del team e favorendo l'apprendimento reciproco;
     - Lavoro in coppia: durante le fasi in cui lo sviluppo di codice richiede un contributo più rilevante, il team adotterà un approccio di lavoro in coppia. Questa pratica consentirà ai membri del team di condividere conoscenze e competenze, aiutandosi reciprocamente a superare le lacune individuali nelle conoscenze tecnologiche.
-  - *Efficacia della prevenzione*: le misure preventive adottate si sono dimostrate molto efficaci nel livellare le lacune dei componenti relative alle tecnologie impiegate nello sviluppo del PoC, in particolare:
-    - È stato effettuato un incontro di formazione con la Proponente sulla tecnologia _Docker Compose_ all'interno del primo sprint per facilitare le fasi iniziali dello sviluppo del PoC; questo ha reso significativamente più semplice l'approccio alla tecnologia ai membri del team che non avevano familiarità con essa e ha contribuito a velocizzare lo sviluppo;
-    - È stato effettuato anche un incontro di _workshop_ interno incentrato su _Docker Compose_ in cui i componenti che avevano già utilizzato tale tecnologia ne hanno illustrato scopo e funzionamento e hanno dimostrato come applicarla nel contesto concreto del PoC per containerizzare i moduli Python e Kafka implementati all'interno del primo sprint;
-    - L'approccio di lavoro in coppia è stato utilizzato all'interno del secondo sprint dove si è deciso di assegnare le attività relative allo sviluppo del PoC a due Programmatori che hanno lavorato sinergisticamente e spesso in modalità sincrona per compensare le proprie lacune e velocizzare il processo di sviluppo.
-
+    
 === *RT2 - Difficoltà nell'adozione degli strumenti di gestione del progetto*
 Il team potrebbe incontrare sfide nell'apprendere l'utilizzo e nell'integrazione dei nuovi strumenti di gestione del progetto, causando ritardi nell'effettiva implementazione di un #glossary("Way of working") efficiente.
   - *Identificazione*: la difficoltà nell'adozione degli strumenti può manifestarsi quando i membri del team incontrano dubbi o incertezze riguardo alle procedure da seguire o all'utilizzo degli strumenti stessi.
@@ -35,9 +30,6 @@ Il team potrebbe incontrare sfide nell'apprendere l'utilizzo e nell'integrazione
   - *Prevenzione*:
     - Norme di Progetto: tutti i dettagli del _way of working_ vengono concordati durante i meeting interni e normati all'interno delle Norme di Progetto. In caso di dubbi o incertezze, il riferimento a queste norme o la richiesta di chiarimenti all'Amministratore del progetto rappresentano un'importante risorsa per la risoluzione tempestiva di problemi legati agli strumenti e alle procedure;
     - Inclusione di dubbi nell'Ordine del giorno: l'inclusione dei dubbi e delle incertezze nelle proposte dell'ordine del giorno del meeting interno successivo consente al team di affrontare in modo strutturato e tempestivo le difficoltà riscontrate, garantendo un ambiente in cui tali problemi possano essere risolti in modo collaborativo e efficiente.
-  - *Efficacia della prevenzione*: le misure preventive adottate si sono dimostrate efficaci nel facilitare l'adozione degli strumenti di gestione del progetto, in particolare:
-    - L'inclusione di contenuti procedurali e non solo narrativi o descrittivi all'interno delle Norme di Progetto ha abilitato il team ad utilizzare il documento come riferimento in caso di dubbi e a seguire le procedure dettagliate al suo interno per organizzare il lavoro da svolgere;
-    - L'inclusione di punti di perplessità sollevati dai componenti del team all'interno dell'Ordine del giorno da parte del Responsabile ha agevolato significativamente le discussioni tenute negli incontri interni 
 
 === *RT3 - Produzione di codice poco comprensibile*
 Il team, data l'inesperienza dei suoi componenti, potrebbe produrre codice difficile da comprendere o contorto. Questo unito ad un'eventuale carenza di relativa documentazione potrebbe influenzare negativamente i tempi di sviluppo. 
@@ -47,7 +39,7 @@ Il team, data l'inesperienza dei suoi componenti, potrebbe produrre codice diffi
     - Code reviews: effettuare revisioni regolari del codice; 
     - Continuo _refactoring_: integrare  all'interno del processo di sviluppo frequenti attività di _refactoring_ mirate alla semplificazione del codice, in modo tale da aumentarne la comprensibilità.
     - Documentazione adeguata: incoraggiare la produzione di una documentazione approfondita per il codice; 
-    - Convenzioni di codifica: seguire le stesse linee guida porta il team a standardizzare il modo in cui il codice viene scritto, di conseguenza ne aumenta la chiarezza e la mantenibilità. 
+    - Convenzioni di codifica: seguire le stesse linee guida porta il team a standardizzare il modo in cui il codice viene scritto, di conseguenza ne aumenta la chiarezza e la manutenibilità. 
 
 
 == Rischi di Comunicazione
@@ -86,13 +78,12 @@ I diversi livelli di competenze e una comunicazione poco trasparente possono por
     - Promuovere la comprensione reciproca: il team si deve sforzare nel comprendere le condizioni e i punti di vista degli altri componenti per creare un clima di progetto positivo, indirizzato verso il miglioramento.
 
 === *RC5 - Context Switch*
-
 Per #glossary("Context Switch") ci si riferisce al cambiamento dei ruoli all'interno del team. Questo passaggio da un ruolo ad un altro comporta la necessità di adattarsi rapidamente alle nuove responsabilità e di comprendere appieno ciò che è stato svolto dal membro del team precedentemente.
   - *Identificazione*: Difficoltà  nella comprensione del lavoro svolto fino al quel momento; 
-  - *Valutazione*: Pericolosità: bassa; Occorenza: alta.
+  - *Valutazione*: Pericolosità: bassa; Occorrenza: alta.
   - *Prevenzione*:
       - La persona, che ha precedentemente occupato quel ruolo specifico, offre supporto al membro del team che ha assunto ora quella posizione, facilitandone la transizione;
-      - Assistere l'amministratore nella creazione delle attività per il prossimo sprint;
+      - Assistere l'Amministratore nella creazione delle attività per il prossimo sprint;
       - Dedicare il primo giorno  unicamente allo studio di quanto fatto precedentemente, in modo da riuscire a sincronizzarsi con il contesto del ruolo.
 
 
@@ -130,7 +121,7 @@ Questo rischio riguarda la potenziale difficoltà dei membri del team, nel dedic
   - *Identificazione*:
     - questo rischio è individuabile attraverso l'osservazione di un rallentamento delle attività di progetto;
     - nella fase di pianificazione viene identificato il periodo in cui è prevista la fase di preparazione per gli esami.
-  - *Valutazione*: Pericolosità: alta; Occorrenza: alta.
+  - *Valutazione*: Pericolosità: alta; Occorrenza: media.
   - *Prevenzione*: nei periodi più intensi, si procederà a ridurre le ore di lavoro dedicate al progetto, consentendo così ai membri del team di concentrarsi sugli studi.
 
 == Tabella riassuntiva
