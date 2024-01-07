@@ -7,16 +7,24 @@
 
 = Introduzione 
 
-Il _Piano di Qualifica_ è un documento fondamentale che delinea le strategie e le attività mirate a garantire la qualità del prodotto. Adattandosi alle mutevoli esigenze e ai requisiti del progetto didattico, questo strumento si propone di guidare il team attraverso un percorso di miglioramento continuo, definendo metriche quantitative ed effettuando valutazioni qualitative che rispecchino l'efficacia ed efficienza del processo di sviluppo. Il piano, orientato all'incrementalità, mira a fornire una chiara roadmap per la valutazione continua, includendo la definizione dettagliata di test, criteri di accettazione e la documentazione accurata degli esiti ottenuti. Il documento costituisce un impegno concreto per assicurare la qualità in modo costante e definita nel corso dello sviluppo del progetto.
+Il _Piano di Qualifica_ è un documento che delinea le strategie e le attività mirate a garantire la qualità del prodotto e propone di guidare il team attraverso un percorso di miglioramento continuo, principio a cui anch'esso è soggetto. 
+Il documento viene regolarmente aggiornato in modo tale da guidare gli sforzi di qualità sulla base delle mutevoli esigenze del progetto, garantendo così che il processo e il prodotto crescano e si evolvano con il tempo.
+
+Il documento costituisce un impegno concreto per assicurare la qualità in modo costante nel corso del progetto.
 
 
 == Scopo 
 
-Questo documento ha lo scopo di garantire la qualità del processo e del prodotto attraverso diversi passaggi fondamentali. Prima di tutto, stabilisce gli standard di qualità da seguire. Successivamente, definisce i criteri e le misure che verranno utilizzati per valutare quanto sia efficace il processo e il risultato ottenuto.
+Questo documento ha lo scopo di garantire la qualità del processo e del prodotto attraverso diversi passaggi fondamentali. 
+//Prima di tutto, stabilisce gli standard di qualità da seguire. Successivamente, definisce i criteri e le misure che verranno utilizzati per valutare quanto sia efficace il processo e il risultato ottenuto.
 
-Inoltre, gestisce tutte le fasi del testing: dalla pianificazione dei test fino alla valutazione dei risultati ottenuti. Include anche verifiche e controlli approfonditi del prodotto, che comprendono test specifici su varie parti (come unità, integrazione, sistema e accettazione). Questo processo di verifica aiuta anche a gestire eventuali difetti o anomalie rilevate durante le attività di test.
+La definizione di metriche quantitative e la loro periodica misurazione permettono al team di valutare l'efficacia e l'efficienza del progetto di sviluppo e di intraprendere decisioni che ne permettano la costante ottimizzazione. 
 
-Infine, è orientato al miglioramento costante: si adatta in base alle esperienze acquisite e a eventuali modifiche richieste nel progetto, garantendo così che il processo e il prodotto crescano e si evolvano con il tempo.
+Si propone inoltre di guidare il team attraverso tutte le fasi di testing: dalla pianificazione dei test fino alla valutazione dei risultati ottenuti. 
+
+//Include anche verifiche e controlli approfonditi del prodotto, che comprendono test specifici su varie parti (come unità, integrazione, sistema e accettazione). Questo processo di verifica aiuta anche a gestire eventuali difetti o anomalie rilevate durante le attività di test.
+
+//Infine, è orientato al miglioramento costante: si adatta in base alle esperienze acquisite e a eventuali modifiche richieste nel progetto, garantendo così che il processo e il prodotto crescano e si evolvano con il tempo. [COMMENTATO PERCHè SECONDO ME è RIDONDANTE CON L'INTRODUZIONE]
 
 == Glossario
 Al fine di evitare possibili ambiguità relative al linguaggio utilizzato nei documenti, viene
@@ -46,11 +54,16 @@ Un'attività che comprende l'inserimento di un termine di glossario può conside
 #pagebreak()
 = Qualità di Processo 
 
-== Obiettivi 
+//== Obiettivi 
 
-Si riferisce all'efficacia ed efficienza dei processi e delle metodologie impiegate nello sviluppo, testing e mantenimento del software. Essa abbraccia l'insieme di attività, pratiche e metodi utilizzati lungo l'intero ciclo di vita dello sviluppo del software al fine di garantire che il prodotto finale soddisfi i requisiti specificati e venga consegnato puntualmente ed entro il budget previsto. In questo contesto, la qualità di processo è fondamentale per assicurare un'implementazione coerente, misurabile e ottimizzata delle fasi di sviluppo, contribuendo a conseguire gli obiettivi di qualità complessivi.
-
+La qualità di processo si fonda sul assunto che, al fine di ottenere un prodotto che soddisfi determinati standard di qualità sia necessario che i processi che ne stanno alla base siano sottoposti a controlli periodici con lo scopo ultimo di ottimizzarli.
+Il concetto di qualità di processo viene dunque applicato all'intero spettro di attività, pratiche e metodi utilizzati lungo l'intero ciclo di vita del software.
+In sintesi, la qualità di processo mira a rendere la qualità una parte integrante del prodotto, garantendo che sia costruita nel processo stesso e non sia solo un obiettivo secondario.
+Di seguito vengono presentate le metriche che il team si impegna a soddisfare nel contesto della qualità di processo.
 Come presentato nel documento _NormeDiProgetto\_v1.0_ la sigla MPC sta ad indicare le metriche di processo.
+
+
+//Si riferisce all'efficacia ed efficienza dei processi e delle metodologie impiegate nello sviluppo, testing e mantenimento del software. Essa abbraccia l'insieme di attività, pratiche e metodi utilizzati lungo l'intero ciclo di vita dello sviluppo del software al fine di garantire che il prodotto finale soddisfi i requisiti specificati e venga consegnato puntualmente ed entro il budget previsto. In questo contesto, la qualità di processo è fondamentale per assicurare un'implementazione coerente, misurabile e ottimizzata delle fasi di sviluppo, contribuendo a conseguire gli obiettivi di qualità complessivi.
 
 
 == Processi Primari  
@@ -70,22 +83,10 @@ table(
 caption: [Tabella metriche per il processo di fornitura]
 )
 
-// 
-// stavo vedendo le metriche per il piano di qualifica, nello specifico quelle di fornitura.Le nostre si basano tutte su il concetto di EV (earned value), il fatto è che il modo  in cui lo calcoliamo non rispecchia proprio il valore in un determinato momento ([ore_svolte]/[ore_totali])*[budjet_totale].
-// Analizando le alternative ci sono tre strade percorribili:
-// 1 Continuare cosi come stiamo lavorando. 
-// 2 Cambiare il metodo in cui calcolare EV: 
-// l'idea sarebbe quella di calcolarlo sulla base delle issue nel ITS.
-// Ogni issue completata apporta valore come, sua grandezza in termini di ore produttive X il prezzo orario di quel ruolo.
-// In questo caso sarebbe da inserire il ruolo a tutte le issue in done.
-// 
-// 3 Un altro idea potrebbe essere proprio cambiare le metriche a qualcosa che ci potrebbe essere d'aiuto concretamente, un paio di esempi:
-//             
-// Velocity: Misura la quantità di lavoro (spesso in punti storia) completato in un singolo sprint. È utile per
-//            prevedere la capacità di lavoro futura del team.
-// Tempo di Ciclo: Il tempo impiegato per completare un'attività dal momento in cui inizia
-//             fino al suo completamento. Aiuta a capire l'efficienza del processo di
-//             lavoro.
+//capiamo ci sono molte metriche elencate di cui non facciamo la valutazione: 
+//ci sono due scelte: rimuovere le metriche --> di conseguenza nelle norme di progetto
+//andare a modifcare i grafici e mostrare anche questi dati
+
 
 === Codifica 
 #figure(
@@ -139,7 +140,7 @@ caption: [Tabella metriche per il processo di documentazione]
 
 La qualità di prodotto è volta alla valutazione del software realizzato: l'attenzione è rivolta ad attributi quali usabilità, funzionalità, affidabilità, ma più in generale alle prestazione del prodotto. 
 L'obiettivo  è, dunque, assicurare che il software non solo implementi le funzionalità volute dal cliente e funzioni correttamente, ma che lo faccia seguendo le indicazioni di precisi standard di qualità.
-
+Di seguito vengono presentate le metriche che il team si impegna a soddisfare nel contesto della qualità di prodotto.
 Come presentato nel documento _NormeDiProgetto\_v1.0_ la sigla MPR sta ad indicare le metriche di prodotto.
 
 == Funzionalità
