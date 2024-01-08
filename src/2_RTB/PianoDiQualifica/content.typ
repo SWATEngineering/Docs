@@ -33,7 +33,7 @@ Un'attività che comprende l'inserimento di un termine di glossario può conside
 
 == Riferimenti
 === Normativi
-- _NormeDiProgetto\_v1.0_;
+- _NormeDiProgetto v1.0_;
 - Documento e presentazione di capitolato d'appalto C6 - InnovaCity:
   - _ https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf _
   - _ https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6p.pdf _
@@ -60,7 +60,7 @@ La qualità di processo si fonda sul assunto che, al fine di ottenere un prodott
 Il concetto di qualità di processo viene dunque applicato all'intero spettro di attività, pratiche e metodi utilizzati lungo l'intero ciclo di vita del software.
 In sintesi, la qualità di processo mira a rendere la qualità una parte integrante del prodotto, garantendo che sia costruita nel processo stesso e non sia solo un obiettivo secondario.
 Di seguito vengono presentate le metriche che il team si impegna a soddisfare nel contesto della qualità di processo.
-Come presentato nel documento _NormeDiProgetto\_v1.0_ la sigla MPC sta ad indicare le metriche di processo.
+Come presentato nel documento _NormeDiProgetto v1.0_ la sigla MPC sta ad indicare le metriche di processo.
 
 
 //Si riferisce all'efficacia ed efficienza dei processi e delle metodologie impiegate nello sviluppo, testing e mantenimento del software. Essa abbraccia l'insieme di attività, pratiche e metodi utilizzati lungo l'intero ciclo di vita dello sviluppo del software al fine di garantire che il prodotto finale soddisfi i requisiti specificati e venga consegnato puntualmente ed entro il budget previsto. In questo contesto, la qualità di processo è fondamentale per assicurare un'implementazione coerente, misurabile e ottimizzata delle fasi di sviluppo, contribuendo a conseguire gli obiettivi di qualità complessivi.
@@ -82,11 +82,6 @@ table(
 ),
 caption: [Tabella metriche per il processo di fornitura]
 )
-
-//capiamo ci sono molte metriche elencate di cui non facciamo la valutazione: 
-//ci sono due scelte: rimuovere le metriche --> di conseguenza nelle norme di progetto
-//andare a modifcare i grafici e mostrare anche questi dati
-
 
 === Codifica 
 #figure(
@@ -141,7 +136,7 @@ caption: [Tabella metriche per il processo di documentazione]
 La qualità di prodotto è volta alla valutazione del software realizzato: l'attenzione è rivolta ad attributi quali usabilità, funzionalità, affidabilità, ma più in generale alle prestazione del prodotto. 
 L'obiettivo  è, dunque, assicurare che il software non solo implementi le funzionalità volute dal cliente e funzioni correttamente, ma che lo faccia seguendo le indicazioni di precisi standard di qualità.
 Di seguito vengono presentate le metriche che il team si impegna a soddisfare nel contesto della qualità di prodotto.
-Come presentato nel documento _NormeDiProgetto\_v1.0_ la sigla MPR sta ad indicare le metriche di prodotto.
+Come presentato nel documento _NormeDiProgetto v1.0_ la sigla MPR sta ad indicare le metriche di prodotto.
 
 == Funzionalità
 
@@ -586,8 +581,6 @@ table(
 
 == Qualità di Processo - Fornitura
 
-// TODO: QUI MANCA DA AGGIORNARE I GRAFICI E LE VALUTAZIONI: non lo faccio adesso per il discorso da presentare sulle metriche. 
-// Inoltre forse non è il modo giusto di calcolare EV -> AEC sta sopra il valore accettato, questo è dovuto dal fatto che stiamo utilizzando principalmente ruoli costosi e quindi AC è SEMPRE MOLTO SOPRA EV. 
 
 === Estimated at Completion
  
@@ -598,8 +591,12 @@ table(
   ],
 )
 
-L'EAC rappresenta una revisione del valore stimato per la realizzazione del progetto, ossia il BAC (Budget At Completion) rivisto allo stato corrente del progetto; il fattore che incide maggiormente sull'andamento dell'EAC è il rapporto tra EV (Estimated Value) e AC (Actual Cost), per cui tanto più queste metriche sono vicine l'una all'altra, tanto più l'EAC risulterà vicino al BAC pianificato inizialmente. Come viene evidenziato dal grafico l'EAC calcolato al termine dei primi sprint risulta essere relativamente vicino al BAC preventivato inizialmente e si mantiene entro i limiti accettabili; in particolare, il fatto che l'EAC fosse minore del BAC al termine del primo sprint ha portato il team a rivedere la percentuale di lavoro preventivata ed effettivamente eseguita negli sprint successivi in modo da mantenere un ritmo di lavoro quanto più possibile costante e riavvicinare l'EAC al BAC. 
+L'EAC rappresenta una revisione del valore stimato per la realizzazione del progetto, ossia il BAC (Budget At Completion) rivisto allo stato corrente del progetto; il fattore che incide maggiormente sull'andamento dell'EAC è il rapporto tra EV (Estimated Value) e AC (Actual Cost), per cui tanto più queste metriche sono vicine l'una all'altra, tanto più l'EAC risulterà vicino al BAC pianificato inizialmente. 
+Possiamo rilevare da il grafico, che la curva delineata dal valore del AEC pur essendo rimasta sempre al di sopra del valore d'accettazione ha, già a partire dal secondo sprint, mostrato un trend decrescente, il team si aspetta che nel corso dei prossimi sprint il valore continui a scendere fino a rientrare nella fascia accettabile. 
+Nell'eventualità il trend dovesse invertirsi il team dovrebbe rimodulare la quantità di lavoro netta associata al concetto di ora produttiva.
 
+
+Dovesse 
 === Budget Variance e Schedule Variance
 
 #figure(
@@ -609,7 +606,11 @@ L'EAC rappresenta una revisione del valore stimato per la realizzazione del prog
   ],
 )
 
-Il BV indica se alla data corrente si è speso di più o di meno rispetto a quanto inizialmente previsto nel budget; il SV indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate. Come evidenziato dal grafico, il BV è negativo e sembra diminuire progressivamente nel tempo, segno che i costi effettivamente sostenuti sono maggiori rispetto a quanto preventivato. Il SV è invece positivo e sembra aumentare progressivamente nel tempo, segno che la percentuale di lavoro preventivato è tendenzialmente minore rispetto a quella del lavoro portato a compimento. Questo denota una sottostima del lavoro che si è preventivato di riuscire a portare a termine nei primi sprint, rispetto a quanto effettivamente prodotto dal team.
+Il BV indica se alla data corrente si è speso di più o di meno rispetto a quanto inizialmente previsto nel budget; il SV indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate. 
+Nonostante gli andamenti delle due metriche fosse nel primo periodo in rapido allontanamento dal valore d'accettazione, a partire dal secondo sprint sembrano stabilizzarsi, segno che le azioni correttive adottate stavano iniziando a sortire effetto.
+Il cambiamento più significativo si è verificato durante il sesto sprint, quando abbiamo osservato un'inversione di tendenza:entrambe le metriche iniziano a riavvicinarsi al valore desiderato.
+Il team si augura che il way of working consolidato nel corso del progetto permetta di recuperare quanto perso nel corso dei primi sprint. 
+
 
 === Actual Cost e Estimate To Complete
 
@@ -620,9 +621,7 @@ Il BV indica se alla data corrente si è speso di più o di meno rispetto a quan
   ],
 )
 
-L'AC rappresenta il costo effettivo sostenuto fino a un dato momento, mentre l'ETC rappresenta la stima del costo aggiuntivo necessario per
-completare il progetto; di conseguenza, ci si aspetta che l'AC cresca e che l'ETC diminuisca in modo sostanzialmente lineare, segno che il progetto ha mantenuto un ritmo regolare di avanzamento. Stabilire l'andamento delle due metriche al momento della revisione RTB è alquanto prematuro, dati i pochi data points a disposizione.
-
+L'AC rappresenta il costo effettivo sostenuto fino a un dato momento, mentre l'ETC rappresenta la stima del costo aggiuntivo necessario per completare il progetto; di conseguenza, ci si aspetta che l'AC cresca e che l'ETC diminuisca in modo sostanzialmente lineare, segno che il progetto ha mantenuto un ritmo regolare di avanzamento. Stabilire l'andamento delle due metriche al momento della revisione RTB è alquanto prematuro, dati i pochi data points a disposizione. 
 === Earned Value e Planned Value
 
 #figure(
@@ -632,7 +631,7 @@ completare il progetto; di conseguenza, ci si aspetta che l'AC cresca e che l'ET
   ],
 )
 
-L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[deliverable] rilasciati fino al momento della misurazione in seguito alle attività svolte; il PV rappresenta invece il valore del lavoro pianificato fino a un dato momento. Nonostante sia ancora prematuro confrontare le due metriche con l'EAC, si può notare che il PV si mantiene al di sotto dell'EV, seppur di poco, segno che i preventivi fatti finora sono stati leggermente ottimistici rispetto alla spesa effettiva. 
+L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[deliverable] rilasciati fino al momento della misurazione in seguito alle attività svolte; il PV rappresenta invece il valore del lavoro pianificato fino a un dato momento. Nonostante sia ancora prematuro confrontare le due metriche con l'EAC, si può notare che il PV si mantiene al di sotto dell'EV, seppur di poco, segno che i preventivi fatti finora sono stati leggermente ottimistici rispetto alla spesa effettiva. Si può notare che le due metriche a partire dal secondo sprint tendono ad avvicinarsi: ciò denota che il team sta iniziando effettivamente a produrre dei preventivi più rigorosi.
 
 // == Qualità di Processo - Codifica TODO: non ha senso in questa fase del progetto
 
@@ -648,6 +647,7 @@ L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[d
 )
 
 Al termine del secondo sprint, tutti i documenti in corso di preparazione in vista dell'RTB possiedono un IG al di sopra del limite accettabile inferiore di 60; in particolare, l'_Analisi dei Requisiti_ ha raggiunto il valore ideale. 
+Nel corso degli sprint successivi i valori subiscono variazioni non rilevanti. 
 
 === Correttezza ortografica
 
@@ -658,7 +658,11 @@ Al termine del secondo sprint, tutti i documenti in corso di preparazione in vis
   ],
 )
 
-Seppur i documenti presentavano alcuni errori ortografici al termine dei primi sprint, da quando si è adottato uno strumento di controllo dell'ortografia sia in fase di stesura che in fase di revisione (al termine del secondo sprint) gli errori sono diminuiti significativamente come ci si attendeva. L'obiettivo principale è fare in modo che non vi siano errori in alcuno dei documenti prima della revisione RTB.
+
+A seguito dei primi due sprint sono stati rilevati parecchi errori ortografici, per farne fronte si è scelto di adottare uno strumento di controllo dell'ortografia sia in fase di stesura che in fase di revisione. Tuttavia, nonostante l'uso di questo strumento, si è notato che il processo di documentazione continua a essere afflitto da errori ortografici. Questo indica che il problema non è tanto la mancanza di strumenti adeguati, quanto più un approccio disattento da parte del team durante la redazione dei documenti, e nel processo di verifica che ne consegue.
+Fare in modo che non vi siano errori nei documenti prima della revisione RTB rimane comunque un obbiettivo di qualità che il team vuole raggiungere in vista della revisione RTB. 
+Per ovviare al problema il team ha deciso di introdurre un checklist incentrata sugli errori di ortografici, in modo tale che se il processo di verifica posso avvalersene e correggere eventuali errori.  Questa checklist è pensata non solo come uno strumento pratico, ma principalmente come un promemoria costante per il Verificatore. 
+
 
 // == Qualità di prodotto
 
@@ -743,7 +747,7 @@ table(
       [*Aspetto*],[*Spiegazione*],
       [Tracciamento caso d'uso - requisito],[Per ciascun caso d'uso deve corrispondere almeno un requisito.],
       [Struttura errata dei requisiti],[I requisiti devono essere scritti nella forma: "\<soggetto\> deve/devono \<verbo all'infinito\>"],
-      [Numerazione errata dei casi d'uso],[La numerazione dei casi d'uso deve seguire la crescita dei numeri interi naturali. Se si tratta di un sotto-caso d'uso, il sotto-caso deve ereditare, come prefisso del proprio codice, il codice del caso d'uso a cui appartiene, e ne aggiunge una cifra. Fare riferimento alle _NormeDiProgetto\_v1.0_ per una descrizione più approfondita.],
+      [Numerazione errata dei casi d'uso],[La numerazione dei casi d'uso deve seguire la crescita dei numeri interi naturali. Se si tratta di un sotto-caso d'uso, il sotto-caso deve ereditare, come prefisso del proprio codice, il codice del caso d'uso a cui appartiene, e ne aggiunge una cifra. Fare riferimento alle _NormeDiProgetto v1.0_ per una descrizione più approfondita.],
       [UML dei casi d'uso],[Le estensioni e le inclusioni di un caso d'uso vanno nello stesso diagramma UML del caso d'uso stesso.],
 ),
 caption: [Lista di controllo per l’Analisi dei Requisiti]
