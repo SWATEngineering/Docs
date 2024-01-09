@@ -30,7 +30,7 @@ Il team, constatando che la pianificazione e i preventivi redatti per ciascun #g
 
 == Revisione in stile "walkthrough" dell'_Analisi dei Requisiti_
 
-Avendo sostanzialmente ultimato la stesura dell'_Analisi dei Requisiti_, il team ha deciso di iniziarne la revisione in stile "walkthrough" o "lettura a pettine" in modo da individuare eventuali errori o inconsistenze e correggerli tempestivamente dato che il documento sarà oggetto della prima parte della revisione RTB assieme al PoC. 
+Avendo sostanzialmente ultimato la stesura dell'_Analisi dei Requisiti v1.0_, il team ha deciso di iniziarne la revisione in stile "walkthrough" o "lettura a pettine" in modo da individuare eventuali errori o inconsistenze e correggerli tempestivamente, dato che questo documento è il principale oggetto della  revisione RTB assieme al PoC. 
 
 == Inizio della presentazione per la revisione RTB
 
