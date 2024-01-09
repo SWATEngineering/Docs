@@ -18,7 +18,7 @@ con la presente il gruppo #team esprime la propria intenzione di candidarsi alla
 proposto dall'azienda _SyncLab_.
 
 
-All'interno del seguente #underline(link("https://swatengineering.github.io/","link")), nella sezione _2_RTB_ è possibile trovare tutta la documentazione richiesta, in particolare:
+All'interno del seguente #underline(link("https://swatengineering.github.io/","link")), sotto la sezione _2_RTB_, è possibile trovare tutta la documentazione richiesta, in particolare:
 - _AnalisiDeiRequisiti_1.0.pdf_;
 - _Glossario_1.0.pdf_;
 - _NormeDiProgetto_1.0.pdf_;
