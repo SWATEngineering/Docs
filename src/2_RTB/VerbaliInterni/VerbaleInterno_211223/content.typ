@@ -19,7 +19,7 @@
 /*************************************/
 == Ampliamento delle _Norme di Progetto_
 
-L'incontro si è aperto con una breve discussione riguardante la necessità di normare l'utilizzo di alcune automazioni realizzate recentemente dal team; in particolare, si è deciso di inserire descrizioni pertinenti all'aggiornamento del contenuto del sito vetrina #link("https://swatengineering.github.io/") ogni qual volta vengono apportate modifiche al branch "main" della #glossary[repository] documentale, allo script di verifica della corrispondenza tra i termini marcati come termini di glossario in un documento e quelli effettivamente presenti all'interno del _Glossario_ e allo script Python di generazione di tabelle e grafici relativi al consuntivo di ciascuno sprint all'interno del _Piano di Progetto_.
+L'incontro si è aperto con una breve discussione riguardante la necessità di normare l'utilizzo di alcune automazioni realizzate recentemente dal team. In particolare, si è deciso di inserire una descrizione pertinente all'aggiornamento del contenuto del sito vetrina #link("https://swatengineering.github.io/") ogni qual volta vengono apportate modifiche al branch "main" della #glossary[repository] documentale. Questo riguarda anche lo script di verifica della corrispondenza tra i termini marcati come termini di glossario in un documento e quelli effettivamente presenti all'interno del _Glossario v1.0_ e lo script di generazione di tabelle e grafici relativi al consuntivo di ciascuno #glossary[sprint] all'interno del _Piano di Progetto v1.0_.
 
 == Modifica del _Piano di Progetto_
 
