@@ -147,7 +147,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC2.2: Visualizzazione #glossary("pannello") #glossary("time series") per temperatura
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente dati relativi alla temperatura, in gradi celsius, in formato time series che mostra l'andamento in media mobile della temperatura, registrato da ciascun sensore, aggregando i dati per intervalli di 5 minuti.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo alla temperatura, espressa in gradi celsius, in formato #glossary("time series") che mostra l'andamento in media mobile della temperatura, registrato da ciascun sensore, aggregando i dati per intervalli di 5 minuti.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -160,7 +160,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC2.3: Visualizzazione #glossary("pannello") time series per umidità
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico, in formato time series, con indicazioni percentuali, relative a misurazioni di umidità.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo all'umidità, espressa in percentuale, in formato #glossary("time series") che mostra l'andamento in media mobile dell'umidità, registrata da ciascun sensore, aggregando i dati per intervalli di 5 minuti.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -187,7 +187,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC2.4.1: Visualizzazione grafico a mappa direzione del vento
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") che esprime, mediante frecce aventi orgine nelle coordinate del sensore, la direzione del vento.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa che esprime, mediante frecce aventi orgine nelle coordinate del sensore, la direzione del vento rilevata da ciascun sensore.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -201,7 +201,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC2.4.2: Visualizzazione tabella velocità del vento
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente dati relativi all'ultima velocità del vento, registrata da ciascun sensore, sotto forma tabellare.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente dati relativi all'ultima velocità del vento, espressa in chilometri all'ora, registrata da ciascun sensore, sotto forma tabellare.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -214,8 +214,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC2.5: Visualizzazione #glossary("pannello") time series per precipitazioni
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") in formato time series, relativo all'intensità 
-delle precipitazioni, in millimetri orari di pioggia.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo all'intensità delle precipitazioni, espressa in millimetri orari, in formato #glossary("time series") che mostra l'andamento in media mobile delle precipitazioni, registrata da ciascun sensore, aggregando i dati per intervalli di 5 minuti.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -228,7 +227,7 @@ delle precipitazioni, in millimetri orari di pioggia.
 === UC2.6: Visualizzazione #glossary("pannello") precipitazioni medie
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente dati relativi alle precipitazioni medie, espressi in formato numerico (millimetri di pioggia), provenienti dai sensori attivi negli ultimi cinque minuti.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse millimetri di pioggia, indicante la media dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori, degli ultimi 5 minuti.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -241,7 +240,7 @@ delle precipitazioni, in millimetri orari di pioggia.
 === UC2.7: Visualizzazione #glossary("pannello") time series per inquinamento dell'aria
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente dati relativi al livello di polveri sottili nell'aria, in $#sym.mu g\/m^3$, in formato time series.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo al livello di polveri sottili nell'aria, espresso in $#sym.mu g\/m^3$ (#glossary("PM10")), in formato #glossary("time series"), che mostra l'andamento in media mobile delle polveri sottili, registrata da ciascun sensore, aggregando i dati per intervalli di 5 minuti.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -254,7 +253,7 @@ delle precipitazioni, in millimetri orari di pioggia.
 === UC2.8: Visualizzazione #glossary("pannello") inquinamento dell'aria medio
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente la media della concentrazione di inquinanti dell'aria, in $#sym.mu g\/m^3$, considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente la media della concentrazione di inquinanti dell'aria, espressa in $#sym.mu g\/m^3$,(#glossary("PM10")), considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -267,7 +266,7 @@ delle precipitazioni, in millimetri orari di pioggia.
 === UC2.9: Visualizzazione #glossary("pannello") time series per livello dei bacini idrici
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") in formato time series, relativo alle misurazioni del livello di riempimento dei bacini idrici, indicate in valori percentuale.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo alla percentuale di riempimento dei bacini idrici, in formato #glossary("time series"), che mostra l'andamento in media mobile di tale percentuale, registrata da ciascun sensore, aggregando i dati per intervalli di 5 minuti.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -280,7 +279,7 @@ delle precipitazioni, in millimetri orari di pioggia.
 === UC2.10: Visualizzazione #glossary("pannello") temperatura media
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente dati relativi alla temperatura media, in gradi celsius, tra tutti i sensori attivi negli ultimi 5 minuti, in formato numerico.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente la media della temperatura, espressa in gradi celsius, considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -293,7 +292,7 @@ delle precipitazioni, in millimetri orari di pioggia.
 === UC2.11: Visualizzazione #glossary("pannello") inquinamento dell'aria massimo
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente dati relativi all'inquinamento dell'aria, in $#sym.mu g\/m^3$, massimo tra tutti i sensori attivi negli ultimi 5 minuti, in formato numerico.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente il massimo coefficiente di inquinamento dell'aria registrato tra tutti i sensori, espresso in $#sym.mu g\/m^3$, degli ultimi 5 minuti, presentato in formato numerico.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -334,7 +333,7 @@ delle precipitazioni, in millimetri orari di pioggia.
 === UC3.2: Visualizzazione grafico a mappa disponibilità parcheggi
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
-- *Postcondizioni*: l'amministratore pubblico visualizza un grafico a mappa atto ad indicare la disponibilità di parcheggi nella zona visualizzata e la loro occupazione, in termini di parcheggi liberi.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa per indicare la disponibilità dei parcheggi, espressa in numero di parcheggi liberi, registrata da ciascun sensore, attraverso un indicatori numerici posti nelle coordinate dei corrispondenti sensori.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
@@ -360,7 +359,7 @@ delle precipitazioni, in millimetri orari di pioggia.
 === UC3.3.1: Visualizzazione posizione e disponibilità delle colonne ricarica
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
-- *Postcondizioni*: l'amministratore pubblico visualizza una mappa indicante la posizione delle colonne, mediante indicatori, i quali indicheranno la disponibilità della colonna corrisponente.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante la posizione delle colonne di ricarica per auto, mediante indicatori booleani, i quali indicheranno la disponibilità della colonna corrisponente.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
@@ -374,6 +373,7 @@ delle precipitazioni, in millimetri orari di pioggia.
 === UC3.3.2: Visualizzazione tabella descrittiva delle colonne di ricarica
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una tabella, la quale esprime, per ciascuna colonna di ricarica per auto, l'erogazione in Watt per ora attuale, indicizzando la tabella in base al nome del sensore.
 - *Postcondizioni*: l'amministratore pubblico visualizza una tabella indicante la rapidità di ricarica delle colonne.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
@@ -799,6 +799,7 @@ delle precipitazioni, in millimetri orari di pioggia.
 = Requisiti
 
 == Requisiti funzionali (obbligatori e desiderabili)
+/*TODO: mettere in Desiderabile tutti quei requisiti che riguardano lo stesso dato più di una volta ma non sono la prima occorrenza (se prima viene la time series e poi un indice numerico, il secondo è da mettere come desiderabile)*/
 #let requisiti_funzionali = (
   (
      "Obbligatorio", "L'utente deve poter accedere all'applicazione senza dover effettuare l'autenticazione.", "Capitolato"
@@ -817,46 +818,51 @@ delle precipitazioni, in millimetri orari di pioggia.
     "Obbligatorio", [L'utente deve poter monitorare i dati provenienti dai sensori relativi ai dati ambientali in una #glossary("dashboard") apposita.], "UC2"
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") in formato #glossary("time series") con dati relativi alla media mobile della temperatura registrata da ciascun sensore, aggregando i dati per intervalli di 5 minuti.], "UC2.2"
-  ),
-  /* vvvvvvvvvvvvvvvvvvvvvv DA CONTROLLARE DA QUI IN POI vvvvvvvvvvvvvvvvvvvvvv*/
-  (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") in formato time series con misurazioni in percentuale sull'umidità.], "UC2.3"
-  ),
-  /*TODO: da spezzare in due requisiti*/
-  (
-    "Obbligatorio", "L'utente deve poter visualizzare un grafico a mappa che evidenzi velocità e direzione del vento.", "UC2.4"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media mobile della temperatura, espressa in gradi celsius, per ciascun sensore, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.], "UC2.2"
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") in formato time series relativo all'intensità delle precipitazioni.], "UC2.5"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media mobile della percentuale d'umidità, per ciascun sensore, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.], "UC2.3"
   ),
   (
-    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") che evidenzi le precipitazioni medie negli ultimi 5 minuti.], "UC2.6"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi la direzione del vento, mediante frecce aventi origine nelle coordinate del sensore, nella #glossary("dashboard") relativa ai dati ambientali.], "UC2.4.1"
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") in formato time series con dati relativi all'inquinamento dell'aria.], "UC2.7"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'ultima velocità del vento, espressa in chilometri all'ora, per ciascun sensore, nella #glossary("dashboard") relativa ai dati ambientali.], "UC2.4.2"
   ),
   (
-    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") che evidenzi l'inquinamento dell'aria medio negli ultimi 5 minuti.], "2.8"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media mobile dell'intensità delle precipitazioni, espresse in millimetri all'ora, per ciascun sensore, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.], "UC2.5"
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") in formato time series con dati relativi al livello dei bacini idrici.], "2.9"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico, che esprime l'intensità media delle precipitazioni, espressa in millimetri all'ora, degli ultimi 5 minuti, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], "UC2.6"
   ),
   (
-    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") che evidenzi la temperatura media negli ultimi 5 minuti.], "2.10"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media mobile del livello di polveri sottili nell'aria, espressi in $#sym.mu g\/m^3$ (#glossary("PM10")), per ciascun sensore, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.], "UC2.7"
   ),
   (
-    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") che evidenzi l'inquinamento dell'aria massimo negli ultimi 5 minuti.], "2.11"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico, che esprime l'inquinamento dell'aria medio, espressa in $#sym.mu g\/m^3$ (#glossary("PM10")), degli ultimi 5 minuti, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], "UC2.8"
   ),
   (
-    "Obbligatorio", "L'utente deve poter monitorare i dati provenienti dai sensori relativi ai dati urbanistici.", "UC3"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la percentuale di riempimento dei bacini idrici, per ciascun sensore, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.], "UC2.9"
   ),
   (
-    "Desiderabile", "L'utente deve poter visualizzare un grafico a mappa che evidenzi la disponibilità e l'occupazione dei parcheggi, in termini di posti liberi.", "UC3.2"
+    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico, che esprime la temperatura media, espressa in gradi celsius, degli ultimi 5 minuti, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], "UC2.10"
   ),
   (
-    "Desiderabile", "L'utente deve poter visualizzare un grafico a mappa che evidenzi la posizione e lo stato delle colonne di ricarica.", "UC3.3"
+    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico, che esprime l'inquinamento dell'aria massimo, espresso in $#sym.mu g\/m^3$ (#glossary("PM10")), degli ultimi 5 minuti, tra i dati registrati da tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], "UC2.11"
   ),
+  (
+    "Obbligatorio", [L'utente deve poter monitorare i dati provenienti dai sensori relativi ai dati urbanistici in una #glossary("dashboard") apposita.], "UC3"
+  ),
+  (
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi il numero di posti liberi, mediante indicatori numerici posti nelle coordinate del sensore, nella #glossary("dashboard") relativa ai dati urbanistici.], "UC3.2"
+  ),
+  (
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi la posizione delle colonne di ricarica per auto, mediante indicatori booleani posti nelle coordinate dei sensori che indicheranno la disponibilità di queste, nella #glossary("dashboard") relativa ai dati urbanistici.], "UC3.3.1"
+  ),
+  (
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'erogazione delle colonne di ricarica per auto, espressa in Watt all'ora, controllata da ciascun sensore, nella #glossary("dashboard") relativa ai dati urbanistici.], "UC3.3.2"
+  ),
+  /* vvvvvvvvvvvvvvvvvvvvvvvvvvv da qui in poi vvvvvvvvvvvvvvvvvvvvvvvvvvv */
   (
     "Obbligatorio", "L'utente deve poter visualizzare un grafico a mappa che evidenzi la congestione stradale delle strade controllate.", "UC3.4"
   ),
@@ -866,6 +872,7 @@ delle precipitazioni, in millimetri orari di pioggia.
   (
     "Obbligatorio", "L'utente deve poter visualizzare un grafico a mappa che riporti un indicatore percentuale di riempimento delle zone rifiuti.", "UC3.6"
   ),
+  /*^^^^^^^^^^^^^^^^^^^^^^^^^^ Il grosso sta qui sopra ^^^^^^^^^^^^^^^^^^^^^^^^^^*/
   (
     "Desiderabile", "L'utente deve poter visualizzare i dati anomali rilevati, in forma tabellare.", "UC4"
   ),
