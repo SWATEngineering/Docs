@@ -1,13 +1,14 @@
 #import "../../const.typ": Re_cost, Am_cost, An_cost, Ve_cost, Pr_cost, Pt_cost 
 #import "PrimaRevisione.typ": rimanente_ore, rimanente_soldi
+#import "../../functions.typ": glossary
 
 #let ruoli_ore = (
-  Re: 29,
-  Am: 18,
-  An: 18,
-  Pt: 63,
-  Pr: 121,
-  Ve: 70,
+  Re: 30,
+  Am: 40,
+  An: 25,
+  Pt: 84,
+  Pr: 80,
+  Ve: 58,
 )
 
 #let costo_ruoli_ore=(
@@ -22,10 +23,10 @@
 #let rimanente_ore = rimanente_ore - ruoli_ore.values().sum();
 #let rimanente_soldi = rimanente_soldi - costo_ruoli_ore.values().sum();
 
-== Seconda Revisione (Product Baseline)
+== Seconda Revisione (#glossary[Product Baseline])
 
 === Prospetto economico
-In questa milestone, il costo per ogni ruolo sarà come da tabella:
+In questa #glossary[milestone], il costo per ogni ruolo sarà come da tabella:
 #table(
   columns: (120pt,60pt,100pt),
   align: center,

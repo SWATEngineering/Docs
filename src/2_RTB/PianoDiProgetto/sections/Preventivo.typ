@@ -1,3 +1,4 @@
+#import "../functions.typ": glossary
 = Preventivo
 Ogni membro del gruppo si impegna a lavorare con la modalità di intensità dichiarata (alta), offrendo una disponibilità di 95 ore produttive a testa. 
 Questo preventivo è stato calcolato sulla base del costo orario per ruolo presente nel _Regolamento del Progetto Didattico_ e sulla previsione di quante delle 570 ore totali a disposizione verranno utilizzate in ogni ruolo, durante i vari incrementi.
@@ -13,7 +14,7 @@ Per praticità, verranno utilizzate le seguenti abbreviazioni:
 - *Ve*: Verificatore.
 
 
-Questa sezione vuole essere una proiezione finanziaria dettagliata dell'intero progetto, delineando chiaramente le risorse preventivate per ciascuno sprint. 
+Questa sezione vuole essere una proiezione finanziaria dettagliata dell'intero progetto, delineando chiaramente le risorse preventivate per ciascuno #glossary[sprint]. 
 
 #include "PreventivoSprint/PrimaRevisione.typ"
 

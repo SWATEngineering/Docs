@@ -32,13 +32,13 @@ Il team potrebbe incontrare sfide nell'apprendere l'utilizzo e nell'integrazione
     - Inclusione di dubbi nell'Ordine del giorno: l'inclusione dei dubbi e delle incertezze nelle proposte dell'ordine del giorno del meeting interno successivo consente al team di affrontare in modo strutturato e tempestivo le difficoltà riscontrate, garantendo un ambiente in cui tali problemi possano essere risolti in modo collaborativo e efficiente.
 
 === *RT3 - Produzione di codice poco comprensibile*
-Il team, data l'inesperienza dei suoi componenti, potrebbe produrre codice difficile da comprendere o contorto. Questo unito ad un'eventuale carenza di relativa documentazione potrebbe influenzare negativamente i tempi di sviluppo. 
+Il team, data l'inesperienza dei suoi componenti, potrebbe produrre codice difficile da comprendere o contorto. Questo unito ad un'eventuale carenza di relativa #glossary[documentazione] potrebbe influenzare negativamente i tempi di sviluppo. 
   - *Identificazione*: un segnale evidente della manifestazione di questo rischio è la crescita delle discussioni relative all'interpretazione del codice tra i componenti del team.
   - *Valutazione*:  Pericolosità: media; Occorrenza: media.
   - *Prevenzione*: 
     - Code reviews: effettuare revisioni regolari del codice; 
     - Continuo _refactoring_: integrare  all'interno del processo di sviluppo frequenti attività di _refactoring_ mirate alla semplificazione del codice, in modo tale da aumentarne la comprensibilità.
-    - Documentazione adeguata: incoraggiare la produzione di una documentazione approfondita per il codice; 
+    - #glossary[Documentazione] adeguata: incoraggiare la produzione di una #glossary[documentazione] approfondita per il codice; 
     - Convenzioni di codifica: seguire le stesse linee guida porta il team a standardizzare il modo in cui il codice viene scritto, di conseguenza ne aumenta la chiarezza e la manutenibilità. 
 
 
@@ -48,7 +48,7 @@ La mancata organizzazione della comunicazione interna si riferisce a situazioni 
   - *Identificazione*: questo rischio si manifesta quando non esiste una struttura chiara per la comunicazione all'interno del team, può essere riconosciuto attraverso il sovrapporsi di messaggi, discussioni disordinate o mancanza di canali dedicati.
   - *Valutazione*: Pericolosità: bassa; Occorrenza: bassa.
   - *Prevenzione*:
-    - Pianificazione della comunicazione: stabilire canali di comunicazione specifici per diversi tipi di messaggi (ad esempio discussioni generali, questioni urgenti, cambiamenti dello stato delle _issue_ nell'ITS, proposte per l'ordine del giorno e altro);
+    - Pianificazione della comunicazione: stabilire canali di comunicazione specifici per diversi tipi di messaggi (ad esempio discussioni generali, questioni urgenti, cambiamenti dello stato delle _issue_ nell'#glossary[ITS], proposte per l'ordine del giorno e altro);
     - Ordine del giorno: definire un ordine del giorno chiaro per i meeting interni settimanali, con tempi stabiliti per ciascun argomento;
     - Stand-up meeting giornalieri: riunioni brevi e quotidiane favoriscono una migliore comprensione dello stato del progetto, consentendo a ciascun membro del team di aggiornare gli altri sui progressi, sulle sfide incontrate e sui prossimi passi. Questa pratica aiuta a identificare i problemi in modo tempestivo, a fornire supporto reciproco e a mantenere il team allineato con gli obiettivi comuni.
 
@@ -67,14 +67,14 @@ Si tratta della ridotta frequenza o della mancanza di contatti regolari e tempes
   - *Prevenzione*: 
     - Aggiornamenti regolari: mantenere la Proponente informata sugli sviluppi in modo regolare (almeno una volta alla settimana) e chiedere _feedback_ quando necessario;
     - Invio anticipato di domande: invio di email prima di ogni meeting esterno con la Proponente, presentando in anticipo le domande o i punti da discutere durante il meeting. Questo offre alla Proponente il tempo di prepararsi adeguatamente e fornire risposte dettagliate durante il meeting;
-    - Consegna anticipata di materiale: quando si tratta di _Sprint retrospective_ o di qualsiasi revisione congiunta, fornire la documentazione o il codice prodotto nel rispettivo Sprint il prima possibile, in modo che la Proponente abbia tempo sufficiente per esaminarlo in modo approfondito prima del meeting. Ciò permette una discussione più efficace e informativa durante il meeting stesso.
+    - Consegna anticipata di materiale: quando si tratta di _Sprint retrospective_ o di qualsiasi revisione congiunta, fornire la #glossary[documentazione] o il codice prodotto nel rispettivo #glossary[sprint] il prima possibile, in modo che la Proponente abbia tempo sufficiente per esaminarlo in modo approfondito prima del meeting. Ciò permette una discussione più efficace e informativa durante il meeting stesso.
 
 === *RC4 - Mancanza di fiducia*
 I diversi livelli di competenze e una comunicazione poco trasparente possono portare allo sviluppo di un clima di sfiducia reciproca tra i membri del team: ciò potrebbe compromettere il successo del progetto.  
   - *Identificazione*: la mancanza di fiducia può essere rilevata in presenza di segnali specifici come la reticenza nella collaborazione o nell'assunzione di responsabilità condivise. In aggiunta, alcuni membri potrebbero dimostrarsi poco attivi nelle discussioni di gruppo o nelle attività cooperative. 
   - *Valutazione*: Pericolosità: media; Occorrenza: bassa.
   - *Prevenzione*: 
-    - Promuovere incontri periodici: i membri del team hanno la possibilità di esprimere dubbi e preocupazioni, avere una discussione aperta su aspetti rilevanti del progetto e ricevere feedback sul lavoro fatto. In questo contesto va precisato che la costruzione del feedback assume un ruolo fondamentale, in quanto deve essere formulato in maniera tale da risultare costruttivo e presentato come un opportunità di miglioramento, anziché solamente come critica;
+    - Promuovere incontri periodici: i membri del team hanno la possibilità di esprimere dubbi e preoccupazioni, avere una discussione aperta su aspetti rilevanti del progetto e ricevere feedback sul lavoro fatto. In questo contesto va precisato che la costruzione del feedback assume un ruolo fondamentale, in quanto deve essere formulato in maniera tale da risultare costruttivo e presentato come un opportunità di miglioramento, anziché solamente come critica;
     - Promuovere la comprensione reciproca: il team si deve sforzare nel comprendere le condizioni e i punti di vista degli altri componenti per creare un clima di progetto positivo, indirizzato verso il miglioramento.
 
 === *RC5 - Context Switch*
@@ -83,7 +83,7 @@ Per #glossary("Context Switch") ci si riferisce al cambiamento dei ruoli all'int
   - *Valutazione*: Pericolosità: bassa; Occorrenza: alta.
   - *Prevenzione*:
       - La persona, che ha precedentemente occupato quel ruolo specifico, offre supporto al membro del team che ha assunto ora quella posizione, facilitandone la transizione;
-      - Assistere l'Amministratore nella creazione delle attività per il prossimo sprint;
+      - Assistere l'Amministratore nella creazione delle attività per il prossimo #glossary[sprint];
       - Dedicare il primo giorno  unicamente allo studio di quanto fatto precedentemente, in modo da riuscire a sincronizzarsi con il contesto del ruolo.
 
 
@@ -96,16 +96,16 @@ La comprensione erronea dei requisiti indica il potenziale malinteso o fraintend
   - *Prevenzione*: 
     - Analisi dei Requisiti: creazione di un documento chiaro e dettagliato contenente casi d'uso, requisiti funzionali e non funzionali, in modo da offrire una visione esaustiva e condivisa dei requisiti del progetto;
     - Sessioni di analisi e confronto dei requisiti con la Proponente: organizzazione di incontri regolari con la Proponente, durante i quali verranno presentati i requisiti identificati, discusse le interpretazioni e validate le esigenze. Queste sessioni permetteranno di raffinare e chiarire i requisiti iniziali, riducendo il rischio di interpretazioni erronee e garantendo una comprensione accurata delle necessità del cliente;
-    - Adozione del #glossary("Framework Scrum"): l'implementazione del framework Scrum fornisce continui momenti di verifica e adattamento durante lo sviluppo del progetto. Tale approccio offre l'opportunità di identificare tempestivamente eventuali fraintendimenti o ambiguità nei requisiti, permettendo al team di chiarirli e correggerli nel minor tempo possibile.
+    - Adozione del #glossary<[Framework Scrum]: l'implementazione del #glossary[framework Scrum] fornisce continui momenti di verifica e adattamento durante lo sviluppo del progetto. Tale approccio offre l'opportunità di identificare tempestivamente eventuali fraintendimenti o ambiguità nei requisiti, permettendo al team di chiarirli e correggerli nel minor tempo possibile.
 
 === *RP2 - Disallineamento delle componenti architetturali*
-Questo rischio riguarda la possibilità di progettare componenti all'interno dell'architettura del sistema che potrebbero risultare incompatibili o in disaccordo una volta integrate o combinate. Ciò può generare conflitti nell'interoperabilità delle parti e compromettere la coesione del sistema nel suo insieme.
-  - *Identificazione*: questo rischio è individuabile durante le fasi di progettazione, quando si evidenziano incongruenze tra le interfacce delle varie componenti o quando emergono problemi di compatibilità durante l'integrazione preliminare di parti del sistema.
+Questo rischio riguarda la possibilità di progettare componenti all'interno dell'#glossary[architettura] del #glossary[sistema] che potrebbero risultare incompatibili o in disaccordo una volta integrate o combinate. Ciò può generare conflitti nell'interoperabilità delle parti e compromettere la coesione del #glossary[sistema] nel suo insieme.
+  - *Identificazione*: questo rischio è individuabile durante le fasi di progettazione, quando si evidenziano incongruenze tra le interfacce delle varie componenti o quando emergono problemi di compatibilità durante l'integrazione preliminare di parti del #glossary[sistema].
   - *Valutazione*: Pericolosità: media; Occorrenza: media.
   - *Prevenzione*: 
-    - Metodologia di progettazione modulare: adottare un approccio modulare durante la progettazione architetturale, suddividendo il sistema in componenti chiare e ben definite. Questo aiuta a identificare in anticipo eventuali discrepanze tra le parti e favorisce l'interoperabilità;
+    - Metodologia di progettazione modulare: adottare un approccio modulare durante la progettazione architetturale, suddividendo il #glossary[sistema] in componenti chiare e ben definite. Questo aiuta a identificare in anticipo eventuali discrepanze tra le parti e favorisce l'interoperabilità;
     - Revisioni incrociate: effettuare revisioni incrociate della progettazione tra membri del team per identificare potenziali disallineamenti o incongruenze nelle interfacce delle varie componenti. Questa pratica consente di individuare e risolvere precocemente i conflitti;
-    - Test di integrazione preliminare: condurre test preliminari di integrazione delle componenti principali in una fase iniziale del progetto. Questi test aiutano a valutare la compatibilità e l'interoperabilità delle varie parti, riducendo così il rischio di disallineamento nell'architettura finale.
+    - Test di integrazione preliminare: condurre test preliminari di integrazione delle componenti principali in una fase iniziale del progetto. Questi test aiutano a valutare la compatibilità e l'interoperabilità delle varie parti, riducendo così il rischio di disallineamento nell'#glossary[architettura] finale.
 
 === *RP3 - Variazioni nei tempi e costi del progetto*
 Questo rischio si riferisce alla possibilità di variazioni significative rispetto alle tempistiche e ai costi pianificati inizialmente per lo sviluppo del progetto.
@@ -114,7 +114,7 @@ Questo rischio si riferisce alla possibilità di variazioni significative rispet
   - *Prevenzione*: 
     - Pianificazione flessibile: adottare una pianificazione flessibile che preveda margini di tempo e costi per eventuali imprevisti o variazioni;
     - Rendicontazione di ore produttive: si utilizza uno _spreadsheet_ dedicato nel quale ciascun membro del team registra quotidianamente le ore produttive utilizzate, specificando le attività svolte e il ruolo assunto. Questo approccio consente di trarre conclusioni riguardo allo stato delle ore totali impiegate e al _budget_ iniziale disponibile, permettendo una migliore gestione delle risorse nel progetto;
-    - Monitoraggio Costante: si mantiene un monitoraggio costante del progresso del progetto, permettendo l'aggiornamento della pianificazione in caso di variazioni significative. In particolare, all'interno dell'ITS si effettua un costante aggiornamento delle date di inizio e fine per ogni _issue_, riflettendo con precisione le tempistiche effettive. Inoltre, si utilizza regolarmente la vista Gantt all'interno della Kanban Board del progetto in GitHub per visualizzare la pianificazione temporale e individuare potenziali variazioni o sovrapposizioni nelle attività pianificate.
+    - Monitoraggio Costante: si mantiene un monitoraggio costante del progresso del progetto, permettendo l'aggiornamento della pianificazione in caso di variazioni significative. In particolare, all'interno dell'#glossary[ITS] si effettua un costante aggiornamento delle date di inizio e fine per ogni _issue_, riflettendo con precisione le tempistiche effettive. Inoltre, si utilizza regolarmente la vista Gantt all'interno della Kanban Board del progetto in GitHub per visualizzare la pianificazione temporale e individuare potenziali variazioni o sovrapposizioni nelle attività pianificate.
 
 === *RP4 - Impegni universitari*
 Questo rischio riguarda la potenziale difficoltà dei membri del team, nel dedicare il tempo richiesto al progetto a causa degli impegni universitari, con particolare riferimento alla sessione di esami invernale che si sovrappone al periodo del progetto.

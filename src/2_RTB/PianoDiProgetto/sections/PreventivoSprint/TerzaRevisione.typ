@@ -1,14 +1,14 @@
 #import "../../const.typ": Re_cost, Am_cost, An_cost, Ve_cost, Pr_cost, Pt_cost 
 #import "SecondaRevisione.typ": rimanente_ore, rimanente_soldi
+#import "../../functions.typ": glossary
 
 #let ruoli_ore = (
-  Re: 2,
-  Am: 3,
+  Re: 6,
+  Am: 10,
   An: 0,
   Pt: 0,
-  Pr: 23,
-  Ve: 29,
-
+  Pr: 20,
+  Ve: 21,
 )
 
 #let costo_ruoli_ore=(
@@ -24,10 +24,10 @@
 #let rimanente_soldi = rimanente_soldi - costo_ruoli_ore.values().sum();
 
 
-== Terza Revisione (Customer Acceptance)
+== Terza Revisione (#glossary[Customer Acceptance])
 
 === Prospetto economico
-In questa milestone, il costo per ogni ruolo sarà come da tabella:
+In questa #glossary[milestone], il costo per ogni ruolo sarà come da tabella:
 #table(
   columns: (120pt,60pt,100pt),
   align: center,
