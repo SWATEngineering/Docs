@@ -75,6 +75,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 #set heading(numbering: none)
 
+/*TODO: ricontrollare la fine di ogni use case che comprende l'uso di un pannello*/
 === UC1: Visualizzazione dashboard generale sensori
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
@@ -388,7 +389,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC3.4: Visualizzazione grafico a mappa congestione stradale
 *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
-- *Postcondizioni*: l'amministratore pubblico visualizza un grafico a mappa atto ad illustrare il livello di congestione stradale delle strade controllate.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante lo stato di congestione delle strade, mediante gli stati "LOW", "MEDIUM", "HIGH" e "BLOCKED", atto a mostrare il livello di congestione della strada interessata.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
@@ -401,6 +402,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC3.5: Visualizzazione posizione real time delle biciclette elettriche e relativa percentuale batteria
 *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante la posizione in tempo reale delle biciclette elettriche, mediante degli indicatori numerici indicanti la percentuale della batteria posizionata nelle coordinate del mezzo, atto a mostrare la sua posizione.
 - *Postcondizioni*: l'amministratore pubblico visualizza un grafico a mappa atto ad indicare la posizione e la percentuale delle batterie delle biciclette elettriche. 
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
@@ -411,28 +413,59 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC3.5 Visualizzazione posizione real time delle biciclette elettriche e relativa percentuale batteria]
 )
 
-=== UC3.6: Visualizzazione indicatore percentuale su mappa riempimento zone rifiuti
+/*TODO: cambiare nome nell'immagine*/
+=== UC3.6: Visualizzazione indicatore percentuale su mappa riempimento zone ecologiche
 *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
-- *Postcondizioni*: l'amministratore pubblico visualizza un grafico a mappa atto ad indicare lo stato di riempimento, in percentuale, delle zone rifiuti. 
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante lo stato di riempimento delle zone ecologiche, espresse in valori percentuali, posizionate nelle coordinate delle zone.
+- *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
 
 #figure(
   image("assets/UML/UC3.6_Visualizzazione-indicatore-percentuale-su-mappa-riempimento-zone-rifiuti.png",width:100%),
-  caption: [UC3.6 Visualizzazione indicatore percentuale su mappa riempimento zone rifiuti]
+  caption: [UC3.6 Visualizzazione indicatore percentuale su mappa riempimento zone ecologiche]
 )
 
-=== UC4: Visualizzazione dati anomali rilevati
+/*TODO: cambiare immagine*/
+=== UC4: Visualizzazione #glossary("dati anomali") e superamento soglie
 - *Attore Principale*: amministratore pubblico.
-- *Precondizioni*: l'amministratore pubblico sta usando il sistema.
+- *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico visualizza, in forma tabellare, la lista ordinata di anomalie nei dati rilevati dal sistema.
+- *Postcondizioni*: l'amministratore pubblico visualizza #glossary("pannelli") contenenti dati relativi al superamento delle soglie e alle anomalie rilevate.
 - *Scenario Principale*:
   + l'amministratore pubblico seleziona la visualizzazione della deshboard delle anomalie.
 
 #figure(
   image("assets/UML/UC4_Visualizzazione-dati-anomali-rilevati.png",width:70%),
-  caption: [UC4 Visualizzazione dati anomali rilevati]
+  caption: [UC4 Visualizzazione #glossary("dati anomali") rilevati]
+)
+
+/*TODO: realizzare immagine corrispondente*/
+=== UC4.1: Visualizzazione tabella descrittiva anomalie
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: nessuna.
+- *Postcondizioni*: l'amministratore pubblico visualizza, in forma tabellare, la lista ordinata di #glossary("dati anomali") rilevati dal sistema.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una tabella, la quale mostra tutte le anomalie rilevate, mostrando il valore dell'anomalia, il sensore che l'ha rilevata e il timestamp relativo.
+- *Scenario Principale*:
+  + l'amministratore pubblico seleziona la visualizzazione della deshboard delle anomalie.
+
+#figure(
+  image("assets/UML/UC4_Visualizzazione-dati-anomali-rilevati.png",width:70%),
+  caption: [UC4 Visualizzazione #glossary("dati anomali") rilevati]
+)
+
+/*TODO: realizzare immagine corrispondente*/
+=== UC4.2: Visualizzazione tabella superamento soglie
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: nessuna.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti le soglie impostate nel sistema, mostrando il valore superante la soglia, il sensore che ha rilevato tale valore e il timestamp relativo.
+- *Scenario Principale*:
+  + l'amministratore pubblico seleziona la visualizzazione della deshboard delle anomalie.
+
+#figure(
+  image("assets/UML/UC4_Visualizzazione-dati-anomali-rilevati.png",width:70%),
+  caption: [UC4 Visualizzazione #glossary("dati anomali") rilevati]
 )
 
 === UC5: Visualizzazione allerte superamento soglie
@@ -862,19 +895,17 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   (
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'erogazione delle colonne di ricarica per auto, espressa in Watt all'ora, controllata da ciascun sensore, nella #glossary("dashboard") relativa ai dati urbanistici.], "UC3.3.2"
   ),
-  /* vvvvvvvvvvvvvvvvvvvvvvvvvvv da qui in poi vvvvvvvvvvvvvvvvvvvvvvvvvvv */
   (
-    "Obbligatorio", "L'utente deve poter visualizzare un grafico a mappa che evidenzi la congestione stradale delle strade controllate.", "UC3.4"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi lo stato di congestione delle strade, mediante gli stati "LOW", "MEDIUM", "HIGH", "BLOCKED", posti nelle coordinate dei sensori controllano queste, nella #glossary("dashboard") relativa ai dati urbanistici.], "UC3.4"
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare un grafico a mappa che evidenzi la posizione real time delle biciclette elettriche e relativa percentuale della batteria.", "UC3.5"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che mostri la posizione delle biciclette elettriche controllate, in tempo reale, mediante degli indicatori numerici, indicanti la percentuale della batteria, posizionati nelle coordinate del mezzo, nella #glossary("dashboard") relativa ai dati urbanistici.], "UC3.5"
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare un grafico a mappa che riporti un indicatore percentuale di riempimento delle zone rifiuti.", "UC3.6"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che mostri la percentuale di riempimento delle zone ecologiche, mediante degli indicatori percentuali, posizionati nelle coordinate della zona, nella #glossary("dashboard") relativa ai dati urbanistici.], "UC3.6"
   ),
-  /*^^^^^^^^^^^^^^^^^^^^^^^^^^ Il grosso sta qui sopra ^^^^^^^^^^^^^^^^^^^^^^^^^^*/
   (
-    "Desiderabile", "L'utente deve poter visualizzare i dati anomali rilevati, in forma tabellare.", "UC4"
+    "Desiderabile", [L'utente deve poter visualizzare i #glossary("dati anomali") rilevati, in forma tabellare.], "UC4"
   ),
   (
     "Obbligatorio",  "L'utente deve poter visualizzare le allerte di superamento delle soglie.", "UC5"
