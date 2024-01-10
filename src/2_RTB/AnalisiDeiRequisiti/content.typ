@@ -74,9 +74,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 == Elenco dei casi d'uso
 
 #set heading(numbering: none)
+#let X = counter("UC_counter")
+#X.step()
 
 /*TODO: ricontrollare la fine di ogni use case che comprende l'uso di un pannello*/
-=== UC1: Visualizzazione dashboard generale sensori
+=== UC#X.display(): Visualizzazione dashboard generale sensori
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico visualizza #glossary("pannelli") relativi allo stato dei sensori, all'interno di un'unica dashboard. 
@@ -89,7 +91,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC1 Visualizzazione dashboard generale sensori]
 )
 
-=== UC1.1: Visualizzazione posizione sensori su mappa
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione posizione sensori su mappa
 - *Attore Principale*: amministratore pubblico. 
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico visualizza un pannello contenente una mappa che mostra le posizioni dei sensori, come icone, su di essa. 
@@ -103,7 +106,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC1.1 Visualizzazione posizione sensori su mappa]
 )
 
-=== UC1.2: Visualizzazione tabella sensori
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione tabella sensori
 - *Attore Principale*: amministratore pubblico. 
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico visualizza il #glossary("pannello") relativo ai dati inerenti ai sensori, riportando la percentuale di batteria, un valore booleano che esprime se il sensore va a batteria autonoma o meno e la data di ultima manutenzione del sensore, in forma tabellare, indicizzato dai nomi dei sensori.
@@ -117,7 +121,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC1.2 Visualizzazione tabella sensori]
 )
 
-=== UC2: Visualizzazione dati ambientali
+#X.step()
+=== UC#X.display(): Visualizzazione dati ambientali
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico visualizza #glossary("pannelli") contenenti dati relativi al dominio ambientale.
@@ -130,7 +135,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2 Visualizzazione dati ambientali]
 )
 
-=== UC2.1: Visualizzazione #glossary("pannello") dati ambientali
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione #glossary("pannello") dati ambientali
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente dati relativi al dominio ambientale.
@@ -145,7 +151,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2.1 Visualizzazione #glossary("pannello") dati ambientali]
 )
 
-=== UC2.2: Visualizzazione #glossary("pannello") #glossary("time series") per temperatura
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione #glossary("pannello") #glossary("time series") per temperatura
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo alla temperatura, espressa in gradi celsius, in formato #glossary("time series") che mostra l'andamento in media mobile della temperatura, registrato da ciascun sensore, aggregando i dati per intervalli di 5 minuti.
@@ -158,7 +165,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2.2 Visualizzazione #glossary("pannello") time series per temperatura]
 )
 
-=== UC2.3: Visualizzazione #glossary("pannello") time series per umidità
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione #glossary("pannello") time series per umidità
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo all'umidità, espressa in percentuale, in formato #glossary("time series") che mostra l'andamento in media mobile dell'umidità, registrata da ciascun sensore, aggregando i dati per intervalli di 5 minuti.
@@ -171,7 +179,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 /*TODO: cambiare immagine con il nuovo titolo*/
-=== UC2.4: Visualizzazione dati relativi al vento
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione dati relativi al vento
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'amministratore pubblico visualizza dei #glossary("pannelli") contenenti dati relativi al vento.
@@ -185,7 +194,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 /*TODO: creare nuova immagine*/
-=== UC2.4.1: Visualizzazione grafico a mappa direzione del vento
+#X.step(level: 3)
+=== UC#X.display(): Visualizzazione grafico a mappa direzione del vento
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa che esprime, mediante frecce aventi orgine nelle coordinate del sensore, la direzione del vento rilevata da ciascun sensore.
@@ -199,7 +209,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 /*TODO: creare nuova immagine*/
-=== UC2.4.2: Visualizzazione tabella velocità del vento
+#X.step(level: 3)
+=== UC#X.display(): Visualizzazione tabella velocità del vento
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente dati relativi all'ultima velocità del vento, espressa in chilometri all'ora, registrata da ciascun sensore, sotto forma tabellare.
@@ -212,7 +223,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2.4 Visualizzazione tabella velocità del vento]
 )
 
-=== UC2.5: Visualizzazione #glossary("pannello") time series per precipitazioni
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione #glossary("pannello") time series per precipitazioni
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo all'intensità delle precipitazioni, espressa in millimetri orari, in formato #glossary("time series") che mostra l'andamento in media mobile delle precipitazioni, registrata da ciascun sensore, aggregando i dati per intervalli di 5 minuti.
@@ -225,7 +237,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2.5 Visualizzazione #glossary("pannello") time series per precipitazioni]
 )
 
-=== UC2.6: Visualizzazione #glossary("pannello") precipitazioni medie
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione #glossary("pannello") precipitazioni medie
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse millimetri di pioggia, indicante la media dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori, degli ultimi 5 minuti.
@@ -238,7 +251,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2.6 Visualizzazione #glossary("pannello") precipitazioni medie]
 )
 
-=== UC2.7: Visualizzazione #glossary("pannello") time series per inquinamento dell'aria
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione #glossary("pannello") time series per inquinamento dell'aria
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo al livello di polveri sottili nell'aria, espresso in $#sym.mu g\/m^3$ (#glossary("PM10")), in formato #glossary("time series"), che mostra l'andamento in media mobile delle polveri sottili, registrata da ciascun sensore, aggregando i dati per intervalli di 5 minuti.
@@ -251,7 +265,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2.7 Visualizzazione #glossary("pannello") time series per inquinamento dell'aria]
 )
 
-=== UC2.8: Visualizzazione #glossary("pannello") inquinamento dell'aria medio
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione #glossary("pannello") inquinamento dell'aria medio
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente la media della concentrazione di inquinanti dell'aria, espressa in $#sym.mu g\/m^3$,(#glossary("PM10")), considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
@@ -264,7 +279,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2.8 Visualizzazione #glossary("pannello") inquinamento dell'aria medio]
 )
 
-=== UC2.9: Visualizzazione #glossary("pannello") time series per livello dei bacini idrici
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione #glossary("pannello") time series per livello dei bacini idrici
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo alla percentuale di riempimento dei bacini idrici, in formato #glossary("time series"), che mostra l'andamento in media mobile di tale percentuale, registrata da ciascun sensore, aggregando i dati per intervalli di 5 minuti.
@@ -277,7 +293,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2.9 Visualizzazione #glossary("pannello") time series per livello dei bacini idrici]
 )
 
-=== UC2.10: Visualizzazione #glossary("pannello") temperatura media
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione #glossary("pannello") temperatura media
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente la media della temperatura, espressa in gradi celsius, considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
@@ -290,7 +307,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2.10 Visualizzazione #glossary("pannello") temperatura media]
 )
 
-=== UC2.11: Visualizzazione #glossary("pannello") inquinamento dell'aria massimo
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione #glossary("pannello") inquinamento dell'aria massimo
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente il massimo coefficiente di inquinamento dell'aria registrato tra tutti i sensori, espresso in $#sym.mu g\/m^3$, degli ultimi 5 minuti, presentato in formato numerico.
@@ -303,7 +321,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2.11 Visualizzazione #glossary("pannello") inquinamento dell'aria massimo]
 )
 
-=== UC3: Visualizzazione dati urbanistici
+#X.step()
+=== UC#X.display(): Visualizzazione dati urbanistici
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico visualizza #glossary("pannelli") contenenti dati relativi al dominio urbanistico.
@@ -316,7 +335,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC3 Visualizzazione dati urbanistici]
 )
 
-=== UC3.1: Visualizzazione #glossary("pannello") dati urbanistici
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione #glossary("pannello") dati urbanistici
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente dati relativi al dominio urbanistico.
@@ -331,7 +351,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC3.1 Visualizzazione #glossary("pannello") dati urbanistici]
 )
 
-=== UC3.2: Visualizzazione grafico a mappa disponibilità parcheggi
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione grafico a mappa disponibilità parcheggi
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa per indicare la disponibilità dei parcheggi, espressa in numero di parcheggi liberi, registrata da ciascun sensore, attraverso un indicatori numerici posti nelle coordinate dei corrispondenti sensori.
@@ -344,7 +365,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC3.2 Visualizzazione grafico a mappa disponibilità di parcheggi]
 )
 
-=== UC3.3: Visualizzazione informazioni delle colonne di ricarica
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione informazioni delle colonne di ricarica
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
 - *Postcondizioni*: l'amministratore pubblico visualizza dei #glossary("pannelli"), adatti al reperimento di informazioni relative alle colonne di ricarica.
@@ -357,7 +379,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC3.3 Visualizzazione posizione e stato colonne ricarica]
 )
 
-=== UC3.3.1: Visualizzazione posizione e disponibilità delle colonne ricarica
+#X.step(level: 3)
+=== UC#X.display(): Visualizzazione posizione e disponibilità delle colonne ricarica
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante la posizione delle colonne di ricarica per auto, mediante indicatori booleani, i quali indicheranno la disponibilità della colonna corrisponente.
@@ -371,7 +394,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC3.3 Visualizzazione posizione e stato colonne ricarica]
 )
 
-=== UC3.3.2: Visualizzazione tabella descrittiva delle colonne di ricarica
+#X.step(level: 3)
+=== UC#X.display(): Visualizzazione tabella descrittiva delle colonne di ricarica
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una tabella, la quale esprime, per ciascuna colonna di ricarica per auto, l'erogazione in Watt per ora attuale, indicizzando la tabella in base al nome del sensore.
@@ -386,7 +410,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC3.3 Visualizzazione posizione e stato colonne ricarica]
 )
 
-=== UC3.4: Visualizzazione grafico a mappa congestione stradale
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione grafico a mappa congestione stradale
 *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante lo stato di congestione delle strade, mediante gli stati "LOW", "MEDIUM", "HIGH" e "BLOCKED", atto a mostrare il livello di congestione della strada interessata.
@@ -399,7 +424,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC3.4 Visualizzazione grafico a mappa congestione stradale]
 )
 
-=== UC3.5: Visualizzazione posizione real time delle biciclette elettriche e relativa percentuale batteria
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione posizione real time delle biciclette elettriche e relativa percentuale batteria
 *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante la posizione in tempo reale delle biciclette elettriche, mediante degli indicatori numerici indicanti la percentuale della batteria posizionata nelle coordinate del mezzo, atto a mostrare la sua posizione.
@@ -414,7 +440,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 /*TODO: cambiare nome nell'immagine*/
-=== UC3.6: Visualizzazione indicatore percentuale su mappa riempimento zone ecologiche
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione indicatore percentuale su mappa riempimento zone ecologiche
 *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante lo stato di riempimento delle zone ecologiche, espresse in valori percentuali, posizionate nelle coordinate delle zone.
@@ -428,7 +455,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 /*TODO: cambiare immagine*/
-=== UC4: Visualizzazione #glossary("dati anomali") e superamento soglie
+#X.step()
+=== UC#X.display(): Visualizzazione #glossary("dati anomali") e superamento soglie
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico visualizza, in forma tabellare, la lista ordinata di anomalie nei dati rilevati dal sistema.
@@ -442,7 +470,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 /*TODO: realizzare immagine corrispondente*/
-=== UC4.1: Visualizzazione tabella descrittiva anomalie
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione tabella descrittiva anomalie
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico visualizza, in forma tabellare, la lista ordinata di #glossary("dati anomali") rilevati dal sistema.
@@ -456,7 +485,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 /*TODO: realizzare immagine corrispondente*/
-=== UC4.2: Visualizzazione tabella superamento soglie
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione tabella superamento soglie
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti le soglie impostate nel sistema, mostrando il valore superante la soglia, il sensore che ha rilevato tale valore e il timestamp relativo.
@@ -468,7 +498,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC4 Visualizzazione #glossary("dati anomali") rilevati]
 )
 
-=== UC5: Visualizzazione allerte superamento soglie
+/*TODO: per gli UC5.X andare a capire se usano soglie fisse o tramite variabili per gli allert (sempre se possibile)*/
+#X.step()
+=== UC#X.display(): Visualizzazione allerte superamento soglie
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico riceve una notifica di superamento di una soglia impostata.
@@ -480,7 +512,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 /*TODO: andare a fare l'immagine apposta*/
-=== UC5.1: Visualizzazione allerte superamento soglia temperatura
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione allerte superamento soglia temperatura
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa alla temperatura che notifica il superamento dei 40° celsius.
@@ -492,7 +525,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 /*TODO: andare a fare l'immagine apposta*/
-=== UC5.2: Visualizzazione allerte superamento soglia precipitazioni
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione allerte superamento soglia precipitazioni
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa alle precipitazioni che notifica il superamento dei 50 millimetri di pioggia all'ora.
@@ -504,7 +538,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 /*TODO: andare a fare l'immagine apposta*/
-=== UC5.3: Visualizzazione allerte superamento soglia inquinamento dell'aria
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione allerte superamento soglia inquinamento dell'aria
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa all'inquinamento dell'aria che notifica il superamento di 80#[#sym.mu]g su metro cubo.
@@ -516,7 +551,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 /*TODO: andare a fare l'immagine apposta*/
-=== UC5.4: Visualizzazione allerte superamento soglia bacini idrici
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione allerte superamento soglia bacini idrici
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa ai bacini idrici che notifica il superamento del 70% della capienza di un particolare bacino.
@@ -528,7 +564,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 /*TODO: andare a fare l'immagine apposta*/
-=== UC5.5: Visualizzazione allerte superamento soglia zone ecologiche
+#X.step(level: 2)
+=== UC#X.display(): Visualizzazione allerte superamento soglia zone ecologiche
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa alle zone ecologiche che notifica il superamento dell'80% della capienza di una particolare zona ecologica.
@@ -539,7 +576,13 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC5 Visualizzazione allerte superamento soglia zone ecologiche]
 )
 
-=== UC6: Applicazione filtri
+#X.step()
+=== UC#X.display(): Impostazione soglie
+/*TODO: scrivere i 5 use case di impostazione per le 5 soglie*/
+
+/*Cambiare il numero nell'immagine*/
+#X.step()
+=== UC#X.display(): Applicazione filtri
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: 
   + l'amministratore pubblico sta visualizzando uno o più #glossary("pannelli") con i dati.
@@ -553,7 +596,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC6 Applicazione filtri]
 )
 
-=== UC6.1: Filtro sotto-insieme di sensori su grafici time series
+/*Cambiare il numero nell'immagine*/
+#X.step(level: 2)
+=== UC#X.display(): Filtro sotto-insieme di sensori su grafici time series
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: 
   + l'amministratore pubblico sta visualizzando uno o più #glossary("pannelli") time series con i dati;
@@ -567,7 +612,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC6.1 Filtro sotto-insieme di sensori su grafici time series]
 )
 
-=== UC6.2: Filtro per tipologia sensore su tabella
+/*Cambiare il numero nell'immagine*/
+#X.step(level: 2)
+=== UC#X.display(): Filtro per tipologia sensore su tabella
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: 
   + l'amministratore pubblico sta visualizzando uno o più #glossary("pannelli") tabellari con i dati;
@@ -582,7 +629,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC6.2 Filtro per tipologia sensore su tabella]
 )
 
-=== UC6.3: Filtro per nome sensore su tabella
+/*Cambiare il numero nell'immagine*/
+#X.step(level: 2)
+=== UC#X.display(): Filtro per nome sensore su tabella
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: 
   + l'amministratore pubblico ha scelto un #glossary("pannello") su cui effettuare l'operazione di filtro;
@@ -598,7 +647,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC6.3 Filtro per nome sensore su tabella]
 )
 
-=== UC6.4: Filtro per intervallo temporale
+/*Cambiare il numero nell'immagine*/
+#X.step(level: 2)
+=== UC#X.display(): Filtro per intervallo temporale
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico sta visualizzando uno o più #glossary("pannelli").
 - *Postcondizioni*: l'amministratore pubblico visualizza solamente i dati relativi all'intervallo temporale selezionato.
@@ -612,7 +663,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC6.4 Filtro per intervallo temporale]
 )
 
-=== UC6.5: Filtro #glossary("pannelli") collegati
+/*Cambiare il numero nell'immagine*/
+#X.step(level: 2)
+=== UC#X.display(): Filtro #glossary("pannelli") collegati
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: 
   + l'amministratore pubblico ha filtrato i dati in un #glossary("pannello");
@@ -621,7 +674,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + il sistema aggiorna tutti i #glossary("pannelli") collegati.
 
-=== UC7: Ordinamento #glossary("pannelli") tabellari
+/*Cambiare il numero nell'immagine*/
+#X.step()
+=== UC#X.display(): Ordinamento #glossary("pannelli") tabellari
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha scelto e sta visualizzando un #glossary("pannello") da ordinare.
 - *Postcondizioni*: l'amministratore pubblico visualizza i dati ordinati.
@@ -634,7 +689,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC7 Ordinamento #glossary("pannelli") tabellari]
 )
 
-=== UC8: Modifica layout #glossary("pannelli")
+/*Cambiare il numero nell'immagine*/
+#X.step()
+=== UC#X.display(): Modifica layout #glossary("pannelli")
 - *Attore Principale*: amministratore pubblico. 
 - *Precondizioni*: l'amministratore pubblico sta visualizzando almeno un #glossary("pannello"). 
 - *Postcondizioni*: l'amministratore pubblico visualizza il nuovo layout.
@@ -646,7 +703,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC8 Modifica layout #glossary("pannelli")]
 )
 
-=== UC9: Visualizzazione errore nessun dato
+/*Cambiare il numero nell'immagine*/
+#X.step()
+=== UC#X.display(): Visualizzazione errore nessun dato
 - *Attore Principale*: amministratore pubblico. 
 - *Precondizioni*: il sistema non ha i dati necessari alla renderizzazione di un #glossary("pannello"). 
 - *Postcondizioni*: l'amministratore pubblico visualizza il messaggio di errore.
@@ -654,7 +713,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'amministratore pubblico vuole visualizzare qualche #glossary("pannello") [UC1.2] [UC1.1] [UC2.1] [UC3.1]; 
   + il sistema non ha i dati per renderizzarlo e mostra un messaggio di errore.
 
-=== UC10: Inserimento dati temperatura
+/*Cambiare il numero nell'immagine*/
+#X.step()
+=== UC#X.display(): Inserimento dati temperatura
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
@@ -669,7 +730,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC10 Inserimento dati temperatura]
 )
 
-=== UC11: Inserimento dati umidità
+/*Cambiare il numero nell'immagine*/
+#X.step()
+=== UC#X.display(): Inserimento dati umidità
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
@@ -684,7 +747,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC11 Inserimento dati umidità]
 )
 
-=== UC12: Inserimento dati velocità e direzione del vento
+/*Cambiare il numero nell'immagine*/
+#X.step()
+=== UC#X.display(): Inserimento dati velocità e direzione del vento
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
@@ -699,7 +764,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC12 Inserimento dati velocità e direzione del vento]
 )
 
-=== UC13: Inserimento dati precipitazioni
+/*Cambiare il numero nell'immagine*/
+#X.step()
+=== UC#X.display(): Inserimento dati precipitazioni
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
@@ -714,7 +781,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC13 Inserimento dati precipitazioni]
 )
 
-=== UC14: Inserimento dati inquinamento dell'aria
+/*Cambiare il numero nell'immagine*/
+#X.step()
+=== UC#X.display(): Inserimento dati inquinamento dell'aria
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
@@ -729,7 +798,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC14 Inserimento dati inquinamento dell'aria]
 )
 
-=== UC15: Inserimento dati livello bacini idrici
+/*Cambiare il numero nell'immagine*/
+#X.step()
+=== UC#X.display(): Inserimento dati livello bacini idrici
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
@@ -744,7 +815,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC15 Inserimento dati livello bacini idrici]
 )
 
-=== UC16: Inserimento dati disponibilità e occupazione parcheggi
+#X.step()
+=== UC#X.display(): Inserimento dati disponibilità e occupazione parcheggi
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
@@ -759,7 +831,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC16 Inserimento dati disponibilità e occupazione parcheggi]
 )
 
-=== UC17: Inserimento dati colonne di ricarica
+/*Cambiare il numero nell'immagine*/
+#X.step()
+=== UC#X.display(): Inserimento dati colonne di ricarica
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
@@ -774,7 +848,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC17 Inserimento dati colonne di ricarica]
 )
 
-=== UC18: Inserimento dati biciclette elettriche
+/*Cambiare il numero nell'immagine*/
+#X.step()
+=== UC#X.display(): Inserimento dati biciclette elettriche
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
@@ -789,7 +865,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC18 Inserimento dati biciclette elettriche]
 )
 
-=== UC19: Inserimento dati riempimento zone ecologiche
+/*Cambiare il numero nell'immagine*/
+#X.step()
+=== UC#X.display(): Inserimento dati riempimento zone ecologiche
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
@@ -804,7 +882,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC19 Inserimento dati riempimento zone ecologiche]
 )
 
-=== UC20: Inserimento dati congestione stradale
+/*Cambiare il numero nell'immagine*/
+#X.step()
+=== UC#X.display(): Inserimento dati congestione stradale
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
@@ -819,7 +899,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC20 Inserimento dati congestione stradale]
 )
 
-=== UC21: Inserimento dati relativi al sensore
+/*Cambiare il numero nell'immagine*/
+#X.step()
+=== UC#X.display(): Inserimento dati relativi al sensore
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sensore allega i dati relativi al proprio stato, ovvero la propria percentuale di batteria, se fa uso di una batteria autonoma o meno e la data di ultima manutenzione effettuata su di esso, al messaggio da inviare al sistema.
@@ -905,67 +987,86 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che mostri la percentuale di riempimento delle zone ecologiche, mediante degli indicatori percentuali, posizionati nelle coordinate della zona, nella #glossary("dashboard") relativa ai dati urbanistici.], "UC3.6"
   ),
   (
-    "Desiderabile", [L'utente deve poter visualizzare i #glossary("dati anomali") rilevati, in forma tabellare.], "UC4"
+    "Desiderabile", [L'utente deve poter monitorare i #glossary("dati anomali") e i dati superanti delle soglie, in una #glossary("dashboard") apposita.], "UC4"
   ),
   (
-    "Obbligatorio",  "L'utente deve poter visualizzare le allerte di superamento delle soglie.", "UC5"
+    "Opzionale", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i #glossary("dati anomali"), il sensore che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.], "UC4.1"
   ),
   (
-    "Obbligatorio", "L'utente deve poter filtrare un sottoinsieme di sensori in grafici di tipo time series.", "UC6.1"
+    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i dati relativi a temperatura, precipitazioni, inquinamento dell'aria, bacini idrici e zone ecologiche, i cui valori superano una soglia impostata dall'utente, il sensore che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.], "UC4.2"
+  ),
+  /* vvvvvvvvvvvvvvvvvvvv DA QUI IN POI vvvvvvvvvvvvvvvvvvvv */
+  (
+    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo temperatura, superante una soglia precedentemente impostata.", "UC5.1"
   ),
   (
-    "Obbligatorio", [L'utente deve poter filtrare un sotto-insieme di sensori in base alla tipologia in #glossary("pannelli") di tipo tabellare.], "UC6.2"
+    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo precipitazioni, superante una soglia precedentemente impostata.", "UC5.2"
   ),
   (
-    "Obbligatorio", [L'utente deve poter filtrare un sotto-insieme di sensori in base al nome in #glossary("pannelli") di tipo tabellare.], "UC6.3"
+    "Desiderabile", [L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo inquinamento dell'aria (#glossary("PM10")), superante una soglia precedentemente impostata.], "UC5.3"
   ),
   (
-    "Obbligatorio", "L'utente deve poter filtrare i dati in base ad un intervallo temporale.", "UC6.4"
+    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo percentuale riempimento bacini idrici, superante una soglia precedentemente impostata.", "UC5.4"
   ),
   (
-    "Desiderabile", [Nei #glossary("pannelli") con tabelle, l'utente deve poter ordinare i dati in base alle loro colonne.], "UC7"
+    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo percentuale riempimento zone ecologiche, superante una soglia precedentemente impostata.", "UC5.5"
   ),
   (
-    "Desiderabile", [L'utente deve poter modificare il layout della dashboard visualizzata, agendo su posizione e dimensione dei #glossary("pannelli").], "UC8"
+    "Obbligatorio", "L'utente deve poter filtrare un sottoinsieme di sensori in grafici di tipo time series.", "UC7.1"
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare un messaggio di errore qualora non vi siano dati a disposizione.", "UC9"
+    "Obbligatorio", [L'utente deve poter filtrare un sotto-insieme di sensori in base alla tipologia in #glossary("pannelli") di tipo tabellare.], "UC7.2"
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla temperatura.", "UC10"
+    "Obbligatorio", [L'utente deve poter filtrare un sotto-insieme di sensori in base al nome in #glossary("pannelli") di tipo tabellare.], "UC7.3"
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi all'umidità.", "UC11"
+    "Obbligatorio", "L'utente deve poter filtrare i dati in base ad un intervallo temporale.", "UC7.4"
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla velocità e alla direzione del vento.", "UC12"
+    "Desiderabile", [Nei #glossary("pannelli") con tabelle, l'utente deve poter ordinare i dati in base alle loro colonne.], "UC8"
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi alle precipitazioni.", "UC13"
+    "Desiderabile", [L'utente deve poter modificare il layout della dashboard visualizzata, agendo su posizione e dimensione dei #glossary("pannelli").], "UC9"
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi all'inquinamento dell'aria.", "UC14"
+    "Obbligatorio", "L'utente deve poter visualizzare un messaggio di errore qualora non vi siano dati a disposizione.", "UC10"
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi al livello dei bacini idrici.", "UC15"
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla temperatura.", "UC11"
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla disponibilità e l'occupazione dei parcheggi.", "UC16"
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi all'umidità.", "UC12"
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi alle colonne di ricarica.", "UC17"
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla velocità e alla direzione del vento.", "UC13"
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi alle biciclette elettriche.", "UC18"
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi alle precipitazioni.", "UC14"
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi al riempimento delle zone ecologiche.", "UC19"
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi all'inquinamento dell'aria.", "UC15"
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla congestione stradale.", "UC20"
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi al livello dei bacini idrici.", "UC16"
   ),
   (
-    "Desiderabile", "Ogni sensore insieme ai dati invia al sistema anche le informazioni relative al proprio stato, queste comprendono il livello della batteria, nel caso ne abbia una e l'utilizzo del processore.", "UC21"
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla disponibilità e l'occupazione dei parcheggi.", "UC17"
+  ),
+  (
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi alle colonne di ricarica.", "UC18"
+  ),
+  (
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi alle biciclette elettriche.", "UC19"
+  ),
+  (
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi al riempimento delle zone ecologiche.", "UC21"
+  ),
+  (
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla congestione stradale.", "UC22"
+  ),
+  (
+    "Desiderabile", "Ogni sensore insieme ai dati invia al sistema anche le informazioni relative al proprio stato, queste comprendono il livello della batteria, nel caso ne abbia una e l'utilizzo del processore.", "UC23"
   )
 )
 
