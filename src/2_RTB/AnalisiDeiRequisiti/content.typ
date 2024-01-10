@@ -1184,4 +1184,4 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   [funzionali], [#funzionale_obb], [#funzionale_des], [#funzionale_opz], [#funzionale_tot],
   [di qualità], [#qualità_obb], [#qualità_des], [#qualità_opz], [#qualità_tot],
   [di vincolo], [#vincolo_obb], [#vincolo_des], [#vincolo_opz], [#vincolo_tot]
-)a 
+) 
