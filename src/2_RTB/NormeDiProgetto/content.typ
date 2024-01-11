@@ -1313,6 +1313,8 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
 
 == Metriche per la qualità di prodotto <metriche_qualità-prodotto>
 
+=== Funzionalità
+
         - *ROS*: Requisiti Obbligatori Soddisfatti - la percentuale di requisiti obbligatori soddisfatti dal prodotto
 
                 Formula: $"ROS" = "requisiti obbligatori soddisfatti" / "requisiti obbligatori totali" dot 100$;
@@ -1325,7 +1327,11 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
 
                 Formula: $"ROPS" = "requisiti opzionali soddisfatti" / "requisiti opzionali totali" dot 100$;
 
+=== Usabilità   
+
         - *FU*: Facilità di utilizzo - quantità di click che l'utente deve effettuare per raggiungere un obiettivo desiderato;
+
+=== Affidabilità  
 
         - *PTCP*: Passed Test Cases Percentage - rappresenta la percentuale di casi di test che sono stati eseguiti con successo rispetto al totale dei casi di test previsti
 
