@@ -131,11 +131,7 @@ Versione: #version
   level: 1,
 ): it => {
   v(12pt, weak: true)
-  if (type(it.kind) != figure.where(kind: image) and type(it.kind) != figure.where(kind: table)) {
-    strong(it)
-  } else {
-    it
-  }
+  strong(it)
 }
 
 #outline(
