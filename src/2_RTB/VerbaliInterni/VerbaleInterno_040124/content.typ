@@ -27,7 +27,7 @@ Nel corso degli ultimi due sprint, coincidenti con il periodo di vacanze nataliz
 
   - *Meeting di emergenza*: i componenti del team si riservano la possibilità di invocare un meeting di emergenza ( meeting non preventivato e solitamente con poco preavviso) per discutere di aspetti critici legati allo sviluppo di un documento o di una sezione di codice. Dato il poco preavviso, questi meeting avranno un #glossary[quorum] ridotto da 4 a 3 membri totali, in modo da consentire al gruppo ristretto di prendere decisioni rappresentative della volontà del team con immediatezza;
 
-  - Stand-up meeting da remoto: il team è disposto ad effettuare stand-up meeting anche da remoto qualora i componenti non fossero in grado di incontrarsi fisicamente per periodi più o meno prolungati di tempo (questa pratica verrà implementata con ogni probabilità dopo la prima revisione RTB).
+  - *Stand-up meeting da remoto*: il team è disposto ad effettuare stand-up meeting anche da remoto qualora i componenti non fossero in grado di incontrarsi fisicamente per periodi più o meno prolungati di tempo (questa pratica verrà implementata con ogni probabilità dopo la prima revisione RTB).
 
 == Creazione delle issue
 
