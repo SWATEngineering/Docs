@@ -1,0 +1,49 @@
+#import "meta.typ": inizio_incontro, fine_incontro, luogo_incontro
+#import "functions.typ": glossary, team
+#let participants = csv("participants.csv")
+
+= Partecipanti
+/ Inizio incontro: #inizio_incontro
+/ Fine incontro: #fine_incontro
+/ Luogo incontro: #luogo_incontro
+
+#table(
+  columns: (3fr, 1fr),
+  [*Nome*], [*Durata presenza*],
+  ..participants.flatten()
+)
+= Sintesi Elaborazione Incontro
+
+/*************************************/
+/*    INSERIRE SOTTO IL CONTENUTO    */ 
+/*************************************/
+== Termini di glossario
+
+L'incontro si è aperto con una breve discussione in merito al modo in cui i termini di glossario vengono riportati all'interno della #glossary[documentazione]; in particolare, il team aveva adottato l'abitudine di denotare la prima occorrenza di un termine di glossario con il corsivo e la #sub("G") a pedice, ma tutte le occorrenze successive venivano riportate semplicemente con il corsivo. Per rimuovere qualunque ambiguità, visto che il corsivo viene adottato anche per i nomi dei documenti (come riportato nelle _Norme di Progetto v1.0_), il team ha deciso di marcare tutte le occorrenze di tali termini seguendo la prassi del corsivo unito alla #sub("G") a pedice. Di conseguenza, vanno revisionati i documenti attualmente in fase di redazione per assicurarsi che tutti i termini di glossario siano riportati correttamente, oltre che effettivamente inseriti all'interno del _Glossario v1.0_.
+
+== Ampliamento Analisi dei Rischi nel _Piano di Progetto_
+
+Nel corso degli ultimi due sprint, coincidenti con il periodo di vacanze natalizie, il team ha riscontrato il verificarsi di un rischio di comunicazione non ancora descritto nella sezione *Analisi dei Rischi* del _Piano di Progetto_; in particolare, il rischio consiste nell'apportare modifiche critiche non informate alla #glossary[documentazione], senza aver esposto la modifica che si intende implementare al resto del team. Modificare un qualsiasi documento in larga parte o aggiungendo modifiche non approvate dal team (o quantomeno dal #glossary[quorum] di 4/6 persone) è altamente rischioso in quanto esiste la possibilità che le modifiche, una volta valutate criticamente dal team, vengano disapprovate e che debbano essere, di conseguenza, revocate o eliminate del tutto. Riportare il documento alla versione immediatamente precedente alle modifiche non approvate e incaricare un componente del team di rettificarle comportano, rispettivamente, uno spreco di risorse e uno sforzo significativo che si sarebbero potuti evitare con una comunicazione migliore. Di conseguenza, il team ha deciso di impegnarsi a riportare il livello di comunicazione e cooperazione a quello solito, e anche di implementare due misure preventive per far sì che, anche in situazioni o periodi in cui questa comunicazione dovesse venir meno, il team sia comunque in grado di mantenersi quanto più allineato nel proprio modo di lavorare:
+
+  - Meeting di emergenza: i componenti del team si riservano la possibilità di invocare un meeting di emergenza (con cui si intende un meeting non preventivato e solitamente con poco preavviso) per discutere di aspetti critici legati allo sviluppo di un documento o di una porzione di codice. Dato il poco preavviso, questi meeting avranno un quorum ridotto da 4 a 3 persone totali, in modo da consentire al gruppo ristretto di prendere decisioni rappresentative della volontà del team con immediatezza;
+
+  - Stand-up meeting da remoto: il team è disposto ad effettuare stand-up meeting anche da remoto qualora i componenti non fossero in grado di incontrarsi fisicamente per periodi più o meno prolungati di tempo (questa pratica verrà implementata con ogni probabilità dopo la prima revisione RTB).
+
+== Creazione delle issue
+
+Il modo in cui il team ha gestito il processo di creazione e assegnazione delle issue finora è basato su un approccio a priori, per cui al termine di ogni incontro interno che sancisce la fine di uno #glossary[sprint] il team assiste gli Amministratori di turno in questo compito. Ciò significa che, virtualmente, le issue create a priori a inizio #glossary[sprint] devono rappresentare tutte le attività a cui i componenti sono intenzionati a lavorare nel corso dello #glossary[sprint]; questo ha portato il team a creare issue progressivamente sempre più ampie, in modo da lasciare che sia il componente a cui una determinata issue è stata assegnata a valutare esattamente quali attività intraprendere e portare a termine prima della fine dello #glossary[sprint]. In altre parole, dato che alcune attività sorgono solo a posteriori (nel corso dello #glossary[sprint], quando un componente si rende conto di dover fare qualcosa che non era necessariamente emerso nella discussione precedente con il team), è necessario adottare un approccio leggermente diverso che consenta al team di creare issue verosimilmente più piccole per gestire tali attività in corso d'opera. 
+
+Questo non solo migliorerebbe il processo di gestione della configurazione del progetto, ma aiuterebbe il team ad evitare situazioni sfortunate in cui due componenti si ritrovano a lavorare alla stessa attività perchè questa non era stata ben specificata e vincolata ad una singola issue precedentemente. Nel momento in cui un componente dovesse creare una issue a posteriori e metterla nella corsia "Ready" della Kanban Board del sistema di #glossary[ITS], non vi sarebbe più un pretesto perchè un altro componente decida di lavorare alla stessa attività in modo inconsapevole.
+
+== Avanzamento del _Piano di Qualifica_
+
+L'incontro è terminato con una breve discussione in merito alla decisione di utilizzare il rapporto ore preventivate/ore totali a disposizione (570) per il calcolo della percentuale di lavoro preventivato necessaria per la metrica del PV (Planned Value) e, similarmente, il rapporto ore effettive/ore totali per il calcolo dell'EV (Earned Value). Nonostante non si fosse certi, in partenza, che il rapporto ore potesse riflettere adeguatamente la percentuale di lavoro svolto, nell'osservare i grafici del _Piano di Qualifica_, il team ha riconosciuto come questi riescano a mettere in evidenza aspetti concreti dell'andamento attuale del progetto e si è, di conseguenza, convinto della scelta effettuata.
+
+== Rotazione dei ruoli
+
+- Matteo Rango: Amministratore, Verificatore;
+- Simone Caregnato: Verificatore;
+- Riccardo Toniolo: Programmatore, Verificatore;
+- Riccardo Costantin: Verificatore;
+- Nancy Kalaj: Responsabile;
+- Giacomo D’Ovidio: Amministratore.
