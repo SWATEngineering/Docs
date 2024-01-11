@@ -37,7 +37,7 @@ Questo non solo migliorerebbe il processo di gestione della configurazione del p
 
 == Avanzamento del _Piano di Qualifica_
 
-L'incontro è terminato con una breve discussione in merito alla decisione di utilizzare il rapporto ore preventivate/ore totali a disposizione (570) per il calcolo della percentuale di lavoro preventivato necessaria per la metrica del PV (Planned Value) e, similarmente, il rapporto ore effettive/ore totali per il calcolo dell'EV (Earned Value). Nonostante non si fosse certi, in partenza, che il rapporto ore potesse riflettere adeguatamente la percentuale di lavoro svolto, nell'osservare i grafici del _Piano di Qualifica_, il team ha riconosciuto come questi riescano a mettere in evidenza aspetti concreti dell'andamento attuale del progetto e si è, di conseguenza, convinto della scelta effettuata.
+L'incontro è terminato con una breve discussione in merito alla decisione di utilizzare il rapporto ore preventivate/ore totali a disposizione (570) per il calcolo della percentuale di lavoro preventivato necessaria per la metrica del PV (Planned Value) e, similarmente, il rapporto ore effettive/ore totali per il calcolo dell'EV (Earned Value). Nonostante non si fosse certi, in partenza, che il rapporto ore potesse riflettere adeguatamente la percentuale di lavoro svolto, nell'osservare i grafici del _Piano di Qualifica_, il team ha riconosciuto come questi riescano a mettere in evidenza aspetti concreti dell'andamento attuale del progetto.Di conseguenza, il team si è convinto della scelta effettuata.
 
 == Rotazione dei ruoli
 
