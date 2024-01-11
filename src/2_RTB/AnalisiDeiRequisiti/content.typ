@@ -965,107 +965,107 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico, che esprime l'inquinamento dell'aria massimo, espresso in $#sym.mu g\/m^3$ (#glossary("PM10")), degli ultimi 5 minuti, tra i dati registrati da tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter monitorare i dati provenienti dai sensori relativi ai dati urbanistici in una #glossary("dashboard") apposita.], "UC3"
+    "Obbligatorio", [L'utente deve poter monitorare i dati provenienti dai sensori relativi ai dati urbanistici in una #glossary("dashboard") apposita.], [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi il numero di posti liberi, mediante indicatori numerici posti nelle coordinate del sensore, nella #glossary("dashboard") relativa ai dati urbanistici.], "UC3.2"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi il numero di posti liberi, mediante indicatori numerici posti nelle coordinate del sensore, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level: 2)#C.step(level: 2)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi la posizione delle colonne di ricarica per auto, mediante indicatori booleani posti nelle coordinate dei sensori che indicheranno la disponibilità di queste, nella #glossary("dashboard") relativa ai dati urbanistici.], "UC3.3.1"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi la posizione delle colonne di ricarica per auto, mediante indicatori booleani posti nelle coordinate dei sensori che indicheranno la disponibilità di queste, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:2)#C.step(level:3)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'erogazione delle colonne di ricarica per auto, espressa in Watt all'ora, controllata da ciascun sensore, nella #glossary("dashboard") relativa ai dati urbanistici.], "UC3.3.2"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'erogazione delle colonne di ricarica per auto, espressa in Watt all'ora, controllata da ciascun sensore, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:3)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi lo stato di congestione delle strade, mediante gli stati "LOW", "MEDIUM", "HIGH", "BLOCKED", posti nelle coordinate dei sensori controllano queste, nella #glossary("dashboard") relativa ai dati urbanistici.], "UC3.4"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi lo stato di congestione delle strade, mediante gli stati "LOW", "MEDIUM", "HIGH", "BLOCKED", posti nelle coordinate dei sensori controllano queste, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che mostri la posizione delle biciclette elettriche controllate, in tempo reale, mediante degli indicatori numerici, indicanti la percentuale della batteria, posizionati nelle coordinate del mezzo, nella #glossary("dashboard") relativa ai dati urbanistici.], "UC3.5"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che mostri la posizione delle biciclette elettriche controllate, in tempo reale, mediante degli indicatori numerici, indicanti la percentuale della batteria, posizionati nelle coordinate del mezzo, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che mostri la percentuale di riempimento delle zone ecologiche, mediante degli indicatori percentuali, posizionati nelle coordinate della zona, nella #glossary("dashboard") relativa ai dati urbanistici.], "UC3.6"
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che mostri la percentuale di riempimento delle zone ecologiche, mediante degli indicatori percentuali, posizionati nelle coordinate della zona, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile", [L'utente deve poter monitorare i #glossary("dati anomali") e i dati superanti delle soglie, in una #glossary("dashboard") apposita.], "UC4"
+    "Desiderabile", [L'utente deve poter monitorare i #glossary("dati anomali") e i dati superanti delle soglie, in una #glossary("dashboard") apposita.], [#C.step()UC#C.display()]
   ),
   (
-    "Opzionale", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i #glossary("dati anomali"), il sensore che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.], "UC4.1"
+    "Opzionale", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i #glossary("dati anomali"), il sensore che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i dati relativi a temperatura, precipitazioni, inquinamento dell'aria, bacini idrici e zone ecologiche, i cui valori superano una soglia impostata dall'utente, il sensore che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.], "UC4.2"
+    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i dati relativi a temperatura, precipitazioni, inquinamento dell'aria, bacini idrici e zone ecologiche, i cui valori superano una soglia impostata dall'utente, il sensore che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.], [#C.step(level:2)UC#C.display()]
   ),
   /* vvvvvvvvvvvvvvvvvvvv DA QUI IN POI vvvvvvvvvvvvvvvvvvvv */
   (
-    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo temperatura, superante una soglia di 40° celsius.", "UC5.1"
+    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo temperatura, superante una soglia di 40° celsius.", [#C.step()#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo precipitazioni, superante una soglia di 50 millimetri all'ora.", "UC5.2"
+    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo precipitazioni, superante una soglia di 50 millimetri all'ora.", [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile", [L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo inquinamento dell'aria (#glossary("PM10")), superante una soglia di 80 microgrammi su metro cubo.], "UC5.3"
+    "Desiderabile", [L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo inquinamento dell'aria (#glossary("PM10")), superante una soglia di 80 microgrammi su metro cubo.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo percentuale riempimento bacini idrici, superante una soglia corrispondente al 70% della capienza di tale bacino.", "UC5.4"
+    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo percentuale riempimento bacini idrici, superante una soglia corrispondente al 70% della capienza di tale bacino.", [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo percentuale riempimento zone ecologiche, superante una soglia corrispondente all'80% della capienza di tale zona.", "UC5.5"
+    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo percentuale riempimento zone ecologiche, superante una soglia corrispondente all'80% della capienza di tale zona.", [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Obbligatorio", "L'utente deve poter filtrare un sottoinsieme di sensori in grafici di tipo time series.", "UC7.1"
+    "Obbligatorio", "L'utente deve poter filtrare un sottoinsieme di sensori in grafici di tipo time series.", [#C.step()#C.step(level:2)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter filtrare un sotto-insieme di sensori in base alla tipologia in #glossary("pannelli") di tipo tabellare.], "UC7.2"
+    "Obbligatorio", [L'utente deve poter filtrare un sotto-insieme di sensori in base alla tipologia in #glossary("pannelli") di tipo tabellare.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter filtrare un sotto-insieme di sensori in base al nome in #glossary("pannelli") di tipo tabellare.], "UC7.3"
+    "Obbligatorio", [L'utente deve poter filtrare un sotto-insieme di sensori in base al nome in #glossary("pannelli") di tipo tabellare.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Obbligatorio", "L'utente deve poter filtrare i dati in base ad un intervallo temporale.", "UC7.4"
+    "Obbligatorio", "L'utente deve poter filtrare i dati in base ad un intervallo temporale.", [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile", [Nei #glossary("pannelli") con tabelle, l'utente deve poter ordinare i dati in base alle loro colonne.], "UC8"
+    "Desiderabile", [Nei #glossary("pannelli") con tabelle, l'utente deve poter ordinare i dati in base alle loro colonne.], [#C.step()UC#C.display()]
   ),
   (
-    "Desiderabile", [L'utente deve poter modificare il layout della dashboard visualizzata, agendo su posizione e dimensione dei #glossary("pannelli").], "UC9"
+    "Desiderabile", [L'utente deve poter modificare il layout della dashboard visualizzata, agendo su posizione e dimensione dei #glossary("pannelli").], [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare un messaggio di errore qualora non vi siano dati a disposizione.", "UC10"
+    "Obbligatorio", "L'utente deve poter visualizzare un messaggio di errore qualora non vi siano dati a disposizione.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla temperatura.", "UC11"
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla temperatura.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi all'umidità.", "UC12"
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi all'umidità.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla velocità e alla direzione del vento.", "UC13"
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla velocità e alla direzione del vento.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi alle precipitazioni.", "UC14"
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi alle precipitazioni.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi all'inquinamento dell'aria.", "UC15"
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi all'inquinamento dell'aria.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi al livello dei bacini idrici.", "UC16"
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi al livello dei bacini idrici.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla disponibilità e l'occupazione dei parcheggi.", "UC17"
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla disponibilità e l'occupazione dei parcheggi.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi alle colonne di ricarica.", "UC18"
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi alle colonne di ricarica.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi alle biciclette elettriche.", "UC19"
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi alle biciclette elettriche.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi al riempimento delle zone ecologiche.", "UC21"
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi al riempimento delle zone ecologiche.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla congestione stradale.", "UC22"
+    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla congestione stradale.", [#C.step()UC#C.display()]
   ),
   (
-    "Desiderabile", "Ogni sensore insieme ai dati invia al sistema anche le informazioni relative al proprio stato, queste comprendono il livello della batteria, nel caso ne abbia una e l'utilizzo del processore.", "UC23"
+    "Desiderabile", "Ogni sensore insieme ai dati invia al sistema anche le informazioni relative al proprio stato, queste comprendono il livello della batteria, nel caso ne abbia una e l'utilizzo del processore.", [#C.step()UC#C.display()]
   )
 )
 
