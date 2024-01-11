@@ -238,7 +238,7 @@ I requisiti trovati hanno un codice univoco con la seguente sintassi:
         - *Numero*:
                 per ogni requisito aggiunto il numero viene incrementato.
 
-==== Metrichewing chun lat sao 2
+==== Metriche
 
 La definizione delle metriche seguenti si può trovare nella @metriche_qualità-prodotto.
 #figure(
