@@ -975,13 +975,13 @@ Dove "number" rappresenta il numero specifico dello #glossary[sprint] di interes
 
 
 
-==== Ruoli Progetto
+=== Ruoli Progetto
 
 Durante il periodo di sviluppo del progetto, ciascun membro assume sei ruoli distinti, con compiti diversificati, al fine di garantire una gestione completa ed efficace delle diverse fasi e aspetti del lavoro. Questi ruoli contribuiscono a promuovere la collaborazione sinergica e l'ottimizzazione delle risorse all'interno del team.
 
 I ruoli assunti sono i seguenti:
 
-===== Responsabile  
+==== Responsabile  
 
         Figura chiave che supervisiona, coordina e gestisce le attività del team. Si occupa di garantire l'allineamento tra gli obiettivi del progetto e le azioni intraprese, gestisce le risorse disponibili, stabilisce e mantiene le relazioni esterne con la Proponente e assicura il flusso efficace delle informazioni all'interno del team e al di fuori di esso.
 
@@ -995,7 +995,7 @@ I ruoli assunti sono i seguenti:
          - Creazione dei diari di bordo;
          - Upload dei verbali esterni convalidati, tramite firma, dalla Proponente in una cartella apposita su Google Drive.
 
-===== Amministratore 
+==== Amministratore 
         
         Figura professionale con la responsabilità della creazione, manutenzione e ottimizzazione degli strumenti, delle risorse e dei processi necessari per il corretto svolgimento del progetto.
 
@@ -1010,7 +1010,7 @@ I ruoli assunti sono i seguenti:
          - Gestione del versionamento dei documenti;
          - Stesura e avanzamento del documento _Piano di Qualifica v1.0_.
 
-===== Analista
+==== Analista
      
      Figura professionale che si occupa di analizzare, comprendere e definire i requisiti e le specifiche di un #glossary[sistema] software prima che venga sviluppato. Questa figura svolge un ruolo fondamentale nel processo di sviluppo del software, contribuendo a garantire che il prodotto finale soddisfi le esigenze e le aspettative degli utenti e della Proponente.
 
@@ -1022,7 +1022,7 @@ I ruoli assunti sono i seguenti:
         - Stesura del documento _Analisi dei Requisiti v1.0_;
         - Creazione diagrammi UML;
 
-===== Progettista
+==== Progettista
 
         Figura professionale specializzata nella progettazione architetturale e strutturale di sistemi. La sua responsabilità principale è definire la configurazione, la disposizione e l'organizzazione dei vari componenti del #glossary[sistema], concentrandosi su come questi elementi interagiscono tra loro per raggiungere determinati obiettivi di funzionalità, prestazioni e scalabilità.
 
@@ -1034,7 +1034,7 @@ I ruoli assunti sono i seguenti:
         - Gestione dei rischi: cerca di mitigare problemi che possono sorgere durante lo sviluppo;
         - Redazione del documento _Specifiche Tecniche_.
 
-===== Programmatore
+==== Programmatore
 
         Figura professionale incaricata di trasformare le specifiche tecniche in codice eseguibile, garantendo un'implementazione efficiente e accurata delle funzionalità richieste dal progetto.
 
@@ -1048,7 +1048,7 @@ I ruoli assunti sono i seguenti:
         - Realizzazione del _Manuale Utente_;
         - Collaborazione con il team per l'integrazione del codice e il mantenimento della coerenza del progetto.
 
-===== Verificatore
+==== Verificatore
 
         Figura professionale che si occupa di esaminare il lavoro prodotto dagli altri membri del team.
 
@@ -1059,13 +1059,13 @@ I ruoli assunti sono i seguenti:
         - Identificazione e segnalazione di problemi;
         - Collaborazione con il team per garantire che il lavoro sia conforme alle linee guida e agli standard richiesti.
 
-==== Cambio dei ruoli
+=== Cambio dei ruoli
 
 Per garantire che ogni membro svolga almeno una volta tutti i ruoli menzionati, il team si impegna a cambiarli ogni settimana.
 
-==== Gestione strumenti coordinamento
+=== Gestione strumenti coordinamento
 
-===== Ticketing    
+==== Ticketing    
 
 L'Amministratore crea, durante gli incontri interni, e gestisce le varie task in modo tale ogni membro del team sia informato su ciò che ci si propone di fare durante lo #glossary[sprint] e sia in grado di verificare il progresso effettuato in qualsiasi momento.
 
@@ -1098,11 +1098,11 @@ Ogni issue è composta da:
         - *intervallo Temporale*: una data di inizio e una di fine;
         - *#glossary[Milestone]*: #glossary[milestone] associata alla issue, se il completamento non è possibile entro lo #glossary[sprint] attuale, è necessario spostare l'issue nella #glossary[milestone] successiva.
 
-===== Gestione dei rischi 
+=== Gestione dei rischi 
 
 La gestione dei rischi è un approccio sistematico finalizzato a individuare, valutare e affrontare le possibili minacce o opportunità che possono influenzare il successo di un progetto. Questo processo coinvolge l'identificazione dei rischi, la valutazione della loro probabilità e impatto, la pianificazione di strategie di mitigazione o sfruttamento e il monitoraggio continuo durante l'intero ciclo di vita del progetto.
 
-====== Struttura dei rischi
+==== Struttura dei rischi
 
 I rischi vengono suddivisi in tre categorie:
 
@@ -1185,6 +1185,10 @@ table(
 ),
 caption:[Metriche Fornitura],
 )
+
+== Formazione   
+
+
 
 #pagebreak()
 = Metriche per la qualità <metriche>

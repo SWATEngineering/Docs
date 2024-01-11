@@ -127,10 +127,32 @@ Versione: #version
   numbering: "1.1",
   outlined: true,
 )
+#show outline.entry.where(
+  level: 1,
+): it => {
+  v(12pt, weak: true)
+  if (type(it.kind) != figure.where(kind: image) and type(it.kind) != figure.where(kind: table)) {
+    strong(it)
+  } else {
+    it
+  }
+}
 
 #outline(
   title: "Indice",
   indent: auto
+)
+
+#pagebreak()
+#outline(
+  title: [Elenco delle Figure],
+  target: figure.where(kind: image),
+)
+#pagebreak()
+
+#outline(
+  title: [Elenco delle Tabelle],
+  target: figure.where(kind: table),
 )
 
 
