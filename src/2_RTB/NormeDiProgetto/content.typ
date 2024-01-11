@@ -1188,7 +1188,28 @@ caption:[Metriche Fornitura],
 
 == Formazione   
 
+=== Scopo e aspettative
 
+Il processo è progettato per normare il modo in cui il team #team acquisisce conoscenze relative alle tecnologie richieste per la produzione dei documenti e del prodotto.
+Il processo di formazione è progettato per garantire che ogni membro del team raggiunga una competenza sufficiente nell'utilizzo consapevole delle tecnologie selezionate per la realizzazione del progetto.
+
+=== Formazione individuale dei membri  
+
+Ciascun membro del gruppo assume la responsabilità di approfondire individualmente le diverse tecnologie necessarie per lo sviluppo del prodotto. Per facilitare il processo di apprendimento collettivo, si promuove attivamente la condivisione di conoscenze tra i membri, permettendo a coloro che possiedono una maggiore competenza di condividere le proprie nozioni con i colleghi meno esperti.
+
+=== Guide e documentazione  
+
+Si riporta la lista delle guide e documentazione da prendere come riferimento:
+
+        - *Typst*: #link("https://typst.app/docs/");
+        - *Github*: #link("https://docs.github.com/en");
+        - *Python*: #link("https://docs.python.org/3/");
+        - *Grafana*: #link("https://grafana.com/docs/grafana/latest/");
+        - *Apache kafka*: #link("https://docs.confluent.io/platform/current/clients/confluent-kafka-python/html/index.html");
+        - *Clickhouse*: #link("https://clickhouse.com/docs").  
+
+Questa lista non intende essere forzata, ciascun membro è libero di approfondire le proprie conoscenze utilizzando materiale aggiuntivo.
+Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri membri.
 
 #pagebreak()
 = Metriche per la qualità <metriche>
