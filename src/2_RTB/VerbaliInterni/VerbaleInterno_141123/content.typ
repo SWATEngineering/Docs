@@ -35,7 +35,7 @@ Nella riunione tenuta in data odierna sono stati trattati i seguenti argomenti.
 
 Questa aggiunta di dettagli sul ruolo del responsabile è stata ritenuta necessaria in quanto ci si è resi conto che il ruolo del responsabile non aveva abbastanza mansioni e quindi aveva molto tempo libero. Di conseguenza sono state individuate mansioni per poter impiegare meglio il suo tempo, andando ad alleggerire il carico di lavoro dagli altri ruoli (e.g. la stesura dei verbali, precedentemente svolta dagli analisti).
 
-== Cambiamento dei ruoli straordinaro
+== Cambiamento dei ruoli straordinario
 
 È stato ritenuto necessario un cambiamento dei ruoli per via dei seguenti motivi:
 - La proponente ha suggerito la stesura del _Proof of Concept_ in contemporanea alla definizione dell'analisi dei requisiti e non era stata prevista la figura del programmatore nello sprint attuale;

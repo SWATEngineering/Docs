@@ -26,7 +26,7 @@ La tecnologia "Pydantic" per il linguaggio Python è stata riconosciuta come par
 
 == Gestione del tempo
 È stata presa un'altra significativa decisione riguardo l'adozione dell'assegnazione delle ore in multipli di trenta minuti (0.5 h), all'interno del foglio condiviso di time tracking, con l'obiettivo di evitare complicazioni non necessarie e garantire una gestione più precisa del tempo.
-A questo si collega lo sviluppo di un'automazione in grado di aggiornare il _Piano di Progetto_ secondo quanto svolto dal team durante gli sprint. Oltre che a far risparmiare tempo ai Responabili e agli Amministratori, questo script comporterà un notevole vantaggio in termini di sicurezza nell'elaborazione dei calcoli del consuntivo.
+A questo si collega lo sviluppo di un'automazione in grado di aggiornare il _Piano di Progetto_ secondo quanto svolto dal team durante gli sprint. Oltre che a far risparmiare tempo ai Responsabili e agli Amministratori, questo script comporterà un notevole vantaggio in termini di sicurezza nell'elaborazione dei calcoli del consuntivo.
 
 == Terminologia
 Una discussione è stata condotta per esaminare la terminologia utilizzata nei documenti, e si è raggiunto un consenso sull'adozione del termine "Verificatore" anziché "Revisore", per essere più consistenti in tutti i documenti.

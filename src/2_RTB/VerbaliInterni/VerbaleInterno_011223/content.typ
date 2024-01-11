@@ -32,7 +32,7 @@ Su proposta dei componenti è stata assegnata questa  distribuzione dei ruoli:
 - Amministratore: Nancy Kalaj;
 - Analista: Riccardo Toniolo;
 - Analista: Matteo Rango;
-- Analista: Giacomo D'ovidio;
+- Analista: Giacomo D'Ovidio;
 - Verificatore: Simone Caregnato ;
 
 Il ruolo di programmatore non è stato assegnato, poiché la struttura finale del PoC è stata conclusa. Il ruolo di progettista, invece, non è stato assegnato, in quanto si ritiene che sia prematuro rispetto all'attuale stato di avanzamento del progetto. 
@@ -63,7 +63,7 @@ Pertanto, pur non essendo una vera e propria pausa,  il gruppo ridurrà temporan
 
 == Sprint Review o Retrospective
 
-Durante la discussione è stato affrontato il questito  se gli incontri settimanali con la Proponente debbano essere considerati come Sprint Review, come Sprint Retrospective o normali incontri, trasferendo le due attività citate alla riunione interna successiva. La decisione presa stabilisce che gli incontri esterni con la Proponente debbano essere interpretati come Sprint Review, poiché si focalizzano sull'esame del lavoro completato durante lo sprint e sulla raccolta dei vari feedback. Gli Sprint Retrospective saranno invece inclusi negli incontri interni, in quanto dedicati alla riflessione interna del team,  con la possibilità di esaminare criticamente il processo di sviluppo, identificando punti di forza e criticità.
+Durante la discussione è stato affrontato il quesito se gli incontri settimanali con la Proponente debbano essere considerati come Sprint Review, come Sprint Retrospective o normali incontri, trasferendo le due attività citate alla riunione interna successiva. La decisione presa stabilisce che gli incontri esterni con la Proponente debbano essere interpretati come Sprint Review, poiché si focalizzano sull'esame del lavoro completato durante lo sprint e sulla raccolta dei vari feedback. Gli Sprint Retrospective saranno invece inclusi negli incontri interni, in quanto dedicati alla riflessione interna del team,  con la possibilità di esaminare criticamente il processo di sviluppo, identificando punti di forza e criticità.
 
 == Diagrammi di Gantt
 

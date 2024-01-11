@@ -52,9 +52,9 @@ In seguito ai suggerimenti del committente, si è deciso di modificare i nomi de
 Attualmente Notion viene utilizzato per prendere note relative ai meeting, all'organizzazione dell'_ordine del giorno_ per questi ultimi, per l'allocazione delle risorse temporali dei componenti e in generale come strumento di condivisione di idee e informazione. Tuttavia, la sua limitatezza a 1000 _blocchi_, con il piano gratuito attualmente utilizzato, rischia in un futuro di non essere più sufficiente. La responsabilità di trovare un sistema alternativo è stata assegnata a Giacomo D'Ovidio e Riccardo Toniolo.
 
 == Transizione a Typst
-Per quanto riguarda la stesura dei documenti, è stata presa la decisione di cambiare il linguaggio utilizzato, passando da _LatTex_ a _Typst_. Di seguito sono riportati i motivi di questa scelta:
+Per quanto riguarda la stesura dei documenti, è stata presa la decisione di cambiare il linguaggio utilizzato, passando da _LaTeX_ a _Typst_. Di seguito sono riportati i motivi di questa scelta:
 - la sintassi risulta molto più semplice e rapida da utilizzare, risultando più efficiente rispetto all'attuale _LatTex_;
-- la compilazione è molto più rapida rispetto a _LaTex_ e questo incentiva l'utilizzo delle _GitHub Actions_ per la compilazione automatica dei documenti;
+- la compilazione è molto più rapida rispetto a _LaTeX_ e questo incentiva l'utilizzo delle _GitHub Actions_ per la compilazione automatica dei documenti;
 - aggiunge funzionalità utili all'automazione di alcuni processi di stesura dei documenti, come ad esempio l'ultima versione riportata sul frontespizio;
 - ci permette di mantenere lo stesso risultato estetico, senza perdita di alcuna funzionalità.
 La responsabilità della ricreazione dei template in _Typst_ e del conseguente aggiornamento delle NdP viene affidata a Matteo Rango.
