@@ -576,11 +576,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC5 Visualizzazione allerte superamento soglia zone ecologiche]
 )
 
-#X.step()
-=== UC#X.display(): Impostazione soglie
-/*TODO: scrivere i 5 use case di impostazione per le 5 soglie*/
-
 /*Cambiare il numero nell'immagine*/
+/*TODO: Ricontrollare da qui per i requisiti*/
 #X.step()
 === UC#X.display(): Applicazione filtri
 - *Attore Principale*: amministratore pubblico.
@@ -603,7 +600,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Precondizioni*: 
   + l'amministratore pubblico sta visualizzando uno o più #glossary("pannelli") time series con i dati;
   + il #glossary("pannello") offre la funzionalità di filtro dei dati tramite selezione di uno o più sensori.
-- *Postcondizioni*: l'amministratore pubblico visualizza solamente i dati relativi al filtro applicato.
+- *Postcondizioni*: l'amministratore pubblico visualizza solamente i dati relativi ai sensori selezionati, all'interno di tale #glossary("pannello").
 - *Scenario Principale*:
   + l'amministratore pubblico seleziona il sensore (o i sensori) da visualizzare tramite la legenda.
 
@@ -619,7 +616,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Precondizioni*: 
   + l'amministratore pubblico sta visualizzando uno o più #glossary("pannelli") tabellari con i dati;
   + il #glossary("pannello") offre la funzionalità di filtro dei dati tramite apposita icona o pulsante.
-- *Postcondizioni*: l'amministratore pubblico visualizza solamente i dati relativi al filtro applicato.
+- *Postcondizioni*: l'amministratore pubblico visualizza solamente i dati relativi alle tipologie di sensore selezionate, all'interno di tale #glossary("pannello").
 - *Scenario Principale*:
   + l'amministratore pubblico seleziona la funzionalità relativa al filtro dei dati;
   + l'amministratore pubblico seleziona i valori delle tipologie di sensore desiderati.
@@ -636,7 +633,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Precondizioni*: 
   + l'amministratore pubblico ha scelto un #glossary("pannello") su cui effettuare l'operazione di filtro;
   + il #glossary("pannello") offre la funzionalità di filtro dei dati.
-- *Postcondizioni*: l'amministratore pubblico visualizza solamente i dati relativi al filtro applicato.
+- *Postcondizioni*: l'amministratore pubblico visualizza solamente i dati relativi ai sensori selezionati, all'interno di tale #glossary("pannello").
 - *Scenario Principale*:
   + l'amministratore pubblico seleziona la funzionalità relativa al filtro dei dati;
   + l'amministratore pubblico seleziona i valori dei nomi dei sensori desiderati.
@@ -652,7 +649,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC#X.display(): Filtro per intervallo temporale
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico sta visualizzando uno o più #glossary("pannelli").
-- *Postcondizioni*: l'amministratore pubblico visualizza solamente i dati relativi all'intervallo temporale selezionato.
+- *Postcondizioni*: l'amministratore pubblico visualizza solamente i dati relativi all'intervallo temporale selezionato, in tutti i pannelli della #glossary("dashboard") dove è stato applicato il filtro.
 - *Scenario Principale*:
   + l'amministratore pubblico seleziona la funzionalità relativa al filtro dei dati per intervallo temporale;
   + l'amministratore pubblico seleziona l'intervallo temporale desiderato.
@@ -670,7 +667,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Precondizioni*: 
   + l'amministratore pubblico ha filtrato i dati in un #glossary("pannello");
   + altri #glossary("pannelli") sono collegati a quello filtrato.
-- *Postcondizioni*: l'amministratore pubblico visualizza, in tutti i #glossary("pannelli") collegati, solamente i dati relativi al filtro applicato (o ai filtri applicati).
+- *Postcondizioni*: l'amministratore pubblico visualizza, in tutti i #glossary("pannelli") collegati, solamente i dati relativi al filtro applicato (o ai filtri applicati) al pannello sorgente, nel caso di pannelli che dipendono da altri pannelli per la visualizzazione di dati.
 - *Scenario Principale*:
   + il sistema aggiorna tutti i #glossary("pannelli") collegati.
 
@@ -678,10 +675,10 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 #X.step()
 === UC#X.display(): Ordinamento #glossary("pannelli") tabellari
 - *Attore Principale*: amministratore pubblico.
-- *Precondizioni*: l'amministratore pubblico ha scelto e sta visualizzando un #glossary("pannello") da ordinare.
-- *Postcondizioni*: l'amministratore pubblico visualizza i dati ordinati.
+- *Precondizioni*: l'amministratore pubblico ha scelto e sta visualizzando un #glossary("pannello"), con all'interno una tabella, da ordinare.
+- *Postcondizioni*: l'amministratore pubblico visualizza i dati ordinati nella tabella, secondo tale campo.
 - *Scenario Principale*:
-  + l'amministratore pubblico seleziona un campo secondo cui ordinare i dati;
+  + l'amministratore pubblico seleziona un campo, della tabella, secondo cui ordinare i dati;
   + in tale campo l'amministratore pubblico seglie tra l'ordinamento crescente e decrescente.
 
 #figure(
@@ -707,11 +704,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 #X.step()
 === UC#X.display(): Visualizzazione errore nessun dato
 - *Attore Principale*: amministratore pubblico. 
-- *Precondizioni*: il sistema non ha i dati necessari alla renderizzazione di un #glossary("pannello"). 
-- *Postcondizioni*: l'amministratore pubblico visualizza il messaggio di errore.
+- *Precondizioni*: il sistema di visualizzazione non ottiene alcun dato da mostrare all'interno di un #glossary("pannello"). 
+- *Postcondizioni*: l'amministratore pubblico visualizza un messaggio di errore segnalante l'assenza di dati da mostrare.
 - *Scenario Principale*:
   + l'amministratore pubblico vuole visualizzare qualche #glossary("pannello") [UC1.2] [UC1.1] [UC2.1] [UC3.1]; 
-  + il sistema non ha i dati per renderizzarlo e mostra un messaggio di errore.
+  + il sistema non ha i dati con cui popolare tale pannello.
 
 /*Cambiare il numero nell'immagine*/
 #X.step()
@@ -721,7 +718,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione della temperatura;
-  + il sensore formatta il messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la temperatura, espressa in gradi Celsius, il timestamp di rilevazione, le proprie coordinate, e le informazioni relative al proprio stato;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -738,7 +735,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione dell'umidità;
-  + il sensore formatta il messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di umidità, il timestamp di rilevazione, le proprie coordinate, e le informazioni relative al proprio stato;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -755,7 +752,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione della velocità e della direzione del vento;
-  + il sensore formatta il messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la direzione del vento, espressa in gradi (con gli 0° a Nord e i 180° a Sud), la velocità del vento, espressa in chilometri all'ora, il timestamp di rilevazione, le proprie coordinate, e le informazioni relative al proprio stato;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -772,7 +769,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione quantitativa delle precipitazioni;
-  + il sensore formatta il messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la quantità di precipitazioni rilevate, espresse in millimetri all'ora, il timestamp di rilevazione, le proprie coordinate, e le informazioni relative al proprio stato;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -789,7 +786,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione quantitativa dell'inquinamento dell'aria;
-  + il sensore formatta il messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare rilevazioni #glossary("PM10") relative all'inquinamento dell'aria, espresse in $#sym.mu g\/m^3$, il timestamp di rilevazione, le proprie coordinate, e le informazioni relative al proprio stato;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -806,7 +803,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione del livello del bacino idrico in cui è installato;
-  + il sensore formatta il messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di riempimento del bacino idrico controllato, il timestamp di rilevazione, le proprie coordinate, e le informazioni relative al proprio stato;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -822,7 +819,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
    + il sensore rileva gli ingressi e le uscite del parcheggio in cui è installato;
-  + il sensore formatta il messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la quantità di parcheggi liberi rilevati nel parcheggio controllato, il timestamp di rilevazione, le proprie coordinate, e le informazioni relative al proprio stato;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -839,7 +836,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione del wattaggio erogato dalla colonna di ricarica;
-  + il sensore formatta il messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la quantità di energia erogata, espressa in chilowatt all'ora, il timestamp di rilevazione, le proprie coordinate, e le informazioni relative al proprio stato;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -856,7 +853,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione della posizione e della percentuale della batteria della bicicletta elettrica su cui è installato;
-  + il sensore formatta il messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare il timestamp di rilevazione, le coordinate della bicicletta, e le informazioni relative al proprio stato;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -873,7 +870,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione del livello di riempimento del contenitore ecologico associato; 
-  + il sensore formatta il messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di riempimento della zona ecologica controllata, il timestamp di rilevazione, le proprie coordinate, e le informazioni relative al proprio stato;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -890,7 +887,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione del livello di congestione della strada su cui è installato; 
-  + il sensore formatta il messaggio da inviare al sistema;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare lo stato della congestione stradale nella strada controllata, espresso nei seguenti stati (ordinati per ordine di congestione crescente) "LOW", "MEDIUM", "HIGH", "BLOCKED", il timestamp di rilevazione, le proprie coordinate, e le informazioni relative al proprio stato;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -904,9 +901,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC#X.display(): Inserimento dati relativi al sensore
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
-- *Postcondizioni*: il sensore allega i dati relativi al proprio stato, ovvero la propria percentuale di batteria, se fa uso di una batteria autonoma o meno e la data di ultima manutenzione effettuata su di esso, al messaggio da inviare al sistema.
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
-  + il sensore prende i dati relativi al proprio stato.
+  + il sensore allega i dati relativi al proprio stato, ovvero la propria percentuale di batteria, se fa uso di una batteria autonoma o meno e la data di ultima manutenzione effettuata su di esso, al messaggio da inviare al sistema.
 
 #set heading(numbering: "1.1")
 #pagebreak()
