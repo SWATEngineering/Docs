@@ -238,7 +238,7 @@ I requisiti trovati hanno un codice univoco con la seguente sintassi:
         - *Numero*:
                 per ogni requisito aggiunto il numero viene incrementato.
 
-==== Metriche
+==== Metrichewing chun lat sao 2
 
 La definizione delle metriche seguenti si può trovare nella @metriche_qualità-prodotto.
 #figure(
@@ -1059,7 +1059,13 @@ I ruoli assunti sono i seguenti:
         - Identificazione e segnalazione di problemi;
         - Collaborazione con il team per garantire che il lavoro sia conforme alle linee guida e agli standard richiesti.
 
-==== Ticketing    
+==== Cambio dei ruoli
+
+Per garantire che ogni membro svolga almeno una volta tutti i ruoli menzionati, il team si impegna a cambiarli ogni settimana.
+
+==== Gestione strumenti coordinamento
+
+===== Ticketing    
 
 L'Amministratore crea, durante gli incontri interni, e gestisce le varie task in modo tale ogni membro del team sia informato su ciò che ci si propone di fare durante lo #glossary[sprint] e sia in grado di verificare il progresso effettuato in qualsiasi momento.
 
@@ -1092,9 +1098,30 @@ Ogni issue è composta da:
         - *intervallo Temporale*: una data di inizio e una di fine;
         - *#glossary[Milestone]*: #glossary[milestone] associata alla issue, se il completamento non è possibile entro lo #glossary[sprint] attuale, è necessario spostare l'issue nella #glossary[milestone] successiva.
 
-==== Cambio dei ruoli
+===== Gestione dei rischi 
 
-Per garantire che ogni membro svolga almeno una volta tutti i ruoli menzionati, il team si impegna a cambiarli ogni settimana.
+La gestione dei rischi è un approccio sistematico finalizzato a individuare, valutare e affrontare le possibili minacce o opportunità che possono influenzare il successo di un progetto. Questo processo coinvolge l'identificazione dei rischi, la valutazione della loro probabilità e impatto, la pianificazione di strategie di mitigazione o sfruttamento e il monitoraggio continuo durante l'intero ciclo di vita del progetto.
+
+====== Struttura dei rischi
+
+I rischi vengono suddivisi in tre categorie:
+
+        - Rischi tecnologici;
+        - Rischi comunicativi;
+        - Rischi pianificazione.
+
+Ogni rischi viene identificato da un codice univoco avente la seguente struttura:
+
+        #align(center)[*R[Tipologia][Numero] - [Nome]*]
+
+        *legenda*:
+                - *Tipologia*: il tipo del rischio, può essere:
+                        - T se tecnologico;
+                        - C se comunicativo;
+                        - P se di pianificazione.
+                - *Numero*: è un numero progressivo univoco per ogni rischio della sua tipologia;
+                - *Nome*: nome del rischio.
+
 
 === Procedure 
 
