@@ -18,7 +18,7 @@
     - Realizzazione dei diagrammi UML per i casi d'uso individuati;
     - Ricavare i requisiti funzionali corrispondenti.
   - Inizio della stesura del _Piano di Qualifica_;
-  - Proseguire la realizzazione del PoC:
-    - Creazione modulo di trasferimento dei dati simulati da Kafka a ClickHouse;
-    - Creazione modulo di trasferimento dei dati da ClickHouse a Grafana;
+  - Proseguire la realizzazione del #glossary[PoC]:
+    - Creazione modulo di trasferimento dei dati simulati da #glossary[Kafka] a #glossary[ClickHouse];
+    - Creazione modulo di trasferimento dei dati da #glossary[ClickHouse] a #glossary[Grafana];
     - Containerizzazione dei moduli realizzati.
