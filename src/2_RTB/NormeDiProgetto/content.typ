@@ -1317,9 +1317,9 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
 
         - *CO*: Correttezza ortografica - numero errori grammaticali ed ortografici in un documento.
 
-== Metriche per la qualità di prodotto <metriche_qualità-prodotto>
+== Metriche per la qualità di prodotto 
 
-=== Funzionalità
+=== Funzionalità <metriche_qualità-prodotto>
 
         - *ROS*: Requisiti Obbligatori Soddisfatti - la percentuale di requisiti obbligatori soddisfatti dal prodotto
 
