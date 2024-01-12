@@ -1061,7 +1061,7 @@ I ruoli assunti sono i seguenti:
 
 === Cambio dei ruoli
 
-Per garantire che ogni membro svolga almeno una volta tutti i ruoli menzionati, il team si impegna a cambiarli ogni settimana.
+Per garantire che ogni membro svolga tutti i ruoli menzionati per un periodo di tempo consono, il team si impegna a cambiarli ogni settimana.
 
 === Gestione strumenti coordinamento
 
@@ -1313,7 +1313,7 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
                         - 80-89: Testo molto facile da leggere;
                         - 90-100: Testo estremamente facile da leggere. 
                 
-                Per calcolarlo si usa uno strumento online: #link("https://farfalla-project.org/readability static/");
+                Per calcolarlo si usa uno strumento online: #link("https://farfalla-project.org/readability_static/");
 
         - *CO*: Correttezza ortografica - numero errori grammaticali ed ortografici in un documento.
 
