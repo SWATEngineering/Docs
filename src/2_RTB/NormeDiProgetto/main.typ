@@ -127,6 +127,15 @@ Versione: #version
   numbering: "1.1",
   outlined: true,
 )
+
+#show heading.where(level: 1): it => {
+ set text(size:25pt)
+ pagebreak(weak: true)
+ v(1cm)
+ it
+ v(1cm)
+}
+
 #show outline.entry.where(
   level: 1,
 ): it => {

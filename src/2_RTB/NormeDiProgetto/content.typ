@@ -44,7 +44,7 @@ L'attività di inserimento di un termine nel glossario può considerarsi complet
         - *#glossary[Documentazione] #glossary[Typst]*:\
                 #link("https://typst.app/docs")
 
-#pagebreak()
+
 
 = Processi Primari
 
@@ -543,7 +543,7 @@ caption: [Metriche di codifica],
 
 
 
-#pagebreak()
+
 
 = Processi di Supporto
 
@@ -1211,7 +1211,7 @@ Si riporta la lista delle guide e documentazione da prendere come riferimento:
 Questa lista non intende essere forzata, ciascun membro è libero di approfondire le proprie conoscenze utilizzando materiale aggiuntivo.
 Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri membri.
 
-#pagebreak()
+
 = Metriche per la qualità <metriche>
 
 == Metriche per la qualità di processo <metriche_qualità-processo>
