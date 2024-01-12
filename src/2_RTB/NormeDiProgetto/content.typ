@@ -1110,7 +1110,7 @@ I rischi vengono suddivisi in tre categorie:
         - Rischi comunicativi;
         - Rischi pianificazione.
 
-Ogni rischi viene identificato da un codice univoco avente la seguente struttura:
+Ogni rischio viene identificato da un codice univoco avente la seguente struttura:
 
         #align(center)[*R[Tipologia][Numero] - [Nome]*]
 
