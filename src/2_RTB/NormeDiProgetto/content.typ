@@ -1222,11 +1222,15 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
 
         - *EV*: Earned Value - rappresenta il valore prodotto dal progetto ossia il valore dei #glossary("deliverable") rilasciati fino al momento della misurazione in seguito alle attività svolte
 
-                Formula:  $"EV" = "Percentuale di completamento del lavoro" dot "BAC"$;
+                Formula:  $"EV" = "Percentuale di completamento del lavoro" dot "BAC"$
+
+                in cui la percentuale di completamento del lavoro è misurata con le ore produttive effettive degli #glossary[sprint];
 
         - *PV*: Planned Value - il valore del lavoro pianificato fino a un dato momento
 
-                Formula: $"PV" = "Percentuale di pianificazione del lavoro" dot "BAC"$;
+                Formula: $"PV" = "Percentuale di pianificazione del lavoro" dot "BAC"$
+
+                in cui la percentuale di pianificazione del lavoro è misurata con le ore preventivate per gli #glossary[sprint];
 
         - *AC*: Actual Cost - il costo effettivo sostenuto fino a un dato momento;
 
@@ -1308,6 +1312,8 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
                         - 70-79: Testo facile da leggere;
                         - 80-89: Testo molto facile da leggere;
                         - 90-100: Testo estremamente facile da leggere. 
+                
+                Per calcolarlo si usa uno strumento online: #link("https://farfalla-project.org/readability static/");
 
         - *CO*: Correttezza ortografica - numero errori grammaticali ed ortografici in un documento.
 
@@ -1335,11 +1341,9 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
 
         - *PTCP*: Passed Test Cases Percentage - rappresenta la percentuale di casi di test che sono stati eseguiti con successo rispetto al totale dei casi di test previsti
 
-                Formula: $"PTCP" = "test superati" / "test totali" dot 100$;
+                Formula: $"PTCP" = "test superati" / "test totali" dot 100$.
 
-        - *FTCP*: Failed Test Cases Percentage - rappresenta la percentuale di casi di test che non sono stati superati rispetto al totale dei casi di test previsti
-
-                Formula: $"FTCP" = "test falliti" / "test totali" dot 100$.
+        
 
         
 
