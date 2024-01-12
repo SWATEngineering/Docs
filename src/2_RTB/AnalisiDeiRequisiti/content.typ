@@ -75,9 +75,22 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 #set heading(numbering: none)
 #let X = counter("UC_counter")
-#X.step()
+
+/*TODO: fare immagine apposta*/
+=== UC#X.display(): Visualizzazione menù dashboard
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: nessuna.
+- *Postcondizioni*: l'amministratore pubblico visualizza un menù di selezione da cui può scegliere in che dashboard spostarsi tra: Sensori, Ambientale, Urbanistica, Dati anomali & superamento soglie. 
+- *Scenario Principale*:
+  + l'amministratore pubblico accede alla piattaforma di visualizzazione; 
+
+#figure(
+  image("assets/UML/UC1_Visualizzazione-panoramica-generale-sensori.png",width:70%),
+  caption: [UC1 Visualizzazione dashboard generale sensori]
+)
 
 /*TODO: ricontrollare la fine di ogni use case che comprende l'uso di un pannello*/
+#X.step()
 === UC#X.display(): Visualizzazione dashboard generale sensori
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
@@ -155,7 +168,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC#X.display(): Visualizzazione #glossary("pannello") #glossary("time series") per temperatura
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo alla temperatura, espressa in gradi celsius, in formato #glossary("time series") che mostra l'andamento in media mobile della temperatura, registrato da ciascun sensore, aggregando i dati per intervalli di 5 minuti.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo alla temperatura, espressa in gradi celsius, in formato #glossary("time series") che ne mostra l'andamento in media mobile, distinto per sensore, aggregando i dati per intervalli di 5 minuti.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -169,7 +182,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC#X.display(): Visualizzazione #glossary("pannello") time series per umidità
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo all'umidità, espressa in percentuale, in formato #glossary("time series") che mostra l'andamento in media mobile dell'umidità, registrata da ciascun sensore, aggregando i dati per intervalli di 5 minuti.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo all'umidità, espressa in percentuale, in formato #glossary("time series") che ne mostra l'andamento in media mobile, distinto per sensore, aggregando i dati per intervalli di 5 minuti.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -227,7 +240,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC#X.display(): Visualizzazione #glossary("pannello") time series per precipitazioni
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo all'intensità delle precipitazioni, espressa in millimetri orari, in formato #glossary("time series") che mostra l'andamento in media mobile delle precipitazioni, registrata da ciascun sensore, aggregando i dati per intervalli di 5 minuti.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo all'intensità delle precipitazioni, espressa in millimetri orari, in formato #glossary("time series") che ne mostra l'andamento in media mobile, distinto per sensore, aggregando i dati per intervalli di 5 minuti.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -241,7 +254,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC#X.display(): Visualizzazione #glossary("pannello") precipitazioni medie
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse millimetri di pioggia, indicante la media dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori, degli ultimi 5 minuti.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse millimetri di pioggia all'ora, indicante la media dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori, degli ultimi 5 minuti.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -255,7 +268,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC#X.display(): Visualizzazione #glossary("pannello") time series per inquinamento dell'aria
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo al livello di polveri sottili nell'aria, espresso in $#sym.mu g\/m^3$ (#glossary("PM10")), in formato #glossary("time series"), che mostra l'andamento in media mobile delle polveri sottili, registrata da ciascun sensore, aggregando i dati per intervalli di 5 minuti.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo al livello di polveri sottili nell'aria, espresso in $#sym.mu g\/m^3$ (#glossary("PM10")), in formato #glossary("time series"), che ne mostra l'andamento in media mobile, distinto per sensore, aggregando i dati per intervalli di 5 minuti.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -283,7 +296,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC#X.display(): Visualizzazione #glossary("pannello") time series per livello dei bacini idrici
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo alla percentuale di riempimento dei bacini idrici, in formato #glossary("time series"), che mostra l'andamento in media mobile di tale percentuale, registrata da ciascun sensore, aggregando i dati per intervalli di 5 minuti.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo alla percentuale di riempimento dei bacini idrici, in formato #glossary("time series"), che ne mostra l'andamento in media mobile di tale percentuale, distinto per sensore, aggregando i dati per intervalli di 5 minuti.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -399,7 +412,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una tabella, la quale esprime, per ciascuna colonna di ricarica per auto, l'erogazione in Watt per ora attuale, indicizzando la tabella in base al nome del sensore.
-- *Postcondizioni*: l'amministratore pubblico visualizza una tabella indicante la rapidità di ricarica delle colonne.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
@@ -414,7 +426,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC#X.display(): Visualizzazione grafico a mappa congestione stradale
 *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante lo stato di congestione delle strade, mediante gli stati "LOW", "MEDIUM", "HIGH" e "BLOCKED", atto a mostrare il livello di congestione della strada interessata.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante lo stato di congestione delle strade, mediante gli stati "LOW", "MEDIUM", "HIGH" e "BLOCKED", atto a mostrare il livello di congestione della strada corrispondente.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
@@ -429,7 +441,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante la posizione in tempo reale delle biciclette elettriche, mediante degli indicatori numerici indicanti la percentuale della batteria posizionata nelle coordinate del mezzo, atto a mostrare la sua posizione.
-- *Postcondizioni*: l'amministratore pubblico visualizza un grafico a mappa atto ad indicare la posizione e la percentuale delle batterie delle biciclette elettriche. 
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
@@ -459,7 +470,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 === UC#X.display(): Visualizzazione #glossary("dati anomali") e superamento soglie
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'amministratore pubblico visualizza, in forma tabellare, la lista ordinata di anomalie nei dati rilevati dal sistema.
 - *Postcondizioni*: l'amministratore pubblico visualizza #glossary("pannelli") contenenti dati relativi al superamento delle soglie e alle anomalie rilevate.
 - *Scenario Principale*:
   + l'amministratore pubblico seleziona la visualizzazione della deshboard delle anomalie.
@@ -718,7 +728,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione della temperatura;
-  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la temperatura, espressa in gradi Celsius, il timestamp di rilevazione, le proprie coordinate, e le informazioni relative al proprio stato;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la temperatura, espressa in gradi Celsius, il timestamp di rilevazione e le proprie coordinate;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -735,7 +745,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione dell'umidità;
-  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di umidità, il timestamp di rilevazione, le proprie coordinate, e le informazioni relative al proprio stato;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di umidità, il timestamp di rilevazione e le proprie coordinate;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -752,7 +762,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione della velocità e della direzione del vento;
-  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la direzione del vento, espressa in gradi (con gli 0° a Nord e i 180° a Sud), la velocità del vento, espressa in chilometri all'ora, il timestamp di rilevazione, le proprie coordinate, e le informazioni relative al proprio stato;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la direzione del vento, espressa in gradi (con gli 0° a Nord e i 180° a Sud), la velocità del vento, espressa in chilometri all'ora, il timestamp di rilevazione e le proprie coordinate;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -769,7 +779,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione quantitativa delle precipitazioni;
-  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la quantità di precipitazioni rilevate, espresse in millimetri all'ora, il timestamp di rilevazione, le proprie coordinate, e le informazioni relative al proprio stato;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la quantità di precipitazioni rilevate, espresse in millimetri all'ora, il timestamp di rilevazione e le proprie coordinate;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -786,7 +796,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione quantitativa dell'inquinamento dell'aria;
-  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare rilevazioni #glossary("PM10") relative all'inquinamento dell'aria, espresse in $#sym.mu g\/m^3$, il timestamp di rilevazione, le proprie coordinate, e le informazioni relative al proprio stato;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare rilevazioni #glossary("PM10") relative all'inquinamento dell'aria, espresse in $#sym.mu g\/m^3$, il timestamp di rilevazione e le proprie coordinate;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -803,7 +813,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione del livello del bacino idrico in cui è installato;
-  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di riempimento del bacino idrico controllato, il timestamp di rilevazione, le proprie coordinate, e le informazioni relative al proprio stato;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di riempimento del bacino idrico controllato, il timestamp di rilevazione e le proprie coordinate;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -819,7 +829,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
    + il sensore rileva gli ingressi e le uscite del parcheggio in cui è installato;
-  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la quantità di parcheggi liberi rilevati nel parcheggio controllato, il timestamp di rilevazione, le proprie coordinate, e le informazioni relative al proprio stato;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la quantità di parcheggi liberi rilevati nel parcheggio controllato, il timestamp di rilevazione e le proprie coordinate;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -836,7 +846,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione del wattaggio erogato dalla colonna di ricarica;
-  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la quantità di energia erogata, espressa in chilowatt all'ora, il timestamp di rilevazione, le proprie coordinate, e le informazioni relative al proprio stato;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la quantità di energia erogata, espressa in chilowatt all'ora, il timestamp di rilevazione e le proprie coordinate;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -853,7 +863,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione della posizione e della percentuale della batteria della bicicletta elettrica su cui è installato;
-  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare il timestamp di rilevazione, le coordinate della bicicletta, e le informazioni relative al proprio stato;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare il timestamp di rilevazione e le coordinate della bicicletta;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -870,7 +880,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione del livello di riempimento del contenitore ecologico associato; 
-  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di riempimento della zona ecologica controllata, il timestamp di rilevazione, le proprie coordinate, e le informazioni relative al proprio stato;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di riempimento della zona ecologica controllata, il timestamp di rilevazione e le proprie coordinate;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -887,7 +897,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione del livello di congestione della strada su cui è installato; 
-  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare lo stato della congestione stradale nella strada controllata, espresso nei seguenti stati (ordinati per ordine di congestione crescente) "LOW", "MEDIUM", "HIGH", "BLOCKED", il timestamp di rilevazione, le proprie coordinate, e le informazioni relative al proprio stato;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare lo stato della congestione stradale nella strada controllata, espresso nei seguenti stati (ordinati per ordine di congestione crescente) "LOW", "MEDIUM", "HIGH", "BLOCKED", il timestamp di rilevazione e le proprie coordinate;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -903,7 +913,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
-  + il sensore allega i dati relativi al proprio stato, ovvero la propria percentuale di batteria, se fa uso di una batteria autonoma o meno e la data di ultima manutenzione effettuata su di esso, al messaggio da inviare al sistema.
+  + il sensore allega i dati relativi al proprio stato, ovvero la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso e la propria frequenza di inserimento dati, espressa in secondi, al messaggio da inviare al sistema.
 
 #set heading(numbering: "1.1")
 #pagebreak()
@@ -912,7 +922,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 == Requisiti funzionali (obbligatori e desiderabili)
 #let C = counter("UC_counter_req")
-#C.step()
 /*TODO: mettere in Desiderabile tutti quei requisiti che riguardano lo stesso dato più di una volta ma non sono la prima occorrenza (se prima viene la time series e poi un indice numerico, il secondo è da mettere come desiderabile)*/
 #let requisiti_funzionali = (
   (
@@ -920,7 +929,10 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   ),
   /*TODO: andare a creare vincolo per la verifica del menù di selezione tra le dashboard*/
   (
-     "Obbligatorio", "L'utente deve poter visualizzare una dashboard generale relativa ai sensori.", [UC#C.display()]
+     "Obbligatorio", "L'utente deve poter visualizzare un menù di selezione delle dashboard, che permetta di selezionare tra Sensori, Ambientale, Urbanistica e Dati anomali & superamento soglie.", [UC#C.step()#C.display()]
+  ),
+  (
+     "Obbligatorio", "L'utente deve poter visualizzare una dashboard generale relativa ai sensori.", [UC#C.step()#C.display()]
   ),
   (
      "Obbligatorio", [L'utente deve poter visualizzare le posizioni dei sensori come icone su una mappa, appartenente alla #glossary("dashboard") generale relativa ai sensori.], [#C.step(level:2)UC#C.display()]
@@ -938,7 +950,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media mobile della percentuale d'umidità, per ciascun sensore, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi la direzione del vento, mediante frecce aventi origine nelle coordinate del sensore, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)#C.step(level:3)UC#C.display()]
+    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi la direzione del vento, mediante frecce aventi origine nelle coordinate del sensore, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)#C.step(level:3)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'ultima velocità del vento, espressa in chilometri all'ora, per ciascun sensore, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:3)UC#C.display()]
@@ -947,13 +959,13 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media mobile dell'intensità delle precipitazioni, espresse in millimetri all'ora, per ciascun sensore, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico, che esprime l'intensità media delle precipitazioni, espressa in millimetri all'ora, degli ultimi 5 minuti, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
+    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico, che esprime l'intensità media delle precipitazioni, espressa in millimetri all'ora, degli ultimi 5 minuti, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media mobile del livello di polveri sottili nell'aria, espressi in $#sym.mu g\/m^3$ (#glossary("PM10")), per ciascun sensore, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico, che esprime l'inquinamento dell'aria medio, espressa in $#sym.mu g\/m^3$ (#glossary("PM10")), degli ultimi 5 minuti, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
+    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico, che esprime l'inquinamento dell'aria medio, espressa in $#sym.mu g\/m^3$ (#glossary("PM10")), degli ultimi 5 minuti, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la percentuale di riempimento dei bacini idrici, per ciascun sensore, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
@@ -974,7 +986,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi la posizione delle colonne di ricarica per auto, mediante indicatori booleani posti nelle coordinate dei sensori che indicheranno la disponibilità di queste, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:2)#C.step(level:3)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'erogazione delle colonne di ricarica per auto, espressa in Watt all'ora, controllata da ciascun sensore, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:3)UC#C.display()]
+    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'erogazione delle colonne di ricarica per auto, espressa in Watt all'ora, controllata da ciascun sensore, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:3)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi lo stato di congestione delle strade, mediante gli stati "LOW", "MEDIUM", "HIGH", "BLOCKED", posti nelle coordinate dei sensori controllano queste, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:2)UC#C.display()]
@@ -994,7 +1006,6 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   (
     "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i dati relativi a temperatura, precipitazioni, inquinamento dell'aria, bacini idrici e zone ecologiche, i cui valori superano una soglia impostata dall'utente, il sensore che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.], [#C.step(level:2)UC#C.display()]
   ),
-  /* vvvvvvvvvvvvvvvvvvvv DA QUI IN POI vvvvvvvvvvvvvvvvvvvv */
   (
     "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo temperatura, superante una soglia di 40° celsius.", [#C.step()#C.step(level:2)UC#C.display()]
   ),
@@ -1011,61 +1022,61 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo percentuale riempimento zone ecologiche, superante una soglia corrispondente all'80% della capienza di tale zona.", [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Obbligatorio", "L'utente deve poter filtrare un sottoinsieme di sensori in grafici di tipo time series.", [#C.step()#C.step(level:2)UC#C.display()]
+    "Obbligatorio", [L'utente deve poter filtrare i dati, visualizzati all'interno di un grafico di tipo #glossary("time series"), in base ad un sottoinsieme selezionato di sensori.], [#C.step()#C.step(level:2)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter filtrare un sotto-insieme di sensori in base alla tipologia in #glossary("pannelli") di tipo tabellare.], [#C.step(level:2)UC#C.display()]
+    "Obbligatorio", [L'utente deve poter filtrare i dati, visualizzati all'interno di una tabella, in base ad un sotto-insieme di sensori, selezionandone la tipologia di interesse.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter filtrare un sotto-insieme di sensori in base al nome in #glossary("pannelli") di tipo tabellare.], [#C.step(level:2)UC#C.display()]
+    "Obbligatorio", [L'utente deve poter filtrare i dati, visualizzati all'interno di una tabella, in base ad un sotto-insieme di sensori, selezionando i nomi dei sensori di interesse.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Obbligatorio", "L'utente deve poter filtrare i dati in base ad un intervallo temporale.", [#C.step(level:2)UC#C.display()]
+    "Obbligatorio", [L'utente deve poter filtrare i dati in base ad un intervallo temporale, mostrando quindi nella #glossary("dashboard") d'interesse, solamente i dati aventi un timestamp in tale intervallo.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile", [Nei #glossary("pannelli") con tabelle, l'utente deve poter ordinare i dati in base alle loro colonne.], [#C.step()UC#C.display()]
+    "Desiderabile", [Nei #glossary("pannelli") con tabelle, l'utente deve poter ordinare i dati in base alle loro colonne, sia in ordine crescente che descrescente.], [#C.step()UC#C.display()]
   ),
   (
     "Desiderabile", [L'utente deve poter modificare il layout della dashboard visualizzata, agendo su posizione e dimensione dei #glossary("pannelli").], [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "L'utente deve poter visualizzare un messaggio di errore qualora non vi siano dati a disposizione.", [#C.step()UC#C.display()]
+    "Obbligatorio", [L'utente deve poter visualizzare un messaggio di errore, qualora il sistema di visualizzazione non sia in grado di reperire o non abbia dati da mostrare all'utente per un determinato #glossary("pannello").], [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla temperatura.", [#C.step()UC#C.display()]
+    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alla temperatura, espressa in gradi Celsius, il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi all'umidità.", [#C.step()UC#C.display()]
+    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi all'umidità, espressa in percentuale, il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla velocità e alla direzione del vento.", [#C.step()UC#C.display()]
+    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alla velocità del vento, espressa in chilometri all'ora, alla direzione del vento, espressa in gradi (con gli 0° a Nord e i 180° a Sud), il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi alle precipitazioni.", [#C.step()UC#C.display()]
+    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alle precipitazioni, espresse in millimetri all'ora, il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi all'inquinamento dell'aria.", [#C.step()UC#C.display()]
+    "Obbligatorio", [Il sensore deve poter mandare e far persistere dati relativi all'inquinamento dell'aria, espresso in microgrammi al metro cubo (#glossary("PM10")), il timestamp di rilevazione e le proprie coordinate.], [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi al livello dei bacini idrici.", [#C.step()UC#C.display()]
+    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alla percentuale di riempimento del bacino idrico controllato, il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla disponibilità e l'occupazione dei parcheggi.", [#C.step()UC#C.display()]
+    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi al numero di parcheggi disponibili all'interno del parcheggio auto controllato, il timestamp di rilevazione e le proprie coordinate..", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi alle colonne di ricarica.", [#C.step()UC#C.display()]
+    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alla quantità di energia erogata dalla colonna di ricarica controllata, espresse in chilowatt all'ora, il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi alle biciclette elettriche.", [#C.step()UC#C.display()]
+    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alle coordinate della bicicletta elettrica controllata e il timestamp di rilevazione.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi al riempimento delle zone ecologiche.", [#C.step()UC#C.display()]
+    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alla percentuale di riempimento della zona ecologica controllata, il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sistema deve poter gestire dati relativi alla congestione stradale.", [#C.step()UC#C.display()]
+    "Obbligatorio", [Il sensore deve poter mandare e far persistere dati relativi allo stato della congestione stradale nella strada controllata, espresse in stati (in ordine di crescente congestione sono: "LOW", "MEDIUM", "HIGH", "BLOCKED"), il timestamp di rilevazione e le proprie coordinate.], [#C.step()UC#C.display()]
   ),
   (
-    "Desiderabile", "Ogni sensore insieme ai dati invia al sistema anche le informazioni relative al proprio stato, queste comprendono il livello della batteria, nel caso ne abbia una e l'utilizzo del processore.", [#C.step()UC#C.display()]
+    "Desiderabile", "Il sensore deve poter mandare e far persistere dati relativi al proprio stato, ovvero la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso, e la propria frequenza di inserimento dati espressa in secondi.", [#C.step()UC#C.display()]
   )
 )
 
@@ -1094,6 +1105,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 == Requisiti di vincolo
 #let requisiti_vincolo = (
+  (
+  "Obbligatorio",[Il sistema deve gestire un carico di #glossary("dati in entrata") tra i 50 e i 100 dati al secondo],"Verbale esterno",
+  ),
   (
   "Obbligatorio","La creazione di un simulatore di almeno una sorgente dati","Capitolato",
   ),
