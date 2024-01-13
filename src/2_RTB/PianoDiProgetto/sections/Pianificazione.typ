@@ -25,11 +25,11 @@ Per ciascun #glossary[sprint], vengono stabilite le date di inizio e di fine, e 
 
 *Inizio*: 10/11/2023
 
-*Fine*: 12/01/2024 
+*Fine*: 19/01/2024 
 
 La definizione delle _Norme di Progetto_ è alla base di questa fase, per rendere chiare a tutti le modalità di lavoro. Parallelamente hanno inizio anche il _Piano di Progetto_, con particolare attenzione all'*Analisi dei rischi* e al *Modello di sviluppo*, l'_Analisi dei Requisiti_, il _Piano di Qualifica_ e il _Glossario_. I documenti in questa fase sono in continua crescita, data la loro natura incrementale.
 Per favorire la consultazione online della #glossary[documentazione] stessa si prevede la creazione di un sito web "vetrina".
-Si programma di sviluppare il Proof of Concept #glossary(POC) del progetto secondo le indicazioni della Proponente, il cui feedback è fondamentale per verificare la coesione dello stack tecnologico, i suoi punti di forza e le sue carenze.
+Si programma di sviluppare il Proof of Concept #glossary[POC] del progetto secondo le indicazioni della Proponente, il cui feedback è fondamentale per verificare la coesione dello stack tecnologico, i suoi punti di forza e le sue carenze.
 Durante questa fase il colloquio con la Proponente e il Committente viene mantenuto costante; in questo modo, e grazie anche alle conoscenze acquisite dalla costruzione del #glossary[POC], sarà possibile adattare e migliorare l'_Analisi dei Requisiti_.
 
 #include "PianificazioneSprint/PrimoSprint.typ"
@@ -39,6 +39,9 @@ Durante questa fase il colloquio con la Proponente e il Committente viene manten
 #include "PianificazioneSprint/QuintoSprint.typ"
 #include "PianificazioneSprint/SestoSprint.typ"
 #include "PianificazioneSprint/SettimoSprint.typ"
+#include "PianificazioneSprint/OttavoSprint.typ"
+#include "PianificazioneSprint/NonoSprint.typ"
+#include "PianificazioneSprint/DecimoSprint.typ"
 
 == #glossary[Product Baseline]
 
@@ -49,7 +52,7 @@ Durante questa fase il colloquio con la Proponente e il Committente viene manten
   ],
 )
 
-*Inizio*: 12/01/2024
+*Inizio*: 02/02/2024
 
 *Fine*: 14/03/2024 
 

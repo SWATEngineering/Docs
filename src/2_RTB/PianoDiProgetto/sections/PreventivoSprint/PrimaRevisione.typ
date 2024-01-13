@@ -2,12 +2,12 @@
 #import "../../functions.typ": glossary
 
 #let ruoli_ore = (
-  Re: 30,
-  Am: 42,
-  An: 37,
+  Re: 40,
+  Am: 56,
+  An: 42,
   Pt: 0,
-  Pr: 24,
-  Ve: 63,
+  Pr: 30,
+  Ve: 65,
 )
 
 #let costo_ruoli_ore=(
@@ -20,7 +20,7 @@
 )
 
 #let rimanente_ore = 570 - ruoli_ore.values().sum();
-#let rimanente_soldi = 11460 - costo_ruoli_ore.values().sum();
+#let rimanente_soldi = 11555 - costo_ruoli_ore.values().sum();
 
 == Prima Revisione (#glossary[Requirements and Technology Baseline])
 

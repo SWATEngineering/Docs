@@ -4,11 +4,11 @@
 
 #let ruoli_ore = (
   Re: 30,
-  Am: 40,
-  An: 25,
+  Am: 28,
+  An: 16,
   Pt: 84,
-  Pr: 80,
-  Ve: 58,
+  Pr: 74,
+  Ve: 50,
 )
 
 #let costo_ruoli_ore=(

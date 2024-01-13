@@ -3,6 +3,11 @@
 
 
 == Quarto #glossary[sprint]
+
+*Inizio*: Venerdì 15/12/2023
+
+*Fine*: Giovedì 21/12/2023 
+
 #rendicontazioneOreAPosteriori(sprintNumber: "04")
 
 #rendicontazioneCostiAPosteriori(sprintNumber: "04")

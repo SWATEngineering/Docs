@@ -2,6 +2,11 @@
 #import "../../functions.typ": rendicontazioneOreAPosteriori, rendicontazioneCostiAPosteriori, glossary
 
 == Primo #glossary[sprint]
+
+*Inizio*: Venerdì 10/11/2023
+
+*Fine*: Giovedì 23/11/2023 
+
 #rendicontazioneOreAPosteriori(sprintNumber: "01")
 
 #rendicontazioneCostiAPosteriori(sprintNumber: "01")

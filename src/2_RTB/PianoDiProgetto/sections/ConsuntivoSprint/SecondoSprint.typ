@@ -3,6 +3,11 @@
 
 
 == Secondo #glossary[sprint]
+
+*Inizio*: Venerdì 24/11/2023
+
+*Fine*: Giovedì 07/12/2023 
+
 #rendicontazioneOreAPosteriori(sprintNumber: "02")
 
 #rendicontazioneCostiAPosteriori(sprintNumber: "02")

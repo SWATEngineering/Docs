@@ -19,5 +19,3 @@
 
 #include "sections/Consuntivo.typ" 
 #pagebreak()
-
-//#include "sections/Consuntivo.typ" 

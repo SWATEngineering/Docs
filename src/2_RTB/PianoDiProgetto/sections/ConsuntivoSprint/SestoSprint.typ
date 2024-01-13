@@ -3,6 +3,11 @@
 
 
 == Sesto #glossary[sprint]
+
+*Inizio*: Venerdì 29/12/2023
+
+*Fine*: Giovedì 04/01/2024 
+
 #rendicontazioneOreAPosteriori(sprintNumber: "06")
 
 #rendicontazioneCostiAPosteriori(sprintNumber: "06")

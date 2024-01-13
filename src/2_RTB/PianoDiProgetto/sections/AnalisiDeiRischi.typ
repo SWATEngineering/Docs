@@ -50,7 +50,8 @@ La mancata organizzazione della comunicazione interna si riferisce a situazioni 
   - *Prevenzione*:
     - Pianificazione della comunicazione: stabilire canali di comunicazione specifici per diversi tipi di messaggi (ad esempio discussioni generali, questioni urgenti, cambiamenti dello stato delle _issue_ nell'#glossary[ITS], proposte per l'ordine del giorno e altro);
     - Ordine del giorno: definire un ordine del giorno chiaro per i meeting interni settimanali, con tempi stabiliti per ciascun argomento;
-    - Stand-up meeting giornalieri: riunioni brevi e quotidiane favoriscono una migliore comprensione dello stato del progetto, consentendo a ciascun membro del team di aggiornare gli altri sui progressi, sulle sfide incontrate e sui prossimi passi. Questa pratica aiuta a identificare i problemi in modo tempestivo, a fornire supporto reciproco e a mantenere il team allineato con gli obiettivi comuni.
+    - Stand-up meeting giornalieri (anche da remoto): riunioni brevi e quotidiane favoriscono una migliore comprensione dello stato del progetto, consentendo a ciascun membro del team di aggiornare gli altri sui progressi, sulle sfide incontrate e sui prossimi passi. Questa pratica aiuta a identificare i problemi in modo tempestivo, a fornire supporto reciproco e a mantenere il team allineato con gli obiettivi comuni;
+    - Meeting di emergenza: incontri non pianificati con i quali uno o più componenti possono invocare una discussione a livello di team per risolvere questioni urgenti legate a modifiche critiche da apportare alla #glossary[documentazione] o ad una porzione di codice. Dato il poco preavviso, in occasione di questi incontri il #glossary[quorum] viene abbassato da 4 a 3 persone su 6, in modo che i componenti interessati possano esporre e motivare le modifiche che intendono apportare e procedere a lavorare sul documento in questione senza dover necessariamente attendere l'incontro interno di fine #glossary[sprint].
 
 === *RC2 - Esasperazione di conflitti interni*
 Questi rischi emergono quando diversi punti di vista, preferenze o approcci all'interno del team conducono a tensioni, disaccordi o scontri tra i membri. Questi conflitti possono manifestarsi in varie forme, come contrasti di opinione riguardo alle metodologie di lavoro, differenze nell'interpretazione dei requisiti del progetto o incomprensioni personali.
@@ -85,8 +86,6 @@ Per #glossary("Context Switch") ci si riferisce al cambiamento dei ruoli all'int
       - La persona, che ha precedentemente occupato quel ruolo specifico, offre supporto al membro del team che ha assunto ora quella posizione, facilitandone la transizione;
       - Assistere l'Amministratore nella creazione delle attività per il prossimo #glossary[sprint];
       - Dedicare il primo giorno  unicamente allo studio di quanto fatto precedentemente, in modo da riuscire a sincronizzarsi con il contesto del ruolo.
-
-
 
 == Rischi di Pianificazione
 === *RP1 - Comprensione erronea dei requisiti*
