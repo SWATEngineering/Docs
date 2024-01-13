@@ -8,7 +8,7 @@ Egregi professori Vardanega e Cardin,
 
 #v(25pt)
 
-con la presente il gruppo #team esprime la propria intenzione di candidarsi alla revisione di avanzamento _Requirements & Techonology Baseline (RTB)_ per il capitolato
+con la presente il gruppo #team esprime la propria intenzione di candidarsi alla revisione di avanzamento _Requirements & Technology Baseline (RTB)_ per il capitolato
 
 #align(
   center, 
@@ -25,6 +25,11 @@ All'interno del seguente #underline(link("https://swatengineering.github.io/","l
 - _PianoDiProgetto_1.0.pdf_;
 - _PianoDiQualifica_1.0.pdf_;
 oltre a tutti i _Verbali Esterni_ ed _Interni_ divisi nelle relative categorie.
+
+Viene inoltre fornito il _Proof of Concept_.
+
+#team si assume nuovamente l'impegno di completare il progetto entro il 01/04/2024, ma preventivando costi per un importo totale di *11,555€*. 
+L'importo maggiore rispetto a quanto preventivato in sede di candidatura è dovuto alla necessità del team di modificare la ripartizione delle ore produttive a disposizione per ruolo; in particolare, si è deciso di allocare più ore al ruolo di Amministratore, e marginalmente anche ai ruoli di Responsabile e Analista. Ne risulta dunque un nuovo preventivo con lo stesso numero di ore ma costo maggiorato.
 
 #v(50pt)
 
