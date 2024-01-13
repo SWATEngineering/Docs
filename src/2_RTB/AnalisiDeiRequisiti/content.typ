@@ -71,6 +71,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [Gerarchia degli attori]
 )
 
+#pagebreak()
 == Elenco dei casi d'uso
 
 #set heading(numbering: none)
@@ -84,7 +85,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'amministratore pubblico accede alla piattaforma di visualizzazione; 
 
 #figure(
-  image("assets/UML/UC1_Visualizzazione-panoramica-generale-sensori.png",width:70%),
+  image("assets/UML/UC0_Visualizzazione-menù-dashboard.png",width:70%),
   caption: [UC1 Visualizzazione dashboard generale sensori]
 )
 
@@ -98,11 +99,12 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'amministratore pubblico seleziona la visualizzazione della dashboard generale relativa ai sensori;
 
 #figure(
-  image("assets/UML/UC1_Visualizzazione-panoramica-generale-sensori.png",width:70%),
+  image("assets/UML/UC1_Visualizzazione-dashboard-generale-sensori.png",width:70%),
   caption: [UC1 Visualizzazione dashboard generale sensori]
 )
 
 
+#pagebreak()
 === UC1.1: Visualizzazione posizione sensori su mappa
 - *Attore Principale*: amministratore pubblico. 
 - *Precondizioni*: nessuna.
@@ -131,6 +133,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC1.2 Visualizzazione tabella sensori]
 )
 
+#pagebreak()
 === UC2: Visualizzazione dashboard dati ambientali
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
@@ -140,7 +143,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
 
 #figure(
-  image("assets/UML/UC2_Visualizzazione-dati-ambientali.png",width:70%),
+  image("assets/UML/UC2_Visualizzazione-dashboard-dati-ambientali.png",width:70%),
   caption: [UC2 Visualizzazione dati ambientali]
 )
 
@@ -160,6 +163,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2.1 Visualizzazione #glossary("pannello") dati ambientali]
 )
 
+#pagebreak()
 === UC2.2: Visualizzazione #glossary("pannello") #glossary("time series") per temperatura
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
@@ -185,6 +189,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2.3 Visualizzazione #glossary("pannello") time series per umidità]
 )
 
+#pagebreak()
 /*TODO: cambiare immagine con il nuovo titolo*/
 === UC2.4: Visualizzazione dati relativi al vento
 - *Attore Principale*: amministratore pubblico.
@@ -195,7 +200,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
 
 #figure(
-  image("assets/UML/UC2.4_Visualizzazione-grafico-a-mappa-velocità-e-direzione-del-vento.png",width:100%),
+  image("assets/UML/UC2.4_Visualizzazione-dati-relativi-al-vento.png",width:100%),
   caption: [UC2.4 Visualizzazione grafico a mappa velocità e direzione del vento]
 )
 
@@ -209,10 +214,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
 
 #figure(
-  image("assets/UML/UC2.4_Visualizzazione-grafico-a-mappa-velocità-e-direzione-del-vento.png",width:100%),
+  image("assets/UML/UC2.4.1_Visualizzazione-grafico-a-mappa-direzione-del-vento.png",width:60%),
   caption: [UC2.4.1 Visualizzazione grafico a mappa direzione del vento]
 )
 
+#pagebreak()
 /*TODO: creare nuova immagine*/
 === UC2.4.2: Visualizzazione tabella velocità del vento
 - *Attore Principale*: amministratore pubblico.
@@ -223,7 +229,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
 
 #figure(
-  image("assets/UML/UC2.4_Visualizzazione-grafico-a-mappa-velocità-e-direzione-del-vento.png",width:100%),
+  image("assets/UML/UC2.4.2_Visualizzazione-tabella-velocità-del-vento.png",width:60%),
   caption: [UC2.4.2 Visualizzazione tabella velocità del vento]
 )
 
@@ -240,6 +246,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2.5 Visualizzazione #glossary("pannello") time series per precipitazioni]
 )
 
+#pagebreak()
 === UC2.6: Visualizzazione #glossary("pannello") precipitazioni medie
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
@@ -266,6 +273,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2.7 Visualizzazione #glossary("pannello") time series per inquinamento dell'aria]
 )
 
+#pagebreak()
 === UC2.8: Visualizzazione #glossary("pannello") inquinamento dell'aria medio
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
@@ -292,6 +300,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2.9 Visualizzazione #glossary("pannello") time series per livello dei bacini idrici]
 )
 
+#pagebreak()
 === UC2.10: Visualizzazione #glossary("pannello") temperatura media
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
@@ -318,6 +327,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC2.11 Visualizzazione #glossary("pannello") inquinamento dell'aria massimo]
 )
 
+#pagebreak()
 === UC3: Visualizzazione dashboard dati urbanistici
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
@@ -327,7 +337,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
 
 #figure(
-  image("assets/UML/UC3_Visualizzazione-dati-urbanistici.png",width:70%),
+  image("assets/UML/UC3_Visualizzazione-dashboard-dati-urbanistici.png",width:60%),
   caption: [UC3 Visualizzazione dati urbanistici]
 )
 
@@ -346,6 +356,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   caption: [UC3.1 Visualizzazione #glossary("pannello") dati urbanistici]
 )
 
+#pagebreak()
 === UC3.2: Visualizzazione grafico a mappa disponibilità parcheggi
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
@@ -355,7 +366,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
 
 #figure(
-  image("assets/UML/UC3.2_Visualizzazione-grafico-a-mappa-disponibilità-dei-parcheggi.png",width:100%),
+  image("assets/UML/UC3.2_Visualizzazione-grafico-a-mappa-disponibilità-parcheggi.png",width:100%),
   caption: [UC3.2 Visualizzazione grafico a mappa disponibilità di parcheggi]
 )
 
@@ -368,10 +379,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
 
 #figure(
-  image("assets/UML/UC3.3_Visualizzazione-posizione-e-stato-colonne-ricarica.png",width:100%),
+  image("assets/UML/UC3.3_Visualizzazione-informazioni-delle-colonne-di-ricarica.png",width:100%),
   caption: [UC3.3 Visualizzazione posizione e stato colonne di ricarica]
 )
 
+#pagebreak()
 === UC3.3.1: Visualizzazione posizione e disponibilità delle colonne di ricarica
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
@@ -382,7 +394,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 /* TODO: cambiare l'immagine con una creata apposta per il caso d'uso*/
 #figure(
-  image("assets/UML/UC3.3_Visualizzazione-posizione-e-stato-colonne-ricarica.png",width:100%),
+  image("assets/UML/UC3.3.1_Visualizzazione-posizione-e-disponibilità-delle-colonne-di-ricarica.png",width:70%),
   caption: [UC3.3.1 Visualizzazione posizione e disponibilità colonne di ricarica]
 )
 
@@ -396,10 +408,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 
 /* TODO: cambiare l'immagine con una creata apposta per il caso d'uso*/
 #figure(
-  image("assets/UML/UC3.3_Visualizzazione-posizione-e-stato-colonne-ricarica.png",width:100%),
+  image("assets/UML/UC3.3.2_Visualizzazione-tabella-descrittiva-delle-colonne-di-ricarica.png",width:70%),
   caption: [UC3.3.2 Visualizzazione tabella descrittiva delle colonne di ricarica]
 )
 
+#pagebreak()
 === UC3.4: Visualizzazione grafico a mappa congestione stradale
 *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
@@ -427,6 +440,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 /*TODO: cambiare nome nell'immagine*/
+#pagebreak()
 === UC3.6: Visualizzazione indicatore percentuale su mappa riempimento zone ecologiche
 *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
@@ -449,11 +463,12 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'amministratore pubblico seleziona la visualizzazione della deshboard delle anomalie.
 
 #figure(
-  image("assets/UML/UC4_Visualizzazione-dati-anomali-rilevati.png",width:70%),
-  caption: [UC4 Visualizzazione #glossary("dati anomali") rilevati]
+  image("assets/UML/UC4_Visualizzazione-dashboard-dati-anomali-e-superamento-soglie.png",width:60%),
+  caption: [UC4 Visualizzazione dashboard #glossary("dati anomali") e superamento soglie]
 )
 
 /*TODO: realizzare immagine corrispondente*/
+#pagebreak()
 === UC4.1: Visualizzazione tabella #glossary("dati anomali")
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
@@ -463,7 +478,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'amministratore pubblico seleziona la visualizzazione della deshboard delle anomalie.
 
 #figure(
-  image("assets/UML/UC4_Visualizzazione-dati-anomali-rilevati.png",width:70%),
+  image("assets/UML/UC4.1_Visualizzazione-tabella-dati-anomali.png",width:70%),
   caption: [UC4.1 Visualizzazione tabella #glossary("dati anomali")]
 )
 
@@ -476,11 +491,12 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'amministratore pubblico seleziona la visualizzazione della deshboard delle anomalie.
 
 #figure(
-  image("assets/UML/UC4_Visualizzazione-dati-anomali-rilevati.png",width:70%),
+  image("assets/UML/UC4.2_Visualizzazione-tabella-superamento-soglie.png",width:70%),
   caption: [UC4.2 Visualizzazione tabella superamento soglie]
 )
 
 /*TODO: per gli UC5.X andare a capire se usano soglie fisse o tramite variabili per gli allert (sempre se possibile)*/
+#pagebreak()
 === UC5: Visualizzazione allerte superamento soglie
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
@@ -500,11 +516,12 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + il sistema rileva una temperatura nella media dei 5 minuti, superiore ai 40° celsius.
 #figure(
-  image("assets/UML/UC5_Visualizzazione-allerte-superamento-soglie.png",width:70%),
+  image("assets/UML/UC5.1_Visualizzazione-allerte-superamento-soglia-temperatura.png",width:70%),
   caption: [UC5.1 Visualizzazione allerte superamento soglia temperatura]
 )
 
 /*TODO: andare a fare l'immagine apposta*/
+#pagebreak()
 === UC5.2: Visualizzazione allerte superamento soglia precipitazioni
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
@@ -512,7 +529,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + il sistema rileva un livello di precipitazioni medie nell'ora, superiore ai 50 millimetri di pioggia all'ora.
 #figure(
-  image("assets/UML/UC5_Visualizzazione-allerte-superamento-soglie.png",width:70%),
+  image("assets/UML/UC5.2_Visualizzazione-allerte-superamento-soglia-precipitazioni.png",width:70%),
   caption: [UC5.2 Visualizzazione allerte superamento soglia precipitazioni]
 )
 
@@ -524,11 +541,12 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + il sistema rileva un coefficiente di inquinamento dell'aria (#glossary("PM10")), superiore ai 80#[#sym.mu]g su metro cubo.
 #figure(
-  image("assets/UML/UC5_Visualizzazione-allerte-superamento-soglie.png",width:70%),
+  image("assets/UML/UC5.3_Visualizzazione-allerte-superamento-soglia-inquinamento-dell'aria.png",width:70%),
   caption: [UC5.3 Visualizzazione allerte superamento soglia inquinamento dell'aria]
 )
 
 /*TODO: andare a fare l'immagine apposta*/
+#pagebreak()
 === UC5.4: Visualizzazione allerte superamento soglia bacini idrici
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
@@ -536,7 +554,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + il sistema rileva che il livello di un particolare bacino idrico è superiore al 70% della sua capienza.
 #figure(
-  image("assets/UML/UC5_Visualizzazione-allerte-superamento-soglie.png",width:70%),
+  image("assets/UML/UC5.4_Visualizzazione-allerte-superamento-soglia-bacini-idrici.png",width:70%),
   caption: [UC5.4 Visualizzazione allerte superamento soglia bacini idrici]
 )
 
@@ -548,11 +566,12 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Scenario Principale*:
   + il sistema rileva che il livello di una particolare zona ecologica è superiore all'80% della sua capienza.
 #figure(
-  image("assets/UML/UC5_Visualizzazione-allerte-superamento-soglie.png",width:70%),
+  image("assets/UML/UC5.5_Visualizzazione-allerte-superamento-soglia-zone-ecologiche.png",width:70%),
   caption: [UC5.5 Visualizzazione allerte superamento soglia zone ecologiche]
 )
 
 /*Cambiare il numero nell'immagine*/
+#pagebreak()
 === UC6: Applicazione filtri
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: 
@@ -583,6 +602,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 /*Cambiare il numero nell'immagine*/
+#pagebreak()
 === UC6.2: Filtro per tipologia sensore su tabella
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: 
@@ -616,6 +636,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 /*Cambiare il numero nell'immagine*/
+#pagebreak()
 === UC6.4: Filtro per intervallo temporale
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico sta visualizzando uno o più #glossary("pannelli").
@@ -641,6 +662,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + il sistema aggiorna tutti i #glossary("pannelli") collegati.
 
 /*Cambiare il numero nell'immagine*/
+#pagebreak()
 === UC7: Ordinamento #glossary("pannelli") tabellari
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha scelto e sta visualizzando un #glossary("pannello"), con all'interno una tabella, da ordinare.
@@ -668,6 +690,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 /*Cambiare il numero nell'immagine*/
+#pagebreak()
 === UC9: Visualizzazione errore nessun dato
 - *Attore Principale*: amministratore pubblico. 
 - *Precondizioni*: il sistema di visualizzazione non ottiene alcun dato da mostrare all'interno di un #glossary("pannello"). 
@@ -693,6 +716,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 /*Cambiare il numero nell'immagine*/
+#pagebreak()
 === UC11: Inserimento dati umidità
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
@@ -720,11 +744,12 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Inclusioni*: UC21.
 
 #figure(
-  image("assets/UML/UC12_Inserimento-dati-velocità-e-direzione-del-vento.png",width:120%),
+  image("assets/UML/UC12_Inserimento-dati-velocità-e-direzione-del-vento.png",width:100%),
   caption: [UC12 Inserimento dati velocità e direzione del vento]
 )
 
 /*Cambiare il numero nell'immagine*/
+#pagebreak()
 === UC13: Inserimento dati precipitazioni
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
@@ -757,6 +782,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 /*Cambiare il numero nell'immagine*/
+#pagebreak()
 === UC15: Inserimento dati livello bacini idrici
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
@@ -788,6 +814,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 /*Cambiare il numero nell'immagine*/
+#pagebreak()
 === UC17: Inserimento dati colonne di ricarica
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
@@ -820,6 +847,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 /*Cambiare il numero nell'immagine*/
+#pagebreak()
 === UC19: Inserimento dati riempimento zone ecologiche
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
@@ -852,6 +880,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 /*Cambiare il numero nell'immagine*/
+#pagebreak()
 === UC21: Inserimento dati relativi al sensore
 - *Attore Principale*: sensore. 
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
@@ -860,13 +889,13 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + il sensore allega i dati relativi al proprio stato, ovvero la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso e la propria frequenza di inserimento dati, espressa in secondi, al messaggio da inviare al sistema.
 
 #set heading(numbering: "1.1")
+
 #pagebreak()
-
 = Requisiti
+#show figure: set block(breakable: true)
 
-== Requisiti funzionali (obbligatori e desiderabili)
+== Requisiti funzionali 
 #let C = counter("UC_counter_req")
-/*TODO: mettere in Desiderabile tutti quei requisiti che riguardano lo stesso dato più di una volta ma non sono la prima occorrenza (se prima viene la time series e poi un indice numerico, il secondo è da mettere come desiderabile)*/
 #let requisiti_funzionali = (
   (
      "Obbligatorio", "L'utente deve poter accedere all'applicazione senza dover effettuare l'autenticazione.", "Capitolato"
@@ -1029,9 +1058,12 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 #let requisiti_funzionali_con_codice = generate_requirements_array("F", requisiti_funzionali)
-#requirements_table(requisiti_funzionali_con_codice)
+#figure(
+requirements_table(requisiti_funzionali_con_codice),
+caption: "Requisiti funzionali")
 
 
+#pagebreak()
 == Requisiti di qualità
 #let requisiti_qualita = (
   (
@@ -1049,8 +1081,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 #let requisiti_qualita_con_codice = generate_requirements_array("Q", requisiti_qualita)
-#requirements_table(requisiti_qualita_con_codice)
+#figure(
+requirements_table(requisiti_qualita_con_codice),
+caption: "Requisiti di qualità")
 
+#pagebreak()
 == Requisiti di vincolo
 #let requisiti_vincolo = (
   (
@@ -1089,36 +1124,44 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 #let requisiti_vincolo_con_codice = generate_requirements_array("V", requisiti_vincolo)
-#requirements_table(requisiti_vincolo_con_codice)
+#figure(
+requirements_table(requisiti_vincolo_con_codice),
+caption: "Requisiti di vincolo")
 
 #pagebreak()
 == Tracciamento
 === Requisiti funzionali - Fonti
-#table(
+#figure(
+table(
   columns: (auto, auto),
   inset: 10pt,
   align: horizon,
   [*Requisiti*], [*Fonti*],
   ..requisiti_funzionali_con_codice.map(content => (content.at(0),content.at(3))).flatten().map(content => [#content])
-)
+),
+caption: "Requisiti funzionali - Fonti")
 
 === Requisiti qualità - Fonti
-#table(
+#figure(
+table(
   columns: (auto, auto),
   inset: 10pt,
   align: horizon,
   [*Requisiti*], [*Fonti*],
   ..requisiti_qualita_con_codice.map(content => (content.at(0),content.at(3))).flatten().map(content => [#content])
-)
+),
+caption: "Requisiti qualità - Fonti")
 
 === Requisiti vincolo - Fonti
-#table(
+#figure(
+table(
   columns: (auto, auto),
   inset: 10pt,
   align: horizon,
   [*Requisiti*], [*Fonti*],
   ..requisiti_vincolo_con_codice.map(content => (content.at(0),content.at(3))).flatten().map(content => [#content])
-)
+),
+caption: "Requisiti vincolo - Fonti")
 
 #pagebreak()
 == Riepilogo
@@ -1137,7 +1180,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 #let vincolo_opz = requisiti_vincolo.filter(content => content.at(0) == "Opzionale").len()
 #let vincolo_tot = vincolo_des + vincolo_obb + vincolo_opz
 
-#table(
+#figure(
+table(
   columns: (auto, auto, auto, auto, auto),
   inset: 10pt,
   align: horizon,
@@ -1145,4 +1189,5 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   [funzionali], [#funzionale_obb], [#funzionale_des], [#funzionale_opz], [#funzionale_tot],
   [di qualità], [#qualità_obb], [#qualità_des], [#qualità_opz], [#qualità_tot],
   [di vincolo], [#vincolo_obb], [#vincolo_des], [#vincolo_opz], [#vincolo_tot]
-) 
+),
+caption: "Tabella di riepilogo dei vincoli")
