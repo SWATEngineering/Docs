@@ -569,7 +569,7 @@ table(
       columns: (80pt,80pt),
       align: (center,center),
       fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
-      [*Codice test*],[*Codice caso d'uso*],
+      [*Codice test*],[*Codice Requisito*],
       ..test_di_sistema.map(item => (item.at(0),item.at(3))).flatten().map(item => [#item])
 ),caption: "Tracciamento dei test di sistema.")
 
