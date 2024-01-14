@@ -211,12 +211,13 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
             1. aprire il menu di selezione delle #glossary("dashboard");
-            2. selezionare la #glossary("dashboard") per visualizzare la panoramica generale dei sensori;
+            2. selezionare la #glossary("dashboard") generale dei sensori;
             3. visualizzare la relativa #glossary("dashboard");
-            4. visualizzare un #glossary("pannello") con una mappa indicante la posizione di tutti i sensori;
-            5. visualizzare un #glossary("pannello") con una tabella che mostra lo stato di tutti i sensori.
+            4. visualizzare un #glossary("pannello") con una mappa indicante la posizione di tutti i sensori come icone su di essa;
+            5. visualizzare un #glossary("pannello") con una tabella che mostra i dati relativi a quei sensori, in particolare, percentuale di batteria, se la batteria è autonoma o meno e data di ultima manutenzione.
             6. visualizzare un messaggio di avvertenza di dati mancanti, nei vari #glossary("pannelli"), nel caso il sistema non riesca a reperire i dati.
       ],"N/I",[
+            UC0\
             UC1\
             UC1.1\
             UC1.2
@@ -226,23 +227,29 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             1. aprire il menu di selezione delle #glossary("dashboard");
             2. selezionare la #glossary("dashboard") per visualizzare i dati ambientali;
             3. visualizzare la relativa #glossary("dashboard");
-            4. visualizzare un #glossary("pannello") con la #glossary("serie storica") delle temperature rilevate dai ciascun sensore;
+            4. visualizzare un #glossary("pannello") con la #glossary("serie storica") delle temperature rilevate dai ciascun sensore, espresse in gradi celsius; /*MEDIA MOBILE*/
             5. visualizzare un #glossary("pannello") con la #glossary("serie storica") delle percentuali di umidità rilevate da ciascun sensore;
-            6. visualizzare un #glossary("pannello") con una mappa mostrante velocità e direzione del vento rilevato da ciascun sensore;
-            7. visualizzare un #glossary("pannello") con la #glossary("serie storica") dei millimetri di pioggia rilevati da ciascun sensore;
-            8. visualizzare un #glossary("pannello") con la #glossary("serie storica") (in formato aggregato, andando a fare la media degli ultimi cinque minuti) dei millimetri di pioggia rilevati da ciascun sensore;
-            9. visualizzare un #glossary("pannello") con la #glossary("serie storica") relativa ai dati sull'inquinamento dell'aria rilevati da ciascun sensore; /*TODO: sostituire con l'unità di misura/metrica giusta*/
-            10. visualizzare un #glossary("pannello") con la #glossary("serie storica") (in formato aggregato, andando a fare la media degli ultimi cinque minuti) dei dati sull'inquinamento dell'aria rilevati da ciascun sensore; /*TODO: sostituire con l'unità di misura/metrica giusta*/
-            11. visualizzare un #glossary("pannello") con la #glossary("serie storica") delle percentuali di riempimento dei bacini idrici rilevate dai ciascun sensore;
-            12. visualizzare un #glossary("pannello") con la #glossary("serie storica") (in formato aggregato, andando a fare la media degli ultimi cinque minuti) delle temperature rilevate dai ciascun sensore;
-            13. visualizzare un #glossary("pannello") con il valore massimo negli ultimi 5 minuti relativo all'inquinamento dell'aria. /*TODO: sistemare con le unità di misura giuste*/
-            14. visualizzare un messaggio di avvertenza di dati mancanti, nei vari #glossary("pannelli"), nel caso il sistema non riesca a reperire i dati.
+            /*MEDIA MOBILE*/
+            6. visualizzare un #glossary("pannello") con una mappa mostrante la direzione del vento rilevato da ciascun sensore tramite delle frecce con origine la posizione del sensore; 
+            7. visualizzare un #glossary("pannello") con una tabella che mostri l'ultima rilevazione della velocità del vento effettuata da ciascun sensore; 
+            8. visualizzare un #glossary("pannello") con la #glossary("serie storica") dei millimetri di pioggia rilevati da ciascun sensore;
+            /*MEDIA MOBILE*/
+            9. visualizzare un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse millimetri di pioggia all'ora, indicante la media dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori, degli ultimi 5 minuti; 
+            10. visualizzare un #glossary("pannello") contenente un grafico relativo al livello di polveri sottili nell'aria, espresso in $#sym.mu g\/m^3$ (#glossary("PM10")), in formato #glossary("time series"), che ne mostra l'andamento in media mobile, distinto per sensore, aggregando i dati per intervalli di 5 minuti; /*MEDIA MOBILE*/
+            11. visualizzare un #glossary("pannello") contenente la media della concentrazione di inquinanti dell'aria, espressa in $#sym.mu g\/m^3$,(#glossary("PM10")), che consideri le rilevazioni di tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
+            12. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri le percentuali di riempimento dei bacini idrici rilevate dai singoli sensore e aggregate per intervalli di 5 minuti;/*MEDIA MOBILE*/
+            13. visualizzare un #glossary("pannello") contenente la media della temperatura, espressa in gradi celsius, considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
+            14. visualizzare un #glossary("pannello") contenente il massimo coefficiente di inquinamento dell'aria registrato tra tutti i sensori, espresso in $#sym.mu g\/m^3$, degli ultimi 5 minuti, presentato in formato numerico.
+            15. visualizzare un messaggio di avvertenza di dati mancanti, nei vari #glossary("pannelli"), nel caso di assenza di dati da mostrare.
       ],"N/I",[
+            UC0\
             UC2\
             UC2.1\
             UC2.2\
             UC2.3\
             UC2.4\
+            UC2.4.1\
+            UC2.4.2\
             UC2.5\
             UC2.6\
             UC2.7\
@@ -256,17 +263,21 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             1. aprire il menu di selezione delle #glossary("dashboard");
             2. selezionare la #glossary("dashboard") per visualizzare i dati urbanistici;
             3. visualizzare la relativa #glossary("dashboard");
-            4. visualizzare un #glossary("pannello") con una mappa indicante la quantità di posti liberi per ogni parcheggio controllato da un sensore;
-            5. visualizzare un #glossary("pannello") con una mappa indicante i watt erogati da ciascuna colonna di ricarica controllata, indicando se è occupata o meno;
-            6. visualizzare un #glossary("pannello") con una mappa indicante l'intensità del traffico sulle strade controllate; /*TODO: andare a specificare come questa intesità viene espressa (anche in adr)*/
-            7. visualizzare un #glossary("pannello") con una mappa indicante la posizione di ciascuna bicicletta elettrica controllata, con la relativa percentuale di batteria;
-            8. visualizzare un #glossary("pannello") con una mappa indicante la percentuale di riempimento di ogni zona rifiuti controllata;
-            9. visualizzare un messaggio di avvertenza di dati mancanti, nei vari #glossary("pannelli"), nel caso il sistema non riesca a reperire i dati.
+            4. visualizzare un #glossary("pannello") con una mappa indicante la quantità di posti liberi per ogni parcheggio controllato da un sensore, tali quantità sono segnalate tramite indicatori numerici presso le coordinate di ciascun sensore;
+            5. visualizzare un #glossary("pannello") contenente una mappa che indichi, presso le coordinate di ciascun sensore, mediante indicatori booleani, la disponibilità della colonna corrispondente; 
+            6. visualizzare un #glossary("pannello") che esprima, tramite una tabella indicizzata tramite il nome del sensore, l'erogazione energetica, espressa in watt per ora: 
+            7. visualizzare un #glossary("pannello") contenente una mappa che indichi, tramite gli stati "LOW", "MEDIUM", "HIGH" e "BLOCKED", lo stato di congestione delle strade;  /*TODO, ho fatto un commento*/
+            8. visualizzare un #glossary("pannello") contenente una mappa indicante la posizione in tempo reale delle biciclette elettriche, mediante degli indicatori numerici indicanti la percentuale della batteria posizionata nelle coordinate del mezzo, atto a mostrare la sua posizione; 
+            9. visualizzare un #glossary("pannello") contenente una mappa indicante lo stato di riempimento delle zone ecologiche, espresse in valori percentuali, posizionate nelle coordinate delle zone; 
+            10. visualizzare un messaggio di avvertenza di dati mancanti, nei vari #glossary("pannelli"), nel caso di assenza di dati da mostrare.
       ],"N/I",[
+            UC0\
             UC3\
             UC3.1\
             UC3.2\
             UC3.3\
+            UC3.3.1\
+            UC3.3.2\
             UC3.4\
             UC3.5\
             UC3.6
@@ -274,17 +285,31 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
             1. aprire il menu di selezione delle #glossary("dashboard");
-            2. selezionare la #glossary("dashboard") per visualizzare i dati anomali prodotti dai sensori;
+            2. selezionare la #glossary("dashboard") per visualizzare i #glossary("dati anomali") e il superamento soglie
             3. visualizzare la relativa #glossary("dashboard");
-            4. visualizzare una tabella contenente per ogni anomalia rilevata, il nome del sensore che l'ha rilevata. La tabella deve essere ordinata in base all'orario di registrazione dei dati.
+            4. visualizzare un #glossary("pannello") contenente una tabella, la quale mostra tutte le anomalie rilevate, mostrando il valore dell'anomalia, il sensore che l'ha rilevata e il timestamp relativo; 
+            5. visualizzare un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti le soglie impostate nel sistema, mostrando il valore superante la soglia, il sensore che ha rilevato tale valore e il timestamp relativo.
       ],"N/I",[
-            UC4
+            UC0\
+            UC4\
+            UC4.1\
+            UC4.2
       ]),
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
-            1. ricevere notifiche relative al superamento di un qualche valore di soglia, impostato per determinati tipi di sensori. /*TODO: specificare i sensori (anche in adr)*/
+            1. ricevere un'allerta relativa alla temperatura che notifica il superamento dei 40° celsius; 
+            2. ricevere un'allerta relativa alle precipitazioni che notifica il superamento dei 50 millimetri di pioggia all'ora; 
+            3. ricevere un'allerta relativa all'inquinamento dell'aria che notifica il superamento di 80#[#sym.mu]g su metro cubo; 
+            4. ricevere un'allerta relativa ai bacini idrici che notifica il superamento del 70% della capienza di un particolare bacino; 
+            5. ricevere un'allerta relativa alle zone ecologiche che notifica il superamento dell'80% della capienza di una particolare zona ecologica.
       ],"N/I",[
-            UC5
+            UC5\
+            UC5.1\
+            UC5.2\
+            UC5.3\
+            UC5.4\
+            UC5.5\
+            
       ]),
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
@@ -295,6 +320,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             5. Applicare dei filtri, per selezionare solo i dati relativi ad un definito intervallo di tempo, all'interno di un'intera #glossary("dashboard");
             6. Applicare i filtri come #glossary("side effect") anche a tutti quei #glossary("pannelli") collegati ai #glossary("pannelli") filtrati attivamente dall'utente.
       ],"N/I",[
+            UC0\
             UC6\
             UC6.1\
             UC6.2\
