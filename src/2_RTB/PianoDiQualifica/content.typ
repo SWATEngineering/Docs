@@ -581,6 +581,10 @@ table(
 
 == Qualità di Processo - Fornitura
 
+Al termine del settimo sprint il team ha rimodulato il BAC progettuale. La modifica non è dovuta tanto dai risultati emersi dalle metriche sottostanti, piuttosto da alcune considerazioni errate in sede di candidatura. 
+Rimane però essenziale che ogni metrica non sia solamente un istantanea dello stato del progetto, ma che mostri anche l'andamento storico del processo di fornitura e con esso le nostre considerazioni. 
+A tal fine, il team ha preferito mantenere registrate le considerazioni e le misurazioni effettuate precedentemente tale decisione, nell'ambito delle metriche.
+
 
 === Estimated at Completion
  
@@ -592,11 +596,21 @@ table(
 )
 
 L'EAC rappresenta una revisione del valore stimato per la realizzazione del progetto, ossia il BAC (Budget At Completion) rivisto allo stato corrente del progetto; il fattore che incide maggiormente sull'andamento dell'EAC è il rapporto tra EV (Estimated Value) e AC (Actual Cost), per cui tanto più queste metriche sono vicine l'una all'altra, tanto più l'EAC risulterà vicino al BAC pianificato inizialmente. 
+
+
+Al termine del settimo sprint il team ha rimodulato il BAC progettuale. La modifica non è dovuta tanto dai risultati emersi dalle metriche sottostanti, piuttosto da alcune considerazioni errate in sede di candidatura. 
+Rimane però essenziale che ogni metrica non sia solamente un istantanea dello stato del progetto, ma che mostri anche l'andamento storico del processo di fornitura e con esso le nostre considerazioni. 
+A tal fine, il team ha preferito mantenere registrate le considerazioni e le misurazioni effettuate precedentemente tale decisione. 
+
+
+==== Considerazioni Pre-Rimodulazione BAC 
 Possiamo rilevare da il grafico, che la curva delineata dal valore del AEC pur essendo rimasta sempre al di sopra del valore d'accettazione ha, già a partire dal secondo sprint, mostrato un trend decrescente, il team si aspetta che nel corso dei prossimi sprint il valore continui a scendere fino a rientrare nella fascia accettabile. 
 Nell'eventualità il trend dovesse invertirsi il team dovrebbe rimodulare la quantità di lavoro netta associata al concetto di ora produttiva.
+==== Considerazioni Post-Rimodulazione BAC 
+Nonostante il nuovo valore assunto dal BAC a seguito della rimodulazione porta il valore dell'EAC ad avvicinarsi ad esso e a rientrare all'interno della soglia accettabile, rimane comunque più interessante notare come l'andamento continui ad essere decrescente segno che il team sta sfruttando bene le ore produttive a disposizione. 
 
 
-Dovesse 
+
 === Budget Variance e Schedule Variance
 
 #figure(
@@ -608,8 +622,9 @@ Dovesse
 
 Il BV indica se alla data corrente si è speso di più o di meno rispetto a quanto inizialmente previsto nel budget; il SV indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate. 
 Nonostante gli andamenti delle due metriche fosse nel primo periodo in rapido allontanamento dal valore d'accettazione, a partire dal secondo sprint sembrano stabilizzarsi, segno che le azioni correttive adottate stavano iniziando a sortire effetto.
-Il cambiamento più significativo si è verificato durante il sesto sprint, quando abbiamo osservato un'inversione di tendenza:entrambe le metriche iniziano a riavvicinarsi al valore desiderato.
+Il cambiamento più significativo si è verificato durante il sesto sprint, quando abbiamo osservato un'inversione di tendenza: entrambe le metriche iniziano a riavvicinarsi al valore desiderato.
 Il team si augura che il way of working consolidato nel corso del progetto permetta di recuperare quanto perso nel corso dei primi sprint. 
+Durante il settimo sprint le due metriche hanno mantenuto l'andamento che ci si augurava. 
 
 
 === Actual Cost e Estimate To Complete
@@ -622,6 +637,8 @@ Il team si augura che il way of working consolidato nel corso del progetto perme
 )
 
 L'AC rappresenta il costo effettivo sostenuto fino a un dato momento, mentre l'ETC rappresenta la stima del costo aggiuntivo necessario per completare il progetto; di conseguenza, ci si aspetta che l'AC cresca e che l'ETC diminuisca in modo sostanzialmente lineare, segno che il progetto ha mantenuto un ritmo regolare di avanzamento. Stabilire l'andamento delle due metriche al momento della revisione RTB è alquanto prematuro, dati i pochi data points a disposizione. 
+
+
 === Earned Value e Planned Value
 
 #figure(
