@@ -40,8 +40,6 @@ Durante questa fase il colloquio con la Proponente e il Committente viene manten
 #include "PianificazioneSprint/SestoSprint.typ"
 #include "PianificazioneSprint/SettimoSprint.typ"
 #include "PianificazioneSprint/OttavoSprint.typ"
-#include "PianificazioneSprint/NonoSprint.typ"
-#include "PianificazioneSprint/DecimoSprint.typ"
 
 == #glossary[Product Baseline]
 
@@ -59,6 +57,9 @@ Durante questa fase il colloquio con la Proponente e il Committente viene manten
 In questa fase la concentrazione, soprattutto nel periodo iniziale, si focalizza sulla progettazione. Si inizia la stesura del documento delle _Specifiche Tecniche_ e lo studio di un'#glossary[architettura] adeguata. Iniziano il loro ciclo di vita anche il _Manuale Sviluppatore_ e il _Manuale Utente_.
 Attraverso le fasi di progettazione e sviluppo ha inizio la creazione del progetto vero e proprio, utilizzando le conoscenze acquisite durante la creazione del POC. Lo sviluppo includerà anche le fasi di testing del prodotto.
 In vista della sessione invernale di esami, è prevista una sospensione temporanea dello sviluppo del progetto. Questo permette ai membri del gruppo di potersi dedicare allo studio individuale.
+
+#include "PianificazioneSprint/NonoSprint.typ"
+#include "PianificazioneSprint/DecimoSprint.typ"
 
 == #glossary[Customer Acceptance]
 
