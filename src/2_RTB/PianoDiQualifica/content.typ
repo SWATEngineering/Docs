@@ -537,7 +537,7 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa visualizza un #glossary("pannello") contenente una tabella la quale riporta l'erogazione delle colonne di ricarica per auto, espressa in Watt all'ora, controllata da ciascun sensore, nella #glossary("dashboard") relativa ai dati urbanistici.
       ],"N/I","ROF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizza un #glossary("pannello") recontenente una mappa che evidenzi lo stato di congestione delle strade, mediante gli stati "LOW", "MEDIUM", "HIGH", "BLOCKED", posti nelle coordinate dei sensori controllano queste, nella #glossary("dashboard") relativa ai dati urbanistici.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizza un #glossary("pannello") contenente una mappa che evidenzi lo stato di congestione delle strade, mediante gli stati "LOW", "MEDIUM", "HIGH", "BLOCKED", posti nelle coordinate dei sensori controllano queste, nella #glossary("dashboard") relativa ai dati urbanistici.
       ],"N/I","ROF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare #glossary("pannello") contenente una mappa che mostri la posizione delle biciclette elettriche controllate, in tempo reale, mediante degli indicatori numerici, indicanti la percentuale della batteria, posizionati nelle coordinate del mezzo, nella #glossary("dashboard") relativa ai dati urbanistici.
@@ -555,6 +555,13 @@ table(
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una tabella che mostri i #glossary("dati anomali"), il sensore che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.
       ],"N/I","ROF"),
+
+
+
+
+
+
+
       ([
             Verificare che l'#glossary("amministratore pubblico") possa filtrare i dati, visualizzando i dati solo di un sottoinsieme di sensori selezionato per nome, nel caso di grafici di tipo #glossary("serie storica").
       ],"N/I","ROF"),
