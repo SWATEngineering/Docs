@@ -256,7 +256,8 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             UC2.8\
             UC2.9\
             UC2.10\
-            UC2.11
+            UC2.11\
+            UC9
       ]),
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
@@ -280,7 +281,8 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             UC3.3.2\
             UC3.4\
             UC3.5\
-            UC3.6
+            UC3.6\
+            UC9
       ]),
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
@@ -289,11 +291,13 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             3. visualizzare la relativa #glossary("dashboard");
             4. visualizzare un #glossary("pannello") contenente una tabella, la quale mostra tutte le anomalie rilevate, mostrando il valore dell'anomalia, il sensore che l'ha rilevata e il timestamp relativo; 
             5. visualizzare un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti le soglie impostate nel sistema, mostrando il valore superante la soglia, il sensore che ha rilevato tale valore e il timestamp relativo.
+            6. visualizzare un messaggio di avvertenza di dati mancanti, nei #glossary("pannelli"), nel caso di assenza di dati da mostrare.
       ],"N/I",[
             UC0\
             UC4\
             UC4.1\
-            UC4.2
+            UC4.2\
+            UC9
       ]),
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
@@ -314,11 +318,11 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
             1. Scegliere una #glossary("dashboard") da visualizzare;
-            2. Applicare dei filtri, per selezionare un sottoinsieme di sensori da visualizzare, nel caso di #glossary("pannelli") di tipo #glossary("serie storica");
-            3. Applicare dei filtri, per selezionare solo particolari tipologie di sensori da considerare, nel caso di #glossary("pannelli") contenenti tabelle, le quali comprendono più tipologie di sensori al loro interno; /*TODO: non ho idea se la mia interpretazione sia corretta o meno.*/
+            2. Applicare dei filtri, per visualizzare solo i dati provenienti dal sottoinsieme di sensori selezionato, nel caso di #glossary("pannelli") di tipo #glossary("serie storica");
+            3. Applicare dei filtri, per visualizzare solo i dati provenienti dai sensori delle tipologie selezionate, nel caso di #glossary("pannelli") contenenti tabelle, le quali comprendono più tipologie di sensori al loro interno; 
             4. Applicare dei filtri, per selezionare solo particolari sensori, mediante il nome, nel caso di #glossary("pannelli") contenenti tabelle;
             5. Applicare dei filtri, per selezionare solo i dati relativi ad un definito intervallo di tempo, all'interno di un'intera #glossary("dashboard");
-            6. Applicare i filtri come #glossary("side effect") anche a tutti quei #glossary("pannelli") collegati ai #glossary("pannelli") filtrati attivamente dall'utente.
+            6. Visualizzare gli effetti dei filtri applicati ai #glossary("pannelli") sorgente, anche sui #glossary("pannelli") collegati,  come #glossary("side effect").
       ],"N/I",[
             UC0\
             UC6\
@@ -337,84 +341,84 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ]),
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
-            1. Scegliere una #glossary("dashboard") di cui modificare nel layout;
+            1. Scegliere una #glossary("dashboard") di cui modificare il layout;
             2. Modificare il layout dei #glossary("pannelli") in termini di posizione di tali #glossary("pannelli") e di dimensioni.
       ],"N/I",[
             UC8
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inserire dati relativi alla temperatura, da esso monitorata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
+            1. Inserire il risultato della rilevazione della temperatura, espressa in gradi Celsius, con annesso il timestamp di rilevazione, le proprie coordinate geografiche, la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso e la propria frequenza di inserimento dati, espressa in secondi.
       ],"N/I",[
             U10\
             U21
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inserire dati relativi all'umidità, da esso monitorata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
+            1. Inserire il risultato della rilevazione dell'umidità, espressa in percentuale, con annesso il timestamp di rilevazione, le proprie coordinate geografiche, la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso e la propria frequenza di inserimento dati, espressa in secondi.
       ],"N/I",[
             U11\
             U21
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inserire dati relativi alla velocità e direzione del vento, da esso monitorata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
+            1. Inserire il risultato della rilevazione della direzione e della velocità del vento, espresse in gradi (con gli 0° a Nord e i 180° a Sud) e in chilometri orari, con annesso il timestamp di rilevazione, le proprie coordinate geografiche, la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso e la propria frequenza di inserimento dati, espressa in secondi.
       ],"N/I",[
             U12\
             U21
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inserire dati relativi alle precipitazioni, da esso monitorate, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/ /*TODO: disambiguare la metrica delle precipitazioni*/
+            1. Inserire il risultato della rilevazione della quantità di precipitazioni, espressa in millimetri all'ora, con annesso il timestamp di rilevazione, le proprie coordinate geografiche, la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso e la propria frequenza di inserimento dati, espressa in secondi.
       ],"N/I",[
             U13\
             U21
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inserire dati relativi all'inquinamento dell'aria, da esso monitorata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/ /*TODO: disambiguare la metrica dell'inquinamento dell'aria*/
+             1. Inserire il risultato della rilevazione dell'inquinamento dell'aria, espressa in $#sym.mu g\/m^3$, con annesso il timestamp di rilevazione, le proprie coordinate geografiche, la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso e la propria frequenza di inserimento dati, espressa in secondi.
       ],"N/I",[
             U14\
             U21
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inserire dati relativi al livello del bacino idrico, da esso monitorato, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/ /*TODO: disambiguare la metrica del livello dei bacini idrici*/
+            1. Inserire il risultato della rilevazione del livello di riempimento del bacino idrico presso cui è installato, espressa in percentuale, con annesso il timestamp di rilevazione, le proprie coordinate geografiche, la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso e la propria frequenza di inserimento dati, espressa in secondi.
       ],"N/I",[
             U15\
             U21
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inserire dati relativi alla disponibilità dei parcheggi, inteso come numero di posti disponibili in un parcheggio da esso monitorato, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
+            1. Inserire il risultato della rilevazione della quantità di parcheggi nel parcheggio in cui è installato, espressa numericamente, con annesso il timestamp di rilevazione, le proprie coordinate geografiche, la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso e la propria frequenza di inserimento dati, espressa in secondi.
       ],"N/I",[
             U16\
             U21
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inserire dati relativi alla disponibilità e ai watt erogati da una colonna di ricarica, da esso monitorata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
+            1. Inserire il risultato della rilevazione della quantità di energia erogata, espressa in chilowatt all'ora, con annesso il timestamp di rilevazione, le proprie coordinate geografiche, la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso e la propria frequenza di inserimento dati, espressa in secondi.
       ],"N/I",[
             U17\
             U21
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inserire dati relativi alla posizione e alla percentuale di batteria della bicicletta, da esso monitorata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
+            1. Inserire il risultato della rilevazione della percentuale di batteria della bicicletta a cui è associato e le relative coordinate geografiche, con annesso il timestamp di rilevazione, la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso e la propria frequenza di inserimento dati, espressa in secondi.
       ],"N/I",[
             U18\
             U21
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inserire dati relativi alla percentuale di riempimento di una zona ecologica, da esso monitorata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/
+            1. Inserire il risultato della rilevazione del livello di riempimento della zona ecologica presso cui è installato, espressa in percentuale, con annesso il timestamp di rilevazione, le proprie coordinate geografiche, la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso e la propria frequenza di inserimento dati, espressa in secondi.
       ],"N/I",[
             U19\
             U21
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inserire dati relativi alla congestione stradale, da esso monitorata, con annessi dati relativi al proprio stato interno. /*TODO: disambiguare lo stato interno specificando i dati*/ /*TODO: disambiguare la metrica della congestione stradale*/
+            1. Inserire il risultato della rilevazione dello stato della congestione stradale nella strada presso cui è installato, espressa nei seguenti stati (ordinati per ordine di congestione crescente) "LOW", "MEDIUM", "HIGH", "BLOCKED", con annesso il timestamp di rilevazione, le proprie coordinate geografiche, la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso e la propria frequenza di inserimento dati, espressa in secondi.
       ],"N/I",[
             U20\
             U21
