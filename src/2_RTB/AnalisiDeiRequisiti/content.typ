@@ -190,22 +190,9 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 )
 
 #pagebreak()
-/*TODO: cambiare immagine con il nuovo titolo*/
-=== UC2.4: Visualizzazione dati relativi al vento
-- *Attore Principale*: amministratore pubblico.
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza dei #glossary("pannelli") contenenti dati relativi al vento.
-- *Scenario Principale*:
-  + l'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
-
-#figure(
-  image("assets/UML/UC2.4_Visualizzazione-dati-relativi-al-vento.png",width:100%),
-  caption: [UC2.4 Visualizzazione grafico a mappa velocità e direzione del vento]
-)
 
 /*TODO: creare nuova immagine*/
-=== UC2.4.1: Visualizzazione grafico a mappa direzione del vento
+=== UC2.4: Visualizzazione grafico a mappa direzione del vento
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa che esprime, mediante frecce aventi orgine nelle coordinate del sensore, la direzione del vento rilevata da ciascun sensore.
@@ -214,13 +201,13 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
 
 #figure(
-  image("assets/UML/UC2.4.1_Visualizzazione-grafico-a-mappa-direzione-del-vento.png",width:60%),
-  caption: [UC2.4.1 Visualizzazione grafico a mappa direzione del vento]
+  image("assets/UML/UC2.4_Visualizzazione-grafico-a-mappa-direzione-del-vento.png",width:60%),
+  caption: [UC2.4 Visualizzazione grafico a mappa direzione del vento]
 )
 
 #pagebreak()
 /*TODO: creare nuova immagine*/
-=== UC2.4.2: Visualizzazione tabella velocità del vento
+=== UC2.5: Visualizzazione tabella velocità del vento
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente dati relativi all'ultima velocità del vento, espressa in chilometri all'ora, registrata da ciascun sensore, sotto forma tabellare.
@@ -229,11 +216,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
 
 #figure(
-  image("assets/UML/UC2.4.2_Visualizzazione-tabella-velocità-del-vento.png",width:60%),
-  caption: [UC2.4.2 Visualizzazione tabella velocità del vento]
+  image("assets/UML/UC2.5_Visualizzazione-tabella-velocità-del-vento.png",width:60%),
+  caption: [UC2.5 Visualizzazione tabella velocità del vento]
 )
 
-=== UC2.5: Visualizzazione #glossary("pannello") time series per precipitazioni
+=== UC2.6: Visualizzazione #glossary("pannello") time series per precipitazioni
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo all'intensità delle precipitazioni, espressa in millimetri orari, in formato #glossary("time series") che ne mostra l'andamento in media mobile, distinto per sensore, aggregando i dati per intervalli di 5 minuti.
@@ -242,12 +229,12 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
 
 #figure(
-  image("assets/UML/UC2.5_Visualizzazione-pannello-time-series-per-precipitazioni.png",width:100%),
-  caption: [UC2.5 Visualizzazione #glossary("pannello") time series per precipitazioni]
+  image("assets/UML/UC2.6_Visualizzazione-pannello-time-series-per-precipitazioni.png",width:100%),
+  caption: [UC2.6 Visualizzazione #glossary("pannello") time series per precipitazioni]
 )
 
 #pagebreak()
-=== UC2.6: Visualizzazione #glossary("pannello") precipitazioni medie
+=== UC2.7: Visualizzazione #glossary("pannello") precipitazioni medie
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse millimetri di pioggia all'ora, indicante la media dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori, degli ultimi 5 minuti.
@@ -256,11 +243,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
 
 #figure(
-  image("assets/UML/UC2.6_Visualizzazione-pannello-precipitazioni-medie.png",width:100%),
-  caption: [UC2.6 Visualizzazione #glossary("pannello") precipitazioni medie]
+  image("assets/UML/UC2.7_Visualizzazione-pannello-precipitazioni-medie.png",width:100%),
+  caption: [UC2.7 Visualizzazione #glossary("pannello") precipitazioni medie]
 )
 
-=== UC2.7: Visualizzazione #glossary("pannello") time series per inquinamento dell'aria
+=== UC2.8: Visualizzazione #glossary("pannello") time series per inquinamento dell'aria
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo al livello di polveri sottili nell'aria, espresso in $#sym.mu g\/m^3$ (#glossary("PM10")), in formato #glossary("time series"), che ne mostra l'andamento in media mobile, distinto per sensore, aggregando i dati per intervalli di 5 minuti.
@@ -269,12 +256,12 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
 
 #figure(
-  image("assets/UML/UC2.7_Visualizzazione-pannello-time-series-per-inquinamento-dell-aria.png",width:100%),
-  caption: [UC2.7 Visualizzazione #glossary("pannello") time series per inquinamento dell'aria]
+  image("assets/UML/UC2.8_Visualizzazione-pannello-time-series-per-inquinamento-dell-aria.png",width:100%),
+  caption: [UC2.8 Visualizzazione #glossary("pannello") time series per inquinamento dell'aria]
 )
 
 #pagebreak()
-=== UC2.8: Visualizzazione #glossary("pannello") inquinamento dell'aria medio
+=== UC2.9: Visualizzazione #glossary("pannello") inquinamento dell'aria medio
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente la media della concentrazione di inquinanti dell'aria, espressa in $#sym.mu g\/m^3$,(#glossary("PM10")), considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
@@ -283,11 +270,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
 
 #figure(
-  image("assets/UML/UC2.8_Visualizzazione-pannello-inquinamento-dell-aria-medio.png",width:100%),
-  caption: [UC2.8 Visualizzazione #glossary("pannello") inquinamento dell'aria medio]
+  image("assets/UML/UC2.9_Visualizzazione-pannello-inquinamento-dell-aria-medio.png",width:100%),
+  caption: [UC2.9 Visualizzazione #glossary("pannello") inquinamento dell'aria medio]
 )
 
-=== UC2.9: Visualizzazione #glossary("pannello") time series per livello dei bacini idrici
+=== UC2.10: Visualizzazione #glossary("pannello") time series per livello dei bacini idrici
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo alla percentuale di riempimento dei bacini idrici, in formato #glossary("time series"), che ne mostra l'andamento in media mobile di tale percentuale, distinto per sensore, aggregando i dati per intervalli di 5 minuti.
@@ -296,12 +283,12 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
 
 #figure(
-  image("assets/UML/UC2.9_Visualizzazione-pannello-time-series-per-livello-dei-bacini-idrici.png",width:100%),
-  caption: [UC2.9 Visualizzazione #glossary("pannello") time series per livello dei bacini idrici]
+  image("assets/UML/UC2.10_Visualizzazione-pannello-time-series-per-livello-dei-bacini-idrici.png",width:100%),
+  caption: [UC2.10 Visualizzazione #glossary("pannello") time series per livello dei bacini idrici]
 )
 
 #pagebreak()
-=== UC2.10: Visualizzazione #glossary("pannello") temperatura media
+=== UC2.11: Visualizzazione #glossary("pannello") temperatura media
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente la media della temperatura, espressa in gradi celsius, considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
@@ -310,11 +297,11 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
 
 #figure(
-  image("assets/UML/UC2.10_Visualizzazione-pannello-temperatura-media.png",width:100%),
-  caption: [UC2.10 Visualizzazione #glossary("pannello") temperatura media]
+  image("assets/UML/UC2.11_Visualizzazione-pannello-temperatura-media.png",width:100%),
+  caption: [UC2.11 Visualizzazione #glossary("pannello") temperatura media]
 )
 
-=== UC2.11: Visualizzazione #glossary("pannello") inquinamento dell'aria massimo
+=== UC2.12: Visualizzazione #glossary("pannello") inquinamento dell'aria massimo
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente il massimo coefficiente di inquinamento dell'aria registrato tra tutti i sensori, espresso in $#sym.mu g\/m^3$, degli ultimi 5 minuti, presentato in formato numerico.
@@ -323,8 +310,8 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
 
 #figure(
-  image("assets/UML/UC2.11_Visualizzazione-pannello-inquinamento-dell-aria-massimo.png",width:100%),
-  caption: [UC2.11 Visualizzazione #glossary("pannello") inquinamento dell'aria massimo]
+  image("assets/UML/UC2.12_Visualizzazione-pannello-inquinamento-dell-aria-massimo.png",width:100%),
+  caption: [UC2.12 Visualizzazione #glossary("pannello") inquinamento dell'aria massimo]
 )
 
 #pagebreak()
@@ -923,10 +910,10 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media mobile della percentuale d'umidità, per ciascun sensore, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi la direzione del vento, mediante frecce aventi origine nelle coordinate del sensore, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)#C.step(level:3)UC#C.display()]
+    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi la direzione del vento, mediante frecce aventi origine nelle coordinate del sensore, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'ultima velocità del vento, espressa in chilometri all'ora, per ciascun sensore, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:3)UC#C.display()]
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'ultima velocità del vento, espressa in chilometri all'ora, per ciascun sensore, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media mobile dell'intensità delle precipitazioni, espresse in millimetri all'ora, per ciascun sensore, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
