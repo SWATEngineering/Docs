@@ -53,7 +53,7 @@ Il prodotto si compone di due parti principali:
 La piattaforma prevede fondamentalmente una tipologia di utente: l'amministratore pubblico. Questo utente avrà accesso alla dashboard e prenderà visione di diverse metriche e indicatori sullo stato della città, mediante diversi strumenti di visualizzazione.
 
 == Utenti e caratteristiche
-Il prodotto, destinato ad amministratori pubblici, consente loro di ottenere una panoramica sulle condizioni della città. Ciò fornisce loro una base solida per prendere decisioni ponderate riguardo la gestione delle risorse e sull'implementazione dei servizi, risultando cruciale per il miglioramento dell'efficienza complessiva della gestione urbana. Si presuppone che l'amministratore pubblico abbia conoscenze di analisi e di interpretazione dei dati, tali da poter trarre un concreto beneficio dal controllo della dashboard.
+Il prodotto, destinato ad amministratori pubblici, consente loro di ottenere una panoramica sulle condizioni della città. Ciò fornisce loro una base solida per prendere decisioni ponderate riguardo la gestione delle risorse e sull'implementazione dei servizi, risultando cruciale per il miglioramento dell'efficienza complessiva della gestione urbana. Si presuppone che l'amministratore pubblico abbia conoscenze di analisi e di interpretazione dei dati, tali da poter trarre un concreto beneficio dal controllo della #glossary("dashboard").
 
 = Casi d'uso
 == Scopo
@@ -64,7 +64,7 @@ Il sistema si interfaccerà con due attori diversi:
 - *Amministratore pubblico*: è un utente che ha accesso alla dashboard in tutte le sue funzionalità e può visualizzare i dati raccolti dai sensori, mediante quest'ultima;
 - *#glossary("Sensore")*: è un dispositivo in grado di effettuare misurazioni relative al proprio dominio di interesse. Questi dati possono essere letti ed utilizzati dal sistema.
 
-Relativamente all'utilizzo della dashboard, viene definito un unico attore con accesso completo alle funzionalità, in quanto per sua natura l' amministratore pubblico possiede le competenze tecniche necessarie per poter interagire con essa in tutte le sue parti.
+Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico attore con accesso completo alle funzionalità, in quanto per sua natura l' amministratore pubblico possiede le competenze tecniche necessarie per poter interagire con essa in tutte le sue parti.
 
 #figure(
   image("assets/attori.png", width: 40%),
@@ -96,7 +96,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'amministratore pubblico visualizza #glossary("pannelli") relativi allo stato dei sensori, all'interno di un'unica dashboard. 
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione; 
-  + l'amministratore pubblico seleziona la visualizzazione della dashboard generale relativa ai sensori;
+  + l'amministratore pubblico seleziona la visualizzazione della #glossary("dashboard") generale relativa ai sensori;
 
 #figure(
   image("assets/UML/UC1_Visualizzazione-dashboard-generale-sensori.png",width:70%),
@@ -111,7 +111,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'amministratore pubblico visualizza un pannello contenente una mappa che mostra le posizioni dei sensori, come icone, su di essa. 
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione; 
-  + l'amministratore pubblico seleziona la visualizzazione della dashboard generale relativa ai sensori;
+  + l'amministratore pubblico seleziona la visualizzazione della #glossary("dashboard") generale relativa ai sensori;
 - *Estensioni*: [UC9].
 
 #figure(
@@ -125,7 +125,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
 - *Postcondizioni*: l'amministratore pubblico visualizza il #glossary("pannello") relativo ai dati inerenti ai sensori, riportando la percentuale di batteria, un valore booleano che esprime se il sensore va a batteria autonoma o meno e la data di ultima manutenzione del sensore, in forma tabellare, indicizzato dai nomi dei sensori.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione; 
-  + l'amministratore pubblico seleziona la visualizzazione della dashboard generale relativa ai sensori;
+  + l'amministratore pubblico seleziona la visualizzazione della #glossary("dashboard") generale relativa ai sensori;
 - *Estensioni*: [UC9].
 
 #figure(
@@ -889,7 +889,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
   ),
   /*TODO: andare a creare vincolo per la verifica del menù di selezione tra le dashboard*/
   (
-     "Obbligatorio", "L'utente deve poter visualizzare un menù di selezione delle dashboard, che permetta di selezionare tra Sensori, Ambientale, Urbanistica e Dati anomali & superamento soglie.", [UC#C.display()]
+     "Obbligatorio", [L'utente deve poter visualizzare un menù di selezione delle #glossary("dashboard"), che permetta di selezionare tra Sensori, Ambientale, Urbanistica e Dati anomali & superamento soglie.], [UC#C.display()]
   ),
   (
      "Obbligatorio", "L'utente deve poter visualizzare una dashboard generale relativa ai sensori.", [UC#C.step()#C.display()]
@@ -1001,7 +1001,7 @@ Relativamente all'utilizzo della dashboard, viene definito un unico attore con a
     "Desiderabile", [Nei #glossary("pannelli") con tabelle, l'utente deve poter ordinare i dati in base alle loro colonne, sia in ordine crescente che descrescente.], [#C.step()UC#C.display()]
   ),
   (
-    "Desiderabile", [L'utente deve poter modificare il layout della dashboard visualizzata, agendo su posizione e dimensione dei #glossary("pannelli").], [#C.step()UC#C.display()]
+    "Desiderabile", [L'utente deve poter modificare il layout della #glossary("dashboard") visualizzata, agendo su posizione e dimensione dei #glossary("pannelli").], [#C.step()UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter visualizzare un messaggio di errore, qualora il sistema di visualizzazione non sia in grado di reperire o non abbia dati da mostrare all'utente per un determinato #glossary("pannello").], [#C.step()UC#C.display()]
