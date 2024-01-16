@@ -207,6 +207,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             UC6\
             UC7\
             UC8
+            /*todo capire qua cosa si intend*/
       ]),
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
@@ -227,19 +228,17 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             1. aprire il menu di selezione delle #glossary("dashboard");
             2. selezionare la #glossary("dashboard") per visualizzare i dati ambientali;
             3. visualizzare la relativa #glossary("dashboard");
-            4. visualizzare un #glossary("pannello") con la #glossary("serie storica") delle temperature rilevate dai ciascun sensore, espresse in gradi celsius; /*MEDIA MOBILE*/
-            5. visualizzare un #glossary("pannello") con la #glossary("serie storica") delle percentuali di umidità rilevate da ciascun sensore;
-            /*MEDIA MOBILE*/
+            4. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni delle temperatura, espresse in gradi celsius, effettuate dai singoli sensore e aggregati tramite media aritmetica per intervalli di 5 minuti;
+            5. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni dell'umidità, espresse in percentuale, effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
             6. visualizzare un #glossary("pannello") con una mappa mostrante la direzione del vento rilevato da ciascun sensore tramite delle frecce con origine la posizione del sensore; 
-            7. visualizzare un #glossary("pannello") con una tabella che mostri l'ultima rilevazione della velocità del vento effettuata da ciascun sensore; 
-            8. visualizzare un #glossary("pannello") con la #glossary("serie storica") dei millimetri di pioggia rilevati da ciascun sensore;
-            /*MEDIA MOBILE*/
-            9. visualizzare un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse millimetri di pioggia all'ora, indicante la media dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori, degli ultimi 5 minuti; 
-            10. visualizzare un #glossary("pannello") contenente un grafico relativo al livello di polveri sottili nell'aria, espresso in $#sym.mu g\/m^3$ (#glossary("PM10")), in formato #glossary("time series"), che ne mostra l'andamento in media mobile, distinto per sensore, aggregando i dati per intervalli di 5 minuti; /*MEDIA MOBILE*/
+            7. visualizzare un #glossary("pannello") con una tabella che mostri l'ultima rilevazione della velocità del vento, espressa in chilometri orari, effettuata da ciascun sensore; 
+            8. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni delle quantità di pioggia caduta, espresse in millimetri orari, effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
+            9. visualizzare un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse in millimetri orari, indicante la media  dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori, degli ultimi 5 minuti; 
+            10. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni delle quantità di pioggia, espresse in millimetri orari, effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
             11. visualizzare un #glossary("pannello") contenente la media della concentrazione di inquinanti dell'aria, espressa in $#sym.mu g\/m^3$,(#glossary("PM10")), che consideri le rilevazioni di tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
-            12. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri le percentuali di riempimento dei bacini idrici rilevate dai singoli sensore e aggregate per intervalli di 5 minuti;/*MEDIA MOBILE*/
+            12. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni della percentuale di riempimento dei bacini idrici, effettuate dai singoli sensore e aggregate tramite media aritmetica per intervalli di 5 minuti;
             13. visualizzare un #glossary("pannello") contenente la media della temperatura, espressa in gradi celsius, considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
-            14. visualizzare un #glossary("pannello") contenente il massimo coefficiente di inquinamento dell'aria registrato tra tutti i sensori, espresso in $#sym.mu g\/m^3$, degli ultimi 5 minuti, presentato in formato numerico.
+            14. visualizzare un #glossary("pannello") contenente il massimo coefficiente di inquinamento dell'aria registrato tra tutti i sensori negli ultimi 5 minuti, espresso in $#sym.mu g\/m^3$, presentato in formato numerico.
             15. visualizzare un messaggio di avvertenza di dati mancanti, nei vari #glossary("pannelli"), nel caso di assenza di dati da mostrare.
       ],"N/I",[
             UC0\
@@ -248,8 +247,6 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             UC2.2\
             UC2.3\
             UC2.4\
-            UC2.4.1\
-            UC2.4.2\
             UC2.5\
             UC2.6\
             UC2.7\
@@ -257,6 +254,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             UC2.9\
             UC2.10\
             UC2.11\
+            UC2.12\
             UC9
       ]),
       ([
@@ -265,10 +263,10 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             2. selezionare la #glossary("dashboard") per visualizzare i dati urbanistici;
             3. visualizzare la relativa #glossary("dashboard");
             4. visualizzare un #glossary("pannello") con una mappa indicante la quantità di posti liberi per ogni parcheggio controllato da un sensore, tali quantità sono segnalate tramite indicatori numerici presso le coordinate di ciascun sensore;
-            5. visualizzare un #glossary("pannello") contenente una mappa che indichi, presso le coordinate di ciascun sensore, mediante indicatori booleani, la disponibilità della colonna corrispondente; 
+            5. visualizzare un #glossary("pannello") contenente una mappa che indichi, mediante indicatori booleani collocati presso le coordinate di ciascun sensore, la disponibilità della colonna corrispondente; 
             6. visualizzare un #glossary("pannello") che esprima, tramite una tabella indicizzata tramite il nome del sensore, l'erogazione energetica, espressa in watt per ora: 
-            7. visualizzare un #glossary("pannello") contenente una mappa che indichi, tramite gli stati "LOW", "MEDIUM", "HIGH" e "BLOCKED", lo stato di congestione delle strade;  /*TODO, ho fatto un commento*/
-            8. visualizzare un #glossary("pannello") contenente una mappa indicante la posizione in tempo reale delle biciclette elettriche, mediante degli indicatori numerici indicanti la percentuale della batteria posizionata nelle coordinate del mezzo, atto a mostrare la sua posizione; 
+            7. visualizzare un #glossary("pannello") contenente una mappa che indichi, tramite gli stati "LOW", "MEDIUM", "HIGH" e "BLOCKED", lo stato di congestione delle strade; 
+            8. visualizzare un #glossary("pannello") contenente una mappa che indichi, mediante degli indicatori numerici, la posizione in tempo reale delle biciclette elettriche, tali indicatori devono inoltre indicare la percentuale di batteria del mezzo; 
             9. visualizzare un #glossary("pannello") contenente una mappa indicante lo stato di riempimento delle zone ecologiche, espresse in valori percentuali, posizionate nelle coordinate delle zone; 
             10. visualizzare un messaggio di avvertenza di dati mancanti, nei vari #glossary("pannelli"), nel caso di assenza di dati da mostrare.
       ],"N/I",[
@@ -335,7 +333,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
             1. Scegliere una tabella da ordinare;
-            2. Ordinare le righe di tale tabella per ciascuna sua colonna, in modo ascendente o discendente, secondo #glossary("ordinamento lessicografico") (nel caso di valori espressi in stringhe) o per confronto di valore numerico.
+            2. Ordinare le righe di tale tabella secondo uno dei sui campi. 
       ],"N/I",[
             UC7
       ]),
@@ -478,10 +476,10 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa  monitorare i dati provenienti dai sensori relativi ai dati ambientali in una #glossary("dashboard") apposita.
       ],"N/I","ROF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media mobile della temperatura, espressa in gradi celsius, per ciascun sensore, che aggreghi i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali. /*MEDIA MOBILE*/
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media aritmetica della temperatura, espressa in gradi celsius, per ciascun sensore, che aggreghi i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali. 
       ],"N/I","ROF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media mobile dell'umidità, espressa in percentuale, per ciascun sensore, che aggreghi i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali. /*MEDIA MOBILE*/
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media aritmetica dell'umidità, espressa in percentuale, per ciascun sensore, che aggreghi i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali. 
       ],"N/I","ROF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una mappa che evidenzi la direzione del vento, mediante frecce aventi origine nelle coordinate del sensore, nella #glossary("dashboard") relativa ai dati ambientali.
@@ -494,7 +492,7 @@ table(
 
 
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media mobile dell'intensità delle precipitazioni, espresse in millimetri all'ora, per ciascun sensore, che aggreghi i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali. /*MEDIA MOBILE PIOGGIA*/
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media aritmetica dell'intensità delle precipitazioni, espresse in millimetri all'ora, per ciascun sensore, che aggreghi i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali. 
       ],"N/I","ROF"),
 
       ([
@@ -502,7 +500,7 @@ table(
       ],"N/I","RDF"),
 
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un indice numerico, che esprime l'inquinamento dell'aria massimo, espresso in $#sym.mu g\/m^3$ (#glossary("PM10")), degli ultimi 5 minuti, tra i dati registrati da tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media aritmetica del livello di polveri sottili nell'aria, espressi in $#sym.mu g\/m^3$ (#glossary("PM10")), per ciascun sensore, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.
       ],"N/I","ROF"),
 
       ([
@@ -548,48 +546,42 @@ table(
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare una #glossary("dashboard") dedicata a monitorare i #glossary("dati anomali") e i dati superanti delle soglie.
       ],"N/I","RDF"),
-
-
-
-
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una tabella che mostri i #glossary("dati anomali"), il sensore che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.
-      ],"N/I","ROF"),
-
-
-
-
-
-
-
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una tabella che mostri i #glossary("dati anomali"), il sensore che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e il superamento delle soglie.
+      ],"N/I","RPF"),
+      /*e fin qui sono sicuro che ci sono arrivato dai*/
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa filtrare i dati, visualizzando i dati solo di un sottoinsieme di sensori selezionato per nome, nel caso di grafici di tipo #glossary("serie storica").
-      ],"N/I","ROF"),
-      ([
-            Verificare che l'#glossary("amministratore pubblico") possa filtrare i dati, visualizzando i dati solo di un sottoinsieme di sensori selezionato per tipologia, nel caso di pannelli contenenti tabelle, che raggruppano più tipi di sensori.
-      ],"N/I","ROF"),
-      ([
-            Verificare che l'#glossary("amministratore pubblico") possa filtrare i dati, visualizzando i dati solo di un sottoinsieme di sensori selezionato per nome, nel caso di pannelli contenenti tabelle.
-      ],"N/I","ROF"),
-      ([
-            Verificare che l'#glossary("amministratore pubblico") possa filtrare i dati di un'intera #glossary("dashboard"), visualizzando i dati appartenenti ad un determinato intervallo di tempo selezionato.
-      ],"N/I","ROF"),
-      ([
-            Verificare che l'#glossary("amministratore pubblico") possa, nel caso di un pannello contenente una tabella, ordinare le righe di tale tabella in base ai valori di una colonna di interesse.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una tabella che mostri i dati relativi a temperatura, precipitazioni, inquinamento dell'aria, bacini idrici e zone ecologiche, i cui valori superano una soglia fissata, il sensore che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.
       ],"N/I","RDF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa modificare il layout dei pannelli presenti in una dashboard aperta, modificando posizione e dimensione dei pannelli contenuti in essa.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo auna rilevazione di tipo temperatura, superante una soglia di 40° celsius.
       ],"N/I","RDF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") riceva un messaggio che notifichi l'assenza di dati da visualizzare, qualora non vi siano dati a disposizione.
-      ],"N/I","ROF"),
-      /*TODO: capire se i test di sistema vanno anche per i requisiti relativi ai soli sensori (dovrebbero essere relativi in generale ai requisiti funzionali, ma non so)*/
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo una rilevazione di tipo precipitazioni, superante una soglia di 50 millimetri all'ora.
+      ],"N/I","RDF"),
       ([
-            Verificare che un sensore possa inserire nel sistema dati relativi alla temperatura, rilevati dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo una rilevazione di tipo inquinamento dell'aria (#glossary("PM10")), superante una soglia di 80 microgrammi su metro cubo.
+      ],"N/I","RDF"),
+      ([
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo una rilevazione di tipo percentuale riempimento bacini idrici, superante una soglia corrispondente al 70% della capienza di tale bacino.
+      ],"N/I","RDF"),
+      ([
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo una rilevazione di tipo percentuale riempimento zone ecologiche, superante una soglia corrispondente all'80% della capienza di tale zona.
+      ],"N/I","RDF"),
+      ([
+            Verificare che l'#glossary("amministratore pubblico") possa filtrare i dati, visualizzati all'interno di un grafico di tipo #glossary("time series"), in base ad un sottoinsieme di sensori da lui selezionato.
       ],"N/I","ROF"),
       ([
-            Verificare che un sensore possa inserire nel sistema dati relativi alla percentuale di umidità, rilevati dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
+            Verificare che che l'#glossary("amministratore pubblico") possa filtrare i dati, visualizzati all'interno di una tabella, in base alla tipologia di sensore. 
       ],"N/I","ROF"),
+      ([
+            Verificare  che l'#glossary("amministratore pubblico") possa filtrare i dati, visualizzati all'interno di una tabella, in base ad un sotto-insieme di sensori, selezionando i nomi dei sensori di interesse.
+      ],"N/I","ROF"),
+      /*siamo al terzo dell'ordinamento domani finisco dai, adesso vado a dormire*/
+      /*ne mancano 14*/
+      
+
+
       ([
             Verificare che un sensore possa inserire nel sistema dati relativi alla velocità e direzione del vento, rilevati dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
       ],"N/I","ROF"),
