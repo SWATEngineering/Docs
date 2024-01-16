@@ -824,7 +824,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione della posizione e della percentuale della batteria della bicicletta elettrica su cui è installato;
-  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare il timestamp di rilevazione e le coordinate della bicicletta;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare il timestamp di rilevazione, la percentuale di batteria e le coordinate della bicicletta;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
