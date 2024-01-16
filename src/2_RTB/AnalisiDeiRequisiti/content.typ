@@ -43,12 +43,12 @@ Cardin	Analisi e descrizione delle funzionalità: Use Case e relativi diagammi (
 = Descrizione
 
 == Obiettivi del prodotto
-L'obiettivo consiste nella creazione di una piattaforma di monitoraggio e gestione di una #glossary("Smart City"). L'utente, individuato nell'amministratore pubblico, potrà farne impiego per migliorare la qualità generale della vita e l'efficienza dei servizi nel contesto di un'area urbana. L'utente sarà in grado di monitorare, attraverso la consultazione di una dashboard, lo stato della città, esaminando aspetti ambientali, logistici e di sicurezza. Questo cruscotto includerà rappresentazioni grafiche basate su dati provenienti da dei sensori installati all'interno dell'area geografica della città.
+L'obiettivo consiste nella creazione di una piattaforma di monitoraggio e gestione di una #glossary("Smart City"). L'utente, individuato nell'amministratore pubblico, potrà farne impiego per migliorare la qualità generale della vita e l'efficienza dei servizi nel contesto di un'area urbana. L'utente sarà in grado di monitorare, attraverso la consultazione di una #glossary("dashboard"), lo stato della città, esaminando aspetti ambientali, logistici e di sicurezza. Questo cruscotto includerà rappresentazioni grafiche basate su dati provenienti da dei sensori installati all'interno dell'area geografica della città.
 
 == Funzionalità del prodotto
 Il prodotto si compone di due parti principali:
 - *Una #glossary("data pipeline")* in grado di raccogliere, persistere e processare dati provenienti da più sorgenti (ovvero i #glossary("sensori")) in #glossary("real-time");
-- *Una dashboard* che permette di visualizzare i dati raccolti.
+- *una #glossary("dashboard")* che permette di visualizzare i dati raccolti.
 
 La piattaforma prevede fondamentalmente una tipologia di utente: l'amministratore pubblico. Questo utente avrà accesso alla dashboard e prenderà visione di diverse metriche e indicatori sullo stato della città, mediante diversi strumenti di visualizzazione.
 
@@ -89,7 +89,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC1 Visualizzazione dashboard generale sensori]
 )
 
-/*TODO: ricontrollare la fine di ogni use case che comprende l'uso di un pannello*/
+/*TODO: ricontrollare la fine di ogni use case che comprende l'uso di un #glossary("pannello")*/
 === UC1: Visualizzazione dashboard generale sensori
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
@@ -108,7 +108,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC1.1: Visualizzazione posizione sensori su mappa
 - *Attore Principale*: amministratore pubblico. 
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'amministratore pubblico visualizza un pannello contenente una mappa che mostra le posizioni dei sensori, come icone, su di essa. 
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa che mostra le posizioni dei sensori, come icone, su di essa. 
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione; 
   + l'amministratore pubblico seleziona la visualizzazione della #glossary("dashboard") generale relativa ai sensori;
@@ -627,7 +627,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC6.4: Filtro per intervallo temporale
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico sta visualizzando uno o più #glossary("pannelli").
-- *Postcondizioni*: l'amministratore pubblico visualizza solamente i dati relativi all'intervallo temporale selezionato, in tutti i pannelli della #glossary("dashboard") dove è stato applicato il filtro.
+- *Postcondizioni*: l'amministratore pubblico visualizza solamente i dati relativi all'intervallo temporale selezionato, in tutti i #glossary("pannelli") della #glossary("dashboard") dove è stato applicato il filtro.
 - *Scenario Principale*:
   + l'amministratore pubblico seleziona la funzionalità relativa al filtro dei dati per intervallo temporale;
   + l'amministratore pubblico seleziona l'intervallo temporale desiderato.
@@ -644,7 +644,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Precondizioni*: 
   + l'amministratore pubblico ha filtrato i dati in un #glossary("pannello");
   + altri #glossary("pannelli") sono collegati a quello filtrato.
-- *Postcondizioni*: l'amministratore pubblico visualizza, in tutti i #glossary("pannelli") collegati, solamente i dati relativi al filtro applicato (o ai filtri applicati) al pannello sorgente, nel caso di pannelli che dipendono da altri pannelli per la visualizzazione di dati.
+- *Postcondizioni*: l'amministratore pubblico visualizza, in tutti i #glossary("pannelli") collegati, solamente i dati relativi al filtro applicato (o ai filtri applicati) al pannello sorgente, nel caso di #glossary("pannelli") che dipendono da altri #glossary("pannelli") per la visualizzazione di dati.
 - *Scenario Principale*:
   + il sistema aggiorna tutti i #glossary("pannelli") collegati.
 
@@ -892,7 +892,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
      "Obbligatorio", [L'utente deve poter visualizzare un menù di selezione delle #glossary("dashboard"), che permetta di selezionare tra Sensori, Ambientale, Urbanistica e Dati anomali & superamento soglie.], [UC#C.display()]
   ),
   (
-     "Obbligatorio", "L'utente deve poter visualizzare una dashboard generale relativa ai sensori.", [UC#C.step()#C.display()]
+     "Obbligatorio", [L'utente deve poter visualizzare una #glossary("dashboard") generale relativa ai sensori.], [UC#C.step()#C.display()]
   ),
   (
      "Obbligatorio", [L'utente deve poter visualizzare le posizioni dei sensori come icone su una mappa, appartenente alla #glossary("dashboard") generale relativa ai sensori.], [#C.step(level:2)UC#C.display()]
@@ -1091,7 +1091,7 @@ caption: "Requisiti di qualità")
   "Obbligatorio","I dati vanno passati ad un sistema di stream processing","Capitolato",
   ),
   (
-  "Obbligatorio","Una dashboard che riporti almeno i dati di un sensore","Capitolato",
+  "Obbligatorio",[Deve esistere una #glossary("dashboard") che riporti almeno i dati di un sensore],"Capitolato",
   ),
   (
   "Desiderabile","La simulazione di più sorgenti dati","Capitolato",
@@ -1106,7 +1106,7 @@ caption: "Requisiti di qualità")
   "Opzionale","La previsione di eventi futuri, basata su dati storici e attuali","Capitolato",
   ),
   (
-  "Desiderabile","Una dashboard avanzata contenente: una mappa della città, widget e informazioni sui sensori (ad esempio il tipo di sensore, il modello, ecc.).","Capitolato"
+  "Desiderabile",[Deve esistere una #glossary("dashboard") avanzata contenente: una mappa della città, widget e informazioni sui sensori (ad esempio il tipo di sensore, il modello, ecc.).],"Capitolato"
   )
 )
 
