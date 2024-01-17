@@ -150,6 +150,8 @@ Versione: #version
 /*    CONTENUTO    */ 
 /*******************/
 
+#set text(11pt)
+
 #pagebreak()
 
 #include "content.typ"
