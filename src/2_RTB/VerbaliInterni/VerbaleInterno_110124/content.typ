@@ -47,3 +47,12 @@ Il team ha deciso di implementare le ultime migliorie suggerite dalla Proponente
 == Data di candidatura alla revisione #glossary[RTB]
 
 Infine, dato che sia l'_Analisi dei Requisiti v1.0_ che il #glossary[PoC] sono stati quasi ultimati del tutto, il team ha collettivamente deciso di candidarsi alla prima revisione #glossary[RTB] al termine dello #glossary[sprint] corrente, ossia il giorno 19 Gennaio 2024. Successivamente alla candidatura, il team prevede di ultimare la presentazione per il colloquio con il Committente Cardin e di avviare e terminare la revisione in stile #glossary[walkthrough] di tutta la documentazione rilevante per il secondo colloquio con il Committente Vardanega.
+
+== Rotazione dei ruoli
+
+- Matteo Rango: Programmatore;
+- Simone Caregnato: Amministratore;
+- Riccardo Toniolo: Verificatore;
+- Riccardo Costantin: Verificatore;
+- Nancy Kalaj: Responsabile;
+- Giacomo D’Ovidio: Amministratore, Verificatore.
