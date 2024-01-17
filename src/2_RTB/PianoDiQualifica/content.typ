@@ -232,9 +232,9 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             5. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni dell'umidità, espresse in percentuale, effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
             6. visualizzare un #glossary("pannello") con una mappa mostrante la direzione del vento rilevato da ciascun sensore tramite delle frecce con origine la posizione del sensore; 
             7. visualizzare un #glossary("pannello") con una tabella che mostri l'ultima rilevazione della velocità del vento, espressa in chilometri orari, effettuata da ciascun sensore; 
-            8. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni delle quantità di pioggia caduta, espresse in millimetri orari, effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
+            8. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni delle quantità di precipitazioni, espresse in millimetri orari, effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
             9. visualizzare un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse in millimetri orari, indicante la media  dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori, degli ultimi 5 minuti; 
-            10. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni delle quantità di pioggia, espresse in millimetri orari, effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
+            10. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni delle quantità di precipitazione, espresse in millimetri orari, effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
             11. visualizzare un #glossary("pannello") contenente la media della concentrazione di inquinanti dell'aria, espressa in $#sym.mu g\/m^3$,(#glossary("PM10")), che consideri le rilevazioni di tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
             12. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni della percentuale di riempimento dei bacini idrici, effettuate dai singoli sensore e aggregate tramite media aritmetica per intervalli di 5 minuti;
             13. visualizzare un #glossary("pannello") contenente la media della temperatura, espressa in gradi celsius, considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
@@ -527,13 +527,13 @@ table(
       ],"N/I","ROF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizza un #glossary("pannello") contenente una mappa che evidenzi la posizione delle colonne di ricarica per auto, mediante indicatori booleani posti nelle coordinate dei sensori che indicheranno la disponibilità di queste, nella #glossary("dashboard") relativa ai dati urbanistici.
-      ],"N/I","RDF"),
+      ],"N/I","ROF"),
 
 
 
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizza un #glossary("pannello") contenente una tabella la quale riporta l'erogazione delle colonne di ricarica per auto, espressa in Watt all'ora, controllata da ciascun sensore, nella #glossary("dashboard") relativa ai dati urbanistici.
-      ],"N/I","ROF"),
+      ],"N/I","RDF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizza un #glossary("pannello") contenente una mappa che evidenzi lo stato di congestione delle strade, mediante gli stati "LOW", "MEDIUM", "HIGH", "BLOCKED", posti nelle coordinate dei sensori controllano queste, nella #glossary("dashboard") relativa ai dati urbanistici.
       ],"N/I","ROF"),
@@ -549,7 +549,6 @@ table(
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una tabella che mostri i #glossary("dati anomali"), il sensore che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e il superamento delle soglie.
       ],"N/I","RPF"),
-      /*e fin qui sono sicuro che ci sono arrivato dai*/
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una tabella che mostri i dati relativi a temperatura, precipitazioni, inquinamento dell'aria, bacini idrici e zone ecologiche, i cui valori superano una soglia fissata, il sensore che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.
       ],"N/I","RDF"),
@@ -577,40 +576,60 @@ table(
       ([
             Verificare  che l'#glossary("amministratore pubblico") possa filtrare i dati, visualizzati all'interno di una tabella, in base ad un sotto-insieme di sensori, selezionando i nomi dei sensori di interesse.
       ],"N/I","ROF"),
-      /*siamo al terzo dell'ordinamento domani finisco dai, adesso vado a dormire*/
-      /*ne mancano 14*/
-      
-
-
       ([
-            Verificare che un sensore possa inserire nel sistema dati relativi alla velocità e direzione del vento, rilevati dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
+            Verificare  che l'#glossary("amministratore pubblico") possa filtrare i dati in base ad un intervallo temporale. Di conseguenza la  #glossary("dashboard") interessata deve, nella sua totalità, mostrare solamente i dati aventi un timestamp in tale intervallo.
       ],"N/I","ROF"),
       ([
-            Verificare che un sensore possa inserire nel sistema il quantitativo orario di precipitazione, in millimetri orari (mm/h), con annesso coordinate e #glossary("timestamp") della misurazione. 
+            Verificare che i filtri, applicati dall'#glossary("amministratore pubblico") nei #glossary("pannelli") sorgente vengano applicati anche sui #glossary("pannelli") collegati. 
       ],"N/I","ROF"),
       ([
-            Verificare che un sensore possa inserire nel sistema dati relativi all'inquinamento dell'aria, rilevato dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione. /*TODO: disambiguare la metrica dell'inquinamento dell'aria*/
+            Verificare  che l'#glossary("amministratore pubblico"), nei #glossary("pannelli") tabellari, possa ordinare i dati sulla base dei valori delle proprie colonne, sia in ordine crescente che decrescente. 
+      ],"N/I","RDF"),
+      ([
+            Verificare  che l'#glossary("amministratore pubblico"), possa nel contesto della singola #glossary("dashboard"), possa modificare il layout, agendo su dimensione e posizione dei  #glossary("pannelli"). 
+      ],"N/I","RDF"),
+      ([
+            Verificare  che l'#glossary("amministratore pubblico"), riceva un messaggio di errore qualora, il sistema di visualizzazione non riesca a reperire i dati necessari per un determinato #glossary("pannello"). 
+      ],"N/I","ROF"),
+      /*da qui iniziano i casi d'uso relativi ai sensori*/
+      ([
+            Verificare che un sensore possa inserire nel sistema le rilevazioni della temperatura, espresse in gradi celsius, effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione.
       ],"N/I","ROF"),
       ([
-            Verificare che un sensore possa inserire nel sistema la percentuale di riempimento della bacino idrico a cui è associato con annesso coordinate e #glossary("timestamp") della misurazione.
+            Verificare che un sensore possa inserire nel sistema le rilevazioni all'umidità, espresse in percentuale, effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione. 
       ],"N/I","ROF"),
       ([
-            Verificare che un sensore possa inserire nel sistema dati relativi alla disponibilità del parcheggio, controllato dal sensore, intesa come numero di posti liberi in tale parcheggio, registrata, con annesso coordinate e #glossary("timestamp") della misurazione.
+            Verificare che un sensore possa inserire nel sistema le rilevazioni della velocità e della direzione del vento, espresse rispettivamente in chilometri all'ora e in gradi (con gli 0° a Nord e i 180° a Sud), effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione. 
       ],"N/I","ROF"),
       ([
-            Verificare che un sensore possa inserire nel sistema la rilevazione dei watt erogati dalla colonna, monitorata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
+            Verificare che un sensore possa inserire nel sistema le rilevazioni della quantità di precipitazioni, espresse in millimetri orari (mm/h), con annesso coordinate e #glossary("timestamp") della rilevazione. 
       ],"N/I","ROF"),
       ([
-            Verificare che un sensore possa inserire nel sistema dati relativi al livello di carica della bicicletta elettrica, controllata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
+            Verificare che un sensore possa inserire nel sistema le rilevazioni dell'inquinamento, espresse in espresso in microgrammi al metro cubo (#glossary("PM10")), effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione. 
       ],"N/I","ROF"),
       ([
-            Verificare che un sensore possa inserire nel sistema la percentuale di riempimento della zona ecologica a cui è associato, con annesso coordinate e #glossary("timestamp") della misurazione. 
+            Verificare che un sensore possa inserire nel sistema le rilevazioni del livello di riempimento del bacino idrico presso cui è installato, espresse in percentuale, effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione. 
       ],"N/I","ROF"),
       ([
-            Verificare che un sensore possa inserire nel sistema dati relativi congestione stradale, controllata dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
-      ],"N/I","ROF"),/*TODO: capire se tenere uniti i requisiti relativi al traffico e di conseguenza anche il test di sistema */
+            Verificare che un sensore possa inserire nel sistema le rilevazioni del quantitativo di posti liberi nel parcheggio controllato, effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione. 
+      ],"N/I","ROF"),
       ([
-            Verificare che ogni sensore invii oltre ai dati di misurazione, i dati relativi al livello della batteria e all'utilizzo del processore, con annesso coordinate e #glossary("timestamp") della misurazione.
+            Verificare che un sensore possa inserire nel sistema le rilevazioni dell'erogazione della colonna di ricarica controllata, espresse in in chilowatt all'ora, effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione. 
+      ],"N/I","ROF"),
+      ([
+            Verificare che un sensore possa inserire nel sistema le rilevazioni delle coordinate geografiche della bicicletta elettrica controllata, effettuate dal sensore, con annesso il #glossary("timestamp") della rilevazione. 
+      ],"N/I","ROF"),
+      ([
+            Verificare che un sensore possa inserire nel sistema la rilevazione della percentuale di batteria della bicicletta elettrica controllata, effettuate dal sensore, con annesso il #glossary("timestamp") della misurazione. 
+      ],"N/I","ROF"), /*non c'è ancora il corrispettivo in Adr*/
+      ([
+            Verificare che un sensore possa inserire nel sistema le rilevazioni del livello di riempimento della zona ecologica presso cui è installato, espresse in percentuale, effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione. 
+      ],"N/I","ROF"),
+      ([
+            Verificare che un sensore possa inserire nel sistema le rilevazioni del livello di congestione stradale, espresse in stati (in ordine di crescente congestione sono: "LOW", "MEDIUM", "HIGH", "BLOCKED"), effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
+      ],"N/I","ROF"),
+      ([
+            Verificare che ogni sensore invii oltre ai dati della misurazione effettuata, la propria percentuale di batteria, la data di ultima manutenzione effettuata su di esso, e la propria frequenza di inserimento dati espressa in secondi.
       ],"N/I","ROF")
 
       /*TODO: disambiguare sulla base ai  cambiamenti al requisito in Adr */
@@ -685,7 +704,7 @@ Nonostante il nuovo valore assunto dal BAC a seguito della rimodulazione porta i
 )
 
 Il BV indica se alla data corrente si è speso di più o di meno rispetto a quanto inizialmente previsto nel budget; il SV indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate. 
-Nonostante gli andamenti delle due metriche fosse nel primo periodo in rapido allontanamento dal valore d'accettazione, a partire dal secondo sprint sembrano stabilizzarsi, segno che le azioni correttive adottate stavano iniziando a sortire effetto.
+Nonostante gli andamenti delle due metriche fosse nel primo periodo in rapido allontanamento dal valore d'accettazione, a partire dal secondo sprint sembrano stabilizzarsi, segno che le azioni correttive adottate stavano iniziando a mostrare gli effetti desiderati.
 Il cambiamento più significativo si è verificato durante il sesto sprint, quando abbiamo osservato un'inversione di tendenza: entrambe le metriche iniziano a riavvicinarsi al valore desiderato.
 Il team si augura che il way of working consolidato nel corso del progetto permetta di recuperare quanto perso nel corso dei primi sprint. 
 Durante il settimo sprint le due metriche hanno mantenuto l'andamento che ci si augurava. 
@@ -753,8 +772,8 @@ Per ovviare al problema il team ha deciso di introdurre un checklist incentrata 
 
 == Liste di controllo
 
-Le liste di controllo sono uno strumento che i Verificatori possono utilizzare al fine di individuare errori ricorrenti nella documentazione o nel codice. Tali liste prevedono anche una descrizione del problema al fine di poter fornire una spiegazione della richiesta di cambiamenti durante la fase di revisione.
-Le liste di controllo possono essere aggiornate durante tutto il corso del progetto dai Verificatori, man mano che vengono notati errori ricorrenti.
+Le liste di controllo sono uno strumento che il Verificatore possono utilizzare al fine di individuare errori ricorrenti nella documentazione o nel codice. Tali liste prevedono anche una descrizione del problema al fine di poter fornire una spiegazione della richiesta di cambiamenti durante la fase di revisione.
+Le liste di controllo possono essere aggiornate durante tutto il corso del progetto dal Verificatore, man mano che vengono notati errori ricorrenti.
 
 #pagebreak()
 === Struttura dei documenti
