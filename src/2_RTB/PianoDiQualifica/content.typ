@@ -33,7 +33,7 @@ Un'attività che comprende l'inserimento di un termine di glossario può conside
 
 == Riferimenti
 === Normativi
-- _NormeDiProgetto v1.0_;
+- _Norme di Progetto v1.0_;
 - Documento e presentazione di capitolato d'appalto C6 - InnovaCity:
   - _ https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf _
   - _ https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6p.pdf _
@@ -60,7 +60,7 @@ La qualità di processo si fonda sul assunto che, al fine di ottenere un prodott
 Il concetto di qualità di processo viene dunque applicato all'intero spettro di attività, pratiche e metodi utilizzati lungo l'intero ciclo di vita del software.
 In sintesi, la qualità di processo mira a rendere la qualità una parte integrante del prodotto, garantendo che sia costruita nel processo stesso e non sia solo un obiettivo secondario.
 Di seguito vengono presentate le metriche che il team si impegna a soddisfare nel contesto della qualità di processo.
-Come presentato nel documento _NormeDiProgetto v1.0_ la sigla MPC sta ad indicare le metriche di processo.
+Come presentato nel documento _Norme di Progetto v1.0_ la sigla MPC sta ad indicare le metriche di processo.
 
 
 //Si riferisce all'efficacia ed efficienza dei processi e delle metodologie impiegate nello sviluppo, testing e mantenimento del software. Essa abbraccia l'insieme di attività, pratiche e metodi utilizzati lungo l'intero ciclo di vita dello sviluppo del software al fine di garantire che il prodotto finale soddisfi i requisiti specificati e venga consegnato puntualmente ed entro il budget previsto. In questo contesto, la qualità di processo è fondamentale per assicurare un'implementazione coerente, misurabile e ottimizzata delle fasi di sviluppo, contribuendo a conseguire gli obiettivi di qualità complessivi.
@@ -136,7 +136,7 @@ caption: [Tabella metriche per il processo di documentazione]
 La qualità di prodotto è volta alla valutazione del software realizzato: l'attenzione è rivolta ad attributi quali usabilità, funzionalità, affidabilità, ma più in generale alle prestazione del prodotto. 
 L'obiettivo  è, dunque, assicurare che il software non solo implementi le funzionalità volute dal cliente e funzioni correttamente, ma che lo faccia seguendo le indicazioni di precisi standard di qualità.
 Di seguito vengono presentate le metriche che il team si impegna a soddisfare nel contesto della qualità di prodotto.
-Come presentato nel documento _NormeDiProgetto v1.0_ la sigla MPR sta ad indicare le metriche di prodotto.
+Come presentato nel documento _Norme di Progetto v1.0_ la sigla MPR sta ad indicare le metriche di prodotto.
 
 == Funzionalità
 
@@ -184,7 +184,7 @@ caption: [Tabella metriche per l'affidabilità del prodotto])
 = Strategie di testing
 
 In questa sezione viene esposto il piano di testing che verrà utilizzato per garantire la correttezza finale del prodotto.
-Come enunciato nel documento _Norme di Progetto_, il piano segue il #glossary("modello a V"), il quale associa ad ogni fase di sviluppo, una corrispondente tipologia di testing. Tali tipologie sono le seguenti:
+Come enunciato nel documento _Norme di Progetto v1.0_, il piano segue il #glossary("modello a V"), il quale associa ad ogni fase di sviluppo, una corrispondente tipologia di testing. Tali tipologie sono le seguenti:
 - *Test di unità*: si verifica il corretto funzionamento delle unità componenti il sistema. Un'unità rappresenta un elemento indivisibile e indipendente del sistema;
 - *Test di integrazione*: si verifica il corretto funzionamento di più unità che cooperano per svolgere uno specifico compito (tali unità devono certamente aver superato i loro test di unità precedentemente);
 - *Test di sistema*: si verifica il corretto funzionamento del sistema nella sua interezza. I requisiti funzionali obbligatori, di vincolo, di qualità e di prestazione, precedentemente concordati con il committente mediante stipulazione del contratto, devono essere soddisfatti per intero;
@@ -230,11 +230,11 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             3. visualizzare la relativa #glossary("dashboard");
             4. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni delle temperatura, espresse in gradi celsius, effettuate dai singoli sensore e aggregati tramite media aritmetica per intervalli di 5 minuti;
             5. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni dell'umidità, espresse in percentuale, effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
-            6. visualizzare un #glossary("pannello") con una mappa mostrante la direzione del vento rilevato da ciascun sensore tramite delle frecce con origine la posizione del sensore; 
+            6. visualizzare un #glossary("pannello") con una mappa mostrante la direzione del vento, rilevata da ciascun sensore, tramite delle frecce con origine la posizione del sensore; 
             7. visualizzare un #glossary("pannello") con una tabella che mostri l'ultima rilevazione della velocità del vento, espressa in chilometri orari, effettuata da ciascun sensore; 
             8. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni delle quantità di precipitazioni, espresse in millimetri orari, effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
             9. visualizzare un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse in millimetri orari, indicante la media  dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori, degli ultimi 5 minuti; 
-            10. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni delle quantità di precipitazione, espresse in millimetri orari, effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
+            10. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati della concentrazione di inquinanti dell'aria, espressa in $#sym.mu g\/m^3$,(#glossary("PM10")),effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
             11. visualizzare un #glossary("pannello") contenente la media della concentrazione di inquinanti dell'aria, espressa in $#sym.mu g\/m^3$,(#glossary("PM10")), che consideri le rilevazioni di tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
             12. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni della percentuale di riempimento dei bacini idrici, effettuate dai singoli sensore e aggregate tramite media aritmetica per intervalli di 5 minuti;
             13. visualizzare un #glossary("pannello") contenente la media della temperatura, espressa in gradi celsius, considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
@@ -262,7 +262,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             1. aprire il menu di selezione delle #glossary("dashboard");
             2. selezionare la #glossary("dashboard") per visualizzare i dati urbanistici;
             3. visualizzare la relativa #glossary("dashboard");
-            4. visualizzare un #glossary("pannello") con una mappa indicante la quantità di posti liberi per ogni parcheggio controllato da un sensore, tali quantità sono segnalate tramite indicatori numerici presso le coordinate di ciascun sensore;
+            4. visualizzare un #glossary("pannello") con una mappa che indichi, mediante indicatori numerici, collocati presso le coordinate di ciascun sensore, la quantità di posti liberi nel parcheggio corrispondente;
             5. visualizzare un #glossary("pannello") contenente una mappa che indichi, mediante indicatori booleani collocati presso le coordinate di ciascun sensore, la disponibilità della colonna corrispondente; 
             6. visualizzare un #glossary("pannello") che esprima, tramite una tabella indicizzata tramite il nome del sensore, l'erogazione energetica, espressa in watt per ora: 
             7. visualizzare un #glossary("pannello") contenente una mappa che indichi, tramite gli stati "LOW", "MEDIUM", "HIGH" e "BLOCKED", lo stato di congestione delle strade; 
@@ -360,7 +360,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ]),
       ([
           Verificare che un sensore, una volta connesso al sistema, possa:
-            1. Inserire il risultato della rilevazione della direzione e della velocità del vento, espresse in gradi (con gli 0° a Nord e i 180° a Sud) e in chilometri orari, con annesso il timestamp di rilevazione, le proprie coordinate geografiche, la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso e la propria frequenza di inserimento dati, espressa in secondi.
+            1. Inserire il risultato della rilevazione della direzione e della velocità del vento, espresse rispettivamente in gradi (con gli 0° a Nord e i 180° a Sud) e in chilometri orari, con annesso il timestamp di rilevazione, le proprie coordinate geografiche, la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso e la propria frequenza di inserimento dati, espressa in secondi.
       ],"N/I",[
             U12\
             U21
@@ -526,7 +526,7 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una mappa che evidenzi il numero di posti liberi nei vari parcheggi, mediante indicatori numerici posti nelle coordinate del sensore, nella #glossary("dashboard") relativa ai dati urbanistici.
       ],"N/I","ROF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizza un #glossary("pannello") contenente una mappa che evidenzi la posizione delle colonne di ricarica per auto, mediante indicatori booleani posti nelle coordinate dei sensori che indicheranno la disponibilità di queste, nella #glossary("dashboard") relativa ai dati urbanistici.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una mappa che evidenzi la posizione delle colonne di ricarica per auto, mediante indicatori booleani posti nelle coordinate dei sensori che indicheranno la disponibilità di queste, nella #glossary("dashboard") relativa ai dati urbanistici.
       ],"N/I","ROF"),
 
 
@@ -553,19 +553,19 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una tabella che mostri i dati relativi a temperatura, precipitazioni, inquinamento dell'aria, bacini idrici e zone ecologiche, i cui valori superano una soglia fissata, il sensore che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.
       ],"N/I","RDF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo auna rilevazione di tipo temperatura, superante una soglia di 40° celsius.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo a rilevazioni di tipo temperatura, superanti una soglia di 40° celsius.
       ],"N/I","RDF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo una rilevazione di tipo precipitazioni, superante una soglia di 50 millimetri all'ora.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo rilevazioni di tipo precipitazioni, superanti una soglia di 50 millimetri all'ora.
       ],"N/I","RDF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo una rilevazione di tipo inquinamento dell'aria (#glossary("PM10")), superante una soglia di 80 microgrammi su metro cubo.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo rilevazioni di tipo inquinamento dell'aria (#glossary("PM10")), superanti una soglia di 80 microgrammi su metro cubo.
       ],"N/I","RDF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo una rilevazione di tipo percentuale riempimento bacini idrici, superante una soglia corrispondente al 70% della capienza di tale bacino.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo rilevazioni di tipo percentuale riempimento bacini idrici, superanti una soglia corrispondente al 70% della capienza di tale bacino.
       ],"N/I","RDF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo una rilevazione di tipo percentuale riempimento zone ecologiche, superante una soglia corrispondente all'80% della capienza di tale zona.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo rilevazioni di tipo percentuale riempimento zone ecologiche, superanti una soglia corrispondente all'80% della capienza di tale zona.
       ],"N/I","RDF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa filtrare i dati, visualizzati all'interno di un grafico di tipo #glossary("time series"), in base ad un sottoinsieme di sensori da lui selezionato.
@@ -617,11 +617,8 @@ table(
             Verificare che un sensore possa inserire nel sistema le rilevazioni dell'erogazione della colonna di ricarica controllata, espresse in in chilowatt all'ora, effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione. 
       ],"N/I","ROF"),
       ([
-            Verificare che un sensore possa inserire nel sistema le rilevazioni delle coordinate geografiche della bicicletta elettrica controllata, effettuate dal sensore, con annesso il #glossary("timestamp") della rilevazione. 
+            Verificare che un sensore possa inserire nel sistema le rilevazioni delle coordinate geografiche e della percentuale di batteria della bicicletta elettrica controllata, effettuate dal sensore, con annesso il #glossary("timestamp") della rilevazione. 
       ],"N/I","ROF"),
-      ([
-            Verificare che un sensore possa inserire nel sistema la rilevazione della percentuale di batteria della bicicletta elettrica controllata, effettuate dal sensore, con annesso il #glossary("timestamp") della misurazione. 
-      ],"N/I","ROF"), /*non c'è ancora il corrispettivo in Adr*/
       ([
             Verificare che un sensore possa inserire nel sistema le rilevazioni del livello di riempimento della zona ecologica presso cui è installato, espresse in percentuale, effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione. 
       ],"N/I","ROF"),
@@ -746,7 +743,7 @@ L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[d
   ],
 )
 
-Al termine del secondo sprint, tutti i documenti in corso di preparazione in vista dell'RTB possiedono un IG al di sopra del limite accettabile inferiore di 60; in particolare, l'_Analisi dei Requisiti_ ha raggiunto il valore ideale. 
+Al termine del secondo sprint, tutti i documenti in corso di preparazione in vista dell'RTB possiedono un IG al di sopra del limite accettabile inferiore di 60; in particolare, l'_Analisi dei Requisiti v1.0_ ha raggiunto il valore ideale. 
 Nel corso degli sprint successivi i valori subiscono variazioni non rilevanti. 
 
 === Correttezza ortografica
@@ -847,7 +844,7 @@ table(
       [*Aspetto*],[*Spiegazione*],
       [Tracciamento caso d'uso - requisito],[Per ciascun caso d'uso deve corrispondere almeno un requisito.],
       [Struttura errata dei requisiti],[I requisiti devono essere scritti nella forma: "\<soggetto\> deve/devono \<verbo all'infinito\>"],
-      [Numerazione errata dei casi d'uso],[La numerazione dei casi d'uso deve seguire la crescita dei numeri interi naturali. Se si tratta di un sotto-caso d'uso, il sotto-caso deve ereditare, come prefisso del proprio codice, il codice del caso d'uso a cui appartiene, e ne aggiunge una cifra. Fare riferimento alle _NormeDiProgetto v1.0_ per una descrizione più approfondita.],
+      [Numerazione errata dei casi d'uso],[La numerazione dei casi d'uso deve seguire la crescita dei numeri interi naturali. Se si tratta di un sotto-caso d'uso, il sotto-caso deve ereditare, come prefisso del proprio codice, il codice del caso d'uso a cui appartiene, e ne aggiunge una cifra. Fare riferimento alle _Norme di Progetto v1.0_ per una descrizione più approfondita.],
       [UML dei casi d'uso],[Le estensioni e le inclusioni di un caso d'uso vanno nello stesso diagramma UML del caso d'uso stesso.],
 ),
 caption: [Lista di controllo per l’Analisi dei Requisiti]
