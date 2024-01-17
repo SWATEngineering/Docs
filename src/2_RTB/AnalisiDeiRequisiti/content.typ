@@ -1030,7 +1030,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alla quantità di energia erogata dalla colonna di ricarica controllata, espresse in chilowatt all'ora, il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alle coordinate della bicicletta elettrica controllata, la sua percentuale di batteria e il timestamp di rilevazione.", [#C.step()UC#C.display()]
+    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alle coordinate della bicicletta elettrica controllata, la percentuale di batteria della stessa e il timestamp di rilevazione.", [#C.step()UC#C.display()]
   ),
   (
     "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alla percentuale di riempimento della zona ecologica controllata, il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
