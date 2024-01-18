@@ -67,5 +67,5 @@ In vista della sessione invernale di esami, è prevista una sospensione temporan
 
 *Fine*: 28/03/2024
 
-La fase di #glossary[Customer Acceptance] si basa su una verifica e miglioramento di tutti i documenti citati nelle altre revisioni.
+La fase di Customer Acceptance si basa su una verifica e miglioramento di tutti i documenti citati nelle altre revisioni.
 Il prodotto è considerato alla sua fase finale e si programma di modificarlo solamente per la risoluzione di #glossary[bug] o l'aggiunta di funzionalità richieste durante la revisione della fase precedente.
