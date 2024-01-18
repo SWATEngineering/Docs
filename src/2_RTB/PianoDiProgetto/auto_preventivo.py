@@ -1,11 +1,13 @@
-RESPONSABILE = "Re"
-AMMINISTRATORE = "Am"
-ANALISTA = "An"
-PROGETTISTA = "Pt"
-PROGRAMMATORE = "Pr"
-VERIFICATORE = "Ve"
+RESPONSABILE = {'extended':"Responsabile", 'shortened':"Re"}
+AMMINISTRATORE = {'extended':"Amministratore",'shortened':"Am"}
+ANALISTA = {'extended':"Analista", 'shortened':"An"}
+PROGETTISTA = {'extended':"Progettista", 'shortened':"Pt"}
+PROGRAMMATORE = {'extended':"Programmatore", 'shortened':"Pr"}
+VERIFICATORE = {'extended':"Verificatore", 'shortened':"Ve"}
 
 roles = [RESPONSABILE, AMMINISTRATORE, ANALISTA, PROGETTISTA, PROGRAMMATORE, VERIFICATORE]
+short_roles = [role['shortened'] for role in roles]
+ext_roles = [role['extended'] for role in roles]
 
 SIMONE = {'extended':"Simone Caregnato", 'shortened':"Simone C."}
 RICCARDOC = {'extended':"Riccardo Alberto Costantin", 'shortened':"Riccardo A.C."}
@@ -24,6 +26,8 @@ COST_PROGETTISTA = 25
 COST_PROGRAMMATORE = 15
 COST_RESPONSABILE = 30
 COST_VERIFICATORE = 15
+
+costs = [COST_RESPONSABILE, COST_AMMINISTRATORE, COST_ANALISTA, COST_PROGETTISTA, COST_PROGRAMMATORE, COST_VERIFICATORE]
 
 BUDGET_CASH = 11070
 BUDGET_TIME = 570
@@ -52,7 +56,7 @@ with open('preventivi/preventivi_csv/prospetto'+'1'+'.csv', newline='') as csvfi
 total_per_member = [sum(hours) for hours in hours_per_member]
 
 # calculate total hours per role
-total_per_role = [sum([hours[i] for hours in hours_per_member]) for i in range(len(roles))]
+total_per_role = [sum([hours[i] for hours in hours_per_member]) for i in range(len(short_roles))]
 
 # column of total hours per member
 table_total_per_member = ["Totale per persona"] + total_per_member
@@ -67,16 +71,32 @@ for index, row in enumerate(table_hours):
 # last row
 table_hours.append(table_total_per_role)
 
-# write table to csv
+# write 'prospetto orario' table to csv
 with open('preventivi/assets/tables/tableProspettoOrario'+'1'+'.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerows(table_hours)
+
+# 'prospetto economico' table
+# header
+table_budget = [["Ruolo", "Ore", "Costo"]]
+cost_per_role = []
+for index in range (len(short_roles)):
+    cost_per_role.append(total_per_role[index]*costs[index])  # calculate total cost per role 
+    table_budget.append([ext_roles[index], total_per_role[index] , str(cost_per_role[index])+'€'])
+
+table_budget.append(["Totale", sum(total_per_role), str(sum(cost_per_role))+'€'])
+table_budget.append(["Rimanente", BUDGET_TIME-sum(total_per_role), str(BUDGET_CASH-sum(cost_per_role))+'€'])
+
+# write 'prospetto economico' table to csv
+with open('preventivi/assets/tables/tableProspettoEconomico'+'1'+'.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerows(table_budget)
 
 role_colors = ["#FF6961", "#5DADE2", "#E74C3C", "#F39C12", "#9B59B6", "#58D68D"]
 
 # Filtering each vector to correspond only to positive time values
 filtered_values = [
-    (t, r, c) for t, r, c in zip(total_per_role, roles, role_colors) if t > 0
+    (t, r, c) for t, r, c in zip(total_per_role, short_roles, role_colors) if t > 0
 ]
 time_values, role_values, role_colors = zip(*filtered_values)
 
@@ -90,7 +110,7 @@ wedges, texts, autotexts = ax.pie(
 )
 ax.legend(wedges, role_values, loc="upper right", bbox_to_anchor=(0.7, 0.1, 0.5, 1))
 plt.tight_layout()
-plt.savefig("preventivi/assets/rulesPie/anagramma"+'1'+".png")
+plt.savefig("preventivi/assets/rolesPie/anagramma"+'1'+".png")
 plt.clf()
 
 # Creating the bar chart

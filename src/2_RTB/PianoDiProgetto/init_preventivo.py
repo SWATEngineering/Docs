@@ -1,14 +1,15 @@
 # Script da eseguire prima di creare i preventivi
 # Dopo averlo eseguito, si inseriscono i dati nei rispettivi csv
 
-RESPONSABILE = "Re"
-AMMINISTRATORE = "Am"
-ANALISTA = "An"
-PROGETTISTA = "Pt"
-PROGRAMMATORE = "Pr"
-VERIFICATORE = "Ve"
+RESPONSABILE = {'extended':"Responsabile", 'shortened':"Re"}
+AMMINISTRATORE = {'extended':"Amministratore",'shortened':"Am"}
+ANALISTA = {'extended':"Analista", 'shortened':"An"}
+PROGETTISTA = {'extended':"Progettista", 'shortened':"Pt"}
+PROGRAMMATORE = {'extended':"Programmatore", 'shortened':"Pr"}
+VERIFICATORE = {'extended':"Verificatore", 'shortened':"Ve"}
 
 roles = [RESPONSABILE, AMMINISTRATORE, ANALISTA, PROGETTISTA, PROGRAMMATORE, VERIFICATORE]
+short_roles = [role['shortened'] for role in roles]
 
 SIMONE = {'extended':"Simone Caregnato", 'shortened':"Simone C."}
 RICCARDOC = {'extended':"Riccardo Alberto Costantin", 'shortened':"Riccardo A.C."}
@@ -34,8 +35,8 @@ actualNum = 0 #TODO: find automatically this number
 for _ in range(1,SPRINT_AHEAD+1):
     with open('preventivi/preventivi_csv/prospetto' + str(actualNum+_) + '.csv', 'w', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(['Nominativo', *roles])
+        writer.writerow(['Nominativo', *short_roles])
         
-        zeros = np.zeros(len(roles))    
+        zeros = np.zeros(len(short_roles))    
         for member in short_members:
             writer.writerow([member, *zeros])
