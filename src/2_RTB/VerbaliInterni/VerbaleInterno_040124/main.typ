@@ -1,7 +1,8 @@
-#import "meta.typ": title
+#import "meta.typ": data_incontro
 #import "functions.typ": glossary, team
 
 #let changelog = csv("changelog.csv")
+#let title = [Verbale Interno ] + data_incontro
 #let version = changelog.last().at(0)
 
 #set text(font: "IBM Plex Sans")
@@ -124,6 +125,7 @@ Versione: #version
 
 #set text(13pt)
 #set heading(
+  numbering: "1.1",
   outlined: true,
 )
 
@@ -138,6 +140,5 @@ Versione: #version
 /*******************/
 
 #pagebreak()
-#set text(11pt)
 
 #include "content.typ"
