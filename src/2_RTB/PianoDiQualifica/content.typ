@@ -233,7 +233,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             7. visualizzare un #glossary("pannello") con una tabella che mostri l'ultima rilevazione della velocità del vento, espressa in chilometri orari, effettuata da ciascun sensore; 
             8. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni delle quantità di precipitazioni, espresse in millimetri orari, effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
             9. visualizzare un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse in millimetri orari, indicante la media  dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori, degli ultimi 5 minuti; 
-            10. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati della concentrazione di inquinanti dell'aria, espressa in $#sym.mu g\/m^3$,(#glossary("PM10")),effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
+            10. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni della concentrazione di inquinanti dell'aria, espressa in $#sym.mu g\/m^3$,(#glossary("PM10")),effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
             11. visualizzare un #glossary("pannello") contenente la media della concentrazione di inquinanti dell'aria, espressa in $#sym.mu g\/m^3$,(#glossary("PM10")), che consideri le rilevazioni di tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
             12. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni della percentuale di riempimento dei bacini idrici, effettuate dai singoli sensore e aggregate tramite media aritmetica per intervalli di 5 minuti;
             13. visualizzare un #glossary("pannello") contenente la media della temperatura, espressa in gradi celsius, considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
@@ -263,7 +263,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             3. visualizzare la relativa [#glossary("dashboard")];
             4. visualizzare un #glossary("pannello") con una mappa che indichi, mediante indicatori numerici, collocati presso le coordinate di ciascun sensore, la quantità di posti liberi nel parcheggio corrispondente;
             5. visualizzare un #glossary("pannello") contenente una mappa che indichi, mediante indicatori booleani collocati presso le coordinate di ciascun sensore, la disponibilità della colonna corrispondente; 
-            6. visualizzare un #glossary("pannello") che esprima, tramite una tabella indicizzata tramite il nome del sensore, l'erogazione energetica, espressa in watt per ora: 
+            6. visualizzare un #glossary("pannello") che esprima, tramite una tabella indicizzata tramite il nome del sensore, l'erogazione energetica, espressa in watt per ora;
             7. visualizzare un #glossary("pannello") contenente una mappa che indichi, tramite gli stati "LOW", "MEDIUM", "HIGH" e "BLOCKED", lo stato di congestione delle strade; 
             8. visualizzare un #glossary("pannello") contenente una mappa che indichi, mediante degli indicatori numerici, la posizione in tempo reale delle biciclette elettriche, tali indicatori devono inoltre indicare la percentuale di batteria del mezzo; 
             9. visualizzare un #glossary("pannello") contenente una mappa indicante lo stato di riempimento delle zone ecologiche, espresse in valori percentuali, posizionate nelle coordinate delle zone; 
@@ -286,8 +286,8 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             1. aprire il menu di selezione delle [#glossary("dashboard")];
             2. selezionare la #glossary("dashboard") per visualizzare i #glossary("dati anomali") e il superamento soglie
             3. visualizzare la relativa [#glossary("dashboard")];
-            4. visualizzare un #glossary("pannello") contenente una tabella, la quale mostra tutte le anomalie rilevate, mostrando il valore dell'anomalia, il sensore che l'ha rilevata e il timestamp relativo; 
-            5. visualizzare un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti le soglie impostate nel sistema, mostrando il valore superante la soglia, il sensore che ha rilevato tale valore e il timestamp relativo.
+            4. visualizzare un #glossary("pannello") contenente una tabella, la quale mostra tutte le anomalie rilevate, mostrando il valore dell'anomalia, il sensore che l'ha rilevata e il relativo timestamp; 
+            5. visualizzare un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti le soglie impostate nel sistema, mostrando il valore superante la soglia, il sensore che ha rilevato tale valore e il relativo timestamp;
             6. visualizzare un messaggio di avvertenza di dati mancanti, nei #glossary("pannelli"), nel caso di assenza di dati da mostrare.
       ],"N/I",[
             UC0\
@@ -298,11 +298,11 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ]),
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
-            1. ricevere un'allerta relativa alla temperatura che notifica il superamento dei 40° celsius; 
-            2. ricevere un'allerta relativa alle precipitazioni che notifica il superamento dei 50 millimetri di pioggia all'ora; 
+            1. ricevere un'allerta che notifichi il superamento dei 40° celsius; 
+            2. ricevere un'allerta che notifichi il superamento dei 50 millimetri di pioggia all'ora; 
             3. ricevere un'allerta relativa all'inquinamento dell'aria che notifica il superamento di 80#[#sym.mu]g su metro cubo; 
-            4. ricevere un'allerta relativa ai bacini idrici che notifica il superamento del 70% della capienza di un particolare bacino; 
-            5. ricevere un'allerta relativa alle zone ecologiche che notifica il superamento dell'80% della capienza di una particolare zona ecologica.
+            4. ricevere un'allerta che notifichi il superamento del 70% della capienza di un bacino; 
+            5. ricevere un'allerta che notifichi il superamento dell'80% della capienza di una zona ecologica.
       ],"N/I",[
             UC5\
             UC5.1\
@@ -319,7 +319,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             3. Applicare dei filtri, per visualizzare solo i dati provenienti dai sensori delle tipologie selezionate, nel caso di #glossary("pannelli") contenenti tabelle, le quali comprendono più tipologie di sensori al loro interno; 
             4. Applicare dei filtri, per selezionare solo particolari sensori, mediante il nome, nel caso di #glossary("pannelli") contenenti tabelle;
             5. Applicare dei filtri, per selezionare solo i dati relativi ad un definito intervallo di tempo, all'interno di un'intera [#glossary("dashboard")];
-            6. Visualizzare gli effetti dei filtri applicati ai #glossary("pannelli") sorgente, anche sui #glossary("pannelli") collegati,  come #glossary("side effect").
+            6. Visualizzare gli effetti dei filtri applicati ai #glossary("pannelli") sorgente, anche sui #glossary("pannelli") collegati, come #glossary("side effect").
       ],"N/I",[
             UC0\
             UC6\
@@ -339,7 +339,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
             1. Scegliere una #glossary("dashboard") di cui modificare il layout;
-            2. Modificare il layout dei #glossary("pannelli") in termini di posizione di tali #glossary("pannelli") e di dimensioni.
+            2. Modificare il layout dei #glossary("pannelli") in termini di posizione di tali #glossary("pannelli") e della loro dimensione.
       ],"N/I",[
             UC8
       ]),
