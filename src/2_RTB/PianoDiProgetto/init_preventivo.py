@@ -10,14 +10,16 @@ VERIFICATORE = "Ve"
 
 roles = [RESPONSABILE, AMMINISTRATORE, ANALISTA, PROGETTISTA, PROGRAMMATORE, VERIFICATORE]
 
-SIMONE = "Simone Caregnato"
-RICCARDOC = "Riccardo Alberto Costantin"
-GIACOMO = "Giacomo D'Ovidio"
-NANCY = "Nancy Kalaj"
-MATTEO = "Matteo Rango"
-RICCARDOT = "Riccardo Toniolo"
+SIMONE = {'extended':"Simone Caregnato", 'shortened':"Simone C."}
+RICCARDOC = {'extended':"Riccardo Alberto Costantin", 'shortened':"Riccardo A.C."}
+GIACOMO = {'extended':"Giacomo D'Ovidio", 'shortened':"Giacomo D."}
+NANCY = {'extended':"Nancy Kalaj", 'shortened':"Nancy K."}
+MATTEO = {'extended':"Matteo Rango", 'shortened':"Matteo R."}
+RICCARDOT = {'extended':"Riccardo Toniolo", 'shortened':"Riccardo T."}
 
 members = [SIMONE, RICCARDOC, GIACOMO, NANCY, MATTEO, RICCARDOT]
+
+short_members = [member['shortened'] for member in members]
 
 SPRINT_AHEAD = 2
 
@@ -35,5 +37,5 @@ for _ in range(1,SPRINT_AHEAD+1):
         writer.writerow(['Nominativo', *roles])
         
         zeros = np.zeros(len(roles))    
-        for member in members:
+        for member in short_members:
             writer.writerow([member, *zeros])

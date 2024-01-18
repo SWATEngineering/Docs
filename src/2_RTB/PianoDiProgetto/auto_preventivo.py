@@ -7,14 +7,16 @@ VERIFICATORE = "Ve"
 
 roles = [RESPONSABILE, AMMINISTRATORE, ANALISTA, PROGETTISTA, PROGRAMMATORE, VERIFICATORE]
 
-SIMONE = "Simone Caregnato"
-RICCARDOC = "Riccardo Alberto Costantin"
-GIACOMO = "Giacomo D'Ovidio"
-NANCY = "Nancy Kalaj"
-MATTEO = "Matteo Rango"
-RICCARDOT = "Riccardo Toniolo"
+SIMONE = {'extended':"Simone Caregnato", 'shortened':"Simone C."}
+RICCARDOC = {'extended':"Riccardo Alberto Costantin", 'shortened':"Riccardo A.C."}
+GIACOMO = {'extended':"Giacomo D'Ovidio", 'shortened':"Giacomo D."}
+NANCY = {'extended':"Nancy Kalaj", 'shortened':"Nancy K."}
+MATTEO = {'extended':"Matteo Rango", 'shortened':"Matteo R."}
+RICCARDOT = {'extended':"Riccardo Toniolo", 'shortened':"Riccardo T."}
 
 members = [SIMONE, RICCARDOC, GIACOMO, NANCY, MATTEO, RICCARDOT]
+
+ext_members = [member['extended'] for member in members]
 
 COST_AMMINISTRATORE = 20
 COST_ANALISTA = 25
@@ -28,7 +30,11 @@ BUDGET_TIME = 570
 
 import csv
 import matplotlib.pyplot as plt
+import copy as cp
+import pandas as pd
 
+
+prospetto = []
 table_hours = []
 hours_per_member = []
 
@@ -36,9 +42,11 @@ hours_per_member = []
 with open('preventivi/preventivi_csv/prospetto'+'1'+'.csv', newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter=',')
     table_hours = [next(reader)] # skip header and save first row
-    for row in reader:
+    prospetto = cp.deepcopy(table_hours) #we will use this later
+    for index, row in enumerate(reader):
         hours_per_member.append([float(value) for value in row[1:]])
-        table_hours.append(row) #we will use this later
+        table_hours.append([ext_members[index]] + row[1:]) #we will use this later
+        prospetto.append(row)
 
 # calculate total hours per member
 total_per_member = [sum(hours) for hours in hours_per_member]
@@ -83,4 +91,32 @@ wedges, texts, autotexts = ax.pie(
 ax.legend(wedges, role_values, loc="upper right", bbox_to_anchor=(0.7, 0.1, 0.5, 1))
 plt.tight_layout()
 plt.savefig("preventivi/assets/rulesPie/anagramma"+'1'+".png")
+plt.clf()
+
+# Creating the bar chart
+# prospetto doesn't have the header and the last row
+# convert prospetto to DataFrame
+columns = prospetto[0]
+data = prospetto[1:]
+df = pd.DataFrame(data, columns=columns)
+
+df = df.set_index("Nominativo", drop=True)
+
+# Convert columns to numeric
+df = df.apply(pd.to_numeric, errors='coerce')
+
+# Plotting
+ax = df.plot(kind="bar", stacked=True, figsize=(10, 6))
+
+ax.set_xticklabels(ax.get_xticklabels(), rotation=0, ha="center")
+
+# Aggiungere etichette e titolo
+plt.xlabel("Nominativo")
+plt.ylabel("Ore per Ruolo")
+plt.title("Distribuzione Ore per Ruolo per Nominativo")
+
+# Aggiungere una legenda
+ax.legend(title="Ruolo", bbox_to_anchor=(1.05, 1), loc="upper left")
+plt.tight_layout()
+plt.savefig("preventivi/assets/barChart/istogramma"+'1'+".png")
 plt.clf()
