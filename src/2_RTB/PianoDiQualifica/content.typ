@@ -207,7 +207,6 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             UC6\
             UC7\
             UC8
-            /*todo capire qua cosa si intend*/
       ]),
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
@@ -319,7 +318,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             2. Applicare dei filtri, per visualizzare solo i dati provenienti dal sottoinsieme di sensori selezionato, nel caso di #glossary("pannelli") di tipo [#glossary("serie storica")];
             3. Applicare dei filtri, per visualizzare solo i dati provenienti dai sensori delle tipologie selezionate, nel caso di #glossary("pannelli") contenenti tabelle, le quali comprendono più tipologie di sensori al loro interno; 
             4. Applicare dei filtri, per selezionare solo particolari sensori, mediante il nome, nel caso di #glossary("pannelli") contenenti tabelle;
-            5. Applicare dei filtri, per selezionare solo i dati relativi ad un definito intervallo di tempo, all'interno di un'intera #glossary("dashboard");
+            5. Applicare dei filtri, per selezionare solo i dati relativi ad un definito intervallo di tempo, all'interno di un'intera [#glossary("dashboard")];
             6. Visualizzare gli effetti dei filtri applicati ai #glossary("pannelli") sorgente, anche sui #glossary("pannelli") collegati,  come #glossary("side effect").
       ],"N/I",[
             UC0\
@@ -446,14 +445,14 @@ table(
 
 == Test di sistema
 
-/*TODO: per chi andrà a toccare questo documento per raffinarlo, andare a specificare meglio i vari punti singoli. Molto probabilmente l'automatismo per calcolare automaticamente il codice del requisito funzionale di riferimento andrà rimosso, e il codice inserito a mano, poichè ho come l'impressione che bisogna entrare molto di più nel dettaglio della verifica*/
+
 
 #let test_di_sistema = (
       ([
             Verificare che l'#glossary("amministratore pubblico") possa accedere all'applicazione senza dover effettuare l'autenticazione.
       ],"N/I","ROF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un menù di selezione delle dashboard, che permetta di selezionare tra Sensori, Ambientale, Urbanistica e Dati anomali & superamento soglie.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un menù di selezione delle dashboard, che permetta di selezionare una #glossary("dashboard").
       ],"N/I","ROF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare una #glossary("dashboard") dedicata a fornire una panoramica generale dei sensori.
@@ -462,7 +461,7 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare le posizioni dei sensori come icone su una mappa, appartenente alla #glossary("dashboard") generale relativa ai sensori.
       ],"N/I","ROF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, in forma tabellare, l'elenco dei sensori con la relativa percentuale di batteria, un valore booleano che indicante se il sensore vada a batteria autonoma o meno e la data di ultima manutenzione effettuata su tale sensore, all'interno della #glossary("dashboard") generale relativa ai sensori.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, in forma tabellare, l'elenco dei sensori con la relativa percentuale di batteria, un valore booleano che indica se il sensore abbia batteria autonoma o meno e la data di ultima manutenzione effettuata su tale sensore, all'interno della #glossary("dashboard") generale relativa ai sensori.
       ],"N/I","ROF"),
 
 
@@ -510,9 +509,6 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la percentuale di riempimento dei bacini idrici, per ciascun sensore, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.
       ],"N/I","ROF"),
 
-
-
-
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un indice numerico, che esprime la temperatura media, espressa in gradi celsius, degli ultimi 5 minuti, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.
       ],"N/I","RDF"),
@@ -520,25 +516,25 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un indice numerico, che esprime l'inquinamento dell'aria massimo, espresso in $#sym.mu g\/m^3$ (#glossary("PM10")), degli ultimi 5 minuti, tra i dati registrati da tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.
       ],"N/I","RDF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare una #glossary("dashboard") dedicata a monitorare i dati provenienti dai sensori relativi ai dati urbanistici.
+            Verificare che l'#glossary("amministratore pubblico") possa monitorare i dati provenienti dai sensori relativi ai dati urbanistici in una #glossary("dashboard") apposita.
       ],"N/I","ROF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una mappa che evidenzi il numero di posti liberi nei vari parcheggi, mediante indicatori numerici posti nelle coordinate del sensore, nella #glossary("dashboard") relativa ai dati urbanistici.
       ],"N/I","ROF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una mappa che evidenzi la posizione delle colonne di ricarica per auto, mediante indicatori booleani posti nelle coordinate dei sensori che indicheranno la disponibilità di queste, nella #glossary("dashboard") relativa ai dati urbanistici.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una mappa che evidenzi la posizione delle colonne di ricarica per auto, mediante indicatori booleani posti nelle coordinate dei sensori che ne indicano la disponibilità di queste, nella #glossary("dashboard") relativa ai dati urbanistici.
       ],"N/I","ROF"),
 
 
 
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizza un #glossary("pannello") contenente una tabella la quale riporta l'erogazione delle colonne di ricarica per auto, espressa in Watt all'ora, controllata da ciascun sensore, nella #glossary("dashboard") relativa ai dati urbanistici.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una tabella che riporti l'erogazione delle colonne di ricarica, espressa in Watt all'ora, nella #glossary("dashboard") relativa ai dati urbanistici.
       ],"N/I","RDF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizza un #glossary("pannello") contenente una mappa che evidenzi lo stato di congestione delle strade, mediante gli stati "LOW", "MEDIUM", "HIGH", "BLOCKED", posti nelle coordinate dei sensori controllano queste, nella #glossary("dashboard") relativa ai dati urbanistici.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una mappa che evidenzi lo stato di congestione delle strade, mediante gli stati "LOW", "MEDIUM", "HIGH", "BLOCKED", presso le coordinate dei sensori che hanno effettuato la rilevazione, nella #glossary("dashboard") relativa ai dati urbanistici.
       ],"N/I","ROF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare #glossary("pannello") contenente una mappa che mostri la posizione delle biciclette elettriche controllate, in tempo reale, mediante degli indicatori numerici, indicanti la percentuale della batteria, posizionati nelle coordinate del mezzo, nella #glossary("dashboard") relativa ai dati urbanistici.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una mappa che mostri, in tempo reale, la posizione delle biciclette elettriche, mediante degli indicatori numerici, indicanti la percentuale della batteria, nella #glossary("dashboard") relativa ai dati urbanistici.
       ],"N/I","ROF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una mappa che mostri la percentuale di riempimento delle zone ecologiche, mediante degli indicatori percentuali, posizionati nelle coordinate della zona, nella #glossary("dashboard") relativa ai dati urbanistici.
@@ -559,13 +555,13 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo rilevazioni di tipo precipitazioni, superanti una soglia di 50 millimetri all'ora.
       ],"N/I","RDF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo rilevazioni di tipo inquinamento dell'aria (#glossary("PM10")), superanti una soglia di 80 microgrammi su metro cubo.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo rilevazioni dell' inquinamento dell'aria (#glossary("PM10")), superanti una soglia di 80 microgrammi su metro cubo.
       ],"N/I","RDF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo rilevazioni di tipo percentuale riempimento bacini idrici, superanti una soglia corrispondente al 70% della capienza di tale bacino.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo rilevazioni del livello di riempimento dei bacini idrici, superanti una soglia corrispondente al 70% della capienza del bacino idrico corrispondente.
       ],"N/I","RDF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo rilevazioni di tipo percentuale riempimento zone ecologiche, superanti una soglia corrispondente all'80% della capienza di tale zona.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo rilevazioni del livello di riempimento delle zone ecologiche, superanti una soglia corrispondente all'80% della capienza della zona corrispondente.
       ],"N/I","RDF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa filtrare i dati, visualizzati all'interno di un grafico di tipo #glossary("time series"), in base ad un sottoinsieme di sensori da lui selezionato.
@@ -580,7 +576,7 @@ table(
             Verificare  che l'#glossary("amministratore pubblico") possa filtrare i dati in base ad un intervallo temporale. Di conseguenza la  #glossary("dashboard") interessata deve, nella sua totalità, mostrare solamente i dati aventi un timestamp in tale intervallo.
       ],"N/I","ROF"),
       ([
-            Verificare che i filtri, applicati dall'#glossary("amministratore pubblico") nei #glossary("pannelli") sorgente vengano applicati anche sui #glossary("pannelli") collegati. 
+            Verificare che i filtri, applicati dall' #glossary("amministratore pubblico") nei #glossary("pannelli") sorgente vengano applicati anche sui #glossary("pannelli") collegati. 
       ],"N/I","ROF"),
       ([
             Verificare  che l'#glossary("amministratore pubblico"), nei #glossary("pannelli") tabellari, possa ordinare i dati sulla base dei valori delle proprie colonne, sia in ordine crescente che decrescente. 
@@ -591,7 +587,7 @@ table(
       ([
             Verificare  che l'#glossary("amministratore pubblico"), riceva un messaggio di errore qualora, il sistema di visualizzazione non riesca a reperire i dati necessari per un determinato #glossary("pannello"). 
       ],"N/I","ROF"),
-      /*da qui iniziano i casi d'uso relativi ai sensori*/
+      /*da qui iniziano i requisiti relativi ai sensori*/
       ([
             Verificare che un sensore possa inserire nel sistema le rilevazioni della temperatura, espresse in gradi celsius, effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione.
       ],"N/I","ROF"),
@@ -623,13 +619,12 @@ table(
             Verificare che un sensore possa inserire nel sistema le rilevazioni del livello di riempimento della zona ecologica presso cui è installato, espresse in percentuale, effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione. 
       ],"N/I","ROF"),
       ([
-            Verificare che un sensore possa inserire nel sistema le rilevazioni del livello di congestione stradale, espresse in stati (in ordine di crescente congestione sono: "LOW", "MEDIUM", "HIGH", "BLOCKED"), effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
+            Verificare che un sensore possa inserire nel sistema le rilevazioni del livello di congestione stradale, espresse in stati (in ordine crescente di congestione: "LOW", "MEDIUM", "HIGH", "BLOCKED"), effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della misurazione.
       ],"N/I","ROF"),
       ([
             Verificare che ogni sensore invii oltre ai dati della misurazione effettuata, la propria percentuale di batteria, la data di ultima manutenzione effettuata su di esso, e la propria frequenza di inserimento dati espressa in secondi.
       ],"N/I","ROF")
 
-      /*TODO: disambiguare sulla base ai  cambiamenti al requisito in Adr */
 ).enumerate(start:1).map(test => ("TS"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1),test.at(1).at(2))).enumerate(start:1).map(test => (test.at(1).at(0),test.at(1).at(1),test.at(1).at(2),test.at(1).at(3) + str(test.at(0))));
 
 #show figure: set block(breakable: true)
