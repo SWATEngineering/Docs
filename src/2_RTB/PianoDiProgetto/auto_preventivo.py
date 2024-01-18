@@ -62,7 +62,7 @@ total_per_role = [sum([hours[i] for hours in hours_per_member]) for i in range(l
 table_total_per_member = ["Totale per persona"] + total_per_member
 
 # row of total hours per role
-table_total_per_role = ["Totale per ruolo"] + total_per_role
+table_total_per_role = ["Totale per ruolo"] + total_per_role + [sum(total_per_role)]
 
 # add to table
 # last column
@@ -112,7 +112,7 @@ wedges, texts, autotexts = ax.pie(
 )
 ax.legend(wedges, role_values, loc="upper right", bbox_to_anchor=(0.7, 0.1, 0.5, 1))
 plt.tight_layout()
-plt.savefig("preventivi/assets/rolesPie/anagramma"+'1'+".png")
+plt.savefig("preventivi/assets/rolesPie/areogramma"+'1'+".png")
 plt.clf()
 
 # Creating the bar chart
@@ -155,7 +155,7 @@ wedges, texts, autotexts = ax.pie(
 cash_labels = ["Budget speso", "Budget rimanente"]
 ax.legend(wedges, cash_labels, loc="upper right", bbox_to_anchor=(0.7, 0, 0.5, 1))
 plt.tight_layout()
-plt.savefig("preventivi/assets/cashPie/anagramma"+'1'+".png")
+plt.savefig("preventivi/assets/cashPie/areogramma"+'1'+".png")
 plt.clf()
 
 # Creating the cost time pie chart
@@ -169,5 +169,5 @@ wedges, texts, autotexts = ax.pie(
 time_labels = ["Tempo speso", "Tempo rimanente"]
 ax.legend(wedges, time_labels, loc="upper right", bbox_to_anchor=(0.7, 0, 0.5, 1))
 plt.tight_layout()
-plt.savefig("preventivi/assets/timePie/anagramma"+'1'+".png")
+plt.savefig("preventivi/assets/timePie/areogramma"+'1'+".png")
 plt.clf()
