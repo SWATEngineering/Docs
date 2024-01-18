@@ -29,21 +29,29 @@ COST_VERIFICATORE = 15
 
 costs = [COST_RESPONSABILE, COST_AMMINISTRATORE, COST_ANALISTA, COST_PROGETTISTA, COST_PROGRAMMATORE, COST_VERIFICATORE]
 
-BUDGET_CASH = 11070
-BUDGET_TIME = 570
-
 import csv
 import matplotlib.pyplot as plt
 import copy as cp
 import pandas as pd
 
+sprintNum = 1
+
+# read budget from csv
+with open('preventivi/budget.csv', newline='') as csvfile:
+    reader = csv.reader(csvfile, delimiter=',')
+    budget_csv = [next(reader)] # skip header
+    rows = list(reader)
+    budget_time = int(rows[sprintNum-1][1]) # we skip the first column
+    budget_cash = int(rows[sprintNum-1][2])
+    for row in rows:
+        budget_csv.append(row)
 
 prospetto = []
 table_hours = []
 hours_per_member = []
 
 # read data from csv
-with open('preventivi/preventivi_csv/prospetto'+'1'+'.csv', newline='') as csvfile:
+with open('preventivi/preventivi_csv/prospetto'+str(sprintNum)+'.csv', newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter=',')
     table_hours = [next(reader)] # skip header and save first row
     prospetto = cp.deepcopy(table_hours) #we will use this later
@@ -72,7 +80,7 @@ for index, row in enumerate(table_hours):
 table_hours.append(table_total_per_role)
 
 # write 'prospetto orario' table to csv
-with open('preventivi/assets/tables/tableProspettoOrario'+'1'+'.csv', 'w', newline='') as file:
+with open('preventivi/assets/tables/tableProspettoOrario'+str(sprintNum)+'.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerows(table_hours)
 
@@ -85,12 +93,12 @@ for index in range (len(short_roles)):
     table_budget.append([ext_roles[index], total_per_role[index] , str(cost_per_role[index])+'€'])
 
 table_budget.append(["Totale", sum(total_per_role), str(sum(cost_per_role))+'€'])
-remaining_time = BUDGET_TIME-sum(total_per_role)
-remaining_cash = BUDGET_CASH-sum(cost_per_role)
+remaining_time = budget_time-sum(total_per_role)
+remaining_cash = budget_cash-sum(cost_per_role)
 table_budget.append(["Rimanente", remaining_time, str(remaining_cash)+'€'])
 
 # write 'prospetto economico' table to csv
-with open('preventivi/assets/tables/tableProspettoEconomico'+'1'+'.csv', 'w', newline='') as file:
+with open('preventivi/assets/tables/tableProspettoEconomico'+str(sprintNum)+'.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerows(table_budget)
 
@@ -112,7 +120,7 @@ wedges, texts, autotexts = ax.pie(
 )
 ax.legend(wedges, role_values, loc="upper right", bbox_to_anchor=(0.7, 0.1, 0.5, 1))
 plt.tight_layout()
-plt.savefig("preventivi/assets/rolesPie/areogramma"+'1'+".png")
+plt.savefig("preventivi/assets/rolesPie/areogramma"+str(sprintNum)+".png")
 plt.clf()
 
 # Creating the bar chart
@@ -140,34 +148,47 @@ plt.title("Distribuzione Ore per Ruolo per Nominativo")
 # Aggiungere una legenda
 ax.legend(title="Ruolo", bbox_to_anchor=(1.05, 1), loc="upper left")
 plt.tight_layout()
-plt.savefig("preventivi/assets/barChart/istogramma"+'1'+".png")
+plt.savefig("preventivi/assets/barChart/istogramma"+str(sprintNum)+".png")
 plt.clf()
 
 # Creating the cost cash pie chart
 fig, ax = plt.subplots()
 wedges, texts, autotexts = ax.pie(
-    [BUDGET_CASH - remaining_cash, remaining_cash],
+    [budget_cash - remaining_cash, remaining_cash],
     labels=None,
-    autopct=lambda p: "{:.1f}€ ({:.1f}%)".format(p * BUDGET_CASH / 100, p),
+    autopct=lambda p: "{:.1f}€ ({:.1f}%)".format(p * budget_cash / 100, p),
     startangle=90,
     colors=["#FFB6C1", "#ADD8E6"],
 )
 cash_labels = ["Budget speso", "Budget rimanente"]
 ax.legend(wedges, cash_labels, loc="upper right", bbox_to_anchor=(0.7, 0, 0.5, 1))
 plt.tight_layout()
-plt.savefig("preventivi/assets/cashPie/areogramma"+'1'+".png")
+plt.savefig("preventivi/assets/cashPie/areogramma"+str(sprintNum)+".png")
 plt.clf()
 
 # Creating the cost time pie chart
 fig, ax = plt.subplots()
 wedges, texts, autotexts = ax.pie(
-    [BUDGET_TIME - remaining_time, remaining_time],
-    autopct=lambda p: "{:.1f} ({:.1f}%)".format(p * BUDGET_TIME / 100, p),
+    [budget_time - remaining_time, remaining_time],
+    autopct=lambda p: "{:.1f} ({:.1f}%)".format(p * budget_time / 100, p),
     startangle=90,
     colors=["#FFB6C1", "#ADD8E6"],
 )
 time_labels = ["Tempo speso", "Tempo rimanente"]
 ax.legend(wedges, time_labels, loc="upper right", bbox_to_anchor=(0.7, 0, 0.5, 1))
 plt.tight_layout()
-plt.savefig("preventivi/assets/timePie/areogramma"+'1'+".png")
+plt.savefig("preventivi/assets/timePie/areogramma"+str(sprintNum)+".png")
 plt.clf()
+
+# write new budget to csv
+with open('preventivi/budget.csv', 'w', newline='') as csvfile:
+    # update row of current sprint
+    writer = csv.writer(csvfile)
+    # if there is row  sprintNum, update it, otherwise create it
+    for row in budget_csv:
+        if row[0] == str(sprintNum):
+            row[1] = remaining_time
+            row[2] = remaining_cash
+    else:
+        budget_csv.append([sprintNum, remaining_time, remaining_cash])
+    writer.writerows(budget_csv)
