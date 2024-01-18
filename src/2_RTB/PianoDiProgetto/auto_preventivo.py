@@ -1,3 +1,16 @@
+# to install:
+# 1. Collocatevi nella cartella di questo script python con il terminale
+# 2. Comando: python3 -m venv ./venv
+# 3. Comando: source ./venv/bin/activate
+# 4. Comando: pip install -r requirements.txt
+
+# to use:
+# eseguire dopo aver inserito i dati nei csv in preventivi/preventivi_csv (dopo aver seguito le istruzioni in init_preventivo.py)
+
+# python3 auto_preventivo.py *numero_sprint_attuale*
+
+# passare come parametro il numero dello sprint di cui si vogliono creare i preventivi, si occuperà di creare tabelle e graficis
+
 RESPONSABILE = {'extended':"Responsabile", 'shortened':"Re"}
 AMMINISTRATORE = {'extended':"Amministratore",'shortened':"Am"}
 ANALISTA = {'extended':"Analista", 'shortened':"An"}
@@ -33,8 +46,17 @@ import csv
 import matplotlib.pyplot as plt
 import copy as cp
 import pandas as pd
+import sys
 
-sprintNum = 1
+if len(sys.argv) > 1:
+    if sys.argv[1].isdigit():
+        sprintNum = int(sys.argv[1])
+    else:
+        print("Error: argument must be a number")
+        sys.exit(1)
+else:
+    print("Error: missing argument")
+    sys.exit(1)
 
 # read budget from csv
 with open('preventivi/budget.csv', newline='') as csvfile:
@@ -187,8 +209,9 @@ with open('preventivi/budget.csv', 'w', newline='') as csvfile:
     # if there is row  sprintNum, update it, otherwise create it
     for row in budget_csv:
         if row[0] == str(sprintNum):
-            row[1] = remaining_time
-            row[2] = remaining_cash
-    else:
-        budget_csv.append([sprintNum, remaining_time, remaining_cash])
+            row[1] = int(remaining_time)
+            row[2] = int(remaining_cash)
+            isUpdated = True
+    if not isUpdated:
+        budget_csv.append([sprintNum, int(remaining_time), int(remaining_cash)])
     writer.writerows(budget_csv)

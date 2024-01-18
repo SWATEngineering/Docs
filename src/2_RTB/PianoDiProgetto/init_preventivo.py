@@ -1,5 +1,9 @@
 # Script da eseguire prima di creare i preventivi
-# Dopo averlo eseguito, si inseriscono i dati nei rispettivi csv
+# Per eseguirlo bisogna passare come argomento il numero dello sprint attuale, creerà i csv per i 2 sprint successivi
+
+# python3 init_preventivo.py *numero_sprint_attuale*
+
+# Dopo averlo eseguito, si inseriscono i dati nei rispettivi csv in preventivi/preventivi_csv
 
 RESPONSABILE = {'extended':"Responsabile", 'shortened':"Re"}
 AMMINISTRATORE = {'extended':"Amministratore",'shortened':"Am"}
@@ -26,10 +30,17 @@ SPRINT_AHEAD = 2
 
 import csv
 import numpy as np
+import sys
 
-actualNum = 0 #TODO: find automatically this number
-
-# alternativa: invece di fare così, li ricrea tutti
+if len(sys.argv) > 1:
+    if sys.argv[1].isdigit():
+        actualNum = int(sys.argv[1])
+    else:
+        print("Error: argument must be a number")
+        sys.exit(1)
+else:
+    print("Error: missing argument")
+    sys.exit(1)
 
 #create csv for future sprints (SPRINT_AHEAD)
 for _ in range(1,SPRINT_AHEAD+1):
