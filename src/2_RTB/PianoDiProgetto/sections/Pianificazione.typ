@@ -15,7 +15,7 @@ Nell’intervallo di tempo tra revisione RTB e revisione PB, è stata pianificat
 
 Per ciascun #glossary[sprint], vengono stabilite le date di inizio e di fine, e il relativo insieme delle attività pianificate.
 
-== #glossary[Requirements and Technology Baseline]
+== Requirements and Technology Baseline #glossary[RTB]
 #figure(
   image("../assets/DiagrammiGantt/RTB.png", width: 100%),
   caption: [
@@ -41,7 +41,7 @@ Durante questa fase il colloquio con la Proponente e il Committente viene manten
 #include "PianificazioneSprint/SettimoSprint.typ"
 #include "PianificazioneSprint/OttavoSprint.typ"
 
-== #glossary[Product Baseline]
+== Product Baseline #glossary[PB]
 
 #figure(
   image("../assets/DiagrammiGantt/PB.png", width: 100%),
@@ -61,7 +61,7 @@ In vista della sessione invernale di esami, è prevista una sospensione temporan
 #include "PianificazioneSprint/NonoSprint.typ"
 #include "PianificazioneSprint/DecimoSprint.typ"
 
-== #glossary[Customer Acceptance]
+== Customer Acceptance #glossary[CA]
 
 *Inizio*: 14/03/2024 
 
