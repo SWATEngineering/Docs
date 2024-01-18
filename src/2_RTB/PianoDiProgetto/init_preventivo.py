@@ -19,16 +19,6 @@ RICCARDOT = "Riccardo Toniolo"
 
 members = [SIMONE, RICCARDOC, GIACOMO, NANCY, MATTEO, RICCARDOT]
 
-COST_AMMINISTRATORE = 20
-COST_ANALISTA = 25
-COST_PROGETTISTA = 25
-COST_PROGRAMMATORE = 15
-COST_RESPONSABILE = 30
-COST_VERIFICATORE = 15
-
-BUDGET_CASH = 11070
-BUDGET_TIME = 570
-
 SPRINT_AHEAD = 2
 
 import csv
@@ -40,7 +30,7 @@ actualNum = 0 #TODO: find automatically this number
 
 #create csv for future sprints (SPRINT_AHEAD)
 for _ in range(1,SPRINT_AHEAD+1):
-    with open('preventivi_csv/prospetto' + str(actualNum+_) + '.csv', 'w', newline='') as file:
+    with open('preventivi/preventivi_csv/prospetto' + str(actualNum+_) + '.csv', 'w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(['Nominativo', *roles])
         
