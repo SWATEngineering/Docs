@@ -85,7 +85,9 @@ for index in range (len(short_roles)):
     table_budget.append([ext_roles[index], total_per_role[index] , str(cost_per_role[index])+'€'])
 
 table_budget.append(["Totale", sum(total_per_role), str(sum(cost_per_role))+'€'])
-table_budget.append(["Rimanente", BUDGET_TIME-sum(total_per_role), str(BUDGET_CASH-sum(cost_per_role))+'€'])
+remaining_time = BUDGET_TIME-sum(total_per_role)
+remaining_cash = BUDGET_CASH-sum(cost_per_role)
+table_budget.append(["Rimanente", remaining_time, str(remaining_cash)+'€'])
 
 # write 'prospetto economico' table to csv
 with open('preventivi/assets/tables/tableProspettoEconomico'+'1'+'.csv', 'w', newline='') as file:
@@ -139,4 +141,33 @@ plt.title("Distribuzione Ore per Ruolo per Nominativo")
 ax.legend(title="Ruolo", bbox_to_anchor=(1.05, 1), loc="upper left")
 plt.tight_layout()
 plt.savefig("preventivi/assets/barChart/istogramma"+'1'+".png")
+plt.clf()
+
+# Creating the cost cash pie chart
+fig, ax = plt.subplots()
+wedges, texts, autotexts = ax.pie(
+    [BUDGET_CASH - remaining_cash, remaining_cash],
+    labels=None,
+    autopct=lambda p: "{:.1f}€ ({:.1f}%)".format(p * BUDGET_CASH / 100, p),
+    startangle=90,
+    colors=["#FFB6C1", "#ADD8E6"],
+)
+cash_labels = ["Budget speso", "Budget rimanente"]
+ax.legend(wedges, cash_labels, loc="upper right", bbox_to_anchor=(0.7, 0, 0.5, 1))
+plt.tight_layout()
+plt.savefig("preventivi/assets/cashPie/anagramma"+'1'+".png")
+plt.clf()
+
+# Creating the cost time pie chart
+fig, ax = plt.subplots()
+wedges, texts, autotexts = ax.pie(
+    [BUDGET_TIME - remaining_time, remaining_time],
+    autopct=lambda p: "{:.1f} ({:.1f}%)".format(p * BUDGET_TIME / 100, p),
+    startangle=90,
+    colors=["#FFB6C1", "#ADD8E6"],
+)
+time_labels = ["Tempo speso", "Tempo rimanente"]
+ax.legend(wedges, time_labels, loc="upper right", bbox_to_anchor=(0.7, 0, 0.5, 1))
+plt.tight_layout()
+plt.savefig("preventivi/assets/timePie/anagramma"+'1'+".png")
 plt.clf()
