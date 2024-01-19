@@ -656,11 +656,6 @@ table(
 
 == Qualità di Processo - Fornitura
 
-Al termine del settimo sprint il team ha rimodulato il BAC progettuale. La modifica non è dovuta tanto dai risultati emersi dalle metriche sottostanti, piuttosto da alcune considerazioni errate in sede di candidatura. 
-Rimane però essenziale che ogni metrica non sia solamente un istantanea dello stato del progetto, ma che mostri anche l'andamento storico del processo di fornitura e con esso le nostre considerazioni. 
-A tal fine, il team ha preferito mantenere registrate le considerazioni e le misurazioni effettuate precedentemente tale decisione, nell'ambito delle metriche.
-
-
 === Estimated at Completion
  
 #figure(
