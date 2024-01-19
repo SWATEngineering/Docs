@@ -711,7 +711,7 @@ Durante il settimo sprint le due metriche hanno mantenuto l'andamento che ci si 
   ],
 )
 
-L'AC rappresenta il costo effettivo sostenuto fino a un dato momento, mentre l'ETC rappresenta la stima del costo aggiuntivo necessario per completare il progetto; di conseguenza, ci si aspetta che l'AC cresca e che l'ETC diminuisca in modo sostanzialmente lineare, segno che il progetto ha mantenuto un ritmo regolare di avanzamento. Stabilire l'andamento delle due metriche al momento della revisione RTB è alquanto prematuro, dati i pochi data points a disposizione. 
+L'AC rappresenta il costo effettivo sostenuto fino a un dato momento, mentre l'ETC rappresenta la stima del costo aggiuntivo necessario per completare il progetto; di conseguenza, ci si aspetta che l'AC cresca e che l'ETC diminuisca in modo sostanzialmente lineare, segno che il progetto ha mantenuto un ritmo regolare di avanzamento. Stabilire l'andamento delle due metriche al momento della revisione #glossary("RTB")è alquanto prematuro, dati i pochi data points a disposizione. 
 
 
 === Earned Value e Planned Value
@@ -738,7 +738,7 @@ L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[d
   ],
 )
 
-Al termine del secondo sprint, tutti i documenti in corso di preparazione in vista dell'RTB possiedono un IG al di sopra del limite accettabile inferiore di 60; in particolare, l'_Analisi dei Requisiti v1.0_ ha raggiunto il valore ideale. 
+Al termine del secondo sprint, tutti i documenti in corso di preparazione in vista della revisione #glossary("RTB") possiedono un IG al di sopra del limite accettabile inferiore di 60; in particolare, l'_Analisi dei Requisiti v1.0_ ha raggiunto il valore ideale. 
 Nel corso degli sprint successivi i valori subiscono variazioni non rilevanti. 
 
 === Correttezza ortografica
@@ -752,7 +752,7 @@ Nel corso degli sprint successivi i valori subiscono variazioni non rilevanti.
 
 
 A seguito dei primi due sprint sono stati rilevati parecchi errori ortografici, per farne fronte si è scelto di adottare uno strumento di controllo dell'ortografia sia in fase di stesura che in fase di revisione. Tuttavia, nonostante l'uso di questo strumento, si è notato che il processo di documentazione continua a essere afflitto da errori ortografici. Questo indica che il problema non è tanto la mancanza di strumenti adeguati, quanto più un approccio disattento da parte del team durante la redazione dei documenti, e nel processo di verifica che ne consegue.
-Fare in modo che non vi siano errori nei documenti prima della revisione RTB rimane comunque un obbiettivo di qualità che il team vuole raggiungere in vista della revisione RTB. 
+Fare in modo che non vi siano errori nei documenti prima della revisione #glossary("RTB") rimane comunque un obbiettivo di qualità che il team vuole raggiungere. 
 Per ovviare al problema il team ha deciso di introdurre un checklist incentrata sugli errori di ortografici, in modo tale che se il processo di verifica posso avvalersene e correggere eventuali errori.  Questa checklist è pensata non solo come uno strumento pratico, ma principalmente come un promemoria costante per il Verificatore. 
 
 
