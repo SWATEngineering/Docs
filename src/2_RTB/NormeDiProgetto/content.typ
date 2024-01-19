@@ -170,7 +170,7 @@ L'_Analisi dei Requisiti v1.0_ viene redatta dagli Analisti e contiene:
 
 ==== Scopo   
 
-Lo scopo dell'_Analisi dei Requisiti v1.0_ è definire in modo dettagliato e chiaro le funzionalità e le caratteristiche che il prodotto software deve soddisfare. Questo processo mira a comprendere a fondo le esigenze degli utenti, gli obiettivi del #glossary[sistema] e le condizioni in cui dovrà operare. Gli obiettivi principali del processo di analisi dei requisiti includono:
+Lo scopo dell'_Analisi dei Requisiti v1.0_ è definire in modo dettagliato e chiaro le funzionalità e le caratteristiche che il prodotto software deve soddisfare. Questo processo mira a comprendere a fondo le esigenze degli utenti, gli obiettivi del #glossary[sistema] e le condizioni in cui dovrà operare. Gli obiettivi principali dell'attività di analisi dei requisiti includono:
 
         - Identificare e chiarire gli obiettivi e le finalità del prodotto che si intende sviluppare;
         - Fornire ai Progettisti una base chiara e comprensibile per la definizione dell'#glossary[architettura] e il design del #glossary[sistema];
@@ -266,10 +266,10 @@ Si definiscono tre sottoattività:
         + *Technology #glossary[Baseline]*: implica la selezione e la definizione delle tecnologie di base utilizzate per la realizzazione del #glossary[sistema]. Questo comprende decisioni relative a linguaggi di programmazione, librerie e #glossary[framework]. Tale processo porta alla creazione di un Proof of Concept (#glossary("PoC"));
 
                 Include:
-                - *Proof of Concept*: consiste nella creazione di una versione parziale del prodotto, includendo alcune delle funzionalità stabilite durante l'analisi dei requisiti. L'obiettivo è valutare la fattibilità del prodotto completo;
+                - *Proof of Concept (#glossary[Poc])*: consiste nella creazione di una versione parziale del prodotto, includendo alcune delle funzionalità stabilite durante l'analisi dei requisiti. L'obiettivo è valutare la fattibilità del prodotto completo;
                 - *scelte tecnologiche*: consiste nello stabilire quali tecnologie adottare per lo sviluppo del #glossary[Poc], anche su consiglio della Proponente.
         + *Progettazione Architetturale*: definizione ad alto livello dell'#glossary[architettura] del #glossary[sistema]; si concentra sulla suddivisione del #glossary[sistema] in componenti e moduli, definendo le relazioni tra di essi e specificando le linee guida per l'organizzazione e l'interazione delle varie parti;
-        + *#glossary[Product Baseline]*: segna un punto stabile nel processo di progettazione, in cui le specifiche tecniche, le funzionalità principali e l'#glossary[architettura] del prodotto sono definite in modo dettagliato e accettate dalle parti coinvolte. Include tutti gli elementi essenziali e i requisiti chiave del prodotto che devono essere soddisfatti, fornendo una base solida per lo sviluppo continuo del prodotto. Questo processo porta infine alla realizzazione di un _Minimum Viable Product_ (#glossary("MVP"));
+        + *Product Baseline (#glossary[PB])*: segna un punto stabile nell'attività di progettazione, in cui le specifiche tecniche, le funzionalità principali e l'#glossary[architettura] del prodotto sono definite in modo dettagliato e accettate dalle parti coinvolte. Include tutti gli elementi essenziali e i requisiti chiave del prodotto che devono essere soddisfatti, fornendo una base solida per lo sviluppo continuo del prodotto. Questo processo porta infine alla realizzazione di un Minimum Viable Product (#glossary("MVP"));
                 Include:
                 - #glossary("Design Patterns");
                 - Definizione delle classi;
@@ -822,8 +822,8 @@ Tuttavia, il metodo #glossary[walkthrough] conserva la sua rilevanza e rimane un
 
 === Analisi dinamica
 
-L'analisi dinamica nel contesto dello sviluppo software si concentra sull'osservazione e valutazione del comportamento del #glossary[sistema] durante l'esecuzione. Questa metodologia è specificamente rivolta al prodotto software risultante dal processo di codifica.
-Nel processo di sviluppo, l'analisi dinamica è attuata attraverso varie categorie di test. I test, derivati dai requisiti, siano essi funzionali o non funzionali, rendono il processo di analisi dinamica ripetibile. Questo significa che è possibile eseguire i test più volte con gli stessi input e condizioni, ottenendo risultati coerenti e affidabili. La ripetibilità dei test è fondamentale per confermare la coerenza delle funzionalità del software in diverse situazioni e sotto diverse condizioni operative. La definizione e l'esecuzione dei test seguono i principi del #glossary[Modello a V].
+L'analisi dinamica nel contesto dello sviluppo software si concentra sull'osservazione e valutazione del comportamento del #glossary[sistema] durante l'esecuzione. Questa metodologia è specificamente rivolta al prodotto software risultante dall'attività di codifica.
+Nel processo di sviluppo, l'analisi dinamica è attuata attraverso varie categorie di test. I test, derivati dai requisiti, siano essi funzionali o non funzionali, rendono l'attività di analisi dinamica ripetibile. Questo significa che è possibile eseguire i test più volte con gli stessi input e condizioni, ottenendo risultati coerenti e affidabili. La ripetibilità dei test è fondamentale per confermare la coerenza delle funzionalità del software in diverse situazioni e sotto diverse condizioni operative. La definizione e l'esecuzione dei test seguono i principi del #glossary[Modello a V].
 
 Il Verificatore si impegna a elaborare casi di test per ciascuna delle seguenti categorie, garantendo una copertura completa e dettagliata del software:
 - Test di unità; 
@@ -944,7 +944,7 @@ Per poter prendere una qualsiasi decisione è necessario vi siano due condizioni
 
 ==== Descrizione e scopo
 
-Il Responsabile assume il ruolo cruciale di pianificare dettagliatamente gli obiettivi per ciascuno #glossary[sprint] fino alla conclusione del progetto. Questo implica una distribuzione coerente del lavoro in linea con le scadenze fissate per le revisioni RTB, PB e CA. Il suo compito principale consiste nel delineare chiaramente come il team dovrebbe gestire e completare le attività relative allo sviluppo del software e alla redazione della #glossary[documentazione] in periodi di tempo specifici.
+Il Responsabile assume il ruolo cruciale di pianificare dettagliatamente gli obiettivi per ciascuno #glossary[sprint] fino alla conclusione del progetto. Questo implica una distribuzione coerente del lavoro in linea con le scadenze fissate per le revisioni #glossary[RTB], #glossary[PB] e #glossary[CA]. Il suo compito principale consiste nel delineare chiaramente come il team dovrebbe gestire e completare le attività relative allo sviluppo del software e alla redazione della #glossary[documentazione] in periodi di tempo specifici.
 
 Oltre a definire gli obiettivi per ogni #glossary[sprint], il Responsabile si occupa di stimare accuratamente il tempo necessario per ciascuna attività e di pianificare la distribuzione dei ruoli all'interno del team. Questa pianificazione deve sempre rimanere aggiornata e sensata rispetto all'andamento generale del progetto e agli obiettivi imminenti. Queste previsioni vengono formalizzate nel _Piano di Progetto v1.0_, che diventa un punto di riferimento durante l'evento di #glossary[Sprint Planning] per definire gli obiettivi del successivo #glossary[sprint].
 
@@ -1191,7 +1191,7 @@ caption:[Metriche Fornitura],
 === Scopo e aspettative
 
 Il processo è progettato per normare il modo in cui il team #team acquisisce conoscenze relative alle tecnologie richieste per la produzione dei documenti e del prodotto.
-Il processo di formazione è progettato per garantire che ogni membro del team raggiunga una competenza sufficiente nell'utilizzo consapevole delle tecnologie selezionate per la realizzazione del progetto.
+L'attività di formazione è progettata per garantire che ogni membro del team raggiunga una competenza sufficiente nell'utilizzo consapevole delle tecnologie selezionate per la realizzazione del progetto.
 
 === Formazione individuale dei membri  
 
