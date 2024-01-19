@@ -131,11 +131,24 @@ Versione: #version
   indent: auto
 )
 
+#pagebreak()
+#outline(
+  title: [Elenco delle Figure],
+  target: figure.where(kind: image),
+)
+#pagebreak()
+
+#outline(
+  title: [Elenco delle Tabelle],
+  target: figure.where(kind: table),
+)
+
 
 /*******************/
 /*    CONTENUTO    */ 
 /*******************/
 
 #pagebreak()
+#set text(11pt)
 
 #include "content.typ"

@@ -11,7 +11,7 @@ Attore;Entità esterna al sistema che interagisce con esso al fine di realizzare
 Cella;Termine utilizzato per indicare un area geografica risultante dalla divisione di un territorio tramite l'applicazione di un griglia. 
 Test end-to-end;Test che valuta l'intero flusso dell'applicazione, in modo tale da verificare che tutti i componenti funzionino correttamente.
 Documentazione;Insieme di documenti che forniscono spiegazioni su un determinato prodotto.
-Sistema; Insieme organizzato di componenti interconnesse e interagenti, che lavorano per raggiungere un obiettivo comune o eseguire specifiche funzioni.
+Sistema; Insieme organizzato di componenti interconnesse e interagenti, che lavorano per raggiungere un obiettivo comune o eseguire specifiche funzioni. Nello specifico del progetto per sistema si intende l'insieme connesso della dashboard di visualizzazione, del database per la persistenza ed analisi dei dati e della piattaforma di streaming di dati in tempo reale per gestire i dati in entrata.
 Deliverable; Ogni prodotto e servizio rilasciato o da rilasciare, include software e documentazione.
 Bug; Errore, difetto o falla nel design, sviluppo o funzionamento del software informatico che provoca la produzione di risultati errati o inaspettati, o che fa comportare il software in modi non previsti.
 Framework; Architettura logica di supporto sulla quale un software può essere progettato e realizzato, spesso facilitandone lo sviluppo da parte del programmatore.
@@ -57,6 +57,9 @@ Timestamp; Un "timestamp" è una marca temporale che rappresenta la data e l'ora
 Dashboard; Una "dashboard" nel contesto della visualizzazione dati è un'interfaccia grafica che presenta in modo chiaro e conciso informazioni chiave e metriche attraverso vari elementi visivi come grafici, tabelle e indicatori. Le dashboard sono progettate per consentire agli utenti di monitorare rapidamente e comprendere lo stato e le tendenze dei dati rilevanti in un'unica panoramica, facilitando la presa di decisioni informate.
 Modello a V; modello di sviluppo software, che struttura le fasi dello sviluppo in una forma a V. Il modello vuole mettere in luce i legami esistenti tra la fase di sviluppo e la fase di verifica e illustrare l'importanza dell'elaborazione dei casi di test in contemporanea alle altre fasi dello sviluppo.
 Inspection; esaminazione sistematica di un documento o codice, attraverso l'uso di checklist predefinite. Durante questa revisione, l'attenzione è rivolta ad attestare che l'oggetto sia conforme ai criteri stabiliti ed  a confermare l'assenza di errori.
+PM10; Il termine PM10 identifica le particelle di diamettro aerodinamico inferiore o uguale ai 10 micrometri.
+Dati in entrata; Modo astratto per identificare un qualsiasi tipo di dato che il sistema è in grado di ricevere dai sensori, e che successivamente andrà a persistere.
+Dati anomali; Dato che si discosta troppo dal normale range di valori per un certo tipo di dato. Comunemente questi dati sono chiamati outlier.
 Docker Compose; Strumento che semplifica la specifica dei servizi, reti e volumi necessari per eseguire un'applicazione composta da più contenitori Docker, consentendo una gestione semplificata dell'ambiente di sviluppo e di distribuzione.
 Python; Linguaggio di programmazione ad alto livello, interpretato e general-purpose, noto per la sintassi chiara, la facilità d'uso e l'ampia disponibilità di librerie e framework.
 Kafka; Piattaforma di streaming distribuita, progettata per la gestione di flussi di dati in tempo reale. Offre una soluzione scalabile e affidabile per la pubblicazione, la sottoscrizione e l'elaborazione di eventi in tempo reale all'interno di un sistema distribuito.
