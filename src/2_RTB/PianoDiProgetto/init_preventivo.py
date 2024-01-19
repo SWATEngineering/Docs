@@ -30,8 +30,9 @@ SPRINT_AHEAD = 2
 
 import csv
 import numpy as np
-import sys
-
+import os
+import re
+"""
 if len(sys.argv) > 1:
     if sys.argv[1].isdigit():
         actualNum = int(sys.argv[1])
@@ -41,6 +42,19 @@ if len(sys.argv) > 1:
 else:
     print("Error: missing argument")
     sys.exit(1)
+"""
+#get actualNum from most recent csv
+files = os.listdir('preventivi/preventivi_csv')
+pattern = re.compile(r'prospetto(\d+)\.csv')
+max_n = 0
+
+for file in files:
+    match = pattern.match(file)
+    if match:
+        n = int(match.group(1))
+        max_n = max(max_n, n)
+
+actualNum = max_n
 
 #create csv for future sprints (SPRINT_AHEAD)
 for _ in range(1,SPRINT_AHEAD+1):
