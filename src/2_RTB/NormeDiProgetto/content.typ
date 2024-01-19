@@ -761,7 +761,7 @@ Per garantire la coerenza e la tempestività delle informazioni, il servizio est
 === Controllo termini glossario    
 
 È stato sviluppato uno script in python per verificare la corrispondenza tra i termini presenti in un documento e quelli presenti nel _Glossario v1.0_.
-Lo script, utilizzando espressioni regolari, confronta i termini indicati nei documenti, formattati secondo lo standard del glossario, con quelli presenti nel _Glossario v1.0_. In presenza di discrepanze, genera un messaggio di errore specificando i termini mancanti nel _Glossario v1.0_. In caso contrario, l'esecuzione avviene senza problemi, indicando che i termini nel documento sono in linea con quelli del _Glossario v1.0_.
+Lo script, utilizzando espressioni regolari, confronta i termini indicati nei documenti, formattati secondo lo standard del glossario, con quelli presenti nel _Glossario_. In presenza di discrepanze, genera un messaggio di errore specificando i termini mancanti nel _Glossario_. In caso contrario, l'esecuzione avviene senza problemi, indicando che i termini nel documento sono in linea con quelli del _Glossario v1.0_.
 Tutti i termini inclusi nel _Glossario v1.0_ devono essere formattati secondo la convenzione da glossario ogni volta che compaiono nel documento, non solo alla prima occorrenza. Questo assicura coerenza e facilita la consultazione, contribuendo a una migliore comprensione dei termini chiave nel contesto del documento.
 
 == Verifica
