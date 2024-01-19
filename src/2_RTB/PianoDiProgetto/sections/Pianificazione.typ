@@ -5,12 +5,12 @@
 Stabilite come #glossary("milestone") principali le #glossary("baseline"), corrispondenti alle revisioni del progetto, gli #glossary[sprint] consentono di mantenere un approccio agile e permettono di essere reattivi rispetto ai cambiamenti nelle esigenze o nei requisiti del progetto. Ciascuno #glossary[sprint] contribuirà in modo incrementale al raggiungimento delle milestone e al successo complessivo del progetto.
 Sulla base delle scadenze riportate nella sezione *Scadenze* si pianificano: 
 
-- 2 #glossary[sprint] di due settimane e 4 #glossary[sprint] da una settimana per arrivare alla revisione RTB; 
-- 8 #glossary[sprint] della durata di una settimana per arrivare alla revisione PB; 
-- 2 #glossary[sprint] della durata di una settimana per arrivare alla revisione CA. 
+- 2 #glossary[sprint] di due settimane e 6 #glossary[sprint] da una settimana per arrivare alla revisione #glossary[RTB]\; 
+- 6 #glossary[sprint] della durata di una settimana per arrivare alla revisione #glossary[PB]\; 
+- 2 #glossary[sprint] della durata di una settimana per arrivare alla revisione #glossary[CA]\. 
 
-Inizialmente, il team aveva pianificato #glossary[sprint] della durata di due settimane. Tuttavia, durante lo svolgimento, è risultato preferibile passare a #glossary[sprint] della durata di una settimana. Di conseguenza, il documento del Piano di progetto, in particolare nelle sezioni *Pianificazione* e *Preventivo*, viene aggiornato in base a questa modifica stabilita. 
-Il documento Piano di Progetto si evolve durante tutto il ciclo di vita del progetto, la modifica della pianificazione deriva dall'esigenza di reagire ai problemi, dovuti ad una durata degli #glossary[sprint] inadeguata. 
+Inizialmente, il team aveva pianificato #glossary[sprint] della durata di due settimane. Tuttavia, durante lo svolgimento, è risultato preferibile passare a #glossary[sprint] della durata di una settimana. Di conseguenza, il documento del _Piano di progetto_, in particolare nelle sezioni *Pianificazione* e *Preventivo*, viene aggiornato in base a questa modifica stabilita. 
+Il documento _Piano di Progetto_ si evolve durante tutto il ciclo di vita del progetto, la modifica della pianificazione deriva dall'esigenza di reagire ai problemi, dovuti ad una durata degli #glossary[sprint] inadeguata. 
 Nell’intervallo di tempo tra revisione RTB e revisione PB, è stata pianificata una diminuzione del carico di lavoro nelle ultime due settimane del mese di Gennaio, permettendo ai membri del team di potersi dedicare agli altri impegni che il percorso di studio richiede. 
 
 Per ciascun #glossary[sprint], vengono stabilite le date di inizio e di fine, e il relativo insieme delle attività pianificate.

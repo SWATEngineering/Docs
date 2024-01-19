@@ -14,6 +14,6 @@
   - Proseguire la stesura del _Piano di Qualifica_:
     - Stendere la sezione di testing di accettazione e testing di sistema;
     - Proseguire la stesura del cruscotto delle metriche con valutazione delle metriche rispetto agli #glossary[sprint] 3 e 4 e aggiornamento dei grafici di confronto.
-  - Proseguire la revisione in stile "walkthrough" dell'_Analisi dei Requisiti_;
+  - Proseguire la revisione in stile #glossary[walkthrough] dell'_Analisi dei Requisiti_;
   - Utilizzare l'automazione realizzata per verificare che tutti i termini marcati come termini di glossario nella documentazione vengano effettivamente aggiunti al _Glossario_;
-  - Iniziare la presentazione in vista della prima revisione RTB.
+  - Iniziare la presentazione in vista della prima revisione #glossary[RTB] (parte I).

@@ -7,7 +7,7 @@
 
 *Obiettivi dello #glossary[sprint]*: 
 
-  - Iniziare revisione in stile #glossary[walkthrough] delle _Norme di Progetto_;
+  - Iniziare revisione in stile #glossary[walkthrough] delle _Norme di Progetto v1.0_;
   - Proseguire la stesura del _Piano di Progetto_, con:
     - Aggiornamento di pianificazione e preventivo pertinenti allo #glossary[sprint] 6 e l'inserimento del consuntivo pertinente allo #glossary[sprint] 5.
   - Proseguire la stesura del _Piano di Qualifica_:
