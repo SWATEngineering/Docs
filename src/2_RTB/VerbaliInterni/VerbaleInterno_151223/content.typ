@@ -38,4 +38,4 @@ Su proposta dei componenti e a seguito di quanto indicato precedentemente, è st
 - Giacomo D'Ovidio: Amministratore, Verificatore;
 - Nancy Kalaj: Amministratore;
 - Matteo Rango: Responsabile, Amministratore;
-- Riccardo Toniolo: Verificatore, Amministratore; 
+- Riccardo Toniolo: Verificatore, Amministratore. 

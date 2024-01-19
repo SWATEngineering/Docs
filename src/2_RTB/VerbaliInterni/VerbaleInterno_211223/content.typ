@@ -34,7 +34,7 @@ Avendo sostanzialmente ultimato la stesura dell'_Analisi dei Requisiti v1.0_, il
 
 == Inizio della presentazione per la revisione RTB
 
-Come ultimo punto il team ha discusso della necessità di cominciare ad impostare il contenuto della presentazione RTB, compito che è stato affidato al Responsabile. 
+Come ultimo punto il team ha discusso della necessità di cominciare a impostare il contenuto della presentazione RTB, compito che è stato affidato al Responsabile. 
 
 == Assegnazione dei ruoli
 

@@ -29,7 +29,7 @@ Il ruolo di Progettista non è stato assegnato, in quanto per il momento ha oper
 La presenza di due programmatori è dovuta al fatto che il Team in accordo con la proponente vuole sviluppare una prima versione del PoC entro la fine dello sprint corrente. 
 
 == Cambio di ruoli settimanale
-Per favorire una rotazione più rapida e un carico di lavoro più omogeneo il team ha deciso di introdurre la possibilità cambiare i ruoli una volta raggiunta la metà temporale di ogni sprint. Nell'ottica dello sprint iniziato in data odierna, il cambio dei ruoli avverrà ipoteticamente venerdì 1 Dicembre.
+Per favorire una rotazione più rapida e un carico di lavoro più omogeneo il team ha deciso di introdurre la possibilità di cambiare i ruoli una volta raggiunta la metà temporale di ogni sprint. Nell'ottica dello sprint iniziato in data odierna, il cambio dei ruoli avverrà ipoteticamente venerdì 1 Dicembre.
 Si precisa che il cambio dei ruoli è opzionale e non necessariamente riguarda la totalità dei ruoli e dei membri. 
 I membri coinvolti nello scambio devono però aver almeno concluso le _issue_ assegnate e già cominciate.  
 
