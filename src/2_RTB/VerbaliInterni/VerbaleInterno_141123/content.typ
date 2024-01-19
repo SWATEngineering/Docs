@@ -18,7 +18,7 @@
 /*    INSERIRE SOTTO IL CONTENUTO    */ 
 /*************************************/
 
-Nella riunione tenuta in data odierna sono stati trattati i seguenti argomenti.
+Nella riunione tenutasi in data odierna sono stati trattati i seguenti argomenti.
 
 == Chiarire conflitto riguardante le versioni del software e della documentazione
 È stato deciso di consultare i professori al fine di trovare una best practice per poter definire come la versione della documentazione e del prodotto software possano progredire in sincronia.
@@ -42,7 +42,7 @@ Questa aggiunta di dettagli sul ruolo del responsabile è stata ritenuta necessa
 - Si ritiene che un verificatore sia più che sufficiente per lo sprint attuale. Le motivazioni a riguardo sono:
   - Quantità limitata di documenti da verificare;
   - Semplicità organizzativa. Con un numero ridotto di documenti, la gestione delle attività di verifica risulta semplificata. Un solo verificatore può concentrarsi sull'assicurare che i pochi documenti prodotti rispettino gli standard stabiliti.
-- La rotazione dei ruoli tuttavia, verrà attuata venerdì 17/11/2023, in quanto sono da portare a termine delle _issue_ con i ruoli precedentemente assegnati.
+- La rotazione dei ruoli, tuttavia, verrà attuata venerdì 17/11/2023, in quanto sono da portare a termine delle _issue_ con i ruoli precedentemente assegnati.
 
 La nuova assegnazione dei ruoli è la seguente:
 - *Simone Caregnato*: Amministratore;
