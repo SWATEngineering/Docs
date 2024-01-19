@@ -121,7 +121,7 @@ Versione: #version
 
 #pagebreak()
 
-#set text(11pt)
+#set text(13pt)
 #set heading(
   numbering: "1.1",
   outlined: true,
