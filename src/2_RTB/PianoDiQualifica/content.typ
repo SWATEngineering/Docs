@@ -16,15 +16,12 @@ Il documento costituisce un impegno concreto per assicurare la qualità in modo 
 == Scopo 
 
 Questo documento ha lo scopo di garantire la qualità del processo e del prodotto attraverso diversi passaggi fondamentali. 
-//Prima di tutto, stabilisce gli standard di qualità da seguire. Successivamente, definisce i criteri e le misure che verranno utilizzati per valutare quanto sia efficace il processo e il risultato ottenuto.
-
+/
 La definizione di metriche quantitative e la loro periodica misurazione permettono al team di valutare l'efficacia e l'efficienza del progetto di sviluppo e di intraprendere decisioni che ne permettano la costante ottimizzazione. 
 
 Si propone inoltre di guidare il team attraverso tutte le fasi di testing: dalla pianificazione dei test fino alla valutazione dei risultati ottenuti. 
 
-//Include anche verifiche e controlli approfonditi del prodotto, che comprendono test specifici su varie parti (come unità, integrazione, sistema e accettazione). Questo processo di verifica aiuta anche a gestire eventuali difetti o anomalie rilevate durante le attività di test.
 
-//Infine, è orientato al miglioramento costante: si adatta in base alle esperienze acquisite e a eventuali modifiche richieste nel progetto, garantendo così che il processo e il prodotto crescano e si evolvano con il tempo. [COMMENTATO PERCHè SECONDO ME è RIDONDANTE CON L'INTRODUZIONE]
 
 == Glossario
 Al fine di evitare possibili ambiguità relative al linguaggio utilizzato nei documenti, viene
@@ -54,17 +51,13 @@ Un'attività che comprende l'inserimento di un termine di glossario può conside
 #pagebreak()
 = Qualità di Processo 
 
-//== Obiettivi 
+
 
 La qualità di processo si fonda sul assunto che, al fine di ottenere un prodotto che soddisfi determinati standard di qualità sia necessario che i processi che ne stanno alla base siano sottoposti a controlli periodici con lo scopo ultimo di ottimizzarli.
 Il concetto di qualità di processo viene dunque applicato all'intero spettro di attività, pratiche e metodi utilizzati lungo l'intero ciclo di vita del software.
 In sintesi, la qualità di processo mira a rendere la qualità una parte integrante del prodotto, garantendo che sia costruita nel processo stesso e non sia solo un obiettivo secondario.
 Di seguito vengono presentate le metriche che il team si impegna a soddisfare nel contesto della qualità di processo.
 Come presentato nel documento _Norme di Progetto v1.0_ la sigla MPC sta ad indicare le metriche di processo.
-
-
-//Si riferisce all'efficacia ed efficienza dei processi e delle metodologie impiegate nello sviluppo, testing e mantenimento del software. Essa abbraccia l'insieme di attività, pratiche e metodi utilizzati lungo l'intero ciclo di vita dello sviluppo del software al fine di garantire che il prodotto finale soddisfi i requisiti specificati e venga consegnato puntualmente ed entro il budget previsto. In questo contesto, la qualità di processo è fondamentale per assicurare un'implementazione coerente, misurabile e ottimizzata delle fasi di sviluppo, contribuendo a conseguire gli obiettivi di qualità complessivi.
-
 
 == Processi Primari  
 
@@ -733,7 +726,7 @@ L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[d
   ],
 )
 
-Al termine del secondo sprint, tutti i documenti in corso di preparazione in vista della revisione #glossary("RTB") possiedono un IG al di sopra del limite accettabile inferiore di 60; in particolare, l'_Analisi dei Requisiti v1.0_ ha raggiunto il valore ideale. 
+Al termine del secondo sprint, tutti i documenti in corso di preparazione in vista della revisione #glossary("RTB") possiedono un IG al di sopra del limite accettabile inferiore di 60; in particolare, l'_Analisi dei Requisiti_ ha raggiunto il valore ideale. 
 Nel corso degli sprint successivi i valori subiscono variazioni non rilevanti. 
 
 === Correttezza ortografica
