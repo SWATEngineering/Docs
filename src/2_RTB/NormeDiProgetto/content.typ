@@ -20,7 +20,7 @@ Il progetto "InnovaCity" si concentra sulla creazione di una #glossary[dashboard
 
 Al fine di evitare possibili ambiguità relative al linguaggio utilizzato nei documenti, viene
 fornito il _Glossario v1.0_, nel quale sono presenti tutte le definizioni di termini aventi un significato specifico che vuole essere disambiguato. Tali termini, sono scritti in corsivo e marcati con una #sub("G") a pedice.
-L'attività di inserimento di un termine nel glossario può considerarsi completata solo quando il termine viene correttamente definito e spiegato all'interno del _Glossario v1.0_.
+L'attività di inserimento di un termine nel glossario può considerarsi completata solo quando il termine viene correttamente definito e spiegato all'interno del _Glossario_.
 
 == Riferimenti
 
@@ -53,7 +53,7 @@ L'attività di inserimento di un termine nel glossario può considerarsi complet
 === Descrizione e scopo
 
 Il processo di fornitura si propone di dettagliare le attività del fornitore per comprendere e soddisfare le richieste della Proponente.
-Dopo la completa comprensione delle esigenze, il fornitore, in collaborazione con la Proponente, stabilisce tramite contratto la data di consegna del prodotto. Successivamente, si procede con la redazione del _Piano di Progetto v1.0_, per pianificare dettagliatamente le varie attività da svolgere, garantendo un chiaro processo di sviluppo del prodotto finale. L'obiettivo principale è soddisfare in modo chiaro le richieste della Proponente, evitando possibili incomprensioni attraverso una collaborazione continua.
+Dopo la completa comprensione delle esigenze, il fornitore, in collaborazione con la Proponente, stabilisce tramite contratto la data di consegna del prodotto. Successivamente, si procede con la redazione del _Piano di Progetto_, per pianificare dettagliatamente le varie attività da svolgere, garantendo un chiaro processo di sviluppo del prodotto finale. L'obiettivo principale è soddisfare in modo chiaro le richieste della Proponente, evitando possibili incomprensioni attraverso una collaborazione continua.
 
 Il processo si articola in diverse fasi:
 
@@ -991,7 +991,7 @@ I ruoli assunti sono i seguenti:
          - Preparazione dell'ordine del giorno per la successiva riunione, anche sulla base
            dei punti individuati dagli altri componenti;
          - Redazione dei verbali interni ed esterni;
-         - Stesura e e avanzamento del documento “_Piano di progetto v1.0_”;
+         - Stesura e e avanzamento del documento “_Piano di progetto_”;
          - Creazione dei diari di bordo;
          - Upload dei verbali esterni convalidati, tramite firma, dalla Proponente in una cartella apposita su Google Drive.
 
@@ -1005,10 +1005,10 @@ I ruoli assunti sono i seguenti:
          - Implementazione delle procedure operative;
          - Assicurare la disponibilità degli strumenti necessari per la collaborazione e la comunicazione all'interno del team;
          - Creazione e assegnazione delle _issue_ ai membri del team;
-         - Stesura e avanzamento del documento _Norme di Progetto v1.0_;
+         - Stesura e avanzamento del documento _Norme di Progetto_;
          - Implementazione di script dedicati per automatizzare processi nell'ambiente di lavoro;
          - Gestione del versionamento dei documenti;
-         - Stesura e avanzamento del documento _Piano di Qualifica v1.0_.
+         - Stesura e avanzamento del documento _Piano di Qualifica_.
 
 ==== Analista
      
@@ -1152,7 +1152,7 @@ Negli incontri interni possono partecipare solamente i membri del gruppo. Si svo
 Le linee guida per le riunioni:
                 + Prima dell'incontro avere un ordine del giorno, ovvero i punti eventuali da discutere;
                 + Discussione dei punti;
-                + Pianificazione attività per la settimana (valutate rispetto a quanto pianificato nel _Piano di Progetto v1.0_) e assegnazione issue.
+                + Pianificazione attività per la settimana (valutate rispetto a quanto pianificato nel _Piano di Progetto_) e assegnazione issue.
                 
         Alla fine dell'incontro:
                 + Il Responsabile ha il compito della stesura del verbale interno, fornendo una sintesi dei punti salienti dell'incontro. 
