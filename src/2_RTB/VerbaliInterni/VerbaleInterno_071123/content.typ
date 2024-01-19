@@ -45,7 +45,7 @@ Si è deciso di modificare il versionamento del progetto, in risposta ai suggeri
 La responsabilità della modifica della sezione Versionamento nelle NdP è stata assegnata a Matteo Rango.
 
 == Modifica dei nomi dei documenti
-In seguito ai suggerimenti del committente, si è deciso di modificare i nomi dei documenti, in modo che contengano la versione attuale. Inoltre, sempre sotto suggerimento del committente, verranno rimosse, dalle tabelle change log, le entry relative alle revisioni.
+In seguito ai suggerimenti del committente, si è deciso di modificare i nomi dei documenti, in modo che contengano la versione attuale. Inoltre, sempre sotto suggerimento del committente, verranno rimosse, dalle tabelle changelog, le entry relative alle revisioni.
 #pagebreak()
 
 == Sostituzione note taking system
