@@ -46,5 +46,5 @@ Su proposta dei componenti e a seguito di quanto indicato precedentemente, è st
 - Giacomo D'Ovidio: Programmatore;
 - Nancy Kalaj: Analista, Amministratore;
 - Matteo Rango: Analista, Amministratore;
-- Riccardo Toniolo: Verificatore, Amministratore; 
+- Riccardo Toniolo: Verificatore, Amministratore.
 Il ruolo di Progettista non è ancora stato assegnato, in quanto si ritiene non necessario in questa fase di avanzamento del progetto.

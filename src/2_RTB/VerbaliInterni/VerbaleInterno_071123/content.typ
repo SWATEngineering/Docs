@@ -21,7 +21,7 @@ Su proposta dei componenti è stata assegnata questa prima distribuzione dei ruo
 - Analista: Simone Caregnato;
 - Analista: Nancy Kalaj;
 - Verificatore: Riccardo Costantin;
-- Verificatore: Giacomo D'Ovidio;
+- Verificatore: Giacomo D'Ovidio.
 Per il momento i ruoli di Progettista e Programmatore non sono stati assegnati, in quanto per il momento hanno operatività limitata.
 
 == Verbali degli Stand-Up

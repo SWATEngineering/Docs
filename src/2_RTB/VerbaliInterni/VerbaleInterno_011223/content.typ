@@ -33,7 +33,7 @@ Su proposta dei componenti è stata assegnata questa  distribuzione dei ruoli:
 - Analista: Riccardo Toniolo;
 - Analista: Matteo Rango;
 - Analista: Giacomo D'Ovidio;
-- Verificatore: Simone Caregnato ;
+- Verificatore: Simone Caregnato.
 
 Il ruolo di programmatore non è stato assegnato, poiché la struttura finale del PoC è stata conclusa. Il ruolo di progettista, invece, non è stato assegnato, in quanto si ritiene che sia prematuro rispetto all'attuale stato di avanzamento del progetto. 
 

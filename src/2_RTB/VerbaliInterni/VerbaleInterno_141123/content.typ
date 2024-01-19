@@ -31,7 +31,7 @@ Nella riunione tenutasi in data odierna sono stati trattati i seguenti argomenti
   - Preparare l’ordine del giorno per la successiva riunione, anche sulla base dei punti individuati dagli altri componenti;
   - Redigere i verbali interni ed esterni;
   - Stendere e far progredire il documento "Piano di progetto";
-  - Creare i diari di bordo;
+  - Creare i diari di bordo.
 
 Questa aggiunta di dettagli sul ruolo del responsabile è stata ritenuta necessaria in quanto ci si è resi conto che il ruolo del responsabile non aveva abbastanza mansioni e quindi aveva molto tempo libero. Di conseguenza sono state individuate mansioni per poter impiegare meglio il suo tempo, andando ad alleggerire il carico di lavoro dagli altri ruoli (e.g. la stesura dei verbali, precedentemente svolta dagli analisti).
 
