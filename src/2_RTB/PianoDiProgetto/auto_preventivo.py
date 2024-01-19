@@ -134,6 +134,7 @@ filtered_values = [
 if len(filtered_values) == 0:
     print("Error: no values inserted in prospetto"+str(sprintNum)+".csv")
     sys.exit(1)
+
 time_values, role_values, role_colors = zip(*filtered_values)
 
 # Creating the time pie chart
@@ -211,6 +212,7 @@ with open('preventivi/budget.csv', 'w', newline='') as csvfile:
     # update row of current sprint
     writer = csv.writer(csvfile)
     # if there is row  sprintNum, update it, otherwise create it
+    isUpdated = False
     for row in budget_csv:
         if row[0] == str(sprintNum):
             row[1] = int(remaining_time)
