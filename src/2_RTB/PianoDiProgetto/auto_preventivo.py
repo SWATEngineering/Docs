@@ -130,6 +130,10 @@ role_colors = ["#FF6961", "#5DADE2", "#E74C3C", "#F39C12", "#9B59B6", "#58D68D"]
 filtered_values = [
     (t, r, c) for t, r, c in zip(total_per_role, short_roles, role_colors) if t > 0
 ]
+# check if there are no values
+if len(filtered_values) == 0:
+    print("Error: no values inserted in prospetto"+str(sprintNum)+".csv")
+    sys.exit(1)
 time_values, role_values, role_colors = zip(*filtered_values)
 
 # Creating the time pie chart
