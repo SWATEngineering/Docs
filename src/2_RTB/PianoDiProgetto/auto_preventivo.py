@@ -158,7 +158,7 @@ df = df.set_index("Nominativo", drop=True)
 df = df.apply(pd.to_numeric, errors='coerce')
 
 # Plotting
-ax = df.plot(kind="bar", stacked=True, figsize=(10, 6))
+ax = df.plot(kind="bar", stacked=True, figsize=(10, 6), color=role_colors)
 
 ax.set_xticklabels(ax.get_xticklabels(), rotation=0, ha="center")
 
