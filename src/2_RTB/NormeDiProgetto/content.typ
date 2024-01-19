@@ -46,7 +46,7 @@ L'attività di inserimento di un termine nel glossario può considerarsi complet
 
 
 
-= Processi Primari
+= Processi primari
 
 == Fornitura
 
