@@ -667,7 +667,7 @@ A tal fine, il team ha preferito mantenere registrate le considerazioni e le mis
 
 
 ==== Considerazioni Pre-Rimodulazione BAC 
-Possiamo rilevare da il grafico, che la curva delineata dal valore del AEC pur essendo rimasta sempre al di sopra del valore d'accettazione ha, già a partire dal secondo sprint, mostrato un trend decrescente, il team si aspetta che nel corso dei prossimi sprint il valore continui a scendere fino a rientrare nella fascia accettabile. 
+Possiamo rilevare dal grafico che la curva delineata dal valore del AEC, pur essendo rimasta sempre al di sopra del valore d'accettazione, ha, già a partire dal secondo sprint, mostrato un trend decrescente; il team si aspetta che nel corso dei prossimi #glossary[sprint] il valore continui a scendere fino a rientrare nella fascia accettabile. 
 Nell'eventualità il trend dovesse invertirsi il team dovrebbe rimodulare la quantità di lavoro netta associata al concetto di ora produttiva.
 ==== Considerazioni Post-Rimodulazione BAC 
 Nonostante il nuovo valore assunto dal BAC a seguito della rimodulazione porta il valore dell'EAC ad avvicinarsi ad esso e a rientrare all'interno della soglia accettabile, rimane comunque più interessante notare come l'andamento continui ad essere decrescente segno che il team sta sfruttando bene le ore produttive a disposizione. 
