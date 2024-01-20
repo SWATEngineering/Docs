@@ -687,7 +687,7 @@ Il BV indica se alla data corrente si è speso di più o di meno rispetto a quan
 Nonostante inizialmente le due metriche si stessero allontanando rapidamente dal valore di accettazione, a partire dal secondo #glossary[sprint] queste sembrano stabilizzarsi, segno che le azioni correttive adottate all'epoca hanno prodotto gli effetti desiderati quasi immediatamente.
 Il cambiamento più significativo si è verificato durante il sesto #glossary[sprint], in occasione del quale è stata osservata un'inversione di tendenza: entrambe le metriche hanno iniziato a riavvicinarsi al valore desiderato.
 Il team si augura che il #glossary[way of working] consolidato nel corso del progetto permetta di recuperare quanto perso nel corso dei primi #glossary[sprint]. 
-Durante il settimo sprint le due metriche hanno mantenuto l'andamento che ci si augurava. 
+Durante il settimo #glossary[sprint] le due metriche hanno mantenuto l'andamento che ci si augurava. 
 
 
 === Actual Cost e Estimate To Complete
