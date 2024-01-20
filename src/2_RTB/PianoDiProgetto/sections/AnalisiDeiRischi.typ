@@ -20,7 +20,7 @@ La mancanza di familiarità o esperienza con le tecnologie specifiche impiegate 
   - *Valutazione*: pericolosità: alta; occorrenza: alta;
   - *Prevenzione*:
     - Formazione da parte della Proponente: la Proponente organizza incontri periodici di formazione focalizzati sulle tecnologie specifiche utilizzate nel progetto, offrendo così al team la possibilità di colmare le lacune e approfondire le conoscenze;
-    - #glossary("Workshop") interni: il team organizza workshop interni guidati dai membri più esperti su determinate tecnologie, consentendo loro di condividere conoscenze e esperienze con gli altri membri del team e favorendo l'apprendimento reciproco;
+    - #glossary("Workshop") interni: il team organizza #glossary[workshop] interni guidati dai membri più esperti su determinate tecnologie, consentendo loro di condividere conoscenze e esperienze con gli altri membri del team e favorendo l'apprendimento reciproco;
     - Lavoro in coppia: durante le fasi in cui lo sviluppo di codice richiede un contributo più rilevante, il team adotterà un approccio di lavoro in coppia. Questa pratica consentirà ai membri del team di condividere conoscenze e competenze, aiutandosi reciprocamente a superare le lacune individuali nelle conoscenze tecnologiche.
     
 === RT2 - Difficoltà nell'adozione degli strumenti di gestione del progetto
@@ -28,8 +28,8 @@ Il team potrebbe incontrare sfide nell'apprendere l'utilizzo e nell'integrazione
   - *Identificazione*: la difficoltà nell'adozione degli strumenti può manifestarsi quando i membri del team incontrano dubbi o incertezze riguardo alle procedure da seguire o all'utilizzo degli strumenti stessi;
   - *Valutazione*: pericolosità: media; occorrenza: bassa;
   - *Prevenzione*:
-    - Norme di Progetto: tutti i dettagli del #glossary[way of working] vengono concordati durante i meeting interni e normati all'interno delle _Norme di Progetto_. In caso di dubbi o incertezze, il riferimento a queste norme o la richiesta di chiarimenti all'Amministratore del progetto rappresentano un'importante risorsa per la risoluzione tempestiva di problemi legati agli strumenti e alle procedure;
-    - Inclusione di dubbi nell'#glossary[ordine del giorno]: l'inclusione dei dubbi e delle incertezze nelle proposte dell'ordine del giorno del meeting interno successivo consente al team di affrontare in modo strutturato e tempestivo le difficoltà riscontrate, garantendo un ambiente in cui tali problemi possano essere risolti in modo collaborativo e efficiente.
+    - _Norme di Progetto_: tutti i dettagli del #glossary[way of working] vengono concordati durante i meeting interni e normati all'interno delle _Norme di Progetto_. In caso di dubbi o incertezze, il riferimento a queste norme o la richiesta di chiarimenti all'Amministratore del progetto rappresentano un'importante risorsa per la risoluzione tempestiva di problemi legati agli strumenti e alle procedure;
+    - Inclusione di dubbi nell'#glossary[ordine del giorno]: l'inclusione dei dubbi e delle incertezze nelle proposte dell'#glossary[ordine del giorno] del meeting interno successivo consente al team di affrontare in modo strutturato e tempestivo le difficoltà riscontrate, garantendo un ambiente in cui tali problemi possano essere risolti in modo collaborativo e efficiente.
 
 === RT3 - Produzione di codice poco comprensibile
 Il team, data l'inesperienza dei suoi componenti, potrebbe produrre codice difficile da comprendere o contorto. Questo, unito ad un'eventuale carenza di relativa #glossary[documentazione], potrebbe influenzare negativamente i tempi di sviluppo. 
@@ -49,8 +49,8 @@ La mancata organizzazione della comunicazione interna si riferisce a situazioni 
   - *Valutazione*: pericolosità: bassa; occorrenza: bassa;
   - *Prevenzione*:
     - Pianificazione della comunicazione: stabilire canali di comunicazione specifici per diversi tipi di messaggi (ad esempio discussioni generali, questioni urgenti, cambiamenti dello stato delle issue nell'#glossary[ITS], proposte per l'#glossary[ordine del giorno] e altro);
-    - Ordine del giorno: definire un ordine del giorno chiaro per i meeting interni settimanali, con tempi stabiliti per ciascun argomento;
-    - Stand-up meeting giornalieri (anche da remoto): riunioni brevi e quotidiane favoriscono una migliore comprensione dello stato del progetto, consentendo a ciascun membro del team di aggiornare gli altri sui progressi, sulle sfide incontrate e sui prossimi passi. Questa pratica aiuta a identificare i problemi in modo tempestivo, a fornire supporto reciproco e a mantenere il team allineato con gli obiettivi comuni;
+    - #glossary[Ordine del giorno]: definire un #glossary[ordine del giorno] chiaro per i meeting interni settimanali, con tempi stabiliti per ciascun argomento;
+    - #glossary[Stand-up meeting] giornalieri (anche da remoto): riunioni brevi e quotidiane favoriscono una migliore comprensione dello stato del progetto, consentendo a ciascun membro del team di aggiornare gli altri sui progressi, sulle sfide incontrate e sui prossimi passi. Questa pratica aiuta a identificare i problemi in modo tempestivo, a fornire supporto reciproco e a mantenere il team allineato con gli obiettivi comuni;
     - Meeting di emergenza: incontri non pianificati con i quali uno o più componenti possono invocare una discussione a livello di team per risolvere questioni urgenti legate a modifiche critiche da apportare alla #glossary[documentazione] o ad una porzione di codice. Dato il poco preavviso, in occasione di questi incontri il #glossary[quorum] viene abbassato da 4 a 3 persone su 6, in modo che i componenti interessati possano esporre e motivare le modifiche che intendono apportare e procedere a lavorare sul documento in questione senza dover necessariamente attendere l'incontro interno di fine #glossary[sprint].
 
 === RC2 - Esasperazione di conflitti interni
@@ -79,13 +79,13 @@ I diversi livelli di competenze e una comunicazione poco trasparente possono por
     - Promuovere la comprensione reciproca: il team si deve sforzare nel comprendere le condizioni e i punti di vista degli altri componenti per creare un clima di progetto positivo, indirizzato verso il miglioramento.
 
 === RC5 - Context Switch
-Per #glossary("Context Switch") ci si riferisce al cambiamento dei ruoli all'interno del team. Questo passaggio da un ruolo ad un altro comporta la necessità di adattarsi rapidamente alle nuove responsabilità e di comprendere appieno ciò che è stato svolto dal membro del team precedentemente.
-  - *Identificazione*: Difficoltà  nella comprensione del lavoro svolto fino al quel momento; 
+Con l'espressione #glossary("Context Switch") ci si riferisce al cambiamento dei ruoli all'interno del team. Questo passaggio da un ruolo ad un altro comporta la necessità di adattarsi rapidamente alle nuove responsabilità e di comprendere appieno ciò che è stato svolto dal membro del team che ha ricoperto un determinato ruolo per ultimo.
+  - *Identificazione*: difficoltà  nella comprensione del lavoro svolto fino al quel momento; 
   - *Valutazione*: pericolosità: bassa; occorrenza: alta;
   - *Prevenzione*:
       - La persona, che ha precedentemente occupato quel ruolo specifico, offre supporto al membro del team che ha assunto ora quella posizione, facilitandone la transizione;
-      - Assistere l'Amministratore nella creazione delle attività per il prossimo #glossary[sprint];
-      - Dedicare il primo giorno  unicamente allo studio di quanto fatto precedentemente, in modo da riuscire a sincronizzarsi con il contesto del ruolo.
+      - Assistere l'Amministratore nella creazione delle attività per il prossimo #glossary[sprint]\;
+      - Dedicare il primo giorno unicamente allo studio di quanto fatto precedentemente, in modo da riuscire a sincronizzarsi con il contesto del ruolo.
 
 == Rischi di Pianificazione
 === RP1 - Comprensione erronea dei requisiti
@@ -99,7 +99,7 @@ La comprensione erronea dei requisiti indica il potenziale malinteso o fraintend
 
 === RP2 - Disallineamento delle componenti architetturali
 Questo rischio riguarda la possibilità di progettare componenti all'interno dell'#glossary[architettura] del #glossary[sistema] che potrebbero risultare incompatibili o in disaccordo una volta integrate o combinate. Ciò può generare conflitti nell'interoperabilità delle parti e compromettere la coesione del #glossary[sistema] nel suo insieme.
-  - *Identificazione*: questo rischio è individuabile durante le fasi di progettazione, quando si evidenziano incongruenze tra le interfacce delle varie componenti o quando emergono problemi di compatibilità durante l'integrazione preliminare di parti del #glossary[sistema];
+  - *Identificazione*: questo rischio è individuabile durante le fasi di progettazione, quando si evidenziano incongruenze tra le interfacce delle varie componenti o quando emergono problemi di compatibilità durante l'integrazione preliminare di parti del #glossary[sistema]\;
   - *Valutazione*: pericolosità: media; occorrenza: media;
   - *Prevenzione*: 
     - Metodologia di progettazione modulare: adottare un approccio modulare durante la progettazione architetturale, suddividendo il #glossary[sistema] in componenti chiare e ben definite. Questo aiuta a identificare in anticipo eventuali discrepanze tra le parti e favorisce l'interoperabilità;
@@ -118,8 +118,8 @@ Questo rischio si riferisce alla possibilità di variazioni significative rispet
 === RP4 - Impegni universitari
 Questo rischio riguarda la potenziale difficoltà dei membri del team, nel dedicare il tempo richiesto al progetto a causa degli impegni universitari, con particolare riferimento alla sessione di esami invernale che si sovrappone al periodo del progetto.
   - *Identificazione*:
-    - questo rischio è individuabile attraverso l'osservazione di un rallentamento delle attività di progetto;
-    - nella fase di pianificazione viene identificato il periodo in cui è prevista la fase di preparazione per gli esami;
+    - Questo rischio è individuabile attraverso l'osservazione di un rallentamento delle attività di progetto;
+    - Nella fase di pianificazione viene identificato il periodo in cui è prevista la fase di preparazione per gli esami;
   - *Valutazione*: pericolosità: alta; occorrenza: media;
   - *Prevenzione*: nei periodi più intensi, si procederà a ridurre le ore di lavoro dedicate al progetto, consentendo così ai membri del team di concentrarsi sugli studi.
 

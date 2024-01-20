@@ -3,11 +3,11 @@
 
 #let ruoli_ore = (
   Re: 40,
-  Am: 56,
+  Am: 61,
   An: 42,
   Pt: 0,
-  Pr: 30,
-  Ve: 65,
+  Pr: 27,
+  Ve: 64,
 )
 
 #let costo_ruoli_ore=(
@@ -20,7 +20,7 @@
 )
 
 #let rimanente_ore = 570 - ruoli_ore.values().sum();
-#let rimanente_soldi = 11555 - costo_ruoli_ore.values().sum();
+#let rimanente_soldi = 11070 - costo_ruoli_ore.values().sum();
 
 == Prima Revisione (Requirements and Technology Baseline #glossary[RTB])
 

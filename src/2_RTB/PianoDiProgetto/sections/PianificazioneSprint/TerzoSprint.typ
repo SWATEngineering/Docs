@@ -17,6 +17,6 @@
   - Proseguire la stesura del _Piano di Qualifica_ con una bozza delle metriche da adottare per valutare la qualità dei processi primari e i processi di supporto e relativi valori di accettazione e ideali;
   - Apportare migliorie al #glossary[PoC]:
     - Migliorare la dimostrazione dell'andamento sinusoidale della temperatura aumentando la velocità di generazione dei dati per poter modellare una giornata in pochi minuti;
-    - Utilizzare le funzioni aggregate di "MovingAverage" per ottimizzare le query;
-    - Implementare ed utilizzare la funzionalità di filtraggio propria di #glossary[Grafana].
+    - Utilizzare la funzione aggregata "MovingAverage" per ottimizzare le query;
+    - Implementare ed utilizzare una funzionalità di filtraggio all'interno di #glossary[Grafana] per mezzo di #glossary[Grafana] variables.
 

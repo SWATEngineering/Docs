@@ -24,6 +24,10 @@ Questa sezione vuole essere una proiezione finanziaria dettagliata dell'intero p
 //#include "PreventivoSprint/QuartoSprint.typ"
 //#include "PreventivoSprint/QuintoSprint.typ"
 //#include "PreventivoSprint/SestoSprint.typ"
+//#include "PreventivoSprint/SettimoSprint.typ"
+//#include "PreventivoSprint/OttavoSprint.typ"
+//#include "PreventivoSprint/NonoSprint.typ"
+//#include "PreventivoSprint/DecimoSprint.typ"
 
 #include "PreventivoSprint/SecondaRevisione.typ"
 #include "PreventivoSprint/TerzaRevisione.typ"
