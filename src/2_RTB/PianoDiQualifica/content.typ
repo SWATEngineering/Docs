@@ -711,7 +711,7 @@ L'AC rappresenta il costo effettivo sostenuto fino a un dato momento, mentre l'E
   ],
 )
 
-L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[deliverable] rilasciati fino al momento della misurazione in seguito alle attività svolte; il PV rappresenta invece il valore del lavoro pianificato fino a un dato momento. Nonostante sia ancora prematuro confrontare le due metriche con l'EAC, si può notare che il PV si mantiene al di sotto dell'EV, seppur di poco, segno che i preventivi fatti finora sono stati leggermente ottimistici rispetto alla spesa effettiva. Si può notare che le due metriche a partire dal secondo sprint tendono ad avvicinarsi: ciò denota che il team sta iniziando effettivamente a produrre dei preventivi più rigorosi.
+L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[deliverable] rilasciati fino al momento della misurazione in seguito alle attività svolte; il PV rappresenta invece il valore del lavoro pianificato fino a un dato momento. Nonostante sia ancora prematuro confrontare le due metriche con l'EAC, si può notare che il PV si mantiene al di sotto dell'EV, seppur di poco, segno che i preventivi fatti finora sono stati leggermente ottimistici rispetto alla spesa effettiva. Si può notare che le due metriche a partire dal secondo #glossary[sprint] tendono ad avvicinarsi: ciò denota che il team sta iniziando effettivamente a produrre dei preventivi più rigorosi.
 
 // == Qualità di Processo - Codifica TODO: non ha senso in questa fase del progetto
 
