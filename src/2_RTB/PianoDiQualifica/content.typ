@@ -661,7 +661,7 @@ table(
 L'EAC rappresenta una revisione del valore stimato per la realizzazione del progetto, ossia il BAC (Budget At Completion) rivisto allo stato corrente del progetto; il fattore che incide maggiormente sull'andamento dell'EAC è il rapporto tra EV (Estimated Value) e AC (Actual Cost), per cui tanto più queste metriche sono vicine l'una all'altra, tanto più l'EAC risulterà vicino al BAC pianificato inizialmente. 
 
 
-Al termine del settimo sprint il team ha rimodulato il BAC progettuale. La modifica non è dovuta tanto dai risultati emersi dalle metriche sottostanti, piuttosto da alcune considerazioni errate in sede di candidatura. 
+Al termine del settimo #glossary[sprint] il team ha rimodulato il BAC progettuale. La modifica non è dovuta tanto dai risultati emersi dalle metriche sottostanti, piuttosto da alcune considerazioni errate in sede di candidatura. 
 Rimane però essenziale che ogni metrica non sia solamente un istantanea dello stato del progetto, ma che mostri anche l'andamento storico del processo di fornitura e con esso le nostre considerazioni. 
 A tal fine, il team ha preferito mantenere registrate le considerazioni e le misurazioni effettuate precedentemente tale decisione. 
 
