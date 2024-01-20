@@ -180,7 +180,7 @@ In questa sezione viene esposto il piano di testing che verrà utilizzato per ga
 Come enunciato nel documento _Norme di Progetto v1.0_, il piano segue il #glossary("modello a V"), il quale associa ad ogni fase di sviluppo, una corrispondente tipologia di testing. Tali tipologie sono le seguenti:
 - *Test di unità*: si verifica il corretto funzionamento delle unità componenti il #glossary[sistema]. Un'unità rappresenta un elemento indivisibile e indipendente del #glossary[sistema]\;
 - *Test di integrazione*: si verifica il corretto funzionamento di più unità che cooperano per svolgere uno specifico compito (tali unità devono certamente aver superato i loro test di unità precedentemente);
-- *Test di sistema*: si verifica il corretto funzionamento del sistema nella sua interezza. I requisiti funzionali obbligatori, di vincolo, di qualità e di prestazione, precedentemente concordati con il committente mediante stipulazione del contratto, devono essere soddisfatti per intero;
+- *Test di #glossary[sistema]*: si verifica il corretto funzionamento del #glossary[sistema] nella sua interezza. I requisiti funzionali obbligatori, di vincolo, di qualità e di prestazione, precedentemente concordati con il Committente mediante stipulazione del contratto, devono essere soddisfatti per intero;
 - *Test di accettazione*: si verifica il soddisfacimento del committente rispetto al prodotto software. Il loro superamento permette di procedere con il rilascio del prodotto.
 
 == Test di accettazione
