@@ -61,3 +61,4 @@ PM10; Il termine PM10 identifica le particelle di diamettro aerodinamico inferio
 Dati in entrata; Modo astratto per identificare un qualsiasi tipo di dato che il sistema è in grado di ricevere dai sensori, e che successivamente andrà a persistere.
 Dati anomali; Dato che si discosta troppo dal normale range di valori per un certo tipo di dato. Comunemente questi dati sono chiamati outlier.
 Grafana; Piattaforma open-source per l'analisi e la visualizzazione dei dati. Essa offre strumenti avanzati per la creazione di dashboard interattive, report e grafici che consentono agli utenti di monitorare e comprendere meglio le metriche provenienti da svariate fonti di dati.
+Docker Compose; Strumento che semplifica la specifica dei servizi, reti e volumi necessari per eseguire un'applicazione composta da più contenitori Docker, consentendo una gestione semplificata dell'ambiente di sviluppo e di distribuzione.
