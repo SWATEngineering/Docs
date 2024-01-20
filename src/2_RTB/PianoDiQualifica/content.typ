@@ -741,7 +741,7 @@ Nel corso degli sprint successivi i valori subiscono variazioni non rilevanti.
 
 A seguito dei primi due sprint sono stati rilevati parecchi errori ortografici, per farne fronte si è scelto di adottare uno strumento di controllo dell'ortografia sia in fase di stesura che in fase di revisione. Tuttavia, nonostante l'uso di questo strumento, si è notato che il processo di documentazione continua a essere afflitto da errori ortografici. Questo indica che il problema non è tanto la mancanza di strumenti adeguati, quanto più un approccio disattento da parte del team durante la redazione dei documenti, e nel processo di verifica che ne consegue.
 Fare in modo che non vi siano errori nei documenti prima della revisione #glossary("RTB") rimane comunque un obiettivo di qualità che il team vuole raggiungere. 
-Per ovviare al problema il team ha deciso di introdurre un checklist incentrata sugli errori di ortografici, in modo tale che se il processo di verifica posso avvalersene e correggere eventuali errori.  Questa checklist è pensata non solo come uno strumento pratico, ma principalmente come un promemoria costante per il Verificatore. 
+Per ovviare al problema il team ha deciso di introdurre una checklist incentrata sugli errori ortografici, in modo tale che il processo di verifica possa avvalersene e correggere eventuali errori.  Questa checklist è pensata non solo come uno strumento pratico, ma principalmente come un promemoria costante per il Verificatore. 
 
 
 // == Qualità di prodotto
