@@ -752,7 +752,7 @@ Per ovviare al problema il team ha deciso di introdurre una checklist incentrata
 
 == Liste di controllo
 
-Le liste di controllo sono uno strumento che il Verificatore possono utilizzare al fine di individuare errori ricorrenti nella documentazione o nel codice. Tali liste prevedono anche una descrizione del problema al fine di poter fornire una spiegazione della richiesta di cambiamenti durante la fase di revisione.
+Le liste di controllo sono uno strumento che il Verificatore può utilizzare al fine di individuare errori ricorrenti nella #glossary[documentazione] o nel codice. Tali liste prevedono anche una descrizione del problema al fine di poter fornire una spiegazione della richiesta di cambiamenti durante la fase di revisione.
 Le liste di controllo possono essere aggiornate durante tutto il corso del progetto dal Verificatore, man mano che vengono notati errori ricorrenti.
 
 #pagebreak()
