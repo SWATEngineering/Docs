@@ -139,5 +139,5 @@ Versione: #version
 /*******************/
 
 #pagebreak()
-
+#set text(11pt)
 #include "content.typ"

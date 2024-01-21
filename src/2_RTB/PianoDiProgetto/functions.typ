@@ -9,7 +9,7 @@
 #let rendicontazioneOreAPosteriori(sprintNumber: "01") = {
   let rendicontazioneOre = csv("sprintData/Sprint#" + sprintNumber + "/RendicontazioneOre.csv")
   [=== Rendicontazione ore a posteriori]
-  [I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, durante l'attuale sprint:]
+  [I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, durante l'attuale #glossary[sprint]:]
   figure(
     table(
     columns: (130pt,auto,auto,auto,auto,auto,auto,130pt),
@@ -22,22 +22,22 @@
         }
       })
     ),
-    caption: "Ore assunte per ciascun componente del gruppo durante l'attuale sprint"
+    caption: "Ore assunte per ciascun componente del gruppo durante l'attuale #glossary[sprint]"
   )
   figure(
     image("sprintData/Sprint#" + sprintNumber + "/RendicontazioneRuoliTorta.png", width: 60%),
-    caption: [Areogramma della partizione delle ore per ruolo nello sprint numero #sprintNumber.],
+    caption: [Areogramma della partizione delle ore per ruolo nello #glossary[sprint] numero #sprintNumber.],
   )
   figure(
     image("sprintData/Sprint#" + sprintNumber + "/RendicontazioneRuoliIstogramma.png", width: 60%),
-    caption: [Istogramma delle ore svolte per persona nello sprint #sprintNumber.],
+    caption: [Istogramma delle ore svolte per persona nello #glossary[sprint] #sprintNumber.],
   )
 }
 
 #let rendicontazioneCostiAPosteriori(sprintNumber: "01") = {
   let rendicontazioneCosti = csv("sprintData/Sprint#" + sprintNumber + "/RendicontazioneCosti.csv")
   [=== Rendicontazione costi a posteriori]
-  [In questo sprint, il costo per ogni ruolo assunto viene riportato in tabella:]
+  [In questo #glossary[sprint], il costo per ogni ruolo assunto viene riportato in tabella:]
   figure(
     table(
     columns: (120pt,60pt,100pt),
@@ -52,22 +52,22 @@
         }
       })
     ),
-    caption: "Panoramica dei costi dell'attuale sprint in base ai ruoli impiegati."
+    caption: "Panoramica dei costi dell'attuale #glossary[sprint] in base ai ruoli impiegati."
   )
   figure(
     image("sprintData/Sprint#" + sprintNumber + "/RendicontazioneCostiCashTorta.png", width: 60%),
-    caption: [Areogramma del budget speso fino alla fine dell'attuale sprint numero #sprintNumber, rispetto al totale.],
+    caption: [Areogramma del budget speso fino alla fine dell'attuale #glossary[sprint] numero #sprintNumber, rispetto al totale.],
   )
   figure(
     image("sprintData/Sprint#" + sprintNumber + "/RendicontazioneCostiTimeTorta.png", width: 60%),
-    caption: [Areogramma del tempo (in ore) speso fino alla fine dell'attuale sprint numero #sprintNumber, rispetto al totale.],
+    caption: [Areogramma del tempo (in ore) speso fino alla fine dell'attuale #glossary[sprint] numero #sprintNumber, rispetto al totale.],
   )
 }
 
 #let prospettoOrario(sprintNumber: "1") = {
   let table_time = csv("preventivi/assets/tables/tableProspettoOrario" + sprintNumber + ".csv")
   [=== Prospetto orario]
-  [I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, durante questo sprint:]
+  [I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, durante questo #glossary[sprint]:]
   figure(
     table(
     columns: (130pt,auto,auto,auto,auto,auto,auto,130pt),
@@ -83,18 +83,18 @@
   )
   figure(
     image("preventivi/assets/rolesPie/areogramma" + sprintNumber + ".png", width: 60%),
-    caption: [Areogramma della partizione delle ore per ruolo nello sprint numero #sprintNumber.],
+    caption: [Areogramma della partizione delle ore per ruolo nello #glossary[sprint] numero #sprintNumber.],
   )
   figure(
     image("preventivi/assets/barChart/istogramma" + sprintNumber + ".png", width: 60%),
-    caption: [Istogramma delle ore svolte per persona nello sprint #sprintNumber.],
+    caption: [Istogramma delle ore svolte per persona nello #glossary[sprint] #sprintNumber.],
   )
 }
 
 #let prospettoEconomico(sprintNumber: "1") = {
   let table_cost = csv("preventivi/assets/tables/tableProspettoEconomico" + sprintNumber + ".csv")
   [=== Prospetto economico]
-  [In questo sprint, il costo per ogni ruolo assunto viene riportato in tabella:]
+  [In questo #glossary[sprint], il costo per ogni ruolo assunto viene riportato in tabella:]
   figure(
     table(
     columns: (120pt,60pt,100pt),
@@ -112,10 +112,10 @@
   )
   figure(
     image("preventivi/assets/cashPie/areogramma" + sprintNumber + ".png", width: 60%),
-    caption: [Areogramma del budget speso preventivato per lo sprint numero #sprintNumber, rispetto al totale.],
+    caption: [Areogramma del budget speso preventivato per lo #glossary[sprint] numero #sprintNumber, rispetto al totale.],
   )
   figure(
     image("preventivi/assets/timePie/areogramma" + sprintNumber + ".png", width: 60%),
-    caption: [Areogramma del tempo (in ore) speso preventivato per lo sprint numero #sprintNumber, rispetto al totale.],
+    caption: [Areogramma del tempo (in ore) speso preventivato per lo #glossary[sprint] numero #sprintNumber, rispetto al totale.],
   )
 }
