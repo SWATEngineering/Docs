@@ -958,6 +958,15 @@ Nel contesto della gestione dello #glossary[sprint], il Responsabile si impegna 
 
 Per garantire un monitoraggio efficace delle prestazioni, il Responsabile utilizza e calcola le metriche, presenti nel documento _Piano di Qualifica v1.0_, rispetto allo #glossary[sprint] appena concluso, valutando l'efficacia del processo e apportando eventuali correzioni o miglioramenti per il successo continuo del progetto.
 
+==== Preventivo   
+
+Per utilizzare efficacemente lo script per il calcolo preventivo, si procede nel seguente modo:
+
+ - Eseguire lo script init_preventivo.py, seguendo attentamente le istruzioni fornite. Questo script guida la creazione dei file CSV necessari, che sono utilizzati per inserire i dati relativi a due preventivi successivi;
+ - Accedere al file preventivonumerosprint.csv situato nella directory preventivi/preventivi_csv/. In questo file, si inserisce, con precisione, i dati riguardanti le ore dedicate da ciascun membro del team, specificando le risorse allocate per i due preventivi successivi;
+ - Eseguire lo script auto_preventivo.py, indicando lo sprint per il quale desideri generare il preventivo. L'esecuzione di questo script applica automaticamente i dati inseriti, producendo un preventivo accurato per lo sprint selezionato;
+ - All'interno del file typst, dove si intende inserire il preventivo, utilizzare le funzioni prospettoOrario e prospettoEconomico fornite nel modulo functions.typ. Queste funzioni consentono di integrare facilmente i dati di prospetto orario ed economico nel documento, facilitando la visualizzazione e la gestione delle informazioni relative al preventivo.
+
 ==== Consuntivo 
 
 Si analizzano le attività svolte, i tempi impiegati rispetto alle stime previste e qualsiasi deviazione dai piani originali. Tale consuntivo rappresenta una preziosa fonte di apprendimento per il team, consentendo di identificare aree di miglioramento e di ottimizzare la pianificazione futura.
