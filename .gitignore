@@ -1,3 +1,6 @@
 .DS_Store
 src/**/*.pdf
 build/
+swatsheetscraper-c073830f31bf.json
+lib/
+venv/
