@@ -724,7 +724,7 @@ L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[d
   ],
 )
 
-Al termine del secondo sprint, tutti i documenti in corso di preparazione in vista della revisione #glossary("RTB") possiedono un IG al di sopra del limite accettabile inferiore di 60; in particolare, l'_Analisi dei Requisiti_ ha raggiunto il valore ideale. 
+Al termine del secondo #glossary[sprint], tutti i documenti in corso di preparazione in vista della revisione #glossary("RTB") possiedono un IG al di sopra del limite accettabile inferiore di 60; in particolare, l'_Analisi dei Requisiti_ ha raggiunto il valore ideale. 
 Si rileva che nel corso dell'ultimo #glossary[sprint] tutti i documenti hanno subito un abbassamento del loro indice di leggibilità, nel corso del secondo periodo il team dovrà impegnarsi a mantenere una scrittura più semplice.
 
 === Correttezza ortografica
