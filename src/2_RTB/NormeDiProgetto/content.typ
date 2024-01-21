@@ -581,6 +581,14 @@ Ogni documento segue le fasi del seguente #glossary[workflow]:
 La modifica di un documento avviene allo stesso modo, saltando il passo 2.
 Ogni cambiamento di stato è accompagnato dal conseguente movimento della issue, associata allo sviluppo, attraverso le diverse corsie dell'issue tracking system.
 
+Nel contesto della versione finale di un documento, spetta al Responsabile conferire l'approvazione definitiva, annotando opportunamente nel changelog la versione *x.0* e la sua approvazione finale.
+
+In cui *x* può essere:
+        - 1 se per #glossary[RTB];
+        - 2 se per #glossary[PB];
+        - 3 se per #glossary[CA].
+
+
 === Template Typst
 
 Per la stesura dei documenti viene usato un template in formato #glossary[Typst]. Il template fornisce una struttura e un formato predefinito per semplificare la creazione di documenti. Serve a garantire coerenza, risparmiare tempo, standardizzare la presentazione e contribuire a una produzione di documenti più efficiente e professionale.
