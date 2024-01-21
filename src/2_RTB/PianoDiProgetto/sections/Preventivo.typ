@@ -18,16 +18,18 @@ Questa sezione vuole essere una proiezione finanziaria dettagliata dell'intero p
 
 #include "PreventivoSprint/PrimaRevisione.typ"
 
-//#include "PreventivoSprint/PrimoSprint.typ"
-//#include "PreventivoSprint/SecondoSprint.typ"
-//#include "PreventivoSprint/TerzoSprint.typ"
-//#include "PreventivoSprint/QuartoSprint.typ"
-//#include "PreventivoSprint/QuintoSprint.typ"
-//#include "PreventivoSprint/SestoSprint.typ"
-//#include "PreventivoSprint/SettimoSprint.typ"
-//#include "PreventivoSprint/OttavoSprint.typ"
-//#include "PreventivoSprint/NonoSprint.typ"
-//#include "PreventivoSprint/DecimoSprint.typ"
+#include "PreventivoSprint/PrimoSprint.typ"
+#include "PreventivoSprint/SecondoSprint.typ"
+#include "PreventivoSprint/TerzoSprint.typ"
+#include "PreventivoSprint/QuartoSprint.typ"
+#include "PreventivoSprint/QuintoSprint.typ"
+#include "PreventivoSprint/SestoSprint.typ"
+#include "PreventivoSprint/SettimoSprint.typ"
+#include "PreventivoSprint/OttavoSprint.typ"
 
 #include "PreventivoSprint/SecondaRevisione.typ"
+
+#include "PreventivoSprint/NonoSprint.typ"
+#include "PreventivoSprint/DecimoSprint.typ"
+
 #include "PreventivoSprint/TerzaRevisione.typ"
