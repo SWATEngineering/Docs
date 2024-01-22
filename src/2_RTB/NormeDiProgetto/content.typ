@@ -670,6 +670,8 @@ Il verbale esterno oltre alle sezioni sopra elencate ha una pagina per la conval
                 - L'iniziale del termine "Proponente";
                 - Prima lettera di ogni elenco puntato.
 
+Nei verbali Interni ed Esterni non si usa la formattazione da glossario.
+
 ==== Elenchi puntati
 
 Le voci di ogni elenco iniziano con lettera maiuscola e terminano con punto e virgola ';', eccetto l'ultima voce che termina con punto normale '.'.
