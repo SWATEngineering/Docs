@@ -786,7 +786,7 @@ table(
       [Errori di sintassi],[Gli errori di sintassi (battitura o distrazione) devono essere rimossi.],
       [Errori di coniugazione],[Gli errori di coniugazione devono essere rimossi.],
       [Forma verbale],[Il presente indicativo è da preferire.],
-      [Forma non concise],[Le espressioni troppo verbose, ove possibile, devono essere ridotte a forme più concise.],
+      [Forma non concisa],[Le espressioni troppo verbose, ove possibile, devono essere ridotte a forme più concise.],
       [Non formalità],[Le espressioni non formali devono essere sostituite con le corrispondenti espressioni formali.],
       [Richiamo errato al documento],[Ogni richiamo ai documenti deve seguire la seguente forma: _NomeDocumento\_vVersioneMajor.VersioneMinor_ (e.g. _PianoDiProgetto\_v1.0_).],
       [Termini impropriamente in maiuscolo],[I termini di glossario non godono della proprietà di avere la prima lettera maiuscola, rispetto alle parole tradizionali. Seguono le stesse regole delle parole non di glossario in quanto alla forma (ovviamente non riguardo allo stile).],
