@@ -697,7 +697,7 @@ Durante il settimo e l'ottavo #glossary[sprint] le due metriche hanno mantenuto 
 L'AC rappresenta il costo effettivo sostenuto fino a un dato momento, mentre l'ETC rappresenta la stima del costo aggiuntivo necessario per completare il progetto; di conseguenza, ci si aspetta che l'AC cresca e che l'ETC diminuisca in modo sostanzialmente lineare, segno che il progetto ha mantenuto un ritmo regolare di avanzamento. 
 Il grafico ci mostra che effettivamente il team ha mantenuto un ritmo di avanzamento costante durante tutto il periodo, il che è apprezzabile: nonostante la sessione d'esame il team ha continuato a occuparsi con impegno e dedizione alle attività di progetto.
 Inoltre si può evincere che il progetto risulta essere leggermente in ritardo rispetto alle tempistiche inizialmente previste.
-Considerando che gli otto #glossary[sprint] effettuati corrispondono a un periodo temporale 10 settimane, metà temporale esatta preventivata per l'attività di progetto, ci si aspetterebbe che i grafici delineati dalle metriche si siano già incrociati.
+Considerando che gli otto #glossary[sprint] effettuati corrispondono ad un periodo temporale di 10 settimane, metà temporale esatta preventivata per l'attività di progetto, ci si aspetterebbe che i grafici delineati dalle metriche si siano già incrociati.
 
 
 === Earned Value e Planned Value
