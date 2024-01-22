@@ -30,7 +30,9 @@
 L'incontro si è aperto con la valutazione delle modifiche apportate al PoC; in particolare, il team ha dimostrato l'utilizzo della funzione aggregata "movingAverage" per ottimizzare le query (questo per evitare di far fare operazioni di trasformazioni sui dati a Grafana, ossia al visualization layer), l'aggiunta dei sensori di pioggia e l'aggiunta di descrizioni ai pannelli della dashboard per renderla più facilmente comprensibile. La Proponente ha valutato positivamente le modifiche dimostrate e ha consigliato anche l'implementazione di alcune funzionalità aggiuntive:
 
   - Il filtraggio dei dati: sfrutta le "Grafana variables";
+
   - Tabelle contenenti i dati grezzi dei sensori: contrariamente ai dati aggregati che vengono sfruttati per fare analisi di tipo statistico di business, i dati grezzi vengono utilizzati nel caso in cui si abbia bisogno di visualizzare un singolo evento di interesse; ad esempio, nel caso in cui si visualizzi un allarme all'interno della dashboard, l'anomalia corrispondente sarebbe facilmente rintracciabile all'interno di una delle tabelle contenente i dati grezzi;
+  
   - Aggiunta di altre tipologie di sensori per incrementare l'impatto visivo della dashboard.
 
 == Analisi dei Requisiti

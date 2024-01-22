@@ -24,25 +24,25 @@ Nella riunione tenutasi in data odierna sono stati trattati i seguenti argomenti
 È stato deciso di consultare i professori al fine di trovare una best practice per poter definire come la versione della documentazione e del prodotto software possano progredire in sincronia.
 
 == Elementi da aggiungere al documento "Norme di progetto"
-È stato fatto notare che i seguenti punti devono essere aggiunti al documento "Norme di progetto":
-- Definire una procedura per definire come le issues possano essere aggiunte in maniera asincrona, al _backlog_, da qualsiasi componente, nell'eventualità in cui si verifichino problemi o necessità da affrontare;
-- Va reso più dettagliato il ruolo del responsabile. È stata quindi proposta l'aggiunta della specifica riguardo le mansioni relative al suo compito:
+È stato fatto notare che i seguenti punti devono essere aggiunti al documento _Norme di progetto_:
+- Definire una procedura per definire come le issues possano essere aggiunte in maniera asincrona, al backlog, da qualsiasi componente, nell'eventualità in cui si verifichino problemi o necessità da affrontare;
+- Va reso più dettagliato il ruolo del Responsabile. È stata quindi proposta l'aggiunta della specifica riguardo le mansioni relative al suo compito:
   - Gestire la comunicazione con la Proponente (e.g. mail o l'uso della piattaforma Element);
   - Preparare l’ordine del giorno per la successiva riunione, anche sulla base dei punti individuati dagli altri componenti;
   - Redigere i verbali interni ed esterni;
-  - Stendere e far progredire il documento "Piano di progetto";
+  - Stendere e far progredire il documento _Piano di progetto_;
   - Creare i diari di bordo.
 
-Questa aggiunta di dettagli sul ruolo del responsabile è stata ritenuta necessaria in quanto ci si è resi conto che il ruolo del responsabile non aveva abbastanza mansioni e quindi aveva molto tempo libero. Di conseguenza sono state individuate mansioni per poter impiegare meglio il suo tempo, andando ad alleggerire il carico di lavoro dagli altri ruoli (e.g. la stesura dei verbali, precedentemente svolta dagli analisti).
+Questa aggiunta di dettagli sul ruolo del Responsabile è stata ritenuta necessaria in quanto ci si è resi conto che il Responsabile non aveva abbastanza mansioni e quindi aveva molto tempo libero. Di conseguenza, sono state individuate mansioni per poter impiegare meglio il suo tempo, andando ad alleggerire il carico di lavoro dagli altri ruoli (e.g. la stesura dei verbali, precedentemente svolta dagli Analisti).
 
 == Cambiamento dei ruoli straordinario
 
 È stato ritenuto necessario un cambiamento dei ruoli per via dei seguenti motivi:
-- La proponente ha suggerito la stesura del _Proof of Concept_ in contemporanea alla definizione dell'analisi dei requisiti e non era stata prevista la figura del programmatore nello sprint attuale;
-- Si ritiene che un verificatore sia più che sufficiente per lo sprint attuale. Le motivazioni a riguardo sono:
+- La proponente ha suggerito la stesura del Proof of Concept in contemporanea alla definizione dell'analisi dei requisiti e non era stata prevista la figura del Programmatore nello sprint attuale;
+- Si ritiene che un Verificatore sia più che sufficiente per lo sprint attuale. Le motivazioni a riguardo sono:
   - Quantità limitata di documenti da verificare;
-  - Semplicità organizzativa. Con un numero ridotto di documenti, la gestione delle attività di verifica risulta semplificata. Un solo verificatore può concentrarsi sull'assicurare che i pochi documenti prodotti rispettino gli standard stabiliti.
-- La rotazione dei ruoli, tuttavia, verrà attuata venerdì 17/11/2023, in quanto sono da portare a termine delle _issue_ con i ruoli precedentemente assegnati.
+  - Semplicità organizzativa. Con un numero ridotto di documenti, la gestione delle attività di verifica risulta semplificata. Un solo Verificatore può concentrarsi sull'assicurare che i pochi documenti prodotti rispettino gli standard stabiliti;
+- La rotazione dei ruoli, tuttavia, verrà attuata venerdì 17/11/2023, in quanto sono da portare a termine delle issue con i ruoli precedentemente assegnati.
 
 La nuova assegnazione dei ruoli è la seguente:
 - *Simone Caregnato*: Amministratore;
@@ -57,7 +57,7 @@ Si vuole comunque ribadire che d'ora in poi il team si impegnerà a mantenere la
 == Creare sito web per la presentazione dei documenti
 
 Per migliorare l'accessibilità ai documenti è stato deciso di creare un sito web ufficiale per la repository documentale.
-Lo strumento che verrà utilizzato sarà _GitHub.io_: uno strumento offerto dalla piattaforma GitHub.
+Lo strumento che verrà utilizzato sarà GitHub.io: uno strumento offerto dalla piattaforma GitHub.
 
 == Passaggio dall'uso di Notion alla Google Suite
 A causa delle notevoli limitazioni imposte dal piano gratuito di Notion, si è deciso di rimpiazzarlo con la Google Suite. Ora documenti come note e appunti verranno redatti in Google Documents mentre gli elementi di natura tabellare verranno realizzati mediante l’uso di Google Fogli.
