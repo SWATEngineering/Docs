@@ -1,80 +1,24 @@
 #import "../../const.typ": Re_cost, Am_cost, An_cost, Ve_cost, Pr_cost, Pt_cost 
+#import "../../functions.typ": rendicontazioneOreAPosteriori, rendicontazioneCostiAPosteriori, glossary
 
-#let ruoli_ore = (
-  Re: 6,
-  Am:8,
-  An:16,
-  Pt:0,
-  Pr:4,
-  Ve:13,
+== Primo #glossary[sprint]
 
-)
+*Inizio*: Venerdì 10/11/2023
 
-#let costo_ruoli_ore=(
-   Costo_Re: Re_cost * ruoli_ore.at("Re"),
-   Costo_Am: Am_cost * ruoli_ore.at("Am"),
-   Costo_An: An_cost * ruoli_ore.at("An"),
-   Costo_Pt: Pt_cost * ruoli_ore.at("Pt"),
-   Costo_Pr: Pr_cost * ruoli_ore.at("Pr"),
-   Costo_Ve: Ve_cost * ruoli_ore.at("Ve"),
-)
+*Fine*: Giovedì 23/11/2023 
 
-== Primo sprint
-=== Rendicontazione ore a posteriori
-I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, durante questo sprint:
-#table(
-  columns: (160pt,auto,auto,auto,auto,auto,auto,120pt),
-  align: center,
-  [*Nominativo*],[*Re*],[*Am*],[*An*],[*Pt*],[*Pr*],[*Ve*],[*Totale per persona*],
-  [Simone Caregnato],[-],[3 (+3)],[6 (-4)],[-],[-],[-],[9 (-1)],
-  [Riccardo Alberto Costantin],[-],[-],[3 (+3)],[-],[-],[4 (-4)],[7(-1)],
-  [Giacomo D'Ovidio],[-],[-],[3 (+3)],[-],[-],[4 (-4)],[7 (-1)],
-  [Nancy Kalaj],[3 (+3)],[-],[4 (-3)],[-],[-],[-],[7],
-  [Matteo Rango],[-],[5 (-1)],[-],[-],[-],[5 (+5)],[10 (+4)],
-  [Riccardo Toniolo],[3 (-3)],[-],[-],[-],[4 (+4)],[-],[7 (+1)],
-  [*Totale per ruolo*],[#ruoli_ore.at("Re")],[#ruoli_ore.at("Am")],[#ruoli_ore.at("An")],[#ruoli_ore.at("Pt")],[#ruoli_ore.at("Pr")],[#ruoli_ore.at("Ve")],[#ruoli_ore.values().sum()]
-)
+#rendicontazioneOreAPosteriori(sprintNumber: "01")
 
-#figure(
-  image("../../assets/AreogrammiPartizioneOre/Effettivo/AreogrammaOrePrimoSprint.png", width: 75%),
-  caption: [Areogramma della partizione delle ore per ruolo nel primo sprint.],
-)
-
-#figure(
-  image("../../assets/IstogrammiOreMembro/Effettive/IstogrammaPrimoSprint.png", width: 75%),
-  caption: [Istogramma delle ore svolte per persona nel primo sprint.],
-)
-
-=== Rendicontazione costi a posteriori
-In questo sprint, il costo per ogni ruolo assunto viene riportato in tabella:
-#table(
-  columns: (120pt,60pt,100pt),
-  align: center,
-  [*Ruolo*],[*Ore*],[*Costo*],
-  [Responsabile],[#ruoli_ore.at("Re")],[#costo_ruoli_ore.at("Costo_Re")€],
-  [Amministratore],[#ruoli_ore.at("Am") (+2)],[#costo_ruoli_ore.at("Costo_Am")€ (+40€)],
-  [Analista],[#ruoli_ore.at("An") (-1)],[#costo_ruoli_ore.at("Costo_An")€ (-25€)],
-  [Progettista],[#ruoli_ore.at("Pt")],[#costo_ruoli_ore.at("Costo_Pt") €],
-  [Programmatore],[#ruoli_ore.at("Pr") (+4)],[#costo_ruoli_ore.at("Costo_Pr") € (+60€)],
-  [Verificatore],[#ruoli_ore.at("Ve") (-3)],[#costo_ruoli_ore.at("Costo_Ve")€ (-45€)],
-  [*Totale*],[#ruoli_ore.values().sum() (+2)],[#costo_ruoli_ore.values().sum() (+30)],
-  [*Rimanente*],[523],[10.075€]
-)
-
-#figure(
-  image("../../assets/AreogrammiPartizioneCosti/Effettivo/AreogrammaCostiPrimoSprint.png", width: 75%),
-  caption: [Areogramma del budget speso e rimanente preventivato per il primo sprint.],
-)
-
-#figure(
-  image("../../assets/AreogrammiTotaliOre/Effettive/AreogrammaTotalePrimoSprint.png", width: 75%),
-  caption: [Areogramma delle ore svolte e rimanenti nel primo sprint.],
-)
-
+#rendicontazioneCostiAPosteriori(sprintNumber: "01")
 
 === Analisi a posteriori
 
-Dopo l'incontro con la Proponente, il team ha identificato la necessità di impiegare delle ore da programmatore. Di conseguenza, il team ha avviato una turnazione straordinaria dei ruoli per gestire questa richiesta.
-Durante lo sprint non si sono manifestati problemi, tutti gli obiettivi sono stati raggiunti con successo. 
+Il consuntivo, relativo allo #glossary[sprint] corrente, evidenzia significative disparità rispetto al preventivo, soprattutto in merito alla distribuzione dei ruoli. Tale deviazione è imputabile al cambiamento dei ruoli assegnati, avvenuto a metà #glossary[sprint], circostanza non prevista durante la fase di pianificazione iniziale. Dato il considerevole aumento complessivo delle ore rispetto a quanto inizialmente previsto nel preventivo, diventa essenziale adottare un approccio più attento nella fase di pianificazione e apportare gli adeguamenti necessari ai futuri preventivi (in particolare, assegnare più di un ruolo ai componenti del team qualora lo si ritenga necessario).
+La turnazione straordinaria dei ruoli (e, di conseguenza, l'assunzione di almeno due ruoli da parte di ciascun componente del team) si è resa necessaria per due motivi principali: 
+  - Si è voluta velocizzare la rotazione dei ruoli all'interno del team, in modo da assicurarsi che ogni componente ricoprisse i diversi ruoli in ugual misura. In altre parole, ci si è resi conto che assegnare un unico ruolo a ciascuno per l'intera durata dello #glossary[sprint] (2 settimane) non favorisce una rotazione sufficientemente rapida;
+  - Dopo il primo incontro con la Proponente, il team ha identificato la necessità di impiegare delle ore da Programmatore per iniziare a lavorare allo sviluppo del #glossary[PoC].
 
 
+Avendo dispiegato un ampio quantitativo di ore produttive, il team non ha avuto difficoltà a raggiungere gli obiettivi prefissati in partenza; in particolare, si è riusciti a realizzare una prima bozza completa dell'_Analisi dei Requisiti_ da sottoporre al professor Cardin e una parte del #glossary[PoC], provvista delle funzionalità richieste dalla Proponente. In quanto ad eventuali rischi, l'unico ad essere emerso è stato RT1 o Conoscenza tecnologica limitata; fortunatamente le misure preventive adottate si sono dimostrate molto efficaci nel livellare le lacune dei componenti relative alle tecnologie impiegate nello sviluppo del #glossary[PoC], in particolare:
+    - È stato effettuato un incontro di formazione con la Proponente sulla tecnologia #glossary[Docker Compose] per facilitare le fasi iniziali dello sviluppo del #glossary[PoC]\; questo ha reso significativamente più semplice l'approccio alla tecnologia ai membri del team che non avevano familiarità con essa e ha contribuito a velocizzare lo sviluppo;
+    - È stato effettuato anche un incontro di #glossary[workshop] interno incentrato su #glossary[Docker Compose] in cui i componenti che avevano già utilizzato tale tecnologia ne hanno illustrato scopo e funzionamento e hanno dimostrato come applicarla nel contesto concreto del #glossary[PoC] per containerizzare i moduli #glossary[Python] e #glossary[Kafka].

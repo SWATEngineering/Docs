@@ -1,26 +1,15 @@
-#import "../../functions.typ":glossary
-
-=== Decimo Sprint
+#import "../../functions.typ": glossary
+=== Decimo #glossary[sprint]
 
 *Inizio*: Venerdì 09/02/2024
 
 *Fine*: Giovedì 15/02/2024 
 
-*Obiettivi dello sprint*: 
+*Obiettivi dello #glossary[sprint]*: 
 
-    - Continuazione _Specifiche Tecniche_;
-    - Continuazione _Manuale Utente_;
-    - Continuazione _Manuale Sviluppatore_;
-    - Codifica del design scelto per la rappresentazione e storage dei dati aggregati su _Clickhouse_;
-    - Utilizzo delle #glossary("Materialized Views") per pre-aggregare dati frequentemente richiesti, migliorando le prestazioni delle query;
-    - Configurazione dei motori interni ( _engine_) a _Clickhouse_;
-    - Inizio della configurazione di Grafana per la visualizzazione dei dati.
-
-    *Suddivisione lavoro*:
-
-#figure(
-  image("../../assets/DiagrammiGantt/DiagrammaDecimoSprint.png", width: 100%),
-  caption: [
-    Diagramma di Gantt per le attività del decimo sprint.
-  ],
-)
+  - Proseguire la stesura del _Piano di Progetto_:
+    - Aggiornare pianificazione e preventivo pertinenti allo #glossary[sprint] 10 e inserire il consuntivo pertinente allo #glossary[sprint] 9;
+    - Aggiungere pianificazione e preventivo degli #glossary[sprint] 11 e 12, come parte della pianificazione a breve termine.
+  - Continuare a progettare la struttura architetturale del prodotto, traducendo i #glossary[design pattern] individuati in una bozza di diagramma #glossary[UML] delle classi (seguendo le prassi specificate a tal riguardo nelle _Norme di Progetto_);
+  - Iniziare la stesura delle _Specifiche Tecniche_, con particolare attenzione alle sezioni di *Introduzione* e *Tecnologie*;
+  - Iniziare a sviluppare parte della prima versione del prodotto applicando quanto imparato dalla progettazione avviata precedentemente, dopo aver discusso con la Proponente le caratteristiche essenziali del #glossary[PoC] che è sensato implementare all'interno del prodotto vero e proprio.

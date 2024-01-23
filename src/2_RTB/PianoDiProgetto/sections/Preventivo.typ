@@ -1,6 +1,7 @@
+#import "../functions.typ": glossary
 = Preventivo
 Ogni membro del gruppo si impegna a lavorare con la modalità di intensità dichiarata (alta), offrendo una disponibilità di 95 ore produttive a testa. 
-Questo preventivo è stato calcolato sulla base del costo orario per ruolo presente nel _Regolamento del Progetto Didattico_ e sulla previsione di quante delle 570 ore totali a disposizione verranno utilizzate in ogni ruolo, durante i vari incrementi.
+Questo preventivo è stato calcolato sulla base del costo orario per ruolo presente nel _Regolamento del Progetto Didattico_ e sulla previsione di quante, delle 570 ore totali a disposizione, verranno utilizzate in ogni ruolo, durante i vari incrementi.
 Nelle seguenti sezioni viene illustrato come sarà articolato ogni incremento e quanto sarà il suo costo.
 La suddivisione dei ruoli è stata fatta nel modo più equo possibile, per dare a tutti i membri la possibilità di approfondire la mansione.
 
@@ -13,8 +14,9 @@ Per praticità, verranno utilizzate le seguenti abbreviazioni:
 - *Ve*: Verificatore.
 
 
-Questa sezione vuole essere una proiezione finanziaria dettagliata dell'intero progetto, delineando chiaramente le risorse preventivate per ciascuno sprint. 
+Questa sezione vuole essere una proiezione finanziaria dettagliata dell'intero progetto, delineando chiaramente le risorse preventivate per ciascuno #glossary[sprint]. 
 
+#include "PreventivoSprint/PrimaRevisione.typ"
 
 #include "PreventivoSprint/PrimoSprint.typ"
 #include "PreventivoSprint/SecondoSprint.typ"
@@ -24,11 +26,10 @@ Questa sezione vuole essere una proiezione finanziaria dettagliata dell'intero p
 #include "PreventivoSprint/SestoSprint.typ"
 #include "PreventivoSprint/SettimoSprint.typ"
 #include "PreventivoSprint/OttavoSprint.typ"
+
+#include "PreventivoSprint/SecondaRevisione.typ"
+
 #include "PreventivoSprint/NonoSprint.typ"
 #include "PreventivoSprint/DecimoSprint.typ"
-#include "PreventivoSprint/UndicesimoSprint.typ"
-#include "PreventivoSprint/DodicesimoSprint.typ"
-#include "PreventivoSprint/TredicesimoSprint.typ"
-#include "PreventivoSprint/QuattordicesimoSprint.typ"
-#include "PreventivoSprint/QuindicesimoSprint.typ"
-#include "PreventivoSprint/SedicesimoSprint.typ"
+
+#include "PreventivoSprint/TerzaRevisione.typ"

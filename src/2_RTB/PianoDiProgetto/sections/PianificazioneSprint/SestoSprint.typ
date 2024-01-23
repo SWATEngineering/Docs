@@ -1,31 +1,15 @@
-=== Sesto Sprint
+#import "../../functions.typ": glossary
+=== Sesto #glossary[sprint]
 
 *Inizio*: Venerdì 29/12/2023
 
 *Fine*: Giovedì 04/01/2024 
 
-*Obiettivi dello sprint*: 
+*Obiettivi dello #glossary[sprint]*: 
 
-    - Avvio della realizzazione dei diagrammi _attività_ e _sequenze_;
-    - Ampliamento _Specifiche tecniche_;
-    - Partendo dal PoC, iniziare lo sviluppo della prima versione del prodotto;
-    - Realizzazione della classe per l'importazione dei dati anagrafici dei sensori, da file in formato CSV;
-    - Creazione della classe che permette  l'implementazione di dati, strutturati in formato Json;
-    - Prosecuzione _Piano di Progetto_;
-    - Inizio della stesura dell'introduzione del _Manuale Sviluppatore_;
-
-
-
-
-
-
-
-
-*Suddivisione lavoro*:
-
-#figure(
-  image("../../assets/DiagrammiGantt/DiagrammaSestoSprint.png", width: 100%),
-  caption: [
-    Diagramma di Gantt per le attività del sesto sprint.
-  ],
-)
+  - Iniziare revisione in stile #glossary[walkthrough] delle _Norme di Progetto v1.0_;
+  - Proseguire la stesura del _Piano di Progetto_, con:
+    - Aggiornamento di pianificazione e preventivo pertinenti allo #glossary[sprint] 6 e l'inserimento del consuntivo pertinente allo #glossary[sprint] 5.
+  - Proseguire la stesura del _Piano di Qualifica_:
+    - Proseguire la stesura del cruscotto delle metriche con valutazione delle metriche rispetto agli #glossary[sprint] 5 e 6 e aggiornamento dei grafici di confronto.
+  - Modificare l'_Analisi dei Requisiti_ secondo le osservazioni emerse durante la revisione in stile #glossary[walkthrough].
