@@ -22,7 +22,7 @@
         }
       })
     ),
-    caption: "Ore assunte per ciascun componente del gruppo durante l'attuale #glossary[sprint]"
+    caption: "Ore assunte per ciascun componente del gruppo durante l'attuale " + glossary[sprint]
   )
   figure(
     image("sprintData/Sprint#" + sprintNumber + "/RendicontazioneRuoliTorta.png", width: 60%),
@@ -52,7 +52,7 @@
         }
       })
     ),
-    caption: "Panoramica dei costi dell'attuale #glossary[sprint] in base ai ruoli impiegati."
+    caption: "Panoramica dei costi dell'attuale " + glossary[sprint] + " in base ai ruoli impiegati."
   )
   figure(
     image("sprintData/Sprint#" + sprintNumber + "/RendicontazioneCostiCashTorta.png", width: 60%),
