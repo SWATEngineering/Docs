@@ -91,7 +91,7 @@ table(
       [MPC-PM], [Parametri per Metodo], [≤ 5], [≤ 4],
       [MPC-LCM], [Linee di Codice per Metodo], [≤ 25], [≤ 20]
 ), 
-caption: [Tabella delle metriche per il l'attività di codifica])
+caption: [Tabella delle metriche per l'attività di codifica])
 
 ==== Progettazione
 
@@ -670,6 +670,7 @@ Il team infatti, si è occupato infatti di ultimare tutta la #glossary[documenta
 
 Questo risultato, nonostante la correlazione causale individuata, ci suggerisce ugualmente che qualcosa nel progetto non è stato gestito al meglio: l'attenzione apportata alla documentazione nell'ultimo #glossary[sprint] rileva infatti il tentativo del team di rincorrere gli obbiettivi di una pianificazione poco rigorosa. Ne deriva che il team, in vista della seconda revisione, dovrà impegnarsi a migliorare il processo relativo alla gestione di progetto, in modo da poter essere sempre sicuri che gli obbiettivi fissati siano effettivamente raggiunti nei termini dettati dalla pianificazione. 
 
+#pagebreak()
 
 === Budget Variance e Schedule Variance
 
@@ -728,6 +729,8 @@ L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[d
 
 Al termine del secondo #glossary[sprint], tutti i documenti in corso di preparazione in vista della revisione #glossary("RTB") possiedono un IG al di sopra del limite accettabile inferiore di 60; in particolare, l'_Analisi dei Requisiti_ ha raggiunto il valore ideale. 
 Si rileva che nel corso dell'ultimo #glossary[sprint] tutti i documenti hanno subito un abbassamento del loro indice di leggibilità, nel corso del secondo periodo il team dovrà impegnarsi a mantenere una scrittura più semplice.
+
+#pagebreak()
 
 === Correttezza ortografica
 
