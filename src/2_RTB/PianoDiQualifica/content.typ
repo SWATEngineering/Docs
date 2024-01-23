@@ -661,14 +661,17 @@ table(
 )
 
 L'EAC rappresenta una revisione del valore stimato per la realizzazione del progetto, ossia il BAC (Budget At Completion) rivisto allo stato corrente del progetto; il fattore che incide maggiormente sull'andamento dell'EAC è il rapporto tra EV (Estimated Value) e AC (Actual Cost), per cui tanto più queste metriche sono vicine l'una all'altra, tanto più l'EAC risulterà vicino al BAC pianificato inizialmente. 
-Concluso il secondo #glossary[sprint] il team ha rilevato che il valore associato all' EAC non rientrava all'interno della soglia accettata: ci si è dunque di rimodulare la quantità di lavoro netta associata al concetto di ora produttiva.
+Concluso il secondo #glossary[sprint] il team ha rilevato che il valore associato all' EAC non rientrava all'interno della soglia accettata: ci si è dunque attivati al fine rimodulare la quantità di lavoro netta associata al concetto di ora produttiva.
 
 Possiamo rilevare dal grafico che la curva delineata dal valore del AEC, pur essendo rimasta sempre al di sopra del valore d'accettazione, ha, già a partire dal secondo sprint e dunque a seguito del azione correttiva intrapresa, mostrato un trend decrescente; il team si aspettava che nel corso degli #glossary[sprint] successivi il valore avrebbe continuato la sua discesa fino a rientrare nella fascia accettabile.
 
-Nell'ultima rilevazione effettuata, l'andamento della metrica sembra essersi stabilizzato, senza però aver raggiunto la soglia accettabile: la misurazione della metrica è stato di certo inflazionata dalle attività previste per il periodo.
-Il team infatti, si è occupato infatti di ultimare tutta la #glossary[documentazione] necessaria alla revisione #glossary("RTB"), ciò ha fatto impennare i costi effettuati, causa il costo orario più elevato dei ruoli attivi.
+Nelle ultime rilevazioni effettuate, la metrica ha comunque continuato la sua discesa, senza però raggiungere la soglia accettabile: la misurazione della metrica è stato di certo inflazionata dalle attività previste per il periodo.
+Il team infatti, si è occupato infatti di ultimare tutta la #glossary[documentazione] necessaria alla revisione #glossary("RTB"), ciò ha fatto impennare i costi, causa il costo orario più elevato dei ruoli attivi.
 
-Questo risultato, nonostante la correlazione causale individuata, ci suggerisce ugualmente che qualcosa nel progetto non è stato gestito al meglio: l'attenzione apportata alla documentazione nell'ultimo #glossary[sprint] rileva infatti il tentativo del team di rincorrere gli obbiettivi di una pianificazione poco rigorosa. Ne deriva che il team, in vista della seconda revisione, dovrà impegnarsi a migliorare il processo relativo alla gestione di progetto, in modo da poter essere sempre sicuri che gli obbiettivi fissati siano effettivamente raggiunti nei termini dettati dalla pianificazione. 
+Questo risultato, nonostante la correlazione causale individuata, ci suggerisce ugualmente che qualcosa nel progetto non è stato gestito al meglio: la forte attenzione apportata alla documentazione nell'ultimo #glossary[sprint] rileva infatti il tentativo del team di rincorrere gli obbiettivi di una pianificazione poco rigorosa. Ne deriva che il team, in vista della seconda revisione, dovrà impegnarsi a migliorare il processo relativo alla gestione di progetto, in modo da poter essere sempre sicuri che gli obbiettivi fissati siano effettivamente raggiunti nei termini dettati dalla pianificazione. 
+
+
+
 
 #pagebreak()
 
@@ -681,11 +684,11 @@ Questo risultato, nonostante la correlazione causale individuata, ci suggerisce 
   ],
 )
 
-Il BV indica se alla data corrente si è speso di più o di meno rispetto a quanto inizialmente previsto nel budget; il SV indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate. 
+La metrica BV indica se alla data corrente si è speso di più o di meno rispetto a quanto inizialmente previsto nel budget; la metrica SV indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate. 
 Nonostante inizialmente le due metriche si stessero allontanando rapidamente dal valore di accettazione, a partire dal secondo #glossary[sprint] queste sembrano stabilizzarsi, segno che le azioni correttive adottate all'epoca hanno prodotto gli effetti desiderati quasi immediatamente.
-Il cambiamento più significativo si è verificato durante il sesto #glossary[sprint], in occasione del quale è stata osservata un'inversione di tendenza: entrambe le metriche hanno iniziato a riavvicinarsi al valore desiderato.
+Il cambiamento più significativo si è verificato durante il quinto #glossary[sprint], in occasione del quale è stata osservata un'inversione di tendenza: entrambe le metriche hanno iniziato a riavvicinarsi al valore desiderato.
 Il team si aspetta che il #glossary[way of working] consolidato nel corso del progetto permetta di recuperare quanto perso nel corso dei primi #glossary[sprint]. 
-Durante il settimo e l'ottavo #glossary[sprint] le due metriche hanno mantenuto l'andamento che ci si aspettava. 
+Durante il settimo e l'ottavo #glossary[sprint] le due metriche hanno mantenuto il gradiente che ci si aspettava. 
 
 
 === Actual Cost e Estimate To Complete
@@ -712,7 +715,7 @@ Considerando che gli otto #glossary[sprint] effettuati corrispondono ad un perio
   ],
 )
 
-L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[deliverable] rilasciati fino al momento della misurazione in seguito alle attività svolte; il PV rappresenta invece il valore del lavoro pianificato fino a un dato momento. Nonostante sia ancora prematuro confrontare le due metriche con l'EAC, si può notare che il PV si mantiene al di sotto dell'EV, seppur di poco, segno che i preventivi fatti finora sono stati leggermente ottimistici rispetto alla spesa effettiva. Si può notare come le due metriche a partire dal secondo #glossary[sprint] tendono ad avvicinarsi: ciò denota che il team sta iniziando effettivamente a produrre dei preventivi di periodo che maggiormente rispecchiano la realtà effettiva, fotografata nei consuntivi di periodo.
+L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[deliverable] rilasciati fino al momento della misurazione in seguito alle attività svolte; il PV rappresenta invece il valore del lavoro pianificato fino a un dato momento. Nonostante sia ancora prematuro confrontare le due metriche con l'EAC, si può notare che il PV si mantiene al di sotto dell'EV, seppur di poco, segno che i preventivi fatti finora sono stati leggermente ottimistici rispetto alla spesa effettiva. Si può notare come le due metriche a partire dal sesto #glossary[sprint] tendano ad avvicinarsi: ciò denota che il team sta iniziando effettivamente a produrre dei preventivi di periodo che maggiormente rispecchiano la realtà effettiva, fotografata nei consuntivi di periodo.
 
 // == Qualità di Processo - Codifica TODO: non ha senso in questa fase del progetto
 
