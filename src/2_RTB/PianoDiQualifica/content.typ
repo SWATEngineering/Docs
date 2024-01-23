@@ -76,7 +76,9 @@ table(
 caption: [Tabella metriche per il processo di fornitura]
 )
 
-=== Codifica 
+=== Metriche per il processo di sviluppo
+
+==== Codifica
 #figure(
 table(
       columns:(auto,auto,auto,auto),
@@ -89,9 +91,9 @@ table(
       [MPC-PM], [Parametri per Metodo], [≤ 5], [≤ 4],
       [MPC-LCM], [Linee di Codice per Metodo], [≤ 25], [≤ 20]
 ), 
-caption: [Tabella delle metriche per il processo di codifica])
+caption: [Tabella delle metriche per il l'attività di codifica])
 
-=== Progettazione
+==== Progettazione
 
 #figure(
 table(
@@ -102,7 +104,7 @@ table(
       [MPC-FIN], [Structure Fan In], [da determinare], [da determinare], 
       [MPC-FOUT], [Structure Fan Out], [da determinare], [da determinare]
       ), 
-caption: [Tabella metriche per il processo di progettazione]
+caption: [Tabella metriche per l'attività di progettazione]
 )
 
 
