@@ -643,118 +643,6 @@ table(
       ..test_di_sistema.map(item => (item.at(0),item.at(3))).flatten().map(item => [#item])
 ),caption: "Tracciamento dei test di sistema.")
 
-
-
-
-#pagebreak()
-= Cruscotto delle metriche
-
-== Qualità di Processo - Fornitura
-
-=== Estimated at Completion
- 
-#figure(
-  image("./assets/valutazione-metriche/EAC.png", width: 80%),
-  caption: [
-    Valutazione Estimated At Completion.
-  ],
-)
-
-L'EAC rappresenta una revisione del valore stimato per la realizzazione del progetto, ossia il BAC (Budget At Completion) rivisto allo stato corrente del progetto; il fattore che incide maggiormente sull'andamento dell'EAC è il rapporto tra EV (Estimated Value) e AC (Actual Cost), per cui tanto più queste metriche sono vicine l'una all'altra, tanto più l'EAC risulterà vicino al BAC pianificato inizialmente. 
-Concluso il secondo #glossary[sprint] il team ha rilevato che il valore associato all' EAC non rientrava all'interno della soglia accettata: ci si è dunque attivati al fine rimodulare la quantità di lavoro netta associata al concetto di ora produttiva.
-
-Possiamo rilevare dal grafico che la curva delineata dal valore del AEC, pur essendo rimasta sempre al di sopra del valore d'accettazione, ha, già a partire dal secondo sprint e dunque a seguito del azione correttiva intrapresa, mostrato un trend decrescente; il team si aspettava che nel corso degli #glossary[sprint] successivi il valore avrebbe continuato la sua discesa fino a rientrare nella fascia accettabile.
-
-Nelle ultime rilevazioni effettuate, la metrica ha comunque continuato la sua discesa, senza però raggiungere la soglia accettabile: la misurazione della metrica è stato di certo inflazionata dalle attività previste per il periodo.
-Il team infatti, si è occupato infatti di ultimare tutta la #glossary[documentazione] necessaria alla revisione #glossary("RTB"), ciò ha fatto impennare i costi, causa il costo orario più elevato dei ruoli attivi.
-
-Questo risultato, nonostante la correlazione causale individuata, ci suggerisce ugualmente che qualcosa nel progetto non è stato gestito al meglio: la forte attenzione apportata alla documentazione nell'ultimo #glossary[sprint] rileva infatti il tentativo del team di rincorrere gli obbiettivi di una pianificazione poco rigorosa. Ne deriva che il team, in vista della seconda revisione, dovrà impegnarsi a migliorare il processo relativo alla gestione di progetto, in modo da poter essere sempre sicuri che gli obbiettivi fissati siano effettivamente raggiunti nei termini dettati dalla pianificazione. 
-
-
-
-
-#pagebreak()
-
-=== Budget Variance e Schedule Variance
-
-#figure(
-  image("./assets/valutazione-metriche/BV_SV.png", width: 80%),
-  caption: [
-    Valutazione Budget Variance e Schedule Variance.
-  ],
-)
-
-La metrica BV indica se alla data corrente si è speso di più o di meno rispetto a quanto inizialmente previsto nel budget; la metrica SV indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate. 
-Nonostante inizialmente le due metriche si stessero allontanando rapidamente dal valore di accettazione, a partire dal secondo #glossary[sprint] queste sembrano stabilizzarsi, segno che le azioni correttive adottate all'epoca hanno prodotto gli effetti desiderati quasi immediatamente.
-Il cambiamento più significativo si è verificato durante il quinto #glossary[sprint], in occasione del quale è stata osservata un'inversione di tendenza: entrambe le metriche hanno iniziato a riavvicinarsi al valore desiderato.
-Il team si aspetta che il #glossary[way of working] consolidato nel corso del progetto permetta di recuperare quanto perso nel corso dei primi #glossary[sprint]. 
-Durante il settimo e l'ottavo #glossary[sprint] le due metriche hanno mantenuto il gradiente che ci si aspettava. 
-
-
-=== Actual Cost e Estimate To Complete
-
-#figure(
-  image("./assets/valutazione-metriche/AC_ETC.png", width: 80%),
-  caption: [
-    Valutazione Actual Cost e Estimate To Complete.
-  ],
-)
-
-L'AC rappresenta il costo effettivo sostenuto fino a un dato momento, mentre l'ETC rappresenta la stima del costo aggiuntivo necessario per completare il progetto; di conseguenza, ci si aspetta che l'AC cresca e che l'ETC diminuisca in modo sostanzialmente lineare, segno che il progetto ha mantenuto un ritmo regolare di avanzamento. 
-Il grafico ci mostra che effettivamente il team ha mantenuto un ritmo di avanzamento costante durante tutto il periodo, il che è apprezzabile: nonostante la sessione d'esame il team ha continuato a occuparsi con impegno e dedizione alle attività di progetto.
-Inoltre si può evincere che il progetto risulta essere leggermente in ritardo rispetto alle tempistiche inizialmente previste.
-Considerando che gli otto #glossary[sprint] effettuati corrispondono ad un periodo temporale di 10 settimane, metà temporale esatta preventivata per l'attività di progetto, ci si aspetterebbe che i grafici delineati dalle metriche si siano già incrociati.
-
-
-=== Earned Value e Planned Value
-
-#figure(
-  image("./assets/valutazione-metriche/EV_PV.png", width: 80%),
-  caption: [
-    Valutazione Earned Value e Planned Value.
-  ],
-)
-
-L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[deliverable] rilasciati fino al momento della misurazione in seguito alle attività svolte; il PV rappresenta invece il valore del lavoro pianificato fino a un dato momento. Nonostante sia ancora prematuro confrontare le due metriche con l'EAC, si può notare che il PV si mantiene al di sotto dell'EV, seppur di poco, segno che i preventivi fatti finora sono stati leggermente ottimistici rispetto alla spesa effettiva. Si può notare come le due metriche a partire dal sesto #glossary[sprint] tendano ad avvicinarsi: ciò denota che il team sta iniziando effettivamente a produrre dei preventivi di periodo che maggiormente rispecchiano la realtà effettiva, fotografata nei consuntivi di periodo.
-
-// == Qualità di Processo - Codifica TODO: non ha senso in questa fase del progetto
-
-== Qualità di Processo - Documentazione
-
-=== Indice Gulpease
-
-#figure(
-  image("./assets/valutazione-metriche/IG.png", width: 80%),
-  caption: [
-    Valutazione Indice Gulpease.
-  ],
-)
-
-Al termine del secondo #glossary[sprint], tutti i documenti in corso di preparazione in vista della revisione #glossary("RTB") possiedono un IG al di sopra del limite accettabile inferiore di 60; in particolare, l'_Analisi dei Requisiti_ ha raggiunto il valore ideale. 
-Si rileva che nel corso dell'ultimo #glossary[sprint] tutti i documenti hanno subito un abbassamento del loro indice di leggibilità, nel corso del secondo periodo il team dovrà impegnarsi a mantenere una scrittura più semplice.
-
-#pagebreak()
-
-=== Correttezza ortografica
-
-#figure(
-  image("./assets/valutazione-metriche/CO.png", width: 80%),
-  caption: [
-    Valutazione correttezza Ortografica.
-  ],
-)
-
-
-A seguito dei primi due #glossary[sprint] sono stati rilevati parecchi errori ortografici, per far fronte ai quali si è scelto di adottare uno strumento di controllo dell'ortografia sia in fase di stesura che in fase di revisione. Tuttavia, nonostante l'uso di questo strumento, si è notato che il processo di #glossary[documentazione] continua ad essere afflitto da errori ortografici. Questo indica che il problema non è tanto la mancanza di strumenti adeguati, quanto più un approccio disattento da parte del team durante la redazione dei documenti, e nel processo di verifica che ne consegue.
-Fare in modo che non vi siano errori nei documenti prima della revisione #glossary("RTB") rimane comunque un obiettivo di qualità che il team vuole raggiungere. 
-Per ovviare al problema il team ha deciso di introdurre una checklist incentrata sugli errori ortografici, in modo tale che il processo di verifica possa avvalersene e correggere eventuali errori.  Questa checklist è pensata non solo come uno strumento pratico, ma principalmente come un promemoria costante per il Verificatore. 
-Tale strumento, ha mostrato immediatamente i suoi effetti benefici: gli errori nel corso dell'ottavo #glossary[sprint] sono calati a zero.
-
-
-// == Qualità di prodotto
-
-
-
 #pagebreak()
 
 == Liste di controllo
@@ -762,7 +650,6 @@ Tale strumento, ha mostrato immediatamente i suoi effetti benefici: gli errori n
 Le liste di controllo sono uno strumento che il Verificatore può utilizzare al fine di individuare errori ricorrenti nella #glossary[documentazione] o nel codice. Tali liste prevedono anche una descrizione del problema al fine di poter fornire una spiegazione della richiesta di cambiamenti durante la fase di revisione.
 Le liste di controllo possono essere aggiornate durante tutto il corso del progetto dal Verificatore, man mano che vengono notati errori ricorrenti.
 
-#pagebreak()
 === Struttura dei documenti
 
 #figure(
@@ -839,3 +726,128 @@ table(
 ),
 caption: [Lista di controllo per l’Analisi dei Requisiti]
 )
+
+
+#pagebreak()
+= Cruscotto delle metriche
+
+== Qualità di Processo - Fornitura
+
+=== Estimated at Completion
+ 
+#figure(
+  image("./assets/valutazione-metriche/EAC.png", width: 80%),
+  caption: [
+    Valutazione Estimated At Completion.
+  ],
+)
+
+*#glossary[RTB]* L'EAC rappresenta una revisione del valore stimato per la realizzazione del progetto, ossia il BAC (Budget At Completion) rivisto allo stato corrente del progetto; il fattore che incide maggiormente sull'andamento dell'EAC è il rapporto tra EV (Estimated Value) e AC (Actual Cost), per cui tanto più queste metriche sono vicine l'una all'altra, tanto più l'EAC risulterà vicino al BAC pianificato inizialmente. 
+Concluso il secondo #glossary[sprint] il team ha rilevato che il valore associato all' EAC non rientrava all'interno della soglia accettata: ci si è dunque attivati al fine rimodulare la quantità di lavoro netta associata al concetto di ora produttiva.
+
+Possiamo rilevare dal grafico che la curva delineata dal valore del AEC, pur essendo rimasta sempre al di sopra del valore d'accettazione, ha, già a partire dal secondo sprint e dunque a seguito del azione correttiva intrapresa, mostrato un trend decrescente; il team si aspettava che nel corso degli #glossary[sprint] successivi il valore avrebbe continuato la sua discesa fino a rientrare nella fascia accettabile.
+
+Nelle ultime rilevazioni effettuate, la metrica ha comunque continuato la sua discesa, senza però raggiungere la soglia accettabile: la misurazione della metrica è stato di certo inflazionata dalle attività previste per il periodo.
+Il team infatti, si è occupato infatti di ultimare tutta la #glossary[documentazione] necessaria alla revisione #glossary("RTB"), ciò ha fatto impennare i costi, causa il costo orario più elevato dei ruoli attivi.
+
+Questo risultato, nonostante la correlazione causale individuata, ci suggerisce ugualmente che qualcosa nel progetto non è stato gestito al meglio: la forte attenzione apportata alla documentazione nell'ultimo #glossary[sprint] rileva infatti il tentativo del team di rincorrere gli obbiettivi di una pianificazione poco rigorosa. Ne deriva che il team, in vista della seconda revisione, dovrà impegnarsi a migliorare il processo relativo alla gestione di progetto, in modo da poter essere sempre sicuri che gli obbiettivi fissati siano effettivamente raggiunti nei termini dettati dalla pianificazione. 
+
+
+#pagebreak()
+
+=== Budget Variance e Schedule Variance
+
+#figure(
+  image("./assets/valutazione-metriche/BV_SV.png", width: 80%),
+  caption: [
+    Valutazione Budget Variance e Schedule Variance.
+  ],
+)
+
+*#glossary[RTB]* La metrica BV indica se alla data corrente si è speso di più o di meno rispetto a quanto inizialmente previsto nel budget; la metrica SV indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate. 
+Nonostante inizialmente le due metriche si stessero allontanando rapidamente dal valore di accettazione, a partire dal secondo #glossary[sprint] queste sembrano stabilizzarsi, segno che le azioni correttive adottate all'epoca hanno prodotto gli effetti desiderati quasi immediatamente.
+Il cambiamento più significativo si è verificato durante il quinto #glossary[sprint], in occasione del quale è stata osservata un'inversione di tendenza: entrambe le metriche hanno iniziato a riavvicinarsi al valore desiderato.
+Il team si aspetta che il #glossary[way of working] consolidato nel corso del progetto permetta di recuperare quanto perso nel corso dei primi #glossary[sprint]. 
+Durante il settimo e l'ottavo #glossary[sprint] le due metriche hanno mantenuto il gradiente che ci si aspettava. 
+
+
+=== Actual Cost e Estimate To Complete
+
+#figure(
+  image("./assets/valutazione-metriche/AC_ETC.png", width: 80%),
+  caption: [
+    Valutazione Actual Cost e Estimate To Complete.
+  ],
+)
+
+*#glossary[RTB]* L'AC rappresenta il costo effettivo sostenuto fino a un dato momento, mentre l'ETC rappresenta la stima del costo aggiuntivo necessario per completare il progetto; di conseguenza, ci si aspetta che l'AC cresca e che l'ETC diminuisca in modo sostanzialmente lineare, segno che il progetto ha mantenuto un ritmo regolare di avanzamento. 
+Il grafico ci mostra che effettivamente il team ha mantenuto un ritmo di avanzamento costante durante tutto il periodo, il che è apprezzabile: nonostante la sessione d'esame il team ha continuato a occuparsi con impegno e dedizione alle attività di progetto.
+Inoltre si può evincere che il progetto risulta essere leggermente in ritardo rispetto alle tempistiche inizialmente previste.
+Considerando che gli otto #glossary[sprint] effettuati corrispondono ad un periodo temporale di 10 settimane, metà temporale esatta preventivata per l'attività di progetto, ci si aspetterebbe che i grafici delineati dalle metriche si siano già incrociati.
+
+
+=== Earned Value e Planned Value
+
+#figure(
+  image("./assets/valutazione-metriche/EV_PV.png", width: 80%),
+  caption: [
+    Valutazione Earned Value e Planned Value.
+  ],
+)
+
+*#glossary[RTB]* L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[deliverable] rilasciati fino al momento della misurazione in seguito alle attività svolte; il PV rappresenta invece il valore del lavoro pianificato fino a un dato momento. Nonostante sia ancora prematuro confrontare le due metriche con l'EAC, si può notare che il PV si mantiene al di sotto dell'EV, seppur di poco, segno che i preventivi fatti finora sono stati leggermente ottimistici rispetto alla spesa effettiva. Si può notare come le due metriche a partire dal sesto #glossary[sprint] tendano ad avvicinarsi: ciò denota che il team sta iniziando effettivamente a produrre dei preventivi di periodo che maggiormente rispecchiano la realtà effettiva, fotografata nei consuntivi di periodo.
+
+// == Qualità di Processo - Codifica TODO: non ha senso in questa fase del progetto
+
+== Qualità di Processo - Documentazione
+
+=== Indice Gulpease
+
+#figure(
+  image("./assets/valutazione-metriche/IG.png", width: 80%),
+  caption: [
+    Valutazione Indice Gulpease.
+  ],
+)
+
+*#glossary[RTB]* Al termine del secondo #glossary[sprint], tutti i documenti in corso di preparazione in vista della revisione #glossary("RTB") possiedono un IG al di sopra del limite accettabile inferiore di 60; in particolare, l'_Analisi dei Requisiti_ ha raggiunto il valore ideale. 
+Si rileva che nel corso dell'ultimo #glossary[sprint] tutti i documenti hanno subito un abbassamento del loro indice di leggibilità, nel corso del secondo periodo il team dovrà impegnarsi a mantenere una scrittura più semplice.
+
+#pagebreak()
+
+=== Correttezza ortografica
+
+#figure(
+  image("./assets/valutazione-metriche/CO.png", width: 80%),
+  caption: [
+    Valutazione correttezza Ortografica.
+  ],
+)
+
+
+*#glossary[RTB]* A seguito dei primi due #glossary[sprint] sono stati rilevati parecchi errori ortografici, per far fronte ai quali si è scelto di adottare uno strumento di controllo dell'ortografia sia in fase di stesura che in fase di revisione. Tuttavia, nonostante l'uso di questo strumento, si è notato che il processo di #glossary[documentazione] continua ad essere afflitto da errori ortografici. Questo indica che il problema non è tanto la mancanza di strumenti adeguati, quanto più un approccio disattento da parte del team durante la redazione dei documenti, e nel processo di verifica che ne consegue.
+Fare in modo che non vi siano errori nei documenti prima della revisione #glossary("RTB") rimane comunque un obiettivo di qualità che il team vuole raggiungere. 
+Per ovviare al problema il team ha deciso di introdurre una checklist incentrata sugli errori ortografici, in modo tale che il processo di verifica possa avvalersene e correggere eventuali errori.  Questa checklist è pensata non solo come uno strumento pratico, ma principalmente come un promemoria costante per il Verificatore. 
+Tale strumento, ha mostrato immediatamente i suoi effetti benefici: gli errori nel corso dell'ottavo #glossary[sprint] sono calati a zero.
+
+
+// == Qualità di prodotto
+#pagebreak()
+
+== Considerazioni finali in vista della revisione #glossary[RTB]
+
+Il team ha tentato fin da subito di adottare un #glossary[way of working] che consentisse di rispettare gli obiettivi e le scadenze impostate all'inizio dello svolgimento del progetto, ma ci si è presto resi conto che quest'ultimo sarebbe dovuto essere gradualmente ampliato e raffinato con il passare del tempo; infatti, nonostante il #glossary[way of working] sia progressivamente migliorato con l'avanzare del progetto, alcune aree necessitano di essere meglio definite o migliorate affinché la qualità di processo si rifletta positivamente sulla qualità di prodotto. Volendo ripercorrere brevemente la progressione del modo di lavorare del team, si possono riportare alcune considerazioni sulle difficoltà incontrate inizialmente e su come si sia tentato di superarle. 
+
+In generale, il team non ha avuto difficoltà nel fissare incontri interni settimanali per discutere dell'avanzamento del progetto a cui tutti i componenti partecipassero attivamente; tuttavia, per una buona parte del periodo antecedente la prima revisione #glossary[RTB] (sostanzialmente fino allo #glossary[sprint] 5 incluso), gli incontri hanno avuto una durata eccessiva, ossia oltre le 1,5 ore. Dunque, il team ha cominciato a stilare un #glossary[ordine del giorno] nel corso dello #glossary[sprint] in modo da poter strutturare meglio gli incontri e limitarne la durata; succede ancora che questi si protraggano più a lungo del previsto, anche perché si investe del tempo alla fine per assistere gli Amministratori di turno nella creazione e assegnazione delle issue pertinenti. Nonostante l'#glossary[ordine del giorno] abbia un contenuto piuttosto variabile, si può migliorare la sua applicazione prestabilendo quanto tempo si dovrebbe dedicare a ciascun punto di discussione nel corso dell'incontro, cosa che il team ha intenzione di fare dopo la prima revisione per renderli più efficienti. 
+
+Si è menzionato il processo di creazione e assegnazione delle issue: fortunatamente tale processo è stato messo a punto e applicato in modo consistente fin dal principio, ma si può migliorare la sua applicazione per agevolare ulteriormente la creazione del preventivo che precede ogni #glossary[sprint] e la pianificazione a breve termine. In particolare, come spiegato nelle _Norme di Progetto v1.0_, ad ogni issue viene assegnata una dimensione (in base alle ore produttive che si stima siano necessarie per il suo completamento) e una priorità, pensate per aiutare il team a dimensionare gli #glossary[sprint] e a gestire la catena di dipendenze tra le varie issue in modo corretto; tuttavia, il fatto di conoscere (e aggiornare in corso d'opera se necessario) la dimensione di tutte le issue previste per un determinato #glossary[sprint] e, di conseguenza, la dimensione dello #glossary[sprint] stesso non è stato preso in considerazione nella creazione del preventivo rilevante. Non c'è dubbio sul fatto che creare un preventivo "informato" da questo genere di stima sia più efficace che crearne uno inserendo ore non vincolate in alcun modo, solo in base alle esigenze del momento. Allo stesso modo il team si era prefissato di esplicitare sempre le date di inizio e fine di ogni singola issue, in modo da agevolare la pianificazione; anche in questo caso l'idea iniziale non è stata applicata in modo soddisfacente, perciò è risultato difficile eseguire una pianificazione dettagliata di ogni #glossary[sprint], che consistesse anche di un diagramma di Gantt. In futuro, dunque, il team ha intenzione di sfruttare queste procedure in modo concreto per migliorare le attività di creazione di pianificazione e preventivo di ogni #glossary[sprint].
+
+Sarebbe utile dunque monitorare la dimensione di ogni #glossary[sprint] come viene descritta sopra tramite una metrica apposita da inserire tra quelle di gestione dei processi; idealmente si avrebbe anche una metrica che misura il tasso di completamento delle attività per ogni #glossary[sprint], così da potersi regolare nella pianificazione di quelli futuri. Quest'ultima non è stata utilizzata perché nel momento in cui il team ha cominciato ad utilizzare le metriche scelte in modo appropriato, si è reso conto di non possedere una traccia delle issue aperte e chiuse al termine di ogni #glossary[sprint]\; attualmente, nel momento in cui si hanno delle issue ancora aperte alla fine dello #glossary[sprint] corrente, queste vengono "trasportate" allo #glossary[sprint] successivo assegnandole alla #glossary[milestone] appena creata. In futuro, sarebbe bene fare uno "screenshot" dello stato della Kanban board al termine dello #glossary[sprint] in modo da poter calcolare questa metrica aggiuntiva prima di riadattarla allo #glossary[sprint] in procinto di iniziare.
+
+L'applicazione di una routine più rigorosa per quanto riguarda l'aggiornamento del _Piano di Progetto_ e del _Piano di Qualifica_ con i dati rilevanti è di importanza vitale, soprattutto dopo la revisione #glossary[RTB] quando ci saranno documenti aggiuntivi che richiederanno attenzione; pianificazione, preventivo, consuntivo e metriche dovranno essere aggiornati in modo metodico e rigoroso in modo da essere sfruttati come strumenti utili ed evitare problemi come l'impiego di più ore produttive in un determinato ruolo (Amministratore, ad esempio) di quante non ce ne siano effettivamente a disposizione (anche questo da considerare nella creazione dei preventivi appunto, assieme alla dimensione dello #glossary[sprint]).
+
+In quanto alla rendicontazione delle ore produttive effettivamente utilizzate dai membri del team nel corso di ciascuno #glossary[sprint], lo #glossary[spreadsheet] "Time & Resource Manager" su Google Drive si è rivelato estremamente utile (se aggiornato tempestivamente da tutti i membri senza ritardo); tuttavia, l'utilizzo delle ore produttive preventivate ed effettive riportate nel _Piano di Progetto v1.0_ per calcolare la percentuale di lavoro preventivato e svolto nell'ottica di PV ed EV è ancora un punto di discussione all'interno del team; infatti, come descritto dal grafico, L'EAC è ancora al di sopra del limite di accettazione superiore nonostante l'andamento decrescente. Questo è in un certo senso in linea con l'utilizzo che il team ha fatto del BAC, utilizzando più ore da Amministratore (tra le più costose, tra l'altro) del previsto, ma è anche un prodotto del modo in cui il team ha scelto di calcolare la percentuale di lavoro menzionata sopra; non essendoci altre alternative valide per eseguire il calcolo, con ogni probabilità il team continuerà ad adottare l'approccio delineato, utilizzando però le ore in modo più consapevole rispetto a quanto già speso per fare in modo che l'EAC continui ad avere un andamento decrescente.
+
+La comunicazione all'interno del team è stata stabile fin dall'inizio del progetto e non ha subito grosse variazioni se non durante il periodo coincidente con la sessione di esami invernale e poco oltre (lo stesso vale per la comunicazione esterna con la Proponente); tuttavia, il team dovrebbe imparare a gestire meglio (e quindi stabilire una procedura per) le situazioni in cui uno o più documenti necessitano di una revisione o di modifiche critiche da effettuare con urgenza (senza dover necessariamente attendere il termine dello #glossary[sprint] corrente) tramite discussioni dedicate su Discord o meeting di emergenza. Tali misure sono state predisposte recentemente visto l'andamento del progetto nel corso della sessione, ma non sempre utilizzate quando necessario.
+
+Complessivamente, il #glossary[way of working] del team è migliorato notevolmente dall'inizio del progetto, in particolare grazie a tutti gli strumenti, le procedure e le automazioni descritte nelle _Norme di Progetto v 1.0_ e alle misure di prevenzione dei rischi descritte nel _Piano di Progetto v1.0_, ma ciò non significa che sia privo di imperfezioni e che non possa essere migliorato ulteriormente in seguito alla revisione #glossary[RTB].
