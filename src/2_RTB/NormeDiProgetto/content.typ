@@ -101,7 +101,7 @@ Si compone delle seguenti sezioni:
         - *Analisi dei rischi*: identifica, valuta e gestisce i potenziali rischi che possono influenzare il successo del progetto. Questo processo è essenziale per consentire al team di adottare misure preventive. I rischi vengono categorizzati in rischi tecnologici, di comunicazione e di pianificazione. Per ogni rischio, si compie un'analisi mirata per individuarne i segnali di manifestazione, valutarne l'occorrenza e la pericolosità e pianificare strategie di mitigazione;
         - *Modello di sviluppo*: approccio metodologico scelto per guidare il processo di sviluppo del prodotto. Esso definisce la struttura di lavoro che viene seguita per l'intero ciclo di vita del progetto. Con l'adozione del modello di sviluppo agile Scrum, questa sezione descrive le pratiche e gli eventi principali del #glossary[framework], illustrando il modo in cui vengono utilizzati ed implementati dal team;
         - *Pianificazione*: fornisce una roadmap dettagliata delle attività, delle risorse, e delle scadenze associate al progetto. In particolare, vengono pianificate le attività necessarie per raggiungere gli obiettivi previsti per ogni #glossary[sprint], dall'inizio sino al termine del progetto, e la loro distribuzione temporale;
-        - *Preventivo*: basandosi sulla pianificazione eseguita a priori, determina la ripartizione delle ore produttive a disposizione di ogni componente del team nei vari ruoli per ogni #glossary[sprint]. Questo assicura il conseguimento degli obiettivi prefissati e un utilizzo oculato delle risorse. La suddivisione delle ore determina altresì, il costo preventivato per ogni #glossary[sprint];
+        - *Preventivo*: basandosi sulla pianificazione eseguita a priori, determina la ripartizione delle ore produttive a disposizione di ogni componente del team nei vari ruoli per ogni #glossary[sprint]. Questo assicura il conseguimento degli obiettivi prefissati e un utilizzo oculato delle risorse. La suddivisione delle ore determina altresì, il costo preventivato per ogni #glossary[sprint]\;
         - *Consuntivo*: partendo dalla rendicontazione delle ore produttive impiegate da ciascun membro del team eseguita a posteriori, determina la ripartizione effettiva delle ore osservata durante lo #glossary[sprint] e, di conseguenza, anche il costo effettivo. Inoltre, si conduce una breve analisi retrospettiva per giustificare le scelte effettuate nel preventivo, evidenziare eventuali deviazioni e delineare i cambiamenti nella strategia utilizzata per pianificare il resto del lavoro,  qualora dovessero rendersi necessari.
         
 ==== Piano di Qualifica
@@ -145,7 +145,7 @@ Servizio per creare e partecipare a videochiamate, utilizzato dal team per gli i
 Online software per creare diagrammi di Gantt, utilizzato dal Responsabile per delineare la distribuzione temporale delle attività pianificate per ogni #glossary[sprint] nella sezione di Pianificazione del _Piano di Progetto v1.0_.
 
 ==== Draw.io
-Software per creare diagrammi e grafici di varia natura, utilizzato dagli Analisti per creare i diagrammi UML dei casi d'uso nella sezione Casi d'uso (@c.uso) dell'_Analisi dei Requisiti v1.0_.
+Software per creare diagrammi e grafici di varia natura, utilizzato dagli Analisti per creare i diagrammi #glossary[UML] dei casi d'uso nella sezione Casi d'uso (@c.uso) dell'_Analisi dei Requisiti v1.0_.
 
 
 == Sviluppo
@@ -165,7 +165,7 @@ L'_Analisi dei Requisiti v1.0_ viene redatta dagli Analisti e contiene:
         - *Introduzione*: esplicita lo scopo del documento, lo scopo del prodotto e i riferimenti utilizzati;
         - *Descrizione*: esplicita le funzionalità attese del prodotto e le caratteristiche degli utenti;
         - *Attori*: gli utilizzatori del prodotto finale;
-        - *Casi d'uso*: individua gli attori e tutte le interazioni che possono avere con il #glossary[sistema];
+        - *Casi d'uso*: individua gli attori e tutte le interazioni che possono avere con il #glossary[sistema]\;
         - *Requisiti*: le caratteristiche da soddisfare e le fonti da cui sono state estratte.
 
 ==== Scopo   
@@ -173,7 +173,7 @@ L'_Analisi dei Requisiti v1.0_ viene redatta dagli Analisti e contiene:
 Lo scopo dell'_Analisi dei Requisiti v1.0_ è definire in modo dettagliato e chiaro le funzionalità e le caratteristiche che il prodotto software deve soddisfare. Questo processo mira a comprendere a fondo le esigenze degli utenti, gli obiettivi del #glossary[sistema] e le condizioni in cui dovrà operare. Gli obiettivi principali dell'attività di analisi dei requisiti includono:
 
         - Identificare e chiarire gli obiettivi e le finalità del prodotto che si intende sviluppare;
-        - Fornire ai Progettisti una base chiara e comprensibile per la definizione dell'#glossary[architettura] e il design del #glossary[sistema];
+        - Fornire ai Progettisti una base chiara e comprensibile per la definizione dell'#glossary[architettura] e il design del #glossary[sistema]\;
         - Fornire una base per la pianificazione mediante i requisiti raccolti;
         - Facilitare la comunicazione tra fornitori e Proponente;
         - Fornire riferimenti per la verifica.
@@ -195,7 +195,7 @@ I casi d'uso sono identificati nel seguente modo:
 
 I casi d'uso sono strutturati nel seguente modo:
 
-    - #glossary[Attore];
+    - #glossary[Attore]\;
     - Precondizioni;
     - Postcondizioni;
     - Scenario Principale;
@@ -266,8 +266,8 @@ Si definiscono tre sottoattività:
         + *Technology #glossary[Baseline]*: implica la selezione e la definizione delle tecnologie di base utilizzate per la realizzazione del #glossary[sistema]. Questo comprende decisioni relative a linguaggi di programmazione, librerie e #glossary[framework]. Tale processo porta alla creazione di un Proof of Concept (#glossary("PoC"));
 
                 Include:
-                - *Proof of Concept (#glossary[Poc])*: consiste nella creazione di una versione parziale del prodotto, includendo alcune delle funzionalità stabilite durante l'analisi dei requisiti. L'obiettivo è valutare la fattibilità del prodotto completo;
-                - *scelte tecnologiche*: consiste nello stabilire quali tecnologie adottare per lo sviluppo del #glossary[Poc], anche su consiglio della Proponente.
+                - *Proof of Concept (#glossary[PoC])*: consiste nella creazione di una versione parziale del prodotto, includendo alcune delle funzionalità stabilite durante l'analisi dei requisiti. L'obiettivo è valutare la fattibilità del prodotto completo;
+                - *Scelte tecnologiche*: consiste nello stabilire quali tecnologie adottare per lo sviluppo del #glossary[PoC], anche su consiglio della Proponente.
         + *Progettazione Architetturale*: definizione ad alto livello dell'#glossary[architettura] del #glossary[sistema]; si concentra sulla suddivisione del #glossary[sistema] in componenti e moduli, definendo le relazioni tra di essi e specificando le linee guida per l'organizzazione e l'interazione delle varie parti;
         + *Product Baseline (#glossary[PB])*: segna un punto stabile nell'attività di progettazione, in cui le specifiche tecniche, le funzionalità principali e l'#glossary[architettura] del prodotto sono definite in modo dettagliato e accettate dalle parti coinvolte. Include tutti gli elementi essenziali e i requisiti chiave del prodotto che devono essere soddisfatti, fornendo una base solida per lo sviluppo continuo del prodotto. Questo processo porta infine alla realizzazione di un Minimum Viable Product (#glossary("MVP"));
                 Include:
