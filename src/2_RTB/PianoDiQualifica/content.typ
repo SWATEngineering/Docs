@@ -327,7 +327,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
             1. Scegliere una tabella da ordinare;
-            2. Ordinare le righe di tale tabella secondo uno dei sui campi. 
+            2. Ordinare le righe di tale tabella secondo uno dei suoi campi. 
       ],"N/I",[
             UC7
       ]),
