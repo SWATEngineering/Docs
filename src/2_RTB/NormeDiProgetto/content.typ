@@ -481,7 +481,7 @@ Ci si aspetta che il codice sviluppato rispetti determinate caratteristiche:
 
 Il team #team ha deciso di adottare il linguaggio di programmazione #glossary[Python] per la creazione dei simulatori di sensori.
 Questa scelta tecnologica è motivata dalla familiarità che molti membri del team hanno con il linguaggio in questione, il che consente al team di concentrarsi direttamente sulla realizzazione del prodotto, risparmiando una quantità significativa risorse. 
-Inoltre, Python promuove uno stile di codifica uniforme e leggibile. La sua struttura rigida basata sull'indentazione agevola la comprensione della struttura del programma, contribuendo a una maggiore chiarezza all'interno del codice. 
+Inoltre, #glossary[Python] promuove uno stile di codifica uniforme e leggibile. La sua struttura rigida basata sull'indentazione agevola la comprensione della struttura del programma, contribuendo a una maggiore chiarezza all'interno del codice. 
 Il team si impegna ad utilizzare i seguenti stili di codifica:
 
 ===== Lunghezza metodi  
@@ -508,7 +508,7 @@ Tutte le variabili, i metodi e le classi devono avere un nome che li distingue u
 
 ===== Type hint  
 
-L'utilizzo dei type hint, ossia l'annotazione dei tipi di dati nelle firme delle funzioni o dei metodi, pratica comunemente utilizzata in Python, contribuisce ad una migliore robustezza del codice fornendo alcuni vantaggi: 
+L'utilizzo dei type hint, ossia l'annotazione dei tipi di dati nelle firme delle funzioni o dei metodi, pratica comunemente utilizzata in #glossary[Python], contribuisce ad una migliore robustezza del codice fornendo alcuni vantaggi: 
 
         - Analisi statica avanzata;
         - Riduzione errori;
@@ -519,7 +519,7 @@ I type hint non impongono un ritorno specifico, ma forniscono informazioni chiar
 
 ===== Strumenti   
 
-Si è deciso di integrare il linter PEP8 come fondamentale strumento nel processo di sviluppo. Questo strumento svolge un ruolo di rilievo nel garantire la coerenza e l'adesione alle linee guida di formattazione del codice Python, stabilite nella PEP 8, contribuendo in modo significativo a mantenere uno standard uniforme nella base di codice.
+Si è deciso di integrare il linter PEP8 come fondamentale strumento nel processo di sviluppo. Questo strumento svolge un ruolo di rilievo nel garantire la coerenza e l'adesione alle linee guida di formattazione del codice #glossary[Python], stabilite nella PEP 8, contribuendo in modo significativo a mantenere uno standard uniforme nella base di codice.
 
 
 ==== Metriche
@@ -584,12 +584,12 @@ Ogni cambiamento di stato è accompagnato dal conseguente movimento della issue,
 Nel contesto della versione finale di un documento, spetta al Responsabile conferire l'approvazione definitiva, annotando opportunamente nel changelog la versione *x.0* e la sua approvazione finale.
 
 In cui *x* può essere:
-        - 1 se per #glossary[RTB];
-        - 2 se per #glossary[PB];
+        - 1 se per #glossary[RTB]\;
+        - 2 se per #glossary[PB]\;
         - 3 se per #glossary[CA].
 
 
-=== Template Typst
+=== Template #glossary[Typst]
 
 Per la stesura dei documenti viene usato un template in formato #glossary[Typst]. Il template fornisce una struttura e un formato predefinito per semplificare la creazione di documenti. Serve a garantire coerenza, risparmiare tempo, standardizzare la presentazione e contribuire a una produzione di documenti più efficiente e professionale.
 Sono stati sviluppati quattro template distinti per adattarsi alle diverse esigenze di #glossary[documentazione]: 
@@ -608,7 +608,7 @@ Il versionamento avviene secondo il seguente formato *x.y*:
 - *y*: si incrementa una volta effettuata una modifica e la sua conseguente verifica;
 - *x*: si incrementa quando si effettua la modifica definitiva in vista di una verifica di avanzamento, questo comporta l'azzeramento di y.
 
-Due modifiche, fatte in momenti diversi, differiscono l'una dall'altra solo se hanno scopi diversi. Ad esempio non è necessario incrementare la versione se viene fatta una modifica alla stessa sezione in due giorni differenti; anche se faccio una modifica, ed essa non viene approvata, non è necessario incrementare la versione con le nuove modifiche proposte dal/dai verificatore/i, dal momento che modifica e verifica "viaggiano" parallelamente.
+Due modifiche, fatte in momenti diversi, differiscono l'una dall'altra solo se hanno scopi diversi. Ad esempio non è necessario incrementare la versione se viene fatta una modifica alla stessa sezione in due giorni differenti; anche se si effettua una modifica ed essa non viene approvata, non è necessario incrementare la versione con le nuove modifiche proposte dal/dai verificatore/i, dal momento che modifica e verifica "viaggiano" parallelamente.
 
 === Struttura 
 
@@ -661,7 +661,7 @@ Il verbale esterno oltre alle sezioni sopra elencate ha una pagina per la conval
                 - Parole a cui si vuole dare enfasi;
                 - Definizioni di termini negli elenchi puntati.
         - *Corsivo*: 
-                - I nomi dei documenti, seguiti dalla loro versione(in questo caso 1.0);
+                - I nomi dei documenti, seguiti dalla loro versione (1.0 nel caso di documenti pronti ad essere presentati alla revisione #glossary[RTB]);
                 - I termini di glossario (seguiti da #sub[G]).
         - *Caratteri maiuscoli*: 
                 - Le iniziali dei nomi;
@@ -670,7 +670,7 @@ Il verbale esterno oltre alle sezioni sopra elencate ha una pagina per la conval
                 - L'iniziale del termine "Proponente";
                 - Prima lettera di ogni elenco puntato.
 
-Nei verbali Interni ed Esterni non si usa la formattazione da glossario.
+Nei verbali interni ed esterni non si usa la formattazione da glossario.
 
 ==== Elenchi puntati
 
@@ -723,9 +723,9 @@ La gestione della configurazione (Configuration Management) è una pratica fonda
 
 === Issue Tracking System <its>
 
-Come ITS si utilizza _Github_ che, attraverso le funzioni di "Project", "Issue" e "Pull request", garantisce una struttura all'organizzazione di progetto.
+Come ITS si utilizza Github che, attraverso le funzioni di "Project", "Issue" e "Pull request", garantisce una struttura all'organizzazione di progetto.
 
-Le #glossary[Corsie di Stato] descrivono lo stato attuale delle attività, all'interno del _Project_ nell'_ITS_ sono presenti:
+Le #glossary[Corsie di Stato] descrivono lo stato attuale delle attività, all'interno del Project nell'#glossary[ITS] sono presenti:
 / Backlog: attività individuate da svolgere.
 / Ready: attività individuate per il completamento durante il prossimo #glossary[sprint].
 / In Progress: attività che sono in corso d'opera da parte dei redattori.
@@ -770,7 +770,7 @@ Per garantire la coerenza e la tempestività delle informazioni, il servizio est
 
 === Controllo termini glossario    
 
-È stato sviluppato uno script in python per verificare la corrispondenza tra i termini presenti in un documento e quelli presenti nel _Glossario v1.0_.
+È stato sviluppato uno script in #glossary[Python] per verificare la corrispondenza tra i termini presenti in un documento e quelli presenti nel _Glossario v1.0_.
 Lo script, utilizzando espressioni regolari, confronta i termini indicati nei documenti, formattati secondo lo standard del glossario, con quelli presenti nel _Glossario_. In presenza di discrepanze, genera un messaggio di errore specificando i termini mancanti nel _Glossario_. In caso contrario, l'esecuzione avviene senza problemi, indicando che i termini nel documento sono in linea con quelli del _Glossario v1.0_.
 Tutti i termini inclusi nel _Glossario v1.0_ devono essere formattati secondo la convenzione da glossario ogni volta che compaiono nel documento, non solo alla prima occorrenza. Questo assicura coerenza e facilita la consultazione, contribuendo a una migliore comprensione dei termini chiave nel contesto del documento.
 
@@ -790,8 +790,8 @@ Gli strumenti adottati per agevolare il processo di verifica sono i seguenti:
 ==== GitHub <revisione_pull>
 
 GitHub offre una funzionalità di review all'interno del meccanismo di pull request, permettendo al Verificatore di visualizzare facilmente le ultime modifiche apportate al prodotto. Il Verificatore inserisce commenti specifici che indicano le correzioni o le migliorie necessarie e, al termine della review, la invia richiedendo le modifiche indicate. In seguito all'intervento correttivo dell'autore, il Verificatore esegue nuovamente la revisione.
-Il processo viene ripetuto fino a che la revisione non dà esito positivo.
-A seguito del processo di verifica il Verificatore si occupa di spostare la issue nella #glossary[corsia] di stato adeguata all'interno della _Kanban Board_:
+Il processo viene ripetuto fino a che la revisione non da esito positivo.
+A seguito del processo di verifica il Verificatore si occupa di spostare la issue nella #glossary[corsia] di stato adeguata all'interno della Kanban Board:
 - "Done": qualora la revisione abbia avuto esito positivo; 
 - "In progress": in caso siano richieste modifiche.
 
@@ -802,7 +802,7 @@ Il Verificatore, a seguito di una revisione positiva, accetta la pull request co
 
 ===== Elementi esterni al repository
 
-Potrebbero esservi delle issue aperte all'interno dell' #glossary("ITS") che non hanno un corrispondente documento o prodotto in generale, all'interno del #glossary[repository]. Per queste, il ciclo di vita segue il normale flusso attraverso i diversi stati elencati nella @its. La verifica viene effettuata attraverso i commenti della issue stessa, che avranno la seguente forma:
+Potrebbero esservi delle issue aperte all'interno dell'#glossary("ITS") che non hanno un corrispondente documento o prodotto in generale, all'interno del #glossary[repository]. Per queste, il ciclo di vita segue il normale flusso attraverso i diversi stati elencati nella @its. La verifica viene effettuata attraverso i commenti della issue stessa, che avranno la seguente forma:
 - richiesta cambiamenti:
   ```
   [REV]
@@ -821,7 +821,7 @@ Il Verificatore, nel contesto della #glossary[documentazione] o del codice, può
 
 ==== Inspection
 
-In questo processo, il Verificatore adotta un approccio strutturato, seguendo una sequenza di passaggi ben definiti. Utilizza liste di controllo per esaminare in dettaglio il documento o il codice. Per dettagli specifici sulle checklist usate, si rimanda al documento _PianoDiQualifica\_v1.0_. 
+In questo processo, il Verificatore adotta un approccio strutturato, seguendo una sequenza di passaggi ben definiti. Utilizza liste di controllo per esaminare in dettaglio il documento o il codice. Per dettagli specifici sulle checklist usate, si rimanda al documento _Piano di Qualifica v1.0_. 
 
 ==== Walkthrough
 
@@ -841,8 +841,8 @@ Il Verificatore si impegna a elaborare casi di test per ciascuna delle seguenti 
 - Test di sistema; 
 - Test di accettazione.
 
-La totalità dei test individuati viene riportata all'interno del documento _PianoDiQualifica\_v1.0_.
-In sede di verifica, sulla base del dominio esaminato, il Verificatore è tenuto ad eseguire tali test in maniera rigorosa e a riportarne gli esiti all'interno del _PianoDiQualifica\_v1.0_. 
+La totalità dei test individuati viene riportata all'interno del documento _Piano di Qualifica v1.0_.
+In sede di verifica, sulla base del dominio esaminato, il Verificatore è tenuto ad eseguire tali test in maniera rigorosa e a riportarne gli esiti all'interno del _Piano di Qualifica v1.0_. 
 
 ==== Test di unità  
 
@@ -858,13 +858,13 @@ I test di unità si dividono principalmente in due categorie:
         - *Test Funzionali*: verificano che ciascuna unità esegua le funzioni specificate nel design, concentrandosi sulla logica interna dell'unità e testando i casi in cui la funzione produce i risultati desiderati;
         - *Test Strutturali*: verificano la struttura interna dell'unità, compresa la logica di controllo e il flusso dei dati, esaminando il codice sorgente dell'unità.
 
-==== Test di Integrazione   
+==== Test di integrazione   
 
 I test di integrazione sono cruciali per valutare il comportamento delle unità software quando vengono combinate. Una volta confermato il corretto funzionamento delle singole unità in isolamento, i test di integrazione mirano a identificare possibili problemi nelle interazioni tra le unità integrate. Questi test, automatizzati il più possibile, verificano se le componenti del software collaborano efficacemente e se il sistema integrato soddisfa le specifiche di progetto. L'obiettivo è garantire che, quando le unità sono combinate, il software funzioni senza intoppi e risponda alle esigenze dell'applicazione in modo coerente.
 
-==== Test di Sistema 
+==== Test di #glossary[sistema] 
 
-I test di sistema vengono definiti durante la fase di analisi dei requisiti con l'obiettivo di misurare la copertura dei requisiti derivati dal capitolato d'appalto. Questa fase del processo di software testing mira a verificare l'intero #glossary[sistema] come entità unificata. Durante il test di sistema, il software viene valutato nella sua completezza, con l'obiettivo di accertare che tutte le componenti integrate funzionino insieme in modo coerente per soddisfare gli obiettivi e i requisiti del #glossary[sistema].
+I test di #glossary[sistema] vengono definiti durante la fase di analisi dei requisiti con l'obiettivo di misurare la copertura dei requisiti derivati dal capitolato d'appalto. Questa fase del processo di software testing mira a verificare l'intero #glossary[sistema] come entità unificata. Durante il test di #glossary[sistema], il software viene valutato nella sua completezza, con l'obiettivo di accertare che tutte le componenti integrate funzionino insieme in modo coerente per soddisfare gli obiettivi e i requisiti del #glossary[sistema].
 Per la definizione dei test si rimanda al _Piano di Qualifica v1.0_.
 
 ==== Test di accettazione  
@@ -960,7 +960,7 @@ Oltre a definire gli obiettivi per ogni #glossary[sprint], il Responsabile si oc
 
 Eventuali variazioni nella distribuzione dei ruoli, rispetto alla pianificazione iniziale, vengono documentate e giustificate nel *Consuntivo* del _Piano di Progetto v1.0_. Questo approccio consente al team di adattarsi in modo flessibile alle esigenze emergenti, mantenendo costantemente un quadro chiaro delle variazioni e delle ragioni che sottendono a tali modifiche.
 
-==== Documentazione Fine Sprint
+==== #glossary[Documentazione] fine #glossary[sprint]
 
 Il Responsabile è incaricato di sviluppare un preventivo dettagliato per le successive due settimane subito dopo la conclusione dello #glossary[sprint] attuale, fornendo una guida chiara al team su aspettative e obiettivi.
 
@@ -974,14 +974,14 @@ Per utilizzare efficacemente lo script per il calcolo preventivo, si procede nel
 
  - Eseguire lo script init_preventivo.py, seguendo attentamente le istruzioni fornite. Questo script guida la creazione dei file CSV necessari, che sono utilizzati per inserire i dati relativi a due preventivi successivi;
  - Accedere al file preventivonumerosprint.csv situato nella directory preventivi/preventivi_csv/. In questo file, si inserisce, con precisione, i dati riguardanti le ore dedicate da ciascun membro del team, specificando le risorse allocate per i due preventivi successivi;
- - Eseguire lo script auto_preventivo.py, indicando lo sprint per il quale desideri generare il preventivo. L'esecuzione di questo script applica automaticamente i dati inseriti, producendo un preventivo accurato per lo sprint selezionato;
+ - Eseguire lo script auto_preventivo.py, indicando lo #glossary[sprint] per il quale si desidera generare il preventivo. L'esecuzione di questo script applica automaticamente i dati inseriti, producendo un preventivo accurato per lo #glossary[sprint] selezionato;
  - All'interno del file typst, dove si intende inserire il preventivo, utilizzare le funzioni prospettoOrario e prospettoEconomico fornite nel modulo functions.typ. Queste funzioni consentono di integrare facilmente i dati di prospetto orario ed economico nel documento, facilitando la visualizzazione e la gestione delle informazioni relative al preventivo.
 
 ==== Consuntivo 
 
 Si analizzano le attività svolte, i tempi impiegati rispetto alle stime previste e qualsiasi deviazione dai piani originali. Tale consuntivo rappresenta una preziosa fonte di apprendimento per il team, consentendo di identificare aree di miglioramento e di ottimizzare la pianificazione futura.
 
-È stato sviluppato uno script in Python, integrato con #glossary[Typst], per semplificare la generazione automatica di tabelle e grafici relativi al consuntivo di ogni singolo #glossary[sprint] del progetto. L'automazione coinvolge l'estrazione dei dati dal foglio di calcolo condiviso, dove vengono registrate le ore produttive del team. I dati vengono successivamente organizzati per #glossary[sprint] e archiviati in file CSV.
+È stato sviluppato uno script in #glossary[Python], integrato con #glossary[Typst], per semplificare la generazione automatica di tabelle e grafici relativi al consuntivo di ogni singolo #glossary[sprint] del progetto. L'automazione coinvolge l'estrazione dei dati dal foglio di calcolo condiviso, dove vengono registrate le ore produttive del team. I dati vengono successivamente organizzati per #glossary[sprint] e archiviati in file CSV.
 
 L'elaborazione comprende la creazione di un DataFrame consolidato che rappresenta le ore lavorate per ogni ruolo e membro del team durante uno #glossary[sprint], includendo anche i costi associati. I risultati di questa analisi vengono salvati in un file CSV.
 
@@ -1007,7 +1007,7 @@ I ruoli assunti sono i seguenti:
         I suoi compiti sono:
 
          - Gestione della comunicazione con la Proponente (si fa uso della piattaforma Element);
-         - Preparazione dell'ordine del giorno per la successiva riunione, anche sulla base
+         - Preparazione dell'#glossary[ordine del giorno] per la successiva riunione, anche sulla base
            dei punti individuati dagli altri componenti;
          - Redazione dei verbali interni ed esterni;
          - Stesura e e avanzamento del documento “_Piano di progetto_”;
@@ -1023,7 +1023,7 @@ I ruoli assunti sono i seguenti:
          - Configurazione e gestione gli ambienti di sviluppo;
          - Implementazione delle procedure operative;
          - Assicurare la disponibilità degli strumenti necessari per la collaborazione e la comunicazione all'interno del team;
-         - Creazione e assegnazione delle _issue_ ai membri del team;
+         - Creazione e assegnazione delle issue ai membri del team;
          - Stesura e avanzamento del documento _Norme di Progetto_;
          - Implementazione di script dedicati per automatizzare processi nell'ambiente di lavoro;
          - Gestione del versionamento dei documenti;
@@ -1036,10 +1036,10 @@ I ruoli assunti sono i seguenti:
      I suoi compiti:
 
         - Studio del contesto applicativo e relativa complessità;
-        - Specifica dei casi d'uso per comprendere in dettaglio i requisiti funzionali del #glossary[sistema];
+        - Specifica dei casi d'uso per comprendere in dettaglio i requisiti funzionali del #glossary[sistema]\;
         - Raccolta dei requisiti per definire le necessità e le funzionalità richieste;
-        - Stesura del documento _Analisi dei Requisiti v1.0_;
-        - Creazione diagrammi UML;
+        - Stesura del documento _Analisi dei Requisiti_;
+        - Creazione diagrammi #glossary[UML];
 
 ==== Progettista
 
@@ -1048,7 +1048,7 @@ I ruoli assunti sono i seguenti:
         I suoi compiti sono:
 
         - Scelta degli aspetti tecnici e tecnologici;
-        - Progettazione architetturale che miri all'economicità e alla manutenibilità del #glossary[sistema];
+        - Progettazione architetturale che miri all'economicità e alla manutenibilità del #glossary[sistema]\;
         - Ottimizzazione delle prestazioni usando algoritmi efficienti e gestione memoria;
         - Gestione dei rischi: cerca di mitigare problemi che possono sorgere durante lo sviluppo;
         - Redazione del documento _Specifiche Tecniche_.
@@ -1060,9 +1060,9 @@ I ruoli assunti sono i seguenti:
         I suoi compiti:
 
         - Traduzione delle specifiche tecniche in codice funzionante;
-        - Scrittura di codice chiaro, leggibile e mantenibile;
+        - Scrittura di codice chiaro, leggibile e manutenibile;
         - Creazione di test per la verifica del software;
-        - Ampliamento delle _Specifiche Tecniche_ conforme alle esigenze del progetto.
+        - Ampliamento delle _Specifiche Tecniche_ conforme alle esigenze del progetto;
         - Risoluzione di #glossary[bug] e problemi di performance;
         - Realizzazione del _Manuale Utente_;
         - Collaborazione con il team per l'integrazione del codice e il mantenimento della coerenza del progetto.
@@ -1114,7 +1114,7 @@ Ogni issue è composta da:
                         + Medium;
                         + High;
                         + Large;
-        - *intervallo Temporale*: una data di inizio e una di fine;
+        - *Intervallo Temporale*: una data di inizio e una di fine;
         - *#glossary[Milestone]*: #glossary[milestone] associata alla issue, se il completamento non è possibile entro lo #glossary[sprint] attuale, è necessario spostare l'issue nella #glossary[milestone] successiva.
 
 === Gestione dei rischi 
@@ -1148,7 +1148,7 @@ Ogni rischio viene identificato da un codice univoco avente la seguente struttur
 
 ===== Comunicazioni Interne 
 
-Riguardano esclusivamente i membri del Team e si svolgono tramite:
+Riguardano esclusivamente i membri del team e si svolgono tramite:
 
         - *Whatsapp*: utilizzato per messaggistica istantanea e una comunicazione veloce;
         - *Discord*: piattaforma utilizzata per:
@@ -1159,7 +1159,7 @@ Riguardano esclusivamente i membri del Team e si svolgono tramite:
 
 Le comunicazioni esterne vengono affidate al Responsabile attraverso i seguenti mezzi:
 
-        - Email : si usa l'email di gruppo swateng.team\@gmail.com;
+        - Email: si usa l'email di gruppo swateng.team\@gmail.com;
         - Element: si usa il canale creato appositamente dalla Proponente per avere una comunicazione diretta.
 
 ==== Gestione degli Incontri 
@@ -1220,10 +1220,10 @@ Ciascun membro del gruppo assume la responsabilità di approfondire individualme
 
 Si riporta la lista delle guide e documentazione da prendere come riferimento:
 
-        - *Typst*: #link("https://typst.app/docs/");
+        - *#glossary[Typst]*: #link("https://typst.app/docs/");
         - *Github*: #link("https://docs.github.com/en");
-        - *Python*: #link("https://docs.python.org/3/");
-        - *Grafana*: #link("https://grafana.com/docs/grafana/latest/");
+        - *#glossary[Python]*: #link("https://docs.python.org/3/");
+        - *#glossary[Grafana]*: #link("https://grafana.com/docs/grafana/latest/");
         - *Apache kafka*: #link("https://docs.confluent.io/platform/current/clients/confluent-kafka-python/html/index.html");
         - *Clickhouse*: #link("https://clickhouse.com/docs").  
 
@@ -1243,13 +1243,13 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
 
                 Formula:  $"EV" = "Percentuale di completamento del lavoro" dot "BAC"$
 
-                in cui la percentuale di completamento del lavoro è misurata con le ore produttive effettive degli #glossary[sprint];
+                in cui la percentuale di completamento del lavoro è misurata con le ore produttive effettive degli #glossary[sprint]; in particolare la percentuale è costituita dal rapporto tra le ore effettive e le ore produttive totali a disposizione (570)
 
         - *PV*: Planned Value - il valore del lavoro pianificato fino a un dato momento
 
                 Formula: $"PV" = "Percentuale di pianificazione del lavoro" dot "BAC"$
 
-                in cui la percentuale di pianificazione del lavoro è misurata con le ore preventivate per gli #glossary[sprint];
+                in cui la percentuale di pianificazione del lavoro è misurata con le ore preventivate per gli #glossary[sprint]; in particolare la percentuale è costituita dal rapporto tra le ore preventivate e le ore produttive totali a disposizione (570)
 
         - *AC*: Actual Cost - il costo effettivo sostenuto fino a un dato momento;
 
