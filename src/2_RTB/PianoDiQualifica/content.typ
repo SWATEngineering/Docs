@@ -63,8 +63,6 @@ Come presentato nel documento _Norme di Progetto v1.0_ la sigla MPC sta ad indic
 
 === Fornitura 
 
-
-
 #figure(
 table(
       columns:(auto,auto,auto,auto),
@@ -76,7 +74,8 @@ table(
 caption: [Tabella metriche per il processo di fornitura]
 )
 
-=== Metriche per il processo di sviluppo
+
+=== Sviluppo
 
 ==== Codifica
 #figure(
@@ -85,28 +84,13 @@ table(
       align: (x, y) => (center, center, center,center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-      [MPC-CCM], [Complessità Ciclomatica per Metodo], [≤ 5], [≤ 3],
-      [MPC-CC], [Code Coverage], [≥80%], [100%],
       [MPC-ATC], [Attributi per Classe], [≤ 6], [≤ 4],
       [MPC-PM], [Parametri per Metodo], [≤ 5], [≤ 4],
       [MPC-LCM], [Linee di Codice per Metodo], [≤ 25], [≤ 20]
 ), 
 caption: [Tabella delle metriche per l'attività di codifica])
 
-==== Progettazione
-
-#figure(
-table(
-      columns:(auto,auto,auto,auto),
-      align: (x, y) => (center, center, center,center).at(x),
-      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
-      [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-      [MPC-FIN], [Structure Fan In], [da determinare], [da determinare], 
-      [MPC-FOUT], [Structure Fan Out], [da determinare], [da determinare]
-      ), 
-caption: [Tabella metriche per l'attività di progettazione]
-)
-
+#pagebreak(); 
 
 == Processi di supporto
 
@@ -123,6 +107,17 @@ table(
 caption: [Tabella metriche per il processo di documentazione]
 )
 
+==== Gestione della Qualità
+#figure(
+table(
+      columns:(auto,auto,auto,auto),
+      align: (x, y) => (center, center, center,center).at(x),
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
+      [MPC-MNS], [Metriche non soddisfatte], [<=3], [0],
+      ), 
+caption: [Tabella metriche per il processo di gestione della qualità]
+)
 
 #pagebreak()
 
@@ -147,6 +142,20 @@ Come presentato nel documento _Norme di Progetto v1.0_ la sigla MPR sta ad indic
       ),
 caption: [Tabella metriche per la funzionalità del prodotto])
 
+== Manutenibilità
+
+#figure(
+      table(
+            columns:(auto,auto,auto,auto),
+            align: (x, y) => (center, center, center,center).at(x),
+            fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+            [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
+            [MPR-FIN], [Structure Fan In], [da determinare], [da determinare], 
+            [MPR-FOUT], [Structure Fan Out], [da determinare], [da determinare],
+            [MPR-CCM], [Complessità Ciclomatica per Metodo], [≤ 5], [≤ 3],
+      ),
+caption: [Tabella metriche per la manutenibilità del prodotto])
+
 == Usabilità
 
 #figure(
@@ -155,7 +164,8 @@ caption: [Tabella metriche per la funzionalità del prodotto])
             align: (x, y) => (center, center, center,center).at(x),
             fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
             [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-            [MPR-FU], [Facilità di utilizzo], [≤ 7 click], [≤ 5 click]
+            [MPR-FU], [Facilità di utilizzo], [≤ 7 click], [≤ 5 click], 
+            [MPR-TA], [Tempo di Apprendimento], [≤ 10 minuti], [≤ 5 minuti]
       ),
 caption: [Tabella metriche per l'usabilità del prodotto])
 
@@ -167,9 +177,27 @@ caption: [Tabella metriche per l'usabilità del prodotto])
             align: (x, y) => (center, center, center,center).at(x),
             fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
             [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-            [MPR-PTCP], [Passed Test Cases Percentage], [≥ 80%], [100%]
+            [MPR-PTCP], [Passed Test Cases Percentage], [≥ 80%], [100%], 
+            [MPR-CC], [Code Coverage], [≥80%], [100%],
+            [MPR-BC], [Branch Coverage], [≥60%], [100%],
+            [MPR-SC], [Statement Coverage], [≥60%], [100%],
       ),
 caption: [Tabella metriche per l'affidabilità del prodotto])
+
+== Efficienza
+
+#figure(
+      table(
+            columns:(auto,auto,auto,auto),
+            align: (x, y) => (center, center, center,center).at(x),
+            fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+            [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
+            [MPR-CPUU],[Maximum CPU usage],[da determinare],[da determinare], 
+            [MPR-RAMU],[Maximum RAM usage],[da determinare],[da determinare], 
+            [MPR-TDE],[Tempo di elaborazione],[da determinare], [da determinare],
+
+      ),
+caption: [Tabella metriche per l'efficienza del prodotto])
 
 
 #pagebreak()
@@ -820,7 +848,7 @@ Si rileva che nel corso dell'ultimo #glossary[sprint] tutti i documenti hanno su
 #figure(
   image("./assets/valutazione-metriche/CO.png", width: 80%),
   caption: [
-    Valutazione correttezza Ortografica.
+    Valutazione Correttezza Ortografica.
   ],
 )
 
@@ -831,8 +859,22 @@ Per ovviare al problema il team ha deciso di introdurre una checklist incentrata
 Tale strumento, ha mostrato immediatamente i suoi effetti benefici: gli errori nel corso dell'ottavo #glossary[sprint] sono calati a zero.
 
 
+== Qualità di Processo - Gestione della qualità
+
+=== Metriche non soddisfatte
+
+#figure(
+  image("./assets/valutazione-metriche/MNS.png", width: 80%),
+  caption: [
+    Valutazione Metriche non Soddisfatte
+  ],
+)
+
+
 // == Qualità di prodotto
 #pagebreak()
+
+
 
 == Considerazioni finali in vista della revisione #glossary[RTB]
 
