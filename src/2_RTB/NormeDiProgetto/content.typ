@@ -85,7 +85,7 @@ Di seguito vengono elencati i documenti che il team #team si impegna a consegnar
 
 L’_Analisi dei requisiti v1.0_, redatto dagli Analisti, rappresenta un documento fondamentale per lo sviluppo del #glossary[sistema] software. Il suo obiettivo principale è definire in dettaglio le funzionalità necessarie affinché il prodotto soddisfi pienamente le richieste della Proponente. Il documento omonimo comprende una serie di elementi essenziali:
 
-        - *Definizione degli attori*: entità o persone che interagiscono con il #glossary[sistema];
+        - *Definizione degli attori*: entità o persone che interagiscono con il #glossary[sistema]\;
         - *Definizione dei casi d'uso*: rappresentazione narrativa di scenari specifici che descrivono come gli attori interagiscono con il #glossary[sistema]. I casi d'uso offrono una visione chiara delle azioni eseguibili all'interno del #glossary[sistema] e delle interazioni degli utenti con esso. All'interno di ciascun caso d'uso, viene fornito un elenco preciso delle azioni intraprese dall'#glossary[attore] per attivare il caso d'uso, facilitando così l'estrazione dei requisiti corrispondenti;
         - *Definizione di requisiti*: individuazione dei requisiti obbligatori e desiderabili e loro categorizzazione in:
                 - *Requisiti funzionali*: specificano le operazioni che il #glossary[sistema] deve essere in grado di eseguire;
