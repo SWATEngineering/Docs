@@ -53,11 +53,11 @@ Un'attività che comprende l'inserimento di un termine di glossario può conside
 
 
 
-La qualità di processo si fonda sull'assunto che, al fine di ottenere un prodotto che soddisfi determinati standard di qualità sia necessario che i processi che ne stanno alla base siano sottoposti a controlli periodici con lo scopo ultimo di ottimizzarli.
+La qualità di processo si fonda sull'assunto che, al fine di ottenere un prodotto che soddisfi determinati standard di qualità, è necessario che i processi che lo sottendono siano sottoposti a controlli periodici con lo scopo ultimo di ottimizzarli.
 Il concetto di qualità di processo viene dunque applicato all'intero spettro di attività, pratiche e metodi utilizzati lungo l'intero ciclo di vita del software.
 In sintesi, la qualità di processo mira a rendere la qualità una parte integrante del prodotto, garantendo che sia costruita nel processo stesso e non sia solo un obiettivo secondario.
 Di seguito vengono presentate le metriche che il team si impegna a soddisfare nel contesto della qualità di processo.
-Come presentato nel documento _Norme di Progetto v1.0_ la sigla MPC sta ad indicare le metriche di processo.
+Come presentato nel documento _Norme di Progetto v1.0_, la sigla MPC sta ad indicare le metriche di processo.
 
 == Processi primari  
 
@@ -207,11 +207,11 @@ caption: [Tabella metriche per l'efficienza del prodotto])
 = Strategie di testing
 
 In questa sezione viene esposto il piano di testing che verrà utilizzato per garantire la correttezza finale del prodotto.
-Come enunciato nel documento _Norme di Progetto v1.0_, il piano segue il #glossary("modello a V"), il quale associa ad ogni fase di sviluppo, una corrispondente tipologia di testing. Tali tipologie sono le seguenti:
+Come enunciato nel documento _Norme di Progetto v1.0_, il piano segue il #glossary("modello a V"), il quale associa ad ogni fase di sviluppo una corrispondente tipologia di testing. Tali tipologie sono le seguenti:
 - *Test di unità*: si verifica il corretto funzionamento delle unità componenti il #glossary[sistema]. Un'unità rappresenta un elemento indivisibile e indipendente del #glossary[sistema]\;
 - *Test di integrazione*: si verifica il corretto funzionamento di più unità che cooperano per svolgere uno specifico compito (tali unità devono certamente aver superato i loro test di unità precedentemente);
 - *Test di #glossary[sistema]*: si verifica il corretto funzionamento del #glossary[sistema] nella sua interezza. I requisiti funzionali obbligatori, di vincolo, di qualità e di prestazione, precedentemente concordati con il Committente mediante stipulazione del contratto, devono essere soddisfatti per intero;
-- *Test di accettazione*: si verifica il soddisfacimento del committente rispetto al prodotto software. Il loro superamento permette di procedere con il rilascio del prodotto.
+- *Test di accettazione*: si verifica il soddisfacimento del Committente rispetto al prodotto software. Il loro superamento permette di procedere con il rilascio del prodotto.
 
 == Test di accettazione
 In questa sezione vengono descritti i test di accettazione del prodotto software, eseguiti sia dal gruppo #team che dalla Proponente sotto la supervisione del gruppo.
@@ -711,15 +711,15 @@ table(
       [Forma verbale],[Il presente indicativo è da preferire.],
       [Forma non concisa],[Le espressioni troppo verbose, ove possibile, devono essere ridotte a forme più concise.],
       [Non formalità],[Le espressioni non formali devono essere sostituite con le corrispondenti espressioni formali.],
-      [Richiamo errato al documento],[Ogni richiamo ai documenti, in una loro particolare versione, deve seguire la seguente forma: _NomeDocumento\_vVersioneMajor.VersioneMinor_ (e.g. _PianoDiProgetto\_v1.0_).],
+      [Richiamo errato al documento],[Ogni richiamo ai documenti, in una loro particolare versione, deve seguire la seguente forma: _NomeDocumento vVersioneMajor.VersioneMinor_ (e.g. _Piano di Progetto v1.0_).],
       [Termini impropriamente in maiuscolo],[I termini di glossario non godono della proprietà di avere la prima lettera maiuscola, rispetto alle parole tradizionali. Seguono le stesse regole delle parole non di glossario in quanto alla forma (ovviamente non riguardo allo stile).],
-      [Acronimi non in maiuscolo],[Gli acronimi devono essere completamente in maiuscolo (e.g. ITS - acronimo per Issue Tracking System).],
+      [Acronimi non in maiuscolo],[Gli acronimi devono essere completamente in maiuscolo (e.g. #glossary[ITS] - acronimo per Issue Tracking System).],
 ),
 caption: [Lista di controllo per gli errori ortografici, di lingua italiana e di forma]
 )
 
 #pagebreak()
-=== Non conformità con le Norme di Progetto
+=== Non conformità con le _Norme di Progetto_
 
 #figure(
 table(
@@ -730,16 +730,16 @@ table(
       [Formato date errato],[Il formato delle date deve essere *dd-mm-aaaa* all'interno dei documenti, oppure *aa-mm-dd* all'interno dei nomi dei documenti.],
       [Punteggiatura scorretta negli elenchi],[Ogni elemento di un elenco, numerato o non, deve terminare con un *;*, ad eccezione dell'ultima riga, la quale deve terminare con *.*.],
       [: in grassetto negli elenchi],[Gli elenchi nella forma "*termine*: testo", non devono includere il ":" nel grassetto.],
-      [Maiuscole nei titoli],[La prima lettera di ogni titolo deve essere maiuscola. Il resto del titolo dovrebbe essere in minuscolo (tolte particolari eccezioni, come ad esempio nomi di documenti).],
+      [Maiuscole nei titoli],[La prima lettera di ogni titolo deve essere maiuscola. Il resto del titolo dovrebbe essere in minuscolo (tolte particolari eccezioni, come ad esempio nomi di documenti o lettere che compaiono all'interno di acronimi).],
       [Maiuscole negli elenchi],[Le prime lettere di ogni elenco devono essere maiuscole.],
       [Ruoli in minuscolo],[Tutti i ruoli del progetto devono avere la prima lettera in maiuscolo.],
       [Termine non presente nel glossario],[Ogni termine segnato con la formattazione da glossario deve essere effettivamente presente nel glossario con la relativa descrizione.],
 ),
-caption: [Lista di controllo per le non conformità con le Norme di Progetto]
+caption: [Lista di controllo per le non conformità con le _Norme di Progetto_]
 )
 
 #pagebreak()
-=== Analisi dei Requisiti
+=== _Analisi dei Requisiti_
 
 #figure(
 table(
@@ -750,9 +750,9 @@ table(
       [Tracciamento caso d'uso - requisito],[Per ciascun caso d'uso deve corrispondere almeno un requisito.],
       [Struttura errata dei requisiti],[I requisiti devono essere scritti nella forma: "\<soggetto\> deve/devono \<verbo all'infinito\>"],
       [Numerazione errata dei casi d'uso],[La numerazione dei casi d'uso deve seguire la crescita dei numeri interi naturali. Se si tratta di un sotto-caso d'uso, il sotto-caso deve ereditare, come prefisso del proprio codice, il codice del caso d'uso a cui appartiene, e ne aggiunge una cifra. Fare riferimento alle _Norme di Progetto v1.0_ per una descrizione più approfondita.],
-      [UML dei casi d'uso],[Le estensioni e le inclusioni di un caso d'uso vanno nello stesso diagramma UML del caso d'uso stesso.],
+      [#glossary[UML] dei casi d'uso],[Le estensioni e le inclusioni di un caso d'uso vanno nello stesso diagramma #glossary[UML] del caso d'uso stesso.],
 ),
-caption: [Lista di controllo per l’Analisi dei Requisiti]
+caption: [Lista di controllo per l’_Analisi dei Requisiti_]
 )
 
 
@@ -761,7 +761,7 @@ caption: [Lista di controllo per l’Analisi dei Requisiti]
 
 == Qualità di processo - fornitura
 
-=== Estimated at completion
+=== Estimated At Completion
  
 #figure(
   image("./assets/valutazione-metriche/EAC.png", width: 80%),
@@ -771,22 +771,22 @@ caption: [Lista di controllo per l’Analisi dei Requisiti]
 )
 
 *#glossary[RTB]* L'EAC rappresenta una revisione del valore stimato per la realizzazione del progetto, ossia il BAC (Budget At Completion) rivisto allo stato corrente del progetto; il fattore che incide maggiormente sull'andamento dell'EAC è il rapporto tra EV (Estimated Value) e AC (Actual Cost), per cui tanto più queste metriche sono vicine l'una all'altra, tanto più l'EAC risulterà vicino al BAC pianificato inizialmente. 
-Concluso il secondo #glossary[sprint] il team ha rilevato che il valore associato all' EAC non rientrava all'interno della soglia accettata: ci si è dunque attivati al fine rimodulare la quantità di lavoro netta associata al concetto di ora produttiva.
+Concluso il secondo #glossary[sprint], il team ha rilevato che il valore associato all'EAC non rientrava all'interno della soglia accettabile: ci si è dunque attivati al fine di rimodulare la quantità di lavoro netta associata al concetto di ora produttiva.
 
-Possiamo rilevare dal grafico che la curva delineata dal valore del EAC, pur essendo rimasta sempre al di sopra del valore d'accettazione, ha, già a partire dal secondo sprint e dunque a seguito dell'azione correttiva intrapresa, mostrato un trend decrescente; il team si aspettava che nel corso degli #glossary[sprint] successivi il valore avrebbe continuato la sua discesa fino a rientrare nella fascia accettabile.
+Dal grafico si può rilevare che la curva delineata dal valore dell'EAC, pur essendo rimasta sempre al di sopra del valore di accettazione, ha, già a partire dal secondo #glossary[sprint] e dunque a seguito dell'azione correttiva intrapresa, mostrato un trend decrescente; il team si aspettava che nel corso degli #glossary[sprint] successivi l'andamento avrebbe continuato la sua discesa fino a che i valori fossero rientrati nella fascia accettabile.
 
-Nelle ultime rilevazioni effettuate, la metrica ha comunque continuato la sua discesa, senza però raggiungere la soglia accettabile: la misurazione della metrica è stata di certo inflazionata dalle attività previste per il periodo.
-Il team infatti, si è occupato infatti di ultimare tutta la #glossary[documentazione] necessaria alla revisione #glossary("RTB"), ciò ha fatto impennare i costi, causa il costo orario più elevato dei ruoli attivi.
+Nelle ultime rilevazioni effettuate, la metrica ha comunque continuato la sua discesa, senza però raggiungere la soglia accettabile: la misurazione della metrica è stata di certo inflazionata dalle attività previste per gli ultimi #glossary[sprint].
+Il team si è occupato infatti di ultimare tutta la #glossary[documentazione] necessaria alla revisione #glossary("RTB") e ciò ha fatto impennare i costi, causa il costo orario più elevato dei ruoli attivi (specie dell'Amministratore).
 
-Questo risultato, nonostante la correlazione causale individuata, ci suggerisce ugualmente che qualcosa nel progetto non è stato gestito al meglio: la forte attenzione apportata alla documentazione nell'ultimo #glossary[sprint] rileva infatti il tentativo del team di rincorrere gli obbiettivi di una pianificazione poco rigorosa. Ne deriva che il team, in vista della seconda revisione, dovrà impegnarsi a migliorare il processo relativo alla gestione di progetto, in modo da poter essere sempre sicuri che gli obbiettivi fissati siano effettivamente raggiunti nei termini dettati dalla pianificazione. 
+Questo risultato, nonostante la correlazione causale individuata, suggerisce ugualmente che qualcosa nel progetto non è stato gestito al meglio: la forte attenzione posta sulla #glossary[documentazione] nell'ultimo #glossary[sprint] è una manifestazione del tentativo del team di rincorrere gli obiettivi di una pianificazione poco rigorosa. Ne deriva che il team, in vista della seconda revisione, dovrà impegnarsi a migliorare il processo relativo alla gestione di progetto, in modo da poter essere sempre sicuri che gli obiettivi fissati siano effettivamente raggiunti nei termini dettati dalla pianificazione. 
 
 
 #pagebreak()
 
-=== Budget variance e schedule variance
+=== Budget Variance e Schedule Variance
 
 #figure(
-  image("./assets/valutazione-metriche/BV_SV.png", width: 80%),
+  image("./assets/valutazione-metriche/BV_SV.png", width: 85%),
   caption: [
     Valutazione Budget Variance e Schedule Variance.
   ],
@@ -799,31 +799,31 @@ Il team si aspetta che il #glossary[way of working] consolidato nel corso del pr
 Durante il settimo e l'ottavo #glossary[sprint] le due metriche hanno mantenuto il gradiente che ci si aspettava. 
 
 
-=== Actual cost e estimate to complete
+=== Actual Cost e Estimate To Complete
 
 #figure(
-  image("./assets/valutazione-metriche/AC_ETC.png", width: 80%),
+  image("./assets/valutazione-metriche/AC_ETC.png", width: 85%),
   caption: [
     Valutazione Actual Cost e Estimate To Complete.
   ],
 )
 
-*#glossary[RTB]* L'AC rappresenta il costo effettivo sostenuto fino a un dato momento, mentre l'ETC rappresenta la stima del costo aggiuntivo necessario per completare il progetto; di conseguenza, ci si aspetta che l'AC cresca e che l'ETC diminuisca in modo sostanzialmente lineare, segno che il progetto ha mantenuto un ritmo regolare di avanzamento. 
-Il grafico ci mostra che effettivamente il team ha mantenuto un ritmo di avanzamento costante durante tutto il periodo, il che è apprezzabile: nonostante la sessione d'esame il team ha continuato a occuparsi con impegno e dedizione alle attività di progetto.
-Inoltre si può evincere che il progetto risulta essere leggermente in ritardo rispetto alle tempistiche inizialmente previste.
-Considerando che gli otto #glossary[sprint] effettuati corrispondono ad un periodo temporale di 10 settimane, metà temporale esatta preventivata per l'attività di progetto, ci si aspetterebbe che i grafici delineati dalle metriche si siano già incrociati.
+*#glossary[RTB]* L'AC rappresenta il costo effettivo sostenuto fino a un dato momento, mentre l'ETC rappresenta la stima del costo aggiuntivo necessario per completare il progetto; di conseguenza, ci si aspetta che l'AC cresca e che l'ETC diminuisca in modo sostanzialmente lineare, segno che il progetto sta mantenendo un ritmo regolare di avanzamento. 
+Il grafico mostra che effettivamente il team ha mantenuto un ritmo di avanzamento pressoché costante durante tutto il periodo che precede la revisione #glossary[RTB], il che è apprezzabile: nonostante la sessione d'esame il team ha continuato a occuparsi con impegno delle attività di progetto, per quanto possibile.
+Tuttavia, si può evincere anche che il progetto risulta essere leggermente in ritardo rispetto alle tempistiche inizialmente previste.
+Considerando che gli otto #glossary[sprint] effettuati corrispondono ad un periodo temporale di 10 settimane, esattamente la metà del periodo di tempo previsto per il completamento dell'intero progetto, ci si aspettava che le due metriche delineate nel grafico si fossero già incrociate giunti a questo punto.
 
 
-=== Earned value e planned value
+=== Earned Value e Planned Value
 
 #figure(
-  image("./assets/valutazione-metriche/EV_PV.png", width: 80%),
+  image("./assets/valutazione-metriche/EV_PV.png", width: 85%),
   caption: [
     Valutazione Earned Value e Planned Value.
   ],
 )
 
-*#glossary[RTB]* L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[deliverable] rilasciati fino al momento della misurazione in seguito alle attività svolte; il PV rappresenta invece il valore del lavoro pianificato fino a un dato momento. Nonostante sia ancora prematuro confrontare le due metriche con l'EAC, si può notare che il PV si mantiene al di sotto dell'EV, seppur di poco, segno che i preventivi fatti finora sono stati leggermente ottimistici rispetto alla spesa effettiva. Si può notare come le due metriche a partire dal sesto #glossary[sprint] tendano ad avvicinarsi: ciò denota che il team sta iniziando effettivamente a produrre dei preventivi di periodo che maggiormente rispecchiano la realtà effettiva, fotografata nei consuntivi di periodo.
+*#glossary[RTB]* L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[deliverable] rilasciati fino al momento della misurazione in seguito alle attività svolte; il PV rappresenta invece il valore del lavoro pianificato fino a un dato momento. Nonostante sia ancora prematuro confrontare le due metriche con l'EAC, si può notare che il PV si mantiene al di sotto dell'EV, seppur di poco, segno che i preventivi fatti finora sono stati leggermente ottimistici rispetto alla spesa effettiva. Si può notare come le due metriche a partire dal sesto #glossary[sprint] tendano ad avvicinarsi: ciò denota che il team sta iniziando effettivamente a produrre dei preventivi di periodo che rispecchiano maggiormente la realtà effettiva, anche per come viene fotografata nei consuntivi di periodo.
 
 // == Qualità di Processo - Codifica TODO: non ha senso in questa fase del progetto
 
@@ -839,11 +839,10 @@ Considerando che gli otto #glossary[sprint] effettuati corrispondono ad un perio
 )
 
 *#glossary[RTB]* Al termine del secondo #glossary[sprint], tutti i documenti in corso di preparazione in vista della revisione #glossary("RTB") possiedono un IG al di sopra del limite accettabile inferiore di 60; in particolare, l'_Analisi dei Requisiti_ ha raggiunto il valore ideale. 
-Si rileva che nel corso dell'ultimo #glossary[sprint] tutti i documenti hanno subito un abbassamento del loro indice di leggibilità, nel corso del secondo periodo il team dovrà impegnarsi a mantenere una scrittura più semplice.
+Si rileva che nel corso dell'ultimo #glossary[sprint] tutti i documenti hanno subito un abbassamento del loro indice di leggibilità, perciò nel corso del periodo che precede la seconda revisione #glossary[PB] il team dovrà impegnarsi ad utilizzare una scrittura più semplice.
 
-#pagebreak()
 
-=== Correttezza ortografica
+=== Correttezza Ortografica
 
 #figure(
   image("./assets/valutazione-metriche/CO.png", width: 80%),
@@ -853,10 +852,10 @@ Si rileva che nel corso dell'ultimo #glossary[sprint] tutti i documenti hanno su
 )
 
 
-*#glossary[RTB]* A seguito dei primi due #glossary[sprint] sono stati rilevati parecchi errori ortografici, per far fronte ai quali si è scelto di adottare uno strumento di controllo dell'ortografia sia in fase di stesura che in fase di revisione. Tuttavia, nonostante l'uso di questo strumento, si è notato che il processo di #glossary[documentazione] continua ad essere afflitto da errori ortografici. Questo indica che il problema non è tanto la mancanza di strumenti adeguati, quanto più un approccio disattento da parte del team durante la redazione dei documenti, e nel processo di verifica che ne consegue.
+*#glossary[RTB]* A seguito dei primi due #glossary[sprint] sono stati rilevati parecchi errori ortografici, per far fronte ai quali si è scelto di adottare uno strumento di controllo dell'ortografia sia in fase di stesura che in fase di revisione della #glossary[documentazione]. Tuttavia, nonostante l'uso di questo strumento, si è notato che il processo di #glossary[documentazione] continua ad essere afflitto da errori ortografici. Questo indica che il problema non è tanto la mancanza di strumenti adeguati, quanto più un approccio disattento da parte del team durante la redazione dei documenti, e nel processo di verifica che ne consegue.
 Fare in modo che non vi siano errori nei documenti prima della revisione #glossary("RTB") rimane comunque un obiettivo di qualità che il team vuole raggiungere. 
-Per ovviare al problema il team ha deciso di introdurre una checklist incentrata sugli errori ortografici, in modo tale che il processo di verifica possa avvalersene e correggere eventuali errori.  Questa checklist è pensata non solo come uno strumento pratico, ma principalmente come un promemoria costante per il Verificatore. 
-Tale strumento, ha mostrato immediatamente i suoi effetti benefici: gli errori nel corso dell'ottavo #glossary[sprint] sono calati a zero.
+Per ovviare al problema il team ha deciso di introdurre una checklist incentrata sugli errori ortografici, in modo tale che i responsabili del processo di verifica possano avvalersene nel correggere eventuali errori. Questa checklist è pensata non solo come uno strumento pratico, ma principalmente come un promemoria costante per il Verificatore. 
+Tale strumento ha mostrato immediatamente i suoi effetti benefici: gli errori nel corso dell'ottavo #glossary[sprint] sono calati a zero.
 
 
 == Qualità di processo - gestione della qualità
@@ -864,7 +863,7 @@ Tale strumento, ha mostrato immediatamente i suoi effetti benefici: gli errori n
 === Metriche non soddisfatte
 
 #figure(
-  image("./assets/valutazione-metriche/MNS.png", width: 80%),
+  image("./assets/valutazione-metriche/MNS.png", width: 85%),
   caption: [
     Valutazione Metriche non Soddisfatte
   ],

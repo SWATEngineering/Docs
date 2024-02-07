@@ -149,6 +149,9 @@ Versione: #version
 /*******************/
 /*    CONTENUTO    */ 
 /*******************/
+#set par(
+  justify: true,
+)
 
 #set text(11pt)
 
