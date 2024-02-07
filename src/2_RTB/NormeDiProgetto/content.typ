@@ -271,9 +271,9 @@ Si definiscono tre sottoattività:
         + *Progettazione Architetturale*: definizione ad alto livello dell'#glossary[architettura] del #glossary[sistema]; si concentra sulla suddivisione del #glossary[sistema] in componenti e moduli, definendo le relazioni tra di essi e specificando le linee guida per l'organizzazione e l'interazione delle varie parti;
         + *Product Baseline (#glossary[PB])*: segna un punto stabile nell'attività di progettazione, in cui le specifiche tecniche, le funzionalità principali e l'#glossary[architettura] del prodotto sono definite in modo dettagliato e accettate dalle parti coinvolte. Include tutti gli elementi essenziali e i requisiti chiave del prodotto che devono essere soddisfatti, fornendo una base solida per lo sviluppo continuo del prodotto. Questo processo porta infine alla realizzazione di un Minimum Viable Product (#glossary("MVP"));
                 Include:
-                - #glossary("Design Patterns");
+                - #glossary("Design Patterns")\;
                 - Definizione delle classi;
-                - Diagrammi UML che includono:
+                - Diagrammi #glossary[UML] che includono:
                         - classi;
                         - package;
                         - *sequenze*: utilizzato per descrivere uno scenario che costituisce una determinata sequenza di azioni in cui tutte le scelte sono state già effettuate;
@@ -297,7 +297,7 @@ La definizione delle metriche seguenti si può trovare nella @metriche_progettaz
 caption:[Metriche relative alla progettazione],
 )
 
-==== Diagrammi UML dei casi d'uso
+==== Diagrammi #glossary[UML] dei casi d'uso
 
 Un diagramma dei casi d'uso rappresenta uno strumento di modellazione ampiamente impiegato per documentare e delineare le funzionalità di un #glossary[sistema]. La sua utilità risiede nel tracciare i flussi operativi attraverso una rappresentazione visiva, descrivendo il modo in cui un utente interagisce con il #glossary[sistema].
 
@@ -306,9 +306,9 @@ Gli scenari d'uso sono organizzati in sequenze di azioni, illustrando le operazi
 È fondamentale notare che la rappresentazione fornita dai diagrammi dei casi d'uso non si addentra nei dettagli implementativi, poiché il loro scopo principale è descrivere la funzionalità, considerandola come un elemento esterno al #glossary[sistema].
 
 I diagrammi dei casi d'uso sono composti da:
-        - *#glossary[Attore]*: rappresenta un agente esterno coinvolto nelle interazioni con il #glossary[sistema]. Si tratta di una qualsiasi entità in grado di interagire con il #glossary[sistema], infatti ogni caso d'uso determina una funzionalità che viene messa a disposizione di tale #glossary[attore], tuttavia, senza entrare nei dettagli implementativi.
+        - *#glossary[Attore]*: rappresenta un agente esterno coinvolto nelle interazioni con il #glossary[sistema]. Si tratta di una qualsiasi entità in grado di interagire con il #glossary[sistema]; infatti ogni caso d'uso determina una funzionalità che viene messa a disposizione di tale #glossary[attore], tuttavia, senza entrare nei dettagli implementativi.
                 
-                A livello di diagramma, l'#glossary[attore] è simboleggiato da un' icona umana stilizzata, identificabile mediante un'etichetta univoca e rappresentativa, posizionata sotto di essa.
+                A livello di diagramma, l'#glossary[attore] è simboleggiato da un'icona umana stilizzata, identificabile mediante un'etichetta univoca e rappresentativa, posizionata sotto di essa.
 
                 #figure(
                         image(
@@ -327,7 +327,7 @@ I diagrammi dei casi d'uso sono composti da:
                         - *Precondizioni*: stato in cui il #glossary[sistema] si deve trovare prima dell'avvio della funzionalità rappresentata dal caso d'uso;
                         - *Postcondizioni*: stato in cui il #glossary[sistema] si troverà dopo che l'utente avrà portato a termine lo scopo rappresentato dal caso d'uso;
                         - *Scenario principale*: descrizione accurata della funzionalità rappresentata dal caso d'uso;
-                        - *Specializzazioni*: nel caso di uno use case generale, vengono indicati i codici dei casi d'uso che lo specializzano;
+                        - *Specializzazioni*: nel caso di un caso d'uso generale, vengono indicati i codici dei casi d'uso che lo specializzano;
                         - *Inclusioni*: vengono specificati i codici dei casi d'uso che vengono inclusi nel caso d'uso trattato;
                         - *Estensioni*: vengono specificati i codici dei casi d'uso che rappresentano scenari secondari.
 
@@ -377,9 +377,9 @@ In ogni diagramma dei casi d'uso possono essere definite:
                         caption: "Figura rappresentante un' estensione tra casi d'uso."
                 )
 
-==== Diagrammi UML delle classi    
+==== Diagrammi #glossary[UML] delle classi    
 
-Il diagramma delle classi è una tipologia di diagramma UML utile a rappresentare la struttura statica di un #glossary[sistema] orientato agli oggetti. Esso visualizza le classi del #glossary[sistema], insieme ai loro attributi e metodi, e le relazioni tra di esse. Le classi sono rappresentate tramite rettangoli divisi in tre sezioni: la parte superiore contiene il nome della classe, la sezione centrale include gli attributi della classe e quella inferiore ne elenca i metodi.
+Il diagramma delle classi è una tipologia di diagramma #glossary[UML] utile a rappresentare la struttura statica di un #glossary[sistema] orientato agli oggetti. Esso visualizza le classi del #glossary[sistema], insieme ai loro attributi e metodi, e le relazioni tra di esse. Le classi sono rappresentate tramite rettangoli divisi in tre sezioni: la parte superiore contiene il nome della classe, la sezione centrale include gli attributi della classe e quella inferiore ne elenca i metodi.
 
         - *Nome*: nome della classe in grassetto, se la classe è astratta viene scritto in corsivo oltre che in grassetto;
         - *Attributi*: 
@@ -479,8 +479,8 @@ Ci si aspetta che il codice sviluppato rispetti determinate caratteristiche:
 
 ==== Stile di codifica   
 
-Il team #team ha deciso di adottare il linguaggio di programmazione Python per la creazione dei simulatori di sensori.
-Questa scelta tecnologica è motivata dalla familiarità che molti membri del team hanno con il linguaggio in questione, ciò consente al team di concentrarsi direttamente sulla realizzazione del prodotto, risparmiando una quantità significativa risorse. 
+Il team #team ha deciso di adottare il linguaggio di programmazione #glossary[Python] per la creazione dei simulatori di sensori.
+Questa scelta tecnologica è motivata dalla familiarità che molti membri del team hanno con il linguaggio in questione, il che consente al team di concentrarsi direttamente sulla realizzazione del prodotto, risparmiando una quantità significativa risorse. 
 Inoltre, Python promuove uno stile di codifica uniforme e leggibile. La sua struttura rigida basata sull'indentazione agevola la comprensione della struttura del programma, contribuendo a una maggiore chiarezza all'interno del codice. 
 Il team si impegna ad utilizzare i seguenti stili di codifica:
 
