@@ -663,7 +663,7 @@ table(
       [Ripetizione di elementi ricorrenti],[Ogni elemento che viene usato più di una volta, soprattutto se si sa a priori che verrà usato più volte, deve essere creato da una funzione #glossary("Typst").],
       [Ordine non alfabetico],[I nomi dei componenti devono essere riportati in ordine alfabetico, in qualsiasi documento dove compaiono come elenco non numerato.],
       [Aggiornamento fantasma],[Ad ogni insieme di modifiche ai documenti che devono essere aggiunte assieme, deve corrispondere una riga nella tabella del changelog, con un univoco numero di versione.],
-      [Titolo principali in mezzo alla pagina],[Tutti i titoli principali devono iniziare la pagina nella quale vengono inseriti.],
+      [Titolo principale],[Tutti i titoli principali devono iniziare la pagina nella quale vengono inseriti.],
 
 ),
 caption: [Lista di controllo per la struttura dei documenti]
@@ -683,7 +683,7 @@ table(
       [Forma verbale],[Il presente indicativo è da preferire.],
       [Forma non concisa],[Le espressioni troppo verbose, ove possibile, devono essere ridotte a forme più concise.],
       [Non formalità],[Le espressioni non formali devono essere sostituite con le corrispondenti espressioni formali.],
-      [Richiamo errato al documento],[Ogni richiamo ai documenti deve seguire la seguente forma: _NomeDocumento\_vVersioneMajor.VersioneMinor_ (e.g. _PianoDiProgetto\_v1.0_).],
+      [Richiamo errato al documento],[Ogni richiamo ai documenti, in una loro particolare versione, deve seguire la seguente forma: _NomeDocumento\_vVersioneMajor.VersioneMinor_ (e.g. _PianoDiProgetto\_v1.0_).],
       [Termini impropriamente in maiuscolo],[I termini di glossario non godono della proprietà di avere la prima lettera maiuscola, rispetto alle parole tradizionali. Seguono le stesse regole delle parole non di glossario in quanto alla forma (ovviamente non riguardo allo stile).],
       [Acronimi non in maiuscolo],[Gli acronimi devono essere completamente in maiuscolo (e.g. ITS - acronimo per Issue Tracking System).],
 ),
@@ -699,7 +699,7 @@ table(
       inset: 10pt,
       align: (center, left),
       [*Aspetto*],[*Spiegazione*],
-      [Formato date errato],[Il formato delle date deve essere *dd-mm-aaaa* all'interno dei documenti, oppure *dd-mm-aa* all'interno dei nomi dei documenti.],
+      [Formato date errato],[Il formato delle date deve essere *dd-mm-aaaa* all'interno dei documenti, oppure *aa-mm-dd* all'interno dei nomi dei documenti.],
       [Punteggiatura scorretta negli elenchi],[Ogni elemento di un elenco, numerato o non, deve terminare con un *;*, ad eccezione dell'ultima riga, la quale deve terminare con *.*.],
       [: in grassetto negli elenchi],[Gli elenchi nella forma "*termine*: testo", non devono includere il ":" nel grassetto.],
       [Maiuscole nei titoli],[La prima lettera di ogni titolo deve essere maiuscola. Il resto del titolo dovrebbe essere in minuscolo (tolte particolari eccezioni, come ad esempio nomi di documenti).],
