@@ -274,10 +274,10 @@ Si definiscono tre sottoattività:
                 - #glossary("Design Patterns")\;
                 - Definizione delle classi;
                 - Diagrammi #glossary[UML] che includono:
-                        - classi;
-                        - package;
-                        - *sequenze*: utilizzato per descrivere uno scenario che costituisce una determinata sequenza di azioni in cui tutte le scelte sono state già effettuate;
-                        - *attività*: diagramma comportamentale che illustra il flusso delle attività attraverso un #glossary[sistema].
+                        - Classi;
+                        - Package;
+                        - *Sequenze*: utilizzato per descrivere uno scenario che costituisce una determinata sequenza di azioni in cui tutte le scelte sono state già effettuate;
+                        - *Attività*: diagramma comportamentale che illustra il flusso delle attività attraverso un #glossary[sistema].
                 - Test di unità su ogni componente.
 
 ==== Metriche
@@ -320,7 +320,7 @@ I diagrammi dei casi d'uso sono composti da:
 
         - *Caso d'uso*: delinea le operazioni eseguibili dall'utente sul #glossary[sistema]. Un singolo caso d'uso si compone di una breve esposizione delle funzioni messe a disposizione del #glossary[sistema] per uno o più utenti nell'ambito di un software. In modo specifico, offre una descrizione dettagliata del comportamento dell'utente mentre interagisce con il software.
 
-                Generalmente, un caso d'uso è costituito da una sequenza di situazioni che esplicitano le diverse eventualità che possono manifestarsi durante l'interazione tra l'utente e il software. La sua rappresentazione comprende un'identificazione univoca, espressa come UCx.y (dove x indica il numero del caso d'uso, e y indica il fatto che stiamo trattando un eventuale sotto-caso d'uso del caso d'uso UCx), seguita da una concisa ma completa descrizione della funzione stessa.
+                Generalmente, un caso d'uso è costituito da una sequenza di situazioni che esplicitano le diverse eventualità che possono manifestarsi durante l'interazione tra l'utente e il software. La sua rappresentazione comprende un'identificazione univoca, espressa come UCx.y (dove x indica il numero del caso d'uso, e y indica il fatto che si sta trattando un eventuale sotto-caso d'uso del caso d'uso UCx), seguita da una concisa ma completa descrizione della funzione stessa.
 
                 Ogni caso d'uso discute i seguenti punti:
                         - *#glossary[Attore] principale*: l'#glossary[attore] che intende compiere lo scopo rappresentato dal caso d'uso;
@@ -723,14 +723,14 @@ La gestione della configurazione (Configuration Management) è una pratica fonda
 
 === Issue Tracking System <its>
 
-Come ITS si utilizza Github che, attraverso le funzioni di "Project", "Issue" e "Pull request", garantisce una struttura all'organizzazione di progetto.
+Come #glossary[ITS] si utilizza Github che, attraverso le funzioni di "Project", "Issue" e "Pull request", garantisce una struttura all'organizzazione di progetto.
 
 Le #glossary[Corsie di Stato] descrivono lo stato attuale delle attività, all'interno del Project nell'#glossary[ITS] sono presenti:
-/ Backlog: attività individuate da svolgere.
-/ Ready: attività individuate per il completamento durante il prossimo #glossary[sprint].
-/ In Progress: attività che sono in corso d'opera da parte dei redattori.
-/ Ready to Review: attività svolte che sono pronte per essere verificate.
-/ In Review: attività in corso di verifica da parte dei Verificatori.
+/ Backlog: attività individuate da svolgere;
+/ Ready: attività individuate per il completamento durante il prossimo #glossary[sprint]\;
+/ In Progress: attività che sono in corso d'opera da parte dei redattori;
+/ Ready to Review: attività svolte che sono pronte per essere verificate;
+/ In Review: attività in corso di verifica da parte dei Verificatori;
 / Done: attività le cui modifiche sono state verificate e accettate.
 
 === Strumento di condivisione
