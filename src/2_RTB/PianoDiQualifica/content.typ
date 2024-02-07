@@ -114,7 +114,7 @@ table(
       align: (x, y) => (center, center, center,center).at(x),
       fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-      [MPC-MNS], [Metriche non soddisfatte], [<=3], [0],
+      [MPC-MNS], [Metriche non soddisfatte], [≤3], [0],
       ), 
 caption: [Tabella metriche per il processo di gestione della qualità]
 )
