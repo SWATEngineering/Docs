@@ -49,7 +49,7 @@ Un'attività che comprende l'inserimento di un termine di glossario può conside
     - _ https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf _
 
 #pagebreak()
-= Qualità di Processo 
+= Qualità di processo 
 
 
 
@@ -59,7 +59,7 @@ In sintesi, la qualità di processo mira a rendere la qualità una parte integra
 Di seguito vengono presentate le metriche che il team si impegna a soddisfare nel contesto della qualità di processo.
 Come presentato nel documento _Norme di Progetto v1.0_ la sigla MPC sta ad indicare le metriche di processo.
 
-== Processi Primari  
+== Processi primari  
 
 === Fornitura 
 
@@ -107,7 +107,7 @@ table(
 caption: [Tabella metriche per il processo di documentazione]
 )
 
-==== Gestione della Qualità
+==== Gestione della qualità
 #figure(
 table(
       columns:(auto,auto,auto,auto),
@@ -759,9 +759,9 @@ caption: [Lista di controllo per l’Analisi dei Requisiti]
 #pagebreak()
 = Cruscotto delle metriche
 
-== Qualità di Processo - Fornitura
+== Qualità di processo - fornitura
 
-=== Estimated at Completion
+=== Estimated at completion
  
 #figure(
   image("./assets/valutazione-metriche/EAC.png", width: 80%),
@@ -783,7 +783,7 @@ Questo risultato, nonostante la correlazione causale individuata, ci suggerisce 
 
 #pagebreak()
 
-=== Budget Variance e Schedule Variance
+=== Budget variance e schedule variance
 
 #figure(
   image("./assets/valutazione-metriche/BV_SV.png", width: 80%),
@@ -799,7 +799,7 @@ Il team si aspetta che il #glossary[way of working] consolidato nel corso del pr
 Durante il settimo e l'ottavo #glossary[sprint] le due metriche hanno mantenuto il gradiente che ci si aspettava. 
 
 
-=== Actual Cost e Estimate To Complete
+=== Actual cost e estimate to complete
 
 #figure(
   image("./assets/valutazione-metriche/AC_ETC.png", width: 80%),
@@ -814,7 +814,7 @@ Inoltre si può evincere che il progetto risulta essere leggermente in ritardo r
 Considerando che gli otto #glossary[sprint] effettuati corrispondono ad un periodo temporale di 10 settimane, metà temporale esatta preventivata per l'attività di progetto, ci si aspetterebbe che i grafici delineati dalle metriche si siano già incrociati.
 
 
-=== Earned Value e Planned Value
+=== Earned value e planned value
 
 #figure(
   image("./assets/valutazione-metriche/EV_PV.png", width: 80%),
@@ -827,7 +827,7 @@ Considerando che gli otto #glossary[sprint] effettuati corrispondono ad un perio
 
 // == Qualità di Processo - Codifica TODO: non ha senso in questa fase del progetto
 
-== Qualità di Processo - Documentazione
+== Qualità di processo - documentazione
 
 === Indice Gulpease
 
@@ -859,7 +859,7 @@ Per ovviare al problema il team ha deciso di introdurre una checklist incentrata
 Tale strumento, ha mostrato immediatamente i suoi effetti benefici: gli errori nel corso dell'ottavo #glossary[sprint] sono calati a zero.
 
 
-== Qualità di Processo - Gestione della qualità
+== Qualità di processo - gestione della qualità
 
 === Metriche non soddisfatte
 
