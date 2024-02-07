@@ -103,5 +103,7 @@ Contatti: swateng.team\@gmail.com
 /*******************/
 
 #pagebreak()
-
+#set par(
+  justify: true,
+)
 #include "content.typ"
