@@ -53,7 +53,7 @@ Un'attività che comprende l'inserimento di un termine di glossario può conside
 
 
 
-La qualità di processo si fonda sul assunto che, al fine di ottenere un prodotto che soddisfi determinati standard di qualità sia necessario che i processi che ne stanno alla base siano sottoposti a controlli periodici con lo scopo ultimo di ottimizzarli.
+La qualità di processo si fonda sull'assunto che, al fine di ottenere un prodotto che soddisfi determinati standard di qualità sia necessario che i processi che ne stanno alla base siano sottoposti a controlli periodici con lo scopo ultimo di ottimizzarli.
 Il concetto di qualità di processo viene dunque applicato all'intero spettro di attività, pratiche e metodi utilizzati lungo l'intero ciclo di vita del software.
 In sintesi, la qualità di processo mira a rendere la qualità una parte integrante del prodotto, garantendo che sia costruita nel processo stesso e non sia solo un obiettivo secondario.
 Di seguito vengono presentate le metriche che il team si impegna a soddisfare nel contesto della qualità di processo.
