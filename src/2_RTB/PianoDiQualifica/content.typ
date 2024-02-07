@@ -222,7 +222,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             1. aprire il menu di selezione delle [#glossary("dashboard")];
             2. selezionare la #glossary("dashboard") per visualizzare i dati ambientali;
             3. visualizzare la relativa [#glossary("dashboard")];
-            4. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni delle temperatura, espresse in gradi celsius, effettuate dai singoli sensore e aggregati tramite media aritmetica per intervalli di 5 minuti;
+            4. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni delle temperatura, espresse in gradi celsius, effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
             5. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni dell'umidità, espresse in percentuale, effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
             6. visualizzare un #glossary("pannello") con una mappa mostrante la direzione del vento, rilevata da ciascun sensore, tramite delle frecce con origine la posizione del sensore; 
             7. visualizzare un #glossary("pannello") con una tabella che mostri l'ultima rilevazione della velocità del vento, espressa in chilometri orari, effettuata da ciascun sensore; 
