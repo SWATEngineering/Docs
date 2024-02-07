@@ -280,22 +280,7 @@ Si definiscono tre sottoattività:
                         - *Attività*: diagramma comportamentale che illustra il flusso delle attività attraverso un #glossary[sistema].
                 - Test di unità su ogni componente.
 
-==== Metriche
 
-La definizione delle metriche seguenti si può trovare nella @metriche_progettazione.
-
-#figure(
- table(
-      columns:(auto,auto),
-      align: (x, y) => (center, center).at(x),
-      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
-      [*Metrica*],[*Descrizione*],
-      [*SFIN*],[Structure Fan In],
-      [*SFOUT*],[Structure Fan Out]
-      
-),
-caption:[Metriche relative alla progettazione],
-)
 
 ==== Diagrammi #glossary[UML] dei casi d'uso
 
@@ -532,8 +517,6 @@ table(
       align: (x, y) => (center, center).at(x),
       fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Metrica*],[*Descrizione*],
-      [*CCM*],[Complessità Ciclomatica per Metodo],
-      [*CC*],[Code Coverage],
       [*ATC*],[Attributi per Classe],
       [*PM*],[Parametri per Metodo],
       [*LCM*],[Linee di Codice per Metodo]
@@ -545,7 +528,7 @@ caption: [Metriche di codifica],
 
 
 
-= Processi di Supporto
+= Processi di supporto
 
 == Documentazione
 
@@ -553,7 +536,7 @@ caption: [Metriche di codifica],
 
 La #glossary[documentazione] è l'insieme di informazioni rappresentate sotto forma di testo scritto che accompagna un prodotto software, svolgendo un ruolo essenziale nella descrizione del prodotto per coloro che lo sviluppano, lo distribuiscono e lo utilizzano. Il suo obiettivo primario è facilitare l'attività di sviluppo ai membri del team durante l'intero ciclo di vita del progetto, garantendone la coerenza mediante il tracciamento di tutti i processi e le attività coinvolte. Ciò mira a migliorare la qualità del risultato finale e semplificare la manutenzione. L'implementazione di regole chiare e di una struttura uniforme non solo migliora la fruibilità e la comprensione, ma favorisce anche la collaborazione all'interno del team, contribuendo in modo significativo al successo complessivo del progetto software.
 
-=== Lista Documenti
+=== Lista documenti
 
 I documenti che verranno prodotti sono:
 
@@ -612,7 +595,7 @@ Due modifiche, fatte in momenti diversi, differiscono l'una dall'altra solo se h
 
 === Struttura 
 
-==== Prima Pagina 
+==== Prima pagina 
 
         - *logo team*: situato in alto a destra;
         - *Titolo*: 
@@ -715,7 +698,7 @@ caption:[Metriche relative alla documentazione],
 
 #pagebreak()
 
-== Gestione della Configurazione
+== Gestione della configurazione
 
 === Descrizione e scopo
 
@@ -895,7 +878,7 @@ Nella sezione relativa ai test nel _Piano di Qualifica v1.0_ a ogni test viene a
 - *Non Passato*: il test ha dato esito negativo. 
 
 
-== Gestione della Qualità 
+== Gestione della qualità 
 
 === Descrizione 
 
@@ -914,7 +897,7 @@ Per la valutazione della qualità viene fornito il documento _Piano di Qualifica
 
  
 
-=== Denominazione Metriche 
+=== Denominazione metriche 
 
 Per identificare  le metriche si usa la seguente formattazione:
 
@@ -926,7 +909,7 @@ Per identificare  le metriche si usa la seguente formattazione:
                         + *PD* se si tratta di qualità di prodotto;
         - *Nome*: abbreviazione del nome della metrica.
 
-=== Struttura obiettivi   
+=== Struttura metriche
 
 Nel _Piano di Qualifica v1.0_  le varie metriche sono descritte mediante delle tabelle organizzate secondo la seguente struttura:
 
@@ -935,14 +918,31 @@ Nel _Piano di Qualifica v1.0_  le varie metriche sono descritte mediante delle t
    - *Valore di accettazione*: valore considerato accettabile;
    - *Valore ideale*: valore ideale che dovrebbe essere assunto dalla metrica.
 
-=== Grafici Metriche
+=== Grafici metriche
 
 Per realizzare i grafici relativi alle metriche e all'andamento del progetto, si usa Google Sheets.
 La descrizione delle metriche usate si trova nella  @metriche.
 
-= Processi Organizzativi
+=== Metriche  
 
-== Gestione Organizzativa
+La definizione delle seguenti metriche si può trovare nella @metriche_gestione_qualità.
+
+#figure(
+table(
+      columns:(auto,auto),
+      align: (x, y) => (center, center).at(x),
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Metrica*],[*Descrizione*],
+      [*MNS*],[Metriche Non Soddisfatte]
+      
+),
+caption:[Metriche relative ala gestione della qualità],
+)
+
+
+= Processi organizzativi
+
+== Gestione organizzativa
 
 === Decisioni
 
@@ -994,7 +994,7 @@ Dove "number" rappresenta il numero specifico dello #glossary[sprint] di interes
 
 
 
-=== Ruoli Progetto
+=== Ruoli progetto
 
 Durante il periodo di sviluppo del progetto, ciascun membro assume sei ruoli distinti, con compiti diversificati, al fine di garantire una gestione completa ed efficace delle diverse fasi e aspetti del lavoro. Questi ruoli contribuiscono a promuovere la collaborazione sinergica e l'ottimizzazione delle risorse all'interno del team.
 
@@ -1146,7 +1146,7 @@ Ogni rischio viene identificato da un codice univoco avente la seguente struttur
 
 ==== Gestione delle comunicazioni
 
-===== Comunicazioni Interne 
+===== Comunicazioni interne 
 
 Riguardano esclusivamente i membri del team e si svolgono tramite:
 
@@ -1155,16 +1155,16 @@ Riguardano esclusivamente i membri del team e si svolgono tramite:
                 + Creare server suddivisibili in vari canali testuali o vocali, dove verranno svolte le riunioni;
                 + Supplementare la comunicazione all'interno della piattaforma con funzionalità offerte da servizi esterni quali GitHub.
 
-===== Comunicazioni Esterne
+===== Comunicazioni esterne
 
 Le comunicazioni esterne vengono affidate al Responsabile attraverso i seguenti mezzi:
 
         - Email: si usa l'email di gruppo swateng.team\@gmail.com;
         - Element: si usa il canale creato appositamente dalla Proponente per avere una comunicazione diretta.
 
-==== Gestione degli Incontri 
+==== Gestione degli incontri 
 
-===== Incontri Interni 
+===== Incontri interni 
 
 Negli incontri interni possono partecipare solamente i membri del gruppo. Si svolgono principalmente una volta a settimana, il giorno può variare in caso di imprevisti, ma solitamente si tiene il venerdì mattina in modalità sincrona.
 
@@ -1181,7 +1181,7 @@ Gli incontri hanno due modalità:
         - *Fisici*: per gli stand-up meeting quotidiani (#glossary("Daily Scrum")) di 5 minuti in cui si discutono brevemente le attività completate il giorno precedente e si espongono le attività pianificate per il futuro;
         - *Virtuali*: si svolgono chiamate o video di gruppo in cui si discutono eventuali dubbi o difficoltà riscontrate. Lo strumento adatto per questo scopo è Discord.
 
-===== Incontri Esterni 
+===== Incontri esterni 
 
 Negli incontri esterni i partecipanti includono i membri del team e i referenti della Proponente. Questi incontri sono pianificati in concomitanza con l'inizio e la fine dello #glossary[sprint]. Durante queste sessioni, i partecipanti del team hanno l'opportunità di presentare gli sviluppi recenti, condividere i progressi raggiunti e discutere eventuali sfide o questioni emerse nel corso del lavoro. 
 In aggiunta, è possibile richiedere sessioni di formazione mirate su tecnologie specifiche, offrendo al team l'opportunità di approfondire la comprensione di una particolare tecnologia, imparare le #glossary[best practices] e acquisire competenze più avanzate.
@@ -1199,7 +1199,6 @@ table(
       [*BAC*],[Budget At Completion],
       [*EV*],[Earned Value],
       [*PV*],[Planned Value],
-      [*SPI*],[Schedule Performance Index],
       [*SV*],[Schedule Variance]
 ),
 caption:[Metriche Fornitura],
@@ -1257,11 +1256,7 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
                 
                 Formula: $"CPI" = "EV" / "AC"$;
 
-        - *SPI*: Schedule Performance Index - misura l'efficienza del tempo rispetto alla pianificazione del progetto. Fornisce un indicatore numerico che rappresenta il rapporto tra il lavoro effettivamente eseguito (o il valore guadagnato) e il lavoro pianificato fino a un determinato punto nel tempo. Aiuta a valutare quanto il progetto sta rispettando il programma pianificato
-
-                Formula: $"SPI" = "EV" / "PV"$;
-
-        - *EAC*: Estimated at Completion - revisione del valore stimato per la realizzazione del progetto, ossia il BAC rivisto allo stato corrente del progetto
+        - *EAC*: Estimated at Completion - revisione del valore stimato per la realizzazione del progetto, ossia il BAC rivisto allo stato  corrente del progetto
 
                 Formula: $"EAC" = "BAC" / "CPI"$;
 
@@ -1277,33 +1272,18 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
 
                 Formula: $"SV" = "EV" - "PV"$;
 
-        - *CV*: Cost Variance - la differenza tra il valore del lavoro effettivamente svolto e il costo effettivo del lavoro svolto fino a un dato momento
-                
-                Formula: $ "CV" = "EV" - "AC"$;
-
+        
         - *BV*: Budget Variance - indica se alla data corrente si è speso di più o di meno rispetto a quanto inizialmente previsto nel budget
                 
                 Formula: $"BV" = "PV" - "AC"$.
 
-=== Progettazione <metriche_progettazione>
 
-        - *SFIN*: Structure Fan In - rappresenta il numero di moduli o componenti direttamente collegati o dipendenti da un modulo o una funzione specifica; un fan-in elevato indica che molte parti del #glossary[sistema] dipendono da un particolare modulo;
-
-        - *SFOUT*: Structure Fan Out - rappresenta il numero di dipendenze o connessioni che un componente o modulo particolare ha con altri componenti o moduli. Misura quanti altri elementi dipendono o interagiscono con un dato elemento all'interno di un #glossary[sistema]; un fan-out elevato può indicare che un modulo ha molte dipendenze da altri moduli.
+        
 
 
 === Codifica <metriche_codifica>
 
-      -  *CCM*: Complessità Ciclomatica per Metodo - quantifica la complessità del codice misurando il numero di percorsi linearmente indipendenti attraverso il grafo di controllo di flusso del metodo. Più è alta la complessità ciclomatica, maggiore è la complessità del codice
-
-                Formula: $"CCM" = "e" − "n" + 2$, con:
-
-                        - e: numero di archi del grafo del flusso di esecuzione del metodo;
-                        - n: numero di vertici del grafo del flusso di esecuzione del metodo.
-
-        - *CC*: Code Coverage - numero di linee di codice convalidate con successo nell'ambito di una procedura di test
-
-                Formula: $"CC" = "linee di codice percorse" / "linee di codice totali" dot 100$;
+      
                 
         - *ATC*: Attributi per Classe - rappresenta il numero di attributi appartenenti ad una classe;
 
@@ -1336,6 +1316,10 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
 
         - *CO*: Correttezza ortografica - numero errori grammaticali ed ortografici in un documento.
 
+=== Gestione della qualità  <metriche_gestione_qualità>
+
+        - *MNS*: Metriche Non Soddisfatte - Numero delle metriche che il progetto non riesce a raggiungere o mantenere.
+
 == Metriche per la qualità di prodotto 
 
 === Funzionalità <metriche_qualità-prodotto>
@@ -1356,14 +1340,51 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
 
         - *FU*: Facilità di utilizzo - quantità di click che l'utente deve effettuare per raggiungere un obiettivo desiderato;
 
+        - *TA*: Tempo di Apprendimento - il tempo richiesto da una persona per comprendere e padroneggiare l'uso del #glossary[sistema].
+
 === Affidabilità  
 
         - *PTCP*: Passed Test Cases Percentage - rappresenta la percentuale di casi di test che sono stati eseguiti con successo rispetto al totale dei casi di test previsti
 
-                Formula: $"PTCP" = "test superati" / "test totali" dot 100$.
+                Formula: $"PTCP" = "test superati" / "test totali" dot 100$;
+
+        - *CC*: Code Coverage - numero di linee di codice convalidate con successo nell'ambito di una procedura di test
+
+                Formula: $"CC" = "linee di codice percorse" / "linee di codice totali" dot 100$;
+        
+        - *BC*: Branch Coverage - valuta quanti rami condizionali nel codice sorgente sono stati eseguiti durante l'esecuzione dei test. 
+                        Formula: $"BC"= "Numero di rami condizionali eseguiti" / "numero totale dei rami condizionali" dot 100$;
+
+        - *SC*: Statement Coverage - valuta quanti statement o istruzioni del codice sorgente sono stati eseguiti durante l'esecuzione dei test.
+                        Formula: $"SC"="numero statement eseguiti"/"numero totale statement" dot 100$.
 
         
+=== Manutenibilità  
+
+        - *SFIN*: Structure Fan In - rappresenta il numero di moduli o componenti direttamente collegati o dipendenti da un modulo o una funzione specifica; un fan-in elevato indica che molte parti del #glossary[sistema] dipendono da un particolare modulo;
+
+        - *SFOUT*: Structure Fan Out - rappresenta il numero di dipendenze o connessioni che un componente o modulo particolare ha con altri componenti o moduli. Misura quanti altri elementi dipendono o interagiscono con un dato elemento all'interno di un #glossary[sistema]; un fan-out elevato può indicare che un modulo ha molte dipendenze da altri moduli;
+
+        -  *CCM*: Complessità Ciclomatica per Metodo - quantifica la complessità del codice misurando il numero di percorsi linearmente indipendenti attraverso il grafo di controllo di flusso del metodo. Più è alta la complessità ciclomatica, maggiore è la complessità del codice.
+
+                Formula: $"CCM" = "e" − "n" + 2$, con:
+
+                        - e: numero di archi del grafo del flusso di esecuzione del metodo;
+                        - n: numero di vertici del grafo del flusso di esecuzione del metodo.
+
+
+=== Efficienza 
+
+        - *CPUU*: Maximum CPU usage -  indica il picco massimo di utilizzo della CPU durante un determinato periodo di tempo. Utilizzata per valutare il carico massimo di lavoro che il #glossary[sistema] può gestire e per identificare possibili problemi di performance;
+        - *RAMU*: Maximum RAM usage -  indica il picco massimo di utilizzo della memoria RAM durante un determinato periodo di tempo.Importante per valutare l'efficienza nell'uso della memoria del sistema e per identificare eventuali situazioni di sovrautilizzo della memoria che potrebbero causare rallentamenti o crash;
+        - *TDE*: Tempo Di Elaborazione - rappresenta il tempo trascorso tra il momento in cui i dati sono generati e il momento in cui vengono visualizzati nella #glossary[dashboard] di #glossary[Grafana].
+
+
+
+
+
+
+
 
         
-
         
