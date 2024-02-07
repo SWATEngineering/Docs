@@ -577,7 +577,7 @@ table(
             Verificare  che l'#glossary("amministratore pubblico"), nei #glossary("pannelli") tabellari, possa ordinare i dati sulla base dei valori delle proprie colonne, sia in ordine crescente che decrescente. 
       ],"N/I","RDF"),
       ([
-            Verificare  che l'#glossary("amministratore pubblico"), possa nel contesto della singola #glossary("dashboard"), possa modificare il layout, agendo su dimensione e posizione dei  #glossary("pannelli"). 
+            Verificare  che l'#glossary("amministratore pubblico") possa, nel contesto della singola #glossary("dashboard"),  modificare il layout, agendo su dimensione e posizione dei  #glossary("pannelli"). 
       ],"N/I","RDF"),
       ([
             Verificare  che l'#glossary("amministratore pubblico"), riceva un messaggio di errore qualora, il sistema di visualizzazione non riesca a reperire i dati necessari per un determinato #glossary("pannello"). 
