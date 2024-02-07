@@ -128,7 +128,7 @@ caption: [Tabella metriche per il processo di documentazione]
 
 = Qualità di prodotto 
 
-La qualità di prodotto è volta alla valutazione del software realizzato: l'attenzione è rivolta ad attributi quali usabilità, funzionalità, affidabilità, ma più in generale alle prestazione del prodotto. 
+La qualità di prodotto è volta alla valutazione del software realizzato: l'attenzione è rivolta ad attributi quali usabilità, funzionalità, affidabilità, ma più in generale alle prestazioni del prodotto. 
 L'obiettivo  è, dunque, assicurare che il software non solo implementi le funzionalità volute dal cliente e funzioni correttamente, ma che lo faccia seguendo le indicazioni di precisi standard di qualità.
 Di seguito vengono presentate le metriche che il team si impegna a soddisfare nel contesto della qualità di prodotto.
 Come presentato nel documento _Norme di Progetto v1.0_ la sigla MPR sta ad indicare le metriche di prodotto.
