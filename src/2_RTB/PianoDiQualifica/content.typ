@@ -869,6 +869,7 @@ Tale strumento, ha mostrato immediatamente i suoi effetti benefici: gli errori n
     Valutazione Metriche non Soddisfatte
   ],
 )
+Le metriche non soddisfatte corrispondono alle metriche MPC-CO, MPC-CPI, MPC-EAC. In concomitanza con l'ottavo #glossary("sprint"), la misurazione di MPC-CO è rientrata all'interno del valore di accettazione. Per quanto riguarda MPC-CPI e MPC-EAC, essendo estremamente legate tra loro, si rimanda alle considerazioni relative a MPC-EAC.
 
 
 // == Qualità di prodotto
