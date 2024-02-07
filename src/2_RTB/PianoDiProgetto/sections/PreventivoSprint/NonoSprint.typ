@@ -3,9 +3,9 @@
 
 == Nono #glossary[sprint]
 
-*Inizio*: Venerdì 02/02/2024
+*Inizio*: Venerdì 09/02/2024
 
-*Fine*: Giovedì 08/02/2024 
+*Fine*: Giovedì 15/02/2024 
 
 #prospettoOrario(sprintNumber: "9")
 #prospettoEconomico(sprintNumber: "9")

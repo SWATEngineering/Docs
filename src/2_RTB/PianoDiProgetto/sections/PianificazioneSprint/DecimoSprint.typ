@@ -1,9 +1,9 @@
 #import "../../functions.typ": glossary
 === Decimo #glossary[sprint]
 
-*Inizio*: Venerdì 09/02/2024
+*Inizio*: Venerdì 16/02/2024
 
-*Fine*: Giovedì 15/02/2024 
+*Fine*: Giovedì 22/02/2024 
 
 *Obiettivi dello #glossary[sprint]*: 
 
