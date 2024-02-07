@@ -114,7 +114,7 @@ table(
       align: (x, y) => (center, center, center,center).at(x),
       fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-      [MPC-MNS], [Metriche non soddisfatte], [<=3], [0],
+      [MPC-MNS], [Metriche non soddisfatte], [≤3], [0],
       ), 
 caption: [Tabella metriche per il processo di gestione della qualità]
 )
@@ -868,6 +868,7 @@ Tale strumento ha mostrato immediatamente i suoi effetti benefici: gli errori ne
     Valutazione Metriche non Soddisfatte
   ],
 )
+Le metriche non soddisfatte corrispondono alle metriche MPC-CO, MPC-CPI, MPC-EAC. In concomitanza con l'ottavo #glossary("sprint"), la misurazione di MPC-CO è rientrata all'interno del valore di accettazione. Per quanto riguarda MPC-CPI e MPC-EAC, essendo estremamente legate tra loro, si rimanda alle considerazioni relative a MPC-EAC.
 
 
 // == Qualità di prodotto
