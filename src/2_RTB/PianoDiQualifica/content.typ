@@ -578,7 +578,7 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo rilevazioni di tipo precipitazioni, superanti una soglia di 50 millimetri all'ora (50 mm/h).
       ],"N/I","RDF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo rilevazioni dell' inquinamento dell'aria (#glossary("PM10")), superanti una soglia di 80 microgrammi su metro cubo.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo rilevazioni dell' inquinamento dell'aria (#glossary("PM10")), superanti una soglia di 80 microgrammi su metro cubo ($80#sym.mu g\/m^3$).
       ],"N/I","RDF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo rilevazioni del livello di riempimento dei bacini idrici, superanti una soglia corrispondente al 70% della capienza del bacino idrico corrispondente.
