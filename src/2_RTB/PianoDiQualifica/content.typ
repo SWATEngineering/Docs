@@ -1,6 +1,7 @@
 #import "functions.typ": glossary, team
 #let fornitura=csv("Mfornitura.csv")
 #show link: underline
+
 /*************************************/
 /*    INSERIRE SOTTO IL CONTENUTO    */ 
 /*************************************/
