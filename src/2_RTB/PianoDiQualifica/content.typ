@@ -233,7 +233,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ]),
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
-            1. aprire il menu di selezione delle [#glossary("dashboard")];
+            1. aprire il menu di selezione delle #glossary("dashboard")\;
             2. selezionare la #glossary("dashboard") generale dei sensori;
             3. visualizzare la relativa [#glossary("dashboard")];
             4. visualizzare un #glossary("pannello") con una mappa indicante la posizione di tutti i sensori come icone su di essa;
