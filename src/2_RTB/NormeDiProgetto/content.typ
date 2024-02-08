@@ -147,6 +147,29 @@ Online software per creare diagrammi di Gantt, utilizzato dal Responsabile per d
 ==== Draw.io
 Software per creare diagrammi e grafici di varia natura, utilizzato dagli Analisti per creare i diagrammi #glossary[UML] dei casi d'uso nella sezione Casi d'uso dell'_Analisi dei Requisiti v1.0_.
 
+=== Metriche  
+
+La definizione delle metriche seguenti si può trovare nella @metriche_fornitura.
+#figure(
+table(
+      columns:(auto,auto),
+      align: (x, y) => (center, center).at(x),
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Metrica*],[*Descrizione*],
+      [*BAC*],[Budget At Completion],
+      [*EV*],[Earned Value],
+      [*PV*],[Planned Value],
+      [*SV*],[Schedule Variance],
+      [*AC*],[Actual Cost],
+      [*CPI*],[Cost Performance Index],
+      [*EAC*],[Estimated At Completion],
+      [*ETC*],[Estimated To Completion],
+      [*VAC*],[Variance At Completion],
+      [*BV*],[Budget Variance]
+),
+caption:[Metriche Fornitura],
+)
+
 
 == Sviluppo
 
@@ -1187,22 +1210,9 @@ Negli incontri esterni i partecipanti includono i membri del team e i referenti 
 In aggiunta, è possibile richiedere sessioni di formazione mirate su tecnologie specifiche, offrendo al team l'opportunità di approfondire la comprensione di una particolare tecnologia, imparare le #glossary[best practices] e acquisire competenze più avanzate.
 Il Responsabile ha il compito della stesura del verbale esterno, che viene successivamente convalidato, con firma, dalla Proponente.
 
-=== Metriche 
+ 
 
-La definizione delle metriche seguenti si può trovare nella @metriche_fornitura.
-#figure(
-table(
-      columns:(auto,auto),
-      align: (x, y) => (center, center).at(x),
-      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
-      [*Metrica*],[*Descrizione*],
-      [*BAC*],[Budget At Completion],
-      [*EV*],[Earned Value],
-      [*PV*],[Planned Value],
-      [*SV*],[Schedule Variance]
-),
-caption:[Metriche Fornitura],
-)
+
 
 == Formazione   
 
