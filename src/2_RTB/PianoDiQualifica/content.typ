@@ -619,7 +619,7 @@ table(
             Verificare che un sensore possa inserire nel sistema le rilevazioni all'umidità, espresse in percentuale, effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione. 
       ],"N/I","ROF"),
       ([
-            Verificare che un sensore possa inserire nel sistema le rilevazioni della velocità e della direzione del vento, espresse rispettivamente in chilometri all'ora e in gradi (con gli 0° a Nord e i 180° a Sud), effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione. 
+            Verificare che un sensore possa inserire nel sistema le rilevazioni della velocità e della direzione del vento, espresse rispettivamente in chilometri all'ora (km/h) e in gradi (con gli 0° a Nord e i 180° a Sud), effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione. 
       ],"N/I","ROF"),
       ([
             Verificare che un sensore possa inserire nel sistema le rilevazioni della quantità di precipitazioni, espresse in millimetri orari (mm/h), con annesso coordinate e #glossary("timestamp") della rilevazione. 
