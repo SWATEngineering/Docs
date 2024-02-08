@@ -572,7 +572,7 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una tabella che mostri i dati relativi a temperatura, precipitazioni, inquinamento dell'aria, bacini idrici e zone ecologiche, i cui valori superano una soglia fissata, il sensore che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.
       ],"N/I","RDF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo a rilevazioni di tipo temperatura, superanti una soglia di 40° celsius.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo a rilevazioni di tipo temperatura, superanti una soglia di 40° Celsius.
       ],"N/I","RDF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo rilevazioni di tipo precipitazioni, superanti una soglia di 50 millimetri all'ora.
