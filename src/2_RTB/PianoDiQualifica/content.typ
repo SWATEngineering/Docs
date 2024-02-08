@@ -728,7 +728,7 @@ table(
       align: (center, left),
       [*Aspetto*],[*Spiegazione*],
       [Formato date errato],[Il formato delle date deve essere *dd-mm-aaaa* all'interno dei documenti, oppure *aa-mm-dd* all'interno dei nomi dei documenti.],
-      [Punteggiatura scorretta negli elenchi],[Ogni elemento di un elenco, numerato o non, deve terminare con un *;*, ad eccezione dell'ultima riga, la quale deve terminare con *.*.],
+      [Punteggiatura scorretta negli elenchi],[Ogni elemento di un elenco, numerato o non, deve terminare con un "*;*", ad eccezione dell'ultima riga, la quale deve terminare con "*.*".],
       [: in grassetto negli elenchi],[Gli elenchi nella forma "*termine*: testo", non devono includere il ":" nel grassetto.],
       [Maiuscole nei titoli],[La prima lettera di ogni titolo deve essere maiuscola. Il resto del titolo dovrebbe essere in minuscolo (tolte particolari eccezioni, come ad esempio nomi di documenti o lettere che compaiono all'interno di acronimi).],
       [Maiuscole negli elenchi],[Le prime lettere di ogni elenco devono essere maiuscole.],
