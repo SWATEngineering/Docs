@@ -145,7 +145,7 @@ Servizio per creare e partecipare a videochiamate, utilizzato dal team per gli i
 Online software per creare diagrammi di Gantt, utilizzato dal Responsabile per delineare la distribuzione temporale delle attività pianificate per ogni #glossary[sprint] nella sezione di Pianificazione del _Piano di Progetto v1.0_.
 
 ==== Draw.io
-Software per creare diagrammi e grafici di varia natura, utilizzato dagli Analisti per creare i diagrammi #glossary[UML] dei casi d'uso nella sezione Casi d'uso (@c.uso) dell'_Analisi dei Requisiti v1.0_.
+Software per creare diagrammi e grafici di varia natura, utilizzato dagli Analisti per creare i diagrammi #glossary[UML] dei casi d'uso nella sezione Casi d'uso dell'_Analisi dei Requisiti v1.0_.
 
 
 == Sviluppo
