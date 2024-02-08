@@ -186,7 +186,7 @@ I casi d'uso sono identificati nel seguente modo:
 
          #align(center)[*UC[Numero].[Numero sottocaso] [Titolo]*]
         
-        *legenda*:
+        *Legenda*:
         - *Numero*: numero del caso d'uso;
         - *Numero sottocaso*: numero del sottocaso del caso d'uso generale se presente;
         - *Titolo*: breve titolo che descrive il contesto del caso d'uso in questione.
@@ -225,7 +225,7 @@ I requisiti trovati hanno un codice univoco con la seguente sintassi:
 
         #align(center)[*R[Importanza][Tipo][Numero]*]
 
-        *legenda*:
+        *Legenda*:
         
         - *Importanza*:
                 - O -> se requisito obbligatorio;
@@ -903,7 +903,7 @@ Per identificare  le metriche si usa la seguente formattazione:
 
 #align(center)[*M[Tipo]-[Nome]*]
 
-*legenda*:
+*Legenda*:
         - *Tipo*: specifica la tipologia di metrica:
                         + *PC* se si tratta di qualità di processo;
                         + *PD* se si tratta di qualità di prodotto;
@@ -1133,7 +1133,7 @@ Ogni rischio viene identificato da un codice univoco avente la seguente struttur
 
         #align(center)[*R[Tipologia][Numero] - [Nome]*]
 
-        *legenda*:
+        *Legenda*:
                 - *Tipologia*: il tipo del rischio, può essere:
                         - T se tecnologico;
                         - C se comunicativo;
