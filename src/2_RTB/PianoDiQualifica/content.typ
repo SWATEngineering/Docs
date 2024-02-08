@@ -237,7 +237,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             2. selezionare la #glossary("dashboard") generale dei sensori;
             3. visualizzare la relativa [#glossary("dashboard")];
             4. visualizzare un #glossary("pannello") con una mappa indicante la posizione di tutti i sensori come icone su di essa;
-            5. visualizzare un #glossary("pannello") con una tabella che mostra i dati relativi a quei sensori, in particolare, percentuale di batteria, se la batteria è autonoma o meno e data di ultima manutenzione.
+            5. visualizzare un #glossary("pannello") con una tabella che mostra i dati relativi a quei sensori, in particolare, percentuale di batteria, se la batteria è autonoma o meno e data di ultima manutenzione;
             6. visualizzare un messaggio di avvertenza di dati mancanti, nei vari #glossary("pannelli"), nel caso il sistema non riesca a reperire i dati.
       ],"N/I",[
             UC0\
