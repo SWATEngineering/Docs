@@ -929,7 +929,7 @@ Per identificare  le metriche si usa la seguente formattazione:
 *Legenda*:
         - *Tipo*: specifica la tipologia di metrica:
                         + *PC* se si tratta di qualità di processo;
-                        + *PD* se si tratta di qualità di prodotto;
+                        + *PD* se si tratta di qualità di prodotto.
         - *Nome*: abbreviazione del nome della metrica.
 
 === Struttura metriche
