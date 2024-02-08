@@ -508,7 +508,7 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una mappa che evidenzi la direzione del vento, mediante frecce aventi origine nelle coordinate del sensore, nella #glossary("dashboard") relativa ai dati ambientali.
       ],"N/I","RDF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'ultima velocità del vento, espressa in chilometri all'ora, per ciascun sensore, nella #glossary("dashboard") relativa ai dati ambientali.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'ultima velocità del vento, espressa in chilometri all'ora (km/h), per ciascun sensore, nella #glossary("dashboard") relativa ai dati ambientali.
       ],"N/I","ROF"),
 
 
