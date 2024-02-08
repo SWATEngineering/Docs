@@ -9,7 +9,7 @@
 
 # python3 auto_preventivo.py *numero_sprint_attuale*
 
-# passare come parametro il numero dello sprint di cui si vogliono creare i preventivi, si occuperà di creare tabelle e graficis
+# passare come parametro il numero dello sprint di cui si vogliono creare i preventivi, si occuperà di creare tabelle e grafici
 
 RESPONSABILE = {'extended':"Responsabile", 'shortened':"Re"}
 AMMINISTRATORE = {'extended':"Amministratore",'shortened':"Am"}
@@ -124,7 +124,8 @@ with open('preventivi/assets/tables/tableProspettoEconomico'+str(sprintNum)+'.cs
     writer = csv.writer(file)
     writer.writerows(table_budget)
 
-role_colors = ["#FF6961", "#5DADE2", "#E74C3C", "#F39C12", "#9B59B6", "#58D68D"]
+role_colors = ["#9B59B6", "#FF6961", "#5DADE2", "#E74C3C", "#F39C12", "#58D68D"]
+role_colors_istogramma = ["#9B59B6", "#FF6961", "#5DADE2", "#E74C3C", "#F39C12", "#58D68D"]
 
 # Filtering each vector to correspond only to positive time values
 filtered_values = [
@@ -163,7 +164,7 @@ df = df.set_index("Nominativo", drop=True)
 df = df.apply(pd.to_numeric, errors='coerce')
 
 # Plotting
-ax = df.plot(kind="bar", stacked=True, figsize=(10, 6), color=role_colors)
+ax = df.plot(kind="bar", stacked=True, figsize=(10, 6), color=role_colors_istogramma)
 
 ax.set_xticklabels(ax.get_xticklabels(), rotation=0, ha="center")
 

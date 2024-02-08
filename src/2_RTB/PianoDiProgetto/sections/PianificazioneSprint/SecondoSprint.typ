@@ -1,27 +1,24 @@
-=== Secondo sprint
+#import "../../functions.typ": glossary
+=== Secondo #glossary[sprint]
 
 *Inizio*: Venerdì 24/11/2023
 
 *Fine*: Giovedì 07/12/2023 
 
-*Obiettivi dello sprint*: 
-  - Creazione di un sito vetrina per esporre la documentazione; 
-  - Integrare le Norme di progetto con ulteriore dettaglio su *Processi primari* e *Gestione della configurazione*; 
-  - Apportare le dovute modifiche all'Analisi dei Requisiti, a seguito di feedback ricevuto dal Comittente e dalla Proponente:
-    - Rettifica della stesura dei *Casi d'uso*;
-    - Realizzazione dei diagrammi UML per i casi d'uso individuati;
-    - Ricavarne i requisiti funzionali corrispondenti.
-  - Proseguire la stesura del _Piano di Progetto_, con *Pianificazione*, *Preventivo* e *Consuntivo*;
+*Obiettivi dello #glossary[sprint]*: 
+  - Creazione di un sito vetrina per esporre la #glossary[documentazione]\; 
+  - Proseguire la stesura delle _Norme di Progetto_, ponendo particolare attenzione su: il processo di fornitura (in particolare i dettagli pertinenti alla #glossary[documentazione]), la descrizione dei ruoli del progetto, la gestione della qualità, le convenzioni stilistiche e l'analisi statica;
+  - Proseguire la stesura del _Piano di Progetto_:
+    - Inserimento rischio relativo alla sessione di esami in *Analisi dei rischi*;
+    - Inserimento *Pianificazione* dettagliata degli #glossary[sprint] 1 e 2 e bozza di pianificazione a lungo termine per valutare tutte le macro-attività necessarie per lo svolgimento del progetto fino alla terza revisione #glossary[CA] (#glossary[sprint] 16);
+    - Inserimento *Preventivo* dettagliato degli #glossary[sprint] 1 e 2 con grafici di supporto visivo e bozza di preventivo a lungo termine per effettuare una stima di una possibile suddivisione delle ore totali e del budget a disposizione per ciascuno #glossary[sprint] fino alla terza revisione #glossary[CA] (#glossary[sprint] 16);
+    - Inserimento *Consuntivo* dettagliato dello #glossary[sprint] 1 con grafici di supporto visivo e analisi a posteriori per valutare l'andamento corrente del progetto.
+  - Apportare le dovute modifiche all'_Analisi dei Requisiti_, a seguito del feedback ricevuto dal Committente e dalla Proponente:
+    - Rettifica della stesura dei casi d'uso;
+    - Realizzazione dei diagrammi #glossary[UML] per i casi d'uso individuati;
+    - Ricavare i requisiti funzionali corrispondenti.
   - Inizio della stesura del _Piano di Qualifica_;
-  - Proseguire la realizzazione del PoC:
-    - Creazione modulo di trasferimento, dei dati simulati, da Kafka a ClickHouse;
-    - Creazione modulo di trasferimento dei dati da ClickHouse a Grafana;
+  - Proseguire la realizzazione del #glossary[PoC]\:
+    - Creazione modulo di trasferimento dei dati simulati da #glossary[Kafka] a #glossary[ClickHouse]\;
+    - Creazione modulo di trasferimento dei dati da #glossary[ClickHouse] a #glossary[Grafana]\;
     - Containerizzazione dei moduli realizzati.
-
-*Suddivisione del lavoro*: 
-#figure(
-  image("../../assets/DiagrammiGantt/DiagrammaSecondoSprint.png", width: 100%),
-  caption: [
-    Diagramma di Gantt per le attività del secondo sprint.
-  ],
-)
