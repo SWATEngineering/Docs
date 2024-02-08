@@ -1142,7 +1142,7 @@ Ogni rischio viene identificato da un codice univoco avente la seguente struttur
                 - *Nome*: nome del rischio.
 
 
-=== Procedure 
+=== Procedure comunicative 
 
 ==== Gestione delle comunicazioni
 
