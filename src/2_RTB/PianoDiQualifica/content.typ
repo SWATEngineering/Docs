@@ -624,7 +624,7 @@ table(
             Verificare che un sensore possa inserire nel sistema le rilevazioni della quantità di precipitazioni, espresse in millimetri orari (mm/h), con annesso coordinate e #glossary("timestamp") della rilevazione. 
       ],"N/I","ROF"),
       ([
-            Verificare che un sensore possa inserire nel sistema le rilevazioni dell'inquinamento, espresse in espresso in microgrammi al metro cubo (#glossary("PM10")), effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione. 
+            Verificare che un sensore possa inserire nel sistema le rilevazioni dell'inquinamento, espresse in espresso in microgrammi al metro cubo ($#sym.mu g\/m^3$) (#glossary("PM10")), effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione. 
       ],"N/I","ROF"),
       ([
             Verificare che un sensore possa inserire nel sistema le rilevazioni del livello di riempimento del bacino idrico presso cui è installato, espresse in percentuale, effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione. 
