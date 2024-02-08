@@ -745,9 +745,7 @@ Le #glossary[Corsie di Stato] descrivono lo stato attuale delle attività, all'i
 
 Per la condivisione veloce o la creazione di bozze si utilizza Google Drive. Uno dei suoi principali casi d'uso consiste nella collaborazione in tempo reale nella stesura di sezioni testuali ampie, da inserire successivamente nella #glossary[documentazione] (questo risulta particolarmente utile nel momento in cui il documento è alla sua prima stesura). Viene inoltre utilizzato come sistema per l'immagazzinamento di conoscenze acquisite durante lo svolgimento del progetto.
 
-=== Tracciamento del tempo speso
 
-Al fine di tracciare il tempo speso nel corso del progetto, nei diversi ruoli, si utilizza uno #glossary[spreadsheet] appositamente creato, disponibile all'interno di Google Drive. A fine giornata, ogni membro del team inserisce le proprie ore *produttive* svolte quel giorno, secondo la sua miglior stima del rapporto tra ore di orologio e ore produttive. Si inserisce una sola riga per ogni giornata e nella descrizione si aggiungono brevi titoli rappresentativi delle attività svolte.
 
 
 === Controllo di versione e repository
@@ -1106,6 +1104,10 @@ I ruoli assunti sono i seguenti:
 === Cambio dei ruoli
 
 Per garantire che ogni membro svolga tutti i ruoli menzionati per un periodo di tempo consono, il team si impegna a cambiarli ogni settimana.
+
+=== Tracciamento del tempo speso
+
+Al fine di tracciare il tempo speso nel corso del progetto, nei diversi ruoli, si utilizza uno #glossary[spreadsheet] appositamente creato, disponibile all'interno di Google Drive. A fine giornata, ogni membro del team inserisce le proprie ore *produttive* svolte quel giorno, secondo la sua miglior stima del rapporto tra ore di orologio e ore produttive. Si inserisce una sola riga per ogni giornata e nella descrizione si aggiungono brevi titoli rappresentativi delle attività svolte.
 
 === Gestione strumenti coordinamento
 
