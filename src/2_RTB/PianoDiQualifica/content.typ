@@ -126,7 +126,7 @@ caption: [Tabella metriche per il processo di gestione della qualità]
 La qualità di prodotto è volta alla valutazione del software realizzato: l'attenzione è rivolta ad attributi quali usabilità, funzionalità, affidabilità, ma più in generale alle prestazioni del prodotto. 
 L'obiettivo  è, dunque, assicurare che il software non solo implementi le funzionalità volute dal cliente e funzioni correttamente, ma che lo faccia seguendo le indicazioni di precisi standard di qualità.
 Di seguito vengono presentate le metriche che il team si impegna a soddisfare nel contesto della qualità di prodotto.
-Come presentato nel documento _Norme di Progetto v1.0_ la sigla MPR sta ad indicare le metriche di prodotto.
+Come presentato nel documento _Norme di Progetto v1.0_ la sigla MPD sta ad indicare le metriche di prodotto.
 
 == Funzionalità
 
@@ -136,9 +136,9 @@ Come presentato nel documento _Norme di Progetto v1.0_ la sigla MPR sta ad indic
             align: (x, y) => (center, center, center,center).at(x),
             fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
             [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-            [MPR-ROS], [Requisiti Obbligatori Soddisfatti], [100%], [100%],
-            [MPR-RDS], [Requisiti Desiderabili Soddisfatti], [≥ 0%], [≥ 75%],
-            [MPR-ROPS], [Requisiti Opzionali Soddisfatti], [≥ 0%], [≥ 50%],
+            [MPD-ROS], [Requisiti Obbligatori Soddisfatti], [100%], [100%],
+            [MPD-RDS], [Requisiti Desiderabili Soddisfatti], [≥ 0%], [≥ 75%],
+            [MPD-ROPS], [Requisiti Opzionali Soddisfatti], [≥ 0%], [≥ 50%],
       ),
 caption: [Tabella metriche per la funzionalità del prodotto])
 
@@ -150,9 +150,9 @@ caption: [Tabella metriche per la funzionalità del prodotto])
             align: (x, y) => (center, center, center,center).at(x),
             fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
             [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-            [MPR-FIN], [Structure Fan In], [da determinare], [da determinare], 
-            [MPR-FOUT], [Structure Fan Out], [da determinare], [da determinare],
-            [MPR-CCM], [Complessità Ciclomatica per Metodo], [≤ 5], [≤ 3],
+            [MPD-FIN], [Structure Fan In], [da determinare], [da determinare], 
+            [MPD-FOUT], [Structure Fan Out], [da determinare], [da determinare],
+            [MPD-CCM], [Complessità Ciclomatica per Metodo], [≤ 5], [≤ 3],
       ),
 caption: [Tabella metriche per la manutenibilità del prodotto])
 
@@ -164,8 +164,8 @@ caption: [Tabella metriche per la manutenibilità del prodotto])
             align: (x, y) => (center, center, center,center).at(x),
             fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
             [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-            [MPR-FU], [Facilità di utilizzo], [≤ 7 click], [≤ 5 click], 
-            [MPR-TA], [Tempo di Apprendimento], [≤ 10 minuti], [≤ 5 minuti]
+            [MPD-FU], [Facilità di utilizzo], [≤ 7 click], [≤ 5 click], 
+            [MPD-TA], [Tempo di Apprendimento], [≤ 10 minuti], [≤ 5 minuti]
       ),
 caption: [Tabella metriche per l'usabilità del prodotto])
 
@@ -177,10 +177,10 @@ caption: [Tabella metriche per l'usabilità del prodotto])
             align: (x, y) => (center, center, center,center).at(x),
             fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
             [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-            [MPR-PTCP], [Passed Test Cases Percentage], [≥ 80%], [100%], 
-            [MPR-CC], [Code Coverage], [≥80%], [100%],
-            [MPR-BC], [Branch Coverage], [≥60%], [100%],
-            [MPR-SC], [Statement Coverage], [≥60%], [100%],
+            [MPD-PTCP], [Passed Test Cases Percentage], [≥ 80%], [100%], 
+            [MPD-CC], [Code Coverage], [≥80%], [100%],
+            [MPD-BC], [Branch Coverage], [≥60%], [100%],
+            [MPD-SC], [Statement Coverage], [≥60%], [100%],
       ),
 caption: [Tabella metriche per l'affidabilità del prodotto])
 
@@ -192,9 +192,9 @@ caption: [Tabella metriche per l'affidabilità del prodotto])
             align: (x, y) => (center, center, center,center).at(x),
             fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
             [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-            [MPR-CPUU],[Maximum CPU usage],[da determinare],[da determinare], 
-            [MPR-RAMU],[Maximum RAM usage],[da determinare],[da determinare], 
-            [MPR-TDE],[Tempo di elaborazione],[da determinare], [da determinare],
+            [MPD-CPUU],[Maximum CPU usage],[da determinare],[da determinare], 
+            [MPD-RAMU],[Maximum RAM usage],[da determinare],[da determinare], 
+            [MPD-TDE],[Tempo di elaborazione],[da determinare], [da determinare],
 
       ),
 caption: [Tabella metriche per l'efficienza del prodotto])
@@ -217,7 +217,7 @@ Come enunciato nel documento _Norme di Progetto v1.0_, il piano segue il #glossa
 In questa sezione vengono descritti i test di accettazione del prodotto software, eseguiti sia dal gruppo #team che dalla Proponente sotto la supervisione del gruppo.
 Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
 
-#let test_di_accettazione = (
+#let test_di_accettazione = ( 
       ([
           Verificare che l'#glossary("amministratore pubblico") senza autenticazione possa:
             1. usufruire dell'applicazione senza doversi autenticare.
@@ -729,7 +729,7 @@ table(
       [*Aspetto*],[*Spiegazione*],
       [Formato date errato],[Il formato delle date deve essere *dd-mm-aaaa* all'interno dei documenti, oppure *aa-mm-dd* all'interno dei nomi dei documenti.],
       [Punteggiatura scorretta negli elenchi],[Ogni elemento di un elenco, numerato o non, deve terminare con un "*;*", ad eccezione dell'ultima riga, la quale deve terminare con "*.*".],
-      [: in grassetto negli elenchi],[Gli elenchi nella forma "*termine*: testo", non devono includere il ":" nel grassetto.],
+      ["*:*" in grassetto negli elenchi],[Gli elenchi nella forma "*termine*: testo", non devono includere il ":" nel grassetto.],
       [Maiuscole nei titoli],[La prima lettera di ogni titolo deve essere maiuscola. Il resto del titolo dovrebbe essere in minuscolo (tolte particolari eccezioni, come ad esempio nomi di documenti o lettere che compaiono all'interno di acronimi).],
       [Maiuscole negli elenchi],[Le prime lettere di ogni elenco devono essere maiuscole.],
       [Ruoli in minuscolo],[Tutti i ruoli del progetto devono avere la prima lettera in maiuscolo.],
