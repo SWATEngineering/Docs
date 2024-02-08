@@ -612,7 +612,7 @@ table(
       ],"N/I","ROF"),
       /*da qui iniziano i requisiti relativi ai sensori*/
       ([
-            Verificare che un sensore possa inserire nel sistema le rilevazioni della temperatura, espresse in gradi celsius, effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione.
+            Verificare che un sensore possa inserire nel sistema le rilevazioni della temperatura, espresse in gradi Celsius (°C), effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione.
       ],"N/I","ROF"),
       ([
             Verificare che un sensore possa inserire nel sistema le rilevazioni all'umidità, espresse in percentuale, effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione. 
