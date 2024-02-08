@@ -235,7 +235,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
             1. aprire il menu di selezione delle #glossary("dashboard")\;
             2. selezionare la #glossary("dashboard") generale dei sensori;
-            3. visualizzare la relativa [#glossary("dashboard")];
+            3. visualizzare la relativa #glossary("dashboard")\;
             4. visualizzare un #glossary("pannello") con una mappa indicante la posizione di tutti i sensori come icone su di essa;
             5. visualizzare un #glossary("pannello") con una tabella che mostra i dati relativi a quei sensori, in particolare, percentuale di batteria, se la batteria è autonoma o meno e data di ultima manutenzione;
             6. visualizzare un messaggio di avvertenza di dati mancanti, nei vari #glossary("pannelli"), nel caso il sistema non riesca a reperire i dati.
@@ -247,9 +247,9 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ]),
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
-            1. aprire il menu di selezione delle [#glossary("dashboard")];
+            1. aprire il menu di selezione delle #glossary("dashboard")\;
             2. selezionare la #glossary("dashboard") per visualizzare i dati ambientali;
-            3. visualizzare la relativa [#glossary("dashboard")];
+            3. visualizzare la relativa #glossary("dashboard")\;
             4. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni delle temperatura, espresse in gradi Celsius (°C), effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
             5. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni dell'umidità, espresse in percentuale, effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
             6. visualizzare un #glossary("pannello") con una mappa mostrante la direzione del vento, rilevata da ciascun sensore, tramite delle frecce con origine la posizione del sensore; 
@@ -281,9 +281,9 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ]),
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
-            1. aprire il menu di selezione delle [#glossary("dashboard")];
+            1. aprire il menu di selezione delle #glossary("dashboard")\;
             2. selezionare la #glossary("dashboard") per visualizzare i dati urbanistici;
-            3. visualizzare la relativa [#glossary("dashboard")];
+            3. visualizzare la relativa #glossary("dashboard")\;
             4. visualizzare un #glossary("pannello") con una mappa che indichi, mediante indicatori numerici, collocati presso le coordinate di ciascun sensore, la quantità di posti liberi nel parcheggio corrispondente;
             5. visualizzare un #glossary("pannello") contenente una mappa che indichi, mediante indicatori booleani collocati presso le coordinate di ciascun sensore, la disponibilità della colonna corrispondente; 
             6. visualizzare un #glossary("pannello") che esprima, tramite una tabella indicizzata tramite il nome del sensore, l'erogazione energetica, espressa in watt per ora;
@@ -306,9 +306,9 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ]),
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
-            1. aprire il menu di selezione delle [#glossary("dashboard")];
+            1. aprire il menu di selezione delle #glossary("dashboard")\;
             2. selezionare la #glossary("dashboard") per visualizzare i #glossary("dati anomali") e il superamento soglie
-            3. visualizzare la relativa [#glossary("dashboard")];
+            3. visualizzare la relativa #glossary("dashboard")\;
             4. visualizzare un #glossary("pannello") contenente una tabella, la quale mostra tutte le anomalie rilevate, mostrando il valore dell'anomalia, il sensore che l'ha rilevata e il relativo timestamp; 
             5. visualizzare un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti le soglie impostate nel sistema, mostrando il valore superante la soglia, il sensore che ha rilevato tale valore e il relativo timestamp;
             6. visualizzare un messaggio di avvertenza di dati mancanti, nei #glossary("pannelli"), nel caso di assenza di dati da mostrare.
@@ -338,10 +338,10 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
             1. Scegliere una #glossary("dashboard") da visualizzare;
-            2. Applicare dei filtri, per visualizzare solo i dati provenienti dal sottoinsieme di sensori selezionato, nel caso di #glossary("pannelli") di tipo [#glossary("serie storica")];
+            2. Applicare dei filtri, per visualizzare solo i dati provenienti dal sottoinsieme di sensori selezionato, nel caso di #glossary("pannelli") di tipo #glossary("serie storica")/;
             3. Applicare dei filtri, per visualizzare solo i dati provenienti dai sensori delle tipologie selezionate, nel caso di #glossary("pannelli") contenenti tabelle, le quali comprendono più tipologie di sensori al loro interno; 
             4. Applicare dei filtri, per selezionare solo particolari sensori, mediante il nome, nel caso di #glossary("pannelli") contenenti tabelle;
-            5. Applicare dei filtri, per selezionare solo i dati relativi ad un definito intervallo di tempo, all'interno di un'intera [#glossary("dashboard")];
+            5. Applicare dei filtri, per selezionare solo i dati relativi ad un definito intervallo di tempo, all'interno di un'intera #glossary("dashboard")\;
             6. Visualizzare gli effetti dei filtri applicati ai #glossary("pannelli") sorgente, anche sui #glossary("pannelli") collegati, come #glossary("side effect").
       ],"N/I",[
             UC0\
@@ -624,7 +624,7 @@ table(
             Verificare che un sensore possa inserire nel sistema le rilevazioni della quantità di precipitazioni, espresse in millimetri orari (mm/h), con annesso coordinate e #glossary("timestamp") della rilevazione. 
       ],"N/I","ROF"),
       ([
-            Verificare che un sensore possa inserire nel sistema le rilevazioni dell'inquinamento, espresse in espresso in microgrammi al metro cubo ($#sym.mu g\/m^3$) (#glossary("PM10")), effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione. 
+            Verificare che un sensore possa inserire nel sistema le rilevazioni dell'inquinamento, espresse in microgrammi al metro cubo ($#sym.mu g\/m^3$) (#glossary("PM10")), effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione. 
       ],"N/I","ROF"),
       ([
             Verificare che un sensore possa inserire nel sistema le rilevazioni del livello di riempimento del bacino idrico presso cui è installato, espresse in percentuale, effettuate dal sensore, con annesso coordinate e #glossary("timestamp") della rilevazione. 
