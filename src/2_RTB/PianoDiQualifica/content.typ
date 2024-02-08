@@ -321,7 +321,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ]),
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
-            1. ricevere un'allerta che notifichi il superamento dei 40° celsius; 
+            1. ricevere un'allerta che notifichi il superamento dei 40° Celsius; 
             2. ricevere un'allerta che notifichi il superamento dei 50 millimetri di pioggia all'ora; 
             3. ricevere un'allerta relativa all'inquinamento dell'aria che notifica il superamento di 80#[#sym.mu]g su metro cubo; 
             4. ricevere un'allerta che notifichi il superamento del 70% della capienza di un bacino; 
