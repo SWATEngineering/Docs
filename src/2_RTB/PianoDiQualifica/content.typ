@@ -260,7 +260,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             11. visualizzare un #glossary("pannello") contenente la media della concentrazione di inquinanti dell'aria, espressa in $#sym.mu g\/m^3$,(#glossary("PM10")), che consideri le rilevazioni di tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico;
             12. visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni della percentuale di riempimento dei bacini idrici, effettuate dai singoli sensori e aggregate tramite media aritmetica per intervalli di 5 minuti;
             13. visualizzare un #glossary("pannello") contenente la media della temperatura, espressa in gradi Celsius (°C), considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico;
-            14. visualizzare un #glossary("pannello") contenente il massimo coefficiente di inquinamento dell'aria registrato tra tutti i sensori negli ultimi 5 minuti, espresso in $#sym.mu g\/m^3$, presentato in formato numerico.
+            14. visualizzare un #glossary("pannello") contenente il massimo coefficiente di inquinamento dell'aria registrato tra tutti i sensori negli ultimi 5 minuti, espresso in $#sym.mu g\/m^3$, presentato in formato numerico;
             15. visualizzare un messaggio di avvertenza di dati mancanti, nei vari #glossary("pannelli"), nel caso di assenza di dati da mostrare.
       ],"N/I",[
             UC0\
