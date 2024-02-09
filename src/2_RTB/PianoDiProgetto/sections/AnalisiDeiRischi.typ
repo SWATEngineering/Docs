@@ -119,7 +119,7 @@ Questo rischio si riferisce alla possibilità di variazioni significative rispet
 Questo rischio riguarda la potenziale difficoltà dei membri del team, nel dedicare il tempo richiesto al progetto a causa degli impegni universitari, con particolare riferimento alla sessione di esami invernale.
   - *Identificazione*:
     - Questo rischio è individuabile attraverso l'osservazione di un rallentamento delle attività di progetto;
-    - Nella fase di pianificazione viene identificato il periodo in cui è prevista la fase di preparazione per gli esami;
+    - Nella fase di pianificazione viene identificato il periodo in cui è prevista la fase di preparazione per gli esami.
   - *Valutazione*: pericolosità: alta; occorrenza: media;
   - *Prevenzione*: nei periodi più intensi, si procederà a ridurre le ore di lavoro dedicate al progetto, consentendo così ai membri del team di concentrarsi sugli studi.
 
