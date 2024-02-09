@@ -7,7 +7,7 @@
 
 *Obiettivi dello #glossary[sprint]*: 
 
-  - Proseguire la stesura delle _Norme di Progetto_, includendo descrizioni concise ma rilevanti delle automazioni implementate per agevolare la stesura della #glossary[documentazione];
+  - Proseguire la stesura delle _Norme di Progetto_, includendo descrizioni concise ma rilevanti delle automazioni implementate per agevolare la stesura della #glossary[documentazione]\;
   - Proseguire la stesura del _Piano di Progetto_, con:
     - Aggiornamento di pianificazione e preventivo pertinenti allo #glossary[sprint] 5 e l'inserimento del consuntivo pertinente allo #glossary[sprint] 4;
     - Rimozione di pianificazione e preventivo a lungo termine in quanto troppo distanti dalla realtà concreta e non particolarmente utili per prendere decisioni informate riguardo l'organizzazione futura del lavoro.

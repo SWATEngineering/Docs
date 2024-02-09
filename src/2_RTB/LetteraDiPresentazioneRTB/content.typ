@@ -28,7 +28,7 @@ oltre a tutti i _Verbali Esterni_ ed _Interni_ divisi nelle relative categorie.
 
 Viene inoltre fornito il _Proof of Concept_.
 
-#team si assume nuovamente l'impegno di completare il progetto entro il 01/04/2024, preventivando costi sempre per un importo totale di *11,070€*. 
+#team si assume l'impegno di completare il progetto entro il 08/04/2024, preventivando costi sempre per un importo totale di *11,070€*. 
 L'importo rimane invariato rispetto a quanto preventivato in sede di candidatura, nonostante il team abbia dovuto modificare la ripartizione delle ore produttive a disposizione per ruolo; in particolare, si è deciso di allocare più ore al ruolo di Amministratore, e marginalmente anche ai ruoli di Responsabile e Verificatore. Ne risulta dunque un nuovo preventivo con lo stesso numero di ore e lo stesso costo di partenza.
 
 #v(50pt)

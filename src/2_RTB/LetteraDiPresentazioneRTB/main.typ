@@ -57,7 +57,7 @@
 #set text(30pt)
 #set heading(outlined: false)
 
-= Lettera di Presentazione RTB
+= Lettera di Presentazione RTB 09/02/2024
 
 #v(10%)
 
