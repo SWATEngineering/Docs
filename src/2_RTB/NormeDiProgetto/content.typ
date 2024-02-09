@@ -1004,7 +1004,7 @@ Per utilizzare efficacemente lo script per il calcolo preventivo, si procede nel
 
 Si analizzano le attività svolte, i tempi impiegati rispetto alle stime previste e qualsiasi deviazione dai piani originali. Tale consuntivo rappresenta una preziosa fonte di apprendimento per il team, consentendo di identificare aree di miglioramento e di ottimizzare la pianificazione futura.
 
-È stato sviluppato uno script in #glossary[Python], integrato con #glossary[Typst], per semplificare la generazione automatica di tabelle e grafici relativi al consuntivo di ogni singolo #glossary[sprint] del progetto. L'automazione coinvolge l'estrazione dei dati dal foglio di calcolo condiviso, dove vengono registrate le ore produttive del team. I dati vengono successivamente organizzati per #glossary[sprint] e archiviati in file CSV.
+È stato sviluppato uno script in #glossary[Python] (timeresource_sheets_downloader.py), integrato con #glossary[Typst], per semplificare la generazione automatica di tabelle e grafici relativi al consuntivo di ogni singolo #glossary[sprint] del progetto. L'automazione coinvolge l'estrazione dei dati dal foglio di calcolo condiviso, dove vengono registrate le ore produttive del team. I dati vengono successivamente organizzati per #glossary[sprint] e archiviati in file CSV.
 
 L'elaborazione comprende la creazione di un DataFrame consolidato che rappresenta le ore lavorate per ogni ruolo e membro del team durante uno #glossary[sprint], includendo anche i costi associati. I risultati di questa analisi vengono salvati in un file CSV.
 
