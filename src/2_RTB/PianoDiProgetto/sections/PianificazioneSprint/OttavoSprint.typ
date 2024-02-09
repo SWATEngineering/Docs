@@ -16,6 +16,6 @@
   - Incorporare il nuovo BAC (Budget At Completion) all'interno del _Piano di Qualifica v1.0_ e terminarne la revisione in stile #glossary[walkthrough]:
     - Evidenziare l'adattamento del team alla scarsità di ore da Amministratore e Analista con il nuovo preventivo a partire dallo #glossary[sprint] 7 (incluso).
   - Terminare la revisione in stile #glossary[walkthrough] dell'_Analisi dei Requisiti v1.0_;
-  - Apportare le modifiche consigliate dalla Proponente al #glossary[PoC] (visualizzazione di tabelle contenenti i dati grezzi generati dai simulatori di sensori e filtraggio dei dati) in vista della demo prevista per la prima revisione #glossary[RTB];
-  - Terminare la preparazione della presentazione e la stesura della _Lettera di Presentazione_ in vista della revisione #glossary[RTB];
+  - Apportare le modifiche consigliate dalla Proponente al #glossary[PoC] (visualizzazione di tabelle contenenti i dati grezzi generati dai simulatori di sensori e filtraggio dei dati) in vista della demo prevista per la prima revisione #glossary[RTB]\;
+  - Terminare la preparazione della presentazione e la stesura della _Lettera di Presentazione_ in vista della revisione #glossary[RTB]\;
   - Candidatura alla revisione #glossary[RTB].

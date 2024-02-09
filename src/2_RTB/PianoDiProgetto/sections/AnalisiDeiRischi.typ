@@ -1,12 +1,12 @@
 #import "../functions.typ": glossary, team
 
 = Analisi dei rischi  
-L'attività di analisi dei rischi mira ad anticipare possibili situazioni avverse che potrebbero emergere durante l'iter del progetto. Questa pratica consiste nel riconoscere, comprendere e classificare tali rischi in base alla loro probabilità di occorrenza e all'impatto sullo sviluppo del lavoro, cercando, nel contempo, soluzioni preventive per mitigarne gli effetti dannosi. L'analisi dettagliata dei rischi è orientata a ottimizzare il progresso del progetto, consentendo di individuare nuove situazioni critiche e perfezionare le strategie atte a minimizzarne gli impatti, mediante un costante monitoraggio. Di seguito vengono presentati i rischi identificati attraverso un processo di valutazione strutturato, che consente di evidenziare le fasi di individuazione, valutazione e prevenzione di tali rischi:
+L'attività di analisi dei rischi mira ad anticipare possibili situazioni avverse che possono emergere durante l'iter del progetto. Questa pratica consiste nel riconoscere, comprendere e classificare tali rischi in base alla loro probabilità di occorrenza e all'impatto sullo sviluppo del lavoro, cercando anche soluzioni preventive per mitigarne gli effetti dannosi. L'analisi dettagliata dei rischi è orientata all'ottimizzazione del progresso del progetto, in quanto consente di individuare nuove situazioni critiche e di perfezionare le strategie atte a minimizzarne gli impatti, mediante un monitoraggio costante. Di seguito vengono presentati i rischi identificati attraverso un processo di valutazione strutturato, che consente di evidenziare le fasi di individuazione, valutazione e prevenzione di tali rischi:
 
 
-  - *Identificazione*: coinvolge il riconoscimento e l'enumerazione delle possibili situazioni sfavorevoli che potrebbero verificarsi durante il progetto. È il processo di individuare e catalogare in modo esauriente tutti i possibili elementi che potrebbero rappresentare una minaccia;
-  - *Valutazione*: implica l'analisi dettagliata di ciascuna situazione rilevata durante l'identificazione, assegnando loro un grado di probabilità e impatto per comprendere meglio il loro potenziale effetto sul progetto. Questo processo aiuta a classificare i rischi sulla base della loro gravità e della loro probabilità di manifestarsi;
-  - *Prevenzione*: coinvolge l'adozione di misure o strategie proattive per ridurre o mitigare l'incidenza e l'impatto dei rischi individuati. Questo comprende l'implementazione di azioni preventive e la messa in atto di piani di contingenza per affrontare efficacemente eventuali situazioni avverse.
+  - *Identificazione*: consiste nel riconoscimento e nell'enumerazione delle possibili situazioni sfavorevoli che possono verificarsi durante il progetto. È il processo di individuare e catalogare in modo esauriente tutti gli elementi che possono rappresentare una minaccia;
+  - *Valutazione*: consiste nell'analisi dettagliata di ciascuna situazione rilevata durante l'identificazione, comprende anche l'assegnazione di un grado di probabilità di occorrenza e impatto per comprendere meglio il potenziale effetto sul progetto. Questo processo aiuta a classificare i rischi sulla base della loro gravità e della loro probabilità di manifestarsi;
+  - *Prevenzione*: consiste nell'adozione di misure o strategie pro-attive per ridurre o mitigare l'incidenza e l'impatto dei rischi individuati. Questo comprende l'implementazione di azioni preventive e la messa in atto di piani di contingenza per affrontare efficacemente eventuali situazioni avverse.
 
 I rischi sono stati suddivisi a seconda della loro sfera di impatto:
   - Rischi Tecnologici;
@@ -24,7 +24,7 @@ La mancanza di familiarità o esperienza con le tecnologie specifiche impiegate 
     - Lavoro in coppia: durante le fasi in cui lo sviluppo di codice richiede un contributo più rilevante, il team adotterà un approccio di lavoro in coppia. Questa pratica consentirà ai membri del team di condividere conoscenze e competenze, aiutandosi reciprocamente a superare le lacune individuali nelle conoscenze tecnologiche.
     
 === RT2 - Difficoltà nell'adozione degli strumenti di gestione del progetto
-Il team potrebbe incontrare sfide nell'apprendere l'utilizzo e nell'integrazione dei nuovi strumenti di gestione del progetto, causando ritardi nell'effettiva implementazione di un #glossary("Way of working") efficiente.
+Il team potrebbe incontrare sfide nell'apprendere l'utilizzo e nell'integrazione dei nuovi strumenti di gestione del progetto, causando ritardi nell'effettiva implementazione di un #glossary("way of working") efficiente.
   - *Identificazione*: la difficoltà nell'adozione degli strumenti può manifestarsi quando i membri del team incontrano dubbi o incertezze riguardo alle procedure da seguire o all'utilizzo degli strumenti stessi;
   - *Valutazione*: pericolosità: media; occorrenza: bassa;
   - *Prevenzione*:
@@ -79,11 +79,11 @@ I diversi livelli di competenze e una comunicazione poco trasparente possono por
     - Promuovere la comprensione reciproca: il team si deve sforzare nel comprendere le condizioni e i punti di vista degli altri componenti per creare un clima di progetto positivo, indirizzato verso il miglioramento.
 
 === RC5 - Context Switch
-Con l'espressione #glossary("Context Switch") ci si riferisce al cambiamento dei ruoli all'interno del team. Questo passaggio da un ruolo ad un altro comporta la necessità di adattarsi rapidamente alle nuove responsabilità e di comprendere appieno ciò che è stato svolto dal membro del team che ha ricoperto un determinato ruolo per ultimo.
+Con l'espressione #glossary("context Switch") ci si riferisce al cambiamento dei ruoli all'interno del team. Questo passaggio da un ruolo ad un altro comporta la necessità di adattarsi rapidamente alle nuove responsabilità e di comprendere appieno ciò che è stato svolto dal membro del team che ha ricoperto un determinato ruolo per ultimo.
   - *Identificazione*: difficoltà  nella comprensione del lavoro svolto fino al quel momento; 
   - *Valutazione*: pericolosità: bassa; occorrenza: alta;
   - *Prevenzione*:
-      - La persona, che ha precedentemente occupato quel ruolo specifico, offre supporto al membro del team che ha assunto ora quella posizione, facilitandone la transizione;
+      - La persona che ha precedentemente occupato quel ruolo specifico offre supporto al membro del team che ha assunto ora quella posizione, facilitandone la transizione;
       - Assistere l'Amministratore nella creazione delle attività per il prossimo #glossary[sprint]\;
       - Dedicare il primo giorno unicamente allo studio di quanto fatto precedentemente, in modo da riuscire a sincronizzarsi con il contesto del ruolo.
 
@@ -93,9 +93,9 @@ La comprensione erronea dei requisiti indica il potenziale malinteso o fraintend
   - *Identificazione*: questo rischio può manifestarsi quando ci sono ambiguità nei requisiti documentati o quando i membri del team interpretano in modo differente i requisiti. È evidente quando emergono domande costanti riguardo ai requisiti durante le discussioni o quando si presentano discrepanze nelle interpretazioni durante le attività di progettazione;
   - *Valutazione*: pericolosità: alta; occorrenza: media;
   - *Prevenzione*: 
-    - Analisi dei Requisiti: creazione di un documento chiaro e dettagliato contenente casi d'uso, requisiti funzionali e non funzionali, in modo da offrire una visione esaustiva e condivisa dei requisiti del progetto;
+    - _Analisi dei Requisiti_: creazione di un documento chiaro e dettagliato contenente casi d'uso, requisiti funzionali e non funzionali, in modo da offrire una visione esaustiva e condivisa dei requisiti del progetto;
     - Sessioni di analisi e confronto dei requisiti con la Proponente: organizzazione di incontri regolari con la Proponente, durante i quali verranno presentati i requisiti identificati, discusse le interpretazioni e validate le esigenze. Queste sessioni permetteranno di raffinare e chiarire i requisiti iniziali, riducendo il rischio di interpretazioni erronee e garantendo una comprensione accurata delle necessità del cliente;
-    - Adozione del #glossary[Framework Scrum]: l'implementazione del #glossary[framework Scrum] fornisce continui momenti di verifica e adattamento durante lo sviluppo del progetto. Tale approccio offre l'opportunità di identificare tempestivamente eventuali fraintendimenti o ambiguità nei requisiti, permettendo al team di chiarirli e correggerli nel minor tempo possibile.
+    - Adozione del #glossary[framework Scrum]: l'implementazione del #glossary[framework Scrum] fornisce continui momenti di verifica e adattamento durante lo sviluppo del progetto. Tale approccio offre l'opportunità di identificare tempestivamente eventuali fraintendimenti o ambiguità nei requisiti, permettendo al team di chiarirli e correggerli nel minor tempo possibile.
 
 === RP2 - Disallineamento delle componenti architetturali
 Questo rischio riguarda la possibilità di progettare componenti all'interno dell'#glossary[architettura] del #glossary[sistema] che potrebbero risultare incompatibili o in disaccordo una volta integrate o combinate. Ciò può generare conflitti nell'interoperabilità delle parti e compromettere la coesione del #glossary[sistema] nel suo insieme.
@@ -104,7 +104,7 @@ Questo rischio riguarda la possibilità di progettare componenti all'interno del
   - *Prevenzione*: 
     - Metodologia di progettazione modulare: adottare un approccio modulare durante la progettazione architetturale, suddividendo il #glossary[sistema] in componenti chiare e ben definite. Questo aiuta a identificare in anticipo eventuali discrepanze tra le parti e favorisce l'interoperabilità;
     - Revisioni incrociate: effettuare revisioni incrociate della progettazione tra membri del team per identificare potenziali disallineamenti o incongruenze nelle interfacce delle varie componenti. Questa pratica consente di individuare e risolvere precocemente i conflitti;
-    - Test di integrazione preliminari: condurre test preliminari di integrazione delle componenti principali nella fase iniziale del progetto. Questi test aiutano a valutare la compatibilità e l'interoperabilità delle varie parti, riducendo così il rischio di disallineamento nell'#glossary[architettura] finale.
+    - Test di integrazione preliminari: condurre test preliminari di integrazione delle componenti principali agli inizi della progettazione. Questi test aiutano a valutare la compatibilità e l'interoperabilità delle varie parti, riducendo così il rischio di disallineamento nell'#glossary[architettura] finale.
 
 === RP3 - Variazioni nei tempi e costi del progetto
 Questo rischio si riferisce alla possibilità di variazioni significative rispetto alle tempistiche e ai costi pianificati inizialmente per lo sviluppo del progetto.
@@ -116,7 +116,7 @@ Questo rischio si riferisce alla possibilità di variazioni significative rispet
     - Monitoraggio costante: si mantiene un monitoraggio costante del progresso del progetto, permettendo l'aggiornamento della pianificazione in caso di variazioni significative. In particolare, all'interno dell'#glossary[ITS] si effettua un costante aggiornamento delle date di inizio e fine per ogni issue, riflettendo con precisione le tempistiche effettive. Inoltre, si utilizza regolarmente la vista Gantt all'interno della Kanban Board del progetto in GitHub per visualizzare la pianificazione temporale e individuare potenziali variazioni o sovrapposizioni nelle attività pianificate.
 
 === RP4 - Impegni universitari
-Questo rischio riguarda la potenziale difficoltà dei membri del team, nel dedicare il tempo richiesto al progetto a causa degli impegni universitari, con particolare riferimento alla sessione di esami invernale che si sovrappone al periodo del progetto.
+Questo rischio riguarda la potenziale difficoltà dei membri del team, nel dedicare il tempo richiesto al progetto a causa degli impegni universitari, con particolare riferimento alla sessione di esami invernale.
   - *Identificazione*:
     - Questo rischio è individuabile attraverso l'osservazione di un rallentamento delle attività di progetto;
     - Nella fase di pianificazione viene identificato il periodo in cui è prevista la fase di preparazione per gli esami;
@@ -140,5 +140,5 @@ I rischi individuati vengono riportati in tabella, assieme alla loro pericolosit
   [*RP1* - Comprensione erronea dei requisiti], [Alta], [Media],
   [*RP2* - Disallineamento delle componenti architetturali], [Media], [Media],
   [*RP3* - Variazioni nei tempi e costi del progetto], [Alta], [Media],
-  [*RP4* - Impegni universitari], [Alta], [Alta]
+  [*RP4* - Impegni universitari], [Alta], [Media]
 )

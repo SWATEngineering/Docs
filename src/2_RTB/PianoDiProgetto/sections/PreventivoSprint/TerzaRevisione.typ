@@ -24,7 +24,7 @@
 #let rimanente_soldi = rimanente_soldi - costo_ruoli_ore.values().sum();
 
 
-== Terza Revisione (Customer Acceptance #glossary[CA])
+== Terza revisione (Customer Acceptance #glossary[CA])
 
 === Prospetto economico
 In questa #glossary[milestone], il costo per ogni ruolo sarà come da tabella:

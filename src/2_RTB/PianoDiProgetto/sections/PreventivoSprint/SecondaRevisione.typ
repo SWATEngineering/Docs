@@ -23,7 +23,7 @@
 #let rimanente_ore = rimanente_ore - ruoli_ore.values().sum();
 #let rimanente_soldi = rimanente_soldi - costo_ruoli_ore.values().sum();
 
-== Seconda Revisione (Product Baseline #glossary[PB])
+== Seconda revisione (Product Baseline #glossary[PB])
 
 === Prospetto economico
 In questa #glossary[milestone], il costo per ogni ruolo sarà come da tabella:

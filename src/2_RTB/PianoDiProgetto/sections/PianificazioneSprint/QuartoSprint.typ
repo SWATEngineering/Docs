@@ -7,7 +7,7 @@
 
 *Obiettivi dello #glossary[sprint]*: 
 
-  - Proseguire la stesura delle _Norme di Progetto_, ponendo particolare attenzione sul controllo di versione e la gestione delle #glossary[repository];
+  - Proseguire la stesura delle _Norme di Progetto_, ponendo particolare attenzione sul controllo di versione e la gestione delle #glossary[repository]\;
   - Proseguire la stesura del _Piano di Progetto_, con:
     - Aggiornamento di pianificazione e preventivo pertinenti allo #glossary[sprint] 4 e l'inserimento del consuntivo pertinente allo #glossary[sprint] 3;
     - Creazione di un'automazione per creare le tabelle e i grafici pertinenti ai consuntivi a partire da quanto riportato dal team all'interno dello #glossary[spreadsheet] "Time & Resource Manager".
