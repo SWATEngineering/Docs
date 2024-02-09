@@ -67,13 +67,13 @@ Il processo si articola in diverse fasi:
         - Completamento e consegna.
 
 === Rapporti con la Proponente
-La Proponente si è resa disponibile attraverso vari canali, come e-mail, Google Meet e Element, per stabilire una comunicazione frequente e risolvere prontamente eventuali dubbi o domande che possono emergere durante lo svolgimento del progetto. Sin dall'inizio si è concordato di organizzare incontri regolari, in particolare al termine di ciascuno #glossary[sprint], fissati per il venerdì alle 10:30.  Questi incontri, che assumono la forma di sessioni di #glossary[Sprint Review], consentono al team di esporre quanto realizzato e di ricevere feedback sull'andamento del lavoro.
+La Proponente si è resa disponibile attraverso vari canali, come e-mail, Google Meet e Element, per stabilire una comunicazione frequente e risolvere prontamente eventuali dubbi o domande che possono emergere durante lo svolgimento del progetto. Sin dall'inizio si è concordato di organizzare incontri regolari, in particolare al termine di ciascuno #glossary[sprint], fissati per il venerdì alle 10:30.  Questi incontri, che assumono la forma di sessioni di #glossary[Sprint review], consentono al team di esporre quanto realizzato e di ricevere feedback sull'andamento del lavoro.
 
 Gli incontri con la Proponente si suddividono principalmente in tre categorie:
 
         - *Incontri di formazione*: finalizzati ad acquisire familiarità con nuove tecnologie, approfondire concetti specifici o migliorare competenze richieste dal progetto;
         - *Incontri di analisi dei requisiti*: mirati a chiarire, discutere e validare i requisiti del progetto, garantendo una comprensione chiara e condivisa tra il team e la Proponente;
-        - *#glossary[Sprint Review]*: fase conclusiva di ogni #glossary[sprint] durante la quale vengono presentati i risultati ottenuti, con l'intento di ricevere feedback dalla Proponente.
+        - *#glossary[Sprint review]*: fase conclusiva di ogni #glossary[sprint] durante la quale vengono presentati i risultati ottenuti, con l'intento di ricevere feedback dalla Proponente.
 
 Ogni incontro con la Proponente viene sintetizzato e documentato nel verbale esterno di riferimento. Il verbale viene successivamente presentato alla Proponente per essere validato tramite firma, ottenendo così un'approvazione formale del resoconto delle discussioni avvenute all'incontro.
 
@@ -167,7 +167,7 @@ table(
       [*VAC*],[Variance At Completion],
       [*BV*],[Budget Variance]
 ),
-caption:[Metriche Fornitura],
+caption:[Metriche di fornitura],
 )
 
 
@@ -210,7 +210,7 @@ Gli scenari d'uso sono organizzati in sequenze di azioni, illustrando le operazi
 È fondamentale notare che la rappresentazione fornita dai diagrammi dei casi d'uso non si addentra nei dettagli implementativi, poiché il loro scopo principale è descrivere la funzionalità, considerandola come un elemento esterno al #glossary[sistema].
 
 I diagrammi dei casi d'uso sono composti da:
-        - *#glossary[Attore]*: rappresenta un agente esterno coinvolto nelle interazioni con il #glossary[sistema]. Si tratta di una qualsiasi entità in grado di interagire con il #glossary[sistema]; infatti ogni caso d'uso determina una funzionalità che viene messa a disposizione di tale #glossary[attore], tuttavia, senza entrare nei dettagli implementativi.
+        - *#glossary[Attore]*: rappresenta un agente esterno coinvolto nelle interazioni con il #glossary[sistema]. Si tratta di una qualsiasi entità in grado di interagire con il #glossary[sistema]\; infatti ogni caso d'uso determina una funzionalità che viene messa a disposizione di tale #glossary[attore], tuttavia, senza entrare nei dettagli implementativi.
                 
                 A livello di diagramma, l'#glossary[attore] è simboleggiato da un'icona umana stilizzata, identificabile mediante un'etichetta univoca e rappresentativa, posizionata sotto di essa.
 
@@ -366,12 +366,12 @@ La fase di progettazione segue l'analisi dei requisiti, dove sono definite le ne
 
 Si definiscono tre sottoattività: 
 
-        + *Technology #glossary[Baseline]*: implica la selezione e la definizione delle tecnologie di base utilizzate per la realizzazione del #glossary[sistema]. Questo comprende decisioni relative a linguaggi di programmazione, librerie e #glossary[framework]. Tale processo porta alla creazione di un Proof of Concept (#glossary("PoC"));
+        + *Requirements and Technology Baseline (#glossary[RTB])*: implica la selezione e la definizione delle tecnologie di base utilizzate per la realizzazione del #glossary[sistema]. Questo comprende decisioni relative a linguaggi di programmazione, librerie e #glossary[framework]. Tale processo porta alla creazione di un Proof of Concept (#glossary("PoC"));
 
                 Include:
                 - *Proof of Concept (#glossary[PoC])*: consiste nella creazione di una versione parziale del prodotto, includendo alcune delle funzionalità stabilite durante l'analisi dei requisiti. L'obiettivo è valutare la fattibilità del prodotto completo;
                 - *Scelte tecnologiche*: consiste nello stabilire quali tecnologie adottare per lo sviluppo del #glossary[PoC], anche su consiglio della Proponente.
-        + *Progettazione Architetturale*: definizione ad alto livello dell'#glossary[architettura] del #glossary[sistema]; si concentra sulla suddivisione del #glossary[sistema] in componenti e moduli, definendo le relazioni tra di essi e specificando le linee guida per l'organizzazione e l'interazione delle varie parti;
+        + *Progettazione Architetturale*: definizione ad alto livello dell'#glossary[architettura] del #glossary[sistema]\; si concentra sulla suddivisione del #glossary[sistema] in componenti e moduli, definendo le relazioni tra di essi e specificando le linee guida per l'organizzazione e l'interazione delle varie parti;
         + *Product Baseline (#glossary[PB])*: segna un punto stabile nell'attività di progettazione, in cui le specifiche tecniche, le funzionalità principali e l'#glossary[architettura] del prodotto sono definite in modo dettagliato e accettate dalle parti coinvolte. Include tutti gli elementi essenziali e i requisiti chiave del prodotto che devono essere soddisfatti, fornendo una base solida per lo sviluppo continuo del prodotto. Questo processo porta infine alla realizzazione di un Minimum Viable Product (#glossary("MVP"));
                 Include:
                 - #glossary("Design Patterns")\;
@@ -622,15 +622,15 @@ Due modifiche, fatte in momenti diversi, differiscono l'una dall'altra solo se h
 
 ==== Prima pagina 
 
-        - *logo team*: situato in alto a destra;
+        - *Logo team*: situato in alto a destra;
         - *Titolo*: 
                 - Nome del documento, se diverso dai verbali;
-                - per i verbali interni: Verbale Interno;
-                - per i verbali esterni: Verbale Esterno;
+                - Per i verbali interni: Verbale Interno;
+                - Per i verbali esterni: Verbale Esterno;
         - *Data*: solo se si tratta di verbali, vedere @formato;
         - *Contatti*: l'email del team;
         - *Versione*: l'ultima versione del documento;
-        - *logo università*: in basso a destra.
+        - *Logo università*: in basso a destra.
 
 ==== Intestazione
 
@@ -754,14 +754,14 @@ Come sistema di controllo di versione si utilizza Git.
  
 
 Vengono utilizzate le seguenti #glossary[repository]:
-        - #link("https://github.com/SWATEngineering/Docs"): questa #glossary[repository] viene impiegata dal team per condividere e revisionare il codice sorgente legato alla #glossary[documentazione] del progetto. Viene utilizzata per collaborare, revisionare e mantenere aggiornati i documenti di lavoro, consentendo ai membri del team di contribuire e gestire in modo efficiente la #glossary[documentazione];
+        - #link("https://github.com/SWATEngineering/Docs"): questa #glossary[repository] viene impiegata dal team per condividere e revisionare il codice sorgente legato alla #glossary[documentazione] del progetto. Viene utilizzata per collaborare, revisionare e mantenere aggiornati i documenti di lavoro, consentendo ai membri del team di contribuire e gestire in modo efficiente la #glossary[documentazione]\;
 
         - #link("https://github.com/SWATEngineering/SWATEngineering.github.io"): questa #glossary[repository] funge da piattaforma per i documenti compilati e approvati. Il sito web #link("https://swatengineering.github.io/") rappresenta la versione web della #glossary[documentazione] finale e approvata dal team. È utilizzata per presentare al pubblico una visione consolidata dei documenti di progetto;
 
         - #link("https://github.com/SWATEngineering/InnovaCity"): questa #glossary[repository] è dedicata alla condivisione e revisione del codice sorgente relativo al prodotto software "InnovaCity". È qui che il team lavora e collabora sul codice del prodotto stesso, consentendo una gestione centralizzata del lavoro di sviluppo e delle modifiche apportate al software.
 
 
-All'interno dei #glossary[repository] Docs e Innovacity si utilizza il #glossary[Rebase workflow] come metodo di gestione, con l'utilizzo dei Feature branch per separare logicamente il lavoro da svolgere. Nel primo #glossary[repository] però, i Feature branch si derivano direttamente dal main, mentre nel secondo si derivano dal branch dev.
+All'interno dei #glossary[repository] Docs e Innovacity si utilizza il #glossary[rebase workflow] come metodo di gestione, con l'utilizzo dei Feature branch per separare logicamente il lavoro da svolgere. Nel primo #glossary[repository] però, i Feature branch si derivano direttamente dal main, mentre nel secondo si derivano dal branch dev.
 Questo impone quindi che, prima di andare ad effettuare la chiusura di una Pull request, si vada ad effettuare un rebase del branch di derivazione, per rendere il branch di sviluppo aggiornato rispetto alla base.
 
 I Feature branch vengono aperti a partire dalle issue create nell'Issue Tracking System (vedi @its). Si procede poi ad associare una Pull request, a una o più issue collegate tra loro, per effettuare la verifica.
@@ -806,7 +806,7 @@ Inoltre GitHub impedisce  l'unione dei rami oggetto di pull request fino a quand
 Ciò garantisce che ogni prodotto che viene integrato nel ramo principale, sia stato effettivamente revisionato da almeno un membro del team, riducendo il rischio di introdurre errori. 
 Il Verificatore, a seguito di una revisione positiva, accetta la pull request con la metodologia "squash and merge". Nell'eventualità in cui il branch presenti dei conflitti, è responsabilità dell'autore risolverli prima di procedere con l'unione del branch. Una volta effettuato il merge, il Verificatore si occupa dell'eliminazione sicura del branch. 
 
-===== Elementi esterni al repository
+===== Elementi esterni al #glossary[repository]
 
 Potrebbero esservi delle issue aperte all'interno dell'#glossary("ITS") che non hanno un corrispondente documento o prodotto in generale, all'interno del #glossary[repository]. Per queste, il ciclo di vita segue il normale flusso attraverso i diversi stati elencati nella @its. La verifica viene effettuata attraverso i commenti della issue stessa, che avranno la seguente forma:
 - richiesta cambiamenti:
@@ -825,11 +825,11 @@ L'analisi statica rappresenta un'esplorazione approfondita del codice o della #g
 
 Il Verificatore, nel contesto della #glossary[documentazione] o del codice, può condurre l'analisi statica tramite due metodologie: #glossary[walkthrough] o #glossary[inspection]. La metodologia preferita dal team, e utilizzata con maggior frequenza, è l'#glossary[inspection].
 
-==== Inspection
+==== #glossary[Inspection]
 
 In questo processo, il Verificatore adotta un approccio strutturato, seguendo una sequenza di passaggi ben definiti. Utilizza liste di controllo per esaminare in dettaglio il documento o il codice. Per dettagli specifici sulle checklist usate, si rimanda al documento _Piano di Qualifica v1.0_. 
 
-==== Walkthrough
+==== #glossary[Walkthrough]
 
 Contrariamente all'#glossary[inspection], il #glossary[walkthrough] è un approccio più esplorativo e che lascia maggiore spazio alla collaborazione tra l’autore e il Verificatore. Questa metodologia prevede una lettura a pettine del prodotto con l'obiettivo di analizzare struttura e contenuto nel loro insieme. 
 
@@ -959,7 +959,7 @@ table(
       [*MNS*],[Metriche Non Soddisfatte]
       
 ),
-caption:[Metriche relative ala gestione della qualità],
+caption:[Metriche relative alla gestione della qualità],
 )
 
 
@@ -1062,7 +1062,7 @@ I ruoli assunti sono i seguenti:
         - Specifica dei casi d'uso per comprendere in dettaglio i requisiti funzionali del #glossary[sistema]\;
         - Raccolta dei requisiti per definire le necessità e le funzionalità richieste;
         - Stesura del documento _Analisi dei Requisiti_;
-        - Creazione diagrammi #glossary[UML];
+        - Creazione diagrammi #glossary[UML]\;
 
 ==== Progettista
 
@@ -1141,7 +1141,7 @@ Ogni issue è composta da:
                         + Medium;
                         + High;
                         + Large;
-        - *Intervallo Temporale*: una data di inizio e una di fine;
+        - *Intervallo temporale*: una data di inizio e una di fine;
         - *#glossary[Milestone]*: #glossary[milestone] associata alla issue, se il completamento non è possibile entro lo #glossary[sprint] attuale, è necessario spostare l'issue nella #glossary[milestone] successiva.
 
 === Gestione dei rischi 
@@ -1205,7 +1205,7 @@ Le linee guida per le riunioni:
 
 Gli incontri hanno due modalità:
 
-        - *Fisici*: per gli stand-up meeting quotidiani (#glossary("Daily Scrum")) di 5 minuti in cui si discutono brevemente le attività completate il giorno precedente e si espongono le attività pianificate per il futuro;
+        - *Fisici*: per gli stand-up meeting quotidiani (#glossary("daily Scrum")) di 5 minuti in cui si discutono brevemente le attività completate il giorno precedente e si espongono le attività pianificate per il futuro;
         - *Virtuali*: si svolgono chiamate o video di gruppo in cui si discutono eventuali dubbi o difficoltà riscontrate. Lo strumento adatto per questo scopo è Discord.
 
 ===== Incontri esterni 
@@ -1256,13 +1256,13 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
 
                 Formula:  $"EV" = "Percentuale di completamento del lavoro" dot "BAC"$
 
-                in cui la percentuale di completamento del lavoro è misurata con le ore produttive effettive degli #glossary[sprint]; in particolare la percentuale è costituita dal rapporto tra le ore effettive e le ore produttive totali a disposizione (570)
+                in cui la percentuale di completamento del lavoro è misurata con le ore produttive effettive degli #glossary[sprint]\; in particolare la percentuale è costituita dal rapporto tra le ore effettive e le ore produttive totali a disposizione (570)
 
         - *PV*: Planned Value - il valore del lavoro pianificato fino a un dato momento
 
                 Formula: $"PV" = "Percentuale di pianificazione del lavoro" dot "BAC"$
 
-                in cui la percentuale di pianificazione del lavoro è misurata con le ore preventivate per gli #glossary[sprint]; in particolare la percentuale è costituita dal rapporto tra le ore preventivate e le ore produttive totali a disposizione (570)
+                in cui la percentuale di pianificazione del lavoro è misurata con le ore preventivate per gli #glossary[sprint]\; in particolare la percentuale è costituita dal rapporto tra le ore preventivate e le ore produttive totali a disposizione (570)
 
         - *AC*: Actual Cost - il costo effettivo sostenuto fino a un dato momento;
 
@@ -1270,7 +1270,7 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
                 
                 Formula: $"CPI" = "EV" / "AC"$;
 
-        - *EAC*: Estimated at Completion - revisione del valore stimato per la realizzazione del progetto, ossia il BAC rivisto allo stato  corrente del progetto
+        - *EAC*: Estimated At Completion - revisione del valore stimato per la realizzazione del progetto, ossia il BAC rivisto allo stato  corrente del progetto
 
                 Formula: $"EAC" = "BAC" / "CPI"$;
 
@@ -1278,7 +1278,7 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
 
                 Formula: $"ETC" = "EAC" - "AC"$;
 
-        - *VAC*: Variance at Completion - la differenza tra il budget previsto e il budget attuale alla fine del progetto
+        - *VAC*: Variance At Completion - la differenza tra il budget previsto e il budget attuale alla fine del progetto
 
                 Formula: $"VAC" = "BAC" - "EAC"$;
 
@@ -1328,7 +1328,7 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
                 
                 Per calcolarlo si usa uno strumento online: #link("https://farfalla-project.org/readability_static/");
 
-        - *CO*: Correttezza ortografica - numero errori grammaticali ed ortografici in un documento.
+        - *CO*: Correttezza Ortografica - numero errori grammaticali ed ortografici in un documento.
 
 === Gestione della qualità  <metriche_gestione_qualità>
 
@@ -1352,7 +1352,7 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
 
 === Usabilità   
 
-        - *FU*: Facilità di utilizzo - quantità di click che l'utente deve effettuare per raggiungere un obiettivo desiderato;
+        - *FU*: Facilità di Utilizzo - quantità di click che l'utente deve effettuare per raggiungere un obiettivo desiderato;
 
         - *TA*: Tempo di Apprendimento - il tempo richiesto da una persona per comprendere e padroneggiare l'uso del #glossary[sistema].
 
@@ -1377,7 +1377,7 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
 
         - *SFIN*: Structure Fan In - rappresenta il numero di moduli o componenti direttamente collegati o dipendenti da un modulo o una funzione specifica; un fan-in elevato indica che molte parti del #glossary[sistema] dipendono da un particolare modulo;
 
-        - *SFOUT*: Structure Fan Out - rappresenta il numero di dipendenze o connessioni che un componente o modulo particolare ha con altri componenti o moduli. Misura quanti altri elementi dipendono o interagiscono con un dato elemento all'interno di un #glossary[sistema]; un fan-out elevato può indicare che un modulo ha molte dipendenze da altri moduli;
+        - *SFOUT*: Structure Fan Out - rappresenta il numero di dipendenze o connessioni che un componente o modulo particolare ha con altri componenti o moduli. Misura quanti altri elementi dipendono o interagiscono con un dato elemento all'interno di un #glossary[sistema]\; un fan-out elevato può indicare che un modulo ha molte dipendenze da altri moduli;
 
         -  *CCM*: Complessità Ciclomatica per Metodo - quantifica la complessità del codice misurando il numero di percorsi linearmente indipendenti attraverso il grafo di controllo di flusso del metodo. Più è alta la complessità ciclomatica, maggiore è la complessità del codice.
 
