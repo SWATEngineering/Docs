@@ -822,6 +822,10 @@ Considerando che gli otto #glossary[sprint] effettuati corrispondono ad un perio
 
 // == Qualità di Processo - Codifica TODO: non ha senso in questa fase del progetto
 
+
+#pagebreak()
+
+
 == Qualità di processo - documentazione
 
 === Indice Gulpease
