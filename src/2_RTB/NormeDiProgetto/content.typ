@@ -673,7 +673,7 @@ Il verbale esterno oltre alle sezioni sopra elencate ha una pagina per la conval
                 - I termini di glossario (seguiti da #sub[G]).
         - *Caratteri maiuscoli*: 
                 - Le iniziali dei nomi;
-                - Le lettere che compongono un acronimo;
+                - Le lettere che compongono un acronimo e le iniziali della rispettiva definizione;
                 - Le iniziali dei ruoli svolti dai componenti del gruppo;
                 - L'iniziale del termine "Proponente";
                 - Prima lettera di ogni elenco puntato.
