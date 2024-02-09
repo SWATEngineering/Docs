@@ -67,7 +67,7 @@ Il processo si articola in diverse fasi:
         - Completamento e consegna.
 
 === Rapporti con la Proponente
-La Proponente si è resa disponibile attraverso vari canali, come e-mail, Google Meet e Element, per stabilire una comunicazione frequente e risolvere prontamente eventuali dubbi o domande che possono emergere durante lo svolgimento del progetto. Sin dall'inizio si è concordato di organizzare incontri regolari, in particolare al termine di ciascuno #glossary[sprint], fissati per il venerdì alle 10:30.  Questi incontri, che assumono la forma di sessioni di #glossary[Sprint review], consentono al team di esporre quanto realizzato e di ricevere feedback sull'andamento del lavoro.
+La Proponente si è resa disponibile attraverso vari canali, come e-mail, Google Meet e Element, per stabilire una comunicazione frequente e risolvere prontamente eventuali dubbi o domande che possono emergere durante lo svolgimento del progetto. Sin dall'inizio si è concordato di organizzare incontri regolari, in particolare al termine di ciascuno #glossary[sprint], fissati per il venerdì alle 10:30.  Questi incontri, che assumono la forma di sessioni di #glossary[sprint review], consentono al team di esporre quanto realizzato e di ricevere feedback sull'andamento del lavoro.
 
 Gli incontri con la Proponente si suddividono principalmente in tre categorie:
 
@@ -83,7 +83,7 @@ Di seguito vengono elencati i documenti che il team #team si impegna a consegnar
 
 ==== Analisi dei Requisiti
 
-L’_Analisi dei requisiti v1.0_, redatto dagli Analisti, rappresenta un documento fondamentale per lo sviluppo del #glossary[sistema] software. Il suo obiettivo principale è definire in dettaglio le funzionalità necessarie affinché il prodotto soddisfi pienamente le richieste della Proponente. Il documento omonimo comprende una serie di elementi essenziali:
+L’_Analisi dei Requisiti v1.0_, redatto dagli Analisti, rappresenta un documento fondamentale per lo sviluppo del #glossary[sistema] software. Il suo obiettivo principale è definire in dettaglio le funzionalità necessarie affinché il prodotto soddisfi pienamente le richieste della Proponente. Il documento omonimo comprende una serie di elementi essenziali:
 
         - *Definizione degli attori*: entità o persone che interagiscono con il #glossary[sistema]\;
         - *Definizione dei casi d'uso*: rappresentazione narrativa di scenari specifici che descrivono come gli attori interagiscono con il #glossary[sistema]. I casi d'uso offrono una visione chiara delle azioni eseguibili all'interno del #glossary[sistema] e delle interazioni degli utenti con esso. All'interno di ciascun caso d'uso, viene fornito un elenco preciso delle azioni intraprese dall'#glossary[attore] per attivare il caso d'uso, facilitando così l'estrazione dei requisiti corrispondenti;
@@ -142,7 +142,7 @@ Servizio di creazione di #glossary[spreadsheet], utilizzato dal team per la rend
 Servizio per creare e partecipare a videochiamate, utilizzato dal team per gli incontri telematici con la Proponente.
 
 ==== Online Gantt
-Online software per creare diagrammi di Gantt, utilizzato dal Responsabile per delineare la distribuzione temporale delle attività pianificate per ogni #glossary[sprint] nella sezione di Pianificazione del _Piano di Progetto v1.0_.
+Online software per creare diagrammi di Gantt, utilizzato dal Responsabile per delineare la distribuzione temporale delle attività pianificate per ogni #glossary[sprint] nella sezione di *Pianificazione* del _Piano di Progetto v1.0_.
 
 ==== Draw.io
 Software per creare diagrammi e grafici di varia natura, utilizzato dagli Analisti per creare i diagrammi #glossary[UML] dei casi d'uso nella sezione Casi d'uso dell'_Analisi dei Requisiti v1.0_.
@@ -217,7 +217,7 @@ I diagrammi dei casi d'uso sono composti da:
                 #figure(
                         image(
                                 "assets/imgs/Attore.png",
-                                width: 15%
+                                width: 10%
                         ),
                         caption: "Figura rappresentante un attore."
                 )
@@ -253,7 +253,7 @@ In ogni diagramma dei casi d'uso possono essere definite:
                 #figure(
                         image(
                                 "assets/imgs/GeneralizzazioneAttore.png",
-                                width: 40%
+                                width: 25%
                         ),
                         caption: "Figura rappresentante una generalizzazione tra attori."
                 )
@@ -371,7 +371,7 @@ Si definiscono tre sottoattività:
                 Include:
                 - *Proof of Concept (#glossary[PoC])*: consiste nella creazione di una versione parziale del prodotto, includendo alcune delle funzionalità stabilite durante l'analisi dei requisiti. L'obiettivo è valutare la fattibilità del prodotto completo;
                 - *Scelte tecnologiche*: consiste nello stabilire quali tecnologie adottare per lo sviluppo del #glossary[PoC], anche su consiglio della Proponente.
-        + *Progettazione Architetturale*: definizione ad alto livello dell'#glossary[architettura] del #glossary[sistema]\; si concentra sulla suddivisione del #glossary[sistema] in componenti e moduli, definendo le relazioni tra di essi e specificando le linee guida per l'organizzazione e l'interazione delle varie parti;
+        + *Progettazione architetturale*: definizione ad alto livello dell'#glossary[architettura] del #glossary[sistema]\; si concentra sulla suddivisione del #glossary[sistema] in componenti e moduli, definendo le relazioni tra di essi e specificando le linee guida per l'organizzazione e l'interazione delle varie parti;
         + *Product Baseline (#glossary[PB])*: segna un punto stabile nell'attività di progettazione, in cui le specifiche tecniche, le funzionalità principali e l'#glossary[architettura] del prodotto sono definite in modo dettagliato e accettate dalle parti coinvolte. Include tutti gli elementi essenziali e i requisiti chiave del prodotto che devono essere soddisfatti, fornendo una base solida per lo sviluppo continuo del prodotto. Questo processo porta infine alla realizzazione di un Minimum Viable Product (#glossary("MVP"));
                 Include:
                 - #glossary("Design Patterns")\;
@@ -727,13 +727,13 @@ caption:[Metriche relative alla documentazione],
 
 === Descrizione e scopo
 
-La gestione della configurazione (Configuration Management) è una pratica fondamentale nell'ambito dello sviluppo software, specialmente quando si tratta di gestire e controllare configurazioni complesse di prodotti. Essa riguarda il processo di identificazione e controllo delle componenti di un #glossary[sistema], così come delle relazioni tra di esse, durante tutto il ciclo di vita del prodotto. Consente di mantenere la tracciabilità, la coerenza e la comprensione chiara delle relazioni tra le varie parti del #glossary[sistema].
+La gestione della configurazione (configuration management) è una pratica fondamentale nell'ambito dello sviluppo software, specialmente quando si tratta di gestire e controllare configurazioni complesse di prodotti. Essa riguarda il processo di identificazione e controllo delle componenti di un #glossary[sistema], così come delle relazioni tra di esse, durante tutto il ciclo di vita del prodotto. Consente di mantenere la tracciabilità, la coerenza e la comprensione chiara delle relazioni tra le varie parti del #glossary[sistema].
 
 === Issue Tracking System <its>
 
 Come #glossary[ITS] si utilizza Github che, attraverso le funzioni di "Project", "Issue" e "Pull request", garantisce una struttura all'organizzazione di progetto.
 
-Le #glossary[Corsie di Stato] descrivono lo stato attuale delle attività, all'interno del Project nell'#glossary[ITS] sono presenti:
+Le #glossary[corsie di Stato] descrivono lo stato attuale delle attività, all'interno del Project nell'#glossary[ITS] sono presenti:
 / Backlog: attività individuate da svolgere;
 / Ready: attività individuate per il completamento durante il prossimo #glossary[sprint]\;
 / In Progress: attività che sono in corso d'opera da parte dei redattori;
@@ -979,7 +979,7 @@ Per poter prendere una qualsiasi decisione è necessario vi siano due condizioni
 
 Il Responsabile assume il ruolo cruciale di pianificare dettagliatamente gli obiettivi per ciascuno #glossary[sprint] fino alla conclusione del progetto. Questo implica una distribuzione coerente del lavoro in linea con le scadenze fissate per le revisioni #glossary[RTB], #glossary[PB] e #glossary[CA]. Il suo compito principale consiste nel delineare chiaramente come il team dovrebbe gestire e completare le attività relative allo sviluppo del software e alla redazione della #glossary[documentazione] in periodi di tempo specifici.
 
-Oltre a definire gli obiettivi per ogni #glossary[sprint], il Responsabile si occupa di stimare accuratamente il tempo necessario per ciascuna attività e di pianificare la distribuzione dei ruoli all'interno del team. Questa pianificazione deve sempre rimanere aggiornata e sensata rispetto all'andamento generale del progetto e agli obiettivi imminenti. Queste previsioni vengono formalizzate nel _Piano di Progetto v1.0_, che diventa un punto di riferimento durante l'evento di #glossary[Sprint Planning] per definire gli obiettivi del successivo #glossary[sprint].
+Oltre a definire gli obiettivi per ogni #glossary[sprint], il Responsabile si occupa di stimare accuratamente il tempo necessario per ciascuna attività e di pianificare la distribuzione dei ruoli all'interno del team. Questa pianificazione deve sempre rimanere aggiornata e sensata rispetto all'andamento generale del progetto e agli obiettivi imminenti. Queste previsioni vengono formalizzate nel _Piano di Progetto v1.0_, che diventa un punto di riferimento durante l'evento di #glossary[sprint planning] per definire gli obiettivi del successivo #glossary[sprint].
 
 Eventuali variazioni nella distribuzione dei ruoli, rispetto alla pianificazione iniziale, vengono documentate e giustificate nel *Consuntivo* del _Piano di Progetto v1.0_. Questo approccio consente al team di adattarsi in modo flessibile alle esigenze emergenti, mantenendo costantemente un quadro chiaro delle variazioni e delle ragioni che sottendono a tali modifiche.
 
@@ -1140,7 +1140,7 @@ Ogni issue è composta da:
                         + Small;
                         + Medium;
                         + High;
-                        + Large;
+                        + Large.
         - *Intervallo temporale*: una data di inizio e una di fine;
         - *#glossary[Milestone]*: #glossary[milestone] associata alla issue, se il completamento non è possibile entro lo #glossary[sprint] attuale, è necessario spostare l'issue nella #glossary[milestone] successiva.
 
@@ -1168,6 +1168,7 @@ Ogni rischio viene identificato da un codice univoco avente la seguente struttur
                 - *Numero*: è un numero progressivo univoco per ogni rischio della sua tipologia;
                 - *Nome*: nome del rischio.
 
+#pagebreak()
 
 === Procedure comunicative 
 
@@ -1218,7 +1219,7 @@ Il Responsabile ha il compito della stesura del verbale esterno, che viene succe
 
  
 
-
+#pagebreak()
 
 == Formazione   
 
