@@ -139,5 +139,7 @@ Versione: #version
 
 #pagebreak()
 #set text(11pt)
-
+#set par(
+  justify: true,
+)
 #include "content.typ"

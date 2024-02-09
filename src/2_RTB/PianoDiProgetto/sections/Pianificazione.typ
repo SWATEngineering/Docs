@@ -40,6 +40,14 @@ Durante questa fase il colloquio con la Proponente e il Committente viene manten
 #include "PianificazioneSprint/SettimoSprint.typ"
 #include "PianificazioneSprint/OttavoSprint.typ"
 
+=== Pausa programmata di tre settimane
+
+*Inizio*: Venerdì 19/01/2024
+
+*Fine*: Giovedì 08/02/2024 
+
+Il team ha programmato una pausa di tre settimane per consentire ai membri di concentrarsi sugli esami e sulla preparazione in vista della revisione #glossary[RTB].
+
 == Product Baseline #glossary[PB]
 
 #figure(
@@ -49,7 +57,7 @@ Durante questa fase il colloquio con la Proponente e il Committente viene manten
   ],
 )
 
-*Inizio*: 02/02/2024
+*Inizio*: 09/02/2024
 
 *Fine*: 14/03/2024 
 
