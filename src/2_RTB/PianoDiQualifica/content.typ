@@ -404,7 +404,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ]),
       ([
           Verificare che un #glossary("sensore"), una volta connesso al sistema, possa:
-             1. Inserire il risultato della rilevazione dell'inquinamento dell'aria (#glossary("PM10")), espressa in $#sym.mu g\/m^3$, con annesso il #glossary("timestamp") di rilevazione, le proprie coordinate geografiche, la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso e la propria frequenza di inserimento dati, espressa in secondi.
+             1. Inserire il risultato della rilevazione dell'inquinamento dell'aria (#glossary("PM10")), espresso in $#sym.mu g\/m^3$, con annesso il #glossary("timestamp") di rilevazione, le proprie coordinate geografiche, la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso e la propria frequenza di inserimento dati, espressa in secondi.
       ],"N/I",[
             U14\
             U21
@@ -522,7 +522,7 @@ table(
       ],"N/I","ROF"),
 
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un indice numerico, che esprime l'inquinamento dell'aria medio (#glossary("PM10")), espressa in $#sym.mu g\/m^3$, degli ultimi 5 minuti, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un indice numerico, che esprime l'inquinamento dell'aria medio (#glossary("PM10")), espresso in $#sym.mu g\/m^3$, degli ultimi 5 minuti, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.
       ],"N/I","RDF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la percentuale di riempimento dei bacini idrici, per ciascun #glossary("sensore"), aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.
