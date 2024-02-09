@@ -12,7 +12,7 @@
 
 Il presente documento ha l'obiettivo di definire le #glossary[best practices] e il #glossary[way of working] che ogni componente del team #team ha l'obbligo di rispettare durante l'intero svolgimento del progetto. In questo modo si prova a garantire un metodo di lavoro omogeneo, verificabile e migliorabile nel tempo. La formulazione delle norme avviene in modo progressivo, consentendo al team di apportare aggiornamenti continui in risposta alle esigenze sviluppatesi e alle problematiche incorse nel corso del lavoro.
 
-== Scopo del progetto
+== Scopo del prodotto
 
 Il progetto "InnovaCity" si concentra sulla creazione di una #glossary[dashboard] intuitiva, ovvero facilmente comprensibile e accessibile, che permetta al personale amministrativo di monitorare e analizzare il continuo sviluppo di una #glossary[smart city]. L'applicazione comprende una #glossary[data pipeline], appositamente progettata per elaborare dati provenienti da una varietà di simulatori di sensori. Questa pipeline consente la gestione e la visualizzazione ottimale di tali dati, permettendo agli utenti di ottenere rapidamente informazioni rilevanti. L'obiettivo finale è fornire uno strumento per prendere decisioni informate riguardo alla gestione delle risorse della città.
 
