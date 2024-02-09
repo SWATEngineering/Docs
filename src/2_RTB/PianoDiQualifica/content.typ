@@ -72,7 +72,7 @@ table(
       [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
       ..fornitura.flatten()  
 ),
-caption: [Tabella metriche per il processo di fornitura]
+caption: [Tabella metriche per il processo di fornitura.]
 )
 
 
@@ -89,7 +89,7 @@ table(
       [MPC-PM], [Parametri per Metodo], [≤ 5], [≤ 4],
       [MPC-LCM], [Linee di Codice per Metodo], [≤ 25], [≤ 20]
 ), 
-caption: [Tabella metriche per l'attività di codifica])
+caption: [Tabella metriche per l'attività di codifica.])
 
 #pagebreak(); 
 
@@ -105,7 +105,7 @@ table(
       [MPC-IG], [Indice Gulpease], [≥ 60], [100],
       [MPC-CO], [Correttezza Ortografica], [0], [0]
       ), 
-caption: [Tabella metriche per il processo di documentazione]
+caption: [Tabella metriche per il processo di documentazione.]
 )
 
 ==== Gestione della qualità
@@ -117,7 +117,7 @@ table(
       [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
       [MPC-MNS], [Metriche Non Soddisfatte], [≤3], [0],
       ), 
-caption: [Tabella metriche per il processo di gestione della qualità]
+caption: [Tabella metriche per il processo di gestione della qualità.]
 )
 
 #pagebreak()
@@ -142,7 +142,7 @@ Come presentato nel documento _Norme di Progetto v1.0_ la sigla MPD sta ad indic
             [MPD-RDS], [Requisiti Desiderabili Soddisfatti], [≥ 0%], [≥ 75%],
             [MPD-ROPS], [Requisiti Opzionali Soddisfatti], [≥ 0%], [≥ 50%],
       ),
-caption: [Tabella metriche per la funzionalità del prodotto])
+caption: [Tabella metriche per la funzionalità del prodotto.])
 
 == Manutenibilità
 
@@ -156,7 +156,8 @@ caption: [Tabella metriche per la funzionalità del prodotto])
             [MPD-FOUT], [Structure Fan Out], [da determinare], [da determinare],
             [MPD-CCM], [Complessità Ciclomatica per Metodo], [≤ 5], [≤ 3],
       ),
-caption: [Tabella metriche per la manutenibilità del prodotto])
+caption: [Tabella metriche per la manutenibilità del prodotto.
+])
 
 
 
@@ -171,7 +172,7 @@ caption: [Tabella metriche per la manutenibilità del prodotto])
             [MPD-FU], [Facilità di Utilizzo], [≤ 7 click], [≤ 5 click], 
             [MPD-TA], [Tempo di Apprendimento], [≤ 10 minuti], [≤ 5 minuti]
       ),
-caption: [Tabella metriche per l'usabilità del prodotto])
+caption: [Tabella metriche per l'usabilità del prodotto.])
 
 == Affidabilità
 
@@ -186,7 +187,7 @@ caption: [Tabella metriche per l'usabilità del prodotto])
             [MPD-BC], [Branch Coverage], [≥60%], [100%],
             [MPD-SC], [Statement Coverage], [≥60%], [100%],
       ),
-caption: [Tabella metriche per l'affidabilità del prodotto])
+caption: [Tabella metriche per l'affidabilità del prodotto.])
 
 
 #pagebreak()
@@ -204,7 +205,7 @@ caption: [Tabella metriche per l'affidabilità del prodotto])
             [MPD-TDE],[Tempo Di Elaborazione],[da determinare], [da determinare],
 
       ),
-caption: [Tabella metriche per l'efficienza del prodotto])
+caption: [Tabella metriche per l'efficienza del prodotto.])
 
 
 #pagebreak()
@@ -263,11 +264,11 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             7. Visualizzare un #glossary("pannello") con una tabella che mostri l'ultima rilevazione della velocità del vento, espressa in chilometri orari (km/h), effettuata da ciascun #glossary("sensore")\; 
             8. Visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni delle quantità di precipitazioni, espresse in millimetri orari (mm/h), effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
             9. Visualizzare un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse in millimetri orari (mm/h), indicante la media  dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori, degli ultimi 5 minuti; 
-            10. Visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni della concentrazione di inquinanti dell'aria, espressa in $#sym.mu g\/m^3$,(#glossary("PM10")),effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
-            11. Visualizzare un #glossary("pannello") contenente la media della concentrazione di inquinanti dell'aria, espressa in $#sym.mu g\/m^3$,(#glossary("PM10")), che consideri le rilevazioni di tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico;
+            10. Visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni della concentrazione di inquinanti dell'aria (#glossary("PM10")), espressi in $#sym.mu g\/m^3$,effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
+            11. Visualizzare un #glossary("pannello") contenente la media della concentrazione di inquinanti dell'aria (#glossary("PM10")), espressa in $#sym.mu g\/m^3$, che consideri le rilevazioni di tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico;
             12. Visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni della percentuale di riempimento dei bacini idrici, effettuate dai singoli sensori e aggregate tramite media aritmetica per intervalli di 5 minuti;
             13. Visualizzare un #glossary("pannello") contenente la media della temperatura, espressa in gradi Celsius (°C), considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico;
-            14. Visualizzare un #glossary("pannello") contenente il massimo coefficiente di inquinamento dell'aria registrato tra tutti i sensori negli ultimi 5 minuti, espresso in $#sym.mu g\/m^3$, presentato in formato numerico;
+            14. Visualizzare un #glossary("pannello") contenente il massimo coefficiente di inquinamento dell'aria (#glossary("PM10")) registrato tra tutti i sensori negli ultimi 5 minuti, espresso in $#sym.mu g\/m^3$, presentato in formato numerico;
             15. Visualizzare un messaggio di avvertenza di dati mancanti, nei vari #glossary("pannelli"), nel caso di assenza di dati da mostrare.
       ],"N/I",[
             UC0\
@@ -314,7 +315,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
             1. Aprire il menu di selezione delle #glossary("dashboard")\;
-            2. Selezionare la #glossary("dashboard") per visualizzare i #glossary("dati anomali") e il superamento soglie
+            2. Selezionare la #glossary("dashboard") per visualizzare i #glossary("dati anomali") e il superamento soglie; 
             3. Visualizzare la relativa #glossary("dashboard")\;
             4. Visualizzare un #glossary("pannello") contenente una tabella, la quale mostra tutte le anomalie rilevate, mostrando il valore dell'anomalia, il #glossary("sensore") che l'ha rilevata e il relativo #glossary("timestamp")\; 
             5. Visualizzare un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti le soglie impostate nel sistema, mostrando il valore superante la soglia, il #glossary("sensore") che ha rilevato tale valore e il relativo #glossary("timestamp")\;
@@ -328,9 +329,9 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ]),
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
-            1. Ricevere un'allerta che notifichi il superamento dei 40° Celsius; 
+            1. Ricevere un'allerta che notifichi il superamento dei 40° Celsius (°C); 
             2. Ricevere un'allerta che notifichi il superamento dei 50 millimetri di pioggia all'ora (50 mm/h); 
-            3. Ricevere un'allerta relativa all'inquinamento dell'aria che notifica il superamento di 80#[#sym.mu]g su metro cubo $ 80#sym.mu g\/m^3$; 
+            3. Ricevere un'allerta relativa all'inquinamento dell'aria (#glossary("PM10")) che notifica il superamento di 80#[#sym.mu]g su metro cubo ($ 80#sym.mu g\/m^3$); 
             4. Ricevere un'allerta che notifichi il superamento del 70% della capienza di un bacino; 
             5. Ricevere un'allerta che notifichi il superamento dell'80% della capienza di una zona ecologica.
       ],"N/I",[
@@ -345,7 +346,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
             1. Scegliere una #glossary("dashboard") da visualizzare;
-            2. Applicare dei filtri, per visualizzare solo i dati provenienti dal sottoinsieme di sensori selezionato, nel caso di #glossary("pannelli") di tipo #glossary("serie storica")/;
+            2. Applicare dei filtri, per visualizzare solo i dati provenienti dal sottoinsieme di sensori selezionato, nel caso di #glossary("pannelli") di tipo #glossary("serie storica")\;
             3. Applicare dei filtri, per visualizzare solo i dati provenienti dai sensori delle tipologie selezionate, nel caso di #glossary("pannelli") contenenti tabelle, le quali comprendono più tipologie di sensori al loro interno; 
             4. Applicare dei filtri, per selezionare solo particolari sensori, mediante il nome, nel caso di #glossary("pannelli") contenenti tabelle;
             5. Applicare dei filtri, per selezionare solo i dati relativi ad un definito intervallo di tempo, all'interno di un'intera #glossary("dashboard")\;
@@ -403,7 +404,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ]),
       ([
           Verificare che un #glossary("sensore"), una volta connesso al sistema, possa:
-             1. Inserire il risultato della rilevazione dell'inquinamento dell'aria, espressa in $#sym.mu g\/m^3$, con annesso il #glossary("timestamp") di rilevazione, le proprie coordinate geografiche, la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso e la propria frequenza di inserimento dati, espressa in secondi.
+             1. Inserire il risultato della rilevazione dell'inquinamento dell'aria (#glossary("PM10")), espresso in $#sym.mu g\/m^3$, con annesso il #glossary("timestamp") di rilevazione, le proprie coordinate geografiche, la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso e la propria frequenza di inserimento dati, espressa in secondi.
       ],"N/I",[
             U14\
             U21
@@ -517,11 +518,11 @@ table(
       ],"N/I","RDF"),
 
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media aritmetica del livello di polveri sottili nell'aria, espressi in $#sym.mu g\/m^3$ (#glossary("PM10")), per ciascun #glossary("sensore"), aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media aritmetica del livello di polveri sottili nell'aria (#glossary("PM10")), espressa in $#sym.mu g\/m^3$, per ciascun #glossary("sensore"), aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.
       ],"N/I","ROF"),
 
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un indice numerico, che esprime l'inquinamento dell'aria medio, espressa in $#sym.mu g\/m^3$ (#glossary("PM10")), degli ultimi 5 minuti, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un indice numerico, che esprime l'inquinamento dell'aria medio (#glossary("PM10")), espresso in $#sym.mu g\/m^3$, degli ultimi 5 minuti, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.
       ],"N/I","RDF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la percentuale di riempimento dei bacini idrici, per ciascun #glossary("sensore"), aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.
@@ -531,7 +532,7 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un indice numerico, che esprime la temperatura media, espressa in gradi Celsius (°C), degli ultimi 5 minuti, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.
       ],"N/I","RDF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un indice numerico, che esprime l'inquinamento dell'aria massimo, espresso in $#sym.mu g\/m^3$ (#glossary("PM10")), degli ultimi 5 minuti, tra i dati registrati da tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un indice numerico, che esprime l'inquinamento dell'aria massimo (#glossary("PM10")), espresso in $#sym.mu g\/m^3$, degli ultimi 5 minuti, tra i dati registrati da tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.
       ],"N/I","RDF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa monitorare i dati provenienti dai sensori relativi ai dati urbanistici in una #glossary("dashboard") apposita.
@@ -564,10 +565,10 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una tabella che mostri i #glossary("dati anomali"), il #glossary("sensore") che li ha rilevati e il #glossary("timestamp") del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e il superamento delle soglie.
       ],"N/I","RPF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una tabella che mostri i dati relativi a temperatura, precipitazioni, inquinamento dell'aria, bacini idrici e zone ecologiche, i cui valori superano una soglia fissata, il #glossary("sensore") che li ha rilevati e il #glossary("timestamp") del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una tabella che mostri i dati relativi a temperatura, precipitazioni, inquinamento dell'aria (#glossary("PM10")), bacini idrici e zone ecologiche, i cui valori superano una soglia fissata, il #glossary("sensore") che li ha rilevati e il #glossary("timestamp") del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.
       ],"N/I","RDF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo a rilevazioni di tipo temperatura, superanti una soglia di 40° Celsius.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo a rilevazioni di tipo temperatura, superanti una soglia di 40° Celsius (°C).
       ],"N/I","RDF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo rilevazioni di tipo precipitazioni, superanti una soglia di 50 millimetri all'ora (50 mm/h).
@@ -619,7 +620,7 @@ table(
             Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni della quantità di precipitazioni, espresse in millimetri orari (mm/h), con annesso coordinate e #glossary("timestamp") della rilevazione. 
       ],"N/I","ROF"),
       ([
-            Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni dell'inquinamento, espresse in microgrammi al metro cubo ($#sym.mu g\/m^3$) (#glossary("PM10")), effettuate dal #glossary("sensore"), con annesso coordinate e #glossary("timestamp") della rilevazione. 
+            Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni dell'inquinamento (#glossary("PM10")), espresse in microgrammi al metro cubo ($#sym.mu g\/m^3$), effettuate dal #glossary("sensore"), con annesso coordinate e #glossary("timestamp") della rilevazione. 
       ],"N/I","ROF"),
       ([
             Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni del livello di riempimento del bacino idrico presso cui è installato, espresse in percentuale, effettuate dal #glossary("sensore"), con annesso coordinate e #glossary("timestamp") della rilevazione. 
@@ -689,7 +690,7 @@ table(
       [Titolo principale],[Tutti i titoli principali devono iniziare la pagina nella quale vengono inseriti.],
 
 ),
-caption: [Lista di controllo per la struttura dei documenti]
+caption: [Lista di controllo per la struttura dei documenti.]
 )
 
 #pagebreak()
@@ -710,7 +711,7 @@ table(
       [Termini impropriamente in maiuscolo],[I termini di glossario non godono della proprietà di avere la prima lettera maiuscola, rispetto alle parole tradizionali. Seguono le stesse regole delle parole non di glossario in quanto alla forma (ovviamente non riguardo allo stile).],
       [Acronimi non in maiuscolo],[Gli acronimi devono essere completamente in maiuscolo (e.g. #glossary[ITS] - acronimo per Issue Tracking System).],
 ),
-caption: [Lista di controllo per gli errori ortografici, di lingua italiana e di forma]
+caption: [Lista di controllo per gli errori ortografici, di lingua italiana e di forma.]
 )
 
 #pagebreak()
@@ -730,7 +731,7 @@ table(
       [Ruoli in minuscolo],[Tutti i ruoli del progetto devono avere la prima lettera in maiuscolo.],
       [Termine non presente nel glossario],[Ogni termine segnato con la formattazione da glossario deve essere effettivamente presente nel glossario con la relativa descrizione.],
 ),
-caption: [Lista di controllo per le non conformità con le _Norme di Progetto_]
+caption: [Lista di controllo per le non conformità con le _Norme di Progetto_.]
 )
 
 #pagebreak()
@@ -747,7 +748,7 @@ table(
       [Numerazione errata dei casi d'uso],[La numerazione dei casi d'uso deve seguire la crescita dei numeri interi naturali. Se si tratta di un sotto-caso d'uso, il sotto-caso deve ereditare, come prefisso del proprio codice, il codice del caso d'uso a cui appartiene, e ne aggiunge una cifra. Fare riferimento alle _Norme di Progetto v1.0_ per una descrizione più approfondita.],
       [#glossary[UML] dei casi d'uso],[Le estensioni e le inclusioni di un caso d'uso vanno nello stesso diagramma #glossary[UML] del caso d'uso stesso.],
 ),
-caption: [Lista di controllo per l’_Analisi dei Requisiti_]
+caption: [Lista di controllo per l’_Analisi dei Requisiti_.]
 )
 
 
@@ -864,7 +865,7 @@ Tale strumento ha mostrato immediatamente i suoi effetti benefici: gli errori ne
 #figure(
   image("./assets/valutazione-metriche/MNS.png", width: 85%),
   caption: [
-    Valutazione Metriche Non Soddisfatte
+    Valutazione Metriche Non Soddisfatte.
   ],
 )
 Le Metriche Non Soddisfatte corrispondono alle metriche MPC-CO, MPC-CPI, MPC-EAC. In concomitanza con l'ottavo #glossary("sprint"), la misurazione di MPC-CO è rientrata all'interno del valore di accettazione. Per quanto riguarda MPC-CPI e MPC-EAC, essendo estremamente legate tra loro, si rimanda alle considerazioni relative a MPC-EAC.
