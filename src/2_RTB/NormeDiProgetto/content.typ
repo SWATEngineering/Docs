@@ -1204,10 +1204,10 @@ Le linee guida per le riunioni:
 
 Gli incontri hanno due modalità:
 
-        - *Fisici*: per gli stand-up meeting quotidiani (#glossary("Daily Scrum")) di 15 minuti in cui si discutono brevemente le attività completate il giorno precedente e si espongono le attività pianificate per il futuro;
+        - *Fisici*: per gli #glossary[stand-up meeting] quotidiani (#glossary("Daily Scrum")) di 15 minuti in cui si discutono brevemente le attività completate il giorno precedente e si espongono le attività pianificate per il futuro;
         - *Virtuali*: si svolgono chiamate o video di gruppo in cui si discutono eventuali dubbi o difficoltà riscontrate. Lo strumento adatto per questo scopo è Discord. 
 
-Dopo la sessione invernale degli esami, gli stand-up meeting quotidiani si svolgono virtualmente. 
+Dopo la sessione invernale degli esami, gli #glossary[stand-up meeting] quotidiani si svolgono virtualmente. 
 
 
 ===== Incontri esterni 
@@ -1239,8 +1239,8 @@ Si riporta la lista delle guide e documentazione da prendere come riferimento:
         - *Github*: #link("https://docs.github.com/en");
         - *#glossary[Python]*: #link("https://docs.python.org/3/");
         - *#glossary[Grafana]*: #link("https://grafana.com/docs/grafana/latest/");
-        - *Apache kafka*: #link("https://kafka.apache.org/20/documentation.html");
-        - *Clickhouse*: #link("https://clickhouse.com/docs").  
+        - *Apache #glossary[Kafka]*: #link("https://kafka.apache.org/20/documentation.html");
+        - *#glossary[Clickhouse]*: #link("https://clickhouse.com/docs").  
 
 Questa lista non intende essere forzata, ciascun membro è libero di approfondire le proprie conoscenze utilizzando materiale aggiuntivo.
 Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri membri.
