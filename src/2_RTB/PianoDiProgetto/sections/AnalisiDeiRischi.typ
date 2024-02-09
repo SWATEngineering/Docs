@@ -78,8 +78,8 @@ I diversi livelli di competenze e una comunicazione poco trasparente possono por
     - Promuovere incontri periodici: i membri del team hanno la possibilità di esprimere dubbi e preoccupazioni, avere una discussione aperta su aspetti rilevanti del progetto e ricevere feedback sul lavoro fatto. In questo contesto va precisato che la costruzione del feedback assume un ruolo fondamentale, in quanto deve essere formulato in maniera tale da risultare costruttivo e presentato come un opportunità di miglioramento, anziché solamente come critica;
     - Promuovere la comprensione reciproca: il team si deve sforzare nel comprendere le condizioni e i punti di vista degli altri componenti per creare un clima di progetto positivo, indirizzato verso il miglioramento.
 
-=== RC5 - Context Switch
-Con l'espressione #glossary("context Switch") ci si riferisce al cambiamento dei ruoli all'interno del team. Questo passaggio da un ruolo ad un altro comporta la necessità di adattarsi rapidamente alle nuove responsabilità e di comprendere appieno ciò che è stato svolto dal membro del team che ha ricoperto un determinato ruolo per ultimo.
+=== RC5 - Context switch
+Con l'espressione #glossary("context switch") ci si riferisce al cambiamento dei ruoli all'interno del team. Questo passaggio da un ruolo ad un altro comporta la necessità di adattarsi rapidamente alle nuove responsabilità e di comprendere appieno ciò che è stato svolto dal membro del team che ha ricoperto un determinato ruolo per ultimo.
   - *Identificazione*: difficoltà  nella comprensione del lavoro svolto fino al quel momento; 
   - *Valutazione*: pericolosità: bassa; occorrenza: alta;
   - *Prevenzione*:
