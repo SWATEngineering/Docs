@@ -87,7 +87,7 @@ L’_Analisi dei requisiti v1.0_, redatto dagli Analisti, rappresenta un documen
 
         - *Definizione degli attori*: entità o persone che interagiscono con il #glossary[sistema]\;
         - *Definizione dei casi d'uso*: rappresentazione narrativa di scenari specifici che descrivono come gli attori interagiscono con il #glossary[sistema]. I casi d'uso offrono una visione chiara delle azioni eseguibili all'interno del #glossary[sistema] e delle interazioni degli utenti con esso. All'interno di ciascun caso d'uso, viene fornito un elenco preciso delle azioni intraprese dall'#glossary[attore] per attivare il caso d'uso, facilitando così l'estrazione dei requisiti corrispondenti;
-        - *Definizione di requisiti*: individuazione dei requisiti obbligatori e desiderabili e loro categorizzazione in:
+        - *Definizione di requisiti*: individuazione dei requisiti obbligatori, desiderabili e opzionali e loro categorizzazione in:
                 - *Requisiti funzionali*: specificano le operazioni che il #glossary[sistema] deve essere in grado di eseguire;
                 - *Requisiti di qualità*: si concentrano sulla definizione degli standard e degli attributi che il software deve possedere per garantire prestazioni, affidabilità, usabilità e sicurezza ottimali;
                 - *Requisiti di vincolo*: delineano vincoli e limitazioni che il #glossary[sistema] deve rispettare. Possono includere restrizioni tecnologiche, normative o di risorse.
@@ -331,13 +331,13 @@ I requisiti trovati hanno un codice univoco con la seguente sintassi:
         *Legenda*:
         
         - *Importanza*:
-                - O -> se requisito obbligatorio;
-                - D -> se requisito desiderabile;
-                - P -> se requisito opzionale.
+                - O: se requisito obbligatorio;
+                - D: se requisito desiderabile;
+                - P: se requisito opzionale.
         - *Tipo*:
-                - F -> se funzionale;
-                - Q -> se di qualità;
-                - V -> se di vincolo.
+                - F: se funzionale;
+                - Q: se di qualità;
+                - V: se di vincolo.
         - *Numero*:
                 per ogni requisito aggiunto il numero viene incrementato.
 
@@ -362,7 +362,7 @@ caption:[Metriche sui requisiti],
 ==== Descrizione e scopo 
 
 L'attività di progettazione è affidata ai Progettisti, i quali devono definire le caratteristiche del prodotto finale basandosi sui requisiti specificati nel documento _Analisi dei Requisiti v1.0_. 
-La fase di progettazione segue l'analisi dei requisiti, dove sono definite le necessità e le aspettative per il prodotto. I Progettisti traducono queste informazioni in una struttura architetturale definita, organizzando il #glossary[sistema] in componenti specifici e definendo le interazioni tra di essi. In questo modo, la progettazione costituisce un passo essenziale nel percorso di sviluppo, contribuendo a trasformare i requisiti in un piano tangibile per la creazione del prodotto finale.
+La fase di progettazione segue l'analisi dei requisiti, dove sono definite le necessità e le aspettative per il prodotto. I Progettisti traducono queste informazioni in una struttura architetturale definita, organizzando il #glossary[sistema] in componenti specifiche e definendo le interazioni tra di esse. In questo modo, la progettazione costituisce un passo essenziale nel percorso di sviluppo, contribuendo a trasformare i requisiti in un piano tangibile per la creazione del prodotto finale.
 
 Si definiscono tre sottoattività: 
 
@@ -772,7 +772,7 @@ Nel caso del #glossary[repository] InnovaCity, il branch main viene utilizzato p
 
 Il sito vetrina consultabile al seguente link #link("https://swatengineering.github.io/") è progettato per garantire un'esperienza aggiornata e intuitiva agli utenti. Grazie all'integrazione di una GitHub Action, il sito si aggiorna automaticamente ogni volta che vengono apportate modifiche al branch principale "main" del #glossary[repository] Docs.
 Lo script, realizzato in JavaScript, avvia una richiesta GET a un server esterno per ottenere la struttura aggiornata delle directory e dei file. Questa operazione consente al sito di rimanere sempre allineato con le modifiche apportate al #glossary[repository] principale.
-Per garantire la coerenza e la tempestività delle informazioni, il servizio esterno esegue un aggiornamento periodico, verosimilmente ogni 5 minuti. Questo processo automatico consente al sito di riflettere dinamicamente qualsiasi modifica rilevante nel #glossary[repository] Docs, garantendo un'esperienza utente sempre aggiornata e completa.
+Per garantire la coerenza e la tempestività delle informazioni, il servizio esterno esegue un aggiornamento periodico, ogni 15 minuti. Questo processo automatico consente al sito di riflettere dinamicamente qualsiasi modifica rilevante nel #glossary[repository] Docs, garantendo un'esperienza utente sempre aggiornata e completa.
 
 === Controllo termini glossario    
 
@@ -1013,7 +1013,7 @@ Per visualizzare i dati aggiornati relativi a ciascuno #glossary[sprint], è pos
 \#rendicontazioneOreAPosteriori(sprintNumber: "number")
 \#rendicontazioneCostiAPosteriori(sprintNumber: "number")
 
-Dove "number" rappresenta il numero specifico dello #glossary[sprint] di interesse. Queste funzioni consentono di ottenere report aggiornati sulla distribuzione delle ore per ruolo e persona, nonché sui costi associati, semplificando la gestione.
+Dove "number" rappresenta il numero a 2 cifre, specifico dello #glossary[sprint] di interesse. Queste funzioni consentono di ottenere report aggiornati sulla distribuzione delle ore per ruolo e persona, nonché sui costi associati, semplificando la gestione.
 
 
 
@@ -1200,13 +1200,15 @@ Le linee guida per le riunioni:
                 + Discussione dei punti;
                 + Pianificazione attività per la settimana (valutate rispetto a quanto pianificato nel _Piano di Progetto_) e assegnazione issue.
                 
-        Alla fine dell'incontro:
-                + Il Responsabile ha il compito della stesura del verbale interno, fornendo una sintesi dei punti salienti dell'incontro. 
+        Alla fine dell'incontro il Responsabile ha il compito della stesura del verbale interno, fornendo una sintesi dei punti salienti dell'incontro. 
 
 Gli incontri hanno due modalità:
 
-        - *Fisici*: per gli stand-up meeting quotidiani (#glossary("daily Scrum")) di 5 minuti in cui si discutono brevemente le attività completate il giorno precedente e si espongono le attività pianificate per il futuro;
-        - *Virtuali*: si svolgono chiamate o video di gruppo in cui si discutono eventuali dubbi o difficoltà riscontrate. Lo strumento adatto per questo scopo è Discord.
+        - *Fisici*: per gli stand-up meeting quotidiani (#glossary("Daily Scrum")) di 15 minuti in cui si discutono brevemente le attività completate il giorno precedente e si espongono le attività pianificate per il futuro;
+        - *Virtuali*: si svolgono chiamate o video di gruppo in cui si discutono eventuali dubbi o difficoltà riscontrate. Lo strumento adatto per questo scopo è Discord. 
+
+Dopo la sessione invernale degli esami, gli stand-up meeting quotidiani si svolgono virtualmente. 
+
 
 ===== Incontri esterni 
 
@@ -1237,7 +1239,7 @@ Si riporta la lista delle guide e documentazione da prendere come riferimento:
         - *Github*: #link("https://docs.github.com/en");
         - *#glossary[Python]*: #link("https://docs.python.org/3/");
         - *#glossary[Grafana]*: #link("https://grafana.com/docs/grafana/latest/");
-        - *Apache kafka*: #link("https://docs.confluent.io/platform/current/clients/confluent-kafka-python/html/index.html");
+        - *Apache kafka*: #link("https://kafka.apache.org/20/documentation.html");
         - *Clickhouse*: #link("https://clickhouse.com/docs").  
 
 Questa lista non intende essere forzata, ciascun membro è libero di approfondire le proprie conoscenze utilizzando materiale aggiuntivo.
@@ -1312,9 +1314,9 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
 
              $ "IG" = 89 + (300 dot "Nf" - "Nl")/"Np"$, con:
 
-                - *Nf* \u{27F6} indica il numero delle frasi;
-                - *Nl* \u{27F6} indica il numero delle lettere;
-                - *Np* \u{27F6} indica il numero delle parole.
+                - *Nf*: indica il numero delle frasi;
+                - *Nl*: indica il numero delle lettere;
+                - *Np*: indica il numero delle parole.
 
                 L'indice fornisce un punteggio che varia da 0 a 100. Di seguito le possibili interpretazioni:
 
