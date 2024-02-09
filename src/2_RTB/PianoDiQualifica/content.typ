@@ -158,6 +158,8 @@ caption: [Tabella metriche per la funzionalità del prodotto])
       ),
 caption: [Tabella metriche per la manutenibilità del prodotto])
 
+
+
 == Usabilità
 
 #figure(
@@ -185,6 +187,9 @@ caption: [Tabella metriche per l'usabilità del prodotto])
             [MPD-SC], [Statement Coverage], [≥60%], [100%],
       ),
 caption: [Tabella metriche per l'affidabilità del prodotto])
+
+
+#pagebreak()
 
 == Efficienza
 
