@@ -127,11 +127,8 @@ caption: [Tabella metriche per il processo di gestione della qualità]
 La qualità di prodotto è volta alla valutazione del software realizzato: l'attenzione è rivolta ad attributi quali usabilità, funzionalità, affidabilità, manutenibilità, ma più in generale alle prestazioni del prodotto. 
 L'obiettivo  è, dunque, assicurare che il software non solo implementi le funzionalità volute dal cliente e funzioni correttamente, ma che lo faccia seguendo le indicazioni di precisi standard di qualità.
 Di seguito vengono presentate le metriche che il team si impegna a soddisfare nel contesto della qualità di prodotto.
-<<<<<<< HEAD
-Come presentato nel documento _Norme di Progetto v1.0_, la sigla MPR sta ad indicare le metriche di prodotto.
-=======
 Come presentato nel documento _Norme di Progetto v1.0_ la sigla MPD sta ad indicare le metriche di prodotto.
->>>>>>> 18cfc18dcf807daff5d8db872095e6c0a1fa4c65
+
 
 == Funzionalità
 
@@ -169,8 +166,8 @@ caption: [Tabella metriche per la manutenibilità del prodotto])
             align: (x, y) => (center, center, center,center).at(x),
             fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
             [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-            [MPR-FU], [Facilità di Utilizzo], [≤ 7 click], [≤ 5 click], 
-            [MPR-TA], [Tempo di Apprendimento], [≤ 10 minuti], [≤ 5 minuti]
+            [MPD-FU], [Facilità di Utilizzo], [≤ 7 click], [≤ 5 click], 
+            [MPD-TA], [Tempo di Apprendimento], [≤ 10 minuti], [≤ 5 minuti]
       ),
 caption: [Tabella metriche per l'usabilità del prodotto])
 
@@ -197,9 +194,9 @@ caption: [Tabella metriche per l'affidabilità del prodotto])
             align: (x, y) => (center, center, center,center).at(x),
             fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
             [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-            [MPR-CPUU],[Maximum CPU usage],[da determinare],[da determinare], 
-            [MPR-RAMU],[Maximum RAM usage],[da determinare],[da determinare], 
-            [MPR-TDE],[Tempo Di Elaborazione],[da determinare], [da determinare],
+            [MPD-CPUU],[Maximum CPU usage],[da determinare],[da determinare], 
+            [MPD-RAMU],[Maximum RAM usage],[da determinare],[da determinare], 
+            [MPD-TDE],[Tempo Di Elaborazione],[da determinare], [da determinare],
 
       ),
 caption: [Tabella metriche per l'efficienza del prodotto])
