@@ -88,7 +88,7 @@ table(
       [MPC-PM], [Parametri per Metodo], [≤ 5], [≤ 4],
       [MPC-LCM], [Linee di Codice per Metodo], [≤ 25], [≤ 20]
 ), 
-caption: [Tabella delle metriche per l'attività di codifica])
+caption: [Tabella metriche per l'attività di codifica])
 
 #pagebreak(); 
 
@@ -114,7 +114,7 @@ table(
       align: (x, y) => (center, center, center,center).at(x),
       fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-      [MPC-MNS], [Metriche non soddisfatte], [≤3], [0],
+      [MPC-MNS], [Metriche Non Soddisfatte], [≤3], [0],
       ), 
 caption: [Tabella metriche per il processo di gestione della qualità]
 )
@@ -126,7 +126,7 @@ caption: [Tabella metriche per il processo di gestione della qualità]
 La qualità di prodotto è volta alla valutazione del software realizzato: l'attenzione è rivolta ad attributi quali usabilità, funzionalità, affidabilità, ma più in generale alle prestazioni del prodotto. 
 L'obiettivo  è, dunque, assicurare che il software non solo implementi le funzionalità volute dal cliente e funzioni correttamente, ma che lo faccia seguendo le indicazioni di precisi standard di qualità.
 Di seguito vengono presentate le metriche che il team si impegna a soddisfare nel contesto della qualità di prodotto.
-Come presentato nel documento _Norme di Progetto v1.0_ la sigla MPR sta ad indicare le metriche di prodotto.
+Come presentato nel documento _Norme di Progetto v1.0_, la sigla MPR sta ad indicare le metriche di prodotto.
 
 == Funzionalità
 
@@ -164,7 +164,7 @@ caption: [Tabella metriche per la manutenibilità del prodotto])
             align: (x, y) => (center, center, center,center).at(x),
             fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
             [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-            [MPR-FU], [Facilità di utilizzo], [≤ 7 click], [≤ 5 click], 
+            [MPR-FU], [Facilità di Utilizzo], [≤ 7 click], [≤ 5 click], 
             [MPR-TA], [Tempo di Apprendimento], [≤ 10 minuti], [≤ 5 minuti]
       ),
 caption: [Tabella metriche per l'usabilità del prodotto])
@@ -194,7 +194,7 @@ caption: [Tabella metriche per l'affidabilità del prodotto])
             [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
             [MPR-CPUU],[Maximum CPU usage],[da determinare],[da determinare], 
             [MPR-RAMU],[Maximum RAM usage],[da determinare],[da determinare], 
-            [MPR-TDE],[Tempo di elaborazione],[da determinare], [da determinare],
+            [MPR-TDE],[Tempo Di Elaborazione],[da determinare], [da determinare],
 
       ),
 caption: [Tabella metriche per l'efficienza del prodotto])
@@ -764,7 +764,7 @@ caption: [Lista di controllo per l’_Analisi dei Requisiti_]
 === Estimated At Completion
  
 #figure(
-  image("./assets/valutazione-metriche/EAC.png", width: 80%),
+  image("./assets/valutazione-metriche/EAC.png", width: 85%),
   caption: [
     Valutazione Estimated At Completion.
   ],
@@ -832,7 +832,7 @@ Considerando che gli otto #glossary[sprint] effettuati corrispondono ad un perio
 === Indice Gulpease
 
 #figure(
-  image("./assets/valutazione-metriche/IG.png", width: 80%),
+  image("./assets/valutazione-metriche/IG.png", width: 85%),
   caption: [
     Valutazione Indice Gulpease.
   ],
@@ -845,7 +845,7 @@ Si rileva che nel corso dell'ultimo #glossary[sprint] tutti i documenti hanno su
 === Correttezza Ortografica
 
 #figure(
-  image("./assets/valutazione-metriche/CO.png", width: 80%),
+  image("./assets/valutazione-metriche/CO.png", width: 85%),
   caption: [
     Valutazione Correttezza Ortografica.
   ],
@@ -860,15 +860,15 @@ Tale strumento ha mostrato immediatamente i suoi effetti benefici: gli errori ne
 
 == Qualità di processo - gestione della qualità
 
-=== Metriche non soddisfatte
+=== Metriche Non Soddisfatte
 
 #figure(
   image("./assets/valutazione-metriche/MNS.png", width: 85%),
   caption: [
-    Valutazione Metriche non Soddisfatte
+    Valutazione Metriche Non Soddisfatte
   ],
 )
-Le metriche non soddisfatte corrispondono alle metriche MPC-CO, MPC-CPI, MPC-EAC. In concomitanza con l'ottavo #glossary("sprint"), la misurazione di MPC-CO è rientrata all'interno del valore di accettazione. Per quanto riguarda MPC-CPI e MPC-EAC, essendo estremamente legate tra loro, si rimanda alle considerazioni relative a MPC-EAC.
+Le Metriche Non Soddisfatte corrispondono alle metriche MPC-CO, MPC-CPI, MPC-EAC. In concomitanza con l'ottavo #glossary("sprint"), la misurazione di MPC-CO è rientrata all'interno del valore di accettazione. Per quanto riguarda MPC-CPI e MPC-EAC, essendo estremamente legate tra loro, si rimanda alle considerazioni relative a MPC-EAC.
 
 
 // == Qualità di prodotto
