@@ -128,9 +128,31 @@ Versione: #version
   outlined: true,
 )
 
+#show heading.where(level: 1): it => {
+ 
+ pagebreak(weak: true)
+ 
+ it
+
+}
+
+
+
 #outline(
   title: "Indice",
   indent: auto
+)
+
+#pagebreak()
+#outline(
+  title: [Elenco delle Figure],
+  target: figure.where(kind: image),
+)
+#pagebreak()
+
+#outline(
+  title: [Elenco delle Tabelle],
+  target: figure.where(kind: table),
 )
 
 
@@ -139,5 +161,8 @@ Versione: #version
 /*******************/
 
 #pagebreak()
-
+#set text(11pt)
+#set par(
+  justify: true,
+)
 #include "content.typ"
