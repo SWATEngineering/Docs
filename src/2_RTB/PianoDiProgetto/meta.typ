@@ -1,1 +1,1 @@
-#let title = "Piano di progetto"
+#let title = "Piano di Progetto"
