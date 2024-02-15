@@ -54,6 +54,9 @@ spreadsheet = client.open_by_url(
 worksheet = spreadsheet.get_worksheet(0)
 records_data = worksheet.get_all_records()
 records_df = pd.DataFrame.from_dict(records_data)
+
+# we don't use these columns so we will remove them for better efficiency
+records_df = records_df.drop(columns=["Descrizione", "Remaining Time", "Remaining €"])
 records_df["Ruolo"] = records_df["Ruolo"].replace(
     "Revisore", VERIFICATORE
 )  # Changing with proper role
@@ -85,6 +88,14 @@ non_empty_records = records_df[
     records_df["Costo"] != 0
 ]  # Selecting only records with a cost different from 0
 
+# we don't need the Costo column anymore
+non_empty_records = non_empty_records.drop(columns=["Costo"])
+
+# fixing the restart of the year
+non_empty_records.loc[non_empty_records["Week"] < 46, "Week"] += 52
+# fixing frame numbers because of the 4 week pause
+non_empty_records.loc[non_empty_records["Week"] > 56, "Week"] -= 3
+
 # sprint dictionary
 sprints = {}
 
@@ -112,6 +123,9 @@ for week in range(50, max_week + 1):
         )
     ] = non_empty_records[week == non_empty_records["Week"]]
 
+# We don't need the Week column anymore
+non_empty_records = non_empty_records.drop(columns=["Week"])
+
 os.makedirs("sprintData", exist_ok=True)
 
 remaining_time = BUDGET_TIME
@@ -120,8 +134,8 @@ remaining_cash = BUDGET_CASH
 for sprint_key in sprints:
     # Creating folders for each sprint recorded
     os.makedirs(os.path.join("sprintData", sprint_key), exist_ok=True)
-
     sprint = sprints[sprint_key]
+
     # Inserting in corresponding folders, raw sprint data
     sprint.to_csv(
         os.path.join("sprintData", sprint_key, "sprintData.csv"),
@@ -234,6 +248,7 @@ for sprint_key in sprints:
     plt.tight_layout()
     plt.savefig(os.path.join("sprintData", sprint_key, "RendicontazioneRuoliTorta.png"))
     plt.clf()
+    plt.close()
 
     # Creating bar chart
     rendicontazione_ore_wo_totale_persona = rendicontazione_ore.drop(
@@ -261,6 +276,7 @@ for sprint_key in sprints:
         os.path.join("sprintData", sprint_key, "RendicontazioneRuoliIstogramma.png")
     )
     plt.clf()
+    plt.close()
 
     # Creating costs analysis
     time_costs_per_role = [
@@ -328,6 +344,7 @@ for sprint_key in sprints:
         os.path.join("sprintData", sprint_key, "RendicontazioneCostiCashTorta.png")
     )
     plt.clf()
+    plt.close()
 
     # Creating the cost time pie chart
     fig, ax = plt.subplots()
@@ -344,3 +361,4 @@ for sprint_key in sprints:
         os.path.join("sprintData", sprint_key, "RendicontazioneCostiTimeTorta.png")
     )
     plt.clf()
+    plt.close()

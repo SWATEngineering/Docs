@@ -1,54 +1,54 @@
-Riccardo T.,Re,1.0,13/11/2023,Creazione DDB #2 + Creazione DB per rendicontare le ore,30,56900,11040,46
-Riccardo T.,Pt,1.0,13/11/2023,Stesura struttura del codice per simulazione,25,56800,11015,46
-Riccardo T.,Pr,1.0,13/11/2023,"Creazione sensori costante e cosin, multithreadded",15,56700,11000,46
-Matteo R.,Am,1.5,13/11/2023,Automatizzata compilazione documenti & Redazione NdP per la gestione della documentazione (processi di supporto),30,56550,10970,46
-Nancy K.,An,1.5,13/11/2023,Strutturazione AdR & verbale esterno 10/11,375,56400,109325,46
-Matteo R.,Am,1.5,14/11/2023,Aggiornamento NdP con processi primari del repo & Meeting,30,56250,109025,46
-Nancy K.,An,0.5,14/11/2023,Meeting,125,56200,10890,46
-Riccardo T.,Re,0.5,14/11/2023,Meeting,15,56150,10875,46
-Giacomo D.,Ve,0.5,14/11/2023,Meeting,75,56100,108675,46
-Simone C.,An,0.5,14/11/2023,Meeting,125,56050,10855,46
-Riccardo C.,Ve,0.5,14/11/2023,Meeting,75,56000,108475,46
-Riccardo T.,Re,0.5,14/11/2023,Relazione verbale interno 141123,15,55950,108325,46
-Matteo R.,Am,0.5,15/11/2023,Update Ndp e creazione Glossario,10,55900,108225,46
-Nancy K.,An,1.0,15/11/2023,Aggiornata AdR con casi d'uso,25,55800,107975,46
-Riccardo T.,Re,1.0,15/11/2023,Modificato verbale 141123 date revisioni + scrittura piano di progetto,30,55700,107675,46
-Matteo R.,Am,1.0,15/11/2023,"NdP, progettazione script deploy docs, ricerca linter python, creazione e aggiornamento Glossario",20,55600,107475,46
-Nancy K.,An,1.0,17/11/2023,"AdR, ampliamento casi d'uso con estensioni",25,55500,107225,46
-Matteo R.,Ve,0.5,18/11/2023,AdR e PdP,75,55450,10715,46
-Riccardo C.,Ve,4.0,17/11/2023,revisione documenti settimana,60,55050,10655,46
-Riccardo T.,Pr,0.5,18/11/2023,Creazione modulo kafka + risoluzione dei problemi con i simulatori,75,55000,106475,46
-Giacomo D.,Ve,4.0,17/11/2023,Attività di revisione della settimana,60,54600,105875,46
-Giacomo D.,An,2.0,19/11/2023,Lavoro su AdR,50,54400,105375,47
-Riccardo C.,An,2.0,19/11/2023,AdR,50,54200,104875,47
-Matteo R.,Ve,1.5,20/11/2023,"AdR, codice, glossario",225,54050,10465,47
-Riccardo T.,Pr,1.0,21/11/2023,"Meeting + Docker compose & Docker image simulators, kafka",15,53950,10450,47
-Matteo R.,Ve,1.0,21/11/2023,Meeting + AdR,15,53850,10435,47
-Matteo R.,Pr,0.5,21/11/2023,Docker Compose,75,53800,104275,47
-Simone C.,Am,0.5,21/11/2023,Meeting,10,53750,104175,47
-Giacomo D.,An,0.5,21/11/2023,Meeting,125,53700,10405,47
-Nancy K.,Re,1.0,21/11/2023,Meeting + verbale 211123,30,53600,10375,47
-Riccardo C.,An,0.5,21/11/2023,Meeting,125,53550,103625,47
-Matteo R.,Ve,0.5,22/11/2023,Verifica verbale 21-11-23,75,53500,10355,47
-Riccardo C.,An,1.0,22/11/2023,AdR ,25,53400,10330,47
-Riccardo T.,Pr,0.5,22/11/2023,Docker compose funzionante per importazione python,75,53350,103225,47
-Nancy K.,Re,1.0,22/11/2023,"PdP, Analisi dei rischi",30,53250,102925,47
-Nancy K.,Re,0.5,23/11/2023,"PdP, Modello di sviluppo",15,53200,102775,47
-Matteo R.,Ve,1.0,23/11/2023,"PdP, codice python docker kafka",15,53100,102625,47
-Matteo R.,Pr,0.5,23/11/2023,Python-Kafka su docker,75,53050,10255,47
-Matteo R.,Am,1.0,23/11/2023,Script deploy documentazione in vetrina,20,52950,10235,47
-Simone C.,An,1.0,12/11/2023,Modifica documenti,25,52850,10210,46
-Simone C.,An,1.0,13/11/2023,Redazione verbale 07/11,25,52750,10185,46
-Simone C.,An,1.5,14/11/2023,Modifica documenti,375,52600,101475,46
-Simone C.,An,1.0,15/11/2023,AdR,25,52500,101225,46
-Simone C.,An,1.5,16/11/2023,AdR,375,52350,10085,46
-Simone C.,An,0.5,17/11/2023,Correzioni AdR dopo revisione,125,52300,100725,46
-Simone C.,Am,1.5,20/11/2023,pagina github.io,30,52150,100425,47
-Simone C.,Am,1.5,23/11/2023,pagina github.io,30,52000,100125,47
-Matteo R.,Ve,0.5,24/11/2023,meeting synclab,75,51950,10005,47
-Riccardo T.,Pr,0.5,24/11/2023,meeting synclab,75,51900,99975,47
-Simone C.,Am,0.5,24/11/2023,meeting synclab,10,51850,99875,47
-Riccardo C.,An,0.5,24/11/2023,meeting synclab,125,51800,9975,47
-Giacomo D.,An,0.5,24/11/2023,meeting synclab,125,51750,99625,47
-Nancy K.,Re,0.5,24/11/2023,meeting synclab ,15,51700,99475,47
-Matteo R.,Pr,0.5,25/11/2023,Studio e test Grafana,75,50950,97925,47
+Riccardo T.,Re,1.0,13/11/2023,46
+Riccardo T.,Pt,1.0,13/11/2023,46
+Riccardo T.,Pr,1.0,13/11/2023,46
+Matteo R.,Am,1.5,13/11/2023,46
+Nancy K.,An,1.5,13/11/2023,46
+Matteo R.,Am,1.5,14/11/2023,46
+Nancy K.,An,0.5,14/11/2023,46
+Riccardo T.,Re,0.5,14/11/2023,46
+Giacomo D.,Ve,0.5,14/11/2023,46
+Simone C.,An,0.5,14/11/2023,46
+Riccardo C.,Ve,0.5,14/11/2023,46
+Riccardo T.,Re,0.5,14/11/2023,46
+Matteo R.,Am,0.5,15/11/2023,46
+Nancy K.,An,1.0,15/11/2023,46
+Riccardo T.,Re,1.0,15/11/2023,46
+Matteo R.,Am,1.0,15/11/2023,46
+Nancy K.,An,1.0,17/11/2023,46
+Matteo R.,Ve,0.5,18/11/2023,46
+Riccardo C.,Ve,4.0,17/11/2023,46
+Riccardo T.,Pr,0.5,18/11/2023,46
+Giacomo D.,Ve,4.0,17/11/2023,46
+Giacomo D.,An,2.0,19/11/2023,47
+Riccardo C.,An,2.0,19/11/2023,47
+Matteo R.,Ve,1.5,20/11/2023,47
+Riccardo T.,Pr,1.0,21/11/2023,47
+Matteo R.,Ve,1.0,21/11/2023,47
+Matteo R.,Pr,0.5,21/11/2023,47
+Simone C.,Am,0.5,21/11/2023,47
+Giacomo D.,An,0.5,21/11/2023,47
+Nancy K.,Re,1.0,21/11/2023,47
+Riccardo C.,An,0.5,21/11/2023,47
+Matteo R.,Ve,0.5,22/11/2023,47
+Riccardo C.,An,1.0,22/11/2023,47
+Riccardo T.,Pr,0.5,22/11/2023,47
+Nancy K.,Re,1.0,22/11/2023,47
+Nancy K.,Re,0.5,23/11/2023,47
+Matteo R.,Ve,1.0,23/11/2023,47
+Matteo R.,Pr,0.5,23/11/2023,47
+Matteo R.,Am,1.0,23/11/2023,47
+Simone C.,An,1.0,12/11/2023,46
+Simone C.,An,1.0,13/11/2023,46
+Simone C.,An,1.5,14/11/2023,46
+Simone C.,An,1.0,15/11/2023,46
+Simone C.,An,1.5,16/11/2023,46
+Simone C.,An,0.5,17/11/2023,46
+Simone C.,Am,1.5,20/11/2023,47
+Simone C.,Am,1.5,23/11/2023,47
+Matteo R.,Ve,0.5,24/11/2023,47
+Riccardo T.,Pr,0.5,24/11/2023,47
+Simone C.,Am,0.5,24/11/2023,47
+Riccardo C.,An,0.5,24/11/2023,47
+Giacomo D.,An,0.5,24/11/2023,47
+Nancy K.,Re,0.5,24/11/2023,47
+Matteo R.,Pr,0.5,25/11/2023,47
