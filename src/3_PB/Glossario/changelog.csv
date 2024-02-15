@@ -1,0 +1,15 @@
+0.1,15-11-2023, Struttura documento e inserimento termini: "Best Practices"; "Way of Working"; "Corsie di Stato"; "Sprint"; "Workflow"; "Quorum".,Matteo Rango,Amministratore
+0.2,21-11-2023, Inserimento termini:"Amministratore Pubblico";"Sensore";"Real-Time";"Attore";"Cella";"Test end-to-end";"Documentazione".,Giacomo D'Ovidio, Analista
+0.3,29-11-2023, Inserimento termini: "Bug"; "Deliverable",Riccardo Costantin,Amministratore
+0.4,30-11-2023, Inserimento "Framework" "PoC" "MVP" "Design Pattern" "Daily Scrum",Riccardo Costatin,Amministratore
+0.5,11-12-2023, Inserimento "Data pipeline" "Workshop" "Framework Scrum" "Product backlog" "Sprint backlog" "Design patterns" "Rebase workflow" "Corsia",Riccardo Toniolo,Amministratore
+0.6,12-12-2023, Inserimento "Requirements and technology baseline" "Customer acceptance" "Product baseline" "Milestone" "Baseline" "Context switch" "Item" "ITS" "Sprint retrospective" "Sprint review" "Materialized views" "Scalabilità" "Retention policy" "Batch" "Broker" "Efficienza" "Portabilità" "Topic" "Architettura",Riccardo Toniolo,Amministratore
+0.7,17-12-2023, Inserimento "Smart city" "Time series" "Spreadsheet" "Repository" "Walkthrough",Nancy Kalaj,Analista
+0.8,17-12-2023, Aggiunta suddivisione per lettere e pulizia termini,Riccardo Toniolo,Amministratore
+0.9,20-12-2023, Inserimento "Inspection" "Modello a V",Giacomo D'Ovidio,Analista
+0.10,24-12-2023, Inserimento "Serie storica" "Side effect" "Ordinamento lessicografico" "Pannelli" "Timestamp" "Dashboard",Riccardo Toniolo,Amministratore
+0.11,24-12-2023, Inserimento "PM10" "Dati in entrata" "Dati anomali",Riccardo Toniolo,Verificatore
+0.12,02-01-2024, Inserimento di "Sprint Planning",Riccardo Costantin,Amministratore
+0.13,12-01-2024, Inserimento "Docker Compose" "Python" "Kafka" "Ordine del giorno" "Stand up meeting" "ClickHouse" "UML" "Grafana" "Sprint Planning",Nancy Kalaj,Responsabile
+1.0,21-01-2024, Approvazione finale,Nancy Kalaj,Responsabile
+
