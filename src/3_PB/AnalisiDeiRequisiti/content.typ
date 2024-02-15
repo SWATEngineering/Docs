@@ -27,9 +27,9 @@ disambiguato. Tali termini, sono scritti in corsivo e marcati con una G a pedice
 
 - _Norme di Progetto v1.0_
 
-- _Verbale Esterno 10-11-2023 v1.0_
-- _Verbale Esterno 24-11-2023 v1.0_
-- _Verbale Esterno 06-12-2023 v1.0_
+- _Verbale Esterno 10-11-2023_
+- _Verbale Esterno 24-11-2023_
+- _Verbale Esterno 06-12-2023_
 
 - Regolamento progetto didattico:
 #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf")
