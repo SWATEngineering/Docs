@@ -96,7 +96,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: l'amministratore pubblico visualizza #glossary("pannelli") relativi allo stato dei sensori, all'interno di un'unica dashboard. 
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione; 
-  + l'amministratore pubblico seleziona la visualizzazione della #glossary("dashboard") generale relativa ai sensori;
+  + l'amministratore pubblico seleziona la visualizzazione della #glossary("dashboard") generale relativa ai sensori.
 
 #figure(
   image("assets/UML/UC1_Visualizzazione-dashboard-generale-sensori.png",width:70%),
@@ -125,7 +125,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: l'amministratore pubblico visualizza il #glossary("pannello") relativo ai dati inerenti ai sensori, riportando la percentuale di batteria, un valore booleano che esprime se il sensore va a batteria autonoma o meno e la data di ultima manutenzione del sensore, in forma tabellare, indicizzato dai nomi dei sensori.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione; 
-  + l'amministratore pubblico seleziona la visualizzazione della #glossary("dashboard") generale relativa ai sensori;
+  + l'amministratore pubblico seleziona la visualizzazione della #glossary("dashboard") generale relativa ai sensori.
 - *Estensioni*: [UC9].
 
 #figure(
@@ -137,7 +137,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC2: Visualizzazione dashboard dati ambientali
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'amministratore pubblico visualizza #glossary("pannelli") contenenti dati relativi al dominio ambientale.
+- *Postcondizioni*: l'amministratore pubblico visualizza tutti i #glossary("pannelli") contenenti dati relativi al dominio ambientale.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -370,10 +370,10 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC3.3 Visualizzazione posizione e stato colonne di ricarica]
 )
 
-=== UC3.3.1: Visualizzazione posizione e disponibilità delle colonne di ricarica
+=== UC3.3.1: Visualizzazione posizione delle colonne di ricarica
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante la posizione delle colonne di ricarica per auto, mediante indicatori booleani, i quali indicheranno la disponibilità della colonna corrisponente.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante la posizione delle colonne di ricarica per auto.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
@@ -381,11 +381,25 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /* TODO: cambiare l'immagine con una creata apposta per il caso d'uso*/
 #figure(
   image("assets/UML/UC3.3.1_Visualizzazione-posizione-e-disponibilità-delle-colonne-di-ricarica.png",width:70%),
-  caption: [UC3.3.1 Visualizzazione posizione e disponibilità colonne di ricarica]
+  caption: [UC3.3.1 Visualizzazione posizione colonne di ricarica]
+)
+
+=== UC3.3.2: Visualizzazione disponibilità delle colonne di ricarica
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
+- *Postcondizioni*: l'amministratore pubblico visualizza  #glossary("pannello") indicatori booleani, i quali indicheranno la disponibilità della colonna corrisponente.
+- *Scenario Principale*:
+  + l'amministratore pubblico accede alla piattaforma di visualizzazione;
+  + l'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
+
+/* TODO: cambiare l'immagine con una creata apposta per il caso d'uso*/
+#figure(
+  image("assets/UML/UC3.3.1_Visualizzazione-posizione-e-disponibilità-delle-colonne-di-ricarica.png",width:70%),
+  caption: [UC3.3.1 Visualizzazione disponibilità colonne di ricarica]
 )
 
 #pagebreak()
-=== UC3.3.2: Visualizzazione tabella descrittiva delle colonne di ricarica
+=== UC3.3.3: Visualizzazione tabella descrittiva delle colonne di ricarica
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una tabella, la quale esprime, per ciascuna colonna di ricarica per auto, l'erogazione in Watt per ora attuale, indicizzando la tabella in base al nome del sensore.
@@ -483,7 +497,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 )
 
 /*TODO: per gli UC5.X andare a capire se usano soglie fisse o tramite variabili per gli allert (sempre se possibile)*/
-=== UC5: Visualizzazione allerte superamento soglie
+=== UC5: Visualizzazione allerta superamento soglia
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico riceve una notifica di superamento di una soglia impostata.
@@ -496,24 +510,24 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*TODO: andare a fare l'immagine apposta*/
 #pagebreak()
-=== UC5.1: Visualizzazione allerte superamento soglia temperatura
+=== UC5.1: Visualizzazione allerta superamento soglia temperatura
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa alla temperatura che notifica il superamento dei 40° celsius.
 - *Scenario Principale*:
-  + il sistema rileva una temperatura nella media dei 5 minuti, superiore ai 40° celsius.
+  + il sistema rileva una temperatura nella media dei 5 minuti, superiore ai 40° Celsius.
 #figure(
   image("assets/UML/UC5.1_Visualizzazione-allerte-superamento-soglia-temperatura.png",width:70%),
   caption: [UC5.1 Visualizzazione allerte superamento soglia temperatura]
 )
 
 /*TODO: andare a fare l'immagine apposta*/
-=== UC5.2: Visualizzazione allerte superamento soglia precipitazioni
+=== UC5.2: Visualizzazione allerta superamento soglia precipitazioni
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa alle precipitazioni che notifica il superamento dei 50 millimetri di pioggia all'ora.
+- *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa alle precipitazioni che notifica il superamento dei 50 millimetri di pioggia all'ora (50 mm/h).
 - *Scenario Principale*:
-  + il sistema rileva un livello di precipitazioni medie nell'ora, superiore ai 50 millimetri di pioggia all'ora.
+  + il sistema rileva un livello di precipitazioni medie nell'ora, superiore ai 50 millimetri di pioggia all'ora (50 mm/h).
 #figure(
   image("assets/UML/UC5.2_Visualizzazione-allerte-superamento-soglia-precipitazioni.png",width:70%),
   caption: [UC5.2 Visualizzazione allerte superamento soglia precipitazioni]
@@ -521,7 +535,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*TODO: andare a fare l'immagine apposta*/
 #pagebreak()
-=== UC5.3: Visualizzazione allerte superamento soglia inquinamento dell'aria
+=== UC5.3: Visualizzazione allerta superamento soglia inquinamento dell'aria
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa all'inquinamento dell'aria che notifica il superamento di 80#[#sym.mu]g su metro cubo.
@@ -533,7 +547,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 )
 
 /*TODO: andare a fare l'immagine apposta*/
-=== UC5.4: Visualizzazione allerte superamento soglia bacini idrici
+=== UC5.4: Visualizzazione allerta superamento soglia bacini idrici
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa ai bacini idrici che notifica il superamento del 70% della capienza di un particolare bacino.
@@ -546,7 +560,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*TODO: andare a fare l'immagine apposta*/
 #pagebreak()
-=== UC5.5: Visualizzazione allerte superamento soglia zone ecologiche
+=== UC5.5: Visualizzazione allerta superamento soglia zone ecologiche
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa alle zone ecologiche che notifica il superamento dell'80% della capienza di una particolare zona ecologica.
