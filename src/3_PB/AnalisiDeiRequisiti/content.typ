@@ -137,7 +137,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC2: Visualizzazione dashboard dati ambientali
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'amministratore pubblico visualizza tutti i #glossary("pannelli") contenenti dati relativi al dominio ambientale.
+- *Postcondizioni*: l'amministratore pubblico visualizza tutti i #glossary("pannelli") contenenti dati relativi al dominio ambientale contemporaneamente.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -167,7 +167,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC2.2: Visualizzazione #glossary("pannello") #glossary("time series") per temperatura
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo alla temperatura, espressa in gradi celsius, in formato #glossary("time series") che ne mostra l'andamento in media aritmetica, distinto per sensore, aggregando i dati per intervalli di 5 minuti.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo alla temperatura, espressa in gradi Celsius, in formato #glossary("time series") che ne mostra l'andamento in media aritmetica, distinto per sensore, aggregando i dati per intervalli di 5 minuti.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -223,7 +223,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC2.6: Visualizzazione #glossary("pannello") time series per precipitazioni
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo all'intensità delle precipitazioni, espressa in millimetri orari, in formato #glossary("time series") che ne mostra l'andamento in media aritmetica, distinto per sensore, aggregando i dati per intervalli di 5 minuti.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo all'intensità delle precipitazioni, espressa in millimetri orari (mm/h), in formato #glossary("time series") che ne mostra l'andamento in media aritmetica, distinto per sensore, aggregando i dati per intervalli di 5 minuti.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
