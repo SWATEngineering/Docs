@@ -1,5 +1,6 @@
 #import "meta.typ" : title
 #import "functions.typ" : glossary, team, modulo, requirements_table, generate_requirements_array
+#show link: underline
 
 #set list(marker: ([•], [--]))
 #set enum(numbering: "1.a.")
@@ -1099,9 +1100,13 @@ caption: "Requisiti funzionali")
   (
   "Obbligatorio", [Viene richiesta una #glossary("documentazione") sulle scelte implementative e progettuali, che dovranno essere accompagnate da motivazioni.],"Capitolato",
   ),
+  ("Obbligatorio","Viene richiesto un manuale utente","Capitolato"),
   (
   "Obbligatorio","La documentazione dovrà riguardare anche problemi aperti ed eventuali possibili soluzioni da approfondire in futuro.","Capitolato"
-  )
+  ),
+  ("Desiderabile","Il sistema deve essere facile da usare, basso numero di click per raggiungere le cose desiderate","Norme di progetto"),
+  ("Desiderabile","L'amministratore pubblico deve poter saper padroneggiare il sistema in breve tempo","Norme di progetto"),
+  ("Obbligatorio","La repository di github del codice sorgente deve essere accessibile a tutti","Verbale esterno")
 )
 
 #let requisiti_qualita_con_codice = generate_requirements_array("Q", requisiti_qualita)
@@ -1113,7 +1118,7 @@ caption: "Requisiti di qualità")
 == Requisiti di vincolo
 #let requisiti_vincolo = (
   (
-  "Obbligatorio",[Il sistema deve gestire un carico di #glossary("dati in entrata") tra i 50 e i 100 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM, kernel linux 4 o superiore, macos 10 o superiori, windows 10 o superiori ],"Verbale esterno",
+  "Obbligatorio",[Il sistema deve gestire un carico di #glossary("dati in entrata") tra i 50 e i 100 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM, kernel linux 4 o superiore, macos 10 o superiori, windows 10 o superiori ],"Verbale esterno"
   ),
   (
   "Obbligatorio","I dati vanno raccolti in un database OLAP","Capitolato",
@@ -1137,10 +1142,29 @@ caption: "Requisiti di vincolo")
 
 == Requisiti sistema operativo
 
-L'applicazione viene eseguita sul browser e l'unico software che deve essere installato sul sistema operativo è #glossary[Docker].
+L'applicazione viene eseguita sul browser e l'unico software che deve essere installato sul sistema operativo è #glossary[Docker].\
 #glossary[Docker] viene fornito in quasi tutte le distro Linux, tramite il gestore di pacchetti specifico per la distribuzione, per cui l'installazione è molto semplice.
 Su Windows si richiede la versione Windows 10 o superiori, con processore 64 bit, una RAM minima di 4GB, WSL 2 versione 1.1.3.0 oppure usare la funzionalità disponibile di Hyper-v e Windows Container. Inoltre deve essere abilitata la virtualizzazione dell' hardware all'interno del BIOS.
 Per MAC, si richiede la versione minima 10.14 Mojave e una RAM minimale di 4GB.
+#pagebreak()
+== Requisiti prestazionali
+
+#let requisiti_prestazioni = (
+  (
+  "Obbligatorio",[Il sistema deve gestire un carico di #glossary("dati in entrata") tra i 50 e i 100 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM, kernel linux 4 o superiore, macos 10 o superiori, windows 10 o superiori],"Verbale esterno"
+  ),
+  ("Desiderabile","Il sistema deve avere un basso tempo di elaborazione tra il momento in cui i dati vengono generati e la loro visualizzazione sulla dashboard","Norme di progetto")
+  
+)
+
+#let requisiti_prestazioni_con_codice = generate_requirements_array("P", requisiti_prestazioni)
+#figure(
+requirements_table(requisiti_prestazioni_con_codice),
+caption: "Requisiti di prestazioni")
+
+== Requisiti sicurezza 
+
+Il team #team non ha individuato particolari criteri di sicurezza da adottare per lo sviluppo dell'applicazione.
 
 #pagebreak()
 == Tracciamento
@@ -1194,6 +1218,11 @@ caption: "Requisiti vincolo - Fonti")
 #let vincolo_des = requisiti_vincolo.filter(content => content.at(0) == "Desiderabile").len()
 #let vincolo_opz = requisiti_vincolo.filter(content => content.at(0) == "Opzionale").len()
 #let vincolo_tot = vincolo_des + vincolo_obb + vincolo_opz
+
+#let prestazioni_obb = requisiti_prestazioni.filter(content => content.at(0) == "Obbligatorio").len()
+#let prestazioni_des = requisiti_prestazioni.filter(content => content.at(0) == "Desiderabile").len()
+#let prestazioni_opz = requisiti_prestazioni.filter(content => content.at(0) == "Opzionale").len()
+#let prestazioni_tot = prestazioni_des + prestazioni_obb + prestazioni_opz
 
 #figure(
 table(
