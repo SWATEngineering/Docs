@@ -137,7 +137,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC2: Visualizzazione dashboard dati ambientali
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'amministratore pubblico visualizza tutti i #glossary("pannelli") contenenti dati relativi al dominio ambientale contemporaneamente.
+- *Postcondizioni*: l'amministratore pubblico visualizza lista di #glossary("pannelli") mutualmente esclusivi contenenti dati relativi al dominio ambientale.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -317,7 +317,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC3: Visualizzazione dashboard dati urbanistici
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'amministratore pubblico visualizza tutti i #glossary("pannelli") contenenti dati relativi al dominio urbanistico contemporaneamente.
+- *Postcondizioni*: l'amministratore pubblico visualizza lista dei #glossary("pannelli") mutualmente esclusivi contenenti dati relativi al dominio urbanistico contemporaneamente.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
