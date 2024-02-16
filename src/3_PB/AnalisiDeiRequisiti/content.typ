@@ -387,7 +387,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC3.3.2: Visualizzazione disponibilità delle colonne di ricarica
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
-- *Postcondizioni*: l'amministratore pubblico visualizza  #glossary("pannello") indicatori booleani, i quali indicheranno la disponibilità della colonna corrisponente.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") con indicatori booleani, i quali indicheranno la disponibilità della colonna corrisponente.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
@@ -683,7 +683,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Precondizioni*: l'amministratore pubblico sta visualizzando almeno un #glossary("pannello"). 
 - *Postcondizioni*: l'amministratore pubblico visualizza il nuovo layout.
 - *Scenario Principale*:
-  + l'amministratore pubblico sposta o ridimensiona i #glossary("pannelli") a suo piacimento.
+  + l'amministratore pubblico modifica i #glossary("pannelli") graficamente a suo piacimento.
 
 #figure(
   image("assets/UML/UC8_Modifica-layout-pannelli.png",width:70%),
@@ -1068,10 +1068,10 @@ caption: "Requisiti funzionali")
 #let requisiti_qualita = (
   (
   "Obbligatorio","Il superamento di test che dimostrino il corretto funzionamento dei servizi utilizzati e delle funzionalità implementate. La copertura di test deve essere almeno dell'80% e deve essere dimostrata tramite report.","Capitolato",
-  ),
+  ), /*
   (
   "Obbligatorio",[Il sistema deve essere testato nella sua interezza tramite #glossary("test end-to-end")],"Capitolato",
-  ),
+  ),*/
   (
   "Obbligatorio", [Viene richiesta una #glossary("documentazione") sulle scelte implementative e progettuali, che dovranno essere accompagnate da motivazioni.],"Capitolato",
   ),
@@ -1089,7 +1089,7 @@ caption: "Requisiti di qualità")
 == Requisiti di vincolo
 #let requisiti_vincolo = (
   (
-  "Obbligatorio",[Il sistema deve gestire un carico di #glossary("dati in entrata") tra i 50 e i 100 dati al secondo],"Verbale esterno",
+  "Obbligatorio",[Il sistema deve gestire un carico di #glossary("dati in entrata") tra i 50 e i 100 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM,rete 20mbps, kernel linux 4 o superiore, macos 10 o superiori, windows 10 o superiori ],"Verbale esterno",
   ),
   (
   "Obbligatorio","La creazione di un simulatore di almeno una sorgente dati","Capitolato",
@@ -1130,7 +1130,7 @@ caption: "Requisiti di vincolo")
 
 #pagebreak()
 == Tracciamento
-=== Requisiti funzionali - Fonti+
+=== Fonti - Requisiti funzionali 
 #C.update(0)
 #figure(
 table(
@@ -1160,7 +1160,7 @@ table(
   inset: 10pt,
   align: horizon,
   [*Requisiti*], [*Fonti*],
-  ..requisiti_vincolo_con_codice.map(content => (content.at(0),content.at(3))).flatten().map(content => [#content])
+  ..requisiti_vincolo_con_codice.map(content => (content.at(3),content.at(0))).flatten().map(content => [#content])
 ),
 caption: "Requisiti vincolo - Fonti")
 
