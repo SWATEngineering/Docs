@@ -1141,24 +1141,24 @@ table(
 ),
 caption: "Requisiti funzionali - Fonti")
 
-=== Requisiti qualità - Fonti
+=== Fonti - Requisiti qualità 
 #figure(
 table(
   columns: (auto, auto),
   inset: 10pt,
   align: horizon,
-  [*Requisiti*], [*Fonti*],
-  ..requisiti_qualita_con_codice.map(content => (content.at(0),content.at(3))).flatten().map(content => [#content])
+  [*Fonti*], [*Requisiti*],
+  ..requisiti_qualita_con_codice.map(content => (content.at(3),content.at(0))).flatten().map(content => [#content])
 ),
 caption: "Requisiti qualità - Fonti")
 
-=== Requisiti vincolo - Fonti
+=== Fonti - Requisiti vincolo 
 #figure(
 table(
   columns: (auto, auto),
   inset: 10pt,
   align: horizon,
-  [*Requisiti*], [*Fonti*],
+  [*Fonti*], [*Requisiti*],
   ..requisiti_vincolo_con_codice.map(content => (content.at(3),content.at(0))).flatten().map(content => [#content])
 ),
 caption: "Requisiti vincolo - Fonti")
