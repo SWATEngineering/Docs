@@ -1113,11 +1113,18 @@ caption: "Requisiti di qualità")
 == Requisiti di vincolo
 #let requisiti_vincolo = (
   (
-  "Obbligatorio",[Il sistema deve gestire un carico di #glossary("dati in entrata") tra i 50 e i 100 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM,rete 20mbps, kernel linux 4 o superiore, macos 10 o superiori, windows 10 o superiori ],"Verbale esterno",
+  "Obbligatorio",[Il sistema deve gestire un carico di #glossary("dati in entrata") tra i 50 e i 100 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM, kernel linux 4 o superiore, macos 10 o superiori, windows 10 o superiori ],"Verbale esterno",
   ),
-    (
+  (
   "Obbligatorio","I dati vanno raccolti in un database OLAP","Capitolato",
-  )
+  ),
+  ("Obbligatorio","I dati devono poter essere visualizzati sulla piattaforma Grafana","Capitolato"),
+  ("Obbligatorio","Deve essere utilizzato Docker Compose versione 3.8 per l'installazione del software","Verbale Esterno"),
+  ("Obbligatorio","I dati in ingresso nel database OLAP devono avere formato pseudo-tabellare, si utilizza Json", "Verbale Esterno"),
+  ("Obbligatorio","Utilizzo di Apache Kafka per lo streaming dei dati","Capitolato"),
+  ("Obbligatorio","Utilizzo dell'applicazione richiede compatibilità con l'ultima versione di Google Chrome v120 (o superiori) o Mozilla Firefox v120 (o superiori) o Microsoft Edge v120 (o superiori), Opera v106 (o superiori)","Capitolato"),
+  
+  
   
   
   
@@ -1127,6 +1134,10 @@ caption: "Requisiti di qualità")
 #figure(
 requirements_table(requisiti_vincolo_con_codice),
 caption: "Requisiti di vincolo")
+
+== Requisiti sistema operativo
+
+L'applicazione 
 
 #pagebreak()
 == Tracciamento
