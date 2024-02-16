@@ -902,10 +902,13 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   ),
   /*TODO: andare a creare vincolo per la verifica del menù di selezione tra le dashboard*/
   (
+  "Obbligatorio","La creazione di un simulatore di almeno una sorgente dati","Capitolato",
+  ),
+  (
   "Obbligatorio","La simulazione deve produrre dati realistici","Capitolato",
   ),
   (
-  "Obbligatorio","I dati vanno raccolti in un database OLAP","Capitolato",
+  "Obbligatorio",[Deve esistere una #glossary("dashboard") che riporti almeno i dati di un sensore],"Capitolato",
   ),
   (
   "Desiderabile","La simulazione di più sorgenti dati","Capitolato",
@@ -922,7 +925,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   (
   "Desiderabile",[Deve esistere una #glossary("dashboard") avanzata contenente: una mappa della città, widget e informazioni sui sensori (ad esempio il tipo di sensore, il modello, ecc.).],"Capitolato"
   ),
-  (
+    (
      "Obbligatorio", [L'utente deve poter visualizzare un menù di selezione delle #glossary("dashboard"), che permetta di selezionare tra Sensori, Ambientale, Urbanistica e Dati anomali & superamento soglie.], [UC#C.display()]
   ),
   (
@@ -1112,13 +1115,11 @@ caption: "Requisiti di qualità")
   (
   "Obbligatorio",[Il sistema deve gestire un carico di #glossary("dati in entrata") tra i 50 e i 100 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM,rete 20mbps, kernel linux 4 o superiore, macos 10 o superiori, windows 10 o superiori ],"Verbale esterno",
   ),
-  (
-  "Obbligatorio","La creazione di un simulatore di almeno una sorgente dati","Capitolato",
-  ),
-  
-  (
-  "Obbligatorio",[Deve esistere una #glossary("dashboard") che riporti almeno i dati di un sensore],"Capitolato",
+    (
+  "Obbligatorio","I dati vanno raccolti in un database OLAP","Capitolato",
   )
+  
+  
   
 )
 
