@@ -902,6 +902,27 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   ),
   /*TODO: andare a creare vincolo per la verifica del menù di selezione tra le dashboard*/
   (
+  "Obbligatorio","La simulazione deve produrre dati realistici","Capitolato",
+  ),
+  (
+  "Obbligatorio","I dati vanno raccolti in un database OLAP","Capitolato",
+  ),
+  (
+  "Desiderabile","La simulazione di più sorgenti dati","Capitolato",
+  ),
+  (
+  "Opzionale","Messa in evidenza di relazioni tra dati provenienti da sorgenti diverse","Capitolato",
+  ),
+  (
+  "Opzionale","Un sistema di allerta che notifichi l'utente in caso di anomalie o eventi critici","Verbale esterno",
+  ),
+  (
+  "Opzionale","La previsione di eventi futuri, basata su dati storici e attuali","Capitolato",
+  ),
+  (
+  "Desiderabile",[Deve esistere una #glossary("dashboard") avanzata contenente: una mappa della città, widget e informazioni sui sensori (ad esempio il tipo di sensore, il modello, ecc.).],"Capitolato"
+  ),
+  (
      "Obbligatorio", [L'utente deve poter visualizzare un menù di selezione delle #glossary("dashboard"), che permetta di selezionare tra Sensori, Ambientale, Urbanistica e Dati anomali & superamento soglie.], [UC#C.display()]
   ),
   (
@@ -1094,33 +1115,11 @@ caption: "Requisiti di qualità")
   (
   "Obbligatorio","La creazione di un simulatore di almeno una sorgente dati","Capitolato",
   ),
-  (
-  "Obbligatorio","La simulazione deve produrre dati realistici","Capitolato",
-  ),
-  (
-  "Obbligatorio","I dati vanno raccolti in un database OLAP","Capitolato",
-  ),
-  (
-  "Obbligatorio","I dati vanno passati ad un sistema di stream processing","Capitolato",
-  ),
+  
   (
   "Obbligatorio",[Deve esistere una #glossary("dashboard") che riporti almeno i dati di un sensore],"Capitolato",
-  ),
-  (
-  "Desiderabile","La simulazione di più sorgenti dati","Capitolato",
-  ),
-  (
-  "Opzionale","Messa in evidenza di relazioni tra dati provenienti da sorgenti diverse","Capitolato",
-  ),
-  (
-  "Opzionale","Un sistema di allerta che notifichi l'utente in caso di anomalie o eventi critici","Verbale esterno",
-  ),
-  (
-  "Opzionale","La previsione di eventi futuri, basata su dati storici e attuali","Capitolato",
-  ),
-  (
-  "Desiderabile",[Deve esistere una #glossary("dashboard") avanzata contenente: una mappa della città, widget e informazioni sui sensori (ad esempio il tipo di sensore, il modello, ecc.).],"Capitolato"
   )
+  
 )
 
 #let requisiti_vincolo_con_codice = generate_requirements_array("V", requisiti_vincolo)
