@@ -317,7 +317,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC3: Visualizzazione dashboard dati urbanistici
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'amministratore pubblico visualizza #glossary("pannelli") contenenti dati relativi al dominio urbanistico.
+- *Postcondizioni*: l'amministratore pubblico visualizza tutti i #glossary("pannelli") contenenti dati relativi al dominio urbanistico contemporaneamente.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
@@ -1130,14 +1130,15 @@ caption: "Requisiti di vincolo")
 
 #pagebreak()
 == Tracciamento
-=== Requisiti funzionali - Fonti
+=== Requisiti funzionali - Fonti+
+#C.update(0)
 #figure(
 table(
   columns: (auto, auto),
   inset: 10pt,
   align: horizon,
-  [*Requisiti*], [*Fonti*],
-  ..requisiti_funzionali_con_codice.map(content => (content.at(0),content.at(3))).flatten().map(content => [#content])
+  [*Fonti*], [*Requisiti*],
+  ..requisiti_funzionali_con_codice.map(content => (content.at(3),content.at(0))).flatten().map(content => [#content])
 ),
 caption: "Requisiti funzionali - Fonti")
 
