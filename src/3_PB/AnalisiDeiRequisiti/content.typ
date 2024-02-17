@@ -1100,7 +1100,7 @@ caption: "Requisiti funzionali")
   (
   "Obbligatorio", [Viene richiesta una #glossary("documentazione") sulle scelte implementative e progettuali, che dovranno essere accompagnate da motivazioni.],"Capitolato",
   ),
-  ("Obbligatorio","Viene richiesto un manuale utente","Capitolato"),
+  ("Obbligatorio","Viene richiesto un Manuale Utente","Capitolato"),
   (
   "Obbligatorio","La documentazione dovrà riguardare anche problemi aperti ed eventuali possibili soluzioni da approfondire in futuro.","Capitolato"
   ),
@@ -1120,7 +1120,7 @@ caption: "Requisiti di qualità")
 == Requisiti di vincolo
 #let requisiti_vincolo = (
   (
-  "Obbligatorio",[Il sistema deve gestire un carico di #glossary("dati in entrata") tra i 50 e i 100 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM, kernel linux 4 o superiore, macos 10 o superiori, windows 10 o superiori ],"Verbale esterno"
+  "Obbligatorio",[Il sistema deve gestire un carico di #glossary("dati in entrata") tra i 50 e i 100 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM],"Verbale esterno"
   ),
   (
   "Obbligatorio","I dati vanno raccolti in un database OLAP","Capitolato",
@@ -1180,7 +1180,7 @@ table(
   [*Fonti*], [*Requisiti*],
   ..requisiti_funzionali_con_codice.map(content => (content.at(3),content.at(0))).flatten().map(content => [#content])
 ),
-caption: "Requisiti funzionali - Fonti")
+caption: "Fonti - Requisiti funzionali")
 
 === Fonti - Requisiti qualità 
 #figure(
@@ -1191,7 +1191,7 @@ table(
   [*Fonti*], [*Requisiti*],
   ..requisiti_qualita_con_codice.map(content => (content.at(3),content.at(0))).flatten().map(content => [#content])
 ),
-caption: "Requisiti qualità - Fonti")
+caption: "Fonti - Requisiti qualità")
 
 === Fonti - Requisiti vincolo 
 #figure(
@@ -1202,7 +1202,21 @@ table(
   [*Fonti*], [*Requisiti*],
   ..requisiti_vincolo_con_codice.map(content => (content.at(3),content.at(0))).flatten().map(content => [#content])
 ),
-caption: "Requisiti vincolo - Fonti")
+caption: "Fonti - Requisiti vincolo")
+
+=== Fonti - Requisiti prestazioni 
+
+#figure(
+table(
+  columns: (auto, auto),
+  inset: 10pt,
+  align: horizon,
+  [*Fonti*], [*Requisiti*],
+  ..requisiti_prestazioni_con_codice.map(content => (content.at(3),content.at(0))).flatten().map(content => [#content])
+),
+caption: "Fonti - Requisiti prestazioni")
+
+
 
 #pagebreak()
 == Riepilogo
@@ -1234,6 +1248,7 @@ table(
   [*Tipologia*], [*Obbligatori*], [*Desiderabili*], [*Opzionali*], [*Totale*],
   [funzionali], [#funzionale_obb], [#funzionale_des], [#funzionale_opz], [#funzionale_tot],
   [di qualità], [#qualità_obb], [#qualità_des], [#qualità_opz], [#qualità_tot],
-  [di vincolo], [#vincolo_obb], [#vincolo_des], [#vincolo_opz], [#vincolo_tot]
+  [di vincolo], [#vincolo_obb], [#vincolo_des], [#vincolo_opz], [#vincolo_tot],
+  [di prestazioni], [#prestazioni_obb],[#prestazioni_des],[#prestazioni_opz],[#prestazioni_tot]
 ),
 caption: "Tabella di riepilogo dei vincoli")
