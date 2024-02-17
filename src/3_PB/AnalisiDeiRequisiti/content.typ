@@ -83,7 +83,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico visualizza un menù di selezione da cui può scegliere in che dashboard spostarsi tra: Sensori, Ambientale, Urbanistica, Dati anomali & superamento soglie. 
 - *Scenario Principale*:
-  + l'amministratore pubblico accede alla piattaforma di visualizzazione; 
+  + l'amministratore pubblico accede alla piattaforma di visualizzazione.
 
 #figure(
   image("assets/UML/UC0_Visualizzazione-menù-dashboard.png",width:70%),
@@ -237,7 +237,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC2.7: Visualizzazione #glossary("pannello") precipitazioni medie
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse millimetri di pioggia all'ora, indicante la media dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori, degli ultimi 5 minuti.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse millimetri di pioggia all'ora (mm/h), indicante la media dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori, degli ultimi 5 minuti.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -291,7 +291,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC2.11: Visualizzazione #glossary("pannello") temperatura media
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente la media della temperatura, espressa in gradi celsius, considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente la media della temperatura, espressa in gradi Celsius, considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
 - *Scenario Principale*:
   + l'amministratore pubblico accede alla piattaforma di visualizzazione;
   + l'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -514,7 +514,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC5.1: Visualizzazione allerta superamento soglia temperatura
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa alla temperatura che notifica il superamento dei 40° celsius.
+- *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa alla temperatura che notifica il superamento dei 40° Celsius.
 - *Scenario Principale*:
   + il sistema rileva una temperatura nella media dei 5 minuti, superiore ai 40° Celsius.
 #figure(
@@ -654,6 +654,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*Cambiare il numero nell'immagine*/
 #pagebreak()
+/* Non è un caso d'uso 
 === UC6.5: Filtro #glossary("pannelli") collegati
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: 
@@ -662,7 +663,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: l'amministratore pubblico visualizza, in tutti i #glossary("pannelli") collegati, solamente i dati relativi al filtro applicato (o ai filtri applicati) al pannello sorgente, nel caso di #glossary("pannelli") che dipendono da altri #glossary("pannelli") per la visualizzazione di dati.
 - *Scenario Principale*:
   + il sistema aggiorna tutti i #glossary("pannelli") collegati.
-
+*/
 /*Cambiare il numero nell'immagine*/
 === UC7: Ordinamento #glossary("pannelli") tabellari
 - *Attore Principale*: amministratore pubblico.
@@ -757,7 +758,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + il sensore effettua una rilevazione quantitativa delle precipitazioni;
-  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la quantità di precipitazioni rilevate, espresse in millimetri all'ora, il timestamp di rilevazione e le proprie coordinate;
+  + il sensore formatta il messaggio da inviare al sistema, di modo da mandare la quantità di precipitazioni rilevate, espresse in millimetri all'ora (mm/h), il timestamp di rilevazione e le proprie coordinate;
   + il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -942,7 +943,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Obbligatorio", [L'utente deve poter monitorare i dati provenienti dai sensori relativi ai dati ambientali in una #glossary("dashboard") apposita.], [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media aritmetica della temperatura, espressa in gradi celsius, per ciascun sensore, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)#C.step(level:2)UC#C.display()]
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media aritmetica della temperatura, espressa in gradi Celsius, per ciascun sensore, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)#C.step(level:2)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media aritmetica della percentuale d'umidità, per ciascun sensore, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
@@ -954,10 +955,10 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'ultima velocità del vento, espressa in chilometri all'ora, per ciascun sensore, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media aritmetica dell'intensità delle precipitazioni, espresse in millimetri all'ora, per ciascun sensore, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media aritmetica dell'intensità delle precipitazioni, espresse in millimetri all'ora (mm/h), per ciascun sensore, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico, che esprime l'intensità media delle precipitazioni, espressa in millimetri all'ora, degli ultimi 5 minuti, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
+    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico, che esprime l'intensità media delle precipitazioni, espressa in millimetri all'ora (mm/h), degli ultimi 5 minuti, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media aritmetica del livello di polveri sottili nell'aria, espressi in $#sym.mu g\/m^3$ (#glossary("PM10")), per ciascun sensore, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
@@ -969,7 +970,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la percentuale di riempimento dei bacini idrici, per ciascun sensore, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico, che esprime la temperatura media, espressa in gradi celsius, degli ultimi 5 minuti, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
+    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico, che esprime la temperatura media, espressa in gradi Celsius, degli ultimi 5 minuti, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
     "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico, che esprime l'inquinamento dell'aria massimo, espresso in $#sym.mu g\/m^3$ (#glossary("PM10")), degli ultimi 5 minuti, tra i dati registrati da tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
@@ -1006,10 +1007,10 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i dati relativi a temperatura, precipitazioni, inquinamento dell'aria, bacini idrici e zone ecologiche, i cui valori superano una soglia fissata, il sensore che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo temperatura, superante una soglia di 40° celsius.", [#C.step()#C.step(level:2)UC#C.display()]
+    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo temperatura, superante una soglia di 40° Celsius.", [#C.step()#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo precipitazioni, superante una soglia di 50 millimetri all'ora.", [#C.step(level:2)UC#C.display()]
+    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo precipitazioni, superante una soglia di 50 millimetri all'ora (50mm/h).", [#C.step(level:2)UC#C.display()]
   ),
   (
     "Desiderabile", [L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo inquinamento dell'aria (#glossary("PM10")), superante una soglia di 80 microgrammi su metro cubo.], [#C.step(level:2)UC#C.display()]
@@ -1054,7 +1055,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alla velocità del vento, espressa in chilometri all'ora, alla direzione del vento, espressa in gradi (con gli 0° a Nord e i 180° a Sud), il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alle precipitazioni, espresse in millimetri all'ora, il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
+    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alle precipitazioni, espresse in millimetri all'ora (mm/h), il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
   ),
   (
     "Obbligatorio", [Il sensore deve poter mandare e far persistere dati relativi all'inquinamento dell'aria, espresso in microgrammi al metro cubo (#glossary("PM10")), il timestamp di rilevazione e le proprie coordinate.], [#C.step()UC#C.display()]
