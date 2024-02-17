@@ -381,7 +381,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /* TODO: cambiare l'immagine con una creata apposta per il caso d'uso*/
 #figure(
-  image("assets/UML/UC3.3.1_Visualizzazione-posizione-e-disponibilità-delle-colonne-di-ricarica.png",width:70%),
+  image("assets/UML/UC3.3.1_Visualizzazione-posizione-delle-colonne-di-ricarica.png",width:70%),
   caption: [UC3.3.1 Visualizzazione posizione colonne di ricarica]
 )
 
@@ -395,7 +395,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /* TODO: cambiare l'immagine con una creata apposta per il caso d'uso*/
 #figure(
-  image("assets/UML/UC3.3.1_Visualizzazione-posizione-e-disponibilità-delle-colonne-di-ricarica.png",width:70%),
+  image("assets/UML/UC3.3.2_Visualizzazione-disponibilità-delle-colonne-di-ricarica.png",width:70%),
   caption: [UC3.3.1 Visualizzazione disponibilità colonne di ricarica]
 )
 
@@ -410,7 +410,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /* TODO: cambiare l'immagine con una creata apposta per il caso d'uso*/
 #figure(
-  image("assets/UML/UC3.3.2_Visualizzazione-tabella-descrittiva-delle-colonne-di-ricarica.png",width:70%),
+  image("assets/UML/UC3.3.3_Visualizzazione-tabella-descrittiva-delle-colonne-di-ricarica.png",width:70%),
   caption: [UC3.3.2 Visualizzazione tabella descrittiva delle colonne di ricarica]
 )
 
