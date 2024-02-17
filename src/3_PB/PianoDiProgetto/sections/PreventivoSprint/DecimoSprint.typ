@@ -3,9 +3,9 @@
 
 == Decimo #glossary[sprint]
 
-*Inizio*: Venerdì 16/02/2024
+*Inizio*: Venerdì 23/02/2024
 
-*Fine*: Giovedì 22/02/2024 
+*Fine*: Giovedì 29/02/2024 
 
 #prospettoOrario(sprintNumber: "10")
 #prospettoEconomico(sprintNumber: "10")

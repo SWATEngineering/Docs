@@ -10,7 +10,7 @@ Sulla base delle scadenze riportate nella sezione *Scadenze* si pianificano:
 - 2 #glossary[sprint] della durata di una settimana per arrivare alla revisione #glossary[CA]\. 
 
 Il documento _Piano di Progetto_ si evolve durante tutto il ciclo di vita del progetto. Inizialmente, il team aveva pianificato #glossary[sprint] della durata di due settimane. Tuttavia, durante lo svolgimento, è risultato preferibile passare a #glossary[sprint] della durata di una settimana. Di conseguenza, il documento del _Piano di progetto_, in particolare nelle sezioni *Pianificazione* e *Preventivo*, viene aggiornato rispetto a questa modifica. 
-Nell’intervallo di tempo tra revisione #glossary[RTB] e revisione #glossary[PB], è stata pianificata una diminuzione del carico di lavoro nelle ultime due settimane del mese di Gennaio e la prima del mese di Febbraio, per permettere ai membri del team di dedicarsi agli altri impegni richiesti dal percorso di studio.
+Nell’intervallo di tempo tra revisione #glossary[RTB] e revisione #glossary[PB], è stata pianificata una diminuzione del carico di lavoro nelle ultime due settimane del mese di Gennaio e le prime due del mese di Febbraio, per permettere ai membri del team di dedicarsi agli altri impegni richiesti dal percorso di studio e allo svolgimento della revisione #glossary[RTB], rispettivamente.
 
 Per ciascuno #glossary[sprint] vengono stabilite le date di inizio e di fine, e il relativo insieme delle attività pianificate.
 
@@ -40,13 +40,13 @@ Durante questa fase il colloquio con la Proponente e i Committenti viene mantenu
 #include "PianificazioneSprint/SettimoSprint.typ"
 #include "PianificazioneSprint/OttavoSprint.typ"
 
-=== Pausa programmata di tre settimane
+=== Pausa programmata di due settimane e revisione #glossary[RTB]
 
 *Inizio*: Venerdì 19/01/2024
 
-*Fine*: Giovedì 08/02/2024 
+*Fine*: Giovedì 15/02/2024 
 
-Il team ha programmato una pausa di tre settimane per consentire ai membri di concentrarsi sugli esami e sulla preparazione in vista della revisione #glossary[RTB].
+Il team ha programmato una pausa di due settimane per consentire ai membri di concentrarsi sugli esami e, successivamente, un periodo di due settimane volto alla preparazione in vista della revisione #glossary[RTB] e al suo svolgimento.
 
 == Product Baseline #glossary[PB]
 
@@ -57,9 +57,9 @@ Il team ha programmato una pausa di tre settimane per consentire ai membri di co
   ],
 )
 
-*Inizio*: 09/02/2024
+*Inizio*: 16/02/2024
 
-*Fine*: 21/03/2024 
+*Fine*: 28/03/2024 
 
 In questa fase la concentrazione, soprattutto nel periodo iniziale, si focalizza sulla progettazione. Si inizia la stesura del documento delle _Specifiche Tecniche_ e lo studio di un'#glossary[architettura] adeguata. Iniziano il loro ciclo di vita anche il _Manuale Utente_ e le _Specifiche Tecniche_.
 Attraverso le fasi di progettazione e sviluppo ha inizio la creazione del progetto vero e proprio, utilizzando le conoscenze acquisite durante la creazione del #glossary[PoC]. Lo sviluppo includerà anche le fasi di testing del prodotto.
@@ -69,9 +69,9 @@ Attraverso le fasi di progettazione e sviluppo ha inizio la creazione del proget
 
 == Customer Acceptance #glossary[CA]
 
-*Inizio*: 22/03/2024 
+*Inizio*: 29/03/2024 
 
-*Fine*: 04/04/2024
+*Fine*: 11/04/2024
 
 La fase di Customer Acceptance si basa su una verifica e miglioramento di tutti i documenti citati nelle altre revisioni.
 Il prodotto è considerato alla sua fase finale e si programma di modificarlo solamente per la risoluzione di #glossary[bug] o l'aggiunta di funzionalità richieste durante la revisione precedente (#glossary[PB]).
