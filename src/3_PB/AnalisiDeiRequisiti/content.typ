@@ -686,10 +686,37 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: l'amministratore pubblico visualizza il nuovo layout.
 - *Scenario Principale*:
   + l'amministratore pubblico modifica i #glossary("pannelli") graficamente a suo piacimento.
+- *Generalizzazioni*: [UC8.1] [UC8.2]
 
 #figure(
   image("assets/UML/UC8_Modifica-layout-pannelli.png",width:70%),
   caption: [UC8 Modifica layout #glossary("pannelli")]
+)
+
+=== UC8.1: Spostamento #glossary("pannelli")
+- *Attore Principale*: amministratore pubblico. 
+- *Precondizioni*: l'amministratore pubblico sta visualizzando almeno un #glossary("pannello"). 
+- *Postcondizioni*: l'amministratore pubblico visualizza il nuovo layout.
+- *Scenario Principale*:
+  + l'amministratore pubblico sposta i #glossary("pannelli") all'interno della #glossary[dashboard] a suo piacimento.
+
+
+#figure(
+  image("assets/UML/UC8.1_Spostamento-pannelli.png",width:70%),
+  caption: [UC8.1 Spostamento #glossary("pannelli")]
+)
+
+=== UC8.2: Ridimensionamento #glossary("pannelli")
+- *Attore Principale*: amministratore pubblico. 
+- *Precondizioni*: l'amministratore pubblico sta visualizzando almeno un #glossary("pannello"). 
+- *Postcondizioni*: l'amministratore pubblico visualizza il nuovo layout.
+- *Scenario Principale*:
+  + l'amministratore pubblico ridimensiona i #glossary("pannelli") a suo piacimento all'interno della #glossary[dashboard].
+
+
+#figure(
+  image("assets/UML/UC8.2_Ridimensionamento-pannelli.png",width:70%),
+  caption: [UC8.2 Ridimensionamento #glossary("pannelli")]
 )
 
 /*Cambiare il numero nell'immagine*/
