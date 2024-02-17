@@ -396,7 +396,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /* TODO: cambiare l'immagine con una creata apposta per il caso d'uso*/
 #figure(
   image("assets/UML/UC3.3.2_Visualizzazione-disponibilità-delle-colonne-di-ricarica.png",width:70%),
-  caption: [UC3.3.1 Visualizzazione disponibilità colonne di ricarica]
+  caption: [UC3.3.2 Visualizzazione disponibilità colonne di ricarica]
 )
 
 #pagebreak()
