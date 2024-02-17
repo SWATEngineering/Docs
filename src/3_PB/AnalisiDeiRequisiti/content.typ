@@ -399,7 +399,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC3.3.2 Visualizzazione disponibilità colonne di ricarica]
 )
 
-#pagebreak()
+
 === UC3.3.3: Visualizzazione tabella descrittiva delle colonne di ricarica
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
@@ -411,7 +411,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /* TODO: cambiare l'immagine con una creata apposta per il caso d'uso*/
 #figure(
   image("assets/UML/UC3.3.3_Visualizzazione-tabella-descrittiva-delle-colonne-di-ricarica.png",width:70%),
-  caption: [UC3.3.2 Visualizzazione tabella descrittiva delle colonne di ricarica]
+  caption: [UC3.3.3 Visualizzazione tabella descrittiva delle colonne di ricarica]
 )
 
 === UC3.4: Visualizzazione grafico a mappa congestione stradale
@@ -498,7 +498,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 )
 
 /*TODO: per gli UC5.X andare a capire se usano soglie fisse o tramite variabili per gli allert (sempre se possibile)*/
-=== UC5: Visualizzazione allerta superamento soglia
+=== UC5: Visualizzazione allerte superamento soglia
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico riceve una notifica di superamento di una soglia impostata.
@@ -519,7 +519,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + il sistema rileva una temperatura nella media dei 5 minuti, superiore ai 40° Celsius.
 #figure(
   image("assets/UML/UC5.1_Visualizzazione-allerte-superamento-soglia-temperatura.png",width:70%),
-  caption: [UC5.1 Visualizzazione allerte superamento soglia temperatura]
+  caption: [UC5.1 Visualizzazione allerta superamento soglia temperatura]
 )
 
 /*TODO: andare a fare l'immagine apposta*/
@@ -531,7 +531,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + il sistema rileva un livello di precipitazioni medie nell'ora, superiore ai 50 millimetri di pioggia all'ora (50 mm/h).
 #figure(
   image("assets/UML/UC5.2_Visualizzazione-allerte-superamento-soglia-precipitazioni.png",width:70%),
-  caption: [UC5.2 Visualizzazione allerte superamento soglia precipitazioni]
+  caption: [UC5.2 Visualizzazione allerta superamento soglia precipitazioni]
 )
 
 /*TODO: andare a fare l'immagine apposta*/
@@ -544,7 +544,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + il sistema rileva un coefficiente di inquinamento dell'aria (#glossary("PM10")), superiore ai 80#[#sym.mu]g su metro cubo.
 #figure(
   image("assets/UML/UC5.3_Visualizzazione-allerte-superamento-soglia-inquinamento-dell'aria.png",width:70%),
-  caption: [UC5.3 Visualizzazione allerte superamento soglia inquinamento dell'aria]
+  caption: [UC5.3 Visualizzazione allerta superamento soglia inquinamento dell'aria]
 )
 
 /*TODO: andare a fare l'immagine apposta*/
@@ -556,7 +556,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + il sistema rileva che il livello di un particolare bacino idrico è superiore al 70% della sua capienza.
 #figure(
   image("assets/UML/UC5.4_Visualizzazione-allerte-superamento-soglia-bacini-idrici.png",width:70%),
-  caption: [UC5.4 Visualizzazione allerte superamento soglia bacini idrici]
+  caption: [UC5.4 Visualizzazione allerta superamento soglia bacini idrici]
 )
 
 /*TODO: andare a fare l'immagine apposta*/
@@ -569,7 +569,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + il sistema rileva che il livello di una particolare zona ecologica è superiore all'80% della sua capienza.
 #figure(
   image("assets/UML/UC5.5_Visualizzazione-allerte-superamento-soglia-zone-ecologiche.png",width:70%),
-  caption: [UC5.5 Visualizzazione allerte superamento soglia zone ecologiche]
+  caption: [UC5.5 Visualizzazione allerta superamento soglia zone ecologiche]
 )
 
 /*Cambiare il numero nell'immagine*/
