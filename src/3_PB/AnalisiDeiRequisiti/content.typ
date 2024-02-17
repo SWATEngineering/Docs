@@ -613,7 +613,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Scenario Principale*:
   + l'amministratore pubblico seleziona la funzionalità relativa al filtro dei dati;
   + l'amministratore pubblico seleziona i valori delle tipologie di sensore desiderati.
-- *Inclusioni*: [UC6.5].
+
 #figure(
   image("assets/UML/UC6.2_Filtro-per-tipologia-sensore-su-tabella.png",width:100%),
   caption: [UC6.2 Filtro per tipologia sensore su tabella]
@@ -630,7 +630,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Scenario Principale*:
   + l'amministratore pubblico seleziona la funzionalità relativa al filtro dei dati;
   + l'amministratore pubblico seleziona i valori dei nomi dei sensori desiderati.
-- *Inclusioni*: [UC6.5].
+
 
 #figure(
   image("assets/UML/UC6.3_Filtro-per-nome-sensore-su-tabella.png",width:100%),
@@ -645,7 +645,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Scenario Principale*:
   + l'amministratore pubblico seleziona la funzionalità relativa al filtro dei dati per intervallo temporale;
   + l'amministratore pubblico seleziona l'intervallo temporale desiderato.
-- *Inclusioni*: [UC6.5].
+
 
 #figure(
   image("assets/UML/UC6.4_Filtro-per-intervallo-temporale.png",width:100%),
