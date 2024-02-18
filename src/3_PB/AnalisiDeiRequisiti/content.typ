@@ -665,10 +665,10 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*Cambiare il numero nell'immagine*/
 === UC7: Ordinamento #glossary("pannelli") tabellari
 - *Attore Principale*: amministratore pubblico.
-- *Precondizioni*: l'amministratore pubblico ha scelto e sta visualizzando un #glossary("pannello"), con all'interno una tabella, da ordinare per un suo campo.
+- *Precondizioni*: l'amministratore pubblico ha scelto e sta visualizzando un #glossary("pannello"), con all'interno una tabella, da ordinare per un suo campo, ovvero nome del sensore, percentuale batteria, data manutenzione.
 - *Postcondizioni*: l'amministratore pubblico visualizza i dati ordinati nella tabella, secondo tale campo.
 - *Scenario Principale*:
-  + L'amministratore pubblico seleziona un campo, della tabella, secondo cui ordinare i dati;
+  + L'amministratore pubblico seleziona un campo, della tabella , secondo cui ordinare i dati, tra i seguenti: nome del sensore, percentuale batteria, data manutenzione;
   + In tale campo l'amministratore pubblico sceglie tra l'ordinamento crescente e decrescente.
 
 #figure(
