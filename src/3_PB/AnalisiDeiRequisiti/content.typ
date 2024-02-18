@@ -94,7 +94,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC1: Visualizzazione dashboard generale sensori
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'amministratore pubblico visualizza #glossary("pannelli") relativi allo stato dei sensori, all'interno di un'unica dashboard. 
+- *Postcondizioni*: l'amministratore pubblico visualizza #glossary("pannelli") relativi allo stato dei sensori, all'interno di un'unica #glossary[dashboard]. 
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione; 
   + L'amministratore pubblico seleziona la visualizzazione della #glossary("dashboard") generale relativa ai sensori.
@@ -109,7 +109,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC1.1: Visualizzazione posizione sensori su mappa
 - *Attore Principale*: amministratore pubblico. 
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa che mostra le posizioni dei sensori, come icone, su di essa. 
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa che mostra le posizioni dei sensori, come icone, su di essa. Le icone dei sensori sono colorate in base al tipo di sensore con una label che ne esplicita il tipo e il nome. 
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione; 
   + L'amministratore pubblico seleziona la visualizzazione della #glossary("dashboard") generale relativa ai sensori;
@@ -123,7 +123,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC1.2: Visualizzazione tabella sensori
 - *Attore Principale*: amministratore pubblico. 
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'amministratore pubblico visualizza il #glossary("pannello") relativo ai dati inerenti ai sensori, riportando la percentuale di batteria, un valore booleano che esprime se il sensore va a batteria autonoma o meno e la data di ultima manutenzione del sensore, in forma tabellare, indicizzato dai nomi dei sensori.
+- *Postcondizioni*: l'amministratore pubblico visualizza il #glossary("pannello") relativo ai dati inerenti ai sensori, riportando la percentuale di batteria, un valore booleano che esprime se il sensore è alimentato da batteria autonoma o meno e la data di ultima manutenzione del sensore, in forma tabellare, indicizzato dai nomi dei sensori.
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione; 
   + L'amministratore pubblico seleziona la visualizzazione della #glossary("dashboard") generale relativa ai sensori.
@@ -157,7 +157,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
 - *Specializzazioni*: [UC2.2],[UC2.3],[UC2.4],[UC2.5],[UC2.6],[UC2.7],[UC2.8],[UC2.9],[UC2.10],[UC2.11].
-- *Estensioni*: [UC9].
+- *Estensioni*: [UC9] in caso non ci fosse alcun dato da visualizzare.
 
 #figure(
   image("assets/UML/UC2.1_Visualizzazione-pannello-dati-ambientali.png",width:100%),
@@ -168,7 +168,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC2.2: Visualizzazione #glossary("pannello") #glossary("time series") per temperatura
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo alla temperatura, espressa in gradi Celsius, in formato #glossary("time series") che ne mostra l'andamento in media aritmetica, distinto per sensore, aggregando i dati per intervalli di 5 minuti.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo alla temperatura, espressa in gradi Celsius (°C), in formato #glossary("time series") che ne mostra l'andamento in media aritmetica, distinto per sensore, aggregando i dati per intervalli di 5 minuti.
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -196,7 +196,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC2.4: Visualizzazione grafico a mappa direzione del vento
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa che esprime, mediante frecce aventi orgine nelle coordinate del sensore, la direzione del vento rilevata da ciascun sensore.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa che esprime, mediante frecce aventi origine nelle coordinate del sensore, la direzione del vento rilevata da ciascun sensore.
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -210,7 +210,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC2.5: Visualizzazione tabella velocità del vento
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente dati relativi all'ultima velocità del vento, espressa in chilometri all'ora, registrata da ciascun sensore, sotto forma tabellare.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente dati relativi all'ultima velocità del vento, espressa in chilometri all'ora (km/h), registrata da ciascun sensore, sotto forma tabellare.
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -291,7 +291,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC2.11: Visualizzazione #glossary("pannello") temperatura media
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente la media della temperatura, espressa in gradi Celsius, considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente la media della temperatura, espressa in gradi Celsius (°C), considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico.
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -318,7 +318,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC3: Visualizzazione dashboard dati urbanistici
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'amministratore pubblico visualizza lista dei #glossary("pannelli") mutualmente esclusivi contenenti dati relativi al dominio urbanistico contemporaneamente.
+- *Postcondizioni*: l'amministratore pubblico visualizza lista dei #glossary("pannelli") mutualmente esclusivi contenenti dati relativi al dominio urbanistico.
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
@@ -337,7 +337,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
 - *Specializzazioni*: [UC3.2],[UC3.3],[UC3.4],[UC3.5],[UC3.6].
-- *Estensioni*: [UC9].
+- *Estensioni*: [UC9] in caso non ci fossero dati da visualizzare.
 
 #figure(
   image("assets/UML/UC3.1_Visualizzazione-pannello-dati-urbanistici.png",width:100%),
@@ -417,7 +417,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC3.4: Visualizzazione grafico a mappa congestione stradale
 *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante lo stato di congestione delle strade, mediante gli stati "LOW", "MEDIUM", "HIGH" e "BLOCKED", atto a mostrare il livello di congestione della strada corrispondente.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante lo stato di congestione delle strade, mediante gli stati "LOW", "MEDIUM", "HIGH" e "BLOCKED" colorati di conseguenza, atto a mostrare il livello di congestione della strada corrispondente.
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
@@ -473,8 +473,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC4.1: Visualizzazione tabella #glossary("dati anomali")
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'amministratore pubblico visualizza, in forma tabellare, la lista ordinata di #glossary("dati anomali") rilevati dal sistema.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una tabella, la quale mostra tutte le anomalie rilevate, mostrando il valore dell'anomalia, il sensore che l'ha rilevata e il timestamp relativo.
+- *Postcondizioni*: L'amministratore pubblico visualizza un #glossary("pannello") contenente una tabella ordinata, che mostra tutti i #glossary("dati anomali") rilevati dal sistema. La tabella include il valore dell'anomalia, il sensore che l'ha rilevata e il timestamp relativo, ordinata in base al timestamp.
 - *Scenario Principale*:
   + L'amministratore pubblico seleziona la visualizzazione della deshboard delle anomalie.
 
@@ -539,7 +538,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC5.3: Visualizzazione allerta superamento soglia inquinamento dell'aria
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: nessuna.
-- *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa all'inquinamento dell'aria che notifica il superamento di 80#[#sym.mu]g su metro cubo.
+- *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa all'inquinamento dell'aria che notifica il superamento di 80#[#sym.mu]g su metro cubo ($80#sym.mu g\/m^3$).
 - *Scenario Principale*:
   + Il sistema rileva un coefficiente di inquinamento dell'aria (#glossary("PM10")), superiore ai 80#[#sym.mu]g su metro cubo.
 #figure(
