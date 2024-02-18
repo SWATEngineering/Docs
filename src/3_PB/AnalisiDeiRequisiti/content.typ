@@ -38,7 +38,7 @@ disambiguato. Tali termini, sono scritti in corsivo e marcati con una G a pedice
 === Riferimenti informativi
 Analisi dei requisiti - corso di Ingegneria del Software a.a. 2023/2024: \
 #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T5.pdf") \
-Cardin	Analisi e descrizione delle funzionalità: Use Case e relativi diagammi (UML) - corso di Ingegneria del Software a.a. 2023/2024: \
+Cardin	Analisi e descrizione delle funzionalità: Use Case e relativi diagrammi (UML) - corso di Ingegneria del Software a.a. 2023/2024: \
 #link("https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20di%20Attivit%C3%A0.pdf")
 
 = Descrizione
@@ -388,7 +388,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC3.3.2: Visualizzazione disponibilità delle colonne di ricarica
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") con indicatori booleani, i quali indicheranno la disponibilità della colonna corrisponente.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") con indicatori booleani, i quali indicheranno la disponibilità della colonna corrispondente.
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
@@ -462,7 +462,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico visualizza #glossary("pannelli") contenenti dati relativi al superamento delle soglie e alle anomalie rilevate.
 - *Scenario Principale*:
-  + L'amministratore pubblico seleziona la visualizzazione della deshboard delle anomalie.
+  + L'amministratore pubblico seleziona la visualizzazione della #glossary[dashboard] delle anomalie.
 
 #figure(
   image("assets/UML/UC4_Visualizzazione-dashboard-dati-anomali-e-superamento-soglie.png",width:60%),
@@ -475,7 +475,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: L'amministratore pubblico visualizza un #glossary("pannello") contenente una tabella ordinata, che mostra tutti i #glossary("dati anomali") rilevati dal sistema. La tabella include il valore dell'anomalia, il sensore che l'ha rilevata e il timestamp relativo, ordinata in base al timestamp.
 - *Scenario Principale*:
-  + L'amministratore pubblico seleziona la visualizzazione della deshboard delle anomalie.
+  + L'amministratore pubblico seleziona la visualizzazione della #glossary[dashboard] delle anomalie.
 
 #figure(
   image("assets/UML/UC4.1_Visualizzazione-tabella-dati-anomali.png",width:70%),
@@ -489,7 +489,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Precondizioni*: nessuna.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti le soglie impostate nel sistema, mostrando il valore superante la soglia, il sensore che ha rilevato tale valore e il timestamp relativo.
 - *Scenario Principale*:
-  + L'amministratore pubblico seleziona la visualizzazione della deshboard delle anomalie.
+  + L'amministratore pubblico seleziona la visualizzazione della #glossary[dashboard] delle anomalie.
 
 #figure(
   image("assets/UML/UC4.2_Visualizzazione-tabella-superamento-soglie.png",width:70%),
@@ -669,7 +669,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: l'amministratore pubblico visualizza i dati ordinati nella tabella, secondo tale campo.
 - *Scenario Principale*:
   + L'amministratore pubblico seleziona un campo, della tabella, secondo cui ordinare i dati;
-  + In tale campo l'amministratore pubblico seglie tra l'ordinamento crescente e decrescente.
+  + In tale campo l'amministratore pubblico sceglie tra l'ordinamento crescente e decrescente.
 
 #figure(
   image("assets/UML/UC7_Ordinamento-pannelli-tabellari.png",width:70%),
@@ -848,7 +848,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + Il sensore effettua una rilevazione del wattaggio erogato dalla colonna di ricarica;
-  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la quantità di energia erogata, espressa in chilowatt all'ora, il timestamp di rilevazione e le proprie coordinate;
+  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la quantità di energia erogata, espressa in chilowatt all'ora (kWh), il timestamp di rilevazione e le proprie coordinate;
   + Il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -1062,7 +1062,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Obbligatorio", [L'utente deve poter visualizzare l'applicazione dei filtri in determinati #glossary("pannelli"), riflessi anche sui #glossary("pannelli") collegati ai primi.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile", [Nei #glossary("pannelli") con tabelle, l'utente deve poter ordinare i dati in base alle loro colonne, sia in ordine crescente che descrescente.], [#C.step()UC#C.display()]
+    "Desiderabile", [Nei #glossary("pannelli") con tabelle, l'utente deve poter ordinare i dati in base alle loro colonne, sia in ordine crescente che decrescente.], [#C.step()UC#C.display()]
   ),
   (
     "Desiderabile", [L'utente deve poter modificare il layout della #glossary("dashboard") visualizzata, agendo su posizione e dimensione dei #glossary("pannelli").], [#C.step()UC#C.display()]
@@ -1092,7 +1092,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi al numero di parcheggi disponibili all'interno del parcheggio auto controllato, il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alla quantità di energia erogata dalla colonna di ricarica controllata, espresse in chilowatt all'ora, il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
+    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alla quantità di energia erogata dalla colonna di ricarica controllata, espresse in chilowatt all'ora (kWh), il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
   ),
   (
     "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alle coordinate della bicicletta elettrica controllata, la percentuale di batteria della stessa e il timestamp di rilevazione.", [#C.step()UC#C.display()]
