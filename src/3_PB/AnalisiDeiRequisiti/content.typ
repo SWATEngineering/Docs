@@ -734,7 +734,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + Il sensore effettua una rilevazione della temperatura;
-  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la temperatura, espressa in gradi Celsius, il timestamp di rilevazione e le proprie coordinate;
+  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la temperatura, espressa in gradi Celsius (°C), il timestamp di rilevazione e le proprie coordinate geografiche;
   + Il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -750,7 +750,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + Il sensore effettua una rilevazione dell'umidità;
-  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di umidità, il timestamp di rilevazione e le proprie coordinate;
+  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di umidità, il timestamp di rilevazione e le proprie coordinate geografiche;
   + Il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -767,7 +767,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + Il sensore effettua una rilevazione della velocità e della direzione del vento;
-  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la direzione del vento, espressa in gradi (con gli 0° a Nord e i 180° a Sud), la velocità del vento, espressa in chilometri all'ora, il timestamp di rilevazione e le proprie coordinate;
+  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la direzione del vento, espressa in gradi (con gli 0° a Nord e i 180° a Sud), la velocità del vento, espressa in chilometri all'ora, il timestamp di rilevazione e le proprie coordinate geografiche;
   + Il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -783,7 +783,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + Il sensore effettua una rilevazione quantitativa delle precipitazioni;
-  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la quantità di precipitazioni rilevate, espresse in millimetri all'ora (mm/h), il timestamp di rilevazione e le proprie coordinate;
+  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la quantità di precipitazioni rilevate, espresse in millimetri all'ora (mm/h), il timestamp di rilevazione e le proprie coordinate geografiche;
   + Il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -800,7 +800,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + Il sensore effettua una rilevazione quantitativa dell'inquinamento dell'aria;
-  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare rilevazioni #glossary("PM10") relative all'inquinamento dell'aria, espresse in $#sym.mu g\/m^3$, il timestamp di rilevazione e le proprie coordinate;
+  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare rilevazioni #glossary("PM10") relative all'inquinamento dell'aria, espresse in $#sym.mu g\/m^3$, il timestamp di rilevazione e le proprie coordinate geografiche;
   + Il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -816,7 +816,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + Il sensore effettua una rilevazione del livello del bacino idrico in cui è installato;
-  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di riempimento del bacino idrico controllato, il timestamp di rilevazione e le proprie coordinate;
+  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di riempimento del bacino idrico controllato, il timestamp di rilevazione e le proprie coordinate geografiche;
   + Il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -832,7 +832,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
    + Il sensore rileva gli ingressi e le uscite del parcheggio in cui è installato;
-  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la quantità di parcheggi liberi rilevati nel parcheggio controllato, il timestamp di rilevazione e le proprie coordinate;
+  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la quantità di parcheggi liberi rilevati nel parcheggio controllato, il timestamp di rilevazione e le proprie coordinate geografiche;
   + Il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -848,7 +848,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + Il sensore effettua una rilevazione del wattaggio erogato dalla colonna di ricarica;
-  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la quantità di energia erogata, espressa in chilowatt all'ora (kWh), il timestamp di rilevazione e le proprie coordinate;
+  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la quantità di energia erogata, espressa in chilowatt all'ora (kWh), il timestamp di rilevazione e le proprie coordinate geografiche;
   + Il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -865,7 +865,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + Il sensore effettua una rilevazione della posizione e della percentuale della batteria della bicicletta elettrica su cui è installato;
-  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare il timestamp di rilevazione, la percentuale di batteria e le coordinate della bicicletta;
+  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare il timestamp di rilevazione, la percentuale di batteria e le coordinate geografiche della bicicletta;
   + Il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -881,7 +881,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + Il sensore effettua una rilevazione del livello di riempimento del contenitore ecologico associato; 
-  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di riempimento della zona ecologica controllata, il timestamp di rilevazione e le proprie coordinate;
+  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di riempimento della zona ecologica controllata, il timestamp di rilevazione e le proprie coordinate geografiche;
   + Il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -898,7 +898,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + Il sensore effettua una rilevazione del livello di congestione della strada su cui è installato; 
-  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare lo stato della congestione stradale nella strada controllata, espresso nei seguenti stati (ordinati per ordine di congestione crescente) "LOW", "MEDIUM", "HIGH", "BLOCKED", il timestamp di rilevazione e le proprie coordinate;
+  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare lo stato della congestione stradale nella strada controllata, espresso nei seguenti stati (ordinati per ordine di congestione crescente) "LOW", "MEDIUM", "HIGH", "BLOCKED", il timestamp di rilevazione e le proprie coordinate geografiche;
   + Il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
