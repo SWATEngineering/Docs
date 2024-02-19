@@ -80,7 +80,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*TODO: fare immagine apposta*/
 === UC0: Visualizzazione menù dashboard
 - *Attore Principale*: amministratore pubblico.
-- *Precondizioni*: nessuna.
+- *Precondizioni*: il sistema è operativo e accessibile.
 - *Postcondizioni*: l'amministratore pubblico visualizza un menù di selezione da cui può scegliere in che dashboard spostarsi tra: Sensori, Ambientale, Urbanistica, Dati anomali & superamento soglie. 
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione.
@@ -93,7 +93,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*TODO: ricontrollare la fine di ogni use case che comprende l'uso di un #glossary("pannello")*/
 === UC1: Visualizzazione dashboard generale sensori
 - *Attore Principale*: amministratore pubblico.
-- *Precondizioni*: nessuna.
+- *Precondizioni*: il sistema è operativo e accessibile.
 - *Postcondizioni*: l'amministratore pubblico visualizza #glossary("pannelli") relativi allo stato dei sensori, all'interno di un'unica #glossary[dashboard]. 
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione; 
@@ -108,7 +108,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 #pagebreak()
 === UC1.1: Visualizzazione posizione sensori su mappa
 - *Attore Principale*: amministratore pubblico. 
-- *Precondizioni*: nessuna.
+- *Precondizioni*: il sistema è operativo e accessibile.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa che mostra le posizioni dei sensori, come icone, su di essa. Le icone dei sensori sono colorate in base al tipo di sensore con una label che ne esplicita il tipo e il nome. 
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione; 
@@ -122,7 +122,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 === UC1.2: Visualizzazione tabella sensori
 - *Attore Principale*: amministratore pubblico. 
-- *Precondizioni*: nessuna.
+- *Precondizioni*: il sistema è operativo e accessibile.
 - *Postcondizioni*: l'amministratore pubblico visualizza il #glossary("pannello") relativo ai dati inerenti ai sensori, riportando la percentuale di batteria, un valore booleano che esprime se il sensore è alimentato da batteria autonoma o meno e la data di ultima manutenzione del sensore, in forma tabellare, indicizzato dai nomi dei sensori.
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione; 
@@ -137,7 +137,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 #pagebreak()
 === UC2: Visualizzazione dashboard dati ambientali
 - *Attore Principale*: amministratore pubblico.
-- *Precondizioni*: nessuna.
+- *Precondizioni*: il sistema è operativo e accessibile.
 - *Postcondizioni*: l'amministratore pubblico visualizza lista di #glossary("pannelli") mutualmente esclusivi contenenti dati relativi al dominio ambientale.
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
@@ -317,7 +317,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 === UC3: Visualizzazione dashboard dati urbanistici
 - *Attore Principale*: amministratore pubblico.
-- *Precondizioni*: nessuna.
+- *Precondizioni*: il sistema è operativo e accessibile.
 - *Postcondizioni*: l'amministratore pubblico visualizza lista dei #glossary("pannelli") mutualmente esclusivi contenenti dati relativi al dominio urbanistico.
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
@@ -459,7 +459,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 #pagebreak()
 === UC4: Visualizzazione dashboard #glossary("dati anomali") e superamento soglie
 - *Attore Principale*: amministratore pubblico.
-- *Precondizioni*: nessuna.
+- *Precondizioni*: il sistema è operativo e accessibile.
 - *Postcondizioni*: l'amministratore pubblico visualizza #glossary("pannelli") contenenti dati relativi al superamento delle soglie e alle anomalie rilevate.
 - *Scenario Principale*:
   + L'amministratore pubblico seleziona la visualizzazione della #glossary[dashboard] delle anomalie.
@@ -472,7 +472,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*TODO: realizzare immagine corrispondente*/
 === UC4.1: Visualizzazione tabella #glossary("dati anomali")
 - *Attore Principale*: amministratore pubblico.
-- *Precondizioni*: nessuna.
+- *Precondizioni*: il sistema è operativo e accessibile.
 - *Postcondizioni*: L'amministratore pubblico visualizza un #glossary("pannello") contenente una tabella ordinata, che mostra tutti i #glossary("dati anomali") rilevati dal sistema. La tabella include il valore dell'anomalia, il sensore che l'ha rilevata e il timestamp relativo, ordinata in base al timestamp.
 - *Scenario Principale*:
   + L'amministratore pubblico seleziona la visualizzazione della #glossary[dashboard] delle anomalie.
@@ -486,7 +486,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 #pagebreak()
 === UC4.2: Visualizzazione tabella superamento soglie
 - *Attore Principale*: amministratore pubblico.
-- *Precondizioni*: nessuna.
+- *Precondizioni*: il sistema è operativo e accessibile.
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti le soglie impostate nel sistema, mostrando il valore superante la soglia, il sensore che ha rilevato tale valore e il timestamp relativo.
 - *Scenario Principale*:
   + L'amministratore pubblico seleziona la visualizzazione della #glossary[dashboard] delle anomalie.
@@ -499,7 +499,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*TODO: per gli UC5.X andare a capire se usano soglie fisse o tramite variabili per gli allert (sempre se possibile)*/
 === UC5: Visualizzazione allerte superamento soglia
 - *Attore Principale*: amministratore pubblico.
-- *Precondizioni*: nessuna.
+- *Precondizioni*: il sistema è operativo e accessibile.
 - *Postcondizioni*: l'amministratore pubblico riceve una notifica di superamento di una soglia impostata.
 - *Scenario Principale*:
   + Il sistema rileva condizioni che richiedono l'invio di una notifica per segnalare il superamento di una soglia impostata.
@@ -512,7 +512,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 #pagebreak()
 === UC5.1: Visualizzazione allerta superamento soglia temperatura
 - *Attore Principale*: amministratore pubblico.
-- *Precondizioni*: nessuna.
+- *Precondizioni*: il sistema è operativo e accessibile.
 - *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa alla temperatura che notifica il superamento dei 40° Celsius.
 - *Scenario Principale*:
   + Il sistema rileva una temperatura nella media dei 5 minuti, superiore ai 40° Celsius.
@@ -524,7 +524,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*TODO: andare a fare l'immagine apposta*/
 === UC5.2: Visualizzazione allerta superamento soglia precipitazioni
 - *Attore Principale*: amministratore pubblico.
-- *Precondizioni*: nessuna.
+- *Precondizioni*: il sistema è operativo e accessibile.
 - *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa alle precipitazioni che notifica il superamento dei 50 millimetri di pioggia all'ora (50 mm/h).
 - *Scenario Principale*:
   + Il sistema rileva un livello di precipitazioni medie nell'ora, superiore ai 50 millimetri di pioggia all'ora (50 mm/h).
@@ -537,7 +537,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 #pagebreak()
 === UC5.3: Visualizzazione allerta superamento soglia inquinamento dell'aria
 - *Attore Principale*: amministratore pubblico.
-- *Precondizioni*: nessuna.
+- *Precondizioni*: il sistema è operativo e accessibile.
 - *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa all'inquinamento dell'aria che notifica il superamento di 80#[#sym.mu]g su metro cubo ($80#sym.mu g\/m^3$).
 - *Scenario Principale*:
   + Il sistema rileva un coefficiente di inquinamento dell'aria (#glossary("PM10")), superiore ai 80#[#sym.mu]g su metro cubo.
@@ -549,7 +549,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*TODO: andare a fare l'immagine apposta*/
 === UC5.4: Visualizzazione allerta superamento soglia bacini idrici
 - *Attore Principale*: amministratore pubblico.
-- *Precondizioni*: nessuna.
+- *Precondizioni*: il sistema è operativo e accessibile.
 - *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa ai bacini idrici che notifica il superamento del 70% della capienza di un particolare bacino.
 - *Scenario Principale*:
   + Il sistema rileva che il livello di un particolare bacino idrico è superiore al 70% della sua capienza.
@@ -562,7 +562,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 #pagebreak()
 === UC5.5: Visualizzazione allerta superamento soglia zone ecologiche
 - *Attore Principale*: amministratore pubblico.
-- *Precondizioni*: nessuna.
+- *Precondizioni*: il sistema è operativo e accessibile.
 - *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa alle zone ecologiche che notifica il superamento dell'80% della capienza di una particolare zona ecologica.
 - *Scenario Principale*:
   + Il sistema rileva che il livello di una particolare zona ecologica è superiore all'80% della sua capienza.
