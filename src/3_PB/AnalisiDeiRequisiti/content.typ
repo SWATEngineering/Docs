@@ -1155,8 +1155,8 @@ caption: "Requisiti di qualità")
   "Obbligatorio","I dati vanno raccolti in un database OLAP","Capitolato",
   ),
   ("Obbligatorio","I dati devono poter essere visualizzati sulla piattaforma Grafana","Capitolato"),
-  ("Obbligatorio",[Deve essere utilizzato #glossary[Docker Compose] versione 3.8 per l'installazione del software],"Verbale Esterno"),
-  ("Obbligatorio","I dati in ingresso nel database OLAP devono avere formato pseudo-tabellare, si utilizza Json", "Verbale Esterno"),
+  ("Obbligatorio",[Deve essere utilizzato #glossary[Docker Compose] versione 3.8 per l'installazione del software],"Verbale esterno"),
+  ("Obbligatorio","I dati in ingresso nel database OLAP devono avere formato pseudo-tabellare, si utilizza Json", "Verbale esterno"),
   ("Obbligatorio","Utilizzo di Apache Kafka per lo streaming dei dati","Capitolato"),
   ("Obbligatorio","Utilizzo dell'applicazione richiede compatibilità con l'ultima versione di Google Chrome v120 (o superiori) o Mozilla Firefox v120 (o superiori) o Microsoft Edge v120 (o superiori), Opera v106 (o superiori)","Capitolato"),
 
@@ -1180,11 +1180,17 @@ Per MAC, si richiede la versione minima 10.14 Mojave e una RAM minimale di 4GB.
 #pagebreak()
 == Requisiti prestazionali
 
+Si nota che entrambe le tecnologie #glossary[Clickhouse] e #glossary[Grafana] integrano al loro interno varie ottimizzazioni per garantire prestazioni efficienti.
+Ad esempio #glossary[Clickhouse] utilizza algoritmi di compressione avanzati per ridurre lo spazio di archiviazione necessario e migliorare le prestazioni di accesso ai dati, inoltre ha un archittetura distribuita consentendo una distribuzione del carico e una scalabilità orizzontale per gestire grandi volumi di dati. Mentre #glossary[Grafana] usa la cache dei dati per ridurre il carico di lavoro sui database e migliorare la velocità di risposta delle query; cerca di ottimizzare le query per ridurre il numero di richieste e utilizza un sistema di compressione dati per ridurre lo spazio di archiviazione.
+
+Per garantire tempi di esecuzione ancora più rapidi, si cerca di usare, ove possibile, le materialized view di #glossary[Clickhouse].
+
 #let requisiti_prestazioni = (
   (
   "Obbligatorio",[Il sistema deve gestire un carico di #glossary("dati in entrata") tra i 50 e i 100 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM, kernel linux 4 o superiore, macos 10 o superiori, windows 10 o superiori],"Verbale esterno"
   ),
-  ("Desiderabile","Il sistema deve avere un basso tempo di elaborazione tra il momento in cui i dati vengono generati e la loro visualizzazione sulla dashboard","Norme di progetto")
+  ("Desiderabile","Il sistema deve avere un basso tempo di elaborazione tra il momento in cui i dati vengono generati e la loro visualizzazione sulla dashboard","Norme di progetto"),
+  ("Desiderabile",[Evitare l'utilizzo di #glossary[pannelli] troppo complessi che richiedono troppe risorse per il rendering],"Verbale esterno")
   
 )
 
