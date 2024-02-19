@@ -1,9 +1,9 @@
 #import "../../functions.typ": glossary
 === Nono #glossary[sprint]
 
-*Inizio*: Venerdì 09/02/2024
+*Inizio*: Venerdì 16/02/2024
 
-*Fine*: Giovedì 15/02/2024 
+*Fine*: Giovedì 22/02/2024 
 
 *Obiettivi dello #glossary[sprint]*: 
 
@@ -12,4 +12,5 @@
     - Aggiornare pianificazione e preventivo pertinenti allo #glossary[sprint] 9;
     - Aggiungere pianificazione e preventivo degli #glossary[sprint] 10 e 11, come parte della pianificazione a breve termine.
   - Iniziare a progettare la struttura architetturale del prodotto, individuando i #glossary[design pattern] più adeguati;
-  - Iniziare a studiare struttura e contenuti della #glossary[documentazione] richiesta alla seconda revisione #glossary[PB], con particolare attenzione alle _Specifiche Tecniche_.
+  - Iniziare a studiare struttura e contenuti della #glossary[documentazione] richiesta alla seconda revisione #glossary[PB], con particolare attenzione alle _Specifiche Tecniche_;
+  - Iniziare la stesura delle _Specifiche Tecniche_.

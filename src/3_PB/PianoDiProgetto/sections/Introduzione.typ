@@ -39,5 +39,5 @@ Al fine di evitare possibili ambiguità relative al linguaggio utilizzato nei do
 Di seguito sono riportate le date di scadenza che il gruppo _SWAT Engineering_ si impegna a rispettare per lo sviluppo del progetto "InnovaCity":
 
 - *Prima revisione (#glossary[RTB] - Requirements and Technology Baseline):* 19 Gennaio 2024;
-- *Seconda revisione (#glossary[PB] - Product Baseline):* 22 Marzo 2024;
-- *Terza revisione (#glossary[CA] - Customer Acceptance):* 8 Aprile 2024.
+- *Seconda revisione (#glossary[PB] - Product Baseline):* 29 Marzo 2024;
+- *Terza revisione (#glossary[CA] - Customer Acceptance):* 15 Aprile 2024.
