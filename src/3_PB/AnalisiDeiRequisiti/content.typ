@@ -665,7 +665,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*Cambiare il numero nell'immagine*/
 === UC7: Ordinamento #glossary("pannelli") tabellari
 - *Attore Principale*: amministratore pubblico.
-- *Precondizioni*: l'amministratore pubblico ha scelto e sta visualizzando un #glossary("pannello"), con all'interno una tabella, da ordinare per un suo campo, ovvero nome del sensore, percentuale batteria, data manutenzione, velocità vento.
+- *Precondizioni*: l'amministratore pubblico ha scelto e sta visualizzando un #glossary("pannello"), con all'interno una tabella, da ordinare per un suo campo, ovvero nome del sensore, percentuale batteria, timestamp, velocità vento.
 - *Postcondizioni*: l'amministratore pubblico visualizza i dati ordinati nella tabella, secondo tale campo.
 - *Scenario Principale*:
   + L'amministratore pubblico seleziona un campo, della tabella , secondo cui ordinare i dati, tra i seguenti: nome del sensore, percentuale batteria, data manutenzione, velocità vento;
@@ -734,7 +734,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + Il sensore effettua una rilevazione della temperatura;
-  + Il sensore formatta il messaggio da inviare al sistema, in modo da mandare la temperatura, espressa in gradi Celsius (°C), il timestamp di rilevazione e le proprie coordinate geografiche;
+  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la temperatura, espressa in gradi Celsius (°C), il timestamp di rilevazione e le proprie coordinate geografiche;
   + Il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -750,7 +750,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + Il sensore effettua una rilevazione dell'umidità relativa;
-  + Il sensore formatta il messaggio da inviare al sistema, in modo da mandare la percentuale di umidità relativa, il timestamp di rilevazione e le proprie coordinate geografiche;
+  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di umidità relativa, il timestamp di rilevazione e le proprie coordinate geografiche;
   + Il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
