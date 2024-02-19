@@ -1136,8 +1136,10 @@ caption: "Requisiti funzionali")
   ("Desiderabile","Il sistema deve essere facile da usare, basso numero di click per raggiungere le cose desiderate","Norme di progetto"),
   ("Desiderabile","L'amministratore pubblico deve poter saper padroneggiare il sistema in breve tempo","Norme di progetto"),
   ("Obbligatorio","La repository di github del codice sorgente deve essere accessibile a tutti","Verbale esterno"),
-  ("Obbligatorio","Devono essere rispettati tutte le norme definite nel documento Norme di Progetto","Norme di Progetto"),
-  ("Obbligatorio","Devono essere rispettate i vincoli e le metriche definite nel Piano di Qualifica","Norme di Progetto")
+  ("Obbligatorio","Devono essere rispettati tutte le norme definite nel documento _Norme di Progetto v2.0_","Norme di Progetto"),
+  ("Obbligatorio","Devono essere rispettate i vincoli e le metriche definite nel Piano di Qualifica v2.0","Norme di Progetto"),
+  ("Desiderabile","Il sistema deve essere scalabile, in grado di gestire grandi moli di dati","Capitolato"),
+  ("Desiderabile","Il sistema deve essere facilmente manutenibile","Capitolato")
 )
 
 #let requisiti_qualita_con_codice = generate_requirements_array("Q", requisiti_qualita)
