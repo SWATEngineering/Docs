@@ -403,7 +403,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC3.3.3: Visualizzazione tabella descrittiva delle colonne di ricarica
 - *Attore Principale*: amministratore pubblico.
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una tabella, la quale esprime, per ciascuna colonna di ricarica per auto, l'erogazione in Watt per ora attuale, indicizzando la tabella in base al nome del sensore.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una tabella, la quale esprime, per ciascuna colonna di ricarica per auto, l'erogazione in Watt per ora attuale (Wh), indicizzando la tabella in base al nome del sensore.
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
@@ -665,10 +665,10 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*Cambiare il numero nell'immagine*/
 === UC7: Ordinamento #glossary("pannelli") tabellari
 - *Attore Principale*: amministratore pubblico.
-- *Precondizioni*: l'amministratore pubblico ha scelto e sta visualizzando un #glossary("pannello"), con all'interno una tabella, da ordinare per un suo campo, ovvero nome del sensore, percentuale batteria, data manutenzione.
+- *Precondizioni*: l'amministratore pubblico ha scelto e sta visualizzando un #glossary("pannello"), con all'interno una tabella, da ordinare per un suo campo, ovvero nome del sensore, percentuale batteria, data manutenzione, velocità vento.
 - *Postcondizioni*: l'amministratore pubblico visualizza i dati ordinati nella tabella, secondo tale campo.
 - *Scenario Principale*:
-  + L'amministratore pubblico seleziona un campo, della tabella , secondo cui ordinare i dati, tra i seguenti: nome del sensore, percentuale batteria, data manutenzione;
+  + L'amministratore pubblico seleziona un campo, della tabella , secondo cui ordinare i dati, tra i seguenti: nome del sensore, percentuale batteria, data manutenzione, velocità vento;
   + In tale campo l'amministratore pubblico sceglie tra l'ordinamento crescente e decrescente.
 
 #figure(
