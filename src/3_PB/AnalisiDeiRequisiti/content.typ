@@ -1198,7 +1198,7 @@ caption: "Requisiti di prestazioni")
 Il team #team non ha individuato particolari criteri di sicurezza da adottare per lo sviluppo dell'applicazione.
 
 #pagebreak()
-== Tracciamento
+== Tracciamento Fonti - Requisiti
 === Fonti - Requisiti funzionali 
 #C.update(0)
 #figure(
@@ -1245,6 +1245,53 @@ table(
 ),
 caption: "Fonti - Requisiti prestazioni")
 
+== Tracciamento Requisiti - Fonti  
+
+===  Requisiti funzionali - Fonti 
+#C.update(0)
+#figure(
+table(
+  columns: (auto, auto),
+  inset: 10pt,
+  align: horizon,
+  [*Requisiti*],[*Fonti*], 
+  ..requisiti_funzionali_con_codice.map(content => (content.at(0),content.at(3))).flatten().map(content => [#content])
+),
+caption: "Fonti - Requisiti funzionali")
+
+=== Requisiti qualità - Fonti 
+#figure(
+table(
+  columns: (auto, auto),
+  inset: 10pt,
+  align: horizon,
+  [*Requisiti*],[*Fonti*],
+  ..requisiti_qualita_con_codice.map(content => (content.at(0),content.at(3))).flatten().map(content => [#content])
+),
+caption: "Fonti - Requisiti qualità")
+
+===  Requisiti vincolo - Fonti
+#figure(
+table(
+  columns: (auto, auto),
+  inset: 10pt,
+  align: horizon,
+  [*Requisiti*],[*Fonti*],
+  ..requisiti_vincolo_con_codice.map(content => (content.at(0),content.at(3))).flatten().map(content => [#content])
+),
+caption: "Fonti - Requisiti vincolo")
+
+=== Requisiti prestazioni - Fonti
+
+#figure(
+table(
+  columns: (auto, auto),
+  inset: 10pt,
+  align: horizon,
+  [*Requisiti*],[*Fonti*],
+  ..requisiti_prestazioni_con_codice.map(content => (content.at(0),content.at(3))).flatten().map(content => [#content])
+),
+caption: "Fonti - Requisiti prestazioni")
 
 
 #pagebreak()
