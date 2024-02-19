@@ -734,7 +734,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
   + Il sensore effettua una rilevazione della temperatura;
-  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la temperatura, espressa in gradi Celsius (°C), il timestamp di rilevazione e le proprie coordinate geografiche;
+  + Il sensore formatta il messaggio da inviare al sistema, in modo da mandare la temperatura, espressa in gradi Celsius (°C), il timestamp di rilevazione e le proprie coordinate geografiche;
   + Il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
@@ -749,14 +749,14 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
-  + Il sensore effettua una rilevazione dell'umidità;
-  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di umidità, il timestamp di rilevazione e le proprie coordinate geografiche;
+  + Il sensore effettua una rilevazione dell'umidità relativa;
+  + Il sensore formatta il messaggio da inviare al sistema, in modo da mandare la percentuale di umidità relativa, il timestamp di rilevazione e le proprie coordinate geografiche;
   + Il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
 #figure(
   image("assets/UML/UC11_Inserimento-dati-umidità.png",width:100%),
-  caption: [UC11 Inserimento dati umidità]
+  caption: [UC11 Inserimento dati umidità relativa]
 )
 
 /*Cambiare il numero nell'immagine*/
@@ -766,8 +766,8 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Precondizioni*: il sensore è acceso e collegato al sistema. 
 - *Postcondizioni*: il sistema ha persistito i dati inviati dal sensore.
 - *Scenario Principale*:
-  + Il sensore effettua una rilevazione della velocità e della direzione del vento;
-  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la direzione del vento, espressa in gradi (con gli 0° a Nord e i 180° a Sud), la velocità del vento, espressa in chilometri all'ora, il timestamp di rilevazione e le proprie coordinate geografiche;
+  + Il sensore effettua una rilevazione della velocità (km/h) e della direzione del vento;
+  + Il sensore formatta il messaggio da inviare al sistema, di modo da mandare la direzione del vento, espressa in gradi (con gli 0° a Nord e i 180° a Sud), la velocità del vento, espressa in chilometri all'ora (km/h), il timestamp di rilevazione e le proprie coordinate geografiche;
   + Il sensore invia il messaggio al sistema.
 - *Inclusioni*: UC21.
 
