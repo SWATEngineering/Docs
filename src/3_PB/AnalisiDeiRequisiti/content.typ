@@ -1156,7 +1156,7 @@ caption: "Requisiti di qualità")
   (
   "Obbligatorio","I dati vanno raccolti in un database OLAP","Capitolato",
   ),
-  ("Obbligatorio","I dati devono poter essere visualizzati sulla piattaforma Grafana","Capitolato"),
+  ("Obbligatorio","I dati devono poter essere visualizzati su una piattaforma di data-visualization, per esempio Grafana","Capitolato"),
   ("Obbligatorio",[Deve essere utilizzato #glossary[Docker Compose] versione 3.8 per l'installazione del software],"Verbale esterno"),
   ("Obbligatorio","I dati in ingresso nel database OLAP devono avere formato pseudo-tabellare, si utilizza Json", "Verbale esterno"),
   ("Obbligatorio","Utilizzo di Apache Kafka per lo streaming dei dati","Capitolato"),
