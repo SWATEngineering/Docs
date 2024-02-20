@@ -1136,8 +1136,8 @@ caption: "Requisiti funzionali")
   ("Desiderabile","Il sistema deve risultare di facile utiilizzo, richiedendo un numero di click contenuto per raggiungere gli obiettivi desiderati","Norme di Progetto"),
   ("Desiderabile","L'amministratore pubblico deve poter imparare a padroneggiare il sistema in breve tempo","Norme di progetto"),
   ("Obbligatorio",[La #glossary[repository] di github del codice sorgente "InnovaCity" deve essere accessibile a tutti],"Verbale esterno"),
-  ("Obbligatorio","Devono essere rispettati tutte le norme definite nel documento _Norme di Progetto v2.0_","Norme di Progetto"),
-  ("Obbligatorio","Devono essere rispettati i vincoli e le metriche definite nel Piano di Qualifica v2.0","Norme di Progetto"),
+  ("Obbligatorio",[Devono essere rispettati tutte le norme definite nel documento _Norme di Progetto v2.0_],"Norme di Progetto"),
+  ("Obbligatorio",[Devono essere rispettati i vincoli e le metriche definite nel _Piano di Qualifica v2.0_],"Norme di Progetto"),
   ("Desiderabile","Il sistema deve essere scalabile, in grado di gestire grandi moli di dati","Capitolato"),
   ("Desiderabile","Il sistema deve essere facilmente manutenibile","Capitolato")
 )
