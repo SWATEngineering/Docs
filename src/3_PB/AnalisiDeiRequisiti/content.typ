@@ -929,25 +929,25 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   ),
   /*TODO: andare a creare vincolo per la verifica del menù di selezione tra le dashboard*/
   (
-  "Obbligatorio","La creazione di un simulatore di almeno una sorgente dati","Capitolato",
+  "Obbligatorio","La creazione di un simulatore di almeno una sorgente dati.","Capitolato",
   ),
   (
-  "Obbligatorio","La simulazione deve produrre dati realistici","Capitolato",
+  "Obbligatorio","La simulazione deve produrre dati realistici.","Capitolato",
   ),
   (
-  "Obbligatorio",[Deve esistere una #glossary("dashboard") che riporti almeno i dati di un sensore],"Capitolato",
+  "Obbligatorio",[Deve esistere una #glossary("dashboard") che riporti almeno i dati di un sensore.],"Capitolato",
   ),
   (
-  "Desiderabile","La simulazione di più sorgenti dati","Capitolato",
+  "Desiderabile","La simulazione di più sorgenti dati.","Capitolato",
   ),
   (
-  "Opzionale","Messa in evidenza di relazioni tra dati provenienti da sorgenti diverse","Capitolato",
+  "Opzionale","Messa in evidenza di relazioni tra dati provenienti da sorgenti diverse.","Capitolato",
   ),
   (
-  "Opzionale","Un sistema di allerta che notifichi l'utente in caso di anomalie o eventi critici","Verbale esterno",
+  "Opzionale","Un sistema di allerta che notifichi l'utente in caso di anomalie o eventi critici.","Verbale esterno",
   ),
   (
-  "Opzionale","La previsione di eventi futuri, basata su dati storici e attuali","Capitolato",
+  "Opzionale","La previsione di eventi futuri, basata su dati storici e attuali.","Capitolato",
   ),
   (
   "Desiderabile",[Deve esistere una #glossary("dashboard") avanzata contenente: una mappa della città, widget e informazioni sui sensori (ad esempio il tipo di sensore, il modello, ecc.).],"Capitolato"
@@ -1068,7 +1068,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Desiderabile", [L'utente deve poter modificare il layout della #glossary("dashboard") visualizzata, agendo sullo spostamento dei #glossary("pannelli").], [#C.step()#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile", [L'utente deve poter modificare il layout della #glossary("dashboard") visualizzata, agendo sul ridimensionamento dei #glossary("pannelli")], [#C.step(level:2)UC#C.display()]
+    "Desiderabile", [L'utente deve poter modificare il layout della #glossary("dashboard") visualizzata, agendo sul ridimensionamento dei #glossary("pannelli").], [#C.step(level:2)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter visualizzare un messaggio di errore, qualora il sistema di visualizzazione non sia in grado di reperire o non abbia dati da mostrare all'utente per un determinato #glossary("pannello").], [#C.step()UC#C.display()]
@@ -1129,17 +1129,18 @@ caption: "Requisiti funzionali")
   (
   "Obbligatorio", [Viene richiesta una #glossary("documentazione") sulle scelte implementative e progettuali, che dovranno essere accompagnate da motivazioni.],"Capitolato",
   ),
-  ("Obbligatorio","Viene richiesto un Manuale Utente","Capitolato"),
+  ("Obbligatorio",[Viene richiesto il _Manuale Utente_.],"Capitolato"),
+  ("Obbligatorio",[Viene richiesto il documento _Specifiche tecniche_.],"Capitolato"),
   (
   "Obbligatorio","La documentazione dovrà riguardare anche problemi aperti ed eventuali possibili soluzioni da approfondire in futuro.","Capitolato"
   ),
-  ("Desiderabile","Il sistema deve risultare di facile utiilizzo, richiedendo un numero di click contenuto per raggiungere gli obiettivi desiderati","Norme di Progetto"),
-  ("Desiderabile","L'amministratore pubblico deve poter imparare a padroneggiare il sistema in breve tempo","Norme di progetto"),
-  ("Obbligatorio",[La #glossary[repository] di github del codice sorgente "InnovaCity" deve essere accessibile a tutti],"Verbale esterno"),
-  ("Obbligatorio",[Devono essere rispettati tutte le norme definite nel documento _Norme di Progetto v2.0_],"Norme di Progetto"),
-  ("Obbligatorio",[Devono essere rispettati i vincoli e le metriche definite nel _Piano di Qualifica v2.0_],"Norme di Progetto"),
-  ("Desiderabile","Il sistema deve essere scalabile, in grado di gestire grandi moli di dati","Capitolato"),
-  ("Desiderabile","Il sistema deve essere facilmente manutenibile","Capitolato")
+  ("Desiderabile","Il sistema deve risultare di facile utiilizzo, richiedendo un numero di click (≤ 7) contenuto per raggiungere gli obiettivi desiderati.","Norme di Progetto"),
+  ("Desiderabile","L'amministratore pubblico deve poter imparare a padroneggiare il sistema in breve tempo.","Norme di progetto"),
+  ("Obbligatorio",[La #glossary[repository] di github del codice sorgente "InnovaCity" deve essere accessibile a tutti.],"Verbale esterno"),
+  ("Obbligatorio",[Devono essere rispettati tutte le norme definite nel documento _Norme di Progetto v2.0_.],"Norme di Progetto"),
+  ("Obbligatorio",[Devono essere rispettati i vincoli e le metriche definite nel _Piano di Qualifica v2.0_.],"Norme di Progetto"),
+  ("Desiderabile","Il sistema deve essere scalabile, in grado di gestire grandi moli di dati.","Capitolato"),
+  ("Desiderabile","Il sistema deve essere facilmente manutenibile.","Capitolato")
 )
 
 #let requisiti_qualita_con_codice = generate_requirements_array("Q", requisiti_qualita)
@@ -1152,13 +1153,13 @@ caption: "Requisiti di qualità")
 #let requisiti_vincolo = (
   
   (
-  "Obbligatorio","I dati vanno raccolti in un database OLAP, per esempio ClickHouse","Capitolato",
+  "Obbligatorio","I dati vanno raccolti in un database OLAP, per esempio ClickHouse.","Capitolato",
   ),
-  ("Obbligatorio","I dati devono poter essere visualizzati su una piattaforma di data-visualization, per esempio Grafana","Capitolato"),
-  ("Obbligatorio",[Deve essere utilizzato #glossary[Docker Compose] versione 3.8 per l'installazione del software],"Verbale esterno"),
-  ("Obbligatorio","I dati in ingresso nel database OLAP devono avere formato pseudo-tabellare, si deve utilizzare il formato Json", "Verbale esterno"),
-  ("Obbligatorio","Utilizzo di un message broker per lo streaming dei dati, per esempio Apache Kafka","Capitolato"),
-  ("Obbligatorio","Utilizzo dell'applicazione richiede compatibilità con l'ultima versione di Google Chrome v120 (o superiori), Mozilla Firefox v120 (o superiori), Microsoft Edge v120 (o superiori) o Opera v106 (o superiori)","Capitolato"),
+  ("Obbligatorio","I dati devono poter essere visualizzati su una piattaforma di data-visualization, per esempio Grafana.","Capitolato"),
+  ("Obbligatorio",[Deve essere utilizzato #glossary[Docker Compose] versione 3.8 per l'installazione del software.],"Verbale esterno"),
+  ("Obbligatorio","I dati in ingresso nel database OLAP devono avere formato pseudo-tabellare, si deve utilizzare il formato Json.", "Verbale esterno"),
+  ("Obbligatorio","Utilizzo di un message broker per lo streaming dei dati, per esempio Apache Kafka.","Capitolato"),
+  ("Obbligatorio","Utilizzo dell'applicazione richiede compatibilità con l'ultima versione di Google Chrome v120 (o superiori), Mozilla Firefox v120 (o superiori), Microsoft Edge v120 (o superiori) o Opera v106 (o superiori).","Capitolato"),
 
   
   
@@ -1187,10 +1188,10 @@ Per garantire tempi di esecuzione ancora più rapidi, si cerca di usare, ove pos
 
 #let requisiti_prestazioni = (
   (
-  "Obbligatorio",[Il sistema deve gestire un carico di #glossary("dati in entrata") tra i 50 e i 100 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM],"Verbale esterno"
+  "Obbligatorio",[Il sistema deve gestire un carico di #glossary("dati in entrata") tra i 50 e i 100 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM.],"Verbale esterno"
   ),
-  ("Desiderabile","Il sistema deve avere un basso tempo di elaborazione tra il momento in cui i dati vengono generati e la loro visualizzazione sulla dashboard","Norme di progetto"),
-  ("Desiderabile",[Evitare l'utilizzo di #glossary[pannelli] troppo complessi che richiedono troppe risorse per il rendering],"Verbale esterno")
+  ("Desiderabile",[Il sistema deve avere un basso tempo di elaborazione tra il momento in cui i dati vengono generati e la loro visualizzazione sulla #glossary[dashboard].],"Norme di progetto"),
+  ("Desiderabile",[Evitare l'utilizzo di #glossary[pannelli] troppo complessi che richiedono troppe risorse per il rendering.],"Verbale esterno")
   
 )
 
