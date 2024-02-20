@@ -87,7 +87,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #figure(
   image("assets/UML/UC0_Visualizzazione-menù-dashboard.png",width:70%),
-  caption: [UC1 Visualizzazione dashboard generale sensori]
+  caption: [UC0 Visualizzazione menù dashboard]
 )
 
 /*TODO: ricontrollare la fine di ogni use case che comprende l'uso di un #glossary("pannello")*/
