@@ -107,9 +107,9 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #pagebreak()
 === UC1.1: Visualizzazione posizione sensori su mappa
-- *Attore Principale*: amministratore pubblic;
+- *Attore Principale*: amministratore pubblico;
 - *Precondizioni*: il sistema è operativo e accessibile;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa che mostra le posizioni dei sensori, come icone, su di essa. Le icone dei sensori sono colorate in base al tipo di sensore con una label che ne esplicita il tipo e il nome; 
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa che mostra le posizioni dei sensori, visualizzati tramite icone, su di essa. Le icone dei sensori sono colorate in base al tipo di sensore  e riportano una label che ne esplicita il tipo e il nome; 
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione; 
   + L'amministratore pubblico seleziona la visualizzazione della #glossary("dashboard") generale relativa ai sensori.
@@ -123,7 +123,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC1.2: Visualizzazione tabella sensori
 - *Attore Principale*: amministratore pubblico;
 - *Precondizioni*: il sistema è operativo e accessibile;
-- *Postcondizioni*: l'amministratore pubblico visualizza il #glossary("pannello") relativo ai dati inerenti ai sensori, riportando la percentuale di batteria, un valore booleano che esprime se il sensore è alimentato da batteria autonoma o meno e la data di ultima manutenzione del sensore, in forma tabellare, indicizzato dai nomi dei sensori;
+- *Postcondizioni*: l'amministratore pubblico visualizza il #glossary("pannello") relativo ai dati inerenti ai sensori, che riporta il nome del sensore, la percentuale di batteria, un valore booleano che esprime se il sensore è alimentato da batteria autonoma o meno e la data di ultima manutenzione del sensore, in forma tabellare; la tabella contenente i dati menzionati è indicizzata tramite il nome dei sensori;
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione; 
   + L'amministratore pubblico seleziona la visualizzazione della #glossary("dashboard") generale relativa ai sensori.
@@ -156,7 +156,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
-- *Specializzazioni*: [UC2.2],[UC2.3],[UC2.4],[UC2.5],[UC2.6],[UC2.7],[UC2.8],[UC2.9],[UC2.10],[UC2.11];
+- *Specializzazioni*: [UC2.2],[UC2.3],[UC2.4],[UC2.5],[UC2.6],[UC2.7],[UC2.8],[UC2.9],[UC2.10],[UC2.11],[UC2.12];
 - *Estensioni*: [UC9] in caso non ci fosse alcun dato da visualizzare.
 
 #figure(
@@ -347,7 +347,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC3.2: Visualizzazione grafico a mappa disponibilità parcheggi
 - *Attore Principale*: amministratore pubblico;
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa per indicare la disponibilità dei parcheggi, espressa in numero di parcheggi liberi, registrata da ciascun sensore, attraverso un indicatori numerici posti nelle coordinate dei corrispondenti sensori;
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa per indicare la disponibilità dei parcheggi, espressa in numero di parcheggi liberi, registrata da ciascun sensore, attraverso un indicatore numerico posto nelle coordinate del corrispondente sensore;
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
@@ -368,13 +368,13 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #figure(
   image("assets/UML/UC3.3_Visualizzazione-informazioni-delle-colonne-di-ricarica.png",width:100%),
-  caption: [UC3.3 Visualizzazione posizione e stato colonne di ricarica]
+  caption: [UC3.3 Visualizzazione informazioni delle colonne di ricarica]
 )
 
 === UC3.3.1: Visualizzazione posizione delle colonne di ricarica
 - *Attore Principale*: amministratore pubblico;
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante la posizione delle colonne di ricarica per auto;
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa che riporta la posizione delle colonne di ricarica per auto, rappresentate tramite icone, su di essa;
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
@@ -382,13 +382,13 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /* TODO: cambiare l'immagine con una creata apposta per il caso d'uso*/
 #figure(
   image("assets/UML/UC3.3.1_Visualizzazione-posizione-delle-colonne-di-ricarica.png",width:70%),
-  caption: [UC3.3.1 Visualizzazione posizione colonne di ricarica]
+  caption: [UC3.3.1 Visualizzazione posizione delle colonne di ricarica]
 )
 
 === UC3.3.2: Visualizzazione disponibilità delle colonne di ricarica
 - *Attore Principale*: amministratore pubblico;
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") con indicatori booleani, i quali indicheranno la disponibilità della colonna corrispondente;
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa che riporta un indicatore booleano in corrispondenza dell'icona di ciascuna colonna di ricarica per indicarne la disponibilità;
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
@@ -396,14 +396,14 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /* TODO: cambiare l'immagine con una creata apposta per il caso d'uso*/
 #figure(
   image("assets/UML/UC3.3.2_Visualizzazione-disponibilità-delle-colonne-di-ricarica.png",width:70%),
-  caption: [UC3.3.2 Visualizzazione disponibilità colonne di ricarica]
+  caption: [UC3.3.2 Visualizzazione disponibilità delle colonne di ricarica]
 )
 
 
 === UC3.3.3: Visualizzazione tabella descrittiva delle colonne di ricarica
 - *Attore Principale*: amministratore pubblico;
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una tabella, la quale esprime, per ciascuna colonna di ricarica per auto, l'erogazione in Watt per ora attuale (Wh), indicizzando la tabella in base al nome del sensore;
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una tabella, la quale riporta, per ciascuna colonna di ricarica per auto, l'erogazione in chiloWatt per ora attuale (kWh); la tabella è indicizzata dal nome dei sensori;
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
@@ -417,7 +417,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC3.4: Visualizzazione grafico a mappa congestione stradale
 *Attore Principale*: amministratore pubblico;
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante lo stato di congestione delle strade, mediante gli stati "LOW", "MEDIUM", "HIGH" e "BLOCKED" colorati di conseguenza, atto a mostrare il livello di congestione della strada corrispondente;
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante lo stato di congestione delle strade; ciascuna strada riporta uno stato tra "LOW", "MEDIUM", "HIGH" e "BLOCKED", in base al proprio livello di congestione; ciascuno stato viene visualizzato con un colore apposito;
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
@@ -473,7 +473,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC4.1: Visualizzazione tabella #glossary("dati anomali")
 - *Attore Principale*: amministratore pubblico;
 - *Precondizioni*: il sistema è operativo e accessibile;
-- *Postcondizioni*: L'amministratore pubblico visualizza un #glossary("pannello") contenente una tabella ordinata, che mostra tutti i #glossary("dati anomali") rilevati dal sistema. La tabella include il valore dell'anomalia, il sensore che l'ha rilevata e il timestamp relativo, ordinata in base al timestamp;
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una tabella ordinata, che mostra tutti i #glossary("dati anomali") rilevati dal sistema. La tabella include il valore dell'anomalia, il sensore che l'ha rilevata e il timestamp relativo, ed è ordinata in base al timestamp;
 - *Scenario Principale*:
   + L'amministratore pubblico seleziona la visualizzazione della #glossary[dashboard] delle anomalie.
 
@@ -540,7 +540,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Precondizioni*: il sistema è operativo e accessibile;
 - *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa all'inquinamento dell'aria che notifica il superamento di 80#[#sym.mu]g su metro cubo ($80#sym.mu g\/m^3$);
 - *Scenario Principale*:
-  + Il sistema rileva un coefficiente di inquinamento dell'aria (#glossary("PM10")), superiore ai 80#[#sym.mu]g su metro cubo.
+  + Il sistema rileva un coefficiente di inquinamento dell'aria (#glossary("PM10")), superiore ai 80#[#sym.mu]g su metro cubo ($80#sym.mu g\/m^3$).
 #figure(
   image("assets/UML/UC5.3_Visualizzazione-allerte-superamento-soglia-inquinamento-dell'aria.png",width:70%),
   caption: [UC5.3 Visualizzazione allerta superamento soglia inquinamento dell'aria]
@@ -587,10 +587,10 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*Cambiare il numero nell'immagine*/
 #pagebreak()
-=== UC6.1: Filtro sotto-insieme di sensori su grafici time series
+=== UC6.1: Filtro sotto-insieme di sensori su grafici #glossary[time series]
 - *Attore Principale*: amministratore pubblico;
 - *Precondizioni*: 
-  + L'amministratore pubblico sta visualizzando uno o più #glossary("pannelli") time series con i dati;
+  + L'amministratore pubblico sta visualizzando uno o più #glossary("pannelli") #glossary[time series] con i dati;
   + Il #glossary("pannello") offre la funzionalità di filtro dei dati tramite selezione di uno o più sensori.
 - *Postcondizioni*: l'amministratore pubblico visualizza solamente i dati relativi ai sensori selezionati, all'interno di tale #glossary("pannello")\;
 - *Scenario Principale*:
@@ -613,7 +613,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + L'amministratore pubblico seleziona i valori delle tipologie di sensore desiderati.
 
 #figure(
-  image("assets/UML/UC6.2_Filtro-per-tipologia-sensore-su-tabella.png",width:100%),
+  image("assets/UML/UC6.2_Filtro-per-tipologia-sensore-su-tabella.png",width:70%),
   caption: [UC6.2 Filtro per tipologia sensore su tabella]
 )
 
@@ -631,7 +631,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 
 #figure(
-  image("assets/UML/UC6.3_Filtro-per-nome-sensore-su-tabella.png",width:100%),
+  image("assets/UML/UC6.3_Filtro-per-nome-sensore-su-tabella.png",width:70%),
   caption: [UC6.3 Filtro per nome sensore su tabella]
 )
 
@@ -646,7 +646,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 
 #figure(
-  image("assets/UML/UC6.4_Filtro-per-intervallo-temporale.png",width:100%),
+  image("assets/UML/UC6.4_Filtro-per-intervallo-temporale.png",width:70%),
   caption: [UC6.4 Filtro per intervallo temporale]
 )
 
@@ -665,11 +665,11 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*Cambiare il numero nell'immagine*/
 === UC7: Ordinamento #glossary("pannelli") tabellari
 - *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha scelto e sta visualizzando un #glossary("pannello"), con all'interno una tabella, da ordinare per un suo campo, ovvero nome del sensore, percentuale batteria, timestamp, velocità vento;
+- *Precondizioni*: l'amministratore pubblico ha scelto e sta visualizzando un #glossary("pannello"), con all'interno una tabella, da ordinare per un suo campo; i campi tramite i quali si possono ordinare i dati della tabella sono il nome, la percentuale di batteria e la data di manutenzione del sensore oppure la velocità del vento (ove presenti);
 - *Postcondizioni*: l'amministratore pubblico visualizza i dati ordinati nella tabella, secondo tale campo;
 - *Scenario Principale*:
-  + L'amministratore pubblico seleziona un campo, della tabella , secondo cui ordinare i dati, tra i seguenti: nome del sensore, percentuale batteria, data manutenzione, velocità vento;
-  + In tale campo l'amministratore pubblico sceglie tra l'ordinamento crescente e decrescente.
+  + L'amministratore pubblico seleziona un campo della tabella, secondo cui ordinare i dati, tra i seguenti: nome, percentuale di  batteria e data di manutenzione del sensore o velocità del vento;
+  + Per tale campo l'amministratore pubblico sceglie tra l'ordinamento crescente e decrescente.
 
 #figure(
   image("assets/UML/UC7_Ordinamento-pannelli-tabellari.png",width:70%),
@@ -1011,7 +1011,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   ),
   ("Obbligatorio",[L'utente deve poter visualizzare un #glossary("pannello") contenente indicatori booleani posti nelle coordinate dei sensori che indicheranno la disponibilità delle colonne di ricarica, nella #glossary("dashboard") relativa ai dati urbanistici.],[#C.step(level:3)UC#C.display()]),
   (
-    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'erogazione delle colonne di ricarica per auto, espressa in Watt all'ora (kWh), controllata da ciascun sensore, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:3)UC#C.display()]
+    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'erogazione delle colonne di ricarica per auto, espressa in chiloWatt all'ora (kWh), controllata da ciascun sensore, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:3)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi lo stato di congestione delle strade, mediante gli stati "LOW", "MEDIUM", "HIGH", "BLOCKED", posti nelle coordinate dei sensori controllano queste, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:2)UC#C.display()]
@@ -1133,11 +1133,11 @@ caption: "Requisiti funzionali")
   (
   "Obbligatorio","La documentazione dovrà riguardare anche problemi aperti ed eventuali possibili soluzioni da approfondire in futuro.","Capitolato"
   ),
-  ("Desiderabile","Il sistema deve essere facile da usare, basso numero di click per raggiungere le cose desiderate","Norme di progetto"),
-  ("Desiderabile","L'amministratore pubblico deve poter saper padroneggiare il sistema in breve tempo","Norme di progetto"),
-  ("Obbligatorio","La repository di github del codice sorgente deve essere accessibile a tutti","Verbale esterno"),
+  ("Desiderabile","Il sistema deve risultare di facile utiilizzo, richiedendo un numero di click contenuto per raggiungere gli obiettivi desiderati","Norme di Progetto"),
+  ("Desiderabile","L'amministratore pubblico deve poter imparare a padroneggiare il sistema in breve tempo","Norme di progetto"),
+  ("Obbligatorio","La #glossary[repository] di github del codice sorgente "InnovaCity" deve essere accessibile a tutti","Verbale esterno"),
   ("Obbligatorio","Devono essere rispettati tutte le norme definite nel documento _Norme di Progetto v2.0_","Norme di Progetto"),
-  ("Obbligatorio","Devono essere rispettate i vincoli e le metriche definite nel Piano di Qualifica v2.0","Norme di Progetto"),
+  ("Obbligatorio","Devono essere rispettati i vincoli e le metriche definite nel Piano di Qualifica v2.0","Norme di Progetto"),
   ("Desiderabile","Il sistema deve essere scalabile, in grado di gestire grandi moli di dati","Capitolato"),
   ("Desiderabile","Il sistema deve essere facilmente manutenibile","Capitolato")
 )
@@ -1154,13 +1154,13 @@ caption: "Requisiti di qualità")
   "Obbligatorio",[Il sistema deve gestire un carico di #glossary("dati in entrata") tra i 50 e i 100 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM],"Verbale esterno"
   ),
   (
-  "Obbligatorio","I dati vanno raccolti in un database OLAP","Capitolato",
+  "Obbligatorio","I dati vanno raccolti in un database OLAP, per esempio ClickHouse","Capitolato",
   ),
   ("Obbligatorio","I dati devono poter essere visualizzati su una piattaforma di data-visualization, per esempio Grafana","Capitolato"),
   ("Obbligatorio",[Deve essere utilizzato #glossary[Docker Compose] versione 3.8 per l'installazione del software],"Verbale esterno"),
-  ("Obbligatorio","I dati in ingresso nel database OLAP devono avere formato pseudo-tabellare, si utilizza Json", "Verbale esterno"),
-  ("Obbligatorio","Utilizzo di Apache Kafka per lo streaming dei dati","Capitolato"),
-  ("Obbligatorio","Utilizzo dell'applicazione richiede compatibilità con l'ultima versione di Google Chrome v120 (o superiori) o Mozilla Firefox v120 (o superiori) o Microsoft Edge v120 (o superiori), Opera v106 (o superiori)","Capitolato"),
+  ("Obbligatorio","I dati in ingresso nel database OLAP devono avere formato pseudo-tabellare, si deve utilizzare il formato Json", "Verbale esterno"),
+  ("Obbligatorio","Utilizzo di un message broker per lo streaming dei dati, per esempio Apache Kafka","Capitolato"),
+  ("Obbligatorio","Utilizzo dell'applicazione richiede compatibilità con l'ultima versione di Google Chrome v120 (o superiori), Mozilla Firefox v120 (o superiori), Microsoft Edge v120 (o superiori) o Opera v106 (o superiori)","Capitolato"),
 
   
   
@@ -1172,12 +1172,12 @@ caption: "Requisiti di qualità")
 #figure(
 requirements_table(requisiti_vincolo_con_codice),
 caption: "Requisiti di vincolo")
-
+#pagebreak()
 == Requisiti sistema operativo
 
 L'applicazione viene eseguita sul browser e l'unico software che deve essere installato sul sistema operativo è Docker.\
 Docker viene fornito in quasi tutte le distro Linux, tramite il gestore di pacchetti specifico per la distribuzione, per cui l'installazione è molto semplice.
-Su Windows si richiede la versione Windows 10 o superiori, con processore 64 bit, una RAM minima di 4GB, WSL 2 versione 1.1.3.0 oppure usare la funzionalità disponibile di Hyper-v e Windows Container. Inoltre deve essere abilitata la virtualizzazione dell' hardware all'interno del BIOS.
+Su Windows si richiede la versione Windows 10 o superiori, con processore 64 bit, una RAM minima di 4GB, e WSL 2 versione 1.1.3.0 per utilizzare Container Linux; alternativamente, si può usare la funzionalità di Hyper-v e Container Windows. Inoltre deve essere abilitata la virtualizzazione dell' hardware all'interno del BIOS.
 Per MAC, si richiede la versione minima 10.14 Mojave e una RAM minimale di 4GB.
 #pagebreak()
 == Requisiti prestazionali
@@ -1185,7 +1185,7 @@ Per MAC, si richiede la versione minima 10.14 Mojave e una RAM minimale di 4GB.
 Si nota che entrambe le tecnologie #glossary[Clickhouse] e #glossary[Grafana] integrano al loro interno varie ottimizzazioni per garantire prestazioni efficienti.
 Ad esempio #glossary[Clickhouse] utilizza algoritmi di compressione avanzati per ridurre lo spazio di archiviazione necessario e migliorare le prestazioni di accesso ai dati, inoltre ha un archittetura distribuita consentendo una distribuzione del carico e una scalabilità orizzontale per gestire grandi volumi di dati. Mentre #glossary[Grafana] usa la cache dei dati per ridurre il carico di lavoro sui database e migliorare la velocità di risposta delle query; cerca di ottimizzare le query per ridurre il numero di richieste e utilizza un sistema di compressione dati per ridurre lo spazio di archiviazione.
 
-Per garantire tempi di esecuzione ancora più rapidi, si cerca di usare, ove possibile, le materialized view di #glossary[Clickhouse].
+Per garantire tempi di esecuzione ancora più rapidi, si cerca di usare, ove possibile, le #glossary[materialized views] di #glossary[Clickhouse].
 
 #let requisiti_prestazioni = (
   (
