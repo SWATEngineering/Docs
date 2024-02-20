@@ -113,7 +113,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione; 
   + L'amministratore pubblico seleziona la visualizzazione della #glossary("dashboard") generale relativa ai sensori.
-- *Estensioni*: [UC9] in caso non ci fosse alcun dato da visualizzare.
+- *Estensioni*: [UC9].
 
 #figure(
   image("assets/UML/UC1.1_Visualizzazione-posizione-sensori-su-mappa.png",width:100%),
@@ -127,7 +127,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione; 
   + L'amministratore pubblico seleziona la visualizzazione della #glossary("dashboard") generale relativa ai sensori.
-- *Estensioni*: [UC9] in caso non ci fosse alcun dato da visualizzare.
+- *Estensioni*: [UC9].
 
 #figure(
   image("assets/UML/UC1.2_Visualizzazione-tabella-sensori.png",width:100%),
@@ -157,7 +157,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
 - *Specializzazioni*: [UC2.2],[UC2.3],[UC2.4],[UC2.5],[UC2.6],[UC2.7],[UC2.8],[UC2.9],[UC2.10],[UC2.11],[UC2.12];
-- *Estensioni*: [UC9] in caso non ci fosse alcun dato da visualizzare.
+- *Estensioni*: [UC9].
 
 #figure(
   image("assets/UML/UC2.1_Visualizzazione-pannello-dati-ambientali.png",width:100%),
@@ -337,7 +337,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
 - *Specializzazioni*: [UC3.2],[UC3.3],[UC3.4],[UC3.5],[UC3.6];
-- *Estensioni*: [UC9] in caso non ci fossero dati da visualizzare.
+- *Estensioni*: [UC9].
 
 #figure(
   image("assets/UML/UC3.1_Visualizzazione-pannello-dati-urbanistici.png",width:100%),
@@ -1135,7 +1135,7 @@ caption: "Requisiti funzionali")
   ),
   ("Desiderabile","Il sistema deve risultare di facile utiilizzo, richiedendo un numero di click contenuto per raggiungere gli obiettivi desiderati","Norme di Progetto"),
   ("Desiderabile","L'amministratore pubblico deve poter imparare a padroneggiare il sistema in breve tempo","Norme di progetto"),
-  ("Obbligatorio","La #glossary[repository] di github del codice sorgente "InnovaCity" deve essere accessibile a tutti","Verbale esterno"),
+  ("Obbligatorio",[La #glossary[repository] di github del codice sorgente "InnovaCity" deve essere accessibile a tutti],"Verbale esterno"),
   ("Obbligatorio","Devono essere rispettati tutte le norme definite nel documento _Norme di Progetto v2.0_","Norme di Progetto"),
   ("Obbligatorio","Devono essere rispettati i vincoli e le metriche definite nel Piano di Qualifica v2.0","Norme di Progetto"),
   ("Desiderabile","Il sistema deve essere scalabile, in grado di gestire grandi moli di dati","Capitolato"),
