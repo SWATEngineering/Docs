@@ -1150,9 +1150,7 @@ caption: "Requisiti di qualità")
 #pagebreak()
 == Requisiti di vincolo
 #let requisiti_vincolo = (
-  (
-  "Obbligatorio",[Il sistema deve gestire un carico di #glossary("dati in entrata") tra i 50 e i 100 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM],"Verbale esterno"
-  ),
+  
   (
   "Obbligatorio","I dati vanno raccolti in un database OLAP, per esempio ClickHouse","Capitolato",
   ),
@@ -1189,7 +1187,7 @@ Per garantire tempi di esecuzione ancora più rapidi, si cerca di usare, ove pos
 
 #let requisiti_prestazioni = (
   (
-  "Obbligatorio",[Il sistema deve gestire un carico di #glossary("dati in entrata") tra i 50 e i 100 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM, kernel linux 4 o superiore, macos 10 o superiori, windows 10 o superiori],"Verbale esterno"
+  "Obbligatorio",[Il sistema deve gestire un carico di #glossary("dati in entrata") tra i 50 e i 100 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM],"Verbale esterno"
   ),
   ("Desiderabile","Il sistema deve avere un basso tempo di elaborazione tra il momento in cui i dati vengono generati e la loro visualizzazione sulla dashboard","Norme di progetto"),
   ("Desiderabile",[Evitare l'utilizzo di #glossary[pannelli] troppo complessi che richiedono troppe risorse per il rendering],"Verbale esterno")
