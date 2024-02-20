@@ -354,7 +354,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #figure(
   image("assets/UML/UC3.2_Visualizzazione-grafico-a-mappa-disponibilità-parcheggi.png",width:100%),
-  caption: [UC3.2 Visualizzazione grafico a mappa disponibilità di parcheggi]
+  caption: [UC3.2 Visualizzazione grafico a mappa disponibilità parcheggi]
 )
 
 #pagebreak()
