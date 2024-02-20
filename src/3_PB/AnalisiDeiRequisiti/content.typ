@@ -344,7 +344,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC3.1 Visualizzazione #glossary("pannello") dati urbanistici]
 )
 
-=== UC3.2: Visualizzazione grafico a mappa disponibilità parcheggi
+=== UC3.2: Visualizzazione mappa disponibilità parcheggi
 - *Attore Principale*: amministratore pubblico;
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa per indicare la disponibilità dei parcheggi, espressa in numero di parcheggi liberi, registrata da ciascun sensore, attraverso un indicatore numerico posto nelle coordinate del corrispondente sensore;
@@ -354,7 +354,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #figure(
   image("assets/UML/UC3.2_Visualizzazione-grafico-a-mappa-disponibilità-parcheggi.png",width:100%),
-  caption: [UC3.2 Visualizzazione grafico a mappa disponibilità parcheggi]
+  caption: [UC3.2 Visualizzazione mappa disponibilità parcheggi]
 )
 
 #pagebreak()
