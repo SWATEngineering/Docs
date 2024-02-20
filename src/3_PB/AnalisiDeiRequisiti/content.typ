@@ -361,7 +361,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC3.3: Visualizzazione informazioni delle colonne di ricarica
 - *Attore Principale*: amministratore pubblico;
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'amministratore pubblico visualizza dei #glossary("pannelli"), adatti al reperimento di informazioni relative alle colonne di ricarica;
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello"), che riporta informazioni relative alle colonne di ricarica;
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
