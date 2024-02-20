@@ -196,7 +196,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC2.4: Visualizzazione grafico a mappa direzione del vento
 - *Attore Principale*: amministratore pubblico;
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa che esprime, mediante frecce aventi origine nelle coordinate del sensore, la direzione del vento rilevata da ciascun sensore;
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa che esprime, mediante frecce aventi origine nelle coordinate geografiche del sensore, la direzione del vento rilevata da ciascun sensore;
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
@@ -347,7 +347,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC3.2: Visualizzazione mappa disponibilità parcheggi
 - *Attore Principale*: amministratore pubblico;
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa per indicare la disponibilità dei parcheggi, espressa in numero di parcheggi liberi, registrata da ciascun sensore, attraverso un indicatore numerico posto nelle coordinate del corrispondente sensore;
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa per indicare la disponibilità dei parcheggi, espressa in numero di parcheggi liberi, registrata da ciascun sensore, attraverso un indicatore numerico posto nelle coordinate geografiche del corrispondente sensore;
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
@@ -431,7 +431,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC3.5: Visualizzazione posizione real time delle biciclette elettriche e relativa percentuale batteria
 *Attore Principale*: amministratore pubblico;
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante la posizione in tempo reale delle biciclette elettriche, mediante degli indicatori numerici indicanti la percentuale della batteria posizionata nelle coordinate del mezzo, atto a mostrare la sua posizione;
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante la posizione in tempo reale delle biciclette elettriche, mediante degli indicatori numerici indicanti la percentuale della batteria posizionata nelle coordinate geografiche del mezzo, atto a mostrare la sua posizione;
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
@@ -445,7 +445,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC3.6: Visualizzazione indicatore percentuale su mappa riempimento zone ecologiche
 *Attore Principale*: amministratore pubblico;
 - *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante lo stato di riempimento delle zone ecologiche, espresse in valori percentuali, posizionate nelle coordinate delle zone;
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante lo stato di riempimento delle zone ecologiche, espresse in valori percentuali, posizionate nelle coordinate geografiche delle zone;
 - *Scenario Principale*:
   + L'amministratore pubblico accede alla piattaforma di visualizzazione;
   + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
@@ -974,7 +974,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media aritmetica della percentuale d'umidità, per ciascun sensore, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi la direzione del vento, mediante frecce aventi origine nelle coordinate del sensore, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
+    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi la direzione del vento, mediante frecce aventi origine nelle coordinate geografiche del sensore, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'ultima velocità del vento, espressa in chilometri all'ora, per ciascun sensore, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
@@ -1004,23 +1004,23 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Obbligatorio", [L'utente deve poter monitorare i dati provenienti dai sensori relativi ai dati urbanistici in una #glossary("dashboard") apposita.], [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi il numero di posti liberi nei vari parcheggi, mediante indicatori numerici posti nelle coordinate del sensore, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level: 2)#C.step(level: 2)UC#C.display()]
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi il numero di posti liberi nei vari parcheggi, mediante indicatori numerici posti nelle coordinate geografiche del sensore, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level: 2)#C.step(level: 2)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi la posizione delle colonne di ricarica per auto, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:2)#C.step(level:3)UC#C.display()]
   ),
-  ("Obbligatorio",[L'utente deve poter visualizzare un #glossary("pannello") contenente indicatori booleani posti nelle coordinate dei sensori che indicheranno la disponibilità delle colonne di ricarica, nella #glossary("dashboard") relativa ai dati urbanistici.],[#C.step(level:3)UC#C.display()]),
+  ("Obbligatorio",[L'utente deve poter visualizzare un #glossary("pannello") contenente indicatori booleani posti nelle coordinate geografiche dei sensori che indicheranno la disponibilità delle colonne di ricarica, nella #glossary("dashboard") relativa ai dati urbanistici.],[#C.step(level:3)UC#C.display()]),
   (
     "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'erogazione delle colonne di ricarica per auto, espressa in chiloWatt all'ora (kWh), controllata da ciascun sensore, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:3)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi lo stato di congestione delle strade, mediante gli stati "LOW", "MEDIUM", "HIGH", "BLOCKED", posti nelle coordinate dei sensori controllano queste, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:2)UC#C.display()]
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi lo stato di congestione delle strade, mediante gli stati "LOW", "MEDIUM", "HIGH", "BLOCKED", posti nelle coordinate geografiche dei sensori controllano queste, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che mostri la posizione delle biciclette elettriche controllate, in tempo reale, mediante degli indicatori numerici, indicanti la percentuale della batteria, posizionati nelle coordinate del mezzo, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:2)UC#C.display()]
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che mostri la posizione delle biciclette elettriche controllate, in tempo reale, mediante degli indicatori numerici, indicanti la percentuale della batteria, posizionati nelle coordinate geografiche del mezzo, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che mostri la percentuale di riempimento delle zone ecologiche, mediante degli indicatori percentuali, posizionati nelle coordinate della zona, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:2)UC#C.display()]
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che mostri la percentuale di riempimento delle zone ecologiche, mediante degli indicatori percentuali, posizionati nelle coordinate geografiche della zona, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:2)UC#C.display()]
   ),
   (
     "Desiderabile", [L'utente deve poter monitorare i #glossary("dati anomali") e i dati superanti delle soglie, in una #glossary("dashboard") apposita.], [#C.step()UC#C.display()]
@@ -1074,37 +1074,37 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Obbligatorio", [L'utente deve poter visualizzare un messaggio di errore, qualora il sistema di visualizzazione non sia in grado di reperire o non abbia dati da mostrare all'utente per un determinato #glossary("pannello").], [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alla temperatura, espressa in gradi Celsius, il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
+    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alla temperatura, espressa in gradi Celsius, il timestamp di rilevazione e le proprie coordinate geografiche.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi all'umidità, espressa in percentuale, il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
+    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi all'umidità, espressa in percentuale, il timestamp di rilevazione e le proprie coordinate geografiche.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alla velocità del vento, espressa in chilometri all'ora, alla direzione del vento, espressa in gradi (con gli 0° a Nord e i 180° a Sud), il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
+    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alla velocità del vento, espressa in chilometri all'ora, alla direzione del vento, espressa in gradi (con gli 0° a Nord e i 180° a Sud), il timestamp di rilevazione e le proprie coordinate geografiche.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alle precipitazioni, espresse in millimetri all'ora (mm/h), il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
+    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alle precipitazioni, espresse in millimetri all'ora (mm/h), il timestamp di rilevazione e le proprie coordinate geografiche.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", [Il sensore deve poter mandare e far persistere dati relativi all'inquinamento dell'aria, espresso in microgrammi al metro cubo (#glossary("PM10")), il timestamp di rilevazione e le proprie coordinate.], [#C.step()UC#C.display()]
+    "Obbligatorio", [Il sensore deve poter mandare e far persistere dati relativi all'inquinamento dell'aria, espresso in microgrammi al metro cubo (#glossary("PM10")), il timestamp di rilevazione e le proprie coordinate geografiche.], [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alla percentuale di riempimento del bacino idrico controllato, il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
+    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alla percentuale di riempimento del bacino idrico controllato, il timestamp di rilevazione e le proprie coordinate geografiche.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi al numero di parcheggi disponibili all'interno del parcheggio auto controllato, il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
+    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi al numero di parcheggi disponibili all'interno del parcheggio auto controllato, il timestamp di rilevazione e le proprie coordinate geografiche.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alla quantità di energia erogata dalla colonna di ricarica controllata, espresse in chilowatt all'ora (kWh), il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
+    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alla quantità di energia erogata dalla colonna di ricarica controllata, espresse in chilowatt all'ora (kWh), il timestamp di rilevazione e le proprie coordinate geografiche.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alle coordinate della bicicletta elettrica controllata, la percentuale di batteria della stessa e il timestamp di rilevazione.", [#C.step()UC#C.display()]
+    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alle coordinate geografiche della bicicletta elettrica controllata, la percentuale di batteria della stessa e il timestamp di rilevazione.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alla percentuale di riempimento della zona ecologica controllata, il timestamp di rilevazione e le proprie coordinate.", [#C.step()UC#C.display()]
+    "Obbligatorio", "Il sensore deve poter mandare e far persistere dati relativi alla percentuale di riempimento della zona ecologica controllata, il timestamp di rilevazione e le proprie coordinate geografiche.", [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", [Il sensore deve poter mandare e far persistere dati relativi allo stato della congestione stradale nella strada controllata, espresse in stati (in ordine di crescente congestione sono: "LOW", "MEDIUM", "HIGH", "BLOCKED"), il timestamp di rilevazione e le proprie coordinate.], [#C.step()UC#C.display()]
+    "Obbligatorio", [Il sensore deve poter mandare e far persistere dati relativi allo stato della congestione stradale nella strada controllata, espresse in stati (in ordine di crescente congestione sono: "LOW", "MEDIUM", "HIGH", "BLOCKED"), il timestamp di rilevazione e le proprie coordinate geografiche.], [#C.step()UC#C.display()]
   ),
   (
     "Desiderabile", "Il sensore deve poter mandare e far persistere dati relativi al proprio stato, ovvero la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso, e la propria frequenza di inserimento dati espressa in secondi.", [#C.step()UC#C.display()]
