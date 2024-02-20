@@ -1,5 +1,7 @@
-#import "functions.typ": glossary, team
+#import "functions.typ": glossary, team, shrinkFloat
 #import "../AnalisiDeiRequisiti/content.typ": requisiti_funzionali_con_codice
+#import "@preview/cetz:0.2.0": *
+#import chart
 
 /*************************************/
 /*    INSERIRE SOTTO IL CONTENUTO    */ 
@@ -122,12 +124,77 @@ table(
       [*Codice*],[*Descrizione*],[*Stato*],
       ..requisiti.map(item => (item.at(0),item.at(1),item.at(2))).flatten().map(item => [#item])
 ),caption: "Tabella dei requisiti funzionali con annesso stato di soddisfacimento.")
+#let numRequisitiSoddisfatti = requisiti.filter(el => el.at(2).contains("Soddisfatto")).map(el => 1).sum()
+#let numTotaleRequisiti = requisiti.map(el => 1).sum()
 
-/* CONTEGGIO REQUISITI FUNZIONALI OBBLIGATORI */
-/*#requisiti.filter(el => el.at(0).contains("ROF")).map(el => 1).sum()*/
+== Grafici requisiti soddisfatti
+Riguardo alla soddisfazione dei vari requisiti funzionali, il gruppo SWAT Engineering ha soddisfatto #numRequisitiSoddisfatti su #numTotaleRequisiti requisiti, arrivando ad una copertura dell' #shrinkFloat(numRequisitiSoddisfatti/numTotaleRequisiti*100)%.
 
-/* CONTEGGIO REQUISITI FUNZIONALI */
-/*#requisiti.map(el => 1).sum()*/
+#let data = (
+  /* CONTEGGIO REQUISITI FUNZIONALI SODDISFATTI */
+  ("Soddisfatti",requisiti.filter(el => el.at(2).contains("Soddisfatto")).map(el => 1).sum()),
+  /* CONTEGGIO REQUISITI FUNZIONALI NON SODDISFATTI*/
+  ("Non soddisfatti",requisiti.map(el => 1).sum()-satisfied.map(el => 1).sum()),
+)
+#let piechart-config = (
+  radius: 3,
+  gap: 0deg,
+  slice-style: palette.new(colors: (rgb(153, 255, 153), rgb(255, 128, 128))),
+  label-key: (0),
+  value-key: (1),
+  outer-label: (content: "%"),
+)
+#let colors = (rgb(153, 255, 153), rgb(255, 128, 128))
+#let types = ("Soddisfatti","Non soddisfatti")
+#let types-legend = rect(stroke: 0.5pt + luma(140))[
+  #let tuples = types.zip(colors)
+  #stack(
+    spacing: 0.75em,
+    dir: ltr,
+    ..tuples.map(tuple => stack(
+      dir: ltr,
+      spacing: 0.25em,
+      rect(stroke: 0.75pt, fill: tuple.at(1), width: 0.75em, height: 0.75em), tuple.at(0)
+    ))
+  )
+]
 
-/* CONTEGGIO REQUISITI FUNZIONALI SODDISFATTI */
-/*#satisfied.map(el => 1).sum()*/
+#figure({
+  types-legend
+  canvas({
+    import draw: *
+
+    chart.piechart(
+      data,
+      ..piechart-config
+    )
+  })
+},
+caption: "Requisiti funzionali soddisfatti rispetto al totale.",
+kind: "chart",
+supplement: "Grafico")
+
+#let data = (
+  /* CONTEGGIO REQUISITI FUNZIONALI OBBLIGATORI */
+  ("Soddisfatti",requisiti.filter(el => el.at(0).contains("ROF") and el.at(2) == "Soddisfatto").map(el => 1).sum()),
+  /* CONTEGGIO REQUISITI FUNZIONALI OBBLIGATORI NON SODDISFATTI */
+  ("Non soddisfatti",requisiti.filter(el => el.at(0).contains("ROF")).map(el => 1).sum()),
+)
+
+/* TODO: Rifare i calcoli con i requisiti obbligatori (NON SOLAMENTE FUNZIONALI)*/
+
+Invece per quanto riguarda la copertura dei requisiti obbligatori, la copertura rilevata è del 
+#figure({
+  types-legend
+  canvas({
+    import draw: *
+
+    chart.piechart(
+      data,
+      ..piechart-config
+    )
+  })
+},
+caption: "Requisiti funzionali obbligatori soddisfatti rispetto al totale.",
+kind: "chart",
+supplement: "Grafico")
