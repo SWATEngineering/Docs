@@ -325,7 +325,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #figure(
   image("assets/UML/UC3_Visualizzazione-dashboard-dati-urbanistici.png",width:60%),
-  caption: [UC3 Visualizzazione dati urbanistici]
+  caption: [UC3 Visualizzazione dashboard dati urbanistici]
 )
 
 #pagebreak()
