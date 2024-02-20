@@ -5,27 +5,22 @@
 /*    INSERIRE SOTTO IL CONTENUTO    */ 
 /*************************************/
 
-
-
 = Introduzione
 
 == Scopo del documento
 Il presente documento ha lo scopo di fornire una descrizione dettagliata della fase di progettazione del progetto "InnovaCity". 
-Vengono descritte #glossary("architettura logica") e #glossary("architettura di deployment").
+Vengono descritte #glossary("architettura implementativa") e #glossary("architettura di deployment").
 Inoltre vengono riportati i #glossary("design pattern") e gli idiomi utilizzati nella fase di codifica. 
 Il documento in oggetto vuole dapprima motivare determinate scelte di sviluppo, essere una guida per l'attività di codifica, inoltre vuole garantire la copertura totale dei requisiti. 
 Alla luce del modello di sviluppo agile individuato dal team, il documento sarà redatto con un approccio iterativo.  
-/*qui si puo rivedere*/
+
 
 
 == Scopo del prodotto
 Lo scopo del prodotto è la realizzazione di un sistema di persistenza dati e successiva visualizzazione di questi, provenienti da sensori dislocati geograficamente. Tale piattaforma consentirà all'#glossary("amministratore pubblico") di acquisire una panoramica completa delle condizioni della città, facilitando così la presa di decisioni informate e tempestive riguardo alla gestione delle risorse e all'implementazione di servizi.
 
 == Glossario
-Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei
-documenti, viene fornito il _Glossario v1.0_, nel quale sono presenti tutte le
-definizioni di termini aventi uno specifico significato che vuole essere
-disambiguato. Tali termini, sono scritti in corsivo e marcati con una G a pedice.
+Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei documenti, viene fornito il _Glossario v1.0_, nel quale sono presenti tutte le definizioni di termini aventi uno specifico significato che vuole essere disambiguato. Tali termini, sono scritti in  corsivo e marcati con una G a pedice.
 
 == Riferimenti
 
@@ -36,20 +31,64 @@ disambiguato. Tali termini, sono scritti in corsivo e marcati con una G a pedice
 === riferimenti tecnici
 
 = Tecnologie
-/*ci si basa sul pdf di matteo + aggiungere docker*/
-/*io non metterei le tabelle*/
 == Per la Codifica
-/*python*/
-/*pydantic*/
-/*pep8*/
-/*git hub*/
-/*Docker*/
-/*e gli altri*/
+=== Linguaggi e formati dati
+#figure(
+table(
+      columns:(auto,auto,auto),
+      align: (x, y) => (center, center, center).at(x),
+      fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Tecnologia*],[*Descrizione*],[*Versione*],
+      [Python], [Linguaggio di programmazione ad alto livello noto per la sua semplicità, ampiamente utilizzato nell'analisi dei dati, l'intelligenza artificiale, il calcolo scientifico e altro ancora.], [da definire], 
+      [Sql], [Linguaggio standard per la gestione e la manipolazione dei database], [da definire], 
+      [Yaml], [Formato di serializzazione dei dati leggibile dall'uomo comunemente utilizzato per la configurazione dei servizi e lo scambio di dati tra programmi.], [da definire], 
+      [JSON], [Formato leggero per lo scambio di dati, facile da leggere e scrivere per gli esseri umani e facile da analizzare e generare per le macchine.], [da definire]), 
+caption: [Tabella tecnologie per la la Codifica: Linguaggi e formati dati.])
+=== Framework e Librerie
+#figure(
+table(
+      columns:(auto,auto,auto),
+      align: (x, y) => (center, center, center).at(x),
+      fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Tecnologia*],[*Descrizione*],[*Versione*],
+      [Pydantic], [Libreria Python per la serializzazione degli oggetti e per la validazione dei dati, inoltre si caratterizza dalla capacità di forzare i tipi garantendo che i dati siano coerenti durante l'elaborazione.], [da definire], 
+      [Confluent Kafka], [Piattaforma di streaming di dati basata su Apache Kafka. È progettata per gestire e processare flussi di dati in tempo reale in modo scalabile e affidabile. ], [da definire]), 
+caption: [Tabella tecnologie per la la Codifica: Framework e Librerie])
+=== Database e servizi
+#figure(
+table(
+      columns:(auto,auto,auto),
+      align: (x, y) => (center, center, center).at(x),
+      fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Tecnologia*],[*Descrizione*],[*Versione*],
+      [ClickHouse], [Sistema di gestione dei database colonnari, progettato per l'analisi dei dati ad alte prestazioni. È ottimizzato per eseguire query analitiche su grandi volumi di dati in modo efficiente.], [da definire], 
+      [Kafka], [Piattaforma di streaming di dati distribuita e scalabile, progettata per la gestione di flussi di dati in tempo reale. È ampiamente utilizzato per l'elaborazione di eventi, la messaggistica asincrona e la creazione di pipeline dati real time.], [da definire], 
+      [Grafana], [Piattaforma open source per il monitoraggio e l'analisi dei dati. Fornisce strumenti per la visualizzazione di metriche e log, la creazione di dashboard interattive e la generazione di avvisi in tempo reale.], [da inserire],  
+      [Grafana ClickHouse Data Source], [Plugin che consente di interrogare e visualizzare i dati di ClickHouse in Grafana], [da inserire], 
+      [Docker], [Piattaforma open-source che permette di creare, distribuire e gestire applicazioni in contenitori software.], [da inserire]), 
+caption: [Tabella tecnologie per la la Codifica: Database e servizi.])
+#pagebreak()
 == Per l'analisi del codice
-/*pep8*/
+#figure(
+table(
+      columns:(auto,auto,auto),
+      align: (x, y) => (center, center, center).at(x),
+      fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Tecnologia*],[*Descrizione*],[*Versione*],
+      [Pep8], [Stile di codifica per il codice Python che definisce le linee guida per la formattazione del codice, rendendolo più leggibile e uniforme.], [da definire]), 
+caption: [Tabella tecnologie per l'analisi del codice])
+== Per la Continuos Integration 
+/*Qui c'è un attimo da capire cosa metterci dentro*/
+/*git hub action*/
+/**/
 
 = Architettura
-/*Dobbiamo capire come dividerla*/
+== Architettura generale 
+/*ci metterei effettivamente il DFD della pipeline e poco di più*/
+== Architettura 
+/*già sai*/
+== Architettura di deployment 
+/*mi piacerebbe sapere cosa vuol dire ma al momento non lo so*/
 
 = Tracciamento dei requisiti
 In questa sezione si va a mostrare, secondo quanto riportato dal documento delle _Norme di progetto v2.0_, la soddisfazione dei singoli requisiti funzionali presenti, in base al tipo previsto e opportunamente classificato sotto.
