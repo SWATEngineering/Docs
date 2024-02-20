@@ -513,9 +513,9 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC5.1: Visualizzazione allerta superamento soglia temperatura
 - *Attore Principale*: amministratore pubblico;
 - *Precondizioni*: il sistema è operativo e accessibile;
-- *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa alla temperatura che notifica il superamento dei 40° Celsius.
+- *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa alla temperatura che notifica il superamento dei 40° Celsius (40°C).
 - *Scenario Principale*:
-  + Il sistema rileva una temperatura nella media dei 5 minuti, superiore ai 40° Celsius.
+  + Il sistema rileva una temperatura nella media dei 5 minuti, superiore ai 40° Celsius (40°C).
 #figure(
   image("assets/UML/UC5.1_Visualizzazione-allerte-superamento-soglia-temperatura.png",width:70%),
   caption: [UC5.1 Visualizzazione allerta superamento soglia temperatura]
@@ -1033,7 +1033,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i dati relativi a temperatura, precipitazioni, inquinamento dell'aria, bacini idrici e zone ecologiche, i cui valori superano una soglia fissata, il sensore che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo temperatura, superante una soglia di 40° Celsius.", [#C.step()#C.step(level:2)UC#C.display()]
+    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo temperatura, superante una soglia di 40° Celsius (40°C).", [#C.step()#C.step(level:2)UC#C.display()]
   ),
   (
     "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo precipitazioni, superante una soglia di 50 millimetri all'ora (50mm/h).", [#C.step(level:2)UC#C.display()]
