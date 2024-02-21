@@ -1,5 +1,5 @@
-#import "functions.typ": glossary, team, shrinkFloat
-#import "../AnalisiDeiRequisiti/content.typ": requisiti_funzionali_con_codice
+#import "functions.typ": glossary, team
+#import "../AnalisiDeiRequisiti/content.typ": requisiti_funzionali_con_codice, requisiti_qualita_con_codice, requisiti_vincolo_con_codice
 #import "@preview/cetz:0.2.0": *
 #import chart
 
@@ -126,11 +126,29 @@ Rispetto alla stessa tabella ritrovabile nel documento _Analisi dei Requisiti v2
 
 /*L'array deve contenere i numeri dei requisiti da soddisfare, espressi come stringa*/
 /*Esempio: #let satisfied = ("1","5","18")*/
-#let satisfied = (
+#let satisfied_funz = (
   "1","2"
 )
-#let requisiti = requisiti_funzionali_con_codice.map(req => {
-  if(satisfied.contains(req.at(0).slice(3))){
+#let satisfied_vinc = (
+  "1","2"
+)
+#let satisfied_qual = (
+  "1","2"
+)
+#let requisiti_funz = requisiti_funzionali_con_codice.map(req => {
+  if(satisfied_funz.contains(req.at(0).slice(3))){
+    return (req.at(0),req.at(2),"Soddisfatto") 
+  }
+  return (req.at(0),req.at(2),"Non soddisfatto")
+})
+#let requisiti_vinc = requisiti_vincolo_con_codice.map(req => {
+  if(satisfied_funz.contains(req.at(0).slice(3))){
+    return (req.at(0),req.at(2),"Soddisfatto") 
+  }
+  return (req.at(0),req.at(2),"Non soddisfatto")
+})
+#let requisiti_qual = requisiti_qualita_con_codice.map(req => {
+  if(satisfied_funz.contains(req.at(0).slice(3))){
     return (req.at(0),req.at(2),"Soddisfatto") 
   }
   return (req.at(0),req.at(2),"Non soddisfatto")
@@ -143,19 +161,20 @@ table(
       align: (center,left,center),
       fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Codice*],[*Descrizione*],[*Stato*],
-      ..requisiti.map(item => (item.at(0),item.at(1),item.at(2))).flatten().map(item => [#item])
+      ..requisiti_funz.map(item => (item.at(0),item.at(1),item.at(2))).flatten().map(item => [#item])
 ),caption: "Tabella dei requisiti funzionali con annesso stato di soddisfacimento.")
-#let numRequisitiSoddisfatti = requisiti.filter(el => el.at(2).contains("Soddisfatto")).map(el => 1).sum()
-#let numTotaleRequisiti = requisiti.map(el => 1).sum()
+#let numRequisitiSoddisfatti = requisiti_funz.filter(el => el.at(2).contains("Soddisfatto")).len()
+#let numTotaleRequisiti = requisiti_funz.len()
 
+#pagebreak()
 == Grafici requisiti soddisfatti
-Riguardo alla soddisfazione dei vari requisiti funzionali, il gruppo SWAT Engineering ha soddisfatto #numRequisitiSoddisfatti su #numTotaleRequisiti requisiti, arrivando ad una copertura dell' #shrinkFloat(numRequisitiSoddisfatti/numTotaleRequisiti*100)%.
+Riguardo alla soddisfazione dei vari requisiti funzionali, il gruppo SWAT Engineering ha soddisfatto #numRequisitiSoddisfatti su #numTotaleRequisiti requisiti, arrivando ad una copertura del #int(numRequisitiSoddisfatti/numTotaleRequisiti*100+0.50)%.
 
 #let data = (
   /* CONTEGGIO REQUISITI FUNZIONALI SODDISFATTI */
-  ("Soddisfatti",requisiti.filter(el => el.at(2).contains("Soddisfatto")).map(el => 1).sum()),
+  ("Soddisfatti",requisiti_funz.filter(el => el.at(2).contains("Soddisfatto")).len()),
   /* CONTEGGIO REQUISITI FUNZIONALI NON SODDISFATTI*/
-  ("Non soddisfatti",requisiti.map(el => 1).sum()-satisfied.map(el => 1).sum()),
+  ("Non soddisfatti",requisiti_funz.len()-satisfied_funz.len()),
 )
 #let piechart-config = (
   radius: 3,
@@ -195,16 +214,22 @@ caption: "Requisiti funzionali soddisfatti rispetto al totale.",
 kind: "chart",
 supplement: "Grafico")
 
+
+#let req_obbligatori = requisiti_funz.filter(el => el.at(0).contains("RO")).len() +requisiti_vinc.filter(el => el.at(0).contains("RO")).len() + requisiti_qual.filter(el => el.at(0).contains("RO")).len()
+#let req_obbligatori_soddisfatti = requisiti_funz.filter(el => el.at(0).contains("RO")).filter(el => el.at(0).slice(3) in satisfied_funz).len() +requisiti_vinc.filter(el => el.at(0).contains("RO")).filter(el => el.at(0).slice(3) in satisfied_funz).len() + requisiti_qual.filter(el => el.at(0).contains("RO")).filter(el => el.at(0).slice(3) in satisfied_funz).len()
+
+
+
 #let data = (
-  /* CONTEGGIO REQUISITI FUNZIONALI OBBLIGATORI */
-  ("Soddisfatti",requisiti.filter(el => el.at(0).contains("ROF") and el.at(2) == "Soddisfatto").map(el => 1).sum()),
-  /* CONTEGGIO REQUISITI FUNZIONALI OBBLIGATORI NON SODDISFATTI */
-  ("Non soddisfatti",requisiti.filter(el => el.at(0).contains("ROF")).map(el => 1).sum()),
+  /* CONTEGGIO REQUISITI OBBLIGATORI SODDISFATTI*/
+  ("Soddisfatti",req_obbligatori_soddisfatti),
+  /* CONTEGGIO REQUISITI OBBLIGATORI NON SODDISFATTI */
+  ("Non soddisfatti",req_obbligatori - req_obbligatori_soddisfatti),
 )
 
-/* TODO: Rifare i calcoli con i requisiti obbligatori (NON SOLAMENTE FUNZIONALI)*/
 
-Invece per quanto riguarda la copertura dei requisiti obbligatori, la copertura rilevata è del 
+
+Invece per quanto riguarda la copertura dei requisiti obbligatori, la copertura rilevata è di #req_obbligatori_soddisfatti su #req_obbligatori requisiti, arrivando quindi ad un #int(req_obbligatori_soddisfatti / req_obbligatori * 100 + 0.5)% sul totale.
 #figure({
   types-legend
   canvas({
@@ -216,6 +241,6 @@ Invece per quanto riguarda la copertura dei requisiti obbligatori, la copertura 
     )
   })
 },
-caption: "Requisiti funzionali obbligatori soddisfatti rispetto al totale.",
+caption: "Requisiti obbligatori soddisfatti rispetto al totale.",
 kind: "chart",
 supplement: "Grafico")
