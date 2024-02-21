@@ -740,6 +740,8 @@ Il verbale esterno oltre alle sezioni sopra elencate ha una pagina per la conval
                 - Le iniziali dei ruoli svolti dai componenti del gruppo;
                 - L'iniziale del termine "Proponente";
                 - Prima lettera di ogni elenco puntato.
+        - *Monospace*:
+                - Per indicare parti di codice in #glossary[Typst] o in altri linguaggio.
 
 Nei verbali interni ed esterni non si usa la formattazione da glossario.
 
@@ -1103,8 +1105,8 @@ L'elaborazione comprende la creazione di un DataFrame consolidato che rappresent
 
 Per visualizzare i dati aggiornati relativi a ciascuno #glossary[sprint], è possibile utilizzare le seguenti funzioni all'interno del file:
 
-\#rendicontazioneOreAPosteriori(sprintNumber: "number")
-\#rendicontazioneCostiAPosteriori(sprintNumber: "number")
+`\#rendicontazioneOreAPosteriori(sprintNumber: "number")
+\#rendicontazioneCostiAPosteriori(sprintNumber: "number")`
 
 Dove "number" rappresenta il numero a 2 cifre, specifico dello #glossary[sprint] di interesse. Queste funzioni consentono di ottenere report aggiornati sulla distribuzione delle ore per ruolo e persona, nonché sui costi associati, semplificando la gestione.
 
@@ -1263,7 +1265,7 @@ Ogni rischio viene identificato da un codice univoco avente la seguente struttur
 
 #pagebreak()
 
-=== Procedure comunicative 
+=== Comunicazione e incontri
 
 ==== Gestione delle comunicazioni
 
