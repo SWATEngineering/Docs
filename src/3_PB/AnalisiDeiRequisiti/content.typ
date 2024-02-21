@@ -462,7 +462,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza #glossary("pannelli") contenenti dati relativi al superamento delle soglie e alle anomalie rilevate;
 - *Scenario Principale*:
-  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] delle anomalie.
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] delle anomalie e superamento soglie.
 
 #figure(
   image("assets/UML/UC4_Visualizzazione-dashboard-dati-anomali-e-superamento-soglie.png",width:60%),
