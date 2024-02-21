@@ -109,7 +109,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC1.1: Visualizzazione posizione sensori su mappa
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa che mostra le posizioni dei sensori, visualizzati tramite icone, su di essa. Le icone dei sensori sono colorate in base al tipo di #glossary("sensore")  e riportano una label che ne esplicita il tipo e il nome; 
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa che mostra le posizioni dei sensori, visualizzati tramite icone, su di essa. Le icone dei sensori sono colorate in base al tipo di #glossary("sensore")  e riportano una label che ne esplicita il tipo, il nome e le coordinate geografiche; 
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione; 
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary("dashboard") generale relativa ai sensori.
