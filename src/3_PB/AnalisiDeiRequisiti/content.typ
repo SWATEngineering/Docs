@@ -196,7 +196,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC2.4: Visualizzazione grafico a mappa direzione del vento
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa che esprime, mediante frecce aventi origine nelle coordinate geografiche del #glossary("sensore"), la direzione del vento rilevata da ciascun #glossary("sensore");
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa che esprime, mediante frecce aventi origine nelle coordinate geografiche del #glossary("sensore"), la direzione del vento rilevata da ciascun #glossary("sensore")\;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
@@ -347,7 +347,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC3.2: Visualizzazione mappa disponibilità parcheggi
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa per indicare la disponibilità dei parcheggi, espressa in numero di parcheggi liberi, registrata da ciascun #glossary("sensore"), attraverso un indicatore numerico posto nelle coordinate geografiche del corrispondente #glossary("sensore");
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa per indicare la disponibilità dei parcheggi, espressa in numero di parcheggi liberi, registrata da ciascun #glossary("sensore"), attraverso un indicatore numerico posto nelle coordinate geografiche del corrispondente #glossary("sensore")\;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio urbanistico.
@@ -729,9 +729,9 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*Cambiare il numero nell'immagine*/
 #pagebreak()
 === UC10: Inserimento dati temperatura
-- *Attore Principale*: #glossary("sensore");
+- *Attore Principale*: #glossary("sensore")\;
 - *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema; 
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore");
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") effettua una rilevazione della temperatura;
   + Il #glossary("sensore") formatta il messaggio da inviare al sistema, di modo da mandare la temperatura, espressa in gradi Celsius (°C), il timestamp di rilevazione e le proprie coordinate geografiche;
@@ -745,9 +745,9 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*Cambiare il numero nell'immagine*/
 === UC11: Inserimento dati umidità
-- *Attore Principale*: #glossary("sensore");
+- *Attore Principale*: #glossary("sensore")\;
 - *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema;
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore");
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") effettua una rilevazione dell'umidità relativa;
   + Il #glossary("sensore") formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di umidità relativa, il timestamp di rilevazione e le proprie coordinate geografiche;
@@ -762,9 +762,9 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*Cambiare il numero nell'immagine*/
 #pagebreak()
 === UC12: Inserimento dati velocità e direzione del vento
-- *Attore Principale*: #glossary("sensore");
+- *Attore Principale*: #glossary("sensore")\;
 - *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema;
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore");
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") effettua una rilevazione della velocità (km/h) e della direzione del vento;
   + Il #glossary("sensore") formatta il messaggio da inviare al sistema, di modo da mandare la direzione del vento, espressa in gradi (con gli 0° a Nord e i 180° a Sud), la velocità del vento, espressa in chilometri all'ora (km/h), il timestamp di rilevazione e le proprie coordinate geografiche;
@@ -778,9 +778,9 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*Cambiare il numero nell'immagine*/
 === UC13: Inserimento dati precipitazioni
-- *Attore Principale*: #glossary("sensore");
+- *Attore Principale*: #glossary("sensore")\;
 - *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema;
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore");
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") effettua una rilevazione quantitativa delle precipitazioni;
   + Il #glossary("sensore") formatta il messaggio da inviare al sistema, di modo da mandare la quantità di precipitazioni rilevate, espresse in millimetri all'ora (mm/h), il timestamp di rilevazione e le proprie coordinate geografiche;
@@ -795,9 +795,9 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*Cambiare il numero nell'immagine*/
 #pagebreak()
 === UC14: Inserimento dati inquinamento dell'aria
-- *Attore Principale*: #glossary("sensore");
+- *Attore Principale*: #glossary("sensore")\;
 - *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema; 
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore");
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") effettua una rilevazione quantitativa dell'inquinamento dell'aria;
   + Il #glossary("sensore") formatta il messaggio da inviare al sistema, di modo da mandare rilevazioni #glossary("PM10") relative all'inquinamento dell'aria, espresse in $#sym.mu g\/m^3$, il timestamp di rilevazione e le proprie coordinate geografiche;
@@ -811,9 +811,9 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*Cambiare il numero nell'immagine*/
 === UC15: Inserimento dati livello bacini idrici
-- *Attore Principale*: #glossary("sensore");
+- *Attore Principale*: #glossary("sensore")\;
 - *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema;
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore");
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") effettua una rilevazione del livello del bacino idrico in cui è installato;
   + Il #glossary("sensore") formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di riempimento del bacino idrico controllato, il timestamp di rilevazione e le proprie coordinate geografiche;
@@ -827,9 +827,9 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #pagebreak()
 === UC16: Inserimento dati disponibilità parcheggi
-- *Attore Principale*: #glossary("sensore"); 
+- *Attore Principale*: #glossary("sensore")\; 
 - *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema; 
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore");
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
    + Il #glossary("sensore") rileva gli ingressi e le uscite del parcheggio in cui è installato;
   + Il #glossary("sensore") formatta il messaggio da inviare al sistema, di modo da mandare la quantità di parcheggi liberi rilevati nel parcheggio controllato, il timestamp di rilevazione e le proprie coordinate geografiche;
@@ -843,9 +843,9 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*Cambiare il numero nell'immagine*/
 === UC17: Inserimento dati colonne di ricarica
-- *Attore Principale*: #glossary("sensore");
+- *Attore Principale*: #glossary("sensore")\;
 - *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema; 
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore");
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") effettua una rilevazione del wattaggio erogato dalla colonna di ricarica;
   + Il #glossary("sensore") formatta il messaggio da inviare al sistema, di modo da mandare la quantità di energia erogata, espressa in chilowatt all'ora (kWh), il timestamp di rilevazione e le proprie coordinate geografiche;
@@ -860,9 +860,9 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*Cambiare il numero nell'immagine*/
 #pagebreak()
 === UC18: Inserimento dati biciclette elettriche
-- *Attore Principale*: #glossary("sensore");
+- *Attore Principale*: #glossary("sensore")\;
 - *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema; 
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore");
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") effettua una rilevazione della posizione e della percentuale della batteria della bicicletta elettrica su cui è installato;
   + Il #glossary("sensore") formatta il messaggio da inviare al sistema, di modo da mandare il timestamp di rilevazione, la percentuale di batteria e le coordinate geografiche della bicicletta;
@@ -876,9 +876,9 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*Cambiare il numero nell'immagine*/
 === UC19: Inserimento dati riempimento zone ecologiche
-- *Attore Principale*: #glossary("sensore");
+- *Attore Principale*: #glossary("sensore")\;
 - *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema; 
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore");
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") effettua una rilevazione del livello di riempimento del contenitore ecologico associato; 
   + Il #glossary("sensore") formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di riempimento della zona ecologica controllata, il timestamp di rilevazione e le proprie coordinate geografiche;
@@ -893,9 +893,9 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*Cambiare il numero nell'immagine*/
 #pagebreak()
 === UC20: Inserimento dati congestione stradale
-- *Attore Principale*: #glossary("sensore");
+- *Attore Principale*: #glossary("sensore")\;
 - *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema; 
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore");
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") effettua una rilevazione del livello di congestione della strada su cui è installato; 
   + Il #glossary("sensore") formatta il messaggio da inviare al sistema, di modo da mandare lo stato della congestione stradale nella strada controllata, espresso nei seguenti stati (ordinati per ordine di congestione crescente) "LOW", "MEDIUM", "HIGH", "BLOCKED", il timestamp di rilevazione e le proprie coordinate geografiche;
@@ -909,9 +909,9 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*Cambiare il numero nell'immagine*/
 === UC21: Inserimento dati relativi al #glossary("sensore")
-- *Attore Principale*: #glossary("sensore");
+- *Attore Principale*: #glossary("sensore")\;
 - *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema;
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore");
+- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") allega i dati relativi al proprio stato, ovvero la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso e la propria frequenza di inserimento dati, espressa in secondi, al messaggio da inviare al sistema.
 
