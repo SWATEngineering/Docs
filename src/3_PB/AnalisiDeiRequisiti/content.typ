@@ -11,7 +11,7 @@
 Il presente documento ha lo scopo di fornire una descrizione dettagliata dei casi d'uso e dei requisiti del progetto "InnovaCity". Questi risultano dall'analisi del capitolato C6 presentato dalla Proponente Sync Lab e dalla successiva interazione diretta con essa attraverso gli incontri svolti.
 
 == Scopo del prodotto
-Lo scopo del prodotto è la realizzazione di un sistema di persistenza dati e successiva visualizzazione di questi, provenienti da sensori dislocati geograficamente. Tale piattaforma consentirà all'#glossary("amministratore pubblico") di acquisire una panoramica completa delle condizioni della città, facilitando così la presa di decisioni informate e tempestive riguardo alla gestione delle risorse e all'implementazione di servizi.
+Lo scopo del prodotto è la realizzazione di un #glossary("sistema") di persistenza dati e successiva visualizzazione di questi, provenienti da sensori dislocati geograficamente. Tale piattaforma consentirà all'#glossary("amministratore pubblico") di acquisire una panoramica completa delle condizioni della città, facilitando così la presa di decisioni informate e tempestive riguardo alla gestione delle risorse e all'implementazione di servizi.
 
 == Glossario
 Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei
@@ -61,9 +61,9 @@ Il prodotto, destinato ad amministratori pubblici, consente loro di ottenere una
 In questa sezione si vogliono elencare e descrivere tutti i casi d'uso individuati dall'analisi del capitolato e dalle interazioni avute con la Proponente. In particolare, si individuano gli #glossary("attori") e le funzionalità che questi possono svolgere. Ogni caso d'uso possiede un codice, la cui struttura è descritta nelle _Norme di Progetto v1.0_.
 
 == Attori
-Il sistema si interfaccerà con due attori diversi:
+Il #glossary("sistema") si interfaccerà con due attori diversi:
 - *#glossary("Amministratore pubblico")*: è un utente che ha accesso alla dashboard in tutte le sue funzionalità e può visualizzare i dati raccolti dai sensori, mediante quest'ultima;
-- *#glossary("Sensore")*: è un dispositivo in grado di effettuare misurazioni relative al proprio dominio di interesse. Questi dati possono essere letti ed utilizzati dal sistema.
+- *#glossary("Sensore")*: è un dispositivo in grado di effettuare misurazioni relative al proprio dominio di interesse. Questi dati possono essere letti ed utilizzati dal #glossary("sistema").
 
 Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico attore con accesso completo alle funzionalità, in quanto per sua natura l'#glossary("amministratore pubblico") possiede le competenze tecniche necessarie per poter interagire con essa in tutte le sue parti.
 
@@ -80,7 +80,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*TODO: fare immagine apposta*/
 === UC0: Visualizzazione menù dashboard
 - *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: il sistema è operativo e accessibile;
+- *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un menù di selezione da cui può scegliere in che dashboard spostarsi tra: Sensori, Ambientale, Urbanistica, Dati anomali & superamento soglie;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione.
@@ -93,7 +93,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*TODO: ricontrollare la fine di ogni use case che comprende l'uso di un #glossary("pannello")*/
 === UC1: Visualizzazione dashboard generale sensori
 - *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: il sistema è operativo e accessibile;
+- *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza #glossary("pannelli") relativi allo stato dei sensori, all'interno di un'unica #glossary[dashboard]\;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione; 
@@ -108,7 +108,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 #pagebreak()
 === UC1.1: Visualizzazione posizione sensori su mappa
 - *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: il sistema è operativo e accessibile;
+- *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa che mostra le posizioni dei sensori, visualizzati tramite icone, su di essa. Le icone dei sensori sono colorate in base al tipo di #glossary("sensore")  e riportano una label che ne esplicita il tipo e il nome; 
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione; 
@@ -122,7 +122,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 === UC1.2: Visualizzazione tabella sensori
 - *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: il sistema è operativo e accessibile;
+- *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza il #glossary("pannello") relativo ai dati inerenti ai sensori, che riporta il nome del #glossary("sensore"), la percentuale di batteria, un valore booleano che esprime se il #glossary("sensore") è alimentato da batteria autonoma o meno e la data di ultima manutenzione del #glossary("sensore"), in forma tabellare; la tabella contenente i dati menzionati è indicizzata tramite il nome dei sensori;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione; 
@@ -137,7 +137,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 #pagebreak()
 === UC2: Visualizzazione dashboard dati ambientali
 - *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: il sistema è operativo e accessibile;
+- *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza lista di #glossary("pannelli") mutualmente esclusivi contenenti dati relativi al dominio ambientale;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
@@ -317,7 +317,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 === UC3: Visualizzazione dashboard dati urbanistici
 - *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: il sistema è operativo e accessibile;
+- *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza lista dei #glossary("pannelli") mutualmente esclusivi contenenti dati relativi al dominio urbanistico;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
@@ -459,7 +459,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 #pagebreak()
 === UC4: Visualizzazione dashboard #glossary("dati anomali") e superamento soglie
 - *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: il sistema è operativo e accessibile;
+- *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza #glossary("pannelli") contenenti dati relativi al superamento delle soglie e alle anomalie rilevate;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] delle anomalie.
@@ -472,8 +472,8 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*TODO: realizzare immagine corrispondente*/
 === UC4.1: Visualizzazione tabella #glossary("dati anomali")
 - *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: il sistema è operativo e accessibile;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella ordinata, che mostra tutti i #glossary("dati anomali") rilevati dal sistema. La tabella include il valore dell'anomalia, il #glossary("sensore") che l'ha rilevata e il timestamp relativo, ed è ordinata in base al timestamp;
+- *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella ordinata, che mostra tutti i #glossary("dati anomali") rilevati dal #glossary("sistema"). La tabella include il valore dell'anomalia, il #glossary("sensore") che l'ha rilevata e il timestamp relativo, ed è ordinata in base al timestamp;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] delle anomalie.
 
@@ -486,8 +486,8 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 #pagebreak()
 === UC4.2: Visualizzazione tabella superamento soglie
 - *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: il sistema è operativo e accessibile;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti le soglie impostate nel sistema, mostrando il valore superante la soglia, il #glossary("sensore") che ha rilevato tale valore e il timestamp relativo;
+- *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti le soglie impostate nel #glossary("sistema"), mostrando il valore superante la soglia, il #glossary("sensore") che ha rilevato tale valore e il timestamp relativo;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] delle anomalie.
 
@@ -499,10 +499,10 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*TODO: per gli UC5.X andare a capire se usano soglie fisse o tramite variabili per gli allert (sempre se possibile)*/
 === UC5: Visualizzazione allerte superamento soglia
 - *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: il sistema è operativo e accessibile;
+- *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") riceve una notifica di superamento di una soglia impostata;
 - *Scenario Principale*:
-  + Il sistema rileva condizioni che richiedono l'invio di una notifica per segnalare il superamento di una soglia impostata.
+  + Il #glossary("sistema") rileva condizioni che richiedono l'invio di una notifica per segnalare il superamento di una soglia impostata.
 #figure(
   image("assets/UML/UC5_Visualizzazione-allerte-superamento-soglie.png",width:70%),
   caption: [UC5 Visualizzazione allerte superamento soglie]
@@ -512,10 +512,10 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 #pagebreak()
 === UC5.1: Visualizzazione allerta superamento soglia temperatura
 - *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: il sistema è operativo e accessibile;
+- *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") riceve un'allerta relativa alla temperatura che notifica il superamento dei 40° Celsius (40°C).
 - *Scenario Principale*:
-  + Il sistema rileva una temperatura nella media dei 5 minuti, superiore ai 40° Celsius (40°C).
+  + Il #glossary("sistema") rileva una temperatura nella media dei 5 minuti, superiore ai 40° Celsius (40°C).
 #figure(
   image("assets/UML/UC5.1_Visualizzazione-allerte-superamento-soglia-temperatura.png",width:70%),
   caption: [UC5.1 Visualizzazione allerta superamento soglia temperatura]
@@ -524,10 +524,10 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*TODO: andare a fare l'immagine apposta*/
 === UC5.2: Visualizzazione allerta superamento soglia precipitazioni
 - *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: il sistema è operativo e accessibile;
+- *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") riceve un'allerta relativa alle precipitazioni che notifica il superamento dei 50 millimetri di pioggia all'ora (50 mm/h);
 - *Scenario Principale*:
-  + Il sistema rileva un livello di precipitazioni medie nell'ora, superiore ai 50 millimetri di pioggia all'ora (50 mm/h).
+  + Il #glossary("sistema") rileva un livello di precipitazioni medie nell'ora, superiore ai 50 millimetri di pioggia all'ora (50 mm/h).
 #figure(
   image("assets/UML/UC5.2_Visualizzazione-allerte-superamento-soglia-precipitazioni.png",width:70%),
   caption: [UC5.2 Visualizzazione allerta superamento soglia precipitazioni]
@@ -537,10 +537,10 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 #pagebreak()
 === UC5.3: Visualizzazione allerta superamento soglia inquinamento dell'aria
 - *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: il sistema è operativo e accessibile;
+- *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") riceve un'allerta relativa all'inquinamento dell'aria che notifica il superamento di 80#[#sym.mu]g su metro cubo ($80#sym.mu g\/m^3$);
 - *Scenario Principale*:
-  + Il sistema rileva un coefficiente di inquinamento dell'aria (#glossary("PM10")), superiore ai 80#[#sym.mu]g su metro cubo ($80#sym.mu g\/m^3$).
+  + Il #glossary("sistema") rileva un coefficiente di inquinamento dell'aria (#glossary("PM10")), superiore ai 80#[#sym.mu]g su metro cubo ($80#sym.mu g\/m^3$).
 #figure(
   image("assets/UML/UC5.3_Visualizzazione-allerte-superamento-soglia-inquinamento-dell'aria.png",width:70%),
   caption: [UC5.3 Visualizzazione allerta superamento soglia inquinamento dell'aria]
@@ -549,10 +549,10 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*TODO: andare a fare l'immagine apposta*/
 === UC5.4: Visualizzazione allerta superamento soglia bacini idrici
 - *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: il sistema è operativo e accessibile;
+- *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") riceve un'allerta relativa ai bacini idrici che notifica il superamento del 70% della capienza di un particolare bacino;
 - *Scenario Principale*:
-  + Il sistema rileva che il livello di un particolare bacino idrico è superiore al 70% della sua capienza.
+  + Il #glossary("sistema") rileva che il livello di un particolare bacino idrico è superiore al 70% della sua capienza.
 #figure(
   image("assets/UML/UC5.4_Visualizzazione-allerte-superamento-soglia-bacini-idrici.png",width:70%),
   caption: [UC5.4 Visualizzazione allerta superamento soglia bacini idrici]
@@ -562,10 +562,10 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 #pagebreak()
 === UC5.5: Visualizzazione allerta superamento soglia zone ecologiche
 - *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: il sistema è operativo e accessibile;
+- *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") riceve un'allerta relativa alle zone ecologiche che notifica il superamento dell'80% della capienza di una particolare zona ecologica;
 - *Scenario Principale*:
-  + Il sistema rileva che il livello di una particolare zona ecologica è superiore all'80% della sua capienza.
+  + Il #glossary("sistema") rileva che il livello di una particolare zona ecologica è superiore all'80% della sua capienza.
 #figure(
   image("assets/UML/UC5.5_Visualizzazione-allerte-superamento-soglia-zone-ecologiche.png",width:70%),
   caption: [UC5.5 Visualizzazione allerta superamento soglia zone ecologiche]
@@ -660,7 +660,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + altri #glossary("pannelli") sono collegati a quello filtrato.
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza, in tutti i #glossary("pannelli") collegati, solamente i dati relativi al filtro applicato (o ai filtri applicati) al pannello sorgente, nel caso di #glossary("pannelli") che dipendono da altri #glossary("pannelli") per la visualizzazione di dati.
 - *Scenario Principale*:
-  + il sistema aggiorna tutti i #glossary("pannelli") collegati.
+  + il #glossary("sistema") aggiorna tutti i #glossary("pannelli") collegati.
 */
 /*Cambiare il numero nell'immagine*/
 === UC7: Ordinamento #glossary("pannelli") tabellari
@@ -720,22 +720,22 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*Cambiare il numero nell'immagine*/
 === UC9: Visualizzazione errore nessun dato
 - *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: il sistema di visualizzazione non ottiene alcun dato da mostrare all'interno di un #glossary("pannello")\; 
+- *Precondizioni*: il #glossary("sistema") di visualizzazione non ottiene alcun dato da mostrare all'interno di un #glossary("pannello")\; 
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un messaggio di errore segnalante l'assenza di dati da mostrare;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") vuole visualizzare qualche #glossary("pannello") [UC1.1] [UC1.2] [UC2.1] [UC3.1]; 
-  + Il sistema non ha i dati con cui popolare tale pannello.
+  + Il #glossary("sistema") non ha i dati con cui popolare tale pannello.
 
 /*Cambiare il numero nell'immagine*/
 #pagebreak()
 === UC10: Inserimento dati temperatura
 - *Attore Principale*: #glossary("sensore")\;
-- *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema; 
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
+- *Precondizioni*: il #glossary("sensore") è acceso e collegato al #glossary("sistema")\; 
+- *Postcondizioni*: il #glossary("sistema") ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") effettua una rilevazione della temperatura;
-  + Il #glossary("sensore") formatta il messaggio da inviare al sistema, di modo da mandare la temperatura, espressa in gradi Celsius (°C), il timestamp di rilevazione e le proprie coordinate geografiche;
-  + Il #glossary("sensore") invia il messaggio al sistema.
+  + Il #glossary("sensore") formatta il messaggio da inviare al #glossary("sistema"), di modo da mandare la temperatura, espressa in gradi Celsius (°C), il timestamp di rilevazione e le proprie coordinate geografiche;
+  + Il #glossary("sensore") invia il messaggio al #glossary("sistema").
 - *Inclusioni*: UC21.
 
 #figure(
@@ -746,12 +746,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*Cambiare il numero nell'immagine*/
 === UC11: Inserimento dati umidità
 - *Attore Principale*: #glossary("sensore")\;
-- *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema;
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
+- *Precondizioni*: il #glossary("sensore") è acceso e collegato al #glossary("sistema")\;
+- *Postcondizioni*: il #glossary("sistema") ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") effettua una rilevazione dell'umidità relativa;
-  + Il #glossary("sensore") formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di umidità relativa, il timestamp di rilevazione e le proprie coordinate geografiche;
-  + Il #glossary("sensore") invia il messaggio al sistema.
+  + Il #glossary("sensore") formatta il messaggio da inviare al #glossary("sistema"), di modo da mandare la percentuale di umidità relativa, il timestamp di rilevazione e le proprie coordinate geografiche;
+  + Il #glossary("sensore") invia il messaggio al #glossary("sistema").
 - *Inclusioni*: UC21.
 
 #figure(
@@ -763,12 +763,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 #pagebreak()
 === UC12: Inserimento dati velocità e direzione del vento
 - *Attore Principale*: #glossary("sensore")\;
-- *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema;
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
+- *Precondizioni*: il #glossary("sensore") è acceso e collegato al #glossary("sistema")\;
+- *Postcondizioni*: il #glossary("sistema") ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") effettua una rilevazione della velocità (km/h) e della direzione del vento;
-  + Il #glossary("sensore") formatta il messaggio da inviare al sistema, di modo da mandare la direzione del vento, espressa in gradi (con gli 0° a Nord e i 180° a Sud), la velocità del vento, espressa in chilometri all'ora (km/h), il timestamp di rilevazione e le proprie coordinate geografiche;
-  + Il #glossary("sensore") invia il messaggio al sistema.
+  + Il #glossary("sensore") formatta il messaggio da inviare al #glossary("sistema"), di modo da mandare la direzione del vento, espressa in gradi (con gli 0° a Nord e i 180° a Sud), la velocità del vento, espressa in chilometri all'ora (km/h), il timestamp di rilevazione e le proprie coordinate geografiche;
+  + Il #glossary("sensore") invia il messaggio al #glossary("sistema").
 - *Inclusioni*: UC21.
 
 #figure(
@@ -779,12 +779,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*Cambiare il numero nell'immagine*/
 === UC13: Inserimento dati precipitazioni
 - *Attore Principale*: #glossary("sensore")\;
-- *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema;
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
+- *Precondizioni*: il #glossary("sensore") è acceso e collegato al #glossary("sistema")\;
+- *Postcondizioni*: il #glossary("sistema") ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") effettua una rilevazione quantitativa delle precipitazioni;
-  + Il #glossary("sensore") formatta il messaggio da inviare al sistema, di modo da mandare la quantità di precipitazioni rilevate, espresse in millimetri all'ora (mm/h), il timestamp di rilevazione e le proprie coordinate geografiche;
-  + Il #glossary("sensore") invia il messaggio al sistema.
+  + Il #glossary("sensore") formatta il messaggio da inviare al #glossary("sistema"), di modo da mandare la quantità di precipitazioni rilevate, espresse in millimetri all'ora (mm/h), il timestamp di rilevazione e le proprie coordinate geografiche;
+  + Il #glossary("sensore") invia il messaggio al #glossary("sistema").
 - *Inclusioni*: UC21.
 
 #figure(
@@ -796,12 +796,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 #pagebreak()
 === UC14: Inserimento dati inquinamento dell'aria
 - *Attore Principale*: #glossary("sensore")\;
-- *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema; 
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
+- *Precondizioni*: il #glossary("sensore") è acceso e collegato al #glossary("sistema")\; 
+- *Postcondizioni*: il #glossary("sistema") ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") effettua una rilevazione quantitativa dell'inquinamento dell'aria;
-  + Il #glossary("sensore") formatta il messaggio da inviare al sistema, di modo da mandare rilevazioni #glossary("PM10") relative all'inquinamento dell'aria, espresse in $#sym.mu g\/m^3$, il timestamp di rilevazione e le proprie coordinate geografiche;
-  + Il #glossary("sensore") invia il messaggio al sistema.
+  + Il #glossary("sensore") formatta il messaggio da inviare al #glossary("sistema"), di modo da mandare rilevazioni #glossary("PM10") relative all'inquinamento dell'aria, espresse in $#sym.mu g\/m^3$, il timestamp di rilevazione e le proprie coordinate geografiche;
+  + Il #glossary("sensore") invia il messaggio al #glossary("sistema").
 - *Inclusioni*: UC21.
 
 #figure(
@@ -812,12 +812,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*Cambiare il numero nell'immagine*/
 === UC15: Inserimento dati livello bacini idrici
 - *Attore Principale*: #glossary("sensore")\;
-- *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema;
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
+- *Precondizioni*: il #glossary("sensore") è acceso e collegato al #glossary("sistema")\;
+- *Postcondizioni*: il #glossary("sistema") ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") effettua una rilevazione del livello del bacino idrico in cui è installato;
-  + Il #glossary("sensore") formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di riempimento del bacino idrico controllato, il timestamp di rilevazione e le proprie coordinate geografiche;
-  + Il #glossary("sensore") invia il messaggio al sistema.
+  + Il #glossary("sensore") formatta il messaggio da inviare al #glossary("sistema"), di modo da mandare la percentuale di riempimento del bacino idrico controllato, il timestamp di rilevazione e le proprie coordinate geografiche;
+  + Il #glossary("sensore") invia il messaggio al #glossary("sistema").
 - *Inclusioni*: UC21.
 
 #figure(
@@ -828,12 +828,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 #pagebreak()
 === UC16: Inserimento dati disponibilità parcheggi
 - *Attore Principale*: #glossary("sensore")\; 
-- *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema; 
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
+- *Precondizioni*: il #glossary("sensore") è acceso e collegato al #glossary("sistema")\; 
+- *Postcondizioni*: il #glossary("sistema") ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
    + Il #glossary("sensore") rileva gli ingressi e le uscite del parcheggio in cui è installato;
-  + Il #glossary("sensore") formatta il messaggio da inviare al sistema, di modo da mandare la quantità di parcheggi liberi rilevati nel parcheggio controllato, il timestamp di rilevazione e le proprie coordinate geografiche;
-  + Il #glossary("sensore") invia il messaggio al sistema.
+  + Il #glossary("sensore") formatta il messaggio da inviare al #glossary("sistema"), di modo da mandare la quantità di parcheggi liberi rilevati nel parcheggio controllato, il timestamp di rilevazione e le proprie coordinate geografiche;
+  + Il #glossary("sensore") invia il messaggio al #glossary("sistema").
 - *Inclusioni*: UC21.
 
 #figure(
@@ -844,12 +844,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*Cambiare il numero nell'immagine*/
 === UC17: Inserimento dati colonne di ricarica
 - *Attore Principale*: #glossary("sensore")\;
-- *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema; 
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
+- *Precondizioni*: il #glossary("sensore") è acceso e collegato al #glossary("sistema")\; 
+- *Postcondizioni*: il #glossary("sistema") ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") effettua una rilevazione del wattaggio erogato dalla colonna di ricarica;
-  + Il #glossary("sensore") formatta il messaggio da inviare al sistema, di modo da mandare la quantità di energia erogata, espressa in chilowatt all'ora (kWh), il timestamp di rilevazione e le proprie coordinate geografiche;
-  + Il #glossary("sensore") invia il messaggio al sistema.
+  + Il #glossary("sensore") formatta il messaggio da inviare al #glossary("sistema"), di modo da mandare la quantità di energia erogata, espressa in chilowatt all'ora (kWh), il timestamp di rilevazione e le proprie coordinate geografiche;
+  + Il #glossary("sensore") invia il messaggio al #glossary("sistema").
 - *Inclusioni*: UC21.
 
 #figure(
@@ -861,12 +861,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 #pagebreak()
 === UC18: Inserimento dati biciclette elettriche
 - *Attore Principale*: #glossary("sensore")\;
-- *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema; 
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
+- *Precondizioni*: il #glossary("sensore") è acceso e collegato al #glossary("sistema")\; 
+- *Postcondizioni*: il #glossary("sistema") ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") effettua una rilevazione della posizione e della percentuale della batteria della bicicletta elettrica su cui è installato;
-  + Il #glossary("sensore") formatta il messaggio da inviare al sistema, di modo da mandare il timestamp di rilevazione, la percentuale di batteria e le coordinate geografiche della bicicletta;
-  + Il #glossary("sensore") invia il messaggio al sistema.
+  + Il #glossary("sensore") formatta il messaggio da inviare al #glossary("sistema"), di modo da mandare il timestamp di rilevazione, la percentuale di batteria e le coordinate geografiche della bicicletta;
+  + Il #glossary("sensore") invia il messaggio al #glossary("sistema").
 - *Inclusioni*: UC21.
 
 #figure(
@@ -877,12 +877,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*Cambiare il numero nell'immagine*/
 === UC19: Inserimento dati riempimento zone ecologiche
 - *Attore Principale*: #glossary("sensore")\;
-- *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema; 
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
+- *Precondizioni*: il #glossary("sensore") è acceso e collegato al #glossary("sistema")\; 
+- *Postcondizioni*: il #glossary("sistema") ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") effettua una rilevazione del livello di riempimento del contenitore ecologico associato; 
-  + Il #glossary("sensore") formatta il messaggio da inviare al sistema, di modo da mandare la percentuale di riempimento della zona ecologica controllata, il timestamp di rilevazione e le proprie coordinate geografiche;
-  + Il #glossary("sensore") invia il messaggio al sistema.
+  + Il #glossary("sensore") formatta il messaggio da inviare al #glossary("sistema"), di modo da mandare la percentuale di riempimento della zona ecologica controllata, il timestamp di rilevazione e le proprie coordinate geografiche;
+  + Il #glossary("sensore") invia il messaggio al #glossary("sistema").
 - *Inclusioni*: UC21.
 
 #figure(
@@ -894,12 +894,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 #pagebreak()
 === UC20: Inserimento dati congestione stradale
 - *Attore Principale*: #glossary("sensore")\;
-- *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema; 
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
+- *Precondizioni*: il #glossary("sensore") è acceso e collegato al #glossary("sistema")\; 
+- *Postcondizioni*: il #glossary("sistema") ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") effettua una rilevazione del livello di congestione della strada su cui è installato; 
-  + Il #glossary("sensore") formatta il messaggio da inviare al sistema, di modo da mandare lo stato della congestione stradale nella strada controllata, espresso nei seguenti stati (ordinati per ordine di congestione crescente) "LOW", "MEDIUM", "HIGH", "BLOCKED", il timestamp di rilevazione e le proprie coordinate geografiche;
-  + Il #glossary("sensore") invia il messaggio al sistema.
+  + Il #glossary("sensore") formatta il messaggio da inviare al #glossary("sistema"), di modo da mandare lo stato della congestione stradale nella strada controllata, espresso nei seguenti stati (ordinati per ordine di congestione crescente) "LOW", "MEDIUM", "HIGH", "BLOCKED", il timestamp di rilevazione e le proprie coordinate geografiche;
+  + Il #glossary("sensore") invia il messaggio al #glossary("sistema").
 - *Inclusioni*: UC21.
 
 #figure(
@@ -910,10 +910,10 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*Cambiare il numero nell'immagine*/
 === UC21: Inserimento dati relativi al #glossary("sensore")
 - *Attore Principale*: #glossary("sensore")\;
-- *Precondizioni*: il #glossary("sensore") è acceso e collegato al sistema;
-- *Postcondizioni*: il sistema ha persistito i dati inviati dal #glossary("sensore")\;
+- *Precondizioni*: il #glossary("sensore") è acceso e collegato al #glossary("sistema")\;
+- *Postcondizioni*: il #glossary("sistema") ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
-  + Il #glossary("sensore") allega i dati relativi al proprio stato, ovvero la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso e la propria frequenza di inserimento dati, espressa in secondi, al messaggio da inviare al sistema.
+  + Il #glossary("sensore") allega i dati relativi al proprio stato, ovvero la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso e la propria frequenza di inserimento dati, espressa in secondi, al messaggio da inviare al #glossary("sistema").
 
 #set heading(numbering: "1.1")
 
@@ -944,7 +944,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   "Opzionale","Messa in evidenza di relazioni tra dati provenienti da sorgenti diverse.","Capitolato",
   ),
   (
-  "Opzionale","Un sistema di allerta che notifichi l'utente in caso di anomalie o eventi critici.","Verbale esterno",
+  "Opzionale",[Un #glossary("sistema") di allerta che notifichi l'utente in caso di anomalie o eventi critici.],"Verbale esterno",
   ),
   (
   "Opzionale","La previsione di eventi futuri, basata su dati storici e attuali.","Capitolato",
@@ -1071,7 +1071,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Desiderabile", [L'utente deve poter modificare il layout della #glossary("dashboard") visualizzata, agendo sul ridimensionamento dei #glossary("pannelli").], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un messaggio di errore, qualora il sistema di visualizzazione non sia in grado di reperire o non abbia dati da mostrare all'utente per un determinato #glossary("pannello").], [#C.step()UC#C.display()]
+    "Obbligatorio", [L'utente deve poter visualizzare un messaggio di errore, qualora il #glossary("sistema") di visualizzazione non sia in grado di reperire o non abbia dati da mostrare all'utente per un determinato #glossary("pannello").], [#C.step()UC#C.display()]
   ),
   (
     "Obbligatorio", [Il #glossary("sensore") deve poter mandare e far persistere dati relativi alla temperatura, espressa in gradi Celsius, il timestamp di rilevazione e le proprie coordinate geografiche.], [#C.step()UC#C.display()]
@@ -1124,7 +1124,7 @@ caption: "Requisiti funzionali")
   "Obbligatorio","Il superamento di test che dimostrino il corretto funzionamento dei servizi utilizzati e delle funzionalità implementate. La copertura di test deve essere almeno dell'80% e deve essere dimostrata tramite report.","Capitolato",
   ), /*
   (
-  "Obbligatorio",[Il sistema deve essere testato nella sua interezza tramite #glossary("test end-to-end")],"Capitolato",
+  "Obbligatorio",[Il #glossary("sistema") deve essere testato nella sua interezza tramite #glossary("test end-to-end")],"Capitolato",
   ),*/
   (
   "Obbligatorio", [Viene richiesta una #glossary("documentazione") sulle scelte implementative e progettuali, che dovranno essere accompagnate da motivazioni.],"Capitolato",
@@ -1134,13 +1134,13 @@ caption: "Requisiti funzionali")
   (
   "Obbligatorio","La documentazione dovrà riguardare anche problemi aperti ed eventuali possibili soluzioni da approfondire in futuro.","Capitolato"
   ),
-  ("Desiderabile","Il sistema deve risultare di facile utiilizzo, richiedendo un numero di click (≤ 7) contenuto per raggiungere gli obiettivi desiderati.","Norme di Progetto"),
-  ("Desiderabile",[L'#glossary("amministratore pubblico") deve poter imparare a padroneggiare il sistema in breve tempo.],"Norme di progetto"),
+  ("Desiderabile",[Il #glossary("sistema") deve risultare di facile utiilizzo, richiedendo un numero di click (≤ 7) contenuto per raggiungere gli obiettivi desiderati.],"Norme di Progetto"),
+  ("Desiderabile",[L'#glossary("amministratore pubblico") deve poter imparare a padroneggiare il #glossary("sistema") in breve tempo.],"Norme di progetto"),
   ("Obbligatorio",[La #glossary[repository] di github del codice sorgente "InnovaCity" deve essere accessibile a tutti.],"Verbale esterno"),
   ("Obbligatorio",[Devono essere rispettati tutte le norme definite nel documento _Norme di Progetto v2.0_.],"Norme di Progetto"),
   ("Obbligatorio",[Devono essere rispettati i vincoli e le metriche definite nel _Piano di Qualifica v2.0_.],"Norme di Progetto"),
-  ("Desiderabile","Il sistema deve essere scalabile, in grado di gestire grandi moli di dati.","Capitolato"),
-  ("Desiderabile","Il sistema deve essere facilmente manutenibile.","Capitolato")
+  ("Desiderabile",[Il #glossary("sistema") deve essere scalabile, in grado di gestire grandi moli di dati.],"Capitolato"),
+  ("Desiderabile",[Il #glossary("sistema") deve essere facilmente manutenibile.],"Capitolato")
 )
 
 #let requisiti_qualita_con_codice = generate_requirements_array("Q", requisiti_qualita)
@@ -1194,9 +1194,9 @@ Per garantire tempi di esecuzione ancora più rapidi, si cerca di usare, ove pos
 
 #let requisiti_prestazioni = (
   (
-  "Obbligatorio",[Il sistema deve gestire un carico di #glossary("dati in entrata") tra i 50 e i 100 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM.],"Verbale esterno"
+  "Obbligatorio",[Il #glossary("sistema") deve gestire un carico di #glossary("dati in entrata") tra i 50 e i 100 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM.],"Verbale esterno"
   ),
-  ("Desiderabile",[Il sistema deve avere un basso tempo di elaborazione tra il momento in cui i dati vengono generati e la loro visualizzazione sulla #glossary[dashboard].],"Norme di progetto"),
+  ("Desiderabile",[Il #glossary("sistema") deve avere un basso tempo di elaborazione tra il momento in cui i dati vengono generati e la loro visualizzazione sulla #glossary[dashboard].],"Norme di progetto"),
   ("Desiderabile",[Evitare l'utilizzo di #glossary[pannelli] troppo complessi che richiedono troppe risorse per il rendering.],"Verbale esterno")
   
 )
