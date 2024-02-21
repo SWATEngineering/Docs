@@ -101,7 +101,7 @@ table(
       align: (x, y) => (center, center, center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Tecnologia*],[*Descrizione*],[*Versione*],
-      [Pep8], [Stile di codifica per il codice Python che definisce le linee guida per la formattazione del codice, rendendolo più leggibile e uniforme.], [da definire]), 
+      [PEP8], [Stile di codifica per il codice Python che definisce le linee guida per la formattazione del codice, rendendolo più leggibile e uniforme.], [da definire]), 
 caption: [Tabella tecnologie per l'analisi del codice.])
 
 
@@ -109,12 +109,16 @@ caption: [Tabella tecnologie per l'analisi del codice.])
 = Architettura
 == Architettura implementativa generale 
 Questa sezione si propone di esplorare in modo esaustivo le strutture, i componenti e le interazioni che costituiscono il fondamento tecnologico del sistema. Questa analisi dettagliata mira a garantire una comprensione completa delle scelte architetturali adottate, fornendo così una base solida per lo sviluppo e l'implementazione.
+
+== `TODO after meeting with Prof. Cardin`
 == Architettura simulatori
+== `TODO after meeting with Prof. Cardin`
 /*già sai*/
 == Architettura di deployment 
 /*ste robe sono buttate giù veramente come capita vanno cambiate*/
 Nella fase di sviluppo e implementazione di qualsiasi sistema complesso, l'architettura di deployment riveste un ruolo fondamentale nel garantire che le risorse tecnologiche siano distribuite in modo efficiente e affidabile nell'ambiente operativo. Questa sezione del documento si concentra sull'analisi e sulla progettazione della distribuzione delle risorse nel contesto del progetto "InnovaCity".
 
+== `TODO after meeting with Prof. Cardin`
 #pagebreak()
 = Tracciamento dei requisiti
 In questa sezione si va a mostrare, secondo quanto riportato dal documento delle _Norme di progetto v2.0_, la soddisfazione dei singoli requisiti funzionali presenti, in base al tipo previsto e opportunamente classificato sotto.
