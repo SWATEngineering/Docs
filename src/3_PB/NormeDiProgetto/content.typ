@@ -760,6 +760,11 @@ Viene adottato il formato "DD-MM-YYYY":
         - MM: mese con 2 cifre;
         - YYYY: anno con 4 cifre.
 
+==== Link 
+
+Per i link si usa la seguente formattazione e vanno sottolineati attraverso `\#show link: underline`:\
+#align(center)[`#link("https://example.com")`]
+
 ==== Sigle 
 
 Le varie sigle relative ai documenti e al progetto sono le seguenti: 
@@ -777,7 +782,8 @@ Le varie sigle relative ai documenti e al progetto sono le seguenti:
      - *Progetto*:
         - *Requirements and Technology Baseline* → *RTB*;
         - *Product Baseline* → *PB*;
-        - *Customer Acceptance* → *CA*.
+        - *Customer Acceptance* → *CA*;
+        - *Proof of Concepts* → *PoC*.
      - *Ruoli*:
         - *Responsabile* → *Re*;
         - *Amministratore* → *Am*;
@@ -862,14 +868,15 @@ Questo impone quindi che, prima di andare ad effettuare la chiusura di una Pull 
 I Feature branch vengono aperti a partire dalle issue create nell'Issue Tracking System (vedi @its). Si procede poi ad associare una Pull request, a una o più issue collegate tra loro, per effettuare la verifica.
 
 Nel caso del #glossary[repository] InnovaCity, il branch main viene utilizzato per la pubblicazione di cambiamenti major, ovvero quando sono state implementate diverse funzionalità significative che contribuiscono all'avanzamento del progetto. In questa circostanza, è compito del Responsabile eseguire l'approvazione finale.
+=== Automazioni
 
-=== Sito vetrina   
+==== Sito vetrina   
 
 Il sito vetrina consultabile al seguente link #link("https://swatengineering.github.io/") è progettato per garantire un'esperienza aggiornata e intuitiva agli utenti. Grazie all'integrazione di una GitHub Action, il sito si aggiorna automaticamente ogni volta che vengono apportate modifiche al branch principale "main" del #glossary[repository] Docs.
 Lo script, realizzato in JavaScript, avvia una richiesta GET a un server esterno per ottenere la struttura aggiornata delle directory e dei file. Questa operazione consente al sito di rimanere sempre allineato con le modifiche apportate al #glossary[repository] principale.
 Per garantire la coerenza e la tempestività delle informazioni, il servizio esterno esegue un aggiornamento periodico, ogni 15 minuti. Questo processo automatico consente al sito di riflettere dinamicamente qualsiasi modifica rilevante nel #glossary[repository] Docs, garantendo un'esperienza utente sempre aggiornata e completa.
 
-=== Controllo termini glossario    
+==== Controllo termini glossario    
 
 È stato sviluppato uno script in #glossary[Python] per verificare la corrispondenza tra i termini presenti in un documento e quelli presenti nel _Glossario v1.0_.
 Lo script, utilizzando espressioni regolari, confronta i termini indicati nei documenti, formattati secondo lo standard del glossario, con quelli presenti nel _Glossario_. In presenza di discrepanze, genera un messaggio di errore specificando i termini mancanti nel _Glossario_. In caso contrario, l'esecuzione avviene senza problemi, indicando che i termini nel documento sono in linea con quelli del _Glossario v1.0_.
