@@ -1373,6 +1373,14 @@ Negli incontri esterni i partecipanti includono i membri del team e i referenti 
 In aggiunta, è possibile richiedere sessioni di formazione mirate su tecnologie specifiche, offrendo al team l'opportunità di approfondire la comprensione di una particolare tecnologia, imparare le #glossary[best practices] e acquisire competenze più avanzate.
 Il Responsabile ha il compito della stesura del verbale esterno, che viene successivamente convalidato, con firma, dalla Proponente.
 
+===== Doveri dei partecipanti 
+
+I partecipanti hanno il dovere di:
+        - Arrivare puntuali alle riunioni;
+        - Comunicare al Responsabile, il prima possibile, eventuali ritardi o assenze;
+        - Partecipare attivamente agli argomenti dell’ordine del giorno;
+        - Mantenere un comportamento corretto durante tutta la riunione.
+
  
 
 #pagebreak()
