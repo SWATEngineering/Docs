@@ -918,7 +918,8 @@ Breve elenco dei comandi Git che i membri del team #team utilizzano durante il p
         - `git fetch origin`: per recuperare tutti i riferimenti remoti;
         - `git rebase origin/main`: per fare il rebase in caso il main ricevesse aggiornamenti importanti e il nostro branch non è aggiornato;
         - `git branch nomenuovobranch`: per creare nuovo branch;
-        - `git checkout nomebranch`: per spostarsi tra i vari branch.
+        - `git checkout nomebranch`: per spostarsi tra i vari branch;
+        - `git stash`: per scartare le modifiche in area di staging.
 
 Per effettuare il merge nel main  si utilizza l'interfaccia di Github.  
 
