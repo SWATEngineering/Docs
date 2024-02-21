@@ -51,7 +51,7 @@ Il prodotto si compone di due parti principali:
 - *Una #glossary("data pipeline")* in grado di raccogliere, persistere e processare dati provenienti da più sorgenti (ovvero i #glossary("sensori")) in #glossary("real-time");
 - *una #glossary("dashboard")* che permette di visualizzare i dati raccolti.
 
-La piattaforma prevede fondamentalmente una tipologia di utente: l'#glossary("amministratore pubblico"). Questo utente avrà accesso alla dashboard e prenderà visione di diverse metriche e indicatori sullo stato della città, mediante diversi strumenti di visualizzazione.
+La piattaforma prevede fondamentalmente una tipologia di utente: l'#glossary("amministratore pubblico"). Questo utente avrà accesso alla #glossary("dashboard") e prenderà visione di diverse metriche e indicatori sullo stato della città, mediante diversi strumenti di visualizzazione.
 
 == Utenti e caratteristiche
 Il prodotto, destinato ad amministratori pubblici, consente loro di ottenere una panoramica sulle condizioni della città. Ciò fornisce loro una base solida per prendere decisioni ponderate riguardo la gestione delle risorse e sull'implementazione dei servizi, risultando cruciale per il miglioramento dell'efficienza complessiva della gestione urbana. Si presuppone che l'#glossary("amministratore pubblico") abbia conoscenze di analisi e di interpretazione dei dati, tali da poter trarre un concreto beneficio dal controllo della #glossary("dashboard").
@@ -62,7 +62,7 @@ In questa sezione si vogliono elencare e descrivere tutti i casi d'uso individua
 
 == Attori
 Il #glossary("sistema") si interfaccerà con due attori diversi:
-- *#glossary("Amministratore pubblico")*: è un utente che ha accesso alla dashboard in tutte le sue funzionalità e può visualizzare i dati raccolti dai sensori, mediante quest'ultima;
+- *#glossary("Amministratore pubblico")*: è un utente che ha accesso alla #glossary("dashboard") in tutte le sue funzionalità e può visualizzare i dati raccolti dai sensori, mediante quest'ultima;
 - *#glossary("Sensore")*: è un dispositivo in grado di effettuare misurazioni relative al proprio dominio di interesse. Questi dati possono essere letti ed utilizzati dal #glossary("sistema").
 
 Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico attore con accesso completo alle funzionalità, in quanto per sua natura l'#glossary("amministratore pubblico") possiede le competenze tecniche necessarie per poter interagire con essa in tutte le sue parti.
@@ -78,16 +78,16 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 #set heading(numbering: none)
 
 /*TODO: fare immagine apposta*/
-=== UC0: Visualizzazione menù dashboard
+=== UC0: Visualizzazione menù #glossary("dashboard")
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un menù di selezione da cui può scegliere in che dashboard spostarsi tra: Sensori, Ambientale, Urbanistica, Dati anomali & superamento soglie;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un menù di selezione da cui può scegliere in che #glossary("dashboard") spostarsi tra: Sensori, Ambientale, Urbanistica, Dati anomali & superamento soglie;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione.
 
 #figure(
   image("assets/UML/UC0_Visualizzazione-menù-dashboard.png",width:70%),
-  caption: [UC0 Visualizzazione menù dashboard]
+  caption: [UC0 Visualizzazione menù #glossary("dashboard")]
 )
 
 /*TODO: ricontrollare la fine di ogni use case che comprende l'uso di un #glossary("pannello")*/
@@ -101,7 +101,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #figure(
   image("assets/UML/UC1_Visualizzazione-dashboard-generale-sensori.png",width:70%),
-  caption: [UC1 Visualizzazione dashboard generale sensori]
+  caption: [UC1 Visualizzazione #glossary("dashboard") generale sensori]
 )
 
 
@@ -135,7 +135,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 )
 
 #pagebreak()
-=== UC2: Visualizzazione dashboard dati ambientali
+=== UC2: Visualizzazione #glossary("dashboard") dati ambientali
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza lista di #glossary("pannelli") mutualmente esclusivi contenenti dati relativi al dominio ambientale;
@@ -145,7 +145,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #figure(
   image("assets/UML/UC2_Visualizzazione-dashboard-dati-ambientali.png",width:70%),
-  caption: [UC2 Visualizzazione dati ambientali]
+  caption: [UC2 Visualizzazione #glossary("dashboard") dati ambientali]
 )
 
 
@@ -315,7 +315,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC2.12 Visualizzazione #glossary("pannello") inquinamento dell'aria massimo]
 )
 
-=== UC3: Visualizzazione dashboard dati urbanistici
+=== UC3: Visualizzazione #glossary("dashboard") dati urbanistici
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza lista dei #glossary("pannelli") mutualmente esclusivi contenenti dati relativi al dominio urbanistico;
@@ -325,7 +325,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #figure(
   image("assets/UML/UC3_Visualizzazione-dashboard-dati-urbanistici.png",width:60%),
-  caption: [UC3 Visualizzazione dashboard dati urbanistici]
+  caption: [UC3 Visualizzazione #glossary("dashboard") dati urbanistici]
 )
 
 #pagebreak()
@@ -428,7 +428,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 )
 
 #pagebreak()
-=== UC3.5: Visualizzazione posizione real time delle biciclette elettriche e relativa percentuale batteria
+=== UC3.5: Visualizzazione posizione #glossary("real-time") delle biciclette elettriche e relativa percentuale batteria
 *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa indicante la posizione in tempo reale delle biciclette elettriche, mediante degli indicatori numerici indicanti la percentuale della batteria posizionata nelle coordinate geografiche del mezzo, atto a mostrare la sua posizione;
@@ -438,7 +438,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #figure(
   image("assets/UML/UC3.5_Visualizzazione-posizione-real-time-delle-biciclette-elettriche-e-relativa-percentuale-batteria.png",width:100%),
-  caption: [UC3.5 Visualizzazione posizione real time delle biciclette elettriche e relativa percentuale batteria]
+  caption: [UC3.5 Visualizzazione posizione #glossary("real-time") delle biciclette elettriche e relativa percentuale batteria]
 )
 
 /*TODO: cambiare nome nell'immagine*/
@@ -457,7 +457,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*TODO: cambiare immagine*/
 #pagebreak()
-=== UC4: Visualizzazione dashboard #glossary("dati anomali") e superamento soglie
+=== UC4: Visualizzazione #glossary("dashboard") #glossary("dati anomali") e superamento soglie
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza #glossary("pannelli") contenenti dati relativi al superamento delle soglie e alle anomalie rilevate;
@@ -466,7 +466,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #figure(
   image("assets/UML/UC4_Visualizzazione-dashboard-dati-anomali-e-superamento-soglie.png",width:60%),
-  caption: [UC4 Visualizzazione dashboard #glossary("dati anomali") e superamento soglie]
+  caption: [UC4 Visualizzazione #glossary("dashboard") #glossary("dati anomali") e superamento soglie]
 )
 
 /*TODO: realizzare immagine corrispondente*/
