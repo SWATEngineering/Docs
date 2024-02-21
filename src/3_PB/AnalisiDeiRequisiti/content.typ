@@ -178,7 +178,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC2.2 Visualizzazione #glossary("pannello") time series per temperatura]
 )
 
-=== UC2.3: Visualizzazione #glossary("pannello") time series per umidità
+=== UC2.3: Visualizzazione #glossary("pannello") #glossary[time series] per umidità
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente un grafico relativo all'umidità, espressa in percentuale, in formato #glossary("time series") che ne mostra l'andamento in media aritmetica, distinto per #glossary("sensore"), aggregando i dati per intervalli di 5 minuti;
@@ -221,7 +221,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 )
 
 #pagebreak()
-=== UC2.6: Visualizzazione #glossary("pannello") time series per precipitazioni
+=== UC2.6: Visualizzazione #glossary("pannello") #glossary[time series] per precipitazioni
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente un grafico relativo all'intensità delle precipitazioni, espressa in millimetri orari (mm/h), in formato #glossary("time series") che ne mostra l'andamento in media aritmetica, distinto per #glossary("sensore"), aggregando i dati per intervalli di 5 minuti;
@@ -248,7 +248,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 )
 
 #pagebreak()
-=== UC2.8: Visualizzazione #glossary("pannello") time series per inquinamento dell'aria
+=== UC2.8: Visualizzazione #glossary("pannello") #glossary[time series] per inquinamento dell'aria
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente un grafico relativo al livello di polveri sottili nell'aria, espresso in $#sym.mu g\/m^3$ (#glossary("PM10")), in formato #glossary("time series"), che ne mostra l'andamento in media aritmetica, distinto per #glossary("sensore"), aggregando i dati per intervalli di 5 minuti;
