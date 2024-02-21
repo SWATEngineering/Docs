@@ -44,17 +44,17 @@ Cardin	Analisi e descrizione delle funzionalità: Use Case e relativi diagrammi 
 = Descrizione
 
 == Obiettivi del prodotto
-L'obiettivo consiste nella creazione di una piattaforma di monitoraggio e gestione di una #glossary("Smart City"). L'utente, individuato nell'amministratore pubblico, potrà farne impiego per migliorare la qualità generale della vita e l'efficienza dei servizi nel contesto di un'area urbana. L'utente sarà in grado di monitorare, attraverso la consultazione di una #glossary("dashboard"), lo stato della città, esaminando aspetti ambientali, logistici e di sicurezza. Questo cruscotto includerà rappresentazioni grafiche basate su dati provenienti da dei sensori installati all'interno dell'area geografica della città.
+L'obiettivo consiste nella creazione di una piattaforma di monitoraggio e gestione di una #glossary("Smart City"). L'utente, individuato nell'#glossary("amministratore pubblico"), potrà farne impiego per migliorare la qualità generale della vita e l'efficienza dei servizi nel contesto di un'area urbana. L'utente sarà in grado di monitorare, attraverso la consultazione di una #glossary("dashboard"), lo stato della città, esaminando aspetti ambientali, logistici e di sicurezza. Questo cruscotto includerà rappresentazioni grafiche basate su dati provenienti da dei sensori installati all'interno dell'area geografica della città.
 
 == Funzionalità del prodotto
 Il prodotto si compone di due parti principali:
 - *Una #glossary("data pipeline")* in grado di raccogliere, persistere e processare dati provenienti da più sorgenti (ovvero i #glossary("sensori")) in #glossary("real-time");
 - *una #glossary("dashboard")* che permette di visualizzare i dati raccolti.
 
-La piattaforma prevede fondamentalmente una tipologia di utente: l'amministratore pubblico. Questo utente avrà accesso alla dashboard e prenderà visione di diverse metriche e indicatori sullo stato della città, mediante diversi strumenti di visualizzazione.
+La piattaforma prevede fondamentalmente una tipologia di utente: l'#glossary("amministratore pubblico"). Questo utente avrà accesso alla dashboard e prenderà visione di diverse metriche e indicatori sullo stato della città, mediante diversi strumenti di visualizzazione.
 
 == Utenti e caratteristiche
-Il prodotto, destinato ad amministratori pubblici, consente loro di ottenere una panoramica sulle condizioni della città. Ciò fornisce loro una base solida per prendere decisioni ponderate riguardo la gestione delle risorse e sull'implementazione dei servizi, risultando cruciale per il miglioramento dell'efficienza complessiva della gestione urbana. Si presuppone che l'amministratore pubblico abbia conoscenze di analisi e di interpretazione dei dati, tali da poter trarre un concreto beneficio dal controllo della #glossary("dashboard").
+Il prodotto, destinato ad amministratori pubblici, consente loro di ottenere una panoramica sulle condizioni della città. Ciò fornisce loro una base solida per prendere decisioni ponderate riguardo la gestione delle risorse e sull'implementazione dei servizi, risultando cruciale per il miglioramento dell'efficienza complessiva della gestione urbana. Si presuppone che l'#glossary("amministratore pubblico") abbia conoscenze di analisi e di interpretazione dei dati, tali da poter trarre un concreto beneficio dal controllo della #glossary("dashboard").
 
 = Casi d'uso
 == Scopo
@@ -62,10 +62,10 @@ In questa sezione si vogliono elencare e descrivere tutti i casi d'uso individua
 
 == Attori
 Il sistema si interfaccerà con due attori diversi:
-- *Amministratore pubblico*: è un utente che ha accesso alla dashboard in tutte le sue funzionalità e può visualizzare i dati raccolti dai sensori, mediante quest'ultima;
+- *#glossary("amministratore pubblico")*: è un utente che ha accesso alla dashboard in tutte le sue funzionalità e può visualizzare i dati raccolti dai sensori, mediante quest'ultima;
 - *#glossary("Sensore")*: è un dispositivo in grado di effettuare misurazioni relative al proprio dominio di interesse. Questi dati possono essere letti ed utilizzati dal sistema.
 
-Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico attore con accesso completo alle funzionalità, in quanto per sua natura l' amministratore pubblico possiede le competenze tecniche necessarie per poter interagire con essa in tutte le sue parti.
+Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico attore con accesso completo alle funzionalità, in quanto per sua natura l'#glossary("amministratore pubblico") possiede le competenze tecniche necessarie per poter interagire con essa in tutte le sue parti.
 
 #figure(
   image("assets/attori.png", width: 40%),
@@ -79,11 +79,11 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*TODO: fare immagine apposta*/
 === UC0: Visualizzazione menù dashboard
-- *Attore Principale*: amministratore pubblico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il sistema è operativo e accessibile;
-- *Postcondizioni*: l'amministratore pubblico visualizza un menù di selezione da cui può scegliere in che dashboard spostarsi tra: Sensori, Ambientale, Urbanistica, Dati anomali & superamento soglie;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un menù di selezione da cui può scegliere in che dashboard spostarsi tra: Sensori, Ambientale, Urbanistica, Dati anomali & superamento soglie;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione.
 
 #figure(
   image("assets/UML/UC0_Visualizzazione-menù-dashboard.png",width:70%),
@@ -92,12 +92,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*TODO: ricontrollare la fine di ogni use case che comprende l'uso di un #glossary("pannello")*/
 === UC1: Visualizzazione dashboard generale sensori
-- *Attore Principale*: amministratore pubblico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il sistema è operativo e accessibile;
-- *Postcondizioni*: l'amministratore pubblico visualizza #glossary("pannelli") relativi allo stato dei sensori, all'interno di un'unica #glossary[dashboard]\;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza #glossary("pannelli") relativi allo stato dei sensori, all'interno di un'unica #glossary[dashboard]\;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione; 
-  + L'amministratore pubblico seleziona la visualizzazione della #glossary("dashboard") generale relativa ai sensori.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione; 
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary("dashboard") generale relativa ai sensori.
 
 #figure(
   image("assets/UML/UC1_Visualizzazione-dashboard-generale-sensori.png",width:70%),
@@ -107,12 +107,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #pagebreak()
 === UC1.1: Visualizzazione posizione sensori su mappa
-- *Attore Principale*: amministratore pubblico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il sistema è operativo e accessibile;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa che mostra le posizioni dei sensori, visualizzati tramite icone, su di essa. Le icone dei sensori sono colorate in base al tipo di sensore  e riportano una label che ne esplicita il tipo e il nome; 
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa che mostra le posizioni dei sensori, visualizzati tramite icone, su di essa. Le icone dei sensori sono colorate in base al tipo di sensore  e riportano una label che ne esplicita il tipo e il nome; 
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione; 
-  + L'amministratore pubblico seleziona la visualizzazione della #glossary("dashboard") generale relativa ai sensori.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione; 
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary("dashboard") generale relativa ai sensori.
 - *Estensioni*: [UC9].
 
 #figure(
@@ -121,12 +121,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 )
 
 === UC1.2: Visualizzazione tabella sensori
-- *Attore Principale*: amministratore pubblico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il sistema è operativo e accessibile;
-- *Postcondizioni*: l'amministratore pubblico visualizza il #glossary("pannello") relativo ai dati inerenti ai sensori, che riporta il nome del sensore, la percentuale di batteria, un valore booleano che esprime se il sensore è alimentato da batteria autonoma o meno e la data di ultima manutenzione del sensore, in forma tabellare; la tabella contenente i dati menzionati è indicizzata tramite il nome dei sensori;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza il #glossary("pannello") relativo ai dati inerenti ai sensori, che riporta il nome del sensore, la percentuale di batteria, un valore booleano che esprime se il sensore è alimentato da batteria autonoma o meno e la data di ultima manutenzione del sensore, in forma tabellare; la tabella contenente i dati menzionati è indicizzata tramite il nome dei sensori;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione; 
-  + L'amministratore pubblico seleziona la visualizzazione della #glossary("dashboard") generale relativa ai sensori.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione; 
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary("dashboard") generale relativa ai sensori.
 - *Estensioni*: [UC9].
 
 #figure(
@@ -136,12 +136,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #pagebreak()
 === UC2: Visualizzazione dashboard dati ambientali
-- *Attore Principale*: amministratore pubblico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il sistema è operativo e accessibile;
-- *Postcondizioni*: l'amministratore pubblico visualizza lista di #glossary("pannelli") mutualmente esclusivi contenenti dati relativi al dominio ambientale;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza lista di #glossary("pannelli") mutualmente esclusivi contenenti dati relativi al dominio ambientale;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
 
 #figure(
   image("assets/UML/UC2_Visualizzazione-dashboard-dati-ambientali.png",width:70%),
@@ -150,12 +150,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 
 === UC2.1: Visualizzazione #glossary("pannello") dati ambientali
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente dati relativi al dominio ambientale;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente dati relativi al dominio ambientale;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
 - *Specializzazioni*: [UC2.2],[UC2.3],[UC2.4],[UC2.5],[UC2.6],[UC2.7],[UC2.8],[UC2.9],[UC2.10],[UC2.11],[UC2.12];
 - *Estensioni*: [UC9].
 
@@ -166,12 +166,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #pagebreak()
 === UC2.2: Visualizzazione #glossary("pannello") #glossary("time series") per temperatura
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo alla temperatura, espressa in gradi Celsius (°C), in formato #glossary("time series") che ne mostra l'andamento in media aritmetica, distinto per sensore, aggregando i dati per intervalli di 5 minuti;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente un grafico relativo alla temperatura, espressa in gradi Celsius (°C), in formato #glossary("time series") che ne mostra l'andamento in media aritmetica, distinto per sensore, aggregando i dati per intervalli di 5 minuti;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
 
 #figure(
   image("assets/UML/UC2.2_Visualizzazion-pannello-time-series-per-temperatura.png",width:100%),
@@ -179,12 +179,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 )
 
 === UC2.3: Visualizzazione #glossary("pannello") time series per umidità
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo all'umidità, espressa in percentuale, in formato #glossary("time series") che ne mostra l'andamento in media aritmetica, distinto per sensore, aggregando i dati per intervalli di 5 minuti;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente un grafico relativo all'umidità, espressa in percentuale, in formato #glossary("time series") che ne mostra l'andamento in media aritmetica, distinto per sensore, aggregando i dati per intervalli di 5 minuti;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
 #figure(
   image("assets/UML/UC2.3_Visualizzazione-pannello-time-series-umidità.png",width:100%),
   caption: [UC2.3 Visualizzazione #glossary("pannello") time series per umidità]
@@ -194,12 +194,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*TODO: creare nuova immagine*/
 === UC2.4: Visualizzazione grafico a mappa direzione del vento
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa che esprime, mediante frecce aventi origine nelle coordinate geografiche del sensore, la direzione del vento rilevata da ciascun sensore;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa che esprime, mediante frecce aventi origine nelle coordinate geografiche del sensore, la direzione del vento rilevata da ciascun sensore;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
 
 #figure(
   image("assets/UML/UC2.4_Visualizzazione-grafico-a-mappa-direzione-del-vento.png",width:60%),
@@ -208,12 +208,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*TODO: creare nuova immagine*/
 === UC2.5: Visualizzazione tabella velocità del vento
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente dati relativi all'ultima velocità del vento, espressa in chilometri all'ora (km/h), registrata da ciascun sensore, sotto forma tabellare;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente dati relativi all'ultima velocità del vento, espressa in chilometri all'ora (km/h), registrata da ciascun sensore, sotto forma tabellare;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
 
 #figure(
   image("assets/UML/UC2.5_Visualizzazione-tabella-velocità-del-vento.png",width:60%),
@@ -222,12 +222,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #pagebreak()
 === UC2.6: Visualizzazione #glossary("pannello") time series per precipitazioni
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo all'intensità delle precipitazioni, espressa in millimetri orari (mm/h), in formato #glossary("time series") che ne mostra l'andamento in media aritmetica, distinto per sensore, aggregando i dati per intervalli di 5 minuti;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente un grafico relativo all'intensità delle precipitazioni, espressa in millimetri orari (mm/h), in formato #glossary("time series") che ne mostra l'andamento in media aritmetica, distinto per sensore, aggregando i dati per intervalli di 5 minuti;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
 
 #figure(
   image("assets/UML/UC2.6_Visualizzazione-pannello-time-series-per-precipitazioni.png",width:100%),
@@ -235,12 +235,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 )
 
 === UC2.7: Visualizzazione #glossary("pannello") precipitazioni medie
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse millimetri di pioggia all'ora (mm/h), indicante la media dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori, degli ultimi 5 minuti;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse millimetri di pioggia all'ora (mm/h), indicante la media dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori, degli ultimi 5 minuti;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
 
 #figure(
   image("assets/UML/UC2.7_Visualizzazione-pannello-precipitazioni-medie.png",width:100%),
@@ -249,12 +249,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #pagebreak()
 === UC2.8: Visualizzazione #glossary("pannello") time series per inquinamento dell'aria
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo al livello di polveri sottili nell'aria, espresso in $#sym.mu g\/m^3$ (#glossary("PM10")), in formato #glossary("time series"), che ne mostra l'andamento in media aritmetica, distinto per sensore, aggregando i dati per intervalli di 5 minuti;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente un grafico relativo al livello di polveri sottili nell'aria, espresso in $#sym.mu g\/m^3$ (#glossary("PM10")), in formato #glossary("time series"), che ne mostra l'andamento in media aritmetica, distinto per sensore, aggregando i dati per intervalli di 5 minuti;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
 
 #figure(
   image("assets/UML/UC2.8_Visualizzazione-pannello-time-series-per-inquinamento-dell-aria.png",width:100%),
@@ -262,12 +262,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 )
 
 === UC2.9: Visualizzazione #glossary("pannello") inquinamento dell'aria medio
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente la media della concentrazione di inquinanti dell'aria, espressa in $#sym.mu g\/m^3$,(#glossary("PM10")), considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente la media della concentrazione di inquinanti dell'aria, espressa in $#sym.mu g\/m^3$,(#glossary("PM10")), considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
 
 #figure(
   image("assets/UML/UC2.9_Visualizzazione-pannello-inquinamento-dell-aria-medio.png",width:100%),
@@ -276,12 +276,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #pagebreak()
 === UC2.10: Visualizzazione #glossary("pannello") time series per livello dei bacini idrici
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente un grafico relativo alla percentuale di riempimento dei bacini idrici, in formato #glossary("time series"), che ne mostra l'andamento in media aritmetica di tale percentuale, distinto per sensore, aggregando i dati per intervalli di 5 minuti;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente un grafico relativo alla percentuale di riempimento dei bacini idrici, in formato #glossary("time series"), che ne mostra l'andamento in media aritmetica di tale percentuale, distinto per sensore, aggregando i dati per intervalli di 5 minuti;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
 
 #figure(
   image("assets/UML/UC2.10_Visualizzazione-pannello-time-series-per-livello-dei-bacini-idrici.png",width:100%),
@@ -289,12 +289,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 )
 
 === UC2.11: Visualizzazione #glossary("pannello") temperatura media
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente la media della temperatura, espressa in gradi Celsius (°C), considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente la media della temperatura, espressa in gradi Celsius (°C), considerando tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
 
 #figure(
   image("assets/UML/UC2.11_Visualizzazione-pannello-temperatura-media.png",width:100%),
@@ -303,12 +303,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #pagebreak()
 === UC2.12: Visualizzazione #glossary("pannello") inquinamento dell'aria massimo
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente il massimo coefficiente di inquinamento dell'aria registrato tra tutti i sensori, espresso in $#sym.mu g\/m^3$, degli ultimi 5 minuti, presentato in formato numerico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente il massimo coefficiente di inquinamento dell'aria registrato tra tutti i sensori, espresso in $#sym.mu g\/m^3$, degli ultimi 5 minuti, presentato in formato numerico;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio ambientale.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
 
 #figure(
   image("assets/UML/UC2.12_Visualizzazione-pannello-inquinamento-dell-aria-massimo.png",width:100%),
@@ -316,12 +316,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 )
 
 === UC3: Visualizzazione dashboard dati urbanistici
-- *Attore Principale*: amministratore pubblico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il sistema è operativo e accessibile;
-- *Postcondizioni*: l'amministratore pubblico visualizza lista dei #glossary("pannelli") mutualmente esclusivi contenenti dati relativi al dominio urbanistico;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza lista dei #glossary("pannelli") mutualmente esclusivi contenenti dati relativi al dominio urbanistico;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio urbanistico.
 
 #figure(
   image("assets/UML/UC3_Visualizzazione-dashboard-dati-urbanistici.png",width:60%),
@@ -330,12 +330,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #pagebreak()
 === UC3.1: Visualizzazione #glossary("pannello") dati urbanistici
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente dati relativi al dominio urbanistico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente dati relativi al dominio urbanistico;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio urbanistico.
 - *Specializzazioni*: [UC3.2],[UC3.3],[UC3.4],[UC3.5],[UC3.6];
 - *Estensioni*: [UC9].
 
@@ -345,12 +345,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 )
 
 === UC3.2: Visualizzazione mappa disponibilità parcheggi
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa per indicare la disponibilità dei parcheggi, espressa in numero di parcheggi liberi, registrata da ciascun sensore, attraverso un indicatore numerico posto nelle coordinate geografiche del corrispondente sensore;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa per indicare la disponibilità dei parcheggi, espressa in numero di parcheggi liberi, registrata da ciascun sensore, attraverso un indicatore numerico posto nelle coordinate geografiche del corrispondente sensore;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio urbanistico.
 
 #figure(
   image("assets/UML/UC3.2_Visualizzazione-grafico-a-mappa-disponibilità-parcheggi.png",width:100%),
@@ -359,12 +359,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #pagebreak()
 === UC3.3: Visualizzazione informazioni delle colonne di ricarica
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello"), che riporta informazioni relative alle colonne di ricarica;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello"), che riporta informazioni relative alle colonne di ricarica;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio urbanistico.
 
 #figure(
   image("assets/UML/UC3.3_Visualizzazione-informazioni-delle-colonne-di-ricarica.png",width:100%),
@@ -372,12 +372,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 )
 
 === UC3.3.1: Visualizzazione posizione delle colonne di ricarica
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa che riporta la posizione delle colonne di ricarica per auto, rappresentate tramite icone, su di essa;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa che riporta la posizione delle colonne di ricarica per auto, rappresentate tramite icone, su di essa;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio urbanistico.
 
 /* TODO: cambiare l'immagine con una creata apposta per il caso d'uso*/
 #figure(
@@ -386,12 +386,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 )
 
 === UC3.3.2: Visualizzazione disponibilità delle colonne di ricarica
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa che riporta un indicatore booleano in corrispondenza dell'icona di ciascuna colonna di ricarica per indicarne la disponibilità;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa che riporta un indicatore booleano in corrispondenza dell'icona di ciascuna colonna di ricarica per indicarne la disponibilità;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio urbanistico.
 
 /* TODO: cambiare l'immagine con una creata apposta per il caso d'uso*/
 #figure(
@@ -401,12 +401,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 
 === UC3.3.3: Visualizzazione tabella descrittiva delle colonne di ricarica
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una tabella, la quale riporta, per ciascuna colonna di ricarica per auto, l'erogazione in chiloWatt per ora attuale (kWh); la tabella è indicizzata dal nome dei sensori;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella, la quale riporta, per ciascuna colonna di ricarica per auto, l'erogazione in chiloWatt per ora attuale (kWh); la tabella è indicizzata dal nome dei sensori;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio urbanistico.
 
 /* TODO: cambiare l'immagine con una creata apposta per il caso d'uso*/
 #figure(
@@ -415,12 +415,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 )
 
 === UC3.4: Visualizzazione grafico a mappa congestione stradale
-*Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante lo stato di congestione delle strade; ciascuna strada riporta uno stato tra "LOW", "MEDIUM", "HIGH" e "BLOCKED", in base al proprio livello di congestione; ciascuno stato viene visualizzato con un colore apposito;
+*Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa indicante lo stato di congestione delle strade; ciascuna strada riporta uno stato tra "LOW", "MEDIUM", "HIGH" e "BLOCKED", in base al proprio livello di congestione; ciascuno stato viene visualizzato con un colore apposito;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio urbanistico.
 
 #figure(
   image("assets/UML/UC3.4_Visualizzazione-grafico-a-mappa-intensità-traffico.png",width:100%),
@@ -429,12 +429,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #pagebreak()
 === UC3.5: Visualizzazione posizione real time delle biciclette elettriche e relativa percentuale batteria
-*Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante la posizione in tempo reale delle biciclette elettriche, mediante degli indicatori numerici indicanti la percentuale della batteria posizionata nelle coordinate geografiche del mezzo, atto a mostrare la sua posizione;
+*Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa indicante la posizione in tempo reale delle biciclette elettriche, mediante degli indicatori numerici indicanti la percentuale della batteria posizionata nelle coordinate geografiche del mezzo, atto a mostrare la sua posizione;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio urbanistico.
 
 #figure(
   image("assets/UML/UC3.5_Visualizzazione-posizione-real-time-delle-biciclette-elettriche-e-relativa-percentuale-batteria.png",width:100%),
@@ -443,12 +443,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*TODO: cambiare nome nell'immagine*/
 === UC3.6: Visualizzazione indicatore percentuale su mappa riempimento zone ecologiche
-*Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante lo stato di riempimento delle zone ecologiche, espresse in valori percentuali, posizionate nelle coordinate geografiche delle zone;
+*Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa indicante lo stato di riempimento delle zone ecologiche, espresse in valori percentuali, posizionate nelle coordinate geografiche delle zone;
 - *Scenario Principale*:
-  + L'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + L'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
+  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio urbanistico.
 
 #figure(
   image("assets/UML/UC3.6_Visualizzazione-indicatore-percentuale-su-mappa-riempimento-zone-rifiuti.png",width:100%),
@@ -458,11 +458,11 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*TODO: cambiare immagine*/
 #pagebreak()
 === UC4: Visualizzazione dashboard #glossary("dati anomali") e superamento soglie
-- *Attore Principale*: amministratore pubblico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il sistema è operativo e accessibile;
-- *Postcondizioni*: l'amministratore pubblico visualizza #glossary("pannelli") contenenti dati relativi al superamento delle soglie e alle anomalie rilevate;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza #glossary("pannelli") contenenti dati relativi al superamento delle soglie e alle anomalie rilevate;
 - *Scenario Principale*:
-  + L'amministratore pubblico seleziona la visualizzazione della #glossary[dashboard] delle anomalie.
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] delle anomalie.
 
 #figure(
   image("assets/UML/UC4_Visualizzazione-dashboard-dati-anomali-e-superamento-soglie.png",width:60%),
@@ -471,11 +471,11 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*TODO: realizzare immagine corrispondente*/
 === UC4.1: Visualizzazione tabella #glossary("dati anomali")
-- *Attore Principale*: amministratore pubblico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il sistema è operativo e accessibile;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una tabella ordinata, che mostra tutti i #glossary("dati anomali") rilevati dal sistema. La tabella include il valore dell'anomalia, il sensore che l'ha rilevata e il timestamp relativo, ed è ordinata in base al timestamp;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella ordinata, che mostra tutti i #glossary("dati anomali") rilevati dal sistema. La tabella include il valore dell'anomalia, il sensore che l'ha rilevata e il timestamp relativo, ed è ordinata in base al timestamp;
 - *Scenario Principale*:
-  + L'amministratore pubblico seleziona la visualizzazione della #glossary[dashboard] delle anomalie.
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] delle anomalie.
 
 #figure(
   image("assets/UML/UC4.1_Visualizzazione-tabella-dati-anomali.png",width:70%),
@@ -485,11 +485,11 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*TODO: realizzare immagine corrispondente*/
 #pagebreak()
 === UC4.2: Visualizzazione tabella superamento soglie
-- *Attore Principale*: amministratore pubblico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il sistema è operativo e accessibile;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti le soglie impostate nel sistema, mostrando il valore superante la soglia, il sensore che ha rilevato tale valore e il timestamp relativo;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti le soglie impostate nel sistema, mostrando il valore superante la soglia, il sensore che ha rilevato tale valore e il timestamp relativo;
 - *Scenario Principale*:
-  + L'amministratore pubblico seleziona la visualizzazione della #glossary[dashboard] delle anomalie.
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] delle anomalie.
 
 #figure(
   image("assets/UML/UC4.2_Visualizzazione-tabella-superamento-soglie.png",width:70%),
@@ -498,9 +498,9 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*TODO: per gli UC5.X andare a capire se usano soglie fisse o tramite variabili per gli allert (sempre se possibile)*/
 === UC5: Visualizzazione allerte superamento soglia
-- *Attore Principale*: amministratore pubblico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il sistema è operativo e accessibile;
-- *Postcondizioni*: l'amministratore pubblico riceve una notifica di superamento di una soglia impostata;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") riceve una notifica di superamento di una soglia impostata;
 - *Scenario Principale*:
   + Il sistema rileva condizioni che richiedono l'invio di una notifica per segnalare il superamento di una soglia impostata.
 #figure(
@@ -511,9 +511,9 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*TODO: andare a fare l'immagine apposta*/
 #pagebreak()
 === UC5.1: Visualizzazione allerta superamento soglia temperatura
-- *Attore Principale*: amministratore pubblico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il sistema è operativo e accessibile;
-- *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa alla temperatura che notifica il superamento dei 40° Celsius (40°C).
+- *Postcondizioni*: l'#glossary("amministratore pubblico") riceve un'allerta relativa alla temperatura che notifica il superamento dei 40° Celsius (40°C).
 - *Scenario Principale*:
   + Il sistema rileva una temperatura nella media dei 5 minuti, superiore ai 40° Celsius (40°C).
 #figure(
@@ -523,9 +523,9 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*TODO: andare a fare l'immagine apposta*/
 === UC5.2: Visualizzazione allerta superamento soglia precipitazioni
-- *Attore Principale*: amministratore pubblico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il sistema è operativo e accessibile;
-- *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa alle precipitazioni che notifica il superamento dei 50 millimetri di pioggia all'ora (50 mm/h);
+- *Postcondizioni*: l'#glossary("amministratore pubblico") riceve un'allerta relativa alle precipitazioni che notifica il superamento dei 50 millimetri di pioggia all'ora (50 mm/h);
 - *Scenario Principale*:
   + Il sistema rileva un livello di precipitazioni medie nell'ora, superiore ai 50 millimetri di pioggia all'ora (50 mm/h).
 #figure(
@@ -536,9 +536,9 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*TODO: andare a fare l'immagine apposta*/
 #pagebreak()
 === UC5.3: Visualizzazione allerta superamento soglia inquinamento dell'aria
-- *Attore Principale*: amministratore pubblico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il sistema è operativo e accessibile;
-- *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa all'inquinamento dell'aria che notifica il superamento di 80#[#sym.mu]g su metro cubo ($80#sym.mu g\/m^3$);
+- *Postcondizioni*: l'#glossary("amministratore pubblico") riceve un'allerta relativa all'inquinamento dell'aria che notifica il superamento di 80#[#sym.mu]g su metro cubo ($80#sym.mu g\/m^3$);
 - *Scenario Principale*:
   + Il sistema rileva un coefficiente di inquinamento dell'aria (#glossary("PM10")), superiore ai 80#[#sym.mu]g su metro cubo ($80#sym.mu g\/m^3$).
 #figure(
@@ -548,9 +548,9 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*TODO: andare a fare l'immagine apposta*/
 === UC5.4: Visualizzazione allerta superamento soglia bacini idrici
-- *Attore Principale*: amministratore pubblico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il sistema è operativo e accessibile;
-- *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa ai bacini idrici che notifica il superamento del 70% della capienza di un particolare bacino;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") riceve un'allerta relativa ai bacini idrici che notifica il superamento del 70% della capienza di un particolare bacino;
 - *Scenario Principale*:
   + Il sistema rileva che il livello di un particolare bacino idrico è superiore al 70% della sua capienza.
 #figure(
@@ -561,9 +561,9 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*TODO: andare a fare l'immagine apposta*/
 #pagebreak()
 === UC5.5: Visualizzazione allerta superamento soglia zone ecologiche
-- *Attore Principale*: amministratore pubblico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il sistema è operativo e accessibile;
-- *Postcondizioni*: l'amministratore pubblico riceve un'allerta relativa alle zone ecologiche che notifica il superamento dell'80% della capienza di una particolare zona ecologica;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") riceve un'allerta relativa alle zone ecologiche che notifica il superamento dell'80% della capienza di una particolare zona ecologica;
 - *Scenario Principale*:
   + Il sistema rileva che il livello di una particolare zona ecologica è superiore all'80% della sua capienza.
 #figure(
@@ -573,12 +573,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*Cambiare il numero nell'immagine*/
 === UC6: Applicazione filtri
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico sta visualizzando uno o più #glossary("pannelli") con i dati;
-- *Postcondizioni*: l'amministratore pubblico visualizza solamente i dati relativi al filtro applicato (oppure ai filtri applicati);
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") sta visualizzando uno o più #glossary("pannelli") con i dati;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza solamente i dati relativi al filtro applicato (oppure ai filtri applicati);
 - *Scenario Principale*:
-  + L'amministratore pubblico seleziona l'icona o il pulsante relativo al filtro dei dati;
-  + L'amministratore pubblico seleziona secondo quali valori filtrare il #glossary("pannello") (o i #glossary("pannelli")).
+  + L'#glossary("amministratore pubblico") seleziona l'icona o il pulsante relativo al filtro dei dati;
+  + L'#glossary("amministratore pubblico") seleziona secondo quali valori filtrare il #glossary("pannello") (o i #glossary("pannelli")).
 
 #figure(
   image("assets/UML/UC6_Applicazione-filtri.png",width:70%),
@@ -588,13 +588,13 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*Cambiare il numero nell'immagine*/
 #pagebreak()
 === UC6.1: Filtro sotto-insieme di sensori su grafici #glossary[time series]
-- *Attore Principale*: amministratore pubblico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: 
-  + L'amministratore pubblico sta visualizzando uno o più #glossary("pannelli") #glossary[time series] con i dati;
+  + L'#glossary("amministratore pubblico") sta visualizzando uno o più #glossary("pannelli") #glossary[time series] con i dati;
   + Il #glossary("pannello") offre la funzionalità di filtro dei dati tramite selezione di uno o più sensori.
-- *Postcondizioni*: l'amministratore pubblico visualizza solamente i dati relativi ai sensori selezionati, all'interno di tale #glossary("pannello")\;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza solamente i dati relativi ai sensori selezionati, all'interno di tale #glossary("pannello")\;
 - *Scenario Principale*:
-  + L'amministratore pubblico seleziona il sensore (o i sensori) da visualizzare tramite la legenda.
+  + L'#glossary("amministratore pubblico") seleziona il sensore (o i sensori) da visualizzare tramite la legenda.
 
 #figure(
   image("assets/UML/UC6.1_Filtro-sotto-insieme-di-sensori-su-grafici-time-series.png",width:70%),
@@ -603,14 +603,14 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*Cambiare il numero nell'immagine*/
 === UC6.2: Filtro per tipologia sensore su tabella
-- *Attore Principale*: amministratore pubblico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: 
-  + L'amministratore pubblico sta visualizzando uno o più #glossary("pannelli") tabellari con i dati;
+  + L'#glossary("amministratore pubblico") sta visualizzando uno o più #glossary("pannelli") tabellari con i dati;
   + Il #glossary("pannello") offre la funzionalità di filtro dei dati tramite apposita icona o pulsante.
-- *Postcondizioni*: l'amministratore pubblico visualizza solamente i dati relativi alle tipologie di sensore selezionate, all'interno di tale #glossary("pannello")\;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza solamente i dati relativi alle tipologie di sensore selezionate, all'interno di tale #glossary("pannello")\;
 - *Scenario Principale*:
-  + L'amministratore pubblico seleziona la funzionalità relativa al filtro dei dati;
-  + L'amministratore pubblico seleziona i valori delle tipologie di sensore desiderati.
+  + L'#glossary("amministratore pubblico") seleziona la funzionalità relativa al filtro dei dati;
+  + L'#glossary("amministratore pubblico") seleziona i valori delle tipologie di sensore desiderati.
 
 #figure(
   image("assets/UML/UC6.2_Filtro-per-tipologia-sensore-su-tabella.png",width:70%),
@@ -620,14 +620,14 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*Cambiare il numero nell'immagine*/
 #pagebreak()
 === UC6.3: Filtro per nome sensore su tabella
-- *Attore Principale*: amministratore pubblico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: 
-  + L'amministratore pubblico ha scelto un #glossary("pannello") su cui effettuare l'operazione di filtro;
+  + L'#glossary("amministratore pubblico") ha scelto un #glossary("pannello") su cui effettuare l'operazione di filtro;
   + Il #glossary("pannello") offre la funzionalità di filtro dei dati.
-- *Postcondizioni*: l'amministratore pubblico visualizza solamente i dati relativi ai sensori selezionati, all'interno di tale #glossary("pannello")\;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza solamente i dati relativi ai sensori selezionati, all'interno di tale #glossary("pannello")\;
 - *Scenario Principale*:
-  + L'amministratore pubblico seleziona la funzionalità relativa al filtro dei dati;
-  + L'amministratore pubblico seleziona i valori dei nomi dei sensori desiderati.
+  + L'#glossary("amministratore pubblico") seleziona la funzionalità relativa al filtro dei dati;
+  + L'#glossary("amministratore pubblico") seleziona i valori dei nomi dei sensori desiderati.
 
 
 #figure(
@@ -637,12 +637,12 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*Cambiare il numero nell'immagine*/
 === UC6.4: Filtro per intervallo temporale
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico sta visualizzando uno o più #glossary("pannelli")\;
-- *Postcondizioni*: l'amministratore pubblico visualizza solamente i dati relativi all'intervallo temporale selezionato, in tutti i #glossary("pannelli") della #glossary("dashboard") dove è stato applicato il filtro;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") sta visualizzando uno o più #glossary("pannelli")\;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza solamente i dati relativi all'intervallo temporale selezionato, in tutti i #glossary("pannelli") della #glossary("dashboard") dove è stato applicato il filtro;
 - *Scenario Principale*:
-  + L'amministratore pubblico seleziona la funzionalità relativa al filtro dei dati per intervallo temporale;
-  + L'amministratore pubblico seleziona l'intervallo temporale desiderato.
+  + L'#glossary("amministratore pubblico") seleziona la funzionalità relativa al filtro dei dati per intervallo temporale;
+  + L'#glossary("amministratore pubblico") seleziona l'intervallo temporale desiderato.
 
 
 #figure(
@@ -654,22 +654,22 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 #pagebreak()
 /* Non è un caso d'uso 
 === UC6.5: Filtro #glossary("pannelli") collegati
-- *Attore Principale*: amministratore pubblico.
+- *Attore Principale*: #glossary("amministratore pubblico")\.
 - *Precondizioni*: 
-  + l'amministratore pubblico ha filtrato i dati in un #glossary("pannello");
+  + l'#glossary("amministratore pubblico") ha filtrato i dati in un #glossary("pannello");
   + altri #glossary("pannelli") sono collegati a quello filtrato.
-- *Postcondizioni*: l'amministratore pubblico visualizza, in tutti i #glossary("pannelli") collegati, solamente i dati relativi al filtro applicato (o ai filtri applicati) al pannello sorgente, nel caso di #glossary("pannelli") che dipendono da altri #glossary("pannelli") per la visualizzazione di dati.
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza, in tutti i #glossary("pannelli") collegati, solamente i dati relativi al filtro applicato (o ai filtri applicati) al pannello sorgente, nel caso di #glossary("pannelli") che dipendono da altri #glossary("pannelli") per la visualizzazione di dati.
 - *Scenario Principale*:
   + il sistema aggiorna tutti i #glossary("pannelli") collegati.
 */
 /*Cambiare il numero nell'immagine*/
 === UC7: Ordinamento #glossary("pannelli") tabellari
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico ha scelto e sta visualizzando un #glossary("pannello"), con all'interno una tabella, da ordinare per un suo campo; i campi tramite i quali si possono ordinare i dati della tabella sono il nome, la percentuale di batteria e la data di manutenzione del sensore oppure la velocità del vento (ove presenti);
-- *Postcondizioni*: l'amministratore pubblico visualizza i dati ordinati nella tabella, secondo tale campo;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") ha scelto e sta visualizzando un #glossary("pannello"), con all'interno una tabella, da ordinare per un suo campo; i campi tramite i quali si possono ordinare i dati della tabella sono il nome, la percentuale di batteria e la data di manutenzione del sensore oppure la velocità del vento (ove presenti);
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza i dati ordinati nella tabella, secondo tale campo;
 - *Scenario Principale*:
-  + L'amministratore pubblico seleziona un campo della tabella, secondo cui ordinare i dati, tra i seguenti: nome, percentuale di  batteria e data di manutenzione del sensore o velocità del vento;
-  + Per tale campo l'amministratore pubblico sceglie tra l'ordinamento crescente e decrescente.
+  + L'#glossary("amministratore pubblico") seleziona un campo della tabella, secondo cui ordinare i dati, tra i seguenti: nome, percentuale di  batteria e data di manutenzione del sensore o velocità del vento;
+  + Per tale campo l'#glossary("amministratore pubblico") sceglie tra l'ordinamento crescente e decrescente.
 
 #figure(
   image("assets/UML/UC7_Ordinamento-pannelli-tabellari.png",width:70%),
@@ -679,11 +679,11 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*Cambiare il numero nell'immagine*/
 #pagebreak()
 === UC8: Modifica layout #glossary("pannelli")
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico sta visualizzando almeno un #glossary("pannello")\;
-- *Postcondizioni*: l'amministratore pubblico visualizza il nuovo layout;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") sta visualizzando almeno un #glossary("pannello")\;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza il nuovo layout;
 - *Scenario Principale*:
-  + L'amministratore pubblico modifica i #glossary("pannelli") graficamente a suo piacimento.
+  + L'#glossary("amministratore pubblico") modifica i #glossary("pannelli") graficamente a suo piacimento.
 - *Specializzazioni*: [UC8.1] [UC8.2].
 
 #figure(
@@ -692,11 +692,11 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 )
 
 === UC8.1: Spostamento #glossary("pannelli")
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico sta visualizzando almeno un #glossary("pannello")\;
-- *Postcondizioni*: l'amministratore pubblico visualizza il nuovo layout;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") sta visualizzando almeno un #glossary("pannello")\;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza il nuovo layout;
 - *Scenario Principale*:
-  + L'amministratore pubblico sposta i #glossary("pannelli") all'interno della #glossary[dashboard] a suo piacimento.
+  + L'#glossary("amministratore pubblico") sposta i #glossary("pannelli") all'interno della #glossary[dashboard] a suo piacimento.
 
 
 #figure(
@@ -705,11 +705,11 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 )
 
 === UC8.2: Ridimensionamento #glossary("pannelli")
-- *Attore Principale*: amministratore pubblico;
-- *Precondizioni*: l'amministratore pubblico sta visualizzando almeno un #glossary("pannello")\;
-- *Postcondizioni*: l'amministratore pubblico visualizza il nuovo layout;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: l'#glossary("amministratore pubblico") sta visualizzando almeno un #glossary("pannello")\;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza il nuovo layout;
 - *Scenario Principale*:
-  + L'amministratore pubblico ridimensiona i #glossary("pannelli") a suo piacimento all'interno della #glossary[dashboard].
+  + L'#glossary("amministratore pubblico") ridimensiona i #glossary("pannelli") a suo piacimento all'interno della #glossary[dashboard].
 
 
 #figure(
@@ -719,11 +719,11 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /*Cambiare il numero nell'immagine*/
 === UC9: Visualizzazione errore nessun dato
-- *Attore Principale*: amministratore pubblico;
+- *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il sistema di visualizzazione non ottiene alcun dato da mostrare all'interno di un #glossary("pannello")\; 
-- *Postcondizioni*: l'amministratore pubblico visualizza un messaggio di errore segnalante l'assenza di dati da mostrare;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un messaggio di errore segnalante l'assenza di dati da mostrare;
 - *Scenario Principale*:
-  + L'amministratore pubblico vuole visualizzare qualche #glossary("pannello") [UC1.1] [UC1.2] [UC2.1] [UC3.1]; 
+  + L'#glossary("amministratore pubblico") vuole visualizzare qualche #glossary("pannello") [UC1.1] [UC1.2] [UC2.1] [UC3.1]; 
   + Il sistema non ha i dati con cui popolare tale pannello.
 
 /*Cambiare il numero nell'immagine*/
@@ -1135,7 +1135,7 @@ caption: "Requisiti funzionali")
   "Obbligatorio","La documentazione dovrà riguardare anche problemi aperti ed eventuali possibili soluzioni da approfondire in futuro.","Capitolato"
   ),
   ("Desiderabile","Il sistema deve risultare di facile utiilizzo, richiedendo un numero di click (≤ 7) contenuto per raggiungere gli obiettivi desiderati.","Norme di Progetto"),
-  ("Desiderabile","L'amministratore pubblico deve poter imparare a padroneggiare il sistema in breve tempo.","Norme di progetto"),
+  ("Desiderabile",[L'#glossary("amministratore pubblico") deve poter imparare a padroneggiare il sistema in breve tempo.],"Norme di progetto"),
   ("Obbligatorio",[La #glossary[repository] di github del codice sorgente "InnovaCity" deve essere accessibile a tutti.],"Verbale esterno"),
   ("Obbligatorio",[Devono essere rispettati tutte le norme definite nel documento _Norme di Progetto v2.0_.],"Norme di Progetto"),
   ("Obbligatorio",[Devono essere rispettati i vincoli e le metriche definite nel _Piano di Qualifica v2.0_.],"Norme di Progetto"),
