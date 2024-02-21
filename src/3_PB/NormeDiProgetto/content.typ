@@ -905,7 +905,22 @@ All'interno della cartella `src`, sono presenti 2 cartelle, contenenti altre sot
                 - *VerbaliEsterni*;
                 - *VerbaliInterni*.
 
-                
+=== Comandi beginner github  
+
+Breve elenco dei comandi Git che i membri del team #team utilizzano durante il progetto:
+
+        - `git clone URL_repo`: per clonare il repository git remoto in locale. Si preferisce la clonazione tramite SSH;
+        - `git add .`: per aggiungere tutti i file modificati nell'area di staging, in caso non si vuole aggiungerli tutti specificare il nome del file; assicurarsi di essere nella cartella corretta;
+        - `git commit -m "nome_messaggio"`: per registrare i cambiamenti effettuati; sono delle istantanee dello stato di progetto in un dato momento; `-m` specifica il messaggio del commit, e possibilmente deve essere una buona descrizione dei cambiamenti apportati;
+        - `git push`: le modifiche locali registrate vengono inviati al branch remoto;
+        - `git pull`: per scaricare le modifiche remote all'interno del repo locale;
+        - `git pull --rebase origin nome_branch`: in caso più persone stanno lavorando allo stesso branch e si verificano conflict merge al momento del `git pull`, fa il rebase del branch corrente per ottenere la linea cronologica dei vari commit;
+        - `git fetch origin`: per recuperare tutti i riferimenti remoti;
+        - `git rebase origin/main`: per fare il rebase in caso il main ricevesse aggiornamenti importanti e il nostro branch non è aggiornato;
+        - `git branch nomenuovobranch`: per creare nuovo branch;
+        - `git checkout nomebranch`: per spostarsi tra i vari branch.
+
+Per effettuare il merge nel main  si utilizza l'interfaccia di Github.  
 
 === Automazioni
 
