@@ -175,7 +175,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #figure(
   image("assets/UML/UC2.2_Visualizzazion-pannello-time-series-per-temperatura.png",width:100%),
-  caption: [UC2.2 Visualizzazione #glossary("pannello") time series per temperatura]
+  caption: [UC2.2 Visualizzazione #glossary("pannello") #glossary[time series] per temperatura]
 )
 
 === UC2.3: Visualizzazione #glossary("pannello") #glossary[time series] per umidità
@@ -187,7 +187,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
 #figure(
   image("assets/UML/UC2.3_Visualizzazione-pannello-time-series-umidità.png",width:100%),
-  caption: [UC2.3 Visualizzazione #glossary("pannello") time series per umidità]
+  caption: [UC2.3 Visualizzazione #glossary("pannello") #glossary[time series] per umidità]
 )
 
 #pagebreak()
@@ -231,7 +231,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #figure(
   image("assets/UML/UC2.6_Visualizzazione-pannello-time-series-per-precipitazioni.png",width:100%),
-  caption: [UC2.6 Visualizzazione #glossary("pannello") time series per precipitazioni]
+  caption: [UC2.6 Visualizzazione #glossary("pannello") #glossary[time series] per precipitazioni]
 )
 
 === UC2.7: Visualizzazione #glossary("pannello") precipitazioni medie
@@ -258,7 +258,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #figure(
   image("assets/UML/UC2.8_Visualizzazione-pannello-time-series-per-inquinamento-dell-aria.png",width:100%),
-  caption: [UC2.8 Visualizzazione #glossary("pannello") time series per inquinamento dell'aria]
+  caption: [UC2.8 Visualizzazione #glossary("pannello") #glossary[time series] per inquinamento dell'aria]
 )
 
 === UC2.9: Visualizzazione #glossary("pannello") inquinamento dell'aria medio
@@ -275,7 +275,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 )
 
 #pagebreak()
-=== UC2.10: Visualizzazione #glossary("pannello") time series per livello dei bacini idrici
+=== UC2.10: Visualizzazione #glossary("pannello") #glossary[time series] per livello dei bacini idrici
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente un grafico relativo alla percentuale di riempimento dei bacini idrici, in formato #glossary("time series"), che ne mostra l'andamento in media aritmetica di tale percentuale, distinto per #glossary("sensore"), aggregando i dati per intervalli di 5 minuti;
@@ -285,7 +285,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #figure(
   image("assets/UML/UC2.10_Visualizzazione-pannello-time-series-per-livello-dei-bacini-idrici.png",width:100%),
-  caption: [UC2.10 Visualizzazione #glossary("pannello") time series per livello dei bacini idrici]
+  caption: [UC2.10 Visualizzazione #glossary("pannello") #glossary[time series] per livello dei bacini idrici]
 )
 
 === UC2.11: Visualizzazione #glossary("pannello") temperatura media
@@ -497,7 +497,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 )
 
 /*TODO: per gli UC5.X andare a capire se usano soglie fisse o tramite variabili per gli allert (sempre se possibile)*/
-=== UC5: Visualizzazione allerte superamento soglia
+=== UC5: Visualizzazione allerte superamento soglie
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") riceve una notifica di superamento di una soglia impostata;
@@ -513,7 +513,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC5.1: Visualizzazione allerta superamento soglia temperatura
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") riceve un'allerta relativa alla temperatura che notifica il superamento dei 40° Celsius (40°C).
+- *Postcondizioni*: l'#glossary("amministratore pubblico") riceve un'allerta relativa alla temperatura che notifica il superamento dei 40° Celsius (40°C);
 - *Scenario Principale*:
   + Il #glossary("sistema") rileva una temperatura nella media dei 5 minuti, superiore ai 40° Celsius (40°C).
 #figure(
@@ -598,7 +598,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #figure(
   image("assets/UML/UC6.1_Filtro-sotto-insieme-di-sensori-su-grafici-time-series.png",width:70%),
-  caption: [UC6.1 Filtro sotto-insieme di sensori su grafici time series]
+  caption: [UC6.1 Filtro sotto-insieme di sensori su grafici #glossary[time series]]
 )
 
 /*Cambiare il numero nell'immagine*/
@@ -756,7 +756,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #figure(
   image("assets/UML/UC11_Inserimento-dati-umidità.png",width:100%),
-  caption: [UC11 Inserimento dati umidità relativa]
+  caption: [UC11 Inserimento dati umidità]
 )
 
 /*Cambiare il numero nell'immagine*/
@@ -838,7 +838,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 #figure(
   image("assets/UML/UC16_Inserimento-dati-disponibilità-parcheggi.png",width:100%),
-  caption: [UC16 Inserimento dati disponibilità e occupazione parcheggi]
+  caption: [UC16 Inserimento dati disponibilità parcheggi]
 )
 
 /*Cambiare il numero nell'immagine*/
