@@ -620,11 +620,13 @@ La #glossary[documentazione] è l'insieme di informazioni rappresentate sotto fo
 
 I documenti che verranno prodotti sono:
 
-        - _Norme di Progetto v1.0_;
-        - _Piano di Progetto v1.0_;
-        - _Piano di Qualifica v1.0_;
+        - _Norme di Progetto v2.0_;
+        - _Piano di Progetto v2.0_;
+        - _Piano di Qualifica v2.0_;
         - _Analisi dei Requisiti v1.0_;
-        - _Glossario v1.0_;
+        - _Specifiche Tecniche v1.0_;
+        - _Manuale Utente v1.0_;
+        - _Glossario v2.0_;
         - _Verbali_:
                 + _Interni_;
                 + _Esterni_.
@@ -635,11 +637,11 @@ Ogni documento segue le fasi del seguente #glossary[workflow]:
 + Si crea un branch per lo sviluppo del documento nell'apposita #glossary[repository] Docs e si mette in uso;
 + Si copia dall'apposita #glossary[repository] `Templates` il template relativo al file che si deve redigere, e lo si inserisce nella cartella appropriata;
 + Si redige il documento o una sua sezione. Nel caso di documenti nuovi, in cui è necessario un elevato parallelismo di lavoro, è possibile usare Google Drive per la prima stesura e successivamente caricare il documento all'interno del branch;
-+ Nel file `changelog.typ` si aggiunge una riga in coda, secondo il seguente formato: `<versione>,<data-modifica>,<descrizione-modifica>,<nome-autore>,<ruolo-autore>`; la versione segue le regole descritte nella @versionamento;
++ Nel file `changelog.typ` si aggiunge una riga in coda, secondo il seguente formato: `<versione>,<data-modifica>,<descrizione-modifica>,<nome-autore>,<ruolo-autore>,<verificatore>`; la versione segue le regole descritte nella @versionamento;
 + Si esegue la commit sul branch creato;
 + Si apre una pull request dal branch appena creato verso il branch `main`: se il documento non è pronto per la verifica, ma ha bisogno di ulteriori modifiche, si apre la pull request in modalità `draft`, altrimenti in modalità normale, spostando la issue nell'apposita #glossary[corsia] di stato "Ready to Review";
 + Per ulteriori modifiche richieste dal/dai verificatore/i si ripetono i punti, in ordine, dal punto 3 al punto 5;
-+ Si elimina, solo quando la pull request viene chiusa o risolta, il branch creato.
++ Si elimina il branch creato, solo quando la pull request viene chiusa o risolta.
 
 La modifica di un documento avviene allo stesso modo, saltando il passo 2.
 Ogni cambiamento di stato è accompagnato dal conseguente movimento della issue, associata allo sviluppo, attraverso le diverse corsie dell'issue tracking system.
@@ -701,7 +703,10 @@ Si compone di una tabella con l'intestazione:
         - *Data*: data della modifica apportata;
         - *Descrizione*: cosa è stato modificato o aggiunto al file;
         - *Autore*: l'autore della modifica;
-        - *Ruolo*: ruolo dell'autore al momento della modifica.
+        - *Ruolo*: ruolo dell'autore al momento della modifica;
+        - *Verificatore*: il membro che si è occupato della revisione di quella specifica parte della modifica.
+
+Per quanto riguarda l'ultima colonna è stata aggiunta solamente dopo la revisione #glossary[RTB], pertanto le modifiche effettuate precedentemente l'#glossary[RTB] risultano essere vuote.
 
 ==== Indice 
 
@@ -714,6 +719,9 @@ I verbali differiscono leggermente da un documento ufficiale, in quanto non evol
 Si compongono principalmente di 2 sezioni:
         - *Partecipanti*: si indica data di inizio e fine incontro e il luogo in cui si è svolto. A seguire, i nomi dei partecipanti del team e la durata della presenza di ciascuno vengono rappresentati in forma tabellare. Se il verbale è esterno si indicano anche i partecipanti della Proponente;
         - *Sintesi dell'incontro*: Riassunto degli argomenti trattati durante la riunione.
+
+Per indicare i partecipanti presenti all'incontro si utilizza un file csv in cui per ogni riga abbiamo partecipante e durata della presenza separati da virgola, questo file viene poi incluso e convertito automaticamente in una tabella da #glossary[Typst]. 
+È presente il file `meta.typ` per indicare le variabili di inizio, fine incontro e luogo in cui si è svolto, basta andare a modificarle e automaticamente vengono riportate nel documento.
 
 
 Il verbale esterno oltre alle sezioni sopra elencate ha una pagina per la convalida, attraverso firma, del documento.
@@ -749,6 +757,36 @@ Viene adottato il formato "DD-MM-YYYY":
         - DD: giorno con 2 cifre;
         - MM: mese con 2 cifre;
         - YYYY: anno con 4 cifre.
+
+==== Sigle 
+
+Le varie sigle relative ai documenti e al progetto sono le seguenti: 
+
+     - *Documentazione*:
+        - *Analisi dei Requisiti* → *AdR*;
+        - *Norme di Progetto* → *NdP*;
+        - *Piano di Progetto* → *PdP*;
+        - *Piano di Qualifica* → *PdQ*;
+        - *Manuale Utente* → *MU*;
+        - *Specifiche Tecniche* → *ST*;
+        - *Verbale Interno* → *VI*;
+        - *Verbale Esterno* → *VE*;
+        - *Glossario* → *Gls*.
+     - *Progetto*:
+        - *Requirements and Technology Baseline* → *RTB*;
+        - *Product Baseline* → *PB*;
+        - *Customer Acceptance* → *CA*.
+     - *Ruoli*:
+        - *Responsabile* → *Re*;
+        - *Amministratore* → *Am*;
+        - *Analista* → *An*;
+        - *Progettista* → *Pt*;
+        - *Programmatore* → *Pr*;
+        - *Verificatore* → *Ve*.
+        
+
+
+
 
 === Strumenti 
 
