@@ -52,6 +52,7 @@ Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei d
 - *#glossary[Clickhouse]*: #link("https://clickhouse.com/docs"); 
 - *Confluent Kafka*:#link("https://docs.confluent.io/kafka-clients/python/current/overview.html");
 
+#pagebreak()
 = Tecnologie
 Questa sezione si propone di offrire una panoramica sintetica delle tecnologie adottate. Questo breve paragrafo introduttivo fornisce un quadro generale delle piattaforme, dei linguaggi di programmazione, dei framework e di altre risorse tecnologiche che costituiscono le basi del nostro progetto. 
 
@@ -104,6 +105,7 @@ table(
 caption: [Tabella tecnologie per l'analisi del codice.])
 
 
+#pagebreak()
 = Architettura
 == Architettura generale 
 Questa sezione si propone di esplorare in modo esaustivo le strutture, i componenti e le interazioni che costituiscono il fondamento tecnologico del sistema. Questa analisi dettagliata mira a garantire una comprensione completa delle scelte architetturali adottate, fornendo così una base solida per lo sviluppo e l'implementazione.
@@ -113,6 +115,7 @@ Questa sezione si propone di esplorare in modo esaustivo le strutture, i compone
 /*ste robe sono buttate giù veramente come capita vanno cambiate*/
 Nella fase di sviluppo e implementazione di qualsiasi sistema complesso, l'architettura di deployment riveste un ruolo fondamentale nel garantire che le risorse tecnologiche siano distribuite in modo efficiente e affidabile nell'ambiente operativo. Questa sezione del documento si concentra sull'analisi e sulla progettazione della distribuzione delle risorse nel contesto del progetto "InnovaCity".
 
+#pagebreak()
 = Tracciamento dei requisiti
 In questa sezione si va a mostrare, secondo quanto riportato dal documento delle _Norme di progetto v2.0_, la soddisfazione dei singoli requisiti funzionali presenti, in base al tipo previsto e opportunamente classificato sotto.
 
