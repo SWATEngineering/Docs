@@ -510,7 +510,17 @@ Nella rappresentazione grafica, si utilizza una freccia vuota che punta dalla cl
                         caption: "Figura rappresentante la relazione di generalizzazione."
                 )
 
+===== Qualità architettura e progettazione
+
+La definizione dell'architettura del prodotto è affidata ai Progettisti. Questa serve da base per lo sviluppo del software e deve garantire che le varie componenti siano facilmente identificabili, coese e riutilizzabili. È importante rispettare i limiti di costo stabiliti per il progetto. Per garantire la qualità dell'architettura, i progettisti utilizzano diverse tecniche, come l'uso di pattern architetturali consolidati, vari tool e #glossary[framework] e l'adozione di ottime pratiche di documentazione. I progettisti, infine, devono garantire che la progettazione del software sia di alta qualità, sia in termini di funzionalità che di prestazioni, affidabilità, sicurezza,
+manutenibilità e usabilità.
+L'architettura deve soddisfare vari criteri:
         
+        - Soddisfazione dei requisiti elencati nel documento _Analisi dei Requisiti v2.0_;
+        - Tracciamento dei requisiti: l'attività di progettazione deve essere coerente con quanto descritto all'interno dell'_Analisi dei requisiti v2.0_;
+        - Utilizzo in modo efficace ed efficiente le risorse;
+        - Adozione di ottime pratiche documentative.
+
 
 
 ==== Codifica 
