@@ -90,7 +90,8 @@ L’_Analisi dei Requisiti v1.0_, redatto dagli Analisti, rappresenta un documen
         - *Definizione di requisiti*: individuazione dei requisiti obbligatori, desiderabili e opzionali e loro categorizzazione in:
                 - *Requisiti funzionali*: specificano le operazioni che il #glossary[sistema] deve essere in grado di eseguire;
                 - *Requisiti di qualità*: si concentrano sulla definizione degli standard e degli attributi che il software deve possedere per garantire prestazioni, affidabilità, usabilità e sicurezza ottimali;
-                - *Requisiti di vincolo*: delineano vincoli e limitazioni che il #glossary[sistema] deve rispettare. Possono includere restrizioni tecnologiche, normative o di risorse.
+                - *Requisiti di vincolo*: delineano vincoli e limitazioni che il #glossary[sistema] deve rispettare. Possono includere restrizioni tecnologiche, normative o di risorse;
+                - *Requisiti di prestazioni*: specificano le prestazioni o le capacità che il #glossary[sistema] deve soddisfare.
 
 ==== Piano di Progetto
 
@@ -342,9 +343,48 @@ I requisiti trovati hanno un codice univoco con la seguente sintassi:
         - *Tipo*:
                 - F: se funzionale;
                 - Q: se di qualità;
-                - V: se di vincolo.
+                - V: se di vincolo;
+                - P: se di prestazioni.
         - *Numero*:
                 per ogni requisito aggiunto il numero viene incrementato.
+
+===== Informazioni aggiuntive  
+
+All'interno del documento _Analisi dei Requisiti v1.0_ è importante organizzare le informazioni in modo strutturato per garantire una comprensione chiara e completa di ciascun requisito. Viene utilizzata una tabella per specificare le informazioni aggiuntive.
+Le tabelle vengono strutturate nel seguente modo:
+        - *Codice*: il codice del requisito;
+        - *Importanza*: l'importanza del requisito (obbligatorio, opzionale, desiderabile);
+        - *Descrizione*: breve descrizione per ridurre le ambiguità del requisito;
+        - *Fonte*: viene specificato la fonte da cui il requisito è stato tratto. Risulta utile per facilitare il tracciamento. La fonte per esempio può essere il Capitolato, un Verbale Esterno, _Norme di Progetto_ o i vari casi d'uso.
+
+Per costruire le tabelle è stata usata un'automazione in Typst, in cui bisogna solo aggiungere l'importanza, la descrizione e la fonte all'array di quella specifica categoria di requisito. Una funzione si occupa di generare il codice univoco del requisito.
+Esempio:
+`
+#let requisiti_vincolo = (
+    (
+  "Obbligatorio","La creazione di un simulatore di almeno una sorgente dati.","Capitolato",
+  )
+)
+
+#let requisiti_vincolo_con_codice = generate_requirements_array("V", requisiti_vincolo)
+#figure(
+requirements_table(requisiti_vincolo_con_codice)`
+
+generate_requirement_array è la funzione per generare il codice del requisito mentre requirements_table è la funzione per generare la tabella. 
+
+#figure(
+table(
+  columns: (auto, auto,auto,auto),
+  inset: 10pt,
+  align: horizon,
+  fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+  [*Codice*],[*Importanza*], [*Descrizione*],[*Fonti*],
+  [ROV1],[Obbligatorio],[La creazione di un simulatore di almeno una sorgente dati.],[Capitolato]
+  
+),
+caption: "Esempio tabella per requisiti")
+
+
 
 ===== Metriche
 
