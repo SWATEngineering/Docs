@@ -76,7 +76,7 @@ table(
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Tecnologia*],[*Descrizione*],[*Versione*],
       [Pydantic], [Libreria Python per la serializzazione degli oggetti e per la validazione dei dati, inoltre si caratterizza dalla capacità di forzare i tipi garantendo che i dati siano coerenti durante l'elaborazione.], [da definire], 
-      [Confluent Kafka], [Piattaforma di streaming di dati basata su Apache Kafka. È progettata per gestire e processare flussi di dati in tempo reale in modo scalabile e affidabile. *definzione da rivedere* ], [da definire]), 
+      [Confluent Kafka], [Libreria Python che fornisce gli strumenti necessari per produrre e consumare messaggi da Apache #glossary("Kafka"). ], [da definire]), 
 caption: [Tabella tecnologie per la la Codifica: Framework e librerie])
 === Database e servizi
 #figure(
@@ -87,9 +87,9 @@ table(
       [*Tecnologia*],[*Descrizione*],[*Versione*],
       [#glossary[Clickhouse]], [Sistema di gestione dei database colonnari, progettato per l'analisi dei dati ad alte prestazioni. È ottimizzato per eseguire query analitiche su grandi volumi di dati in modo efficiente.], [da definire], 
       [Apache #glossary[Kafka]], [Piattaforma di streaming di dati distribuita e scalabile, progettata per la gestione di flussi di dati in tempo reale. È ampiamente utilizzato per l'elaborazione di eventi, la messaggistica asincrona e la creazione di pipeline dati real time.], [da definire], 
-      [#glossary[Grafana]], [Piattaforma open source per il monitoraggio e l'analisi dei dati. Fornisce strumenti per la visualizzazione di metriche e log, la creazione di dashboard interattive e la generazione di avvisi in tempo reale.], [da inserire],  
-      [Grafana ClickHouse Data Source], [Plugin per Grafana che consente di interrogare e visualizzare i dati di ClickHouse in Grafana], [da inserire], 
-      [Docker], [Piattaforma open-source che permette di creare, distribuire e gestire applicazioni in contenitori software.], [da inserire]), 
+      [#glossary[Grafana]], [Piattaforma open source per il monitoraggio e l'analisi dei dati. Fornisce strumenti per la visualizzazione di metriche e log, la creazione di dashboard interattive e la generazione di avvisi in tempo reale.], [da definire],  
+      [Grafana ClickHouse Data Source], [Plugin per Grafana che consente di interrogare e visualizzare i dati di ClickHouse in Grafana], [da definire], 
+      [Docker], [Piattaforma open-source che permette di creare, distribuire e gestire applicazioni in contenitori software.], [da definire]), 
 caption: [Tabella tecnologie per la la Codifica: Database e servizi.])
 
 
@@ -105,7 +105,7 @@ caption: [Tabella tecnologie per l'analisi del codice.])
 
 
 = Architettura
-== Architettura generale 
+== Architettura implementativa generale 
 Questa sezione si propone di esplorare in modo esaustivo le strutture, i componenti e le interazioni che costituiscono il fondamento tecnologico del sistema. Questa analisi dettagliata mira a garantire una comprensione completa delle scelte architetturali adottate, fornendo così una base solida per lo sviluppo e l'implementazione.
 == Architettura simulatori
 /*già sai*/
