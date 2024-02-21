@@ -113,7 +113,7 @@ Si compone delle seguenti sezioni:
         - *Qualità di processo*: standard e procedure adottate per garantire la qualità durante lo sviluppo del progetto. Include informazioni sulle attività di gestione della qualità, le metodologie utilizzate, e come vengono misurati e migliorati i processi stessi;
         - *Qualità di prodotto*: standard, specifiche e caratteristiche che il prodotto deve soddisfare per essere considerato di qualità. Include anche le metriche e i criteri di valutazione utilizzati per misurare la qualità del prodotto;
         - *Specifiche dei test*: specifiche dettagliate dei test che verranno condotti durante lo sviluppo del progetto;
-        - *Cruscotto delle metriche*: resoconto delle attività di valutazione effettuate durante il progetto. Le valutazioni risultano fondamentali a tracciare l'andamento del progetto rispetto agli obiettivi e alle aspettative, e a identificare prontamente eventuali azioni correttive necessarie a garantire la qualità complessiva del progetto.
+        - *Cruscotto della qualità*: resoconto delle attività di valutazione effettuate durante il progetto. Le valutazioni risultano fondamentali a tracciare l'andamento del progetto rispetto agli obiettivi e alle aspettative, e a identificare prontamente eventuali azioni correttive necessarie a garantire la qualità complessiva del progetto.
 
 ==== Glossario
 
@@ -180,9 +180,11 @@ Il processo di sviluppo rappresenta la serie di attività che devono essere svol
         - *Progettazione*;
         - *Codifica*.
 
-=== Analisi dei Requisiti
+=== Attività
 
-==== Descrizione 
+==== Analisi dei Requisiti
+
+===== Descrizione 
 
 L'_Analisi dei Requisiti v1.0_ viene redatta dagli Analisti e contiene:
         - *Introduzione*: esplicita lo scopo del documento, lo scopo del prodotto e i riferimenti utilizzati;
@@ -191,7 +193,7 @@ L'_Analisi dei Requisiti v1.0_ viene redatta dagli Analisti e contiene:
         - *Casi d'uso*: individua gli attori e tutte le interazioni che possono avere con il #glossary[sistema]\;
         - *Requisiti*: le caratteristiche da soddisfare e le fonti da cui sono state estratte.
 
-==== Scopo   
+===== Scopo   
 
 Lo scopo dell'_Analisi dei Requisiti v1.0_ è definire in modo dettagliato e chiaro le funzionalità e le caratteristiche che il prodotto software deve soddisfare. Questo processo mira a comprendere a fondo le esigenze degli utenti, gli obiettivi del #glossary[sistema] e le condizioni in cui dovrà operare. Gli obiettivi principali dell'attività di analisi dei requisiti includono:
 
@@ -201,7 +203,7 @@ Lo scopo dell'_Analisi dei Requisiti v1.0_ è definire in modo dettagliato e chi
         - Facilitare la comunicazione tra fornitori e Proponente;
         - Fornire riferimenti per la verifica.
 
-==== Diagrammi #glossary[UML] dei casi d'uso
+===== Diagrammi #glossary[UML] dei casi d'uso
 
 Un diagramma dei casi d'uso rappresenta uno strumento di modellazione ampiamente impiegato per documentare e delineare le funzionalità di un #glossary[sistema]. La sua utilità risiede nel tracciare i flussi operativi attraverso una rappresentazione visiva, descrivendo il modo in cui un utente interagisce con il #glossary[sistema].
 
@@ -282,7 +284,7 @@ In ogni diagramma dei casi d'uso possono essere definite:
                 )
 
 
-==== Identificazione dei casi d'uso <c.uso>
+===== Identificazione dei casi d'uso <c.uso>
 
 Un caso d'uso rappresenta un singolo scenario o interazione tra un #glossary[attore] e il #glossary[sistema] software, focalizzandosi sulle azioni compiute dall'#glossary[attore] e sulle risposte del #glossary[sistema] a tali azioni.
 I casi d'uso sono identificati nel seguente modo:
@@ -294,7 +296,7 @@ I casi d'uso sono identificati nel seguente modo:
         - *Numero sottocaso*: numero del sottocaso del caso d'uso generale se presente;
         - *Titolo*: breve titolo che descrive il contesto del caso d'uso in questione.
 
-==== Struttura dei casi d'uso
+===== Struttura dei casi d'uso
 
 I casi d'uso sono strutturati nel seguente modo:
 
@@ -306,7 +308,7 @@ I casi d'uso sono strutturati nel seguente modo:
     - Estensioni, se presenti;
     - Specializzazioni, se presenti.
 
-==== Requisiti 
+===== Requisiti 
 
 I requisiti trovati vengono classificati nei seguenti modi:
 
@@ -320,9 +322,12 @@ I requisiti trovati vengono classificati nei seguenti modi:
 
     - *Vincolo*:
 
-        un requisito di vincolo è una restrizione o una condizione imposta al progetto.
+        un requisito di vincolo è una restrizione o una condizione imposta al progetto;
+    - *Prestazionale*: 
 
-==== Identificazione dei requisiti
+        un requisito di prestazione è una specifica che descrive le prestazioni o le capacità che il #glossary[sistema] deve soddisfare. 
+
+===== Identificazione dei requisiti
 
 I requisiti trovati hanno un codice univoco con la seguente sintassi:
 
@@ -341,7 +346,7 @@ I requisiti trovati hanno un codice univoco con la seguente sintassi:
         - *Numero*:
                 per ogni requisito aggiunto il numero viene incrementato.
 
-==== Metriche
+===== Metriche
 
 La definizione delle metriche seguenti si può trovare nella @metriche_qualità-prodotto.
 #figure(
@@ -357,9 +362,9 @@ table(
 caption:[Metriche sui requisiti],
 )
 
-=== Progettazione 
+==== Progettazione 
 
-==== Descrizione e scopo 
+===== Descrizione e scopo 
 
 L'attività di progettazione è affidata ai Progettisti, i quali devono definire le caratteristiche del prodotto finale basandosi sui requisiti specificati nel documento _Analisi dei Requisiti v1.0_. 
 La fase di progettazione segue l'analisi dei requisiti, dove sono definite le necessità e le aspettative per il prodotto. I Progettisti traducono queste informazioni in una struttura architetturale definita, organizzando il #glossary[sistema] in componenti specifiche e definendo le interazioni tra di esse. In questo modo, la progettazione costituisce un passo essenziale nel percorso di sviluppo, contribuendo a trasformare i requisiti in un piano tangibile per la creazione del prodotto finale.
@@ -387,7 +392,7 @@ Si definiscono tre sottoattività:
 
 
 
-==== Diagrammi #glossary[UML] delle classi    
+===== Diagrammi #glossary[UML] delle classi    
 
 Il diagramma delle classi è una tipologia di diagramma #glossary[UML] utile a rappresentare la struttura statica di un #glossary[sistema] orientato agli oggetti. Esso visualizza le classi del #glossary[sistema], insieme ai loro attributi e metodi, e le relazioni tra di esse. Le classi sono rappresentate tramite rettangoli divisi in tre sezioni: la parte superiore contiene il nome della classe, la sezione centrale include gli attributi della classe e quella inferiore ne elenca i metodi.
 
@@ -468,16 +473,16 @@ Nella rappresentazione grafica, si utilizza una freccia vuota che punta dalla cl
         
 
 
-=== Codifica 
+==== Codifica 
 
-==== Descrizione e scopo 
+===== Descrizione e scopo 
 
 L'attività di codifica viene svolta dai Programmatori, i quali sono responsabili della traduzione delle decisioni progettuali nel codice sorgente.
 I Programmatori operano all'interno di un contesto ben definito seguendo le linee guida stabilite durante la fase di progettazione architetturale. Questo approccio garantisce coerenza nell'implementazione del design e nell'applicazione delle #glossary[best practices], favorendo la creazione di codice robusto, manutenibile e di alta qualità.
 
 Nel perseguire gli obiettivi di qualità, i Programmatori sono tenuti a rispettare le metriche definite nel _Piano di Qualifica v1.0_.
 
-==== Aspettative 
+===== Aspettative 
 
 La fase di codifica è intrinsecamente orientata alla creazione di un prodotto software che soddisfi pienamente le esigenze e le aspettative della Proponente.
 Ci si aspetta che il codice sviluppato rispetti determinate caratteristiche:
@@ -487,14 +492,14 @@ Ci si aspetta che il codice sviluppato rispetti determinate caratteristiche:
         - Ottimizzazione delle prestazioni;
         - Supplemento di test per verificare la correttezza e il funzionamento.
 
-==== Stile di codifica   
+===== Stile di codifica   
 
 Il team #team ha deciso di adottare il linguaggio di programmazione #glossary[Python] per la creazione dei simulatori di sensori.
 Questa scelta tecnologica è motivata dalla familiarità che molti membri del team hanno con il linguaggio in questione, il che consente al team di concentrarsi direttamente sulla realizzazione del prodotto, risparmiando una quantità significativa risorse. 
 Inoltre, #glossary[Python] promuove uno stile di codifica uniforme e leggibile. La sua struttura rigida basata sull'indentazione agevola la comprensione della struttura del programma, contribuendo a una maggiore chiarezza all'interno del codice. 
 Il team si impegna ad utilizzare i seguenti stili di codifica:
 
-===== Lunghezza metodi  
+====== Lunghezza metodi  
 
 Sono da preferire metodi di lunghezza limitata per diverse ragioni tra cui:
         - Leggibilità;
@@ -503,20 +508,20 @@ Sono da preferire metodi di lunghezza limitata per diverse ragioni tra cui:
         - Testabilità; 
         - Analisi statica semplificata.
 
-===== Singola responsabilità   
+====== Singola responsabilità   
 
 Ogni classe o funzione deve avere un unico obiettivo ben definito. Quando ogni entità nel codice svolge un compito specifico, ciò garantisce che ci sia un motivo chiaro e singolare per apportare modifiche. Questo approccio non solo promuove la chiarezza e la manutenibilità del codice, ma contribuisce anche a ridurre la complessità ciclomatica del software.
 
 
-===== Parametri per metodo    
+====== Parametri per metodo    
 
 Preferire l'uso di metodi con un numero limitato di parametri quando possibile. Questo approccio offre diversi vantaggi che contribuiscono alla chiarezza, manutenibilità e testabilità del codice.
 
-===== Univocità dei nomi    
+====== Univocità dei nomi    
 
 Tutte le variabili, i metodi e le classi devono avere un nome che li distingue univocamente, per limitare la possibilità di ambiguità del codice.
 
-===== Type hint  
+====== Type hint  
 
 L'utilizzo dei type hint, ossia l'annotazione dei tipi di dati nelle firme delle funzioni o dei metodi, pratica comunemente utilizzata in #glossary[Python], contribuisce ad una migliore robustezza del codice fornendo alcuni vantaggi: 
 
@@ -527,12 +532,12 @@ L'utilizzo dei type hint, ossia l'annotazione dei tipi di dati nelle firme delle
 
 I type hint non impongono un ritorno specifico, ma forniscono informazioni chiare sui tipi di dati attesi nei parametri e nei risultati delle funzioni.
 
-===== Strumenti   
+====== Strumenti   
 
 Si è deciso di integrare il linter PEP8 come fondamentale strumento nel processo di sviluppo. Questo strumento svolge un ruolo di rilievo nel garantire la coerenza e l'adesione alle linee guida di formattazione del codice #glossary[Python], stabilite nella PEP 8, contribuendo in modo significativo a mantenere uno standard uniforme nella base di codice.
 
 
-==== Metriche
+===== Metriche
 
 La definizione delle metriche seguenti si può trovare nella @metriche_codifica.
 
