@@ -1056,6 +1056,18 @@ Nella sezione relativa ai test nel _Piano di Qualifica v1.0_ a ogni test viene a
 - *Passato*: il test ha dato esito positivo;  
 - *Non Passato*: il test ha dato esito negativo. 
 
+== Validazione 
+
+=== Descrizione e scopo  
+
+Il processo di validazione consiste nella conferma che il software sviluppato sia conforme ai requisiti e alle aspettative della Proponente.
+Lo scopo principale della validazione è garantire che il software sia correttamente implementato e funzioni correttamente nel contesto operativo previsto, fornendo un prodotto finale soddisfacente e conforme alle esigenze della Proponente.
+Inoltre, durante la validazione, devono essere soddisfatti tutti i requisiti previamente definiti, assicurando che il software risponda pienamente alle specifiche e alle richieste stabilite. 
+
+=== Test di accettazione  
+
+I test di accettazione sono condotti dai Verificatori in presenza della Proponente per assicurarsi che il software soddisfi i requisiti e le aspettative della Proponente stessa. Per la definizione dei vari test si rimanda al _Piano di Qualifica v2.0_. Gli eventuali problemi riscontrati durante i test vengono documentati e risolti prima che il software venga rilasciato ufficialmente. L'obiettivo finale dei test di accettazione è ottenere l'approvazione della Proponente, confermando che il software è pronto per essere utilizzato in produzione.
+Prima di richiedere il test, i Verificatori si preoccupano di eseguire i test di sistema in un ambiente identico a quello di installazione: è precondizione necessaria del collaudo che i test di sistema diano esito positivo.
 
 == Gestione della qualità 
 
