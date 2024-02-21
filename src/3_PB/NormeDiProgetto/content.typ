@@ -868,6 +868,45 @@ Questo impone quindi che, prima di andare ad effettuare la chiusura di una Pull 
 I Feature branch vengono aperti a partire dalle issue create nell'Issue Tracking System (vedi @its). Si procede poi ad associare una Pull request, a una o più issue collegate tra loro, per effettuare la verifica.
 
 Nel caso del #glossary[repository] InnovaCity, il branch main viene utilizzato per la pubblicazione di cambiamenti major, ovvero quando sono state implementate diverse funzionalità significative che contribuiscono all'avanzamento del progetto. In questa circostanza, è compito del Responsabile eseguire l'approvazione finale.
+
+==== Gerarchia file repository Docs 
+
+All'interno della cartella `src`, sono presenti 2 cartelle, contenenti altre sotto-cartelle, organizzate in questo modo (non sono presenti i file `.pdf` poiché l'automazione di Github Action si occupa lei di effettuare la compilazione automatica dei documenti e scaricare il tutto come artefatto):
+        
+        - *2_RTB*:      
+                - *AnalisiDeiRequisiti*;
+                - *Glossario*;
+                - *LetteraDiPresentazioneRTB*;
+                - *NormeDiProgetto*;
+                - *PianoDiProgetto*;
+                - *PianoDiQualifica*;
+                - *VerbaliEsterni*;
+                - *VerbaliInterni*.
+        - *3_PB*:
+                - *AnalisiDeiRequisiti*;
+                - *Glossario*;
+                - *LetteraDiPresentazioneRTB*;
+                - *ManualeUtente*;
+                - *NormeDiProgetto*;
+                - *PianoDiProgetto*;
+                - *PianoDiQualifica*;
+                - *SpecificheTecniche*;
+                - *VerbaliEsterni*;
+                - *VerbaliInterni*.
+        - *4_CA*:
+                - *AnalisiDeiRequisiti*;
+                - *Glossario*;
+                - *LetteraDiPresentazioneRTB*;
+                - *ManualeUtente*;
+                - *NormeDiProgetto*;
+                - *PianoDiProgetto*;
+                - *PianoDiQualifica*;
+                - *SpecificheTecniche*;
+                - *VerbaliEsterni*;
+                - *VerbaliInterni*.
+
+                
+
 === Automazioni
 
 ==== Sito vetrina   
