@@ -1207,6 +1207,8 @@ I ruoli assunti sono i seguenti:
          - Creazione dei diari di bordo;
          - Upload dei verbali esterni convalidati, tramite firma, dalla Proponente in una cartella apposita su Google Drive.
 
+Dopo l'#glossary[RTB] il diario di bordo si tiene ogni venerdì alle 15, pertanto il Responsabile è tenuto a creare le slide anche per il successivo diario di bordo, mentre chi lo presenta è il nuovo Responsabile, eletto nell'incontro interno del Venerdì.
+
 ==== Amministratore 
         
         Figura professionale con la responsabilità della creazione, manutenzione e ottimizzazione degli strumenti, delle risorse e dei processi necessari per il corretto svolgimento del progetto.
