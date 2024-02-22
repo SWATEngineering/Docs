@@ -519,7 +519,7 @@ Nella rappresentazione grafica, si utilizza una freccia vuota che punta dalla cl
 
 ===== Qualità architettura e progettazione
 
-La definizione dell'architettura del prodotto è affidata ai Progettisti. Questa serve da base per lo sviluppo del software e deve garantire che le varie componenti siano facilmente identificabili, coese e riutilizzabili. È importante rispettare i limiti di costo stabiliti per il progetto. Per garantire la qualità dell'architettura, i Progettisti possono fare affidamento su pattern architetturali consolidati e scelti opportunamente, vari tool e #glossary[framework] e ottime pratiche di documentazione. I Progettisti, infine, devono garantire che la progettazione del software sia di alta qualità, per garantire funzionalità, prestazioni, affidabilità, sicurezza,
+La definizione dell'architettura del prodotto è affidata ai Progettisti. Questa serve da base per lo sviluppo del software e deve garantire che le varie componenti siano facilmente identificabili, coese e riutilizzabili. Per garantire la qualità dell'architettura, i Progettisti possono fare affidamento su pattern architetturali consolidati e scelti opportunamente, vari tool e #glossary[framework] e ottime pratiche di documentazione. I Progettisti, infine, devono garantire che la progettazione del software sia di alta qualità, per garantire funzionalità, prestazioni, affidabilità, sicurezza,
 manutenibilità e usabilità.
 L'architettura deve soddisfare vari criteri:
         
