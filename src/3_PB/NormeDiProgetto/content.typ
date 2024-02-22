@@ -524,7 +524,7 @@ manutenibilità e usabilità.
 L'architettura deve soddisfare vari criteri:
         
         - Soddisfazione dei requisiti elencati nel documento _Analisi dei Requisiti v2.0_;
-        - Tracciamento dei requisiti: l'attività di progettazione deve essere coerente con quanto descritto all'interno dell'_Analisi dei requisiti v2.0_;
+        - Tracciamento dei requisiti: deve essere presente un tracciamento completo dei requisiti attraverso l'implementazione di una tabella che comprende il codice del requisito, la sua descrizione e un indicazione se è stato soddisfatto o meno. In aggiunta, è richiesto un grafico a torta che rappresenti la percentuale di requisiti soddisfatti rispetto al totale;
         - Utilizzo efficace ed efficiente delle risorse;
         - Adozione di ottime pratiche di documentazione, che vengono rispecchiate all'interno delle _Specifiche Tecniche_.
 
