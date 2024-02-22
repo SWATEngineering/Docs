@@ -64,6 +64,7 @@ table(
       align: (x, y) => (center, center, center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       /* TODO: piuttosto che mettere una descrizione generica, dovremmo andare a mettere come questa tecnologia ci viene incontro / ci è utile per sviluppare le funzionalità che dobbiamo sviluppare.*/
+      /*Giacomo D'Ovidio commenta: io sinceramente non so se andrei a specificare, credo poi ce ne sarà abbondantemente modo di parlarne nella parte relativa di design (Sezione 4), però bon come volete*/
       [*Tecnologia*],[*Descrizione*],[*Versione*],
       [#glossary[Python]], [Linguaggio di programmazione ad alto livello noto per la sua semplicità, ampiamente utilizzato nell'analisi dei dati, l'intelligenza artificiale, il calcolo scientifico e altro ancora.], [da definire], 
       [SQL], [Linguaggio standard per la gestione e la manipolazione dei database], [da definire], 
