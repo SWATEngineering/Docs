@@ -91,7 +91,7 @@ L’_Analisi dei Requisiti v1.0_, redatto dagli Analisti, rappresenta un documen
                 - *Requisiti funzionali*: specificano le operazioni che il #glossary[sistema] deve essere in grado di eseguire;
                 - *Requisiti di qualità*: si concentrano sulla definizione degli standard e degli attributi che il software deve possedere per garantire prestazioni, affidabilità, usabilità e sicurezza ottimali;
                 - *Requisiti di vincolo*: delineano vincoli e limitazioni che il #glossary[sistema] deve rispettare. Possono includere restrizioni tecnologiche, normative o di risorse;
-                - *Requisiti di prestazioni*: specificano le prestazioni o le capacità che il #glossary[sistema] deve soddisfare.
+                - *Requisiti di prestazioni*: specificano le capacità che il #glossary[sistema] deve possedere per soddisfare determinate prestazioni, come ad esempio velocità, scalabilità, utilizzo delle risorse, affidabilità, tolleranza agli errori e disponibilità.
 
 ==== Piano di Progetto
 
@@ -350,27 +350,34 @@ I requisiti trovati hanno un codice univoco con la seguente sintassi:
 
 ===== Informazioni aggiuntive  
 
-All'interno del documento _Analisi dei Requisiti v1.0_ è importante organizzare le informazioni in modo strutturato per garantire una comprensione chiara e completa di ciascun requisito. Viene utilizzata una tabella per specificare le informazioni aggiuntive.
+All'interno del documento _Analisi dei Requisiti v1.0_, è importante organizzare le informazioni in modo strutturato per garantire una comprensione chiara e completa di ciascun requisito. Viene dunque utilizzata una tabella per specificare le informazioni aggiuntive pertinenti ai requisiti di ciascun tipo.
 Le tabelle vengono strutturate nel seguente modo:
         - *Codice*: il codice del requisito;
         - *Importanza*: l'importanza del requisito (obbligatorio, opzionale, desiderabile);
-        - *Descrizione*: breve descrizione per ridurre le ambiguità del requisito;
-        - *Fonte*: viene specificato la fonte da cui il requisito è stato tratto. Risulta utile per facilitare il tracciamento. La fonte per esempio può essere il Capitolato, un Verbale Esterno, _Norme di Progetto_ o i vari casi d'uso.
+        - *Descrizione*: breve descrizione per ridurre le ambiguità del requisito e assicurarsi che sia atomico nella sua definizione;
+        - *Fonte*: viene specificata la fonte da cui il requisito è stato tratto, il che risulta particolarmente utile per facilitare il tracciamento dei requisiti. Possibili fonti includono il capitolato, un verbale esterno, le _Norme di Progetto_ o i vari casi d'uso.
 
-Per costruire le tabelle è stata usata un'automazione in Typst, in cui bisogna solo aggiungere l'importanza, la descrizione e la fonte all'array di quella specifica categoria di requisito. Una funzione si occupa di generare il codice univoco del requisito.
+Per costruire le tabelle è stata usata un'automazione in #glossary[Typst], che prende in input semplicemente l'importanza, la descrizione e la fonte del singolo requisito, utilizza una funzione apposita per generare il codice univoco del requisito e costruisce la tabella contenente tutti requisiti di una particolare categoria.
 Esempio:
+#set par(
+  justify: false,
+)
 `
 #let requisiti_vincolo = (
     (
-  "Obbligatorio","La creazione di un simulatore di almeno una sorgente dati.","Capitolato",
-  )
+        "Obbligatorio","La creazione di un simulatore di almeno una sorgente dati.","Capitolato",
+    )
 )
 
 #let requisiti_vincolo_con_codice = generate_requirements_array("V", requisiti_vincolo)
 #figure(
-requirements_table(requisiti_vincolo_con_codice)`
+requirements_table(requisiti_vincolo_con_codice)
+`
+#set par(
+  justify: true,
+)
 
-generate_requirement_array è la funzione per generare il codice del requisito mentre requirements_table è la funzione per generare la tabella. 
+"generate_requirement_array" è la funzione per generare il codice del requisito mentre "requirements_table" è la funzione per generare la tabella. 
 
 #figure(
 table(
@@ -512,14 +519,14 @@ Nella rappresentazione grafica, si utilizza una freccia vuota che punta dalla cl
 
 ===== Qualità architettura e progettazione
 
-La definizione dell'architettura del prodotto è affidata ai Progettisti. Questa serve da base per lo sviluppo del software e deve garantire che le varie componenti siano facilmente identificabili, coese e riutilizzabili. È importante rispettare i limiti di costo stabiliti per il progetto. Per garantire la qualità dell'architettura, i progettisti utilizzano diverse tecniche, come l'uso di pattern architetturali consolidati, vari tool e #glossary[framework] e l'adozione di ottime pratiche di documentazione. I progettisti, infine, devono garantire che la progettazione del software sia di alta qualità, sia in termini di funzionalità che di prestazioni, affidabilità, sicurezza,
+La definizione dell'architettura del prodotto è affidata ai Progettisti. Questa serve da base per lo sviluppo del software e deve garantire che le varie componenti siano facilmente identificabili, coese e riutilizzabili. È importante rispettare i limiti di costo stabiliti per il progetto. Per garantire la qualità dell'architettura, i Progettisti possono fare affidamento su pattern architetturali consolidati e scelti opportunamente, vari tool e #glossary[framework] e ottime pratiche di documentazione. I Progettisti, infine, devono garantire che la progettazione del software sia di alta qualità, per garantire funzionalità, prestazioni, affidabilità, sicurezza,
 manutenibilità e usabilità.
 L'architettura deve soddisfare vari criteri:
         
         - Soddisfazione dei requisiti elencati nel documento _Analisi dei Requisiti v2.0_;
         - Tracciamento dei requisiti: l'attività di progettazione deve essere coerente con quanto descritto all'interno dell'_Analisi dei requisiti v2.0_;
-        - Utilizzo in modo efficace ed efficiente le risorse;
-        - Adozione di ottime pratiche documentative.
+        - Utilizzo efficace ed efficiente delle risorse;
+        - Adozione di ottime pratiche di documentazione, che vengono rispecchiate all'interno delle _Specifiche Tecniche_.
 
 
 
@@ -623,7 +630,7 @@ I documenti che verranno prodotti sono:
         - _Norme di Progetto v2.0_;
         - _Piano di Progetto v2.0_;
         - _Piano di Qualifica v2.0_;
-        - _Analisi dei Requisiti v1.0_;
+        - _Analisi dei Requisiti v2.0_;
         - _Specifiche Tecniche v1.0_;
         - _Manuale Utente v1.0_;
         - _Glossario v2.0_;
@@ -704,9 +711,9 @@ Si compone di una tabella con l'intestazione:
         - *Descrizione*: cosa è stato modificato o aggiunto al file;
         - *Autore*: l'autore della modifica;
         - *Ruolo*: ruolo dell'autore al momento della modifica;
-        - *Verificatore*: il membro che si è occupato della revisione di quella specifica parte della modifica.
+        - *Verificatore*: il membro che si è occupato della revisione di quella modifica.
 
-Per quanto riguarda l'ultima colonna è stata aggiunta solamente dopo la revisione #glossary[RTB], pertanto le modifiche effettuate precedentemente l'#glossary[RTB] risultano essere vuote.
+Per quanto riguarda l'ultima colonna, è stata aggiunta solamente in seguito al feedback ricevuto durante la revisione #glossary[RTB]\; pertanto, le modifiche effettuate precedentemente l'#glossary[RTB], pur essendo state verificate, non riportano esplicitamente il membro che ha effettuato la revisione all'interno del registro.
 
 ==== Indice 
 
@@ -720,8 +727,8 @@ Si compongono principalmente di 2 sezioni:
         - *Partecipanti*: si indica data di inizio e fine incontro e il luogo in cui si è svolto. A seguire, i nomi dei partecipanti del team e la durata della presenza di ciascuno vengono rappresentati in forma tabellare. Se il verbale è esterno si indicano anche i partecipanti della Proponente;
         - *Sintesi dell'incontro*: Riassunto degli argomenti trattati durante la riunione.
 
-Per indicare i partecipanti presenti all'incontro si utilizza un file csv in cui per ogni riga abbiamo partecipante e durata della presenza separati da virgola, questo file viene poi incluso e convertito automaticamente in una tabella da #glossary[Typst]. 
-È presente il file `meta.typ` per indicare le variabili di inizio, fine incontro e luogo in cui si è svolto, basta andare a modificarle e automaticamente vengono riportate nel documento.
+Per indicare i partecipanti presenti all'incontro si utilizza un file csv, dove in ogni riga si ha il partecipante e la durata della sua presenza separati da virgola; questo file viene poi convertito automaticamente in una tabella da un'apposita funzione #glossary[Typst]. 
+Si utilizza inoltre il file `meta.typ` per indicare l'ora di inizio e fine incontro e luogo in cui si è svolto, è sufficiente modificarlo con i dati opportuni in modo che vengano automaticamente riportati nel documento.
 
 
 Il verbale esterno oltre alle sezioni sopra elencate ha una pagina per la convalida, attraverso firma, del documento.
@@ -741,7 +748,7 @@ Il verbale esterno oltre alle sezioni sopra elencate ha una pagina per la conval
                 - L'iniziale del termine "Proponente";
                 - Prima lettera di ogni elenco puntato.
         - *Monospace*:
-                - Per indicare parti di codice in #glossary[Typst] o in altri linguaggio.
+                - Per indicare parti di codice in #glossary[Typst] o in altri linguaggi.
 
 Nei verbali interni ed esterni non si usa la formattazione da glossario.
 
@@ -784,7 +791,7 @@ Le varie sigle relative ai documenti e al progetto sono le seguenti:
         - *Requirements and Technology Baseline* → *RTB*;
         - *Product Baseline* → *PB*;
         - *Customer Acceptance* → *CA*;
-        - *Proof of Concepts* → *PoC*.
+        - *Proof of Concept* → *PoC*.
      - *Ruoli*:
         - *Responsabile* → *Re*;
         - *Amministratore* → *Am*;
@@ -872,7 +879,7 @@ Nel caso del #glossary[repository] InnovaCity, il branch main viene utilizzato p
 
 ==== Gerarchia file repository Docs 
 
-All'interno della cartella `src`, sono presenti 2 cartelle, contenenti altre sotto-cartelle, organizzate in questo modo (non sono presenti i file `.pdf` poiché l'automazione di Github Action si occupa lei di effettuare la compilazione automatica dei documenti e scaricare il tutto come artefatto):
+All'interno della cartella `src`, sono presenti 2 cartelle organizzate nel modo seguente (non sono presenti i file compilati in formato `.pdf` poiché un'automazione Github Action si occupa di effettuare la compilazione automatica dei documenti e renderli disponibili all'interno di un artefatto):
         
         - *2_RTB*:      
                 - *AnalisiDeiRequisiti*;
@@ -910,7 +917,7 @@ All'interno della cartella `src`, sono presenti 2 cartelle, contenenti altre sot
 
 Breve elenco dei comandi Git che i membri del team #team utilizzano durante il progetto:
 
-        - `git clone URL_repo`: per clonare il repository git remoto in locale. Si preferisce la clonazione tramite SSH;
+        - `git clone URL_repo`: per clonare il #glossary[repository] git remoto in locale. Si preferisce la clonazione tramite SSH;
         - `git add .`: per aggiungere tutti i file modificati nell'area di staging, in caso non si vuole aggiungerli tutti specificare il nome del file; assicurarsi di essere nella cartella corretta;
         - `git commit -m "nome_messaggio"`: per registrare i cambiamenti effettuati; sono delle istantanee dello stato di progetto in un dato momento; `-m` specifica il messaggio del commit, e possibilmente deve essere una buona descrizione dei cambiamenti apportati;
         - `git push`: le modifiche locali registrate vengono inviati al branch remoto;
@@ -1394,7 +1401,7 @@ Il Responsabile ha il compito della stesura del verbale esterno, che viene succe
 I partecipanti hanno il dovere di:
         - Arrivare puntuali alle riunioni;
         - Comunicare al Responsabile, il prima possibile, eventuali ritardi o assenze;
-        - Partecipare attivamente agli argomenti dell’ordine del giorno;
+        - Partecipare attivamente agli argomenti dell’#glossary[ordine del giorno];
         - Mantenere un comportamento corretto durante tutta la riunione.
 
  
