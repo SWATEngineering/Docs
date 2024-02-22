@@ -16,7 +16,7 @@ L'obiettivo principale del presente documento è triplice: innanzitutto, motivar
 Alla luce del modello di #glossary("agile") individuato dal team, la redazione del documento segue un approccio iterativo. L'adeguatezza del documento e dell'architettura individuata viene costantemente monitorata e modificata sulla base dei requisiti e dei feedback ricevuti da parte della Proponente.
 
 == Scopo del prodotto
-Lo scopo del prodotto è la realizzazione di un sistema di persistenza dati e successiva visualizzazione di questi, provenienti da sensori dislocati geograficamente. Tale piattaforma all'#glossary("amministratore pubblico") di acquisire una panoramica completa delle condizioni della città, facilitando così la presa di decisioni informate e tempestive riguardo alla gestione delle risorse e all'implementazione di servizi.
+Lo scopo del prodotto è la realizzazione di un sistema di persistenza dati e successiva visualizzazione di questi, provenienti da sensori dislocati geograficamente. Tale piattaforma consentirà all'#glossary("amministratore pubblico") di acquisire una panoramica completa delle condizioni della città, facilitando così la presa di decisioni informate e tempestive riguardo alla gestione delle risorse e all'implementazione di servizi.
 
 == Glossario
 Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei documenti, viene fornito il _Glossario v1.0_, nel quale sono presenti tutte le definizioni di termini aventi uno specifico significato che vuole essere disambiguato. Tali termini, sono scritti in  corsivo e marcati con una G a pedice.
@@ -32,7 +32,7 @@ Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei d
 - _Analisi dei Requisiti v1.0_
 
 - Regolamento progetto didattico:
- #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf") [20/02/2024]
+#link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf") [20/02/2024]
 
 === Riferimenti informativi
 
