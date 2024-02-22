@@ -27,22 +27,22 @@ L'attività di inserimento di un termine nel glossario può considerarsi complet
 === Riferimenti normativi
         - *Capitolato d'appalto C6 - InnovaCity*:\
 
-                #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf")
+                #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf") (22-02-2024)
 
 === Riferimenti informativi
         - *#glossary[Documentazione] git*:\
-                #link("https://git-scm.com/docs")
+                #link("https://git-scm.com/docs") (22-02-2024)
 
         - *#glossary[Documentazione] GitHub*:\
-                #link("https://docs.github.com/en")
+                #link("https://docs.github.com/en") (22-02-2024)
 
         - *Materiale didattico del corso Metodi e Tecnologie per lo Sviluppo Software 2022/2023*:\
-                #link("https://stem.elearning.unipd.it/course/view.php?id=5359")
+                #link("https://stem.elearning.unipd.it/course/view.php?id=5359") (22-02-2024)
 
                 - Lezione 4: GIT;
                 - Laboratorio 2: GitHub Version Control System.
         - *#glossary[Documentazione] #glossary[Typst]*:\
-                #link("https://typst.app/docs")
+                #link("https://typst.app/docs") (22-02-2024)
 
 
 
@@ -764,6 +764,7 @@ Viene adottato il formato "DD-MM-YYYY":
 
 Per i link si usa la seguente formattazione e vanno sottolineati attraverso `\#show link: underline`:\
 #align(center)[`#link("https://example.com")`]
+Inoltre tra parentesi "()" deve essere presente la data di ultimo accesso al link.
 
 ==== Sigle 
 
@@ -1413,12 +1414,12 @@ Ciascun membro del gruppo assume la responsabilità di approfondire individualme
 
 Si riporta la lista delle guide e documentazione da prendere come riferimento:
 
-        - *#glossary[Typst]*: #link("https://typst.app/docs/");
+        - *#glossary[Typst]*: #link("https://typst.app/docs/") (22-02-2024);
         - *Github*: #link("https://docs.github.com/en");
-        - *#glossary[Python]*: #link("https://docs.python.org/3/");
-        - *#glossary[Grafana]*: #link("https://grafana.com/docs/grafana/latest/");
-        - *Apache #glossary[Kafka]*: #link("https://kafka.apache.org/20/documentation.html");
-        - *#glossary[Clickhouse]*: #link("https://clickhouse.com/docs").  
+        - *#glossary[Python]*: #link("https://docs.python.org/3/") (22-02-2024);
+        - *#glossary[Grafana]*: #link("https://grafana.com/docs/grafana/latest/") (22-02-2024);
+        - *Apache #glossary[Kafka]*: #link("https://kafka.apache.org/20/documentation.html") (22-02-2024);
+        - *#glossary[Clickhouse]*: #link("https://clickhouse.com/docs") (22-02-2024).  
 
 Questa lista non intende essere forzata, ciascun membro è libero di approfondire le proprie conoscenze utilizzando materiale aggiuntivo.
 Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri membri.
@@ -1506,7 +1507,7 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
                         - 80-89: Testo molto facile da leggere;
                         - 90-100: Testo estremamente facile da leggere. 
                 
-                Per calcolarlo si usa uno strumento online: #link("https://farfalla-project.org/readability_static/");
+                Per calcolarlo si usa uno strumento online: #link("https://farfalla-project.org/readability_static/") (22-02-2024);
 
         - *CO*: Correttezza Ortografica - numero errori grammaticali ed ortografici in un documento.
 
