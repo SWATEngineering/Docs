@@ -23,8 +23,8 @@ disambiguato. Tali termini, sono scritti in corsivo e marcati con una G a pedice
 
 === Riferimenti normativi
 - Capitolato C6 - InnovaCity: Smart city monitoring platform:
-#link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf")\
-#link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6p.pdf")
+#link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf") (22-02-2024)\
+#link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6p.pdf") (22-02-2024)
 
 - _Norme di Progetto v1.0_
 
@@ -33,13 +33,13 @@ disambiguato. Tali termini, sono scritti in corsivo e marcati con una G a pedice
 - _Verbale Esterno 06-12-2023_
 
 - Regolamento progetto didattico:
-#link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf")
+#link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf") (22-02-2024)
 
 === Riferimenti informativi
 Analisi dei requisiti - corso di Ingegneria del Software a.a. 2023/2024: \
-#link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T5.pdf") \
+#link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T5.pdf") (22-02-2024) \
 Cardin	Analisi e descrizione delle funzionalità: Use Case e relativi diagrammi (UML) - corso di Ingegneria del Software a.a. 2023/2024: \
-#link("https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20di%20Attivit%C3%A0.pdf")
+#link("https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20di%20Attivit%C3%A0.pdf") (22-02-2024)
 
 = Descrizione
 
@@ -1180,9 +1180,9 @@ Su Windows si richiede la versione Windows 10 o superiori, con processore 64 bit
 Per MAC, si richiede la versione minima 10.14 Mojave e una RAM minimale di 4GB.
 
 Fonte:
-  - *Docker*: #link("https://docs.docker.com/get-docker/");
-  - *WSL*: #link("https://learn.microsoft.com/it-it/windows/wsl/install");
-  - *Hyper-v*: #link("https://learn.microsoft.com/it-it/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v").
+  - *Docker*: #link("https://docs.docker.com/get-docker/") (22-02-2024);
+  - *WSL*: #link("https://learn.microsoft.com/it-it/windows/wsl/install") (22-02-2024);
+  - *Hyper-v*: #link("https://learn.microsoft.com/it-it/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v") (22-02-2024).
 
 #pagebreak()
 == Requisiti prestazionali
