@@ -27,22 +27,22 @@ L'attività di inserimento di un termine nel glossario può considerarsi complet
 === Riferimenti normativi
         - *Capitolato d'appalto C6 - InnovaCity*:\
 
-                #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf")
+                #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf") (22-02-2024)
 
 === Riferimenti informativi
         - *#glossary[Documentazione] git*:\
-                #link("https://git-scm.com/docs")
+                #link("https://git-scm.com/docs") (22-02-2024)
 
         - *#glossary[Documentazione] GitHub*:\
-                #link("https://docs.github.com/en")
+                #link("https://docs.github.com/en") (22-02-2024)
 
         - *Materiale didattico del corso Metodi e Tecnologie per lo Sviluppo Software 2022/2023*:\
-                #link("https://stem.elearning.unipd.it/course/view.php?id=5359")
+                #link("https://stem.elearning.unipd.it/course/view.php?id=5359") (22-02-2024)
 
                 - Lezione 4: GIT;
                 - Laboratorio 2: GitHub Version Control System.
         - *#glossary[Documentazione] #glossary[Typst]*:\
-                #link("https://typst.app/docs")
+                #link("https://typst.app/docs") (22-02-2024)
 
 
 
@@ -90,7 +90,8 @@ L’_Analisi dei Requisiti v1.0_, redatto dagli Analisti, rappresenta un documen
         - *Definizione di requisiti*: individuazione dei requisiti obbligatori, desiderabili e opzionali e loro categorizzazione in:
                 - *Requisiti funzionali*: specificano le operazioni che il #glossary[sistema] deve essere in grado di eseguire;
                 - *Requisiti di qualità*: si concentrano sulla definizione degli standard e degli attributi che il software deve possedere per garantire prestazioni, affidabilità, usabilità e sicurezza ottimali;
-                - *Requisiti di vincolo*: delineano vincoli e limitazioni che il #glossary[sistema] deve rispettare. Possono includere restrizioni tecnologiche, normative o di risorse.
+                - *Requisiti di vincolo*: delineano vincoli e limitazioni che il #glossary[sistema] deve rispettare. Possono includere restrizioni tecnologiche, normative o di risorse;
+                - *Requisiti di prestazioni*: specificano le capacità che il #glossary[sistema] deve possedere per soddisfare determinate prestazioni, come ad esempio velocità, scalabilità, utilizzo delle risorse, affidabilità, tolleranza agli errori e disponibilità.
 
 ==== Piano di Progetto
 
@@ -113,7 +114,7 @@ Si compone delle seguenti sezioni:
         - *Qualità di processo*: standard e procedure adottate per garantire la qualità durante lo sviluppo del progetto. Include informazioni sulle attività di gestione della qualità, le metodologie utilizzate, e come vengono misurati e migliorati i processi stessi;
         - *Qualità di prodotto*: standard, specifiche e caratteristiche che il prodotto deve soddisfare per essere considerato di qualità. Include anche le metriche e i criteri di valutazione utilizzati per misurare la qualità del prodotto;
         - *Specifiche dei test*: specifiche dettagliate dei test che verranno condotti durante lo sviluppo del progetto;
-        - *Cruscotto delle metriche*: resoconto delle attività di valutazione effettuate durante il progetto. Le valutazioni risultano fondamentali a tracciare l'andamento del progetto rispetto agli obiettivi e alle aspettative, e a identificare prontamente eventuali azioni correttive necessarie a garantire la qualità complessiva del progetto.
+        - *Cruscotto della qualità*: resoconto delle attività di valutazione effettuate durante il progetto. Le valutazioni risultano fondamentali a tracciare l'andamento del progetto rispetto agli obiettivi e alle aspettative, e a identificare prontamente eventuali azioni correttive necessarie a garantire la qualità complessiva del progetto.
 
 ==== Glossario
 
@@ -180,9 +181,11 @@ Il processo di sviluppo rappresenta la serie di attività che devono essere svol
         - *Progettazione*;
         - *Codifica*.
 
-=== Analisi dei Requisiti
+=== Attività
 
-==== Descrizione 
+==== Analisi dei Requisiti
+
+===== Descrizione 
 
 L'_Analisi dei Requisiti v1.0_ viene redatta dagli Analisti e contiene:
         - *Introduzione*: esplicita lo scopo del documento, lo scopo del prodotto e i riferimenti utilizzati;
@@ -191,7 +194,7 @@ L'_Analisi dei Requisiti v1.0_ viene redatta dagli Analisti e contiene:
         - *Casi d'uso*: individua gli attori e tutte le interazioni che possono avere con il #glossary[sistema]\;
         - *Requisiti*: le caratteristiche da soddisfare e le fonti da cui sono state estratte.
 
-==== Scopo   
+===== Scopo   
 
 Lo scopo dell'_Analisi dei Requisiti v1.0_ è definire in modo dettagliato e chiaro le funzionalità e le caratteristiche che il prodotto software deve soddisfare. Questo processo mira a comprendere a fondo le esigenze degli utenti, gli obiettivi del #glossary[sistema] e le condizioni in cui dovrà operare. Gli obiettivi principali dell'attività di analisi dei requisiti includono:
 
@@ -201,7 +204,7 @@ Lo scopo dell'_Analisi dei Requisiti v1.0_ è definire in modo dettagliato e chi
         - Facilitare la comunicazione tra fornitori e Proponente;
         - Fornire riferimenti per la verifica.
 
-==== Diagrammi #glossary[UML] dei casi d'uso
+===== Diagrammi #glossary[UML] dei casi d'uso
 
 Un diagramma dei casi d'uso rappresenta uno strumento di modellazione ampiamente impiegato per documentare e delineare le funzionalità di un #glossary[sistema]. La sua utilità risiede nel tracciare i flussi operativi attraverso una rappresentazione visiva, descrivendo il modo in cui un utente interagisce con il #glossary[sistema].
 
@@ -282,7 +285,7 @@ In ogni diagramma dei casi d'uso possono essere definite:
                 )
 
 
-==== Identificazione dei casi d'uso <c.uso>
+===== Identificazione dei casi d'uso <c.uso>
 
 Un caso d'uso rappresenta un singolo scenario o interazione tra un #glossary[attore] e il #glossary[sistema] software, focalizzandosi sulle azioni compiute dall'#glossary[attore] e sulle risposte del #glossary[sistema] a tali azioni.
 I casi d'uso sono identificati nel seguente modo:
@@ -294,7 +297,7 @@ I casi d'uso sono identificati nel seguente modo:
         - *Numero sottocaso*: numero del sottocaso del caso d'uso generale se presente;
         - *Titolo*: breve titolo che descrive il contesto del caso d'uso in questione.
 
-==== Struttura dei casi d'uso
+===== Struttura dei casi d'uso
 
 I casi d'uso sono strutturati nel seguente modo:
 
@@ -306,7 +309,7 @@ I casi d'uso sono strutturati nel seguente modo:
     - Estensioni, se presenti;
     - Specializzazioni, se presenti.
 
-==== Requisiti 
+===== Requisiti 
 
 I requisiti trovati vengono classificati nei seguenti modi:
 
@@ -320,9 +323,12 @@ I requisiti trovati vengono classificati nei seguenti modi:
 
     - *Vincolo*:
 
-        un requisito di vincolo è una restrizione o una condizione imposta al progetto.
+        un requisito di vincolo è una restrizione o una condizione imposta al progetto;
+    - *Prestazionale*: 
 
-==== Identificazione dei requisiti
+        un requisito di prestazione è una specifica che descrive le prestazioni o le capacità che il #glossary[sistema] deve soddisfare. 
+
+===== Identificazione dei requisiti
 
 I requisiti trovati hanno un codice univoco con la seguente sintassi:
 
@@ -337,11 +343,57 @@ I requisiti trovati hanno un codice univoco con la seguente sintassi:
         - *Tipo*:
                 - F: se funzionale;
                 - Q: se di qualità;
-                - V: se di vincolo.
+                - V: se di vincolo;
+                - P: se di prestazioni.
         - *Numero*:
                 per ogni requisito aggiunto il numero viene incrementato.
 
-==== Metriche
+===== Informazioni aggiuntive  
+
+All'interno del documento _Analisi dei Requisiti v1.0_, è importante organizzare le informazioni in modo strutturato per garantire una comprensione chiara e completa di ciascun requisito. Viene dunque utilizzata una tabella per specificare le informazioni aggiuntive pertinenti ai requisiti di ciascun tipo.
+Le tabelle vengono strutturate nel seguente modo:
+        - *Codice*: il codice del requisito;
+        - *Importanza*: l'importanza del requisito (obbligatorio, opzionale, desiderabile);
+        - *Descrizione*: breve descrizione per ridurre le ambiguità del requisito e assicurarsi che sia atomico nella sua definizione;
+        - *Fonte*: viene specificata la fonte da cui il requisito è stato tratto, il che risulta particolarmente utile per facilitare il tracciamento dei requisiti. Possibili fonti includono il capitolato, un verbale esterno, le _Norme di Progetto_ o i vari casi d'uso.
+
+Per costruire le tabelle è stata usata un'automazione in #glossary[Typst], che prende in input semplicemente l'importanza, la descrizione e la fonte del singolo requisito, utilizza una funzione apposita per generare il codice univoco del requisito e costruisce la tabella contenente tutti requisiti di una particolare categoria.
+Esempio:
+#set par(
+  justify: false,
+)
+`
+#let requisiti_vincolo = (
+    (
+        "Obbligatorio","La creazione di un simulatore di almeno una sorgente dati.","Capitolato",
+    )
+)
+
+#let requisiti_vincolo_con_codice = generate_requirements_array("V", requisiti_vincolo)
+#figure(
+requirements_table(requisiti_vincolo_con_codice)
+`
+#set par(
+  justify: true,
+)
+
+"generate_requirement_array" è la funzione per generare il codice del requisito mentre "requirements_table" è la funzione per generare la tabella. 
+
+#figure(
+table(
+  columns: (auto, auto,auto,auto),
+  inset: 10pt,
+  align: horizon,
+  fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+  [*Codice*],[*Importanza*], [*Descrizione*],[*Fonti*],
+  [ROV1],[Obbligatorio],[La creazione di un simulatore di almeno una sorgente dati.],[Capitolato]
+  
+),
+caption: "Esempio tabella per requisiti")
+
+
+
+===== Metriche
 
 La definizione delle metriche seguenti si può trovare nella @metriche_qualità-prodotto.
 #figure(
@@ -357,9 +409,9 @@ table(
 caption:[Metriche sui requisiti],
 )
 
-=== Progettazione 
+==== Progettazione 
 
-==== Descrizione e scopo 
+===== Descrizione e scopo 
 
 L'attività di progettazione è affidata ai Progettisti, i quali devono definire le caratteristiche del prodotto finale basandosi sui requisiti specificati nel documento _Analisi dei Requisiti v1.0_. 
 La fase di progettazione segue l'analisi dei requisiti, dove sono definite le necessità e le aspettative per il prodotto. I Progettisti traducono queste informazioni in una struttura architetturale definita, organizzando il #glossary[sistema] in componenti specifiche e definendo le interazioni tra di esse. In questo modo, la progettazione costituisce un passo essenziale nel percorso di sviluppo, contribuendo a trasformare i requisiti in un piano tangibile per la creazione del prodotto finale.
@@ -387,7 +439,7 @@ Si definiscono tre sottoattività:
 
 
 
-==== Diagrammi #glossary[UML] delle classi    
+===== Diagrammi #glossary[UML] delle classi    
 
 Il diagramma delle classi è una tipologia di diagramma #glossary[UML] utile a rappresentare la struttura statica di un #glossary[sistema] orientato agli oggetti. Esso visualizza le classi del #glossary[sistema], insieme ai loro attributi e metodi, e le relazioni tra di esse. Le classi sono rappresentate tramite rettangoli divisi in tre sezioni: la parte superiore contiene il nome della classe, la sezione centrale include gli attributi della classe e quella inferiore ne elenca i metodi.
 
@@ -465,19 +517,29 @@ Nella rappresentazione grafica, si utilizza una freccia vuota che punta dalla cl
                         caption: "Figura rappresentante la relazione di generalizzazione."
                 )
 
+===== Qualità architettura e progettazione
+
+La definizione dell'architettura del prodotto è affidata ai Progettisti. Questa serve da base per lo sviluppo del software e deve garantire che le varie componenti siano facilmente identificabili, coese e riutilizzabili. Per garantire la qualità dell'architettura, i Progettisti possono fare affidamento su pattern architetturali consolidati e scelti opportunamente, vari tool e #glossary[framework] e ottime pratiche di documentazione. I Progettisti, infine, devono garantire che la progettazione del software sia di alta qualità, per garantire funzionalità, prestazioni, affidabilità, sicurezza,
+manutenibilità e usabilità.
+L'architettura deve soddisfare vari criteri:
         
+        - Soddisfazione dei requisiti elencati nel documento _Analisi dei Requisiti v2.0_;
+        - Tracciamento dei requisiti: deve essere presente un tracciamento completo dei requisiti attraverso l'implementazione di una tabella che comprende il codice del requisito, la sua descrizione e un indicazione se è stato soddisfatto o meno. In aggiunta, è richiesto un grafico a torta che rappresenti la percentuale di requisiti soddisfatti rispetto al totale;
+        - Utilizzo efficace ed efficiente delle risorse;
+        - Adozione di ottime pratiche di documentazione, che vengono rispecchiate all'interno delle _Specifiche Tecniche_.
 
 
-=== Codifica 
 
-==== Descrizione e scopo 
+==== Codifica 
+
+===== Descrizione e scopo 
 
 L'attività di codifica viene svolta dai Programmatori, i quali sono responsabili della traduzione delle decisioni progettuali nel codice sorgente.
 I Programmatori operano all'interno di un contesto ben definito seguendo le linee guida stabilite durante la fase di progettazione architetturale. Questo approccio garantisce coerenza nell'implementazione del design e nell'applicazione delle #glossary[best practices], favorendo la creazione di codice robusto, manutenibile e di alta qualità.
 
 Nel perseguire gli obiettivi di qualità, i Programmatori sono tenuti a rispettare le metriche definite nel _Piano di Qualifica v1.0_.
 
-==== Aspettative 
+===== Aspettative 
 
 La fase di codifica è intrinsecamente orientata alla creazione di un prodotto software che soddisfi pienamente le esigenze e le aspettative della Proponente.
 Ci si aspetta che il codice sviluppato rispetti determinate caratteristiche:
@@ -487,14 +549,14 @@ Ci si aspetta che il codice sviluppato rispetti determinate caratteristiche:
         - Ottimizzazione delle prestazioni;
         - Supplemento di test per verificare la correttezza e il funzionamento.
 
-==== Stile di codifica   
+===== Stile di codifica   
 
 Il team #team ha deciso di adottare il linguaggio di programmazione #glossary[Python] per la creazione dei simulatori di sensori.
 Questa scelta tecnologica è motivata dalla familiarità che molti membri del team hanno con il linguaggio in questione, il che consente al team di concentrarsi direttamente sulla realizzazione del prodotto, risparmiando una quantità significativa risorse. 
 Inoltre, #glossary[Python] promuove uno stile di codifica uniforme e leggibile. La sua struttura rigida basata sull'indentazione agevola la comprensione della struttura del programma, contribuendo a una maggiore chiarezza all'interno del codice. 
 Il team si impegna ad utilizzare i seguenti stili di codifica:
 
-===== Lunghezza metodi  
+====== Lunghezza metodi  
 
 Sono da preferire metodi di lunghezza limitata per diverse ragioni tra cui:
         - Leggibilità;
@@ -503,20 +565,20 @@ Sono da preferire metodi di lunghezza limitata per diverse ragioni tra cui:
         - Testabilità; 
         - Analisi statica semplificata.
 
-===== Singola responsabilità   
+====== Singola responsabilità   
 
 Ogni classe o funzione deve avere un unico obiettivo ben definito. Quando ogni entità nel codice svolge un compito specifico, ciò garantisce che ci sia un motivo chiaro e singolare per apportare modifiche. Questo approccio non solo promuove la chiarezza e la manutenibilità del codice, ma contribuisce anche a ridurre la complessità ciclomatica del software.
 
 
-===== Parametri per metodo    
+====== Parametri per metodo    
 
 Preferire l'uso di metodi con un numero limitato di parametri quando possibile. Questo approccio offre diversi vantaggi che contribuiscono alla chiarezza, manutenibilità e testabilità del codice.
 
-===== Univocità dei nomi    
+====== Univocità dei nomi    
 
 Tutte le variabili, i metodi e le classi devono avere un nome che li distingue univocamente, per limitare la possibilità di ambiguità del codice.
 
-===== Type hint  
+====== Type hint  
 
 L'utilizzo dei type hint, ossia l'annotazione dei tipi di dati nelle firme delle funzioni o dei metodi, pratica comunemente utilizzata in #glossary[Python], contribuisce ad una migliore robustezza del codice fornendo alcuni vantaggi: 
 
@@ -527,12 +589,12 @@ L'utilizzo dei type hint, ossia l'annotazione dei tipi di dati nelle firme delle
 
 I type hint non impongono un ritorno specifico, ma forniscono informazioni chiare sui tipi di dati attesi nei parametri e nei risultati delle funzioni.
 
-===== Strumenti   
+====== Strumenti   
 
 Si è deciso di integrare il linter PEP8 come fondamentale strumento nel processo di sviluppo. Questo strumento svolge un ruolo di rilievo nel garantire la coerenza e l'adesione alle linee guida di formattazione del codice #glossary[Python], stabilite nella PEP 8, contribuendo in modo significativo a mantenere uno standard uniforme nella base di codice.
 
 
-==== Metriche
+===== Metriche
 
 La definizione delle metriche seguenti si può trovare nella @metriche_codifica.
 
@@ -565,11 +627,13 @@ La #glossary[documentazione] è l'insieme di informazioni rappresentate sotto fo
 
 I documenti che verranno prodotti sono:
 
-        - _Norme di Progetto v1.0_;
-        - _Piano di Progetto v1.0_;
-        - _Piano di Qualifica v1.0_;
-        - _Analisi dei Requisiti v1.0_;
-        - _Glossario v1.0_;
+        - _Norme di Progetto v2.0_;
+        - _Piano di Progetto v2.0_;
+        - _Piano di Qualifica v2.0_;
+        - _Analisi dei Requisiti v2.0_;
+        - _Specifiche Tecniche v1.0_;
+        - _Manuale Utente v1.0_;
+        - _Glossario v2.0_;
         - _Verbali_:
                 + _Interni_;
                 + _Esterni_.
@@ -580,11 +644,11 @@ Ogni documento segue le fasi del seguente #glossary[workflow]:
 + Si crea un branch per lo sviluppo del documento nell'apposita #glossary[repository] Docs e si mette in uso;
 + Si copia dall'apposita #glossary[repository] `Templates` il template relativo al file che si deve redigere, e lo si inserisce nella cartella appropriata;
 + Si redige il documento o una sua sezione. Nel caso di documenti nuovi, in cui è necessario un elevato parallelismo di lavoro, è possibile usare Google Drive per la prima stesura e successivamente caricare il documento all'interno del branch;
-+ Nel file `changelog.typ` si aggiunge una riga in coda, secondo il seguente formato: `<versione>,<data-modifica>,<descrizione-modifica>,<nome-autore>,<ruolo-autore>`; la versione segue le regole descritte nella @versionamento;
++ Nel file `changelog.typ` si aggiunge una riga in coda, secondo il seguente formato: `<versione>,<data-modifica>,<descrizione-modifica>,<nome-autore>,<ruolo-autore>,<verificatore>`; la versione segue le regole descritte nella @versionamento;
 + Si esegue la commit sul branch creato;
 + Si apre una pull request dal branch appena creato verso il branch `main`: se il documento non è pronto per la verifica, ma ha bisogno di ulteriori modifiche, si apre la pull request in modalità `draft`, altrimenti in modalità normale, spostando la issue nell'apposita #glossary[corsia] di stato "Ready to Review";
 + Per ulteriori modifiche richieste dal/dai verificatore/i si ripetono i punti, in ordine, dal punto 3 al punto 5;
-+ Si elimina, solo quando la pull request viene chiusa o risolta, il branch creato.
++ Si elimina il branch creato, solo quando la pull request viene chiusa o risolta.
 
 La modifica di un documento avviene allo stesso modo, saltando il passo 2.
 Ogni cambiamento di stato è accompagnato dal conseguente movimento della issue, associata allo sviluppo, attraverso le diverse corsie dell'issue tracking system.
@@ -646,7 +710,10 @@ Si compone di una tabella con l'intestazione:
         - *Data*: data della modifica apportata;
         - *Descrizione*: cosa è stato modificato o aggiunto al file;
         - *Autore*: l'autore della modifica;
-        - *Ruolo*: ruolo dell'autore al momento della modifica.
+        - *Ruolo*: ruolo dell'autore al momento della modifica;
+        - *Verificatore*: il membro che si è occupato della revisione di quella modifica.
+
+Per quanto riguarda l'ultima colonna, è stata aggiunta solamente in seguito al feedback ricevuto durante la revisione #glossary[RTB]\; pertanto, le modifiche effettuate precedentemente l'#glossary[RTB], pur essendo state verificate, non riportano esplicitamente il membro che ha effettuato la revisione all'interno del registro.
 
 ==== Indice 
 
@@ -659,6 +726,9 @@ I verbali differiscono leggermente da un documento ufficiale, in quanto non evol
 Si compongono principalmente di 2 sezioni:
         - *Partecipanti*: si indica data di inizio e fine incontro e il luogo in cui si è svolto. A seguire, i nomi dei partecipanti del team e la durata della presenza di ciascuno vengono rappresentati in forma tabellare. Se il verbale è esterno si indicano anche i partecipanti della Proponente;
         - *Sintesi dell'incontro*: Riassunto degli argomenti trattati durante la riunione.
+
+Per indicare i partecipanti presenti all'incontro si utilizza un file csv, dove in ogni riga si ha il partecipante e la durata della sua presenza separati da virgola; questo file viene poi convertito automaticamente in una tabella da un'apposita funzione #glossary[Typst]. 
+Si utilizza inoltre il file `meta.typ` per indicare l'ora di inizio e fine incontro e luogo in cui si è svolto, è sufficiente modificarlo con i dati opportuni in modo che vengano automaticamente riportati nel documento.
 
 
 Il verbale esterno oltre alle sezioni sopra elencate ha una pagina per la convalida, attraverso firma, del documento.
@@ -677,6 +747,8 @@ Il verbale esterno oltre alle sezioni sopra elencate ha una pagina per la conval
                 - Le iniziali dei ruoli svolti dai componenti del gruppo;
                 - L'iniziale del termine "Proponente";
                 - Prima lettera di ogni elenco puntato.
+        - *Monospace*:
+                - Per indicare parti di codice in #glossary[Typst] o in altri linguaggi.
 
 Nei verbali interni ed esterni non si usa la formattazione da glossario.
 
@@ -694,6 +766,43 @@ Viene adottato il formato "DD-MM-YYYY":
         - DD: giorno con 2 cifre;
         - MM: mese con 2 cifre;
         - YYYY: anno con 4 cifre.
+
+==== Link 
+
+Per i link si usa la seguente formattazione e vanno sottolineati attraverso `\#show link: underline`:\
+#align(center)[`#link("https://example.com")`]
+Inoltre tra parentesi "()" deve essere presente la data di ultimo accesso al link.
+
+==== Sigle 
+
+Le varie sigle relative ai documenti e al progetto sono le seguenti: 
+
+     - *Documentazione*:
+        - Analisi dei Requisiti → *AdR*;
+        - Norme di Progetto → *NdP*;
+        - Piano di Progetto → *PdP*;
+        - Piano di Qualifica → *PdQ*;
+        - Manuale Utente → *MU*;
+        - Specifiche Tecniche → *ST*;
+        - Verbale Interno → *VI*;
+        - Verbale Esterno → *VE*;
+        - Glossario → *Gls*.
+     - *Progetto*:
+        - Requirements and Technology Baseline → *RTB*;
+        - Product Baseline → *PB*;
+        - Customer Acceptance → *CA*;
+        - Proof of Concept → *PoC*.
+     - *Ruoli*:
+        - Responsabile → *Re*;
+        - Amministratore → *Am*;
+        - Analista → *An*;
+        - Progettista → *Pt*;
+        - Programmatore → *Pr*;
+        - Verificatore → *Ve*.
+        
+
+
+
 
 === Strumenti 
 
@@ -768,13 +877,69 @@ I Feature branch vengono aperti a partire dalle issue create nell'Issue Tracking
 
 Nel caso del #glossary[repository] InnovaCity, il branch main viene utilizzato per la pubblicazione di cambiamenti major, ovvero quando sono state implementate diverse funzionalità significative che contribuiscono all'avanzamento del progetto. In questa circostanza, è compito del Responsabile eseguire l'approvazione finale.
 
-=== Sito vetrina   
+==== Gerarchia file #glossary[repository] Docs 
+
+All'interno della cartella `src`, sono presenti 2 cartelle organizzate nel modo seguente (non sono presenti i file compilati in formato `.pdf` poiché un'automazione Github Action si occupa di effettuare la compilazione automatica dei documenti e renderli disponibili all'interno di un artefatto):
+        
+          - *2_RTB*:      
+                - AnalisiDeiRequisiti;
+                - Glossario;
+                - LetteraDiPresentazioneRTB;
+                - NormeDiProgetto;
+                - PianoDiProgetto;
+                - PianoDiQualifica;
+                - VerbaliEsterni;
+                - VerbaliInterni.
+        - *3_PB*:
+                - AnalisiDeiRequisiti;
+                - Glossario;
+                - LetteraDiPresentazionePB;
+                - ManualeUtente;
+                - NormeDiProgetto;
+                - PianoDiProgetto;
+                - PianoDiQualifica;
+                - SpecificheTecniche;
+                - VerbaliEsterni;
+                - VerbaliInterni.
+        - *4_CA*:
+                - AnalisiDeiRequisiti;
+                - Glossario;
+                - LetteraDiPresentazioneCA;
+                - ManualeUtente;
+                - NormeDiProgetto;
+                - PianoDiProgetto;
+                - PianoDiQualifica;
+                - SpecificheTecniche;
+                - VerbaliEsterni;
+                - VerbaliInterni.
+
+=== Comandi beginner github  
+
+Breve elenco dei comandi Git che i membri del team #team utilizzano durante il progetto:
+
+        - `git clone URL_repo`: per clonare il #glossary[repository] git remoto in locale. Si preferisce la clonazione tramite SSH;
+        - `git add .`: per aggiungere tutti i file modificati all'area di staging; in caso non si voglia aggiungerli tutti, occorre specificare il nome di ciascun file da aggiungere singolarmente, assicurandosi anche di essere nella cartella corretta;
+        - `git commit -m "nome_messaggio"`: per registrare i cambiamenti apportati ad un determinato prodotto, documentale o software; i commit possono essere visti come istantanee dello stato di un prodotto in un dato momento. `-m` specifica il messaggio del commit, e deve essere una descrizione breve ma quanto più dettagliata dei cambiamenti apportati;
+        - `git push`: le modifiche locali registrate vengono inviate al branch remoto;
+        - `git pull`: per importare le modifiche effettuate su un branch remoto all'interno del branch locale corrispondente;
+        - `git pull --rebase origin nome_branch`: in caso più persone stiano lavorando allo stesso branch e si verifichino conflict merge al momento del `git pull`, fa il rebase del branch locale corrente per ottenere la linea cronologica dei vari commit eseguiti e aggiornarlo rispetto alla #glossary[repository] remota;
+        - `git fetch origin`: per recuperare tutti i riferimenti remoti;
+        - `git rebase origin/main`: per fare il rebase in caso il main riceva aggiornamenti importanti, in modo che vengano importati all'interno del branch di lavoro corrente;
+        - `git branch nomenuovobranch`: per creare nuovo branch;
+        - `git checkout nomebranch`: per spostarsi tra i vari branch;
+        - `git stash`: per scartare le modifiche in area di staging.
+
+Per effettuare il merge nel main  si utilizza l'interfaccia di Github.  
+
+=== Automazioni
+
+==== Sito vetrina   
 
 Il sito vetrina consultabile al seguente link #link("https://swatengineering.github.io/") è progettato per garantire un'esperienza aggiornata e intuitiva agli utenti. Grazie all'integrazione di una GitHub Action, il sito si aggiorna automaticamente ogni volta che vengono apportate modifiche al branch principale "main" del #glossary[repository] Docs.
 Lo script, realizzato in JavaScript, avvia una richiesta GET a un server esterno per ottenere la struttura aggiornata delle directory e dei file. Questa operazione consente al sito di rimanere sempre allineato con le modifiche apportate al #glossary[repository] principale.
 Per garantire la coerenza e la tempestività delle informazioni, il servizio esterno esegue un aggiornamento periodico, ogni 15 minuti. Questo processo automatico consente al sito di riflettere dinamicamente qualsiasi modifica rilevante nel #glossary[repository] Docs, garantendo un'esperienza utente sempre aggiornata e completa.
 
-=== Controllo termini glossario    
+==== Controllo termini glossario    
 
 È stato sviluppato uno script in #glossary[Python] per verificare la corrispondenza tra i termini presenti in un documento e quelli presenti nel _Glossario v1.0_.
 Lo script, utilizzando espressioni regolari, confronta i termini indicati nei documenti, formattati secondo lo standard del glossario, con quelli presenti nel _Glossario_. In presenza di discrepanze, genera un messaggio di errore specificando i termini mancanti nel _Glossario_. In caso contrario, l'esecuzione avviene senza problemi, indicando che i termini nel documento sono in linea con quelli del _Glossario v1.0_.
@@ -900,6 +1065,18 @@ Nella sezione relativa ai test nel _Piano di Qualifica v1.0_ a ogni test viene a
 - *Passato*: il test ha dato esito positivo;  
 - *Non Passato*: il test ha dato esito negativo. 
 
+== Validazione 
+
+=== Descrizione e scopo  
+
+Il processo di validazione è un processo di supporto il cui obiettivo primario è ottenere la conferma che il software sviluppato rispetti le aspettative della Proponente.
+Lo scopo principale della validazione è quindi garantire che il software sia implementato in maniera adeguata e che funzioni correttamente nel contesto operativo previsto, fornendo un prodotto finale soddisfacente e conforme alle esigenze della Proponente.
+Inoltre, durante la validazione, devono essere soddisfatti tutti i requisiti previamente definiti, assicurando che il software risponda pienamente alle specifiche e alle richieste stabilite. 
+
+=== Test di accettazione  
+
+I test di accettazione sono condotti dai Verificatori in presenza della Proponente per assicurarsi che il software soddisfi i requisiti e le aspettative della Proponente stessa. Per la definizione dei vari test si rimanda al _Piano di Qualifica v2.0_. Gli eventuali problemi riscontrati durante i test vengono documentati e risolti prima che il software venga rilasciato ufficialmente. L'obiettivo finale dei test di accettazione è ottenere l'approvazione della Proponente, confermando che il software è pronto per essere utilizzato in produzione.
+Prima di effettuare i test di accettazione, i Verificatori hanno la responsabilità di eseguire i test di sistema in un ambiente identico a quello di installazione: è precondizione necessaria del collaudo che i test di sistema diano esito positivo.
 
 == Gestione della qualità 
 
@@ -1010,8 +1187,8 @@ L'elaborazione comprende la creazione di un DataFrame consolidato che rappresent
 
 Per visualizzare i dati aggiornati relativi a ciascuno #glossary[sprint], è possibile utilizzare le seguenti funzioni all'interno del file:
 
-\#rendicontazioneOreAPosteriori(sprintNumber: "number")
-\#rendicontazioneCostiAPosteriori(sprintNumber: "number")
+`\#rendicontazioneOreAPosteriori(sprintNumber: "number")
+\#rendicontazioneCostiAPosteriori(sprintNumber: "number")`
 
 Dove "number" rappresenta il numero a 2 cifre, specifico dello #glossary[sprint] di interesse. Queste funzioni consentono di ottenere report aggiornati sulla distribuzione delle ore per ruolo e persona, nonché sui costi associati, semplificando la gestione.
 
@@ -1036,6 +1213,8 @@ I ruoli assunti sono i seguenti:
          - Stesura e e avanzamento del documento “_Piano di progetto_”;
          - Creazione dei diari di bordo;
          - Upload dei verbali esterni convalidati, tramite firma, dalla Proponente in una cartella apposita su Google Drive.
+
+Dopo l'#glossary[RTB] il diario di bordo si tiene ogni venerdì alle 15, pertanto il Responsabile è tenuto a creare le slide anche per il successivo diario di bordo, mentre chi lo presenta è il nuovo Responsabile, eletto nell'incontro interno del Venerdì.
 
 ==== Amministratore 
         
@@ -1170,7 +1349,7 @@ Ogni rischio viene identificato da un codice univoco avente la seguente struttur
 
 #pagebreak()
 
-=== Procedure comunicative 
+=== Comunicazione e incontri
 
 ==== Gestione delle comunicazioni
 
@@ -1217,6 +1396,14 @@ Negli incontri esterni i partecipanti includono i membri del team e i referenti 
 In aggiunta, è possibile richiedere sessioni di formazione mirate su tecnologie specifiche, offrendo al team l'opportunità di approfondire la comprensione di una particolare tecnologia, imparare le #glossary[best practices] e acquisire competenze più avanzate.
 Il Responsabile ha il compito della stesura del verbale esterno, che viene successivamente convalidato, con firma, dalla Proponente.
 
+===== Doveri dei partecipanti 
+
+I partecipanti hanno il dovere di:
+        - Arrivare puntuali alle riunioni;
+        - Comunicare al Responsabile, il prima possibile, eventuali ritardi o assenze;
+        - Partecipare attivamente agli argomenti dell’#glossary[ordine del giorno];
+        - Mantenere un comportamento corretto durante tutta la riunione.
+
  
 
 #pagebreak()
@@ -1236,12 +1423,12 @@ Ciascun membro del gruppo assume la responsabilità di approfondire individualme
 
 Si riporta la lista delle guide e documentazione da prendere come riferimento:
 
-        - *#glossary[Typst]*: #link("https://typst.app/docs/");
+        - *#glossary[Typst]*: #link("https://typst.app/docs/") (22-02-2024);
         - *Github*: #link("https://docs.github.com/en");
-        - *#glossary[Python]*: #link("https://docs.python.org/3/");
-        - *#glossary[Grafana]*: #link("https://grafana.com/docs/grafana/latest/");
-        - *Apache #glossary[Kafka]*: #link("https://kafka.apache.org/20/documentation.html");
-        - *#glossary[Clickhouse]*: #link("https://clickhouse.com/docs").  
+        - *#glossary[Python]*: #link("https://docs.python.org/3/") (22-02-2024);
+        - *#glossary[Grafana]*: #link("https://grafana.com/docs/grafana/latest/") (22-02-2024);
+        - *Apache #glossary[Kafka]*: #link("https://kafka.apache.org/20/documentation.html") (22-02-2024);
+        - *#glossary[Clickhouse]*: #link("https://clickhouse.com/docs") (22-02-2024).  
 
 Questa lista non intende essere forzata, ciascun membro è libero di approfondire le proprie conoscenze utilizzando materiale aggiuntivo.
 Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri membri.
@@ -1329,7 +1516,7 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
                         - 80-89: Testo molto facile da leggere;
                         - 90-100: Testo estremamente facile da leggere. 
                 
-                Per calcolarlo si usa uno strumento online: #link("https://farfalla-project.org/readability_static/");
+                Per calcolarlo si usa uno strumento online: #link("https://farfalla-project.org/readability_static/") (22-02-2024);
 
         - *CO*: Correttezza Ortografica - numero errori grammaticali ed ortografici in un documento.
 
