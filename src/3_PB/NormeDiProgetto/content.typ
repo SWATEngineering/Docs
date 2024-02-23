@@ -778,27 +778,27 @@ Inoltre tra parentesi "()" deve essere presente la data di ultimo accesso al lin
 Le varie sigle relative ai documenti e al progetto sono le seguenti: 
 
      - *Documentazione*:
-        - *Analisi dei Requisiti* → *AdR*;
-        - *Norme di Progetto* → *NdP*;
-        - *Piano di Progetto* → *PdP*;
-        - *Piano di Qualifica* → *PdQ*;
-        - *Manuale Utente* → *MU*;
-        - *Specifiche Tecniche* → *ST*;
-        - *Verbale Interno* → *VI*;
-        - *Verbale Esterno* → *VE*;
-        - *Glossario* → *Gls*.
+        - Analisi dei Requisiti → *AdR*;
+        - Norme di Progetto → *NdP*;
+        - Piano di Progetto → *PdP*;
+        - Piano di Qualifica → *PdQ*;
+        - Manuale Utente → *MU*;
+        - Specifiche Tecniche → *ST*;
+        - Verbale Interno → *VI*;
+        - Verbale Esterno → *VE*;
+        - Glossario → *Gls*.
      - *Progetto*:
-        - *Requirements and Technology Baseline* → *RTB*;
-        - *Product Baseline* → *PB*;
-        - *Customer Acceptance* → *CA*;
-        - *Proof of Concept* → *PoC*.
+        - Requirements and Technology Baseline → *RTB*;
+        - Product Baseline → *PB*;
+        - Customer Acceptance → *CA*;
+        - Proof of Concept → *PoC*.
      - *Ruoli*:
-        - *Responsabile* → *Re*;
-        - *Amministratore* → *Am*;
-        - *Analista* → *An*;
-        - *Progettista* → *Pt*;
-        - *Programmatore* → *Pr*;
-        - *Verificatore* → *Ve*.
+        - Responsabile → *Re*;
+        - Amministratore → *Am*;
+        - Analista → *An*;
+        - Progettista → *Pt*;
+        - Programmatore → *Pr*;
+        - Verificatore → *Ve*.
         
 
 
@@ -877,54 +877,54 @@ I Feature branch vengono aperti a partire dalle issue create nell'Issue Tracking
 
 Nel caso del #glossary[repository] InnovaCity, il branch main viene utilizzato per la pubblicazione di cambiamenti major, ovvero quando sono state implementate diverse funzionalità significative che contribuiscono all'avanzamento del progetto. In questa circostanza, è compito del Responsabile eseguire l'approvazione finale.
 
-==== Gerarchia file repository Docs 
+==== Gerarchia file #glossary[repository] Docs 
 
 All'interno della cartella `src`, sono presenti 2 cartelle organizzate nel modo seguente (non sono presenti i file compilati in formato `.pdf` poiché un'automazione Github Action si occupa di effettuare la compilazione automatica dei documenti e renderli disponibili all'interno di un artefatto):
         
-        - *2_RTB*:      
-                - *AnalisiDeiRequisiti*;
-                - *Glossario*;
-                - *LetteraDiPresentazioneRTB*;
-                - *NormeDiProgetto*;
-                - *PianoDiProgetto*;
-                - *PianoDiQualifica*;
-                - *VerbaliEsterni*;
-                - *VerbaliInterni*.
+          - *2_RTB*:      
+                - AnalisiDeiRequisiti;
+                - Glossario;
+                - LetteraDiPresentazioneRTB;
+                - NormeDiProgetto;
+                - PianoDiProgetto;
+                - PianoDiQualifica;
+                - VerbaliEsterni;
+                - VerbaliInterni.
         - *3_PB*:
-                - *AnalisiDeiRequisiti*;
-                - *Glossario*;
-                - *LetteraDiPresentazioneRTB*;
-                - *ManualeUtente*;
-                - *NormeDiProgetto*;
-                - *PianoDiProgetto*;
-                - *PianoDiQualifica*;
-                - *SpecificheTecniche*;
-                - *VerbaliEsterni*;
-                - *VerbaliInterni*.
+                - AnalisiDeiRequisiti;
+                - Glossario;
+                - LetteraDiPresentazionePB;
+                - ManualeUtente;
+                - NormeDiProgetto;
+                - PianoDiProgetto;
+                - PianoDiQualifica;
+                - SpecificheTecniche;
+                - VerbaliEsterni;
+                - VerbaliInterni.
         - *4_CA*:
-                - *AnalisiDeiRequisiti*;
-                - *Glossario*;
-                - *LetteraDiPresentazioneRTB*;
-                - *ManualeUtente*;
-                - *NormeDiProgetto*;
-                - *PianoDiProgetto*;
-                - *PianoDiQualifica*;
-                - *SpecificheTecniche*;
-                - *VerbaliEsterni*;
-                - *VerbaliInterni*.
+                - AnalisiDeiRequisiti;
+                - Glossario;
+                - LetteraDiPresentazioneCA;
+                - ManualeUtente;
+                - NormeDiProgetto;
+                - PianoDiProgetto;
+                - PianoDiQualifica;
+                - SpecificheTecniche;
+                - VerbaliEsterni;
+                - VerbaliInterni.
 
 === Comandi beginner github  
 
 Breve elenco dei comandi Git che i membri del team #team utilizzano durante il progetto:
 
         - `git clone URL_repo`: per clonare il #glossary[repository] git remoto in locale. Si preferisce la clonazione tramite SSH;
-        - `git add .`: per aggiungere tutti i file modificati nell'area di staging, in caso non si vuole aggiungerli tutti specificare il nome del file; assicurarsi di essere nella cartella corretta;
-        - `git commit -m "nome_messaggio"`: per registrare i cambiamenti effettuati; sono delle istantanee dello stato di progetto in un dato momento; `-m` specifica il messaggio del commit, e possibilmente deve essere una buona descrizione dei cambiamenti apportati;
-        - `git push`: le modifiche locali registrate vengono inviati al branch remoto;
-        - `git pull`: per scaricare le modifiche remote all'interno del repo locale;
-        - `git pull --rebase origin nome_branch`: in caso più persone stanno lavorando allo stesso branch e si verificano conflict merge al momento del `git pull`, fa il rebase del branch corrente per ottenere la linea cronologica dei vari commit;
+        - `git add .`: per aggiungere tutti i file modificati all'area di staging; in caso non si voglia aggiungerli tutti, occorre specificare il nome di ciascun file da aggiungere singolarmente, assicurandosi anche di essere nella cartella corretta;
+        - `git commit -m "nome_messaggio"`: per registrare i cambiamenti apportati ad un determinato prodotto, documentale o software; i commit possono essere visti come istantanee dello stato di un prodotto in un dato momento. `-m` specifica il messaggio del commit, e deve essere una descrizione breve ma quanto più dettagliata dei cambiamenti apportati;
+        - `git push`: le modifiche locali registrate vengono inviate al branch remoto;
+        - `git pull`: per importare le modifiche effettuate su un branch remoto all'interno del branch locale corrispondente;
+        - `git pull --rebase origin nome_branch`: in caso più persone stiano lavorando allo stesso branch e si verifichino conflict merge al momento del `git pull`, fa il rebase del branch locale corrente per ottenere la linea cronologica dei vari commit eseguiti e aggiornarlo rispetto alla #glossary[repository] remota;
         - `git fetch origin`: per recuperare tutti i riferimenti remoti;
-        - `git rebase origin/main`: per fare il rebase in caso il main ricevesse aggiornamenti importanti e il nostro branch non è aggiornato;
+        - `git rebase origin/main`: per fare il rebase in caso il main riceva aggiornamenti importanti, in modo che vengano importati all'interno del branch di lavoro corrente;
         - `git branch nomenuovobranch`: per creare nuovo branch;
         - `git checkout nomebranch`: per spostarsi tra i vari branch;
         - `git stash`: per scartare le modifiche in area di staging.
@@ -1069,14 +1069,14 @@ Nella sezione relativa ai test nel _Piano di Qualifica v1.0_ a ogni test viene a
 
 === Descrizione e scopo  
 
-Il processo di validazione consiste nella conferma che il software sviluppato sia conforme ai requisiti e alle aspettative della Proponente.
-Lo scopo principale della validazione è garantire che il software sia correttamente implementato e funzioni correttamente nel contesto operativo previsto, fornendo un prodotto finale soddisfacente e conforme alle esigenze della Proponente.
+Il processo di validazione è un processo di supporto il cui obiettivo primario è ottenere la conferma che il software sviluppato rispetti le aspettative della Proponente.
+Lo scopo principale della validazione è quindi garantire che il software sia implementato in maniera adeguata e che funzioni correttamente nel contesto operativo previsto, fornendo un prodotto finale soddisfacente e conforme alle esigenze della Proponente.
 Inoltre, durante la validazione, devono essere soddisfatti tutti i requisiti previamente definiti, assicurando che il software risponda pienamente alle specifiche e alle richieste stabilite. 
 
 === Test di accettazione  
 
 I test di accettazione sono condotti dai Verificatori in presenza della Proponente per assicurarsi che il software soddisfi i requisiti e le aspettative della Proponente stessa. Per la definizione dei vari test si rimanda al _Piano di Qualifica v2.0_. Gli eventuali problemi riscontrati durante i test vengono documentati e risolti prima che il software venga rilasciato ufficialmente. L'obiettivo finale dei test di accettazione è ottenere l'approvazione della Proponente, confermando che il software è pronto per essere utilizzato in produzione.
-Prima di richiedere il test, i Verificatori si preoccupano di eseguire i test di sistema in un ambiente identico a quello di installazione: è precondizione necessaria del collaudo che i test di sistema diano esito positivo.
+Prima di effettuare i test di accettazione, i Verificatori hanno la responsabilità di eseguire i test di sistema in un ambiente identico a quello di installazione: è precondizione necessaria del collaudo che i test di sistema diano esito positivo.
 
 == Gestione della qualità 
 
