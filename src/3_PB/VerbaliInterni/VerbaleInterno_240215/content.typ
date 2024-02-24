@@ -28,9 +28,9 @@ durante la presentazione.
 == Chiarimento dubbi progettazione
 Riccardo Toniolo e Giacomo D'Ovidio si occuperanno di contattare per email il professor
 Cardin per chiarire dubbi relativi alla progettazione, in particolare:
-- se applicare design patterns ai simulatori;
-- come impostare il diagramma UML delle classi;
-- se considerare o meno i simulatori nell'ottica di metriche relative al codice e/o ai test.
+- Se applicare design patterns ai simulatori;
+- Come impostare il diagramma UML delle classi;
+- Se considerare o meno i simulatori nell'ottica di metriche relative al codice e/o ai test.
 
 == Stesura del verbale odierno
 Matteo Rango si occuperà della stesura del verbale odierno.
@@ -45,8 +45,8 @@ Si è deciso all'unanimità di effettuare stand-up meeting remoti tutti i luned�
 ore 15:00 a partire da lunedì 19/02/2024.
 
 == Sistemazione documento "Analisi dei Requisiti"
-Riccardo Costantin è incaricato di sistemare il documento "Analisi dei Requisiti" secondo le
-indicazioni dateci dal professor Cardin duranete la revisione RTB.
+Riccardo Costantin è incaricato di sistemare il documento _Analisi dei Requisiti_ secondo le
+indicazioni dateci dal professor Cardin durante la revisione RTB.
 
 == Creazione spazio PB
 Riccardo Costantin è incaricato di creare la cartella per i documenti relativi alla revisione PB
@@ -54,15 +54,14 @@ e di spostare i relativi documenti già creati.
 
 == Altre discussioni
 Sono state fatte altre discussioni relative al come e quando calcolare le metriche relative ai
-consuntivi di periodo e come incorporarle in questi ultime. In merito a questo è stato deciso di
+consuntivi di periodo e come incorporarle in questi ultimi. In merito a questo è stato deciso di
 implementare l'attività di chiusura dello sprint alle 17:30 del giovedì, utilizzando i seguenti passaggi:
-- calcolare le metriche relative allo sprint concluso e aggionrare i grafici del Piano di Qualifica;
-- assicurarsi che tutti abbiamo immesso le loro ore produttive nel documento interno "Time & Resource Manager"
-per calcolare le tabelle del consuntivo.
+- Calcolare le metriche relative allo sprint concluso e aggiornare i grafici del _Piano di Qualifica_;
+- Assicurarsi che tutti abbiano immesso le loro ore produttive nel documento interno "Time & Resource Manager" per calcolare le tabelle del consuntivo.
 
-In seguito si è deciso di studiare il contenuto da inserire nel documento "Specifiche Tecniche", in particolare:
-- architetture layered (a strati) e event-driven;
-- "pipes & filters".
+In seguito, si è deciso di studiare il contenuto da inserire nel documento _Specifiche Tecniche_, in particolare:
+- Architetture layered (a strati) ed event-driven;
+- "Pipes & filters"..
 
 == Nuovi ruoli
 Di seguito un elenco con i nuovi incarichi per lo sprint in corso:
