@@ -25,32 +25,32 @@ Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei d
 
 === Riferimenti normativi 
 - Capitolato C6 - InnovaCity: Smart city monitoring platform:
-#link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf") [20/02/2024] \
- #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6p.pdf") [20/02/2024]
+#link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf") (20/02/2024) \
+ #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6p.pdf") (20/02/2024)
 
 - _Norme di Progetto v1.0_
 - _Analisi dei Requisiti v1.0_
 
 - Regolamento progetto didattico:
-#link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf") [20/02/2024]
+#link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf") (20/02/2024)
 
 === Riferimenti informativi
 
 - Gamma, E., Helm, R., Johnson, R., & Vlissides, J. (1994). *Design Patterns: Elements of Reusable Object-Oriented Software.* Addison-Wesley.
 /*in caso aggiungere qualche riferimento sui dataflow diagram*/
 - Diagrammi delle classi (UML) - corso di Ingegneria del Software a.a. 2023/2024: \
- #link("https://www.math.unipd.it/~rcardin/swea/2023/Diagrammi%20delle%20Classi.pdf") [20/02/2024] \
+ #link("https://www.math.unipd.it/~rcardin/swea/2023/Diagrammi%20delle%20Classi.pdf") (20/02/2024) \
 - Diagrammi di Sequenza (UML) - corso di Ingegneria del Software a.a. 2023/2024: \
- #link("https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20di%20Sequenza.pdf") [20/02/2024] \ /*se non li mettiamo si possono anche togliere*/
+ #link("https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20di%20Sequenza.pdf") (20/02/2024) \ /*se non li mettiamo si possono anche togliere*/
 - Progettazione - corso di Ingegneria del Software a.a. 2023/2024: \
- #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T6.pdf") [20/02/2024] \
+ #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T6.pdf") (20/02/2024) \
 
 === riferimenti tecnici
-- *#glossary[Python]*: #link("https://docs.python.org/3/"); [20/02/2024]
-- *#glossary[Grafana]*: #link("https://grafana.com/docs/grafana/latest/"); [20/02/2024]
-- *Apache #glossary[Kafka]*: #link("https://kafka.apache.org/20/documentation.html"); [20/02/2024]
-- *#glossary[Clickhouse]*: #link("https://clickhouse.com/docs");  [20/02/2024]
-- *Confluent Kafka*:#link("https://docs.confluent.io/kafka-clients/python/current/overview.html"); [20/02/2024]
+- *#glossary[Python]*: #link("https://docs.python.org/3/"); (20/02/2024)
+- *#glossary[Grafana]*: #link("https://grafana.com/docs/grafana/latest/"); (20/02/2024)
+- *Apache #glossary[Kafka]*: #link("https://kafka.apache.org/20/documentation.html"); (20/02/2024)
+- *#glossary[Clickhouse]*: #link("https://clickhouse.com/docs");  (20/02/2024)
+- *Confluent Kafka*:#link("https://docs.confluent.io/kafka-clients/python/current/overview.html"); (20/02/2024)
 
 #pagebreak()
 = Tecnologie
