@@ -89,7 +89,7 @@ table(
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Tecnologia*],[*Descrizione*],[*Versione*],
       [#glossary[Clickhouse]], [Sistema di gestione dei database colonnari, progettato per l'analisi dei dati ad alte prestazioni. È ottimizzato per eseguire query analitiche su grandi volumi di dati in modo efficiente.], [da definire], 
-      [_Apache_ #glossary[Kafka]], [Piattaforma di streaming di dati distribuita e scalabile, progettata per la gestione di flussi di dati in tempo reale. È ampiamente utilizzato per l'elaborazione di eventi, la messaggistica asincrona e la creazione di pipeline dati #glossary[real time].], [da definire], 
+      [_Apache_ #glossary[Kafka]], [Piattaforma di streaming di dati distribuita e scalabile, progettata per la gestione di flussi di dati in tempo reale. È ampiamente utilizzato per l'elaborazione di eventi, la messaggistica asincrona e la creazione di pipeline dati #glossary[real-time].], [da definire], 
       [#glossary[Grafana]], [Piattaforma open source per il monitoraggio e l'analisi dei dati. Fornisce strumenti per la visualizzazione di metriche e log, la creazione di #glossary[dashboard] interattive e la generazione di avvisi in tempo reale.], [da definire],  
       [#glossary[Grafana]\ #glossary[ClickHouse]\ Data Source], [Plugin per #glossary[Grafana] che consente di interrogare e visualizzare i dati di #glossary[ClickHouse] in #glossary[Grafana]], [da definire], 
       [Docker], [Piattaforma open-source che permette di creare, distribuire e gestire applicazioni in contenitori software.], [da definire]), 
