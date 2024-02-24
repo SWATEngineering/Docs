@@ -12,8 +12,8 @@
 Il presente documento si propone come risorsa esaustiva per la comprensione degli aspetti tecnici chiave del progetto "InnovaCity".
 La sua finalità primaria è fornire una descrizione dettagliata e approfondita di due aspetti centrali: l'architettura implementativa e l'architettura di deployment.
 Nel contesto dell'architettura implementativa, si prevede un'analisi approfondita che si estenda anche al livello di design più basso. Ciò include la definizione e la spiegazione dettagliata dei design pattern e degli idiomi utilizzati nel contesto del progetto.
-L'obiettivo principale del presente documento è triplice: innanzitutto, motivare le scelte di sviluppo adottate; in secondo luogo, fungere da guida fondamentale per l'attività di codifica; infine, garantire una completa copertura dei requisiti identificati nell'documento _Analisi dei Requisiti v2.0_.
-Alla luce del modello di #glossary("agile") individuato dal team, la redazione del documento segue un approccio iterativo. L'adeguatezza del documento e dell'architettura individuata viene costantemente monitorata e modificata sulla base dei requisiti e dei feedback ricevuti da parte della Proponente.
+L'obiettivo principale del presente documento è triplice: innanzitutto, motivare le scelte di sviluppo adottate; in secondo luogo, fungere da guida fondamentale per l'attività di codifica; infine, garantire una completa copertura dei requisiti identificati nel documento _Analisi dei Requisiti v2.0_.
+Alla luce del modello di sviluppo #glossary("agile") individuato dal team, la redazione del documento segue un approccio iterativo. L'adeguatezza del documento e dell'architettura individuata viene costantemente monitorata e modificata sulla base dei requisiti e dei feedback ricevuti da parte della Proponente.
 
 == Scopo del prodotto
 Lo scopo del prodotto è la realizzazione di un sistema di persistenza dati e successiva visualizzazione di questi, provenienti da sensori dislocati geograficamente. Tale piattaforma consentirà all'#glossary("amministratore pubblico") di acquisire una panoramica completa delle condizioni della città, facilitando così la presa di decisioni informate e tempestive riguardo alla gestione delle risorse e all'implementazione di servizi.
@@ -54,7 +54,7 @@ Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei d
 
 #pagebreak()
 = Tecnologie
-Questa sezione si propone di offrire una panoramica sintetica delle tecnologie adottate. Questo breve paragrafo introduttivo fornisce un quadro generale delle piattaforme, dei linguaggi di programmazione, dei framework e di altre risorse tecnologiche che costituiscono le basi del nostro progetto. 
+Questa sezione si propone di offrire una panoramica sintetica delle tecnologie adottate. Questo breve paragrafo introduttivo fornisce un quadro generale delle piattaforme, dei linguaggi di programmazione, dei #glossary[framework] e di altre risorse tecnologiche che costituiscono le basi del nostro progetto. 
 
 == Codifica
 === Linguaggi e formati dati
@@ -70,17 +70,17 @@ table(
       [SQL], [Linguaggio standard per la gestione e la manipolazione dei database], [da definire], 
       [YAML], [Formato di serializzazione dei dati leggibile dall'uomo comunemente utilizzato per la configurazione dei servizi e lo scambio di dati tra programmi.], [da definire], 
       [JSON], [Formato leggero per lo scambio di dati, facile da leggere e scrivere per gli esseri umani e facile da analizzare e generare per le macchine.], [da definire]), 
-caption: [Tabella tecnologie per la la Codifica: Linguaggi e formati dati.])
-=== Framework e librerie
+caption: [Tabella tecnologie per la Codifica: Linguaggi e formati dati.])
+=== #glossary[Framework] e librerie
 #figure(
 table(
       columns:(100pt,auto,auto),
       align: (x, y) => (center, center, center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Tecnologia*],[*Descrizione*],[*Versione*],
-      [Pydantic], [Libreria Python per la serializzazione degli oggetti e per la validazione dei dati, inoltre si caratterizza dalla capacità di forzare i tipi garantendo che i dati siano coerenti durante l'elaborazione.], [da definire], 
-      [Confluent Kafka], [Libreria Python che fornisce gli strumenti necessari per produrre e consumare messaggi da Apache #glossary("Kafka"). ], [da definire]), 
-caption: [Tabella tecnologie per la la Codifica: Framework e librerie])
+      [Pydantic], [Libreria #glossary[Python] per la serializzazione degli oggetti e per la validazione dei dati, inoltre si caratterizza dalla capacità di forzare i tipi garantendo che i dati siano coerenti durante l'elaborazione.], [da definire], 
+      [Confluent Kafka], [Libreria #glossary[Python] che fornisce gli strumenti necessari per produrre e consumare messaggi da Apache #glossary("Kafka"). ], [da definire]), 
+caption: [Tabella tecnologie per la Codifica: #glossary[Framework] e librerie])
 === Database e servizi
 #figure(
 table(
@@ -89,11 +89,11 @@ table(
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Tecnologia*],[*Descrizione*],[*Versione*],
       [#glossary[Clickhouse]], [Sistema di gestione dei database colonnari, progettato per l'analisi dei dati ad alte prestazioni. È ottimizzato per eseguire query analitiche su grandi volumi di dati in modo efficiente.], [da definire], 
-      [_Apache_ #glossary[Kafka]], [Piattaforma di streaming di dati distribuita e scalabile, progettata per la gestione di flussi di dati in tempo reale. È ampiamente utilizzato per l'elaborazione di eventi, la messaggistica asincrona e la creazione di pipeline dati real time.], [da definire], 
-      [#glossary[Grafana]], [Piattaforma open source per il monitoraggio e l'analisi dei dati. Fornisce strumenti per la visualizzazione di metriche e log, la creazione di dashboard interattive e la generazione di avvisi in tempo reale.], [da definire],  
-      [Grafana\ ClickHouse\ Data Source], [Plugin per Grafana che consente di interrogare e visualizzare i dati di ClickHouse in Grafana], [da definire], 
+      [_Apache_ #glossary[Kafka]], [Piattaforma di streaming di dati distribuita e scalabile, progettata per la gestione di flussi di dati in tempo reale. È ampiamente utilizzato per l'elaborazione di eventi, la messaggistica asincrona e la creazione di pipeline dati #glossary[real time].], [da definire], 
+      [#glossary[Grafana]], [Piattaforma open source per il monitoraggio e l'analisi dei dati. Fornisce strumenti per la visualizzazione di metriche e log, la creazione di #glossary[dashboard] interattive e la generazione di avvisi in tempo reale.], [da definire],  
+      [#glossary[Grafana]\ #glossary[ClickHouse]\ Data Source], [Plugin per #glossary[Grafana] che consente di interrogare e visualizzare i dati di #glossary[ClickHouse] in #glossary[Grafana]], [da definire], 
       [Docker], [Piattaforma open-source che permette di creare, distribuire e gestire applicazioni in contenitori software.], [da definire]), 
-caption: [Tabella tecnologie per la la Codifica: Database e servizi.])
+caption: [Tabella tecnologie per la Codifica: Database e servizi.])
 
 
 == Per l'analisi del codice
@@ -103,7 +103,7 @@ table(
       align: (x, y) => (center, center, center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Tecnologia*],[*Descrizione*],[*Versione*],
-      [PEP8], [Stile di codifica per il codice Python che definisce le linee guida per la formattazione del codice, rendendolo più leggibile e uniforme.], [da definire]), 
+      [PEP8], [Stile di codifica per il codice #glossary[Python] che definisce le linee guida per la formattazione del codice, rendendolo più leggibile e uniforme.], [da definire]), 
 caption: [Tabella tecnologie per l'analisi del codice.])
 
 
@@ -123,7 +123,7 @@ Nella fase di sviluppo e implementazione di qualsiasi sistema complesso, l'archi
 == `TODO after meeting with Prof. Cardin`
 #pagebreak()
 = Tracciamento dei requisiti
-In questa sezione si va a mostrare, secondo quanto riportato dal documento delle _Norme di progetto v2.0_, la soddisfazione dei singoli requisiti funzionali presenti, in base al tipo previsto e opportunamente classificato sotto.
+In questa sezione si va a mostrare, secondo quanto riportato dal documento  _Norme di Progetto v2.0_, la soddisfazione dei singoli requisiti funzionali presenti, in base al tipo previsto e opportunamente classificato sotto.
 
 == Tabella dei requisiti soddisfatti
 Si vuole riportare ciascun requisito mediante il corrispondente codice, utilizzando le seguenti sigle, le quali indicano:
