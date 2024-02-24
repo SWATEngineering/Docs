@@ -67,7 +67,7 @@ Il processo si articola in diverse fasi:
         - Completamento e consegna.
 
 === Inizio e fine #glossary[sprint]
-Come riportato all'interno del _Piano di Progetto v2.0_, per agevolare il processo di fornitura il team ha optato per un modello di sviluppo agile e #glossary[sprint] della durata di una settimana, dove ogni nuovo #glossary[sprint] inizia il giorno venerdì di una data settimana e termina il giorno giovedì di quella successiva. L'unica eccezione a questa regola è costituita dai primi due #glossary[sprint], che hanno avuto una durata di due settimane.
+Come riportato all'interno del _Piano di Progetto v2.0_, per agevolare il processo di fornitura il team ha optato per un modello di sviluppo agile e #glossary[sprint] della durata di una settimana, dove ogni nuovo #glossary[sprint] inizia il venerdì di una data settimana e termina il giovedì di quella successiva. L'unica eccezione a questa regola è costituita dai primi due #glossary[sprint], che hanno avuto una durata di due settimane.
 
 === Rapporti con la Proponente
 La Proponente si è resa disponibile attraverso vari canali, come e-mail, Google Meet e Element, per stabilire una comunicazione frequente e risolvere prontamente eventuali dubbi o domande che possono emergere durante lo svolgimento del progetto. Sin dall'inizio si è concordato di organizzare incontri regolari, in particolare al termine di ciascuno #glossary[sprint], fissati per il venerdì alle 10:30.  Questi incontri, che assumono la forma di sessioni di #glossary[sprint review], consentono al team di esporre quanto realizzato e di ricevere feedback sull'andamento del lavoro.
@@ -571,7 +571,7 @@ table(
         [*Codice*],[*Descrizione*],[*Stato*],
         [ROF1],[L'utente deve poter accedere all'applicazione senza dover effettuare l'autenticazione.],[Soddisfatto],
         [RPF26],[L’utente deve poter visualizzare un #glossary[pannello] contenente una tabella
-che mostri i dati #glossary[anomali], il sensore che li ha rilevati e il timestamp del rilevamento, nella #glossary[dashboard] relativa ai #glossary[dati anomali] e superanti le soglie.],[Non soddisfatto],
+che mostri i #glossary[dati anomali], il sensore che li ha rilevati e il timestamp del rilevamento, nella #glossary[dashboard] relativa ai #glossary[dati anomali] e superanti le soglie.],[Non soddisfatto],
 ),
 caption: "Esempio tabella per requisiti soddisfatti.")
 
