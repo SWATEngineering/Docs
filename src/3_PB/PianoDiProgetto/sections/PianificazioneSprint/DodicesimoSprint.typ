@@ -10,5 +10,5 @@
   - Proseguire la stesura del _Piano di Progetto v2.0_:
     - Aggiornare pianificazione e preventivo pertinenti allo #glossary[sprint] 12 e inserire il consuntivo pertinente allo #glossary[sprint] 11;
     - Aggiungere pianificazione e preventivo degli #glossary[sprint] 13 e 14, come parte della pianificazione a breve termine.
-  - Perfezionamento e correzioni del documento _Specifiche Tecniche v2.0_;
+  - Perfezionare e correggere il documento _Specifiche Tecniche v2.0_;
   - Continuazione nello sviluppo del #glossary[MVP].
