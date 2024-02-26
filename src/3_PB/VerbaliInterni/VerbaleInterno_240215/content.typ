@@ -61,7 +61,7 @@ implementare l'attività di chiusura dello sprint alle 17:30 del giovedì, utili
 
 In seguito, si è deciso di studiare il contenuto da inserire nel documento _Specifiche Tecniche_, in particolare:
 - Architetture layered (a strati) ed event-driven;
-- "Pipes & filters"..
+- "Pipes & filters".
 
 == Nuovi ruoli
 Di seguito un elenco con i nuovi incarichi per lo sprint in corso:
