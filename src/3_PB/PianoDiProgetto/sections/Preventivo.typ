@@ -30,5 +30,7 @@ Questa sezione vuole essere una proiezione finanziaria dettagliata dell'intero p
 
 #include "PreventivoSprint/NonoSprint.typ"
 #include "PreventivoSprint/DecimoSprint.typ"
+#include "PreventivoSprint/UndicesimoSprint.typ"
+#include "PreventivoSprint/DodicesimoSprint.typ"
 
 #include "PreventivoSprint/TerzaRevisione.typ"
