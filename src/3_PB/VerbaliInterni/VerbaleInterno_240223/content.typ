@@ -13,7 +13,7 @@
   ..participants.flatten()
 )
 = Sintesi Elaborazione Incontro
-Nell'incontro si è discusso sull'organizzazione del lavoro futuro stabilendo quanto riportato di seguito.
+Nell'incontro si è discussa l'organizzazione del lavoro futuro stabilendo quanto riportato di seguito.
 
 == Nuovi ruoli
 Vengono stabiliti i seguenti i nuovi incarichi relativi allo sprint corrente:
