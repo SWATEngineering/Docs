@@ -23,7 +23,8 @@ Vengono stabiliti i seguenti i nuovi incarichi relativi allo sprint corrente:
 - Kalaj Nancy: Verificatore e Amministratore;
 - Rango Matteo: Progettista;
 - Toniolo Riccardo: Progettista.
-Si decide di mantenere molti Progettisti in quanto svolgono il fulcro del lavoro di questo periodo, il ruolo va quindi utilizzato in queste fasi iniziali del PB e verrà gradualmente ridotto in seguito.
+Per questo Sprint Il team ha deciso di concentrare gli sforzi nell'attività di progettazione, si è  dunque deciso di impiegare molte ore del ruolo "Progettista". Risulta infatti necessario avanzare con la progettazione del architettura in modo tale da poter successivamente convertire tali sforzi all'attività di codifica.
+Il team per limitare il rischio di context switch ha deciso di mantenere inalterato il ruolo dei Progettisti dello Sprint precedente.
 
 == Stesura dei verbali odierni
 La stesura dei due verbali esterno ed interno sarà a carico di Simone Caregnato in qualità di responsabile.
