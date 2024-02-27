@@ -36,7 +36,7 @@ Il responsabile, come stabilito nelle NdP si occuperà di redigere il consuntivo
 Il documento _Norme di Progetto_ dovrà essere aggiornato con l'aggiunta di una sezione relativa alle _Specifiche Tecniche_ similmente a quanto fatto per gli altri documenti. Quest'attività sarà compito dell'Amministratore Nancy Kalaj.
 
 == Sviluppo ST
-Si stabilisce di concentrare la maggior parte del lavoro sullo sviluppo del documento _Specifiche Tecniche_, seguendo i consigli e le indicazioni suggerite dal Prof. Cardin durante il colloquio organizzato in data 22/02/2024.
+Si stabilisce di concentrare la maggior parte delle risorse nella stesura del documento _Specifiche Tecniche_, seguendo i consigli e le indicazioni suggerite dal Prof. Cardin durante il colloquio organizzato in data 22/02/2024.
 
 == Altre discussioni
 Si è discusso poi sulla possibilità di iniziare con l'implementazione di nuovi sensori nel prodotto. Si è stabilito che è ancora troppo presto ed è necessario attendere che l'architettura venga prima definita all'interno delle ST, quantomeno nei suoi tratti principali. Di conseguenza verosimilmente il gruppo programma di iniziare la fase di sviluppo del MVP nello sprint 11.
