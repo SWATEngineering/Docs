@@ -23,14 +23,8 @@ Vengono stabiliti i seguenti i nuovi incarichi relativi allo sprint corrente:
 - Kalaj Nancy: Verificatore e Amministratore;
 - Rango Matteo: Progettista;
 - Toniolo Riccardo: Progettista.
-Per questo Sprint Il team ha deciso di concentrare gli sforzi nell'attività di progettazione, si è  dunque deciso di impiegare molte ore del ruolo "Progettista". Risulta infatti necessario avanzare con la progettazione del architettura in modo tale da poter successivamente convertire tali sforzi all'attività di codifica.
+Per questo sprint il team ha deciso di concentrare gli sforzi nell'attività di progettazione, si è  dunque deciso di impiegare molte ore del ruolo di Progettista. Risulta infatti necessario avanzare con la progettazione del architettura in modo tale da poter successivamente convertire tali sforzi all'attività di codifica.
 Il team per limitare il rischio di context switch ha deciso di mantenere inalterato il ruolo dei Progettisti dello Sprint precedente.
-
-== Stesura dei verbali odierni
-La stesura dei due verbali esterno ed interno sarà a carico di Simone Caregnato in qualità di responsabile.
-
-== Consuntivo e aggiornamento dei documenti
-Il responsabile, come stabilito nelle NdP si occuperà di redigere il consuntivo per lo sprint 9 e di aggiornare i preventivi successivi e la pianificazione nel PdP; una volta terminato si occuperà di aggiornare le metriche del PdQ.
 
 == Aggiornamento NdP
 Il documento _Norme di Progetto_ dovrà essere aggiornato con l'aggiunta di una sezione relativa alle _Specifiche Tecniche_ similmente a quanto fatto per gli altri documenti. Quest'attività sarà compito dell'Amministratore Nancy Kalaj.
