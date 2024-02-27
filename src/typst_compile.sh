@@ -11,4 +11,8 @@ file_version=$(echo "$last_row" | awk -F',' '{print $1}')
 # file, to give the name to the output file
 file_name=$(basename $(pwd))
 
-typst compile main.typ ${file_name}_${file_version}.pdf --font-path=assets/fonts
+if [ file_name=="SpecificheTecniche" ]; then
+    typst compile main.typ ${file_name}_${file_version}.pdf --font-path=assets/fonts --root=..
+else
+    typst compile main.typ ${file_name}_${file_version}.pdf --font-path=assets/fonts
+fi
