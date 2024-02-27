@@ -120,8 +120,28 @@ caption: [Tabella tecnologie per l'analisi del codice.])
 /*già sai*/
 == Diagramma del flusso di dati (data-flow)
 /*ste robe sono buttate giù veramente come capita vanno cambiate*/
-/*
-Nella fase di sviluppo e implementazione di qualsiasi sistema complesso, l'architettura di deployment riveste un ruolo fondamentale nel garantire che le risorse tecnologiche siano distribuite in modo efficiente e affidabile nell'ambiente operativo. Questa sezione del documento si concentra sull'analisi e sulla progettazione della distribuzione delle risorse nel contesto del progetto "InnovaCity".*/
+/*Nella fase di sviluppo e implementazione di qualsiasi sistema complesso, l'architettura di deployment riveste un ruolo fondamentale nel garantire che le risorse tecnologiche siano distribuite in modo efficiente e affidabile nell'ambiente operativo. Questa sezione del documento si concentra sull'analisi e sulla progettazione della distribuzione delle risorse nel contesto del progetto "InnovaCity".*/
+
+Per illustrare il funzionamento del sistema, abbiamo utilizzato un diagramma di flusso dei dati. Questo diagramma ha permesso di rappresentare in modo chiaro e intuitivo il percorso dei dati attraverso il sistema. Abbiamo identificato le diverse entità coinvolte nel processo e le relazioni tra di esse, fornendo una panoramica dettagliata di come i dati vengono acquisiti, elaborati, archiviati e visualizzati.
+
+
+/*inserire quì l'immagine grossa vedere poi se si legge*/
+
+- *Generazione dei dati*: Una varietà di simulatori di sensori di dati ambientali e urbanistici sono utilizzati per misurare una vasta gamma di parametri. Questi simulatori forniscono dati, in modalità continua, relativi a:
+    + Temperatura;
+    + Umidità;
+    + Vento;
+    + Precipitazioni atmosferiche;
+    + Inquinamento atmosferico;
+    + Livello dei bacini idrici;
+    + Disponibilità di parcheggi;
+    + Wattaggio delle colonne di ricarica;
+    + Riempimento delle zone ecologiche;
+    + Livelli di congestione stradale;
+    + Batteria delle biciclette elettriche. 
+
+
+
 
 = Architettura dei simulatori
 
