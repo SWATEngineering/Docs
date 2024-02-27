@@ -143,8 +143,32 @@ Per illustrare il funzionamento del sistema, abbiamo utilizzato un diagramma di 
 
 
 
-= Architettura dei simulatori
+== Architettura dei simulatori
+Nonostante i simulatori non siano ufficialmente considerati parte integrante del prodotto dalla proponente, il nostro team, nell'ambito del progetto didattico, ha scelto di dedicare alcune risorse alla progettazione di questa componente.
 
+Nei paragrafi successivi viene mostrata l'architettura individuata, tramite l'utilizzo di Diagrammi delle Classi e relative rapide descrizioni. Inoltre verranno motivati i design pattern individuati e le decisione progettuali rilevanti. Successivamente per ogni classe verranno illustrati metodi e attributi.
+
+#figure(
+  image("diagrammiclassi/strutturabasesimulatori.png",width:100%),
+  caption: [Diagramma delle classi 1]
+)
+
+La classe SimulatorExecutorFactory è implementazione del design pattern _Factory_, si occupa della costruzione dei singoli simulatori a partire da un file di configurazione che gli viene passato tramite la costruzione.
+I simulatori sono istanze delle classe _SimulatorThread_: tale classe eredita dalla classe _Thread_ della Standard Library in modo tale che l'esecuzione dei simulatori possa essere concorrente. 
+L'orchestrazione dei simulatori è affidata alla classe _SimulatorExecutor_, essa si occupa di attivare e disattivare tutti i simulatori contemporaneamente.
+
+#figure(
+  image("diagrammiclassi/simulatori.png",width:100%),
+  caption: [Diagramma delle classi 2]
+)
+La classe _SensorSimulatorStrategy_ è realizzazione del design pattern _Strategy_ ogni strategia rappresenta una tipologia di sensore differente. Al fine di garantire la possibilità di effettuare unit-testing sul comportamento dei sensori tale classe riceve tramite costruttore due istanze della classe riceve tramite costruttore un oggetto di tipo _Random_ e un oggetto di tipo _Datetime_. 
+
+#figure(
+  image("diagrammiclassi/writer.png",width:100%),
+  caption: [Diagramma delle classi 3]
+)
+Anche la classe _Writer_ realizza il design pattern _Strategy_, sono state progettate due strategie, la prima atta a permettere al simulatore di inviare i messaggi contenenti i dati della rilevazione a #glossary("Kafka") (_KafkaWriter_), mentre la seconda atta a permettere al simulatore di stampare i risultati su terminale al fine di poterne testare il comportamento. Inoltre l'applicazione del Design Pattern potrebbe consentire di realizzare il componente di simulazione in altri contesti senza dover riprogettare la componente.
+Nello specifico la classe _KafkaWriter_ realizza il suo scopo tramite l'impiego del design pattern _Adapter_, nella sua variante _Object Adapter_. Viene infatti fatto utilizzo della classe _Producer_ della liberia _confluent_kafka_ dato che tale classe potrebbe essere soggetta a variazioni si è deciso di utilizzare tale pattern per permettere di rispondere prontamente a tali cambiamenti.
 
 #pagebreak()
 = Tracciamento dei requisiti
