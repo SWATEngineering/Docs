@@ -108,19 +108,24 @@ caption: [Tabella tecnologie per l'analisi del codice.])
 
 
 #pagebreak()
-= Architettura
-== Architettura implementativa generale 
-Questa sezione si propone di esplorare in modo esaustivo le strutture, i componenti e le interazioni che costituiscono il fondamento tecnologico del sistema. Questa analisi dettagliata mira a garantire una comprensione completa delle scelte architetturali adottate, fornendo così una base solida per lo sviluppo e l'implementazione.
+= Architettura del sistema
 
-== `TODO after meeting with Prof. Cardin`
-== Architettura simulatori
-== `TODO after meeting with Prof. Cardin`
+
+
+
+== Diagramma del sistema generale
+/*Questa sezione si propone di esplorare in modo esaustivo le strutture, i componenti e le interazioni che costituiscono il fondamento tecnologico del sistema. Questa analisi dettagliata mira a garantire una comprensione completa delle scelte architetturali adottate, fornendo così una base solida per lo sviluppo e l'implementazione.*/
+
+
 /*già sai*/
-== Architettura di deployment 
+== Diagramma del flusso di dati (data-flow)
 /*ste robe sono buttate giù veramente come capita vanno cambiate*/
-Nella fase di sviluppo e implementazione di qualsiasi sistema complesso, l'architettura di deployment riveste un ruolo fondamentale nel garantire che le risorse tecnologiche siano distribuite in modo efficiente e affidabile nell'ambiente operativo. Questa sezione del documento si concentra sull'analisi e sulla progettazione della distribuzione delle risorse nel contesto del progetto "InnovaCity".
+/*
+Nella fase di sviluppo e implementazione di qualsiasi sistema complesso, l'architettura di deployment riveste un ruolo fondamentale nel garantire che le risorse tecnologiche siano distribuite in modo efficiente e affidabile nell'ambiente operativo. Questa sezione del documento si concentra sull'analisi e sulla progettazione della distribuzione delle risorse nel contesto del progetto "InnovaCity".*/
 
-== `TODO after meeting with Prof. Cardin`
+= Architettura dei simulatori
+
+
 #pagebreak()
 = Tracciamento dei requisiti
 In questa sezione si va a mostrare, secondo quanto riportato dal documento  _Norme di Progetto v2.0_, la soddisfazione dei singoli requisiti funzionali presenti, in base al tipo previsto e opportunamente classificato sotto.
