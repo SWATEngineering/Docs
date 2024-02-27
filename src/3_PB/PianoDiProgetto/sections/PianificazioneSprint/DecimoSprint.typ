@@ -7,7 +7,7 @@
 
 *Obiettivi dello #glossary[sprint]*: 
 
-  - Proseguire la stesura del _Piano di Progetto v2.0_:
+  - Proseguire la stesura del _Piano di Progetto_:
     - Aggiornare pianificazione e preventivo pertinenti allo #glossary[sprint] 10 e inserire il consuntivo pertinente allo #glossary[sprint] 9;
     - Aggiungere pianificazione e preventivo degli #glossary[sprint] 11 e 12, come parte della pianificazione a breve termine;
   - Continuare a progettare la struttura architetturale del prodotto, traducendo le architetture individuate in una bozza di diagrammi (seguendo le prassi specificate a tal riguardo nelle _Norme di Progetto v2.0_);
