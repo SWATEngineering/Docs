@@ -20,7 +20,13 @@
 ]
 
 = Sintesi Elaborazione Incontro
+Durante l'incontro il gruppo ha chiarito con La Proponente alcuni dubbi che vengono esposti in seguito e ha condiviso con essa lo stato di avanzamento del progetto.
 
-/*************************************/
-/*    INSERIRE SOTTO IL CONTENUTO    */ 
-/*************************************/
+== Chiarimento SAD
+La Proponente, dopo relativa domanda da parte del gruppo, ha chiarito che il documento SAD (Software Architecture Document) richiesto all'interno del capitolato coincide con il documento che il team chiama _Specifiche Tecniche_, il quale si sta sviluppando in questo momento.
+
+== Progettazione
+Durante l'incontro il gruppo ha condiviso con La Proponente i suggerimenti e gli indirizzamenti indicati dal Professor Cardin durante il ricevimento del 22-02-2024. Questa ha confermato le indicazioni, inoltre ha fornito ulteriori spunti di approfondimento che potrebbero risultare utili per la progettazione del prodotto. In particolare viene confermato da parte delLa proponente che la "Lambda architecture" è un tipo di architettura che può adattarsi al nostro prodotto e che quindi andrà approfondita dai Progettisti in carica per questo sprint. Vengono inoltre confermate come possibili strade da percorrere i diagrammi "Data-flow diagram" e i "Deployment diagram", come già suggerito dal Prof. Cardin nel colloquio sopracitato. Qesti diagrammi potrebbero essere una modalità di rappresentazione che si presta bene al nostro caso di studio.
+
+== Possibili aggiunte al prodotto
+La Proponente ha suggerito di valutare la possibilità di aggiungere al prodotto funzionalità come data processing ed input filtering. Il team valuterà la fattibilità di queste aggiunte e ne discuterà con il proponente in futuro.
