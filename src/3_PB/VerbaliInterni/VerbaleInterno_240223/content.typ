@@ -39,4 +39,4 @@ Il documento _Norme di Progetto_ dovrà essere aggiornato con l'aggiunta di una 
 Si stabilisce di concentrare la maggior parte delle risorse nella stesura del documento _Specifiche Tecniche_, seguendo i consigli e le indicazioni suggerite dal Prof. Cardin durante il colloquio organizzato in data 22/02/2024.
 
 == Altre discussioni
-Si è discusso poi sulla possibilità di iniziare con l'implementazione di nuovi sensori nel prodotto. Si è stabilito che è ancora troppo presto ed è necessario attendere che l'architettura venga prima definita all'interno delle ST, quantomeno nei suoi tratti principali. Di conseguenza verosimilmente il gruppo programma di iniziare la fase di sviluppo del MVP nello sprint 11.
+Si è poi valutata la possibilità di riprendere l'attività di codifica. Si è stabilito come necessario attendere che l'architettura venga definita all'interno delle ST, quantomeno una sua forma iniziale.  Di conseguenza verosimilmente il gruppo programma di iniziare l'attività di codifica del prodotto nello sprint 11.
