@@ -171,14 +171,15 @@ Nonostante i simulatori non siano ufficialmente considerati parte integrante del
 
 Nei paragrafi successivi viene mostrata l'architettura individuata, tramite l'utilizzo di Diagrammi delle Classi e relative rapide descrizioni. Inoltre verranno motivati i design pattern individuati e le decisione progettuali rilevanti. Successivamente per ogni classe verranno illustrati metodi e attributi.
 
+=== Struttura generale 
 #figure(
   image("diagrammiclassi/strutturabasesimulatori.png",width:100%),
   caption: [Diagramma delle classi 1]
 )
 
-La classe SimulatorExecutorFactory è implementazione del design pattern _Factory_, si occupa della costruzione dei singoli simulatori a partire da un file di configurazione che gli viene passato tramite la costruzione.
+La classe _SimulatorExecutorFactory_ è implementazione del design pattern _Factory_, si occupa della costruzione dei singoli simulatori a partire da un file di configurazione che gli viene passato tramite la costruzione.
 I simulatori sono istanze delle classe _SimulatorThread_: tale classe eredita dalla classe _Thread_ della Standard Library in modo tale che l'esecuzione dei simulatori possa essere concorrente. 
-L'orchestrazione dei simulatori è affidata alla classe _SimulatorExecutor_, essa si occupa di attivare e disattivare tutti i simulatori contemporaneamente.
+L'orchestrazione dei simulatori è affidata alla classe _SimulatorExecutor_, che si occupa di attivare e disattivare tutti i simulatori contemporaneamente.
 
 #figure(
   image("diagrammiclassi/simulatori.png",width:100%),
@@ -192,6 +193,63 @@ La classe _SensorSimulatorStrategy_ è realizzazione del design pattern _Strateg
 )
 Anche la classe _Writer_ realizza il design pattern _Strategy_, sono state progettate due strategie, la prima atta a permettere al simulatore di inviare i messaggi contenenti i dati della rilevazione a #glossary("Kafka") (_KafkaWriter_), mentre la seconda atta a permettere al simulatore di stampare i risultati su terminale al fine di poterne testare il comportamento. Inoltre l'applicazione del Design Pattern potrebbe consentire di realizzare il componente di simulazione in altri contesti senza dover riprogettare la componente.
 Nello specifico la classe _KafkaWriter_ realizza il suo scopo tramite l'impiego del design pattern _Adapter_, nella sua variante _Object Adapter_. Viene infatti fatto utilizzo della classe _Producer_ della liberia _confluent_kafka_ dato che tale classe potrebbe essere soggetta a variazioni si è deciso di utilizzare tale pattern per permettere di rispondere prontamente a tali cambiamenti.
+
+=== Classi: metodi e attributi
+Si procede alla descrizione  di classi e interfacce progettate dal team.
+Non vengono menzionati i costruttori. 
+==== SimulatorExecutorFactory (Classe)
+===== Attributi
+- *config_file_name: String [Privato]*: Percorso del file di configurazione dei simulatori; 
+- *data_broker_host: String [Privato]*: indirizzo ip della macchina che ospita il message broker; 
+- *data_broker_port: String [Privato]*: porta della macchina che ospita il message broker; 
+- *io_module: FileIO [Privato]*: //TODO: non mi ricordo il perchè di sta roba sarebbe da capire e aggiungere. 
+===== Metodi
+- *create(): SimulatorExecutor [Pubblico]*: a partire dal file che viene passato tramite costruttore si occupa di costruire un oggetto della classe _SimulatorExecutor_.
+==== SimulatorExecutor (Classe)
+===== Attributi
+- *simulators:SimulatorThread[\*] [Privato]*: Aggregato di oggetti _SimulatorThread_.
+===== Metodi
+- *stop_all(): void [Pubblico]*: Metodo  che arresta la simulazione di tutti i _SimulatorThread_; 
+- *run_all(): void [Pubblico]*: Metodo  che avvia la simulazione di tutti i _SimulatorThread_. 
+==== SimulatorThread (Classe)
+===== Attributi
+- *is_running: bool [Privato]*: Attributo  che indica se al momento il simulatore sta producendo dati.
+===== Metodi
+- *stop(): void[Pubblico]*: Metodo che arresta la simulazione del singolo  _SimulatorThread_; 
+- *run(): void[Pubblico]*: Metodo che avvia la simulazione del singolo  _SimulatorThread_.
+==== SensorSimulatorStrategy (Classe)
+===== Attributi
+- *wait_time_in_seconds: int [Protetto]*: intervallo temporale tra due simulazioni.
+- *sensor_name: String [Protetto]*: identificativo del sensore; 
+- *random_obj: Random [Privato]*: oggetto della classe Random della libreria Standard di #glossary("Python"); 
+- *datetime_obj: Datetime [Privato]*: oggetto della classe Datetime della libreria Standard di #glossary("Python").
+- *coordinates : Coordinates [Protetto]*: oggetto della classe Coordinates. 
+===== Metodi 
+- *simulate(): String [Pubblico]*: metodo che produce una stringa contenente il messaggio contenente la rilevazione simulata effettuata.
+==== Coordinates (Classe)
+===== Attributi
+- *longitude: float [Privato]*: longitudine geografica. 
+- *latitude: float [Privato]*: latitudine geografica.
+===== Metodi
+- *getGeoJSON(): string [Pubblico]* : ritorna le coordinate geografiche nel formato GeoJSON.
+==== WriterStrategy (interfaccia)
+===== Metodi
+- *write(in to_write:String): void [Pubblico]*: Scrive il messaggio contenuto nella stringa passata come parametro.
+
+==== StdOutWriter (Classe)
+===== Metodi
+- *write(in to_write:String): void [Pubblico]*: Scrive il messaggio contenuto nella stringa passata come parametro tramite standard output.
+
+==== KafkaWriter (Classe)
+//TODO: rimane da capire come andare a rappresentare le firme dei metodi.
+
+
+
+==== SimulatorExecutorFactory
+===== Attributi
+===== Metodi
+- create(): SimulatorExecutor: a partire dal file che viene passato tramite costruttore si occupa di costruire un oggetto della classe _SimulatorExecutor_.
+
 
 #pagebreak()
 = Tracciamento dei requisiti
