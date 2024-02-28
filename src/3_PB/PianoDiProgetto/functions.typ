@@ -6,6 +6,16 @@
   emph[SWAT Engineering]
 }
 
+#let itemCleaner(item: "") = {
+  if item == "0.0" {
+    return [-]
+  }else if item.split(".").at(1) == "0"{
+    return [#item.split(".").at(0)]
+  }else{
+    return [#item]
+  }
+}
+
 #let rendicontazioneOreAPosteriori(sprintNumber: "01") = {
   let rendicontazioneOre = csv("sprintData/Sprint#" + sprintNumber + "/RendicontazioneOre.csv")
   [=== Rendicontazione ore a posteriori]
@@ -18,7 +28,7 @@
         if item == "Nominativo" or item == "Am" or item == "An" or item == "Pr" or item == "Pt" or item == "Re" or item == "Ve" or item == "Totale per persona" or item == "Totale per ruolo" {
           return [*#item*]
         }else{
-          return [#item]
+          return [#itemCleaner(item)]
         }
       })
     ),
@@ -48,7 +58,7 @@
         }else if item == "Costo"{
           return [*#item* (in €)]
         }else{
-          return [#item]
+          return [#itemCleaner(item)]
         }
       })
     ),
@@ -76,7 +86,7 @@
         if item == "Nominativo" or item == "Am" or item == "An" or item == "Pr" or item == "Pt" or item == "Re" or item == "Ve" or item == "Totale per persona" or item == "Totale per ruolo" {
           return [*#item*]
         }else{
-          return [#item]
+          return [#itemCleaner(item)]
         }
       })
     )
@@ -105,7 +115,7 @@
         }else if item == "Costo"{
           return [*#item* (in €)]
         }else{
-          return [#item]
+          return [#itemCleaner(item)]
         }
       })
     )
