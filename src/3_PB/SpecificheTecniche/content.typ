@@ -44,6 +44,9 @@ Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei d
  #link("https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20di%20Sequenza.pdf") (20/02/2024) \ /*se non li mettiamo si possono anche togliere*/
 - Progettazione - corso di Ingegneria del Software a.a. 2023/2024: \
  #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T6.pdf") (20/02/2024) \
+- Architetture #[#sym.kappa] & #[#sym.lambda]:
+  - #link("https://imply.io/blog/building-event-analytics-pipeline-with-confluent-cloud-and-imply-real-time-database-polaris/") (28/02/2024)
+  - #link("https://medium.com/sysco-labs/real-time-sales-analytics-using-kappa-architecture-852dc84bfe7b") (28/02/2024)
 
 === riferimenti tecnici
 - *#glossary[Python]*: #link("https://docs.python.org/3/"); (20/02/2024)
@@ -109,12 +112,27 @@ caption: [Tabella tecnologie per l'analisi del codice.])
 
 #pagebreak()
 = Architettura del sistema
+== Architettura di implementazione
+Il sistema ha bisogno di elaborare dati provenienti da una fonte in tempo reale fornendo, sempre in tempo reale, la loro visualizzazione per mostrare cambiamenti e andamenti con il passare del tempo.
+Per questo tipo di scopo le due architetture consigliate sono la:
+- *#[#sym.lambda]-architecture*: che prevede di elaborare i dati in due flussi separati, uno per i dati in tempo reale e uno per i dati storici. I dati in tempo reale vengono elaborati immediatamente per fornire risposte rapide, mentre i dati storici vengono elaborati in batch per fornire risposte più complete o elaborate nel tempo. Alla fine, i risultati dei due flussi vengono combinati per fornire una visione completa dei dati;
+- *#[#sym.kappa]-architecture*: semplifica la struttura della #[#sym.lambda]-architecture, eliminando il flusso batch. Tutti i dati vengono quindi elaborati in tempo reale utilizzando un sistema di elaborazione dei dati in streaming. Questo come conseguenza significa che i dati vengono elaborati una sola volta, riducendo la complessità del sitema complessivo.
 
+Per quanto appena descritto, la #[#sym.kappa]-architecture è la soluzione più adatta, in quanto specifica per questo caso d'uso.
+Appunto perchè abbiamo bisogno solamente di lavorare dati in tempo reale, evitiamo di gestire la lavorazione dei dati in due posti diversi con diverse tecnologie, che ci porterebbero a complessità di manutenzione, logica di computazione duplicata e complessità di gestione del sistema in generale.
 
+Possiamo quindi compartimentalizzare le varie componenti del sistema in questo modo:
+#figure(
+  image("Schema Componenti Sistema.png"),
+  caption: "Schema delle componenti del sistema."
+)
 
-
-== Diagramma del sistema generale
-/*Questa sezione si propone di esplorare in modo esaustivo le strutture, i componenti e le interazioni che costituiscono il fondamento tecnologico del sistema. Questa analisi dettagliata mira a garantire una comprensione completa delle scelte architetturali adottate, fornendo così una base solida per lo sviluppo e l'implementazione.*/
+- *Data source*: le sorgenti dati sono i sensori IoT sparsi nella città, capaci di inviare messaggi strutturati in formato JSON, ad intervalli regolari, mediante #glossary("Protocollo Kafka"), allo streaming layer;
+- *Streaming layer*: lo streaming layer si occupa di gestire i dati in arrivo in tempo reale, per andarli sistematicamente a persisterli nello storage layer. Questo layer è composto da:
+  - *Apache Kafka*: che svolgerà il ruolo di broker dati, suddividendo le varie tipologie di dati per topic;
+  - *ClickHouse Kafka table engine*: che svolgerà il ruolo di consumatore, al fine di leggere i dati dal server Kafka per poi persisterli nello storage layer.
+- *Storage layer*: si occupa della persistenza dei dati. In realtà oltre a ciò si occupa anche, grazie alle funzionalità OLAP offerte dal database ClickHouse, di effettuare analisi sui dati in tempo reale;
+- *Visualization Layer*: composto unicamente da Grafana questo layer si occupa di richiedere, mediante periodiche query SQL, dati allo storage layer, di modo da poterne creare delle visualizzaizoni in tempo reale.
 
 
 /*già sai*/
