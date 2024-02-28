@@ -6,15 +6,18 @@
   emph[SWAT Engineering]
 }
 
-#let itemCleaner(item: "") = {
-  if item == "0.0" {
+#let itemCleaner(item) = {
+  item = str(item)
+  if item == "0.0" or item == "" or item == "0.0€" {
     return [-]
-  }else if item.split(".").at(1) == "0"{
+  }else if item.split(".").len() == 2{
     return [#item.split(".").at(0)]
   }else{
     return [#item]
   }
 }
+
+#let var = itemCleaner("0.0")
 
 #let rendicontazioneOreAPosteriori(sprintNumber: "01") = {
   let rendicontazioneOre = csv("sprintData/Sprint#" + sprintNumber + "/RendicontazioneOre.csv")
