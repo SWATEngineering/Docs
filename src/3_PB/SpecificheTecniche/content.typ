@@ -172,9 +172,10 @@ Nonostante i simulatori non siano ufficialmente considerati parte integrante del
 Nei paragrafi successivi viene mostrata l'architettura individuata, tramite l'utilizzo di Diagrammi delle Classi e relative rapide descrizioni. Inoltre verranno motivati i design pattern individuati e le decisione progettuali rilevanti. Successivamente per ogni classe verranno illustrati metodi e attributi.
 
 === Struttura generale 
+
 #figure(
-  image("diagrammiclassi/strutturabasesimulatori.png",width:100%),
-  caption: [Diagramma delle classi 1]
+  image("diagrammiclassi/jpegclassi.jpg",width:100%),
+  caption: [Diagramma delle classi 2]
 )
 
 La classe _SimulatorExecutorFactory_ è implementazione del design pattern _Factory_, si occupa della costruzione dei singoli simulatori a partire da un file di configurazione che gli viene passato tramite la costruzione.
@@ -182,13 +183,13 @@ I simulatori sono istanze delle classe _SimulatorThread_: tale classe eredita da
 L'orchestrazione dei simulatori è affidata alla classe _SimulatorExecutor_, che si occupa di attivare e disattivare tutti i simulatori contemporaneamente.
 
 #figure(
-  image("diagrammiclassi/simulatori.png",width:100%),
+  image("diagrammiclassi/jpegclassi.jpg",width:100%),
   caption: [Diagramma delle classi 2]
 )
 La classe _SensorSimulatorStrategy_ è realizzazione del design pattern _Strategy_ ogni strategia rappresenta una tipologia di sensore differente. Al fine di garantire la possibilità di effettuare unit-testing sul comportamento dei sensori tale classe riceve tramite costruttore due istanze della classe riceve tramite costruttore un oggetto di tipo _Random_ e un oggetto di tipo _Datetime_. 
 
 #figure(
-  image("diagrammiclassi/writer.png",width:100%),
+  image("diagrammiclassi/jpegclassi.jpg",width:100%),
   caption: [Diagramma delle classi 3]
 )
 Anche la classe _Writer_ realizza il design pattern _Strategy_, sono state progettate due strategie, la prima atta a permettere al simulatore di inviare i messaggi contenenti i dati della rilevazione a #glossary("Kafka") (_KafkaWriter_), mentre la seconda atta a permettere al simulatore di stampare i risultati su terminale al fine di poterne testare il comportamento. Inoltre l'applicazione del Design Pattern potrebbe consentire di realizzare il componente di simulazione in altri contesti senza dover riprogettare la componente.
@@ -205,33 +206,39 @@ Non vengono menzionati i costruttori.
 - *io_module: FileIO [Privato]*: //TODO: non mi ricordo il perchè di sta roba sarebbe da capire e aggiungere. 
 ===== Metodi
 - *create(): SimulatorExecutor [Pubblico]*: a partire dal file che viene passato tramite costruttore si occupa di costruire un oggetto della classe _SimulatorExecutor_.
+
 ==== SimulatorExecutor (Classe)
 ===== Attributi
 - *simulators:SimulatorThread[\*] [Privato]*: Aggregato di oggetti _SimulatorThread_.
 ===== Metodi
 - *stop_all(): void [Pubblico]*: Metodo  che arresta la simulazione di tutti i _SimulatorThread_; 
 - *run_all(): void [Pubblico]*: Metodo  che avvia la simulazione di tutti i _SimulatorThread_. 
+
 ==== SimulatorThread (Classe)
 ===== Attributi
 - *is_running: bool [Privato]*: Attributo  che indica se al momento il simulatore sta producendo dati.
+- *Se*
 ===== Metodi
 - *stop(): void[Pubblico]*: Metodo che arresta la simulazione del singolo  _SimulatorThread_; 
 - *run(): void[Pubblico]*: Metodo che avvia la simulazione del singolo  _SimulatorThread_.
+
 ==== SensorSimulatorStrategy (Classe)
 ===== Attributi
 - *wait_time_in_seconds: int [Protetto]*: intervallo temporale tra due simulazioni.
 - *sensor_name: String [Protetto]*: identificativo del sensore; 
 - *random_obj: Random [Privato]*: oggetto della classe Random della libreria Standard di #glossary("Python"); 
-- *datetime_obj: Datetime [Privato]*: oggetto della classe Datetime della libreria Standard di #glossary("Python").
+- *datetime_obj: Datetime [Privato]*: oggetto della classe Datetime della libreria Standard di #glossary("Python"); 
 - *coordinates : Coordinates [Protetto]*: oggetto della classe Coordinates. 
 ===== Metodi 
 - *simulate(): String [Pubblico]*: metodo che produce una stringa contenente il messaggio contenente la rilevazione simulata effettuata.
+
 ==== Coordinates (Classe)
 ===== Attributi
 - *longitude: float [Privato]*: longitudine geografica. 
 - *latitude: float [Privato]*: latitudine geografica.
 ===== Metodi
 - *getGeoJSON(): string [Pubblico]* : ritorna le coordinate geografiche nel formato GeoJSON.
+
 ==== WriterStrategy (interfaccia)
 ===== Metodi
 - *write(in to_write:String): void [Pubblico]*: Scrive il messaggio contenuto nella stringa passata come parametro.
@@ -241,14 +248,28 @@ Non vengono menzionati i costruttori.
 - *write(in to_write:String): void [Pubblico]*: Scrive il messaggio contenuto nella stringa passata come parametro tramite standard output.
 
 ==== KafkaWriter (Classe)
-//TODO: rimane da capire come andare a rappresentare le firme dei metodi.
-
-
-
-==== SimulatorExecutorFactory
-===== Attributi
+===== Attributi 
+//qui ho un dubbio su fatto che port e ip debbano essere attributi. nel caso non lo siano vanno aggiornati anche nel grafico
+- *ip: String [Privato]* : indirizzo ip della macchina che ospita il message broker; 
+- *port: String [Privato]* : porta della macchina che ospita il message broker; 
+- *topic: String [Privato]*: indica il topic sul message Broker in cui il messaggio sarà scritto.
 ===== Metodi
-- create(): SimulatorExecutor: a partire dal file che viene passato tramite costruttore si occupa di costruire un oggetto della classe _SimulatorExecutor_.
+- *write(in to_write:String): void [Pubblico]*: Scrive il messaggio contenuto nella stringa passata come parametro sul topic corrispondente nel broker.
+
+==== TargetProducer (Interfaccia)
+===== Metodi
+- *producer(in topic:Sting, in value:String, in callback:Function): void [Pubblico]*: Metodo che il client usa per inviare il messaggio a Kafka.
+
+==== AdapterProducer (Interfaccia)
+===== Attributi 
+- *adaptee: Producer (Privato)*
+===== Metodi
+- *producer(in topic:Sting, in value:String, in callback:Function): void [Pubblico]*: Metodo che richiama il metodo _produce()_ dell'oggetto _adaptee_ di tipo  _Producer_ della libreria _Confluent Kafka_.
+
+
+//mancano da descrivere classe concreta dell'adapter e i le strategie del simulatore, per le secondo credo sia appropriato evitare per le prima mi sembrava goofy e basta
+
+
 
 
 #pagebreak()
