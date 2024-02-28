@@ -192,7 +192,7 @@ La classe _SensorSimulatorStrategy_ è realizzazione del design pattern _Strateg
   image("diagrammiclassi/jpegclassi.jpg",width:100%),
   caption: [Diagramma delle classi 3]
 )
-Anche la classe _Writer_ realizza il design pattern _Strategy_, sono state progettate due strategie, la prima atta a permettere al simulatore di inviare i messaggi contenenti i dati della rilevazione a #glossary("Kafka") (_KafkaWriter_), mentre la seconda atta a permettere al simulatore di stampare i risultati su terminale al fine di poterne testare il comportamento. Inoltre l'applicazione del Design Pattern potrebbe consentire di realizzare il componente di simulazione in altri contesti senza dover riprogettare la componente.
+Anche la classe _Writer_ realizza il design pattern _Strategy_, sono state progettate due strategie, la prima, (_KafkaWriter_), atta a permettere al simulatore di inviare i messaggi contenenti i dati della rilevazione a #glossary("Kafka"), mentre la seconda atta a permettere al simulatore di stampare i risultati su terminale al fine di poterne testare il comportamento. Inoltre l'applicazione del Design Pattern potrebbe consentire di realizzare il componente di simulazione in altri contesti senza doverne riprogettare la struttura.
 Nello specifico la classe _KafkaWriter_ realizza il suo scopo tramite l'impiego del design pattern _Adapter_, nella sua variante _Object Adapter_. Viene infatti fatto utilizzo della classe _Producer_ della liberia _confluent_kafka_ dato che tale classe potrebbe essere soggetta a variazioni si è deciso di utilizzare tale pattern per permettere di rispondere prontamente a tali cambiamenti.
 
 === Classi: metodi e attributi
