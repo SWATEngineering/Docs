@@ -127,7 +127,7 @@ Possiamo quindi compartimentalizzare le varie componenti del sistema in questo m
   caption: "Schema delle componenti del sistema."
 )
 
-- *Data source*: le sorgenti dati sono i sensori IoT sparsi nella città, capaci di inviare messaggi strutturati in formato JSON, ad intervalli regolari, mediante #glossary("Protocollo Kafka"), allo streaming layer;
+- *Data source*: le sorgenti dati sono i sensori IoT sparsi nella città, capaci di inviare messaggi strutturati in formato JSON, ad intervalli regolari, mediante protocollo #glossary("Kafka"), allo streaming layer;
 - *Streaming layer*: lo streaming layer si occupa di gestire i dati in arrivo in tempo reale, per andarli sistematicamente a persisterli nello storage layer. Questo layer è composto da:
   - *Apache Kafka*: che svolgerà il ruolo di broker dati, suddividendo le varie tipologie di dati per topic;
   - *ClickHouse Kafka table engine*: che svolgerà il ruolo di consumatore, al fine di leggere i dati dal server Kafka per poi persisterli nello storage layer.
