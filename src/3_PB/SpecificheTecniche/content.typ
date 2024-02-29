@@ -141,7 +141,10 @@ Possiamo quindi compartimentalizzare le varie componenti del sistema in questo m
 Per illustrare il funzionamento del sistema, abbiamo utilizzato un diagramma di flusso dei dati. Questo diagramma ha permesso di rappresentare in modo chiaro e intuitivo il percorso dei dati attraverso il sistema. Abbiamo identificato le diverse entità coinvolte nel processo e le relazioni tra di esse, fornendo una panoramica dettagliata di come i dati vengono acquisiti, elaborati, archiviati e visualizzati.
 
 
-/*inserire quì l'immagine grossa vedere poi se si legge*/
+#figure(
+  image("DFDDiagram1.jpg",width: 120%),
+  caption: "Diagramma data-flow relativo al percorso dei dati."
+)
 
 - *Generazione dei dati*: Una varietà di simulatori di sensori di dati ambientali e urbanistici (entità esterne) sono utilizzati per misurare una vasta gamma di parametri. Questi simulatori forniscono dati, in modalità continua, relativi a:
     + Temperatura;
