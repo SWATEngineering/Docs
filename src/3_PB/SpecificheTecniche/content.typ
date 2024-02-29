@@ -265,7 +265,6 @@ Non vengono menzionati i costruttori.
 - *producer(in topic:Sting, in value:String, in callback:Function): void [Pubblico]*: Metodo che richiama il metodo _produce()_ dell'oggetto _adaptee_ di tipo  _Producer_ della libreria _Confluent Kafka_.
 
 
-//mancano da descrivere classe concreta dell'adapter e i le strategie del simulatore, per le secondo credo sia appropriato evitare per le prima mi sembrava goofy e basta
 
 
 
