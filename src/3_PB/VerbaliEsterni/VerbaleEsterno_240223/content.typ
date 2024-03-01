@@ -23,7 +23,7 @@
 Durante l'incontro il gruppo ha chiarito con La Proponente alcuni dubbi che vengono esposti in seguito e ha condiviso con essa lo stato di avanzamento del progetto.
 
 == Chiarimento SAD
-La Proponente, dopo relativa domanda da parte del gruppo, ha chiarito che il documento SAD (Software Architecture Document) richiesto all'interno del capitolato coincide con il documento che il team chiama _Specifiche Tecniche_ e che sta sviluppando in questo momento.
+La Proponente, dopo relativa domanda da parte del gruppo, ha chiarito che la richiesta del documento SAD (Software Architecture Document), specificata all'interno del capitolato, viene soddisfatta dal documento _Specifiche Tecniche_, di cui si sta effettuando la stesura in questo momento.
 
 == Progettazione
 Durante l'incontro il gruppo ha condiviso con La Proponente i suggerimenti e gli indirizzamenti indicati dal Professor Cardin durante il ricevimento del 22-02-2024. La Proponente ha confermato le indicazioni. Inoltre, ha fornito ulteriori spunti di approfondimento che potrebbero risultare utili per la progettazione. In particolare viene confermato da parte della proponente che la "Lambda architecture" è un tipo di architettura che può adattarsi al nostro prodotto e che quindi andrà approfondita dai Progettisti in carica per questo sprint. Vengono inoltre confermati i diagrammi "Data-flow diagram" e i "Deployment diagram", come già suggerito dal Prof. Cardin nel colloquio sopracitato; inoltre viene suggerito di approfondire i "Component Diagram". I tipi di diagrammi elencati potrebbero essere una modalità di rappresentazione che si presta bene al nostro caso.
