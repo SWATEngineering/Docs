@@ -67,7 +67,7 @@ Il processo si articola in diverse fasi:
         - Completamento e consegna.
 
 === Inizio e fine #glossary[sprint]
-Come riportato all'interno del _Piano di Progetto v2.0_, per agevolare il processo di fornitura il team ha optato per un modello di sviluppo agile e #glossary[sprint] della durata di una settimana, dove ogni nuovo #glossary[sprint] inizia il venerdì di una data settimana e termina il giovedì di quella successiva. L'unica eccezione a questa regola è costituita dai primi due #glossary[sprint], che hanno avuto una durata di due settimane.
+Come riportato all'interno del _Piano di Progetto v2.0_, per agevolare il processo di fornitura il team ha optato per un modello di sviluppo agile e #glossary[sprint] della durata di una settimana, dove ogni nuovo #glossary[sprint] inizia il venerdì di una data settimana e termina il giovedì di quella successiva.
 
 === Rapporti con la Proponente
 La Proponente si è resa disponibile attraverso vari canali, come e-mail, Google Meet e Element, per stabilire una comunicazione frequente e risolvere prontamente eventuali dubbi o domande che possono emergere durante lo svolgimento del progetto. Sin dall'inizio si è concordato di organizzare incontri regolari, in particolare al termine di ciascuno #glossary[sprint], fissati per il venerdì alle 10:30.  Questi incontri, che assumono la forma di sessioni di #glossary[sprint review], consentono al team di esporre quanto realizzato e di ricevere feedback sull'andamento del lavoro.
@@ -126,7 +126,7 @@ Le _Specifiche Tecniche_, redatte dal Progettista, costituiscono un resoconto de
 Si compone delle seguenti sezioni:
 
         - *Tecnologie*: fornisce una panoramica dei linguaggi di programmazione, dei #glossary[framework] e dei servizi utilizzati per la realizzazione del #glossary[sistema] software; in particolare, di ogni tecnologia utilizzata viene fornita una breve descrizione contestuale e la versione utilizzata nel corso dello sviluppo;
-        - *#glossary[Architettura]*: presenta i componenti architetturali del #glossary[sistema], descrivendo i #glossary[design pattern] e le #glossary[best practices] utilizzate per organizzare e integrare i componenti in modo efficace ed efficiente; include diagrammi architetturali, come diagrammi delle classi, diagrammi delle componenti e diagrammi di deployment per illustrare visivamente la struttura e le relazioni all'interno del #glossary[sistema]\; 
+        - *#glossary[Architettura]*: presenta i componenti architetturali del #glossary[sistema], descrivendo i #glossary[design pattern] e le #glossary[best practices] utilizzate per organizzare e integrare i componenti in modo efficace ed efficiente; include diagrammi architetturali per illustrare visivamente la struttura e le relazioni all'interno del #glossary[sistema]\; 
         - *Tracciamento dei requisiti*: riporta i requisiti identificati all'interno dell'_Analisi dei Requisiti v2.0_, specificando se questi sono stati soddisfatti o meno; illustra anche la percentuale di copertura della totalità dei requisiti e, più nello specifico, di quelli obbligatori.
 
 ==== Glossario
@@ -363,7 +363,7 @@ I requisiti trovati hanno un codice univoco con la seguente sintassi:
 
 ===== Informazioni aggiuntive  
 
-All'interno del documento _Analisi dei Requisiti v2.0_, è importante organizzare le informazioni in modo strutturato per garantire una comprensione chiara e completa di ciascun requisito. Viene dunque utilizzata una tabella per specificare le informazioni aggiuntive pertinenti ai requisiti di ciascun tipo.
+All'interno del documento _Analisi dei Requisiti v2.0_, per ovviare alla necessità di una comprensione chiara e immediata dei requisiti si è deciso di organizzare gli stessi in modo strutturato utilizzando una tabella per ogni tipologia.
 Le tabelle vengono strutturate nel seguente modo:
         - *Codice*: il codice del requisito;
         - *Importanza*: l'importanza del requisito (obbligatorio, opzionale, desiderabile);
@@ -429,13 +429,9 @@ caption:[Metriche sui requisiti],
 L'attività di progettazione è affidata ai Progettisti, i quali devono definire le caratteristiche del prodotto finale basandosi sui requisiti specificati nel documento _Analisi dei Requisiti v1.0_. 
 La fase di progettazione segue l'analisi dei requisiti, dove sono definite le necessità e le aspettative per il prodotto. I Progettisti traducono queste informazioni in una struttura architetturale definita, organizzando il #glossary[sistema] in componenti specifiche e definendo le interazioni tra di esse. In questo modo, la progettazione costituisce un passo essenziale nel percorso di sviluppo, contribuendo a trasformare i requisiti in un piano tangibile per la creazione del prodotto finale.
 
-Si definiscono tre sottoattività: 
+Si definiscono tre sotto-attività: 
 
-        + *Requirements and Technology Baseline (#glossary[RTB])*: implica la selezione e la definizione delle tecnologie di base utilizzate per la realizzazione del #glossary[sistema]. Questo comprende decisioni relative a linguaggi di programmazione, librerie e #glossary[framework]. Tale processo porta alla creazione di un Proof of Concept (#glossary("PoC"));
-
-                Include:
-                - *Proof of Concept (#glossary[PoC])*: consiste nella creazione di una versione parziale del prodotto, includendo alcune delle funzionalità stabilite durante l'analisi dei requisiti. L'obiettivo è valutare la fattibilità del prodotto completo;
-                - *Scelte tecnologiche*: consiste nello stabilire quali tecnologie adottare per lo sviluppo del #glossary[PoC], anche su consiglio della Proponente.
+        + *Scelte tecnologiche*: implica la selezione e la definizione delle tecnologie di base utilizzate per la realizzazione del #glossary[sistema]. Questo comprende decisioni relative a linguaggi di programmazione, librerie e #glossary[framework];
         + *Progettazione architetturale*: definizione ad alto livello dell'#glossary[architettura] del #glossary[sistema]\; si concentra sulla suddivisione del #glossary[sistema] in componenti e moduli, definendo le relazioni tra di essi e specificando le linee guida per l'organizzazione e l'interazione delle varie parti;
         + *Product Baseline (#glossary[PB])*: segna un punto stabile nell'attività di progettazione, in cui le specifiche tecniche, le funzionalità principali e l'#glossary[architettura] del prodotto sono definite in modo dettagliato e accettate dalle parti coinvolte. Include tutti gli elementi essenziali e i requisiti chiave del prodotto che devono essere soddisfatti, fornendo una base solida per lo sviluppo continuo del prodotto. Questo processo porta infine alla realizzazione di un Minimum Viable Product (#glossary("MVP"));
                 Include:
@@ -546,7 +542,7 @@ L'architettura deve soddisfare vari criteri:
 All'interno del documento _Specifiche Tecniche v1.0_, si utilizza un'automazione #glossary[Typst] per la creazione delle tabelle dei requisiti soddisfatti nella sezione *Tracciamento dei requisiti*; le tabelle importano i dati delle prime due colonne ("Codice" e "Descrizione") direttamente dall'_Analisi dei Requisiti v2.0_ per ridurre sprechi di risorse e l'introduzione di errori, e aggiungono una terza colonna ("Stato"):
         - *Codice*: il codice del requisito;
         - *Descrizione*: definizione atomica e disambigua del requisito;
-        - *Stato*: "Soddisfatto" o "Non soddisfatto", in riferimento al soddisfacimento del requisito all'interno del prodotto software.
+        - *Stato*: "Soddisfatto" o "Non soddisfatto", in riferimento al soddisfacimento del requisito all'interno dell'#glossary[architettura] individuata nelle _Specifiche Tecniche_.
 
  In particolare, si utilizzano degli array per tenere traccia dei requisiti soddisfatti a seconda della loro tipologia (dove i requisiti vengono identificati tramite il codice univoco assegnato loro nell'_Analisi dei Requisiti v2.0_) e questi vengono successivamente utilizzati per popolare la colonna "Stato" delle tabelle in modo opportuno. 
 
@@ -575,7 +571,7 @@ che mostri i #glossary[dati anomali], il sensore che li ha rilevati e il timesta
 ),
 caption: "Esempio tabella per requisiti soddisfatti.")
 
-Nella creazione della tabella si prende nota del numero di requisiti soddisfatti e del numero di requisiti totali di una determinata categoria per poter creare i grafici a torta dei requisiti soddisfatti in modo automatico.
+Nella creazione della tabella si prende nota del numero di requisiti soddisfatti e del numero di requisiti totali di una determinata categoria per poter creare i grafici a torta dei requisiti soddisfatti in modo automatico. Nello specifico, per ogni categoria di requisito si va a creare un grafico che riporta la percentuale dei requisiti soddisfatti e quella dei requisiti non soddisfatti.
 
 ==== Codifica 
 
