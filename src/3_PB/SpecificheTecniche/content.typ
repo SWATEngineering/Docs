@@ -113,7 +113,7 @@ caption: [Tabella tecnologie per l'analisi del codice.])
 #pagebreak()
 = Architettura del sistema
 == Architettura di implementazione
-Il sistema ha bisogno di elaborare dati provenienti da una fonte in tempo reale fornendo, sempre in tempo reale, la loro visualizzazione per mostrare cambiamenti e andamenti con il passare del tempo.
+Il sistema richiede la capacità di processare dati provenienti da fonti in tempo reale e di offrire una visualizzazione immediata e continua di tali dati, consentendo di monitorarne gli andamenti, sempre in tempo reale. 
 Per questo tipo di scopo le due architetture consigliate sono la:
 - *#[#sym.lambda]-architecture*: che prevede di elaborare i dati in due flussi separati, uno per i dati in tempo reale e uno per i dati storici. I dati in tempo reale vengono elaborati immediatamente per fornire risposte rapide, mentre i dati storici vengono elaborati in batch per fornire risposte più complete o elaborate nel tempo. Alla fine, i risultati dei due flussi vengono combinati per fornire una visione completa dei dati;
 - *#[#sym.kappa]-architecture*: semplifica la struttura della #[#sym.lambda]-architecture, eliminando il flusso batch. Tutti i dati vengono quindi elaborati in tempo reale utilizzando un sistema di elaborazione dei dati in streaming. Questo come conseguenza significa che i dati vengono elaborati una sola volta, riducendo la complessità del sitema complessivo.
