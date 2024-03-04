@@ -62,6 +62,7 @@ memoized_terms = {}
 error_message = ""
 for path_to_typ_file in trova_files_con_estensione_typ("."):
     error_message += check_glossary("./src/2_RTB/Glossario/terms.csv", path_to_typ_file)
+    error_message += check_glossary("./src/3_PB/Glossario/terms.csv", path_to_typ_file)
 
 if len(error_message) > 0:
     sys.exit(error_message[:-2])
