@@ -118,7 +118,7 @@ Per questo tipo di scopo le due architetture consigliate sono la:
 - *#[#sym.lambda]-architecture*: che prevede di elaborare i dati in due flussi separati, uno per i dati in tempo reale e uno per i dati storici. I dati in tempo reale vengono elaborati immediatamente per fornire risposte rapide, mentre i dati storici vengono elaborati in batch per fornire risposte più complete o elaborate nel tempo. Alla fine, i risultati dei due flussi vengono combinati per fornire una visione completa dei dati;
 - *#[#sym.kappa]-architecture*: semplifica la struttura della #[#sym.lambda]-architecture, eliminando il flusso batch. Tutti i dati vengono quindi elaborati in tempo reale utilizzando un sistema di elaborazione dei dati in streaming. Questo come conseguenza significa che i dati vengono elaborati una sola volta, riducendo la complessità del sitema complessivo.
 
-Per quanto appena descritto, la #[#sym.kappa]-architecture è la soluzione più adatta, in quanto specifica per questo caso d'uso.
+Per quanto appena descritto, la #[#sym.kappa]-architecture è la soluzione più adatta, in quanto specifica per il nostro caso d'uso.
 Appunto perchè abbiamo bisogno solamente di lavorare dati in tempo reale, evitiamo di gestire la lavorazione dei dati in due posti diversi con diverse tecnologie, che ci porterebbero a complessità di manutenzione, logica di computazione duplicata e complessità di gestione del sistema in generale.
 
 Possiamo quindi compartimentalizzare le varie componenti del sistema in questo modo:
