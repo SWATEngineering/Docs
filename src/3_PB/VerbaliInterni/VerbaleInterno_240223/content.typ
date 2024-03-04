@@ -24,7 +24,7 @@ Vengono stabiliti i seguenti i nuovi incarichi relativi allo sprint corrente:
 - Rango Matteo: Progettista;
 - Toniolo Riccardo: Progettista.
 Per questo sprint il team ha deciso di concentrare gli sforzi sull'attività di progettazione, si è dunque deciso di impiegare molte ore del ruolo di Progettista. Risulta infatti necessario avanzare con la progettazione dell'architettura in modo tale da poter successivamente dedicare un maggior numero di risorse all'attività di codifica.
-Il team per limitare il rischio di context switch ha deciso di mantenere inalterato il ruolo dei Progettisti dello Sprint precedente.
+Il team, per limitare il rischio di context switch, ha deciso di mantenere inalterato il ruolo dei Progettisti dello sprint precedente.
 
 == Aggiornamento NdP
 Il documento _Norme di Progetto_ dovrà essere aggiornato con l'aggiunta di una sezione relativa alle _Specifiche Tecniche_ similmente a quanto fatto per gli altri documenti. Quest'attività sarà compito dell'Amministratore Nancy Kalaj.
