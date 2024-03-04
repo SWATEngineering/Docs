@@ -39,21 +39,22 @@ Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei d
 - Gamma, E., Helm, R., Johnson, R., & Vlissides, J. (1994). *Design Patterns: Elements of Reusable Object-Oriented Software.* Addison-Wesley.
 /*in caso aggiungere qualche riferimento sui dataflow diagram*/
 - Diagrammi delle classi (UML) - corso di Ingegneria del Software a.a. 2023/2024: \
- #link("https://www.math.unipd.it/~rcardin/swea/2023/Diagrammi%20delle%20Classi.pdf") (20/02/2024) \
+ #link("https://www.math.unipd.it/~rcardin/swea/2023/Diagrammi%20delle%20Classi.pdf") (4/03/2024) \
 - Diagrammi di Sequenza (UML) - corso di Ingegneria del Software a.a. 2023/2024: \
  #link("https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20di%20Sequenza.pdf") (20/02/2024) \ /*se non li mettiamo si possono anche togliere*/
 - Progettazione - corso di Ingegneria del Software a.a. 2023/2024: \
- #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T6.pdf") (20/02/2024) \
+ #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T6.pdf") (4/03/2024) \
 - Architetture #[#sym.kappa] & #[#sym.lambda]:
   - #link("https://imply.io/blog/building-event-analytics-pipeline-with-confluent-cloud-and-imply-real-time-database-polaris/") (28/02/2024)
   - #link("https://medium.com/sysco-labs/real-time-sales-analytics-using-kappa-architecture-852dc84bfe7b") (28/02/2024)
 
 === riferimenti tecnici
-- *#glossary[Python]*: #link("https://docs.python.org/3/"); (20/02/2024)
+- *#glossary[Python]*: #link("https://docs.python.org/3/"); (4/03/2024)
 - *#glossary[Grafana]*: #link("https://grafana.com/docs/grafana/latest/"); (20/02/2024)
-- *Apache #glossary[Kafka]*: #link("https://kafka.apache.org/20/documentation.html"); (20/02/2024)
-- *#glossary[Clickhouse]*: #link("https://clickhouse.com/docs");  (20/02/2024)
+- *Apache #glossary[Kafka]*: #link("https://kafka.apache.org/20/documentation.html"); (4/03/2024)
+- *#glossary[Clickhouse]*: #link("https://clickhouse.com/docs");  (4/03/2024)
 - *Confluent Kafka*:#link("https://docs.confluent.io/kafka-clients/python/current/overview.html"); (20/02/2024)
+- *Docker*: #link("https://docs.docker.com/"); (4/03/2024)
 
 #pagebreak()
 = Tecnologie
@@ -63,50 +64,52 @@ Questa sezione si propone di offrire una panoramica sintetica delle tecnologie a
 === Linguaggi e formati dati
 #figure(
 table(
-      columns:(100pt,auto,auto),
-      align: (x, y) => (center, center, center).at(x),
+      columns:(auto,auto,110pt,auto),
+      align: (x, y) => (center, center, center,center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       /* TODO: piuttosto che mettere una descrizione generica, dovremmo andare a mettere come questa tecnologia ci viene incontro / ci è utile per sviluppare le funzionalità che dobbiamo sviluppare.*/
       /*Giacomo D'Ovidio commenta: io sinceramente non so se andrei a specificare, credo poi ce ne sarà abbondantemente modo di parlarne nella parte relativa di design (Sezione 4), però bon come volete*/
-      [*Tecnologia*],[*Descrizione*],[*Versione*],
-      [#glossary[Python]], [Linguaggio di programmazione ad alto livello noto per la sua semplicità, ampiamente utilizzato nell'analisi dei dati, l'intelligenza artificiale, il calcolo scientifico e altro ancora.], [da definire], 
-      [SQL], [Linguaggio standard per la gestione e la manipolazione dei database], [da definire], 
-      [YAML], [Formato di serializzazione dei dati leggibile dall'uomo comunemente utilizzato per la configurazione dei servizi e lo scambio di dati tra programmi.], [da definire], 
-      [JSON], [Formato leggero per lo scambio di dati, facile da leggere e scrivere per gli esseri umani e facile da analizzare e generare per le macchine.], [da definire]), 
+      [*Tecnologia*],[*Descrizione*],[*Uso*],[*Versione/Standard*],
+      [#glossary[Python]], [Linguaggio di programmazione ad alto livello, interpretato, multi paradigma.],[Creazione dei simulatori di dati.], [3.11], 
+      [SQL], [Linguaggio standard per la gestione e la manipolazione dei database che lo supportano.],[Gestione e manipolazione del database ClickHouseDB.], [ANSI SQL], 
+      [YAML], [Formato di serializzazione dei dati leggibile dall'uomo comunemente utilizzato per la configurazione dei servizi e lo scambio di dati tra programmi.],[Configurazione di docker compose.], [1.2.2], 
+      [JSON], [Formato leggero per lo scambio di dati, facile da leggere e scrivere per gli esseri umani e facile da analizzare e generare per le macchine.],[Configurazione dei simulatori di dati e formato dei messaggi spediti dai simulatori/sensori al broker dati.], [2020-12]), 
 caption: [Tabella tecnologie per la Codifica: Linguaggi e formati dati.])
 === #glossary[Framework] e librerie
 #figure(
 table(
-      columns:(100pt,auto,auto),
+      columns:(70pt,auto,auto),
       align: (x, y) => (center, center, center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Tecnologia*],[*Descrizione*],[*Versione*],
-      [Pydantic], [Libreria #glossary[Python] per la serializzazione degli oggetti e per la validazione dei dati, inoltre si caratterizza dalla capacità di forzare i tipi garantendo che i dati siano coerenti durante l'elaborazione.], [da definire], 
-      [Confluent Kafka], [Libreria #glossary[Python] che fornisce gli strumenti necessari per produrre e consumare messaggi da Apache #glossary("Kafka"). ], [da definire]), 
+      [Pydantic], [Libreria #glossary[Python] per la serializzazione degli oggetti e per la validazione dei dati, inoltre si caratterizza dalla capacità di forzare i tipi garantendo che i dati siano coerenti durante l'elaborazione.], [2.6], 
+      [Confluent Kafka], [Libreria #glossary[Python] che fornisce gli strumenti necessari per produrre e consumare messaggi da Apache #glossary("Kafka"). ], [1.9]), 
 caption: [Tabella tecnologie per la Codifica: #glossary[Framework] e librerie])
 === Database e servizi
 #figure(
 table(
-      columns:(100pt,auto,auto),
+      columns:(70pt,auto,auto),
       align: (x, y) => (center, center, center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Tecnologia*],[*Descrizione*],[*Versione*],
-      [#glossary[Clickhouse]], [Sistema di gestione dei database colonnari, progettato per l'analisi dei dati ad alte prestazioni. È ottimizzato per eseguire query analitiche su grandi volumi di dati in modo efficiente.], [da definire], 
-      [_Apache_ #glossary[Kafka]], [Piattaforma di streaming di dati distribuita e scalabile, progettata per la gestione di flussi di dati in tempo reale. È ampiamente utilizzato per l'elaborazione di eventi, la messaggistica asincrona e la creazione di pipeline dati #glossary[real-time].], [da definire], 
-      [#glossary[Grafana]], [Piattaforma open source per il monitoraggio e l'analisi dei dati. Fornisce strumenti per la visualizzazione di metriche e log, la creazione di #glossary[dashboard] interattive e la generazione di avvisi in tempo reale.], [da definire],  
-      [#glossary[Grafana]\ #glossary[ClickHouse]\ Data Source], [Plugin per #glossary[Grafana] che consente di interrogare e visualizzare i dati di #glossary[ClickHouse] in #glossary[Grafana]], [da definire], 
-      [Docker], [Piattaforma open-source che permette di creare, distribuire e gestire applicazioni in contenitori software.], [da definire]), 
+      [#glossary[Clickhouse]], [Sistema di gestione dei database colonnari, progettato per l'analisi dei dati in tempo reale. È ottimizzato nei casi d'uso OLAP per eseguire query analitiche su grandi volumi di dati in modo efficiente.], [24.1.5.6], 
+      [_Apache_ #glossary[Kafka]], [Piattaforma di streaming di dati distribuita e scalabile, progettata per la gestione di flussi di dati in tempo reale. È ampiamente utilizzato per l'elaborazione di eventi, la messaggistica asincrona e la creazione di pipeline dati #glossary[real-time].], [3.7.0], 
+      [#glossary[Grafana]], [Piattaforma open source per il monitoraggio e l'analisi dei dati. Fornisce strumenti per la visualizzazione di metriche e log, la creazione di #glossary[dashboard] interattive e la generazione di avvisi in tempo reale.], [10.3],  
+      [#glossary[Grafana]\ #glossary[ClickHouse]\ Data Source], [Plugin per #glossary[Grafana] che consente di interrogare e visualizzare i dati di #glossary[ClickHouse] in #glossary[Grafana]], [4.0.3], 
+      [Docker], [Piattaforma open-source che permette di creare, distribuire e gestire applicazioni in contenitori virtuali.], [25.0.3],
+      [Docker Compose], [Strumento per definire e gestire applicazioni multi-container Docker attraverso file YAML.], [2.24.6]
+      ), 
 caption: [Tabella tecnologie per la Codifica: Database e servizi.])
 
 
 == Per l'analisi del codice
 #figure(
 table(
-      columns:(100pt,auto,auto),
+      columns:(70pt,auto,auto),
       align: (x, y) => (center, center, center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Tecnologia*],[*Descrizione*],[*Versione*],
-      [PEP8], [Stile di codifica per il codice #glossary[Python] che definisce le linee guida per la formattazione del codice, rendendolo più leggibile e uniforme.], [da definire]), 
+      [PEP8], [Stile di codifica per il codice #glossary[Python] che definisce le linee guida per la formattazione del codice, rendendolo più leggibile e uniforme.], [1.7.1]), 
 caption: [Tabella tecnologie per l'analisi del codice.])
 
 
