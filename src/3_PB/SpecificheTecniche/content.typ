@@ -116,13 +116,13 @@ caption: [Tabella tecnologie per l'analisi del codice.])
 #pagebreak()
 = Architettura del sistema
 == Architettura di implementazione
-Il sistema richiede la capacità di processare dati provenienti da fonti in tempo reale e di offrire una visualizzazione immediata e continua di tali dati, consentendo di monitorarne gli andamenti, sempre in tempo reale. 
+Il sistema richiede la capacità di processare dati provenienti da varie fonti, in tempo reale, e di offrire una visualizzazione immediata e continua di tali dati, consentendo di monitorarne gli andamenti. 
 Per questo tipo di scopo le due architetture consigliate sono la:
 - *#[#sym.lambda]-architecture*: che prevede di elaborare i dati in due flussi separati, uno per i dati in tempo reale e uno per i dati storici. I dati in tempo reale vengono elaborati immediatamente per fornire risposte rapide, mentre i dati storici vengono elaborati in batch per fornire risposte più complete o elaborate nel tempo. Alla fine, i risultati dei due flussi vengono combinati per fornire una visione completa dei dati;
-- *#[#sym.kappa]-architecture*: semplifica la struttura della #[#sym.lambda]-architecture, eliminando il flusso batch. Tutti i dati vengono quindi elaborati in tempo reale utilizzando un sistema di elaborazione dei dati in streaming. Questo come conseguenza significa che i dati vengono elaborati una sola volta, riducendo la complessità del sitema complessivo.
+- *#[#sym.kappa]-architecture*: semplifica la struttura della #[#sym.lambda]-architecture, eliminando il flusso batch. Tutti i dati vengono quindi elaborati in tempo reale utilizzando un sistema di elaborazione dei dati in streaming. Questo fa si che i dati vengono elaborati una sola volta, riducendo la complessità complessiva del sitema.
 
 Per quanto appena descritto, la #[#sym.kappa]-architecture è la soluzione più adatta, in quanto specifica per il nostro caso d'uso.
-Appunto perchè abbiamo bisogno solamente di lavorare dati in tempo reale, evitiamo di gestire la lavorazione dei dati in due posti diversi con diverse tecnologie, che ci porterebbero a complessità di manutenzione, logica di computazione duplicata e complessità di gestione del sistema in generale.
+Si ha appunto bisogno di lavorare con dati in tempo reale, evitando di gestire la lavorazione dei dati in due posti diversi con diverse tecnologie, che ci porterebbe ad una complessità di manutenzione maggiore, logica di computazione duplicata e complessità di gestione del sistema in generale.
 
 Possiamo quindi compartimentalizzare le varie componenti del sistema in questo modo:
 #figure(
@@ -130,15 +130,14 @@ Possiamo quindi compartimentalizzare le varie componenti del sistema in questo m
   caption: "Schema delle componenti del sistema."
 )
 
-- *Data source*: le sorgenti dati sono i sensori IoT sparsi nella città, capaci di inviare messaggi strutturati in formato JSON, ad intervalli regolari, mediante protocollo #glossary("Kafka"), allo streaming layer;
+- *Data source*: le sorgenti dati sono i sensori IoT sparsi nella città, capaci di inviare messaggi contenenti misurazioni, ad intervalli regolari, mediante protocollo #glossary("Kafka"), allo streaming layer;
 - *Streaming layer*: lo streaming layer si occupa di gestire i dati in arrivo in tempo reale, per andarli sistematicamente a persisterli nello storage layer. Questo layer è composto da:
-  - *Apache Kafka*: che svolgerà il ruolo di broker dati, suddividendo le varie tipologie di dati per topic;
+  - *Apache Kafka*: che svolgerà il ruolo di broker dati;
   - *ClickHouse Kafka table engine*: che svolgerà il ruolo di consumatore, al fine di leggere i dati dal server Kafka per poi persisterli nello storage layer.
-- *Storage layer*: si occupa della persistenza dei dati. In realtà oltre a ciò si occupa anche, grazie alle funzionalità OLAP offerte dal database ClickHouse, di effettuare analisi sui dati in tempo reale;
-- *Visualization Layer*: composto unicamente da Grafana questo layer si occupa di richiedere, mediante periodiche query SQL, dati allo storage layer, di modo da poterne creare delle visualizzaizoni in tempo reale.
+- *Storage layer*: si occupa della persistenza dei dati e, grazie alle funzionalità OLAP offerte dal database ClickHouse, di effettuare analisi in tempo reale;
+- *Visualization Layer*: composto unicamente da Grafana, questo layer si occupa di visualizzare i dati elaborati, in tempo reale.
 
 
-/*già sai*/
 == Diagramma del flusso di dati (data-flow)
 
 Per illustrare il funzionamento del sistema, abbiamo utilizzato un diagramma di flusso dei dati. Questo diagramma ha permesso di rappresentare in modo chiaro e intuitivo il percorso dei dati attraverso il sistema e le relative elaborazioni su di essi. Abbiamo quindi identificato le diverse entità coinvolte nel processo e le relazioni tra di esse, fornendo una panoramica dettagliata di come i dati vengono acquisiti, elaborati, archiviati e visualizzati.
@@ -165,7 +164,7 @@ Per illustrare il funzionamento del sistema, abbiamo utilizzato un diagramma di 
 - *Engine interno(archiviatore)*: l'archiviatore, rappresentato dal motore interno "Kafka" di #glossary[ClickHouse], agisce direttamente come consumatore dei dati provenienti dal broker dei dati (#glossary[Kafka]). Questo avviene tramite la connessione a specifici topic nel broker dati, ognuno associato a un tipo di sensore distinto. Successivamente, i dati corrispondenti vengono archiviati nelle rispettive tabelle del database;
 - *Materializzazione*: i dati corrispondenti la temperatura, umidità, precipitazioni, inquinamento atmosferico e livello dei bacini idrici vengono aggregati in tabelle apposite attraverso l'utilizzo di #glossary[materialized views]. Queste aggregazioni avvengono su intervalli di 5 minuti, consentendo così l'applicazione delle medie mobili;
 - *Interrogazioni (query)*: vengono effettuate varie interrogazioni e analisi sui dati memorizzati all'interno delle tabelle;
-- *Visualizzazione*: l'#glossary[amministratore pubblico] visualizza i dati, ritornati in output dalle query, su una piattaforma apposita.
+- *Visualizzazione*: l'#glossary[amministratore pubblico] visualizza i dati, ritornati in output dalle query, su una piattaforma apposita (nel nostro caso Grafana).
 
 
 
@@ -182,38 +181,40 @@ Nei paragrafi successivi viene mostrata l'architettura individuata, tramite l'ut
   caption: [Diagramma delle classi 2]
 )
 
-La classe _SimulatorExecutorFactory_ è implementazione del design pattern _Factory_, si occupa della costruzione dei singoli simulatori a partire da un file di configurazione che gli viene passato tramite la costruzione.
-I simulatori sono istanze delle classe _SimulatorThread_: tale classe eredita dalla classe _Thread_ della Standard Library in modo tale che l'esecuzione dei simulatori possa essere concorrente. 
-L'orchestrazione dei simulatori è affidata alla classe _SimulatorExecutor_, che si occupa di attivare e disattivare tutti i simulatori contemporaneamente.
+La classe _SimulatorExecutorFactory_ è implementazione del design pattern _Factory_, si occupa prima della costruzione dei singoli simulatori a partire da un file di configurazione che gli viene passato tramite la costruzione, per poi restituire un SimulatorExecutor che avrà il compito di orchestrarli.
+I simulatori sono istanze delle classe _SimulatorThread_: tale classe eredita dalla classe _Thread_ della Standard Library, in modo tale che l'esecuzione dei simulatori possa essere parallela. 
 
 #figure(
   image("diagrammiclassi/simulator.png",width:100%),
   caption: [Diagramma delle classi 2]
 )
-La classe _SensorSimulatorStrategy_ è realizzazione del design pattern _Strategy_ ogni strategia rappresenta una tipologia di sensore differente. Al fine di garantire la possibilità di effettuare unit-testing sul comportamento dei sensori tale classe riceve tramite costruttore due istanze della classe riceve tramite costruttore un oggetto di tipo _Random_ e un oggetto di tipo _Datetime_. 
+La classe _SensorSimulatorStrategy_ è realizzazione del design pattern _Strategy_, dove ogni strategia rappresenta una tipologia di sensore simulato differente. Al fine di garantire la possibilità di effettuare unit-testing sul comportamento dei simulatori di sensori tale classe riceve tramite costruttore un oggetto di tipo _Random_ e un oggetto di tipo _Datetime_. 
+Tali strategie verranno poi assegnate ad un _SimulatorThread_.
 
 #figure(
   image("diagrammiclassi/writer.png",width:100%),
   caption: [Diagramma delle classi 3]
 )
-Anche la classe _Writer_ realizza il design pattern _Strategy_, sono state progettate due strategie, la prima, (_KafkaWriter_), atta a permettere al simulatore di inviare i messaggi contenenti i dati della rilevazione a #glossary("Kafka"), mentre la seconda atta a permettere al simulatore di stampare i risultati su terminale al fine di poterne testare il comportamento. Inoltre l'applicazione del Design Pattern potrebbe consentire di realizzare il componente di simulazione in altri contesti senza doverne riprogettare la struttura.
-Nello specifico la classe _KafkaWriter_ realizza il suo scopo tramite l'impiego del design pattern _Adapter_, nella sua variante _Object Adapter_. Viene infatti fatto utilizzo della classe _Producer_ della liberia _confluent_kafka_ dato che tale classe potrebbe essere soggetta a variazioni si è deciso di utilizzare tale pattern per permettere di rispondere prontamente a tali cambiamenti.
+Anche la classe _Writer_ realizza il design pattern _Strategy_. Sono state progettate due strategie, la prima, (_KafkaWriter_), atta a permettere al simulatore di inviare i messaggi contenenti i dati della rilevazione a #glossary("Kafka"), mentre la seconda atta a permettere al simulatore di stampare i risultati su terminale al fine di poterne testare il comportamento. Inoltre l'applicazione del Design Pattern potrebbe consentire di realizzare il componente di scrittura anche per eventuali ulteriori broker dati, nel momento in cui ce ne sia il bisogno.
+Nello specifico la classe _KafkaWriter_ realizza il suo scopo tramite l'impiego del design pattern _Adapter_, nella sua variante _Object Adapter_. Viene infatti fatto utilizzo della classe _Producer_ della liberia _confluent_kafka_. Dato che tale classe potrebbe essere soggetta a variazioni non controllabili da noi, si è deciso di utilizzare tale pattern per permettere di rispondere prontamente a tali cambiamenti, spostando la complessità di tali proprio nell'adapter.
 
 === Classi: metodi e attributi
 Si procede alla descrizione  di classi e interfacce progettate dal team.
 Non vengono menzionati i costruttori. 
 ==== SimulatorExecutorFactory (Classe)
+//TODO: da rivedere perchè dobbiamo descrivere anche come funziona nel caso in cui la porta e l'host non devono essere passate (tipo per l'StdOutWriter ad esempio).
+//Secondo me (Kara) qui potremmo utilizzare un'altro strategy.
 ===== Attributi
-- *config_file_name: String [Privato]*: Percorso del file di configurazione dei simulatori; 
+- *config_file_name: String [Privato]*: Percorso relativo del file di configurazione dei simulatori; 
 - *data_broker_host: String [Privato]*: indirizzo ip della macchina che ospita il message broker; 
 - *data_broker_port: String [Privato]*: porta della macchina che ospita il message broker; 
-- *io_module: FileIO [Privato]*: //TODO: non mi ricordo il perchè di sta roba sarebbe da capire e aggiungere. 
+- *io_module: FileIO [Privato]*: modulo per interagire con il file system.
 ===== Metodi
 - *create(): SimulatorExecutor [Pubblico]*: a partire dal file che viene passato tramite costruttore si occupa di costruire un oggetto della classe _SimulatorExecutor_.
 
 ==== SimulatorExecutor (Classe)
 ===== Attributi
-- *simulators:SimulatorThread[\*] [Privato]*: Aggregato di oggetti _SimulatorThread_.
+- *simulators:SimulatorThread[\*] [Privato]*: Collezione di oggetti _SimulatorThread_.
 ===== Metodi
 - *stop_all(): void [Pubblico]*: Metodo  che arresta la simulazione di tutti i _SimulatorThread_; 
 - *run_all(): void [Pubblico]*: Metodo  che avvia la simulazione di tutti i _SimulatorThread_. 
@@ -229,7 +230,7 @@ Non vengono menzionati i costruttori.
 ==== SensorSimulatorStrategy (Classe)
 ===== Attributi
 - *wait_time_in_seconds: int [Protetto]*: intervallo temporale tra due simulazioni.
-- *sensor_name: String [Protetto]*: identificativo del sensore; 
+- *sensor_name: String [Protetto]*: nome identificativo del sensore; 
 - *random_obj: Random [Privato]*: oggetto della classe Random della libreria Standard di #glossary("Python"); 
 - *datetime_obj: Datetime [Privato]*: oggetto della classe Datetime della libreria Standard di #glossary("Python"); 
 - *coordinates : Coordinates [Protetto]*: oggetto della classe Coordinates. 
@@ -245,7 +246,7 @@ Non vengono menzionati i costruttori.
 
 ==== WriterStrategy (interfaccia)
 ===== Metodi
-- *write(in to_write:String): void [Pubblico]*: Scrive il messaggio contenuto nella stringa passata come parametro.
+- *write(in to_write:String): void [Pubblico]*: pubblica il messaggio contenuto nella stringa passata come parametro.
 
 ==== StdOutWriter (Classe)
 ===== Metodi
@@ -269,10 +270,6 @@ Non vengono menzionati i costruttori.
 - *adaptee: Producer (Privato)*
 ===== Metodi
 - *producer(in topic:Sting, in value:String, in callback:Function): void [Pubblico]*: Metodo che richiama il metodo _produce()_ dell'oggetto _adaptee_ di tipo  _Producer_ della libreria _Confluent Kafka_.
-
-
-
-
 
 
 #pagebreak()
