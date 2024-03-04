@@ -665,10 +665,10 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*Cambiare il numero nell'immagine*/
 === UC7: Ordinamento #glossary("pannelli") tabellari
 - *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: l'#glossary("amministratore pubblico") ha scelto e sta visualizzando un #glossary("pannello"), con all'interno una tabella, da ordinare per un suo campo; i campi tramite i quali si possono ordinare i dati della tabella sono il nome, la percentuale di batteria e la data di manutenzione del #glossary("sensore") oppure la velocità del vento (ove presenti);
+- *Precondizioni*: l'#glossary("amministratore pubblico") sta visualizzando un #glossary("pannello"), con all'interno una tabella; 
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza i dati ordinati nella tabella, secondo tale campo;
 - *Scenario Principale*:
-  + L'#glossary("amministratore pubblico") seleziona un campo della tabella, secondo cui ordinare i dati, tra i seguenti: nome, percentuale di  batteria e data di manutenzione del #glossary("sensore") o velocità del vento;
+  + L'#glossary("amministratore pubblico") seleziona un campo della tabella, secondo cui ordinare i dati, tra i seguenti: nome, percentuale di batteria, data di manutenzione del #glossary("sensore"), valore della misurazione e timestamp della rilevazione (ove presenti);
   + Per tale campo l'#glossary("amministratore pubblico") sceglie tra l'ordinamento crescente e decrescente.
 
 #figure(
@@ -1061,7 +1061,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   ),
   
   (
-    "Desiderabile", [Nei #glossary("pannelli") con tabelle, l'utente deve poter ordinare i dati in base alle loro colonne, sia in ordine crescente che decrescente.], [#C.step()UC#C.display()]
+    "Desiderabile", [Nei #glossary("pannelli") con tabelle, l'utente deve poter ordinare i dati in base ai campi relativi al nome del sensore, alla percentuale di batteria, alla data di manutenzione del #glossary("sensore"), alla misurazione e al timestamp della stessa (ove presenti), sia in ordine crescente che decrescente.], [#C.step()UC#C.display()]
   ),
   
   (
@@ -1129,18 +1129,18 @@ caption: "Requisiti funzionali")
   (
   "Obbligatorio", [Viene richiesta una #glossary("documentazione") sulle scelte implementative e progettuali, che dovranno essere accompagnate da motivazioni.],"Capitolato",
   ),
-  ("Obbligatorio",[Viene richiesto il _Manuale Utente_.],"Capitolato"),
-  ("Obbligatorio",[Viene richiesto il documento _Specifiche tecniche_.],"Capitolato"),
+  ("Obbligatorio",[Viene richiesto il _Manuale Utente_.],"Capitolato"), 
+  ("Obbligatorio",[Viene richiesto il documento _Specifiche tecniche_.],"Capitolato"), 
   (
   "Obbligatorio","La documentazione dovrà riguardare anche problemi aperti ed eventuali possibili soluzioni da approfondire in futuro.","Capitolato"
   ),
-  ("Desiderabile",[Il #glossary("sistema") deve risultare di facile utiilizzo, richiedendo un numero di click (≤ 7) contenuto per raggiungere gli obiettivi desiderati.],"Norme di Progetto"),
   ("Desiderabile",[L'#glossary("amministratore pubblico") deve poter imparare a padroneggiare il #glossary("sistema") in breve tempo.],"Norme di Progetto"),
   ("Obbligatorio",[La #glossary[repository] di github del codice sorgente "InnovaCity" deve essere accessibile a tutti.],"Verbale esterno"),
   ("Obbligatorio",[Devono essere rispettati tutte le norme definite nel documento _Norme di Progetto v2.0_.],"Norme di Progetto"),
   ("Obbligatorio",[Devono essere rispettati i vincoli e le metriche definite nel _Piano di Qualifica v2.0_.],"Norme di Progetto"),
   ("Desiderabile",[Il #glossary("sistema") deve essere scalabile, in grado di gestire grandi moli di dati.],"Capitolato"),
-  ("Desiderabile",[Il #glossary("sistema") deve essere facilmente manutenibile.],"Capitolato")
+  ("Desiderabile",[Il #glossary("sistema") deve essere facilmente mantenibile.],"Capitolato")
+  
 )
 
 #let requisiti_qualita_con_codice = generate_requirements_array("Q", requisiti_qualita)
@@ -1159,11 +1159,12 @@ caption: "Requisiti di qualità")
   ("Obbligatorio",[Deve essere utilizzato #glossary[Docker Compose] versione 3.8 per l'installazione del software.],"Verbale esterno"),
   ("Obbligatorio","I dati in ingresso nel database OLAP devono avere formato pseudo-tabellare, si deve utilizzare il formato Json.", "Verbale esterno"),
   ("Obbligatorio","Utilizzo di un message broker per lo streaming dei dati, per esempio Apache Kafka.","Capitolato"),
-  ("Obbligatorio","Utilizzo dell'applicazione richiede compatibilità con l'ultima versione di Google Chrome v120 (o superiori), Mozilla Firefox v120 (o superiori), Microsoft Edge v120 (o superiori) o Opera v106 (o superiori).","Capitolato"),
-
-  
-  
-  
+  ("Obbligatorio","Il sistema deve essere compatibile con Google Chrome v120 (o superiori), Mozilla Firefox v120 (o superiori), Microsoft Edge v120 (o superiori) o Opera v106 (o superiori).","Decisione interna"), 
+  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Windows (10 0 11) con RAM minimale di 4GB, processore 64 bit e WSL 2","Decisione Interna"), 
+  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo MACOS (versione minima 10.14 Mojave) con RAM minimale di 4GB","Decisione Interna"), 
+  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Linux Ubuntu (22.04 o superiori) con RAM minimale di 4GB","Decisione Interna"),
+  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Linux Mint (21 o superiori) con RAM minimale di 4GB","Decisione Interna")
+  /*io ho spostato qui le cose relative alle versioni del sistema operativo, il revisore mi faccia sapere*/
   
 )
 
@@ -1172,8 +1173,10 @@ caption: "Requisiti di qualità")
 requirements_table(requisiti_vincolo_con_codice),
 caption: "Requisiti di vincolo")
 #pagebreak()
-== Requisiti sistema operativo
 
+/*
+Credo che non sia utile
+== Requisiti sistema operativo
 L'applicazione viene eseguita sul browser e l'unico software che deve essere installato sul sistema operativo è Docker.\
 Docker viene fornito in quasi tutte le distro Linux, tramite il gestore di pacchetti specifico per la distribuzione, per cui l'installazione è molto semplice.
 Su Windows si richiede la versione Windows 10 o superiori, con processore 64 bit, una RAM minima di 4GB, e WSL 2 (compatibilità con il kernel di Linux fornita da Microsoft che consente agli utenti di eseguire applicazioni Linux direttamente su Windows senza la necessità di una macchina virtuale separata) versione 1.1.3.0 per utilizzare Container Linux; alternativamente, si può usare la funzionalità di Hyper-v (tecnologia di virtualizzazione fornita da Microsoft come parte dei sistemi operativi Windows) e Container Windows. Inoltre deve essere abilitata la virtualizzazione dell'hardware all'interno del BIOS.
@@ -1185,30 +1188,29 @@ Fonte:
   - *Hyper-v*: #link("https://learn.microsoft.com/it-it/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v") (22-02-2024).
 
 #pagebreak()
+*/
 == Requisiti prestazionali
+
+/*
+HO TOLTO QUESTA SEZIONE PERCHè NON NE CAPIVO IL SENSO QUI
 
 Si nota che entrambe le tecnologie #glossary[Clickhouse] e #glossary[Grafana] integrano al loro interno varie ottimizzazioni per garantire prestazioni efficienti.
 Ad esempio #glossary[Clickhouse] utilizza algoritmi di compressione avanzati per ridurre lo spazio di archiviazione necessario e migliorare le prestazioni di accesso ai dati, inoltre ha un archittetura distribuita consentendo una distribuzione del carico e una scalabilità orizzontale per gestire grandi volumi di dati. Mentre #glossary[Grafana] usa la cache dei dati per ridurre il carico di lavoro sui database e migliorare la velocità di risposta delle query; cerca di ottimizzare le query per ridurre il numero di richieste e utilizza un sistema di compressione dati per ridurre lo spazio di archiviazione.
 
 Per garantire tempi di esecuzione ancora più rapidi, si cerca di usare, ove possibile, le #glossary[materialized views] di #glossary[Clickhouse].
+*/
 
 #let requisiti_prestazioni = (
   (
-  "Obbligatorio",[Il #glossary("sistema") deve gestire un carico di #glossary("dati in entrata") tra i 50 e i 100 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM.],"Verbale esterno"
+  "Obbligatorio",[Il #glossary("sistema") deve gestire un carico di #glossary("dati in entrata") superiore ai 50 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM.],"Verbale esterno"
   ),
-  ("Desiderabile",[Il #glossary("sistema") deve avere un basso tempo di elaborazione tra il momento in cui i dati vengono generati e la loro visualizzazione sulla #glossary[dashboard].],"Norme di Progetto"),
-  ("Desiderabile",[Evitare l'utilizzo di #glossary[pannelli] troppo complessi che richiedono troppe risorse per il rendering.],"Verbale esterno")
-  
+  ("Desiderabile",[Il #glossary("sistema") deve avere un tempo di elaborazione inferiore ai 5 secondi, dal momento in cui i dati vengono ricevuti e la loro visualizzazione sulla #glossary[dashboard]. Si precisa che tali tempi di elaborazione sono garantiti solo in condizioni di rete di almeno 100 megabit al secondo.],"Norme di Progetto"), 
 )
 
 #let requisiti_prestazioni_con_codice = generate_requirements_array("P", requisiti_prestazioni)
 #figure(
 requirements_table(requisiti_prestazioni_con_codice),
 caption: "Requisiti di prestazioni")
-
-== Requisiti sicurezza 
-
-Il team #team non ha individuato particolari criteri di sicurezza da adottare per lo sviluppo dell'applicazione.
 
 #pagebreak()
 == Tracciamento Fonti - Requisiti
