@@ -924,35 +924,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 == Requisiti funzionali 
 #let C = counter("UC_counter_req")
 #let requisiti_funzionali = (
-  (
-     "Obbligatorio", "L'utente deve poter accedere all'applicazione senza dover effettuare l'autenticazione.", "Capitolato"
-  ),
-  /*TODO: andare a creare vincolo per la verifica del menù di selezione tra le dashboard*/
-  (
-  "Obbligatorio","La creazione di un simulatore di almeno una sorgente dati.","Capitolato",
-  ),
-  (
-  "Obbligatorio","La simulazione deve produrre dati realistici.","Capitolato",
-  ),
-  (
-  "Obbligatorio",[Deve esistere una #glossary("dashboard") che riporti almeno i dati di un #glossary("sensore").],"Capitolato",
-  ),
-  (
-  "Desiderabile","La simulazione di più sorgenti dati.","Capitolato",
-  ),
-  (
-  "Opzionale","Messa in evidenza di relazioni tra dati provenienti da sorgenti diverse.","Capitolato",
-  ),
-  (
-  "Opzionale",[Un #glossary("sistema") di allerta che notifichi l'utente in caso di anomalie o eventi critici.],"Verbale esterno",
-  ),
-  (
-  "Opzionale","La previsione di eventi futuri, basata su dati storici e attuali.","Capitolato",
-  ),
-  (
-  "Desiderabile",[Deve esistere una #glossary("dashboard") avanzata contenente: una mappa della città, widget e informazioni sui sensori (ad esempio il tipo di #glossary("sensore"), il modello, ecc.).],"Capitolato"
-  ),
-    (
+      (
      "Obbligatorio", [L'utente deve poter visualizzare un menù di selezione delle #glossary("dashboard"), che permetta di selezionare tra Sensori, Ambientale, Urbanistica e Dati anomali & superamento soglie.], [UC#C.display()]
   ),
   (
@@ -1108,6 +1080,40 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   ),
   (
     "Desiderabile", [Il #glossary("sensore") deve poter mandare e far persistere dati relativi al proprio stato, ovvero la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso, e la propria frequenza di inserimento dati espressa in secondi.], [#C.step()UC#C.display()]
+  ), 
+
+
+
+
+  /*questi qui sotto sono gli ex requisiti di vincolo*/
+
+  (
+     "Obbligatorio", "L'utente deve poter accedere all'applicazione senza dover effettuare l'autenticazione.", "Capitolato"
+  ),
+  /*TODO: andare a creare vincolo per la verifica del menù di selezione tra le dashboard*/
+  (
+  "Obbligatorio","La creazione di un simulatore di almeno una sorgente dati.","Capitolato",
+  ),
+  (
+  "Obbligatorio","La simulazione deve produrre dati realistici.","Capitolato",
+  ),
+  (
+  "Obbligatorio",[Deve esistere una #glossary("dashboard") che riporti almeno i dati di un #glossary("sensore").],"Capitolato",
+  ),
+  (
+  "Desiderabile","La simulazione di più sorgenti dati.","Capitolato",
+  ),
+  (
+  "Opzionale","Messa in evidenza di relazioni tra dati provenienti da sorgenti diverse.","Capitolato",
+  ),
+  (
+  "Opzionale",[Un #glossary("sistema") di allerta che notifichi l'utente in caso di anomalie o eventi critici.],"Verbale esterno",
+  ),
+  (
+  "Opzionale","La previsione di eventi futuri, basata su dati storici e attuali.","Capitolato",
+  ),
+  (
+  "Desiderabile",[Deve esistere una #glossary("dashboard") avanzata contenente: una mappa della città, widget e informazioni sui sensori (ad esempio il tipo di #glossary("sensore"), il modello, ecc.).],"Capitolato"
   )
 )
 
@@ -1160,11 +1166,11 @@ caption: "Requisiti di qualità")
   ("Obbligatorio","I dati in ingresso nel database OLAP devono avere formato pseudo-tabellare, si deve utilizzare il formato Json.", "Verbale esterno"),
   ("Obbligatorio","Utilizzo di un message broker per lo streaming dei dati, per esempio Apache Kafka.","Capitolato"),
   ("Obbligatorio","Il sistema deve essere compatibile con Google Chrome v120 (o superiori), Mozilla Firefox v120 (o superiori), Microsoft Edge v120 (o superiori) o Opera v106 (o superiori).","Decisione interna"), 
-  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Windows (10 0 11) con RAM minimale di 4GB, processore 64 bit e WSL 2","Decisione Interna"), 
-  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo MACOS (versione minima 10.14 Mojave) con RAM minimale di 4GB","Decisione Interna"), 
-  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Linux Ubuntu (22.04 o superiori) con RAM minimale di 4GB","Decisione Interna"),
-  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Linux Mint (21 o superiori) con RAM minimale di 4GB","Decisione Interna")
-  /*io ho spostato qui le cose relative alle versioni del sistema operativo, il revisore mi faccia sapere*/
+  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Windows (10 0 11) con RAM minimale di 4GB, processore 64 bit e compatibilità a WSL 2.","Decisione Interna"), 
+  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo MACOS (versione minima 10.14 Mojave) con RAM minimale di 4GB.","Decisione Interna"), 
+  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Linux Ubuntu (22.04 o superiori) con RAM minimale di 4GB.","Decisione Interna"),
+  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Linux Mint (21 o superiori) con RAM minimale di 4GB.","Decisione Interna")
+  
   
 )
 
@@ -1175,7 +1181,7 @@ caption: "Requisiti di vincolo")
 #pagebreak()
 
 /*
-Credo che non sia utile
+Ho spostato i contenuti nei requisiti di vincolo. pero non so bene se è la sezione giusta. 
 == Requisiti sistema operativo
 L'applicazione viene eseguita sul browser e l'unico software che deve essere installato sul sistema operativo è Docker.\
 Docker viene fornito in quasi tutte le distro Linux, tramite il gestore di pacchetti specifico per la distribuzione, per cui l'installazione è molto semplice.
@@ -1204,7 +1210,7 @@ Per garantire tempi di esecuzione ancora più rapidi, si cerca di usare, ove pos
   (
   "Obbligatorio",[Il #glossary("sistema") deve gestire un carico di #glossary("dati in entrata") superiore ai 50 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM.],"Verbale esterno"
   ),
-  ("Desiderabile",[Il #glossary("sistema") deve avere un tempo di elaborazione inferiore ai 5 secondi, dal momento in cui i dati vengono ricevuti e la loro visualizzazione sulla #glossary[dashboard]. Si precisa che tali tempi di elaborazione sono garantiti solo in condizioni di rete di almeno 100 megabit al secondo.],"Norme di Progetto"), 
+  ("Desiderabile",[Il #glossary("sistema") deve avere un tempo di elaborazione inferiore ai 5 secondi, dal momento in cui i dati vengono ricevuti e la loro visualizzazione sulla #glossary[dashboard]. Tali tempistiche sono garantite solo in condizioni di rete di almeno 100 megabit al secondo in downlaod e di almeno 30 megabit in upload.],"Norme di Progetto"), 
 )
 
 #let requisiti_prestazioni_con_codice = generate_requirements_array("P", requisiti_prestazioni)

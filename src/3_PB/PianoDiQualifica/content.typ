@@ -350,7 +350,6 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             3. Applicare dei filtri, per visualizzare solo i dati provenienti dai sensori delle tipologie selezionate, nel caso di #glossary("pannelli") contenenti tabelle, le quali comprendono più tipologie di sensori al loro interno; 
             4. Applicare dei filtri, per selezionare solo particolari sensori, mediante il nome, nel caso di #glossary("pannelli") contenenti tabelle;
             5. Applicare dei filtri, per selezionare solo i dati relativi ad un definito intervallo di tempo, all'interno di un'intera #glossary("dashboard")\;
-            6. Visualizzare gli effetti dei filtri applicati ai #glossary("pannelli") sorgente, anche sui #glossary("pannelli") collegati, come #glossary("side effect").
       ],"N/I",[
             UC0\
             UC6\
@@ -358,7 +357,6 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             UC6.2\
             UC6.3\
             UC6.4\
-            UC6.5
       ]),
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
@@ -372,7 +370,9 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             1. Scegliere una #glossary("dashboard") di cui modificare il layout;
             2. Modificare il layout dei #glossary("pannelli") in termini di posizione di tali #glossary("pannelli") e della loro dimensione.
       ],"N/I",[
-            UC8
+            UC8, 
+            UC8.1, 
+            UC8.2
       ]),
       ([
           Verificare che un #glossary("sensore"), una volta connesso al sistema, possa:
@@ -595,13 +595,13 @@ table(
             Verificare  che l'#glossary("amministratore pubblico") possa filtrare i dati in base ad un intervallo temporale. Di conseguenza la  #glossary("dashboard") interessata deve, nella sua totalità, mostrare solamente i dati aventi un #glossary("timestamp") in tale intervallo.
       ],"N/I","ROF"),
       ([
-            Verificare che i filtri, applicati dall' #glossary("amministratore pubblico") nei #glossary("pannelli") sorgente vengano applicati anche sui #glossary("pannelli") collegati. 
-      ],"N/I","ROF"),
-      ([
             Verificare  che l'#glossary("amministratore pubblico"), nei #glossary("pannelli") tabellari, possa ordinare i dati sulla base dei valori delle proprie colonne, sia in ordine crescente che decrescente. 
       ],"N/I","RDF"),
       ([
-            Verificare  che l'#glossary("amministratore pubblico") possa, nel contesto della singola #glossary("dashboard"),  modificare il layout, agendo su dimensione e posizione dei  #glossary("pannelli"). 
+            Verificare  che l'#glossary("amministratore pubblico") possa, nel contesto della singola #glossary("dashboard"),  modificare il layout, agendo sulla posizione dei  #glossary("pannelli"). 
+      ],"N/I","RDF"),
+      ([
+            Verificare  che l'#glossary("amministratore pubblico") possa, nel contesto della singola #glossary("dashboard"),  modificare il layout, agendo sulla dimensione dei  #glossary("pannelli"). 
       ],"N/I","RDF"),
       ([
             Verificare  che l'#glossary("amministratore pubblico"), riceva un messaggio di errore qualora, il sistema di visualizzazione non riesca a reperire i dati necessari per un determinato #glossary("pannello"). 
