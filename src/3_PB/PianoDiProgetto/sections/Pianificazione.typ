@@ -66,6 +66,8 @@ Attraverso le fasi di progettazione e sviluppo ha inizio la creazione del proget
 
 #include "PianificazioneSprint/NonoSprint.typ"
 #include "PianificazioneSprint/DecimoSprint.typ"
+#include "PianificazioneSprint/UndicesimoSprint.typ"
+#include "PianificazioneSprint/DodicesimoSprint.typ"
 
 == Customer Acceptance #glossary[CA]
 

@@ -1,4 +1,11 @@
 # Script da eseguire prima di creare i preventivi
+
+# to install:
+# 1. Collocatevi nella cartella di questo script python con il terminale
+# 2. Comando: python3 -m venv ./venv
+# 3. Comando: source ./venv/bin/activate
+# 4. Comando: pip install -r requirements.txt
+
 # Per eseguirlo bisogna passare come argomento il numero dello sprint attuale, creerà i csv per i 2 sprint successivi
 
 # python3 init_preventivo.py *numero_sprint_attuale*

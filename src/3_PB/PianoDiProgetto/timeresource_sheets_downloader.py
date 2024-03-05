@@ -94,7 +94,7 @@ non_empty_records = non_empty_records.drop(columns=["Costo"])
 # fixing the restart of the year
 non_empty_records.loc[non_empty_records["Week"] < 46, "Week"] += 52
 # fixing frame numbers because of the 4 week pause
-non_empty_records.loc[non_empty_records["Week"] > 56, "Week"] -= 3
+non_empty_records.loc[non_empty_records["Week"] > 56, "Week"] -= 4
 
 # sprint dictionary
 sprints = {}
