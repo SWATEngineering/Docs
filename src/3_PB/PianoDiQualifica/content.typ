@@ -642,7 +642,22 @@ table(
       ],"N/I","ROF"),
       ([
             Verificare che ogni #glossary("sensore") invii oltre ai dati della misurazione effettuata, la propria percentuale di batteria, la data di ultima manutenzione effettuata su di esso, e la propria frequenza di inserimento dati espressa in secondi.
-      ],"N/I","ROF")
+      ],"N/I","ROF"),
+      ([
+            Verificare che sia stato implementato almeno un simulatore almeno una tipologia di #glossary("sensore").
+      ],"N/I","ROF"), 
+      ([
+            Verificare che i dati prodotti dalle simulazioni siano realistici.
+      ],"N/I","ROF"), 
+      ([
+            Verificare che il sistema possa rilevare eventuali relazioni tra sorgenti di dati diverse.
+      ],"N/I","ROF"), 
+      ([
+            Verificare che il sistema possa effettuare previsioni di eventi futuri, sulla base di dati storici e attuali.
+      ],"N/I","ROF"), 
+      
+
+      
 
 ).enumerate(start:1).map(test => ("TS"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1),test.at(1).at(2))).enumerate(start:1).map(test => (test.at(1).at(0),test.at(1).at(1),test.at(1).at(2),test.at(1).at(3) + str(test.at(0))));
 

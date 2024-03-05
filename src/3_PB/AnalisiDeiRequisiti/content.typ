@@ -371,36 +371,22 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC3.3 Visualizzazione informazioni delle colonne di ricarica]
 )
 
-=== UC3.3.1: Visualizzazione posizione delle colonne di ricarica
-- *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa che riporta la posizione delle colonne di ricarica per auto, rappresentate tramite icone, su di essa;
+=== UC3.3.1: 
+Visualizzazione grafico a mappa disponibilità delle colonne di ricarica
+- *Attore Principale*: amministratore pubblico.
+- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
+- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante la disponibilità delle colonne di ricarica per auto, mediante indicatori booleani, posizionati in corrispondenza della posizione stessa del sensore. 
 - *Scenario Principale*:
-  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
-  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio urbanistico.
+  + l'amministratore pubblico accede alla piattaforma di visualizzazione;
+  + l'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
 
-/* TODO: cambiare l'immagine con una creata apposta per il caso d'uso*/
+
 #figure(
   image("assets/UML/UC3.3.1_Visualizzazione-posizione-delle-colonne-di-ricarica.png",width:70%),
-  caption: [UC3.3.1 Visualizzazione posizione delle colonne di ricarica]
+  caption: [UC3.3.1 Visualizzazione posizione e disponibilità colonne di ricarica]
 )
 
-=== UC3.3.2: Visualizzazione disponibilità delle colonne di ricarica
-- *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa che riporta un indicatore booleano in corrispondenza dell'icona di ciascuna colonna di ricarica per indicarne la disponibilità;
-- *Scenario Principale*:
-  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
-  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio urbanistico.
-
-/* TODO: cambiare l'immagine con una creata apposta per il caso d'uso*/
-#figure(
-  image("assets/UML/UC3.3.2_Visualizzazione-disponibilità-delle-colonne-di-ricarica.png",width:70%),
-  caption: [UC3.3.2 Visualizzazione disponibilità delle colonne di ricarica]
-)
-
-
-=== UC3.3.3: Visualizzazione tabella descrittiva delle colonne di ricarica
+=== UC3.3.2: Visualizzazione tabella descrittiva delle colonne di ricarica
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella, la quale riporta, per ciascuna colonna di ricarica per auto, l'erogazione in chiloWatt per ora attuale (kWh); la tabella è indicizzata dal nome dei sensori;
@@ -410,7 +396,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /* TODO: cambiare l'immagine con una creata apposta per il caso d'uso*/
 #figure(
-  image("assets/UML/UC3.3.3_Visualizzazione-tabella-descrittiva-delle-colonne-di-ricarica.png",width:70%),
+  image("assets/UML/UC3.3.2_Visualizzazione-tabella-descrittiva-delle-colonne-di-ricarica.png",width:70%),
   caption: [UC3.3.3 Visualizzazione tabella descrittiva delle colonne di ricarica]
 )
 
@@ -924,6 +910,9 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 == Requisiti funzionali 
 #let C = counter("UC_counter_req")
 #let requisiti_funzionali = (
+  (
+     "Obbligatorio", "L'utente deve poter accedere all'applicazione senza dover effettuare l'autenticazione.", "Capitolato"
+  ),
       (
      "Obbligatorio", [L'utente deve poter visualizzare un menù di selezione delle #glossary("dashboard"), che permetta di selezionare tra Sensori, Ambientale, Urbanistica e Dati anomali & superamento soglie.], [UC#C.display()]
   ),
@@ -978,10 +967,8 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   (
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi il numero di posti liberi nei vari parcheggi, mediante indicatori numerici posti nelle coordinate geografiche del #glossary("sensore"), nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level: 2)#C.step(level: 2)UC#C.display()]
   ),
-  (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi la posizione delle colonne di ricarica per auto, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:2)#C.step(level:3)UC#C.display()]
-  ),
-  ("Obbligatorio",[L'utente deve poter visualizzare un #glossary("pannello") contenente indicatori booleani posti nelle coordinate geografiche dei sensori che indicheranno la disponibilità delle colonne di ricarica, nella #glossary("dashboard") relativa ai dati urbanistici.],[#C.step(level:3)UC#C.display()]),
+
+  ("Obbligatorio",[L'utente deve poter visualizzare un #glossary("pannello") contenente indicatori booleani posti nelle coordinate geografiche dei sensori che indicheranno la disponibilità delle colonne di ricarica, nella #glossary("dashboard") relativa ai dati urbanistici.],[#C.step(level:2) #C.step(level:3)UC#C.display()]),
   (
     "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'erogazione delle colonne di ricarica per auto, espressa in chiloWatt all'ora (kWh), controllata da ciascun #glossary("sensore"), nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:3)UC#C.display()]
   ),
@@ -1081,40 +1068,37 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   (
     "Desiderabile", [Il #glossary("sensore") deve poter mandare e far persistere dati relativi al proprio stato, ovvero la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso, e la propria frequenza di inserimento dati espressa in secondi.], [#C.step()UC#C.display()]
   ), 
-
-
-
-
-  /*questi qui sotto sono gli ex requisiti di vincolo*/
-
-  (
-     "Obbligatorio", "L'utente deve poter accedere all'applicazione senza dover effettuare l'autenticazione.", "Capitolato"
-  ),
-  /*TODO: andare a creare vincolo per la verifica del menù di selezione tra le dashboard*/
-  (
-  "Obbligatorio","La creazione di un simulatore di almeno una sorgente dati.","Capitolato",
+  /*questi qui sotto sono gli ex requisiti di vincolo
+  GIACOMO D'OVIDIO, ne ho commentato qualcuno perchè credo siano inglobati nei precedenti*/
+  /*TODO: crearci le specifiche di test*/  (
+  "Obbligatorio",[Dev'essere realizzato un simulatore per almeno una tipologia di sensore #glossary("sensore").],"Capitolato",
   ),
   (
   "Obbligatorio","La simulazione deve produrre dati realistici.","Capitolato",
   ),
+  /*
   (
   "Obbligatorio",[Deve esistere una #glossary("dashboard") che riporti almeno i dati di un #glossary("sensore").],"Capitolato",
   ),
   (
-  "Desiderabile","La simulazione di più sorgenti dati.","Capitolato",
-  ),
+  "Desiderabile","La simulazione deve realizzare più di una sorgente dati.","Capitolato",
+  ),*/
   (
-  "Opzionale","Messa in evidenza di relazioni tra dati provenienti da sorgenti diverse.","Capitolato",
+  "Opzionale","Il sistema deve rendere possibile la rilevazione di relazioni tra dati provenienti da sorgenti diverse.","Capitolato",
   ),
+  /*
   (
   "Opzionale",[Un #glossary("sistema") di allerta che notifichi l'utente in caso di anomalie o eventi critici.],"Verbale esterno",
   ),
+  */
   (
-  "Opzionale","La previsione di eventi futuri, basata su dati storici e attuali.","Capitolato",
+  "Opzionale","Il sistema deve rendere possibile la previsione di eventi futuri, basata su dati storici e attuali.","Capitolato",
   ),
+  /*
   (
   "Desiderabile",[Deve esistere una #glossary("dashboard") avanzata contenente: una mappa della città, widget e informazioni sui sensori (ad esempio il tipo di #glossary("sensore"), il modello, ecc.).],"Capitolato"
   )
+  */
 )
 
 #let requisiti_funzionali_con_codice = generate_requirements_array("F", requisiti_funzionali)
@@ -1182,6 +1166,7 @@ caption: "Requisiti di vincolo")
 
 /*
 Ho spostato i contenuti nei requisiti di vincolo. pero non so bene se è la sezione giusta. 
+
 == Requisiti sistema operativo
 L'applicazione viene eseguita sul browser e l'unico software che deve essere installato sul sistema operativo è Docker.\
 Docker viene fornito in quasi tutte le distro Linux, tramite il gestore di pacchetti specifico per la distribuzione, per cui l'installazione è molto semplice.
