@@ -172,6 +172,7 @@ caption:[Metriche di fornitura],
 )
 
 
+
 == Sviluppo
 
 === Descrizione e scopo
@@ -391,6 +392,9 @@ table(
 ),
 caption: "Esempio tabella per requisiti")
 
+===== Aggiornamento specifiche di test
+Per agevolare la consistenza dei documenti l'Analista che abbia apportato modifiche a requisiti e a casi d'uso deve garantire che tali modifiche siano riportate nella sezione relativa ai test di sistema e ai test di accettazione nel documento _Piano di Qualifica v2.0_ segnalandolo all'attuale Amministratore, o previa autorizzazione da parte del Responsabile occupandosene direttamente. 
+Tale procedura risulta essere di fondamentale importanza nel fare in modo che ogni requisito sia coperto da corrispettivo test, in modo tale da consentire al team di terminare la fase di qualifica con la consapevolezza di aver soddisfatto ogni requisito e realizzato ogni caso d'uso.
 
 
 ===== Metriche
@@ -434,6 +438,31 @@ Si definiscono tre sottoattività:
                         - *Sequenze*: utilizzato per descrivere uno scenario che costituisce una determinata sequenza di azioni in cui tutte le scelte sono state già effettuate;
                         - *Attività*: diagramma comportamentale che illustra il flusso delle attività attraverso un #glossary[sistema].
                 - Test di unità su ogni componente.
+
+===== Diagrammi di flusso dati
+
+I diagrammi di flusso dati anche conosciuti come DFD (Data-Flow Diagram) sono un tipo di diagramma utilizzato principalmente nell'analisi dei sistemi informatici per rappresentare il flusso dei dati all'interno di un sistema. 
+
+Le entità rappresentabili in questi diagrammi sono:
+
+- *Entità esterne:*  possono essere utenti o altri sistemi che inviano o ricevono dati; 
+
+- *Processi:* rappresentano le attività che trasformano i dati, possono eseguire calcoli o ordinare i dati in base alla logica o indirizzare il flusso; 
+
+- *Flussi di dati:* rappresentano il movimento dei dati tra le entità, i processi e i memorizzatori; 
+
+- *Memorizzatori di dati*: contengono i dati per un uso successivo,come database o archivi. 
+
+Il diagramma pur essendo vastamente utilizzato nell'ambito dell'ingegneria informatica non è fa parte dalla specifica #glossary("UML")\. Ne risulta che esistono più sintassi di modellazione, i progettisti devono seguire la sintassi "Gane & Sarson" supportata dallo strumento StarUML.
+
+#figure(
+                        image(
+                                "assets/imgs/dataflowdiagram.png",
+                                width: 70%
+                        ),
+                        caption: "Figura rappresentante la sintassi adottata."
+                )
+
 
 
 
@@ -537,7 +566,7 @@ L'architettura deve soddisfare vari criteri:
 L'attività di codifica viene svolta dai Programmatori, i quali sono responsabili della traduzione delle decisioni progettuali nel codice sorgente.
 I Programmatori operano all'interno di un contesto ben definito seguendo le linee guida stabilite durante la fase di progettazione architetturale. Questo approccio garantisce coerenza nell'implementazione del design e nell'applicazione delle #glossary[best practices], favorendo la creazione di codice robusto, manutenibile e di alta qualità.
 
-Nel perseguire gli obiettivi di qualità, i Programmatori sono tenuti a rispettare le metriche definite nel _Piano di Qualifica v1.0_.
+Nel perseguire gli obiettivi di qualità, i Programmatori sono tenuti a rispettare le metriche definite nel _Piano di Qualifica v2.0_.
 
 ===== Aspettative 
 
@@ -593,6 +622,7 @@ I type hint non impongono un ritorno specifico, ma forniscono informazioni chiar
 
 Si è deciso di integrare il linter PEP8 come fondamentale strumento nel processo di sviluppo. Questo strumento svolge un ruolo di rilievo nel garantire la coerenza e l'adesione alle linee guida di formattazione del codice #glossary[Python], stabilite nella PEP 8, contribuendo in modo significativo a mantenere uno standard uniforme nella base di codice.
 
+Inoltre per garantire il soddisfacimento delle metriche di qualità di processo durante tutto lo sviluppo i programmatori sono caldamente invitati a fare uso della procedura illustrata nella @calcolo_metriche_codifica.
 
 ===== Metriche
 
@@ -610,8 +640,6 @@ table(
 ),
 caption: [Metriche di codifica],
 )
-
-
 
 
 
@@ -1093,7 +1121,7 @@ La gestione della qualità si propone di raggiungere i seguenti obiettivi:
         - Riduzione dei rischi che potrebbero influenzare la qualità;
         - Consegna del progetto rispettando il budget preventivato inizialmente e i requisiti individuati assieme alla Proponente.
 
-Per la valutazione della qualità viene fornito il documento _Piano di Qualifica v1.0_, in cui sono presenti varie metriche con le relative soglie di valori accettabili ed ideali.
+Le valutazioni della qualità viene fornito il documento _Piano di Qualifica v1.0_, in cui sono presenti varie metriche con le relative soglie di valori accettabili ed ideali.
 
  
 
@@ -1118,8 +1146,11 @@ Nel _Piano di Qualifica v1.0_  le varie metriche sono descritte mediante delle t
    - *Valore di accettazione*: valore considerato accettabile;
    - *Valore ideale*: valore ideale che dovrebbe essere assunto dalla metrica.
 
-=== Grafici metriche
 
+=== Calcolo delle metriche
+Le modalità di computazione della metriche sono presentate nella sezione @metriche.
+
+=== Grafici metriche
 Per realizzare i grafici relativi alle metriche e all'andamento del progetto, si usa Google Sheets.
 La descrizione delle metriche usate si trova nella  @metriche.
 
@@ -1242,6 +1273,8 @@ Dopo l'#glossary[RTB] il diario di bordo si tiene ogni venerdì alle 15, pertant
         - Raccolta dei requisiti per definire le necessità e le funzionalità richieste;
         - Stesura del documento _Analisi dei Requisiti_;
         - Creazione diagrammi #glossary[UML]\;
+
+
 
 ==== Progettista
 
@@ -1481,10 +1514,9 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
                 
                 Formula: $"BV" = "PV" - "AC"$.
 
-
+==== Calcolo metriche fornitura <calcolo_metriche_fornitura>
+Per la valutazione delle metriche di fornitura è necessario avere accesso ai dati di consuntivo e preventivo dello sprint che si vuole valutare, in modo tale da avere sempre metriche consistenti è necessario dunque effettuarne il calcolo solo nel momento in cui preventivo e consuntivo sono ultimati. Dunque inserire nel foglio di calcolo le informazioni richieste.
         
-
-
 === Codifica <metriche_codifica>
 
       
@@ -1494,6 +1526,17 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
         - *PM*: Parametri per Metodo - rappresenta il numero di parametri appartenenti ad un metodo;
 
         - *LCM*: Linee di Codice per Metodo - rappresenta il numero di linee di codice che costituiscono un metodo.
+
+==== Calcolo metriche codifica <calcolo_metriche_codifica>
+Per la valutazione della metriche di codifica si puo utilizzare la seguente procedura. 
+
+- Accedere da terminale alla cartella _Innovacity_, posizionarsi nel branch _dev_, assicurandosi di avere installato la dipendenza _pylint_ (anche su ambiente virtuale); 
+- Dare i permessi d'esecuzione allo script _pylint_PdQ.sh_;
+- Successivamente eseguirlo. 
+
+La procedura illustrata è quella necessaria all'Amministratore a fine #glossary("Sprint").
+Il Programmatore che intendesse calcolare tali metriche può farlo anche in branch diversi da _dev_ con la medesima procedura.
+
 
 === Documentazione <metriche_documentazione>
 
@@ -1575,7 +1618,7 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
 
                         - e: numero di archi del grafo del flusso di esecuzione del metodo;
                         - n: numero di vertici del grafo del flusso di esecuzione del metodo.
-
+                Per la computazione automatica di questa metrica si rimanda alla @calcolo_metriche_codifica. 
 
 === Efficienza 
 
