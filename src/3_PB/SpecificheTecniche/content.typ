@@ -166,8 +166,38 @@ Per illustrare il funzionamento del sistema, abbiamo utilizzato un diagramma di 
 - *Interrogazioni (query)*: vengono effettuate varie interrogazioni e analisi sui dati memorizzati all'interno delle tabelle;
 - *Visualizzazione*: l'#glossary[amministratore pubblico] visualizza i dati, ritornati in output dalle query, su una piattaforma apposita (nel nostro caso Grafana).
 
+== Database
+Lo scopo del database è quello di memorizzare i dati provenienti dai sensori, in modo da poterli analizzare e visualizzare in seguito. I dati di un #glossary[sensore] vengono acquisiti tramite un #glossary[topic] #glossary[Kafka], associato ad un tipo di #glossary[sensore], e poi memorizzati in apposite tabelle.
 
+=== Struttura
 
+==== Tabella di accodamento
+ Ad ogni tipo di #glossary[sensore] viene assegnata una tabella con il nome definito come: \*tipo\*+queue. Questa conterrà tutti i dati grezzi provenienti dai sensori di quel tipo, che sono in formato #glossary[JSON] e contengono, oltre alla rilevazione, anche il nome del #glossary[sensore] e le coordinate geografiche. Le tabelle di questo tipo vengono popolate tramite il "ClickHouse Kafka table engine", che si occupa di leggere i dati, dal #glossary[topic] di #glossary[Kafka] e di "iniettarli" all'interno della tabella; per compiere quest'operazione è necessario specificare il motore di archiviazione "Kafka". La specifica "JSONEachRow" permette l'interpretazione del formato #glossary[JSON].
+
+==== Tabella per #glossary[time series]
+Per ogni tipo di #glossary[sensore] viene creata una tabella #glossary[time series], con il nome definito come: \*tipo\*. Il suo scopo è gestire in modo efficiente i dati di tipo #glossary[time series], tramite il motore di archiviazione MergeTree. Queste tabelle vengono popolate tramite delle #glossary[materialized views] a partire dalle tabelle di accodamento; vengono inoltre ordinate per sensore e per timestamp.
+
+==== Tabella dati aggregati
+Questo tipo di tabelle aggregano i dati provenienti dalle tabelle di #glossary[time series] in modo da poter effettuare analisi su intervalli specifici. Ad esempio:
+- media con frequenza di un minuto;
+- media mobile;
+Per loro popolamento si utilizzano le #glossary[materialized views], che permettono di inserire i dati risultanti da una query.
+
+==== Motori di archiviazione
+#glossary[ClickHouse] offre diversi motori di archiviazione, ognuno con caratteristiche specifiche. Per il nostro caso d'uso, facciamo uso dei seguenti:
+- *Kafka*: permette di leggere i dati in formato #glossary[JSON] dal broker dati, e di iniettarli all'interno delle tabelle di accodamento;
+- *MergeTree*: partircolarmente adatto per la gestione di dati di tipo #glossary[time series], in quanto permette di effettuare operazioni di inserimento e cancellazione in modo efficiente, e di effettuare query su intervalli di tempo specifici.
+- *AggregatingMergeTree*: consente di effettuare operazioni efficienti di aggregazione sui dati, in particolar modo per le aggregazioni incrementali; in particolare, sostituisce tutte le righe con la stessa #glossary[chiave di ordinamento] all'interno di una parte di dati, con una singola riga che momorizza una combinazione di stati di funzioni aggregate. Questo motore elabora tutte le colonne con i tipi: AggregateFunction e SimpleAggregateFunctin. AggregateFunction è una funzione che consente di eseguire aggregazioni sui dati in modo efficiente, mantenendo uno stato intermedio, noto come avgState, che include sia la somma cumulativa che il conteggio dei valori.
+
+=== Struttura
+Il database si suddivide in strutture diverse per ogni tipo di #glossary[sensore]; di seguito vengono illustrate la struttura creata per ogni tipo di #glossary[sensore].
+
+== Sensore plouviometrico
+#figure(
+  image("DBscheme/DB_rain.svg",width:100%),
+  caption: [Struttura delle tabelle per il sensore pluviometrico]
+)
+La struttura si mantiene la stessa anche per il sensore di temperatura.
 
 == Architettura dei simulatori
 Nonostante i simulatori non siano ufficialmente considerati parte integrante del prodotto dalla proponente, il nostro team, nell'ambito del progetto didattico, ha scelto di dedicare alcune risorse alla progettazione di questa componente.
