@@ -427,25 +427,7 @@ caption:[Metriche sui requisiti],
 ===== Descrizione e scopo 
 
 L'attività di progettazione è affidata ai Progettisti, i quali devono definire le caratteristiche del prodotto finale basandosi sui requisiti specificati nel documento _Analisi dei Requisiti v1.0_. 
-La fase di progettazione segue l'analisi dei requisiti, dove sono definite le necessità e le aspettative per il prodotto. I Progettisti traducono queste informazioni in una struttura architetturale definita, organizzando il #glossary[sistema] in componenti specifiche e definendo le interazioni tra di esse. In questo modo, la progettazione costituisce un passo essenziale nel percorso di sviluppo, contribuendo a trasformare i requisiti in un piano tangibile per la creazione del prodotto finale.
-
-Si definiscono tre sotto-attività: 
-
-        + *Scelte tecnologiche*: implica la selezione e la definizione delle tecnologie di base utilizzate per la realizzazione del #glossary[sistema]. Questo comprende decisioni relative a linguaggi di programmazione, librerie e #glossary[framework];
-        + *Progettazione architetturale*: definizione ad alto livello dell'#glossary[architettura] del #glossary[sistema]\; si concentra sulla suddivisione del #glossary[sistema] in componenti e moduli, definendo le relazioni tra di essi e specificando le linee guida per l'organizzazione e l'interazione delle varie parti;
-        + *Product Baseline (#glossary[PB])*: segna un punto stabile nell'attività di progettazione, in cui le specifiche tecniche, le funzionalità principali e l'#glossary[architettura] del prodotto sono definite in modo dettagliato e accettate dalle parti coinvolte. Include tutti gli elementi essenziali e i requisiti chiave del prodotto che devono essere soddisfatti, fornendo una base solida per lo sviluppo continuo del prodotto. Questo processo porta infine alla realizzazione di un Minimum Viable Product (#glossary("MVP"));
-                Include:
-                - #glossary("Design Patterns")\;
-                - Definizione delle classi;
-                - Diagrammi #glossary[UML] che includono:
-                        - Classi;
-                        - Package;
-                        - *Sequenze*: utilizzato per descrivere uno scenario che costituisce una determinata sequenza di azioni in cui tutte le scelte sono state già effettuate;
-                        - *Attività*: diagramma comportamentale che illustra il flusso delle attività attraverso un #glossary[sistema].
-                - Test di unità su ogni componente.
-
-
-
+La progettazione segue l'analisi dei requisiti, dove sono definite le necessità e le aspettative per il prodotto. Innanzitutto, vengono selezionate e definite le tecnologie di base utilizzate per la realizzazione del #glossary[sistema], il che comprende decisioni relative a linguaggi di programmazione, librerie e #glossary[framework]; in un secondo momento i Progettisti traducono le funzionalità attese all'interno del prodotto in una struttura architetturale che le soddisfi, organizzando il #glossary[sistema] in componenti specifiche, definendo le interazioni tra di esse e specificando le linee guida per l'organizzazione e l'interazione delle varie parti. In questo modo, la progettazione costituisce un passo essenziale nel percorso di sviluppo, contribuendo a trasformare i requisiti in un piano tangibile per la creazione del prodotto finale.
 
 
 ===== Diagrammi #glossary[UML] delle classi    
