@@ -371,19 +371,18 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC3.3 Visualizzazione informazioni delle colonne di ricarica]
 )
 
-=== UC3.3.1: 
-Visualizzazione grafico a mappa disponibilità delle colonne di ricarica
-- *Attore Principale*: amministratore pubblico.
-- *Precondizioni*: l'amministratore pubblico ha selezionato la visualizzazione relativa al dominio dei dati urbanistici.
+=== UC3.3.1: Visualizzazione grafico a mappa disponibilità delle colonne di ricarica
+- *Attore Principale*: #glossary[amministratore pubblico]\;
+- *Precondizioni*: l'#glossary[amministratore pubblico] ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
 - *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante la disponibilità delle colonne di ricarica per auto, mediante indicatori booleani, posizionati in corrispondenza della posizione stessa del sensore. 
 - *Scenario Principale*:
-  + l'amministratore pubblico accede alla piattaforma di visualizzazione;
-  + l'amministratore pubblico seleziona la visualizzazione del dominio urbanistico.
+  + L'#glossary[amministratore pubblico] accede alla piattaforma di visualizzazione;
+  + L'#glossary[amministratore pubblico] seleziona la visualizzazione del dominio urbanistico.
 
 
 #figure(
   image("assets/UML/UC3.3.1_Visualizzazione-posizione-delle-colonne-di-ricarica.png",width:70%),
-  caption: [UC3.3.1 Visualizzazione posizione e disponibilità colonne di ricarica]
+  caption: [UC3.3.1 Visualizzazione grafico a mappa disponibilità delle colonne di ricarica]
 )
 
 === UC3.3.2: Visualizzazione tabella descrittiva delle colonne di ricarica
@@ -968,7 +967,7 @@ Visualizzazione grafico a mappa disponibilità delle colonne di ricarica
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi il numero di posti liberi nei vari parcheggi, mediante indicatori numerici posti nelle coordinate geografiche del #glossary("sensore"), nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level: 2)#C.step(level: 2)UC#C.display()]
   ),
 
-  ("Obbligatorio",[L'utente deve poter visualizzare un #glossary("pannello") contenente indicatori booleani posti nelle coordinate geografiche dei sensori che indicheranno la disponibilità delle colonne di ricarica, nella #glossary("dashboard") relativa ai dati urbanistici.],[#C.step(level:2) #C.step(level:3)UC#C.display()]),
+  ("Obbligatorio",[L'utente deve poter visualizzare un #glossary("pannello") contenente indicatori booleani posti nelle coordinate geografiche dei sensori che indichino la disponibilità delle colonne di ricarica, nella #glossary("dashboard") relativa ai dati urbanistici.],[#C.step(level:2) #C.step(level:3)UC#C.display()]),
   (
     "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'erogazione delle colonne di ricarica per auto, espressa in chiloWatt all'ora (kWh), controllata da ciascun #glossary("sensore"), nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:3)UC#C.display()]
   ),
@@ -1020,7 +1019,7 @@ Visualizzazione grafico a mappa disponibilità delle colonne di ricarica
   ),
   
   (
-    "Desiderabile", [Nei #glossary("pannelli") con tabelle, l'utente deve poter ordinare i dati in base ai campi relativi al nome del sensore, alla percentuale di batteria, alla data di manutenzione del #glossary("sensore"), alla misurazione e al timestamp della stessa (ove presenti), sia in ordine crescente che decrescente.], [#C.step()UC#C.display()]
+    "Desiderabile", [Nei #glossary("pannelli") con tabelle, l'utente deve poter ordinare i dati in base ai campi relativi al nome del #glossary[sensore], alla percentuale di batteria, alla data di manutenzione del #glossary("sensore"), alla misurazione e al timestamp di quest'ultima (ove presenti), sia in ordine crescente che decrescente.], [#C.step()UC#C.display()]
   ),
   
   (
@@ -1120,7 +1119,7 @@ caption: "Requisiti funzionali")
   "Obbligatorio", [Viene richiesta una #glossary("documentazione") sulle scelte implementative e progettuali, che dovranno essere accompagnate da motivazioni.],"Capitolato",
   ),
   ("Obbligatorio",[Viene richiesto il _Manuale Utente_.],"Capitolato"), 
-  ("Obbligatorio",[Viene richiesto il documento _Specifiche tecniche_.],"Capitolato"), 
+  ("Obbligatorio",[Viene richiesto il documento _Specifiche Tecniche_.],"Capitolato"), 
   (
   "Obbligatorio","La documentazione dovrà riguardare anche problemi aperti ed eventuali possibili soluzioni da approfondire in futuro.","Capitolato"
   ),
@@ -1129,7 +1128,7 @@ caption: "Requisiti funzionali")
   ("Obbligatorio",[Devono essere rispettati tutte le norme definite nel documento _Norme di Progetto v2.0_.],"Norme di Progetto"),
   ("Obbligatorio",[Devono essere rispettati i vincoli e le metriche definite nel _Piano di Qualifica v2.0_.],"Norme di Progetto"),
   ("Desiderabile",[Il #glossary("sistema") deve essere scalabile, in grado di gestire grandi moli di dati.],"Capitolato"),
-  ("Desiderabile",[Il #glossary("sistema") deve essere facilmente mantenibile.],"Capitolato")
+  ("Desiderabile",[Il #glossary("sistema") deve essere facilmente manutenibile.],"Capitolato")
   
 )
 
@@ -1150,10 +1149,10 @@ caption: "Requisiti di qualità")
   ("Obbligatorio","I dati in ingresso nel database OLAP devono avere formato pseudo-tabellare, si deve utilizzare il formato Json.", "Verbale esterno"),
   ("Obbligatorio","Utilizzo di un message broker per lo streaming dei dati, per esempio Apache Kafka.","Capitolato"),
   ("Obbligatorio","Il sistema deve essere compatibile con Google Chrome v120 (o superiori), Mozilla Firefox v120 (o superiori), Microsoft Edge v120 (o superiori) o Opera v106 (o superiori).","Decisione interna"), 
-  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Windows (10 0 11) con RAM minimale di 4GB, processore 64 bit e compatibilità a WSL 2.","Decisione Interna"), 
-  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo MACOS (versione minima 10.14 Mojave) con RAM minimale di 4GB.","Decisione Interna"), 
-  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Linux Ubuntu (22.04 o superiori) con RAM minimale di 4GB.","Decisione Interna"),
-  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Linux Mint (21 o superiori) con RAM minimale di 4GB.","Decisione Interna")
+  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Windows (10 o 11), con RAM minimale di 4GB, processore 64 bit e compatibilità con WSL 2.","Decisione Interna"), 
+  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo MACOS (versione minima 10.14 Mojave) con RAM minimale di 4GB.","Capitolato"), 
+  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Linux Ubuntu (22.04 o superiori) con RAM minimale di 4GB.","Capitolato"),
+  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Linux Mint (21 o superiori) con RAM minimale di 4GB.","Capitolato")
   
   
 )
