@@ -16,7 +16,7 @@
 Nell'incontro si è discussa l'organizzazione del lavoro futuro con la discussione e risoluzione di alcune problematiche, discusse qui in seguito.
 
 == Nuovi ruoli
-Vengono stabiliti i seguenti i nuovi incarichi relativi allo sprint corrente:
+Vengono stabiliti i seguenti nuovi incarichi relativi allo sprint corrente:
 - Caregnato Simone: Progettista, programmatore;
 - Costantin Riccardo Alberto: Progettista, programmatore;
 - D'Ovidio Giacomo: Verificatore, amministratore, analista;
