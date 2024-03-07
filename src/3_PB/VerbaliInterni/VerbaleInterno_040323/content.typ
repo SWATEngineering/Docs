@@ -17,12 +17,12 @@ Nell'incontro si è discussa l'organizzazione del lavoro futuro con la discussio
 
 == Nuovi ruoli
 Vengono stabiliti i seguenti i nuovi incarichi relativi allo sprint corrente:
-- Caregnato Simone: Progettista, programmatore;
-- Costantin Riccardo Alberto: Progettista, programmatore;
-- D'Ovidio Giacomo: Verificatore, amministratore, analista;
-- Kalaj Nancy: Progettista, programmatore;
-- Rango Matteo: Programmatore, progettista;
-- Toniolo Riccardo: Responsabile, programmatore.
+- Caregnato Simone: Progettista, Programmatore;
+- Costantin Riccardo Alberto: Progettista, Programmatore;
+- D'Ovidio Giacomo: Verificatore, Amministratore, Analista;
+- Kalaj Nancy: Progettista, Programmatore;
+- Rango Matteo: Programmatore, Progettista;
+- Toniolo Riccardo: Responsabile, Programmatore.
 Per questo sprint il team ha deciso di iniziare a sviluppare quanto progettato, continuando però a definire il resto dell'architettura del sistema. Proprio per questo in questo sprint si è deciso di far avanzare contemporaneamente l'attività di progettazione con quella di sviluppo allocando molte ore ad entrambe le attività.
 
 == Discussione relativa alla revisione _Customer Acceptance_
@@ -36,7 +36,7 @@ Si è deciso di aggiungere le seguenti metriche al documento _Piano Di Qualifica
 In seguito si è discusso di approfondire ed informarsi, mediante l'uso di standard noti, riguardo ad ulteriori metriche da usare per perseguire qualità andando a creare un cruscotto più completo.
 
 == Aggiornamento NdP
-Essendo che all'interno del documento _Specifiche Tecniche v1.0_ viene utilizzato il #glossary("data flow diagram"), questo va normato nel documento _Norme di Progetto v2.0_.
+Al fine di poter utilizzare il _data flow diagram_ all'interno del documento _Specifiche Tecniche v1.0_, questo deve venire normato nel documento _Norme di Progetto v2.0_.
 
 == Altre discussioni
 === Ridisciplinamento del team
