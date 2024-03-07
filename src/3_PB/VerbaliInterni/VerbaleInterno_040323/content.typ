@@ -26,7 +26,7 @@ Vengono stabiliti i seguenti i nuovi incarichi relativi allo sprint corrente:
 Per questo sprint il team ha deciso di iniziare a sviluppare quanto progettato, continuando però a definire il resto dell'architettura del sistema. Proprio per questo in questo sprint si è deciso di far avanzare contemporaneamente l'attività di progettazione con quella di sviluppo allocando molte ore ad entrambe le attività.
 
 == Discussione relativa alla revisione _Customer Acceptance_
-Il team #team ha deciso di non effettuare la revisione _Customer Acceptance_ poiché vari componenti del team hanno espresso una forte volontà nel voler laurearsi per la sessione di luglio, e protrarre ulteriormente la durata del progetto sarebbe deleterio per loro a questo fine.
+Il team #team ha deciso di non effettuare la revisione _Customer Acceptance_ poiché vari componenti del team hanno espresso una forte volontà nel voler laurearsi per la sessione di luglio, e protrarre ulteriormente la durata del progetto ne sarebbe un ostacolo.
 
 == Aggiornamento metriche PdQ
 Si è deciso di aggiungere le seguenti metriche al documento _Piano Di Qualifica v2.0_:
