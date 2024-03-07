@@ -374,7 +374,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC3.3.1: Visualizzazione grafico a mappa disponibilità delle colonne di ricarica
 - *Attore Principale*: #glossary[amministratore pubblico]\;
 - *Precondizioni*: l'#glossary[amministratore pubblico] ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa indicante la disponibilità delle colonne di ricarica per auto, mediante indicatori booleani, posizionati in corrispondenza della posizione stessa del sensore;  
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa indicante la disponibilità delle colonne di ricarica per auto, mediante indicatori booleani, posizionati in corrispondenza della posizione stessa del #glossary("sensore")\;  
 - *Scenario Principale*:
   + L'#glossary[amministratore pubblico] accede alla piattaforma di visualizzazione;
   + L'#glossary[amministratore pubblico] seleziona la visualizzazione del dominio urbanistico.
@@ -1070,7 +1070,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   /*questi qui sotto sono gli ex requisiti di vincolo
   GIACOMO D'OVIDIO, ne ho commentato qualcuno perchè credo siano inglobati nei precedenti*/
   /*TODO: crearci le specifiche di test*/  (
-  "Obbligatorio",[Dev'essere realizzato un simulatore per almeno una tipologia di sensore #glossary("sensore").],"Capitolato",
+  "Obbligatorio",[Dev'essere realizzato un simulatore per almeno una tipologia di #glossary("sensore").],"Capitolato",
   ),
   (
   "Obbligatorio","La simulazione deve produrre dati realistici.","Capitolato",
