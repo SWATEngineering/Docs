@@ -374,7 +374,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC3.3.1: Visualizzazione grafico a mappa disponibilità delle colonne di ricarica
 - *Attore Principale*: #glossary[amministratore pubblico]\;
 - *Precondizioni*: l'#glossary[amministratore pubblico] ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'amministratore pubblico visualizza un #glossary("pannello") contenente una mappa indicante la disponibilità delle colonne di ricarica per auto, mediante indicatori booleani, posizionati in corrispondenza della posizione stessa del sensore. 
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa indicante la disponibilità delle colonne di ricarica per auto, mediante indicatori booleani, posizionati in corrispondenza della posizione stessa del sensore;  
 - *Scenario Principale*:
   + L'#glossary[amministratore pubblico] accede alla piattaforma di visualizzazione;
   + L'#glossary[amministratore pubblico] seleziona la visualizzazione del dominio urbanistico.
@@ -1149,7 +1149,7 @@ caption: "Requisiti di qualità")
   ("Obbligatorio","I dati in ingresso nel database OLAP devono avere formato pseudo-tabellare, si deve utilizzare il formato Json.", "Verbale esterno"),
   ("Obbligatorio","Utilizzo di un message broker per lo streaming dei dati, per esempio Apache Kafka.","Capitolato"),
   ("Obbligatorio","Il sistema deve essere compatibile con Google Chrome v120 (o superiori), Mozilla Firefox v120 (o superiori), Microsoft Edge v120 (o superiori) o Opera v106 (o superiori).","Decisione interna"), 
-  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Windows (10 o 11), con RAM minimale di 4GB, processore 64 bit e compatibilità con WSL 2.","Decisione Interna"), 
+  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Windows (10 o 11), con RAM minimale di 4GB, processore 64 bit e compatibilità con WSL 2.","Capitolato"), 
   ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo MACOS (versione minima 10.14 Mojave) con RAM minimale di 4GB.","Capitolato"), 
   ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Linux Ubuntu (22.04 o superiori) con RAM minimale di 4GB.","Capitolato"),
   ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Linux Mint (21 o superiori) con RAM minimale di 4GB.","Capitolato")
