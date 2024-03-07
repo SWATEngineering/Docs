@@ -1194,7 +1194,7 @@ Per garantire tempi di esecuzione ancora più rapidi, si cerca di usare, ove pos
   (
   "Obbligatorio",[Il #glossary("sistema") deve gestire un carico di #glossary("dati in entrata") superiore ai 50 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM.],"Verbale esterno"
   ),
-  ("Desiderabile",[Il #glossary("sistema") deve avere un tempo di elaborazione inferiore ai 5 secondi, dal momento in cui i dati vengono ricevuti e la loro visualizzazione sulla #glossary[dashboard]. Tali tempistiche sono garantite solo in condizioni di rete di almeno 100 megabit al secondo in downlaod e di almeno 30 megabit in upload.],"Norme di Progetto"), 
+  ("Desiderabile",[Il #glossary("sistema") deve avere un tempo di elaborazione inferiore ai 5 secondi, dal momento in cui i dati vengono ricevuti  alla loro visualizzazione nella #glossary[dashboard]. Tali tempistiche sono garantite solo potendo usufruire di una connessione con almeno 100 megabit al secondo in downlaod e con almeno 30 megabit in upload.],"Norme di Progetto"), 
 )
 
 #let requisiti_prestazioni_con_codice = generate_requirements_array("P", requisiti_prestazioni)
