@@ -441,7 +441,7 @@ Si definiscono tre sottoattività:
 
 ===== Diagrammi di flusso dati
 
-I diagrammi di flusso dati anche conosciuti come DFD (Data-Flow Diagram) sono un tipo di diagramma utilizzato principalmente nell'analisi dei sistemi informatici per rappresentare il flusso dei dati all'interno di un sistema. 
+I diagrammi di flusso dati anche conosciuti come DFD #glossary("Data-Flow Diagram") sono un tipo di diagramma utilizzato principalmente nell'analisi dei sistemi informatici per rappresentare il flusso dei dati all'interno di un sistema. 
 
 Le entità rappresentabili in questi diagrammi sono:
 
@@ -622,7 +622,8 @@ I type hint non impongono un ritorno specifico, ma forniscono informazioni chiar
 
 Si è deciso di integrare il linter PEP8 come fondamentale strumento nel processo di sviluppo. Questo strumento svolge un ruolo di rilievo nel garantire la coerenza e l'adesione alle linee guida di formattazione del codice #glossary[Python], stabilite nella PEP 8, contribuendo in modo significativo a mantenere uno standard uniforme nella base di codice.
 
-Inoltre per garantire il soddisfacimento delle metriche di qualità di processo durante tutto lo sviluppo i programmatori sono caldamente invitati a fare uso della procedura illustrata nella @calcolo_metriche_codifica.
+Inoltre per garantire il soddisfacimento delle metriche di qualità di processo e di prodotto durante tutto lo sviluppo i programmatori sono caldamente invitati a fare uso delle procedure illustrata nella @calcolo_metriche_codifica e nella @calcolo_metriche_affidabilita.
+
 
 ===== Metriche
 
@@ -1531,7 +1532,7 @@ Per la valutazione delle metriche di fornitura è necessario avere accesso ai da
 Per la valutazione della metriche di codifica si puo utilizzare la seguente procedura. 
 
 - Accedere da terminale alla cartella _Innovacity_, posizionarsi nel branch _dev_, assicurandosi di avere installato la dipendenza _pylint_ (anche su ambiente virtuale); 
-- Dare i permessi d'esecuzione allo script _pylint_PdQ.sh_;
+- Dare i permessi d'esecuzione allo script _analisiStatica.sh_;
 - Successivamente eseguirlo. 
 
 La procedura illustrata è quella necessaria all'Amministratore a fine #glossary("Sprint").
@@ -1569,6 +1570,7 @@ Il Programmatore che intendesse calcolare tali metriche può farlo anche in bran
 
 == Metriche per la qualità di prodotto 
 
+
 === Funzionalità <metriche_qualità-prodotto>
 
         - *ROS*: Requisiti Obbligatori Soddisfatti - la percentuale di requisiti obbligatori soddisfatti dal prodotto
@@ -1605,6 +1607,20 @@ Il Programmatore che intendesse calcolare tali metriche può farlo anche in bran
         - *SC*: Statement Coverage - valuta quanti statement o istruzioni del codice sorgente sono stati eseguiti durante l'esecuzione dei test.
                         Formula: $"SC"="numero statement eseguiti"/"numero totale statement" dot 100$.
 
+==== Calcolo metriche per l'affidabilità <calcolo_metriche_affidabilita>
+Per il calcolo della percentuale di test passati si può utilizzare la seguente procedura: 
+- Accedere da terminale alla cartella _Innovacity_, posizionarsi nel branch _dev_;
+- Eseguire il comando "python -m pytest PythonSensorsSimulator/" ; 
+
+
+Per la valutazione della metriche di copertura del codice si puo utilizzare la seguente procedura: 
+- Accedere da terminale alla cartella _Innovacity_, posizionarsi nel branch _dev_;  
+- Dare i permessi d'esecuzione allo script _stdcoverage.sh_;
+- Successivamente eseguirlo. 
+
+La procedura illustrata è quella necessaria all'Amministratore a fine #glossary("Sprint").
+
+Il Programmatore che intendesse calcolare tali metriche può farlo anche in branch diversi da _dev_ con le medesime procedure.
         
 === Manutenibilità  
 
@@ -1618,7 +1634,10 @@ Il Programmatore che intendesse calcolare tali metriche può farlo anche in bran
 
                         - e: numero di archi del grafo del flusso di esecuzione del metodo;
                         - n: numero di vertici del grafo del flusso di esecuzione del metodo.
-                Per la computazione automatica di questa metrica si rimanda alla @calcolo_metriche_codifica. 
+
+==== Calcolo metriche per la manutenibilità
+Per la computazione automatica della metrica  CCM si rimanda alla @calcolo_metriche_codifica.
+La computazione delle metriche *SFIN* e *SFOUT* rimane frutto di processo manuale. /*TODO: oggi pome vedere se cambiare+/
 
 === Efficienza 
 
