@@ -94,7 +94,7 @@ L’_Analisi dei Requisiti v1.0_, redatta dall'Analista, rappresenta un document
                 - *Requisiti funzionali*: specificano le operazioni che il #glossary[sistema] deve essere in grado di eseguire;
                 - *Requisiti di qualità*: si concentrano sulla definizione degli standard e degli attributi che il software deve possedere per garantire prestazioni, affidabilità, usabilità e sicurezza ottimali;
                 - *Requisiti di vincolo*: delineano vincoli e limitazioni che il #glossary[sistema] deve rispettare. Possono includere restrizioni tecnologiche, normative o di risorse;
-                - *Requisiti di prestazioni*: specificano le capacità che il #glossary[sistema] deve possedere per soddisfare determinate prestazioni, come ad esempio velocità, scalabilità, utilizzo delle risorse, affidabilità, tolleranza agli errori e disponibilità.
+                - *Requisiti prestazionali*: specificano le capacità che il #glossary[sistema] deve possedere per soddisfare determinate prestazioni, come ad esempio velocità, scalabilità, utilizzo delle risorse, affidabilità, tolleranza agli errori e disponibilità.
 
 ==== Piano di Progetto
 

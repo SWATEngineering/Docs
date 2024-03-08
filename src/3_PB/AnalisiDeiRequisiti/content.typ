@@ -371,36 +371,21 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC3.3 Visualizzazione informazioni delle colonne di ricarica]
 )
 
-=== UC3.3.1: Visualizzazione posizione delle colonne di ricarica
-- *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa che riporta la posizione delle colonne di ricarica per auto, rappresentate tramite icone, su di essa;
+=== UC3.3.1: Visualizzazione grafico a mappa disponibilità delle colonne di ricarica
+- *Attore Principale*: #glossary[amministratore pubblico]\;
+- *Precondizioni*: l'#glossary[amministratore pubblico] ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa indicante la disponibilità delle colonne di ricarica per auto, mediante indicatori booleani, posizionati in corrispondenza della posizione stessa del #glossary("sensore")\;  
 - *Scenario Principale*:
-  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
-  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio urbanistico.
+  + L'#glossary[amministratore pubblico] accede alla piattaforma di visualizzazione;
+  + L'#glossary[amministratore pubblico] seleziona la visualizzazione del dominio urbanistico.
 
-/* TODO: cambiare l'immagine con una creata apposta per il caso d'uso*/
+
 #figure(
   image("assets/UML/UC3.3.1_Visualizzazione-posizione-delle-colonne-di-ricarica.png",width:70%),
-  caption: [UC3.3.1 Visualizzazione posizione delle colonne di ricarica]
+  caption: [UC3.3.1 Visualizzazione grafico a mappa disponibilità delle colonne di ricarica]
 )
 
-=== UC3.3.2: Visualizzazione disponibilità delle colonne di ricarica
-- *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa che riporta un indicatore booleano in corrispondenza dell'icona di ciascuna colonna di ricarica per indicarne la disponibilità;
-- *Scenario Principale*:
-  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
-  + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio urbanistico.
-
-/* TODO: cambiare l'immagine con una creata apposta per il caso d'uso*/
-#figure(
-  image("assets/UML/UC3.3.2_Visualizzazione-disponibilità-delle-colonne-di-ricarica.png",width:70%),
-  caption: [UC3.3.2 Visualizzazione disponibilità delle colonne di ricarica]
-)
-
-
-=== UC3.3.3: Visualizzazione tabella descrittiva delle colonne di ricarica
+=== UC3.3.2: Visualizzazione tabella descrittiva delle colonne di ricarica
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella, la quale riporta, per ciascuna colonna di ricarica per auto, l'erogazione in chiloWatt per ora attuale (kWh); la tabella è indicizzata dal nome dei sensori;
@@ -410,7 +395,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 /* TODO: cambiare l'immagine con una creata apposta per il caso d'uso*/
 #figure(
-  image("assets/UML/UC3.3.3_Visualizzazione-tabella-descrittiva-delle-colonne-di-ricarica.png",width:70%),
+  image("assets/UML/UC3.3.2_Visualizzazione-tabella-descrittiva-delle-colonne-di-ricarica.png",width:70%),
   caption: [UC3.3.3 Visualizzazione tabella descrittiva delle colonne di ricarica]
 )
 
@@ -665,10 +650,10 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 /*Cambiare il numero nell'immagine*/
 === UC7: Ordinamento #glossary("pannelli") tabellari
 - *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: l'#glossary("amministratore pubblico") ha scelto e sta visualizzando un #glossary("pannello"), con all'interno una tabella, da ordinare per un suo campo; i campi tramite i quali si possono ordinare i dati della tabella sono il nome, la percentuale di batteria e la data di manutenzione del #glossary("sensore") oppure la velocità del vento (ove presenti);
+- *Precondizioni*: l'#glossary("amministratore pubblico") sta visualizzando un #glossary("pannello"), con all'interno una tabella; 
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza i dati ordinati nella tabella, secondo tale campo;
 - *Scenario Principale*:
-  + L'#glossary("amministratore pubblico") seleziona un campo della tabella, secondo cui ordinare i dati, tra i seguenti: nome, percentuale di  batteria e data di manutenzione del #glossary("sensore") o velocità del vento;
+  + L'#glossary("amministratore pubblico") seleziona un campo della tabella, secondo cui ordinare i dati, tra i seguenti: nome, percentuale di batteria, data di manutenzione del #glossary("sensore"), valore della misurazione e timestamp della rilevazione (ove presenti);
   + Per tale campo l'#glossary("amministratore pubblico") sceglie tra l'ordinamento crescente e decrescente.
 
 #figure(
@@ -927,32 +912,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   (
      "Obbligatorio", "L'utente deve poter accedere all'applicazione senza dover effettuare l'autenticazione.", "Capitolato"
   ),
-  /*TODO: andare a creare vincolo per la verifica del menù di selezione tra le dashboard*/
-  (
-  "Obbligatorio","La creazione di un simulatore di almeno una sorgente dati.","Capitolato",
-  ),
-  (
-  "Obbligatorio","La simulazione deve produrre dati realistici.","Capitolato",
-  ),
-  (
-  "Obbligatorio",[Deve esistere una #glossary("dashboard") che riporti almeno i dati di un #glossary("sensore").],"Capitolato",
-  ),
-  (
-  "Desiderabile","La simulazione di più sorgenti dati.","Capitolato",
-  ),
-  (
-  "Opzionale","Messa in evidenza di relazioni tra dati provenienti da sorgenti diverse.","Capitolato",
-  ),
-  (
-  "Opzionale",[Un #glossary("sistema") di allerta che notifichi l'utente in caso di anomalie o eventi critici.],"Verbale esterno",
-  ),
-  (
-  "Opzionale","La previsione di eventi futuri, basata su dati storici e attuali.","Capitolato",
-  ),
-  (
-  "Desiderabile",[Deve esistere una #glossary("dashboard") avanzata contenente: una mappa della città, widget e informazioni sui sensori (ad esempio il tipo di #glossary("sensore"), il modello, ecc.).],"Capitolato"
-  ),
-    (
+      (
      "Obbligatorio", [L'utente deve poter visualizzare un menù di selezione delle #glossary("dashboard"), che permetta di selezionare tra Sensori, Ambientale, Urbanistica e Dati anomali & superamento soglie.], [UC#C.display()]
   ),
   (
@@ -1006,10 +966,8 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   (
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi il numero di posti liberi nei vari parcheggi, mediante indicatori numerici posti nelle coordinate geografiche del #glossary("sensore"), nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level: 2)#C.step(level: 2)UC#C.display()]
   ),
-  (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi la posizione delle colonne di ricarica per auto, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:2)#C.step(level:3)UC#C.display()]
-  ),
-  ("Obbligatorio",[L'utente deve poter visualizzare un #glossary("pannello") contenente indicatori booleani posti nelle coordinate geografiche dei sensori che indicheranno la disponibilità delle colonne di ricarica, nella #glossary("dashboard") relativa ai dati urbanistici.],[#C.step(level:3)UC#C.display()]),
+
+  ("Obbligatorio",[L'utente deve poter visualizzare un #glossary("pannello") contenente indicatori booleani posti nelle coordinate geografiche dei sensori che indichino la disponibilità delle colonne di ricarica, nella #glossary("dashboard") relativa ai dati urbanistici.],[#C.step(level:2) #C.step(level:3)UC#C.display()]),
   (
     "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'erogazione delle colonne di ricarica per auto, espressa in chiloWatt all'ora (kWh), controllata da ciascun #glossary("sensore"), nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:3)UC#C.display()]
   ),
@@ -1061,7 +1019,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   ),
   
   (
-    "Desiderabile", [Nei #glossary("pannelli") con tabelle, l'utente deve poter ordinare i dati in base alle loro colonne, sia in ordine crescente che decrescente.], [#C.step()UC#C.display()]
+    "Desiderabile", [Nei #glossary("pannelli") con tabelle, l'utente deve poter ordinare i dati in base ai campi relativi al nome del #glossary[sensore], alla percentuale di batteria, alla data di manutenzione del #glossary("sensore"), alla misurazione e al timestamp di quest'ultima (ove presenti), sia in ordine crescente che decrescente.], [#C.step()UC#C.display()]
   ),
   
   (
@@ -1108,7 +1066,38 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   ),
   (
     "Desiderabile", [Il #glossary("sensore") deve poter mandare e far persistere dati relativi al proprio stato, ovvero la propria percentuale di batteria (costantemente a 100% nel caso di sensori senza batteria autonoma), la data di ultima manutenzione effettuata su di esso, e la propria frequenza di inserimento dati espressa in secondi.], [#C.step()UC#C.display()]
+  ), 
+  /*questi qui sotto sono gli ex requisiti di vincolo
+  GIACOMO D'OVIDIO, ne ho commentato qualcuno perchè credo siano inglobati nei precedenti*/
+  /*TODO: crearci le specifiche di test*/  (
+  "Obbligatorio",[Dev'essere realizzato un simulatore per almeno una tipologia di #glossary("sensore").],"Capitolato",
+  ),
+  (
+  "Obbligatorio","La simulazione deve produrre dati realistici.","Capitolato",
+  ),
+  /*
+  (
+  "Obbligatorio",[Deve esistere una #glossary("dashboard") che riporti almeno i dati di un #glossary("sensore").],"Capitolato",
+  ),
+  (
+  "Desiderabile","La simulazione deve realizzare più di una sorgente dati.","Capitolato",
+  ),*/
+  (
+  "Opzionale","Il sistema deve rendere possibile la rilevazione di relazioni tra dati provenienti da sorgenti diverse.","Capitolato",
+  ),
+  /*
+  (
+  "Opzionale",[Un #glossary("sistema") di allerta che notifichi l'utente in caso di anomalie o eventi critici.],"Verbale esterno",
+  ),
+  */
+  (
+  "Opzionale","Il sistema deve rendere possibile la previsione di eventi futuri, basata su dati storici e attuali.","Capitolato",
+  ),
+  /*
+  (
+  "Desiderabile",[Deve esistere una #glossary("dashboard") avanzata contenente: una mappa della città, widget e informazioni sui sensori (ad esempio il tipo di #glossary("sensore"), il modello, ecc.).],"Capitolato"
   )
+  */
 )
 
 #let requisiti_funzionali_con_codice = generate_requirements_array("F", requisiti_funzionali)
@@ -1129,18 +1118,18 @@ caption: "Requisiti funzionali")
   (
   "Obbligatorio", [Viene richiesta una #glossary("documentazione") sulle scelte implementative e progettuali, che dovranno essere accompagnate da motivazioni.],"Capitolato",
   ),
-  ("Obbligatorio",[Viene richiesto il _Manuale Utente_.],"Capitolato"),
-  ("Obbligatorio",[Viene richiesto il documento _Specifiche tecniche_.],"Capitolato"),
+  ("Obbligatorio",[Viene richiesto il _Manuale Utente_.],"Capitolato"), 
+  ("Obbligatorio",[Viene richiesto il documento _Specifiche Tecniche_.],"Capitolato"), 
   (
   "Obbligatorio","La documentazione dovrà riguardare anche problemi aperti ed eventuali possibili soluzioni da approfondire in futuro.","Capitolato"
   ),
-  ("Desiderabile",[Il #glossary("sistema") deve risultare di facile utiilizzo, richiedendo un numero di click (≤ 7) contenuto per raggiungere gli obiettivi desiderati.],"Norme di Progetto"),
   ("Desiderabile",[L'#glossary("amministratore pubblico") deve poter imparare a padroneggiare il #glossary("sistema") in breve tempo.],"Norme di Progetto"),
   ("Obbligatorio",[La #glossary[repository] di github del codice sorgente "InnovaCity" deve essere accessibile a tutti.],"Verbale esterno"),
   ("Obbligatorio",[Devono essere rispettati tutte le norme definite nel documento _Norme di Progetto v2.0_.],"Norme di Progetto"),
   ("Obbligatorio",[Devono essere rispettati i vincoli e le metriche definite nel _Piano di Qualifica v2.0_.],"Norme di Progetto"),
   ("Desiderabile",[Il #glossary("sistema") deve essere scalabile, in grado di gestire grandi moli di dati.],"Capitolato"),
   ("Desiderabile",[Il #glossary("sistema") deve essere facilmente manutenibile.],"Capitolato")
+  
 )
 
 #let requisiti_qualita_con_codice = generate_requirements_array("Q", requisiti_qualita)
@@ -1159,10 +1148,11 @@ caption: "Requisiti di qualità")
   ("Obbligatorio",[Deve essere utilizzato #glossary[Docker Compose] versione 3.8 per l'installazione del software.],"Verbale esterno"),
   ("Obbligatorio","I dati in ingresso nel database OLAP devono avere formato pseudo-tabellare, si deve utilizzare il formato Json.", "Verbale esterno"),
   ("Obbligatorio","Utilizzo di un message broker per lo streaming dei dati, per esempio Apache Kafka.","Capitolato"),
-  ("Obbligatorio","Utilizzo dell'applicazione richiede compatibilità con l'ultima versione di Google Chrome v120 (o superiori), Mozilla Firefox v120 (o superiori), Microsoft Edge v120 (o superiori) o Opera v106 (o superiori).","Capitolato"),
-
-  
-  
+  ("Obbligatorio","Il sistema deve essere compatibile con Google Chrome v120 (o superiori), Mozilla Firefox v120 (o superiori), Microsoft Edge v120 (o superiori) o Opera v106 (o superiori).","Decisione interna"), 
+  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Windows (10 o 11), con RAM minimale di 4GB, processore 64 bit e compatibilità con WSL 2.","Capitolato"), 
+  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo MACOS (versione minima 10.14 Mojave) con RAM minimale di 4GB.","Capitolato"), 
+  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Linux Ubuntu (22.04 o superiori) con RAM minimale di 4GB.","Capitolato"),
+  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Linux Mint (21 o superiori) con RAM minimale di 4GB.","Capitolato")
   
   
 )
@@ -1172,8 +1162,11 @@ caption: "Requisiti di qualità")
 requirements_table(requisiti_vincolo_con_codice),
 caption: "Requisiti di vincolo")
 #pagebreak()
-== Requisiti sistema operativo
 
+/*
+Ho spostato i contenuti nei requisiti di vincolo. pero non so bene se è la sezione giusta. 
+
+== Requisiti sistema operativo
 L'applicazione viene eseguita sul browser e l'unico software che deve essere installato sul sistema operativo è Docker.\
 Docker viene fornito in quasi tutte le distro Linux, tramite il gestore di pacchetti specifico per la distribuzione, per cui l'installazione è molto semplice.
 Su Windows si richiede la versione Windows 10 o superiori, con processore 64 bit, una RAM minima di 4GB, e WSL 2 (compatibilità con il kernel di Linux fornita da Microsoft che consente agli utenti di eseguire applicazioni Linux direttamente su Windows senza la necessità di una macchina virtuale separata) versione 1.1.3.0 per utilizzare Container Linux; alternativamente, si può usare la funzionalità di Hyper-v (tecnologia di virtualizzazione fornita da Microsoft come parte dei sistemi operativi Windows) e Container Windows. Inoltre deve essere abilitata la virtualizzazione dell'hardware all'interno del BIOS.
@@ -1185,30 +1178,29 @@ Fonte:
   - *Hyper-v*: #link("https://learn.microsoft.com/it-it/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v") (22-02-2024).
 
 #pagebreak()
+*/
 == Requisiti prestazionali
+
+/*
+HO TOLTO QUESTA SEZIONE PERCHè NON NE CAPIVO IL SENSO QUI
 
 Si nota che entrambe le tecnologie #glossary[Clickhouse] e #glossary[Grafana] integrano al loro interno varie ottimizzazioni per garantire prestazioni efficienti.
 Ad esempio #glossary[Clickhouse] utilizza algoritmi di compressione avanzati per ridurre lo spazio di archiviazione necessario e migliorare le prestazioni di accesso ai dati, inoltre ha un archittetura distribuita consentendo una distribuzione del carico e una scalabilità orizzontale per gestire grandi volumi di dati. Mentre #glossary[Grafana] usa la cache dei dati per ridurre il carico di lavoro sui database e migliorare la velocità di risposta delle query; cerca di ottimizzare le query per ridurre il numero di richieste e utilizza un sistema di compressione dati per ridurre lo spazio di archiviazione.
 
 Per garantire tempi di esecuzione ancora più rapidi, si cerca di usare, ove possibile, le #glossary[materialized views] di #glossary[Clickhouse].
+*/
 
 #let requisiti_prestazioni = (
   (
-  "Obbligatorio",[Il #glossary("sistema") deve gestire un carico di #glossary("dati in entrata") tra i 50 e i 100 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM.],"Verbale esterno"
+  "Obbligatorio",[Il #glossary("sistema") deve gestire un carico di #glossary("dati in entrata") superiore ai 50 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM.],"Verbale esterno"
   ),
-  ("Desiderabile",[Il #glossary("sistema") deve avere un basso tempo di elaborazione tra il momento in cui i dati vengono generati e la loro visualizzazione sulla #glossary[dashboard].],"Norme di Progetto"),
-  ("Desiderabile",[Evitare l'utilizzo di #glossary[pannelli] troppo complessi che richiedono troppe risorse per il rendering.],"Verbale esterno")
-  
+  ("Desiderabile",[Il #glossary("sistema") deve avere un tempo di elaborazione inferiore ai 5 secondi, dal momento in cui i dati vengono ricevuti  alla loro visualizzazione nella #glossary[dashboard]. Tali tempistiche sono garantite solo potendo usufruire di una connessione con almeno 100 megabit al secondo in downlaod e con almeno 30 megabit in upload.],"Norme di Progetto"), 
 )
 
 #let requisiti_prestazioni_con_codice = generate_requirements_array("P", requisiti_prestazioni)
 #figure(
 requirements_table(requisiti_prestazioni_con_codice),
 caption: "Requisiti di prestazioni")
-
-== Requisiti sicurezza 
-
-Il team #team non ha individuato particolari criteri di sicurezza da adottare per lo sviluppo dell'applicazione.
 
 #pagebreak()
 == Tracciamento Fonti - Requisiti
