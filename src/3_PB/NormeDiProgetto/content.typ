@@ -433,7 +433,7 @@ La progettazione segue l'analisi dei requisiti, dove sono definite le necessità
 
 ===== Diagrammi di flusso dati
 
-I diagrammi di flusso dati anche conosciuti come DFD #glossary("Data-Flow Diagram") sono un tipo di diagramma utilizzato principalmente nell'analisi dei sistemi informatici per rappresentare il flusso dei dati all'interno di un sistema. 
+I diagrammi di flusso dati anche conosciuti come DFD #glossary("Data Flow Diagram") sono un tipo di diagramma utilizzato principalmente nell'analisi dei sistemi informatici per rappresentare il flusso dei dati all'interno di un sistema. 
 
 Le entità rappresentabili in questi diagrammi sono:
 
