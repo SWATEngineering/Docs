@@ -406,7 +406,7 @@ table(
 caption: "Esempio tabella per requisiti")
 
 ===== Aggiornamento specifiche di test
-Per agevolare la consistenza dei documenti l'Analista che abbia apportato modifiche a requisiti e a casi d'uso deve garantire che tali modifiche siano riportate nella sezione relativa ai test di sistema e ai test di accettazione nel documento _Piano di Qualifica v2.0_ segnalandolo all'attuale Amministratore, o previa autorizzazione da parte del Responsabile occupandosene direttamente. 
+Per agevolare la consistenza dei documenti l'Analista che abbia apportato modifiche a requisiti e casi d'uso nel documento _Analisi dei Requisiti v2.0_ deve garantire che tali modifiche siano riportate nella sezione relativa ai test di sistema e ai test di accettazione nel documento _Piano di Qualifica v2.0_ segnalandolo all'attuale Amministratore, o previa autorizzazione da parte del Responsabile occupandosene direttamente. 
 Tale procedura risulta essere di fondamentale importanza nel fare in modo che ogni requisito sia coperto da corrispettivo test, in modo tale da consentire al team di terminare la fase di qualifica con la consapevolezza di aver soddisfatto ogni requisito e realizzato ogni caso d'uso.
 
 
@@ -433,7 +433,7 @@ La progettazione segue l'analisi dei requisiti, dove sono definite le necessità
 
 ===== Diagrammi di flusso dati
 
-I diagrammi di flusso dati anche conosciuti come DFD #glossary("Data Flow Diagram") sono un tipo di diagramma utilizzato principalmente nell'analisi dei sistemi informatici per rappresentare il flusso dei dati all'interno di un sistema. 
+I diagrammi di flusso dati anche conosciuti come DFD #glossary("Data Flow Diagram") sono un tipo di diagramma utilizzato principalmente nell'analisi dei sistemi informatici per rappresentare il flusso ed elaborazioni dei dati all'interno di un sistema. 
 
 Le entità rappresentabili in questi diagrammi sono:
 
@@ -445,7 +445,7 @@ Le entità rappresentabili in questi diagrammi sono:
 
 - *Memorizzatori di dati*: contengono i dati per un uso successivo,come database o archivi. 
 
-Il diagramma pur essendo vastamente utilizzato nell'ambito dell'ingegneria informatica non è fa parte dalla specifica #glossary("UML")\. Ne risulta che esistono più sintassi di modellazione, i progettisti devono seguire la sintassi "Gane & Sarson" supportata dallo strumento StarUML.
+Il diagramma pur essendo vastamente utilizzato nell'ambito dell'ingegneria informatica non fa parte dalla specifica #glossary("UML")\. Ne risulta che esistono più sintassi di modellazione, i progettisti devono seguire la sintassi "Gane & Sarson" supportata dallo strumento StarUML.
 
 #figure(
                         image(
@@ -645,7 +645,7 @@ I type hint non impongono un ritorno specifico, ma forniscono informazioni chiar
 
 Si è deciso di integrare il linter PEP8 come fondamentale strumento nel processo di sviluppo. Questo strumento svolge un ruolo di rilievo nel garantire la coerenza e l'adesione alle linee guida di formattazione del codice #glossary[Python], stabilite nella PEP 8, contribuendo in modo significativo a mantenere uno standard uniforme nella base di codice.
 
-Inoltre per garantire il soddisfacimento delle metriche di qualità di processo e di prodotto durante tutto lo sviluppo i programmatori sono caldamente invitati a fare uso delle procedure illustrate nella @calcolo_metriche_codifica e nella @calcolo_metriche_affidabilita.
+Inoltre per garantire il soddisfacimento delle metriche di qualità di processo e di prodotto durante tutto lo sviluppo il Programmatore è caldamente invitato a fare uso delle procedure illustrate nella @calcolo_metriche_codifica e nella @calcolo_metriche_affidabilita.
 
 
 ===== Metriche
@@ -1145,7 +1145,7 @@ La gestione della qualità si propone di raggiungere i seguenti obiettivi:
         - Riduzione dei rischi che potrebbero influenzare la qualità;
         - Consegna del progetto rispettando il budget preventivato inizialmente e i requisiti individuati assieme alla Proponente.
 
-Le valutazioni della qualità viene fornito il documento _Piano di Qualifica v1.0_, in cui sono presenti varie metriche con le relative soglie di valori accettabili ed ideali.
+Le valutazioni della qualità vengono fornite nel documento _Piano di Qualifica v2.0_, in cui sono presenti varie metriche con le relative soglie di valori accettabili ed ideali.
 
  
 
@@ -1539,7 +1539,7 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
                 Formula: $"BV" = "PV" - "AC"$.
 
 ==== Calcolo metriche fornitura <calcolo_metriche_fornitura>
-Per la valutazione delle metriche di fornitura è necessario avere accesso ai dati di consuntivo e preventivo dello sprint che si vuole valutare, in modo tale da avere sempre metriche consistenti è necessario dunque effettuarne il calcolo solo nel momento in cui preventivo e consuntivo sono ultimati. Dunque inserire nel foglio di calcolo le informazioni richieste.
+Per la valutazione delle metriche di fornitura è necessario avere accesso ai dati di consuntivo e preventivo dello sprint che si vuole valutare. Per avere sempre metriche consistenti è, dunque, necessario effettuarne il calcolo solo nel momento in cui preventivo e consuntivo sono ultimati. Successivamente inserire nel foglio di calcolo le informazioni richieste.
         
 === Codifica <metriche_codifica>
 
