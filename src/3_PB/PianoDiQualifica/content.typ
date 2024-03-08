@@ -160,6 +160,8 @@ caption: [Tabella metriche per la manutenibilità del prodotto.
 ])
 
 
+/*SFIN e SFOUT sono da determinare ancora, ma non ho idea di quali potrebbero essere i valori più adatti e quindi lascio volentieri al prossimo la decisione*/
+
 
 == Usabilità
 
@@ -183,9 +185,8 @@ caption: [Tabella metriche per l'usabilità del prodotto.])
             fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
             [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
             [MPD-PTCP], [Passed Test Cases Percentage], [≥ 80%], [100%], 
-            [MPD-CC], [Code Coverage], [≥80%], [100%],
-            [MPD-BC], [Branch Coverage], [≥60%], [100%],
-            [MPD-SC], [Statement Coverage], [≥60%], [100%],
+            [MPD-BC], [Branch Coverage], [≥80%], [100%],
+            [MPD-SC], [Statement Coverage], [≥80%], [100%],
       ),
 caption: [Tabella metriche per l'affidabilità del prodotto.])
 
@@ -841,7 +842,6 @@ Considerando che gli otto #glossary[sprint] effettuati corrispondono ad un perio
 
 #pagebreak()
 
-
 == Qualità di processo - documentazione
 
 === Indice Gulpease
@@ -873,6 +873,15 @@ Per ovviare al problema il team ha deciso di introdurre una checklist incentrata
 Tale strumento ha mostrato immediatamente i suoi effetti benefici: gli errori nel corso dell'ottavo #glossary[sprint] sono calati a zero.
 
 
+
+//== Qualità di processo - codifica
+
+
+/*TODO andare a calcolare le metriche a partire dallo sprint 12*/
+/*Per il grafico si potrebbe sia pensare di fare un grafico come gli altri che mostra appunto l'andamento e dunque il numero delle infrazioni sapendo comunque che ne sono accettare 0, oppure come si diceva nel incontro solo una specie di tabella che dice dallo sprint 12, 13, 14 se le metriche sono soddisfatte o meno*/
+
+
+
 == Qualità di processo - gestione della qualità
 
 === Metriche Non Soddisfatte
@@ -889,6 +898,10 @@ Le Metriche Non Soddisfatte corrispondono alle metriche MPC-CO, MPC-CPI, MPC-EAC
 // == Qualità di prodotto
 #pagebreak()
 
+//TODO: anche qui si deve capire come fare i vari grafici e buttarli giù.
+
+
+== Qualità di prodotto
 
 
 == Considerazioni finali in vista della revisione #glossary[RTB]
