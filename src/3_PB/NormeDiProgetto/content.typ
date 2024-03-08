@@ -622,7 +622,7 @@ I type hint non impongono un ritorno specifico, ma forniscono informazioni chiar
 
 Si è deciso di integrare il linter PEP8 come fondamentale strumento nel processo di sviluppo. Questo strumento svolge un ruolo di rilievo nel garantire la coerenza e l'adesione alle linee guida di formattazione del codice #glossary[Python], stabilite nella PEP 8, contribuendo in modo significativo a mantenere uno standard uniforme nella base di codice.
 
-Inoltre per garantire il soddisfacimento delle metriche di qualità di processo e di prodotto durante tutto lo sviluppo i programmatori sono caldamente invitati a fare uso delle procedure illustrata nella @calcolo_metriche_codifica e nella @calcolo_metriche_affidabilita.
+Inoltre per garantire il soddisfacimento delle metriche di qualità di processo e di prodotto durante tutto lo sviluppo i programmatori sono caldamente invitati a fare uso delle procedure illustrate nella @calcolo_metriche_codifica e nella @calcolo_metriche_affidabilita.
 
 
 ===== Metriche
