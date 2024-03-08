@@ -468,6 +468,7 @@ Il diagramma pur essendo vastamente utilizzato nell'ambito dell'ingegneria infor
 
 
 
+
 ===== Diagrammi #glossary[UML] delle classi    
 
 Il diagramma delle classi è una tipologia di diagramma #glossary[UML] utile a rappresentare la struttura statica di un #glossary[sistema] orientato agli oggetti. Esso visualizza le classi del #glossary[sistema], insieme ai loro attributi e metodi, e le relazioni tra di esse. Le classi sono rappresentate tramite rettangoli divisi in tre sezioni: la parte superiore contiene il nome della classe, la sezione centrale include gli attributi della classe e quella inferiore ne elenca i metodi.
@@ -1596,11 +1597,7 @@ Il Programmatore che intendesse calcolare tali metriche può farlo anche in bran
         - *PTCP*: Passed Test Cases Percentage - rappresenta la percentuale di casi di test che sono stati eseguiti con successo rispetto al totale dei casi di test previsti
 
                 Formula: $"PTCP" = "test superati" / "test totali" dot 100$;
-
-        - *CC*: Code Coverage - numero di linee di codice convalidate con successo nell'ambito di una procedura di test
-
-                Formula: $"CC" = "linee di codice percorse" / "linee di codice totali" dot 100$;
-        
+                        
         - *BC*: Branch Coverage - valuta quanti rami condizionali nel codice sorgente sono stati eseguiti durante l'esecuzione dei test. 
                         Formula: $"BC"= "Numero di rami condizionali eseguiti" / "numero totale dei rami condizionali" dot 100$;
 
