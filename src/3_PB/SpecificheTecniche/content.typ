@@ -4,7 +4,7 @@
 #import chart
 
 /*************************************/
-/*    INSERIRE SOTTO IL CONTENUTO    */ 
+/*    INSERIRE SOTTO IL CONTENUTO    */
 /*************************************/
 = Introduzione
 
@@ -23,7 +23,7 @@ Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei d
 
 == Riferimenti
 
-=== Riferimenti normativi 
+=== Riferimenti normativi
 - Capitolato C6 - InnovaCity: Smart city monitoring platform:
 #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf") (20/02/2024) \
  #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6p.pdf") (20/02/2024)
@@ -58,7 +58,7 @@ Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei d
 
 #pagebreak()
 = Tecnologie
-Questa sezione si propone di offrire una panoramica sintetica delle tecnologie adottate. Questo breve paragrafo introduttivo fornisce un quadro generale delle piattaforme, dei linguaggi di programmazione, dei #glossary[framework] e di altre risorse tecnologiche che costituiscono le basi del nostro progetto. 
+Questa sezione si propone di offrire una panoramica sintetica delle tecnologie adottate. Questo breve paragrafo introduttivo fornisce un quadro generale delle piattaforme, dei linguaggi di programmazione, dei #glossary[framework] e di altre risorse tecnologiche che costituiscono le basi del nostro progetto.
 
 == Codifica
 === Linguaggi e formati dati
@@ -70,10 +70,10 @@ table(
       /* TODO: piuttosto che mettere una descrizione generica, dovremmo andare a mettere come questa tecnologia ci viene incontro / ci è utile per sviluppare le funzionalità che dobbiamo sviluppare.*/
       /*Giacomo D'Ovidio commenta: io sinceramente non so se andrei a specificare, credo poi ce ne sarà abbondantemente modo di parlarne nella parte relativa di design (Sezione 4), però bon come volete*/
       [*Tecnologia*],[*Descrizione*],[*Uso*],[*Versione/Standard*],
-      [#glossary[Python]], [Linguaggio di programmazione ad alto livello, interpretato, multi paradigma.],[Creazione dei simulatori di dati.], [3.11], 
-      [SQL], [Linguaggio standard per la gestione e la manipolazione dei database che lo supportano.],[Gestione e manipolazione del database ClickHouseDB.], [ANSI SQL], 
-      [YAML], [Formato di serializzazione dei dati leggibile dall'uomo comunemente utilizzato per la configurazione dei servizi e lo scambio di dati tra programmi.],[Configurazione di docker compose.], [1.2.2], 
-      [JSON], [Formato leggero per lo scambio di dati, facile da leggere e scrivere per gli esseri umani e facile da analizzare e generare per le macchine.],[Configurazione dei simulatori di dati e formato dei messaggi spediti dai simulatori/sensori al broker dati.], [2020-12]), 
+      [#glossary[Python]], [Linguaggio di programmazione ad alto livello, interpretato, multi paradigma.],[Creazione dei simulatori di dati.], [3.11],
+      [SQL], [Linguaggio standard per la gestione e la manipolazione dei database che lo supportano.],[Gestione e manipolazione del database ClickHouseDB.], [ANSI SQL],
+      [YAML], [Formato di serializzazione dei dati leggibile dall'uomo comunemente utilizzato per la configurazione dei servizi e lo scambio di dati tra programmi.],[Configurazione di docker compose.], [1.2.2],
+      [JSON], [Formato leggero per lo scambio di dati, facile da leggere e scrivere per gli esseri umani e facile da analizzare e generare per le macchine.],[Configurazione dei simulatori di dati e formato dei messaggi spediti dai simulatori/sensori al broker dati.], [2020-12]),
 caption: [Tabella tecnologie per la Codifica: Linguaggi e formati dati.])
 === #glossary[Framework] e librerie
 #figure(
@@ -82,8 +82,8 @@ table(
       align: (x, y) => (center, center, center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Tecnologia*],[*Descrizione*],[*Versione*],
-      [Pydantic], [Libreria #glossary[Python] per la serializzazione degli oggetti e per la validazione dei dati, inoltre si caratterizza dalla capacità di forzare i tipi garantendo che i dati siano coerenti durante l'elaborazione.], [2.6], 
-      [Confluent Kafka], [Libreria #glossary[Python] che fornisce gli strumenti necessari per produrre e consumare messaggi da Apache #glossary("Kafka"). ], [1.9]), 
+      [Pydantic], [Libreria #glossary[Python] per la serializzazione degli oggetti e per la validazione dei dati, inoltre si caratterizza dalla capacità di forzare i tipi garantendo che i dati siano coerenti durante l'elaborazione.], [2.6],
+      [Confluent Kafka], [Libreria #glossary[Python] che fornisce gli strumenti necessari per produrre e consumare messaggi da Apache #glossary("Kafka"). ], [1.9]),
 caption: [Tabella tecnologie per la Codifica: #glossary[Framework] e librerie])
 === Database e servizi
 #figure(
@@ -92,13 +92,13 @@ table(
       align: (x, y) => (center, center, center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Tecnologia*],[*Descrizione*],[*Versione*],
-      [#glossary[Clickhouse]], [Sistema di gestione dei database colonnari, progettato per l'analisi dei dati in tempo reale. È ottimizzato nei casi d'uso OLAP per eseguire query analitiche su grandi volumi di dati in modo efficiente.], [24.1.5.6], 
-      [_Apache_ #glossary[Kafka]], [Piattaforma di streaming di dati distribuita e scalabile, progettata per la gestione di flussi di dati in tempo reale. È ampiamente utilizzato per l'elaborazione di eventi, la messaggistica asincrona e la creazione di pipeline dati #glossary[real-time].], [3.7.0], 
-      [#glossary[Grafana]], [Piattaforma open source per il monitoraggio e l'analisi dei dati. Fornisce strumenti per la visualizzazione di metriche e log, la creazione di #glossary[dashboard] interattive e la generazione di avvisi in tempo reale.], [10.3],  
-      [#glossary[Grafana]\ #glossary[ClickHouse]\ Data Source], [Plugin per #glossary[Grafana] che consente di interrogare e visualizzare i dati di #glossary[ClickHouse] in #glossary[Grafana]], [4.0.3], 
+      [#glossary[Clickhouse]], [Sistema di gestione dei database colonnari, progettato per l'analisi dei dati in tempo reale. È ottimizzato nei casi d'uso OLAP per eseguire query analitiche su grandi volumi di dati in modo efficiente.], [24.1.5.6],
+      [_Apache_ #glossary[Kafka]], [Piattaforma di streaming di dati distribuita e scalabile, progettata per la gestione di flussi di dati in tempo reale. È ampiamente utilizzato per l'elaborazione di eventi, la messaggistica asincrona e la creazione di pipeline dati #glossary[real-time].], [3.7.0],
+      [#glossary[Grafana]], [Piattaforma open source per il monitoraggio e l'analisi dei dati. Fornisce strumenti per la visualizzazione di metriche e log, la creazione di #glossary[dashboard] interattive e la generazione di avvisi in tempo reale.], [10.3],
+      [#glossary[Grafana]\ #glossary[ClickHouse]\ Data Source], [Plugin per #glossary[Grafana] che consente di interrogare e visualizzare i dati di #glossary[ClickHouse] in #glossary[Grafana]], [4.0.3],
       [Docker], [Piattaforma open-source che permette di creare, distribuire e gestire applicazioni in contenitori virtuali.], [25.0.3],
       [Docker Compose], [Strumento per definire e gestire applicazioni multi-container Docker attraverso file YAML.], [2.24.6]
-      ), 
+      ),
 caption: [Tabella tecnologie per la Codifica: Database e servizi.])
 
 
@@ -109,14 +109,14 @@ table(
       align: (x, y) => (center, center, center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Tecnologia*],[*Descrizione*],[*Versione*],
-      [PEP8], [Stile di codifica per il codice #glossary[Python] che definisce le linee guida per la formattazione del codice, rendendolo più leggibile e uniforme.], [1.7.1]), 
+      [PEP8], [Stile di codifica per il codice #glossary[Python] che definisce le linee guida per la formattazione del codice, rendendolo più leggibile e uniforme.], [1.7.1]),
 caption: [Tabella tecnologie per l'analisi del codice.])
 
 
 #pagebreak()
 = Architettura del sistema
 == Architettura di implementazione
-Il sistema richiede la capacità di processare dati provenienti da varie fonti, in tempo reale, e di offrire una visualizzazione immediata e continua di tali dati, consentendo di monitorarne gli andamenti. 
+Il sistema richiede la capacità di processare dati provenienti da varie fonti, in tempo reale, e di offrire una visualizzazione immediata e continua di tali dati, consentendo di monitorarne gli andamenti.
 Per questo tipo di scopo le due architetture consigliate sono la:
 - *#[#sym.lambda]-architecture*: che prevede di elaborare i dati in due flussi separati, uno per i dati in tempo reale e uno per i dati storici. I dati in tempo reale vengono elaborati immediatamente per fornire risposte rapide, mentre i dati storici vengono elaborati in batch per fornire risposte più complete o elaborate nel tempo. Alla fine, i risultati dei due flussi vengono combinati per fornire una visione completa dei dati;
 - *#[#sym.kappa]-architecture*: semplifica la struttura della #[#sym.lambda]-architecture, eliminando il flusso batch. Tutti i dati vengono quindi elaborati in tempo reale utilizzando un sistema di elaborazione dei dati in streaming. Questo fa si che i dati vengono elaborati una sola volta, riducendo la complessità complessiva del sitema.
@@ -159,7 +159,7 @@ Per illustrare il funzionamento del sistema, abbiamo utilizzato un diagramma di 
     + Wattaggio delle colonne di ricarica;
     + Riempimento delle zone ecologiche;
     + Livelli di congestione stradale;
-    + Batteria delle biciclette elettriche. 
+    + Batteria delle biciclette elettriche.
 - *Invio al #glossary[broker] dei dati*:  i dati generati dai sensori vengono inviati al #glossary[broker] dati, in questo contesto #glossary[Kafka]. #glossary[Kafka] offre un meccanismo di messaggistica distribuita in grado di gestire grandi volumi di dati in tempo reale;
 - *Engine interno(archiviatore)*: l'archiviatore, rappresentato dal motore interno "Kafka" di #glossary[ClickHouse], agisce direttamente come consumatore dei dati provenienti dal broker dei dati (#glossary[Kafka]). Questo avviene tramite la connessione a specifici topic nel broker dati, ognuno associato a un tipo di sensore distinto. Successivamente, i dati corrispondenti vengono archiviati nelle rispettive tabelle del database;
 - *Materializzazione*: i dati corrispondenti la temperatura, umidità, precipitazioni, inquinamento atmosferico e livello dei bacini idrici vengono aggregati in tabelle apposite attraverso l'utilizzo di #glossary[materialized views]. Queste aggregazioni avvengono su intervalli di 5 minuti, consentendo così l'applicazione delle medie mobili;
@@ -204,7 +204,7 @@ Nonostante i simulatori non siano ufficialmente considerati parte integrante del
 
 Nei paragrafi successivi viene mostrata l'architettura individuata, tramite l'utilizzo di Diagrammi delle Classi e relative rapide descrizioni. Inoltre verranno motivati i design pattern individuati e le decisione progettuali rilevanti. Successivamente per ogni classe verranno illustrati metodi e attributi.
 
-=== Struttura generale 
+=== Struttura generale
 
 #figure(
   image("diagrammiclassi/struttura.png",width:100%),
@@ -212,13 +212,13 @@ Nei paragrafi successivi viene mostrata l'architettura individuata, tramite l'ut
 )
 
 La classe _SimulatorExecutorFactory_ è implementazione del design pattern _Factory_, si occupa prima della costruzione dei singoli simulatori a partire da un file di configurazione che gli viene passato tramite la costruzione, per poi restituire un SimulatorExecutor che avrà il compito di orchestrarli.
-I simulatori sono istanze delle classe _SimulatorThread_: tale classe eredita dalla classe _Thread_ della Standard Library, in modo tale che l'esecuzione dei simulatori possa essere parallela. 
+I simulatori sono istanze delle classe _SimulatorThread_: tale classe eredita dalla classe _Thread_ della Standard Library, in modo tale che l'esecuzione dei simulatori possa essere parallela.
 
 #figure(
   image("diagrammiclassi/simulator.png",width:100%),
   caption: [Diagramma delle classi 2]
 )
-La classe _SensorSimulatorStrategy_ è realizzazione del design pattern _Strategy_, dove ogni strategia rappresenta una tipologia di sensore simulato differente. Al fine di garantire la possibilità di effettuare unit-testing sul comportamento dei simulatori di sensori tale classe riceve tramite costruttore un oggetto di tipo _Random_ e un oggetto di tipo _Datetime_. 
+La classe _SensorSimulatorStrategy_ è realizzazione del design pattern _Strategy_, dove ogni strategia rappresenta una tipologia di sensore simulato differente. Al fine di garantire la possibilità di effettuare unit-testing sul comportamento dei simulatori di sensori tale classe riceve tramite costruttore un oggetto di tipo _Random_ e un oggetto di tipo _Datetime_.
 Tali strategie verranno poi assegnate ad un _SimulatorThread_.
 
 #figure(
@@ -230,14 +230,14 @@ Nello specifico la classe _KafkaWriter_ realizza il suo scopo tramite l'impiego 
 
 === Classi: metodi e attributi
 Si procede alla descrizione  di classi e interfacce progettate dal team.
-Non vengono menzionati i costruttori. 
+Non vengono menzionati i costruttori.
 ==== SimulatorExecutorFactory (Classe)
 //TODO: da rivedere perchè dobbiamo descrivere anche come funziona nel caso in cui la porta e l'host non devono essere passate (tipo per l'StdOutWriter ad esempio).
 //Secondo me (Kara) qui potremmo utilizzare un'altro strategy.
 ===== Attributi
-- *config_file_name: String [Privato]*: Percorso relativo del file di configurazione dei simulatori; 
-- *data_broker_host: String [Privato]*: indirizzo ip della macchina che ospita il message broker; 
-- *data_broker_port: String [Privato]*: porta della macchina che ospita il message broker; 
+- *config_file_name: String [Privato]*: Percorso relativo del file di configurazione dei simulatori;
+- *data_broker_host: String [Privato]*: indirizzo ip della macchina che ospita il message broker;
+- *data_broker_port: String [Privato]*: porta della macchina che ospita il message broker;
 - *io_module: FileIO [Privato]*: modulo per interagire con il file system.
 ===== Metodi
 - *create(): SimulatorExecutor [Pubblico]*: a partire dal file che viene passato tramite costruttore si occupa di costruire un oggetto della classe _SimulatorExecutor_.
@@ -246,30 +246,30 @@ Non vengono menzionati i costruttori.
 ===== Attributi
 - *simulators:SimulatorThread[\*] [Privato]*: Collezione di oggetti _SimulatorThread_.
 ===== Metodi
-- *stop_all(): void [Pubblico]*: Metodo  che arresta la simulazione di tutti i _SimulatorThread_; 
-- *run_all(): void [Pubblico]*: Metodo  che avvia la simulazione di tutti i _SimulatorThread_. 
+- *stop_all(): void [Pubblico]*: Metodo  che arresta la simulazione di tutti i _SimulatorThread_;
+- *run_all(): void [Pubblico]*: Metodo  che avvia la simulazione di tutti i _SimulatorThread_.
 
 ==== SimulatorThread (Classe)
 ===== Attributi
 - *is_running: bool [Privato]*: Attributo  che indica se al momento il simulatore sta producendo dati.
 - *Se*
 ===== Metodi
-- *stop(): void[Pubblico]*: Metodo che arresta la simulazione del singolo  _SimulatorThread_; 
+- *stop(): void[Pubblico]*: Metodo che arresta la simulazione del singolo  _SimulatorThread_;
 - *run(): void[Pubblico]*: Metodo che avvia la simulazione del singolo  _SimulatorThread_.
 
 ==== SensorSimulatorStrategy (Classe)
 ===== Attributi
 - *wait_time_in_seconds: int [Protetto]*: intervallo temporale tra due simulazioni.
-- *sensor_name: String [Protetto]*: nome identificativo del sensore; 
-- *random_obj: Random [Privato]*: oggetto della classe Random della libreria Standard di #glossary("Python"); 
-- *datetime_obj: Datetime [Privato]*: oggetto della classe Datetime della libreria Standard di #glossary("Python"); 
-- *coordinates : Coordinates [Protetto]*: oggetto della classe Coordinates. 
-===== Metodi 
+- *sensor_name: String [Protetto]*: nome identificativo del sensore;
+- *random_obj: Random [Privato]*: oggetto della classe Random della libreria Standard di #glossary("Python");
+- *datetime_obj: Datetime [Privato]*: oggetto della classe Datetime della libreria Standard di #glossary("Python");
+- *coordinates : Coordinates [Protetto]*: oggetto della classe Coordinates.
+===== Metodi
 - *simulate(): String [Pubblico]*: metodo che produce una stringa contenente il messaggio contenente la rilevazione simulata effettuata.
 
 ==== Coordinates (Classe)
 ===== Attributi
-- *longitude: float [Privato]*: longitudine geografica. 
+- *longitude: float [Privato]*: longitudine geografica.
 - *latitude: float [Privato]*: latitudine geografica.
 ===== Metodi
 - *getGeoJSON(): string [Pubblico]* : ritorna le coordinate geografiche nel formato GeoJSON.
@@ -283,10 +283,10 @@ Non vengono menzionati i costruttori.
 - *write(in to_write:String): void [Pubblico]*: Scrive il messaggio contenuto nella stringa passata come parametro tramite standard output.
 
 ==== KafkaWriter (Classe)
-===== Attributi 
+===== Attributi
 //qui ho un dubbio su fatto che port e ip debbano essere attributi. nel caso non lo siano vanno aggiornati anche nel grafico
-- *ip: String [Privato]* : indirizzo ip della macchina che ospita il message broker; 
-- *port: String [Privato]* : porta della macchina che ospita il message broker; 
+- *ip: String [Privato]* : indirizzo ip della macchina che ospita il message broker;
+- *port: String [Privato]* : porta della macchina che ospita il message broker;
 - *topic: String [Privato]*: indica il topic sul message Broker in cui il messaggio sarà scritto.
 ===== Metodi
 - *write(in to_write:String): void [Pubblico]*: Scrive il messaggio contenuto nella stringa passata come parametro sul topic corrispondente nel broker.
@@ -296,10 +296,42 @@ Non vengono menzionati i costruttori.
 - *producer(in topic:Sting, in value:String, in callback:Function): void [Pubblico]*: Metodo che il client usa per inviare il messaggio a Kafka.
 
 ==== AdapterProducer (Interfaccia)
-===== Attributi 
+===== Attributi
 - *adaptee: Producer (Privato)*
 ===== Metodi
 - *producer(in topic:Sting, in value:String, in callback:Function): void [Pubblico]*: Metodo che richiama il metodo _produce()_ dell'oggetto _adaptee_ di tipo  _Producer_ della libreria _Confluent Kafka_.
+
+== Messaggi ed Eventi
+=== Kafka Topics
+I _topic_ in Kafka possono essere viste come le tabelle di un database, ci servono per separare logicamente diversi tipi di messaggi o eventi che vengono inseriti nel sistema.
+Noi li usiamo per separare i diversi sensori, quindi vi sarà un topic per ogni tipologia di sensore; questo ci permette poi di andare a creare all'interno di ClickHouse delle "tabelle consumatrici" che prendono
+i dati in automatico, grazie al fatto che avendo separati logicamente i topic, i messaggi all'interno di ognuno di essi hanno tutti lo stesso formato.
+=== Struttura dei messaggi
+La struttura di un messaggio o evento, descritta in JSON sarà la seguente:
+```json
+{
+    "type": "SomethingSimulator",
+    "timestamp": "2024-01-10 00:00:00",
+    "readings":[
+        {
+            "type": "Speed",
+            "value": "00.00"
+        },
+        {
+            "type": "Direction",
+            "value": "270"
+        }
+    ],
+    "nome": "Significant Name",
+    "location":{
+        "type": "Point",
+        "coordinates": [00.000000, 00.000000]
+    }
+}
+```
+Gli oggetti all'interno di "readings" sono solamente esempi, è possibile inserirne uno solo, come ad esempio per i sensori
+di temperatura, che avranno solamente la lettura omonima, oppure, come nel caso del sensore del vento averne due: la velocità
+la direzione.
 
 
 #pagebreak()
@@ -327,19 +359,19 @@ Rispetto alla stessa tabella ritrovabile nel documento _Analisi dei Requisiti v2
 )
 #let requisiti_funz = requisiti_funzionali_con_codice.map(req => {
   if(satisfied_funz.contains(req.at(0).slice(3))){
-    return (req.at(0),req.at(2),"Soddisfatto") 
+    return (req.at(0),req.at(2),"Soddisfatto")
   }
   return (req.at(0),req.at(2),"Non soddisfatto")
 })
 #let requisiti_vinc = requisiti_vincolo_con_codice.map(req => {
   if(satisfied_funz.contains(req.at(0).slice(3))){
-    return (req.at(0),req.at(2),"Soddisfatto") 
+    return (req.at(0),req.at(2),"Soddisfatto")
   }
   return (req.at(0),req.at(2),"Non soddisfatto")
 })
 #let requisiti_qual = requisiti_qualita_con_codice.map(req => {
   if(satisfied_funz.contains(req.at(0).slice(3))){
-    return (req.at(0),req.at(2),"Soddisfatto") 
+    return (req.at(0),req.at(2),"Soddisfatto")
   }
   return (req.at(0),req.at(2),"Non soddisfatto")
 })
