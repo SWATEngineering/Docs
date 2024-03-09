@@ -40,7 +40,7 @@ Inoltre, si è considerato che alla luce dell'attuale pianificazione, tali metri
 Infine, si è deciso che le metriche per la qualità di codifica e quelle per la qualità di prodotto saranno calcolate ufficialmente a partire dallo sprint attuale, utilizzando gli strumenti configurati secondo le modalità normate nelle _Norme di Progetto_.
 
 == Codifica della componente di simulazione
-Durante lo sprint attuale il team vuole completare la codifica del componente di simulazione compresi i test corrispondenti. Si elencano di seguito i simulatori mancanti e i membri dei team che se ne occuperanno: 
+Durante lo sprint attuale il team vuole completare la codifica del componente di simulazione compresi i test corrispondenti. Si elencano di seguito i simulatori mancanti e i membri dei team che se ne occupano: 
 - Colonne di ricarica: Giacomo D'Ovidio; 
 - Biciclette elettriche: Nancy Kalaj;
 - Zone ecologiche: Riccardo Alberto Costantin; 
@@ -54,7 +54,7 @@ Durante il weekend ogni Programmatore si informerà sui contenuti che ci si aspe
 
 == Rimozione di Pydantic
 Nel corso della valutazione delle librerie e strumenti attualmente in uso, il team ha preso in considerazione la complessità associata all'utilizzo di Pydantic per la componente di simulazione scritta in Python. 
-Di conseguenza, si è deciso di rimuovere Pydantic dallo stack tecnologico e se ne occuperà Riccardo Toniolo. 
+Di conseguenza, si è deciso di rimuovere Pydantic dallo stack tecnologico e se ne occupa Riccardo Toniolo. 
 
 == Incontri con la Proponente 
 Il team ha riconosciuto l'importanza di riprendere un contatto più stretto con l'azienda proponente. 
