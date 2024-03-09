@@ -29,7 +29,7 @@
   ..participants.flatten()
 )
 = Sintesi Elaborazione Incontro
-Nell'incontro si è discussa l'organizzazione del lavoro futuro con la discussione e risoluzione di alcune problematiche, discusse qui in seguito.
+Nell'incontro si è discussa l'organizzazione del lavoro futuro, di seguiti si ne riportano i momenti salienti. 
 
 == Nuovi ruoli
 Vengono stabiliti i seguenti i nuovi incarichi relativi allo sprint corrente:
@@ -60,7 +60,7 @@ congestione stradale: Simone Caregnato.
 == Inizio stesura del manuale utente
 Il Responsabile ha indirizzato l'attenzione del team sulla necessità di iniziare la stesura del documento Manuale Utente durante questo sprint.
 Si è deciso che la stesura del documento sarebbe iniziata Lunedì. 
-Durante il weekend il Programmatore si informera sui contenuti che ci si aspetta vengano illustrati in tale documento. 
+Durante il weekend ogni Programmatore si informerà sui contenuti che ci si aspetta vengano illustrati in tale documento.
 
 == Rimozione di Pydantic
 Nel corso della valutazione delle nostre attuali librerie e strumenti in uso, il team ha preso in considerazione la complessità associata all'utilizzo di Pydantic per la componente in Python. 
@@ -68,7 +68,7 @@ Di conseguenza, si è deciso di rimuovere Pydantic dal nostro stack tecnologico,
 
 == Incontri con la Proponente 
 Il team ha riconosciuto l'importanza di riprendere un contatto più stretto con l'azienda proponente. 
-A seguito della decisione di non intraprendere la fase CA, risulta di fondamentale importanza per il team arrivare alla PB con un MVP e intensificare il rapporto di feedback con la proponente risulta fondamentale a persistere tale obiettivo. 
+A seguito della decisione di non intraprendere la fase CA, risulta di fondamentale importanza per il team arrivare alla PB con un MVP e ricevere un maggiore quantitativo di feedback risulta fondamentale per persistere tale obiettivo. 
 
 == Incontro con il professor Cardin 
 Altro requisito fondamentale per terminare la fase PB entro quanto pianificato è che l'architettura presentata nel documento Specifiche Tecniche incontri il favore del professor Cardin. 
