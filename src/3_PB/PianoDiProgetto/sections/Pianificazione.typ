@@ -68,7 +68,8 @@ Attraverso le fasi di progettazione e sviluppo ha inizio la creazione del proget
 #include "PianificazioneSprint/DecimoSprint.typ"
 #include "PianificazioneSprint/UndicesimoSprint.typ"
 #include "PianificazioneSprint/DodicesimoSprint.typ"
-
+#include "PianificazioneSprint/TredicesimoSprint.typ"
+#include "PianificazioneSprint/QuattordicesimoSprint.typ"
 == Customer Acceptance #glossary[CA]
 
 *Inizio*: 29/03/2024 
