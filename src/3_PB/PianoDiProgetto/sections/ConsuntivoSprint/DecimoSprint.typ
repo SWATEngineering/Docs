@@ -20,6 +20,6 @@ La retrospettiva ha evidenziato come sia il preventivo del totale delle ore per 
 Riprendendo le considerazioni del precedente #glossary[sprint], l'uso di #glossary[stand-up meeting] come strumento di mitigazione del rischio RC1 continua a funzionare ed in modo efficace.
 
 ==== Aggiornamento della pianificazione e gestione dei rischi
-Il gruppo continua ad impiegare molte più ore rispetto a prima, cercando di arrivare ad una media di 10 ore produttive per #glossary[sprint], di modo da poter riuscire ad allocare un giusto numero di risorse allo sviluppo dell'MVP.
+Il gruppo dichiara di voler inizare a dedicare al progetto un numero di ore di orologio più ampio rispetto a quanto avvenuto fin a questo punto, cercando di arrivare ad una media di 10 ore produttive per #glossary[sprint], di modo da poter riuscire ad allocare un giusto numero di risorse allo sviluppo dell'MVP.
 È stata presa coscienza del fatto che il cercare di variare gli orari dei meeting interni per venire incontro alle esigenze di ciascun membro del gruppo, porta a confusione nell'organizzazione e addirittura ad una ridotta partecipazione rispetto a quando i meeting avevano un orario prefissato. Di conseguenza si è deciso di fissare l'orario di tutti i meeting interni in giorni prefissati della settimana, come strategia risolutiva rispetto a questo problema.
 Tale misura verrà quindi aggiunta ad RC1 nell'analisi dei rischi, come misura preventiva.
