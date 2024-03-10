@@ -11,4 +11,5 @@
     - Aggiornare pianificazione e preventivo pertinenti allo #glossary[sprint] 12 e inserire il consuntivo pertinente allo #glossary[sprint] 11;
     - Aggiornare ed aggiungere rispettivamente per gli #glossary[sprint] 13 e 14, pianificazione e preventivo;
   - Perfezionare il documento _Specifiche Tecniche v2.0_;
-  - Continuazione nello sviluppo del prodotto.
+  - Continuazione della codifica del prodotto e introduzione della componente di allarmistica. 
+  - Integrare nel cruscotto delle metriche del _Piano di Qualifica v2.0_ le metriche relative alla qualità della codifica e alla qualità del prodotto prodotto. 

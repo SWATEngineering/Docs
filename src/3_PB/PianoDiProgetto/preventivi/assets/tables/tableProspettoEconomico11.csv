@@ -1,9 +1,9 @@
 Ruolo,Ore,Costo
 Responsabile,3.0,90.0€
-Amministratore,6.0,120.0€
-Analista,1.0,25.0€
+Amministratore,3.5,70.0€
+Analista,0.5,12.5€
 Progettista,10.0,250.0€
 Programmatore,33.0,495.0€
-Verificatore,11.0,165.0€
-Totale,64.0,1145.0€
-Rimanente,215.0,3915.0€
+Verificatore,10.0,150.0€
+Totale,60.0,1067.5€
+Rimanente,222.0,4062.5€
