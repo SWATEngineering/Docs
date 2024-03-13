@@ -12,8 +12,6 @@
   [*Nome*], [*Durata presenza*],
   ..participants.flatten()
 )
-= Sintesi Elaborazione Incontro
-
 /*************************************/
 /*    INSERIRE SOTTO IL CONTENUTO    */ 
 /*************************************/
@@ -35,7 +33,7 @@ Per questo sprint il team ha deciso di continuare la codifica di quanto progetta
 == Aggiornamento metriche PdQ
 Nonostante in precedenza si fosse deciso di adottare delle nuove metriche per il processo di fornitura, durante l'incontro odierno il team #team ne ha discusso nuovamente e ha ritrattato tale decisione.
 Il team ha infatti considerato che, allo stato attuale del progetto, sarebbe bene spostare l'attenzione dedicata al processo di gestione della qualità al prodotto vero e proprio e, più in generale, alla codifica dello stesso; inoltre, le metriche di fornitura attualmente utilizzate e valutate sembrano  comportarsi come ci si aspetta. 
-Inoltre, si è considerato che alla luce dell'attuale pianificazione, tali metriche risulterebbero utili solo per la pianificazione dei pochi sprint mancanti e che, tra l'altro, il team avrebbe poco tempo per imparare ad utilizzarle in maniera efficace. 
+Si è anche considerato che, alla luce dell'attuale pianificazione, tali metriche risulterebbero utili solo per la pianificazione dei pochi sprint mancanti e che, tra l'altro, il team avrebbe poco tempo per imparare ad utilizzarle in maniera efficace. 
 
 Infine, si è deciso che le metriche per la qualità di codifica e quelle per la qualità di prodotto saranno calcolate ufficialmente a partire dallo sprint attuale, utilizzando gli strumenti configurati secondo le modalità normate nelle _Norme di Progetto_.
 
