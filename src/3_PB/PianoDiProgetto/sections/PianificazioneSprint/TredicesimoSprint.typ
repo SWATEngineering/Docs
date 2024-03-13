@@ -12,5 +12,5 @@
     - Aggiornare ed aggiungere rispettivamente per lo #glossary[sprint] 14, pianificazione e preventivo;
 - Applicare le eventuali correzioni individuate dal professor Cardin nel documento di _Specifiche Tecniche v1.0_; 
 - Applicare eventuali correzioni al prodotto segnalate dal azienda Proponente; 
-- Completare la prima stesure del documento _Manuale Utente_.
+- Completare la prima stesura del documento _Manuale Utente_.
 
