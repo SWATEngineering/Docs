@@ -4,9 +4,9 @@
 
 == Dodicesimo #glossary[sprint]
 
-*Inizio*: Venerdì 15/03/2024
+*Inizio*: Venerdì 08/03/2024
 
-*Fine*: Giovedì 21/03/2024 
+*Fine*: Giovedì 14/03/2024 
 
 #rendicontazioneOreAPosteriori(sprintNumber: "12")
 
