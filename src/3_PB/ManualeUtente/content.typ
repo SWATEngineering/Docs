@@ -144,7 +144,7 @@ La #glossary[dashboard] "Ambientale" è dedita alla visualizzazione di dati rela
 
 === Pannelli con grafici in formato "#glossary[Time series]"
 
-I pannelli contenenti grafici in formato "#glossary[Time series]" riportano dati relativi a:
+I pannelli contenenti grafici in formato "#glossary[time series]" riportano dati relativi a:
 
 - Media della temperatura riportata da ciascun #glossary[sensore], con dati aggregati in intervalli di 1 minuto;
 - Media dell'umidità nell'aria riportata da ciascun #glossary[sensore], con dati aggregati in intervalli di 1 minuto;
@@ -156,21 +156,59 @@ Tali pannelli mostrano l'ora del giorno sull'asse x, la legenda del contenuto al
 
 === Pannelli con grafici in formato "Geomap"
 
-I pannelli contenenti grafici in formato "Geomap" riportano dati relativi a:
+Il pannello contenente un grafico in formato "Geomap" riporta dati relativi a:
 
 - Direzione del vento riportata da ciascun #glossary[sensore], dove i sensori vengono rappresentati tramite il proprio nome e una freccia puntata nella direzione del vento.
 
-Tali pannelli mettono a disposizione, in alto a sinistra, due pulsanti "*+*" e "*-*" per poter effettuare operazioni di zoom-in e zoom-out, rispettivamente (il zoom-in può essere effettuato anche con un doppio click); è possibile cliccare e, tenendo premuto, muovere la mappa per visualizzarne aree diverse a piacimento e posizionare il cursore sopra un qualunque sensore per visualizzarne le informazioni, che includono almeno (ma non solo) nome del sensore, tipologia del sensore, l'ultimo valore riportato, latitudine e longitudine. Infine, in basso a sinistra è presente una scala di colori che riporta il valore minimo e massimo dei dati riportati dal sensore, così come la colorazione del sensore stesso a seconda dell'ultimo valore riportato. Quando il cursore viene posizionato sopra un determinato sensore, anche nella scala di colori viene visualizzato il valore del dato più recente.
+Tale pannello mette a disposizione, in alto a sinistra, due pulsanti "*+*" e "*-*" per poter effettuare operazioni di zoom-in e zoom-out, rispettivamente (il zoom-in può essere effettuato anche con un doppio click); è possibile cliccare e, tenendo premuto, muovere la mappa per visualizzarne aree diverse a piacimento e posizionare il cursore sopra un qualunque sensore per visualizzarne le informazioni, che includono nome del sensore, tipologia del sensore, la velocità del vento più recente, la direzione del vento più recente, latitudine e longitudine. Infine, in basso a sinistra è presente una scala di colori che riporta il valore minimo e massimo dei dati riportati dal sensore, così come la colorazione del sensore stesso a seconda dell'ultimo valore riportato. Quando il cursore viene posizionato sopra un determinato sensore, anche nella scala di colori viene visualizzato il valore della velocità del vento più recente.
 
 === Pannelli con grafici in formato "Table"
 
-I pannelli contenenti grafici in formato "Table" riportano dati relativi a:
+Il pannello contenente un grafico in formato "Table" riporta dati relativi a:
 
 - Velocità del vento riportata da ciascun #glossary[sensore].
 
+Tale pannello contiene una tabella avente campi che indicano il nome del sensore, la velocità del vento più recente, la direzione più recente, la latitudine e la longitudine; sono visibili delle scroll bar che consentono di scorrere la tabella verticalmente o orizzontalmente in caso non fosse interamente visibile. Inoltre, cliccando sul nome di un determinato campo, è possibile ordinare la tabella rispetto a quel campo in ordine crescente o decrescente. 
 
+=== Pannelli con grafici in formato "Stat"
+
+Il pannello contenente un grafico in formato "Stat" riporta dati relativi a:
+
+- Media della temperatura riportata da tutti i sensori cumulativamente, nell'intervallo di tempo selezionato.
+
+Tale pannello contiene un indice numerico che riporta quanto descritto sopra e non vi sono particolarità nel modo di interagirvi, al di là di quello che accomuna tutti i pannelli in #glossary[Grafana] descritto nella sezione *Pannelli*.
+
+=== Pannelli con grafici in formato "Gauge"
+
+Il pannello contenente un grafico in formato "Stat" riporta dati relativi a:
+
+- Media dell'intensità delle precipitazioni riportata da tutti i sensori cumulativamente, nell'intervallo di tempo selezionato.
+
+Tale pannello riporta quanto descritto sopra e non vi sono particolarità nel modo di interagirvi, al di là di quello che accomuna tutti i pannelli in #glossary[Grafana] descritto nella sezione *Pannelli*.
 
 == Dashboard "Urbanistica"
+
+La #glossary[dashboard] "Urbanistica" è dedita alla visualizzazione di dati relativi alla città, che possono includere ma non sono limitati a disponibilità dei parcheggi, disponibilità delle colonne di ricarica per automobili elettriche, stato di congestione delle strade, livello di batteria delle biciclette elettriche e riempimento delle zone ecologiche. Quelli riportati sono aspetti monitorati all'interno della #glossary[dashboard] tramite pannelli contenenti grafici di varia natura, in particolare si utilizza: il formato "Geomap" e il formato "Table".
+
+=== Pannelli con grafici in formato "Geomap"
+
+I pannelli contenenti grafici in formato "Geomap" riportano dati relativi a:
+
+- Disponibilità dei parcheggi, tramite un indicatore numerico che riporta il numero di posti liberi;
+- Disponibilità delle colonne di ricarica, tramite un indicatore binario;
+- Stato di congestione delle strade, tramite gli stati "LOW", "MEDIUM", "HIGH" e "BLOCKED";
+- Livello di batteria delle biciclette elettriche, tramite un indicatore numerico che ne riporta la percentuale;
+- Riempimento delle zone ecologiche, tramite un indicatore numerico che riporta la percentuale di riempimento.
+
+Le interazioni con tali pannelli sono identiche a quelle descritte per la stessa tipologia di pannelli all'interno della #glossary[dashboard] "Ambientale".
+
+=== Pannelli con grafici in formato "Table"
+
+Il pannello contenente un grafico in formato "Table" riporta dati relativi a:
+
+- Erogazione delle colonne di ricarica riportata da ciascun #glossary[sensore].
+
+Tale pannello contiene una tabella avente campi che indicano il nome del sensore e l'erogazione più recente; anche in questo caso le interazioni sono identiche a quelle descritte in precedenza.
 
 == Dashboard "Dati grezzi"
 
