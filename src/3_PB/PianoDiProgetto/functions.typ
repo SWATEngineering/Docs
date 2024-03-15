@@ -8,9 +8,9 @@
 
 #let itemCleaner(item) = {
   item = str(item)
-  if item == "0.0" or item == "" or item == "0.0€" {
+  if item == "0.0" or item == "" or item == "0.0€" or item == "0" {
     return [-]
-  }else if item.split(".").len() == 2{
+  }else if item.split(".").len() == 2 and item.split(".").at(1) == "0" {
     return [#item.split(".").at(0)]
   }else{
     return [#item]
