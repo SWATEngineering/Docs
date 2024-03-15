@@ -21,14 +21,14 @@
 
 Ecco la correzione degli eventuali errori di ortografia nel testo:
 
-Durante l'incontro il gruppo ha chiarito con la Proponente alcuni dubbi che vengono esposti in seguito e ha condiviso con essa lo stato di avanzamento del progetto.
+Durante l'incontro il gruppo ha chiarito con la Proponente alcuni dubbi che vengono esposti in seguito e ha condiviso con essa lo stato di avanzamento del prodotto.
 
 == Stato di avanzamento del prodotto
 L'incontro si è aperto con la presentazione dell'attuale componente di visualizzazione e con una breve discussione riguardo ai progressi effettuati dall'ultimo SAL. Successivamente si è discussa la pianificazione temporale dell'attività di codifica per i rimanenti sprint.
-La proponente si è detta soddisfatta del lavoro che il team sta svolgendo e ha approvato la pianificazione presentata.
+La Proponente si è mostrata pienamente soddisfatta del progresso compiuto dal team e ha approvato la pianificazione presentata.
 
 == Candidatura revisione PB
-Il team ha messo al corrente la Proponente della recente decisione intrapresa di non affrontare la revisione CA e dunque di volersi limitare alla revisione PB pianificata orientativamente la prima settimana di aprile. 
+Il team ha comunicato alla Proponente la decisione recentemente presa di non affrontare la revisione CA e dunque di volersi limitare alla revisione PB prevista orientativamente la prima settimana di aprile. 
 
 == Test di integrazione
 Il team ha domandato alla Proponente riguardo quali sarebbero state le modalità preferibili per testare l'integrazione dei componenti.
