@@ -19,16 +19,15 @@
   - #member
 ]
 
-Ecco la correzione degli eventuali errori di ortografia nel testo:
 
-Durante l'incontro il gruppo ha chiarito con la Proponente alcuni dubbi che vengono esposti in seguito e ha condiviso con essa lo stato di avanzamento del prodotto.
+Durante l'incontro il gruppo ha chiarito con la Proponente alcuni dubbi che vengono esposti in seguito e ha condiviso con essa lo stato di avanzamento del progetto.
 
 == Stato di avanzamento del prodotto
 L'incontro si è aperto con la presentazione dell'attuale componente di visualizzazione e con una breve discussione riguardo ai progressi effettuati dall'ultimo SAL. Successivamente si è discussa la pianificazione temporale dell'attività di codifica per i rimanenti sprint.
-La Proponente si è mostrata pienamente soddisfatta del progresso compiuto dal team e ha approvato la pianificazione presentata.
+La proponente si è detta soddisfatta del lavoro che il team sta svolgendo e ha approvato la pianificazione presentata.
 
 == Candidatura revisione PB
-Il team ha comunicato alla Proponente la decisione recentemente presa di non affrontare la revisione CA e dunque di volersi limitare alla revisione PB prevista orientativamente la prima settimana di aprile. 
+Il team ha messo al corrente la Proponente della recente decisione intrapresa di non affrontare la revisione CA e dunque di volersi limitare alla revisione PB pianificata orientativamente la prima settimana di Aprile. 
 
 == Test di integrazione
 Il team ha domandato alla Proponente riguardo quali sarebbero state le modalità preferibili per testare l'integrazione dei componenti.
@@ -40,10 +39,10 @@ In quanto le statistiche offerte direttamente da Docker potrebbero essere influe
 Viene consigliato di verificare se la tecnologia "Portainer" possa essere utile allo scopo. Inoltre viene consigliato di contattare il rappresentante aziendale Andrea Dorigo tramite mail per avere una risposta più completa.
 
 == MVP
-Viene sollevato l'interrogativo riguardo alle modalità di attestazione del prodotto come minimum viable product (MVP), e se la procedura sia rimasta la medesima rispetto all'anno accademico 2022/2023. Il team non ne è al momento a conoscenza, provvederà ad informarsene durante il diario di bordo programmato per venerdì 15 aprile e riporterà tale informazione alla Proponente quanto prima possibile.
+Viene sollevato l'interrogativo riguardo alle modalità di attestazione del prodotto come minimum viable product (MVP), e se la procedura sia rimasta la medesima rispetto all'anno accademico 2022/2023. Il team non ne è al momento a conoscenza, provvederà ad informarsene durante il diario di bordo programmato per venerdì 15 Marzo e riporterà tale informazione alla Proponente quanto prima.
 
 == Pianificazione SAL 
-Viene pianificato il prossimo SAL mercoledì 20 Aprile alle ore 16.30. In questo contesto il team presenta la sua volontà di, ormai verso 
+Viene pianificato il prossimo SAL in data mercoledì 20 Marzo alle ore 16.30. Il team presenta la sua volontà di mantenere un contatto più stretto data la fase conclusiva in corso, al fine di assicurare una risoluzione tempestiva di eventuali problemi che potrebbero emergere e, di conseguenza, portare a ritardi rispetto alla pianificazione. 
 
 
 
