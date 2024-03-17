@@ -23,9 +23,9 @@ Nell'incontro si è discussa l'organizzazione del lavoro futuro, di seguito se n
 == Nuovi ruoli
 
 Vengono stabiliti i seguenti i nuovi incarichi relativi allo sprint corrente:
-- Caregnato Simone: Amministratore,Progettista, Programmatore,Verificatore;
-- Costantin Riccardo Alberto: Responsabile,Programmatore; 
-- D'Ovidio Giacomo: Programmatore; 
+- Caregnato Simone: Amministratore, Progettista, Programmatore, Verificatore;
+- Costantin Riccardo Alberto: Responsabile, Programmatore; 
+- D'Ovidio Giacomo: Programmatore, Verificatore; 
 - Kalaj Nancy: Programmatore, Verificatore, Progettista; 
 - Rango Matteo: Verificatore, Amministratore; 
 - Toniolo Riccardo: Verificatore.
@@ -40,16 +40,16 @@ Durante la riunione odierna, si è sollevata la questione dell'organizzazione de
 
 == Norme di progetto: _Manuale Utente_
 
-Si è deciso di aggiungere alle _Norme di Progetto_ la sezione riguardante il _Manuale Utente_. Questa sezione ha il duplice scopo di fungere da guida e di fornire una struttura organizzativa per lo sviluppo del documento del _Manuale Utente_. 
+Si è deciso di aggiungere alle _Norme di Progetto_ la sezione riguardante il _Manuale Utente_. Questa sezione ha il duplice scopo di fungere da guida e di fornire una struttura organizzativa per lo sviluppo del documento. Nancy Kalaj si occupa sia di normarne la struttura e i contenuti all'interno delle _Norme di Progetto_, che di procedere con la stesura iniziale del documento vero e proprio, riflettendo le funzionalità attualmente implementate all'interno della dashboard di visualizzazione Grafana.
 
 
 == Mypy
 
-È stata discussa l'introduzione di MyPy nell'attività di codifica, tuttavia, è stata presa la decisione di non procedere con tale implementazione. Si è ritenuto che l'introduzione di MyPy potesse aggiungere complessità al processo senza fornire vantaggi significativi nel contesto attuale del progetto.
+È stata discussa l'introduzione di MyPy nell'attività di codifica (in sostiuzione di Pydantic) ma è stata presa la decisione di non procedere con tale implementazione. Si è ritenuto che l'introduzione di MyPy potesse aggiungere complessità senza fornire vantaggi significativi nel contesto attuale del progetto.
 
 == Incontro con Cardin 
 
-Si è deciso di pianificare un incontro con Cardin la prossima settimana, riguardo alcuni dubbi sul documento _Specifiche Tecniche_.
+Si è deciso di pianificare un incontro con il Professor Cardin la prossima settimana, per risolvere alcuni dubbi sul documento _Specifiche Tecniche_.
 
 
 
