@@ -43,6 +43,13 @@ Si occuperanno di questa modifica i futuri Analisti.
 
 Si è deciso di aggiungere alle _Norme di Progetto_ la sezione riguardante il _Manuale Utente_. Questa sezione ha il duplice scopo di fungere da guida e di fornire una struttura organizzativa per lo sviluppo del documento. Nancy Kalaj si occupa sia di normarne la struttura e i contenuti all'interno delle _Norme di Progetto_, che di procedere con la stesura iniziale del documento vero e proprio, riflettendo le funzionalità attualmente implementate all'interno della dashboard di visualizzazione Grafana.
 
+== Dashboard Grafana 
+
+Durante questo sprint, verranno implementate due dashboard: una relativa ai dati grezzi e l'altra al superamento delle soglie. La dashboard dei dati grezzi verrà utilizzata come sistema di filtraggio per i dati generati dai simulatori, consentendo di filtrare sia per i nomi dei sensori che per la loro tipologia. Se ne occupa Riccardo Costantin. La dashboard relativa al superamento delle soglie mostrerà i dati che superano determinati valori, in formato tabellare. Se ne occupa Giacomo D'Ovidio.
+
+== Metriche PdQ
+
+Matteo Rango si occupa del calcolo delle metriche relative al prodotto, e della creazione di una github action per l'automatizzazione del calcolo delle metriche sull'efficienza.
 
 == Mypy
 
