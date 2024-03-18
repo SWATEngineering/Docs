@@ -469,33 +469,81 @@ caption: "Requisiti soddisfatti rispetto al totale.",
 kind: "chart",
 supplement: "Grafico")
 
-
+/* REQUISITI OBBLIGATORI */
 #let req_obbligatori = requisiti_funz.filter(el => el.at(0).contains("RO")).len() +requisiti_vinc.filter(el => el.at(0).contains("RO")).len() + requisiti_qual.filter(el => el.at(0).contains("RO")).len()
 #let req_obbligatori_soddisfatti = requisiti_funz.filter(el => el.at(0).contains("RO")).filter(el => el.at(0).slice(3) in satisfied_funz).len() +requisiti_vinc.filter(el => el.at(0).contains("RO")).filter(el => el.at(0).slice(3) in satisfied_funz).len() + requisiti_qual.filter(el => el.at(0).contains("RO")).filter(el => el.at(0).slice(3) in satisfied_funz).len()
+/* REQUISITI DESIDERABILI */
+#let req_desiderabili = requisiti_funz.filter(el => el.at(0).contains("RD")).len() +requisiti_vinc.filter(el => el.at(0).contains("RD")).len() + requisiti_qual.filter(el => el.at(0).contains("RD")).len()
+#let req_desiderabili_soddisfatti = requisiti_funz.filter(el => el.at(0).contains("RD")).filter(el => el.at(0).slice(3) in satisfied_funz).len() +requisiti_vinc.filter(el => el.at(0).contains("RD")).filter(el => el.at(0).slice(3) in satisfied_funz).len() + requisiti_qual.filter(el => el.at(0).contains("RD")).filter(el => el.at(0).slice(3) in satisfied_funz).len()
+/* REQUISITI OPZIONALI */
+#let req_opzionali = requisiti_funz.filter(el => el.at(0).contains("RP")).len() +requisiti_vinc.filter(el => el.at(0).contains("RP")).len() + requisiti_qual.filter(el => el.at(0).contains("RP")).len()
+#let req_opzionali_soddisfatti = requisiti_funz.filter(el => el.at(0).contains("RP")).filter(el => el.at(0).slice(3) in satisfied_funz).len() +requisiti_vinc.filter(el => el.at(0).contains("RP")).filter(el => el.at(0).slice(3) in satisfied_funz).len() + requisiti_qual.filter(el => el.at(0).contains("RP")).filter(el => el.at(0).slice(3) in satisfied_funz).len()
 
-
-
-#let data = (
+#let data_obb = (
   /* CONTEGGIO REQUISITI OBBLIGATORI SODDISFATTI*/
   ("Soddisfatti",req_obbligatori_soddisfatti),
   /* CONTEGGIO REQUISITI OBBLIGATORI NON SODDISFATTI */
   ("Non soddisfatti",req_obbligatori - req_obbligatori_soddisfatti),
 )
 
+#let data_des = (
+  /* CONTEGGIO REQUISITI DESIDERABILI SODDISFATTI*/
+  ("Soddisfatti",req_desiderabili_soddisfatti),
+  /* CONTEGGIO REQUISITI DESIDERABILI NON SODDISFATTI */
+  ("Non soddisfatti",req_desiderabili - req_desiderabili_soddisfatti),
+)
 
+#let data_opz = (
+  /* CONTEGGIO REQUISITI OPZIONALI SODDISFATTI*/
+  ("Soddisfatti",req_opzionali_soddisfatti),
+  /* CONTEGGIO REQUISITI OPZIONALI NON SODDISFATTI */
+  ("Non soddisfatti",req_opzionali - req_opzionali_soddisfatti),
+)
 
-Invece per quanto riguarda la copertura dei requisiti obbligatori, la copertura rilevata è di #req_obbligatori_soddisfatti su #req_obbligatori requisiti, arrivando quindi ad un #int(req_obbligatori_soddisfatti / req_obbligatori * 100 + 0.5)% sul totale.
+Per quanto riguarda la copertura dei requisiti obbligatori, la copertura rilevata è di #req_obbligatori_soddisfatti su #req_obbligatori requisiti, arrivando quindi ad un #int(req_obbligatori_soddisfatti / req_obbligatori * 100 + 0.5)% sul totale.
 #figure({
   types-legend
   canvas({
     import draw: *
 
     chart.piechart(
-      data,
+      data_obb,
       ..piechart-config
     )
   })
 },
 caption: "Requisiti obbligatori soddisfatti rispetto al totale.",
+kind: "chart",
+supplement: "Grafico")
+
+Per quanto riguarda la copertura dei requisiti desiderabili, la copertura rilevata è di #req_desiderabili_soddisfatti su #req_desiderabili requisiti, arrivando quindi ad un #int(req_desiderabili_soddisfatti / req_desiderabili * 100 + 0.5)% sul totale.
+#figure({
+  types-legend
+  canvas({
+    import draw: *
+
+    chart.piechart(
+      data_des,
+      ..piechart-config
+    )
+  })
+},
+caption: "Requisiti desiderabili soddisfatti rispetto al totale.",
+kind: "chart",
+supplement: "Grafico")
+
+Per quanto riguarda la copertura dei requisiti opzionali, la copertura rilevata è di #req_opzionali_soddisfatti su #req_opzionali requisiti, arrivando quindi ad un #int(req_opzionali_soddisfatti / req_opzionali * 100 + 0.5)% sul totale.
+#figure({
+  types-legend
+  canvas({
+    import draw: *
+
+    chart.piechart(
+      data_opz,
+      ..piechart-config
+    )
+  })
+},
+caption: "Requisiti opzionali soddisfatti rispetto al totale.",
 kind: "chart",
 supplement: "Grafico")
