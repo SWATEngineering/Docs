@@ -32,11 +32,12 @@ Vengono stabiliti i seguenti i nuovi incarichi relativi allo sprint corrente:
 
 == Test di integrazione 
 
-Durante la riunione odierna, si è sollevata la questione dell'organizzazione dei test di integrazione e dell'effettiva utilità di questo processo all'interno del nostro progetto. Tuttavia, non si è giunta a una conclusione definitiva in merito, e la discussione è stata rimandata per consentire un'ulteriore valutazione. È stato evidenziato il bisogno di approfondire il ruolo dei test di integrazione nel contesto specifico del nostro progetto, valutando attentamente i potenziali benefici e svantaggi di questa pratica.
+Durante la riunione odierna, si è sollevata la questione dell'organizzazione dei test di integrazione e dell'effettiva utilità di questo attività all'interno del nostro progetto. Tuttavia, non si è giunta a una conclusione definitiva in merito, e la discussione è stata rimandata per consentire un'ulteriore valutazione. È stato evidenziato il bisogno di approfondire il ruolo dei test di integrazione nel contesto specifico del nostro progetto, valutando attentamente i potenziali benefici e svantaggi di questa pratica, specialmente considerando le molte risorse che richiederebbe.
 
 == Modifiche all'_Analisi dei Requisiti_
 
-È stata discussa una modifica all'_Analisi dei requisiti_, riguardante la terminologia utilizzata per riferirsi alla sezione relativa alla visualizzazione della tabella relativa ai sensori. Si è deciso di modificare il termine "Dashboard Sensori" in "Dati grezzi". Se ne occupano i futuri Analisti.
+È stata discussa una modifica all'_Analisi dei requisiti_, riguardante la terminologia utilizzata per riferirsi alla sezione relativa alla visualizzazione della tabella relativa ai sensori. Si è deciso di modificare il termine "Dashboard Sensori" in "Dati grezzi". Questa modifica non riguarda solo il nome della dashboard, ma anche il suo contenuto: nel codice non è stato implementato il passaggio di informazioni come lo stato della batteria del sensore, la data di manutenzione, ecc., e la Proponente ha espresso il desiderio che i dati grezzi possano essere filtrati già dal Proof of Concept (PoC), abbiamo deciso di mantenere la dashboard più rilevante per questa funzionalità. 
+Si occuperanno di questa modifica i futuri Analisti.
 
 == Norme di progetto: _Manuale Utente_
 
