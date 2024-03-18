@@ -3,24 +3,24 @@
 #show link: underline
 
 /*************************************/
-/*    INSERIRE SOTTO IL CONTENUTO    */ 
+/*    INSERIRE SOTTO IL CONTENUTO    */
 /*************************************/
 
-= Introduzione 
+= Introduzione
 
-Il _Piano di Qualifica_ è un documento che delinea le strategie e le attività mirate a garantire la qualità del prodotto e propone di guidare il team attraverso un percorso di miglioramento continuo, principio a cui anch'esso è soggetto. 
+Il _Piano di Qualifica_ è un documento che delinea le strategie e le attività mirate a garantire la qualità del prodotto e propone di guidare il team attraverso un percorso di miglioramento continuo, principio a cui anch'esso è soggetto.
 Il documento viene regolarmente aggiornato in modo tale da guidare gli sforzi di qualità sulla base delle mutevoli esigenze del progetto, garantendo così che il processo e il prodotto crescano e si evolvano con il tempo.
 
 Il documento costituisce un impegno concreto per assicurare la qualità in modo costante nel corso del progetto.
 
 
-== Scopo 
+== Scopo
 
-Questo documento ha lo scopo di garantire la qualità del processo e del prodotto attraverso diversi passaggi fondamentali. 
+Questo documento ha lo scopo di garantire la qualità del processo e del prodotto attraverso diversi passaggi fondamentali.
 
-La definizione di metriche quantitative e la loro periodica misurazione permettono al team di valutare l'efficacia e l'efficienza del progetto di sviluppo e di intraprendere decisioni che ne permettano la costante ottimizzazione. 
+La definizione di metriche quantitative e la loro periodica misurazione permettono al team di valutare l'efficacia e l'efficienza del progetto di sviluppo e di intraprendere decisioni che ne permettano la costante ottimizzazione.
 
-Si propone inoltre di guidare il team attraverso tutte le fasi di testing: dalla pianificazione dei test fino alla valutazione dei risultati ottenuti. 
+Si propone inoltre di guidare il team attraverso tutte le fasi di testing: dalla pianificazione dei test fino alla valutazione dei risultati ottenuti.
 
 
 
@@ -50,7 +50,7 @@ Un'attività che comprende l'inserimento di un termine di glossario può conside
     - _ https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf _
 
 #pagebreak()
-= Qualità di processo 
+= Qualità di processo
 
 
 
@@ -60,9 +60,9 @@ In sintesi, la qualità di processo mira a rendere la qualità una parte integra
 Di seguito vengono presentate le metriche che il team si impegna a soddisfare nel contesto della qualità di processo.
 Come presentato nel documento _Norme di Progetto v1.0_, la sigla MPC sta ad indicare le metriche di processo.
 
-== Processi primari  
+== Processi primari
 
-=== Fornitura 
+=== Fornitura
 
 #figure(
 table(
@@ -70,7 +70,7 @@ table(
       align: (x, y) => (center, center, center,center).at(x),
       fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-      ..fornitura.flatten()  
+      ..fornitura.flatten()
 ),
 caption: [Tabella metriche per il processo di fornitura.]
 )
@@ -88,10 +88,10 @@ table(
       [MPC-ATC], [Attributi per Classe], [≤ 6], [≤ 4],
       [MPC-PM], [Parametri per Metodo], [≤ 5], [≤ 4],
       [MPC-LCM], [Linee di Codice per Metodo], [≤ 25], [≤ 20]
-), 
+),
 caption: [Tabella metriche per l'attività di codifica.])
 
-#pagebreak(); 
+#pagebreak();
 
 == Processi di supporto
 
@@ -104,7 +104,7 @@ table(
       [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
       [MPC-IG], [Indice Gulpease], [≥ 60], [100],
       [MPC-CO], [Correttezza Ortografica], [0], [0]
-      ), 
+      ),
 caption: [Tabella metriche per il processo di documentazione.]
 )
 
@@ -116,15 +116,15 @@ table(
       fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
       [MPC-MNS], [Metriche Non Soddisfatte], [≤3], [0],
-      ), 
+      ),
 caption: [Tabella metriche per il processo di gestione della qualità.]
 )
 
 #pagebreak()
 
-= Qualità di prodotto 
+= Qualità di prodotto
 
-La qualità di prodotto è volta alla valutazione del software realizzato: l'attenzione è rivolta ad attributi quali usabilità, funzionalità, affidabilità, manutenibilità, ma più in generale alle prestazioni del prodotto. 
+La qualità di prodotto è volta alla valutazione del software realizzato: l'attenzione è rivolta ad attributi quali usabilità, funzionalità, affidabilità, manutenibilità, ma più in generale alle prestazioni del prodotto.
 L'obiettivo  è, dunque, assicurare che il software non solo implementi le funzionalità volute dal cliente e funzioni correttamente, ma che lo faccia seguendo le indicazioni di precisi standard di qualità.
 Di seguito vengono presentate le metriche che il team si impegna a soddisfare nel contesto della qualità di prodotto.
 Come presentato nel documento _Norme di Progetto v1.0_ la sigla MPD sta ad indicare le metriche di prodotto.
@@ -152,7 +152,7 @@ caption: [Tabella metriche per la funzionalità del prodotto.])
             align: (x, y) => (center, center, center,center).at(x),
             fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
             [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-            [MPD-FIN], [Structure Fan In], [da determinare], [da determinare], 
+            [MPD-FIN], [Structure Fan In], [da determinare], [da determinare],
             [MPD-FOUT], [Structure Fan Out], [da determinare], [da determinare],
             [MPD-CCM], [Complessità Ciclomatica per Metodo], [≤ 5], [≤ 3],
       ),
@@ -171,7 +171,7 @@ caption: [Tabella metriche per la manutenibilità del prodotto.
             align: (x, y) => (center, center, center,center).at(x),
             fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
             [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-            [MPD-FU], [Facilità di Utilizzo], [≤ 7 click], [≤ 5 click], 
+            [MPD-FU], [Facilità di Utilizzo], [≤ 7 click], [≤ 5 click],
             [MPD-TA], [Tempo di Apprendimento], [≤ 10 minuti], [≤ 5 minuti]
       ),
 caption: [Tabella metriche per l'usabilità del prodotto.])
@@ -184,7 +184,7 @@ caption: [Tabella metriche per l'usabilità del prodotto.])
             align: (x, y) => (center, center, center,center).at(x),
             fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
             [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-            [MPD-PTCP], [Passed Test Cases Percentage], [≥ 80%], [100%], 
+            [MPD-PTCP], [Passed Test Cases Percentage], [≥ 80%], [100%],
             [MPD-BC], [Branch Coverage], [≥80%], [100%],
             [MPD-SC], [Statement Coverage], [≥80%], [100%],
       ),
@@ -201,8 +201,8 @@ caption: [Tabella metriche per l'affidabilità del prodotto.])
             align: (x, y) => (center, center, center,center).at(x),
             fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
             [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-            [MPD-CPUU],[Maximum CPU usage],[da determinare],[da determinare], 
-            [MPD-RAMU],[Maximum RAM usage],[da determinare],[da determinare], 
+            [MPD-CPUU],[Maximum CPU usage],[da determinare],[da determinare],
+            [MPD-RAMU],[Maximum RAM usage],[da determinare],[da determinare],
             [MPD-TDE],[Tempo Di Elaborazione],[da determinare], [da determinare],
 
       ),
@@ -226,7 +226,7 @@ Come enunciato nel documento _Norme di Progetto v1.0_, il piano segue il #glossa
 In questa sezione vengono descritti i test di accettazione del prodotto software, eseguiti sia dal gruppo #team che dalla Proponente sotto la supervisione del gruppo.
 Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
 
-#let test_di_accettazione = ( 
+#let test_di_accettazione = (
       ([
           Verificare che l'#glossary("amministratore pubblico") senza autenticazione possa:
             1. Usufruire dell'applicazione senza doversi autenticare.
@@ -261,10 +261,10 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             3. Visualizzare la relativa #glossary("dashboard")\;
             4. Visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni delle temperatura, espresse in gradi Celsius (°C), effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
             5. Visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni dell'umidità, espresse in percentuale, effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
-            6. Visualizzare un #glossary("pannello") con una mappa mostrante la direzione del vento, rilevata da ciascun #glossary("sensore"), tramite delle frecce con origine la posizione del #glossary("sensore")\; 
-            7. Visualizzare un #glossary("pannello") con una tabella che mostri l'ultima rilevazione della velocità del vento, espressa in chilometri orari (km/h), effettuata da ciascun #glossary("sensore")\; 
+            6. Visualizzare un #glossary("pannello") con una mappa mostrante la direzione del vento, rilevata da ciascun #glossary("sensore"), tramite delle frecce con origine la posizione del #glossary("sensore")\;
+            7. Visualizzare un #glossary("pannello") con una tabella che mostri l'ultima rilevazione della velocità del vento, espressa in chilometri orari (km/h), effettuata da ciascun #glossary("sensore")\;
             8. Visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni delle quantità di precipitazioni, espresse in millimetri orari (mm/h), effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
-            9. Visualizzare un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse in millimetri orari (mm/h), indicante la media  dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori, degli ultimi 5 minuti; 
+            9. Visualizzare un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse in millimetri orari (mm/h), indicante la media  dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori, degli ultimi 5 minuti;
             10. Visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni della concentrazione di inquinanti dell'aria (#glossary("PM10")), espressi in $#sym.mu g\/m^3$,effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
             11. Visualizzare un #glossary("pannello") contenente la media della concentrazione di inquinanti dell'aria (#glossary("PM10")), espressa in $#sym.mu g\/m^3$, che consideri le rilevazioni di tutti i sensori attivi negli ultimi 5 minuti, e presentata in formato numerico;
             12. Visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni della percentuale di riempimento dei bacini idrici, effettuate dai singoli sensori e aggregate tramite media aritmetica per intervalli di 5 minuti;
@@ -294,11 +294,11 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             2. Selezionare la #glossary("dashboard") per visualizzare i dati urbanistici;
             3. Visualizzare la relativa #glossary("dashboard")\;
             4. Visualizzare un #glossary("pannello") con una mappa che indichi, mediante indicatori numerici, collocati presso le coordinate di ciascun #glossary("sensore"), la quantità di posti liberi nel parcheggio corrispondente;
-            5. Visualizzare un #glossary("pannello") contenente una mappa che indichi, mediante indicatori booleani collocati presso le coordinate di ciascun #glossary("sensore"), la disponibilità della colonna corrispondente; 
+            5. Visualizzare un #glossary("pannello") contenente una mappa che indichi, mediante indicatori booleani collocati presso le coordinate di ciascun #glossary("sensore"), la disponibilità della colonna corrispondente;
             6. Visualizzare un #glossary("pannello") che esprima, tramite una tabella indicizzata tramite il nome del #glossary("sensore"), l'erogazione energetica, espressa in watt per ora;
-            7. Visualizzare un #glossary("pannello") contenente una mappa che indichi, tramite gli stati "LOW", "MEDIUM", "HIGH" e "BLOCKED", lo stato di congestione delle strade; 
-            8. Visualizzare un #glossary("pannello") contenente una mappa che indichi, mediante degli indicatori numerici, la posizione in tempo reale delle biciclette elettriche, tali indicatori devono inoltre indicare la percentuale di batteria del mezzo; 
-            9. Visualizzare un #glossary("pannello") contenente una mappa indicante lo stato di riempimento delle zone ecologiche, espresse in valori percentuali, posizionate nelle coordinate delle zone; 
+            7. Visualizzare un #glossary("pannello") contenente una mappa che indichi, tramite gli stati "LOW", "MEDIUM", "HIGH" e "BLOCKED", lo stato di congestione delle strade;
+            8. Visualizzare un #glossary("pannello") contenente una mappa che indichi, mediante degli indicatori numerici, la posizione in tempo reale delle biciclette elettriche, tali indicatori devono inoltre indicare la percentuale di batteria del mezzo;
+            9. Visualizzare un #glossary("pannello") contenente una mappa indicante lo stato di riempimento delle zone ecologiche, espresse in valori percentuali, posizionate nelle coordinate delle zone;
             10. Visualizzare un messaggio di avvertenza di dati mancanti, nei vari #glossary("pannelli"), nel caso di assenza di dati da mostrare.
       ],"N/I",[
             UC0\
@@ -316,9 +316,9 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
             1. Aprire il menu di selezione delle #glossary("dashboard")\;
-            2. Selezionare la #glossary("dashboard") per visualizzare i #glossary("dati anomali") e il superamento soglie; 
+            2. Selezionare la #glossary("dashboard") per visualizzare i #glossary("dati anomali") e il superamento soglie;
             3. Visualizzare la relativa #glossary("dashboard")\;
-            4. Visualizzare un #glossary("pannello") contenente una tabella, la quale mostra tutte le anomalie rilevate, mostrando il valore dell'anomalia, il #glossary("sensore") che l'ha rilevata e il relativo #glossary("timestamp")\; 
+            4. Visualizzare un #glossary("pannello") contenente una tabella, la quale mostra tutte le anomalie rilevate, mostrando il valore dell'anomalia, il #glossary("sensore") che l'ha rilevata e il relativo #glossary("timestamp")\;
             5. Visualizzare un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti le soglie impostate nel sistema, mostrando il valore superante la soglia, il #glossary("sensore") che ha rilevato tale valore e il relativo #glossary("timestamp")\;
             6. Visualizzare un messaggio di avvertenza di dati mancanti, nei #glossary("pannelli"), nel caso di assenza di dati da mostrare.
       ],"N/I",[
@@ -330,10 +330,10 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ]),
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
-            1. Ricevere un'allerta che notifichi il superamento dei 40° Celsius (°C); 
-            2. Ricevere un'allerta che notifichi il superamento dei 50 millimetri di pioggia all'ora (50 mm/h); 
-            3. Ricevere un'allerta relativa all'inquinamento dell'aria (#glossary("PM10")) che notifica il superamento di 80#[#sym.mu]g su metro cubo ($ 80#sym.mu g\/m^3$); 
-            4. Ricevere un'allerta che notifichi il superamento del 70% della capienza di un bacino; 
+            1. Ricevere un'allerta che notifichi il superamento dei 40° Celsius (°C);
+            2. Ricevere un'allerta che notifichi il superamento dei 50 millimetri di pioggia all'ora (50 mm/h);
+            3. Ricevere un'allerta relativa all'inquinamento dell'aria (#glossary("PM10")) che notifica il superamento di 80#[#sym.mu]g su metro cubo ($ 80#sym.mu g\/m^3$);
+            4. Ricevere un'allerta che notifichi il superamento del 70% della capienza di un bacino;
             5. Ricevere un'allerta che notifichi il superamento dell'80% della capienza di una zona ecologica.
       ],"N/I",[
             UC5\
@@ -342,13 +342,13 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             UC5.3\
             UC5.4\
             UC5.5\
-            
+
       ]),
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
             1. Scegliere una #glossary("dashboard") da visualizzare;
             2. Applicare dei filtri, per visualizzare solo i dati provenienti dal sottoinsieme di sensori selezionato, nel caso di #glossary("pannelli") di tipo #glossary("serie storica")\;
-            3. Applicare dei filtri, per visualizzare solo i dati provenienti dai sensori delle tipologie selezionate, nel caso di #glossary("pannelli") contenenti tabelle, le quali comprendono più tipologie di sensori al loro interno; 
+            3. Applicare dei filtri, per visualizzare solo i dati provenienti dai sensori delle tipologie selezionate, nel caso di #glossary("pannelli") contenenti tabelle, le quali comprendono più tipologie di sensori al loro interno;
             4. Applicare dei filtri, per selezionare solo particolari sensori, mediante il nome, nel caso di #glossary("pannelli") contenenti tabelle;
             5. Applicare dei filtri, per selezionare solo i dati relativi ad un definito intervallo di tempo, all'interno di un'intera #glossary("dashboard")\;
       ],"N/I",[
@@ -362,7 +362,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
             1. Scegliere una tabella da ordinare;
-            2. Ordinare le righe di tale tabella secondo uno dei suoi campi. 
+            2. Ordinare le righe di tale tabella secondo uno dei suoi campi.
       ],"N/I",[
             UC7
       ]),
@@ -371,8 +371,8 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             1. Scegliere una #glossary("dashboard") di cui modificare il layout;
             2. Modificare il layout dei #glossary("pannelli") in termini di posizione di tali #glossary("pannelli") e della loro dimensione.
       ],"N/I",[
-            UC8, 
-            UC8.1, 
+            UC8,
+            UC8.1,
             UC8.2
       ]),
       ([
@@ -499,10 +499,10 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa  monitorare i dati provenienti dai sensori relativi ai dati ambientali in una #glossary("dashboard") apposita.
       ],"N/I","ROF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media aritmetica della temperatura, espressa in gradi Celsius (°C), per ciascun #glossary("sensore"), che aggreghi i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali. 
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media aritmetica della temperatura, espressa in gradi Celsius (°C), per ciascun #glossary("sensore"), che aggreghi i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.
       ],"N/I","ROF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media aritmetica dell'umidità, espressa in percentuale, per ciascun #glossary("sensore"), che aggreghi i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali. 
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media aritmetica dell'umidità, espressa in percentuale, per ciascun #glossary("sensore"), che aggreghi i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.
       ],"N/I","ROF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una mappa che evidenzi la direzione del vento, mediante frecce aventi origine nelle coordinate del #glossary("sensore"), nella #glossary("dashboard") relativa ai dati ambientali.
@@ -511,7 +511,7 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'ultima velocità del vento, espressa in chilometri all'ora (km/h), per ciascun #glossary("sensore"), nella #glossary("dashboard") relativa ai dati ambientali.
       ],"N/I","ROF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media aritmetica dell'intensità delle precipitazioni, espresse in millimetri all'ora (mm/h), per ciascun #glossary("sensore"), che aggreghi i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali. 
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media aritmetica dell'intensità delle precipitazioni, espresse in millimetri all'ora (mm/h), per ciascun #glossary("sensore"), che aggreghi i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.
       ],"N/I","ROF"),
 
       ([
@@ -587,7 +587,7 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa filtrare i dati, visualizzati all'interno di un grafico di tipo #glossary("time series"), in base ad un sottoinsieme di sensori da lui selezionato.
       ],"N/I","ROF"),
       ([
-            Verificare che che l'#glossary("amministratore pubblico") possa filtrare i dati, visualizzati all'interno di una tabella, in base alla tipologia di #glossary("sensore"). 
+            Verificare che che l'#glossary("amministratore pubblico") possa filtrare i dati, visualizzati all'interno di una tabella, in base alla tipologia di #glossary("sensore").
       ],"N/I","ROF"),
       ([
             Verificare  che l'#glossary("amministratore pubblico") possa filtrare i dati, visualizzati all'interno di una tabella, in base ad un sotto-insieme di sensori, selezionando i nomi dei sensori di interesse.
@@ -596,47 +596,47 @@ table(
             Verificare  che l'#glossary("amministratore pubblico") possa filtrare i dati in base ad un intervallo temporale. Di conseguenza la  #glossary("dashboard") interessata deve, nella sua totalità, mostrare solamente i dati aventi un #glossary("timestamp") in tale intervallo.
       ],"N/I","ROF"),
       ([
-            Verificare  che l'#glossary("amministratore pubblico"), nei #glossary("pannelli") tabellari, possa ordinare i dati sulla base dei valori delle proprie colonne, sia in ordine crescente che decrescente. 
+            Verificare  che l'#glossary("amministratore pubblico"), nei #glossary("pannelli") tabellari, possa ordinare i dati sulla base dei valori delle proprie colonne, sia in ordine crescente che decrescente.
       ],"N/I","RDF"),
       ([
-            Verificare  che l'#glossary("amministratore pubblico") possa, nel contesto della singola #glossary("dashboard"),  modificare il layout, agendo sulla posizione dei  #glossary("pannelli"). 
+            Verificare  che l'#glossary("amministratore pubblico") possa, nel contesto della singola #glossary("dashboard"),  modificare il layout, agendo sulla posizione dei  #glossary("pannelli").
       ],"N/I","RDF"),
       ([
-            Verificare  che l'#glossary("amministratore pubblico") possa, nel contesto della singola #glossary("dashboard"),  modificare il layout, agendo sulla dimensione dei  #glossary("pannelli"). 
+            Verificare  che l'#glossary("amministratore pubblico") possa, nel contesto della singola #glossary("dashboard"),  modificare il layout, agendo sulla dimensione dei  #glossary("pannelli").
       ],"N/I","RDF"),
       ([
-            Verificare  che l'#glossary("amministratore pubblico"), riceva un messaggio di errore qualora, il sistema di visualizzazione non riesca a reperire i dati necessari per un determinato #glossary("pannello"). 
+            Verificare  che l'#glossary("amministratore pubblico"), riceva un messaggio di errore qualora, il sistema di visualizzazione non riesca a reperire i dati necessari per un determinato #glossary("pannello").
       ],"N/I","ROF"),
       /*da qui iniziano i requisiti relativi ai sensori*/
       ([
             Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni della temperatura, espresse in gradi Celsius (°C), effettuate dal #glossary("sensore"), con annesso coordinate e #glossary("timestamp") della rilevazione.
       ],"N/I","ROF"),
       ([
-            Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni all'umidità, espresse in percentuale, effettuate dal #glossary("sensore"), con annesso coordinate e #glossary("timestamp") della rilevazione. 
+            Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni all'umidità, espresse in percentuale, effettuate dal #glossary("sensore"), con annesso coordinate e #glossary("timestamp") della rilevazione.
       ],"N/I","ROF"),
       ([
-            Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni della velocità e della direzione del vento, espresse rispettivamente in chilometri all'ora (km/h) e in gradi (con gli 0° a Nord e i 180° a Sud), effettuate dal #glossary("sensore"), con annesso coordinate e #glossary("timestamp") della rilevazione. 
+            Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni della velocità e della direzione del vento, espresse rispettivamente in chilometri all'ora (km/h) e in gradi (con gli 0° a Nord e i 180° a Sud), effettuate dal #glossary("sensore"), con annesso coordinate e #glossary("timestamp") della rilevazione.
       ],"N/I","ROF"),
       ([
-            Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni della quantità di precipitazioni, espresse in millimetri orari (mm/h), con annesso coordinate e #glossary("timestamp") della rilevazione. 
+            Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni della quantità di precipitazioni, espresse in millimetri orari (mm/h), con annesso coordinate e #glossary("timestamp") della rilevazione.
       ],"N/I","ROF"),
       ([
-            Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni dell'inquinamento (#glossary("PM10")), espresse in microgrammi al metro cubo ($#sym.mu g\/m^3$), effettuate dal #glossary("sensore"), con annesso coordinate e #glossary("timestamp") della rilevazione. 
+            Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni dell'inquinamento (#glossary("PM10")), espresse in microgrammi al metro cubo ($#sym.mu g\/m^3$), effettuate dal #glossary("sensore"), con annesso coordinate e #glossary("timestamp") della rilevazione.
       ],"N/I","ROF"),
       ([
-            Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni del livello di riempimento del bacino idrico presso cui è installato, espresse in percentuale, effettuate dal #glossary("sensore"), con annesso coordinate e #glossary("timestamp") della rilevazione. 
+            Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni del livello di riempimento del bacino idrico presso cui è installato, espresse in percentuale, effettuate dal #glossary("sensore"), con annesso coordinate e #glossary("timestamp") della rilevazione.
       ],"N/I","ROF"),
       ([
-            Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni del quantitativo di posti liberi nel parcheggio controllato, effettuate dal #glossary("sensore"), con annesso coordinate e #glossary("timestamp") della rilevazione. 
+            Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni del quantitativo di posti liberi nel parcheggio controllato, effettuate dal #glossary("sensore"), con annesso coordinate e #glossary("timestamp") della rilevazione.
       ],"N/I","ROF"),
       ([
-            Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni dell'erogazione della colonna di ricarica controllata, espresse in chilowatt all'ora (kWh), effettuate dal #glossary("sensore"), con annesso coordinate e #glossary("timestamp") della rilevazione. 
+            Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni dell'erogazione della colonna di ricarica controllata, espresse in chilowatt all'ora (kWh), effettuate dal #glossary("sensore"), con annesso coordinate e #glossary("timestamp") della rilevazione.
       ],"N/I","ROF"),
       ([
-            Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni delle coordinate geografiche e della percentuale di batteria della bicicletta elettrica controllata, effettuate dal #glossary("sensore"), con annesso il #glossary("timestamp") della rilevazione. 
+            Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni delle coordinate geografiche e della percentuale di batteria della bicicletta elettrica controllata, effettuate dal #glossary("sensore"), con annesso il #glossary("timestamp") della rilevazione.
       ],"N/I","ROF"),
       ([
-            Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni del livello di riempimento della zona ecologica presso cui è installato, espresse in percentuale, effettuate dal #glossary("sensore"), con annesso coordinate e #glossary("timestamp") della rilevazione. 
+            Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni del livello di riempimento della zona ecologica presso cui è installato, espresse in percentuale, effettuate dal #glossary("sensore"), con annesso coordinate e #glossary("timestamp") della rilevazione.
       ],"N/I","ROF"),
       ([
             Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni del livello di congestione stradale, espresse in stati (in ordine crescente di congestione: "LOW", "MEDIUM", "HIGH", "BLOCKED"), effettuate dal #glossary("sensore"), con annesso coordinate e #glossary("timestamp") della misurazione.
@@ -646,19 +646,19 @@ table(
       ],"N/I","ROF"),
       ([
             Verificare che sia stato implementato almeno un simulatore almeno una tipologia di #glossary("sensore").
-      ],"N/I","ROF"), 
+      ],"N/I","ROF"),
       ([
             Verificare che i dati prodotti dalle simulazioni siano realistici.
-      ],"N/I","ROF"), 
+      ],"N/I","ROF"),
       ([
             Verificare che il sistema possa rilevare eventuali relazioni tra sorgenti di dati diverse.
-      ],"N/I","ROF"), 
+      ],"N/I","ROF"),
       ([
             Verificare che il sistema possa effettuare previsioni di eventi futuri, sulla base di dati storici e attuali.
-      ],"N/I","ROF"), 
-      
+      ],"N/I","ROF"),
 
-      
+
+
 
 ).enumerate(start:1).map(test => ("TS"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1),test.at(1).at(2))).enumerate(start:1).map(test => (test.at(1).at(0),test.at(1).at(1),test.at(1).at(2),test.at(1).at(3) + str(test.at(0))));
 
@@ -774,7 +774,7 @@ caption: [Lista di controllo per l’_Analisi dei Requisiti_.]
 == Qualità di processo - fornitura
 
 === Estimated At Completion
- 
+
 #figure(
   image("./assets/valutazione-metriche/EAC.png", width: 85%),
   caption: [
@@ -782,7 +782,7 @@ caption: [Lista di controllo per l’_Analisi dei Requisiti_.]
   ],
 )
 
-*#glossary[RTB]* L'EAC rappresenta una revisione del valore stimato per la realizzazione del progetto, ossia il BAC (Budget At Completion) rivisto allo stato corrente del progetto; il fattore che incide maggiormente sull'andamento dell'EAC è il rapporto tra EV (Estimated Value) e AC (Actual Cost), per cui tanto più queste metriche sono vicine l'una all'altra, tanto più l'EAC risulterà vicino al BAC pianificato inizialmente. 
+*#glossary[RTB]* L'EAC rappresenta una revisione del valore stimato per la realizzazione del progetto, ossia il BAC (Budget At Completion) rivisto allo stato corrente del progetto; il fattore che incide maggiormente sull'andamento dell'EAC è il rapporto tra EV (Estimated Value) e AC (Actual Cost), per cui tanto più queste metriche sono vicine l'una all'altra, tanto più l'EAC risulterà vicino al BAC pianificato inizialmente.
 Concluso il secondo #glossary[sprint], il team ha rilevato che il valore associato all'EAC non rientrava all'interno della soglia accettabile: ci si è dunque attivati al fine di rimodulare la quantità di lavoro netta associata al concetto di ora produttiva.
 
 Dal grafico si può rilevare che la curva delineata dal valore dell'EAC, pur essendo rimasta sempre al di sopra del valore di accettazione, ha, già a partire dal secondo #glossary[sprint] e dunque a seguito dell'azione correttiva intrapresa, mostrato un trend decrescente; il team si aspettava che nel corso degli #glossary[sprint] successivi l'andamento avrebbe continuato la sua discesa fino a che i valori fossero rientrati nella fascia accettabile.
@@ -790,7 +790,7 @@ Dal grafico si può rilevare che la curva delineata dal valore dell'EAC, pur ess
 Nelle ultime rilevazioni effettuate, la metrica ha comunque continuato la sua discesa, senza però raggiungere la soglia accettabile: la misurazione della metrica è stata di certo inflazionata dalle attività previste per gli ultimi #glossary[sprint].
 Il team si è occupato infatti di ultimare tutta la #glossary[documentazione] necessaria alla revisione #glossary("RTB") e ciò ha fatto impennare i costi, causa il costo orario più elevato dei ruoli attivi (specie dell'Amministratore).
 
-Questo risultato, nonostante la correlazione causale individuata, suggerisce ugualmente che qualcosa nel progetto non è stato gestito al meglio: la forte attenzione posta sulla #glossary[documentazione] nell'ultimo #glossary[sprint] è una manifestazione del tentativo del team di rincorrere gli obiettivi di una pianificazione poco rigorosa. Ne deriva che il team, in vista della seconda revisione, dovrà impegnarsi a migliorare il processo relativo alla gestione di progetto, in modo da poter essere sempre sicuri che gli obiettivi fissati siano effettivamente raggiunti nei termini dettati dalla pianificazione. 
+Questo risultato, nonostante la correlazione causale individuata, suggerisce ugualmente che qualcosa nel progetto non è stato gestito al meglio: la forte attenzione posta sulla #glossary[documentazione] nell'ultimo #glossary[sprint] è una manifestazione del tentativo del team di rincorrere gli obiettivi di una pianificazione poco rigorosa. Ne deriva che il team, in vista della seconda revisione, dovrà impegnarsi a migliorare il processo relativo alla gestione di progetto, in modo da poter essere sempre sicuri che gli obiettivi fissati siano effettivamente raggiunti nei termini dettati dalla pianificazione.
 
 
 #pagebreak()
@@ -804,11 +804,11 @@ Questo risultato, nonostante la correlazione causale individuata, suggerisce ugu
   ],
 )
 
-*#glossary[RTB]* La metrica BV indica se alla data corrente si è speso di più o di meno rispetto a quanto inizialmente previsto nel budget; la metrica SV indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate. 
+*#glossary[RTB]* La metrica BV indica se alla data corrente si è speso di più o di meno rispetto a quanto inizialmente previsto nel budget; la metrica SV indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate.
 Nonostante inizialmente le due metriche si stessero allontanando rapidamente dal valore di accettazione, a partire dal secondo #glossary[sprint] queste sembrano stabilizzarsi, segno che le azioni correttive adottate all'epoca hanno prodotto gli effetti desiderati quasi immediatamente.
 Il cambiamento più significativo si è verificato durante il quinto #glossary[sprint], in occasione del quale è stata osservata un'inversione di tendenza: entrambe le metriche hanno iniziato a riavvicinarsi al valore desiderato.
-Il team si aspetta che il #glossary[way of working] consolidato nel corso del progetto permetta di recuperare quanto perso nel corso dei primi #glossary[sprint]. 
-Durante il settimo e l'ottavo #glossary[sprint] le due metriche hanno mantenuto il gradiente che ci si aspettava. 
+Il team si aspetta che il #glossary[way of working] consolidato nel corso del progetto permetta di recuperare quanto perso nel corso dei primi #glossary[sprint].
+Durante il settimo e l'ottavo #glossary[sprint] le due metriche hanno mantenuto il gradiente che ci si aspettava.
 
 
 === Actual Cost e Estimate To Complete
@@ -820,7 +820,7 @@ Durante il settimo e l'ottavo #glossary[sprint] le due metriche hanno mantenuto 
   ],
 )
 
-*#glossary[RTB]* L'AC rappresenta il costo effettivo sostenuto fino a un dato momento, mentre l'ETC rappresenta la stima del costo aggiuntivo necessario per completare il progetto; di conseguenza, ci si aspetta che l'AC cresca e che l'ETC diminuisca in modo sostanzialmente lineare, segno che il progetto sta mantenendo un ritmo regolare di avanzamento. 
+*#glossary[RTB]* L'AC rappresenta il costo effettivo sostenuto fino a un dato momento, mentre l'ETC rappresenta la stima del costo aggiuntivo necessario per completare il progetto; di conseguenza, ci si aspetta che l'AC cresca e che l'ETC diminuisca in modo sostanzialmente lineare, segno che il progetto sta mantenendo un ritmo regolare di avanzamento.
 Il grafico mostra che effettivamente il team ha mantenuto un ritmo di avanzamento pressoché costante durante tutto il periodo che precede la revisione #glossary[RTB], il che è apprezzabile: nonostante la sessione d'esame il team ha continuato a occuparsi con impegno delle attività di progetto, per quanto possibile.
 Tuttavia, si può evincere anche che il progetto risulta essere leggermente in ritardo rispetto alle tempistiche inizialmente previste.
 Considerando che gli otto #glossary[sprint] effettuati corrispondono ad un periodo temporale di 10 settimane, esattamente la metà del periodo di tempo previsto per il completamento dell'intero progetto, ci si aspettava che le due metriche delineate nel grafico si fossero già incrociate giunti a questo punto.
@@ -853,7 +853,7 @@ Considerando che gli otto #glossary[sprint] effettuati corrispondono ad un perio
   ],
 )
 
-*#glossary[RTB]* Al termine del secondo #glossary[sprint], tutti i documenti in corso di preparazione in vista della revisione #glossary("RTB") possiedono un IG al di sopra del limite accettabile inferiore di 60; in particolare, l'_Analisi dei Requisiti_ ha raggiunto il valore ideale. 
+*#glossary[RTB]* Al termine del secondo #glossary[sprint], tutti i documenti in corso di preparazione in vista della revisione #glossary("RTB") possiedono un IG al di sopra del limite accettabile inferiore di 60; in particolare, l'_Analisi dei Requisiti_ ha raggiunto il valore ideale.
 Si rileva che nel corso dell'ultimo #glossary[sprint] tutti i documenti hanno subito un abbassamento del loro indice di leggibilità, perciò nel corso del periodo che precede la seconda revisione #glossary[PB] il team dovrà impegnarsi ad utilizzare una scrittura più semplice.
 
 
@@ -868,19 +868,24 @@ Si rileva che nel corso dell'ultimo #glossary[sprint] tutti i documenti hanno su
 
 
 *#glossary[RTB]* A seguito dei primi due #glossary[sprint] sono stati rilevati parecchi errori ortografici, per far fronte ai quali si è scelto di adottare uno strumento di controllo dell'ortografia sia in fase di stesura che in fase di revisione della #glossary[documentazione]. Tuttavia, nonostante l'uso di questo strumento, si è notato che il processo di #glossary[documentazione] continua ad essere afflitto da errori ortografici. Questo indica che il problema non è tanto la mancanza di strumenti adeguati, quanto più un approccio disattento da parte del team durante la redazione dei documenti, e nel processo di verifica che ne consegue.
-Fare in modo che non vi siano errori nei documenti prima della revisione #glossary("RTB") rimane comunque un obiettivo di qualità che il team vuole raggiungere. 
-Per ovviare al problema il team ha deciso di introdurre una checklist incentrata sugli errori ortografici, in modo tale che i responsabili del processo di verifica possano avvalersene nel correggere eventuali errori. Questa checklist è pensata non solo come uno strumento pratico, ma principalmente come un promemoria costante per il Verificatore. 
+Fare in modo che non vi siano errori nei documenti prima della revisione #glossary("RTB") rimane comunque un obiettivo di qualità che il team vuole raggiungere.
+Per ovviare al problema il team ha deciso di introdurre una checklist incentrata sugli errori ortografici, in modo tale che i responsabili del processo di verifica possano avvalersene nel correggere eventuali errori. Questa checklist è pensata non solo come uno strumento pratico, ma principalmente come un promemoria costante per il Verificatore.
 Tale strumento ha mostrato immediatamente i suoi effetti benefici: gli errori nel corso dell'ottavo #glossary[sprint] sono calati a zero.
 
 
 
-//== Qualità di processo - codifica
+== Qualità di processo - codifica
+Nella seguente tabella si mostrano il numero di infrazioni delle metriche prese in esame
+riguardanti la qualità del processo di codifica.
 
-
-/*TODO andare a calcolare le metriche a partire dallo sprint 12*/
-/*Per il grafico si potrebbe sia pensare di fare un grafico come gli altri che mostra appunto l'andamento e dunque il numero delle infrazioni sapendo comunque che ne sono accettare 0, oppure come si diceva nel incontro solo una specie di tabella che dice dallo sprint 12, 13, 14 se le metriche sono soddisfatte o meno*/
-
-
+Sprint 12:
+#table(
+  columns: 3,
+    [*Metrica*], [*Valore*], [*Valore Accettazione*],
+    [*ATC*], [2], [\<6],
+    [*PM*], [0], [\<5],
+    [*LCM*], [0], [\<25],
+)
 
 == Qualità di processo - gestione della qualità
 
@@ -906,7 +911,7 @@ Le Metriche Non Soddisfatte corrispondono alle metriche MPC-CO, MPC-CPI, MPC-EAC
 
 == Considerazioni finali in vista della revisione #glossary[RTB]
 
-Il team ha tentato fin da subito di adottare un #glossary[way of working] che consentisse di rispettare gli obiettivi e le scadenze impostate all'inizio dello svolgimento del progetto, ma ci si è presto resi conto che quest'ultimo sarebbe dovuto essere gradualmente ampliato e raffinato con il passare del tempo; infatti, nonostante il #glossary[way of working] sia progressivamente migliorato con l'avanzare del progetto, alcune aree necessitano di essere meglio definite o migliorate affinché la qualità di processo si rifletta positivamente sulla qualità di prodotto. Volendo ripercorrere brevemente la progressione del modo di lavorare del team, si possono riportare alcune considerazioni sulle difficoltà incontrate inizialmente e su come si sia tentato di superarle. 
+Il team ha tentato fin da subito di adottare un #glossary[way of working] che consentisse di rispettare gli obiettivi e le scadenze impostate all'inizio dello svolgimento del progetto, ma ci si è presto resi conto che quest'ultimo sarebbe dovuto essere gradualmente ampliato e raffinato con il passare del tempo; infatti, nonostante il #glossary[way of working] sia progressivamente migliorato con l'avanzare del progetto, alcune aree necessitano di essere meglio definite o migliorate affinché la qualità di processo si rifletta positivamente sulla qualità di prodotto. Volendo ripercorrere brevemente la progressione del modo di lavorare del team, si possono riportare alcune considerazioni sulle difficoltà incontrate inizialmente e su come si sia tentato di superarle.
 
 In generale, il team non ha avuto difficoltà nel fissare incontri interni settimanali per discutere dell'avanzamento del progetto a cui tutti i componenti partecipassero attivamente; tuttavia, per una buona parte del periodo antecedente la prima revisione #glossary[RTB] (sostanzialmente fino allo #glossary[sprint] 5 incluso), gli incontri hanno avuto una durata eccessiva, ossia oltre le 1,5 ore. Dunque, il team ha cominciato a stilare un #glossary[ordine del giorno] nel corso dello #glossary[sprint] in modo da poter strutturare meglio gli incontri e limitarne la durata. Nonostante questa lista abbia un contenuto piuttosto variabile, si può migliorare la sua applicazione prestabilendo quanto tempo si dovrebbe dedicare a ciascun punto di discussione nel corso dell'incontro, cosa che il team ha intenzione di fare dopo la prima revisione per renderli più efficienti. Si nota che gli incontri si protraggono ancora per più di quanto previsto, il che in parte è dovuto al fatto che si investe del tempo per assistere gli Amministratori nella creazione delle issue e assegnazione dei relativi campi. Tuttavia il fenomeno va riducendosi, segno che il team sta imparando a svolgere queste attività in modo più efficiente.
 
