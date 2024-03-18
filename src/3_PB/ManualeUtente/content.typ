@@ -48,7 +48,7 @@ table(
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Software*],[*Versione*],[*Download*],
       [Docker], [25.0.3], [#link("https://docs.docker.com/get-docker/")],
-      [#glossary[Docker Compose]], [2.24.6], [Integrato nel download di Docker]),
+      [#glossary[Docker Compose]], [2.24.6], [#link("https://docs.docker.com/compose/install/")]),
 caption: [Tabella requisiti software.])
 
 == Requisiti hardware
@@ -106,13 +106,18 @@ La seguente sezione fornisce istruzioni dettagliate su come installare e avviare
 + Spostarsi nella cartella in cui si desidera clonare la #glossary[repository]\;
 
 + Con Git installato in locale, clonare la #glossary[repository] tramite il comando:
-`git clone https://github.com/SWATEngineering/InnovaCity.git`.
+#set align(center)
+`git clone https://github.com/SWATEngineering/InnovaCity.git`
+#set align(left)
 
 == Avviare l'applicazione
 
-+ Eseguire il comando: `docker-compose --profile prod up -d`;
++ Eseguire il comando:
+#set align(center)
+`docker-compose --profile prod up -d`
+#set align(left)
 
-+ Avendo eseguito gli step riportati sopra, #glossary[Grafana] sarà disponibile visitando l'indirizzo #link("http://localhost:3000/") su browser.
+Avendo eseguito gli step riportati sopra, #glossary[Grafana] sarà disponibile visitando l'indirizzo #link("http://localhost:3000/") su browser.
 
 #pagebreak()
 
@@ -190,7 +195,7 @@ I #glossary[pannelli] contenenti grafici in formato "#glossary[time series]" rip
 
 - Media del riempimento dei bacini idrici riportata da ciascun #glossary[sensore], con dati aggregati in intervalli di 1 minuto.
 
-Tali p#glossary[pannelli] mostrano l'ora del giorno sull'asse x, la legenda del contenuto al di sotto dell'asse x e l'unità di misura del dato in esame sull'asse y. La legenda, in particolare, riporta i nomi dei sensori rilevanti e la cosiddetta "Moving average": cliccando su uno qualsiasi di questi elementi, è possibile filtrare il contenuto del grafico per mostrare esclusivamente l'andamento dell'elemento selezionato e nascondere il resto; cliccando nuovamente si riporta il grafico allo stato di default. Infine, posizionando il cursore sopra un punto qualunque dell'andamento dei dati forniti da un dato #glossary[sensore], è possibile visualizzarne timestamp, nome del #glossary[sensore] e valore corrispondente.
+Tali #glossary[pannelli] mostrano l'ora del giorno sull'asse x, la legenda del contenuto al di sotto dell'asse x e l'unità di misura del dato in esame sull'asse y. La legenda, in particolare, riporta i nomi dei sensori rilevanti e la cosiddetta "Moving average": cliccando su uno qualsiasi di questi elementi, è possibile filtrare il contenuto del grafico per mostrare esclusivamente l'andamento dell'elemento selezionato e nascondere il resto; cliccando nuovamente si riporta il grafico allo stato di default. Infine, posizionando il cursore sopra un punto qualunque dell'andamento dei dati forniti da un dato #glossary[sensore], è possibile visualizzarne timestamp, nome del #glossary[sensore] e valore corrispondente.
 
 === #glossary[Pannelli] con grafici in formato "Geomap"
 
@@ -262,6 +267,8 @@ Tale #glossary[pannello] contiene una tabella avente campi che indicano il nome 
 
 Per assistenza tecnica relativa all'utilizzo del prodotto software "InnovaCity", viene fornito il seguente indirizzo email:
 
+#set align(center)
 `swateng.team@gmail.com`
+#set align(left)
 
 Per un servizio più efficiente, si è pregati di includere nel corpo dell'email una descrizione quanto più completa del problema riscontrato, insieme ad eventuali screenshot o dettagli aggiuntivi che possano risultare utili alla risoluzione di quest'ultimo. Si invita, inoltre, a descrivere eventuali passaggi già tentati per risolvere il problema, in modo che il team possa fornire un'assistenza più mirata. 
