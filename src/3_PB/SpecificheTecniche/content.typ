@@ -12,7 +12,7 @@
 Il presente documento si propone come risorsa esaustiva per la comprensione degli aspetti tecnici chiave del progetto "InnovaCity".
 La sua finalità primaria è fornire una descrizione dettagliata e approfondita di due aspetti centrali: l'architettura implementativa e l'architettura di deployment.
 Nel contesto dell'architettura implementativa, si prevede un'analisi approfondita che si estenda anche al livello di design più basso. Ciò include la definizione e la spiegazione dettagliata dei design pattern e degli idiomi utilizzati nel contesto del progetto.
-L'obiettivo principale del presente documento è triplice: innanzitutto, motivare le scelte di sviluppo adottate; in secondo luogo, fungere da guida fondamentale per l'attività di codifica; infine, garantire una completa copertura dei requisiti identificati nel documento _Analisi dei Requisiti v2.0_.
+L'obiettivo principale del presente documento è triplice: innanzitutto, motivare le scelte di sviluppo adottate; in secondo luogo, fungere da guida fondamentale per l'attività di codifica; infine, monitorare la copertura dei requisiti identificati nel documento _Analisi dei Requisiti v2.0_.
 Alla luce del modello di sviluppo agile individuato dal team, la redazione del documento segue un approccio iterativo. L'adeguatezza del documento e dell'architettura individuata viene costantemente monitorata e modificata sulla base dei requisiti e dei feedback ricevuti da parte della Proponente.
 
 == Scopo del prodotto
@@ -519,6 +519,8 @@ Per quanto riguarda la copertura dei requisiti obbligatori, la copertura rilevat
 caption: "Requisiti obbligatori soddisfatti rispetto al totale.",
 kind: "chart",
 supplement: "Grafico")
+
+#pagebreak()
 
 Per quanto riguarda la copertura dei requisiti desiderabili, la copertura rilevata è di #req_desiderabili_soddisfatti su #req_desiderabili requisiti, arrivando quindi ad un #int(req_desiderabili_soddisfatti / req_desiderabili * 100 + 0.5)% sul totale.
 #figure({
