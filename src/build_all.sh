@@ -5,6 +5,9 @@ set -e
 compile_letter() {
     typst compile main.typ LetteraDiPresentazione.pdf --font-path=assets/fonts
 }
+compile_glossary() {
+    typst compile main.typ Glossario_1.0.pdf --font-path=assets/fonts
+}
 
 # Function to check if a file exists in the current directory
 check_file() {
@@ -14,8 +17,13 @@ check_file() {
             echo "    Compiling letter..."
             compile_letter || exit 1
         else
-            echo "    Compiling changelog..."
-            "$base_dir"/typst_compile.sh || exit 1
+            if [ "$2" == "Glossario" ]; then
+                echo "    Compiling glossary..."
+                compile_glossary || exit 1
+            else
+                echo "    Compiling changelog..."
+                "$base_dir"/typst_compile.sh || exit 1
+            fi
         fi
 
         path="$PWD"
