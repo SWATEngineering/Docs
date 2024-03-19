@@ -518,7 +518,7 @@ supplement: "Grafico")
 
 #pagebreak()
 
-Per quanto riguarda la copertura dei requisiti desiderabili, la copertura rilevata è di #req_desiderabili_soddisfatti su #req_desiderabili requisiti, arrivando quindi ad un #int(req_desiderabili_soddisfatti / req_desiderabili * 100 + 0.5)% sul totale.
+In termini di soddisfacimento dei requisiti desiderabili, è stata raggiunta una copertura del #int(req_desiderabili_soddisfatti / req_desiderabili * 100 + 0.5)%, con #req_desiderabili_soddisfatti su #req_desiderabili.
 #figure({
   types-legend
   canvas({
@@ -534,7 +534,7 @@ caption: "Requisiti desiderabili soddisfatti rispetto al totale.",
 kind: "chart",
 supplement: "Grafico")
 
-Per quanto riguarda la copertura dei requisiti opzionali, la copertura rilevata è di #req_opzionali_soddisfatti su #req_opzionali requisiti, arrivando quindi ad un #int(req_opzionali_soddisfatti / req_opzionali * 100 + 0.5)% sul totale.
+Per quanto concerne l'adempimento dei requisiti opzionali, abbiamo conseguito una percentuale del #int(req_opzionali_soddisfatti / req_opzionali * 100 + 0.5)% sul totale, con #req_opzionali_soddisfatti su #req_opzionali requisiti considerati.
 #figure({
   types-legend
   canvas({
