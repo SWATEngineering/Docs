@@ -36,7 +36,7 @@ L'incontro ha preso avvio con una breve analisi del lavoro svolto dal precedente
 
 Sono state presentate le nuove modifiche estetiche e strutturali al sito vetrina #link("https://swatengineering.github.io/"), ad esempio il nuovo formato di ordinamento dei file e la grafica delle icone. Queste modifiche hanno suscitato particolare interesse da parte della Proponente.
 
-== Patti chiari, amicizia lunga 
+== Impegni presi
 
 Considerando l'avvio del secondo lotto per il progetto didattico, la Proponente ha sollevato la necessità di rispettare gli impegni presi per garantire il completamento tempestivo. Ciò consentirebbe all'azienda di gestire efficacemente la candidatura dei due nuovi gruppi. Inoltre, è stata avanzata la proposta di effettuare un resoconto per individuare possibili miglioramenti al fine di garantire un'esperienza ottimale per i nuovi gruppi. Ad esempio, si è suggerito di interrompere l'utilizzo dell'applicazione Element a favore di Discord, considerata più diffusa e funzionale.
 
