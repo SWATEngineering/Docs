@@ -208,7 +208,7 @@ Nei paragrafi successivi viene mostrata l'architettura individuata, tramite l'ut
 === Struttura generale
 
 #figure(
-  image("diagrammiclassi/struttura.png",width:100%),
+  image("diagrammiclassi/struttura.jpg",width:100%),
   caption: [Diagramma delle classi 2]
 )
 
@@ -216,14 +216,14 @@ La classe _SimulatorExecutorFactoryTemplate_ è implementazione del #glossary[de
 I simulatori sono istanze delle classe _SimulatorThread_: tale classe eredita dalla classe _Thread_ della Standard Library, in modo tale che l'esecuzione dei simulatori possa essere parallela.
 
 #figure(
-  image("diagrammiclassi/simulator.png",width:100%),
+  image("diagrammiclassi/simulator.jpg",width:100%),
   caption: [Diagramma delle classi 2]
 )
 La classe _SensorSimulatorStrategy_ è realizzazione del design pattern _Strategy_, dove ogni strategia rappresenta una tipologia di sensore simulato differente. Al fine di garantire la possibilità di effettuare unit-testing sul comportamento dei simulatori di sensori tale classe riceve tramite costruttore un oggetto di tipo _Random_ e un oggetto di tipo _Datetime_.
 Tali strategie verranno poi assegnate ad un _SimulatorThread_.
 
 #figure(
-  image("diagrammiclassi/writer.png",width:100%),
+  image("diagrammiclassi/writer.jpg",width:100%),
   caption: [Diagramma delle classi 3]
 )
 Anche la classe _Writer_ realizza il design pattern _Strategy_. Sono state progettate due strategie, la prima, (_KafkaWriter_), atta a permettere al simulatore di inviare i messaggi contenenti i dati della rilevazione a #glossary("Kafka"), mentre la seconda atta a permettere al simulatore di stampare i risultati su terminale al fine di poterne testare il comportamento. Inoltre l'applicazione di tale #glossary[design pattern] potrebbe consentire di realizzare il componente di scrittura anche per eventuali broker dati alternativi, nel momento in cui ce ne sia il bisogno.
@@ -235,26 +235,26 @@ Non vengono menzionati i costruttori.
 ==== SimulatorExecutorFactoryTemplate (Classe)
 ===== Attributi
 - *configs: String [Protetto]*: contenuto del file di configurazione dei simulatori;
-- *simulators: SimulatorThread[\*] [Protetto]*: collezione di oggetti _SimulatorThread_.
+- *simulators: SimulatorThread[\*] [Protetto]*: lista di oggetti _SimulatorThread_.
 ===== Metodi
-- *create_simulator(in config: {\*}, in simulator_type: SensorTypes, in cls: SensorSimulatorStrategy): void [Protetto]*: metodo astratto, implementato dalle classi _KafkaSimulatorExecutorFactory_ e _StdoutSimulatorExecutorFactory_;
+- *create_simulator(in config: Dict, in simulator_type: SensorTypes, in cls: SensorSimulatorStrategy): void [Protetto]*: metodo astratto, implementato dalle classi _KafkaSimulatorExecutorFactory_ e _StdoutSimulatorExecutorFactory_;
 - *create(): SimulatorExecutor [Pubblico]*: dopo aver invocato la creazione dei singoli simulatori, si occupa di costruire un oggetto della classe _SimulatorExecutor_ inserendoli al suo interno.
 
 ==== KafkaSimulatorExecutorFactory (Classe)
 ===== Attributi
 - *data_broker_host: String [Privato]*: indirizzo ip della macchina che ospita il message broker;
 - *data_broker_port: int [Privato]*: porta della macchina che ospita il message broker;
-- *writers: String KafkaWriter{\*} [Privato]*: collezione di elementi chiave-valore, con valori di tipo _KafkaWriter_;
-- *simulators_counter: String int{\*} [Privato]*: collezione di elementi chiave-valore, per fare in modo che al nome del simulatore sia associato un valore numerico.
+- *writers: Dict<\key -> String, value -> KafkaWriter> [Privato]*: dizionario con chiavi di tipo String e valori di tipo _KafkaWriter_;
+- *simulators_counter: Dict<\key -> String, value -> int> [Privato]*: dizionario con chiavi di tipo String e valori di tipo int, per fare in modo che al nome del simulatore sia associato un valore numerico.
 ===== Metodi
-- *create_simulator(in config: {\*}, in simulator_type: SensorTypes, in cls: SensorSimulatorStrategy): void [Protetto]*: utilizza il contenuto del file di configurazione passato tramite costruzione per costruire gli oggetti di tipo _SimulatorThread_ che rappresentano i simulatori richiesti.
+- *create_simulator(in config: Dict, in simulator_type: SensorTypes, in cls: SensorSimulatorStrategy): void [Protetto]*: utilizza il contenuto del file di configurazione passato tramite costruzione per costruire gli oggetti di tipo _SimulatorThread_ che rappresentano i simulatori richiesti.
 
 ==== StdoutSimulatorExecutorFactory (Classe)
 ===== Attributi
-- *simulators_counter: String int{\*} [Privato]*: collezione di elementi chiave-valore, per fare in modo che al nome del simulatore sia associato un valore numerico;
+- *simulators_counter: Dict<\key -> String, value -> int> [Privato]*: dizionario per fare in modo che al nome del simulatore sia associato un valore numerico;
 - *writer: StdoutWriter [Privato]*: oggetto della classe _StdoutWriter_.
 ===== Metodi
-- *create_simulator(in config: {\*}, in simulator_type: SensorTypes, in cls: SensorSimulatorStrategy): void [Protetto]*: utilizza il contenuto del file di configurazione passato tramite costruzione per costruire gli oggetti di tipo _SimulatorThread_ che rappresentano i simulatori richiesti.
+- *create_simulator(in config: Dict, in simulator_type: SensorTypes, in cls: SensorSimulatorStrategy): void [Protetto]*: utilizza il contenuto del file di configurazione passato tramite costruzione per costruire gli oggetti di tipo _SimulatorThread_ che rappresentano i simulatori richiesti.
 
 ==== SimulatorExecutor (Classe)
 ===== Attributi
@@ -288,6 +288,10 @@ Non vengono menzionati i costruttori.
 - *latitude: float [Privato]*: latitudine geografica.
 ===== Metodi
 - *getGeoJSON(): String [Pubblico]*: restituisce le coordinate geografiche nel formato GeoJSON.
+
+==== SensorTypes (Class)
+===== Attributi
+- 
 
 ==== WriterStrategy (interfaccia)
 ===== Metodi
