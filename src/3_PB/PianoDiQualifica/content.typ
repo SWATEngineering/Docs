@@ -216,11 +216,17 @@ caption: [Tabella metriche per l'efficienza del prodotto.])
 = Strategie di testing
 
 In questa sezione viene esposto il piano di testing che verrà utilizzato per garantire la correttezza finale del prodotto.
-Come enunciato nel documento _Norme di Progetto v1.0_, il piano segue il #glossary("modello a V"), il quale associa ad ogni fase di sviluppo una corrispondente tipologia di testing. Tali tipologie sono le seguenti:
+Come enunciato nel documento _Norme di Progetto v2.0_, il piano segue il #glossary("modello a V"), il quale associa ad ogni fase di sviluppo una corrispondente tipologia di testing. Tali tipologie sono le seguenti:
 - *Test di unità*: si verifica il corretto funzionamento delle unità componenti il #glossary[sistema]. Un'unità rappresenta un elemento indivisibile e indipendente del #glossary[sistema]\;
 - *Test di integrazione*: si verifica il corretto funzionamento di più unità che cooperano per svolgere uno specifico compito (tali unità devono certamente aver superato i loro test di unità precedentemente);
 - *Test di #glossary[sistema]*: si verifica il corretto funzionamento del #glossary[sistema] nella sua interezza. I requisiti funzionali obbligatori, di vincolo, di qualità e di prestazione, precedentemente concordati con il Committente mediante stipulazione del contratto, devono essere soddisfatti per intero;
-- *Test di accettazione*: si verifica il soddisfacimento del Committente rispetto al prodotto software. Il loro superamento permette di procedere con il rilascio del prodotto.
+- *Test di accettazione*: si verifica il soddisfacimento del Committente rispetto al prodotto software. Il loro superamento permette di procedere con il rilascio del prodotto. 
+
+
+//Questa lo aggiunta un po così, in realtà non so come potrebbe prenderla tullio la parte sull'informalità. 
+Il team ha deciso, di non classificare i test di unità e i test di integrazione all'interno di questo documento: garantirne la  coerenza durante tutto lo sviluppo sarebbe risultato particolarmente oneroso in termini di risorse. È importante sottolineare che i test di unità e di integrazione non sono trascurati; piuttosto, la loro implementazione potrebbe avvenire in modo più informale nel processo di sviluppo. Inoltre, l'assenza di tracciabilità formale di questi test nel documento non implica che non vengano eseguiti o che siano considerati meno importanti.
+Le suite di test rimangono comunque reperibili all'interno della repository "Innovacity", e eseguibili secondo le procedure descritte all'interno del documento _Norme di Progetto v2.0_. 
+Di seguito si presentano di conseguenza solamente test di sistema e test di accettazione. 
 
 == Test di accettazione
 In questa sezione vengono descritti i test di accettazione del prodotto software, eseguiti sia dal gruppo #team che dalla Proponente sotto la supervisione del gruppo.
@@ -684,6 +690,8 @@ table(
 ),caption: "Tracciamento dei test di sistema.")
 
 #pagebreak()
+
+
 
 == Liste di controllo
 

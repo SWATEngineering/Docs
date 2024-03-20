@@ -599,7 +599,8 @@ Ci si aspetta che il codice sviluppato rispetti determinate caratteristiche:
         - Conformità alle specifiche;
         - Chiarezza e comprensibilità;
         - Ottimizzazione delle prestazioni;
-        - Supplemento di test per verificare la correttezza e il funzionamento.
+        - Supplemento di test di integrazione e di unità per verificarne la correttezza.
+
 
 ===== Stile di codifica   
 
@@ -646,6 +647,7 @@ I type hint non impongono un ritorno specifico, ma forniscono informazioni chiar
 Si è deciso di integrare il linter PEP8 come fondamentale strumento nel processo di sviluppo. Questo strumento svolge un ruolo di rilievo nel garantire la coerenza e l'adesione alle linee guida di formattazione del codice #glossary[Python], stabilite nella PEP 8, contribuendo in modo significativo a mantenere uno standard uniforme nella base di codice.
 
 Inoltre per garantire il soddisfacimento delle metriche di qualità di processo e di prodotto durante tutto lo sviluppo il Programmatore è caldamente invitato a fare uso delle procedure illustrate nella @calcolo_metriche_codifica e nella @calcolo_metriche_affidabilita.
+
 
 
 ===== Metriche
@@ -1058,14 +1060,15 @@ Tuttavia, il metodo #glossary[walkthrough] conserva la sua rilevanza e rimane un
 L'analisi dinamica nel contesto dello sviluppo software si concentra sull'osservazione e valutazione del comportamento del #glossary[sistema] durante l'esecuzione. Questa metodologia è specificamente rivolta al prodotto software risultante dall'attività di codifica.
 Nel processo di sviluppo, l'analisi dinamica è attuata attraverso varie categorie di test. I test, derivati dai requisiti, siano essi funzionali o non funzionali, rendono l'attività di analisi dinamica ripetibile. Questo significa che è possibile eseguire i test più volte con gli stessi input e condizioni, ottenendo risultati coerenti e affidabili. La ripetibilità dei test è fondamentale per confermare la coerenza delle funzionalità del software in diverse situazioni e sotto diverse condizioni operative. La definizione e l'esecuzione dei test seguono i principi del #glossary[Modello a V].
 
-Il Verificatore si impegna a elaborare casi di test per ciascuna delle seguenti categorie, garantendo una copertura completa e dettagliata del software:
+I componenti del team, a vario titolo, si impegnano a elaborare casi di test per ciascuna delle seguenti categorie, garantendo una copertura completa e dettagliata del prodotto:
 - Test di unità; 
 - Test di integrazione; 
 - Test di sistema; 
 - Test di accettazione.
 
-La totalità dei test individuati viene riportata all'interno del documento _Piano di Qualifica v1.0_.
-In sede di verifica, sulla base del dominio esaminato, il Verificatore è tenuto ad eseguire tali test in maniera rigorosa e a riportarne gli esiti all'interno del _Piano di Qualifica v1.0_. 
+Test di sistema e di accettazione, e relativo stato, vengono riportati all'interno del documento _Piano di Qualifica v1.0_.
+Test di unità e di integrazione sono reperibili all'interno della repository _Innovacity_.
+
 
 ==== Test di unità  
 
@@ -1076,14 +1079,15 @@ Gli obiettivi principali:
         - Accertarsi che ciascuna unità esegua le operazioni specificate nel suo design;
         - Identificare precocemente i possibili errori.
 
-I test di unità si dividono principalmente in due categorie:
-
-        - *Test Funzionali*: verificano che ciascuna unità esegua le funzioni specificate nel design, concentrandosi sulla logica interna dell'unità e testando i casi in cui la funzione produce i risultati desiderati;
-        - *Test Strutturali*: verificano la struttura interna dell'unità, compresa la logica di controllo e il flusso dei dati, esaminando il codice sorgente dell'unità.
+Per poter eseguire i test di unità in maniera automatica e ottenere la percentuale di copertura del codice si rimanda alla procedure presentate nella  @calcolo_metriche_affidabilita.
 
 ==== Test di integrazione   
 
 I test di integrazione sono cruciali per valutare il comportamento delle unità software quando vengono combinate. Una volta confermato il corretto funzionamento delle singole unità in isolamento, i test di integrazione mirano a identificare possibili problemi nelle interazioni tra le unità integrate. Questi test, automatizzati il più possibile, verificano se le componenti del software collaborano efficacemente e se il sistema integrato soddisfa le specifiche di progetto. L'obiettivo è garantire che, quando le unità sono combinate, il software funzioni senza intoppi e risponda alle esigenze dell'applicazione in modo coerente.
+
+Per poter eseguire la suite di test di integrazione: 
+- Avviare i container con il profilo "dev"; 
+- Eseguire il comando "python -m pytest PythonSensorsSimulator/integrationTest/" .
 
 ==== Test di #glossary[sistema] 
 
@@ -1098,12 +1102,13 @@ Per la definizione dei test si rimanda al _Piano di Qualifica v1.0_.
 
 === Classificazione dei test
 
-I test vengono identificati in base alla loro tipologia e tramite un codice numerico. 
+I test vengono identificati, all'interno del _Piano di Qualifica v1.0_, in base alla loro tipologia e tramite un codice numerico. 
 Nello specifico devono avere la seguente forma: *T[Tipologia Test] [Codice]*
 
 Tipologia: 
-- *U*: unità; 
-- *I*: integrazione;
+//rimossi perchè non hanno corrispettivo nel piano di qualifica. 
+//- *U*: unità; 
+//- *I*: integrazione;
 - *S*: sistema;
 - *A*: accettazione.
 
@@ -1629,7 +1634,7 @@ Il Programmatore che intendesse calcolare tali metriche può farlo anche in bran
 ==== Calcolo metriche per l'affidabilità <calcolo_metriche_affidabilita>
 Per il calcolo della percentuale di test passati si può utilizzare la seguente procedura: 
 - Accedere da terminale alla cartella _Innovacity_, posizionarsi nel branch _dev_;
-- Eseguire il comando "python -m pytest PythonSensorsSimulator/" ; 
+- Eseguire il comando "python -m pytest PythonSensorsSimulator/unitTest/" ; 
 
 
 Per la valutazione della metriche di copertura del codice si puo utilizzare la seguente procedura: 
