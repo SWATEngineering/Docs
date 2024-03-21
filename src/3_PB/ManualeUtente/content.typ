@@ -125,7 +125,7 @@ Avendo eseguito gli step riportati sopra, #glossary[Grafana] sarà disponibile v
 
 == Informazioni generali su #glossary[dashboard] e #glossary[pannelli]
 
-=== #glossary[dashboard]
+=== #glossary[Dashboard]
 
 Le #glossary[dashboard] riportano in alto un header contenente diverse opzioni atte a navigare attraverso l'istanza di #glossary[Grafana] correntemente in uso e a personalizzare l'apparenza della #glossary[dashboard] stessa:
 
@@ -157,7 +157,7 @@ Le #glossary[dashboard] riportano in alto un header contenente diverse opzioni a
 
 Per maggiori informazioni sull'utilizzo delle #glossary[dashboard], si rimanda alla #glossary[documentazione] ufficiale di #glossary[Grafana] a tal proposito (#link("https://grafana.com/docs/grafana/latest/dashboards/use-dashboards/")).
 
-=== #glossary[    pannelli]
+=== #glossary[Pannelli]
 
 I #glossary[pannelli] riportano in alto a sinistra il titolo e in alto a destra l'icona del menù; posizionando il cursore sopra l'icona alla destra del titolo, viene visualizzata anche la descrizione del #glossary[pannello]. Il menù riporta le opzioni che #glossary[Grafana] mette a disposizione per gestire ogni #glossary[pannello], indipendentemente dalla tipologia di grafico contenuto, ovvero:
 
@@ -258,6 +258,23 @@ Il #glossary[pannello] contenente un grafico in formato "Table" riporta dati rel
 Tale #glossary[pannello] contiene una tabella avente campi che indicano il nome del #glossary[sensore] e l'erogazione più recente; anche in questo caso le interazioni sono identiche a quelle descritte in precedenza.
 
 == Dashboard "Dati grezzi"
+
+La #glossary[dashboard] "Dati grezzi" è dedita alla raccolta e alla visualizzazione dei dati inviati da tutti i sensori e comprende sia i dati storici che quelli inviati in tempo reale; la #glossary[dashboard] consente anche di filtrare tutti i dati in base al nome e alla tipologia dei sensori di interesse, per poter risalire con facilità ai dati inviati da questi ultimi. Per questo scopo, viene utilizzato un unico #glossary[pannello] di tipo "Table".
+
+=== #glossary[Pannello] con grafico in formato "Table"
+
+Tale #glossary[pannello] è preceduto da un header che riporta tre campi di input con etichette: "Nome Sensore", "Limite" e "Tipo Sensore". Cliccando sull'etichetta alla sinistra del campo o sul campo stesso, è possibile visualizzare il numero di valori attualmente selezionati ("Selected") ed, eventualmente, selezionarne altri utilizzando le checkbox apposite. Inoltre, è possibile inserire manualmente il valore desiderato all'interno del campo ("Enter variable value") per filtrare velocemente i valori a disposizione. Il campo "Nome Sensore" riporta i nomi di tutti sensori a disposizione, "Limite" consente di impostare il massimo numero di righe della tabella sottostante e "Tipo Sensore" riporta le tipologie dei sensori. 
+I campi della tabella vera e propria variano a seconda della tipologia di #glossary[sensore] selezionato, in particolare si hanno: 
+
+- "Timestamp", "current" per il valore del dato inviato, "latitude" e "longitude" per i sensori di tipo "air_pollution", "eco_zone", "electric_bicycle", "humidity", "parking", "rain", "reservoir", o "temperature";
+
+- "Timestamp", "erogation_power" per il livello di erogazione, "availability" per indicare la disponibilità, "latitude" e "longitude" per i sensori di tipo "charging_station";
+
+- "Timestamp", "num_cars" per il numero di macchine attualmente in circolazione sulla strada monitorata dal #glossary[sensore], "avg_time" per il tempo medio necessario per percorrere suddetta strada, "latitude" e "longitude" per i sensori di tipo "traffic";
+
+- "Timestamp", "current" per la velocità del vento, "directiion" per la direzione del vento, "latitude" e "longitude" per i sensori di tipo "wind".
+
+Come evidenziato in precedenza, è possibile ordinare i valori di tutti i campi della tabella in ordine crescente o decrescente semplicemente cliccandone il nome collocato in cima alla colonna corrispondente.
 
 == Dashboard "Dati anomali & Superamento soglie"
 
