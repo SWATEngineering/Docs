@@ -75,8 +75,7 @@ table(
       [*Sistema operativo*],[*Versione*],
       [Windows], [10],
       [MACOS], [10.14 Mojave],
-      [Linux Ubuntu], [22.04],
-      [Linux Mint], [21]),
+      [Linux Ubuntu], [22.04]),
 caption: [Tabella requisiti di #glossary[sistema] operativo.])
 
 == Requisiti browser
@@ -88,10 +87,9 @@ table(
       align: (x, y) => (center, center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Browser*],[*Versione*],
-      [Google Chrome], [120],
-      [Mozilla Firefox], [120],
-      [Microsoft Edge], [120],
-      [Opera], [106]),
+      [Google Chrome], [122 o superiori],
+      [Mozilla Firefox], [123 o superiori],
+      [Microsoft Edge], [122 o superiori]),
 caption: [Tabella requisiti browser.])
 
 #pagebreak()
