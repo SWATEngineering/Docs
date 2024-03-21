@@ -25,7 +25,7 @@ Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei d
 
 === Riferimenti normativi
 - Capitolato C6 - InnovaCity: Smart city monitoring platform:
-#link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf") (20/02/2024) \
+#link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf") (21/03/2024) \
  #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6p.pdf") (20/02/2024)
 
 - _Norme di Progetto v1.0_
@@ -43,14 +43,14 @@ Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei d
 - Diagrammi di Sequenza (UML) - corso di Ingegneria del Software a.a. 2023/2024: \
  #link("https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20di%20Sequenza.pdf") (20/02/2024) \ /*se non li mettiamo si possono anche togliere*/
 - Progettazione - corso di Ingegneria del Software a.a. 2023/2024: \
- #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T6.pdf") (4/03/2024) \
+ #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T6.pdf") (21/03/2024) \
 - Architetture #[#sym.kappa] & #[#sym.lambda]:
   - #link("https://imply.io/blog/building-event-analytics-pipeline-with-confluent-cloud-and-imply-real-time-database-polaris/") (28/02/2024)
   - #link("https://medium.com/sysco-labs/real-time-sales-analytics-using-kappa-architecture-852dc84bfe7b") (28/02/2024)
 
 === riferimenti tecnici
 - *#glossary[Python]*: #link("https://docs.python.org/3/"); (4/03/2024)
-- *#glossary[Grafana]*: #link("https://grafana.com/docs/grafana/latest/"); (20/02/2024)
+- *#glossary[Grafana]*: #link("https://grafana.com/docs/grafana/latest/"); (21/03/2024)
 - *Apache #glossary[Kafka]*: #link("https://kafka.apache.org/20/documentation.html"); (4/03/2024)
 - *#glossary[Clickhouse]*: #link("https://clickhouse.com/docs");  (4/03/2024)
 - *Confluent Kafka*:#link("https://docs.confluent.io/kafka-clients/python/current/overview.html"); (20/02/2024)
@@ -163,7 +163,7 @@ Per illustrare il funzionamento del sistema, abbiamo utilizzato un diagramma di 
     + Batteria delle biciclette elettriche.
 - *Invio al #glossary[broker] dei dati*:  i dati generati dai sensori vengono inviati al #glossary[broker] dati, in questo contesto #glossary[Kafka]. #glossary[Kafka] offre un meccanismo di messaggistica distribuita in grado di gestire grandi volumi di dati in tempo reale;
 - *Engine interno (archiviatore)*: l'archiviatore, rappresentato dal motore interno "Kafka" di #glossary[ClickHouse], agisce direttamente come consumatore dei dati provenienti dal broker dei dati (#glossary[Kafka]). Questo avviene tramite la connessione a specifici topic nel broker dati, ognuno associato a un tipo di sensore distinto. Successivamente, i dati corrispondenti vengono archiviati nelle rispettive tabelle del database;
-- *Materializzazione*: i dati corrispondenti la temperatura, umidità, precipitazioni, inquinamento atmosferico e livello dei bacini idrici vengono aggregati in tabelle apposite attraverso l'utilizzo di #glossary[materialized views]. Queste aggregazioni avvengono su intervalli di 5 minuti, consentendo così l'applicazione delle medie mobili;
+- *Aggregazione*: i dati corrispondenti la temperatura, umidità, precipitazioni, inquinamento atmosferico e livello dei bacini idrici vengono aggregati in tabelle apposite attraverso l'utilizzo di #glossary[materialized views]. Queste aggregazioni avvengono su intervalli di 1 minuto, consentendo così l'applicazione delle medie mobili;
 - *Interrogazioni (query)*: vengono effettuate varie interrogazioni e analisi sui dati memorizzati all'interno delle tabelle;
 - *Visualizzazione*: l'#glossary[amministratore pubblico] visualizza i dati, ritornati in output dalle query, su una piattaforma apposita (nel nostro caso Grafana).
 
@@ -216,7 +216,7 @@ La classe _SimulatorExecutorFactoryTemplate_ è implementazione del #glossary[de
 I simulatori sono istanze delle classe _SimulatorThread_: tale classe eredita dalla classe _Thread_ della Standard Library, in modo tale che l'esecuzione dei simulatori possa essere parallela.
 
 #figure(
-  image("diagrammiclassi/simulator.jpg",width:100%),
+  image("diagrammiclassi/simulator.jpg",width:95%),
   caption: [Diagramma delle classi 2]
 )
 La classe _SensorSimulatorStrategy_ è realizzazione del design pattern _Strategy_, dove ogni strategia rappresenta una tipologia di sensore simulato differente. Al fine di garantire la possibilità di effettuare unit-testing sul comportamento dei simulatori di sensori tale classe riceve tramite costruttore un oggetto di tipo _Random_ e un oggetto di tipo _Datetime_.
@@ -237,7 +237,7 @@ Non vengono menzionati i costruttori.
 - *configs: String [Protetto]*: contenuto del file di configurazione dei simulatori;
 - *simulators: SimulatorThread[\*] [Protetto]*: lista di oggetti _SimulatorThread_.
 ===== Metodi
-- *create_simulator(in config: Dict, in simulator_type: SensorTypes, in cls: SensorSimulatorStrategy): void [Protetto]*: metodo astratto, implementato dalle classi _KafkaSimulatorExecutorFactory_ e _StdoutSimulatorExecutorFactory_;
+- *create_simulator(config: Dict, simulator_type: SensorTypes, cls: «type» SensorSimulatorStrategy): void [Protetto]*: metodo astratto, implementato dalle classi _KafkaSimulatorExecutorFactory_ e _StdoutSimulatorExecutorFactory_;
 - *create(): SimulatorExecutor [Pubblico]*: dopo aver invocato la creazione dei singoli simulatori, si occupa di costruire un oggetto della classe _SimulatorExecutor_ inserendoli al suo interno.
 
 ==== KafkaSimulatorExecutorFactory (Classe)
@@ -247,18 +247,18 @@ Non vengono menzionati i costruttori.
 - *writers: Dict<\key -> String, value -> KafkaWriter> [Privato]*: dizionario con chiavi di tipo String e valori di tipo _KafkaWriter_;
 - *simulators_counter: Dict<\key -> String, value -> int> [Privato]*: dizionario con chiavi di tipo String e valori di tipo int, per fare in modo che al nome del simulatore sia associato un valore numerico.
 ===== Metodi
-- *create_simulator(in config: Dict, in simulator_type: SensorTypes, in cls: SensorSimulatorStrategy): void [Protetto]*: utilizza il contenuto del file di configurazione passato tramite costruzione per costruire gli oggetti di tipo _SimulatorThread_ che rappresentano i simulatori richiesti.
+- *create_simulator(in config: Dict, in simulator_type: SensorTypes, in cls: «type» SensorSimulatorStrategy): void [Protetto]*: utilizza il contenuto del file di configurazione passato tramite costruzione per costruire gli oggetti di tipo _SimulatorThread_ che rappresentano i simulatori richiesti.
 
 ==== StdoutSimulatorExecutorFactory (Classe)
 ===== Attributi
 - *simulators_counter: Dict<\key -> String, value -> int> [Privato]*: dizionario per fare in modo che al nome del simulatore sia associato un valore numerico;
 - *writer: StdoutWriter [Privato]*: oggetto della classe _StdoutWriter_.
 ===== Metodi
-- *create_simulator(in config: Dict, in simulator_type: SensorTypes, in cls: SensorSimulatorStrategy): void [Protetto]*: utilizza il contenuto del file di configurazione passato tramite costruzione per costruire gli oggetti di tipo _SimulatorThread_ che rappresentano i simulatori richiesti.
+- *create_simulator(in config: Dict, in simulator_type: SensorTypes, in cls: «type» SensorSimulatorStrategy): void [Protetto]*: utilizza il contenuto del file di configurazione passato tramite costruzione per costruire gli oggetti di tipo _SimulatorThread_ che rappresentano i simulatori richiesti.
 
 ==== SimulatorExecutor (Classe)
 ===== Attributi
-- *simulators: SimulatorThread[\*] [Privato]*: collezione di oggetti _SimulatorThread_.
+- *simulators: SimulatorThread[\*] [Privato]*: lista di oggetti _SimulatorThread_.
 ===== Metodi
 - *run_all(): void [Pubblico]*: metodo che avvia la simulazione di tutti i _SimulatorThread_;
 - *stop_all(): void [Pubblico]*: metodo che arresta la simulazione di tutti i _SimulatorThread_.
@@ -282,6 +282,49 @@ Non vengono menzionati i costruttori.
 ===== Metodi
 - *simulate(): String [Pubblico]*: metodo astratto, implementato dalle classi che definiscono il comportamento dei singoli simulatori.
 
+/*TODO: da completare la descrizione con attributi e metodi come da diagramma UML*/
+==== TemperatureSensorSimulator (Classe)
+
+==== RainSensorSimulator (Classe)
+
+==== HumiditySensorSimulator (Classe)
+
+==== WindSensorSimulator (Classe)
+
+==== ReservoirSensorSimulator (Classe)
+===== Attributi
+- *reservoir_percentage: float [Privato]*: la percentuale del livello di riempimento del bacino idrico;
+===== Metodi
+- *simulate(): String [Pubblico]*;
+- *set_reservoir_percentage(): void [Privato]*: imposta la percentuale di riempimento iniziale del bacino monitorato a seconda della stagione dell'anno;
+- *calculate_evaporation_rate(): float [Privato]*: calcola il tasso di evaporazione a seconda dell'ora del giorno e della stagione dell'anno;
+- *measure_reservoir_level(): float [Privato]*: calcola la variazione nella percentuale di riempimento.
+
+==== ParkingSensorSimulator (Classe)
+
+==== ChargingStationSensorSimulator (Classe)
+
+==== EBikeSensorSimulator (Classe)
+===== Attributi
+- *bike_percentage: float [Privato]*: percentuale di batteria della bicicletta elettrica; 
+- *last_coordinate_index: int [Privato]*: indice numerico per tenere traccia delle coordinate raggiunte all'interno del percorso stabilito per arrivare a destinazione;
+- *source [Privato]*: punto di partenza del percorso;
+- *destination [Privato]*: punto di arrivo del percorso;
+- *route_coordinates [Privato]*: coordinate che compongono il percorso;
+- *last_timestamp: Datetime [Privato]*: timestamp dell'ultima segnalazione del sensore;
+- *is_charging: bool [Privato]*: indica se la batteria è attualmente in fase di ricarica o meno.
+===== Metodi
+- *charge_battery(): void [Privato]*: gestisce la fase di ricarica della batteria;
+- *pick_destination() [Privato]*: sceglie una nuovo punto di arrivo inizialmente e quando la bicicletta arriva a destinazione;
+- *get_route_coordinates() [Privato]*: ottiene le coordinate corrispondenti alle tappe da percorrere per far arrivare la bicicletta al punto di arrivo;
+- *calculate_movement(): void [Privato]*: gestisce lo spostamento della bicicletta da una tappa a quella successiva del percorso;
+- *calculate_distance(): float [Privato]*: calcola la distanza che intercorre tra una tappa e l'altra;
+- *measure_battery_level(): float [Privato]*: calcoal la variazione nella batteria della bicicletta.
+
+==== EcoZoneSensorSimulator (Classe)
+
+==== TrafficSensorSimulator (Classe)
+
 ==== Coordinates (Classe)
 ===== Attributi
 - *longitude: float [Privato]*: longitudine geografica,
@@ -291,11 +334,21 @@ Non vengono menzionati i costruttori.
 
 ==== SensorTypes (Class)
 ===== Attributi
-- 
+    - TEMPERATURE: String [Public];
+    - HUMIDITY: String [Public];
+    - WIND: String [Public];
+    - RAIN: String [Public];
+    - RESERVOIR: String [Public];
+    - AIR_POLLUTION: String [Public];
+    - PARKING: String [Public];
+    - CHARGING_STATION: String [Public];
+    - ECO_ZONE: String [Public];
+    - TRAFFIC: String [Public];
+    - ELECTRIC_BICYCLE: String [Public].
 
 ==== WriterStrategy (interfaccia)
 ===== Metodi
-- *write(in to_write: String): void [Pubblico]*: metodo astratto, implementato dalle classi _StdoutWriter_ e _KafkaWriter_.
+- *write(to_write: String): void [Pubblico]*: metodo astratto, implementato dalle classi _StdoutWriter_ e _KafkaWriter_.
 
 ==== StdOutWriter (Classe)
 ===== Metodi
@@ -309,7 +362,7 @@ Non vengono menzionati i costruttori.
 
 ==== TargetProducer (Interfaccia)
 ===== Metodi
-- *produce(in message: String, in callback: Function): void [Pubblico]*: metodo che il client usa per inviare il messaggio a #glossary[Kafka].
+- *produce(message: String, callback: Function): void [Pubblico]*: metodo astratto, utilizzato dal client per inviare il messaggio a #glossary[Kafka].
 
 ==== AdapterProducer (Interfaccia)
 ===== Attributi
@@ -320,9 +373,8 @@ Non vengono menzionati i costruttori.
 
 == Messaggi ed Eventi
 === Kafka Topics
-I _topic_ in Kafka possono essere viste come le tabelle di un database, ci servono per separare logicamente diversi tipi di messaggi o eventi che vengono inseriti nel sistema.
-Noi li usiamo per separare i diversi sensori, quindi vi sarà un topic per ogni tipologia di sensore; questo ci permette poi di andare a creare all'interno di ClickHouse delle "tabelle consumatrici" che prendono
-i dati in automatico, grazie al fatto che avendo separati logicamente i topic, i messaggi all'interno di ognuno di essi hanno tutti lo stesso formato.
+I _topic_ in #glossary[Kafka] possono essere viste come le tabelle di un database, servono per separare logicamente diversi tipi di messaggi o eventi che vengono inseriti nel #glossary[sistema].
+Noi li usiamo per separare i messaggi provenienti dai diversi tipi di #glossary[sensore]; questo ci permette poi di andare a creare all'interno di ClickHouse delle "tabelle consumatrici" che prendono i dati in automatico, grazie al fatto che avendo separati logicamente i topic, i messaggi all'interno di ognuno di essi hanno tutti lo stesso formato.
 === Struttura dei messaggi
 La struttura di un messaggio o evento, descritta in JSON sarà la seguente:
 ```json
@@ -346,9 +398,7 @@ La struttura di un messaggio o evento, descritta in JSON sarà la seguente:
     }
 }
 ```
-Gli oggetti all'interno di "readings" sono solamente esempi, è possibile inserirne uno solo, come ad esempio per i sensori
-di temperatura, che avranno solamente la lettura omonima, oppure, come nel caso del sensore del vento averne due: la velocità
-la direzione.
+Gli oggetti all'interno di "readings" sono solamente esempi, è possibile inserirne uno solo, come ad esempio per i sensori di temperatura, che avranno solamente la lettura omonima, oppure, come nel caso del #glossary[sensore] del vento averne due: la velocità e la direzione.
 
 
 #pagebreak()
