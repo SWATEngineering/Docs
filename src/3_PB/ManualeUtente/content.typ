@@ -278,6 +278,20 @@ Come evidenziato in precedenza, è possibile ordinare i valori di tutti i campi 
 
 == Dashboard "Dati anomali & Superamento soglie"
 
+La #glossary[dashboard] "Dati anomali & Superamento soglie" è dedita alla visualizzazione dei dati che superano determinate soglie preimpostate per i sensori che monitorano le precipitazioni, il riempimento delle zone ecologiche, il riempimento dei bacini idrici, il livello di polveri sottili nell'aria e la temperatura; in particolare, sono previsti 5 #glossary[pannelli] di tipo "Table", ognuno dedicato ad una tipologia diversa di #glossary[sensore], con campi "name", "timestamp" e "value".
+
+=== #glossary[Pannelli] con grafici in formato "Table"
+
+- Superamento soglia precipitazioni (50 mm/h): riporta i dati superamenti la soglia dei 50 millimetri di pioggia all'ora;
+
+- Superamento soglia riempimento zone ecologiche (80%): riporta i dati superamenti la soglia dell'80% di capienza;
+
+- Superamento soglia livello bacini idrici (70%): riporta i dati superamenti la soglia del 70% di capienza;
+
+- Superamento soglia livello polveri sottili ($80#sym.mu g\/m^3$): riporta i dati superamenti la soglia degli $80#sym.mu g\/m^3$ per l'inquinamento dell'aria (#glossary("PM10"));
+
+- Superamento soglia temperatura (40°C): riporta i dati superamenti la soglia dei 40 gradi Celsius di temperatura.
+
 #pagebreak()
 
 = Supporto tecnico
