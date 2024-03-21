@@ -1661,7 +1661,10 @@ Il Programmatore che intendesse calcolare tali metriche può farlo anche in bran
 
 ==== Calcolo metriche per la manutenibilità
 Per la computazione automatica della metrica  CCM si rimanda alla @calcolo_metriche_codifica.
-La computazione delle metriche *SFIN* e *SFOUT* rimane frutto di processo manuale. /*TODO: oggi pome vedere se cambiare+/
+Per la computazione delle metriche *SFIN* e *SFOUT*  si utilizza la seguente procedura: 
+- Accedere da terminale alla cartella _Innovacity_, posizionarsi nel branch _dev_;
+- Eseguire l'apposito script con il comando "python3 metrics/fanin_fanout.py".
+
 
 === Efficienza 
 
