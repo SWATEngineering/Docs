@@ -222,6 +222,41 @@ Come enunciato nel documento _Norme di Progetto v1.0_, il piano segue il #glossa
 - *Test di #glossary[sistema]*: si verifica il corretto funzionamento del #glossary[sistema] nella sua interezza. I requisiti funzionali obbligatori, di vincolo, di qualità e di prestazione, precedentemente concordati con il Committente mediante stipulazione del contratto, devono essere soddisfatti per intero;
 - *Test di accettazione*: si verifica il soddisfacimento del Committente rispetto al prodotto software. Il loro superamento permette di procedere con il rilascio del prodotto.
 
+
+== Test di unità 
+
+In questa sezione vengono descritti i test di unità del prodotto software.
+
+#let test_di_unità =(
+      ([
+            Verificare che il metodo `produce()` della classe `AdapterProducer` si comporti correttamente sia quando funziona correttamente che quando si verifica un errore nel produttore Kafka.
+      ], "I", [
+
+      ]),
+      ([
+            Verificare che la classe `KafkaSimulatorExecutorFactory` sia in grado di creare correttamente un'istanza di `SimulatorExecutor` utilizzando una configurazione data.
+      ],"I",[]),
+      ([
+       Verificare che il metodo `write()` della classe `KafkaWriter` chiami correttamente il metodo `produce()` del suo oggetto `TargetProducer` con il messaggio appropriato e la funzione di conferma acked.     
+      ], "I",[
+
+      ]),
+      ([
+            Verificare che il metodo `run_all()` della classe `SimulatorExecutor` avvia correttamente tutti i simulatori associati ad esso.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che il metodo `stop_all()` della classe `SimulatorExecutor` fermi correttamente tutti i simulatori associati ad esso.
+      ],"I",[
+
+      ]),
+      ([
+            
+      ])
+)
+
+
 == Test di accettazione
 In questa sezione vengono descritti i test di accettazione del prodotto software, eseguiti sia dal gruppo #team che dalla Proponente sotto la supervisione del gruppo.
 Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
