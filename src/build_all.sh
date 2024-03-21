@@ -50,8 +50,7 @@ search_file() {
 
 # Provide the directory to start the search and the file to be checked
 start_directory="."
-#base_dir="/home/runner/work/Docs/Docs/src"
-base_dir="/Users/rango/SWAT/Docs/src"
+base_dir="/home/runner/work/Docs/Docs/src"
 file_to_check="main.typ"
 
 # Call the function with the starting directory and the file to be checked
