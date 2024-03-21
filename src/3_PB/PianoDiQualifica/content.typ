@@ -252,9 +252,132 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            
+            Verificare che il metodo `run()` della classe `SimulatorThread` chiami correttamente il metodo `simulate()` del simulatore di sensore.
+      ],"I",[
+
+      ]),
+      ([
+           Verificare che il metodo `run()` della classe `SimulatorThread` chiami correttamente il metodo `write()` del writer durante l'esecuzione del thread.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che il metodo `write()` della classe `StdoutWriter` scriva correttamente un messaggio sulla standard output.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che la classe `StdoutSimulatorExecutorFactory` sia in grado di creare correttamente un'istanza di `SimulatorExecutor`.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare il comportamento della funzione `acked()` del modulo `utility_functions`, verificando se stampa correttamente i messaggi di errore e di fallimento sulla standard output..
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che il sensore delle colonne di ricarica forniscono il risultato atteso.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che la potenza erogata dalle colonne di ricarica rimangano all'interno di uno specifico range.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che vengano utilizzati i dati corretti per il calcolo del percorso della bici elettrica. 
+      ],"I",[
+
+      ]),
+      ([
+            Verificare la correttezza del recupero delle coordinate del percorso della bicicletta elettrica.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che i dati della bici elettrica, in base al percorso e destinazione siano corretti.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che la potenza della batteria della bici elettrica rimanga all'interno di un intervallo specificato.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che il sensore delle isole ecologiche ritorni il dato corretto.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che il sensore delle isole ecologoche generi i dati che rimangano all'interno di un range specifico.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che il sensore dell'umidità ritorni il dato corretto.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che il sensore dell'umidità generi dati che rimangano all'interno di uno specifico range.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che il sensore della pioggia ritorni il valore corretto.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che il sensore della pioggia generi dati che rimangano all'interno di uno specifico range.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che il sensore dei bacini idrici ritorni il valore corretto.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che il sensore dei bacini generei dati che rimangano all'interno di uno specifico range.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che il sensore della temperatura ritorni il dato corretto.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che il sensore della temperatura generi dati che rimangano all'interno di uno specifico range.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che il sensore del vento ritorni il valore corretto.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che il sensore del vento generi dati che rimangano all'interno di uno specifico range.
+      ],"I",[
+
       ])
-)
+      
+).enumerate(start:1).map(test => ("TU"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1),test.at(1).at(2)));
+
+#show figure: set block(breakable: true)
+#figure(
+table(
+      columns: (2fr,7fr,1fr),
+      align: (center,left,center),
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Codice test*],[*Descrizione*],[*Stato*],
+      ..test_di_unità.map(item => (item.at(0),item.at(1),item.at(2))).flatten().map(item => [#item])
+),caption: "Test di unità.")
 
 
 == Test di accettazione
