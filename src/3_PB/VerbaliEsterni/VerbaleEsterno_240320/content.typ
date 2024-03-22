@@ -29,21 +29,21 @@ Durante l'incontro il team ha condiviso con la Proponente lo stato di avanzament
 
 == Stato avanzamento prodotto  
 
-L'incontro ha preso avvio con una breve analisi del lavoro svolto dal precedente SAL, concentrato sull'implementazione dei test di unità all'interno del simulatore. Gli 11 sensori sviluppati nello sprint antecedente sono stati isolati e testati in modo indipendente per verificare che producessero l'output desiderato in risposta a specifiche condizioni di input. Infine, sono stati aggiunti i test di integrazione per verificare che effettivamente i dati generati dai sensori venissero archiviati con successo su Clickhouse. Entrambi i test sono stati effettuati con librerie apposite di Python e raggiunta una test coverage superiore all'80%.
+L'incontro è iniziato con una breve analisi del lavoro svolto dal team dal precedente SAL, concentrato sull'implementazione dei test di unità dei simulatori e di integrazione dell'intero sistema nelle sue componenti. Gli 11 simulatori sviluppati nello sprint antecedente sono stati isolati e testati in modo indipendente per verificare che producessero l'output desiderato in risposta a input specifici. Infine, sono stati aggiunti anche i test di integrazione per verificare che effettivamente i dati generati dai simulatori attraversino tutta la data pipeline e vengano archiviati con successo all'interno di Clickhouse. Entrambe le tipologie di test sono state effettuate con librerie apposite di Python ed è stata raggiunta una statement coverage e una branch coverage superiore all'80% per tutta l'infrastruttura.
 
 
 == Sito vetrina 
 
-Sono state presentate le nuove modifiche estetiche e strutturali al sito vetrina #link("https://swatengineering.github.io/"), ad esempio il nuovo formato di ordinamento dei file e la grafica delle icone. Queste modifiche hanno suscitato particolare interesse da parte della Proponente.
+Sono state presentate le nuove modifiche estetiche e strutturali apportate al sito vetrina #link("https://swatengineering.github.io/"), come il nuovo metodo di ordinamento dei file e la grafica delle icone. La Proponente ne ha apprezzato forma e contenuti, specie vedendolo per la prima volta dall'inizio del progetto.
 
 == Impegni presi
 
-Considerando l'avvio del secondo lotto per il progetto didattico, la Proponente ha sollevato la necessità di rispettare gli impegni presi per garantire il completamento tempestivo. Ciò consentirebbe all'azienda di gestire efficacemente la candidatura dei due nuovi gruppi. Inoltre, è stata avanzata la proposta di effettuare un resoconto per individuare possibili miglioramenti al fine di garantire un'esperienza ottimale per i nuovi gruppi. Ad esempio, si è suggerito di interrompere l'utilizzo dell'applicazione Element a favore di Discord, considerata più diffusa e funzionale.
+Considerando l'avvio del secondo lotto per il progetto didattico, la Proponente ha sottolineato la necessità di rispettare le scadenze fissate precedentemente dal team per portare a termine il progetto nelle tempistiche previste. Ciò consentirebbe all'azienda di gestire efficacemente la candidatura dei nuovi gruppi, ormai molto vicina. Inoltre, è stato chiesto al team di preparare una breve valutazione del ruolo svolto dalla Proponente lungo il percorso che ha portato al completamento del progetto per individuare possibili miglioramenti e garantire un'esperienza ottimale ai nuovi gruppi. Ad esempio, la Proponente ha già deciso di interrompere l'utilizzo dell'applicazione Element a favore di Discord, considerato più diffuso e funzionale.
 
 
 == Pianificazione prossimo SAL 
 
-È stato concordato di programmare il prossimo SAL per martedì 02/04/2024, con l'orario ancora da definire, direttamente presso la sede della Proponente. L'incontro vedrà la partecipazione di Andrea Dorigo e il team punterà a ottenere l'approvazione formale per l'MVP, rendendolo possibilmente il nostro ultimo incontro.
+È stato concordato di programmare il prossimo SAL per martedì 02/04/2024, con l'orario ancora da definire, direttamente presso la sede della Proponente. L'incontro vedrà la partecipazione di Andrea Dorigo e il team punterà a ottenere l'approvazione formale per l'MVP, il che lo renderebbe l'ultimo incontro esterno.
 
 
 
