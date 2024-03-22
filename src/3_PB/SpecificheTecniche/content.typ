@@ -409,7 +409,7 @@ Gli oggetti all'interno di "readings" sono solamente esempi, è possibile inseri
 
 #pagebreak()
 = Tracciamento dei requisiti
-In questa sezione si va a mostrare, secondo quanto riportato dal documento  _Norme di Progetto v2.0_, la soddisfazione dei singoli requisiti funzionali presenti, in base al tipo previsto e opportunamente classificato sotto.
+In questa sezione si va a mostrare, secondo quanto riportato dal documento  _Norme di Progetto v2.0_, la soddisfazione dei singoli requisiti presenti, in base al tipo previsto e opportunamente classificato sotto.
 
 == Tabella dei requisiti soddisfatti
 Si vuole riportare ciascun requisito mediante il corrispondente codice, utilizzando le seguenti sigle, le quali indicano:
