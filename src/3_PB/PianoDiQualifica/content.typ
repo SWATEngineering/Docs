@@ -1036,14 +1036,17 @@ Tale strumento ha mostrato immediatamente i suoi effetti benefici: gli errori ne
 Nella seguente tabella si mostrano il numero di infrazioni delle metriche prese in esame
 riguardanti la qualità del processo di codifica.
 
-Sprint 12:
-#table(
-  columns: 3,
-    [*Metrica*], [*Valore*], [*Valore Accettazione*],
-    [*ATC*], [2], [\<6],
-    [*PM*], [0], [\<5],
-    [*LCM*], [0], [\<25],
-)
+#figure(
+table(
+      columns:(auto,auto,auto),
+      align: (x, y) => (center, center, center).at(x),
+      fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Metrica*],[*Valore*],[*Valore accettazione*],
+      [*MPC-ATC*], [2], [≤ 6],
+      [*MPC-PM*], [0], [≤ 5],
+      [*MPC-LCM*], [0], [≤ 25]
+),
+caption: [Metriche della codifica per lo sprint 12.])
 
 == Qualità di processo - gestione della qualità
 
@@ -1061,11 +1064,17 @@ Le Metriche Non Soddisfatte corrispondono alle metriche MPC-CO, MPC-CPI, MPC-EAC
 // == Qualità di prodotto
 #pagebreak()
 
-//TODO: anche qui si deve capire come fare i vari grafici e buttarli giù.
-
-
 == Qualità di prodotto
 
+=== Funzionalità
+
+=== Manutenibilità
+
+=== Usabilità
+
+=== Affidabilità
+
+=== Efficienza
 
 == Considerazioni finali in vista della revisione #glossary[RTB]
 
