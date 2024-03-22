@@ -43,7 +43,7 @@ Considerando l'avvio del secondo lotto per il progetto didattico, la Proponente 
 
 == Pianificazione prossimo SAL 
 
-È stato concordato di programmare il prossimo SAL per martedì 02/04/2024, con l'orario ancora da definire, direttamente presso la sede della Proponente. L'incontro vedrà la partecipazione di Andrea Dorigo e il team punterà a ottenere l'approvazione formale per l'MVP, il che lo renderebbe l'ultimo incontro esterno.
+È stato concordato di programmare il prossimo SAL o per giovedì 28/03/2024 o per martedì 02/04/2024, con l'orario ancora da definire, direttamente presso la sede della Proponente. È nostra responsabilità comunicare la nostra preferenza tramite mail. Tuttavia l'incontro di martedì 02/04/2024 vedrà la partecipazione di Andrea Dorigo, rendendolo preferibile. Inoltre il team punterà a ottenere l'approvazione formale per l'MVP, il che lo renderebbe l'ultimo incontro esterno.
 
 
 
