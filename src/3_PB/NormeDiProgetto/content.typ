@@ -1102,7 +1102,7 @@ Per la definizione dei test si rimanda al _Piano di Qualifica v1.0_.
 
 === Classificazione dei test
 
-I test vengono identificati, all'interno del _Piano di Qualifica v1.0_, in base alla loro tipologia e tramite un codice numerico. 
+I test vengono identificati, all'interno del _Piano di Qualifica v2.0_, in base alla loro tipologia e tramite un codice numerico. 
 Nello specifico devono avere la seguente forma: *T[Tipologia Test] [Codice]*
 
 Tipologia: 
