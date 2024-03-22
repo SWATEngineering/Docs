@@ -1079,7 +1079,7 @@ Gli obiettivi principali:
         - Accertarsi che ciascuna unità esegua le operazioni specificate nel suo design;
         - Identificare precocemente i possibili errori.
 
-Per poter eseguire i test di unità in maniera automatica e ottenere la percentuale di copertura del codice si rimanda alla procedure presentate nella  @calcolo_metriche_affidabilita.
+Per poter eseguire i test di unità in maniera automatica e ottenere la percentuale di copertura del codice si rimanda alle procedure presentate nella  @calcolo_metriche_affidabilita.
 
 ==== Test di integrazione   
 
