@@ -223,10 +223,7 @@ Come enunciato nel documento _Norme di Progetto v2.0_, il piano segue il #glossa
 - *Test di accettazione*: si verifica il soddisfacimento della Proponente rispetto al prodotto software. Il loro superamento permette di procedere con il rilascio del prodotto. 
 
 
-//Questa lo aggiunta un po così, in realtà non so come potrebbe prenderla tullio la parte sull'informalità. 
-Il team ha deciso, di non classificare i test di unità e i test di integrazione all'interno di questo documento: garantirne la  coerenza durante tutto lo sviluppo sarebbe risultato particolarmente oneroso in termini di risorse. È importante sottolineare che i test di unità e di integrazione non sono trascurati; piuttosto, la loro implementazione potrebbe avvenire in modo più informale nel processo di sviluppo. Inoltre, l'assenza di tracciabilità formale di questi test nel documento non implica che non vengano eseguiti o che siano considerati meno importanti.
-Le suite di test rimangono comunque reperibili all'interno della repository "Innovacity", e eseguibili secondo le procedure descritte all'interno del documento _Norme di Progetto v2.0_. 
-Di seguito si presentano di conseguenza solamente test di sistema e test di accettazione. 
+Per le procedure necessarie all'esecuzione di test di unità e di integrazione si rimanda al documento  _Norme di Progetto v2.0_ nella sezione relativa al processo di verifica.
 
 == Test di accettazione
 In questa sezione vengono descritti i test di accettazione del prodotto software, eseguiti sia dal gruppo #team che dalla Proponente sotto la supervisione del gruppo.

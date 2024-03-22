@@ -1066,7 +1066,7 @@ I componenti del team, a vario titolo, si impegnano a elaborare casi di test per
 - Test di sistema; 
 - Test di accettazione.
 
-Test di sistema e di accettazione, e relativo stato, vengono riportati all'interno del documento _Piano di Qualifica v2.0_.
+Tutti i test, e relativo stato, vengono riportati all'interno del documento _Piano di Qualifica v1.0_.
 Test di unità e di integrazione sono reperibili all'interno della repository _Innovacity_.
 
 
@@ -1079,36 +1079,36 @@ Gli obiettivi principali:
         - Accertarsi che ciascuna unità esegua le operazioni specificate nel suo design;
         - Identificare precocemente i possibili errori.
 
-Per poter eseguire i test di unità in maniera automatica e ottenere la percentuale di copertura del codice si rimanda alle procedure presentate nella  @calcolo_metriche_affidabilita.
+Per poter eseguire i test di unità in maniera automatica e ottenere la percentuale di copertura del codice si rimanda alla procedure presentate nella  @calcolo_metriche_affidabilita.
 
 ==== Test di integrazione   
 
 I test di integrazione sono cruciali per valutare il comportamento delle unità software quando vengono combinate. Una volta confermato il corretto funzionamento delle singole unità in isolamento, i test di integrazione mirano a identificare possibili problemi nelle interazioni tra le unità integrate. Questi test, automatizzati il più possibile, verificano se le componenti del software collaborano efficacemente e se il sistema integrato soddisfa le specifiche di progetto. L'obiettivo è garantire che, quando le unità sono combinate, il software funzioni senza intoppi e risponda alle esigenze dell'applicazione in modo coerente.
 
-Per poter eseguire la suite di test di integrazione: 
+Per poter eseguire i test di integrazione: 
 - Avviare i container con il profilo "dev"; 
 - Eseguire il comando "python -m pytest PythonSensorsSimulator/integrationTest/" .
 
 ==== Test di #glossary[sistema] 
 
 I test di #glossary[sistema] vengono definiti durante la fase di analisi dei requisiti con l'obiettivo di misurare la copertura dei requisiti derivati dal capitolato d'appalto. Questa fase del processo di software testing mira a verificare l'intero #glossary[sistema] come entità unificata. Durante il test di #glossary[sistema], il software viene valutato nella sua completezza, con l'obiettivo di accertare che tutte le componenti integrate funzionino insieme in modo coerente per soddisfare gli obiettivi e i requisiti del #glossary[sistema].
-Per la definizione dei test si rimanda al _Piano di Qualifica v1.0_.
+Per la definizione e lo stato dei test si rimanda al _Piano di Qualifica v1.0_.
 
 ==== Test di accettazione  
 
 Il superamento dei test di accettazione è fondamentale poiché dimostra il soddisfacimento della Proponente rispetto al prodotto software. L'esito positivo di questi test fornisce l'approvazione finale e la conferma che il software è conforme alle aspettative. Solo dopo il superamento dei test di accettazione il team #team potrà procedere con il rilascio ufficiale del prodotto, garantendo che sia pronto all'utilizzo nell'ambiente operativo previsto.
-Per la definizione dei test si rimanda al _Piano di Qualifica v1.0_.
+Per la definizione  e lo stato dei test si rimanda al _Piano di Qualifica v1.0_.
 
 
 === Classificazione dei test
 
-I test vengono identificati, all'interno del _Piano di Qualifica v2.0_, in base alla loro tipologia e tramite un codice numerico. 
+I test vengono identificati, all'interno del _Piano di Qualifica v1.0_, in base alla loro tipologia e tramite un codice numerico. 
 Nello specifico devono avere la seguente forma: *T[Tipologia Test] [Codice]*
 
 Tipologia: 
-//rimossi perchè non hanno corrispettivo nel piano di qualifica. 
-//- *U*: unità; 
-//- *I*: integrazione;
+
+- *U*: unità; 
+- *I*: integrazione;
 - *S*: sistema;
 - *A*: accettazione.
 
@@ -1132,7 +1132,7 @@ Inoltre, durante la validazione, devono essere soddisfatti tutti i requisiti pre
 
 === Test di accettazione  
 
-I test di accettazione sono condotti dai Verificatori in presenza della Proponente per assicurarsi che il software soddisfi i requisiti e le aspettative della Proponente stessa. Per la definizione dei vari test si rimanda al _Piano di Qualifica v2.0_. Gli eventuali problemi riscontrati durante i test vengono documentati e risolti prima che il software venga rilasciato ufficialmente. L'obiettivo finale dei test di accettazione è ottenere l'approvazione della Proponente, confermando che il software è pronto per essere utilizzato in produzione.
+I test di accettazione sono condotti dal Team in presenza della Proponente per assicurarsi che il software soddisfi i requisiti e le aspettative della Proponente stessa. Per la definizione dei vari test si rimanda al _Piano di Qualifica v2.0_. Gli eventuali problemi riscontrati durante i test vengono documentati e risolti prima che il software venga rilasciato ufficialmente. L'obiettivo finale dei test di accettazione è ottenere l'approvazione della Proponente, confermando che il software è pronto per essere utilizzato in produzione.
 Prima di effettuare i test di accettazione, i Verificatori hanno la responsabilità di eseguire i test di sistema in un ambiente identico a quello di installazione: è precondizione necessaria del collaudo che i test di sistema diano esito positivo.
 
 == Gestione della qualità 
