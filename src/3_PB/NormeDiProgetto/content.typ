@@ -1066,7 +1066,7 @@ I componenti del team, a vario titolo, si impegnano a elaborare casi di test per
 - Test di sistema; 
 - Test di accettazione.
 
-Tutti i test, e relativo stato, vengono riportati all'interno del documento _Piano di Qualifica v1.0_.
+Tutti i test, e relativo stato, vengono riportati all'interno del documento _Piano di Qualifica v2.0_.
 Test di unità e di integrazione sono reperibili all'interno della repository _Innovacity_.
 
 
