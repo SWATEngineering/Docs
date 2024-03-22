@@ -220,7 +220,7 @@ Come enunciato nel documento _Norme di Progetto v2.0_, il piano segue il #glossa
 - *Test di unità*: si verifica il corretto funzionamento delle unità componenti il #glossary[sistema]. Un'unità rappresenta un elemento indivisibile e indipendente del #glossary[sistema]\;
 - *Test di integrazione*: si verifica il corretto funzionamento di più unità che cooperano per svolgere uno specifico compito (tali unità devono certamente aver superato i loro test di unità precedentemente);
 - *Test di #glossary[sistema]*: si verifica il corretto funzionamento del #glossary[sistema] nella sua interezza. I requisiti funzionali obbligatori, di vincolo, di qualità e di prestazione, precedentemente concordati con il Committente mediante stipulazione del contratto, devono essere soddisfatti per intero;
-- *Test di accettazione*: si verifica il soddisfacimento del Committente rispetto al prodotto software. Il loro superamento permette di procedere con il rilascio del prodotto. 
+- *Test di accettazione*: si verifica il soddisfacimento della Proponente rispetto al prodotto software. Il loro superamento permette di procedere con il rilascio del prodotto. 
 
 
 //Questa lo aggiunta un po così, in realtà non so come potrebbe prenderla tullio la parte sull'informalità. 
