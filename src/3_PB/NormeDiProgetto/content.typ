@@ -460,10 +460,10 @@ Per quanto riguarda la progettazione del database, i Progettisti devono definire
  Di seguito si elencano i possibili elementi di un diagramma di questo tipo:
         
         - *tabella*: rappresenta una tabella del database si rappresenta con un rettangolo a linea piena, separando con una linea il nome della tabella, i nomi degli attributi e i tipi di dato;
-        - *#glossary["materialized view"]*: rappresenta una vista materializzata, ovvero una tabella che contiene i risultati di una query; viene rappresentata con un rettangolo a linea tratteggiata;
-        - *query*: rappresenta una query SQL, viene riportata all'interno di un "post it" collegato alla #glossary["materialized view"] a cui fa riferimento;
-        - *flusso dei dati*: rappresenta il flusso di dati tra le tabelle e le #glossary["materialized view"], viene rappresentato con una freccia piena;
-        - *riferimento*: viene utilizzata per collegare un "post it" con la materialized view a cui fa riferimento; si rappresenta con una freccia tratteggiata;
+        - *#glossary["materialized views"]*: rappresenta una vista materializzata, ovvero una tabella che contiene i risultati di una query; viene rappresentata con un rettangolo a linea tratteggiata;
+        - *query*: rappresenta una query SQL, viene riportata all'interno di un "post it" collegato alla #glossary["materialized views"] a cui fa riferimento;
+        - *flusso dei dati*: rappresenta il flusso di dati tra le tabelle e le #glossary["materialized views"], viene rappresentato con una freccia piena;
+        - *riferimento*: viene utilizzata per collegare un "post it" con la materialized views a cui fa riferimento; si rappresenta con una freccia tratteggiata;
         - *engine*: indica il motore di database utilizzato per la creazione della tabella; viene riportato anch'esso all'interno di un "post it", posto nei pressi della tabella.
 
 ===== Diagrammi #glossary[UML] delle classi    
