@@ -188,17 +188,23 @@ Per il loro popolamento si utilizzano le #glossary[materialized views], che perm
 #glossary[ClickHouse] offre diversi motori di archiviazione, ognuno con caratteristiche specifiche. Per il nostro caso d'uso, facciamo uso dei seguenti:
 - *Kafka*: permette di leggere la stringa contenente i dati in formato #glossary[JSON] dal broker dati, e di iniettarla all'interno delle tabelle di accodamento;
 - *MergeTree*: particolarmente adatto per la gestione di dati di tipo #glossary[time series], in quanto permette di effettuare operazioni di inserimento ed eliminazione in modo efficiente, e di effettuare query su intervalli di tempo specifici;
-- *AggregatingMergeTree*: consente di effettuare operazioni efficienti di aggregazione sui dati, in particolar modo per le aggregazioni incrementali; in particolare, sostituisce tutte le righe con la stessa chiave di ordinamento all'interno di una parte di dati, con una singola riga che memorizza una combinazione di stati di funzioni aggregate. Questo motore elabora tutte le colonne con i tipi: AggregateFunction e SimpleAggregateFunction. AggregateFunction è una funzione che consente di eseguire aggregazioni sui dati in modo efficiente, mantenendo uno stato intermedio, noto come avgState, che include sia la somma cumulativa che il conteggio dei valori.
+- *AggregatingMergeTree*: consente di effettuare operazioni efficienti di aggregazione sui dati, in particolar modo per le aggregazioni incrementali; nello specifico, sostituisce tutte le righe con la stessa chiave di ordinamento all'interno di una parte di dati, con una singola riga che memorizza una combinazione di stati di funzioni aggregate. Questo motore elabora tutte le colonne con i tipi: AggregateFunction e SimpleAggregateFunction. AggregateFunction è una funzione che consente di eseguire aggregazioni sui dati in modo efficiente, mantenendo uno stato intermedio, noto come avgState, che include sia la somma cumulativa che il conteggio dei valori.
 
-=== Struttura
-Il database è caratterizzato da una determinata struttura per ogni tipo di #glossary[sensore]; di seguito viene illustrata la struttura creata per ogni tipo di #glossary[sensore] tramite un esempio.
+=== Schema
+Il database è caratterizzato da un determinato schema per ogni tipo di #glossary[sensore]\; di seguito vengono illustrate, tramite un esempio, le due tipologie di schema, che possono essere presenti per ogni tipo di #glossary[sensore].
+
+==== Sensore per il vento
+#figure(
+  image("DBscheme/DB_Wind.svg",width:100%),
+  caption: [Schema delle tabelle per il sensore del vento]
+)
 
 ==== Sensore pluviometrico
 #figure(
-  image("DBscheme/DB_rain.svg",width:100%),
-  caption: [Struttura delle tabelle per il sensore pluviometrico]
+  image("DBscheme/DB_Rain.svg",width:100%),
+  caption: [Schema delle tabelle per il sensore pluviometrico]
 )
-La struttura si mantiene la stessa anche per tutti gli altri sensori che, come il sensore pluviometrico, richiedono l'aggregazione dei dati.
+Questo tipo di schema presenta in più, rispetto a quello precedente due tabelle per dati aggregati. La tabella "rain1m" contiene la media aritmetica, ottenuta aggregando i dati della pioggia ogni minuto per ciascun #glossary[sensore]. Inoltre è presente la tabella "rain_1m_mov_avg" contenente la media mobile, ottenuta aggregando i dati della pioggia, utilizzando finestre mobili di tre minuti. Queste due tipi di tabelle vengono popolate tramite delle #glossary[materialized views].
 
 == #glossary[Architettura] dei simulatori
 Nonostante i simulatori non siano ufficialmente considerati parte integrante del prodotto dalla Proponente, il nostro team, nell'ambito del progetto didattico, ha scelto di dedicare alcune risorse alla progettazione di questa componente.
