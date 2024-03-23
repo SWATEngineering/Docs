@@ -216,11 +216,14 @@ caption: [Tabella metriche per l'efficienza del prodotto.])
 = Strategie di testing
 
 In questa sezione viene esposto il piano di testing che verrà utilizzato per garantire la correttezza finale del prodotto.
-Come enunciato nel documento _Norme di Progetto v1.0_, il piano segue il #glossary("modello a V"), il quale associa ad ogni fase di sviluppo una corrispondente tipologia di testing. Tali tipologie sono le seguenti:
+Come enunciato nel documento _Norme di Progetto v2.0_, il piano segue il #glossary("modello a V"), il quale associa ad ogni fase di sviluppo una corrispondente tipologia di testing. Tali tipologie sono le seguenti:
 - *Test di unità*: si verifica il corretto funzionamento delle unità componenti il #glossary[sistema]. Un'unità rappresenta un elemento indivisibile e indipendente del #glossary[sistema]\;
 - *Test di integrazione*: si verifica il corretto funzionamento di più unità che cooperano per svolgere uno specifico compito (tali unità devono certamente aver superato i loro test di unità precedentemente);
 - *Test di #glossary[sistema]*: si verifica il corretto funzionamento del #glossary[sistema] nella sua interezza. I requisiti funzionali obbligatori, di vincolo, di qualità e di prestazione, precedentemente concordati con il Committente mediante stipulazione del contratto, devono essere soddisfatti per intero;
-- *Test di accettazione*: si verifica il soddisfacimento del Committente rispetto al prodotto software. Il loro superamento permette di procedere con il rilascio del prodotto.
+- *Test di accettazione*: si verifica il soddisfacimento della Proponente rispetto al prodotto software. Il loro superamento permette di procedere con il rilascio del prodotto. 
+
+
+Per le procedure necessarie all'esecuzione di test di unità e di integrazione si rimanda al documento  _Norme di Progetto v2.0_ nella sezione relativa al processo di verifica.
 
 == Test di accettazione
 In questa sezione vengono descritti i test di accettazione del prodotto software, eseguiti sia dal gruppo #team che dalla Proponente sotto la supervisione del gruppo.
@@ -708,6 +711,8 @@ table(
 ),caption: "Tracciamento dei test di sistema.")
 
 #pagebreak()
+
+
 
 == Liste di controllo
 
