@@ -197,11 +197,13 @@ Tali #glossary[pannelli] mostrano l'ora del giorno sull'asse x, la legenda del c
 
 === #glossary[Pannelli] con grafici in formato "Geomap"
 
-Il #glossary[pannello] contenente un grafico in formato "Geomap" riporta dati relativi a:
+I #glossary[pannelli] contenenti grafici in formato "Geomap" riportano dati relativi a:
 
-- Direzione del vento riportata da ciascun #glossary[sensore], dove i sensori vengono rappresentati tramite il proprio nome e una freccia puntata nella direzione del vento.
+- Direzione del vento riportata da ciascun #glossary[sensore], dove i sensori vengono rappresentati tramite il proprio nome e una freccia puntata nella direzione del vento;
 
-Tale #glossary[pannello] mette a disposizione, in alto a sinistra, due pulsanti "*+*" e "*-*" per poter effettuare operazioni di zoom-in e zoom-out, rispettivamente (il zoom-in può essere effettuato anche con un doppio click); è possibile cliccare e, tenendo premuto, muovere la mappa per visualizzarne aree diverse a piacimento e posizionare il cursore sopra un qualunque #glossary[sensore] per visualizzarne le informazioni, che includono nome del #glossary[sensore], tipologia del #glossary[sensore], la velocità del vento più recente, la direzione del vento più recente, latitudine e longitudine. Infine, in basso a sinistra è presente una scala di colori che riporta il valore minimo e massimo dei dati riportati dal #glossary[sensore], così come la colorazione del #glossary[sensore] stesso a seconda dell'ultimo valore riportato. Quando il cursore viene posizionato sopra un determinato #glossary[sensore], anche nella scala di colori viene visualizzato il valore della velocità del vento più recente.
+- Posizione dei sensori inclusi nella #glossary[dashboard] "Ambientale", dove i sensori vengono rappresentati tramite icone il cui colore varia a seconda della tipologia del #glossary[sensore].
+
+Tali #glossary[pannelli] mettono a disposizione, in alto a sinistra, due pulsanti "*+*" e "*-*" per poter effettuare operazioni di zoom-in e zoom-out, rispettivamente (il zoom-in può essere effettuato anche con un doppio click); è possibile cliccare e, tenendo premuto, muovere la mappa per visualizzarne aree diverse a piacimento e posizionare il cursore sopra un qualunque #glossary[sensore] per visualizzarne le informazioni: nel caso della mappa che mostra il posizionamento dei sensori ambientali, queste includono il nome del #glossary[sensore], la tipologia del #glossary[sensore], latitudine e longitudine. Nel caso della mappa che mostra la direzione del vento, invece, le informazioni visualizzate includono anche la velocità e la direzione del vento più recenti. Infine, in basso a sinistra è presente una scala di colori che riporta il valore minimo e massimo dei dati riportati dal #glossary[sensore], così come la colorazione del #glossary[sensore] stesso a seconda dell'ultimo valore riportato. Quando il cursore viene posizionato sopra un determinato #glossary[sensore], anche nella scala di colori viene visualizzato il valore della velocità del vento più recente.
 
 === #glossary[Pannelli] con grafici in formato "Table"
 
