@@ -29,7 +29,7 @@ Durante l'incontro il team ha condiviso con la Proponente lo stato di avanzament
 
 == Stato avanzamento prodotto  
 
-L'incontro è iniziato con una breve analisi del lavoro svolto dal team dal precedente SAL, concentrato sull'implementazione dei test di unità dei simulatori e di integrazione dell'intero sistema nelle sue componenti. Gli 11 simulatori sviluppati nello sprint antecedente sono stati isolati e testati in modo indipendente per verificare che producessero l'output desiderato in risposta a input specifici. Infine, sono stati aggiunti anche i test di integrazione per verificare che effettivamente i dati generati dai simulatori attraversino tutta la data pipeline e vengano archiviati con successo all'interno di Clickhouse. Entrambe le tipologie di test sono state effettuate con librerie apposite di Python ed è stata raggiunta una statement coverage e una branch coverage superiore all'80% per tutta l'infrastruttura.
+L'incontro è iniziato con una breve analisi del lavoro svolto dal team dal precedente SAL, concentrato sull'implementazione dei test di unità dei simulatori e di integrazione dell'intero sistema nelle sue componenti. Entrambe le tipologie di test sono state effettuate con librerie apposite di Python: per la componente di simulazione sono state raggiunte una statement coverage e una branch coverage superiori all'80%.
 
 
 == Sito vetrina 
@@ -43,7 +43,7 @@ Considerando l'avvio del secondo lotto per il progetto didattico, la Proponente 
 
 == Pianificazione prossimo SAL 
 
-È stato concordato di programmare il prossimo SAL o per giovedì 28/03/2024 o per martedì 02/04/2024, con l'orario ancora da definire, direttamente presso la sede della Proponente. È nostra responsabilità comunicare la nostra preferenza tramite mail. Tuttavia l'incontro di martedì 02/04/2024 vedrà la partecipazione di Andrea Dorigo, rendendolo preferibile. Inoltre il team punterà a ottenere l'approvazione formale per l'MVP, il che lo renderebbe l'ultimo incontro esterno.
+Per il prossimo SAL sono state proposte le due date di giovedì 28/03/2024 e di martedì 02/04/2024, con orari ancora da definire, direttamente presso la sede della Proponente. È nostra responsabilità comunicare la nostra preferenza tramite email. Tuttavia, l'incontro di martedì 02/04/2024 vedrebbe la partecipazione di Andrea Dorigo, e sarebbe quindi preferibile. Durante tale incontro, infatti, il team punta ad ottenere l'approvazione formale del prodotto software realizzato come MVP; alla luce della preferenza espressa dal team di non effettuare la terza revisione CA, si tratterebbe a tutti gli effetti dell'ultimo incontro esterno.
 
 
 
