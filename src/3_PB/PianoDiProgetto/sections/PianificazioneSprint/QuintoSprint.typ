@@ -13,7 +13,7 @@
     - Rimozione di pianificazione e preventivo a lungo termine in quanto troppo distanti dalla realtà concreta e non particolarmente utili per prendere decisioni informate riguardo l'organizzazione futura del lavoro.
   - Proseguire la stesura del _Piano di Qualifica_:
     - Stendere la sezione di testing di accettazione e testing di #glossary[sistema]\;
-    - Proseguire la stesura del cruscotto delle metriche con valutazione delle metriche rispetto agli #glossary[sprint] 3 e 4 e aggiornamento dei grafici di confronto.
+    - Proseguire la stesura del cruscotto della qualità con valutazione delle metriche rispetto agli #glossary[sprint] 3 e 4 e aggiornamento dei grafici di confronto.
   - Proseguire la revisione in stile #glossary[walkthrough] dell'_Analisi dei Requisiti_;
   - Utilizzare l'automazione realizzata per verificare che tutti i termini marcati come termini di glossario nella #glossary[documentazione] siano stati effettivamente aggiunti al _Glossario_;
   - Iniziare la presentazione in vista della prima revisione #glossary[RTB] (parte I).
