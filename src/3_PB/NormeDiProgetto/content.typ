@@ -1087,7 +1087,7 @@ I test di integrazione sono cruciali per valutare il comportamento delle unità 
 
 Per poter eseguire i test di integrazione: 
 - Avviare i container con il profilo "dev"; 
-- Eseguire il comando "python -m pytest PythonSensorsSimulator/integrationTest/" .
+- Eseguire il comando `python -m pytest PythonSensorsSimulator/integrationTest/` .
 
 ==== Test di #glossary[sistema] 
 
@@ -1634,7 +1634,7 @@ Il Programmatore che intendesse calcolare tali metriche può farlo anche in bran
 ==== Calcolo metriche per l'affidabilità <calcolo_metriche_affidabilita>
 Per il calcolo della percentuale di test passati si può utilizzare la seguente procedura: 
 - Accedere da terminale alla cartella _Innovacity_, posizionarsi nel branch _dev_;
-- Eseguire il comando "python -m pytest PythonSensorsSimulator/unitTest/" ; 
+- Eseguire il comando `python -m pytest PythonSensorsSimulator/unitTest/` ; 
 
 
 Per la valutazione della metriche di copertura del codice si puo utilizzare la seguente procedura: 
@@ -1663,7 +1663,7 @@ Il Programmatore che intendesse calcolare tali metriche può farlo anche in bran
 Per la computazione automatica della metrica  CCM si rimanda alla @calcolo_metriche_codifica.
 Per la computazione delle metriche *SFIN* e *SFOUT*  si utilizza la seguente procedura: 
 - Accedere da terminale alla cartella _Innovacity_, posizionarsi nel branch _dev_;
-- Eseguire l'apposito script con il comando "python3 metrics/fanin_fanout.py".
+- Eseguire l'apposito script con il comando `python3 metrics/fanin_fanout.py`.
 
 
 === Efficienza 
