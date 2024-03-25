@@ -38,7 +38,7 @@ Di conseguenza si è deciso di allocare risorse nella correzione del prodotto ov
 
 == Manuale Utente
 
-Il team si è accorto di alcune mancanze all'interno del documento _Manuale Utente_ che non permettono una corretta installazione e conseguentemente uso del prodotto.
+Sono state rilevate alcune mancanze nel processo di installazione illustrato all'interno del documento _Manuale Utente_ e che dunque non consentirebbero all'utente di poter installare e utilizzare il prodotto. 
 Perciò sono state allocate risorse nell'ampiamento delle sezioni di installazione e uso, al fine di rimuovere queste lacune.
 
 == Spercifiche Tecniche
