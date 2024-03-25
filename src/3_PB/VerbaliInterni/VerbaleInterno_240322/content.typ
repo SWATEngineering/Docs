@@ -43,7 +43,7 @@ Perciò sono state allocate risorse nell'ampiamento delle sezioni di installazio
 
 == Spercifiche Tecniche
 
-Il team ha notato che ci sono dei passaggi ambigui nel passaggio relativo alla discussione dei requisiti soddisfatti. Si sono quindi create delle task con il fine di correggere queste sezioni.
+Il team ha rilevato alcune ambiguità nella sezione relativa al tracciamento dei requisiti soddisfatti. Viene creata una task in modo tale da poter risolvere tali ambiguità.
 
 == Dashboard Grafana 
 
