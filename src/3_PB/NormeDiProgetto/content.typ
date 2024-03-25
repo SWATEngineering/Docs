@@ -1634,11 +1634,15 @@ Il Programmatore che intendesse calcolare tali metriche può farlo anche in bran
 ==== Calcolo metriche per l'affidabilità <calcolo_metriche_affidabilita>
 Per il calcolo della percentuale di test passati si può utilizzare la seguente procedura: 
 - Accedere da terminale alla cartella _Innovacity_, posizionarsi nel branch _dev_;
+- Assicurarsi di aver installato le dipendenze necessarie;  
+- Assicurarsi di avere un variabile d'ambiente ORS_API_KEY contenente la chiave API reperibile nel canale discord Accounts; 
 - Eseguire il comando `python -m pytest PythonSensorsSimulator/unitTest/` ; 
 
 
 Per la valutazione della metriche di copertura del codice si puo utilizzare la seguente procedura: 
 - Accedere da terminale alla cartella _Innovacity_, posizionarsi nel branch _dev_;  
+- Assicurarsi di aver installato le dipendenze necessarie;  
+- Assicurarsi di avere un variabile d'ambiente ORS_API_KEY contenente la chiave API reperibile nel canale discord Accounts; 
 - Dare i permessi d'esecuzione allo script _stdcoverage.sh_;
 - Successivamente eseguirlo. 
 
