@@ -92,7 +92,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC1: Visualizzazione #glossary[dashboard] dati grezzi
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza #glossary("pannelli") contenenti i dati grezzi inviati dai sensori, all'interno di un'unica #glossary[dashboard]\;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente i dati grezzi inviati dai sensori, all'interno di un'unica #glossary[dashboard]\;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione; 
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary("dashboard") relativa ai dati grezzi.
@@ -105,29 +105,15 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC1.1: Visualizzazione #glossary("pannello") dati grezzi
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati grezzi;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente i dati grezzi;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza il #glossary("pannello") relativo ai dati grezzi, che riporta il nome del #glossary[sensore], la tipologia del #glossary[sensore], il timestamp della rilevazione e il valore della misurazione, in forma tabellare, per ogni tipo di #glossary[sensore]; la tabella contenente i dati menzionati è indicizzata tramite il nome dei sensori; /*Nel caso in cui il #glossary[sensore] invii altri dati contestuali alla misurazione principale, come nel caso dei sensori che monitorano le colonne di ricarica [UC17], la congestione stradale [UC20] o il vento [UC12], questi saranno a loro volta visualizzabili all'interno della tabella.*/
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
-  + L'#glossary("amministratore pubblico") seleziona la visualizzazione dei dati grezzi.
-- *Specializzazioni*: [UC1.2];
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary("dashboard") generale relativa ai dati grezzi.
 - *Estensioni*: [UC9].
 
 #figure(
   image("assets/UML/UC1.1_Visualizzazione-pannello-dati-grezzi.png",width:100%),
   caption: [UC1.1 Visualizzazione #glossary("pannello") dati grezzi]
-)
-
-=== UC1.2: Visualizzazione tabella dati grezzi
-- *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza il #glossary("pannello") relativo ai dati grezzi, che riporta il timestamp della misurazione, il valore della misurazione, la latitudine e la longitudine del #glossary[sensore], in forma tabellare, per ogni tipo di #glossary[sensore]; la tabella contenente i dati menzionati è indicizzata tramite il nome dei sensori. Nel caso in cui il #glossary[sensore] invii altri dati contestuali alla misurazione principale, come nel caso dei sensori che monitorano le colonne di ricarica [UC17], la congestione stradale [UC20] o il vento [UC12], questi saranno a loro volta visualizzabili all'interno della tabella.
-- *Scenario Principale*:
-  + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione; 
-  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary("dashboard") generale relativa ai dati grezzi.
-
-#figure(
-  image("assets/UML/UC1.2_Visualizzazione-tabella-dati-grezzi.png",width:100%),
-  caption: [UC1.2 Visualizzazione tabella dati grezzi]
 )
 
 === UC2: Visualizzazione #glossary("dashboard") dati ambientali
@@ -151,7 +137,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
-- *Specializzazioni*: [UC2.2],[UC2.3],[UC2.4],[UC2.5],[UC2.6],[UC2.7],[UC2.8],[UC2.9],[UC2.10],[UC2.11],[UC2.12],[UC2.13];
+- *Specializzazioni*: [UC2.2], [UC2.3], [UC2.4], [UC2.5], [UC2.6], [UC2.7], [UC2.8], [UC2.9], [UC2.10], [UC2.11], [UC2.12], [UC2.13];
 - *Estensioni*: [UC9].
 
 #figure(
@@ -224,17 +210,17 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC2.6 Visualizzazione #glossary("pannello") #glossary[time series] per precipitazioni]
 )
 
-=== UC2.7: Visualizzazione #glossary("pannello") precipitazioni medie
+=== UC2.7: Visualizzazione #glossary("pannello") gauge precipitazioni medie
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse millimetri di pioggia all'ora (mm/h), indicante la media dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori nell'ultimo minuto;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse millimetri di pioggia all'ora (mm/h), in formato gauge, indicante la media dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori nell'ultimo minuto;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
 
 #figure(
   image("assets/UML/UC2.7_Visualizzazione-pannello-precipitazioni-medie.png",width:100%),
-  caption: [UC2.7 Visualizzazione #glossary("pannello") precipitazioni medie]
+  caption: [UC2.7 Visualizzazione #glossary("pannello") gauge precipitazioni medie]
 )
 
 #pagebreak()
@@ -337,7 +323,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio urbanistico.
-- *Specializzazioni*: [UC3.2],[UC3.3],[UC3.4],[UC3.5],[UC3.6],[UC3.7];
+- *Specializzazioni*: [UC3.2], [UC3.3], [UC3.4], [UC3.5], [UC3.6], [UC3.7];
 - *Estensioni*: [UC9].
 
 #figure(
@@ -414,7 +400,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC3.7: Visualizzazione indicatore percentuale su mappa riempimento zone ecologiche
 *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa indicante lo stato di riempimento delle zone ecologiche, espresse in valori percentuali, posizionate nelle coordinate geografiche delle zone;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa indicante lo stato di riempimento delle zone ecologiche, espresse in valori percentuali, posizionate nelle coordinate geografiche delle zone ecologiche;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio urbanistico.
@@ -453,7 +439,8 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti le soglie impostate nel #glossary("sistema");
 - *Scenario Principale*:
-  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] delle anomalie e superamento soglie.
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] delle anomalie e superamento soglie;
+- *Specializzazioni*: [UC4.3], [UC4.4], [UC4.5], [UC4.6], [UC4.7].
 
 #figure(
   image("assets/UML/UC4.2_Visualizzazione-tabella-superamento-soglie.png",width:70%),
@@ -520,18 +507,18 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC4.7 Visualizzazione tabella superamento soglia delle zone ecologiche]
 )
 
-=== UC5: Visualizzazione allerte superamento soglie
+=== UC5: Ricezione notifiche di superamento soglie
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") riceve una notifica di superamento di una soglia impostata;
 - *Scenario Principale*:
   + Il #glossary("sistema") rileva condizioni che richiedono l'invio di una notifica per segnalare il superamento di una soglia impostata.
 #figure(
-  image("assets/UML/UC5_Visualizzazione-allerte-superamento-soglie.png",width:70%),
-  caption: [UC5 Visualizzazione allerte superamento soglie]
+  image("assets/UML/UC5_Ricezione-notifiche-superamento-soglie.png",width:70%),
+  caption: [UC5 Ricezione notifiche di superamento soglie]
 )
 
-=== UC5.1: Visualizzazione allerta superamento soglia temperatura
+=== UC5.1: Ricezione notifica di superamento soglia temperatura
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") riceve un'allerta relativa alla temperatura che notifica il superamento dei 40° Celsius (40°C);
@@ -539,10 +526,10 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + Il #glossary("sistema") rileva una temperatura superiore ai 40° Celsius (40°C).
 #figure(
   image("assets/UML/UC5.1_Visualizzazione-allerte-superamento-soglia-temperatura.png",width:70%),
-  caption: [UC5.1 Visualizzazione allerta superamento soglia temperatura]
+  caption: [UC5.1 Ricezione notifica di superamento soglia temperatura]
 )
 
-=== UC5.2: Visualizzazione allerta superamento soglia precipitazioni
+=== UC5.2: Ricezione notifica di superamento soglia precipitazioni
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") riceve un'allerta relativa alle precipitazioni che notifica il superamento dei 50 millimetri di pioggia all'ora (50 mm/h);
@@ -550,10 +537,10 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + Il #glossary("sistema") rileva un livello di precipitazioni medie nell'ora, superiore ai 50 millimetri di pioggia all'ora (50 mm/h).
 #figure(
   image("assets/UML/UC5.2_Visualizzazione-allerte-superamento-soglia-precipitazioni.png",width:70%),
-  caption: [UC5.2 Visualizzazione allerta superamento soglia precipitazioni]
+  caption: [UC5.2 Ricezione notifica di superamento soglia precipitazioni]
 )
 
-=== UC5.3: Visualizzazione allerta superamento soglia inquinamento dell'aria
+=== UC5.3: Ricezione notifica di superamento soglia inquinamento dell'aria
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") riceve un'allerta relativa all'inquinamento dell'aria che notifica il superamento di 80#[#sym.mu]g su metro cubo ($80#sym.mu g\/m^3$);
@@ -561,11 +548,11 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + Il #glossary("sistema") rileva un coefficiente di inquinamento dell'aria (#glossary("PM10")), superiore ai 80#[#sym.mu]g su metro cubo ($80#sym.mu g\/m^3$).
 #figure(
   image("assets/UML/UC5.3_Visualizzazione-allerte-superamento-soglia-inquinamento-dell'aria.png",width:70%),
-  caption: [UC5.3 Visualizzazione allerta superamento soglia inquinamento dell'aria]
+  caption: [UC5.3 Ricezione notifica di superamento soglia inquinamento dell'aria]
 )
 
 /*TODO: andare a fare l'immagine apposta*/
-=== UC5.4: Visualizzazione allerta superamento soglia bacini idrici
+=== UC5.4: Ricezione notifica di superamento soglia bacini idrici
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") riceve un'allerta relativa ai bacini idrici che notifica il superamento del 70% della capienza di un particolare bacino;
@@ -573,10 +560,10 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + Il #glossary("sistema") rileva che il livello di un particolare bacino idrico è superiore al 70% della sua capienza.
 #figure(
   image("assets/UML/UC5.4_Visualizzazione-allerte-superamento-soglia-bacini-idrici.png",width:70%),
-  caption: [UC5.4 Visualizzazione allerta superamento soglia bacini idrici]
+  caption: [UC5.4 Ricezione notifica di superamento soglia bacini idrici]
 )
 
-=== UC5.5: Visualizzazione allerta superamento soglia zone ecologiche
+=== UC5.5: Ricezione notifica di superamento soglia zone ecologiche
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") riceve un'allerta relativa alle zone ecologiche che notifica il superamento dell'80% della capienza di una particolare zona ecologica;
@@ -584,7 +571,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + Il #glossary("sistema") rileva che il livello di una particolare zona ecologica è superiore all'80% della sua capienza.
 #figure(
   image("assets/UML/UC5.5_Visualizzazione-allerte-superamento-soglia-zone-ecologiche.png",width:70%),
-  caption: [UC5.5 Visualizzazione allerta superamento soglia zone ecologiche]
+  caption: [UC5.5 Ricezione notifica di superamento soglia zone ecologiche]
 )
 
 === UC6: Applicazione filtri
@@ -693,7 +680,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza il nuovo layout;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") modifica i #glossary("pannelli") graficamente a suo piacimento.
-- *Specializzazioni*: [UC8.1] [UC8.2].
+- *Specializzazioni*: [UC8.1], [UC8.2].
 
 #figure(
   image("assets/UML/UC8_Modifica-layout-pannelli.png",width:70%),
@@ -846,7 +833,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: il #glossary("sistema") ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") effettua una rilevazione del wattaggio erogato dalla colonna di ricarica;
-  + Il #glossary("sensore") formatta il messaggio da inviare al #glossary("sistema"), di modo da mandare un indice numerico che esprime la disponibilità della colonna, la quantità di energia erogata, espressa in chilowatt all'ora (kWh), il timestamp di rilevazione e le proprie coordinate geografiche;
+  + Il #glossary("sensore") formatta il messaggio da inviare al #glossary("sistema"), di modo da mandare un indicatore booleano che rende nota la disponibilità della colonna, la quantità di energia erogata, espressa in chilowatt all'ora (kWh), il timestamp di rilevazione e le proprie coordinate geografiche;
   + Il #glossary("sensore") invia il messaggio al #glossary("sistema").
 
 #figure(
@@ -917,7 +904,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
      "Obbligatorio", [L'utente deve poter visualizzare una #glossary("dashboard") generale relativa ai dati grezzi.], [UC#C.step()#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare, in forma tabellare, i dati grezzi inviati da tutti i sensori con timestamp della misurazione, valore della misurazione e coordinate geografiche del #glossary[sensore], all'interno della #glossary("dashboard") relativa ai dati grezzi.], [#C.step(level:2)#C.step(level:2)UC#C.display()]
+    "Obbligatorio", [L'utente deve poter visualizzare, in forma tabellare, i dati grezzi inviati da tutti i sensori con il nome del #glossary[sensore], la tipologia del #glossary[sensore], il timestamp della rilevazione e il valore della misurazione, all'interno della #glossary("dashboard") relativa ai dati grezzi.], [#C.step(level:2)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter monitorare i dati provenienti dai sensori relativi ai dati ambientali in una #glossary("dashboard") apposita.], [#C.step()UC#C.display()]
@@ -938,7 +925,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media aritmetica dell'intensità delle precipitazioni, espresse in millimetri all'ora (mm/h), per ciascun #glossary("sensore"), aggregando i dati per intervalli di 1 minuto, e la media mobile dell'intensità delle precipitazioni, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico, che esprime l'intensità media delle precipitazioni, espressa in millimetri all'ora (mm/h), nell'ultimo minuto, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
+    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato gauge rappresentante l'intensità media delle precipitazioni, espressa in millimetri all'ora (mm/h), nell'ultimo minuto, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante la media aritmetica del livello di polveri sottili nell'aria, espressi in $#sym.mu g\/m^3$ (#glossary("PM10")), per ciascun #glossary("sensore"), aggregando i dati per intervalli di 1 minuto, e la media mobile del livello di polveri sottili nell'aria, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
@@ -1000,19 +987,19 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i dati i cui valori superano la soglia dell'80% di capienza di una zona ecologica, il #glossary("sensore") che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo temperatura, superante una soglia di 40° Celsius (40°C).", [#C.step()#C.step(level:2)UC#C.display()]
+    "Desiderabile",  "L'utente deve poter ricevere delle notifiche riguardo ad un valore di un dato di tipo temperatura, superante una soglia di 40° Celsius (40°C).", [#C.step()#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo precipitazioni, superante una soglia di 50 millimetri all'ora (50mm/h).", [#C.step(level:2)UC#C.display()]
+    "Desiderabile",  "L'utente deve poter ricevere delle notifiche riguardo ad un valore di un dato di tipo precipitazioni, superante una soglia di 50 millimetri all'ora (50mm/h).", [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile", [L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo inquinamento dell'aria (#glossary("PM10")), superante una soglia di 80 microgrammi su metro cubo.], [#C.step(level:2)UC#C.display()]
+    "Desiderabile", [L'utente deve poter ricevere delle notifiche riguardo ad un valore di un dato di tipo inquinamento dell'aria (#glossary("PM10")), superante una soglia di 80 microgrammi su metro cubo.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo percentuale riempimento bacini idrici, superante una soglia corrispondente al 70% della capienza di tale bacino.", [#C.step(level:2)UC#C.display()]
+    "Desiderabile",  "L'utente deve poter ricevere delle notifiche riguardo ad un valore di un dato di tipo percentuale riempimento bacini idrici, superante una soglia corrispondente al 70% della capienza di tale bacino.", [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche riguardo ad un valore di un dato di tipo percentuale riempimento zone ecologiche, superante una soglia corrispondente all'80% della capienza di tale zona.", [#C.step(level:2)UC#C.display()]
+    "Desiderabile",  "L'utente deve poter ricevere delle notifiche riguardo ad un valore di un dato di tipo percentuale riempimento zone ecologiche, superante una soglia corrispondente all'80% della capienza di tale zona.", [#C.step(level:2)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter filtrare i dati, visualizzati all'interno di un grafico di tipo #glossary("time series"), in base ad un sottoinsieme selezionato di sensori.], [#C.step()#C.step(level:2)UC#C.display()]
@@ -1154,10 +1141,10 @@ caption: "Requisiti di qualità")
   ("Obbligatorio",[Deve essere utilizzato #glossary[Docker Compose] versione 3.8 per l'installazione del software.],"Verbale esterno"),
   ("Obbligatorio","I dati in ingresso nel database OLAP devono avere formato pseudo-tabellare, si deve utilizzare il formato Json.", "Verbale esterno"),
   ("Obbligatorio","Deve essere utilizzato un message broker per lo streaming dei dati, per esempio Apache Kafka.","Capitolato"),
-  ("Obbligatorio","Il sistema deve essere compatibile con Google Chrome v122 (o superiori), Mozilla Firefox v123 (o superiori) o Microsoft Edge v122 (o superiori).","Manuale Utente"), 
-  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Windows (10 o 11), con RAM minimale di 6GB, processore 64 bit e compatibilità con WSL 2.","Manuale Utente"), 
-  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo MACOS (versione minima 10.14 Mojave) con RAM minimale di 6GB.","Manuale Utente"), 
-  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Linux Ubuntu (22.04 o superiori) con RAM minimale di 6GB.","Manuale Utente")
+  ("Obbligatorio","Il sistema deve essere compatibile con Google Chrome v122 (o superiori), Mozilla Firefox v123 (o superiori) o Microsoft Edge v122 (o superiori).","Verbale interno"), 
+  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Windows (10 o 11), con RAM minimale di 6GB, processore 64 bit e compatibilità con WSL 2.","Verbale interno"), 
+  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo MACOS (versione minima 10.14 Mojave) con RAM minimale di 6GB.","Verbale interno"), 
+  ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Linux Ubuntu (22.04 o superiori) con RAM minimale di 6GB.","Verbale interno")
   
 )
 
