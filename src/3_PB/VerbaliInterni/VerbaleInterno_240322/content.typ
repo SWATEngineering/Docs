@@ -34,7 +34,7 @@ Vengono stabiliti i seguenti i nuovi incarichi relativi allo sprint corrente:
 == Analisi dei Requisiti
 
 Il team si è reso conto che il prodotto non rispecchia appieno quanto enunciato all'interno dell'_Analisi dei Requisiti_, per funzionalità o modalità di funzionamento.
-Di conseguenza si è deciso di allocare risorse nella correzione del prodotto ove necessario e nella chiarificazione del documento _Analisi dei Requisiti_ dove la chiarezza non risulta adeguatamente sufficiente.
+Di conseguenza si è deciso di allocare risorse nella correzione del prodotto ove necessario e nella chiarificazione del documento _Analisi dei Requisiti_ dove la chiarezza non risulta sufficiente.
 
 == Manuale Utente
 
