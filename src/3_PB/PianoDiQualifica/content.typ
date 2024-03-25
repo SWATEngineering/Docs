@@ -312,7 +312,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che il sensore delle isole ecologoche generi i dati che rimangano all'interno di un range specifico.
+            Verificare che il sensore delle isole ecologiche generi i dati che rimangano all'interno di un range specifico.
       ],"I",[
 
       ]),
@@ -365,7 +365,37 @@ In questa sezione vengono descritti i test di unità del prodotto software.
             Verificare che il sensore del vento generi dati che rimangano all'interno di uno specifico range.
       ],"I",[
 
+      ]),
+      ([
+            Verificare che il sensore dell'inquinamento atmosferico ritorni il valore corretto.
+
+      ],"I",[]),
+      ([
+            Verificare che il sensore dell'inquinamento atmosferico generi dati che rimangano all'interno di uno specifico range.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che il sensore del traffico ritorni il valore corretto.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che i livelli di traffico generati siano tra quelli previsti (LOW, MEDIUM, HIGH, BLOCKED).
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che il sensore del parcheggio ritorni il valore corretto.
+      ],"I",[
+
+      ]),
+      ([
+            Verificare che il sensore del parcheggio generi dati all'interno di uno specifico range.
+      ],"I",[
+
       ])
+      
       
 ).enumerate(start:1).map(test => ("TU"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1),test.at(1).at(2)));
 
