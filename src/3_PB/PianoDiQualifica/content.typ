@@ -409,6 +409,83 @@ table(
       ..test_di_unità.map(item => (item.at(0),item.at(1),item.at(2))).flatten().map(item => [#item])
 ),caption: "Test di unità.")
 
+== Test di integrazione  
+
+#let test_di_accettazione = (
+
+      ([
+            Verificare che i dati generati dal sensore di inquinamento atmosferico siano correttamente memorizzati nella tabella `innovacity.air_pollution` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal sensore di inquinamento atmosferico siano correttamente aggregati e memorizzati nella tabella `innovacity.air_pollution1m` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal sensore delle colonne di ricarica siano correttamente memorizzati nella tabella `innovacity.charging_station` del database.
+      ],"S",[]),
+
+      ([
+            Verificare che i dati generati dal sensore della bici elettrica siano correttamente memorizzati nella tabella `innovacity.ebikes` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal sensore di riempimento delle isole ecologiche siano correttamente memorizzati nella tabella `innovacity.eco_zone` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal sensore di umidità siano correttamente memorizzati nella tabella `innovacity.humidity` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal sensore di umidità siano correttamente aggregati e memorizzati nella tabella `innovacity.humidity1m` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal sensore del parcheggio siano correttamente memorizzati nella tabella `innovacity.parking` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal sensore di pioggia siano correttamente memorizzati nella tabella `innovacity.rain` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal sensore di pioggia siano correttamente aggregati e memorizzati nella tabella `innovacity.rain1m` del database.
+      ],"S",[]),
+      
+      ([
+            Verificare che i dati generati dal sensore del livello dei bacini idrici siano correttamente memorizzati nella tabella `innovacity.reservoirs` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal sensore del livello dei bacini idrici siano correttamente aggregati e memorizzati nella tabella `innovacity.reservoirs1m` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal sensore di temperatura siano correttamente memorizzati nella tabella `innovacity.temperature` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal sensore di temperatura siano correttamente aggregati e memorizzati nella tabella `innovacity.temperature1m` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal sensore del traffico siano correttamente memorizzati nella tabella `innovacity.traffic` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal sensore del vento siano correttamente memorizzati nella tabella `innovacity.wind` del database.
+      ],"S",[]),
+      ([
+           Verificare che dati memorizzati nel database siano correttamente visualizzati su Grafana.
+      ],"N/I",[]),
+      ([
+            Verificare che i dati generati dai sensori siano correttamente consumati e memorizzati nel database.
+      ],"S",[
+            
+      ])
+
+
+
+).enumerate(start:1).map(test => ("TI"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1),test.at(1).at(2)));
+
+#show figure: set block(breakable: true)
+#figure(
+table(
+      columns: (2fr,7fr,1fr),
+      align: (center,left,center),
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Codice test*],[*Descrizione*],[*Stato*],
+      ..test_di_unità.map(item => (item.at(0),item.at(1),item.at(2))).flatten().map(item => [#item])
+),caption: "Test di integrazione.")
+
 
 == Test di accettazione
 In questa sezione vengono descritti i test di accettazione del prodotto software, eseguiti sia dal gruppo #team che dalla Proponente sotto la supervisione del gruppo.
