@@ -45,7 +45,7 @@ Perciò sono state allocate risorse nell'ampiamento delle sezioni di installazio
 
 Il team ha rilevato alcune ambiguità nella sezione relativa al tracciamento dei requisiti soddisfatti. Viene creata una task in modo tale da poter risolvere tali ambiguità.
 
-== Dashboard Grafana 
+== Grafana 
 
  Sono stati rilevati alcuni problemi relativi alla componente Grafana: il primo relativo alla tabella dei dati grezzi la seconda relativa alla componente di notifica. La dashboard dei dati grezzi infatti risulta al momento troppo caotica e di difficile consultazione. Se ne occupa Riccardo Costantin. La componente di notifica di Grafana invece risulta particolarmente ostica e sta richiedendo  più risorse di quanto previsto. Alla luce del fatto che tale componente sia comunque il frutto di un requisito desiderabile permette al team di non preoccuparsene eccessivamente. Se ne occupa Giacomo D'Ovidio.
 
