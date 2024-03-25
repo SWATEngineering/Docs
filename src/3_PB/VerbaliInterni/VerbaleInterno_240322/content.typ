@@ -47,7 +47,7 @@ Il team ha rilevato alcune ambiguità nella sezione relativa al tracciamento dei
 
 == Dashboard Grafana 
 
-Durante questo sprint, verranno implementate due dashboard: una relativa ai dati grezzi e l'altra al superamento delle soglie. La dashboard dei dati grezzi verrà utilizzata come sistema di filtraggio per i dati generati dai simulatori, consentendo di filtrare sia per i nomi dei sensori che per la loro tipologia. Se ne occupa Riccardo Costantin. La dashboard relativa al superamento delle soglie mostrerà i dati che superano determinati valori, in formato tabellare. Se ne occupa Giacomo D'Ovidio.
+ Sono stati rilevati alcuni problemi relativi alla componente Grafana: il primo relativo alla tabella dei dati grezzi la seconda relativa alla componente di notifica. La dashboard dei dati grezzi infatti risulta al momento troppo caotica e di difficile consultazione. Se ne occupa Riccardo Costantin. La componente di notifica di Grafana invece risulta particolarmente ostica e sta richiedendo  più risorse di quanto previsto. Alla luce del fatto che tale componente sia comunque il frutto di un requisito desiderabile permette al team di non preoccuparsene eccessivamente. Se ne occupa Giacomo D'Ovidio.
 
 == _Piano di Qualifica_
 
