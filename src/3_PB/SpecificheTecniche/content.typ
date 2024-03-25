@@ -10,16 +10,16 @@
 
 == Scopo del documento
 Il presente documento si propone come risorsa esaustiva per la comprensione degli aspetti tecnici chiave del progetto "InnovaCity".
-La sua finalità primaria è fornire una descrizione dettagliata e approfondita di due aspetti centrali: l'architettura implementativa e l'architettura di deployment.
-Nel contesto dell'architettura implementativa, si prevede un'analisi approfondita che si estenda anche al livello di design più basso. Ciò include la definizione e la spiegazione dettagliata dei design pattern e degli idiomi utilizzati nel contesto del progetto.
+La sua finalità primaria è fornire una descrizione dettagliata e approfondita dell'architettura implementativa del #glossary[sistema].
+Nel contesto dell'#glossary[architettura], si prevede un'analisi approfondita che si estenda anche al livello di design più basso. Ciò include la definizione e la spiegazione dettagliata dei #glossary[design pattern] e degli idiomi utilizzati nel contesto del progetto.
 L'obiettivo principale del presente documento è triplice: innanzitutto, motivare le scelte di sviluppo adottate; in secondo luogo, fungere da guida fondamentale per l'attività di codifica; infine, monitorare la copertura dei requisiti identificati nel documento _Analisi dei Requisiti v2.0_.
-Alla luce del modello di sviluppo agile individuato dal team, la redazione del documento segue un approccio iterativo. L'adeguatezza del documento e dell'architettura individuata viene costantemente monitorata e modificata sulla base dei requisiti e dei feedback ricevuti da parte della Proponente.
+Alla luce del modello di sviluppo agile individuato dal team, la redazione del documento segue un approccio iterativo. L'adeguatezza del documento e dell'#glossary[architettura] individuata viene costantemente monitorata e modificata sulla base dei requisiti e dei feedback ricevuti da parte della Proponente.
 
 == Scopo del prodotto
 Lo scopo del prodotto è la realizzazione di un sistema di persistenza dati e successiva visualizzazione di questi, provenienti da sensori dislocati geograficamente. Tale piattaforma consentirà all'#glossary("amministratore pubblico") di acquisire una panoramica completa delle condizioni della città, facilitando così la presa di decisioni informate e tempestive riguardo alla gestione delle risorse e all'implementazione di servizi.
 
 == Glossario
-Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei documenti, viene fornito il _Glossario v1.0_, nel quale sono presenti tutte le definizioni di termini aventi uno specifico significato che vuole essere disambiguato. Tali termini, sono scritti in  corsivo e marcati con una G a pedice.
+Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei documenti, viene fornito il _Glossario v2.0_, nel quale sono presenti tutte le definizioni di termini aventi uno specifico significato che vuole essere disambiguato. Tali termini, sono scritti in  corsivo e marcati con una G a pedice.
 
 == Riferimenti
 
@@ -48,7 +48,7 @@ Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei d
   - #link("https://imply.io/blog/building-event-analytics-pipeline-with-confluent-cloud-and-imply-real-time-database-polaris/") (28/02/2024)
   - #link("https://medium.com/sysco-labs/real-time-sales-analytics-using-kappa-architecture-852dc84bfe7b") (28/02/2024)
 
-=== riferimenti tecnici
+=== Riferimenti tecnici
 - *#glossary[Python]*: #link("https://docs.python.org/3/"); (4/03/2024)
 - *#glossary[Grafana]*: #link("https://grafana.com/docs/grafana/latest/"); (21/03/2024)
 - *Apache #glossary[Kafka]*: #link("https://kafka.apache.org/20/documentation.html"); (4/03/2024)
@@ -115,15 +115,15 @@ caption: [Tabella tecnologie per l'analisi del codice.])
 
 
 #pagebreak()
-= Architettura del sistema
-== Architettura di implementazione
-Il sistema richiede la capacità di processare dati provenienti da varie fonti, in tempo reale, e di offrire una visualizzazione immediata e continua di tali dati, consentendo di monitorarne gli andamenti.
+= #glossary[Architettura] del #glossary[sistema]
+== #glossary[Architettura] di implementazione
+Il #glossary[sistema] richiede la capacità di processare dati provenienti da varie fonti, in tempo reale, e di offrire una visualizzazione immediata e continua di tali dati, consentendo di monitorarne gli andamenti.
 Per questo tipo di scopo le due architetture consigliate sono la:
 - *#[#sym.lambda]-architecture*: che prevede di elaborare i dati in due flussi separati, uno per i dati in tempo reale e uno per i dati storici. I dati in tempo reale vengono elaborati immediatamente per fornire risposte rapide, mentre i dati storici vengono elaborati in batch per fornire risposte più complete o elaborate nel tempo. Alla fine, i risultati dei due flussi vengono combinati per fornire una visione completa dei dati;
-- *#[#sym.kappa]-architecture*: semplifica la struttura della #[#sym.lambda]-architecture, eliminando il flusso batch. Tutti i dati vengono quindi elaborati in tempo reale utilizzando un sistema di elaborazione dei dati in streaming. Questo fa si che i dati vengono elaborati una sola volta, riducendo la complessità complessiva del sitema.
+- *#[#sym.kappa]-architecture*: semplifica la struttura della #[#sym.lambda]-architecture, eliminando il flusso batch. Tutti i dati vengono quindi elaborati in tempo reale utilizzando un sistema di elaborazione dei dati in streaming. Questo fa si che i dati vengono elaborati una sola volta, riducendo la complessità complessiva del #glossary[sistema].
 
 Per quanto appena descritto, la #[#sym.kappa]-architecture è la soluzione più adatta, in quanto specifica per il nostro caso d'uso.
-Si ha appunto bisogno di lavorare con dati in tempo reale, evitando di gestire la lavorazione dei dati in due posti diversi con diverse tecnologie, che ci porterebbe ad una complessità di manutenzione maggiore, logica di computazione duplicata e complessità di gestione del sistema in generale.
+Si ha appunto bisogno di lavorare con dati in tempo reale, evitando di gestire la lavorazione dei dati in due posti diversi con diverse tecnologie, che porterebbe ad una complessità di manutenzione maggiore, logica di computazione duplicata e complessità di gestione del #glossary[sistema] in generale.
 
 Possiamo quindi compartimentalizzare le varie componenti del sistema in questo modo:
 #figure(
@@ -132,16 +132,16 @@ Possiamo quindi compartimentalizzare le varie componenti del sistema in questo m
 )
 
 - *Data source*: le sorgenti dati sono i sensori IoT sparsi nella città, capaci di inviare messaggi contenenti misurazioni, ad intervalli regolari, mediante protocollo #glossary("Kafka"), allo streaming layer;
-- *Streaming layer*: lo streaming layer si occupa di gestire i dati in arrivo in tempo reale, per andarli sistematicamente a persisterli nello storage layer. Questo layer è composto da:
+- *Streaming layer*: lo streaming layer si occupa di gestire i dati in arrivo in tempo reale, per andarli sistematicamente a persistere nello storage layer. Questo layer è composto da:
   - *Apache Kafka*: che svolgerà il ruolo di broker dati;
-  - *ClickHouse Kafka table engine*: che svolgerà il ruolo di consumatore, al fine di leggere i dati dal server Kafka per poi persisterli nello storage layer.
-- *Storage layer*: si occupa della persistenza dei dati e, grazie alle funzionalità OLAP offerte dal database ClickHouse, di effettuare analisi in tempo reale;
-- *Visualization Layer*: composto unicamente da Grafana, questo layer si occupa di visualizzare i dati elaborati, in tempo reale.
+  - *ClickHouse Kafka table engine*: che svolgerà il ruolo di consumatore, al fine di leggere i dati dal server #glossary[Kafka] per poi persisterli nello storage layer.
+- *Storage layer*: si occupa della persistenza dei dati e, grazie alle funzionalità OLAP offerte dal database #glossary[ClickHouse], di effettuare analisi in tempo reale;
+- *Visualization Layer*: composto unicamente da #glossary[Grafana], questo layer si occupa di visualizzare i dati elaborati, in tempo reale.
 
 
-== Diagramma del flusso di dati (data-flow)
+== Diagramma del flusso di dati (#glossary[data flow diagram])
 
-Per illustrare il funzionamento del sistema, abbiamo utilizzato un diagramma di flusso dei dati. Questo diagramma ha permesso di rappresentare in modo chiaro e intuitivo il percorso dei dati attraverso il sistema e le relative elaborazioni su di essi. Abbiamo quindi identificato le diverse entità coinvolte nel processo e le relazioni tra di esse, fornendo una panoramica dettagliata di come i dati vengono acquisiti, elaborati, archiviati e visualizzati.
+Per illustrare il funzionamento del #glossary[sistema], abbiamo utilizzato un diagramma di flusso dei dati. Questo diagramma ha permesso di rappresentare in modo chiaro e intuitivo il percorso dei dati attraverso il #glossary[sistema] e le relative elaborazioni su di essi. Abbiamo quindi identificato le diverse entità coinvolte nel processo e le relazioni tra di esse, fornendo una panoramica dettagliata di come i dati vengono acquisiti, elaborati, archiviati e visualizzati.
 
 
 #figure(
@@ -165,7 +165,7 @@ Per illustrare il funzionamento del sistema, abbiamo utilizzato un diagramma di 
 - *Engine interno (archiviatore)*: l'archiviatore, rappresentato dal motore interno "Kafka" di #glossary[ClickHouse], agisce direttamente come consumatore dei dati provenienti dal broker dei dati (#glossary[Kafka]). Questo avviene tramite la connessione a specifici topic nel broker dati, ognuno associato a un tipo di sensore distinto. Successivamente, i dati corrispondenti vengono archiviati nelle rispettive tabelle del database;
 - *Aggregazione*: i dati corrispondenti la temperatura, umidità, precipitazioni, inquinamento atmosferico e livello dei bacini idrici vengono aggregati in tabelle apposite attraverso l'utilizzo di #glossary[materialized views]. Queste aggregazioni avvengono su intervalli di 1 minuto, consentendo così l'applicazione delle medie mobili;
 - *Interrogazioni (query)*: vengono effettuate varie interrogazioni e analisi sui dati memorizzati all'interno delle tabelle;
-- *Visualizzazione*: l'#glossary[amministratore pubblico] visualizza i dati, ritornati in output dalle query, su una piattaforma apposita (nel nostro caso Grafana).
+- *Visualizzazione*: l'#glossary[amministratore pubblico] visualizza i dati, ritornati in output dalle query, su una piattaforma apposita (in questo caso #glossary[Grafana]).
 
 == Database
 Lo scopo del database è quello di memorizzare i dati provenienti dai sensori, in modo da poterli analizzare e visualizzare in seguito. I dati di un #glossary[sensore] vengono acquisiti tramite un #glossary[topic] #glossary[Kafka], associato ad un tipo di #glossary[sensore], e poi memorizzati in apposite tabelle.
@@ -209,7 +209,7 @@ Questo tipo di schema presenta in più, rispetto a quello precedente due tabelle
 == #glossary[Architettura] dei simulatori
 Nonostante i simulatori non siano ufficialmente considerati parte integrante del prodotto dalla Proponente, il nostro team, nell'ambito del progetto didattico, ha scelto di dedicare alcune risorse alla progettazione di questa componente.
 
-Nei paragrafi successivi viene mostrata l'architettura individuata, tramite l'utilizzo di Diagrammi delle Classi e relative rapide descrizioni. Inoltre vengono motivati i #glossary[design pattern] individuati e le decisioni progettuali rilevanti. Successivamente, per ogni classe vengono illustrati metodi e attributi.
+Nei paragrafi successivi viene mostrata l'#glossary[architettura] individuata, tramite l'utilizzo di Diagrammi delle Classi e relative rapide descrizioni. Inoltre vengono motivati i #glossary[design pattern] individuati e le decisioni progettuali rilevanti. Successivamente, per ogni classe vengono illustrati metodi e attributi.
 
 === Struttura generale
 
@@ -243,24 +243,24 @@ Non vengono menzionati i costruttori.
 - *configs: String [Protetto]*: contenuto del file di configurazione dei simulatori;
 - *simulators: SimulatorThread[\*] [Protetto]*: lista di oggetti _SimulatorThread_.
 ===== Metodi
-- *create_simulator(config: Dict, simulator_type: SensorTypes, cls: «type» SensorSimulatorStrategy): void [Protetto]*: metodo astratto, implementato dalle classi _KafkaSimulatorExecutorFactory_ e _StdoutSimulatorExecutorFactory_;
+- *create_simulator(config: Map, simulator_type: SensorTypes, cls: «type» SensorSimulatorStrategy): void [Protetto]*: metodo astratto, implementato dalle classi _KafkaSimulatorExecutorFactory_ e _StdoutSimulatorExecutorFactory_;
 - *create(): SimulatorExecutor [Pubblico]*: dopo aver invocato la creazione dei singoli simulatori, si occupa di costruire un oggetto della classe _SimulatorExecutor_ inserendoli al suo interno.
 
 ==== KafkaSimulatorExecutorFactory (Classe)
 ===== Attributi
 - *data_broker_host: String [Privato]*: indirizzo ip della macchina che ospita il message broker;
 - *data_broker_port: int [Privato]*: porta della macchina che ospita il message broker;
-- *writers: Dict<\key -> String, value -> KafkaWriter> [Privato]*: dizionario con chiavi di tipo String e valori di tipo _KafkaWriter_;
-- *simulators_counter: Dict<\key -> String, value -> int> [Privato]*: dizionario con chiavi di tipo String e valori di tipo int, per fare in modo che al nome del simulatore sia associato un valore numerico.
+- *writers: Map<\String, KafkaWriter> [Privato]*: dizionario con chiavi di tipo String e valori di tipo _KafkaWriter_;
+- *simulators_counter: Map<\String, int> [Privato]*: dizionario con chiavi di tipo String e valori di tipo int, per fare in modo che al nome del simulatore sia associato un valore numerico.
 ===== Metodi
-- *create_simulator(in config: Dict, in simulator_type: SensorTypes, in cls: «type» SensorSimulatorStrategy): void [Protetto]*: utilizza il contenuto del file di configurazione passato tramite costruzione per costruire gli oggetti di tipo _SimulatorThread_ che rappresentano i simulatori richiesti.
+- *create_simulator(config: Dict, simulator_type: SensorTypes, cls: «type» SensorSimulatorStrategy): void [Protetto]*: utilizza il contenuto del file di configurazione passato tramite costruzione per costruire gli oggetti di tipo _SimulatorThread_ che rappresentano i simulatori richiesti.
 
 ==== StdoutSimulatorExecutorFactory (Classe)
 ===== Attributi
-- *simulators_counter: Dict<\key -> String, value -> int> [Privato]*: dizionario per fare in modo che al nome del simulatore sia associato un valore numerico;
+- *simulators_counter: Map<\String, int> [Privato]*: dizionario per fare in modo che al nome del simulatore sia associato un valore numerico;
 - *writer: StdoutWriter [Privato]*: oggetto della classe _StdoutWriter_.
 ===== Metodi
-- *create_simulator(in config: Dict, in simulator_type: SensorTypes, in cls: «type» SensorSimulatorStrategy): void [Protetto]*: utilizza il contenuto del file di configurazione passato tramite costruzione per costruire gli oggetti di tipo _SimulatorThread_ che rappresentano i simulatori richiesti.
+- *create_simulator(config: Map, simulator_type: SensorTypes, cls: «type» SensorSimulatorStrategy): void [Protetto]*: utilizza il contenuto del file di configurazione passato tramite costruzione per costruire gli oggetti di tipo _SimulatorThread_ che rappresentano i simulatori richiesti.
 
 ==== SimulatorExecutor (Classe)
 ===== Attributi
@@ -287,49 +287,6 @@ Non vengono menzionati i costruttori.
 - *coordinates: Coordinates [Protetto]*: oggetto della classe Coordinates.
 ===== Metodi
 - *simulate(): String [Pubblico]*: metodo astratto, implementato dalle classi che definiscono il comportamento dei singoli simulatori.
-
-/*TODO: da completare la descrizione con attributi e metodi come da diagramma UML*/
-==== TemperatureSensorSimulator (Classe)
-
-==== RainSensorSimulator (Classe)
-
-==== HumiditySensorSimulator (Classe)
-
-==== WindSensorSimulator (Classe)
-
-==== ReservoirSensorSimulator (Classe)
-===== Attributi
-- *reservoir_percentage: float [Privato]*: la percentuale del livello di riempimento del bacino idrico;
-===== Metodi
-- *simulate(): String [Pubblico]*;
-- *set_reservoir_percentage(): void [Privato]*: imposta la percentuale di riempimento iniziale del bacino monitorato a seconda della stagione dell'anno;
-- *calculate_evaporation_rate(): float [Privato]*: calcola il tasso di evaporazione a seconda dell'ora del giorno e della stagione dell'anno;
-- *measure_reservoir_level(): float [Privato]*: calcola la variazione nella percentuale di riempimento.
-
-==== ParkingSensorSimulator (Classe)
-
-==== ChargingStationSensorSimulator (Classe)
-
-==== EBikeSensorSimulator (Classe)
-===== Attributi
-- *bike_percentage: float [Privato]*: percentuale di batteria della bicicletta elettrica; 
-- *last_coordinate_index: int [Privato]*: indice numerico per tenere traccia delle coordinate raggiunte all'interno del percorso stabilito per arrivare a destinazione;
-- *source [Privato]*: punto di partenza del percorso;
-- *destination [Privato]*: punto di arrivo del percorso;
-- *route_coordinates [Privato]*: coordinate che compongono il percorso;
-- *last_timestamp: Datetime [Privato]*: timestamp dell'ultima segnalazione del sensore;
-- *is_charging: bool [Privato]*: indica se la batteria è attualmente in fase di ricarica o meno.
-===== Metodi
-- *charge_battery(): void [Privato]*: gestisce la fase di ricarica della batteria;
-- *pick_destination() [Privato]*: sceglie una nuovo punto di arrivo inizialmente e quando la bicicletta arriva a destinazione;
-- *get_route_coordinates() [Privato]*: ottiene le coordinate corrispondenti alle tappe da percorrere per far arrivare la bicicletta al punto di arrivo;
-- *calculate_movement(): void [Privato]*: gestisce lo spostamento della bicicletta da una tappa a quella successiva del percorso;
-- *calculate_distance(): float [Privato]*: calcola la distanza che intercorre tra una tappa e l'altra;
-- *measure_battery_level(): float [Privato]*: calcoal la variazione nella batteria della bicicletta.
-
-==== EcoZoneSensorSimulator (Classe)
-
-==== TrafficSensorSimulator (Classe)
 
 ==== Coordinates (Classe)
 ===== Attributi
@@ -358,13 +315,13 @@ Non vengono menzionati i costruttori.
 
 ==== StdOutWriter (Classe)
 ===== Metodi
-- *write(in to_write: String): void [Pubblico]*: scrive il messaggio contenuto nella stringa passata come parametro su standard output.
+- *write(to_write: String): void [Pubblico]*: scrive il messaggio contenuto nella stringa passata come parametro su standard output.
 
 ==== KafkaWriter (Classe)
 ===== Attributi
 - *producer: TargetProducer [Privato]*: oggetto della classe _TargetProducer_.
 ===== Metodi
-- *write(in to_write: String): void [Pubblico]*: invoca la scrittura del messaggio contenuto nella stringa passata come parametro sul topic corrispondente alla tipologia del simulatore nel broker.
+- *write(to_write: String): void [Pubblico]*: invoca la scrittura del messaggio contenuto nella stringa passata come parametro sul topic corrispondente alla tipologia del simulatore nel broker.
 
 ==== TargetProducer (Interfaccia)
 ===== Metodi
@@ -375,7 +332,7 @@ Non vengono menzionati i costruttori.
 - *adaptee: Producer [Privato]*: oggetto della classe _Producer_ della libreria _Confluent Kafka_;
 - *topic: SensorTypes [Privato]*: oggetto della classe _SensorTypes_, rappresenta il topic all'interno del broker nel quale viene inserito il messaggio da scrivere.
 ===== Metodi
-- *produce(in message: String in callback: Function): void [Pubblico]*: metodo che richiama il metodo _produce()_ dell'oggetto _adaptee_ di tipo _Producer_ della libreria _Confluent Kafka_.
+- *produce(message: String, callback: Function): void [Pubblico]*: metodo che richiama il metodo _produce()_ dell'oggetto _adaptee_ di tipo _Producer_ della libreria _Confluent Kafka_.
 
 == Messaggi ed Eventi
 === Kafka Topics
