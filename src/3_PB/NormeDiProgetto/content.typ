@@ -456,7 +456,7 @@ Il diagramma pur essendo vastamente utilizzato nell'ambito dell'ingegneria infor
                 )
 
 ===== Diagrammi del database
-Per quanto riguarda la progettazione del database, i Progettisti devono definire lo schema delle tabelle che andranno a costituire il database del #glossary[sistema]. Questo schema deve essere rappresentato in un diagramma che mostri le tabelle coinvolte, i campi che le compongono e le relazioni tra di esse. Essendo che il database è contenuto in un DBMS di tipo OLAP, uno schema ER classico non era adatto a rappresentarlo; di conseguenza, si è scelto di definire una rappresentazione alternativa, che permettesse di visualizzare in modo chiaro e conciso le tabelle e le relazioni tra di esse.
+Per quanto riguarda la progettazione del database, il Progettista deve definire lo schema delle tabelle che vanno a costituire il database del #glossary[sistema]. Questo schema deve essere rappresentato attraverso un diagramma che mostri le tabelle coinvolte, i campi che le compongono e le relazioni tra di esse. Essendo che il database è contenuto in un DBMS di tipo OLAP, uno schema ER classico non era adatto a rappresentarlo; pertanto, si è scelto di definire una rappresentazione alternativa, che permettesse di visualizzare in modo chiaro e conciso le tabelle e le relazioni tra di esse.
  Di seguito si elencano i possibili elementi di un diagramma di questo tipo:
         
         - *tabella*: rappresenta una tabella del database si rappresenta con un rettangolo a linea piena, separando con una linea il nome della tabella, i nomi degli attributi e i tipi di dato;
