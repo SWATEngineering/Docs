@@ -38,19 +38,6 @@ Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei d
 = Requisiti minimi
 Per poter garantire un corretto funzionamento del prodotto, è necessario rispettare i requisiti minimi delineati in seguito.
 
-== Requisiti software
-I requisiti software indicano le specifiche relative al software che deve essere installato sul #glossary[sistema] dell'utente per garantire l'avvio e l'esecuzione del prodotto.
-
-#figure(
-table(
-      columns:(100pt,auto,auto),
-      align: (x, y) => (center, center, center).at(x),
-      fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
-      [*Software*],[*Versione*],[*Download*],
-      [Docker], [25.0.3], [#link("https://docs.docker.com/get-docker/")],
-      [#glossary[Docker Compose]], [2.24.6], [#link("https://docs.docker.com/compose/install/")]),
-caption: [Tabella requisiti software.])
-
 == Requisiti hardware
 I requisiti hardware indicano le specifiche tecniche relative alle componenti hardware necessarie per garantire un'esperienza di utilizzo ottimale del prodotto e prestazioni elevate.
 
@@ -78,6 +65,19 @@ table(
       [Linux Ubuntu], [22.04]),
 caption: [Tabella requisiti di #glossary[sistema] operativo.])
 
+== Requisiti software
+I requisiti software indicano le specifiche relative al software che deve essere installato sul #glossary[sistema] dell'utente per garantire l'avvio e l'esecuzione del prodotto.
+
+#figure(
+table(
+      columns:(100pt,auto,auto),
+      align: (x, y) => (center, center, center).at(x),
+      fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Software*],[*Versione*],[*Download*],
+      [Docker], [25.0.3], [#link("https://docs.docker.com/get-docker/")],
+      [#glossary[Docker Compose]], [2.24.6], [#link("https://docs.docker.com/compose/install/")]),
+caption: [Tabella requisiti software.])
+
 == Requisiti browser
 I requisiti browser indicano le specifiche tecniche necessarie per garantire che il prodotto software possa essere visualizzato e utilizzato correttamente su un browser web specifico.
 
@@ -87,9 +87,9 @@ table(
       align: (x, y) => (center, center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Browser*],[*Versione*],
-      [Google Chrome], [122 o superiori],
-      [Mozilla Firefox], [123 o superiori],
-      [Microsoft Edge], [122 o superiori]),
+      [Google Chrome], [122],
+      [Mozilla Firefox], [123],
+      [Microsoft Edge], [122]),
 caption: [Tabella requisiti browser.])
 
 #pagebreak()
@@ -115,7 +115,7 @@ La seguente sezione fornisce istruzioni dettagliate su come installare e avviare
 `docker-compose --profile prod up -d`
 #set align(left)
 
-Avendo eseguito gli step riportati sopra, #glossary[Grafana] sarà disponibile visitando l'indirizzo #link("http://localhost:3000/") su browser.
+Avendo eseguito gli step riportati sopra, #glossary[Grafana] è visitabile all'indirizzo #link("http://localhost:3000/") su browser.
 
 #pagebreak()
 
@@ -125,11 +125,11 @@ Avendo eseguito gli step riportati sopra, #glossary[Grafana] sarà disponibile v
 
 === #glossary[Dashboard]
 
-Le #glossary[dashboard] riportano in alto un header contenente diverse opzioni atte a navigare attraverso l'istanza di #glossary[Grafana] correntemente in uso e a personalizzare l'apparenza della #glossary[dashboard] stessa:
+Le #glossary[dashboard], concepibili come contenitori di #glossary[pannelli], riportano in alto un header contenente diverse opzioni atte a navigare attraverso #glossary[Grafana] e a personalizzare l'apparenza della #glossary[dashboard] stessa:
 
 - *Navigazione breadcrumb*: per accedere facilmente alla pagina Home ("Home") o all'elenco delle #glossary[dashboard] in ("Dashboards") per selezionare una particolare #glossary[dashboard] tra quelle contenute nella cartella corrente;
 
-- "*Share #glossary[dashboard] or panel*": per condividere il #glossary[pannello] o la d#glossary[dashboard] corrente utilizzando un link o uno snapshot;
+- "*Share #glossary[dashboard] or panel*": per condividere il #glossary[pannello] o la #glossary[dashboard] corrente utilizzando un link o uno snapshot;
 
 - "*Add*": per aggiungere un #glossary[pannello]\;
 
@@ -177,21 +177,21 @@ Posizionando il cursore sopra l'header contenente titolo e icona del menù in ci
 
 == Dashboard "Ambientale"
 
-La #glossary[dashboard] "Ambientale" è dedita alla visualizzazione di dati relativi all'ambiente, che possono includere ma non sono limitati a temperatura, percentuale di umidità, direzione e velocità del vento, intensità delle precipitazioni, livello di polveri sottili e riempimento dei bacini idrici. Quelli riportati sono aspetti monitorati all'interno della #glossary[dashboard] tramite #glossary[pannelli] contenenti grafici di varia natura, in particolare si utilizza: il formato "#glossary[Time series]", il formato "Geomap", il formato "Table", il formato "Stat" e il formato "Gauge". Per maggiori informazioni sulla natura di ciascun formato, si rimanda alla #glossary[documentazione] ufficiale di #glossary[Grafana]. 
+La #glossary[dashboard] "Ambientale" è dedita alla visualizzazione di dati relativi all'ambiente, che includono temperatura, percentuale di umidità, direzione e velocità del vento, intensità delle precipitazioni, livello di polveri sottili e riempimento dei bacini idrici. Quelli riportati sono aspetti monitorati all'interno della #glossary[dashboard] tramite #glossary[pannelli] contenenti grafici di varia natura, in particolare si utilizza: il formato "#glossary[Time series]", il formato "Geomap", il formato "Table", il formato "Stat" e il formato "Gauge". Per maggiori informazioni sulla natura di ciascun formato, si rimanda alla #glossary[documentazione] ufficiale di #glossary[Grafana]. 
 
 === #glossary[Pannelli] con grafici in formato "#glossary[Time series]"
 
 I #glossary[pannelli] contenenti grafici in formato "#glossary[time series]" riportano dati relativi a:
 
-- Media della temperatura riportata da ciascun #glossary[sensore], con dati aggregati in intervalli di 1 minuto;
+- Media della temperatura riportata da ciascun #glossary[sensore], espressa in gradi Celsius (°C), con dati aggregati in intervalli di 1 minuto;
 
-- Media dell'umidità nell'aria riportata da ciascun #glossary[sensore], con dati aggregati in intervalli di 1 minuto;
+- Media dell'umidità nell'aria riportata da ciascun #glossary[sensore], espressa in percentuale, con dati aggregati in intervalli di 1 minuto;
 
-- Media dell'intensità delle precipitazioni riportata da ciascun #glossary[sensore], con dati aggregati in intervalli di 1 minuto;
+- Media dell'intensità delle precipitazioni riportata da ciascun #glossary[sensore], espressa in millimetri orari (mm/h), con dati aggregati in intervalli di 1 minuto;
 
-- Media del livello di polveri sottili nell'aria riportata da ciascun #glossary[sensore], con dati aggregati in intervalli di 1 minuto;
+- Media del livello di polveri sottili nell'aria riportata da ciascun #glossary[sensore], espressa in $#sym.mu g\/m^3$ (#glossary("PM10")), con dati aggregati in intervalli di 1 minuto;
 
-- Media del riempimento dei bacini idrici riportata da ciascun #glossary[sensore], con dati aggregati in intervalli di 1 minuto.
+- Media del riempimento dei bacini idrici riportata da ciascun #glossary[sensore], espressa in percentuale, con dati aggregati in intervalli di 1 minuto.
 
 Tali #glossary[pannelli] mostrano l'ora del giorno sull'asse x, la legenda del contenuto al di sotto dell'asse x e l'unità di misura del dato in esame sull'asse y. La legenda, in particolare, riporta i nomi dei sensori rilevanti e la cosiddetta "Moving average": cliccando su uno qualsiasi di questi elementi, è possibile filtrare il contenuto del grafico per mostrare esclusivamente l'andamento dell'elemento selezionato e nascondere il resto; cliccando nuovamente si riporta il grafico allo stato di default. Infine, posizionando il cursore sopra un punto qualunque dell'andamento dei dati forniti da un dato #glossary[sensore], è possibile visualizzarne timestamp, nome del #glossary[sensore] e valore corrispondente.
 
@@ -209,7 +209,7 @@ Tali #glossary[pannelli] mettono a disposizione, in alto a sinistra, due pulsant
 
 Il #glossary[pannello] contenente un grafico in formato "Table" riporta dati relativi a:
 
-- Velocità del vento riportata da ciascun #glossary[sensore].
+- Velocità del vento riportata da ciascun #glossary[sensore], espressa in chilometri all'ora (km/h).
 
 Tale #glossary[pannello] contiene una tabella avente campi che indicano il nome del #glossary[sensore], la velocità del vento più recente, la direzione più recente, la latitudine e la longitudine; sono visibili delle scroll bar che consentono di scorrere la tabella verticalmente o orizzontalmente in caso non fosse interamente visibile. Inoltre, cliccando sul nome di un determinato campo, è possibile ordinare la tabella rispetto a quel campo in ordine crescente o decrescente. 
 
@@ -253,7 +253,7 @@ Le interazioni con tali #glossary[pannelli] sono identiche a quelle descritte pe
 
 Il #glossary[pannello] contenente un grafico in formato "Table" riporta dati relativi a:
 
-- Erogazione delle colonne di ricarica riportata da ciascun #glossary[sensore].
+- Erogazione delle colonne di ricarica riportata da ciascun #glossary[sensore], espressa in chiloWatt per ora (kWh).
 
 Tale #glossary[pannello] contiene una tabella avente campi che indicano il nome del #glossary[sensore] e l'erogazione più recente; anche in questo caso le interazioni sono identiche a quelle descritte in precedenza.
 
