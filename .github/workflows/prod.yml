@@ -40,6 +40,7 @@ jobs:
           name: Documentazione
           path: |
             build
+
   deploy:
     runs-on: ubuntu-latest
     needs: test-and-publish
@@ -63,12 +64,12 @@ jobs:
         continue-on-error: true
         # Elimino tutti i file dalla repo di vetrina tranne i Verbali Esterni, essendo quelli firmati da tenere
         run: |
-          find ./2_RTB -mindepth 1 -not -path './2_RTB/VerbaliEsterni' -delete
+          find ./2_RTB -mindepth 1 ! -path './2_RTB/VerbaliEsterni/*' -delete
       - name: Clean Facing Repo PB
         continue-on-error: true
         # Elimino tutti i file dalla repo di vetrina tranne i Verbali Esterni, essendo quelli firmati da tenere
         run: |
-          find ./3_PB -mindepth 1 -not -path './3_PB/VerbaliEsterni' -delete
+          find ./3_PB -mindepth 1 ! -path './3_PB/VerbaliEsterni/*' -delete
       - name: Update Facing Repo
         run: |
           mkdir -p "./2_RTB" && cp -r ../Documentazione/2_RTB/* ./2_RTB/
