@@ -129,6 +129,17 @@ Si compone delle seguenti sezioni:
         - *#glossary[Architettura]*: presenta i componenti architetturali del #glossary[sistema], descrivendo i #glossary[design pattern] e le #glossary[best practices] utilizzate per organizzare e integrare i componenti in modo efficace ed efficiente; include diagrammi architetturali per illustrare visivamente la struttura e le relazioni all'interno del #glossary[sistema]\; 
         - *Tracciamento dei requisiti*: riporta i requisiti identificati all'interno dell'_Analisi dei Requisiti v2.0_, specificando se questi sono stati soddisfatti o meno; illustra anche la percentuale di copertura della totalità dei requisiti e, più nello specifico, di quelli obbligatori.
 
+==== Manuale Utente
+
+Il _Manuale Utente_, redatto dal Programmatore, è un documento essenziale che fornisce agli utenti finali tutte le informazioni necessarie per utilizzare in modo efficace il software. Tale documento è progettato per essere una risorsa completa che accompagna l'utente lungo tutto il processo di utilizzo del software, dalla fase di installazione fino alla gestione quotidiana delle funzionalità offerte.
+
+Si compone delle seguenti sezioni:
+
+        - *Requisiti minimi*: fornisce informazioni riguardanti le specifiche hardware, software, di #glossary[sistema] operativo e browser necessarie per eseguire correttamente il programma;
+        - *Installazione*: guida gli utenti attraverso i passaggi necessari per configurare e avviare il software sul proprio #glossary[sistema];
+        - *Istruzioni per l'uso*: offrono una panoramica completa delle funzionalità del software e forniscono istruzioni dettagliate su come utilizzarle; nel caso del prodotto software "InnovaCity", le istruzioni per l'uso devono dettagliare le modalità di interazione con le #glossary[dashboard] e i #glossary[pannelli] propri di #glossary[Grafana], in modo che l'utente sia a conoscenza del modo più efficace di visualizzare e analizzare i dati a disposizione; è bene che tale sezione sia quanto più possibile descrittiva, e dunque corredata da screenshot e immagini rilevanti;
+        - *Supporto tecnico*: vengono forniti i contatti del team #team a fini di assistenza tecnica per la risoluzione di eventuali problemi.
+
 ==== Glossario
 
 Il _Glossario v1.0_ funge da catalogo esaustivo che raccoglie i termini tecnici impiegati all'interno del progetto, offrendo definizioni chiare e precise. Questo documento previene fraintendimenti e promuove una comprensione condivisa della terminologia specifica del settore, migliorando così la coerenza e la qualità della #glossary[documentazione] prodotta dal team.
