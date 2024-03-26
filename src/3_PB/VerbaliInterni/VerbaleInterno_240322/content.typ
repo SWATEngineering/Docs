@@ -41,7 +41,7 @@ Di conseguenza si è deciso di allocare risorse nella correzione del prodotto ov
 Sono state rilevate alcune mancanze nel processo di installazione illustrato all'interno del documento _Manuale Utente_ e che dunque non consentirebbero all'utente di poter installare e utilizzare il prodotto. 
 Perciò sono state allocate risorse nell'ampiamento delle sezioni di installazione e uso, al fine di rimuovere queste lacune.
 
-== Spercifiche Tecniche
+== Specifica Tecnica
 
 Il team ha rilevato alcune ambiguità nella sezione relativa al tracciamento dei requisiti soddisfatti. Viene creata una task in modo tale da poter risolvere tali ambiguità.
 
