@@ -52,4 +52,4 @@ Il team ha rilevato alcune ambiguità nella sezione relativa al tracciamento dei
 
 == MVP
 
-Sono state discusse inoltre un gran numero di modifiche relativamente al prodotto software, per raffinarlo a livello estetico, a livello di efficienza e per renderlo più aderente ai documenti che lo definiscono nei suoi vari aspetti.
+In vista della presentazione programmata a conclusione dello sprint corrente, va garantito che il prodotto sia aderente ai requisiti definiti e che risulti piacevole esteticamente.
