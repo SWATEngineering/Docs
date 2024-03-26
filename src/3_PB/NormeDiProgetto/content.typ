@@ -131,7 +131,7 @@ Si compone delle seguenti sezioni:
 
 ==== Manuale Utente
 
-Il _Manuale Utente_, redatto dal Programmatore, è un documento essenziale che fornisce agli utenti finali tutte le informazioni necessarie per utilizzare in modo efficace il software. Tale documento è progettato per essere una risorsa completa che accompagna l'utente lungo tutto il processo di utilizzo del software, dalla fase di installazione fino alla gestione quotidiana delle funzionalità offerte.
+Il _Manuale Utente_, redatto dal Programmatore, è un documento essenziale che fornisce agli utenti finali tutte le informazioni necessarie per utilizzare in modo efficace il prodotto. Tale documento è progettato per essere una risorsa completa che accompagna l'utente lungo tutto il processo di utilizzo del software, dalla fase di installazione fino alla gestione quotidiana delle funzionalità offerte.
 
 Si compone delle seguenti sezioni:
 
