@@ -975,17 +975,6 @@ All'interno della cartella `src`, sono presenti 2 cartelle organizzate nel modo 
                 - SpecificheTecniche;
                 - VerbaliEsterni;
                 - VerbaliInterni.
-        - *4_CA*:
-                - AnalisiDeiRequisiti;
-                - Glossario;
-                - LetteraDiPresentazioneCA;
-                - ManualeUtente;
-                - NormeDiProgetto;
-                - PianoDiProgetto;
-                - PianoDiQualifica;
-                - SpecificheTecniche;
-                - VerbaliEsterni;
-                - VerbaliInterni.
 
 === Comandi beginner github  
 
