@@ -27,7 +27,7 @@ Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei d
 === Riferimenti informativi
 - _Analisi dei Requisiti v2.0_
 
-- _Specifiche Tecniche v1.0_
+- _Specifica Tecnica v1.0_
 
 - *#glossary[Grafana]*: #link("https://grafana.com/docs/grafana/latest/"); (10/03/2024)
 
@@ -52,7 +52,7 @@ table(
 caption: [Tabella requisiti software.])
 
 == Requisiti hardware
-I requisiti hardware indicano le specifiche tecniche relative alle componenti hardware necessarie per garantire un'esperienza di utilizzo ottimale del prodotto e prestazioni elevate.
+I requisiti hardware indicano le specifiche tecniche relative alle componenti hardware necessarie per garantire un'esperienza di utilizzo soddisfacente del prodotto e prestazioni accettabili.
 
 #figure(
 table(
@@ -127,7 +127,7 @@ Avendo eseguito gli step riportati sopra, #glossary[Grafana] sarà disponibile v
 
 Le #glossary[dashboard] riportano in alto un header contenente diverse opzioni atte a navigare attraverso l'istanza di #glossary[Grafana] correntemente in uso e a personalizzare l'apparenza della #glossary[dashboard] stessa:
 
-- *Navigazione breadcrumb*: per accedere facilmente alla pagina Home ("Home") o all'elenco delle #glossary[dashboard] in ("Dashboards") per selezionare una particolare #glossary[dashboard] tra quelle contenute nella cartella corrente;
+- *Navigazione breadcrumb*: permette di visualizzare in quale parte del sito l'utente è collocato e di navigarci secondo la gerarchia del sito. Ad esempio è possibile accedere facilmente alla pagina Home ("Home") o all'elenco delle #glossary[dashboard] in "Dashboards";
 
 - "*Share #glossary[dashboard] or panel*": per condividere il #glossary[pannello] o la d#glossary[dashboard] corrente utilizzando un link o uno snapshot;
 
@@ -193,7 +193,7 @@ I #glossary[pannelli] contenenti grafici in formato "#glossary[time series]" rip
 
 - Media del riempimento dei bacini idrici riportata da ciascun #glossary[sensore], con dati aggregati in intervalli di 1 minuto.
 
-Tali #glossary[pannelli] mostrano l'ora del giorno sull'asse x, la legenda del contenuto al di sotto dell'asse x e l'unità di misura del dato in esame sull'asse y. La legenda, in particolare, riporta i nomi dei sensori rilevanti e la cosiddetta "Moving average": cliccando su uno qualsiasi di questi elementi, è possibile filtrare il contenuto del grafico per mostrare esclusivamente l'andamento dell'elemento selezionato e nascondere il resto; cliccando nuovamente si riporta il grafico allo stato di default. Infine, posizionando il cursore sopra un punto qualunque dell'andamento dei dati forniti da un dato #glossary[sensore], è possibile visualizzarne timestamp, nome del #glossary[sensore] e valore corrispondente.
+Tali #glossary[pannelli] mostrano l'ora del giorno sull'asse x, la legenda del contenuto al di sotto dell'asse x e l'unità di misura del dato in esame sull'asse y. La legenda, in particolare, riporta i nomi dei sensori rilevanti e la cosiddetta "Moving average"; cliccando su uno qualsiasi di questi elementi, è possibile filtrare il contenuto del grafico per mostrare esclusivamente l'andamento dell'elemento selezionato e nascondere il resto; cliccando nuovamente si riporta il grafico allo stato di default. Infine, posizionando il cursore sopra un punto qualunque dell'andamento dei dati forniti da un dato #glossary[sensore], è possibile visualizzarne timestamp, nome del #glossary[sensore] e valore corrispondente.
 
 === #glossary[Pannelli] con grafici in formato "Geomap"
 
@@ -219,11 +219,11 @@ Il #glossary[pannello] contenente un grafico in formato "Stat" riporta dati rela
 
 - Media della temperatura riportata da tutti i sensori cumulativamente, nell'intervallo di tempo selezionato.
 
-Tale #glossary[pannello] contiene un indice numerico che riporta quanto descritto sopra e non vi sono particolarità nel modo di interagirvi, al di là di quello che accomuna tutti i #glossary[pannelli] in #glossary[Grafana] descritto nella sezione *Pannelli*.
+Tale #glossary[pannello] contiene un indice numerico che riporta quanto descritto sopra. L'interazione con questo pannello non si distingue dalla descrizione presente nella sezione *Pannelli*.
 
 === #glossary[Pannelli] con grafici in formato "Gauge"
 
-Il #glossary[pannello] contenente un grafico in formato "Stat" riporta dati relativi a:
+Il #glossary[pannello] contenente un grafico in formato "Gauge" riporta dati relativi a:
 
 - Media dell'intensità delle precipitazioni riportata da tutti i sensori cumulativamente, nell'intervallo di tempo selezionato.
 
@@ -239,7 +239,7 @@ I #glossary[pannelli] contenenti grafici in formato "Geomap" riportano dati rela
 
 - Disponibilità dei parcheggi, tramite un indicatore numerico che riporta il numero di posti liberi;
 
-- Disponibilità delle colonne di ricarica, tramite un indicatore binario;
+- Disponibilità delle colonne di ricarica, tramite un indicatore booleano;
 
 - Stato di congestione delle strade, tramite gli stati "LOW", "MEDIUM", "HIGH" e "BLOCKED";
 
@@ -282,15 +282,15 @@ La #glossary[dashboard] "Dati anomali & Superamento soglie" è dedita alla visua
 
 === #glossary[Pannelli] con grafici in formato "Table"
 
-- Superamento soglia precipitazioni (50 mm/h): riporta i dati superamenti la soglia dei 50 millimetri di pioggia all'ora;
+- Superamento soglia precipitazioni (50 mm/h): riporta i dati superanti la soglia dei 50 millimetri di pioggia all'ora;
 
-- Superamento soglia riempimento zone ecologiche (80%): riporta i dati superamenti la soglia dell'80% di capienza;
+- Superamento soglia riempimento zone ecologiche (80%): riporta i dati superanti la soglia dell'80% di capienza;
 
-- Superamento soglia livello bacini idrici (70%): riporta i dati superamenti la soglia del 70% di capienza;
+- Superamento soglia livello bacini idrici (70%): riporta i dati superanti la soglia del 70% di capienza;
 
-- Superamento soglia livello polveri sottili ($80#sym.mu g\/m^3$): riporta i dati superamenti la soglia degli $80#sym.mu g\/m^3$ per l'inquinamento dell'aria (#glossary("PM10"));
+- Superamento soglia livello polveri sottili ($80#sym.mu g\/m^3$): riporta i dati superanti la soglia degli $80#sym.mu g\/m^3$ per l'inquinamento dell'aria (#glossary("PM10"));
 
-- Superamento soglia temperatura (40°C): riporta i dati superamenti la soglia dei 40 gradi Celsius di temperatura.
+- Superamento soglia temperatura (40°C): riporta i dati superanti la soglia dei 40 gradi Celsius di temperatura.
 
 #pagebreak()
 
