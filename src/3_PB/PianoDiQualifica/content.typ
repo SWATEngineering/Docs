@@ -322,7 +322,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che il sensore dell'umidità generi dati che rimangano all'interno di uno specifico range.
+            Verificare che la percentuale generata dal simulatore di umidità rimanga all'interno di un intervallo specifico.
       ],"S",[
 
       ]),
