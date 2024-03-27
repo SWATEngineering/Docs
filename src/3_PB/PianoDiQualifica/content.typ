@@ -411,7 +411,7 @@ table(
 
 == Test di integrazione  
 
-#let test_di_accettazione = (
+#let test_di_integrazione = (
 
       ([
             Verificare che i dati generati dal sensore di inquinamento atmosferico siano correttamente memorizzati nella tabella `innovacity.air_pollution` del database.
