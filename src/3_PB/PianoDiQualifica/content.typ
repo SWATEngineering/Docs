@@ -391,7 +391,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che il sensore del parcheggio generi dati all'interno di uno specifico range.
+            Verificare che il valore generato dal simulatore dei parcheggi rimanga all'interno di un intervallo specifico.
       ],"S",[
 
       ])
