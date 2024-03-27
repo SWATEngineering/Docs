@@ -119,9 +119,9 @@ Si compone delle seguenti sezioni:
         - *Specifiche dei test*: specifiche dettagliate dei test che verranno condotti durante lo sviluppo del progetto;
         - *Cruscotto della qualità*: resoconto delle attività di valutazione effettuate durante il progetto. Le valutazioni risultano fondamentali a tracciare l'andamento del progetto rispetto agli obiettivi e alle aspettative, e a identificare prontamente eventuali azioni correttive necessarie a garantire la qualità complessiva del progetto.
 
-==== Specifiche Tecniche
+==== Specifica Tecnica
 
-Le _Specifiche Tecniche_, redatte dal Progettista, costituiscono un resoconto dettagliato delle scelte progettuali e delle soluzioni tecniche adottate dal team per implementare il #glossary[sistema] software. Il documento fornisce una guida completa per i Programmatori delineando l'architettura generale del #glossary[sistema], inclusi i moduli principali, le interfacce, le relazioni tra i componenti e le tecnologie utilizzate.
+Le _Specifica Tecnica_, redatte dal Progettista, costituiscono un resoconto dettagliato delle scelte progettuali e delle soluzioni tecniche adottate dal team per implementare il #glossary[sistema] software. Il documento fornisce una guida completa per i Programmatori delineando l'architettura generale del #glossary[sistema], inclusi i moduli principali, le interfacce, le relazioni tra i componenti e le tecnologie utilizzate.
 
 Si compone delle seguenti sezioni:
 
@@ -455,7 +455,16 @@ Il diagramma pur essendo vastamente utilizzato nell'ambito dell'ingegneria infor
                         caption: "Figura rappresentante la sintassi adottata."
                 )
 
-
+===== Diagrammi del database
+Per quanto riguarda la progettazione del database, il Progettista deve definire lo schema delle tabelle che vanno a costituire il database del #glossary[sistema]. Questo schema deve essere rappresentato attraverso un diagramma che mostri le tabelle coinvolte, i campi che le compongono e le relazioni tra di esse. Essendo che il database è contenuto in un DBMS di tipo OLAP, uno schema ER classico non era adatto a rappresentarlo; pertanto, si è scelto di definire una rappresentazione alternativa, che permettesse di visualizzare in modo chiaro e conciso le tabelle e le relazioni tra di esse.
+ Di seguito si elencano i possibili elementi di un diagramma di questo tipo:
+        
+        - *Tabella*: rappresenta una tabella del database e viene rappresentata con un rettangolo a linea piena, separando con una linea il nome della tabella, i nomi degli attributi e i tipi di dato;
+        - *#glossary[Materialized views]*: rappresenta una vista materializzata, ovvero una tabella che contiene i risultati di una query; viene rappresentata con un rettangolo a linea tratteggiata;
+        - *Query*: rappresenta una query SQL, viene riportata all'interno di un "post it" collegato alla #glossary[materialized views] a cui fa riferimento;
+        - *Flusso dei dati*: rappresenta il flusso di dati tra le tabelle e le #glossary[materialized views], viene rappresentato con una freccia piena;
+        - *Riferimento*: viene utilizzata per collegare un "post it" con la #glossary[materialized views] a cui fa riferimento; si rappresenta con una freccia tratteggiata;
+        - *Engine*: indica il motore di database utilizzato per la creazione della tabella; viene riportato anch'esso all'interno di un "post it", posto nei pressi della tabella.
 
 ===== Diagrammi #glossary[UML] delle classi    
 
@@ -544,14 +553,14 @@ L'architettura deve soddisfare vari criteri:
         - Soddisfazione dei requisiti elencati nel documento _Analisi dei Requisiti v2.0_;
         - Tracciamento dei requisiti: deve essere presente un tracciamento completo dei requisiti attraverso l'implementazione di una tabella che comprende il codice del requisito, la sua descrizione e un indicazione se è stato soddisfatto o meno. In aggiunta, è richiesto un grafico a torta che rappresenti la percentuale di requisiti soddisfatti rispetto al totale;
         - Utilizzo efficace ed efficiente delle risorse;
-        - Adozione di ottime pratiche di documentazione, che vengono rispecchiate all'interno delle _Specifiche Tecniche_.
+        - Adozione di ottime pratiche di documentazione, che vengono rispecchiate all'interno delle _Specifica Tecnica_.
 
 ===== Informazioni aggiuntive
 
-All'interno del documento _Specifiche Tecniche v1.0_, si utilizza un'automazione #glossary[Typst] per la creazione delle tabelle dei requisiti soddisfatti nella sezione *Tracciamento dei requisiti*; le tabelle importano i dati delle prime due colonne ("Codice" e "Descrizione") direttamente dall'_Analisi dei Requisiti v2.0_ per ridurre sprechi di risorse e l'introduzione di errori, e aggiungono una terza colonna ("Stato"):
+All'interno del documento _Specifica Tecnica v1.0_, si utilizza un'automazione #glossary[Typst] per la creazione delle tabelle dei requisiti soddisfatti nella sezione *Tracciamento dei requisiti*; le tabelle importano i dati delle prime due colonne ("Codice" e "Descrizione") direttamente dall'_Analisi dei Requisiti v2.0_ per ridurre sprechi di risorse e l'introduzione di errori, e aggiungono una terza colonna ("Stato"):
         - *Codice*: il codice del requisito;
         - *Descrizione*: definizione atomica e disambigua del requisito;
-        - *Stato*: "Soddisfatto" o "Non soddisfatto", in riferimento al soddisfacimento del requisito all'interno dell'#glossary[architettura] individuata nelle _Specifiche Tecniche_.
+        - *Stato*: "Soddisfatto" o "Non soddisfatto", in riferimento al soddisfacimento del requisito all'interno dell'#glossary[architettura] individuata nelle _Specifica Tecnica_.
 
  In particolare, si utilizzano degli array per tenere traccia dei requisiti soddisfatti a seconda della loro tipologia (dove i requisiti vengono identificati tramite il codice univoco assegnato loro nell'_Analisi dei Requisiti v2.0_) e questi vengono successivamente utilizzati per popolare la colonna "Stato" delle tabelle in modo opportuno. 
 
@@ -685,7 +694,7 @@ I documenti che verranno prodotti sono:
         - _Piano di Progetto v2.0_;
         - _Piano di Qualifica v2.0_;
         - _Analisi dei Requisiti v2.0_;
-        - _Specifiche Tecniche v1.0_;
+        - _Specifica Tecnica v1.0_;
         - _Manuale Utente v1.0_;
         - _Glossario v2.0_;
         - _Verbali_:
@@ -837,7 +846,7 @@ Le varie sigle relative ai documenti e al progetto sono le seguenti:
         - Piano di Progetto → *PdP*;
         - Piano di Qualifica → *PdQ*;
         - Manuale Utente → *MU*;
-        - Specifiche Tecniche → *ST*;
+        - Specifica Tecnica → *ST*;
         - Verbale Interno → *VI*;
         - Verbale Esterno → *VE*;
         - Glossario → *Gls*.
@@ -1315,18 +1324,18 @@ Dopo l'#glossary[RTB] il diario di bordo si tiene ogni venerdì alle 15, pertant
         - Progettazione architetturale che miri all'economicità e alla manutenibilità del #glossary[sistema]\;
         - Ottimizzazione delle prestazioni usando algoritmi efficienti e gestione memoria;
         - Gestione dei rischi: cerca di mitigare problemi che possono sorgere durante lo sviluppo;
-        - Redazione del documento _Specifiche Tecniche_.
+        - Redazione del documento _Specifica Tecnica_.
 
 ==== Programmatore
 
-        Figura professionale incaricata di trasformare le specifiche tecniche in codice eseguibile, garantendo un'implementazione efficiente e accurata delle funzionalità richieste dal progetto.
+        Figura professionale incaricata di trasformare le Specifica Tecnica in codice eseguibile, garantendo un'implementazione efficiente e accurata delle funzionalità richieste dal progetto.
 
         I suoi compiti:
 
-        - Traduzione delle specifiche tecniche in codice funzionante;
+        - Traduzione delle Specifica Tecnica in codice funzionante;
         - Scrittura di codice chiaro, leggibile e manutenibile;
         - Creazione di test per la verifica del software;
-        - Ampliamento delle _Specifiche Tecniche_ conforme alle esigenze del progetto;
+        - Ampliamento delle _Specifica Tecnica_ conforme alle esigenze del progetto;
         - Risoluzione di #glossary[bug] e problemi di performance;
         - Realizzazione del _Manuale Utente_;
         - Collaborazione con il team per l'integrazione del codice e il mantenimento della coerenza del progetto.
