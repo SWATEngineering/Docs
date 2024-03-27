@@ -4,11 +4,11 @@ Corsie di Stato;Contenitori di _Issue_ che le suddividono logicamente secondo il
 Sprint;Singolo periodo temporale, solitamente breve, per il quale sono fissati delle attività da portare a termine.
 Workflow;Sistema per gestire processi ripetitivi e attività che necessitano di uno specifico ordine.
 Quorum;Numero minimo accettabile di persone che possono prendere decisioni a nome del gruppo.
-Amministratore Pubblico;Figura che opera nel settore pubblico responsabile della gestione delle risorse e dell'amministrazione dei servizi pubblici, relativamente ad una determinata regione geografica. 
+Amministratore Pubblico;"Figura che opera nel settore pubblico responsabile della gestione delle risorse e dell'amministrazione dei servizi pubblici, relativamente ad una determinata regione geografica. "
 Sensore;Dispositivo in grado di effettuare misurazioni relative al proprio dominio di interesse. Questi dati possono essere letti ed utilizzati dal sistema.
-Real-Time;Aggettivo utillizzato per definire che un attività in risposta ad un evento avviene immediatamente,o con ritardi trascurabili. 
+Real-Time;"Aggettivo utillizzato per definire che un attività in risposta ad un evento avviene immediatamente,o con ritardi trascurabili. "
 Attore;Entità esterna al sistema che interagisce con esso al fine di realizzare scopo specifico.
-Cella;Termine utilizzato per indicare un area geografica risultante dalla divisione di un territorio tramite l'applicazione di un griglia. 
+Cella;"Termine utilizzato per indicare un area geografica risultante dalla divisione di un territorio tramite l'applicazione di un griglia. "
 Test end-to-end;Test che valuta l'intero flusso dell'applicazione, in modo tale da verificare che tutti i componenti funzionino correttamente.
 Documentazione;Insieme di documenti che forniscono spiegazioni su un determinato prodotto.
 Sistema; Insieme organizzato di componenti interconnesse e interagenti, che lavorano per raggiungere un obiettivo comune o eseguire specifiche funzioni. Nello specifico del progetto per sistema si intende l'insieme connesso della dashboard di visualizzazione, del database per la persistenza ed analisi dei dati e della piattaforma di streaming di dati in tempo reale per gestire i dati in entrata.
@@ -70,3 +70,4 @@ UML; Acronimo di "Unified Modeling Language", è uno standard di settore per la 
 Grafana; Piattaforma open-source per l'analisi e la visualizzazione dei dati. Essa offre strumenti avanzati per la creazione di dashboard interattive, report e grafici che consentono agli utenti di monitorare e comprendere meglio le metriche provenienti da svariate fonti di dati.
 Sprint Planning; Attività nel contesto della metodologia Scrum, durante la quale vengono discussi i requisiti prioritari del backlog del prodotto e il team assegna le attività in base alla loro dimensione e priorità, oltre che alla capacità di lavoro stimata per lo sprint imminente.
 Data Flow Diagram; Diagramma UML che permette di rappresentare come i dati fluiscono, vengono elaborati e persistiti dal sistema.
+JSON;JSON (JavaScript Object Notation è un formato di file standard aperto e un formato di interscambio dati che utilizza testo leggibile dall’uomo per memorizzare e trasmettere oggetti dati composti da coppie attributo-valore e array (o altri valori serializzabili).
