@@ -410,7 +410,7 @@ table(
 ),caption: "Test di unità.")
 
 == Test di integrazione  
-
+In questa sezione vengono descritti i test di integrazione del prodotto software.
 #let test_di_integrazione = (
 
       ([
