@@ -242,7 +242,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che il metodo `run_all()` della classe `SimulatorExecutor` avvia correttamente tutti i simulatori associati ad esso.
+            Verificare che il metodo `run_all()` della classe `SimulatorExecutor` avvii correttamente tutti i simulatori associati ad esso.
       ],"S",[
 
       ]),
