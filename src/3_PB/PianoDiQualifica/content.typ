@@ -483,7 +483,7 @@ table(
       align: (center,left,center),
       fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Codice test*],[*Descrizione*],[*Stato*],
-      ..test_di_unità.map(item => (item.at(0),item.at(1),item.at(2))).flatten().map(item => [#item])
+      ..test_di_integrazione.map(item => (item.at(0),item.at(1),item.at(2))).flatten().map(item => [#item])
 ),caption: "Test di integrazione.")
 
 
