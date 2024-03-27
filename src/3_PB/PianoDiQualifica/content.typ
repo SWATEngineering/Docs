@@ -357,7 +357,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che il sensore del vento ritorni il valore corretto.
+            Verificare che il simulatore del vento fornisca i dati attesi nel formato prestabilito.
       ],"S",[
 
       ]),
