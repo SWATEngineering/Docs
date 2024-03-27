@@ -307,7 +307,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che il sensore delle isole ecologiche ritorni il dato corretto.
+            Verificare che il simulatore delle zone ecologiche fornisca i dati attesi nel formato prestabilito.
       ],"S",[
 
       ]),
