@@ -302,7 +302,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che la potenza della batteria della bici elettrica rimanga all'interno di un intervallo specificato.
+            Verificare che il livello di batteria del simulatore delle biciclette elettriche rimanga all'interno di un intervallo specifico.
       ],"S",[
 
       ]),
