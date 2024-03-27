@@ -352,7 +352,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che il sensore della temperatura generi dati che rimangano all'interno di uno specifico range.
+            Verificare che il valore generato dal simulatore della temperatura rimanga all'interno di un intervallo specifico.
       ],"S",[
 
       ]),
