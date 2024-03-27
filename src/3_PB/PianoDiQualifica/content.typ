@@ -229,7 +229,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
 #let test_di_unità =(
       ([
-            Verificare che il metodo `produce()` della classe `AdapterProducer` si comporti correttamente sia quando funziona correttamente che quando si verifica un errore nel produttore Kafka.
+            Verificare che il metodo `produce()` della classe `AdapterProducer` si comporti come atteso sia in situazioni in cui il producer di #glossary[Kafka] funziona senza problemi, sia in caso di errori.
       ], "S", [
 
       ]),
