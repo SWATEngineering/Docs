@@ -297,7 +297,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che i dati della bici elettrica, in base al percorso e destinazione siano corretti.
+            Verificare che il simulatore delle biciclette elettriche fornisca i dati attesi nel formato prestabilito.
       ],"S",[
 
       ]),
