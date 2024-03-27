@@ -312,7 +312,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che il sensore delle isole ecologiche generi i dati che rimangano all'interno di un range specifico.
+            Verificare che il livello di riempimento del simulatore delle zone ecologiche rimanga all'interno di un intervallo specifico.
       ],"S",[
 
       ]),
