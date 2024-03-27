@@ -277,7 +277,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che il sensore delle colonne di ricarica forniscono il risultato atteso.
+            Verificare che il simulatore delle colonne di ricarica fornisca i dati attesi nel formato prestabilito.
       ],"S",[
 
       ]),
