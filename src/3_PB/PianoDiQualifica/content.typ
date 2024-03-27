@@ -262,7 +262,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che il metodo `write()` della classe `StdoutWriter` scriva correttamente un messaggio sulla standard output.
+            Verificare che il metodo `write()` della classe `StdoutWriter` scriva correttamente un messaggio sullo standard output.
       ],"S",[
 
       ]),
@@ -272,7 +272,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare il comportamento della funzione `acked()` del modulo `utility_functions`, verificando se stampa correttamente i messaggi di errore e di fallimento sulla standard output..
+            Verificare il comportamento della funzione `acked()` del modulo `utility_functions`, verificando che stampi correttamente i messaggi di errore  sullo standard output.
       ],"S",[
 
       ]),
@@ -282,7 +282,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che la potenza erogata dalle colonne di ricarica rimangano all'interno di uno specifico range.
+            Verificare che i dati sulla potenza erogata dalle colonne di ricarica simulate rimangano all'interno di un intervallo specifico.
       ],"S",[
 
       ]),
@@ -292,7 +292,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare la correttezza del recupero delle coordinate del percorso della bicicletta elettrica.
+            Verificare la correttezza del recupero delle coordinate del percorso delle biciclette elettriche simulate.
       ],"S",[
 
       ]),
@@ -332,7 +332,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che il sensore della pioggia generi dati che rimangano all'interno di uno specifico range.
+            Verificare che l'intensità di pioggia generata dal simulatore di precipitazioni rimanga all'interno di un intervallo specifico.
       ],"S",[
 
       ]),
@@ -414,54 +414,54 @@ In questa sezione vengono descritti i test di integrazione del prodotto software
 #let test_di_integrazione = (
 
       ([
-            Verificare che i dati generati dal sensore di inquinamento atmosferico siano correttamente memorizzati nella tabella `innovacity.air_pollution` del database.
+            Verificare che i dati generati dal simulatore di inquinamento atmosferico siano correttamente memorizzati nella tabella `innovacity.air_pollution` del database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal sensore di inquinamento atmosferico siano correttamente aggregati e memorizzati nella tabella `innovacity.air_pollution1m` del database.
+            Verificare che i dati generati dal simulatore di inquinamento atmosferico siano correttamente aggregati e memorizzati nella tabella `innovacity.air_pollution1m` del database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal sensore delle colonne di ricarica siano correttamente memorizzati nella tabella `innovacity.charging_station` del database.
+            Verificare che i dati generati dal simulatore delle colonne di ricarica siano correttamente memorizzati nella tabella `innovacity.charging_station` del database.
       ],"S",[]),
 
       ([
-            Verificare che i dati generati dal sensore della bici elettrica siano correttamente memorizzati nella tabella `innovacity.ebikes` del database.
+            Verificare che i dati generati dal simulatore delle biciclette elettriche siano correttamente memorizzati nella tabella `innovacity.ebikes` del database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal sensore di riempimento delle isole ecologiche siano correttamente memorizzati nella tabella `innovacity.eco_zone` del database.
+            Verificare che i dati generati dal simulatore di riempimento delle isole ecologiche siano correttamente memorizzati nella tabella `innovacity.eco_zone` del database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal sensore di umidità siano correttamente memorizzati nella tabella `innovacity.humidity` del database.
+            Verificare che i dati generati dal simulatore di umidità siano correttamente memorizzati nella tabella `innovacity.humidity` del database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal sensore di umidità siano correttamente aggregati e memorizzati nella tabella `innovacity.humidity1m` del database.
+            Verificare che i dati generati dal simulatore di umidità siano correttamente aggregati e memorizzati nella tabella `innovacity.humidity1m` del database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal sensore del parcheggio siano correttamente memorizzati nella tabella `innovacity.parking` del database.
+            Verificare che i dati generati dal simulatore dei parcheggi siano correttamente memorizzati nella tabella `innovacity.parking` del database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal sensore di pioggia siano correttamente memorizzati nella tabella `innovacity.rain` del database.
+            Verificare che i dati generati dal simulatore di pioggia siano correttamente memorizzati nella tabella `innovacity.rain` del database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal sensore di pioggia siano correttamente aggregati e memorizzati nella tabella `innovacity.rain1m` del database.
+            Verificare che i dati generati dal simulatore di pioggia siano correttamente aggregati e memorizzati nella tabella `innovacity.rain1m` del database.
       ],"S",[]),
       
       ([
-            Verificare che i dati generati dal sensore del livello dei bacini idrici siano correttamente memorizzati nella tabella `innovacity.reservoirs` del database.
+            Verificare che i dati generati dal simulatore del livello di riempimento dei bacini idrici siano correttamente memorizzati nella tabella `innovacity.reservoirs` del database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal sensore del livello dei bacini idrici siano correttamente aggregati e memorizzati nella tabella `innovacity.reservoirs1m` del database.
+            Verificare che i dati generati dal simulatore del livello di riempimento dei bacini idrici siano correttamente aggregati e memorizzati nella tabella `innovacity.reservoirs1m` del database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal sensore di temperatura siano correttamente memorizzati nella tabella `innovacity.temperature` del database.
+            Verificare che i dati generati dal simulatore di temperatura siano correttamente memorizzati nella tabella `innovacity.temperature` del database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal sensore di temperatura siano correttamente aggregati e memorizzati nella tabella `innovacity.temperature1m` del database.
+            Verificare che i dati generati dal simulatore di temperatura siano correttamente aggregati e memorizzati nella tabella `innovacity.temperature1m` del database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal sensore del traffico siano correttamente memorizzati nella tabella `innovacity.traffic` del database.
+            Verificare che i dati generati dal simulatore del traffico siano correttamente memorizzati nella tabella `innovacity.traffic` del database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal sensore del vento siano correttamente memorizzati nella tabella `innovacity.wind` del database.
+            Verificare che i dati generati dal simulatore del vento siano correttamente memorizzati nella tabella `innovacity.wind` del database.
       ],"S",[]),
       ([
            Verificare che dati memorizzati nel database siano correttamente visualizzati su Grafana.
