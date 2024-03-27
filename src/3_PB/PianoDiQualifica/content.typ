@@ -317,7 +317,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che il sensore dell'umidità ritorni il dato corretto.
+            Verificare che il simulatore di umidità fornisca i dati attesi nel formato prestabilito.
       ],"S",[
 
       ]),
