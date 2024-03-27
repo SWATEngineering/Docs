@@ -347,7 +347,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che il sensore della temperatura ritorni il dato corretto.
+            Verificare che il simulatore della temperatura fornisca i dati attesi nel formato prestabilito.
       ],"S",[
 
       ]),
