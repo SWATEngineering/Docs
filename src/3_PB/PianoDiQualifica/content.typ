@@ -230,169 +230,169 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 #let test_di_unità =(
       ([
             Verificare che il metodo `produce()` della classe `AdapterProducer` si comporti correttamente sia quando funziona correttamente che quando si verifica un errore nel produttore Kafka.
-      ], "I", [
+      ], "S", [
 
       ]),
       ([
             Verificare che la classe `KafkaSimulatorExecutorFactory` sia in grado di creare correttamente un'istanza di `SimulatorExecutor` utilizzando una configurazione data.
-      ],"I",[]),
+      ],"S",[]),
       ([
        Verificare che il metodo `write()` della classe `KafkaWriter` chiami correttamente il metodo `produce()` del suo oggetto `TargetProducer` con il messaggio appropriato e la funzione di conferma acked.     
-      ], "I",[
+      ], "S",[
 
       ]),
       ([
             Verificare che il metodo `run_all()` della classe `SimulatorExecutor` avvia correttamente tutti i simulatori associati ad esso.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che il metodo `stop_all()` della classe `SimulatorExecutor` fermi correttamente tutti i simulatori associati ad esso.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che il metodo `run()` della classe `SimulatorThread` chiami correttamente il metodo `simulate()` del simulatore di sensore.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
            Verificare che il metodo `run()` della classe `SimulatorThread` chiami correttamente il metodo `write()` del writer durante l'esecuzione del thread.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che il metodo `write()` della classe `StdoutWriter` scriva correttamente un messaggio sulla standard output.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che la classe `StdoutSimulatorExecutorFactory` sia in grado di creare correttamente un'istanza di `SimulatorExecutor`.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare il comportamento della funzione `acked()` del modulo `utility_functions`, verificando se stampa correttamente i messaggi di errore e di fallimento sulla standard output..
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che il sensore delle colonne di ricarica forniscono il risultato atteso.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che la potenza erogata dalle colonne di ricarica rimangano all'interno di uno specifico range.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che vengano utilizzati i dati corretti per il calcolo del percorso della bici elettrica. 
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare la correttezza del recupero delle coordinate del percorso della bicicletta elettrica.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che i dati della bici elettrica, in base al percorso e destinazione siano corretti.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che la potenza della batteria della bici elettrica rimanga all'interno di un intervallo specificato.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che il sensore delle isole ecologiche ritorni il dato corretto.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che il sensore delle isole ecologiche generi i dati che rimangano all'interno di un range specifico.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che il sensore dell'umidità ritorni il dato corretto.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che il sensore dell'umidità generi dati che rimangano all'interno di uno specifico range.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che il sensore della pioggia ritorni il valore corretto.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che il sensore della pioggia generi dati che rimangano all'interno di uno specifico range.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che il sensore dei bacini idrici ritorni il valore corretto.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che il sensore dei bacini generei dati che rimangano all'interno di uno specifico range.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che il sensore della temperatura ritorni il dato corretto.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che il sensore della temperatura generi dati che rimangano all'interno di uno specifico range.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che il sensore del vento ritorni il valore corretto.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che il sensore del vento generi dati che rimangano all'interno di uno specifico range.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che il sensore dell'inquinamento atmosferico ritorni il valore corretto.
 
-      ],"I",[]),
+      ],"S",[]),
       ([
             Verificare che il sensore dell'inquinamento atmosferico generi dati che rimangano all'interno di uno specifico range.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che il sensore del traffico ritorni il valore corretto.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che i livelli di traffico generati siano tra quelli previsti (LOW, MEDIUM, HIGH, BLOCKED).
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che il sensore del parcheggio ritorni il valore corretto.
-      ],"I",[
+      ],"S",[
 
       ]),
       ([
             Verificare che il sensore del parcheggio generi dati all'interno di uno specifico range.
-      ],"I",[
+      ],"S",[
 
       ])
       
@@ -1034,7 +1034,7 @@ caption: [Lista di controllo per l’_Analisi dei Requisiti_.]
 
 
 #pagebreak()
-= Cruscotto delle metriche
+= Cruscotto della qualità
 
 == Qualità di processo - fornitura
 
