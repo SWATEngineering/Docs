@@ -60,8 +60,7 @@ Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei d
 = Tecnologie
 Questa sezione si propone di offrire una panoramica sintetica delle tecnologie adottate. Questo breve paragrafo introduttivo fornisce un quadro generale delle piattaforme, dei linguaggi di programmazione, dei #glossary[framework] e di altre risorse tecnologiche che costituiscono le basi del nostro progetto.
 
-== Codifica
-=== Linguaggi e formati dati
+== Linguaggi e formati dati
 #figure(
 table(
       columns:(auto,auto,110pt,auto),
@@ -75,7 +74,7 @@ table(
       [YAML], [Formato di serializzazione dei dati leggibile dall'uomo comunemente utilizzato per la configurazione dei servizi e lo scambio di dati tra programmi.],[Configurazione di docker compose.], [1.2.2],
       [JSON], [Formato leggero per lo scambio di dati, facile da leggere e scrivere per gli esseri umani e facile da analizzare e generare per le macchine.],[Configurazione dei simulatori di dati e formato dei messaggi spediti dai simulatori/sensori al broker dati.], [2020-12]),
 caption: [Tabella tecnologie per la Codifica: Linguaggi e formati dati.])
-=== #glossary[Framework] e librerie
+== #glossary[Framework] e librerie
 #figure(
 table(
       columns:(70pt,auto,auto),
