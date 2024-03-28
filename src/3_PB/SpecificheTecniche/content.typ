@@ -82,7 +82,10 @@ table(
       align: (x, y) => (center, center, center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Tecnologia*],[*Descrizione*],[*Versione*],
-      [Confluent Kafka], [Libreria #glossary[Python] che fornisce gli strumenti necessari per produrre e consumare messaggi da Apache #glossary("Kafka"). ], [1.9]),
+      [Confluent Kafka], [Libreria #glossary[Python] che fornisce gli strumenti necessari per produrre e consumare messaggi da Apache #glossary("Kafka"). ], [1.9],
+      [Pylint], [Strumento di analisi statica del codice #glossary[Python]. Attraverso la scansione del codice, identifica potenziali errori, incongruenze stilistiche e altre possibili problematiche; aiuta a garantire la correttezza, la leggibilità e la manutenibilità del codice.], [3.1.0],
+      [Pytest], [Framework di test progettato per #glossary[Python], noto per la sua flessibilità e semplicità d'uso. Offre agli sviluppatori un ambiente intuitivo per scrivere e eseguire test per verificare la correttezza e l'affidabilità del codice. Con Pytest è possibile effettuare una vasta gamma di test, tra cui test di unità, integrazione e accettazione, garantendo una copertura completa dei casi di test.], [8.1.1]
+      ),
 caption: [Tabella tecnologie per la Codifica: #glossary[Framework] e librerie])
 
 #pagebreak()
