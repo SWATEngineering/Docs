@@ -20,4 +20,4 @@ Le ore da Programmatore e da Verificatore continuano ad essere le più numerose 
 
 ==== Aggiornamento della pianificazione e gestione dei rischi
 
-Durante lo #glossary[sprint] attuale, l'unico rischio che si è manifestato è stato il rischio RT1 - Conoscenze tecnologiche limitate. Questa iterazione ha visto come problema principale l'implementazione del sistema di notifiche del prodotto il quale, veramente complesso da gestire ed impostare come desiderato, è stato risolto mediante una forte collaborazione tra programmatori nella comprensione e nell'implementazione di tale funzionalità.
+Durante lo #glossary[sprint] attuale, l'unico rischio che si è manifestato è stato il rischio RT1 - Conoscenze tecnologiche limitate. Questo #glossary[sprint] ha visto come problema principale l'implementazione del sistema di notifiche del prodotto il quale, è risultato particolarmente complesso da gestire e configurare secondo le specifiche desiderate. Tuttavia,  grazie a una stretta collaborazione tra Programmatori,  è stato possibile superare tale ostacolo.
