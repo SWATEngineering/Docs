@@ -15,7 +15,7 @@
 === Analisi a posteriori
 
 Dalla retrospettiva si evince che l'impegno del team continua ad essere alto e costante avendo, nell'ultimo #glossary[sprint], raggiunto le 56.5 ore produttive totali.
-È rilevabile un distacco di un 13% tra le ore preventivate e quelle consuntivate, questo però dovuto non ad una mancanza di lavoro da parte del team, bensì ad una pianificazione troppo pessimista, in quanto tutte le attività pianificate sono state portate a termine ma con un discreto anticipo inaspettato. 
+È rilevabile un distacco di un 13% tra le ore preventivate e quelle consuntivate, questo però dovuto non ad una mancanza di lavoro da parte del team, bensì ad una pianificazione più pessimista del necessario, in quanto tutte le attività pianificate sono state portate a termine ma con un discreto anticipo inaspettato. 
 Le ore da Programmatore e da Verificatore continuano ad essere le più numerose in quanto, avvicinandosi sempre più alla seconda revisione, è critica la costruzione di un buon prodotto che rispecchi quanto promesso alla Proponente.
 
 ==== Aggiornamento della pianificazione e gestione dei rischi
