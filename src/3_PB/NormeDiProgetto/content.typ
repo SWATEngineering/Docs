@@ -135,7 +135,7 @@ Il _Manuale Utente_, redatto dal Programmatore, è un documento essenziale che f
 
 Si compone delle seguenti sezioni:
 
-        - *Requisiti minimi*: fornisce informazioni riguardanti le specifiche hardware, software, di #glossary[sistema] operativo e browser necessarie per eseguire correttamente il programma;
+        - *Requisiti minimi*: fornisce informazioni riguardanti le specifiche hardware, software, di sistema operativo e browser necessarie per eseguire correttamente il programma;
         - *Installazione*: guida gli utenti attraverso i passaggi necessari per configurare e avviare il software sul proprio #glossary[sistema];
         - *Istruzioni per l'uso*: offrono una panoramica completa delle funzionalità del software e forniscono istruzioni dettagliate su come utilizzarle; nel caso del prodotto software "InnovaCity", le istruzioni per l'uso devono dettagliare le modalità di interazione con le #glossary[dashboard] e i #glossary[pannelli] propri di #glossary[Grafana], in modo che l'utente sia a conoscenza del modo più efficace di visualizzare e analizzare i dati a disposizione; è bene che tale sezione sia quanto più possibile descrittiva, e dunque corredata da screenshot e immagini rilevanti;
         - *Supporto tecnico*: vengono forniti i contatti del team #team a fini di assistenza tecnica per la risoluzione di eventuali problemi.
