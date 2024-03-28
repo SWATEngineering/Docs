@@ -7,8 +7,14 @@
 
 *Obiettivi dello #glossary[sprint]*: 
 
-- Proseguire la stesura del _Piano di Progetto_:
-    - Aggiornare pianificazione e preventivo pertinenti allo #glossary[sprint] 14 e inserire il consuntivo pertinente allo #glossary[sprint] 13 e in conclusione a questo #glossary("sprint") il consuntivo dello sprint 14;
-- Collaudo finale software; 
-- Presentare candidatura prima fase #glossary("PB") e relativa presentazione; 
-- Revisione #glossary("Walkthrough") dei documenti e relativa approvazione. 
+- Terminare la stesura del Piano di Progetto:
+    - Aggiornare pianificazione e preventivo pertinenti allo #glossary[sprint] 14 e inserire il consuntivo pertinente allo #glossary[sprint] 13;
+    - Trattandosi dell'ultimo #glossary("sprint"), inserire anche il consuntivo dello #glossary[sprint] 14 al termine dello stesso;
+- Aggiornare il Manuale Utente con:
+    - Aggiungere le API key necessarie per il corretto funzionamento del software alla sezione riguardante l'installazione;
+    - Aggiungere una sezione riguardante la componente di allarmistica su Discord;
+    - Aggiungere screenshot rilevanti.
+- Terminare la stesura del Piano di Qualifica con l'aggiornamento di tutte le metriche;
+- Raffinare l'aspetto estetico delle #glossary[dashboard] finali in #glossary[Grafana] e inserire un numero adeguato di sensori con locazioni realistiche, prima di presentare il software alla Proponente per la validazione del prodotto come #glossary[MVP];
+- Revisione in stile #glossary("walkthrough") dei documenti e relativa approvazione;
+Presentare la candidatura alla prima fase della seconda revisione #glossary("PB") e preparare la relativa presentazione.

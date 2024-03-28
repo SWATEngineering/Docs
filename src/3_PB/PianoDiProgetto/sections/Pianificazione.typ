@@ -70,11 +70,3 @@ Attraverso le fasi di progettazione e sviluppo ha inizio la creazione del proget
 #include "PianificazioneSprint/DodicesimoSprint.typ"
 #include "PianificazioneSprint/TredicesimoSprint.typ"
 #include "PianificazioneSprint/QuattordicesimoSprint.typ"
-== Customer Acceptance #glossary[CA]
-
-*Inizio*: 29/03/2024 
-
-*Fine*: 11/04/2024
-
-La fase di Customer Acceptance si basa su una verifica e miglioramento di tutti i documenti citati nelle altre revisioni.
-Il prodotto è considerato alla sua fase finale e si programma di modificarlo solamente per la risoluzione di #glossary[bug] o l'aggiunta di funzionalità richieste durante la revisione precedente (#glossary[PB]).
