@@ -420,6 +420,11 @@ In questa sezione vengono descritti i test di integrazione del prodotto software
             Verificare che i dati generati dal simulatore di inquinamento atmosferico siano correttamente aggregati e memorizzati nella tabella `innovacity.air_pollution1m` del database.
       ],"S",[]),
       ([
+            Verificare se i dati della media mobile generati dal simulatore di inquinamento atmosferico siano correttamente inseriti nella tabella `innovacity.air_pollution_ma`.
+      ],"S",[
+
+      ]),
+      ([
             Verificare che i dati generati dal simulatore delle colonne di ricarica siano correttamente memorizzati nella tabella `innovacity.charging_station` del database.
       ],"S",[]),
 
@@ -436,6 +441,11 @@ In questa sezione vengono descritti i test di integrazione del prodotto software
             Verificare che i dati generati dal simulatore di umidità siano correttamente aggregati e memorizzati nella tabella `innovacity.humidity1m` del database.
       ],"S",[]),
       ([
+            Verificare se i dati della media mobile generati dal simulatore di umidità siano correttamente inseriti nella tabella `innovacity.humidity_ma`.
+      ],"S",[
+
+      ]),
+      ([
             Verificare che i dati generati dal simulatore dei parcheggi siano correttamente memorizzati nella tabella `innovacity.parking` del database.
       ],"S",[]),
       ([
@@ -444,6 +454,11 @@ In questa sezione vengono descritti i test di integrazione del prodotto software
       ([
             Verificare che i dati generati dal simulatore di pioggia siano correttamente aggregati e memorizzati nella tabella `innovacity.rain1m` del database.
       ],"S",[]),
+      ([
+            Verificare se i dati della media mobile generati dal simulatore di pioggia siano correttamente inseriti nella tabella `innovacity.rain_ma`.
+      ],"S",[
+
+      ]),
       
       ([
             Verificare che i dati generati dal simulatore del livello di riempimento dei bacini idrici siano correttamente memorizzati nella tabella `innovacity.reservoirs` del database.
@@ -452,11 +467,21 @@ In questa sezione vengono descritti i test di integrazione del prodotto software
             Verificare che i dati generati dal simulatore del livello di riempimento dei bacini idrici siano correttamente aggregati e memorizzati nella tabella `innovacity.reservoirs1m` del database.
       ],"S",[]),
       ([
+            Verificare se i dati della media mobile generati dal simulatore del livello di riempimento dei bacini idrici siano correttamente inseriti nella tabella `innovacity.reservoirs_ma`.
+      ],"S",[
+
+      ]),
+      ([
             Verificare che i dati generati dal simulatore di temperatura siano correttamente memorizzati nella tabella `innovacity.temperature` del database.
       ],"S",[]),
       ([
             Verificare che i dati generati dal simulatore di temperatura siano correttamente aggregati e memorizzati nella tabella `innovacity.temperature1m` del database.
       ],"S",[]),
+      ([
+            Verificare se i dati della media mobile generati dal simulatore di temperatura siano correttamente inseriti nella tabella `innovacity.temperature_ma`.
+      ],"S",[
+
+      ]),
       ([
             Verificare che i dati generati dal simulatore del traffico siano correttamente memorizzati nella tabella `innovacity.traffic` del database.
       ],"S",[]),
