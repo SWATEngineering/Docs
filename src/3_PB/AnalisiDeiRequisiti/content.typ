@@ -80,7 +80,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC0: Visualizzazione menù #glossary("dashboard")
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un menù di selezione da cui può scegliere in che #glossary("dashboard") spostarsi tra: Dati grezzi, Ambientale, Urbanistica, Dati anomali & Superamento soglie;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un menù di selezione da cui può scegliere in che #glossary("dashboard") spostarsi tra: Dati grezzi, Ambientale, Urbanistica e Superamento soglie;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione.
 
@@ -187,7 +187,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC2.5: Visualizzazione tabella velocità del vento
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente dati relativi all'ultima velocità del vento, espressa in chilometri all'ora (km/h), registrata da ciascun #glossary("sensore"), sotto forma tabellare;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente dati relativi all'ultima velocità del vento, espressa in chilometri all'ora (km/h), e alla sua direzione, espressa in gradi (con gli 0° a Nord e i 180° a Sud), registrate da ciascun #glossary("sensore") (di cui viene riportato il nome), sotto forma tabellare; la tabella è indicizzata dal nome dei sensori;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
@@ -361,7 +361,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC3.4: Visualizzazione tabella descrittiva delle colonne di ricarica
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella, la quale riporta, per ciascuna colonna di ricarica per auto, l'erogazione in chiloWatt per ora attuale (kWh); la tabella è indicizzata dal nome dei sensori;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella, la quale riporta dati relativi all'erogazione in chiloWatt per ora attuale (kWh) registrata da ciascun #glossary("sensore") (di cui viene riportato il nome); la tabella è indicizzata dal nome dei sensori;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio urbanistico.
@@ -898,7 +898,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
      "Obbligatorio", "L'utente deve poter accedere all'applicazione senza dover effettuare l'autenticazione.", "Capitolato"
   ),
       (
-     "Obbligatorio", [L'utente deve poter visualizzare un menù di selezione delle #glossary("dashboard"), che permetta di selezionare tra Dati grezzi, Ambientale, Urbanistica e Dati anomali & Superamento soglie.], [UC#C.display()]
+     "Obbligatorio", [L'utente deve poter visualizzare un menù di selezione delle #glossary("dashboard"), che permetta di selezionare tra Dati grezzi, Ambientale, Urbanistica e Superamento soglie.], [UC#C.display()]
   ),
   (
      "Obbligatorio", [L'utente deve poter visualizzare una #glossary("dashboard") generale relativa ai dati grezzi.], [UC#C.step()#C.display()]
@@ -925,7 +925,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi la direzione del vento, mediante frecce aventi origine nelle coordinate geografiche del #glossary("sensore"), nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'ultima velocità del vento, espressa in chilometri all'ora, per ciascun #glossary("sensore"), nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'ultima velocità del vento, espressa in chilometri all'ora, e la sua direzione, espressa in gradi (con gli 0° a Nord e i 180° a Sud), per ciascun #glossary("sensore"), nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante l'andamento in media aritmetica dell'intensità delle precipitazioni, espresse in millimetri all'ora (mm/h), per ciascun #glossary("sensore"), aggregando i dati per intervalli di 1 minuto, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
