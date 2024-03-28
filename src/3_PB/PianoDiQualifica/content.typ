@@ -154,7 +154,7 @@ caption: [Tabella metriche per la funzionalità del prodotto.])
             [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
             [MPD-FIN], [Structure Fan In], [da determinare], [da determinare],
             [MPD-FOUT], [Structure Fan Out], [da determinare], [da determinare],
-            [MPD-CCM], [Complessità Ciclomatica per Metodo], [≤ 5], [≤ 3],
+            [MPD-CCM], [Complessità Ciclomatica per Metodo], [≤ 5], [≤ 4],
       ),
 caption: [Tabella metriche per la manutenibilità del prodotto.
 ])
