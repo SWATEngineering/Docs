@@ -82,7 +82,7 @@ table(
       align: (x, y) => (center, center, center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Tecnologia*],[*Descrizione*],[*Versione*],
-      [Confluent Kafka], [Libreria #glossary[Python] che fornisce gli strumenti necessari per produrre e consumare messaggi da Apache #glossary("Kafka"). ], [1.9],
+      [Confluent Kafka], [Libreria #glossary[Python] progettata per agevolare la produzione e il consumo di messaggi all'interno di un ambiente _Apache_ #glossary[Kafka]. Questa libreria fornisce agli sviluppatori gli strumenti necessari per interagire con efficacia con #glossary[Kafka], consentendo loro di scrivere codice #glossary[Python] per inviare e ricevere messaggi tramite il sistema di messaggistica distribuita di #glossary[Kafka]. Grazie a Confluent Kafka, è possibile implementare in modo efficiente la comunicazione asincrona e la gestione dei flussi di dati all'interno delle applicazioni #glossary[Python], sfruttando le potenzialità di _Apache_ #glossary[Kafka] per garantire scalabilità, affidabilità e prestazioni ottimali.], [1.9],
       ),
 caption: [Tabella tecnologie per la Codifica: #glossary[Framework] e librerie])
 
