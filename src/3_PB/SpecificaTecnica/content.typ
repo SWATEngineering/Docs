@@ -70,9 +70,9 @@ table(
       /*Giacomo D'Ovidio commenta: io sinceramente non so se andrei a specificare, credo poi ce ne sarà abbondantemente modo di parlarne nella parte relativa di design (Sezione 4), però bon come volete*/
       [*Tecnologia*],[*Descrizione*],[*Uso*],[*Versione/Standard*],
       [#glossary[Python]], [Linguaggio di programmazione ad alto livello, interpretato, multi paradigma.],[Creazione dei simulatori di dati.], [3.11],
-      [SQL], [Linguaggio standard per la gestione e la manipolazione dei database che lo supportano.],[Gestione e manipolazione del database ClickHouseDB.], [ANSI SQL],
-      [YAML], [Formato di serializzazione dei dati leggibile dall'uomo comunemente utilizzato per la configurazione dei servizi e lo scambio di dati tra programmi.],[Configurazione di docker compose.], [1.2.2],
-      [JSON], [Formato leggero per lo scambio di dati, facile da leggere e scrivere per gli esseri umani e facile da analizzare e generare per le macchine.],[Configurazione dei simulatori di dati e formato dei messaggi spediti dai simulatori/sensori al broker dati.], [2020-12]),
+      [SQL], [Linguaggio standard per la gestione e la manipolazione dei database che lo supportano.],[Gestione e manipolazione del database #glossary[ClickHouse].], [ANSI SQL],
+      [YAML], [Formato di serializzazione dei dati leggibile dall'uomo comunemente utilizzato per la configurazione dei servizi e lo scambio di dati tra programmi.],[Configurazione di Docker Compose.], [1.2.2],
+      [JSON], [Formato leggero per lo scambio di dati, facile da leggere e scrivere per gli esseri umani e facile da analizzare e generare per le macchine.],[Configurazione dei simulatori di dati, formato dei messaggi spediti dai simulatori al broker dati, configurazione delle dashboard #glossary[Grafana].], [2020-12]),
 caption: [Tabella tecnologie per la Codifica: Linguaggi e formati dati.])
 == #glossary[Framework] e librerie
 #figure(
