@@ -127,17 +127,22 @@ Avendo eseguito gli step riportati sopra, #glossary[Grafana] è visitabile all'i
 
 Le #glossary[dashboard], concepibili come contenitori di #glossary[pannelli], riportano in alto un header contenente diverse opzioni atte a navigare attraverso #glossary[Grafana] e a personalizzare l'apparenza della #glossary[dashboard] stessa:
 
-- *Navigazione breadcrumb*: permette di visualizzare in quale parte del sito l'utente è collocato e di navigarci secondo la gerarchia del sito. Ad esempio è possibile accedere facilmente alla pagina Home ("Home") o all'elenco delle #glossary[dashboard] in "Dashboards";
+#figure(
+  image("assets/screenshots/menu-dashboard.png",width:100%),
+  caption: [Menù delle dashboard.]
+)
 
-- "*Share #glossary[dashboard] or panel*": per condividere il #glossary[pannello] o la #glossary[dashboard] corrente utilizzando un link o uno snapshot;
+1. *Navigazione breadcrumb*: permette di visualizzare in quale parte del sito l'utente è collocato e di navigarci secondo la gerarchia del sito. Ad esempio è possibile accedere facilmente alla pagina Home ("Home") o all'elenco delle #glossary[dashboard] in "Dashboards";
 
-- "*Add*": per aggiungere un #glossary[pannello]\;
+2. "*Mark as favorite*": per salvare la #glossary[dashboard] tra i preferiti;
 
-- "*Save #glossary[dashboard]*": per salvare i cambiamenti effettuati sulla #glossary[dashboard]\;
+3. "*Share #glossary[dashboard] or panel*": per condividere il #glossary[pannello] o la #glossary[dashboard] corrente utilizzando un link o uno snapshot;
 
-- "*#glossary[Dashboard] settings*": per accedere alle impostazioni della #glossary[dashboard], che consentono di cambiarne il nome, cartella di appartenenza, gestirne le variabili ed eventuali annotazioni;
+4. "*Save #glossary[dashboard]*": per salvare i cambiamenti effettuati sulla #glossary[dashboard]\;
 
-- "*Time picker dropdown*": per selezionare l'intervallo di tempo nel quale i dati vengono visualizzati all'interno dei vari #glossary[pannelli] contenuti nella #glossary[dashboard]; si possono selezionare intervalli di tempo relativi all'ora corrente (ad esempio, "last 5 minutes") o intervalli di tempo assoluti (ad esempio, "2024-05-14 00:00:00 to 2024-05-15 23:59:59"). Si può anche utilizzare il pulsante "Change time settings" per cambiare il fuso orario e l'anno fiscale considerato negli intervalli di tempo:
+5. "*#glossary[Dashboard] settings*": per accedere alle impostazioni della #glossary[dashboard], che consentono di cambiarne il nome, cartella di appartenenza, gestirne le variabili ed eventuali annotazioni;
+
+6. "*Time picker dropdown*": per selezionare l'intervallo di tempo nel quale i dati vengono visualizzati all'interno dei vari #glossary[pannelli] contenuti nella #glossary[dashboard]; si possono selezionare intervalli di tempo relativi all'ora corrente (ad esempio, "last 5 minutes") o intervalli di tempo assoluti (ad esempio, "2024-05-14 00:00:00 to 2024-05-15 23:59:59"). Si può anche utilizzare il pulsante "Change time settings" per cambiare il fuso orario e l'anno fiscale considerato negli intervalli di tempo:
 
       - Gli intervalli di tempo relativi possono essere selezionati a partire dalla lista fornita, che può essere filtrata utilizzando la casella di input che la precede "Search quick ranges";
 
@@ -147,11 +152,11 @@ Le #glossary[dashboard], concepibili come contenitori di #glossary[pannelli], ri
 
             - Cliccando all'interno di uno dei campi "From" o "To", viene visualizzato un calendario che consente di scegliere il giorno (o i giorni) che si vuole impostare come intervallo temporale; una volta fatto ciò, basta cliccare il pulsante "Apply time range";
 
-- "*Zoom out time range*": per allargare l'intervallo di tempo selezionato;
+7. "*Zoom out time range*": per allargare l'intervallo di tempo selezionato;
 
-- "*Refresh dashboard*": per effettuare immediatamente il refresh dei dati mostrati all'interno della #glossary[dashboard]\;
+8. "*Refresh dashboard*": per effettuare immediatamente il refresh dei dati mostrati all'interno della #glossary[dashboard]\;
 
-- "*Refresh dashboard time interval*": per selezionare l'intervallo di tempo che trascorre tra un refresh automatico e quello successivo.
+9. "*Refresh dashboard time interval*": per selezionare l'intervallo di tempo che trascorre tra un refresh automatico e quello successivo.
 
 Per maggiori informazioni sull'utilizzo delle #glossary[dashboard], si rimanda alla #glossary[documentazione] ufficiale di #glossary[Grafana] a tal proposito (#link("https://grafana.com/docs/grafana/latest/dashboards/use-dashboards/")).
 
@@ -161,17 +166,13 @@ I #glossary[pannelli] riportano in alto a sinistra il titolo e in alto a destra 
 
 - "*View*": per visualizzare il #glossary[pannello] a schermo intero;
 
-- "*Edit*": per aprire il panel editor e modificare il #glossary[pannello] e le opzioni di visualizzazione;
-
 - "*Share*": per condividere il #glossary[pannello] come link, embed o library panel;
 
 - "*Explore*": per aprire il #glossary[pannello] nella pagina "Explore", dove si possono visualizzare e modificare le query che reperiscono i dati rilevanti;
 
 - "*Inspect*": per aprire la pagina "Inspect", dove si possono visualizzare i dati, statistiche, metadati, codice JSON e query relativi al #glossary[pannello];
 
-- "*More...*": per accedere a opzioni aggiuntive, come "Duplicate", "Copy", "Create library panel", "Hide legend" e "Get help";
-
-- "*Remove*": per rimuovere il #glossary[pannello] dalla #glossary[dashboard].
+- "*More...*": per accedere a opzioni aggiuntive, come "Duplicate", "Copy", "Create library panel", "Hide legend" e "Get help".
 
 Posizionando il cursore sopra l'header contenente titolo e icona del menù in cima al #glossary[pannello] e vedendo che assume la forma di un cursore di spostamento, è possibile cliccare e, tenendo premuto, muovere il #glossary[pannello] all'interno della #glossary[dashboard] cambiandone la posizione. Infine, in basso a destra è visibile un puntatore angolato che indica il punto in cui posizionare il cursore affinché assuma la forma di un cursore di ridimensionamento; è sufficiente cliccare e, tenendo premuto, ridimensionare il #glossary[pannello] rendendolo più piccolo o più grande a piacimento.
 
@@ -185,15 +186,40 @@ I #glossary[pannelli] contenenti grafici in formato "#glossary[time series]" rip
 
 - Media della temperatura riportata da ciascun #glossary[sensore], espressa in gradi Celsius (°C), con dati aggregati in intervalli di 1 minuto;
 
+#figure(
+image("assets/screenshots/timeseries-temperatura.png",width:100%),
+caption: [Grafico in formato Time series della temperatura.]
+)
+
 - Media dell'umidità nell'aria riportata da ciascun #glossary[sensore], espressa in percentuale, con dati aggregati in intervalli di 1 minuto;
+
+#figure(
+image("assets/screenshots/timeseries-umidita.png",width:100%),
+caption: [Grafico in formato Time series dell'umidità.]
+)
 
 - Media dell'intensità delle precipitazioni riportata da ciascun #glossary[sensore], espressa in millimetri orari (mm/h), con dati aggregati in intervalli di 1 minuto;
 
+#figure(
+image("assets/screenshots/timeseries-precipitazioni.png",width:100%),
+caption: [Grafico in formato Time series delle precipitazioni.]
+)
+
 - Media del livello di polveri sottili nell'aria riportata da ciascun #glossary[sensore], espressa in $#sym.mu g\/m^3$ (#glossary("PM10")), con dati aggregati in intervalli di 1 minuto;
+
+#figure(
+image("assets/screenshots/timeseries-inquinamento.png",width:100%),
+caption: [Grafico in formato Time series del livello di polveri sottili.]
+)
 
 - Media del riempimento dei bacini idrici riportata da ciascun #glossary[sensore], espressa in percentuale, con dati aggregati in intervalli di 1 minuto.
 
-Tali #glossary[pannelli] mostrano l'ora del giorno sull'asse x, la legenda del contenuto al di sotto dell'asse x e l'unità di misura del dato in esame sull'asse y. La legenda, in particolare, riporta i nomi dei sensori rilevanti e la cosiddetta "Moving average"; cliccando su uno qualsiasi di questi elementi, è possibile filtrare il contenuto del grafico per mostrare esclusivamente l'andamento dell'elemento selezionato e nascondere il resto; cliccando nuovamente si riporta il grafico allo stato di default. Infine, posizionando il cursore sopra un punto qualunque dell'andamento dei dati forniti da un dato #glossary[sensore], è possibile visualizzarne timestamp, nome del #glossary[sensore] e valore corrispondente.
+#figure(
+image("assets/screenshots/timeseries-bacini.png",width:100%),
+caption: [Grafico in formato Time series dei bacini idrici.]
+)
+
+Tali #glossary[pannelli] mostrano l'ora del giorno sull'asse x, la legenda del contenuto al di sotto dell'asse x e l'unità di misura del dato in esame sull'asse y. La legenda, in particolare, riporta i nomi dei sensori rilevanti e la media dell'andamento di tutti i sensori (con dati aggregati in intervalli di 5 minuti); cliccando su uno qualsiasi di questi elementi, è possibile filtrare il contenuto del grafico per mostrare esclusivamente l'andamento dell'elemento selezionato e nascondere il resto; cliccando nuovamente si riporta il grafico allo stato di default. Posizionando il cursore sopra un punto qualunque dell'andamento dei dati forniti da un dato #glossary[sensore], è possibile visualizzarne timestamp, nome del #glossary[sensore] e valore corrispondente. Infine, per impostare l'intervallo di tempo nel quale i dati vengono visualizzati all'interno dei vari #glossary[pannelli] in formato #glossary[Time series] contenuti nella #glossary[dashboard], è possibile selezionare una qualunque porzione del grafico, in alternativa all'uso del "Time picker dropdown" descritto nella sezione *#glossary[Dashboard]*; infatti, la selezione di parte del grafico consente di effettuare uno zoom-in sulla finestra temporale corrispondente, che viene effettivamente inserita all'interno del "Time picker dropdown".
 
 === #glossary[Pannelli] con grafici in formato "Geomap"
 
@@ -209,15 +235,22 @@ Tali #glossary[pannelli] mettono a disposizione, in alto a sinistra, due pulsant
 
 Il #glossary[pannello] contenente un grafico in formato "Table" riporta dati relativi a:
 
-- Velocità del vento riportata da ciascun #glossary[sensore], espressa in chilometri all'ora (km/h).
+- Velocità del vento riportata da ciascun #glossary[sensore], espressa in chilometri all'ora (km/h) e direzione, espressa in gradi (con gli 0° a Nord e i 180° a Sud).
 
-Tale #glossary[pannello] contiene una tabella avente campi che indicano il nome del #glossary[sensore], la velocità del vento più recente, la direzione più recente, la latitudine e la longitudine; sono visibili delle scroll bar che consentono di scorrere la tabella verticalmente o orizzontalmente in caso non fosse interamente visibile. Inoltre, cliccando sul nome di un determinato campo, è possibile ordinare la tabella rispetto a quel campo in ordine crescente o decrescente. 
+Tale #glossary[pannello] contiene una tabella avente campi che indicano il nome del #glossary[sensore], la velocità del vento più recente e la sua direzione; sono visibili delle scroll bar che consentono di scorrere la tabella verticalmente o orizzontalmente in caso non fosse interamente visibile. Inoltre, cliccando sul nome di un determinato campo, è possibile ordinare la tabella rispetto a quel campo in ordine crescente o decrescente. 
 
 === #glossary[Pannelli] con grafici in formato "Stat"
 
 Il #glossary[pannello] contenente un grafico in formato "Stat" riporta dati relativi a:
 
-- Media della temperatura riportata da tutti i sensori cumulativamente, nell'intervallo di tempo selezionato.
+- Media della temperatura riportata da tutti i sensori cumulativamente, nell'intervallo di tempo selezionato;
+
+- Massimo livello di polveri sottili nell'aria tra quelli riportati da tutti i sensori cumulativamente, nell'intervallo di tempo selezionato.
+
+#figure(
+image("assets/screenshots/media-temperatura.png",width:20%),
+caption: [Grafico in formato Stat della temperatura.]
+)
 
 Tale #glossary[pannello] contiene un indice numerico che riporta quanto descritto sopra. L'interazione con questo pannello non si distingue dalla descrizione presente nella sezione *Pannelli*.
 
@@ -239,7 +272,7 @@ I #glossary[pannelli] contenenti grafici in formato "Geomap" riportano dati rela
 
 - Disponibilità dei parcheggi, tramite un indicatore numerico che riporta il numero di posti liberi;
 
-- Disponibilità delle colonne di ricarica, tramite un indicatore booleano;
+- Disponibilità delle colonne di ricarica, tramite icone colorate;
 
 - Stato di congestione delle strade, tramite gli stati "LOW", "MEDIUM", "HIGH" e "BLOCKED";
 
@@ -263,22 +296,14 @@ La #glossary[dashboard] "Dati grezzi" è dedita alla raccolta e alla visualizzaz
 
 === #glossary[Pannello] con grafico in formato "Table"
 
-Tale #glossary[pannello] è preceduto da un header che riporta tre campi di input con etichette: "Nome Sensore", "Limite" e "Tipo Sensore". Cliccando sull'etichetta alla sinistra del campo o sul campo stesso, è possibile visualizzare il numero di valori attualmente selezionati ("Selected") ed, eventualmente, selezionarne altri utilizzando le checkbox apposite. Inoltre, è possibile inserire manualmente il valore desiderato all'interno del campo ("Enter variable value") per filtrare velocemente i valori a disposizione. Il campo "Nome Sensore" riporta i nomi di tutti sensori a disposizione, "Limite" consente di impostare il massimo numero di righe della tabella sottostante e "Tipo Sensore" riporta le tipologie dei sensori. 
-I campi della tabella vera e propria variano a seconda della tipologia di #glossary[sensore] selezionato, in particolare si hanno: 
-
-- "Timestamp", "current" per il valore del dato inviato, "latitude" e "longitude" per i sensori di tipo "air_pollution", "eco_zone", "electric_bicycle", "humidity", "parking", "rain", "reservoir", o "temperature";
-
-- "Timestamp", "erogation_power" per il livello di erogazione, "availability" per indicare la disponibilità, "latitude" e "longitude" per i sensori di tipo "charging_station";
-
-- "Timestamp", "num_cars" per il numero di macchine attualmente in circolazione sulla strada monitorata dal #glossary[sensore], "avg_time" per il tempo medio necessario per percorrere suddetta strada, "latitude" e "longitude" per i sensori di tipo "traffic";
-
-- "Timestamp", "current" per la velocità del vento, "directiion" per la direzione del vento, "latitude" e "longitude" per i sensori di tipo "wind".
+Tale #glossary[pannello] è preceduto da un header che riporta due campi di input con etichette: "Nome Sensore" e "Tipologia". Cliccando sull'etichetta alla sinistra del campo o sul campo stesso, è possibile visualizzare il numero di valori attualmente selezionati ("Selected") ed, eventualmente, selezionarne altri utilizzando le checkbox apposite. Inoltre, è possibile inserire manualmente il valore desiderato all'interno del campo ("Enter variable value") per filtrare velocemente i valori a disposizione. Il campo "Nome Sensore" riporta i nomi di tutti sensori a disposizione e il campo "Tipologia" riporta le tipologie dei sensori. 
+La tabella vera e propria contiene i campi "Nome Sensore", "Tipologia", "Orario" e "Rilevazione", ques'ultima per i valori delle misurazioni effettuate dai sensori; i valori del campo "Tipologia" hanno un colore ditinto a seconda del tipo di #glossary[sensore] indicato.
 
 Come evidenziato in precedenza, è possibile ordinare i valori di tutti i campi della tabella in ordine crescente o decrescente semplicemente cliccandone il nome collocato in cima alla colonna corrispondente.
 
-== Dashboard "Dati anomali & Superamento soglie"
+== Dashboard "Superamento soglie"
 
-La #glossary[dashboard] "Dati anomali & Superamento soglie" è dedita alla visualizzazione dei dati che superano determinate soglie preimpostate per i sensori che monitorano le precipitazioni, il riempimento delle zone ecologiche, il riempimento dei bacini idrici, il livello di polveri sottili nell'aria e la temperatura; in particolare, sono previsti 5 #glossary[pannelli] di tipo "Table", ognuno dedicato ad una tipologia diversa di #glossary[sensore], con campi "name", "timestamp" e "value".
+La #glossary[dashboard] "Superamento soglie" è dedita alla visualizzazione dei dati che superano determinate soglie preimpostate per i sensori che monitorano le precipitazioni, il riempimento delle zone ecologiche, il riempimento dei bacini idrici, il livello di polveri sottili nell'aria e la temperatura; in particolare, sono previsti 5 #glossary[pannelli] di tipo "Table", ognuno dedicato ad una tipologia diversa di #glossary[sensore], con campi "name", "timestamp" e "value".
 
 === #glossary[Pannelli] con grafici in formato "Table"
 
