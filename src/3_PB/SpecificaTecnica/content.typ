@@ -77,11 +77,11 @@ caption: [Tabella tecnologie per la Codifica: Linguaggi e formati dati.])
 == #glossary[Framework] e librerie
 #figure(
 table(
-      columns:(70pt,auto,auto),
-      align: (x, y) => (center, center, center).at(x),
+      columns:(70pt,auto,110pt,auto),
+      align: (x, y) => (center, center, center, center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
-      [*Tecnologia*],[*Descrizione*],[*Versione*],
-      [Confluent Kafka], [Libreria #glossary[Python] progettata per agevolare la produzione e il consumo di messaggi all'interno di un ambiente _Apache_ #glossary[Kafka]. Questa libreria fornisce agli sviluppatori gli strumenti necessari per interagire con efficacia con #glossary[Kafka], consentendo loro di scrivere codice #glossary[Python] per inviare e ricevere messaggi tramite il sistema di messaggistica distribuita di #glossary[Kafka]. Grazie a Confluent Kafka, è possibile implementare in modo efficiente la comunicazione asincrona e la gestione dei flussi di dati all'interno delle applicazioni #glossary[Python], sfruttando le potenzialità di _Apache_ #glossary[Kafka] per garantire scalabilità, affidabilità e prestazioni ottimali.], [1.9],
+      [*Tecnologia*],[*Descrizione*],[*Uso*],[*Versione*],
+      [Confluent Kafka], [Libreria #glossary[Python] progettata per agevolare la produzione e il consumo di messaggi all'interno di un ambiente _Apache_ #glossary[Kafka]. Questa libreria fornisce agli sviluppatori gli strumenti necessari per interagire con efficacia con #glossary[Kafka], consentendo loro di scrivere codice #glossary[Python] per inviare e ricevere messaggi tramite il sistema di messaggistica distribuita di #glossary[Kafka]. Grazie a Confluent Kafka, è possibile implementare in modo efficiente la comunicazione asincrona e la gestione dei flussi di dati all'interno delle applicazioni #glossary[Python], sfruttando le potenzialità di _Apache_ #glossary[Kafka] per garantire scalabilità, affidabilità e prestazioni ottimali.], [Interfaccia del codice #glossary[Python] per la simulazione dei dati con il message broker #glossary[Kafka].], [1.9],
       ),
 caption: [Tabella tecnologie per la Codifica: #glossary[Framework] e librerie])
 
@@ -89,16 +89,16 @@ caption: [Tabella tecnologie per la Codifica: #glossary[Framework] e librerie])
 == Database e servizi
 #figure(
 table(
-      columns:(70pt,auto,auto),
-      align: (x, y) => (center, center, center).at(x),
+      columns:(70pt,auto, 110pt,60pt),
+      align: (x, y) => (center, center, center, center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
-      [*Tecnologia*],[*Descrizione*],[*Versione*],
-      [#glossary[Clickhouse]], [Sistema di gestione dei database colonnari, progettato per l'analisi dei dati in tempo reale. È ottimizzato nei casi d'uso OLAP per eseguire query analitiche su grandi volumi di dati in modo efficiente.], [24.1.5.6],
-      [_Apache_ #glossary[Kafka]], [Piattaforma di streaming di dati distribuita e scalabile, progettata per la gestione di flussi di dati in tempo reale. È ampiamente utilizzato per l'elaborazione di eventi, la messaggistica asincrona e la creazione di pipeline dati #glossary[real-time].], [3.7.0],
-      [#glossary[Grafana]], [Piattaforma open source per il monitoraggio e l'analisi dei dati. Fornisce strumenti per la visualizzazione di metriche e log, la creazione di #glossary[dashboard] interattive e la generazione di avvisi in tempo reale.], [10.3],
-      [#glossary[Grafana]\ #glossary[ClickHouse]\ Data Source], [Plugin per #glossary[Grafana] che consente di interrogare e visualizzare i dati di #glossary[ClickHouse] in #glossary[Grafana]], [4.0.3],
-      [Docker], [Piattaforma open-source che permette di creare, distribuire e gestire applicazioni in contenitori virtuali.], [25.0.3],
-      [Docker Compose], [Strumento per definire e gestire applicazioni multi-container Docker attraverso file YAML.], [2.24.6]
+      [*Tecnologia*],[*Descrizione*],[*Uso*],[*Versione*],
+      [#glossary[Clickhouse]], [Sistema di gestione dei database colonnari, progettato per l'analisi dei dati in tempo reale. È ottimizzato nei casi d'uso OLAP per eseguire query analitiche su grandi volumi di dati in modo efficiente.], [Archiviazione e estrazione di dati aggregati.], [24.1.5.6],
+      [_Apache_ #glossary[Kafka]], [Piattaforma di streaming di dati distribuita e scalabile, progettata per la gestione di flussi di dati in tempo reale. È ampiamente utilizzato per l'elaborazione di eventi, la messaggistica asincrona e la creazione di pipeline dati #glossary[real-time].], [Riceve in modo asincrono i dati provenienti dai simulatori in formato #glossary[JSON] e li rende disponibili ai suoi consumatori.], [3.7.0],
+      [#glossary[Grafana]], [Piattaforma open source per il monitoraggio e l'analisi dei dati. Fornisce strumenti per la visualizzazione di metriche e log, la creazione di #glossary[dashboard] interattive e la generazione di avvisi in tempo reale.], [Visualizzazione e analisi dei dati recuperati dal database],[10.3],
+      [#glossary[Grafana]\ #glossary[ClickHouse]\ Data Source], [Plugin per #glossary[Grafana] che consente di interrogare e visualizzare i dati di #glossary[ClickHouse] in #glossary[Grafana]], [Interrogazione al database di Clickhouse per la visualizzazione dei dati in #glossary[Grafana]], [4.0.3],
+      [Docker], [Piattaforma open-source che permette di creare, distribuire e gestire applicazioni in contenitori virtuali.],[Creare in modo riproducibile ambienti software per i simulatori, #glossary[ClickHouse], #glossary[Kafka] e #glossary[Grafana.]], [25.0.3],
+      [Docker Compose], [Strumento per definire e gestire applicazioni multi-container Docker attraverso file YAML.],[Gestione automatica e centralizzata dei container che costituiscono il #glossary[sistema].], [2.24.6]
       ),
 caption: [Tabella tecnologie per la Codifica: Database e servizi.])
 
@@ -106,13 +106,13 @@ caption: [Tabella tecnologie per la Codifica: Database e servizi.])
 == Analisi e test
 #figure(
 table(
-      columns:(70pt,auto,auto),
-      align: (x, y) => (center, center, center).at(x),
+      columns:(70pt,auto, 110pt, auto),
+      align: (x, y) => (center, center, center, center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
-      [*Tecnologia*],[*Descrizione*],[*Versione*],
-      [PEP8], [Stile di codifica per il codice #glossary[Python] che definisce le linee guida per la formattazione del codice, rendendolo più leggibile e uniforme.], [1.7.1],
-      [Pylint], [Strumento di analisi statica del codice #glossary[Python]. Attraverso la scansione del codice, identifica potenziali errori, incongruenze stilistiche e altre possibili problematiche; aiuta a garantire la correttezza, la leggibilità e la manutenibilità del codice.], [3.1.0],
-      [Pytest], [Framework di test progettato per #glossary[Python], noto per la sua flessibilità e semplicità d'uso. Offre agli sviluppatori un ambiente intuitivo per scrivere e eseguire test per verificare la correttezza e l'affidabilità del codice. Con Pytest è possibile effettuare una vasta gamma di test, tra cui test di unità, integrazione e accettazione, garantendo una copertura completa dei casi di test.], [8.1.1]
+      [*Tecnologia*],[*Descrizione*],[*Uso*],[*Versione*],
+      [PEP8], [Stile di codifica per il codice #glossary[Python] che definisce le linee guida per la formattazione del codice, rendendolo più leggibile e uniforme.],[Miglioramento stilistico codice.], [1.7.1],
+      [Pylint], [Strumento di analisi statica del codice #glossary[Python]. Attraverso la scansione del codice, identifica potenziali errori, incongruenze stilistiche e altre possibili problematiche; aiuta a garantire la correttezza, la leggibilità e la manutenibilità del codice.],[Analisi statica], [3.1.0],
+      [Pytest], [Framework di test progettato per #glossary[Python], noto per la sua flessibilità e semplicità d'uso. Offre agli sviluppatori un ambiente intuitivo per scrivere e eseguire test per verificare la correttezza e l'affidabilità del codice. Con Pytest è possibile effettuare una vasta gamma di test, tra cui test di unità, integrazione e accettazione, garantendo una copertura completa dei casi di test.],[Test di unità /*test di integrazione?*/], [8.1.1]
       ),
 caption: [Tabella tecnologie per l'analisi del codice.])
 
