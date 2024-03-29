@@ -86,14 +86,14 @@ table(
 caption: [Tabella tecnologie per la Codifica: #glossary[Framework] e librerie])
 
 #pagebreak()
-== Database e servizi
+== Servizi della pipeline
 #figure(
 table(
       columns:(70pt,auto, 110pt,60pt),
       align: (x, y) => (center, center, center, center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Tecnologia*],[*Descrizione*],[*Uso*],[*Versione*],
-      [#glossary[Clickhouse]], [Sistema di gestione dei database colonnari, progettato per l'analisi dei dati in tempo reale. È ottimizzato nei casi d'uso OLAP per eseguire query analitiche su grandi volumi di dati in modo efficiente.], [Archiviazione e estrazione di dati aggregati.], [24.1.5.6],
+      [#glossary[Clickhouse]], [Sistema di gestione dei database (DBMS) colonnari, progettato per l'analisi dei dati in tempo reale. È ottimizzato nei casi d'uso OLAP per eseguire query analitiche su grandi volumi di dati in modo efficiente.], [Archiviazione e estrazione di dati aggregati.], [24.1.5.6],
       [_Apache_ #glossary[Kafka]], [Piattaforma di streaming di dati distribuita e scalabile, progettata per la gestione di flussi di dati in tempo reale. È ampiamente utilizzato per l'elaborazione di eventi, la messaggistica asincrona e la creazione di pipeline dati #glossary[real-time].], [Riceve in modo asincrono i dati provenienti dai simulatori in formato #glossary[JSON] e li rende disponibili ai suoi consumatori.], [3.7.0],
       [#glossary[Grafana]], [Piattaforma open source per il monitoraggio e l'analisi dei dati. Fornisce strumenti per la visualizzazione di metriche e log, la creazione di #glossary[dashboard] interattive e la generazione di avvisi in tempo reale.], [Visualizzazione sottoforma di #glossary[dashboard] e analisi dei dati recuperati dal database.],[10.3],
       [#glossary[Grafana]\ #glossary[ClickHouse]\ Data Source], [Plugin per #glossary[Grafana] che consente di interrogare e visualizzare i dati di #glossary[ClickHouse] in #glossary[Grafana].], [Interrogazione al database di Clickhouse per la visualizzazione dei dati in #glossary[Grafana].], [4.0.3],
