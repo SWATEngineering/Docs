@@ -410,16 +410,16 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC3.7 Visualizzazione indicatore percentuale su mappa riempimento zone ecologiche]
 )
 
-=== UC4: Visualizzazione #glossary("dashboard") #glossary("dati anomali") e superamento soglie
+=== UC4: Visualizzazione #glossary("dashboard") superamento soglie
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza una lista di #glossary("pannelli") contenenti dati relativi al superamento delle soglie e alle anomalie rilevate;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza una lista di #glossary("pannelli") contenenti dati relativi al superamento delle soglie;
 - *Scenario Principale*:
-  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] delle anomalie e superamento soglie.
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] superamento soglie.
 
 #figure(
   image("assets/UML/UC4_Visualizzazione-dashboard-dati-anomali-e-superamento-soglie.png",width:60%),
-  caption: [UC4 Visualizzazione #glossary("dashboard") #glossary("dati anomali") e superamento soglie]
+  caption: [UC4 Visualizzazione #glossary("dashboard") superamento soglie]
 )
 
 === UC4.1: Visualizzazione tabella #glossary("dati anomali")
@@ -427,7 +427,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella ordinata, che mostra tutti i #glossary("dati anomali") rilevati dal #glossary("sistema"). La tabella include il valore dell'anomalia, il #glossary("sensore") che l'ha rilevata e il timestamp relativo, ed è ordinata in base al timestamp;
 - *Scenario Principale*:
-  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] delle anomalie e superamento soglie.
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] superamento soglie.
 
 #figure(
   image("assets/UML/UC4.1_Visualizzazione-tabella-dati-anomali.png",width:70%),
@@ -439,7 +439,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti le soglie impostate nel #glossary("sistema");
 - *Scenario Principale*:
-  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] delle anomalie e superamento soglie;
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] superamento soglie;
 - *Specializzazioni*: [UC4.3], [UC4.4], [UC4.5], [UC4.6], [UC4.7].
 
 #figure(
@@ -452,7 +452,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti la soglia dei 40° Celsius (40°C), mostrando il valore superante la soglia, il #glossary("sensore") che ha rilevato tale valore e il timestamp relativo;
 - *Scenario Principale*:
-  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] delle anomalie e superamento soglie.
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] superamento soglie.
 
 #figure(
   image("assets/UML/UC4.3_Visualizzazione-tabella-superamento-soglia-temperatura.png",width:70%),
@@ -464,7 +464,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti la soglia dei 50 millimetri di pioggia all'ora (50 mm/h), mostrando il valore superante la soglia, il #glossary("sensore") che ha rilevato tale valore e il timestamp relativo;
 - *Scenario Principale*:
-  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] delle anomalie e superamento soglie.
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] superamento soglie.
 
 #figure(
   image("assets/UML/UC4.4_Visualizzazione-tabella-superamento-soglia-precipitazioni.png",width:70%),
@@ -476,7 +476,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti la soglia di 80#[#sym.mu]g su metro cubo ($80#sym.mu g\/m^3$), mostrando il valore superante la soglia, il #glossary("sensore") che ha rilevato tale valore e il timestamp relativo;
 - *Scenario Principale*:
-  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] delle anomalie e superamento soglie.
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] superamento soglie.
 
 #figure(
   image("assets/UML/UC4.5_Visualizzazione-tabella-superamento-soglia-inquinamento.png",width:70%),
@@ -488,7 +488,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti la soglia del 70% di capienza, mostrando il valore superante la soglia, il #glossary("sensore") che ha rilevato tale valore e il timestamp relativo;
 - *Scenario Principale*:
-  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] delle anomalie e superamento soglie.
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] superamento soglie.
 
 #figure(
   image("assets/UML/UC4.6_Visualizzazione-tabella-superamento-soglia-bacini.png",width:70%),
@@ -500,7 +500,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti la soglia del 80% di capienza, mostrando il valore superante la soglia, il #glossary("sensore") che ha rilevato tale valore e il timestamp relativo;
 - *Scenario Principale*:
-  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] delle anomalie e superamento soglie.
+  + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] superamento soglie.
 
 #figure(
   image("assets/UML/UC4.7_Visualizzazione-tabella-superamento-soglia-cassonetti.png",width:70%),
@@ -981,25 +981,25 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che mostri la percentuale di riempimento delle zone ecologiche, mediante degli indicatori percentuali, posizionati nelle coordinate geografiche della zona, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile", [L'utente deve poter monitorare i #glossary("dati anomali") e i dati superanti delle soglie, in una #glossary("dashboard") apposita.], [#C.step()UC#C.display()]
+    "Desiderabile", [L'utente deve poter monitorare i dati superanti delle soglie, in una #glossary("dashboard") apposita.], [#C.step()UC#C.display()]
   ),
   (
-    "Opzionale", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i #glossary("dati anomali"), il #glossary("sensore") che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.], [#C.step(level:2)UC#C.display()]
+    "Opzionale", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i #glossary("dati anomali"), il #glossary("sensore") che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai dati superanti le soglie.], [#C.step(level:2)UC#C.display()]
   ),
   (
-  "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i dati i cui valori superano la soglia dei 40° Celsius (40°C) di temperatura, il #glossary("sensore") che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.], [#C.step(level:2)#C.step(level:2)UC#C.display()]
+  "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i dati i cui valori superano la soglia dei 40° Celsius (40°C) di temperatura, il #glossary("sensore") che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai dati superanti le soglie.], [#C.step(level:2)#C.step(level:2)UC#C.display()]
   ),
   (
-  "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i dati i cui valori superano la soglia dei 50 millimetri di pioggia all'ora (50 mm/h), il #glossary("sensore") che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.], [#C.step(level:2)UC#C.display()]
+  "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i dati i cui valori superano la soglia dei 50 millimetri di pioggia all'ora (50 mm/h), il #glossary("sensore") che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai dati superanti le soglie.], [#C.step(level:2)UC#C.display()]
   ),
   (
-  "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i dati i cui valori superano la soglia di 80#[#sym.mu]g su metro cubo ($80#sym.mu g\/m^3$) di inquinamento dell'aria, il #glossary("sensore") che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.], [#C.step(level:2)UC#C.display()]
+  "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i dati i cui valori superano la soglia di 80#[#sym.mu]g su metro cubo ($80#sym.mu g\/m^3$) di inquinamento dell'aria, il #glossary("sensore") che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai dati superanti le soglie.], [#C.step(level:2)UC#C.display()]
   ),
   (
-  "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i dati i cui valori superano la soglia del 70% di capienza di un bacino idrico, il #glossary("sensore") che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.], [#C.step(level:2)UC#C.display()]
+  "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i dati i cui valori superano la soglia del 70% di capienza di un bacino idrico, il #glossary("sensore") che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai dati superanti le soglie.], [#C.step(level:2)UC#C.display()]
   ),
   (
-  "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i dati i cui valori superano la soglia dell'80% di capienza di una zona ecologica, il #glossary("sensore") che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai #glossary("dati anomali") e superanti le soglie.], [#C.step(level:2)UC#C.display()]
+  "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i dati i cui valori superano la soglia dell'80% di capienza di una zona ecologica, il #glossary("sensore") che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai dati superanti le soglie.], [#C.step(level:2)UC#C.display()]
   ),
   (
     "Desiderabile",  "L'utente deve poter ricevere delle notifiche riguardo ad un valore di un dato di tipo temperatura, superante una soglia di 40° Celsius (40°C).", [#C.step()#C.step(level:2)UC#C.display()]
