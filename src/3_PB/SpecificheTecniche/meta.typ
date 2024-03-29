@@ -1,1 +1,0 @@
-#let title = "Specifica Tecnica"
