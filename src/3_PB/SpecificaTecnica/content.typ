@@ -167,8 +167,8 @@ Per illustrare il funzionamento del #glossary[sistema], abbiamo utilizzato un di
     + Riempimento delle zone ecologiche;
     + Livelli di congestione stradale;
     + Batteria delle biciclette elettriche.
-- *Invio al #glossary[broker] dei dati*:  i dati generati dai sensori vengono inviati al #glossary[broker] dati, in questo contesto #glossary[Kafka]. #glossary[Kafka] offre un meccanismo di messaggistica distribuita in grado di gestire grandi volumi di dati in tempo reale;
-- *Engine interno (archiviatore)*: l'archiviatore, rappresentato dal motore interno "Kafka" di #glossary[ClickHouse], agisce direttamente come consumatore dei dati provenienti dal broker dei dati (#glossary[Kafka]). Questo avviene tramite la connessione a specifici topic nel broker dati, ognuno associato a un tipo di sensore distinto. Successivamente, i dati corrispondenti vengono archiviati nelle rispettive tabelle del database;
+- *Invio al #glossary[broker] dei dati*:  i dati generati dai sensori vengono inviati al #glossary[broker] dati, in questo contesto #glossary[Kafka]. Queest'ultimo offre un meccanismo di messaggistica distribuita in grado di gestire grandi volumi di dati in tempo reale;
+- *Engine interno (archiviatore)*: l'archiviatore, rappresentato dal motore interno "Kafka" di #glossary[ClickHouse], agisce direttamente come consumatore dei dati provenienti dal #glossary[broker] dati. Questo avviene tramite la connessione a specifici #glossary[topic] in #glossary[Kafka], ognuno associato a un tipo di sensore distinto. Successivamente, i dati corrispondenti vengono archiviati nelle rispettive tabelle del database;
 - *Aggregazione*: i dati corrispondenti la temperatura, umidità, precipitazioni, inquinamento atmosferico e livello dei bacini idrici vengono aggregati in tabelle apposite attraverso l'utilizzo di #glossary[materialized views]. Queste aggregazioni avvengono su intervalli di 1 minuto, consentendo così l'applicazione delle medie mobili;
 - *Interrogazioni (query)*: vengono effettuate varie interrogazioni e analisi sui dati memorizzati all'interno delle tabelle;
 - *Visualizzazione*: l'#glossary[amministratore pubblico] visualizza i dati, ritornati in output dalle query, su una piattaforma apposita (in questo caso #glossary[Grafana]).
@@ -179,7 +179,7 @@ Lo scopo del database è quello di memorizzare i dati provenienti dai sensori, i
 === Struttura
 
 ==== Tabella di accodamento
- Ad ogni tipo di #glossary[sensore] viene assegnata una tabella con il nome definito come: \*tipo\*+topic+kafka. Questa conterrà, per ogni messaggio proveniente dal topic dedicato, un record contenente una stringa con all'interno tutti i dati grezzi provenienti dai sensori di quel tipo, che sono in formato #glossary[JSON] e contengono, oltre alla rilevazione con relativo timestamp, anche il nome e la tipologia del #glossary[sensore] e le sue coordinate geografiche. Le tabelle di questo tipo vengono popolate tramite il "ClickHouse Kafka table engine", che si occupa di leggere la stringa di dati, dal #glossary[topic] di #glossary[Kafka] e di "iniettarla" all'interno della tabella; per compiere quest'operazione è necessario specificare il motore di archiviazione "Kafka".
+ Ad ogni tipo di #glossary[sensore] viene assegnata una tabella con il nome definito come: \*tipo\*+topic+kafka. Questa conterrà, per ogni messaggio proveniente dal #glossary[topic] dedicato, un record contenente una stringa con all'interno tutti i dati grezzi provenienti dai sensori di quel tipo, che sono in formato #glossary[JSON] e contengono, oltre alla rilevazione con relativo timestamp, anche il nome e la tipologia del #glossary[sensore] e le sue coordinate geografiche. Le tabelle di questo tipo vengono popolate tramite il "ClickHouse Kafka table engine", che si occupa di leggere la stringa di dati, dal #glossary[topic] di #glossary[Kafka] e di "iniettarla" all'interno della tabella; per compiere quest'operazione è necessario specificare il motore di archiviazione "Kafka".
 
 ==== Tabella #glossary[time series]
 Per ogni tipo di #glossary[sensore] viene creata una tabella #glossary[time series], con il nome definito come: \*tipo\*. Il suo scopo è gestire in modo efficiente i dati di tipo #glossary[time series], tramite il motore di archiviazione MergeTree. Queste tabelle vengono popolate tramite delle #glossary[materialized views] a partire dalle tabelle di accodamento; vengono inoltre ordinate per #glossary[sensore] e per timestamp.
@@ -192,7 +192,7 @@ Per il loro popolamento si utilizzano le #glossary[materialized views], che perm
 
 ==== Motori di archiviazione
 #glossary[ClickHouse] offre diversi motori di archiviazione, ognuno con caratteristiche specifiche. Per il nostro caso d'uso, facciamo uso dei seguenti:
-- *Kafka*: permette di leggere la stringa contenente i dati in formato #glossary[JSON] dal broker dati, e di iniettarla all'interno delle tabelle di accodamento;
+- *Kafka*: permette di leggere la stringa contenente i dati in formato #glossary[JSON] dal #glossary[broker] dati, e di iniettarla all'interno delle tabelle di accodamento;
 - *MergeTree*: particolarmente adatto per la gestione di dati di tipo #glossary[time series], in quanto permette di effettuare operazioni di inserimento ed eliminazione in modo efficiente, e di effettuare query su intervalli di tempo specifici;
 - *AggregatingMergeTree*: consente di effettuare operazioni efficienti di aggregazione sui dati, in particolar modo per le aggregazioni incrementali; nello specifico, sostituisce tutte le righe con la stessa chiave di ordinamento all'interno di una parte di dati, con una singola riga che memorizza una combinazione di stati di funzioni aggregate. Questo motore elabora tutte le colonne con i tipi: AggregateFunction e SimpleAggregateFunction. AggregateFunction è una funzione che consente di eseguire aggregazioni sui dati in modo efficiente, mantenendo uno stato intermedio, noto come avgState, che include sia la somma cumulativa che il conteggio dei valori.
 
@@ -238,7 +238,7 @@ Tali strategie verranno poi assegnate ad un _SimulatorThread_.
   image("diagrammiclassi/writer.jpg",width:100%),
   caption: [Diagramma delle classi 3]
 )
-Anche la classe _Writer_ realizza il design pattern _Strategy_. Sono state progettate due strategie, la prima, (_KafkaWriter_), atta a permettere al simulatore di inviare i messaggi contenenti i dati della rilevazione a #glossary("Kafka"), mentre la seconda atta a permettere al simulatore di stampare i risultati su terminale al fine di poterne testare il comportamento. Inoltre l'applicazione di tale #glossary[design pattern] potrebbe consentire di realizzare il componente di scrittura anche per eventuali broker dati alternativi, nel momento in cui ce ne sia il bisogno.
+Anche la classe _Writer_ realizza il design pattern _Strategy_. Sono state progettate due strategie, la prima, (_KafkaWriter_), atta a permettere al simulatore di inviare i messaggi contenenti i dati della rilevazione a #glossary("Kafka"), mentre la seconda atta a permettere al simulatore di stampare i risultati su terminale al fine di poterne testare il comportamento. Inoltre l'applicazione di tale #glossary[design pattern] potrebbe consentire di realizzare il componente di scrittura anche per eventuali #glossary[broker] dati alternativi, nel momento in cui ce ne sia il bisogno.
 Nello specifico, la classe _KafkaWriter_ realizza il suo scopo tramite l'impiego del #glossary[design pattern] _Adapter_, nella sua variante _Object Adapter_. Viene infatti fatto utilizzo della classe _Producer_ della liberia _confluent_kafka_. Dato che tale classe potrebbe essere soggetta a variazioni non controllabili da noi, si è deciso di utilizzare tale pattern per permettere di rispondere prontamente a tali cambiamenti, spostandone la complessità proprio nell'adapter.
 
 === Classi: metodi e attributi
@@ -254,8 +254,8 @@ Non vengono menzionati i costruttori.
 
 ==== KafkaSimulatorExecutorFactory (Classe)
 ===== Attributi
-- *data_broker_host: String [Privato]*: indirizzo ip della macchina che ospita il message broker;
-- *data_broker_port: int [Privato]*: porta della macchina che ospita il message broker;
+- *data_broker_host: String [Privato]*: indirizzo ip della macchina che ospita il message #glossary[broker];
+- *data_broker_port: int [Privato]*: porta della macchina che ospita il message #glossary[broker];
 - *writers: Map<\String, KafkaWriter> [Privato]*: dizionario con chiavi di tipo String e valori di tipo _KafkaWriter_;
 - *simulators_counter: Map<\String, int> [Privato]*: dizionario con chiavi di tipo String e valori di tipo int, per fare in modo che al nome del simulatore sia associato un valore numerico.
 ===== Metodi
@@ -327,7 +327,7 @@ Non vengono menzionati i costruttori.
 ===== Attributi
 - *producer: TargetProducer [Privato]*: oggetto della classe _TargetProducer_.
 ===== Metodi
-- *write(to_write: String): void [Pubblico]*: invoca la scrittura del messaggio contenuto nella stringa passata come parametro sul topic corrispondente alla tipologia del simulatore nel broker.
+- *write(to_write: String): void [Pubblico]*: invoca la scrittura del messaggio contenuto nella stringa passata come parametro sul #glossary[topic] corrispondente alla tipologia del simulatore nel #glossary[broker].
 
 ==== TargetProducer (Interfaccia)
 ===== Metodi
@@ -336,14 +336,14 @@ Non vengono menzionati i costruttori.
 ==== AdapterProducer (Interfaccia)
 ===== Attributi
 - *adaptee: Producer [Privato]*: oggetto della classe _Producer_ della libreria _Confluent Kafka_;
-- *topic: SensorTypes [Privato]*: oggetto della classe _SensorTypes_, rappresenta il topic all'interno del broker nel quale viene inserito il messaggio da scrivere.
+- *topic: SensorTypes [Privato]*: oggetto della classe _SensorTypes_, rappresenta il #glossary[topic] all'interno del #glossary[broker] nel quale viene inserito il messaggio da scrivere.
 ===== Metodi
 - *produce(message: String, callback: Function): void [Pubblico]*: metodo che richiama il metodo _produce()_ dell'oggetto _adaptee_ di tipo _Producer_ della libreria _Confluent Kafka_.
 
 == Messaggi ed Eventi
 === Kafka Topics
-I _topic_ in #glossary[Kafka] possono essere viste come le tabelle di un database, servono per separare logicamente diversi tipi di messaggi o eventi che vengono inseriti nel #glossary[sistema].
-Noi li usiamo per separare i messaggi provenienti dai diversi tipi di #glossary[sensore]; questo ci permette poi di andare a creare all'interno di ClickHouse delle "tabelle consumatrici" che prendono i dati in automatico, grazie al fatto che avendo separati logicamente i topic, i messaggi all'interno di ognuno di essi hanno tutti lo stesso formato.
+I #glossary[topic] in #glossary[Kafka] possono essere viste come le tabelle di un database, servono per separare logicamente diversi tipi di messaggi o eventi che vengono inseriti nel #glossary[sistema].
+Noi li usiamo per separare i messaggi provenienti dai diversi tipi di #glossary[sensore]; questo ci permette poi di andare a creare all'interno di ClickHouse delle "tabelle consumatrici" che prendono i dati in automatico, grazie al fatto che avendo separati logicamente i #glossary[topic], i messaggi all'interno di ognuno di essi hanno tutti lo stesso formato.
 === Struttura dei messaggi
 La struttura di un messaggio o evento, descritta in JSON sarà la seguente:
 ```json
