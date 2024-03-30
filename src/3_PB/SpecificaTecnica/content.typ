@@ -121,10 +121,14 @@ caption: [Tabella tecnologie per l'analisi del codice.])
 == #glossary[Architettura] di implementazione
 Il #glossary[sistema] richiede la capacità di processare dati provenienti da varie fonti, in tempo reale, e di offrire una visualizzazione immediata e continua di tali dati, consentendo di monitorarne gli andamenti.
 Per questo tipo di scopo le due architetture consigliate sono la:
-- *#[#sym.lambda]-architecture*: che prevede di elaborare i dati in due flussi separati, uno per i dati in tempo reale e uno per i dati storici. I dati in tempo reale vengono elaborati immediatamente per fornire risposte rapide, mentre i dati storici vengono elaborati in batch per fornire risposte più complete o elaborate nel tempo. Alla fine, i risultati dei due flussi vengono combinati per fornire una visione completa dei dati;
-- *#[#sym.kappa]-architecture*: semplifica la struttura della #[#sym.lambda]-architecture, eliminando il flusso batch. Tutti i dati vengono quindi elaborati in tempo reale utilizzando un sistema di elaborazione dei dati in streaming. Questo fa si che i dati vengono elaborati una sola volta, riducendo la complessità complessiva del #glossary[sistema].
+- *#[#sym.lambda]-architecture*: che prevede di elaborare i dati in due flussi separati, uno per i dati in tempo reale (streaming) e uno per i dati storici. I dati in tempo reale vengono elaborati immediatamente per fornire risposte rapide, mentre i dati storici vengono elaborati in batch per fornire risposte più complete o elaborate nel tempo. Alla fine, i risultati dei due flussi vengono combinati per fornire una visione completa dei dati;
+  - *Vantaggi*: permette di elaborare i dati in tempo reale e batch, fault tolerant e consistente tra i due flussi;
+  - *Svantaggi*: complessità di gestione del #glossary[sistema], logica di computazione duplicata e complessità di manutenzione;
+- *#[#sym.kappa]-architecture*: semplifica la struttura della #[#sym.lambda]-architecture, unificando il flusso stream e il flusso batch batch in un unico layer. Tutti i dati vengono quindi elaborati in tempo reale utilizzando un sistema di elaborazione dei dati in streaming. Questo fa si che i dati vengono elaborati una sola volta, riducendo la complessità complessiva del #glossary[sistema]\;
+  - *Vantaggi*: riduzione della complessità del #glossary[sistema], logica di computazione non duplicata e complessità di manutenzione ridotta, inoltre permette una bassa latenza e scala facilmente con il volume dei dati;
+  - *Svantaggi*: non adatto per tutti i casi d'uso, in quanto non permette di elaborare i dati in batch.
 
-Per quanto appena descritto, la #[#sym.kappa]-architecture è la soluzione più adatta, in quanto specifica per il nostro caso d'uso.
+Per quanto appena descritto, la #[#sym.kappa]-architecture è la soluzione più adatta, in quanto specifica per il nostro caso d'uso. I vantaggi dati dalla #[#sym.lambda]-architecture non risultano utili per i nostri fini; Risulta invece vantaggioso avere un'unica pipeline di elaborazione dei dati in streaming.
 Si ha appunto bisogno di lavorare con dati in tempo reale, evitando di gestire la lavorazione dei dati in due posti diversi con diverse tecnologie, che porterebbe ad una complessità di manutenzione maggiore, logica di computazione duplicata e complessità di gestione del #glossary[sistema] in generale.
 
 Possiamo quindi compartimentalizzare le varie componenti del sistema in questo modo:
