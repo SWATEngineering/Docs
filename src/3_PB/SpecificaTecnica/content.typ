@@ -170,11 +170,11 @@ Per illustrare il funzionamento del #glossary[sistema], abbiamo utilizzato un di
 - *Invio al #glossary[broker] dei dati*:  i dati generati dai sensori vengono inviati al #glossary[broker] dati, in questo contesto #glossary[Kafka]. Queest'ultimo offre un meccanismo di messaggistica distribuita in grado di gestire grandi volumi di dati in tempo reale;
 - *Engine interno (archiviatore)*: l'archiviatore, rappresentato dal motore interno "Kafka" di #glossary[ClickHouse], agisce direttamente come consumatore dei dati provenienti dal #glossary[broker] dati. Questo avviene tramite la connessione a specifici #glossary[topic] in #glossary[Kafka], ognuno associato a un tipo di sensore distinto. Successivamente, i dati corrispondenti vengono archiviati nelle rispettive tabelle del database;
 - *Aggregazione*: i dati corrispondenti la temperatura, umidità, precipitazioni, inquinamento atmosferico e livello dei bacini idrici vengono aggregati in tabelle apposite attraverso l'utilizzo di #glossary[materialized views]. Per ognuno dei tipi di dato sopracitati, vengono aggregati i dati in modo da poter inserire le medie in tabelle apposite, in modo efficiente. Vengono effettuate due distinte aggregazioni per ogni tipo di dato tra quelli sopra elencati:
-    - Media aritmetica con frequenza di 1 minuto; viene utilizzato per poter leggere i dati di streaming prodotti ad un intervallo abbastanza basso da permettere di effettuare analisi in tempo reale, ma che non sovraccarichi il #glossary[sistema];
+    - Media aritmetica con frequenza di 1 minuto; viene utilizzato per poter leggere i dati di streaming prodotti ad un intervallo abbastanza basso da permettere di effettuare analisi in tempo reale;
     - Media aritmetica con frequenza di 5 minuti; viene utilizzato per poter effettuare analisi un intervallo più ampio e permette di individuare più facilmente andamenti e trend sui dati.
 
 - *Interrogazioni (query)*: vengono effettuate varie interrogazioni e analisi sui dati memorizzati all'interno delle tabelle;
-- *Visualizzazione*: l'#glossary[amministratore pubblico] visualizza i dati, ritornati in output dalle query, su una piattaforma apposita (in questo caso #glossary[Grafana]).
+- *Visualizzazione*: l'#glossary[amministratore pubblico] visualizza i dati ritornati in output dalle query ed elaborati attraverso delle #glossary[dashboard], sulla una piattaforma #glossary[Grafana].
 
 == Database
 Lo scopo del database è quello di memorizzare i dati provenienti dai sensori, in modo da poterli analizzare e visualizzare in seguito. I dati di un #glossary[sensore] vengono acquisiti tramite un #glossary[topic] #glossary[Kafka], associato ad un tipo di #glossary[sensore], e poi memorizzati in apposite tabelle.
@@ -189,9 +189,9 @@ Per ogni tipo di #glossary[sensore] viene creata una tabella #glossary[time seri
 
 ==== Tabella dati aggregati
 Questo tipo di tabelle aggrega i dati provenienti dalle tabelle #glossary[time series] in modo da poter effettuare analisi su intervalli temporali specifici. Ad esempio:
-- Media con frequenza di un minuto;
-- Media mobile.
-Per il loro popolamento si utilizzano le #glossary[materialized views], che permettono di inserire i dati risultanti da una query.
+- Media aritmetica con frequenza di un minuto;
+- Media aritmetica con frequenza di cinque minuti.
+Per il loro popolamento si utilizzano le #glossary[materialized views], che permettono di inserire i dati risultanti da una query, tra i quali la media.
 
 ==== Motori di archiviazione
 #glossary[ClickHouse] offre diversi motori di archiviazione, ognuno con caratteristiche specifiche. Per il nostro caso d'uso, facciamo uso dei seguenti:
