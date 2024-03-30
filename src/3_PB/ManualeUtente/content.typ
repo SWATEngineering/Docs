@@ -108,6 +108,31 @@ La seguente sezione fornisce istruzioni dettagliate su come installare e avviare
 `git clone https://github.com/SWATEngineering/InnovaCity.git`
 #set align(left)
 
+== Creare API Key
+Per il corretto funzionamento del simulatore di biciclette elettriche è necessario registrarsi o accedere al seguente servizio: #link("https://openrouteservice.org/dev/#/signup") e ottenere l'API key. Una volta effettuato l'accesso:
+
+- andare nella sezione "Dashboard";
+- se non ancora accettati, accettare i "Termini e Condizioni", nella sotto-sezione "Profile";
+- nella sotto-sezione "Tokens" creare un nuovo token scegliendo la versione "Standard" e un nome a piacemento;
+- Copiare l'API Key generata a schermo e salvarla per dopo.
+
+== Creare Discord Webhook
+Il sistema di notifiche utilizza un canale in un server Discord per inviare i propri messaggi. In un server di nostra appartenenza, o in uno nel quale abbiamo i permessi:
+- cliccare col tasto destro su un canale testuale;
+- cliccare sulla voce "Modifica Canale";
+- nella nuova schermata cliccare sulla voce "Integrazioni";
+- cliccare sulla voce "Crea Webhook";
+A questo punto vedrete il vostro webhook creato, potete dargli un nome a piacimento, modificare eventualmente il canale testuale a cui è collegato e copiare il webhook.
+Copiatelo e salvatelo per lo step successivo.
+
+== Variabili d'Ambiente
+Nella directory della repository clonata al passo 1. allo stesso livello del file "README.md" creare un file chiamato ".env" (il punto è importante) con il seguente contenuto:
+```env
+ORS_API_KEY=<API_KEY_GENERATA_AL_PASSO_2>
+DISCORD_WEBHOOK_URL=<API_KEY_GENERATA_AL_PASSO_3>
+```
+Sostituendo i valori salvati prima subito dopo l'uguale, rimuovendo i placeholders tra parentesi angolate (e togliendo anche le parentesi angolate).
+
 == Avviare l'applicazione
 
 + Eseguire il comando:
