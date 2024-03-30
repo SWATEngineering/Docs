@@ -213,7 +213,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC2.7: Visualizzazione #glossary("pannello") precipitazioni medie
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse millimetri di pioggia all'ora (mm/h), indicante la media dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori nell'ultimo minuto;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse millimetri di pioggia all'ora (mm/h), indicante la media dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori nell'intervallo di tempo impostato all'interno della #glossary[dashboard] [UC6.4];
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
@@ -266,7 +266,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC2.11: Visualizzazione #glossary("pannello") temperatura media
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente la media della temperatura, espressa in gradi Celsius (°C), considerando tutti i sensori attivi nell'ultimo minuto, e presentata in formato numerico;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente la media della temperatura, espressa in gradi Celsius (°C), considerando tutti i sensori attivi nell'intervallo di tempo impostato all'interno della #glossary[dashboard] [UC6.4], e presentata in formato numerico;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
@@ -279,7 +279,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC2.12: Visualizzazione #glossary("pannello") inquinamento dell'aria massimo
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente il massimo coefficiente di inquinamento dell'aria registrato tra tutti i sensori, espresso in $#sym.mu g\/m^3$, nell'ultimo minuto, presentato in formato numerico;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente il massimo coefficiente di inquinamento dell'aria registrato tra tutti i sensori, espresso in $#sym.mu g\/m^3$, negli ultimi 5 minuti, presentato in formato numerico;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
@@ -934,7 +934,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante l'andamento in media aritmetica dell'intensità delle precipitazioni, espresse in millimetri all'ora (mm/h), di tutti i sensori, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.], [UC#C.display()]
   ),
   (
-    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico rappresentante l'intensità media delle precipitazioni, espressa in millimetri all'ora (mm/h), nell'ultimo minuto, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
+    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico rappresentante l'intensità media delle precipitazioni, espressa in millimetri all'ora (mm/h), nell'intervallo di tempo impostato all'interno della #glossary[dashboard], facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante l'andamento in media aritmetica del livello di polveri sottili nell'aria, espressi in $#sym.mu g\/m^3$ (#glossary("PM10")), per ciascun #glossary("sensore"), aggregando i dati per intervalli di 1 minuto, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
@@ -952,10 +952,10 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante l'andamento in media aritmetica della percentuale di riempimento dei bacini idrici, di tutti i sensori, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.], [UC#C.display()]
   ),
   (
-    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico, che esprime la temperatura media, espressa in gradi Celsius, nell'ultimo minuto, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
+    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico, che esprime la temperatura media, espressa in gradi Celsius, nell'intervallo di tempo impostato all'interno della #glossary[dashboard], facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico, che esprime il livello massimo di polveri sottili nell'aria, espresso in $#sym.mu g\/m^3$ (#glossary("PM10")), nell'ultimo minuto, tra i dati registrati da tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
+    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico, che esprime il livello massimo di polveri sottili nell'aria, espresso in $#sym.mu g\/m^3$ (#glossary("PM10")), negli ultimi 5 minuti, tra i dati registrati da tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che mostri le posizioni dei sensori che monitorano i dati ambientali, mediante icone colorate in base al tipo di #glossary[sensore].], [#C.step(level:2)UC#C.display()]
