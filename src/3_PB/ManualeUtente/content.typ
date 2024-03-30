@@ -203,7 +203,7 @@ Posizionando il cursore sopra l'header contenente titolo e icona del menù in ci
 
 == Dashboard "Ambientale"
 
-La #glossary[dashboard] "Ambientale" è dedita alla visualizzazione di dati relativi all'ambiente, che includono temperatura, percentuale di umidità, direzione e velocità del vento, intensità delle precipitazioni, livello di polveri sottili e riempimento dei bacini idrici. Quelli riportati sono aspetti monitorati all'interno della #glossary[dashboard] tramite #glossary[pannelli] contenenti grafici di varia natura, in particolare si utilizza: il formato "#glossary[Time series]", il formato "Geomap", il formato "Table", il formato "Stat" e il formato "Gauge". Per maggiori informazioni sulla natura di ciascun formato, si rimanda alla #glossary[documentazione] ufficiale di #glossary[Grafana]. 
+La #glossary[dashboard] "Ambientale" è dedita alla visualizzazione di dati relativi all'ambiente, che includono temperatura, percentuale di umidità, direzione e velocità del vento, intensità delle precipitazioni, livello di polveri sottili e riempimento dei bacini idrici. Quelli riportati sono aspetti monitorati all'interno della #glossary[dashboard] tramite #glossary[pannelli] contenenti grafici di varia natura, in particolare si utilizza: il formato "#glossary[Time series]", il formato "Geomap", il formato "Table" e il formato "Stat". Per maggiori informazioni sulla natura di ciascun formato, si rimanda alla #glossary[documentazione] ufficiale di #glossary[Grafana]. 
 
 === #glossary[Pannelli] con grafici in formato "#glossary[Time series]"
 
@@ -270,7 +270,11 @@ Il #glossary[pannello] contenente un grafico in formato "Stat" riporta dati rela
 
 - Media della temperatura riportata da tutti i sensori cumulativamente, nell'intervallo di tempo selezionato;
 
-- Massimo livello di polveri sottili nell'aria tra quelli riportati da tutti i sensori cumulativamente, nell'intervallo di tempo selezionato.
+- Media dell'intensità delle precipitazioni riportata da tutti i sensori cumulativamente, nell'intervallo di tempo selezionato;
+
+- Media del livello di polveri sottili nell'aria tra quelli riportati da tutti i sensori cumulativamente, nell'ultimo minuto;
+
+- Massimo livello di polveri sottili nell'aria tra quelli riportati da tutti i sensori cumulativamente, negli ultimi 5 minuti.
 
 #figure(
 image("assets/screenshots/media-temperatura.png",width:20%),
@@ -278,14 +282,6 @@ caption: [Grafico in formato Stat della temperatura.]
 )
 
 Tale #glossary[pannello] contiene un indice numerico che riporta quanto descritto sopra. L'interazione con questo pannello non si distingue dalla descrizione presente nella sezione *Pannelli*.
-
-=== #glossary[Pannelli] con grafici in formato "Gauge"
-
-Il #glossary[pannello] contenente un grafico in formato "Gauge" riporta dati relativi a:
-
-- Media dell'intensità delle precipitazioni riportata da tutti i sensori cumulativamente, nell'intervallo di tempo selezionato.
-
-Tale #glossary[pannelli] riporta quanto descritto sopra e non vi sono particolarità nel modo di interagirvi, al di là di quello che accomuna tutti i #glossary[pannelli] in #glossary[Grafana] descritto nella sezione *Pannelli*.
 
 == Dashboard "Urbanistica"
 
