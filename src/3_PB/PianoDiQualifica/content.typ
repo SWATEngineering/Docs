@@ -1081,6 +1081,14 @@ Il team si è occupato infatti di ultimare tutta la #glossary[documentazione] ne
 
 Questo risultato, nonostante la correlazione causale individuata, suggerisce ugualmente che qualcosa nel progetto non è stato gestito al meglio: la forte attenzione posta sulla #glossary[documentazione] nell'ultimo #glossary[sprint] è una manifestazione del tentativo del team di rincorrere gli obiettivi di una pianificazione poco rigorosa. Ne deriva che il team, in vista della seconda revisione, dovrà impegnarsi a migliorare il processo relativo alla gestione di progetto, in modo da poter essere sempre sicuri che gli obiettivi fissati siano effettivamente raggiunti nei termini dettati dalla pianificazione.
 
+*#glossary[PB]*: L'analisi del grafico rivela un trend interessante nell'EAC a partire dall'ottavo #glossary[sprint] fino al decimo. Durante l'ottavo #glossary[sprint], l'EAC mostra una leggera tendenza al rialzo, che si intensifica fino al suo picco nel decimo #glossary[sprint]. Questo aumento è attribuibile alla decisione del team di prendere una breve pausa, motivata dalla necessità di affrontare la sessione degli esami e partecipare a colloqui relativi all'#glossary[RTB].
+
+La pausa, sebbene necessaria, ha inevitabilmente influenzato il ritmo e la produttività del team, causando un rallentamento nelle attività del progetto e un aumento dei costi associati alla gestione delle risorse durante questo periodo. Questa interruzione temporanea ha comportato un leggero incremento nei costi previsti per il completamento del progetto, evidenziato dall'aumento dell'EAC nei sprint successivi.
+
+Tuttavia, è interessante notare che nonostante questo rialzo nell'EAC fino allo #glossary[sprint] decimo, il suo valore è gradualmente diminuito nel corso degli sprint successivi fino a raggiungere un valore ottimale verso la fine dello #glossary[sprint] quattordicesimo. Questa tendenza al ribasso può essere attribuita alla ripresa del ritmo di lavoro dopo la pausa, all'ottimizzazione delle risorse e alla migliore gestione delle attività del progetto da parte del team.
+
+In definitiva, sebbene la pausa abbia temporaneamente influenzato i costi e i tempi di completamento del progetto, il team è riuscito a recuperare il terreno perso, riducendo l'EAC e portando il progetto verso il raggiungimento dei suoi obiettivi entro la fine del ciclo degli #glossary[sprint].
+
 
 #pagebreak()
 
