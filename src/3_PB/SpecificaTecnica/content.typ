@@ -70,7 +70,7 @@ table(
       [#glossary[Python]], [Linguaggio di programmazione ad alto livello, interpretato, multi paradigma.],[Creazione dei simulatori di dati.], [3.11],
       [SQL], [Linguaggio standard per la gestione e la manipolazione dei database che lo supportano.],[Gestione e manipolazione del database #glossary[ClickHouse].], [ANSI SQL],
       [YAML], [Formato di serializzazione dei dati leggibile dall'uomo comunemente utilizzato per la configurazione dei servizi e lo scambio di dati tra programmi.],[Configurazione di #glossary[Docker Compose].], [1.2.2],
-      [#glossary[JSON]], [Formato leggero per lo scambio di dati, facile da leggere e scrivere per gli esseri umani e facile da analizzare e generare per le macchine.],[Configurazione dei simulatori di dati, formato dei messaggi spediti dai simulatori al broker dati, configurazione delle dashboard #glossary[Grafana].], [2020-12]),
+      [#glossary[JSON]], [Formato leggero per lo scambio di dati, facile da leggere e scrivere per gli esseri umani e facile da analizzare e generare per le macchine.],[Configurazione dei simulatori di dati, formato dei messaggi spediti dai simulatori al #glossary[broker] dati, configurazione delle dashboard #glossary[Grafana].], [2020-12]),
 caption: [Tabella tecnologie per la Codifica: Linguaggi e formati dati.])
 == #glossary[Framework] e librerie
 #figure(
@@ -79,7 +79,7 @@ table(
       align: (x, y) => (center, center, center, center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Tecnologia*],[*Descrizione*],[*Uso*],[*Versione*],
-      [Confluent Kafka], [Libreria #glossary[Python] progettata per agevolare la produzione e il consumo di messaggi all'interno di un ambiente _Apache_ #glossary[Kafka]. Questa libreria fornisce agli sviluppatori gli strumenti necessari per interagire con efficacia con #glossary[Kafka], consentendo loro di scrivere codice #glossary[Python] per inviare e ricevere messaggi tramite il sistema di messaggistica distribuita di #glossary[Kafka]. Grazie a Confluent Kafka, è possibile implementare in modo efficiente la comunicazione asincrona e la gestione dei flussi di dati all'interno delle applicazioni #glossary[Python], sfruttando le potenzialità di _Apache_ #glossary[Kafka] per garantire scalabilità, affidabilità e prestazioni ottimali.], [Interfaccia del codice #glossary[Python] dei simulatori con il message broker #glossary[Kafka].], [1.9],
+      [Confluent Kafka], [Libreria #glossary[Python] progettata per agevolare la produzione e il consumo di messaggi all'interno di un ambiente _Apache_ #glossary[Kafka]. Questa libreria fornisce agli sviluppatori gli strumenti necessari per interagire con efficacia con #glossary[Kafka], consentendo loro di scrivere codice #glossary[Python] per inviare e ricevere messaggi tramite il sistema di messaggistica distribuita di #glossary[Kafka]. Grazie a Confluent Kafka, è possibile implementare in modo efficiente la comunicazione asincrona e la gestione dei flussi di dati all'interno delle applicazioni #glossary[Python], sfruttando le potenzialità di _Apache_ #glossary[Kafka] per garantire scalabilità, affidabilità e prestazioni ottimali.], [Interfaccia del codice #glossary[Python] dei simulatori con il message #glossary[broker] #glossary[Kafka].], [1.9],
       ),
 caption: [Tabella tecnologie per la Codifica: #glossary[Framework] e librerie])
 
@@ -122,9 +122,9 @@ caption: [Tabella tecnologie per l'analisi del codice.])
 Il #glossary[sistema] richiede la capacità di processare dati provenienti da varie fonti, in tempo reale, e di offrire una visualizzazione immediata e continua di tali dati, consentendo di monitorarne gli andamenti.
 Per questo tipo di scopo le due architetture consigliate sono la:
 - *#[#sym.lambda]-architecture*: che prevede di elaborare i dati in due flussi separati, uno per i dati in tempo reale (streaming) e uno per i dati storici. I dati in tempo reale vengono elaborati immediatamente per fornire risposte rapide, mentre i dati storici vengono elaborati in batch per fornire risposte più complete o elaborate nel tempo. Alla fine, i risultati dei due flussi vengono combinati per fornire una visione completa dei dati;
-  - *Vantaggi*: permette di elaborare i dati in tempo reale e batch, fault tolerant e consistente tra i due flussi;
+  - *Vantaggi*: permette di elaborare i dati in tempo reale e batch, è fault tolerant e consistente tra i due flussi;
   - *Svantaggi*: complessità di gestione del #glossary[sistema], logica di computazione duplicata e complessità di manutenzione;
-- *#[#sym.kappa]-architecture*: semplifica la struttura della #[#sym.lambda]-architecture, unificando il flusso stream e il flusso batch batch in un unico layer. Tutti i dati vengono quindi elaborati in tempo reale utilizzando un sistema di elaborazione dei dati in streaming. Questo fa si che i dati vengono elaborati una sola volta, riducendo la complessità complessiva del #glossary[sistema]\;
+- *#[#sym.kappa]-architecture*: semplifica la struttura della #[#sym.lambda]-architecture, unificando il flusso stream e il flusso batch in un unico layer. Tutti i dati vengono quindi elaborati in tempo reale utilizzando un sistema di elaborazione dei dati in streaming. Questo fa si che i dati vengono elaborati una sola volta, riducendo la complessità complessiva del #glossary[sistema]\;
   - *Vantaggi*: riduzione della complessità del #glossary[sistema], logica di computazione non duplicata e complessità di manutenzione ridotta, inoltre permette una bassa latenza e scala facilmente con il volume dei dati;
   - *Svantaggi*: non adatto per tutti i casi d'uso, in quanto non permette di elaborare i dati in batch.
 
@@ -139,7 +139,7 @@ Possiamo quindi compartimentalizzare le varie componenti del sistema in questo m
 
 - *Data source*: le sorgenti dati sono i sensori IoT sparsi nella città, capaci di inviare messaggi contenenti misurazioni, ad intervalli regolari, mediante protocollo #glossary("Kafka"), allo streaming layer;
 - *Streaming layer*: lo streaming layer si occupa di gestire i dati in arrivo in tempo reale, per andarli sistematicamente a persistere nello storage layer. Questo layer è composto da:
-  - *Apache Kafka*: che svolgerà il ruolo di broker dati;
+  - *Apache Kafka*: che svolgerà il ruolo di #glossary[broker] dati;
   - *ClickHouse Kafka table engine*: che svolgerà il ruolo di consumatore, al fine di leggere i dati dal server #glossary[Kafka] per poi persisterli nello storage layer.
 - *Storage layer*: si occupa della persistenza dei dati e, grazie alle funzionalità OLAP offerte dal database #glossary[ClickHouse], di effettuare analisi in tempo reale;
 - *Visualization Layer*: composto unicamente da #glossary[Grafana], questo layer si occupa di visualizzare i dati elaborati, in tempo reale.
