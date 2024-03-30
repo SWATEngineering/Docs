@@ -69,7 +69,7 @@ table(
       [*Tecnologia*],[*Descrizione*],[*Uso*],[*Versione/Standard*],
       [#glossary[Python]], [Linguaggio di programmazione ad alto livello, interpretato, multi paradigma.],[Creazione dei simulatori di dati.], [3.11],
       [SQL], [Linguaggio standard per la gestione e la manipolazione dei database che lo supportano.],[Gestione e manipolazione del database #glossary[ClickHouse].], [ANSI SQL],
-      [YAML], [Formato di serializzazione dei dati leggibile dall'uomo comunemente utilizzato per la configurazione dei servizi e lo scambio di dati tra programmi.],[Configurazione di Docker Compose.], [1.2.2],
+      [YAML], [Formato di serializzazione dei dati leggibile dall'uomo comunemente utilizzato per la configurazione dei servizi e lo scambio di dati tra programmi.],[Configurazione di #glossary[Docker Compose].], [1.2.2],
       [#glossary[JSON]], [Formato leggero per lo scambio di dati, facile da leggere e scrivere per gli esseri umani e facile da analizzare e generare per le macchine.],[Configurazione dei simulatori di dati, formato dei messaggi spediti dai simulatori al broker dati, configurazione delle dashboard #glossary[Grafana].], [2020-12]),
 caption: [Tabella tecnologie per la Codifica: Linguaggi e formati dati.])
 == #glossary[Framework] e librerie
@@ -96,8 +96,8 @@ table(
       [_Apache_ #glossary[Kafka]], [Piattaforma di streaming di dati distribuita e scalabile, progettata per la gestione di flussi di dati in tempo reale. È ampiamente utilizzato per l'elaborazione di eventi, la messaggistica asincrona e la creazione di pipeline dati #glossary[real-time].], [Riceve in modo asincrono i dati provenienti dai simulatori in formato #glossary[JSON] e li rende disponibili ai suoi consumatori.], [3.7.0],
       [#glossary[Grafana]], [Piattaforma open source per il monitoraggio e l'analisi dei dati. Fornisce strumenti per la visualizzazione di metriche e log, la creazione di #glossary[dashboard] interattive e la generazione di avvisi in tempo reale.], [Visualizzazione sottoforma di #glossary[dashboard] e analisi dei dati recuperati dal database.],[10.3],
       [Grafana ClickHouse Data Source], [Plugin per #glossary[Grafana] che consente di interrogare e visualizzare i dati di #glossary[ClickHouse] in #glossary[Grafana].], [Interrogazione al database di Clickhouse per la visualizzazione dei dati in #glossary[Grafana].], [4.0.3],
-      [#glossary[Docker]], [Piattaforma open-source che permette di creare, distribuire e gestire applicazioni in contenitori virtuali.],[Creare in modo riproducibile ambienti software per i simulatori, #glossary[ClickHouse], #glossary[Kafka] e #glossary[Grafana].], [25.0.3],
-      [Docker Compose], [Strumento per definire e gestire applicazioni multi-container Docker attraverso file YAML.],[Gestione automatica e centralizzata dei container che costituiscono il #glossary[sistema].], [2.24.6]
+      [Docker], [Piattaforma open-source che permette di creare, distribuire e gestire applicazioni in contenitori virtuali.],[Creare in modo riproducibile ambienti software per i simulatori, #glossary[ClickHouse], #glossary[Kafka] e #glossary[Grafana].], [25.0.3],
+      [#glossary[Docker Compose]], [Strumento per definire e gestire applicazioni multi-container Docker attraverso file YAML.],[Gestione automatica e centralizzata dei container che costituiscono il #glossary[sistema].], [2.24.6]
       ),
 caption: [Tabella tecnologie per la Codifica: Database e servizi.])
 
