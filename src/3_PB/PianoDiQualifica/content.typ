@@ -201,10 +201,9 @@ caption: [Tabella metriche per l'affidabilità del prodotto.])
             align: (x, y) => (center, center, center,center).at(x),
             fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
             [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-            [MPD-CPUU],[Maximum CPU usage],[da determinare],[da determinare],
-            [MPD-RAMU],[Maximum RAM usage],[da determinare],[da determinare],
-            [MPD-TDE],[Tempo Di Elaborazione],[da determinare], [da determinare],
-
+            [MPD-CPUU],[Maximum CPU usage],[\<=20%],[\<= 15%], 
+            [MPD-RAMU],[Maximum RAM usage],[\<= 3 Gb],[\<= 2Gb], 
+            [MPD-TDE],[Tempo Di Elaborazione],[\<= 6s], [\<= 4s],
       ),
 caption: [Tabella metriche per l'efficienza del prodotto.])
 
@@ -1207,6 +1206,22 @@ Le Metriche Non Soddisfatte corrispondono alle metriche MPC-CO, MPC-CPI, MPC-EAC
 === Affidabilità
 
 === Efficienza
+
+Le metriche di efficienza sono state calcolate utilizzando un elaboratore con le seguenti caratteristiche:
+- 16 GB RAM LPDDR5
+- CPU M1 PRO 10 Core 3.2GHz
+Abbiamo valutato il sistema a pieno carico, con più di 40 sensori attivi, che generavano una scrittura al secondo ognuno, senza che si verificassero rallentamenti del sistema. I risultati sono rimasti invariati durante il corso del progetto, dato che le componenti sono rimaste le stesse e sono in grado di gestire una mole di dati molto superirore a quella richiesta per il progetto.
+#figure(
+table(
+      columns:(auto,auto,auto),
+      align: (x, y) => (center, center, center,center).at(x),
+      fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Metrica*],[*Valore Medio Rilevato*],[*Valore accettazione*],
+      [MPD-CPUU],[\~12%],[\<= 20%], 
+      [MPD-RAMU],[~ 2,7 GB],[\<= 3GB], 
+      [MPD-TDE],[\~ 3s], [\<= 6s],
+),
+caption: [Tabella delle metriche di efficienza a massimo carico])
 
 == Considerazioni finali in vista della revisione #glossary[RTB]
 
