@@ -1210,7 +1210,7 @@ Le Metriche Non Soddisfatte corrispondono alle metriche MPC-CO, MPC-CPI, MPC-EAC
 Le metriche di efficienza sono state calcolate utilizzando un elaboratore con le seguenti caratteristiche:
 - 16 GB RAM LPDDR5
 - CPU M1 PRO 10 Core 3.2GHz
-Abbiamo valutato il sistema a pieno carico, con più di 40 sensori attivi, che generavano una scrittura al secondo ognuno, senza che si verificassero rallentamenti del sistema. I risultati sono rimasti invariati durante il corso del progetto, dato che le componenti sono rimaste le stesse e sono in grado di gestire una mole di dati molto superirore a quella richiesta per il progetto.
+Abbiamo valutato il sistema a pieno carico, con più di quaranta sensori attivi, che generavano una scrittura al secondo ognuno, per più di sei ore, senza che si verificassero rallentamenti del sistema. I risultati sono rimasti invariati durante il corso del progetto, dato che le componenti sono rimaste le stesse e sono in grado di gestire una mole di dati molto superirore a quella richiesta per il progetto.
 #figure(
 table(
       columns:(auto,auto,auto),
