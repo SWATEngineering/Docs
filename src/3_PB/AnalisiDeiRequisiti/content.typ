@@ -210,17 +210,17 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC2.6 Visualizzazione #glossary("pannello") #glossary[time series] per precipitazioni]
 )
 
-=== UC2.7: Visualizzazione #glossary("pannello") gauge precipitazioni medie
+=== UC2.7: Visualizzazione #glossary("pannello") precipitazioni medie
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse millimetri di pioggia all'ora (mm/h), in formato gauge, indicante la media dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori nell'ultimo minuto;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse millimetri di pioggia all'ora (mm/h), indicante la media dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori nell'ultimo minuto;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
 
 #figure(
   image("assets/UML/UC2.7_Visualizzazione-pannello-precipitazioni-medie.png",width:100%),
-  caption: [UC2.7 Visualizzazione #glossary("pannello") gauge precipitazioni medie]
+  caption: [UC2.7 Visualizzazione #glossary("pannello") precipitazioni medie]
 )
 
 #pagebreak()
@@ -934,7 +934,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante l'andamento in media aritmetica dell'intensità delle precipitazioni, espresse in millimetri all'ora (mm/h), di tutti i sensori, aggregando i dati per intervalli di 5 minuti, nella #glossary("dashboard") relativa ai dati ambientali.], [UC#C.display()]
   ),
   (
-    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato gauge (con indice numerico) rappresentante l'intensità media delle precipitazioni, espressa in millimetri all'ora (mm/h), nell'ultimo minuto, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
+    "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico rappresentante l'intensità media delle precipitazioni, espressa in millimetri all'ora (mm/h), nell'ultimo minuto, facendo la media dei dati raccolti tra tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante l'andamento in media aritmetica del livello di polveri sottili nell'aria, espressi in $#sym.mu g\/m^3$ (#glossary("PM10")), per ciascun #glossary("sensore"), aggregando i dati per intervalli di 1 minuto, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
