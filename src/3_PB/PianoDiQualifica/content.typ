@@ -245,7 +245,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             1. Aprire il menu di selezione delle #glossary("dashboard")\;
             2. Selezionare la #glossary("dashboard") dei dati grezzi;
             3. Visualizzare la relativa #glossary("dashboard")\;
-            4. Visualizzare un #glossary("pannello") con una tabella che mostra i dati grezzi, in particolare il nome del #glossary[sensore], la tipologia del #glossary[sensore], il timestamp della rilevazione e il valore della misurazione;
+            4. Visualizzare un #glossary("pannello") con una tabella che mostra i dati grezzi, in particolare il nome del #glossary[sensore], la tipologia del #glossary[sensore], il timestamp della rilevazione e il valore della misurazione (se composta da più dati, tutti i valori devono essere elencati nella colonna corrispondente);
             5. Visualizzare un messaggio di avvertenza di dati mancanti, all'interno del #glossary("pannello"), nel caso il #glossary[sistema] non riesca a reperire i dati.
       ],"N/I",[
             UC0\
@@ -338,7 +338,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             UC9
       ]),
       ([
-          Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
+          Verificare che l'#glossary("amministratore pubblico"), una volta avviata l'applicazione, possa:
             1. Ricevere un'allerta che notifichi il superamento dei 40° Celsius (°C); 
             2. Ricevere un'allerta che notifichi il superamento dei 50 millimetri di pioggia all'ora (50 mm/h); 
             3. Ricevere un'allerta relativa all'inquinamento dell'aria (#glossary("PM10")) che notifica il superamento di 80#[#sym.mu]g su metro cubo ($ 80#sym.mu g\/m^3$); 
@@ -488,7 +488,7 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare una #glossary("dashboard") dedicata a fornire una panoramica generale dei dati grezzi.
       ],"N/I","ROF"),
       ([
-            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, in forma tabellare, i dati grezzi inviati da tutti i sensori con il nome del #glossary[sensore], la tipologia del #glossary[sensore], il timestamp della rilevazione e il valore della misurazione, all'interno della #glossary("dashboard") relativa ai dati grezzi.
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare, in forma tabellare, i dati grezzi inviati da tutti i sensori con il nome del #glossary[sensore], la tipologia del #glossary[sensore], il timestamp della rilevazione e il valore della misurazione (nel caso in cui la misurazione sia composta da più dati, tutti i valori devono essere elencati ed etichettati opportunamente all'interno della stessa entrata nella colonna corrispondente), all'interno della #glossary("dashboard") relativa ai dati grezzi.
       ],"N/I","ROF"),
       ([
             Verificare che l'#glossary("amministratore pubblico") possa  monitorare i dati provenienti dai sensori relativi ai dati ambientali in una #glossary("dashboard") apposita.
@@ -620,7 +620,7 @@ table(
             Verificare  che l'#glossary("amministratore pubblico") possa filtrare i dati in base ad un intervallo temporale. Di conseguenza la  #glossary("dashboard") interessata deve, nella sua totalità, mostrare solamente i dati aventi un #glossary("timestamp") in tale intervallo.
       ],"N/I","ROF"),
       ([
-            Verificare  che l'#glossary("amministratore pubblico"), nei #glossary("pannelli") tabellari, possa ordinare i dati in base ai campi relativi al nome del #glossary("sensore"), tipologia del #glossary("sensore"), valore della misurazione inviata e timestamp della rilevazione (ove presenti), sia in ordine crescente che decrescente. 
+            Verificare  che l'#glossary("amministratore pubblico"), nei #glossary("pannelli") tabellari, possa ordinare i dati in base a tutti i campi presenti, sia in ordine crescente che decrescente. 
       ],"N/I","RDF"),
       ([
             Verificare  che l'#glossary("amministratore pubblico") possa, nel contesto della singola #glossary("dashboard"),  modificare il layout, agendo sulla posizione dei  #glossary("pannelli"). 

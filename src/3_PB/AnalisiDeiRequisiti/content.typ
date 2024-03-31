@@ -105,7 +105,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC1.1: Visualizzazione #glossary("pannello") dati grezzi
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati grezzi;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza il #glossary("pannello") relativo ai dati grezzi, che riporta il nome del #glossary[sensore], la tipologia del #glossary[sensore], il timestamp della rilevazione e il valore della misurazione, in forma tabellare, per ogni tipo di #glossary[sensore]; la tabella contenente i dati menzionati è indicizzata tramite il nome dei sensori; /*Nel caso in cui il #glossary[sensore] invii altri dati contestuali alla misurazione principale, come nel caso dei sensori che monitorano le colonne di ricarica [UC17], la congestione stradale [UC20] o il vento [UC12], questi saranno a loro volta visualizzabili all'interno della tabella.*/
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza il #glossary("pannello") relativo ai dati grezzi, che riporta il nome del #glossary[sensore], la tipologia del #glossary[sensore], il timestamp della rilevazione e il valore della misurazione, in forma tabellare, per ogni tipo di #glossary[sensore]; la tabella contenente i dati menzionati è indicizzata tramite il nome dei sensori e, nel caso in cui la misurazione sia composta da più dati, tutti i valori sono elencati ed etichettati opportunamente all'interno della stessa entrata nella colonna corrispondente;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary("dashboard") generale relativa ai dati grezzi.
@@ -517,6 +517,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   image("assets/UML/UC5_Ricezione-notifiche-superamento-soglie.png",width:70%),
   caption: [UC5 Ricezione notifiche di superamento soglie]
 )
+- *Specializzazioni*: [UC5.1], [UC5.2], [UC5.3], [UC5.4], [UC5.5].
 
 === UC5.1: Ricezione notifica di superamento soglia temperatura
 - *Attore Principale*: #glossary("amministratore pubblico")\;
@@ -664,9 +665,9 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC7: Ordinamento #glossary("pannelli") tabellari
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") sta visualizzando un #glossary("pannello"), con all'interno una tabella; 
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza i dati ordinati nella tabella, secondo tale campo;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza i dati ordinati nella tabella, secondo il campo selezionato;
 - *Scenario Principale*:
-  + L'#glossary("amministratore pubblico") seleziona un campo della tabella, secondo cui ordinare i dati, tra i seguenti: nome del #glossary("sensore"), tipologia del #glossary("sensore"), valore della misurazione inviata e timestamp della rilevazione (ove presenti);
+  + L'#glossary("amministratore pubblico") seleziona un campo della tabella, secondo cui ordinare i dati (le informazioni sono ordinabili rispetto a tutte le colonne della tabella);
   + Per tale campo l'#glossary("amministratore pubblico") sceglie tra l'ordinamento crescente e decrescente.
 
 #figure(
@@ -904,7 +905,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
      "Obbligatorio", [L'utente deve poter visualizzare una #glossary("dashboard") generale relativa ai dati grezzi.], [UC#C.step()#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare, in forma tabellare, i dati grezzi inviati da tutti i sensori con il nome del #glossary[sensore], la tipologia del #glossary[sensore], il timestamp della rilevazione e il valore della misurazione, all'interno della #glossary("dashboard") relativa ai dati grezzi.], [#C.step(level:2)UC#C.display()]
+    "Obbligatorio", [L'utente deve poter visualizzare, in forma tabellare, i dati grezzi inviati da tutti i sensori con il nome del #glossary[sensore], la tipologia del #glossary[sensore], il timestamp della rilevazione e il valore della misurazione (se composta da più dati, tutti i valori sono elencati nella colonna corrispondente), all'interno della #glossary("dashboard") relativa ai dati grezzi.], [#C.step(level:2)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter monitorare i dati provenienti dai sensori relativi ai dati ambientali in una #glossary("dashboard") apposita.], [#C.step()UC#C.display()]
@@ -1030,7 +1031,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   ),
   
   (
-    "Desiderabile", [Nei #glossary("pannelli") con tabelle, l'utente deve poter ordinare i dati in base ai campi relativi al nome del #glossary("sensore"), tipologia del #glossary("sensore"), valore della misurazione inviata e timestamp della rilevazione (ove presenti), sia in ordine crescente che decrescente.], [#C.step()UC#C.display()]
+    "Desiderabile", [Nei #glossary("pannelli") con tabelle, l'utente deve poter ordinare i dati in base a tutti i campi presenti, sia in ordine crescente che decrescente.], [#C.step()UC#C.display()]
   ),
   
   (
