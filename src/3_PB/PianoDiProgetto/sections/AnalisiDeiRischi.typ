@@ -88,6 +88,14 @@ Con l'espressione #glossary("context switch") ci si riferisce al cambiamento dei
       - Assistere l'Amministratore nella creazione delle attività per il prossimo #glossary[sprint]\;
       - Dedicare il primo giorno unicamente allo studio di quanto fatto precedentemente, in modo da riuscire a sincronizzarsi con il contesto del ruolo.
 
+=== RC6 - Ripetizioni nelle assegnazioni del ruolo di Verificatore
+Si verifica quando il ruolo di Verificatore viene assegnato ripetutamente agli stessi membri del team, senza una distribuzione equa del carico di lavoro. Ciò può portare ad una mancanza di diversità di prospettive e ad una maggiore possibilità di non notare eventuali errori durante il processo di revisione.
+  - *Identificazione*: si osserva che il ruolo di Verificatore viene ripetutamente assegnato agli stessi componenti del team nel corso dello #glossary[sprint planning] in 2 o più #glossary[sprint] consecutivi;
+  - *Valutazione*: pericolosità: bassa; occorrenza: media;
+  - *Prevenzione*:
+      - Rotazione effettiva del ruolo: assicurarsi che le attività di verifica siano distribuite equamente tra tutti i membri del team a lungo termine, evitando di assegnare ripetutamente il ruolo di Verificatore allo stesso individuo in #glossary[sprint] consecutivi; infatti, per quanto possa essere vantaggioso fare in modo che 2 o 3 componenti si specializzino nel ruolo di Verificatore (soprattutto per quanto riguarda la #glossary[documentazione]), è bene che tutti i componenti contribuiscano attivamente al processo di verifica per avere prospettive molteplici su scelte contenutistiche importanti;
+      - Formazione continua: offrire opportunità di formazione interna per tutti i membri del team, in modo che siano in grado di aderire alle aspettative del ruolo di Verificatore quando necessario; in ogni caso, le liste di controllo descritte all'interno del _Piano di Qualifica_ sono un ottimo punto di partenza per acquisire familiarità ed esperienza con tali aspettative. 
+
 == Rischi di Pianificazione
 === RP1 - Comprensione erronea dei requisiti
 La comprensione erronea dei requisiti indica il potenziale malinteso o fraintendimento dei requisiti del progetto, che potrebbe portare a interpretazioni errate o divergenti da parte del team riguardo alle funzionalità o agli obiettivi del prodotto.
@@ -138,6 +146,7 @@ I rischi individuati vengono riportati in tabella, assieme alla loro pericolosit
   [*RC3* - Frequenza limitata nella comunicazione con la Proponente], [Media], [Bassa],
   [*RC4* - Mancanza di fiducia], [Media], [Bassa],
   [*RC5* - Context Switch],[Bassa],[Alta],
+  [*RC6* - Ripetizioni nelle assegnazioni del ruolo di Verificatore],[Bassa],[Media],
   [*RP1* - Comprensione erronea dei requisiti], [Alta], [Media],
   [*RP2* - Disallineamento delle componenti architetturali], [Media], [Media],
   [*RP3* - Variazioni nei tempi e costi del progetto], [Alta], [Media],

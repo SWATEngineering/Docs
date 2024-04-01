@@ -3,12 +3,12 @@
 #import "../../functions.typ": glossary
 
 #let ruoli_ore = (
-  Re: 17,
-  Am: 20,
+  Re: 23,
+  Am: 26,
   An: 12,
   Pt: 60,
-  Pr: 92,
-  Ve: 78,
+  Pr: 112,
+  Ve: 103,
 )
 
 #let costo_ruoli_ore=(
