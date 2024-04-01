@@ -1107,6 +1107,10 @@ Il cambiamento più significativo si è verificato durante il quinto #glossary[s
 Il team si aspetta che il #glossary[way of working] consolidato nel corso del progetto permetta di recuperare quanto perso nel corso dei primi #glossary[sprint].
 Durante il settimo e l'ottavo #glossary[sprint] le due metriche hanno mantenuto il gradiente che ci si aspettava.
 
+*#glossary[PB]*: la metrica SV ha continuato a decrescere fino a raggiungere quasi lo 0% #glossary[sprint] 13. 
+Il raggiungimento di quasi lo 0% per l'SV è un segnale positivo che indica un'efficace gestione del tempo e delle risorse all'interno del progetto. Questo risultato indica che il team ha lavorando in modo efficiente per mantenere il progetto in linea con la pianificazione prevista. Il continuo miglioramento della SV nel corso degli #glossary[sprint] dimostra un impegno costante.
+Per quanto riguarda la Budget Variance (BV), si nota un significativo cambiamento di tendenza tra lo #glossary[sprint] 8 e lo #glossary[sprint] 10. Durante questo intervallo, la linea subisce un leggero calo negativo, evidenziando una discrepanza tra il budget pianificato e le spese effettive. Questo decremento è principalmente attribuibile alla pausa programmata per la sessione di esami e colloqui per l'#glossary[RTB]. Tuttavia, dallo #glossary[sprint] 10 in poi, la linea di BV inizia a risalire gradualmente, indicando un miglioramento nella gestione delle spese e una riduzione della discrepanza tra il budget previsto e quello effettivo. Alla fine del periodo considerato, la metrica BV quasi ritorna allo 0%, suggerendo un raggiungimento dell'obiettivo di controllo delle spese.
+
 
 === Actual Cost e Estimate To Complete
 
