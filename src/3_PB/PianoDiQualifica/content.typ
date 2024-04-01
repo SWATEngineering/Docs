@@ -1126,6 +1126,11 @@ Il grafico mostra che effettivamente il team ha mantenuto un ritmo di avanzament
 Tuttavia, si può evincere anche che il progetto risulta essere leggermente in ritardo rispetto alle tempistiche inizialmente previste.
 Considerando che gli otto #glossary[sprint] effettuati corrispondono ad un periodo temporale di 10 settimane, esattamente la metà del periodo di tempo previsto per il completamento dell'intero progetto, ci si aspettava che le due metriche delineate nel grafico si fossero già incrociate giunti a questo punto.
 
+*#glossary[PB]*: da grafico possiamo notare come l'AC sia continuato a salire fino a fermarsi un po' al di sotto dell'EAC. Questo indica che i costi effettivamente sostenuti sono stati inferiori alle stime previste per completare il progetto, il che suggerisce un'efficace gestione dei costi e una buona efficienza nella loro allocazione.
+Inoltre l'ETC è continuato a diminuire nel corso degli sprint, indicando una riduzione progressiva nella stima dei costi necessari per completare il progetto. L'ETC non ha toccato lo 0, poiché delle 570 ore previste ne sono state utilizzate leggermente di meno,infatti il team ha preso la decisione di non effettuare la terza revisione #glossary[CA].
+
+Tuttavia, solamente intorno allo #glossary[sprint] 10 le 2 metriche si sono incrociate.
+
 
 === Earned Value e Planned Value
 
