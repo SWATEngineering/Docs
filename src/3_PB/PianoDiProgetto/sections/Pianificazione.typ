@@ -6,8 +6,7 @@ Stabilite come #glossary("milestone") principali le #glossary("baseline") corris
 Sulla base delle scadenze riportate nella sezione *Scadenze* si pianificano: 
 
 - 2 #glossary[sprint] di due settimane e 6 #glossary[sprint] da una settimana per arrivare alla revisione #glossary[RTB]\; 
-- 6 #glossary[sprint] della durata di una settimana per arrivare alla revisione #glossary[PB]\; 
-- 2 #glossary[sprint] della durata di una settimana per arrivare alla revisione #glossary[CA]\. 
+- 6 #glossary[sprint] della durata di una settimana per arrivare alla revisione #glossary[PB]\.
 
 Il documento _Piano di Progetto_ si evolve durante tutto il ciclo di vita del progetto. Inizialmente, il team aveva pianificato #glossary[sprint] della durata di due settimane. Tuttavia, durante lo svolgimento, è risultato preferibile passare a #glossary[sprint] della durata di una settimana. Di conseguenza, il documento del _Piano di progetto_, in particolare nelle sezioni *Pianificazione* e *Preventivo*, viene aggiornato rispetto a questa modifica. 
 Nell’intervallo di tempo tra revisione #glossary[RTB] e revisione #glossary[PB], è stata pianificata una diminuzione del carico di lavoro nelle ultime due settimane del mese di Gennaio e le prime due del mese di Febbraio, per permettere ai membri del team di dedicarsi agli altri impegni richiesti dal percorso di studio e allo svolgimento della revisione #glossary[RTB], rispettivamente.
