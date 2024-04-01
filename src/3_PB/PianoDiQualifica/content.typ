@@ -1126,7 +1126,7 @@ Il grafico mostra che effettivamente il team ha mantenuto un ritmo di avanzament
 Tuttavia, si può evincere anche che il progetto risulta essere leggermente in ritardo rispetto alle tempistiche inizialmente previste.
 Considerando che gli otto #glossary[sprint] effettuati corrispondono ad un periodo temporale di 10 settimane, esattamente la metà del periodo di tempo previsto per il completamento dell'intero progetto, ci si aspettava che le due metriche delineate nel grafico si fossero già incrociate giunti a questo punto.
 
-*#glossary[PB]*: da grafico possiamo notare come l'AC sia continuato a salire fino a fermarsi un po' al di sotto dell'EAC. Questo indica che i costi effettivamente sostenuti sono stati inferiori alle stime previste per completare il progetto, il che suggerisce un'efficace gestione dei costi e una buona efficienza nella loro allocazione.
+*#glossary[PB]* da grafico possiamo notare come l'AC sia continuato a salire fino a fermarsi un po' al di sotto dell'EAC. Questo indica che i costi effettivamente sostenuti sono stati inferiori alle stime previste per completare il progetto, il che suggerisce un'efficace gestione dei costi e una buona efficienza nella loro allocazione.
 Inoltre l'ETC è continuato a diminuire nel corso degli sprint, indicando una riduzione progressiva nella stima dei costi necessari per completare il progetto. L'ETC non ha toccato lo 0, poiché delle 570 ore previste ne sono state utilizzate leggermente di meno,infatti il team ha preso la decisione di non effettuare la terza revisione #glossary[CA].
 
 Tuttavia, solamente intorno allo #glossary[sprint] 10 le 2 metriche si sono incrociate.
@@ -1142,6 +1142,11 @@ Tuttavia, solamente intorno allo #glossary[sprint] 10 le 2 metriche si sono incr
 )
 
 *#glossary[RTB]* L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[deliverable] rilasciati fino al momento della misurazione in seguito alle attività svolte; il PV rappresenta invece il valore del lavoro pianificato fino a un dato momento. Nonostante sia ancora prematuro confrontare le due metriche con l'EAC, si può notare che il PV si mantiene al di sotto dell'EV, seppur di poco, segno che i preventivi fatti finora sono stati leggermente ottimistici rispetto alla spesa effettiva. Si può notare come le due metriche a partire dal sesto #glossary[sprint] tendano ad avvicinarsi: ciò denota che il team sta iniziando effettivamente a produrre dei preventivi di periodo che rispecchiano maggiormente la realtà effettiva, anche per come viene fotografata nei consuntivi di periodo.
+
+*#glossary[PB]* Durante lo sviluppo del progetto, le metriche EV e PV hanno mostrato un costante avvicinamento, fino a quasi coincidere intorno allo sprint 12.
+Questo progressivo avvicinamento suggerisce che i preventivi pianificati sono diventati sempre più precisi man mano che il progetto è avanzato.
+Il fatto che queste due metriche si siano avvicinate sempre di più suggerisce che le previsioni iniziali sono state riviste e adattate in modo accurato sulla base dell'andamento effettivo del progetto. Questo indica una maggiore solidità nella pianificazione e una migliore comprensione dei requisiti e delle risorse necessarie per il completamento del progetto. Inoltre, il quasi coincidere delle due metriche intorno allo sprint 12 indica che il progetto è stato eseguito in modo conforme alle previsioni e che la gestione del progetto è stata efficace nel monitorare e mantenere il progresso in linea con il piano stabilito.
+
 
 // == Qualità di Processo - Codifica TODO: non ha senso in questa fase del progetto
 
