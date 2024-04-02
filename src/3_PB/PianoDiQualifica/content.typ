@@ -1167,6 +1167,8 @@ Il fatto che queste due metriche si siano avvicinate sempre di più suggerisce c
 *#glossary[RTB]* Al termine del secondo #glossary[sprint], tutti i documenti in corso di preparazione in vista della revisione #glossary("RTB") possiedono un IG al di sopra del limite accettabile inferiore di 60; in particolare, l'_Analisi dei Requisiti_ ha raggiunto il valore ideale.
 Si rileva che nel corso dell'ultimo #glossary[sprint] tutti i documenti hanno subito un abbassamento del loro indice di leggibilità, perciò nel corso del periodo che precede la seconda revisione #glossary[PB] il team dovrà impegnarsi ad utilizzare una scrittura più semplice.
 
+*#glossary[PB]* Tutti i documenti hanno il valore di IG al di sopra del limite accettabile. Si nota che il documento _Piano di Qualifica_ ha subito una notevole diminuzione dell'indice, dovuta ai tecnicismi del linguaggio utilizzato.
+
 
 === Correttezza Ortografica
 
@@ -1183,6 +1185,7 @@ Fare in modo che non vi siano errori nei documenti prima della revisione #glossa
 Per ovviare al problema il team ha deciso di introdurre una checklist incentrata sugli errori ortografici, in modo tale che i responsabili del processo di verifica possano avvalersene nel correggere eventuali errori. Questa checklist è pensata non solo come uno strumento pratico, ma principalmente come un promemoria costante per il Verificatore.
 Tale strumento ha mostrato immediatamente i suoi effetti benefici: gli errori nel corso dell'ottavo #glossary[sprint] sono calati a zero.
 
+*#glossary[PB]* La checklist e gli strumenti usati hanno funzionato, tutti i documenti ora non hanno errori ortografici.
 
 
 == Qualità di processo - codifica
