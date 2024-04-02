@@ -1192,6 +1192,8 @@ Tale strumento ha mostrato immediatamente i suoi effetti benefici: gli errori ne
 Nella seguente tabella si mostrano il numero di infrazioni delle metriche prese in esame
 riguardanti la qualità del processo di codifica.
 
+/*da vedere se lasciare la tabella o mettere il grafico*/
+
 #figure(
 table(
       columns:(auto,auto,auto),
@@ -1203,6 +1205,16 @@ table(
       [*MPC-LCM*], [0], [≤ 25]
 ),
 caption: [Metriche della codifica per lo sprint 12.])
+
+#figure(
+  image("./assets/valutazione-metriche/ATC_PM_LCM.png", width: 85%),
+  caption: [
+    Valutazione Metriche Codifica.
+  ],
+)
+
+Nell'ambito delle metriche di codifica, si è verificata un'unica situazione di violazione riguardante la metrica ATC (Attributi per Classe), la quale è stata risolta nel corso dell'ultimo sprint. È importante sottolineare che gli attributi di classe, i parametri per metodo (PM) e il numero di righe per funzione (LCM) sono tutti conformi ai limiti accettabili.
+
 
 == Qualità di processo - gestione della qualità
 
@@ -1227,6 +1239,26 @@ Le Metriche Non Soddisfatte corrispondono alle metriche MPC-CO, MPC-CPI, MPC-EAC
 === Manutenibilità
 
 === Usabilità
+
+#figure(
+  image("./assets/valutazione-metriche/FU.png", width: 85%),
+  caption: [
+    Valutazione facilità di utilizzo.
+  ],
+)
+
+Durante il corso degli sprint, il numero massimo di click necessari per accedere a tutte le funzionalità del prodotto è rimasto costante a cinque. Questo rappresenta il valore ideale, confermando l'efficacia dell'interfaccia utente nel garantire un accesso rapido e diretto alle varie funzionalità del prodotto.
+
+#figure(
+  image("./assets/valutazione-metriche/TA.png", width: 85%),
+  caption: [
+    Valutazione tempo di apprendimento.
+  ],
+)
+
+Per quanto riguarda la metrica del tempo di apprendimento (TA), è stato condotto un test regolare da parte di una persona estranea al progetto una volta a settimana al fine di valutare la facilità d'uso del prodotto. Inizialmente, durante il primo test di familiarizzazione, è stato registrato un tempo di apprendimento di circa dieci minuti. Questo periodo è stato considerato necessario per consentire alla persona di prendere confidenza con l'interfaccia e le funzionalità del prodotto.
+Tuttavia, è interessante notare che, nello sprint 14, il tempo di apprendimento è diminuito a otto minuti. Questa diminuzione del tempo necessario per familiarizzare con il prodotto suggerisce un miglioramento nell'usabilità e nella chiarezza dell'interfaccia utente. 
+Considerando che il test veniva effettuato una volta a settimana, è plausibile dedurre che un amministratore pubblico che utilizzi il prodotto quotidianamente dovrebbe riuscire a familiarizzare e comprendere il suo funzionamento in una manciata di minuti.
 
 === Affidabilità
 
