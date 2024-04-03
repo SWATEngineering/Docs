@@ -176,6 +176,18 @@ Per illustrare il funzionamento del #glossary[sistema], abbiamo utilizzato un di
 - *Interrogazioni (query)*: vengono effettuate varie interrogazioni e analisi sui dati memorizzati all'interno delle tabelle;
 - *Visualizzazione*: l'#glossary[amministratore pubblico] visualizza i dati ritornati in output dalle query ed elaborati attraverso delle #glossary[dashboard], sulla una piattaforma #glossary[Grafana].
 
+== Formato di trasmissione dei dati
+I dati provenienti dai sensori vengono inviati al #glossary[broker] dati in formato #glossary[JSON]. Di seguito viene riportato il modello di dati #glossary[JSON] utilizzato per la trasmissione dei dati, che verranno poi estratti e archiviati tramite #glossary[ClickHouse]. Di seguito si riporta un esempio:
+```
+{
+  "type": "rain",
+  "timestamp": "2024-04-03 23:47:45.658356",
+  "readings": [{"type": "mm/mc", "value": 0.0}],
+  "name": "rain3",
+  "location": {"type": "Point", "coordinates": [45.41934, 11.88434]}
+}
+```
+
 == Database
 Lo scopo del database è quello di memorizzare i dati provenienti dai sensori, in modo da poterli analizzare e visualizzare in seguito. I dati di un #glossary[sensore] vengono acquisiti tramite un #glossary[topic] #glossary[Kafka], associato ad un tipo di #glossary[sensore], e poi memorizzati in apposite tabelle.
 
