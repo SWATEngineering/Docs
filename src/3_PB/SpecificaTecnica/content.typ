@@ -196,8 +196,7 @@ Per il loro popolamento si utilizzano le #glossary[materialized views], che perm
 ==== Motori di archiviazione
 #glossary[ClickHouse] offre diversi motori di archiviazione, ognuno con caratteristiche specifiche. Per il nostro caso d'uso, facciamo uso dei seguenti:
 - *Kafka*: permette di leggere la stringa contenente i dati in formato #glossary[JSON] dal #glossary[broker] dati, e di iniettarla all'interno delle tabelle di accodamento;
-- *MergeTree*: particolarmente adatto per la gestione di dati di tipo #glossary[time series], in quanto permette di effettuare operazioni di inserimento ed eliminazione in modo efficiente, e di effettuare query su intervalli di tempo specifici;
-- *AggregatingMergeTree*: consente di effettuare operazioni efficienti di aggregazione sui dati, in particolar modo per le aggregazioni incrementali; nello specifico, sostituisce tutte le righe con la stessa chiave di ordinamento all'interno di una parte di dati, con una singola riga che memorizza una combinazione di stati di funzioni aggregate. Questo motore elabora tutte le colonne con i tipi: AggregateFunction e SimpleAggregateFunction. AggregateFunction è una funzione che consente di eseguire aggregazioni sui dati in modo efficiente, mantenendo uno stato intermedio, noto come avgState, che include sia la somma cumulativa che il conteggio dei valori.
+- *MergeTree*: particolarmente adatto per la gestione di dati di tipo #glossary[time series], in quanto permette di effettuare operazioni di inserimento ed eliminazione in modo efficiente, e di effettuare query su intervalli di tempo specifici.
 
 === Schema
 Il database è caratterizzato da un determinato schema per ogni tipo di #glossary[sensore]\; di seguito vengono illustrate, tramite un esempio, le due tipologie di schema, che possono essere presenti per ogni tipo di #glossary[sensore].
