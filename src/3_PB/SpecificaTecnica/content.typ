@@ -213,7 +213,7 @@ Ad esempio la funzione `JSONExtractString` è una funzione di #glossary[ClickHou
   image("DBscheme/DB_Rain.svg",width:100%),
   caption: [Schema delle tabelle per il sensore pluviometrico]
 )
-Questo tipo di schema presenta in più, rispetto a quello precedente due tabelle per dati aggregati. La tabella "rain1m" contiene la media aritmetica, ottenuta aggregando i dati della pioggia ogni minuto per ciascun #glossary[sensore]. Inoltre è presente la tabella "rain_1m_mov_avg" contenente la media mobile, ottenuta aggregando i dati della pioggia, utilizzando finestre mobili di tre minuti. Queste due tipi di tabelle vengono popolate tramite delle #glossary[materialized views].
+Questo tipo di schema presenta in più, rispetto a quello precedente due tabelle per dati aggregati. La tabella "rain1m" contiene la media aritmetica, ottenuta aggregando i dati della pioggia ogni minuto per ciascun #glossary[sensore]\; invece, la tabella "rain5m_overall" contenente la media su un intervallo di cinque minuti. Queste due tipi di tabelle vengono popolate tramite delle #glossary[materialized views].
 
 == #glossary[Architettura] dei simulatori
 Nonostante i simulatori non siano ufficialmente considerati parte integrante del prodotto dalla Proponente, il nostro team, nell'ambito del progetto didattico, ha scelto di dedicare alcune risorse alla progettazione di questa componente.
