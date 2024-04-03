@@ -1262,6 +1262,30 @@ Considerando che il test veniva effettuato una volta a settimana, è plausibile 
 
 === Affidabilità
 
+#figure(
+  image("./assets/valutazione-metriche/SC_BC.png", width: 85%),
+  caption: [
+    Valutazione metriche statement e branch coverage.
+  ],
+)
+
+Nel grafico, osserviamo che lo statement coverage (SC) rimane costantemente elevato intorno al 93%, mentre il branch coverage (BC), sebbene sia sceso dal 83% all'81%, si mantiene comunque sopra l'80%, che rappresenta il minimo accettabile per una valutazione positiva della copertura del codice.
+
+Il fatto che entrambe le metriche siano superiori all'80% indica che il codice è soggetto a un buon livello di copertura dai test. Una copertura dello statement così elevata suggerisce che la maggior parte del codice è stata eseguita durante i test, mentre un branch coverage superiore all'80% indica che la maggior parte dei rami decisionali del codice è stata attraversata dai test.
+
+In conclusione, nonostante una leggera diminuzione nel branch coverage, entrambe le metriche rimangono ben al di sopra del minimo richiesto per una valutazione positiva della copertura del codice. Questo suggerisce che il codice è soggetto a un adeguato livello di test e che la sua qualità complessiva è solida e affidabile.
+
+#figure(
+  image("./assets/valutazione-metriche/PTCP.png", width: 85%),
+  caption: [
+    Valutazione metrica passed test.
+  ],
+)
+
+Tutti i test prodotti sono stati superati con successo, senza alcun test fallito. Questo conferma ulteriormente la solidità del codice e l'efficacia dei test eseguiti.
+
+
+
 === Efficienza
 
 Le metriche di efficienza sono state calcolate utilizzando un elaboratore con le seguenti caratteristiche:
