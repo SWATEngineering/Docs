@@ -433,7 +433,7 @@ Rispetto alla stessa tabella ritrovabile nel documento _Analisi dei Requisiti v2
   "1","2", "3", "4", "5", "6", "7", "8", "9"
 )
 #let satisfied_qual = (
-  "1","2", "3", "4", "6", "7", "8", "9"
+  "1","2", "3", "4", "6", "7", "8", "9", "10", "11"
 )
 #let requisiti_funz = requisiti_funzionali_con_codice.map(req => {
   if(satisfied_funz.contains(req.at(0).slice(3))){
