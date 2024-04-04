@@ -165,7 +165,7 @@ Per illustrare il funzionamento del #glossary[sistema], abbiamo utilizzato un di
   caption: "Diagramma data-flow relativo al percorso dei dati."
 )
 
-- *Generazione dei dati*: Una varietà di simulatori di sensori di dati ambientali e urbanistici (entità esterne) sono utilizzati per misurare una vasta gamma di parametri. Questi simulatori forniscono dati, in modalità continua, relativi a:
+- *Generazione dei dati*: una varietà di simulatori di sensori di dati ambientali e urbanistici (entità esterne) sono utilizzati per misurare una vasta gamma di parametri. Questi simulatori forniscono dati, in modalità continua, relativi a:
     + Temperatura;
     + Umidità;
     + Vento;
