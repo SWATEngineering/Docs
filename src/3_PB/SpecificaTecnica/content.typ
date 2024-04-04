@@ -239,8 +239,8 @@ Per ogni tipo di #glossary[sensore] viene creata una tabella #glossary[time seri
 
 ==== Tabella dati aggregati
 Questo tipo di tabelle aggrega i dati provenienti dalle tabelle #glossary[time series] in modo da poter effettuare analisi su intervalli temporali specifici. Ad esempio:
-- Media aritmetica con frequenza di un minuto;
-- Media aritmetica con frequenza di cinque minuti.
+- Media aritmetica dell'andamento di un singolo #glossary[sensore] di un determinato tipo con campionamenti ogni minuto;
+- Media aritmetica dell'andamento di tutti i sensori di un determinato tipo con campionamenti ogni cinque minuti.
 Per il loro popolamento si utilizzano le #glossary[materialized views], che permettono di inserire i dati risultanti da una query, tra i quali la media.
 
 ==== Motori di archiviazione
