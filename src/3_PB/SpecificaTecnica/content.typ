@@ -189,9 +189,9 @@ Per illustrare il funzionamento del #glossary[sistema], abbiamo utilizzato un di
 
 == Struttura dei container
 Abbiamo adottato una struttura basata su container per il nostro sistema, utilizzando Docker e #glossary[Docker Compose] per gestire l'ambiente di sviluppo e produzione. Questa decisione è stata presa per diversi motivi:
-- *isolamento delle risorse*: utilizzando i container, possiamo isolare ogni componente del sistema, garantendo che le dipendenze siano gestite in modo efficiente e che le modifiche a un componente non influiscano sugli altri;
-- *portabilità*: I container forniscono un ambiente consistente in cui il software può essere eseguito indipendentemente dal sistema operativo sottostante. Questo ci consente di distribuire il nostro sistema su diverse piattaforme senza dover preoccuparci delle differenze di configurazione;
-- *gestione semplificata delle dipendenze*: Con #glossary[Docker Compose], possiamo definire facilmente le dipendenze tra i diversi servizi del sistema e avviare l'intera infrastruttura con un singolo comando. Questo semplifica lo sviluppo, e il testing del sistema.
+- *Isolamento delle risorse*: utilizzando i container, è possibile isolare ogni componente del #glossary[sistema], garantendo che le dipendenze siano gestite in modo efficiente e che le modifiche ad un componente non influiscano sugli altri;
+- *Portabilità*: i container forniscono un ambiente consistente in cui il software può essere eseguito indipendentemente dal sistema operativo sottostante. Questo consente di distribuire il #glossary[sistema] su diverse piattaforme senza doversi preoccupare delle differenze di configurazione;
+- *Gestione semplificata delle dipendenze*: con #glossary[Docker Compose], si possono definire facilmente le dipendenze tra i diversi servizi del #glossary[sistema] e avviare l'intera infrastruttura con un singolo comando. Questo semplifica lo sviluppo e il testing del #glossary[sistema].
 
 === Configurazione dei Servizi
 Abbiamo definito diversi servizi all'interno del nostro file docker-compose.yml, ognuno dei quali rappresenta una componente critica del nostro sistema. Di seguito sono elencati i principali servizi insieme alla loro configurazione:
