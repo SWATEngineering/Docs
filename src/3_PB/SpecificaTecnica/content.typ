@@ -193,8 +193,8 @@ Abbiamo adottato una struttura basata su container per il nostro sistema, utiliz
 - *Portabilità*: i container forniscono un ambiente consistente in cui il software può essere eseguito indipendentemente dal sistema operativo sottostante. Questo consente di distribuire il #glossary[sistema] su diverse piattaforme senza doversi preoccupare delle differenze di configurazione;
 - *Gestione semplificata delle dipendenze*: con #glossary[Docker Compose], si possono definire facilmente le dipendenze tra i diversi servizi del #glossary[sistema] e avviare l'intera infrastruttura con un singolo comando. Questo semplifica lo sviluppo e il testing del #glossary[sistema].
 
-=== Configurazione dei Servizi
-Abbiamo definito diversi servizi all'interno del nostro file docker-compose.yml, ognuno dei quali rappresenta una componente critica del nostro sistema. Di seguito sono elencati i principali servizi insieme alla loro configurazione:
+=== Configurazione dei servizi
+Abbiamo definito diversi servizi all'interno del file docker-compose.yml, ognuno dei quali rappresenta una componente critica del #glossary[sistema]. Di seguito sono elencati i principali servizi insieme alla loro configurazione:
 
 ==== Servizio Kafka
 - Immagine: bitnami/kafka:3.7.0
