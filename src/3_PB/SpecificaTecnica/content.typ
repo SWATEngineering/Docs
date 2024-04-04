@@ -176,6 +176,45 @@ Per illustrare il funzionamento del #glossary[sistema], abbiamo utilizzato un di
 - *Interrogazioni (query)*: vengono effettuate varie interrogazioni e analisi sui dati memorizzati all'interno delle tabelle;
 - *Visualizzazione*: l'#glossary[amministratore pubblico] visualizza i dati ritornati in output dalle query ed elaborati attraverso delle #glossary[dashboard], sulla una piattaforma #glossary[Grafana].
 
+== Struttura dei container
+Abbiamo adottato una struttura basata su container per il nostro sistema, utilizzando Docker e #glossary[Docker Compose] per gestire l'ambiente di sviluppo e produzione. Questa decisione è stata presa per diversi motivi:
+- *isolamento delle risorse*: utilizzando i container, possiamo isolare ogni componente del sistema, garantendo che le dipendenze siano gestite in modo efficiente e che le modifiche a un componente non influiscano sugli altri;
+- *portabilità*: I container forniscono un ambiente consistente in cui il software può essere eseguito indipendentemente dal sistema operativo sottostante. Questo ci consente di distribuire il nostro sistema su diverse piattaforme senza dover preoccuparci delle differenze di configurazione;
+- *gestione semplificata delle dipendenze*: Con #glossary[Docker Compose], possiamo definire facilmente le dipendenze tra i diversi servizi del sistema e avviare l'intera infrastruttura con un singolo comando. Questo semplifica lo sviluppo, e il testing del sistema.
+
+=== Configurazione dei Servizi
+Abbiamo definito diversi servizi all'interno del nostro file docker-compose.yml, ognuno dei quali rappresenta una componente critica del nostro sistema. Di seguito sono elencati i principali servizi insieme alla loro configurazione:
+
+==== Servizio Kafka
+- Immagine: bitnami/kafka:3.7.0
+- Porte esposte: 9093:9093
+- Variabili d'ambiente: configurazioni specifiche per #glossary[Kafka], incluse le porte, gli host e le impostazioni di sicurezza;
+- Healthcheck: verifica periodica dello stato di salute di #glossary[Kafka] per garantire il suo corretto funzionamento.
+
+==== Servizio ClickHouse
+- Immagine: clickhouse/clickhouse-server:24-alpine
+- Porte esposte: 8123:8123
+- Variabili d'ambiente: configurazioni per la creazione del database iniziale e l'autenticazione dell'utente;
+- Volume: montaggio di file di configurazione specifici e di script per l'inizializzazione del database.
+- Healthcheck: verifica periodica dello stato di salute di #glossary[ClickHouse].
+
+==== Servizio Grafana
+- Immagine: grafana/grafana-oss:10.3.0
+- Porte esposte: 3000:3000
+- Volume: montaggio di configurazioni e #glossary[dashboard] personalizzate per #glossary[Grafana];
+- Variabili d'ambiente: configurazioni per l'autenticazione e l'installazione di plugin;
+- Dipendenze: dipendenza dal servizio #glossary[ClickHouse] per garantire che #glossary[Grafana] abbia accesso ai dati.
+
+==== Servizio Simulators
+- Build: utilizzo di un Dockerfile personalizzato per costruire il servizio;
+- Variabili d'ambiente: configurazioni per il simulatore, incluse le impostazioni del fuso orario e l'host #glossary[Kafka];
+- Dipendenze: dipendenza dal servizio #glossary[Kafka] per garantire una corretta comunicazione.
+
+=== Profili
+Ogni servizio è stato configurato per supportare i profili "dev" e "prod", permettendo una gestione flessibile delle configurazioni in base all'ambiente di deployment.
+
+Questa struttura containerizzata ci consente di mantenere il nostro sistema modularizzato, scalabile e facilmente gestibile in ambienti di sviluppo e produzione.
+
 == Database
 Lo scopo del database è quello di memorizzare i dati provenienti dai sensori, in modo da poterli analizzare e visualizzare in seguito. I dati di un #glossary[sensore] vengono acquisiti tramite un #glossary[topic] #glossary[Kafka], associato ad un tipo di #glossary[sensore], e poi memorizzati in apposite tabelle.
 
