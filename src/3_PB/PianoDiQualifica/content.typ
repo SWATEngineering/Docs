@@ -261,7 +261,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             4. Visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni delle temperatura, espressa in gradi Celsius (°C), effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 1 minuto e i risultati delle rilevazioni della temperatura effettuate da tutti i sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
             5. Visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni dell'umidità, espressa in percentuale, effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 1 minuto e i risultati delle rilevazioni dell'umidità effettuate da tutti i sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
             6. Visualizzare un #glossary("pannello") con una mappa mostrante la direzione del vento, rilevata da ciascun #glossary("sensore"), tramite delle frecce con origine la posizione del #glossary("sensore")\; 
-            7. Visualizzare un #glossary("pannello") con una tabella che mostri l'ultima rilevazione della velocità del vento, espressa in chilometri orari (km/h), e la sua direzione, espressa in gradi (con gli 0° a Nord e i 180° a Sud), effettuata da ciascun #glossary("sensore")\; 
+            7. Visualizzare un #glossary("pannello") con una tabella che mostri l'ultima rilevazione della velocità del vento, espressa in chilometri orari (km/h), e la sua direzione, espressa in gradi (con gli 0° a Est e i 180° a Ovest), effettuata da ciascun #glossary("sensore")\; 
             8. Visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni delle quantità di precipitazioni, espressa in millimetri orari (mm/h), effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 1 minuto e i risultati delle rilevazioni delle quantità di precipitazioni effettuate da tutti i sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
             9. Visualizzare un #glossary("pannello") contenente un indice numerico relativo alle precipitazioni, espresse in millimetri orari (mm/h), indicante la media dell'intensità delle precipitazioni tra tutti i dati raccolti dai sensori nell'intervallo di tempo impostato all'interno della #glossary[dashboard]; 
             10. Visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("serie storica") che mostri i risultati delle rilevazioni della concentrazione di inquinanti dell'aria (#glossary("PM10")), espressa in $#sym.mu g\/m^3$,effettuate dai singoli sensori e aggregati tramite media aritmetica per intervalli di 1 minuto e i risultati delle rilevazioni della concentrazioni di inquinanti effettuate da tutti i sensori e aggregati tramite media aritmetica per intervalli di 5 minuti;
@@ -339,11 +339,11 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ]),
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta avviata l'applicazione, possa:
-            1. Ricevere un'allerta che notifichi il superamento dei 40° Celsius (°C); 
-            2. Ricevere un'allerta che notifichi il superamento dei 50 millimetri di pioggia all'ora (50 mm/h); 
-            3. Ricevere un'allerta relativa all'inquinamento dell'aria (#glossary("PM10")) che notifica il superamento di 80#[#sym.mu]g su metro cubo ($ 80#sym.mu g\/m^3$); 
-            4. Ricevere un'allerta che notifichi il superamento del 70% della capienza di un bacino; 
-            5. Ricevere un'allerta che notifichi il superamento dell'80% della capienza di una zona ecologica.
+            1. Visualizzare una notifica che denoti il superamento dei 40° Celsius (°C); 
+            2. Visualizzare una notifica che denoti il superamento dei 50 millimetri di pioggia all'ora (50 mm/h); 
+            3. Visualizzare una notifica relativa all'inquinamento dell'aria (#glossary("PM10")) che denoti il superamento di 80#[#sym.mu]g su metro cubo ($ 80#sym.mu g\/m^3$); 
+            4. Visualizzare una notifica che denoti il superamento del 70% della capienza di un bacino; 
+            5. Visualizzare una notifica che denoti il superamento dell'80% della capienza di una zona ecologica.
       ],"N/I",[
             UC5\
             UC5.1\
@@ -351,7 +351,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
             UC5.3\
             UC5.4\
             UC5.5\
-            
+            UC5.6
       ]),
       ([
           Verificare che l'#glossary("amministratore pubblico"), una volta entrato nell'applicazione, possa:
@@ -398,7 +398,7 @@ Si vuole, con tali test, andare a validare il prodotto prima del suo rilascio.
       ]),
       ([
           Verificare che un #glossary("sensore"), una volta connesso al sistema, possa:
-            1. Inserire il risultato della rilevazione della direzione e della velocità del vento, espresse rispettivamente in gradi (con gli 0° a Nord e i 180° a Sud) e in chilometri orari (km/h), con annesso il #glossary("timestamp") di rilevazione e le proprie coordinate geografiche.
+            1. Inserire il risultato della rilevazione della direzione e della velocità del vento, espresse rispettivamente in gradi (con gli 0° a Est e i 180° a Ovest) e in chilometri orari (km/h), con annesso il #glossary("timestamp") di rilevazione e le proprie coordinate geografiche.
       ],"N/I",[
             U12
       ]),
@@ -593,6 +593,9 @@ table(
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare un #glossary("pannello") contenente una tabella che mostri i dati relativi alle zone ecologiche i cui valori superano la soglia dell'80% di capienza, il #glossary("sensore") che li ha rilevati e il #glossary("timestamp") del rilevamento, nella #glossary("dashboard") relativa ai dati superanti le soglie.
       ],"N/I","RDF"),
       ([
+            Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche che denotano il superamento di una soglia impostata.
+      ],"N/I","RDF"),
+      ([
             Verificare che l'#glossary("amministratore pubblico") possa visualizzare delle notifiche riguardo a rilevazioni di tipo temperatura, superanti una soglia di 40° Celsius (°C).
       ],"N/I","RDF"),
       ([
@@ -639,7 +642,7 @@ table(
             Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni all'umidità, espresse in percentuale, effettuate dal #glossary("sensore"), con annesso coordinate e #glossary("timestamp") della rilevazione. 
       ],"N/I","ROF"),
       ([
-            Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni della velocità e della direzione del vento, espresse rispettivamente in chilometri all'ora (km/h) e in gradi (con gli 0° a Nord e i 180° a Sud), effettuate dal #glossary("sensore"), con annesso coordinate e #glossary("timestamp") della rilevazione. 
+            Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni della velocità e della direzione del vento, espresse rispettivamente in chilometri all'ora (km/h) e in gradi (con gli 0° a Est e i 180° a Ovest), effettuate dal #glossary("sensore"), con annesso coordinate e #glossary("timestamp") della rilevazione. 
       ],"N/I","ROF"),
       ([
             Verificare che un #glossary("sensore") possa inserire nel sistema le rilevazioni della quantità di precipitazioni, espresse in millimetri orari (mm/h), con annesso coordinate e #glossary("timestamp") della rilevazione. 

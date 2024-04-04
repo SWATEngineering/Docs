@@ -15,7 +15,7 @@ Lo scopo del prodotto è la realizzazione di un #glossary("sistema") di persiste
 
 == Glossario
 Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei
-documenti, viene fornito il _Glossario v1.0_, nel quale sono presenti tutte le
+documenti, viene fornito il _Glossario v2.0_, nel quale sono presenti tutte le
 deﬁnizioni di termini aventi uno specifico signiﬁcato che vuole essere
 disambiguato. Tali termini, sono scritti in corsivo e marcati con una G a pedice.
 
@@ -26,7 +26,7 @@ disambiguato. Tali termini, sono scritti in corsivo e marcati con una G a pedice
 #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf") (22-02-2024)\
 #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6p.pdf") (22-02-2024)
 
-- _Norme di Progetto v1.0_
+- _Norme di Progetto v2.0_
 
 - _Verbale Esterno 10-11-2023_
 - _Verbale Esterno 24-11-2023_
@@ -38,27 +38,27 @@ disambiguato. Tali termini, sono scritti in corsivo e marcati con una G a pedice
 === Riferimenti informativi
 Analisi dei requisiti - corso di Ingegneria del Software a.a. 2023/2024: \
 #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T5.pdf") (22-02-2024) \
-Cardin	Analisi e descrizione delle funzionalità: Use Case e relativi diagrammi (UML) - corso di Ingegneria del Software a.a. 2023/2024: \
+Professor Cardin Analisi e descrizione delle funzionalità: Use Case e relativi diagrammi (UML) - corso di Ingegneria del Software a.a. 2023/2024: \
 #link("https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20di%20Attivit%C3%A0.pdf") (22-02-2024)
 
 = Descrizione
 
 == Obiettivi del prodotto
-L'obiettivo consiste nella creazione di una piattaforma di monitoraggio e gestione di una #glossary("Smart City"). L'utente, individuato nell'#glossary("amministratore pubblico"), potrà farne impiego per migliorare la qualità generale della vita e l'efficienza dei servizi nel contesto di un'area urbana. L'utente sarà in grado di monitorare, attraverso la consultazione di una #glossary("dashboard"), lo stato della città, esaminando aspetti ambientali, logistici e di sicurezza. Questo cruscotto includerà rappresentazioni grafiche basate su dati provenienti da dei sensori installati all'interno dell'area geografica della città.
+L'obiettivo consiste nella creazione di una piattaforma di monitoraggio e gestione di una #glossary("Smart City"). L'utente, individuato nell'#glossary("amministratore pubblico"), potrà farne impiego per migliorare la qualità generale della vita e l'efficienza dei servizi nel contesto di un'area urbana. L'utente sarà in grado di monitorare, attraverso la consultazione di una #glossary("dashboard"), lo stato della città, esaminando aspetti ambientali, logistici e di sicurezza. Questo cruscotto includerà rappresentazioni grafiche basate su dati provenienti da sensori installati all'interno dell'area geografica della città.
 
 == Funzionalità del prodotto
 Il prodotto si compone di due parti principali:
-- *Una #glossary("data pipeline")* in grado di raccogliere, persistere e processare dati provenienti da più sorgenti (ovvero i #glossary("sensori")) in #glossary("real-time");
-- *Una #glossary("dashboard")* che permette di visualizzare i dati raccolti.
+- Una *#glossary("data pipeline")* in grado di raccogliere, persistere e processare dati provenienti da più sorgenti (ovvero i sensori) in #glossary("real-time")\;
+- Una *#glossary("dashboard")* che permette di visualizzare i dati raccolti.
 
 La piattaforma prevede fondamentalmente una tipologia di utente: l'#glossary("amministratore pubblico"). Questo utente avrà accesso alla #glossary("dashboard") e prenderà visione di diverse metriche e indicatori sullo stato della città, mediante diversi strumenti di visualizzazione.
 
 == Utenti e caratteristiche
-Il prodotto, destinato ad amministratori pubblici, consente loro di ottenere una panoramica sulle condizioni della città. Ciò fornisce loro una base solida per prendere decisioni ponderate riguardo la gestione delle risorse e sull'implementazione dei servizi, risultando cruciale per il miglioramento dell'efficienza complessiva della gestione urbana. Si presuppone che l'#glossary("amministratore pubblico") abbia conoscenze di analisi e di interpretazione dei dati, tali da poter trarre un concreto beneficio dal controllo della #glossary("dashboard").
+Il prodotto, destinato ad amministratori pubblici, consente loro di ottenere una panoramica sulle condizioni della città. Ciò fornisce loro una base solida per prendere decisioni ponderate riguardo la gestione delle risorse e sull'implementazione dei servizi, risultando cruciale per il miglioramento dell'efficienza complessiva della gestione urbana. Si presuppone che l'#glossary("amministratore pubblico") abbia conoscenze di analisi e di interpretazione dei dati, tali da poter trarre un beneficio concreto dal controllo della #glossary("dashboard").
 
 = Casi d'uso
 == Scopo
-In questa sezione si vogliono elencare e descrivere tutti i casi d'uso individuati dall'analisi del capitolato e dalle interazioni avute con la Proponente. In particolare, si individuano gli #glossary("attori") e le funzionalità che questi possono svolgere. Ogni caso d'uso possiede un codice, la cui struttura è descritta nelle _Norme di Progetto v1.0_.
+In questa sezione si vogliono elencare e descrivere tutti i casi d'uso individuati dall'analisi del capitolato e dalle interazioni avute con la Proponente. In particolare, si individuano gli #glossary("attori") e le funzionalità di cui questi possono usufruire. Ogni caso d'uso possiede un codice, la cui struttura è descritta nelle _Norme di Progetto v2.0_.
 
 == Attori
 Il #glossary("sistema") si interfaccerà con due attori diversi:
@@ -105,7 +105,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC1.1: Visualizzazione #glossary("pannello") dati grezzi
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati grezzi;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza il #glossary("pannello") relativo ai dati grezzi, che riporta il nome del #glossary[sensore], la tipologia del #glossary[sensore], il timestamp della rilevazione e il valore della misurazione, in forma tabellare, per ogni tipo di #glossary[sensore]; la tabella contenente i dati menzionati è indicizzata tramite il nome dei sensori e, nel caso in cui la misurazione sia composta da più dati, tutti i valori sono elencati ed etichettati opportunamente all'interno della stessa entrata nella colonna corrispondente;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza il #glossary("pannello") relativo ai dati grezzi, che riporta il nome del #glossary[sensore], la tipologia del #glossary[sensore], il timestamp della rilevazione e il valore della misurazione, in forma tabellare, per ogni tipo di #glossary[sensore]\; nel caso in cui la misurazione sia composta da più dati, tutti i valori sono elencati ed etichettati opportunamente all'interno della stessa entrata in tale colonna;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary("dashboard") generale relativa ai dati grezzi.
@@ -180,20 +180,20 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
 
 #figure(
-  image("assets/UML/UC2.4_Visualizzazione-grafico-a-mappa-direzione-del-vento.png",width:60%),
+  image("assets/UML/UC2.4_Visualizzazione-grafico-a-mappa-direzione-del-vento.png",width:100%),
   caption: [UC2.4 Visualizzazione grafico a mappa direzione del vento]
 )
 
 === UC2.5: Visualizzazione tabella velocità del vento
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente dati relativi all'ultima velocità del vento, espressa in chilometri all'ora (km/h), e alla sua direzione, espressa in gradi (con gli 0° a Nord e i 180° a Sud), registrate da ciascun #glossary("sensore") (di cui viene riportato il nome), sotto forma tabellare; la tabella è indicizzata dal nome dei sensori;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente gli ultimi dati relativi alla velocità del vento, espressa in chilometri all'ora (km/h), e alla sua direzione, espressa in gradi (con gli 0° a Est e i 180° a Ovest), registrate da ciascun #glossary("sensore") (di cui viene riportato il nome), sotto forma tabellare;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
 
 #figure(
-  image("assets/UML/UC2.5_Visualizzazione-tabella-velocità-del-vento.png",width:60%),
+  image("assets/UML/UC2.5_Visualizzazione-tabella-velocità-del-vento.png",width:100%),
   caption: [UC2.5 Visualizzazione tabella velocità del vento]
 )
 
@@ -293,7 +293,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC2.13: Visualizzazione posizione sensori su mappa
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa che mostra le posizioni dei sensori, visualizzati tramite icone, su di essa. Le icone dei sensori sono colorate in base al tipo di #glossary("sensore") e riportano una label che ne esplicita il tipo, il nome e le coordinate geografiche; 
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa che mostra le posizioni dei sensori, visualizzati tramite icone collocate nelle corrispondenti coordinate geografiche, su di essa. Le icone dei sensori sono colorate in base al tipo di #glossary("sensore") e riportano una label che ne esplicita il nome; 
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione; 
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio ambientale.
@@ -353,7 +353,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + L'#glossary[amministratore pubblico] seleziona la visualizzazione del dominio urbanistico.
 
 #figure(
-  image("assets/UML/UC3.3_Visualizzazione-mappa-delle-colonne-di-ricarica.png",width:70%),
+  image("assets/UML/UC3.3_Visualizzazione-mappa-delle-colonne-di-ricarica.png",width:100%),
   caption: [UC3.3 Visualizzazione grafico a mappa disponibilità delle colonne di ricarica]
 )
 
@@ -361,20 +361,20 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC3.4: Visualizzazione tabella descrittiva delle colonne di ricarica
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella, la quale riporta dati relativi all'erogazione in chiloWatt per ora attuale (kWh) registrata da ciascun #glossary("sensore") (di cui viene riportato il nome); la tabella è indicizzata dal nome dei sensori;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella, la quale riporta dati relativi all'erogazione in chiloWatt per ora (kWh) attuale registrata da ciascun #glossary("sensore") (di cui viene riportato il nome);
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio urbanistico.
 
 #figure(
-  image("assets/UML/UC3.4_Visualizzazione-tabella-descrittiva-delle-colonne-di-ricarica.png",width:70%),
+  image("assets/UML/UC3.4_Visualizzazione-tabella-descrittiva-delle-colonne-di-ricarica.png",width:100%),
   caption: [UC3.4 Visualizzazione tabella descrittiva delle colonne di ricarica]
 )
 
 === UC3.5: Visualizzazione grafico a mappa congestione stradale
 *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa indicante lo stato di congestione delle strade; ciascuna strada riporta uno stato tra "LOW", "MEDIUM", "HIGH" e "BLOCKED", in base al proprio livello di congestione; ciascuno stato viene visualizzato con un colore apposito;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa indicante lo stato di congestione delle strade; ciascuna strada monitorata da un #glossary[sensore] riporta uno stato tra "LOW", "MEDIUM", "HIGH" e "BLOCKED", in base al livello di congestione;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio urbanistico.
@@ -384,30 +384,30 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC3.5 Visualizzazione grafico a mappa congestione stradale]
 )
 
-=== UC3.6: Visualizzazione posizione #glossary("real-time") delle biciclette elettriche e relativa percentuale batteria
+=== UC3.6: Visualizzazione grafico a mappa delle biciclette elettriche
 *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa indicante la posizione in tempo reale delle biciclette elettriche, mediante degli indicatori numerici indicanti la percentuale della batteria posizionata nelle coordinate geografiche del mezzo, atto a mostrare la sua posizione;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa indicante la posizione in tempo reale delle biciclette elettriche, mediante degli indicatori numerici indicanti la percentuale della batteria posizionati in corrispondenza delle coordinate geografiche del #glossary[sensore] monitorante il mezzo;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio urbanistico.
 
 #figure(
   image("assets/UML/UC3.6_Visualizzazione-posizione-real-time-delle-biciclette-elettriche-e-relativa-percentuale-batteria.png",width:100%),
-  caption: [UC3.6 Visualizzazione posizione #glossary("real-time") delle biciclette elettriche e relativa percentuale batteria]
+  caption: [UC3.6 Visualizzazione grafico a mappa delle biciclette elettriche]
 )
 
-=== UC3.7: Visualizzazione indicatore percentuale su mappa riempimento zone ecologiche
+=== UC3.7: Visualizzazione grafico a mappa delle zone ecologiche
 *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa indicante lo stato di riempimento delle zone ecologiche, espresse in valori percentuali, posizionate nelle coordinate geografiche delle zone ecologiche;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una mappa indicante lo stato di riempimento delle zone ecologiche, espresso in valori percentuali posizionati in corrispondenza delle coordinate geografiche delle zone ecologiche;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") accede alla piattaforma di visualizzazione;
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione del dominio urbanistico.
 
 #figure(
   image("assets/UML/UC3.7_Visualizzazione-indicatore-percentuale-su-mappa-riempimento-zone-rifiuti.png",width:100%),
-  caption: [UC3.7 Visualizzazione indicatore percentuale su mappa riempimento zone ecologiche]
+  caption: [UC3.7 Visualizzazione grafico a mappa delle zone ecologiche]
 )
 
 === UC4: Visualizzazione #glossary("dashboard") superamento soglie
@@ -425,7 +425,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC4.1: Visualizzazione tabella #glossary("dati anomali")
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella ordinata, che mostra tutti i #glossary("dati anomali") rilevati dal #glossary("sistema"). La tabella include il valore dell'anomalia, il #glossary("sensore") che l'ha rilevata e il timestamp relativo, ed è ordinata in base al timestamp;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella ordinata, che mostra tutti i #glossary("dati anomali") rilevati dal #glossary("sistema"). La tabella include il valore dell'anomalia, il nome del #glossary("sensore") che l'ha rilevata e il timestamp relativo;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] superamento soglie.
 
@@ -434,17 +434,18 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC4.1 Visualizzazione tabella #glossary("dati anomali")]
 )
 
-=== UC4.2: Visualizzazione tabella superamento soglie
+=== UC4.2: Visualizzazione #glossary[pannello] superamento soglie
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti le soglie impostate nel #glossary("sistema");
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti le soglie impostate nel #glossary("sistema")\;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] superamento soglie;
 - *Specializzazioni*: [UC4.3], [UC4.4], [UC4.5], [UC4.6], [UC4.7].
+- *Estensioni*: [UC9].
 
 #figure(
-  image("assets/UML/UC4.2_Visualizzazione-tabella-superamento-soglie.png",width:70%),
-  caption: [UC4.2 Visualizzazione tabella superamento soglie]
+  image("assets/UML/UC4.2_Visualizzazione-tabella-superamento-soglie.png",width:100%),
+  caption: [UC4.2 Visualizzazione #glossary[pannello] superamento soglie]
 )
 
 === UC4.3: Visualizzazione tabella superamento soglia di temperatura
@@ -455,7 +456,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] superamento soglie.
 
 #figure(
-  image("assets/UML/UC4.3_Visualizzazione-tabella-superamento-soglia-temperatura.png",width:70%),
+  image("assets/UML/UC4.3_Visualizzazione-tabella-superamento-soglia-temperatura.png",width:100%),
   caption: [UC4.3 Visualizzazione tabella superamento soglia di temperatura]
 )
 
@@ -467,7 +468,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] superamento soglie.
 
 #figure(
-  image("assets/UML/UC4.4_Visualizzazione-tabella-superamento-soglia-precipitazioni.png",width:70%),
+  image("assets/UML/UC4.4_Visualizzazione-tabella-superamento-soglia-precipitazioni.png",width:100%),
   caption: [UC4.4 Visualizzazione tabella superamento soglia di precipitazioni]
 )
 
@@ -479,7 +480,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] superamento soglie.
 
 #figure(
-  image("assets/UML/UC4.5_Visualizzazione-tabella-superamento-soglia-inquinamento.png",width:70%),
+  image("assets/UML/UC4.5_Visualizzazione-tabella-superamento-soglia-inquinamento.png",width:100%),
   caption: [UC4.5 Visualizzazione tabella superamento soglia di inquinamento dell'aria]
 )
 
@@ -491,7 +492,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] superamento soglie.
 
 #figure(
-  image("assets/UML/UC4.6_Visualizzazione-tabella-superamento-soglia-bacini.png",width:70%),
+  image("assets/UML/UC4.6_Visualizzazione-tabella-superamento-soglia-bacini.png",width:100%),
   caption: [UC4.6 Visualizzazione tabella superamento soglia dei bacini idrici]
 )
 
@@ -501,78 +502,87 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti la soglia del 80% di capienza, mostrando il valore superante la soglia, il #glossary("sensore") che ha rilevato tale valore e il timestamp relativo;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] superamento soglie.
-
 #figure(
-  image("assets/UML/UC4.7_Visualizzazione-tabella-superamento-soglia-cassonetti.png",width:70%),
+  image("assets/UML/UC4.7_Visualizzazione-tabella-superamento-soglia-cassonetti.png",width:100%),
   caption: [UC4.7 Visualizzazione tabella superamento soglia delle zone ecologiche]
 )
 
-=== UC5: Ricezione notifiche di superamento soglie
+=== UC5: Visualizzazione notifiche di superamento soglia
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") riceve una notifica di superamento di una soglia impostata;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza una lista di notifiche che denotano il superamento di una soglia impostata;
 - *Scenario Principale*:
-  + Il #glossary("sistema") rileva condizioni che richiedono l'invio di una notifica per segnalare il superamento di una soglia impostata.
+  + Il #glossary("sistema") rileva condizioni che richiedono l'invio di notifiche per segnalare il superamento di una soglia impostata.
 #figure(
   image("assets/UML/UC5_Ricezione-notifiche-superamento-soglie.png",width:70%),
-  caption: [UC5 Ricezione notifiche di superamento soglie]
-)
-- *Specializzazioni*: [UC5.1], [UC5.2], [UC5.3], [UC5.4], [UC5.5].
-
-=== UC5.1: Ricezione notifica di superamento soglia temperatura
-- *Attore Principale*: #glossary("amministratore pubblico")\;
-- *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") riceve un'allerta relativa alla temperatura che notifica il superamento dei 40° Celsius (40°C);
-- *Scenario Principale*:
-  + Il #glossary("sistema") rileva una temperatura superiore ai 40° Celsius (40°C).
-#figure(
-  image("assets/UML/UC5.1_Visualizzazione-allerte-superamento-soglia-temperatura.png",width:70%),
-  caption: [UC5.1 Ricezione notifica di superamento soglia temperatura]
+  caption: [UC5 Visualizzazione notifiche di superamento soglia]
 )
 
-=== UC5.2: Ricezione notifica di superamento soglia precipitazioni
+=== UC5.1: Visualizzazione singola notifica di superamento soglia
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") riceve un'allerta relativa alle precipitazioni che notifica il superamento dei 50 millimetri di pioggia all'ora (50 mm/h);
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza una notifica che denota il superamento di una soglia impostata;
 - *Scenario Principale*:
-  + Il #glossary("sistema") rileva un livello di precipitazioni medie nell'ora, superiore ai 50 millimetri di pioggia all'ora (50 mm/h).
+  + Il #glossary("sistema") rileva condizioni che richiedono l'invio di una notifica per segnalare il superamento di una soglia impostata.
+- *Specializzazioni*: [UC5.2], [UC5.3], [UC5.4], [UC5.5], [UC5.6].
 #figure(
-  image("assets/UML/UC5.2_Visualizzazione-allerte-superamento-soglia-precipitazioni.png",width:70%),
-  caption: [UC5.2 Ricezione notifica di superamento soglia precipitazioni]
+  image("assets/UML/UC5.1_Visualizzazione-singola-notifica-di-superamento-soglia.png",width:70%),
+  caption: [UC5.1 Visualizzazione singola notifica di superamento soglia]
 )
 
-=== UC5.3: Ricezione notifica di superamento soglia inquinamento dell'aria
+=== UC5.2: Visualizzazione notifica di superamento soglia temperatura
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") riceve un'allerta relativa all'inquinamento dell'aria che notifica il superamento di 80#[#sym.mu]g su metro cubo ($80#sym.mu g\/m^3$);
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza una notifica relativa alla temperatura che denota il superamento dei 40° Celsius (40°C); la notifica riporta il nome del #glossary[sensore] che ha effettuato la misurazione il cui valore supera la soglia e il valore esatto della temperatura;
 - *Scenario Principale*:
-  + Il #glossary("sistema") rileva un coefficiente di inquinamento dell'aria (#glossary("PM10")), superiore ai 80#[#sym.mu]g su metro cubo ($80#sym.mu g\/m^3$).
+  + Il #glossary("sistema") rileva una temperatura superiore ai 40° Celsius (40°C) negli ultimi 5 minuti.
 #figure(
-  image("assets/UML/UC5.3_Visualizzazione-allerte-superamento-soglia-inquinamento-dell'aria.png",width:70%),
-  caption: [UC5.3 Ricezione notifica di superamento soglia inquinamento dell'aria]
+  image("assets/UML/UC5.2_Visualizzazione-allerte-superamento-soglia-temperatura.png",width:70%),
+  caption: [UC5.2 Visualizzazione notifica di superamento soglia temperatura]
 )
 
-/*TODO: andare a fare l'immagine apposta*/
-=== UC5.4: Ricezione notifica di superamento soglia bacini idrici
+=== UC5.3: Visualizzazione notifica di superamento soglia precipitazioni
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") riceve un'allerta relativa ai bacini idrici che notifica il superamento del 70% della capienza di un particolare bacino;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza una notifica relativa alle precipitazioni che denota il superamento dei 50 millimetri di pioggia all'ora (50 mm/h); la notifica riporta il nome del #glossary[sensore] che ha effettuato la misurazione il cui valore supera la soglia e il valore esatto dell'intensità delle precipitazioni;
 - *Scenario Principale*:
-  + Il #glossary("sistema") rileva che il livello di un particolare bacino idrico è superiore al 70% della sua capienza.
+  + Il #glossary("sistema") rileva un livello di precipitazioni superiore ai 50 millimetri di pioggia all'ora (50 mm/h) negli ultimi 5 minuti.
 #figure(
-  image("assets/UML/UC5.4_Visualizzazione-allerte-superamento-soglia-bacini-idrici.png",width:70%),
-  caption: [UC5.4 Ricezione notifica di superamento soglia bacini idrici]
+  image("assets/UML/UC5.3_Visualizzazione-allerte-superamento-soglia-precipitazioni.png",width:70%),
+  caption: [UC5.3 Visualizzazione notifica di superamento soglia precipitazioni]
 )
 
-=== UC5.5: Ricezione notifica di superamento soglia zone ecologiche
+=== UC5.4: Visualizzazione notifica di superamento soglia inquinamento dell'aria
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") riceve un'allerta relativa alle zone ecologiche che notifica il superamento dell'80% della capienza di una particolare zona ecologica;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza una notifica relativa all'inquinamento dell'aria che denota il superamento di 80#[#sym.mu]g su metro cubo ($80#sym.mu g\/m^3$); la notifica riporta il nome del #glossary[sensore] che ha effettuato la misurazione il cui valore supera la soglia e il valore esatto dell'inquinamento dell'aria;
 - *Scenario Principale*:
-  + Il #glossary("sistema") rileva che il livello di una particolare zona ecologica è superiore all'80% della sua capienza.
+  + Il #glossary("sistema") rileva un coefficiente di inquinamento dell'aria (#glossary("PM10")) superiore ai 80#[#sym.mu]g su metro cubo ($80#sym.mu g\/m^3$) negli ultimi 5 minuti.
 #figure(
-  image("assets/UML/UC5.5_Visualizzazione-allerte-superamento-soglia-zone-ecologiche.png",width:70%),
-  caption: [UC5.5 Ricezione notifica di superamento soglia zone ecologiche]
+  image("assets/UML/UC5.4_Visualizzazione-allerte-superamento-soglia-inquinamento-dell'aria.png",width:70%),
+  caption: [UC5.4 Visualizzazione notifica di superamento soglia inquinamento dell'aria]
+)
+
+=== UC5.5: Visualizzazione notifica di superamento soglia bacini idrici
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza una notifica relativa ai bacini idrici che denota il superamento del 70% della capienza di un particolare bacino; la notifica riporta il nome del #glossary[sensore] che ha effettuato la misurazione il cui valore supera la soglia e il valore esatto del riempimento del bacino idrico;
+- *Scenario Principale*:
+  + Il #glossary("sistema") rileva che il livello di un particolare bacino idrico è superiore al 70% della sua capienza negli ultimi 5 minuti.
+#figure(
+  image("assets/UML/UC5.5_Visualizzazione-allerte-superamento-soglia-bacini-idrici.png",width:70%),
+  caption: [UC5.5 Visualizzazione notifica di superamento soglia bacini idrici]
+)
+
+=== UC5.6: Visualizzazione notifica di superamento soglia zone ecologiche
+- *Attore Principale*: #glossary("amministratore pubblico")\;
+- *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza una notifica relativa alle zone ecologiche che denota il superamento dell'80% della capienza di una particolare zona ecologica; la notifica riporta il nome del #glossary[sensore] che ha effettuato la misurazione il cui valore supera la soglia e il valore esatto del riempimento della zona ecologica;
+- *Scenario Principale*:
+  + Il #glossary("sistema") rileva che il livello di una particolare zona ecologica è superiore all'80% della sua capienza negli ultimi 5 minuti.
+#figure(
+  image("assets/UML/UC5.6_Visualizzazione-allerte-superamento-soglia-zone-ecologiche.png",width:70%),
+  caption: [UC5.6 Visualizzazione notifica di superamento soglia zone ecologiche]
 )
 
 === UC6: Applicazione filtri
@@ -649,19 +659,6 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC6.4 Filtro per intervallo temporale]
 )
 
-/*Cambiare il numero nell'immagine*/
-/* Non è un caso d'uso 
-=== UC6.5: Filtro #glossary("pannelli") collegati
-- *Attore Principale*: #glossary("amministratore pubblico")\.
-- *Precondizioni*: 
-  + l'#glossary("amministratore pubblico") ha filtrato i dati in un #glossary("pannello");
-  + altri #glossary("pannelli") sono collegati a quello filtrato.
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza, in tutti i #glossary("pannelli") collegati, solamente i dati relativi al filtro applicato (o ai filtri applicati) al pannello sorgente, nel caso di #glossary("pannelli") che dipendono da altri #glossary("pannelli") per la visualizzazione di dati.
-- *Scenario Principale*:
-  + il #glossary("sistema") aggiorna tutti i #glossary("pannelli") collegati.
-*/
-/*Cambiare il numero nell'immagine*/
-#pagebreak()
 === UC7: Ordinamento #glossary("pannelli") tabellari
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") sta visualizzando un #glossary("pannello"), con all'interno una tabella; 
@@ -680,7 +677,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Precondizioni*: l'#glossary("amministratore pubblico") sta visualizzando almeno un #glossary("pannello")\;
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza il nuovo layout;
 - *Scenario Principale*:
-  + L'#glossary("amministratore pubblico") modifica i #glossary("pannelli") graficamente a suo piacimento.
+  + L'#glossary("amministratore pubblico") modifica la dimensione e la posizione dei #glossary("pannelli") contenuti all'interno della #glossary("dashboard").
 - *Specializzazioni*: [UC8.1], [UC8.2].
 
 #figure(
@@ -688,6 +685,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC8 Modifica layout #glossary("pannelli")]
 )
 
+#pagebreak()
 === UC8.1: Spostamento #glossary("pannelli")
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") sta visualizzando almeno un #glossary("pannello")\;
@@ -697,11 +695,10 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 
 #figure(
-  image("assets/UML/UC8.1_Spostamento-pannelli.png",width:70%),
+  image("assets/UML/UC8.1_Spostamento-pannelli.png",width:100%),
   caption: [UC8.1 Spostamento #glossary("pannelli")]
 )
 
-#pagebreak()
 === UC8.2: Ridimensionamento #glossary("pannelli")
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") sta visualizzando almeno un #glossary("pannello")\;
@@ -711,7 +708,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 
 
 #figure(
-  image("assets/UML/UC8.2_Ridimensionamento-pannelli.png",width:70%),
+  image("assets/UML/UC8.2_Ridimensionamento-pannelli.png",width:100%),
   caption: [UC8.2 Ridimensionamento #glossary("pannelli")]
 )
 
@@ -721,7 +718,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Precondizioni*: il #glossary("sistema") di visualizzazione non ottiene alcun dato da mostrare all'interno di un #glossary("pannello")\; 
 - *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un messaggio di errore segnalante l'assenza di dati da mostrare;
 - *Scenario Principale*:
-  + L'#glossary("amministratore pubblico") vuole visualizzare qualche #glossary("pannello") [UC1.1], [UC2.1], [UC3.1]; 
+  + L'#glossary("amministratore pubblico") vuole visualizzare qualche #glossary("pannello") [UC1.1], [UC2.1], [UC3.1], [UC4.2]; 
   + Il #glossary("sistema") non ha i dati con cui popolare tale pannello.
 
 
@@ -760,7 +757,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 - *Postcondizioni*: il #glossary("sistema") ha persistito i dati inviati dal #glossary("sensore")\;
 - *Scenario Principale*:
   + Il #glossary("sensore") effettua una rilevazione della velocità (km/h) e della direzione del vento;
-  + Il #glossary("sensore") formatta il messaggio da inviare al #glossary("sistema"), di modo da mandare la direzione del vento, espressa in gradi (con gli 0° a Nord e i 180° a Sud), la velocità del vento, espressa in chilometri all'ora (km/h), il timestamp di rilevazione e le proprie coordinate geografiche;
+  + Il #glossary("sensore") formatta il messaggio da inviare al #glossary("sistema"), di modo da mandare la direzione del vento, espressa in gradi (con gli 0° a Est e i 180° a Ovest), la velocità del vento, espressa in chilometri all'ora (km/h), il timestamp di rilevazione e le proprie coordinate geografiche;
   + Il #glossary("sensore") invia il messaggio al #glossary("sistema").
 
 #figure(
@@ -783,7 +780,6 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC13 Inserimento dati precipitazioni]
 )
 
-#pagebreak()
 === UC14: Inserimento dati inquinamento dell'aria
 - *Attore Principale*: #glossary("sensore")\;
 - *Precondizioni*: il #glossary("sensore") è acceso e collegato al #glossary("sistema")\; 
@@ -856,8 +852,6 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC18 Inserimento dati biciclette elettriche]
 )
 
-/*Cambiare il numero nell'immagine*/
-#pagebreak()
 === UC19: Inserimento dati riempimento zone ecologiche
 - *Attore Principale*: #glossary("sensore")\;
 - *Precondizioni*: il #glossary("sensore") è acceso e collegato al #glossary("sistema")\; 
@@ -926,7 +920,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi la direzione del vento, mediante frecce collocate nelle coordinate geografiche del #glossary("sensore"), nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'ultima velocità del vento, espressa in chilometri all'ora, e la sua direzione, espressa in gradi (con gli 0° a Nord e i 180° a Sud), per ciascun #glossary("sensore"), nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'ultima velocità del vento, espressa in chilometri all'ora (km/h), e la sua direzione, espressa in gradi (con gli 0° a Est e i 180° a Ovest), per ciascun #glossary("sensore"), nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente un grafico in formato #glossary("time series") rappresentante l'andamento in media aritmetica dell'intensità delle precipitazioni, espresse in millimetri all'ora (mm/h), per ciascun #glossary("sensore"), aggregando i dati per intervalli di 1 minuto, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
@@ -1002,20 +996,23 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   (
   "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i dati i cui valori superano la soglia dell'80% di capienza di una zona ecologica, il #glossary("sensore") che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai dati superanti le soglie.], [#C.step(level:2)UC#C.display()]
   ),
-  (
-    "Desiderabile",  "L'utente deve poter ricevere delle notifiche riguardo ad un valore di un dato di tipo temperatura, superante una soglia di 40° Celsius (40°C).", [#C.step()#C.step(level:2)UC#C.display()]
+    (
+    "Desiderabile",  "L'utente deve poter visualizzare delle notifiche che denotano il superamento di una soglia impostata.", [#C.step()UC#C.display()]
   ),
   (
-    "Desiderabile",  "L'utente deve poter ricevere delle notifiche riguardo ad un valore di un dato di tipo precipitazioni, superante una soglia di 50 millimetri all'ora (50mm/h).", [#C.step(level:2)UC#C.display()]
+    "Desiderabile",  "L'utente deve poter visualizzare una notifica relativa alla temperatura che denota il superamento dei 40° Celsius (40°C).", [#C.step(level:2)UC#C.step(level:2)#C.display()]
   ),
   (
-    "Desiderabile", [L'utente deve poter ricevere delle notifiche riguardo ad un valore di un dato di tipo inquinamento dell'aria (#glossary("PM10")), superante una soglia di 80 microgrammi su metro cubo.], [#C.step(level:2)UC#C.display()]
+    "Desiderabile",  "L'utente deve poter visualizzare una notifica relativa alle precipitazioni che denota il superamento dei 50 millimetri di pioggia all'ora (50 mm/h).", [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile",  "L'utente deve poter ricevere delle notifiche riguardo ad un valore di un dato di tipo percentuale riempimento bacini idrici, superante una soglia corrispondente al 70% della capienza di tale bacino.", [#C.step(level:2)UC#C.display()]
+    "Desiderabile", [L'utente deve poter visualizzare una notifica relativa all'inquinamento dell'aria che denota il superamento di 80#[#sym.mu]g su metro cubo ($80#sym.mu g\/m^3$).], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile",  "L'utente deve poter ricevere delle notifiche riguardo ad un valore di un dato di tipo percentuale riempimento zone ecologiche, superante una soglia corrispondente all'80% della capienza di tale zona.", [#C.step(level:2)UC#C.display()]
+    "Desiderabile",  "L'utente deve poter visualizzare una notifica relativa ai bacini idrici che denota il superamento del 70% della capienza di un particolare bacino.", [#C.step(level:2)UC#C.display()]
+  ),
+  (
+    "Desiderabile",  "L'utente deve poter visualizzare una notifica relativa alle zone ecologiche che denota il superamento dell'80% della capienza di una particolare zona ecologica.", [#C.step(level:2)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter filtrare i dati, visualizzati all'interno di un grafico di tipo #glossary("time series"), in base ad un sottoinsieme selezionato di sensori.], [#C.step()#C.step(level:2)UC#C.display()]
@@ -1050,7 +1047,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Obbligatorio", [Il #glossary("sensore") deve poter mandare e far persistere dati relativi all'umidità, espressa in percentuale, il timestamp di rilevazione e le proprie coordinate geografiche.], [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", [Il #glossary("sensore") deve poter mandare e far persistere dati relativi alla velocità del vento, espressa in chilometri all'ora, alla direzione del vento, espressa in gradi (con gli 0° a Nord e i 180° a Sud), il timestamp di rilevazione e le proprie coordinate geografiche.], [#C.step()UC#C.display()]
+    "Obbligatorio", [Il #glossary("sensore") deve poter mandare e far persistere dati relativi alla velocità del vento, espressa in chilometri all'ora (km/h), alla direzione del vento, espressa in gradi (con gli 0° a Est e i 180° a Ovest), il timestamp di rilevazione e le proprie coordinate geografiche.], [#C.step()UC#C.display()]
   ),
   (
     "Obbligatorio", [Il #glossary("sensore") deve poter mandare e far persistere dati relativi alle precipitazioni, espresse in millimetri all'ora (mm/h), il timestamp di rilevazione e le proprie coordinate geografiche.], [#C.step()UC#C.display()]
@@ -1134,7 +1131,6 @@ caption: "Requisiti funzionali")
   ),
   ("Desiderabile",[L'#glossary("amministratore pubblico") deve poter imparare a padroneggiare il #glossary("sistema") in breve tempo.],"Norme di Progetto"),
   ("Obbligatorio",[La #glossary[repository] di github del codice sorgente "InnovaCity" deve essere accessibile a tutti.],"Verbale esterno"),
-  ("Obbligatorio",[Devono essere rispettate tutte le norme definite nel documento _Norme di Progetto v2.0_.],"Norme di Progetto"),
   ("Obbligatorio",[Devono essere rispettati i vincoli e le metriche definite nel _Piano di Qualifica v2.0_.],"Norme di Progetto"),
   ("Desiderabile",[Il #glossary("sistema") deve essere scalabile, in grado di gestire grandi moli di dati.],"Capitolato"),
   ("Desiderabile",[Il #glossary("sistema") deve essere facilmente manutenibile.],"Capitolato")
