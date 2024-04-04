@@ -109,7 +109,7 @@ table(
       [Docker], [Piattaforma open-source che permette di creare, distribuire e gestire applicazioni in contenitori virtuali.],[Creare in modo riproducibile ambienti software per i simulatori, #glossary[ClickHouse], #glossary[Kafka] e #glossary[Grafana].], [25.0.3],
       [#glossary[Docker Compose]], [Strumento per definire e gestire applicazioni multi-container Docker attraverso file YAML.],[Gestione automatica e centralizzata dei container che costituiscono il #glossary[sistema].], [2.24.6]
       ),
-caption: [Tabella tecnologie per la Codifica: Database e servizi.])
+caption: [Tabella tecnologie per la Codifica: Servizi della pipeline.])
 
 
 == Analisi e test
