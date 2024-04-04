@@ -129,7 +129,6 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC2 Visualizzazione #glossary("dashboard") dati ambientali]
 )
 
-#pagebreak()
 === UC2.1: Visualizzazione #glossary("pannello") dati ambientali
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
@@ -145,6 +144,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC2.1 Visualizzazione #glossary("pannello") dati ambientali]
 )
 
+#pagebreak()
 === UC2.2: Visualizzazione #glossary("pannello") #glossary("time series") per temperatura
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
@@ -158,7 +158,6 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC2.2 Visualizzazione #glossary("pannello") #glossary[time series] per temperatura]
 )
 
-#pagebreak()
 === UC2.3: Visualizzazione #glossary("pannello") #glossary[time series] per umidità
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
@@ -210,6 +209,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC2.6 Visualizzazione #glossary("pannello") #glossary[time series] per precipitazioni]
 )
 
+#pagebreak()
 === UC2.7: Visualizzazione #glossary("pannello") precipitazioni medie
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
@@ -223,7 +223,6 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC2.7 Visualizzazione #glossary("pannello") precipitazioni medie]
 )
 
-#pagebreak()
 === UC2.8: Visualizzazione #glossary("pannello") #glossary[time series] per inquinamento dell'aria
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
@@ -276,6 +275,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC2.11 Visualizzazione #glossary("pannello") temperatura media]
 )
 
+#pagebreak()
 === UC2.12: Visualizzazione #glossary("pannello") inquinamento dell'aria massimo
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati ambientali;
@@ -289,7 +289,6 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC2.12 Visualizzazione #glossary("pannello") inquinamento dell'aria massimo]
 )
 
-#pagebreak()
 === UC2.13: Visualizzazione posizione sensori su mappa
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
@@ -344,6 +343,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC3.2 Visualizzazione mappa disponibilità parcheggi]
 )
 
+#pagebreak()
 === UC3.3: Visualizzazione grafico a mappa disponibilità delle colonne di ricarica
 - *Attore Principale*: #glossary[amministratore pubblico]\;
 - *Precondizioni*: l'#glossary[amministratore pubblico] ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
@@ -357,7 +357,6 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC3.3 Visualizzazione grafico a mappa disponibilità delle colonne di ricarica]
 )
 
-#pagebreak()
 === UC3.4: Visualizzazione tabella descrittiva delle colonne di ricarica
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") ha selezionato la visualizzazione relativa al dominio dei dati urbanistici;
@@ -410,6 +409,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC3.7 Visualizzazione grafico a mappa delle zone ecologiche]
 )
 
+#pagebreak()
 === UC4: Visualizzazione #glossary("dashboard") superamento soglie
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
@@ -507,6 +507,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC4.7 Visualizzazione tabella superamento soglia delle zone ecologiche]
 )
 
+#pagebreak()
 === UC5: Visualizzazione notifiche di superamento soglia
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
@@ -541,6 +542,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC5.2 Visualizzazione notifica di superamento soglia temperatura]
 )
 
+#pagebreak()
 === UC5.3: Visualizzazione notifica di superamento soglia precipitazioni
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
@@ -644,7 +646,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC6.3 Filtro per nome #glossary("sensore") su tabella]
 )
 
-/*Cambiare il numero nell'immagine*/
+#pagebreak()
 === UC6.4: Filtro per intervallo temporale
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") sta visualizzando uno o più #glossary("pannelli")\;
@@ -685,7 +687,6 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC8 Modifica layout #glossary("pannelli")]
 )
 
-#pagebreak()
 === UC8.1: Spostamento #glossary("pannelli")
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: l'#glossary("amministratore pubblico") sta visualizzando almeno un #glossary("pannello")\;
@@ -721,7 +722,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   + L'#glossary("amministratore pubblico") vuole visualizzare qualche #glossary("pannello") [UC1.1], [UC2.1], [UC3.1], [UC4.2]; 
   + Il #glossary("sistema") non ha i dati con cui popolare tale pannello.
 
-
+#pagebreak()
 === UC10: Inserimento dati temperatura
 - *Attore Principale*: #glossary("sensore")\;
 - *Precondizioni*: il #glossary("sensore") è acceso e collegato al #glossary("sistema")\; 
@@ -794,7 +795,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC14 Inserimento dati inquinamento dell'aria]
 )
 
-/*Cambiare il numero nell'immagine*/
+#pagebreak()
 === UC15: Inserimento dati livello bacini idrici
 - *Attore Principale*: #glossary("sensore")\;
 - *Precondizioni*: il #glossary("sensore") è acceso e collegato al #glossary("sistema")\;
@@ -866,6 +867,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
   caption: [UC19 Inserimento dati riempimento zone ecologiche]
 )
 
+#pagebreak()
 === UC20: Inserimento dati congestione stradale
 - *Attore Principale*: #glossary("sensore")\;
 - *Precondizioni*: il #glossary("sensore") è acceso e collegato al #glossary("sistema")\; 
