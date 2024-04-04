@@ -249,7 +249,7 @@ Per il loro popolamento si utilizzano le #glossary[materialized views], che perm
 - *MergeTree*: particolarmente adatto per la gestione di dati di tipo #glossary[time series], in quanto permette di effettuare operazioni di inserimento ed eliminazione in modo efficiente, e di effettuare query su intervalli di tempo specifici.
 
 === Schema
-Il database è caratterizzato da un determinato schema per ogni tipo di #glossary[sensore]\; di seguito vengono illustrate, tramite un esempio, le due tipologie di schema, che possono essere presenti per ogni tipo di #glossary[sensore].
+Il database è caratterizzato da un determinato schema per ogni tipo di #glossary[sensore]\; di seguito vengono illustrate, tramite un esempio, le due tipologie di schema utilizzate a seconda del tipo di #glossary[sensore].
 
 ==== Sensore per il vento
 #figure(
