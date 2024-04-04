@@ -61,6 +61,11 @@ Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei d
 Questa sezione si propone di offrire una panoramica sintetica delle tecnologie adottate. Questo breve paragrafo introduttivo fornisce un quadro generale delle piattaforme, dei linguaggi di programmazione, dei #glossary[framework] e di altre risorse tecnologiche che costituiscono le basi del nostro progetto.
 
 == Linguaggi e formati dati
+
+#set par(
+  justify: false,
+)
+
 #figure(
 table(
       columns:(auto,auto,110pt,auto),
