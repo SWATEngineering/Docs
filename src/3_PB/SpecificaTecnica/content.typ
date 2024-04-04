@@ -224,7 +224,7 @@ Abbiamo definito diversi servizi all'interno del file docker-compose.yml, ognuno
 === Profili
 Ogni servizio è stato configurato per supportare i profili "dev" e "prod", permettendo una gestione flessibile delle configurazioni in base all'ambiente di deployment.
 
-Questa struttura containerizzata ci consente di mantenere il nostro sistema modularizzato, scalabile e facilmente gestibile in ambienti di sviluppo e produzione.
+Questa struttura containerizzata consente di rendere il #glossary[sistema] modularizzato, scalabile e facilmente gestibile in ambienti di sviluppo e produzione.
 
 == Database
 Lo scopo del database è quello di memorizzare i dati provenienti dai sensori, in modo da poterli analizzare e visualizzare in seguito. I dati di un #glossary[sensore] vengono acquisiti tramite un #glossary[topic] #glossary[Kafka], associato ad un tipo di #glossary[sensore], e poi memorizzati in apposite tabelle.
