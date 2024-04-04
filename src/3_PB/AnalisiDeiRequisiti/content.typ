@@ -1155,7 +1155,7 @@ caption: "Requisiti di qualità")
   ("Obbligatorio",[Deve essere utilizzato #glossary[Docker Compose] versione 3.8 per l'installazione del software.],"Verbale esterno"),
   ("Obbligatorio","I dati in ingresso nel database OLAP devono avere formato pseudo-tabellare, si deve utilizzare il formato Json.", "Verbale esterno"),
   ("Obbligatorio","Deve essere utilizzato un message broker per lo streaming dei dati, per esempio Apache Kafka.","Capitolato"),
-  ("Obbligatorio","Il sistema deve essere compatibile con Google Chrome v122 (o superiori), Mozilla Firefox v123 (o superiori) o Microsoft Edge v122 (o superiori).","Verbale interno"), 
+  ("Obbligatorio","Il sistema deve essere compatibile con Google Chrome v122, Mozilla Firefox v123 o Microsoft Edge v122.","Verbale interno"), 
   ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Windows (10 o 11), con RAM minimale di 6GB, processore 64 bit e compatibilità con WSL 2.","Verbale interno"), 
   ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo MACOS (versione minima 10.14 Mojave) con RAM minimale di 6GB.","Verbale interno"), 
   ("Obbligatorio","Il sistema deve poter essere installato su sistema operativo Linux Ubuntu (22.04 o superiori) con RAM minimale di 6GB.","Verbale interno")
@@ -1190,7 +1190,7 @@ Fonte:
   (
   "Obbligatorio",[Il #glossary("sistema") deve gestire un carico di #glossary("dati in entrata") superiore ai 40 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM.],"Verbale esterno"
   ),
-  ("Desiderabile",[Il #glossary("sistema") deve avere un tempo di elaborazione inferiore ai 5 secondi, dal momento in cui i dati vengono ricevuti  alla loro visualizzazione nella #glossary[dashboard]. Tali tempistiche sono garantite solo potendo usufruire di una connessione con almeno 100 megabit al secondo in downlaod e con almeno 30 megabit in upload.],"Norme di Progetto"), 
+  ("Desiderabile",[Il #glossary("sistema") deve avere un tempo di elaborazione inferiore ai 5 secondi, dal momento in cui i dati vengono ricevuti alla loro visualizzazione nella #glossary[dashboard]. Tali tempistiche sono garantite solo potendo usufruire di una connessione con almeno 100 megabit al secondo in download e con almeno 30 megabit in upload.],"Norme di Progetto"), 
 )
 
 #let requisiti_prestazioni_con_codice = generate_requirements_array("P", requisiti_prestazioni)
