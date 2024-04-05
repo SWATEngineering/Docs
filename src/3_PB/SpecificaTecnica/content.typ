@@ -128,7 +128,7 @@ caption: [Tabella tecnologie per l'analisi del codice.])
 
 #pagebreak()
 = #glossary[Architettura] del #glossary[sistema]
-== #glossary[Architettura] di implementazione
+== Modello architetturale
 Il #glossary[sistema] richiede la capacità di processare dati provenienti da varie fonti, in tempo reale, e di offrire una visualizzazione immediata e continua di tali dati, consentendo di monitorarne gli andamenti.
 Per questo tipo di scopo le due architetture consigliate sono la:
 - *#[#sym.lambda]-architecture*: che prevede di elaborare i dati in due flussi separati, uno per i dati in tempo reale (streaming) e uno per i dati storici. I dati in tempo reale vengono elaborati immediatamente per fornire risposte rapide, mentre i dati storici vengono elaborati in batch per fornire risposte più complete o elaborate nel tempo. Alla fine, i risultati dei due flussi vengono combinati per fornire una visione completa dei dati;
