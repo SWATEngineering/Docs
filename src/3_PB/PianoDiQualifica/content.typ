@@ -222,293 +222,7 @@ Come enunciato nel documento _Norme di Progetto v1.0_, il piano segue il #glossa
 - *Test di accettazione*: si verifica il soddisfacimento della Proponente rispetto al prodotto software. Il loro superamento permette di procedere con il rilascio del prodotto.
 
 
-== Test di unità 
 
-In questa sezione vengono descritti i test di unità del prodotto software.
-
-#let test_di_unità =(
-      ([
-            Verificare che il metodo `produce()` della classe `AdapterProducer` si comporti come atteso sia in situazioni in cui il producer di #glossary[Kafka] funziona senza problemi, sia in caso di errori.
-      ], "S", [
-
-      ]),
-      ([
-            Verificare che la classe `KafkaSimulatorExecutorFactory` sia in grado di creare correttamente un'istanza di `SimulatorExecutor` utilizzando una configurazione data.
-      ],"S",[]),
-      ([
-       Verificare che il metodo `write()` della classe `KafkaWriter` chiami correttamente il metodo `produce()` del suo oggetto `TargetProducer` con il messaggio appropriato e la funzione di conferma acked.     
-      ], "S",[
-
-      ]),
-      ([
-            Verificare che il metodo `run_all()` della classe `SimulatorExecutor` avvii correttamente tutti i simulatori associati ad esso.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che il metodo `stop_all()` della classe `SimulatorExecutor` fermi correttamente tutti i simulatori associati ad esso.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che il metodo `run()` della classe `SimulatorThread` chiami correttamente il metodo `simulate()` del simulatore di sensore.
-      ],"S",[
-
-      ]),
-      ([
-           Verificare che il metodo `run()` della classe `SimulatorThread` chiami correttamente il metodo `write()` del writer durante l'esecuzione del thread.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che il metodo `write()` della classe `StdoutWriter` scriva correttamente un messaggio sullo standard output.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che la classe `StdoutSimulatorExecutorFactory` sia in grado di creare correttamente un'istanza di `SimulatorExecutor`.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare il comportamento della funzione `acked()` del modulo `utility_functions`, verificando che stampi correttamente i messaggi di errore  sullo standard output.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che il simulatore delle colonne di ricarica fornisca i dati attesi nel formato prestabilito.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che i dati sulla potenza erogata dalle colonne di ricarica simulate rimangano all'interno di un intervallo specifico.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare la correttezza del recupero delle coordinate della destinazione del simulatore di biciclette elettriche.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare la correttezza del recupero delle coordinate del percorso delle biciclette elettriche simulate.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che il simulatore delle biciclette elettriche fornisca i dati attesi nel formato prestabilito.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che il livello di batteria del simulatore delle biciclette elettriche rimanga all'interno di un intervallo specifico.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che il simulatore delle zone ecologiche fornisca i dati attesi nel formato prestabilito.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che il livello di riempimento del simulatore delle zone ecologiche rimanga all'interno di un intervallo specifico.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che il simulatore di umidità fornisca i dati attesi nel formato prestabilito.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che la percentuale generata dal simulatore di umidità rimanga all'interno di un intervallo specifico.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che il simulatore delle precipitazioni fornisca i dati attesi nel formato prestabilito.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che l'intensità di pioggia generata dal simulatore di precipitazioni rimanga all'interno di un intervallo specifico.
-      ],"S",[
-
-      ]),
-      ([
-           Verificare che il simulatore dei bacini idrici fornisca i dati attesi nel formato prestabilito.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che la percentuale generata dal simulatore dei bacini idrici rimanga all'interno di un intervallo specifico.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che il simulatore della temperatura fornisca i dati attesi nel formato prestabilito.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che il valore generato dal simulatore della temperatura rimanga all'interno di un intervallo specifico.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che il simulatore del vento fornisca i dati attesi nel formato prestabilito.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che il valore generato dal simulatore del vento rimanga all'interno di un intervallo specifico.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che il simulatore dell'inquinamento dell'aria fornisca i dati attesi nel formato prestabilito.
-
-      ],"S",[]),
-      ([
-            Verificare che il valore generato dal simulatore dell'inquinamento dell'aria rimanga all'interno di un intervallo specifico.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che il simulatore della congestione stradale fornisca i dati attesi nel formato prestabilito.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che i livelli di traffico generati siano tra quelli previsti (LOW, MEDIUM, HIGH, BLOCKED).
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che il simulatore dei parcheggi fornisca i dati attesi nel formato prestabilito.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che il valore generato dal simulatore dei parcheggi rimanga all'interno di un intervallo specifico.
-      ],"S",[
-
-      ])
-      
-      
-).enumerate(start:1).map(test => ("TU"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1),test.at(1).at(2)));
-
-#show figure: set block(breakable: true)
-#figure(
-table(
-      columns: (2fr,7fr,1fr),
-      align: (center,left,center),
-      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
-      [*Codice test*],[*Descrizione*],[*Stato*],
-      ..test_di_unità.map(item => (item.at(0),item.at(1),item.at(2))).flatten().map(item => [#item])
-),caption: "Test di unità.")
-
-== Test di integrazione  
-In questa sezione vengono descritti i test di integrazione del prodotto software.
-#let test_di_integrazione = (
-
-      ([
-            Verificare che i dati generati dal simulatore di inquinamento atmosferico siano correttamente memorizzati nella tabella `innovacity.air_pollution` del database.
-      ],"S",[]),
-      ([
-            Verificare che i dati generati dal simulatore di inquinamento atmosferico siano correttamente aggregati e memorizzati nella tabella `innovacity.air_pollution1m` del database.
-      ],"S",[]),
-      ([
-            Verificare se i dati della media mobile generati dal simulatore di inquinamento atmosferico siano correttamente inseriti nella tabella `innovacity.air_pollution_ma`.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che i dati generati dal simulatore delle colonne di ricarica siano correttamente memorizzati nella tabella `innovacity.charging_station` del database.
-      ],"S",[]),
-
-      ([
-            Verificare che i dati generati dal simulatore delle biciclette elettriche siano correttamente memorizzati nella tabella `innovacity.ebikes` del database.
-      ],"S",[]),
-      ([
-            Verificare che i dati generati dal simulatore di riempimento delle isole ecologiche siano correttamente memorizzati nella tabella `innovacity.eco_zone` del database.
-      ],"S",[]),
-      ([
-            Verificare che i dati generati dal simulatore di umidità siano correttamente memorizzati nella tabella `innovacity.humidity` del database.
-      ],"S",[]),
-      ([
-            Verificare che i dati generati dal simulatore di umidità siano correttamente aggregati e memorizzati nella tabella `innovacity.humidity1m` del database.
-      ],"S",[]),
-      ([
-            Verificare se i dati della media mobile generati dal simulatore di umidità siano correttamente inseriti nella tabella `innovacity.humidity_ma`.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che i dati generati dal simulatore dei parcheggi siano correttamente memorizzati nella tabella `innovacity.parking` del database.
-      ],"S",[]),
-      ([
-            Verificare che i dati generati dal simulatore di pioggia siano correttamente memorizzati nella tabella `innovacity.rain` del database.
-      ],"S",[]),
-      ([
-            Verificare che i dati generati dal simulatore di pioggia siano correttamente aggregati e memorizzati nella tabella `innovacity.rain1m` del database.
-      ],"S",[]),
-      ([
-            Verificare se i dati della media mobile generati dal simulatore di pioggia siano correttamente inseriti nella tabella `innovacity.rain_ma`.
-      ],"S",[
-
-      ]),
-      
-      ([
-            Verificare che i dati generati dal simulatore del livello di riempimento dei bacini idrici siano correttamente memorizzati nella tabella `innovacity.reservoirs` del database.
-      ],"S",[]),
-      ([
-            Verificare che i dati generati dal simulatore del livello di riempimento dei bacini idrici siano correttamente aggregati e memorizzati nella tabella `innovacity.reservoirs1m` del database.
-      ],"S",[]),
-      ([
-            Verificare se i dati della media mobile generati dal simulatore del livello di riempimento dei bacini idrici siano correttamente inseriti nella tabella `innovacity.reservoirs_ma`.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che i dati generati dal simulatore di temperatura siano correttamente memorizzati nella tabella `innovacity.temperature` del database.
-      ],"S",[]),
-      ([
-            Verificare che i dati generati dal simulatore di temperatura siano correttamente aggregati e memorizzati nella tabella `innovacity.temperature1m` del database.
-      ],"S",[]),
-      ([
-            Verificare se i dati della media mobile generati dal simulatore di temperatura siano correttamente inseriti nella tabella `innovacity.temperature_ma`.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che i dati generati dal simulatore del traffico siano correttamente memorizzati nella tabella `innovacity.traffic` del database.
-      ],"S",[]),
-      ([
-            Verificare che i dati generati dal simulatore del vento siano correttamente memorizzati nella tabella `innovacity.wind` del database.
-      ],"S",[]),
-      ([
-           Verificare che dati memorizzati nel database siano correttamente visualizzati su Grafana.
-      ],"N/I",[]),
-      ([
-            Verificare che i dati generati dai sensori siano correttamente consumati e memorizzati nel database.
-      ],"S",[
-            
-      ])
-
-
-
-).enumerate(start:1).map(test => ("TI"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1),test.at(1).at(2)));
-
-#show figure: set block(breakable: true)
-#figure(
-table(
-      columns: (2fr,7fr,1fr),
-      align: (center,left,center),
-      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
-      [*Codice test*],[*Descrizione*],[*Stato*],
-      ..test_di_integrazione.map(item => (item.at(0),item.at(1),item.at(2))).flatten().map(item => [#item])
-),caption: "Test di integrazione.")
 
 
 == Test di accettazione
@@ -972,6 +686,294 @@ table(
       ..test_di_sistema.map(item => (item.at(0),item.at(3))).flatten().map(item => [#item])
 ),caption: "Tracciamento dei test di sistema.")
 
+== Test di unità 
+
+In questa sezione vengono descritti i test di unità del prodotto software.
+
+#let test_di_unità =(
+      ([
+            Verificare che il metodo `produce()` della classe `AdapterProducer` si comporti come atteso sia in situazioni in cui il producer di #glossary[Kafka] funziona senza problemi, sia in caso di errori.
+      ], "S", [
+
+      ]),
+      ([
+            Verificare che la classe `KafkaSimulatorExecutorFactory` sia in grado di creare correttamente un'istanza di `SimulatorExecutor` utilizzando una configurazione data.
+      ],"S",[]),
+      ([
+       Verificare che il metodo `write()` della classe `KafkaWriter` chiami correttamente il metodo `produce()` del suo oggetto `TargetProducer` con il messaggio appropriato e la funzione di conferma acked.     
+      ], "S",[
+
+      ]),
+      ([
+            Verificare che il metodo `run_all()` della classe `SimulatorExecutor` avvii correttamente tutti i simulatori associati ad esso.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che il metodo `stop_all()` della classe `SimulatorExecutor` fermi correttamente tutti i simulatori associati ad esso.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che il metodo `run()` della classe `SimulatorThread` chiami correttamente il metodo `simulate()` del simulatore di sensore.
+      ],"S",[
+
+      ]),
+      ([
+           Verificare che il metodo `run()` della classe `SimulatorThread` chiami correttamente il metodo `write()` del writer durante l'esecuzione del thread.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che il metodo `write()` della classe `StdoutWriter` scriva correttamente un messaggio sullo standard output.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che la classe `StdoutSimulatorExecutorFactory` sia in grado di creare correttamente un'istanza di `SimulatorExecutor`.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare il comportamento della funzione `acked()` del modulo `utility_functions`, verificando che stampi correttamente i messaggi di errore  sullo standard output.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che il simulatore delle colonne di ricarica fornisca i dati attesi nel formato prestabilito.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che i dati sulla potenza erogata dalle colonne di ricarica simulate rimangano all'interno di un intervallo specifico.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare la correttezza del recupero delle coordinate della destinazione del simulatore di biciclette elettriche.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare la correttezza del recupero delle coordinate del percorso delle biciclette elettriche simulate.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che il simulatore delle biciclette elettriche fornisca i dati attesi nel formato prestabilito.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che il livello di batteria del simulatore delle biciclette elettriche rimanga all'interno di un intervallo specifico.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che il simulatore delle zone ecologiche fornisca i dati attesi nel formato prestabilito.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che il livello di riempimento del simulatore delle zone ecologiche rimanga all'interno di un intervallo specifico.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che il simulatore di umidità fornisca i dati attesi nel formato prestabilito.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che la percentuale generata dal simulatore di umidità rimanga all'interno di un intervallo specifico.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che il simulatore delle precipitazioni fornisca i dati attesi nel formato prestabilito.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che l'intensità di pioggia generata dal simulatore di precipitazioni rimanga all'interno di un intervallo specifico.
+      ],"S",[
+
+      ]),
+      ([
+           Verificare che il simulatore dei bacini idrici fornisca i dati attesi nel formato prestabilito.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che la percentuale generata dal simulatore dei bacini idrici rimanga all'interno di un intervallo specifico.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che il simulatore della temperatura fornisca i dati attesi nel formato prestabilito.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che il valore generato dal simulatore della temperatura rimanga all'interno di un intervallo specifico.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che il simulatore del vento fornisca i dati attesi nel formato prestabilito.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che il valore generato dal simulatore del vento rimanga all'interno di un intervallo specifico.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che il simulatore dell'inquinamento dell'aria fornisca i dati attesi nel formato prestabilito.
+
+      ],"S",[]),
+      ([
+            Verificare che il valore generato dal simulatore dell'inquinamento dell'aria rimanga all'interno di un intervallo specifico.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che il simulatore della congestione stradale fornisca i dati attesi nel formato prestabilito.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che i livelli di traffico generati siano tra quelli previsti (LOW, MEDIUM, HIGH, BLOCKED).
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che il simulatore dei parcheggi fornisca i dati attesi nel formato prestabilito.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che il valore generato dal simulatore dei parcheggi rimanga all'interno di un intervallo specifico.
+      ],"S",[
+
+      ])
+      
+      
+).enumerate(start:1).map(test => ("TU"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1),test.at(1).at(2)));
+
+#show figure: set block(breakable: true)
+#figure(
+table(
+      columns: (2fr,7fr,1fr),
+      align: (center,left,center),
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Codice test*],[*Descrizione*],[*Stato*],
+      ..test_di_unità.map(item => (item.at(0),item.at(1),item.at(2))).flatten().map(item => [#item])
+),caption: "Test di unità.")
+
+== Test di integrazione  
+In questa sezione vengono descritti i test di integrazione del prodotto software.
+#let test_di_integrazione = (
+
+      ([
+            Verificare che i dati generati dal simulatore di inquinamento atmosferico siano correttamente memorizzati nella tabella `innovacity.air_pollution` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal simulatore di inquinamento atmosferico siano correttamente aggregati e memorizzati nella tabella `innovacity.air_pollution1m` del database.
+      ],"S",[]),
+      ([
+            Verificare se i dati della media mobile generati dal simulatore di inquinamento atmosferico siano correttamente inseriti nella tabella `innovacity.air_pollution_ma`.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che i dati generati dal simulatore delle colonne di ricarica siano correttamente memorizzati nella tabella `innovacity.charging_station` del database.
+      ],"S",[]),
+
+      ([
+            Verificare che i dati generati dal simulatore delle biciclette elettriche siano correttamente memorizzati nella tabella `innovacity.ebikes` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal simulatore di riempimento delle isole ecologiche siano correttamente memorizzati nella tabella `innovacity.eco_zone` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal simulatore di umidità siano correttamente memorizzati nella tabella `innovacity.humidity` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal simulatore di umidità siano correttamente aggregati e memorizzati nella tabella `innovacity.humidity1m` del database.
+      ],"S",[]),
+      ([
+            Verificare se i dati della media mobile generati dal simulatore di umidità siano correttamente inseriti nella tabella `innovacity.humidity_ma`.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che i dati generati dal simulatore dei parcheggi siano correttamente memorizzati nella tabella `innovacity.parking` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal simulatore di pioggia siano correttamente memorizzati nella tabella `innovacity.rain` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal simulatore di pioggia siano correttamente aggregati e memorizzati nella tabella `innovacity.rain1m` del database.
+      ],"S",[]),
+      ([
+            Verificare se i dati della media mobile generati dal simulatore di pioggia siano correttamente inseriti nella tabella `innovacity.rain_ma`.
+      ],"S",[
+
+      ]),
+      
+      ([
+            Verificare che i dati generati dal simulatore del livello di riempimento dei bacini idrici siano correttamente memorizzati nella tabella `innovacity.reservoirs` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal simulatore del livello di riempimento dei bacini idrici siano correttamente aggregati e memorizzati nella tabella `innovacity.reservoirs1m` del database.
+      ],"S",[]),
+      ([
+            Verificare se i dati della media mobile generati dal simulatore del livello di riempimento dei bacini idrici siano correttamente inseriti nella tabella `innovacity.reservoirs_ma`.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che i dati generati dal simulatore di temperatura siano correttamente memorizzati nella tabella `innovacity.temperature` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal simulatore di temperatura siano correttamente aggregati e memorizzati nella tabella `innovacity.temperature1m` del database.
+      ],"S",[]),
+      ([
+            Verificare se i dati della media mobile generati dal simulatore di temperatura siano correttamente inseriti nella tabella `innovacity.temperature_ma`.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che i dati generati dal simulatore del traffico siano correttamente memorizzati nella tabella `innovacity.traffic` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal simulatore del vento siano correttamente memorizzati nella tabella `innovacity.wind` del database.
+      ],"S",[]),
+      ([
+           Verificare che dati memorizzati nel database siano correttamente visualizzati su Grafana.
+      ],"N/I",[]),
+      ([
+            Verificare che i dati generati dai sensori siano correttamente consumati e memorizzati nel database.
+      ],"S",[
+            
+      ])
+
+
+
+).enumerate(start:1).map(test => ("TI"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1),test.at(1).at(2)));
+
+#show figure: set block(breakable: true)
+#figure(
+table(
+      columns: (2fr,7fr,1fr),
+      align: (center,left,center),
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Codice test*],[*Descrizione*],[*Stato*],
+      ..test_di_integrazione.map(item => (item.at(0),item.at(1),item.at(2))).flatten().map(item => [#item])
+),caption: "Test di integrazione.")
+
 #pagebreak()
 
 == Liste di controllo
@@ -1235,6 +1237,17 @@ Le Metriche Non Soddisfatte corrispondono alle metriche MPC-CO, MPC-CPI, MPC-EAC
 == Qualità di prodotto
 
 === Funzionalità
+
+#figure(
+  image("./assets/valutazione-metriche/ROS.png", width: 85%),
+  caption: [
+    Valutazione requisiti obbligatori, desiderabili e opzionali.
+  ],
+)
+
+Dall'analisi del grafico emerge che tutti i requisiti obbligatori sono stati soddisfatti nel corso dello sprint 13. Inoltre, si è registrato un notevole progresso anche per quanto riguarda i requisiti desiderabili, con una percentuale di soddisfacimento pari al 92%. Tuttavia, risulta evidente che i requisiti opzionali sono stati realizzati solo parzialmente, raggiungendo il 33% della loro totalità.
+
+Si rimanda al documento _Specifiche Tecniche v1.0_ per vedere la lista completa dei requisiti e il relativo soddisfacimento.
 
 === Manutenibilità
 
