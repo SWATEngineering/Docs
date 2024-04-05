@@ -395,8 +395,8 @@ Non vengono menzionati i costruttori.
 
 == Messaggi ed Eventi
 === Kafka Topics
-I #glossary[topic] in #glossary[Kafka] possono essere viste come le tabelle di un database, servono per separare logicamente diversi tipi di messaggi o eventi che vengono inseriti nel #glossary[sistema].
-Noi li usiamo per separare i messaggi provenienti dai diversi tipi di #glossary[sensore]; questo ci permette poi di andare a creare all'interno di ClickHouse delle "tabelle consumatrici" che prendono i dati in automatico, grazie al fatto che avendo separati logicamente i #glossary[topic], i messaggi all'interno di ognuno di essi hanno tutti lo stesso formato.
+I #glossary[topic] in #glossary[Kafka] possono essere visti come le tabelle di un database, servono per separare logicamente diversi tipi di messaggi o eventi che vengono inseriti nel #glossary[sistema].
+In questo caso vengono utilizzati per separare i messaggi provenienti dai diversi tipi di #glossary[sensore]\; questo permette poi di andare a creare all'interno di ClickHouse delle "tabelle consumatrici" che prendono i dati in automatico, grazie al fatto che avendo separati logicamente i #glossary[topic], i messaggi all'interno di ognuno di essi hanno tutti lo stesso formato.
 === Struttura dei messaggi
 La struttura di un messaggio o evento, descritta in JSON sarà la seguente:
 ```json
