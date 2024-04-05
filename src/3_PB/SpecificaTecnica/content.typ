@@ -433,7 +433,8 @@ La visualizzazione dei dati attraverso #glossary[pannelli] si compone delle segu
 === Sistema di notifica
 #glossary[Grafana] offre un robusto sistema di allerta che consente di rilevare e reagire prontamente a condizioni anomale o critiche nei dati monitorati. Questo sistema non solo permette di definire regole di allerta basate su query ai data source, ma anche di personalizzare le notifiche inviate attraverso vari canali tra i quali Discord.
 Per soddisfare i requisiti di ricezione di notifiche relativi a dati che abbiano superato un determinata soglia il team decide di utilizzare il sistema di allerting integrato in #glossary[Grafana]. Il sistema di allerta integrato in #glossary[Grafana] si rivela efficace grazie alla sua capacità di integrarsi con diverse piattaforme di messaggistica in tempo reale, tra cui Discord. 
-Una volta che un'allerta è attivata, passa attraverso tre stati distinti:
+
+Una volta che un'allerta viene rilevata, passa attraverso tre stati distinti:
 
 - in attesa (pending): l'allerta è stata innescata ma la sua conferma è ancora in corso. Questo stato è tipicamente utilizzato per regolare l'invio delle notifiche, assicurandosi che l'allerta sia stabile prima di comunicare il problema alla sua origine;
 
