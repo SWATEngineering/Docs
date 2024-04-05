@@ -119,15 +119,26 @@ Si compone delle seguenti sezioni:
         - *Specifiche dei test*: specifiche dettagliate dei test che verranno condotti durante lo sviluppo del progetto;
         - *Cruscotto della qualità*: resoconto delle attività di valutazione effettuate durante il progetto. Le valutazioni risultano fondamentali a tracciare l'andamento del progetto rispetto agli obiettivi e alle aspettative, e a identificare prontamente eventuali azioni correttive necessarie a garantire la qualità complessiva del progetto.
 
-==== Specifiche Tecniche
+==== Specifica Tecnica
 
-Le _Specifiche Tecniche_, redatte dal Progettista, costituiscono un resoconto dettagliato delle scelte progettuali e delle soluzioni tecniche adottate dal team per implementare il #glossary[sistema] software. Il documento fornisce una guida completa per i Programmatori delineando l'architettura generale del #glossary[sistema], inclusi i moduli principali, le interfacce, le relazioni tra i componenti e le tecnologie utilizzate.
+Le _Specifica Tecnica_, redatte dal Progettista, costituiscono un resoconto dettagliato delle scelte progettuali e delle soluzioni tecniche adottate dal team per implementare il #glossary[sistema] software. Il documento fornisce una guida completa per i Programmatori delineando l'architettura generale del #glossary[sistema], inclusi i moduli principali, le interfacce, le relazioni tra i componenti e le tecnologie utilizzate.
 
 Si compone delle seguenti sezioni:
 
         - *Tecnologie*: fornisce una panoramica dei linguaggi di programmazione, dei #glossary[framework] e dei servizi utilizzati per la realizzazione del #glossary[sistema] software; in particolare, di ogni tecnologia utilizzata viene fornita una breve descrizione contestuale e la versione utilizzata nel corso dello sviluppo;
         - *#glossary[Architettura]*: presenta i componenti architetturali del #glossary[sistema], descrivendo i #glossary[design pattern] e le #glossary[best practices] utilizzate per organizzare e integrare i componenti in modo efficace ed efficiente; include diagrammi architetturali per illustrare visivamente la struttura e le relazioni all'interno del #glossary[sistema]\; 
         - *Tracciamento dei requisiti*: riporta i requisiti identificati all'interno dell'_Analisi dei Requisiti v2.0_, specificando se questi sono stati soddisfatti o meno; illustra anche la percentuale di copertura della totalità dei requisiti e, più nello specifico, di quelli obbligatori.
+
+==== Manuale Utente
+
+Il _Manuale Utente_, redatto dal Programmatore, è un documento essenziale che fornisce agli utenti finali tutte le informazioni necessarie per utilizzare in modo efficace il prodotto. Tale documento è progettato per essere una risorsa completa che accompagna l'utente lungo tutto il processo di utilizzo del software, dalla fase di installazione fino alla gestione quotidiana delle funzionalità offerte.
+
+Si compone delle seguenti sezioni:
+
+        - *Requisiti minimi*: fornisce informazioni riguardanti le specifiche hardware, software, di sistema operativo e browser necessarie per eseguire correttamente il programma;
+        - *Installazione*: guida gli utenti attraverso i passaggi necessari per configurare e avviare il software sul proprio #glossary[sistema];
+        - *Istruzioni per l'uso*: offrono una panoramica completa delle funzionalità del software e forniscono istruzioni dettagliate su come utilizzarle; nel caso del prodotto software "InnovaCity", le istruzioni per l'uso devono dettagliare le modalità di interazione con le #glossary[dashboard] e i #glossary[pannelli] propri di #glossary[Grafana], in modo che l'utente sia a conoscenza del modo più efficace di visualizzare e analizzare i dati a disposizione; è bene che tale sezione sia quanto più possibile descrittiva, e dunque corredata da screenshot e immagini rilevanti;
+        - *Supporto tecnico*: vengono forniti i contatti del team #team a fini di assistenza tecnica per la risoluzione di eventuali problemi.
 
 ==== Glossario
 
@@ -455,7 +466,16 @@ Il diagramma pur essendo vastamente utilizzato nell'ambito dell'ingegneria infor
                         caption: "Figura rappresentante la sintassi adottata."
                 )
 
-
+===== Diagrammi del database
+Per quanto riguarda la progettazione del database, il Progettista deve definire lo schema delle tabelle che vanno a costituire il database del #glossary[sistema]. Questo schema deve essere rappresentato attraverso un diagramma che mostri le tabelle coinvolte, i campi che le compongono e le relazioni tra di esse. Essendo che il database è contenuto in un DBMS di tipo OLAP, uno schema ER classico non era adatto a rappresentarlo; pertanto, si è scelto di definire una rappresentazione alternativa, che permettesse di visualizzare in modo chiaro e conciso le tabelle e le relazioni tra di esse.
+ Di seguito si elencano i possibili elementi di un diagramma di questo tipo:
+        
+        - *Tabella*: rappresenta una tabella del database e viene rappresentata con un rettangolo a linea piena, separando con una linea il nome della tabella, i nomi degli attributi e i tipi di dato;
+        - *#glossary[Materialized views]*: rappresenta una vista materializzata, ovvero una tabella che contiene i risultati di una query; viene rappresentata con un rettangolo a linea tratteggiata;
+        - *Query*: rappresenta una query SQL, viene riportata all'interno di un "post it" collegato alla #glossary[materialized views] a cui fa riferimento;
+        - *Flusso dei dati*: rappresenta il flusso di dati tra le tabelle e le #glossary[materialized views], viene rappresentato con una freccia piena;
+        - *Riferimento*: viene utilizzata per collegare un "post it" con la #glossary[materialized views] a cui fa riferimento; si rappresenta con una freccia tratteggiata;
+        - *Engine*: indica il motore di database utilizzato per la creazione della tabella; viene riportato anch'esso all'interno di un "post it", posto nei pressi della tabella.
 
 ===== Diagrammi #glossary[UML] delle classi    
 
@@ -544,14 +564,14 @@ L'architettura deve soddisfare vari criteri:
         - Soddisfazione dei requisiti elencati nel documento _Analisi dei Requisiti v2.0_;
         - Tracciamento dei requisiti: deve essere presente un tracciamento completo dei requisiti attraverso l'implementazione di una tabella che comprende il codice del requisito, la sua descrizione e un indicazione se è stato soddisfatto o meno. In aggiunta, è richiesto un grafico a torta che rappresenti la percentuale di requisiti soddisfatti rispetto al totale;
         - Utilizzo efficace ed efficiente delle risorse;
-        - Adozione di ottime pratiche di documentazione, che vengono rispecchiate all'interno delle _Specifiche Tecniche_.
+        - Adozione di ottime pratiche di documentazione, che vengono rispecchiate all'interno delle _Specifica Tecnica_.
 
 ===== Informazioni aggiuntive
 
-All'interno del documento _Specifiche Tecniche v1.0_, si utilizza un'automazione #glossary[Typst] per la creazione delle tabelle dei requisiti soddisfatti nella sezione *Tracciamento dei requisiti*; le tabelle importano i dati delle prime due colonne ("Codice" e "Descrizione") direttamente dall'_Analisi dei Requisiti v2.0_ per ridurre sprechi di risorse e l'introduzione di errori, e aggiungono una terza colonna ("Stato"):
+All'interno del documento _Specifica Tecnica v1.0_, si utilizza un'automazione #glossary[Typst] per la creazione delle tabelle dei requisiti soddisfatti nella sezione *Tracciamento dei requisiti*; le tabelle importano i dati delle prime due colonne ("Codice" e "Descrizione") direttamente dall'_Analisi dei Requisiti v2.0_ per ridurre sprechi di risorse e l'introduzione di errori, e aggiungono una terza colonna ("Stato"):
         - *Codice*: il codice del requisito;
         - *Descrizione*: definizione atomica e disambigua del requisito;
-        - *Stato*: "Soddisfatto" o "Non soddisfatto", in riferimento al soddisfacimento del requisito all'interno dell'#glossary[architettura] individuata nelle _Specifiche Tecniche_.
+        - *Stato*: "Soddisfatto" o "Non soddisfatto", in riferimento al soddisfacimento del requisito all'interno dell'#glossary[architettura] individuata nelle _Specifica Tecnica_.
 
  In particolare, si utilizzano degli array per tenere traccia dei requisiti soddisfatti a seconda della loro tipologia (dove i requisiti vengono identificati tramite il codice univoco assegnato loro nell'_Analisi dei Requisiti v2.0_) e questi vengono successivamente utilizzati per popolare la colonna "Stato" delle tabelle in modo opportuno. 
 
@@ -599,7 +619,8 @@ Ci si aspetta che il codice sviluppato rispetti determinate caratteristiche:
         - Conformità alle specifiche;
         - Chiarezza e comprensibilità;
         - Ottimizzazione delle prestazioni;
-        - Supplemento di test per verificare la correttezza e il funzionamento.
+        - Supplemento di test di integrazione e di unità per verificarne la correttezza.
+
 
 ===== Stile di codifica   
 
@@ -648,6 +669,7 @@ Si è deciso di integrare il linter PEP8 come fondamentale strumento nel process
 Inoltre per garantire il soddisfacimento delle metriche di qualità di processo e di prodotto durante tutto lo sviluppo il Programmatore è caldamente invitato a fare uso delle procedure illustrate nella @calcolo_metriche_codifica e nella @calcolo_metriche_affidabilita.
 
 
+
 ===== Metriche
 
 La definizione delle metriche seguenti si può trovare nella @metriche_codifica.
@@ -683,7 +705,7 @@ I documenti che verranno prodotti sono:
         - _Piano di Progetto v2.0_;
         - _Piano di Qualifica v2.0_;
         - _Analisi dei Requisiti v2.0_;
-        - _Specifiche Tecniche v1.0_;
+        - _Specifica Tecnica v1.0_;
         - _Manuale Utente v1.0_;
         - _Glossario v2.0_;
         - _Verbali_:
@@ -835,7 +857,7 @@ Le varie sigle relative ai documenti e al progetto sono le seguenti:
         - Piano di Progetto → *PdP*;
         - Piano di Qualifica → *PdQ*;
         - Manuale Utente → *MU*;
-        - Specifiche Tecniche → *ST*;
+        - Specifica Tecnica → *ST*;
         - Verbale Interno → *VI*;
         - Verbale Esterno → *VE*;
         - Glossario → *Gls*.
@@ -953,17 +975,6 @@ All'interno della cartella `src`, sono presenti 2 cartelle organizzate nel modo 
                 - SpecificheTecniche;
                 - VerbaliEsterni;
                 - VerbaliInterni.
-        - *4_CA*:
-                - AnalisiDeiRequisiti;
-                - Glossario;
-                - LetteraDiPresentazioneCA;
-                - ManualeUtente;
-                - NormeDiProgetto;
-                - PianoDiProgetto;
-                - PianoDiQualifica;
-                - SpecificheTecniche;
-                - VerbaliEsterni;
-                - VerbaliInterni.
 
 === Comandi beginner github  
 
@@ -1058,14 +1069,15 @@ Tuttavia, il metodo #glossary[walkthrough] conserva la sua rilevanza e rimane un
 L'analisi dinamica nel contesto dello sviluppo software si concentra sull'osservazione e valutazione del comportamento del #glossary[sistema] durante l'esecuzione. Questa metodologia è specificamente rivolta al prodotto software risultante dall'attività di codifica.
 Nel processo di sviluppo, l'analisi dinamica è attuata attraverso varie categorie di test. I test, derivati dai requisiti, siano essi funzionali o non funzionali, rendono l'attività di analisi dinamica ripetibile. Questo significa che è possibile eseguire i test più volte con gli stessi input e condizioni, ottenendo risultati coerenti e affidabili. La ripetibilità dei test è fondamentale per confermare la coerenza delle funzionalità del software in diverse situazioni e sotto diverse condizioni operative. La definizione e l'esecuzione dei test seguono i principi del #glossary[Modello a V].
 
-Il Verificatore si impegna a elaborare casi di test per ciascuna delle seguenti categorie, garantendo una copertura completa e dettagliata del software:
+I componenti del team, a vario titolo, si impegnano a elaborare casi di test per ciascuna delle seguenti categorie, garantendo una copertura completa e dettagliata del prodotto:
 - Test di unità; 
 - Test di integrazione; 
 - Test di sistema; 
 - Test di accettazione.
 
-La totalità dei test individuati viene riportata all'interno del documento _Piano di Qualifica v1.0_.
-In sede di verifica, sulla base del dominio esaminato, il Verificatore è tenuto ad eseguire tali test in maniera rigorosa e a riportarne gli esiti all'interno del _Piano di Qualifica v1.0_. 
+Tutti i test, e relativo stato, vengono riportati all'interno del documento _Piano di Qualifica v2.0_.
+Test di unità e di integrazione sono reperibili all'interno della repository _Innovacity_.
+
 
 ==== Test di unità  
 
@@ -1076,32 +1088,34 @@ Gli obiettivi principali:
         - Accertarsi che ciascuna unità esegua le operazioni specificate nel suo design;
         - Identificare precocemente i possibili errori.
 
-I test di unità si dividono principalmente in due categorie:
-
-        - *Test Funzionali*: verificano che ciascuna unità esegua le funzioni specificate nel design, concentrandosi sulla logica interna dell'unità e testando i casi in cui la funzione produce i risultati desiderati;
-        - *Test Strutturali*: verificano la struttura interna dell'unità, compresa la logica di controllo e il flusso dei dati, esaminando il codice sorgente dell'unità.
+Per poter eseguire i test di unità in maniera automatica e ottenere la percentuale di copertura del codice si rimanda alle procedure presentate nella  @calcolo_metriche_affidabilita.
 
 ==== Test di integrazione   
 
 I test di integrazione sono cruciali per valutare il comportamento delle unità software quando vengono combinate. Una volta confermato il corretto funzionamento delle singole unità in isolamento, i test di integrazione mirano a identificare possibili problemi nelle interazioni tra le unità integrate. Questi test, automatizzati il più possibile, verificano se le componenti del software collaborano efficacemente e se il sistema integrato soddisfa le specifiche di progetto. L'obiettivo è garantire che, quando le unità sono combinate, il software funzioni senza intoppi e risponda alle esigenze dell'applicazione in modo coerente.
 
+Per poter eseguire i test di integrazione: 
+- Avviare i container con il profilo "dev"; 
+- Eseguire il comando `python -m pytest PythonSensorsSimulator/integrationTest/` .
+
 ==== Test di #glossary[sistema] 
 
 I test di #glossary[sistema] vengono definiti durante la fase di analisi dei requisiti con l'obiettivo di misurare la copertura dei requisiti derivati dal capitolato d'appalto. Questa fase del processo di software testing mira a verificare l'intero #glossary[sistema] come entità unificata. Durante il test di #glossary[sistema], il software viene valutato nella sua completezza, con l'obiettivo di accertare che tutte le componenti integrate funzionino insieme in modo coerente per soddisfare gli obiettivi e i requisiti del #glossary[sistema].
-Per la definizione dei test si rimanda al _Piano di Qualifica v1.0_.
+Per la definizione e lo stato dei test si rimanda al _Piano di Qualifica v1.0_.
 
 ==== Test di accettazione  
 
 Il superamento dei test di accettazione è fondamentale poiché dimostra il soddisfacimento della Proponente rispetto al prodotto software. L'esito positivo di questi test fornisce l'approvazione finale e la conferma che il software è conforme alle aspettative. Solo dopo il superamento dei test di accettazione il team #team potrà procedere con il rilascio ufficiale del prodotto, garantendo che sia pronto all'utilizzo nell'ambiente operativo previsto.
-Per la definizione dei test si rimanda al _Piano di Qualifica v1.0_.
+Per la definizione  e lo stato dei test si rimanda al _Piano di Qualifica v1.0_.
 
 
 === Classificazione dei test
 
-I test vengono identificati in base alla loro tipologia e tramite un codice numerico. 
+I test vengono identificati, all'interno del _Piano di Qualifica v1.0_, in base alla loro tipologia e tramite un codice numerico. 
 Nello specifico devono avere la seguente forma: *T[Tipologia Test] [Codice]*
 
 Tipologia: 
+
 - *U*: unità; 
 - *I*: integrazione;
 - *S*: sistema;
@@ -1127,7 +1141,7 @@ Inoltre, durante la validazione, devono essere soddisfatti tutti i requisiti pre
 
 === Test di accettazione  
 
-I test di accettazione sono condotti dai Verificatori in presenza della Proponente per assicurarsi che il software soddisfi i requisiti e le aspettative della Proponente stessa. Per la definizione dei vari test si rimanda al _Piano di Qualifica v2.0_. Gli eventuali problemi riscontrati durante i test vengono documentati e risolti prima che il software venga rilasciato ufficialmente. L'obiettivo finale dei test di accettazione è ottenere l'approvazione della Proponente, confermando che il software è pronto per essere utilizzato in produzione.
+I test di accettazione sono condotti dal Team in presenza della Proponente per assicurarsi che il software soddisfi i requisiti e le aspettative della Proponente stessa. Per la definizione dei vari test si rimanda al _Piano di Qualifica v2.0_. Gli eventuali problemi riscontrati durante i test vengono documentati e risolti prima che il software venga rilasciato ufficialmente. L'obiettivo finale dei test di accettazione è ottenere l'approvazione della Proponente, confermando che il software è pronto per essere utilizzato in produzione.
 Prima di effettuare i test di accettazione, i Verificatori hanno la responsabilità di eseguire i test di sistema in un ambiente identico a quello di installazione: è precondizione necessaria del collaudo che i test di sistema diano esito positivo.
 
 == Gestione della qualità 
@@ -1310,18 +1324,18 @@ Dopo l'#glossary[RTB] il diario di bordo si tiene ogni venerdì alle 15, pertant
         - Progettazione architetturale che miri all'economicità e alla manutenibilità del #glossary[sistema]\;
         - Ottimizzazione delle prestazioni usando algoritmi efficienti e gestione memoria;
         - Gestione dei rischi: cerca di mitigare problemi che possono sorgere durante lo sviluppo;
-        - Redazione del documento _Specifiche Tecniche_.
+        - Redazione del documento _Specifica Tecnica_.
 
 ==== Programmatore
 
-        Figura professionale incaricata di trasformare le specifiche tecniche in codice eseguibile, garantendo un'implementazione efficiente e accurata delle funzionalità richieste dal progetto.
+        Figura professionale incaricata di trasformare le Specifica Tecnica in codice eseguibile, garantendo un'implementazione efficiente e accurata delle funzionalità richieste dal progetto.
 
         I suoi compiti:
 
-        - Traduzione delle specifiche tecniche in codice funzionante;
+        - Traduzione delle Specifica Tecnica in codice funzionante;
         - Scrittura di codice chiaro, leggibile e manutenibile;
         - Creazione di test per la verifica del software;
-        - Ampliamento delle _Specifiche Tecniche_ conforme alle esigenze del progetto;
+        - Ampliamento delle _Specifica Tecnica_ conforme alle esigenze del progetto;
         - Risoluzione di #glossary[bug] e problemi di performance;
         - Realizzazione del _Manuale Utente_;
         - Collaborazione con il team per l'integrazione del codice e il mantenimento della coerenza del progetto.
@@ -1629,11 +1643,15 @@ Il Programmatore che intendesse calcolare tali metriche può farlo anche in bran
 ==== Calcolo metriche per l'affidabilità <calcolo_metriche_affidabilita>
 Per il calcolo della percentuale di test passati si può utilizzare la seguente procedura: 
 - Accedere da terminale alla cartella _Innovacity_, posizionarsi nel branch _dev_;
-- Eseguire il comando "python -m pytest PythonSensorsSimulator/" ; 
+- Assicurarsi di aver installato le dipendenze necessarie;  
+- Assicurarsi di avere un variabile d'ambiente ORS_API_KEY contenente la chiave API reperibile nel canale discord Accounts; 
+- Eseguire il comando `python -m pytest PythonSensorsSimulator/unitTest/` ; 
 
 
 Per la valutazione della metriche di copertura del codice si puo utilizzare la seguente procedura: 
 - Accedere da terminale alla cartella _Innovacity_, posizionarsi nel branch _dev_;  
+- Assicurarsi di aver installato le dipendenze necessarie;  
+- Assicurarsi di avere un variabile d'ambiente ORS_API_KEY contenente la chiave API reperibile nel canale discord Accounts; 
 - Dare i permessi d'esecuzione allo script _stdcoverage.sh_;
 - Successivamente eseguirlo. 
 
@@ -1656,7 +1674,10 @@ Il Programmatore che intendesse calcolare tali metriche può farlo anche in bran
 
 ==== Calcolo metriche per la manutenibilità
 Per la computazione automatica della metrica  CCM si rimanda alla @calcolo_metriche_codifica.
-La computazione delle metriche *SFIN* e *SFOUT* rimane frutto di processo manuale. /*TODO: oggi pome vedere se cambiare+/
+Per la computazione delle metriche *SFIN* e *SFOUT*  si utilizza la seguente procedura: 
+- Accedere da terminale alla cartella _Innovacity_, posizionarsi nel branch _dev_;
+- Eseguire l'apposito script con il comando `python3 metrics/fanin_fanout.py`.
+
 
 === Efficienza 
 
