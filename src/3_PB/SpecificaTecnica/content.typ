@@ -439,7 +439,7 @@ Una volta che un'allerta è attivata, passa attraverso tre stati distinti:
 
 - attiva (firing): l'allerta è stata confermata e la condizione critica è stata verificata, di conseguenza vengono inviate le notifiche ai canali configurati;
 
-- ok: l'allerta è stata risolta e la situazione è tornata alla normalità.
+- ok: la situazione che ha innescato l'allerta è tornata alla normalità.
 Nel realizzare il sistema di notifica il team ha optato per mantenerlo il più semplice possibile andando di fatto a rimuovere lo stato di pending in modo tale che ogni allerta venisse notificata appena rilevata. 
 Inoltre si è valutato con preferibile rimuovere le notifiche relative al condizione di ok. 
 Ogni allerta viene definita all'interno di un "allert group" a se stante, in modo tale che le regole siano eseguite in contemporanea. Ogni regola verifica, a intervalli regolati di 5 minuti, se la condizione di superamento della soglia impostata si è verificata nei 5 minuti precedenti, e relativamente ad ogni sensore trattiene il valore massimo che abbia superato tale soglia. 
