@@ -1133,10 +1133,7 @@ caption: "Requisiti funzionali")
   ),
   ("Desiderabile",[L'#glossary("amministratore pubblico") deve poter imparare a padroneggiare il #glossary("sistema") in breve tempo.],"Norme di Progetto"),
   ("Obbligatorio",[La #glossary[repository] di github del codice sorgente "InnovaCity" deve essere accessibile a tutti.],"Verbale esterno"),
-  ("Obbligatorio",[Devono essere rispettati i vincoli e le metriche definite nel _Piano di Qualifica v2.0_.],"Norme di Progetto"),
-  ("Desiderabile",[Il #glossary("sistema") deve essere scalabile, in grado di gestire grandi moli di dati.],"Capitolato"),
-  ("Desiderabile",[Il #glossary("sistema") deve essere facilmente manutenibile.],"Capitolato")
-  
+  ("Obbligatorio",[Devono essere rispettati i vincoli e le metriche definite nel _Piano di Qualifica v2.0_.],"Norme di Progetto")
 )
 
 #let requisiti_qualita_con_codice = generate_requirements_array("Q", requisiti_qualita)
