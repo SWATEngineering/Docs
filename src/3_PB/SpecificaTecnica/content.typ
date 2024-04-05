@@ -431,8 +431,8 @@ La visualizzazione dei dati attraverso #glossary[pannelli] si compone delle segu
 - *Superamento soglie*: visualizzazione dei dati relativi al superamento delle soglie di allerta per i diversi tipi di sensori; le allerte vengono visualizzate tramite una tabella che mostra il tipo di #glossary[sensore], il valore rilevato e il timestamp.
 
 === Sistema di notifica
-#glossary[Grafana] offre un robusto sistema di allerte che consente di rilevare e reagire prontamente a condizioni anomale o critiche che si possono verificare nei dati monitorati. Questo sistema non solo permette di definire regole di allerta basate su query ai data source, ma anche di personalizzare le notifiche inviate attraverso vari canali tra i quali Discord.
-Le regole di allerta sono il cuore di questo sistema, consentendo di definire le condizioni che devono attivare un'allerta. Queste regole possono essere configurate per una vasta gamma di scenari; nel nostro contesto di applicazione vengono implementate per rilevare il superamento di determinate soglie, come ad esempio per rilevare temperature eccessive o livelli di inquinantamento atmosferico pericolosi.
+#glossary[Grafana] offre un robusto sistema di allerta che consente di rilevare e reagire prontamente a condizioni anomale o critiche nei dati monitorati. Questo sistema non solo permette di definire regole di allerta basate su query ai data source, ma anche di personalizzare le notifiche inviate attraverso vari canali tra i quali Discord.
+Per soddisfare i requisiti di ricezione di notifiche relativi a dati che abbiano superato un determinata soglia il team decide di utilizzare il sistema di allerting integrato in #glossary[Grafana]. Il sistema di allerta integrato in #glossary[Grafana] si rivela efficace grazie alla sua capacità di integrarsi con diverse piattaforme di messaggistica in tempo reale, tra cui Discord. 
 Una volta che un'allerta è attivata, passa attraverso tre stati distinti:
 
 - in attesa (pending): l'allerta è stata innescata ma la sua conferma è ancora in corso. Questo stato è tipicamente utilizzato per regolare l'invio delle notifiche, assicurandosi che l'allerta sia stabile prima di comunicare il problema alla sua origine;
@@ -447,7 +447,7 @@ Per agevolare la gestione delle regole di allerta, #glossary[Grafana]  consente 
 
 Nel contesto del nostro progetto, abbiamo optato per Discord come canale principale di notifica, configurando il webhook URL e personalizzando i messaggi di notifica per una comunicazione efficace e tempestiva.
 
-Per gestire in modo ancora più sofisticato l'invio delle notifiche, #glossary[Grafana] supporta le "notification policies", consentendo di definire regole specifiche per indirizzare gli alert ai canali di notifica appropriati in base a criteri predefiniti. Questo offre un maggiore controllo e flessibilità nella gestione delle notifiche, garantendo che vengano inviate solo dove e quando necessario.
+Per gestire in modo ancora più sofisticato l'invio delle notifiche, #glossary[Grafana] mette a disposizione le "notification policies", consentendo di definire regole specifiche per indirizzare gli alert ai canali di notifica appropriati in base a criteri predefiniti. Questo offre un maggiore controllo e flessibilità nella gestione delle notifiche, garantendo che vengano inviate solo dove e quando necessario.
 
 Sia le le regole di allerta che le configurazioni dei canali di notifica possono essere impostati tramite l'interfaccia, successivamente esportati in formato JSON e inseriti nei file di configurazione appropriati, all'interno della directory /provisoning/alerting per una gestione automatizzata.
 
@@ -466,7 +466,7 @@ Rispetto alla stessa tabella ritrovabile nel documento _Analisi dei Requisiti v2
 /*L'array deve contenere i numeri dei requisiti da soddisfare, espressi come stringa*/
 /*Esempio: #let satisfied = ("1","5","18")*/
 #let satisfied_funz = (
-  "1","2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63"
+  "1","2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63"
 )
 #let satisfied_vinc = (
   "1","2", "3", "4", "5", "6", "7", "8", "9"
