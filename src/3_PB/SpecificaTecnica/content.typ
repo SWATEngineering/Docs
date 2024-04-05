@@ -435,7 +435,7 @@ La visualizzazione dei dati attraverso #glossary[pannelli] si compone delle segu
 Le regole di allerta sono il cuore di questo sistema, consentendo di definire le condizioni che devono attivare un'allerta. Queste regole possono essere configurate per una vasta gamma di scenari; nel nostro contesto di applicazione vengono implementate per rilevare il superamento di determinate soglie, come ad esempio per rilevare temperature eccessive o livelli di inquinantamento atmosferico pericolosi.
 Una volta che un'allerta è attivata, passa attraverso tre stati distinti:
 
-- in attesa (pending): indicando che l'allerta è stata innescata ma la sua conferma è ancora in corso. Questo stato è tipicamente utilizzato per regolare l'invio delle notifiche, assicurandosi che l'allerta sia stabile prima di comunicare il problema;
+- in attesa (pending): l'allerta è stata innescata ma la sua conferma è ancora in corso. Questo stato è tipicamente utilizzato per regolare l'invio delle notifiche, assicurandosi che l'allerta sia stabile prima di comunicare il problema alla sua origine;
 
 - attiva (firing): l'allerta è stata confermata e la condizione critica è stata verificata, di conseguenza vengono inviate le notifiche ai canali configurati;
 
