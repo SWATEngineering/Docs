@@ -437,7 +437,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
 === UC4.2: Visualizzazione #glossary[pannello] superamento soglie
 - *Attore Principale*: #glossary("amministratore pubblico")\;
 - *Precondizioni*: il #glossary("sistema") è operativo e accessibile;
-- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati superanti le soglie impostate nel #glossary("sistema")\;
+- *Postcondizioni*: l'#glossary("amministratore pubblico") visualizza un #glossary("pannello") contenente una tabella, la quale mostra tutti i dati di un determinato tipo superanti la soglia impostata nel #glossary("sistema")\;
 - *Scenario Principale*:
   + L'#glossary("amministratore pubblico") seleziona la visualizzazione della #glossary[dashboard] superamento soglie;
 - *Specializzazioni*: [UC4.3], [UC4.4], [UC4.5], [UC4.6], [UC4.7].
@@ -955,7 +955,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente un indice numerico, che esprime il livello massimo di polveri sottili nell'aria, espresso in $#sym.mu g\/m^3$ (#glossary("PM10")), negli ultimi 5 minuti, tra i dati registrati da tutti i sensori, nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che mostri le posizioni dei sensori che monitorano i dati ambientali, mediante icone colorate in base al tipo di #glossary[sensore].], [#C.step(level:2)UC#C.display()]
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che mostri le posizioni dei sensori che monitorano i dati ambientali, mediante icone colorate in base al tipo di #glossary[sensore], nella #glossary("dashboard") relativa ai dati ambientali.], [#C.step(level:2)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter monitorare i dati provenienti dai sensori relativi ai dati urbanistici in una #glossary("dashboard") apposita.], [#C.step()UC#C.display()]
@@ -969,7 +969,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Desiderabile", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella la quale riporta l'erogazione delle colonne di ricarica per auto, espressa in chiloWatt all'ora (kWh), controllata da ciascun #glossary("sensore"), nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:3)UC#C.display()]
   ),
   (
-    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi lo stato di congestione delle strade, mediante gli stati "LOW", "MEDIUM", "HIGH", "BLOCKED", posti nelle coordinate geografiche dei sensori controllano queste, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:2)UC#C.display()]
+    "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che evidenzi lo stato di congestione delle strade, mediante gli stati "LOW", "MEDIUM", "HIGH", "BLOCKED", posti nelle coordinate geografiche dei sensori che le monitorano, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:2)UC#C.display()]
   ),
   (
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che mostri la posizione delle biciclette elettriche controllate, in tempo reale, mediante degli indicatori numerici, indicanti la percentuale della batteria, posizionati nelle coordinate geografiche del mezzo, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:2)UC#C.display()]
@@ -978,7 +978,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Obbligatorio", [L'utente deve poter visualizzare un #glossary("pannello") contenente una mappa che mostri la percentuale di riempimento delle zone ecologiche, mediante degli indicatori percentuali, posizionati nelle coordinate geografiche della zona, nella #glossary("dashboard") relativa ai dati urbanistici.], [#C.step(level:2)UC#C.display()]
   ),
   (
-    "Desiderabile", [L'utente deve poter monitorare i dati superanti delle soglie, in una #glossary("dashboard") apposita.], [#C.step()UC#C.display()]
+    "Desiderabile", [L'utente deve poter monitorare i dati superanti le soglie impostate nel #glossary[sistema], in una #glossary("dashboard") apposita.], [#C.step()UC#C.display()]
   ),
   (
     "Opzionale", [L'utente deve poter visualizzare un #glossary("pannello") contenente una tabella che mostri i #glossary("dati anomali"), il #glossary("sensore") che li ha rilevati e il timestamp del rilevamento, nella #glossary("dashboard") relativa ai dati superanti le soglie.], [#C.step(level:2)UC#C.display()]
@@ -1073,7 +1073,7 @@ Relativamente all'utilizzo della #glossary("dashboard"), viene definito un unico
     "Obbligatorio", [Il #glossary("sensore") deve poter mandare e far persistere dati relativi alla percentuale di riempimento della zona ecologica controllata, il timestamp di rilevazione e le proprie coordinate geografiche.], [#C.step()UC#C.display()]
   ),
   (
-    "Obbligatorio", [Il #glossary("sensore") deve poter mandare e far persistere dati relativi al numero di auto circolanti nella strada controllata, allo stato della congestione stradale nella strada, espresse in stati (in ordine di crescente congestione sono: "LOW", "MEDIUM", "HIGH", "BLOCKED"), il tempo medio necessario per percorrere la strada, il timestamp di rilevazione e le proprie coordinate geografiche.], [#C.step()UC#C.display()]
+    "Obbligatorio", [Il #glossary("sensore") deve poter mandare e far persistere dati relativi al numero di auto circolanti nella strada controllata, allo stato di congestione nella strada, espresso in stati (in ordine di congestione crescente sono: "LOW", "MEDIUM", "HIGH", "BLOCKED"), il tempo medio necessario per percorrere la strada, il timestamp di rilevazione e le proprie coordinate geografiche.], [#C.step()UC#C.display()]
   ),
   /*questi qui sotto sono gli ex requisiti di vincolo
   GIACOMO D'OVIDIO, ne ho commentato qualcuno perchè credo siano inglobati nei precedenti*/
@@ -1185,7 +1185,7 @@ Fonte:
 
 #let requisiti_prestazioni = (
   (
-  "Obbligatorio",[Il #glossary("sistema") deve gestire un carico di #glossary("dati in entrata") superiore ai 40 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 8 GB di RAM.],"Verbale esterno"
+  "Obbligatorio",[Il #glossary("sistema") deve gestire un carico di #glossary("dati in entrata") superiore ai 40 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 6 GB di RAM.],"Verbale esterno"
   ),
   ("Desiderabile",[Il #glossary("sistema") deve avere un tempo di elaborazione inferiore ai 5 secondi, dal momento in cui i dati vengono ricevuti alla loro visualizzazione nella #glossary[dashboard]. Tali tempistiche sono garantite solo potendo usufruire di una connessione con almeno 100 megabit al secondo in download e con almeno 30 megabit in upload.],"Norme di Progetto"), 
 )
