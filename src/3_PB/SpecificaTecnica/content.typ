@@ -444,8 +444,8 @@ Una volta che un'allerta viene rilevata, passa attraverso tre stati distinti:
 
 Nella realizzazione del componente di notifica il team ha optato per mantenerlo il più semplice possibile andando di fatto a rimuovere lo stazionamento dell'allerta nella fase di "pending", in modo tale che ogni allerta venga notificata appena rilevata. 
 Inoltre si è valutato con preferibile rimuovere le notifiche relative al condizione di ok. 
-Ogni allerta viene definita all'interno di un "allert group" a se stante, in modo tale che le regole siano eseguite in contemporanea. Ogni regola verifica, a intervalli regolati di 5 minuti, se la condizione di superamento della soglia impostata si è verificata nei 5 minuti precedenti, e relativamente ad ogni sensore trattiene il valore massimo che abbia superato tale soglia. 
-#glossary("Grafana") permette inoltre di inserire ulteriori configurazioni relative propriamente alle modalità di invio e alla personalizzazione delle notifiche nelle sezioni "Notification Policy" e "Contact Points", garantendo un maggiore controllo e una maggiore flessibilità nella gestione delle notifiche.
+Ogni allerta viene definita all'interno di un "allert group" a sé stante, in modo tale che ognuna sia eseguita in contemporanea alle altre. Ogni regola verifica, a intervalli regolati di 5 minuti, se la condizione di superamento della soglia impostata si sia verificata nei 5 minuti precedenti  e, relativamente ad ogni #glossary[sensore], trattiene il valore massimo tra quelli superanti la soglia.
+Per agevolare la gestione delle regole di allerta, #glossary[Grafana]  consente di configurare le regole e i canali di notifica in modo semplice ed efficace tramite la sua interfaccia.
 
 Sia le le regole di allerta, che le configurazioni dei canali di notifica, che le "Notification Policy", possono essere impostate tramite l'interfaccia grafica, successivamente esportate in vari formati e inserite nei file di configurazione appropriati, all'interno della directory /provisoning/alerting per garantire la persistenza.
 
