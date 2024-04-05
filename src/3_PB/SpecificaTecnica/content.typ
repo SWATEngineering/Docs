@@ -445,14 +445,12 @@ Una volta che un'allerta viene rilevata, passa attraverso tre stati distinti:
 Nella realizzazione del componente di notifica il team ha optato per mantenerlo il più semplice possibile andando di fatto a rimuovere lo stazionamento dell'allerta nella fase di "pending", in modo tale che ogni allerta venga notificata appena rilevata. 
 Inoltre si è valutato con preferibile rimuovere le notifiche relative al condizione di ok. 
 Ogni allerta viene definita all'interno di un "allert group" a se stante, in modo tale che le regole siano eseguite in contemporanea. Ogni regola verifica, a intervalli regolati di 5 minuti, se la condizione di superamento della soglia impostata si è verificata nei 5 minuti precedenti, e relativamente ad ogni sensore trattiene il valore massimo che abbia superato tale soglia. 
-Per agevolare la gestione delle regole di allerta, #glossary[Grafana]  consente di configurare le regole e i canali di notifica in modo semplice ed efficace tramite la sua interfaccia.
+#glossary("Grafana") permette inoltre di inserire ulteriori configurazioni relative propriamente alle modalità di invio e alla personalizzazione delle notifiche nelle sezioni "Notification Policy" e "Contact Points", garantendo un maggiore controllo e una maggiore flessibilità nella gestione delle notifiche.
 
-Nel contesto del nostro progetto, abbiamo optato per Discord come canale principale di notifica, configurando il webhook URL e personalizzando i messaggi di notifica per una comunicazione efficace e tempestiva.
+Sia le le regole di allerta, che le configurazioni dei canali di notifica, che le "Notification Policy", possono essere impostate tramite l'interfaccia grafica, successivamente esportate in vari formati e inserite nei file di configurazione appropriati, all'interno della directory /provisoning/alerting per garantire la persistenza.
 
-Per gestire in modo ancora più sofisticato l'invio delle notifiche, #glossary[Grafana] mette a disposizione le "notification policies", consentendo di definire regole specifiche per indirizzare gli alert ai canali di notifica appropriati in base a criteri predefiniti. Questo offre un maggiore controllo e flessibilità nella gestione delle notifiche, garantendo che vengano inviate solo dove e quando necessario.
-
-Sia le le regole di allerta che le configurazioni dei canali di notifica possono essere impostati tramite l'interfaccia, successivamente esportati in formato JSON e inseriti nei file di configurazione appropriati, all'interno della directory /provisoning/alerting per una gestione automatizzata.
-
+Relativamente a questi elementi di configurazione, per garantire che il sistema di notifica rimanga semplice e intuitivo, ci si limita a configurare il canale di notifica e il formato delle notifiche stesse, oltre alle configurazioni relative alla loro frequenza. 
+Si è deciso di utilizzare Discord come canale di notifica preferenziale: nello specifico per la sua configurazione è necessario inserire il webhook URL del canale.
 #pagebreak()
 = Tracciamento dei requisiti
 In questa sezione si va a mostrare, secondo quanto riportato dal documento  _Norme di Progetto v2.0_, la soddisfazione dei singoli requisiti presenti, in base al tipo previsto e opportunamente classificato sotto.
