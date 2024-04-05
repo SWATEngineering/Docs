@@ -184,8 +184,8 @@ Per illustrare il funzionamento del #glossary[sistema], abbiamo utilizzato un di
     - Aggregazione per intervalli di 5 minuti; viene utilizzata per mostrare l'andamento in media aritmetica di tutti i sensori di un determinato tipo, utilizzando un intervallo di tempo sufficientemente ampio per poter individuare facilmente eventuali trend dei dati;
 
 - *Interrogazioni (query)*: vengono effettuate varie interrogazioni e analisi sui dati memorizzati all'interno delle tabelle;
-- *Dashboard*: l'#glossary[amministratore pubblico] visualizza i dati ritornati in output dalle query ed elaborati attraverso delle #glossary[dashboard], sulla una piattaforma #glossary[Grafana]\;
-- *Notifica*: in caso di superamento di determinati valori soglia, relativi ai dati ritornati dalla query, viene inviata una notifica ad un canale appositamente impostato della piattaforma Discord e successivamente visualizzata dall'#glossary[amministratore pubblico].
+- *Dashboard*: l'#glossary[amministratore pubblico] visualizza i dati restituiti in output dalle query ed elaborati attraverso delle #glossary[dashboard], sulla una piattaforma #glossary[Grafana]\;
+- *Notifica*: in caso di superamento di determinate soglie pre-impostate, relative ai dati restituiti dalla query, viene inviata una notifica ad un canale appositamente impostato nella piattaforma Discord in modo che possa essere visionata dall'#glossary[amministratore pubblico].
 
 == Struttura dei container
 Abbiamo adottato una struttura basata su container per il nostro sistema, utilizzando Docker e #glossary[Docker Compose] per gestire l'ambiente di sviluppo e produzione. Questa decisione è stata presa per diversi motivi:
