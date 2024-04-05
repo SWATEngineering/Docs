@@ -432,7 +432,7 @@ La visualizzazione dei dati attraverso #glossary[pannelli] si compone delle segu
 
 === Sistema di notifica
 #glossary[Grafana] offre un robusto sistema di allerta che consente di rilevare e reagire prontamente a condizioni anomale o critiche nei dati monitorati. Questo sistema non solo permette di definire regole di allerta basate su query ai data source, ma anche di personalizzare le notifiche inviate attraverso vari canali tra i quali Discord.
-Per soddisfare i requisiti di ricezione di notifiche relativi a dati che abbiano superato un determinata soglia il team decide di utilizzare il sistema di allerting integrato in #glossary[Grafana]. Il sistema di allerta integrato in #glossary[Grafana] si rivela efficace grazie alla sua capacità di integrarsi con diverse piattaforme di messaggistica in tempo reale, tra cui Discord. 
+Per soddisfare i requisiti di ricezione di notifiche relativi a dati, che abbiano superato un determinata soglia, il team decide di utilizzare il sistema di allerting integrato in #glossary[Grafana]. Questo sistema si rivela efficace grazie alla sua capacità di integrarsi con diverse piattaforme di messaggistica in tempo reale, tra le quali Discord. 
 
 Una volta che un'allerta viene rilevata, passa attraverso tre stati distinti:
 
@@ -442,15 +442,15 @@ Una volta che un'allerta viene rilevata, passa attraverso tre stati distinti:
 
 - ok: la situazione che ha innescato l'allerta è tornata alla normalità.
 
-Nella realizzazione del componente di notifica il team ha optato per mantenerlo il più semplice possibile andando di fatto a rimuovere lo stazionamento dell'allerta nella fase di "pending", in modo tale che ogni allerta venga notificata appena rilevata. 
-Inoltre si è valutato con preferibile rimuovere le notifiche relative al condizione di ok. 
-Ogni allerta viene definita all'interno di un "allert group" a sé stante, in modo tale che ognuna sia eseguita in contemporanea alle altre. Ogni regola verifica, a intervalli regolati di 5 minuti, se la condizione di superamento della soglia impostata si sia verificata nei 5 minuti precedenti  e, relativamente ad ogni #glossary[sensore], trattiene il valore massimo tra quelli superanti la soglia.
-Per agevolare la gestione delle regole di allerta, #glossary[Grafana]  consente di configurare le regole e i canali di notifica in modo semplice ed efficace tramite la sua interfaccia.
+Nella realizzazione del componente di notifica il team ha optato per mantenerlo il più semplice possibile, evitando lo stazionamento dell'allerta nella fase di "pending", in modo tale che ogni allerta venga notificata appena rilevata. 
+Inoltre, è risultato preferibile la rimozione delle notifiche relative al condizione di "ok". 
 
-Sia le le regole di allerta, che le configurazioni dei canali di notifica, che le "Notification Policy", possono essere impostate tramite l'interfaccia grafica, successivamente esportate in vari formati e inserite nei file di configurazione appropriati, all'interno della directory /provisoning/alerting per garantire la persistenza.
+Ogni allerta viene definita all'interno di un "allert group" a sé stante, in modo tale che ognuna sia eseguita in contemporanea alle altre. Ogni regola verifica, a intervalli regolati di 5 minuti, se il superamento della soglia impostata si sia verificato nell'intervallo considerato; inoltre, trattiene il valore massimo tra quelli superanti la soglia, per quanto riguarda il singolo #glossary[sensore].
+
+Per agevolare la gestione delle regole di allerta, #glossary[Grafana]  consente di configurare le regole e i canali di notifica in modo semplice ed efficace tramite la sua interfaccia. Sia le regole di allerta, le configurazioni dei canali di notifica, che le "Notification Policy", possono essere impostate tramite l'interfaccia grafica; successivamente, possono essere esportate in vari formati e inserite in file di configurazione appropriati, all'interno della directory /provisoning/alerting per garantire la persistenza. Nel nostro caso si è scelto di utilizzare il formato #glossary[JSON].
 
 Relativamente a questi elementi di configurazione, per garantire che il sistema di notifica rimanga semplice e intuitivo, ci si limita a configurare il canale di notifica e il formato delle notifiche stesse, oltre alle configurazioni relative alla loro frequenza. 
-Si è deciso di utilizzare Discord come canale di notifica preferenziale: nello specifico per la sua configurazione è necessario inserire il webhook URL del canale.
+Si è deciso di utilizzare Discord come canale di notifica preferenziale: nello specifico per la sua configurazione è necessario inserire il corrispondente webhook URL.
 #pagebreak()
 = Tracciamento dei requisiti
 In questa sezione si va a mostrare, secondo quanto riportato dal documento  _Norme di Progetto v2.0_, la soddisfazione dei singoli requisiti presenti, in base al tipo previsto e opportunamente classificato sotto.
