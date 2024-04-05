@@ -2,7 +2,7 @@
 #import "functions.typ": glossary, team
 #let participants = csv("participants.csv")
 #let participants_company = csv("participants_company.csv")
-
+#show link: underline
 = Partecipanti
 / Inizio incontro: #inizio_incontro
 / Fine incontro: #fine_incontro
