@@ -257,7 +257,7 @@ Il database è caratterizzato da un determinato schema per ogni tipo di #glossar
   caption: [Schema delle tabelle per il #glossary[sensore] del vento]
 )
 Ad esempio la funzione `JSONExtractString` è una funzione di #glossary[ClickHouse] che permette di estrarre una stringa da un campo #glossary[JSON]\; in questo caso, viene utilizzata per estrarre il campo "name" dal campo "data" del messaggio #glossary[JSON]. Lo stesso vale per le altre funzioni utilizzate: `JSONExtractFloat`, e `JSONExtractInt` e per i rimanenti campi.
-
+#pagebreak()
 ==== Sensore pluviometrico
 #figure(
   image("DBscheme/DB_Rain.svg",width:100%),
