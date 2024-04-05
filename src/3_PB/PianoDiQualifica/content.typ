@@ -953,12 +953,8 @@ In questa sezione vengono descritti i test di integrazione del prodotto software
       ],"S",[]),
       ([
            Verificare che dati memorizzati nel database siano correttamente visualizzati su Grafana.
-      ],"N/I",[]),
-      ([
-            Verificare che i dati generati dai sensori siano correttamente consumati e memorizzati nel database.
-      ],"S",[
-            
-      ])
+      ],"N/I",[])
+      
 
 
 
