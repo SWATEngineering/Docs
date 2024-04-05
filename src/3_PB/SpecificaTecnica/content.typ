@@ -178,7 +178,7 @@ Per illustrare il funzionamento del #glossary[sistema], abbiamo utilizzato un di
     + Livelli di congestione stradale;
     + Batteria delle biciclette elettriche.
 - *Invio al #glossary[broker] dei dati*:  i dati generati dai sensori vengono inviati al #glossary[broker] dati, in questo contesto #glossary[Kafka]. Quest'ultimo offre un meccanismo di messaggistica distribuita in grado di gestire grandi volumi di dati in tempo reale;
-- *Engine interno (archiviatore)*: l'archiviatore, rappresentato dal motore interno "Kafka" di #glossary[ClickHouse], agisce direttamente come consumatore dei dati provenienti dal #glossary[broker] dati. Questo avviene tramite la connessione a specifici #glossary[topic] in #glossary[Kafka], ognuno associato a un tipo di sensore distinto. Successivamente, i dati corrispondenti vengono archiviati nelle rispettive tabelle del database;
+- *Engine interno (archiviatore)*: l'archiviatore, rappresentato dal motore interno "Kafka" di #glossary[ClickHouse], agisce direttamente come consumatore dei dati provenienti dal #glossary[broker] dati. Questo avviene tramite la connessione a specifici #glossary[topic] in #glossary[Kafka], ognuno associato a un tipo di #glossary[sensore] distinto. Successivamente, i dati corrispondenti vengono archiviati nelle rispettive tabelle del database;
 - *Aggregazione*: i dati corrispondenti a temperatura, umidità, precipitazioni, inquinamento atmosferico e livello dei bacini idrici vengono aggregati in tabelle apposite attraverso l'utilizzo di #glossary[materialized views]. Per ognuno dei tipi di dato citati sopra, vengono aggregati i dati per determinati intervalli di tempo in modo da poter inserire le medie calcolate in tabelle apposite in modo efficiente. Vengono effettuate due aggregazioni  distinte per ogni tipo di dato di interesse:
     - Aggregazione per intervalli di 1 minuto; viene utilizzata per mostrare l'andamento in media aritmetica del singolo #glossary[sensore] di un determinato tipo, utilizzando un intervallo di tempo sufficientemente piccolo per poter analizzare i dati in tempo reale;
     - Aggregazione per intervalli di 5 minuti; viene utilizzata per mostrare l'andamento in media aritmetica di tutti i sensori di un determinato tipo, utilizzando un intervallo di tempo sufficientemente ampio per poter individuare facilmente eventuali trend dei dati.
@@ -254,14 +254,14 @@ Il database è caratterizzato da un determinato schema per ogni tipo di #glossar
 ==== Sensore per il vento
 #figure(
   image("DBscheme/DB_Wind.svg",width:100%),
-  caption: [Schema delle tabelle per il sensore del vento]
+  caption: [Schema delle tabelle per il #glossary[sensore] del vento]
 )
 Ad esempio la funzione `JSONExtractString` è una funzione di #glossary[ClickHouse] che permette di estrarre una stringa da un campo #glossary[JSON]\; in questo caso, viene utilizzata per estrarre il campo "name" dal campo "data" del messaggio #glossary[JSON]. Lo stesso vale per le altre funzioni utilizzate: `JSONExtractFloat`, e `JSONExtractInt` e per i rimanenti campi.
 
 ==== Sensore pluviometrico
 #figure(
   image("DBscheme/DB_Rain.svg",width:100%),
-  caption: [Schema delle tabelle per il sensore pluviometrico]
+  caption: [Schema delle tabelle per il #glossary[sensore] pluviometrico]
 )
 Questo tipo di schema presenta in più, rispetto a quello precedente due tabelle per dati aggregati. La tabella "rain1m" contiene la media aritmetica, ottenuta aggregando i dati della pioggia ogni minuto per ciascun #glossary[sensore]\; invece, la tabella "rain5m_overall" contiene la media aritmetica, ottenuta aggregando i dati della pioggia ogni cinque minuti per tutti i sensori che monitorano le precipitazioni. Questi tipi di tabelle vengono popolati tramite delle #glossary[materialized views].
 
@@ -284,7 +284,7 @@ I simulatori sono istanze delle classe _SimulatorThread_: tale classe eredita da
   image("diagrammiclassi/simulator.jpg",width:95%),
   caption: [Diagramma delle classi 2]
 )
-La classe _SensorSimulatorStrategy_ è realizzazione del design pattern _Strategy_, dove ogni strategia rappresenta una tipologia di sensore simulato differente. Al fine di garantire la possibilità di effettuare unit-testing sul comportamento dei simulatori di sensori tale classe riceve tramite costruttore un oggetto di tipo _Random_ e un oggetto di tipo _Datetime_.
+La classe _SensorSimulatorStrategy_ è realizzazione del design pattern _Strategy_, dove ogni strategia rappresenta una tipologia di #glossary[sensore] simulato differente. Al fine di garantire la possibilità di effettuare unit-testing sul comportamento dei simulatori di sensori tale classe riceve tramite costruttore un oggetto di tipo _Random_ e un oggetto di tipo _Datetime_.
 Tali strategie verranno poi assegnate ad un _SimulatorThread_.
 
 #figure(
@@ -340,7 +340,7 @@ Non vengono menzionati i costruttori.
 
 ==== SensorSimulatorStrategy (Classe)
 ===== Attributi
-- *sensor_name: String [Protetto]*: nome identificativo del sensore;
+- *sensor_name: String [Protetto]*: nome identificativo del sensore\;
 - *random_obj: Random [Protetto]*: oggetto della classe Random della libreria Standard di #glossary("Python")\;
 - *datetime_obj: Datetime [Protetto]*: oggetto della classe Datetime della libreria Standard di #glossary("Python")\;
 - *coordinates: Coordinates [Protetto]*: oggetto della classe Coordinates.
@@ -422,6 +422,32 @@ La struttura di un messaggio o evento, descritta in JSON sarà la seguente:
 ```
 Gli oggetti all'interno di "readings" sono solamente esempi, è possibile inserirne uno solo, come ad esempio per i sensori di temperatura, che avranno solamente la lettura omonima, oppure, come nel caso del #glossary[sensore] del vento averne due: la velocità e la direzione.
 
+== Configurazione visualizzazione e sistema di allerta
+=== Dashboard
+La visualizzazione dei dati attraverso #glossary[pannelli] si compone delle seguenti #glossary[dashboard] di #glossary[Grafana]. Le configurazioni delle #glossary[dashboard] vengono salvate in formato #glossary[JSON], il che permette un facile sviluppo e manutenzione. I dati per la visualizzazione sono prelevati dalle tabelle di #glossary[ClickHouse] tramite query alle tabelle #glossary[time series] e di dati agggregati. Di seguito vengono descritte le #glossary[dashboard] per il visualization layer:
+- *Dati ambientali*: visualizzazione dei dati relativi a temperatura, umidità, inquinamento dell'aria, vento e precipitazioni atmosferiche, tramite grafici a linee, mappe e indicatori; include inoltre una mappa che illustra la posizione dei sensori e il loro tipo, rappresentato con un colore diverso;
+- *Dati urbanistici*: visualizzazione dei dati relativi a parcheggi, colonne di ricarica, zone ecologiche, livello di congestione stradale e batteria delle biciclette elettriche, tramite mappe ed indicatori;
+- *Dati grezzi*: visualizzazione dei dati grezzi provenienti dai sensori, tramite una tabella che mostra i dati in tempo reale, con la possibilità di filtrare per specifico #glossary[sensore] e per tipo;
+- *Superamento soglie*: visualizzazione dei dati relativi al superamento delle soglie di allerta per i diversi tipi di sensori; le allerte vengono visualizzate tramite una tabella che mostra il tipo di #glossary[sensore], il valore rilevato e il timestamp.
+
+=== Sistema di notifica
+#glossary[Grafana] offre un robusto sistema di allerta che consente di rilevare e reagire prontamente a condizioni anomale o critiche nei dati monitorati. Questo sistema non solo permette di definire regole di allerta basate su query ai data source, ma anche di personalizzare le notifiche inviate attraverso vari canali tra i quali Discord.
+Le regole di allerta sono il cuore di questo sistema, consentendo di definire le condizioni che devono attivare un'allerta. Queste regole possono essere configurate per una vasta gamma di scenari; nel nostro contesto di applicazione vengono implementate per rilevare il superamento di determinate soglie, come ad esempio per rilevare temperature eccessive o livelli di inquinantamento atmosferico pericolosi.
+Una volta che un'allerta è attivata, passa attraverso tre stati distinti:
+
+- in attesa (pending): indicando che l'allerta è stata innescata ma la sua conferma è ancora in corso. Questo stato è tipicamente utilizzato per regolare l'invio delle notifiche, assicurandosi che l'allerta sia stabile prima di comunicare il problema;
+
+- attiva (firing): l'allerta è stata confermata e la condizione critica è stata verificata, di conseguenza vengono inviate le notifiche ai canali configurati;
+
+- ok: l'allerta è stata risolta e la situazione è tornata alla normalità.
+
+Per agevolare la gestione delle regole di allerta, #glossary[Grafana]  consente di configurare le regole e i canali di notifica in modo semplice ed efficace tramite la sua interfaccia.
+
+Nel contesto del nostro progetto, abbiamo optato per Discord come canale principale di notifica, configurando il webhook URL e personalizzando i messaggi di notifica per una comunicazione efficace e tempestiva.
+
+Per gestire in modo ancora più sofisticato l'invio delle notifiche, #glossary[Grafana] supporta le "notification policies", consentendo di definire regole specifiche per indirizzare gli alert ai canali di notifica appropriati in base a criteri predefiniti. Questo offre un maggiore controllo e flessibilità nella gestione delle notifiche, garantendo che vengano inviate solo dove e quando necessario.
+
+Sia le le regole di allerta che le configurazioni dei canali di notifica possono essere impostati tramite l'interfaccia, successivamente esportati in formato yaml e inseriti nei file di configurazione appropriati, all'interno della directory /provisoning/alerting per una gestione automatizzata e scalabile.
 
 #pagebreak()
 = Tracciamento dei requisiti
