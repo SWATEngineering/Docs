@@ -431,7 +431,7 @@ La visualizzazione dei dati attraverso #glossary[pannelli] si compone delle segu
 - *Superamento soglie*: visualizzazione dei dati relativi al superamento delle soglie di allerta per i diversi tipi di sensori; le allerte vengono visualizzate tramite una tabella che mostra il tipo di #glossary[sensore], il valore rilevato e il timestamp.
 
 === Sistema di notifica
-#glossary[Grafana] offre un robusto sistema di allerta che consente di rilevare e reagire prontamente a condizioni anomale o critiche nei dati monitorati. Questo sistema non solo permette di definire regole di allerta basate su query ai data source, ma anche di personalizzare le notifiche inviate attraverso vari canali tra i quali Discord.
+#glossary[Grafana] offre un robusto sistema di allerte che consente di rilevare e reagire prontamente a condizioni anomale o critiche che si possono verificare nei dati monitorati. Questo sistema non solo permette di definire regole di allerta basate su query ai data source, ma anche di personalizzare le notifiche inviate attraverso vari canali tra i quali Discord.
 Le regole di allerta sono il cuore di questo sistema, consentendo di definire le condizioni che devono attivare un'allerta. Queste regole possono essere configurate per una vasta gamma di scenari; nel nostro contesto di applicazione vengono implementate per rilevare il superamento di determinate soglie, come ad esempio per rilevare temperature eccessive o livelli di inquinantamento atmosferico pericolosi.
 Una volta che un'allerta è attivata, passa attraverso tre stati distinti:
 
