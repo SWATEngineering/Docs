@@ -686,6 +686,104 @@ table(
       ..test_di_sistema.map(item => (item.at(0),item.at(3))).flatten().map(item => [#item])
 ),caption: "Tracciamento dei test di sistema.")
 
+== Test di integrazione  
+In questa sezione vengono descritti i test di integrazione del prodotto software.
+#let test_di_integrazione = (
+
+      ([
+            Verificare che i dati generati dal simulatore di inquinamento atmosferico siano correttamente memorizzati nella tabella `innovacity.air_pollution` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal simulatore di inquinamento atmosferico siano correttamente aggregati e memorizzati nella tabella `innovacity.air_pollution1m` del database.
+      ],"S",[]),
+      ([
+            Verificare se i dati della media mobile generati dal simulatore di inquinamento atmosferico siano correttamente inseriti nella tabella `innovacity.air_pollution_ma`.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che i dati generati dal simulatore delle colonne di ricarica siano correttamente memorizzati nella tabella `innovacity.charging_station` del database.
+      ],"S",[]),
+
+      ([
+            Verificare che i dati generati dal simulatore delle biciclette elettriche siano correttamente memorizzati nella tabella `innovacity.ebikes` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal simulatore di riempimento delle isole ecologiche siano correttamente memorizzati nella tabella `innovacity.eco_zone` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal simulatore di umidità siano correttamente memorizzati nella tabella `innovacity.humidity` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal simulatore di umidità siano correttamente aggregati e memorizzati nella tabella `innovacity.humidity1m` del database.
+      ],"S",[]),
+      ([
+            Verificare se i dati della media mobile generati dal simulatore di umidità siano correttamente inseriti nella tabella `innovacity.humidity_ma`.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che i dati generati dal simulatore dei parcheggi siano correttamente memorizzati nella tabella `innovacity.parking` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal simulatore di pioggia siano correttamente memorizzati nella tabella `innovacity.rain` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal simulatore di pioggia siano correttamente aggregati e memorizzati nella tabella `innovacity.rain1m` del database.
+      ],"S",[]),
+      ([
+            Verificare se i dati della media mobile generati dal simulatore di pioggia siano correttamente inseriti nella tabella `innovacity.rain_ma`.
+      ],"S",[
+
+      ]),
+      
+      ([
+            Verificare che i dati generati dal simulatore del livello di riempimento dei bacini idrici siano correttamente memorizzati nella tabella `innovacity.reservoirs` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal simulatore del livello di riempimento dei bacini idrici siano correttamente aggregati e memorizzati nella tabella `innovacity.reservoirs1m` del database.
+      ],"S",[]),
+      ([
+            Verificare se i dati della media mobile generati dal simulatore del livello di riempimento dei bacini idrici siano correttamente inseriti nella tabella `innovacity.reservoirs_ma`.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che i dati generati dal simulatore di temperatura siano correttamente memorizzati nella tabella `innovacity.temperature` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal simulatore di temperatura siano correttamente aggregati e memorizzati nella tabella `innovacity.temperature1m` del database.
+      ],"S",[]),
+      ([
+            Verificare se i dati della media mobile generati dal simulatore di temperatura siano correttamente inseriti nella tabella `innovacity.temperature_ma`.
+      ],"S",[
+
+      ]),
+      ([
+            Verificare che i dati generati dal simulatore del traffico siano correttamente memorizzati nella tabella `innovacity.traffic` del database.
+      ],"S",[]),
+      ([
+            Verificare che i dati generati dal simulatore del vento siano correttamente memorizzati nella tabella `innovacity.wind` del database.
+      ],"S",[]),
+      ([
+           Verificare che dati memorizzati nel database siano correttamente visualizzati su Grafana.
+      ],"N/I",[])
+      
+
+
+
+).enumerate(start:1).map(test => ("TI"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1),test.at(1).at(2)));
+
+#show figure: set block(breakable: true)
+#figure(
+table(
+      columns: (2fr,7fr,1fr),
+      align: (center,left,center),
+      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Codice test*],[*Descrizione*],[*Stato*],
+      ..test_di_integrazione.map(item => (item.at(0),item.at(1),item.at(2))).flatten().map(item => [#item])
+),caption: "Test di integrazione.")
+
 == Test di unità 
 
 In questa sezione vengono descritti i test di unità del prodotto software.
@@ -872,103 +970,7 @@ table(
       ..test_di_unità.map(item => (item.at(0),item.at(1),item.at(2))).flatten().map(item => [#item])
 ),caption: "Test di unità.")
 
-== Test di integrazione  
-In questa sezione vengono descritti i test di integrazione del prodotto software.
-#let test_di_integrazione = (
 
-      ([
-            Verificare che i dati generati dal simulatore di inquinamento atmosferico siano correttamente memorizzati nella tabella `innovacity.air_pollution` del database.
-      ],"S",[]),
-      ([
-            Verificare che i dati generati dal simulatore di inquinamento atmosferico siano correttamente aggregati e memorizzati nella tabella `innovacity.air_pollution1m` del database.
-      ],"S",[]),
-      ([
-            Verificare se i dati della media mobile generati dal simulatore di inquinamento atmosferico siano correttamente inseriti nella tabella `innovacity.air_pollution_ma`.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che i dati generati dal simulatore delle colonne di ricarica siano correttamente memorizzati nella tabella `innovacity.charging_station` del database.
-      ],"S",[]),
-
-      ([
-            Verificare che i dati generati dal simulatore delle biciclette elettriche siano correttamente memorizzati nella tabella `innovacity.ebikes` del database.
-      ],"S",[]),
-      ([
-            Verificare che i dati generati dal simulatore di riempimento delle isole ecologiche siano correttamente memorizzati nella tabella `innovacity.eco_zone` del database.
-      ],"S",[]),
-      ([
-            Verificare che i dati generati dal simulatore di umidità siano correttamente memorizzati nella tabella `innovacity.humidity` del database.
-      ],"S",[]),
-      ([
-            Verificare che i dati generati dal simulatore di umidità siano correttamente aggregati e memorizzati nella tabella `innovacity.humidity1m` del database.
-      ],"S",[]),
-      ([
-            Verificare se i dati della media mobile generati dal simulatore di umidità siano correttamente inseriti nella tabella `innovacity.humidity_ma`.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che i dati generati dal simulatore dei parcheggi siano correttamente memorizzati nella tabella `innovacity.parking` del database.
-      ],"S",[]),
-      ([
-            Verificare che i dati generati dal simulatore di pioggia siano correttamente memorizzati nella tabella `innovacity.rain` del database.
-      ],"S",[]),
-      ([
-            Verificare che i dati generati dal simulatore di pioggia siano correttamente aggregati e memorizzati nella tabella `innovacity.rain1m` del database.
-      ],"S",[]),
-      ([
-            Verificare se i dati della media mobile generati dal simulatore di pioggia siano correttamente inseriti nella tabella `innovacity.rain_ma`.
-      ],"S",[
-
-      ]),
-      
-      ([
-            Verificare che i dati generati dal simulatore del livello di riempimento dei bacini idrici siano correttamente memorizzati nella tabella `innovacity.reservoirs` del database.
-      ],"S",[]),
-      ([
-            Verificare che i dati generati dal simulatore del livello di riempimento dei bacini idrici siano correttamente aggregati e memorizzati nella tabella `innovacity.reservoirs1m` del database.
-      ],"S",[]),
-      ([
-            Verificare se i dati della media mobile generati dal simulatore del livello di riempimento dei bacini idrici siano correttamente inseriti nella tabella `innovacity.reservoirs_ma`.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che i dati generati dal simulatore di temperatura siano correttamente memorizzati nella tabella `innovacity.temperature` del database.
-      ],"S",[]),
-      ([
-            Verificare che i dati generati dal simulatore di temperatura siano correttamente aggregati e memorizzati nella tabella `innovacity.temperature1m` del database.
-      ],"S",[]),
-      ([
-            Verificare se i dati della media mobile generati dal simulatore di temperatura siano correttamente inseriti nella tabella `innovacity.temperature_ma`.
-      ],"S",[
-
-      ]),
-      ([
-            Verificare che i dati generati dal simulatore del traffico siano correttamente memorizzati nella tabella `innovacity.traffic` del database.
-      ],"S",[]),
-      ([
-            Verificare che i dati generati dal simulatore del vento siano correttamente memorizzati nella tabella `innovacity.wind` del database.
-      ],"S",[]),
-      ([
-           Verificare che dati memorizzati nel database siano correttamente visualizzati su Grafana.
-      ],"N/I",[])
-      
-
-
-
-).enumerate(start:1).map(test => ("TI"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1),test.at(1).at(2)));
-
-#show figure: set block(breakable: true)
-#figure(
-table(
-      columns: (2fr,7fr,1fr),
-      align: (center,left,center),
-      fill:(_,row) =>if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
-      [*Codice test*],[*Descrizione*],[*Stato*],
-      ..test_di_integrazione.map(item => (item.at(0),item.at(1),item.at(2))).flatten().map(item => [#item])
-),caption: "Test di integrazione.")
 
 #pagebreak()
 
