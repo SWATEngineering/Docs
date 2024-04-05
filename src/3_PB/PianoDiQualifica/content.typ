@@ -1225,6 +1225,7 @@ Nell'ambito delle metriche di codifica, si è verificata un'unica situazione di 
   ],
 )
 Le Metriche Non Soddisfatte corrispondono alle metriche MPC-CO, MPC-CPI, MPC-EAC. In concomitanza con l'ottavo #glossary("sprint"), la misurazione di MPC-CO è rientrata all'interno del valore di accettazione. Per quanto riguarda MPC-CPI e MPC-EAC, essendo estremamente legate tra loro, si rimanda alle considerazioni relative a MPC-EAC.
+Durante lo sprint 11 e 12, la metrica EAC si è collocata entro il suo intervallo accettabile, determinando di conseguenza un posizionamento adeguato anche per la metrica CPI. Durante lo sprint 12, le metriche non soddisfatte erano riconducibili ai requisiti obbligatori soddisfatti, oltre a due violazioni nella metrica ATC (ovvero il numero di attributi per classe). Tuttavia, nello sprint 13, tutte le metriche sono tornate ai valori desiderati, non risultando più metriche non soddisfatte.
 
 
 // == Qualità di prodotto
@@ -1246,6 +1247,23 @@ Dall'analisi del grafico emerge che tutti i requisiti obbligatori sono stati sod
 Si rimanda al documento _Specifiche Tecniche v1.0_ per vedere la lista completa dei requisiti e il relativo soddisfacimento.
 
 === Manutenibilità
+
+#figure(
+  image("./assets/valutazione-metriche/FANIN_FANOUT.png", width: 85%),
+  caption: [
+    Valutazione metrica FAN-IN FAN-OUT.
+  ],
+)
+
+FAN-IN rappresenta il numero di moduli o componenti direttamente collegati o dipendenti da un modulo o una funzione specifica. 
+SFOUT rappresenta il numero di dipendenze o connessioni che un componente o modulo particolare ha con altri componenti o moduli. Misura quanti altri elementi dipendono o interagiscono con un dato elemento all'interno di un sistema.
+
+L'analisi dei valori numerici evidenzia che il fan-in si attesta intorno al valore 2,6, indicando che ogni modulo o componente specifico ha in media circa 2,6 altre parti del sistema che dipendono direttamente da esso. Questo valore suggerisce che, sebbene ci sia un certo grado di dipendenza da parte di altre parti del sistema, non è così elevato da indicare una massima utilizzazione del modulo da parte di altre parti del sistema.
+
+Per quanto riguarda il fan-out, che si attesta intorno al valore di 5,62, questo indica che ogni modulo ha in media circa 5,62 dipendenze o connessioni con altri moduli o componenti all'interno del sistema. Un valore così elevato di fan-out potrebbe suggerire che alcuni moduli hanno molte dipendenze da altri moduli, il che potrebbe aumentare la complessità del sistema e rendere più difficile la gestione dei moduli stessi.
+
+
+
 
 === Usabilità
 
