@@ -843,7 +843,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che i dati sulla potenza erogata dalle colonne di ricarica simulate rimangano all'interno di un intervallo specifico.
+            Verificare che i dati sulla potenza erogata dalle colonne di ricarica simulate rimangano all'interno di un intervallo specifico (0-100).
       ],"S",[
 
       ]),
@@ -863,7 +863,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che il livello di batteria del simulatore delle biciclette elettriche rimanga all'interno di un intervallo specifico.
+            Verificare che il livello di batteria del simulatore delle biciclette elettriche rimanga all'interno di un intervallo specifico (0-100).
       ],"S",[
 
       ]),
@@ -873,7 +873,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che il livello di riempimento del simulatore delle zone ecologiche rimanga all'interno di un intervallo specifico.
+            Verificare che il livello di riempimento del simulatore delle zone ecologiche rimanga all'interno di un intervallo specifico (0-100).
       ],"S",[
 
       ]),
@@ -883,7 +883,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che la percentuale generata dal simulatore di umidità rimanga all'interno di un intervallo specifico.
+            Verificare che la percentuale generata dal simulatore di umidità rimanga all'interno di un intervallo specifico (5-100).
       ],"S",[
 
       ]),
@@ -893,7 +893,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che l'intensità di pioggia generata dal simulatore di precipitazioni rimanga all'interno di un intervallo specifico.
+            Verificare che l'intensità di pioggia generata dal simulatore di precipitazioni rimanga all'interno di un intervallo specifico (0-100).
       ],"S",[
 
       ]),
@@ -903,7 +903,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che la percentuale generata dal simulatore dei bacini idrici rimanga all'interno di un intervallo specifico.
+            Verificare che la percentuale generata dal simulatore dei bacini idrici rimanga all'interno di un intervallo specifico (0-100).
       ],"S",[
 
       ]),
@@ -913,7 +913,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che il valore generato dal simulatore della temperatura rimanga all'interno di un intervallo specifico.
+            Verificare che il valore generato dal simulatore della temperatura rimanga all'interno di un intervallo specifico (3-19).
       ],"S",[
 
       ]),
@@ -923,7 +923,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che il valore generato dal simulatore del vento rimanga all'interno di un intervallo specifico.
+            Verificare che il valore generato dal simulatore del vento rimanga all'interno di un intervallo specifico (1-9).
       ],"S",[
 
       ]),
@@ -932,7 +932,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ],"S",[]),
       ([
-            Verificare che il valore generato dal simulatore dell'inquinamento dell'aria rimanga all'interno di un intervallo specifico.
+            Verificare che il valore generato dal simulatore dell'inquinamento dell'aria rimanga all'interno di un intervallo specifico (0-100).
       ],"S",[
 
       ]),
@@ -950,12 +950,8 @@ In questa sezione vengono descritti i test di unità del prodotto software.
             Verificare che il simulatore dei parcheggi fornisca i dati attesi nel formato prestabilito.
       ],"S",[
 
-      ]),
-      ([
-            Verificare che il valore generato dal simulatore dei parcheggi rimanga all'interno di un intervallo specifico.
-      ],"S",[
-
       ])
+      
       
       
 ).enumerate(start:1).map(test => ("TU"+ str(test.at(0)),test.at(1).at(0),test.at(1).at(1),test.at(1).at(2)));
