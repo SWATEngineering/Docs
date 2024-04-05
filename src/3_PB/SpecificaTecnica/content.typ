@@ -447,7 +447,7 @@ Nel contesto del nostro progetto, abbiamo optato per Discord come canale princip
 
 Per gestire in modo ancora più sofisticato l'invio delle notifiche, #glossary[Grafana] supporta le "notification policies", consentendo di definire regole specifiche per indirizzare gli alert ai canali di notifica appropriati in base a criteri predefiniti. Questo offre un maggiore controllo e flessibilità nella gestione delle notifiche, garantendo che vengano inviate solo dove e quando necessario.
 
-Sia le le regole di allerta che le configurazioni dei canali di notifica possono essere impostati tramite l'interfaccia, successivamente esportati in formato yaml e inseriti nei file di configurazione appropriati, all'interno della directory /provisoning/alerting per una gestione automatizzata e scalabile.
+Sia le le regole di allerta che le configurazioni dei canali di notifica possono essere impostati tramite l'interfaccia, successivamente esportati in formato yaml e inseriti nei file di configurazione appropriati, all'interno della directory /provisoning/alerting per una gestione automatizzata.
 
 #pagebreak()
 = Tracciamento dei requisiti
