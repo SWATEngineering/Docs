@@ -1187,7 +1187,7 @@ Fonte:
   (
   "Obbligatorio",[Il #glossary("sistema") deve gestire un carico di #glossary("dati in entrata") superiore ai 40 dati al secondo per un sistema con processore multicore con almeno 2.5GHz di clock, 6 GB di RAM.],"Verbale esterno"
   ),
-  ("Desiderabile",[Il #glossary("sistema") deve avere un tempo di elaborazione inferiore ai 5 secondi, dal momento in cui i dati vengono ricevuti alla loro visualizzazione nella #glossary[dashboard]. Tali tempistiche sono garantite solo potendo usufruire di una connessione con almeno 100 megabit al secondo in download e con almeno 30 megabit in upload.],"Norme di Progetto"), 
+  ("Desiderabile",[Il #glossary("sistema") deve avere un tempo di elaborazione inferiore ai 5 secondi, dal momento in cui la #glossary[dashboard] viene aperta a quello in cui i dati vengono visualizzati al suo interno.],"Norme di Progetto"), 
 )
 
 #let requisiti_prestazioni_con_codice = generate_requirements_array("P", requisiti_prestazioni)
