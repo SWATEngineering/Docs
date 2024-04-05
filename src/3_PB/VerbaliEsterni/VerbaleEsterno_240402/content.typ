@@ -27,7 +27,7 @@ L'incontro si è aperto con la presentazione del prodotto software da parte del 
 #pagebreak()
 
 == Validazione MVP
-La Proponente ha espresso piena soddisfazione per il lavoro svolto e attesta che il prodotto soddisfa la definizione di MVP (Regolamento progetto didattico https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf consultazione 02/04/2024).
+La Proponente ha espresso piena soddisfazione per il lavoro svolto e attesta che il prodotto soddisfa la definizione di MVP (Regolamento progetto didattico: #link("https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf")).
 
 == Conclusione
 L'incontro si è concluso con lo scambio di feedback tra il team e la Proponente. Quest'ultima ha espresso apprezzamento per il lavoro svolto dal team, sottolineando la qualità del prodotto sviluppato e la professionalità dimostrata. Il team ha ringraziato la Proponente per la collaborazione, sottolineando l'importanza del confronto e del supporto ricevuto. Infine, su richiesta della Proponente, il gruppo ha condiviso suggerimenti per il miglioramento dei progetti da proporre per il corso in futuro, indicando i punti di forza e gli aspetti migliorabili di "InnovaCity". 
