@@ -269,7 +269,7 @@ Questo tipo di schema presenta in più, rispetto a quello precedente due tabelle
 Nonostante i simulatori non siano ufficialmente considerati parte integrante del prodotto dalla Proponente, il nostro team, nell'ambito del progetto didattico, ha scelto di dedicare alcune risorse alla progettazione di questa componente.
 
 Nei paragrafi successivi viene mostrata l'#glossary[architettura] individuata, tramite l'utilizzo di Diagrammi delle Classi e relative rapide descrizioni. Inoltre vengono motivati i #glossary[design pattern] individuati e le decisioni progettuali rilevanti. Successivamente, per ogni classe vengono illustrati metodi e attributi.
-
+#pagebreak()
 === Struttura generale
 
 #figure(
