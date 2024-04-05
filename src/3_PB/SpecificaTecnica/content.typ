@@ -425,8 +425,8 @@ Gli oggetti all'interno di "readings" sono solamente esempi, è possibile inseri
 == Configurazione visualizzazione e sistema di allerta
 === Dashboard
 La visualizzazione dei dati attraverso #glossary[pannelli] si compone delle seguenti #glossary[dashboard] di #glossary[Grafana]. Le configurazioni delle #glossary[dashboard] vengono salvate in formato #glossary[JSON], il che permette un facile sviluppo e manutenzione. I dati per la visualizzazione sono prelevati dalle tabelle di #glossary[ClickHouse] tramite query alle tabelle #glossary[time series] e di dati agggregati. Di seguito vengono descritte le #glossary[dashboard] per il visualization layer:
-- *Dati ambientali*: visualizzazione dei dati relativi a temperatura, umidità, inquinamento dell'aria, vento e precipitazioni atmosferiche, tramite grafici a linee, mappe e indicatori; include inoltre una mappa che illustra la posizione dei sensori e il loro tipo, rappresentato con un colore diverso;
-- *Dati urbanistici*: visualizzazione dei dati relativi a parcheggi, colonne di ricarica, zone ecologiche, livello di congestione stradale e batteria delle biciclette elettriche, tramite mappe ed indicatori;
+- *Ambientale*: visualizzazione dei dati relativi a temperatura, umidità, inquinamento dell'aria, vento e precipitazioni atmosferiche, tramite grafici a linee, mappe e indicatori; include inoltre una mappa che illustra la posizione dei sensori e il loro tipo, rappresentato con un colore diverso;
+- *Urbanistica*: visualizzazione dei dati relativi a parcheggi, colonne di ricarica, zone ecologiche, livello di congestione stradale e batteria delle biciclette elettriche, tramite mappe ed indicatori;
 - *Dati grezzi*: visualizzazione dei dati grezzi provenienti dai sensori, tramite una tabella che mostra i dati in tempo reale, con la possibilità di filtrare per specifico #glossary[sensore] e per tipo;
 - *Superamento soglie*: visualizzazione dei dati relativi al superamento delle soglie di allerta per i diversi tipi di sensori; le allerte vengono visualizzate tramite una tabella che mostra il tipo di #glossary[sensore], il valore rilevato e il timestamp.
 
