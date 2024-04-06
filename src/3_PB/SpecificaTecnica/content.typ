@@ -450,7 +450,7 @@ Nella realizzazione del componente di notifica il team ha optato per mantenerlo 
 Inoltre, è risultato preferibile la rimozione delle notifiche relative al rientro nella condizione di "ok". 
 
 Ogni allerta viene definita all'interno di un "allert group" a sé stante, in modo tale che ognuna sia eseguita in contemporanea alle altre. Ogni regola verifica, a intervalli regolari di 5 minuti, se il superamento della soglia impostata si sia verificato nell'intervallo dei 5 minuti precedenti; inoltre, trattiene il valore massimo tra quelli superanti la soglia, per ogni singolo #glossary[sensore].
-
+#glossary("Grafana") permette inoltre di inserire ulteriori configurazioni relative propriamente alle modalità di invio e alla personalizzazione delle notifiche nelle sezioni "Notification Policy" e "Contact Points", garantendo un maggiore controllo e una maggiore flessibilità nella gestione delle notifiche.
 Sia le regole di allerta, le configurazioni dei canali di notifica, che le "Notification Policy", possono essere impostate tramite l'interfaccia grafica; successivamente, possono essere esportate in vari formati e inserite in file di configurazione appropriati, all'interno della directory /provisoning/alerting per garantire la persistenza. Nel nostro caso si è scelto di utilizzare il formato #glossary[JSON].
 
 Relativamente a questi elementi di configurazione, per garantire che il sistema di notifica rimanga semplice e intuitivo, ci si limita a configurare il canale di notifica e il formato delle notifiche stesse, oltre alle configurazioni relative alla loro frequenza. 
