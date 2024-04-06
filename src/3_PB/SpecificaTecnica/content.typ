@@ -447,7 +447,7 @@ Una volta che un'allerta viene rilevata, passa attraverso tre stati distinti:
 - ok: la situazione che ha innescato l'allerta è tornata alla normalità.
 
 Nella realizzazione del componente di notifica il team ha optato per mantenerlo il più semplice possibile, evitando lo stazionamento dell'allerta nella fase di "pending", in modo tale che ogni allerta venga notificata appena rilevata. 
-Inoltre, è risultato preferibile la rimozione delle notifiche relative al condizione di "ok". 
+Inoltre, è risultato preferibile la rimozione delle notifiche relative al rientro nella condizione di "ok". 
 
 Ogni allerta viene definita all'interno di un "allert group" a sé stante, in modo tale che ognuna sia eseguita in contemporanea alle altre. Ogni regola verifica, a intervalli regolari di 5 minuti, se il superamento della soglia impostata si sia verificato nell'intervallo dei 5 minuti precedenti; inoltre, trattiene il valore massimo tra quelli superanti la soglia, per ogni singolo #glossary[sensore].
 
