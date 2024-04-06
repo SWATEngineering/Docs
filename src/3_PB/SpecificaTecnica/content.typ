@@ -156,7 +156,7 @@ Possiamo quindi compartimentalizzare le varie componenti del sistema in questo m
 - *Visualization Layer*: composto unicamente da #glossary[Grafana], questo layer si occupa di visualizzare i dati elaborati, in tempo reale.
 
 
-== Diagramma del flusso di dati (#glossary[data flow diagram])
+== Diagramma del flusso di dati (#glossary[data-flow diagram])
 
 Per illustrare il funzionamento del #glossary[sistema], abbiamo utilizzato un diagramma di flusso dei dati. Questo diagramma ha permesso di rappresentare in modo chiaro e intuitivo il percorso dei dati attraverso il #glossary[sistema] e le relative elaborazioni su di essi. Abbiamo quindi identificato le diverse entità coinvolte nel processo e le relazioni tra di esse, fornendo una panoramica dettagliata di come i dati vengono acquisiti, elaborati, archiviati e visualizzati.
 
