@@ -111,6 +111,7 @@ table(
       ),
 caption: [Tabella tecnologie per la Codifica: Servizi della pipeline.])
 
+#pagebreak()
 
 == Analisi e test
 #figure(
@@ -265,11 +266,13 @@ Ad esempio la funzione `JSONExtractString` è una funzione di #glossary[ClickHou
 )
 Questo tipo di schema presenta in più, rispetto a quello precedente due tabelle per dati aggregati. La tabella "rain1m" contiene la media aritmetica, ottenuta aggregando i dati della pioggia ogni minuto per ciascun #glossary[sensore]\; invece, la tabella "rain5m_overall" contiene la media aritmetica, ottenuta aggregando i dati della pioggia ogni cinque minuti per tutti i sensori che monitorano le precipitazioni. Questi tipi di tabelle vengono popolati tramite delle #glossary[materialized views].
 
+#pagebreak()
+
 == #glossary[Architettura] dei simulatori
 Nonostante i simulatori non siano ufficialmente considerati parte integrante del prodotto dalla Proponente, il nostro team, nell'ambito del progetto didattico, ha scelto di dedicare alcune risorse alla progettazione di questa componente.
 
 Nei paragrafi successivi viene mostrata l'#glossary[architettura] individuata, tramite l'utilizzo di Diagrammi delle Classi e relative rapide descrizioni. Inoltre vengono motivati i #glossary[design pattern] individuati e le decisioni progettuali rilevanti. Successivamente, per ogni classe vengono illustrati metodi e attributi.
-#pagebreak()
+
 === Struttura generale
 
 #figure(
@@ -421,6 +424,8 @@ La struttura di un messaggio o evento, descritta in JSON sarà la seguente:
 }
 ```
 Gli oggetti all'interno di "readings" sono solamente esempi, è possibile inserirne uno solo, come ad esempio per i sensori di temperatura, che avranno solamente la lettura omonima, oppure, come nel caso del #glossary[sensore] del vento averne due: la velocità e la direzione.
+
+#pagebreak()
 
 == Configurazione visualizzazione e sistema di allerta
 === Dashboard
