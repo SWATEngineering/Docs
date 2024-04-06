@@ -28,7 +28,7 @@ Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei d
 #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf") (21/03/2024) \
  #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6p.pdf") (20/02/2024)
 
-- _Norme di Progetto v1.0_
+- _Norme di Progetto v2.0_
 - _Analisi dei Requisiti v1.0_
 
 - Regolamento progetto didattico:
