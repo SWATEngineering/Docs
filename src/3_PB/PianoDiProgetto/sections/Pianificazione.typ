@@ -60,7 +60,7 @@ Il team ha programmato una pausa di due settimane per consentire ai membri di co
 
 *Fine*: 28/03/2024 
 
-In questa fase la concentrazione, soprattutto nel periodo iniziale, si focalizza sulla progettazione. Si inizia la stesura del documento delle _Specifiche Tecniche_ e lo studio di un'#glossary[architettura] adeguata. Iniziano il loro ciclo di vita anche il _Manuale Utente_ e le _Specifiche Tecniche_.
+In questa fase la concentrazione, soprattutto nel periodo iniziale, si focalizza sulla progettazione. Si inizia la stesura del documento della _Specifica Tecnica_ e lo studio di un'#glossary[architettura] adeguata. Iniziano il loro ciclo di vita anche il _Manuale Utente_ e la _Specifica Tecnica_.
 Attraverso le fasi di progettazione e sviluppo ha inizio la creazione del progetto vero e proprio, utilizzando le conoscenze acquisite durante la creazione del #glossary[PoC]. Lo sviluppo includerà anche le fasi di testing del prodotto.
 
 #include "PianificazioneSprint/NonoSprint.typ"

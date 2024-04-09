@@ -12,5 +12,5 @@
     - Aggiornare pianificazione e preventivo pertinenti allo #glossary[sprint] 9;
     - Aggiungere pianificazione e preventivo degli #glossary[sprint] 10 e 11, come parte della pianificazione a breve termine;
   - Iniziare a progettare la struttura architetturale del prodotto, individuando i #glossary[design pattern] più adeguati;
-  - Iniziare a studiare struttura e contenuti della #glossary[documentazione] richiesta alla seconda revisione #glossary[PB], con particolare attenzione alle _Specifiche Tecniche_;
-  - Iniziare la stesura delle _Specifiche Tecniche_.
+  - Iniziare a studiare struttura e contenuti della #glossary[documentazione] richiesta alla seconda revisione #glossary[PB], con particolare attenzione alla _Specifica Tecnica_;
+  - Iniziare la stesura della _Specifica Tecnica_.

@@ -4,16 +4,16 @@
 
 == Nono #glossary[sprint]
 
-*Inizio*: Venerdì 16/01/2024
+*Inizio*: Venerdì 16/02/2024
 
-*Fine*: Giovedì 22/01/2024 
+*Fine*: Giovedì 22/02/2024 
 
 #rendicontazioneOreAPosteriori(sprintNumber: "09")
 
 #rendicontazioneCostiAPosteriori(sprintNumber: "09")
 
 === Analisi a posteriori
-La retrospettiva ha evidenziato come il preventivo del totale delle ore sia stato rispettato. Tuttavia, si possono notare alcune differenze nell'ammontare delle ore di alcuni ruoli. In particolare, il ruolo del Verificatore è quello che risulta più differente rispetto al preventivo, con una totale delle ore inferiore. Questo non risulta particolarmente preoccupante. Infatti, si motiva con il fatto che le modifiche e integrazioni apportate ai documenti sono state minori rispetto a #glossary[sprint] passati. Si nota invece l'accuratezza del preventivo per il ruolo di Progettista; nonostante questo sia stato utilizzato per la prima volta, con l'inizio della stesura delle _Specifiche Tecniche v1.0_, esso risulta esser stato stimato con precisione, indice di una maturata consapevolezza nella pianificazione delle attività. Con un leggero superamento le ore da Analista preventivate hanno permesso di rispettare la pianificazione e di completare la correzione dell'_Analisi dei Requisiti v1.0_, secondo le correzioni ricevute nella prima revisione #glossary[RTB].
+La retrospettiva ha evidenziato come il preventivo del totale delle ore sia stato rispettato. Tuttavia, si possono notare alcune differenze nell'ammontare delle ore di alcuni ruoli. In particolare, il ruolo del Verificatore è quello che risulta più differente rispetto al preventivo, con una totale delle ore inferiore. Questo non risulta particolarmente preoccupante. Infatti, si motiva con il fatto che le modifiche e integrazioni apportate ai documenti sono state minori rispetto a #glossary[sprint] passati. Si nota invece l'accuratezza del preventivo per il ruolo di Progettista; nonostante questo sia stato utilizzato per la prima volta, con l'inizio della stesura della _Specifica Tecnica_, esso risulta esser stato stimato con precisione, indice di una maturata consapevolezza nella pianificazione delle attività. Con un leggero superamento le ore da Analista preventivate hanno permesso di rispettare la pianificazione e di completare la correzione dell'_Analisi dei Requisiti v1.0_, secondo le correzioni ricevute nella prima revisione #glossary[RTB].
 Con la fine delle lezioni il team non ha più avuto modo di incontrarsi fisicamente; questo ha portato alla potenziale manifestazione del rischio RC1. Una strategia che si è rivelata efficace nell'inibire questo rischio è stata la scelta di svolgere gli #glossary("stand-up meeting") remoti con una frequenza di due volte a settimana, che insieme al meeting interno settimanale, ha permesso di tenere sotto controllo l'avanzamento delle attività e di discutere tempestivamente eventuali problematiche. Lo svolgimento di tali meeting infrasettimanali si è rivelato un impegno sostenibile per il gruppo e quindi una pratica da mantenere anche in futuro.
 
 ==== Aggiornamento della pianificazione e gestione dei rischi
