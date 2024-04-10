@@ -58,7 +58,7 @@ La qualità di processo si fonda sull'assunto che, al fine di ottenere un prodot
 Il concetto di qualità di processo viene dunque applicato all'intero spettro di attività, pratiche e metodi utilizzati lungo l'intero ciclo di vita del software.
 In sintesi, la qualità di processo mira a rendere la qualità una parte integrante del prodotto, garantendo che sia costruita nel processo stesso e non sia solo un obiettivo secondario.
 Di seguito vengono presentate le metriche che il team si impegna a soddisfare nel contesto della qualità di processo.
-Come presentato nel documento _Norme di Progetto v1.0_, la sigla MPC sta ad indicare le metriche di processo.
+Come presentato nel documento _Norme di Progetto v2.0_, la sigla MPC sta ad indicare le metriche di processo.
 
 == Processi primari
 
@@ -127,7 +127,7 @@ caption: [Tabella metriche per il processo di gestione della qualità.]
 La qualità di prodotto è volta alla valutazione del software realizzato: l'attenzione è rivolta ad attributi quali usabilità, funzionalità, affidabilità, manutenibilità, ma più in generale alle prestazioni del prodotto.
 L'obiettivo  è, dunque, assicurare che il software non solo implementi le funzionalità volute dal cliente e funzioni correttamente, ma che lo faccia seguendo le indicazioni di precisi standard di qualità.
 Di seguito vengono presentate le metriche che il team si impegna a soddisfare nel contesto della qualità di prodotto.
-Come presentato nel documento _Norme di Progetto v1.0_ la sigla MPD sta ad indicare le metriche di prodotto.
+Come presentato nel documento _Norme di Progetto v2.0_ la sigla MPD sta ad indicare le metriche di prodotto.
 
 
 == Funzionalità
@@ -201,9 +201,9 @@ caption: [Tabella metriche per l'affidabilità del prodotto.])
             align: (x, y) => (center, center, center,center).at(x),
             fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
             [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-            [MPD-CPUU],[Maximum CPU usage],[\<=20%],[\<= 15%], 
-            [MPD-RAMU],[Maximum RAM usage],[\<= 3 Gb],[\<= 2Gb], 
-            [MPD-TDE],[Tempo Di Elaborazione],[\<= 6s], [\<= 4s],
+            [MPD-CPUU],[Maximum CPU usage],[\≤ 20%],[\≤ 15%], 
+            [MPD-RAMU],[Maximum RAM usage],[\≤ 3 GB],[\≤ 2GB], 
+            [MPD-TDE],[Tempo Di Elaborazione],[\≤ 6s], [\≤ 4s],
       ),
 caption: [Tabella metriche per l'efficienza del prodotto.])
 
