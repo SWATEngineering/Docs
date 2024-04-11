@@ -111,22 +111,22 @@ La seguente sezione fornisce istruzioni dettagliate su come installare e avviare
 == Creare API Key
 Per il corretto funzionamento del simulatore di biciclette elettriche è necessario registrarsi o accedere al seguente servizio: #link("https://openrouteservice.org/dev/#/signup") per ottenere l'API key. Una volta effettuato l'accesso a questa piattaforma:
 
-- spostarsi nella sezione "Dashboard";
-- se non ancora accettati, accettare i "Termini e Condizioni", nella sotto-sezione "Profile";
-- nella sotto-sezione "Tokens" creare un nuovo token scegliendo la versione "Standard" e un nome a piacemento;
+- Spostarsi nella sezione "Dashboard";
+- Se non ancora accettati, accettare i "Termini e Condizioni", nella sotto-sezione "Profile";
+- Nella sotto-sezione "Tokens" creare un nuovo token scegliendo la versione "Standard" e un nome a piacemento;
 - Copiare l'API Key generata a schermo e salvarla per dopo.
 
 == Creare Discord Webhook
-Il sistema di notifiche utilizza un canale in un server Discord per inviare i propri messaggi. In un server di nostra appartenenza, o in uno nel quale abbiamo i permessi:
-- cliccare col tasto destro su un canale testuale;
-- cliccare sulla voce "Modifica Canale";
-- nella nuova schermata cliccare sulla voce "Integrazioni";
-- cliccare sulla voce "Crea Webhook";
-A questo punto vedrete il vostro webhook creato, potete dargli un nome a piacimento, modificare eventualmente il canale testuale a cui è collegato e copiare il webhook.
-Copiatelo e salvatelo per lo step successivo.
+Il sistema di notifiche utilizza un canale in un server Discord per inviare i propri messaggi. In un server di appartenenza dell'utente, o in uno nel quale si possiedono i permessi:
+- Cliccare col tasto destro su un canale testuale;
+- Cliccare sulla voce "Modifica Canale";
+- Nella nuova schermata cliccare sulla voce "Integrazioni";
+- Cliccare sulla voce "Crea Webhook".
+A questo punto è possibile vedere il webhook creato, dare ad esso un nome a piacimento, modificare eventualmente il canale testuale a cui è collegato e copiare il webhook stesso.
+Occorre copiare e salvare il webhook appena creato per passare allo step successivo.
 
 == Variabili d'Ambiente
-Nella directory della repository clonata al passo 1. allo stesso livello del file "README.md" creare un file chiamato ".env" (il punto è importante) con il seguente contenuto:
+Nella directory della repository clonata al passo 1. allo stesso livello del file "README.md" occorre creare un file chiamato ".env" (il punto è importante) con il seguente contenuto:
 ```env
 ORS_API_KEY=<API_KEY_GENERATA_AL_PASSO_2>
 DISCORD_WEBHOOK_URL=<API_KEY_GENERATA_AL_PASSO_3>
@@ -234,6 +234,8 @@ I #glossary[pannelli] riportano in alto a sinistra il titolo e in alto a destra 
 )
 
 ==== Formati dei grafici contenuti nei #glossary[pannelli]
+
+Di seguito vengono illustrate le tipologie di grafici adottati all'interno dei vari #glossary[pannelli] nelle #glossary[dashboard] e le possibili interazioni dell'utente con questi ultimi.
 
 ===== Grafici a linee (formato "#glossary[Time series]")
 
