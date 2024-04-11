@@ -725,13 +725,13 @@ In questa sezione vengono descritti i test di integrazione del prodotto software
             Verificare che i dati generati dal simulatore dei parcheggi siano correttamente memorizzati nel database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal simulatore di pioggia siano correttamente memorizzati nel database.
+            Verificare che i dati generati dal simulatore di precipitazioni siano correttamente memorizzati nel database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal simulatore di pioggia siano correttamente aggregati e memorizzati nel database.
+            Verificare che i dati generati dal simulatore di precipitazioni siano correttamente aggregati e memorizzati nel database.
       ],"S",[]),
       ([
-            Verificare se i dati della media mobile generati dal simulatore di pioggia siano correttamente inseriti nel database.
+            Verificare se i dati della media mobile generati dal simulatore di precipitazioni siano correttamente inseriti nel database.
       ],"S",[
 
       ]),
@@ -1078,13 +1078,13 @@ Il team si è occupato infatti di ultimare tutta la #glossary[documentazione] ne
 
 Questo risultato, nonostante la correlazione causale individuata, suggerisce ugualmente che qualcosa nel progetto non è stato gestito al meglio: la forte attenzione posta sulla #glossary[documentazione] nell'ultimo #glossary[sprint] è una manifestazione del tentativo del team di rincorrere gli obiettivi di una pianificazione poco rigorosa. Ne deriva che il team, in vista della seconda revisione, dovrà impegnarsi a migliorare il processo relativo alla gestione di progetto, in modo da poter essere sempre sicuri che gli obiettivi fissati siano effettivamente raggiunti nei termini dettati dalla pianificazione.
 
-*#glossary[PB]*: L'analisi del grafico rivela un trend interessante nell'EAC a partire dall'ottavo #glossary[sprint] fino al decimo. Durante l'ottavo #glossary[sprint], l'EAC mostra una leggera tendenza al rialzo, che si intensifica fino al suo picco nel decimo #glossary[sprint]. Questo aumento è attribuibile alla decisione del team di prendere una breve pausa, motivata dalla necessità di affrontare la sessione degli esami e partecipare a colloqui relativi all'#glossary[RTB].
+*#glossary[PB]* L'analisi del grafico rivela un trend interessante nell'EAC a partire dal nono #glossary[sprint]. Durante tale #glossary[sprint], infatti, l'EAC mostra una leggera tendenza al rialzo, che si intensifica fino al suo picco nel decimo #glossary[sprint]. Questo aumento è attribuibile alla decisione del team di prendere una breve pausa, motivata dalla necessità di affrontare la sessione degli esami e partecipare ai colloqui previsti dalla prima revisione #glossary[RTB].
 
-La pausa, sebbene necessaria, ha inevitabilmente influenzato il ritmo e la produttività del team, causando un rallentamento nelle attività del progetto e un aumento dei costi associati alla gestione delle risorse durante questo periodo. Questa interruzione temporanea ha comportato un leggero incremento nei costi previsti per il completamento del progetto, evidenziato dall'aumento dell'EAC nei sprint successivi.
+La pausa, sebbene necessaria, ha inevitabilmente influenzato il ritmo e la produttività del team negli #glossary[sprint] immediatamente successivi all'#glossary[RTB], causando un rallentamento nelle attività del progetto e un aumento dei costi associati alla gestione delle risorse durante questo periodo. In altre parole, uesta interruzione temporanea ha comportato un leggero incremento nei costi previsti per il completamento del progetto, evidenziato dall'aumento dell'EAC; dato che il team ha utilizzato meno risorse negli #glossary[sprint] 9 e 10, l'EV è risultato considerevolmente più basso rispetto all'AC, il che ha portato l'EAC a crescere e a discostarsi dal BAC pianificato inizialmente.
 
-Tuttavia, è interessante notare che nonostante questo rialzo nell'EAC fino allo #glossary[sprint] decimo, il suo valore è gradualmente diminuito nel corso degli sprint successivi fino a raggiungere un valore ottimale verso la fine dello #glossary[sprint] quattordicesimo. Questa tendenza al ribasso può essere attribuita alla ripresa del ritmo di lavoro dopo la pausa, all'ottimizzazione delle risorse e alla migliore gestione delle attività del progetto da parte del team.
+Tuttavia, è interessante notare che nonostante questo rialzo nell'EAC fino al decimo #glossary[sprint], il suo valore è diminuito in modo ripido nel corso degli #glossary[sprint] successivi fino a raggiungere il valore ottimale verso la fine dell'ultimo #glossary[sprint] previsto. Questa tendenza al ribasso può essere attribuita alla ripresa del ritmo di lavoro, all'ottimizzazione delle risorse e alla migliore gestione delle attività del progetto da parte del team. Infatti, il numero delle ore produttive effettivamente impiegate dal team è mediamente raddoppiato rispetto a quelle che hanno caratterizzato gli #glossary[sprint] 9 e 10, segno indiscutibile del fatto che il team ha avuto successo nell'aumentare il valore del lavoro svolto e, di conseguenza, nell'avvicinare l'EV all'AC, facendo sì che L'EAC diminuisse fino a raggiungere il BAC.
 
-In definitiva, sebbene la pausa abbia temporaneamente influenzato i costi e i tempi di completamento del progetto, il team è riuscito a recuperare il terreno perso, riducendo l'EAC e portando il progetto verso il raggiungimento dei suoi obiettivi entro la fine del ciclo degli #glossary[sprint].
+In definitiva, sebbene la pausa abbia temporaneamente influenzato i costi previsti per il completamento del progetto, il team è riuscito a recuperare il terreno perso, riducendo l'EAC e portando il progetto verso il raggiungimento dei suoi obiettivi entro la fine degli #glossary[sprint] previsti prima della seconda revisione #glossary[PB].
 
 
 #pagebreak()
@@ -1104,11 +1104,13 @@ Il cambiamento più significativo si è verificato durante il quinto #glossary[s
 Il team si aspetta che il #glossary[way of working] consolidato nel corso del progetto permetta di recuperare quanto perso nel corso dei primi #glossary[sprint].
 Durante il settimo e l'ottavo #glossary[sprint] le due metriche hanno mantenuto il gradiente che ci si aspettava.
 
-*#glossary[PB]*: la metrica SV ha continuato a decrescere fino a raggiungere quasi lo 0% #glossary[sprint] 13. 
-Il raggiungimento di quasi lo 0% per l'SV è un segnale positivo che indica un'efficace gestione del tempo e delle risorse all'interno del progetto. Questo risultato indica che il team ha lavorando in modo efficiente per mantenere il progetto in linea con la pianificazione prevista. Il continuo miglioramento della SV nel corso degli #glossary[sprint] dimostra un impegno costante.
-Per quanto riguarda la Budget Variance (BV), si nota un significativo cambiamento di tendenza tra lo #glossary[sprint] 8 e lo #glossary[sprint] 10. Durante questo intervallo, la linea subisce un leggero calo negativo, evidenziando una discrepanza tra il budget pianificato e le spese effettive. Questo decremento è principalmente attribuibile alla pausa programmata per la sessione di esami e colloqui per l'#glossary[RTB]. Tuttavia, dallo #glossary[sprint] 10 in poi, la linea di BV inizia a risalire gradualmente, indicando un miglioramento nella gestione delle spese e una riduzione della discrepanza tra il budget previsto e quello effettivo. Alla fine del periodo considerato, la metrica BV quasi ritorna allo 0%, suggerendo un raggiungimento dell'obiettivo di controllo delle spese.
+*#glossary[PB]* La metrica SV ha continuato a decrescere fino a raggiungere lo 0% circa (0.18% con esattezza) al termine dello #glossary[sprint] 13. 
+Il raggiungimento di questo traguardo per l'SV è un segnale positivo che indica un'efficace gestione del tempo e delle risorse all'interno del progetto. Si può affermare che il team sia riuscito a lavorare in modo efficiente e a mantenere il progetto in linea con la pianificazione prevista. Il continuo miglioramento della SV nel corso degli #glossary[sprint] dimostra un impegno costante; è interessante notare come, rispetto all'andamento della SV negli #glossary[sprint] antecedenti all'#glossary[RTB], che è risultato essere piuttosto altalenante, questa si sia stabilizzata nel suo andamento linearmente decrescente nel corso del periodo antecedente alla #glossary[PB]. Evidentemente il team è riuscito nel suo intento di effettuare una pianificazione più realistica e di aderirvi rigorosamente, con un ritmo di lavoro pressochè invariato negli ultimi #glossary[sprint].
 
 
+Per quanto riguarda la Budget Variance (BV), si nota un significativo cambiamento di tendenza tra gli #glossary[sprint] 9 e 10. Durante questo intervallo, la linea subisce un  calo negativo, evidenziando una discrepanza tra il budget pianificato e le spese effettive. Come affermato precedentemente, questo decremento è principalmente attribuibile al ritmo di lavoro poco sostenuto che ha caratterizzato i primi due #glossary[sprint] successivi alla pausa programmata. Tuttavia, dallo #glossary[sprint] 11 in poi, la linea che descrive la BV inizia a risalire rapidamente, indicando un miglioramento nella gestione delle spese e una riduzione della discrepanza tra il budget previsto e quello effettivo. Alla fine del periodo considerato, la metrica BV raggiunge il -0.45%, un valore ben al di sotto della soglia di accettazione costituita dalla variazione del ±10% dal BAC.
+
+#pagebreak()
 === Actual Cost e Estimate To Complete
 
 #figure(
@@ -1123,10 +1125,8 @@ Il grafico mostra che effettivamente il team ha mantenuto un ritmo di avanzament
 Tuttavia, si può evincere anche che il progetto risulta essere leggermente in ritardo rispetto alle tempistiche inizialmente previste.
 Considerando che gli otto #glossary[sprint] effettuati corrispondono ad un periodo temporale di 10 settimane, esattamente la metà del periodo di tempo previsto per il completamento dell'intero progetto, ci si aspettava che le due metriche delineate nel grafico si fossero già incrociate giunti a questo punto.
 
-*#glossary[PB]* da grafico possiamo notare come l'AC sia continuato a salire fino a fermarsi un po' al di sotto dell'EAC. Questo indica che i costi effettivamente sostenuti sono stati inferiori alle stime previste per completare il progetto, il che suggerisce un'efficace gestione dei costi e una buona efficienza nella loro allocazione.
-Inoltre l'ETC è continuato a diminuire nel corso degli sprint, indicando una riduzione progressiva nella stima dei costi necessari per completare il progetto. L'ETC non ha toccato lo 0, poiché delle 570 ore previste ne sono state utilizzate leggermente di meno,infatti il team ha preso la decisione di non effettuare la terza revisione #glossary[CA].
-
-Tuttavia, solamente intorno allo #glossary[sprint] 10 le 2 metriche si sono incrociate.
+*#glossary[PB]* Dal grafico si può notare come l'AC sia continuato a salire fino a fermarsi un po' al di sotto dell'EAC. Questo indica che i costi effettivamente sostenuti sono stati inferiori alle stime previste per completare il progetto, il che suggerisce un'efficace gestione dei costi. Bisogna sottolineare, inoltre, che, come illustrato nell'ultimo consuntivo all'interno del _Piano di Progetto v2.0_, il team si è ritrovato ad avere a disposizione un budget leggermente più ampio rispetto a quanto preventivato per lo svolgimento del progetto sino alla #glossary[PB] a causa della rinuncia alla #glossary[CA]; il team ha dunque portato a termine gli obiettivi del periodo pre-#glossary[PB] disponendo ancora di alcune risorse inutilizzate, per quanto limitate.
+Inoltre, l'ETC è continuato a diminuire nel corso degli #glossary[sprint], indicando una riduzione progressiva nella stima dei costi necessari per completare il progetto. Per lo stesso ragionamento fatto prima, l'ETC non ha toccato lo 0, poiché delle 570 ore previste ne sono state utilizzate leggermente meno.
 
 
 === Earned Value e Planned Value
@@ -1140,9 +1140,9 @@ Tuttavia, solamente intorno allo #glossary[sprint] 10 le 2 metriche si sono incr
 
 *#glossary[RTB]* L'EV rappresenta il valore prodotto dal progetto ossia il valore dei #glossary[deliverable] rilasciati fino al momento della misurazione in seguito alle attività svolte; il PV rappresenta invece il valore del lavoro pianificato fino a un dato momento. Nonostante sia ancora prematuro confrontare le due metriche con l'EAC, si può notare che il PV si mantiene al di sotto dell'EV, seppur di poco, segno che i preventivi fatti finora sono stati leggermente ottimistici rispetto alla spesa effettiva. Si può notare come le due metriche a partire dal sesto #glossary[sprint] tendano ad avvicinarsi: ciò denota che il team sta iniziando effettivamente a produrre dei preventivi di periodo che rispecchiano maggiormente la realtà effettiva, anche per come viene fotografata nei consuntivi di periodo.
 
-*#glossary[PB]* Durante lo sviluppo del progetto, le metriche EV e PV hanno mostrato un costante avvicinamento, fino a quasi coincidere intorno allo sprint 12.
+*#glossary[PB]* Durante lo sviluppo del progetto, le metriche EV e PV hanno mostrato un costante avvicinamento, quasi fino a coincidere intorno allo #glossary[sprint] 12.
 Questo progressivo avvicinamento suggerisce che i preventivi pianificati sono diventati sempre più precisi man mano che il progetto è avanzato.
-Il fatto che queste due metriche si siano avvicinate sempre di più suggerisce che le previsioni iniziali sono state riviste e adattate in modo accurato sulla base dell'andamento effettivo del progetto. Questo indica una maggiore solidità nella pianificazione e una migliore comprensione dei requisiti e delle risorse necessarie per il completamento del progetto. Inoltre, il quasi coincidere delle due metriche intorno allo sprint 12 indica che il progetto è stato eseguito in modo conforme alle previsioni e che la gestione del progetto è stata efficace nel monitorare e mantenere il progresso in linea con il piano stabilito.
+Il fatto che queste due metriche si siano avvicinate sempre di più suggerisce che le previsioni iniziali sono state riviste e adattate in modo accurato sulla base dell'andamento effettivo del progetto. Ciò indica anche una maggiore solidità nella pianificazione e una migliore comprensione dei requisiti e delle risorse necessarie per il completamento del progetto. Inoltre, il quasi coincidere delle due metriche intorno allo #glossary[sprint] 12 indica che il progetto è stato eseguito in modo conforme alle previsioni e che la gestione del progetto è stata efficace nel monitorare e mantenere il progresso in linea con il piano stabilito.
 
 
 // == Qualità di Processo - Codifica TODO: non ha senso in questa fase del progetto
@@ -1210,9 +1210,9 @@ caption: [Metriche della codifica per lo sprint 12.])
   ],
 )
 
-Nell'ambito delle metriche di codifica, si è verificata un'unica situazione di violazione riguardante la metrica ATC (Attributi per Classe), la quale è stata risolta nel corso dell'ultimo sprint. È importante sottolineare che gli attributi di classe, i parametri per metodo (PM) e il numero di righe per funzione (LCM) sono tutti conformi ai limiti accettabili.
+Nell'ambito delle metriche di codifica, si è verificata un'unica situazione di violazione riguardante la metrica ATC (Attributi per Classe), la quale è stata risolta nel corso dell'ultimo #glossary[sprint]. È importante sottolineare che gli attributi di classe, i parametri per metodo (PM) e il numero di righe per funzione (LCM) sono tutti conformi ai limiti accettabili.
 
-
+#pagebreak()
 == Qualità di processo - gestione della qualità
 
 === Metriche Non Soddisfatte
@@ -1224,7 +1224,9 @@ Nell'ambito delle metriche di codifica, si è verificata un'unica situazione di 
   ],
 )
 Le Metriche Non Soddisfatte corrispondono alle metriche MPC-CO, MPC-CPI, MPC-EAC. In concomitanza con l'ottavo #glossary("sprint"), la misurazione di MPC-CO è rientrata all'interno del valore di accettazione. Per quanto riguarda MPC-CPI e MPC-EAC, essendo estremamente legate tra loro, si rimanda alle considerazioni relative a MPC-EAC.
-Durante lo sprint 11 e 12, la metrica EAC si è collocata entro il suo intervallo accettabile, determinando di conseguenza un posizionamento adeguato anche per la metrica CPI. Durante lo sprint 12, le metriche non soddisfatte erano riconducibili ai requisiti obbligatori soddisfatti, oltre a due violazioni nella metrica ATC (ovvero il numero di attributi per classe). Tuttavia, nello sprint 13, tutte le metriche sono tornate ai valori desiderati, non risultando più metriche non soddisfatte.
+
+
+Durante gli #glossary[sprint] 11 e 12, la metrica CPI si è collocata entro il suo intervallo accettabile, determinando di conseguenza un posizionamento adeguato anche per la metrica EAC.  Durante lo #glossary[sprint] 12, le metriche non soddisfatte erano riconducibili ai requisiti obbligatori soddisfatti, oltre a due violazioni nella metrica ATC (ovvero il numero di attributi per classe). Tuttavia, a partire dallo #glossary[sprint] 13, tutte le metriche hanno raggiunto i valori desiderati e il numero di metriche non soddisfatte è calato a 0.
 
 
 // == Qualità di prodotto
@@ -1241,7 +1243,7 @@ Durante lo sprint 11 e 12, la metrica EAC si è collocata entro il suo intervall
   ],
 )
 
-Dall'analisi del grafico emerge che tutti i requisiti obbligatori sono stati soddisfatti nel corso dello sprint 13. Inoltre, si è registrato un notevole progresso anche per quanto riguarda i requisiti desiderabili, con una percentuale di soddisfacimento pari al 92%. Tuttavia, risulta evidente che i requisiti opzionali sono stati realizzati solo parzialmente, raggiungendo il 33% della loro totalità.
+Dall'analisi del grafico emerge che tutti i requisiti obbligatori sono stati soddisfatti nel corso dello #glossary[sprint] 13. Inoltre, si è registrato un notevole progresso anche per quanto riguarda i requisiti desiderabili, con una percentuale finale di soddisfacimento pari al 92%. Tuttavia, risulta evidente che i requisiti opzionali sono stati realizzati solo parzialmente, raggiungendo il 33% della loro totalità.
 
 Si rimanda al documento _Specifiche Tecniche v1.0_ per vedere la lista completa dei requisiti e il relativo soddisfacimento.
 
@@ -1255,11 +1257,11 @@ Si rimanda al documento _Specifiche Tecniche v1.0_ per vedere la lista completa 
 )
 
 FAN-IN rappresenta il numero di moduli o componenti direttamente collegati o dipendenti da un modulo o una funzione specifica. 
-SFOUT rappresenta il numero di dipendenze o connessioni che un componente o modulo particolare ha con altri componenti o moduli. Misura quanti altri elementi dipendono o interagiscono con un dato elemento all'interno di un sistema.
+SFOUT rappresenta il numero di dipendenze o connessioni che un componente o modulo particolare ha con altri componenti o moduli. Misura quanti altri elementi dipendono o interagiscono con un dato elemento all'interno di un #glossary[sistema].
 
-L'analisi dei valori numerici evidenzia che il fan-in si attesta intorno al valore 2,6, indicando che ogni modulo o componente specifico ha in media circa 2,6 altre parti del sistema che dipendono direttamente da esso. Questo valore suggerisce che, sebbene ci sia un certo grado di dipendenza da parte di altre parti del sistema, non è così elevato da indicare una massima utilizzazione del modulo da parte di altre parti del sistema.
+L'analisi dei valori numerici evidenzia che il fan-in si attesta intorno al valore 2,6, indicando che ogni modulo o componente specifico ha in media circa 2,6 altre parti del #glossary[sistema] che dipendono direttamente da esso. Questo valore suggerisce che, sebbene ci sia un certo grado di dipendenza da altre parti del #glossary[sistema], questo non è così elevato da indicare una massima utilizzazione del modulo da altre parti del #glossary[sistema].
 
-Per quanto riguarda il fan-out, che si attesta intorno al valore di 5,62, questo indica che ogni modulo ha in media circa 5,62 dipendenze o connessioni con altri moduli o componenti all'interno del sistema. Un valore così elevato di fan-out potrebbe suggerire che alcuni moduli hanno molte dipendenze da altri moduli, il che potrebbe aumentare la complessità del sistema e rendere più difficile la gestione dei moduli stessi.
+Per quanto riguarda il fan-out, che si attesta intorno al valore di 5,62, questo indica che ogni modulo ha in media circa 5,62 dipendenze o connessioni con altri moduli o componenti all'interno del #glossary[sistema]. Un valore così elevato di fan-out potrebbe suggerire che alcuni moduli hanno molte dipendenze da altri moduli, il che potrebbe aumentare la complessità del #glossary[sistema] e rendere più difficile la gestione dei moduli stessi.
 
 
 
@@ -1273,7 +1275,7 @@ Per quanto riguarda il fan-out, che si attesta intorno al valore di 5,62, questo
   ],
 )
 
-Durante il corso degli sprint, il numero massimo di click necessari per accedere a tutte le funzionalità del prodotto è rimasto costante a cinque. Questo rappresenta il valore ideale, confermando l'efficacia dell'interfaccia utente nel garantire un accesso rapido e diretto alle varie funzionalità del prodotto.
+Durante il corso degli #glossary[sprint], il numero massimo di click necessari per accedere a tutte le funzionalità del prodotto è rimasto costante a cinque. Questo rappresenta il valore ideale, confermando l'efficacia dell'interfaccia utente nel garantire un accesso rapido e diretto alle varie funzionalità del prodotto.
 
 #figure(
   image("./assets/valutazione-metriche/TA.png", width: 85%),
@@ -1283,8 +1285,8 @@ Durante il corso degli sprint, il numero massimo di click necessari per accedere
 )
 
 Per quanto riguarda la metrica del tempo di apprendimento (TA), è stato condotto un test regolare da parte di una persona estranea al progetto una volta a settimana al fine di valutare la facilità d'uso del prodotto. Inizialmente, durante il primo test di familiarizzazione, è stato registrato un tempo di apprendimento di circa dieci minuti. Questo periodo è stato considerato necessario per consentire alla persona di prendere confidenza con l'interfaccia e le funzionalità del prodotto.
-Tuttavia, è interessante notare che, nello sprint 14, il tempo di apprendimento è diminuito a otto minuti. Questa diminuzione del tempo necessario per familiarizzare con il prodotto suggerisce un miglioramento nell'usabilità e nella chiarezza dell'interfaccia utente. 
-Considerando che il test veniva effettuato una volta a settimana, è plausibile dedurre che un amministratore pubblico che utilizzi il prodotto quotidianamente dovrebbe riuscire a familiarizzare e comprendere il suo funzionamento in una manciata di minuti.
+Tuttavia, è interessante notare che, nello #glossary[sprint] 14, il tempo di apprendimento è diminuito a otto minuti. Questa diminuzione del tempo necessario per familiarizzare con il prodotto suggerisce un miglioramento nell'usabilità e nella chiarezza dell'interfaccia utente. 
+Considerando che il test è stato effettuato una volta a settimana, è plausibile dedurre che un #glossary[amministratore pubblico] che utilizzi il prodotto quotidianamente dovrebbe riuscire a familiarizzare e comprendere il suo funzionamento in una manciata di minuti.
 
 === Affidabilità
 
@@ -1299,7 +1301,7 @@ Nel grafico, osserviamo che lo statement coverage (SC) rimane costantemente elev
 
 Il fatto che entrambe le metriche siano superiori all'80% indica che il codice è soggetto a un buon livello di copertura dai test. Una copertura dello statement così elevata suggerisce che la maggior parte del codice è stata eseguita durante i test, mentre un branch coverage superiore all'80% indica che la maggior parte dei rami decisionali del codice è stata attraversata dai test.
 
-In conclusione, nonostante una leggera diminuzione nel branch coverage, entrambe le metriche rimangono ben al di sopra del minimo richiesto per una valutazione positiva della copertura del codice. Questo suggerisce che il codice è soggetto a un adeguato livello di test e che la sua qualità complessiva è solida e affidabile.
+In conclusione, nonostante una leggera diminuzione nel branch coverage, entrambe le metriche rimangono ben al di sopra del minimo richiesto per una valutazione positiva della copertura del codice. Questo suggerisce che il codice è soggetto ad un livello adeguato di testing e che la sua qualità complessiva è solida e affidabile.
 
 #figure(
   image("./assets/valutazione-metriche/PTCP.png", width: 85%),
@@ -1315,18 +1317,18 @@ Tutti i test prodotti sono stati superati con successo, senza alcun test fallito
 === Efficienza
 
 Le metriche di efficienza sono state calcolate utilizzando un elaboratore con le seguenti caratteristiche:
-- 16 GB RAM LPDDR5
-- CPU M1 PRO 10 Core 3.2GHz
-Abbiamo valutato il sistema a pieno carico, con più di quaranta sensori attivi, che generavano una scrittura al secondo ognuno, per più di sei ore, senza che si verificassero rallentamenti del sistema. I risultati sono rimasti invariati durante il corso del progetto, dato che le componenti sono rimaste le stesse e sono in grado di gestire una mole di dati molto superirore a quella richiesta per il progetto.
+- 16 GB RAM LPDDR5;
+- CPU M1 PRO 10 Core 3.2GHz.
+È stato valutato il rendimento del #glossary[sistema] a pieno carico, con più di quaranta simulatori di sensori attivi, ognuno generante una scrittura al secondo, per più di sei ore, senza che si verificassero rallentamenti significativi. I risultati sono rimasti invariati durante il corso del progetto, dato che le componenti sono rimaste le stesse e sono in grado di gestire una mole di dati molto superirore a quella richiesta per il progetto.
 #figure(
 table(
       columns:(auto,auto,auto),
       align: (x, y) => (center, center, center,center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
       [*Metrica*],[*Valore Medio Rilevato*],[*Valore accettazione*],
-      [MPD-CPUU],[\~12%],[\<= 20%], 
-      [MPD-RAMU],[~ 2,7 GB],[\<= 3GB], 
-      [MPD-TDE],[\~ 3s], [\<= 6s],
+      [MPD-CPUU],[\~12%],[\≤ 20%], 
+      [MPD-RAMU],[~ 2,7 GB],[\≤ 3GB], 
+      [MPD-TDE],[\~ 3s], [\≤ 6s],
 ),
 caption: [Tabella delle metriche di efficienza a massimo carico])
 
