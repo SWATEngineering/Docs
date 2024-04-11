@@ -14,18 +14,7 @@
 
 === Analisi a posteriori
 
-La retrospettiva dell'ultimo #glossary[sprint] prima della seconda revisione #glossary[PB] mostra che ancora una volta il team è stato in grado di rispettare le ore preventivate (61), impiegando 62.5 ore produttive per portare a termine le attività previste; non sorprende che la maggior parte delle ore siano state impiegate da Programmatori e Verificatori, dato che tra gli obiettivi della pianificazione vi erano la conclusione dello sviluppo del prodotto software e la revisione della #glossary[documentazione] in stile #glossary[walkthrough]. A tal proposito il team è riuscito a completare lo sviluppo del prodotto nei tempi previsti e lo presenterà alla Proponente in data 02/04/2024 per effettuare i test di accettazione ed ottenere la validazione dello stesso come #glossary[MVP]. La retrospettiva evidenzia anche che, al termine dei 6 #glossary[sprint] effettuati nel periodo di tempo trascorso tra l'#glossary[RTB] e la #glossary[PB] (effettivamente il numero di #glossary[sprint] che il team aveva previsto di dover utilizzare), le ore produttive rimanenti ammontano a 44.5 su 570 totali (7.8%) e, di conseguenza, il budget rimanente è di 847.5€ su 11.070€ totali (7.7%) a disposizione. 
-
-Se si considera che secondo il preventivo aggiornato in occasione dell'#glossary[RTB] si dovevano avere 57 ore produttive rimanenti per lo svolgimento del periodo antecedente alla terza revisione #glossary[CA], è evidente che il team, una volta deciso di non volerla effettuare, ha accelerato il ritmo di lavoro per sfruttare anche le ore in più a disposizione in un lasso di tempo più breve, senza però riuscirci del tutto; tuttavia, bisogna sottolineare anche che, per quanto il team abbia tentato di riportare con accuratezza le ore produttive impiegate all'interno dello #glossary[spreadsheet] "Time & Resource Manager", è probabile che queste siano state sottostimate nella prima parte del progetto (prima della #glossary[PB]), dato che il rapporto ore orologio su ore produttive non era facilmente individuabile per ciascun componente e ha subito variazioni significative con l'avvento della sessione di esami (il che non si è verificato dopo l'#glossary[RTB]). Per questi motivi il team si ritiene comunque soddisfatto del proprio rendimento e, soprattutto, di essere riuscito a rispettare le scandenze temporali previste dopo l'#glossary[RTB], senza dover spostare la data di consegna una seconda volta. 
-
-In occasione del termine della pianificazione, si riportano le ore cumulativamente utilizzate per ciascun ruolo rispetto a quelle preventivate per lo svolgimento di #glossary[RTB] e #glossary[PB]:
-
-- Responsabile: 61.5 ore (contro le 63 preventivate);
-- Amministratore: 83.5 ore (contro le 87 preventivate);
-- Analista: 50 ore (contro le 54 preventivate);
-- Progettista: 50 ore (contro le 60 preventivate);
-- Programmatore: 135.5 ore (contro le 139 preventivate);
-- Verificatore: 145 ore (contro le 167 preventivate).
+La retrospettiva mostra che il team è stato in grado di rispettare le ore preventivate (61), impiegando 62.5 ore produttive per portare a termine le attività previste; questo #glossary[sprint] è stato dedicato fondamentalmente alla preparazione del prodotto software e dei documenti richiesti per la prima parte della seconda revisione #glossary[PB], ossia _Analisi dei Requisiti_ e _Specifica Tecnica_. 
 
 ==== Aggiornamento della pianificazione e gestione dei rischi
 

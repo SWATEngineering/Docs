@@ -20,3 +20,4 @@ Si riportano inoltre gli elementi positivi e negativi emersi all'interno delle r
 #include "ConsuntivoSprint/DodicesimoSprint.typ"
 #include "ConsuntivoSprint/TredicesimoSprint.typ"
 #include "ConsuntivoSprint/QuattordicesimoSprint.typ"
+#include "ConsuntivoSprint/QuindicesimoSprint.typ"
