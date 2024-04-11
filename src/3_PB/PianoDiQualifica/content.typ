@@ -786,10 +786,8 @@ In questa sezione vengono descritti i test di integrazione del prodotto software
       ],"S",[]),
       ([
             Verificare che i dati generati dal simulatore del vento siano correttamente memorizzati nel database.
-      ],"S",[]),
-      ([
-           Verificare che dati memorizzati nel database siano correttamente visualizzati su Grafana.
-      ],"N/I",[])
+      ],"S",[])
+      
       
 
 
