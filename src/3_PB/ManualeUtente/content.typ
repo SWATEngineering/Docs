@@ -387,7 +387,7 @@ Come evidenziato in precedenza, è possibile ordinare i valori di tutti i campi 
 #pagebreak()
 == Dashboard "Superamento soglie"
 
-La #glossary[dashboard] "Superamento soglie" è dedita alla visualizzazione dei dati che superano determinate soglie preimpostate per i sensori che monitorano le precipitazioni, il riempimento delle zone ecologiche, il riempimento dei bacini idrici, il livello di polveri sottili nell'aria e la temperatura; in particolare, sono previsti 5 #glossary[pannelli] di tipo "Table", ognuno dedicato ad una tipologia diversa di #glossary[sensore], con campi "name", "timestamp" e "value".
+La #glossary[dashboard] "Superamento soglie" è dedita alla visualizzazione dei dati che superano determinate soglie preimpostate per i sensori che monitorano le precipitazioni, il riempimento delle zone ecologiche, il riempimento dei bacini idrici, il livello di polveri sottili nell'aria e la temperatura; in particolare, sono previsti cinque #glossary[pannelli] di tipo "Table", ognuno dedicato ad una tipologia diversa di #glossary[sensore], con campi "name", "timestamp" e "value".
 
 === #glossary[Pannelli] con grafici in formato "Table"
 
@@ -409,6 +409,15 @@ caption: [Grafico in formato Table contenente i dati superanti la soglia dei bac
 #pagebreak()
 
 == Allerte
+
+Come illustrato nella sezione precedente *Dashboard "Superamento soglie"*, esistono cinque soglie preimpostate per monitorare altrettante tipologie di sensori ambientali; nel momento in cui i dati rilevati ed inviati da un #glossary[sensore] superano una determinata soglia, questi vengono visualizzati all'interno della #glossary[dashboard] apposita, ma l'infrazione viene anche rilevata dalle "Alert rules" visibili all'interno della sezione omonima nella pagina "Alerting" e comunicata all'utente tramite una notifica sul canale Discord configurato come spiegato nella sezione "*Creare Discord Webhook*". Ogni regola o alert rule verifica, a intervalli regolari di 5 minuti, se il superamento della soglia impostata si sia verificato nei 5 minuti precedenti; inoltre, trattiene il valore massimo tra quelli superanti la soglia, per ogni singolo #glossary[sensore]. #glossary[Grafana] permette anche di configurare le modalità di invio e il formato delle notifiche nelle sezioni “Notification Policy” e “Contact Points” della pagina "Alerting", garantendo un maggiore controllo e una maggiore flessibilità nella gestione delle notifiche. 
+
+Senza apportare modifiche particolari, attualmente le notifiche vengono visualizzate all'interno del canale Discord configurato dall'utente nel modo seguente:
+
+#figure(
+image("assets/screenshots/notifiche-soglie-bacini.png",width:100%),
+caption: [Canale Discord contenente le notifiche che denotano il superamento della soglia dei bacini idrici.]
+)
 
 #pagebreak()
 = Supporto tecnico
