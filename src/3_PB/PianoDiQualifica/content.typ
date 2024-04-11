@@ -25,29 +25,28 @@ Si propone inoltre di guidare il team attraverso tutte le fasi di testing: dalla
 
 
 == Glossario
-Al fine di evitare possibili ambiguità relative al linguaggio utilizzato nei documenti, viene
-fornito il _Glossario_, nel quale sono presenti tutte le definizioni di termini aventi un significato specifico che vuole essere disambiguato. Tali termini, sono scritti in _corsivo_ e marcati con una #sub("G") a pedice.
+Al fine di evitare possibili ambiguità relative al linguaggio utilizzato nei documenti, viene fornito il _Glossario v2.0_, nel quale sono presenti tutte le definizioni di termini aventi un significato specifico che vuole essere disambiguato. Tali termini, sono scritti in _corsivo_ e marcati con una #sub("G") a pedice.
 Un'attività che comprende l'inserimento di un termine di glossario può considerarsi conclusa solo nel momento in cui il termine viene scritto e spiegato nel _Glossario_.
 
 == Riferimenti
 === Normativi
-- _Norme di Progetto v1.0_;
+- _Norme di Progetto v2.0_;
 - Documento e presentazione di capitolato d'appalto C6 - InnovaCity:
-  - _ https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf _
-  - _ https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6p.pdf _
+  - _ https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf _ (05/12/2023)
+  - _ https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6p.pdf _ (20/11/2023)
 - Regolamento di progetto:
-  - _ https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf _
+  - _ https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf _ (15/03/2024)
 
 === Informativi
 - Slide dell'insegnamento di Ingegneria del Software:
   - Qualità del software:
-    - _ https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T7.pdf _
+    - _ https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T7.pdf _ (29/11/2023)
   - Qualità di processo:
-    - _ https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T8.pdf _
+    - _ https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T8.pdf _ (05/12/2023)
   - Verifica e Validazione:
-    - _ https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T9.pdf _
-    - _ https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T10.pdf _
-    - _ https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf _
+    - _ https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T9.pdf _ (18/12/2023)
+    - _ https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T10.pdf _ (04/01/2024)
+    - _ https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T11.pdf _ (04/01/2024)
 
 #pagebreak()
 = Qualità di processo
