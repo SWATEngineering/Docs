@@ -12,7 +12,7 @@ Lo scopo del documento è fornire istruzioni dettagliate sull'utilizzo del prodo
 Lo scopo del prodotto è la realizzazione di un sistema di persistenza dati e successiva visualizzazione di questi, provenienti da sensori dislocati geograficamente. Tale piattaforma consentirà all'#glossary("amministratore pubblico") di acquisire una panoramica completa delle condizioni della città, facilitando così la presa di decisioni informate e tempestive riguardo alla gestione delle risorse e all'implementazione di servizi.
 
 == Glossario
-Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei documenti, viene fornito il _Glossario v1.0_, nel quale sono presenti tutte le definizioni di termini aventi uno specifico significato che vuole essere disambiguato. Tali termini, sono scritti in  corsivo e marcati con una G a pedice.
+Al ﬁne di evitare possibili ambiguità relative al linguaggio utilizzato nei documenti, viene fornito il _Glossario v2.0_, nel quale sono presenti tutte le definizioni di termini aventi uno specifico significato che vuole essere disambiguato. Tali termini, sono scritti in  corsivo e marcati con una G a pedice.
 
 == Riferimenti
 === Riferimenti normativi 
@@ -233,8 +233,6 @@ I #glossary[pannelli] riportano in alto a sinistra il titolo e in alto a destra 
   caption: [Menù dei pannelli.]
 )
 
-Posizionando il cursore sopra l'header contenente titolo e icona del menù in cima al #glossary[pannello] e vedendo che assume la forma di un cursore di spostamento, è possibile cliccare e, tenendo premuto, muovere il #glossary[pannello] all'interno della #glossary[dashboard] cambiandone la posizione. Infine, in basso a destra è visibile un puntatore angolato che indica il punto in cui posizionare il cursore affinché assuma la forma di un cursore di ridimensionamento; è sufficiente cliccare e, tenendo premuto, ridimensionare il #glossary[pannello] rendendolo più piccolo o più grande a piacimento.
-
 ==== Formati dei grafici contenuti nei #glossary[pannelli]
 
 ===== Grafici a linee (formato "#glossary[Time series]")
@@ -253,6 +251,7 @@ Sono visibili delle scroll bar che consentono di scorrere la tabella verticalmen
 
 Tali #glossary[pannelli] contengono un indice che riporta i dati numerici derivati da calcoli e aggregazioni effettuate sulle misurazioni ottenute dai sensori.
 
+#pagebreak()
 == Dashboard "Ambientale"
 
 La #glossary[dashboard] "Ambientale" è dedita alla visualizzazione di dati relativi all'ambiente, che includono temperatura, percentuale di umidità, direzione e velocità del vento, intensità delle precipitazioni, livello di polveri sottili e riempimento dei bacini idrici. Quelli riportati sono aspetti monitorati all'interno della #glossary[dashboard] tramite #glossary[pannelli] contenenti grafici di varia natura, in particolare si utilizza: il formato "#glossary[Time series]", il formato "Geomap", il formato "Table" e il formato "Stat". Per maggiori informazioni sulla natura di ciascun formato, si rimanda alla #glossary[documentazione] ufficiale di #glossary[Grafana]. 
@@ -300,7 +299,7 @@ Nel caso della mappa che mostra il posizionamento dei sensori ambientali, queste
 
 Il #glossary[pannello] contenente un grafico in formato "Table" riporta dati relativi a:
 
-- Velocità del vento riportata da ciascun #glossary[sensore], espressa in chilometri all'ora (km/h) e direzione, espressa in gradi (con gli 0° a Nord e i 180° a Sud).
+- Velocità del vento riportata da ciascun #glossary[sensore], espressa in chilometri all'ora (km/h) e direzione, espressa in gradi (con gli 0° a Est e i 180° a Ovest).
 
 Tale #glossary[pannello] contiene una tabella avente campi che indicano il nome del #glossary[sensore], la velocità del vento più recente e la sua direzione; 
 
@@ -326,6 +325,7 @@ image("assets/screenshots/media-e-massimo-inquinamento.png",width:50%),
 caption: [Grafico in formato Stat del livello massimo e medio di polveri sottili nell'aria.]
 )
 
+#pagebreak()
 == Dashboard "Urbanistica"
 
 La #glossary[dashboard] "Urbanistica" è dedita alla visualizzazione di dati relativi alla città, che possono includere ma non sono limitati a disponibilità dei parcheggi, disponibilità delle colonne di ricarica per automobili elettriche, stato di congestione delle strade, livello di batteria delle biciclette elettriche e riempimento delle zone ecologiche. Quelli riportati sono aspetti monitorati all'interno della #glossary[dashboard] tramite #glossary[pannelli] contenenti grafici di varia natura, in particolare si utilizza: il formato "Geomap" e il formato "Table".
@@ -367,6 +367,7 @@ Il #glossary[pannello] contenente un grafico in formato "Table" riporta dati rel
 
 Tale #glossary[pannello] contiene una tabella avente campi che indicano il nome del #glossary[sensore] e l'erogazione più recente.
 
+#pagebreak()
 == Dashboard "Dati grezzi"
 
 La #glossary[dashboard] "Dati grezzi" è dedita alla raccolta e alla visualizzazione dei dati inviati da tutti i sensori e comprende sia i dati storici che quelli inviati in tempo reale; la #glossary[dashboard] consente anche di filtrare tutti i dati in base al nome e alla tipologia dei sensori di interesse, per poter risalire con facilità ai dati inviati da questi ultimi. Per questo scopo, viene utilizzato un unico #glossary[pannello] di tipo "Table".
@@ -383,6 +384,7 @@ La tabella vera e propria contiene i campi "Nome Sensore", "Tipologia", "Orario"
 
 Come evidenziato in precedenza, è possibile ordinare i valori di tutti i campi della tabella in ordine crescente o decrescente semplicemente cliccandone il nome collocato in cima alla colonna corrispondente.
 
+#pagebreak()
 == Dashboard "Superamento soglie"
 
 La #glossary[dashboard] "Superamento soglie" è dedita alla visualizzazione dei dati che superano determinate soglie preimpostate per i sensori che monitorano le precipitazioni, il riempimento delle zone ecologiche, il riempimento dei bacini idrici, il livello di polveri sottili nell'aria e la temperatura; in particolare, sono previsti 5 #glossary[pannelli] di tipo "Table", ognuno dedicato ad una tipologia diversa di #glossary[sensore], con campi "name", "timestamp" e "value".
@@ -406,10 +408,9 @@ caption: [Grafico in formato Table contenente i dati superanti la soglia dei bac
 
 #pagebreak()
 
-= Allerte
+== Allerte
 
 #pagebreak()
-
 = Supporto tecnico
 
 Per assistenza tecnica relativa all'utilizzo del prodotto software "InnovaCity", viene fornito il seguente indirizzo email:
