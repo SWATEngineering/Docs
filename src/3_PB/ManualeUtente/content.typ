@@ -51,8 +51,8 @@ table(
       [RAM], [6GB]),
 caption: [Tabella requisiti hardware.])
 
-== Requisiti di #glossary[sistema] operativo
-I requisiti di #glossary[sistema] operativo indicano la versione minima del #glossary[sistema] operativo necessaria affinché il prodotto software possa essere eseguito correttamente su un determinato dispositivo.
+== Requisiti di sistema operativo
+I requisiti di sistema operativo indicano la versione minima del sistema operativo necessaria affinché il prodotto software possa essere eseguito correttamente su un determinato dispositivo.
 
 #figure(
 table(
@@ -62,7 +62,7 @@ table(
       [*Sistema operativo*],[*Versione*],
       [Windows], [10],
       [MACOS], [10.14 Mojave],
-      [Linux Ubuntu], [22.04]),
+      [Ubuntu], [22.04]),
 caption: [Tabella requisiti di #glossary[sistema] operativo.])
 
 == Requisiti software
@@ -109,9 +109,9 @@ La seguente sezione fornisce istruzioni dettagliate su come installare e avviare
 #set align(left)
 
 == Creare API Key
-Per il corretto funzionamento del simulatore di biciclette elettriche è necessario registrarsi o accedere al seguente servizio: #link("https://openrouteservice.org/dev/#/signup") e ottenere l'API key. Una volta effettuato l'accesso:
+Per il corretto funzionamento del simulatore di biciclette elettriche è necessario registrarsi o accedere al seguente servizio: #link("https://openrouteservice.org/dev/#/signup") per ottenere l'API key. Una volta effettuato l'accesso a questa piattaforma:
 
-- andare nella sezione "Dashboard";
+- spostarsi nella sezione "Dashboard";
 - se non ancora accettati, accettare i "Termini e Condizioni", nella sotto-sezione "Profile";
 - nella sotto-sezione "Tokens" creare un nuovo token scegliendo la versione "Standard" e un nome a piacemento;
 - Copiare l'API Key generata a schermo e salvarla per dopo.
@@ -131,7 +131,7 @@ Nella directory della repository clonata al passo 1. allo stesso livello del fil
 ORS_API_KEY=<API_KEY_GENERATA_AL_PASSO_2>
 DISCORD_WEBHOOK_URL=<API_KEY_GENERATA_AL_PASSO_3>
 ```
-Sostituendo i valori salvati prima subito dopo l'uguale, rimuovendo i placeholders tra parentesi angolate (e togliendo anche le parentesi angolate).
+Sostituendo, subito dopo l'uguale, i placeholders tra parentesi angolate (comprese) con i valori salvati precedentemente.
 
 == Avviare l'applicazione
 
@@ -140,7 +140,7 @@ Sostituendo i valori salvati prima subito dopo l'uguale, rimuovendo i placeholde
 `docker-compose --profile prod up -d`
 #set align(left)
 
-Avendo eseguito gli step riportati sopra, l'applicazione è raggiungibile su #glossary[Grafana] all'indirizzo #link("http://localhost:3000/").
+Avendo eseguito correttamente gli step precedenti, l'applicazione è raggiungibile dal browser all'indirizzo #link("http://localhost:3000/").
 
 #pagebreak()
 
@@ -155,7 +155,7 @@ All'avvio l'utente è indirizzato direttamente alla pagina "Home" di #glossary[G
   caption: [Pagina "Home".]
 )
 
-1. *Barra di ricerca*: consente di accedere velocemente alle pagine di #glossary[Grafana] operando una ricerca filtrata rapida (è sufficiente inserire i primi caratteri del nome di una pagina perchè questa venga visualizzata tra i suggerimenti o selezionarne una tra le opzioni mostrate inizialmente);
+1. *Barra di ricerca*: consente di accedere velocemente alle pagine di #glossary[Grafana] operando una ricerca filtrata rapida; è sufficiente inserire i primi caratteri del nome di una pagina perché questa venga visualizzata tra i suggerimenti o selezionarne una tra le opzioni mostrate inizialmente;
 
 #figure(
   image("assets/screenshots/barra-di-ricerca.png",width:50%),
@@ -176,7 +176,7 @@ All'avvio l'utente è indirizzato direttamente alla pagina "Home" di #glossary[G
   caption: [Pannello "Dashboards" nella pagina "Home".]
 )
 
-Occorre sottolineare che, nelle condizioni in cui l'utente ha accesso all'applicazione (ossia nel ruolo di "Viewer"), attualmente non è possibile esercitare l'opzione di salvare le #glossary[dashboard] tra i preferiti.
+Occorre sottolineare che, nelle condizioni in cui l'utente #glossary[amministratore pubblico] ha accesso all'applicazione (ossia nel ruolo di "Viewer"), non è possibile esercitare l'opzione di salvare le #glossary[dashboard] tra i preferiti.
 
 == Informazioni generali su #glossary[dashboard] e #glossary[pannelli]
 
@@ -189,17 +189,17 @@ Le #glossary[dashboard], concepibili come contenitori di #glossary[pannelli], ri
   caption: [Menù delle dashboard.]
 )
 
-1. *Navigazione breadcrumb*: permette di visualizzare in quale parte del sito l'utente è collocato e di navigarci secondo la gerarchia del sito. Ad esempio è possibile accedere facilmente alla pagina Home ("Home") o all'elenco delle #glossary[dashboard] in "Dashboards";
+1. *Navigazione breadcrumb*: permette di visualizzare in quale parte del sito l'utente è collocato e di navigarci secondo la gerarchia del sito stesso. Ad esempio è possibile accedere facilmente alla pagina Home ("Home") o all'elenco delle #glossary[dashboard] in "Dashboards";
 
-2. "*Share #glossary[dashboard]*": per condividere la #glossary[dashboard] corrente generando un link, generando uno snapshot o esportandola come file;
+2. "*Share #glossary[dashboard]*": per condividere la #glossary[dashboard] corrente generando un link, uno snapshot o esportandola come file;
 
 3. "*Time picker dropdown*": per selezionare l'intervallo di tempo nel quale i dati vengono visualizzati all'interno dei vari #glossary[pannelli] contenuti nella #glossary[dashboard]; si possono selezionare intervalli di tempo relativi all'ora corrente (ad esempio, "last 5 minutes") o intervalli di tempo assoluti (ad esempio, "2024-05-14 00:00:00 to 2024-05-15 23:59:59"). Si può anche utilizzare il pulsante "Change time settings" per cambiare il fuso orario e l'anno fiscale considerato negli intervalli di tempo:
 
-      - Gli intervalli di tempo relativi possono essere selezionati a partire dalla lista fornita, che può essere filtrata utilizzando la casella di input che la precede "Search quick ranges";
+      - Gli intervalli di tempo relativi possono essere selezionati a partire dalla lista fornita; quest'ultima può essere filtrata utilizzando la casella di input che la precede, ovvero "Search quick ranges";
 
       - Gli intervalli di tempo assoluti possono essere selezionati in due modi principali:
 
-            - Inserendo dei valori all'interno dei campi "From" e "To": si possono inserire timestamp veri e propri o valori relativi come "now-5m", per poi cliccare il pulsante "Apply time range";
+            - Inserendo dei valori all'interno dei campi "From" e "To": si possono inserire timestamp veri e propri tramite tastiera o valori relativi come "now-5m", per poi cliccare il pulsante "Apply time range";
 
             - Cliccando all'interno di uno dei campi "From" o "To", viene visualizzato un calendario che consente di scegliere il giorno (o i giorni) che si vuole impostare come intervallo temporale; una volta fatto ciò, basta cliccare il pulsante "Apply time range";
 
@@ -210,7 +210,7 @@ Le #glossary[dashboard], concepibili come contenitori di #glossary[pannelli], ri
 
 4. "*Zoom out time range*": per allargare l'intervallo di tempo selezionato;
 
-5. "*Refresh dashboard*": per effettuare immediatamente il refresh dei dati mostrati all'interno della #glossary[dashboard]\;
+5. "*Refresh dashboard*": per effettuare, immediatamente una volta cliccato, il refresh dei dati mostrati all'interno della #glossary[dashboard]\;
 
 6. "*Refresh dashboard time interval*": per selezionare l'intervallo di tempo che trascorre tra un refresh automatico e quello successivo.
 
@@ -224,7 +224,7 @@ I #glossary[pannelli] riportano in alto a sinistra il titolo e in alto a destra 
 
 - "*Share*": per condividere il #glossary[pannello] o esportarlo come file;
 
-- "*Inspect*": per aprire la pagina "Inspect", dove si possono visualizzare i dati e il codice JSON inerenti al #glossary[pannello];
+- "*Inspect*": per aprire la pagina "Inspect", dove si possono visualizzare i dati e il codice JSON inerenti al #glossary[pannello]\;
 
 - "*More...*": per accedere alle opzioni aggiuntive "Show legend" e "Hide legend", che consentono, rispettivamente, di mostrare o nascondere la legenda del #glossary[pannello], ove presente.
 
