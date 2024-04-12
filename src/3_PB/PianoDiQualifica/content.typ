@@ -1204,7 +1204,7 @@ Fare in modo che non vi siano errori nei documenti prima della revisione #glossa
 Per ovviare al problema il team ha deciso di introdurre una checklist incentrata sugli errori ortografici, in modo tale che i responsabili del processo di verifica possano avvalersene nel correggere eventuali errori. Questa checklist è pensata non solo come uno strumento pratico, ma principalmente come un promemoria costante per il Verificatore.
 Tale strumento ha mostrato immediatamente i suoi effetti benefici: gli errori nel corso dell'ottavo #glossary[sprint] sono calati a zero.
 
-*#glossary[PB]* Nella revisione dei documenti _Specifica Tecnica v1.0_ e _Manuale Utente v1.0_, è emerso un certo numero di errori grammaticali e formali. Questo è stato principalmente attribuito al fatto che i documenti erano stati recentemente scritti e non erano stati soggetti a una revisione approfondita.
+*#glossary[PB]* Nella revisione dei documenti _Specifica Tecnica v1.0_ e _Manuale Utente v1.0_, è emerso un certo numero di errori grammaticali e formali. Questa situazione è stata principalmente causata dal fatto che il team ha concentrato il proprio sforzo principalmente sulla revisione del codice e sui test, trascurando una revisione approfondita dei documenti stessi.
 D'altra parte, gli altri documenti non presentano errori grammaticali evidenti, suggerendo un'efficace applicazione delle checklist di controllo e dei vari strumenti di revisione.
 
 
@@ -1249,7 +1249,7 @@ Nell'ambito delle metriche di codifica, si è verificata un'unica situazione di 
 Le Metriche Non Soddisfatte corrispondono alle metriche MPC-CO, MPC-CPI, MPC-EAC. In concomitanza con l'ottavo #glossary("sprint"), la misurazione di MPC-CO è rientrata all'interno del valore di accettazione. Per quanto riguarda MPC-CPI e MPC-EAC, essendo estremamente legate tra loro, si rimanda alle considerazioni relative a MPC-EAC.
 
 
-Durante gli #glossary[sprint] 11 e 12, la metrica CPI si è collocata entro il suo intervallo accettabile, determinando di conseguenza un posizionamento adeguato anche per la metrica EAC.  Durante lo #glossary[sprint] 12, le metriche non soddisfatte erano riconducibili ai requisiti obbligatori soddisfatti, oltre a due violazioni nella metrica ATC (ovvero il numero di attributi per classe). Nello #glossary[sprint] 13 si è verificata la violazione della metrica CO (correzione ortografica) questo perché i documenti erano di recente scrittura e non avevano subito un'approfondita revisione. Tuttavia, a partire dallo #glossary[sprint] 14, tutte le metriche hanno raggiunto i valori desiderati e il numero di metriche non soddisfatte è calato a 0.
+Durante gli #glossary[sprint] 11 e 12, la metrica CPI si è collocata entro il suo intervallo accettabile, determinando di conseguenza un posizionamento adeguato anche per la metrica EAC.  Durante lo #glossary[sprint] 12, le metriche non soddisfatte erano riconducibili ai requisiti obbligatori soddisfatti, oltre a due violazioni nella metrica ATC (ovvero il numero di attributi per classe). Nello #glossary[sprint] 13 si è verificata la violazione della metrica CO (correzione ortografica)  il che può essere attribuito al fatto che i documenti non erano stati sottoposti ad un'approfondita revisione. Tuttavia, a partire dallo #glossary[sprint] 14, tutte le metriche hanno raggiunto i valori desiderati e il numero di metriche non soddisfatte è calato a 0.
 
 
 // == Qualità di prodotto
