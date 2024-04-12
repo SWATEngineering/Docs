@@ -628,12 +628,6 @@ table(
             Verificare  che l'#glossary("amministratore pubblico"), nei #glossary("pannelli") tabellari, possa ordinare i dati in base a tutti i campi presenti, sia in ordine crescente che decrescente. 
       ],"S","RDF"),
       ([
-            Verificare  che l'#glossary("amministratore pubblico") possa, nel contesto della singola #glossary("dashboard"),  modificare il layout, agendo sulla posizione dei  #glossary("pannelli").
-      ],"S","RDF"),
-      ([
-            Verificare  che l'#glossary("amministratore pubblico") possa, nel contesto della singola #glossary("dashboard"),  modificare il layout, agendo sulla dimensione dei  #glossary("pannelli").
-      ],"S","RDF"),
-      ([
             Verificare  che l'#glossary("amministratore pubblico"), riceva un messaggio di errore qualora, il sistema di visualizzazione non riesca a reperire i dati necessari per un determinato #glossary("pannello").
       ],"S","ROF"),
       /*da qui iniziano i requisiti relativi ai sensori*/
