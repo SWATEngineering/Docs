@@ -629,10 +629,10 @@ table(
       ],"S","RDF"),
       ([
             Verificare  che l'#glossary("amministratore pubblico") possa, nel contesto della singola #glossary("dashboard"),  modificare il layout, agendo sulla posizione dei  #glossary("pannelli").
-      ],"N/I","RDF"),
+      ],"S","RDF"),
       ([
             Verificare  che l'#glossary("amministratore pubblico") possa, nel contesto della singola #glossary("dashboard"),  modificare il layout, agendo sulla dimensione dei  #glossary("pannelli").
-      ],"N/I","RDF"),
+      ],"S","RDF"),
       ([
             Verificare  che l'#glossary("amministratore pubblico"), riceva un messaggio di errore qualora, il sistema di visualizzazione non riesca a reperire i dati necessari per un determinato #glossary("pannello").
       ],"S","ROF"),
