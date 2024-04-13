@@ -707,79 +707,79 @@ In questa sezione vengono descritti i test di integrazione del prodotto software
 #let test_di_integrazione = (
 
       ([
-            Verificare che i dati generati dal simulatore di inquinamento atmosferico siano correttamente memorizzati nel database.
+            Verificare che i dati generati dal sensore di inquinamento atmosferico siano correttamente memorizzati nel database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal simulatore di inquinamento atmosferico siano correttamente aggregati e memorizzati nel database.
+            Verificare che i dati generati dal sensore di inquinamento atmosferico siano correttamente aggregati per intervalli di 1 minuto e memorizzati nel database.
       ],"S",[]),
       ([
-            Verificare se i dati della media mobile generati dal simulatore di inquinamento atmosferico siano correttamente inseriti nel database.
+            Verificare se i dati della media aritmetica generata dal sensore di inquinamento atmosferico siano correttamente inseriti nel database.
       ],"S",[
 
       ]),
       ([
-            Verificare che i dati generati dal simulatore delle colonne di ricarica siano correttamente memorizzati nel database.
+            Verificare che i dati generati dal sensore delle colonne di ricarica siano correttamente memorizzati nel database.
       ],"S",[]),
 
       ([
-            Verificare che i dati generati dal simulatore delle biciclette elettriche siano correttamente memorizzati nel database.
+            Verificare che i dati generati dal sensore delle biciclette elettriche siano correttamente memorizzati nel database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal simulatore di riempimento delle isole ecologiche siano correttamente memorizzati nel database.
+            Verificare che i dati generati dal sensore di riempimento delle zone ecologiche siano correttamente memorizzati nel database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal simulatore di umidità siano correttamente memorizzati nel database.
+            Verificare che i dati generati dal sensore di umidità siano correttamente memorizzati nel database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal simulatore di umidità siano correttamente aggregati e memorizzati nel database.
+            Verificare che i dati generati dal sensore di umidità siano correttamente aggregati per intervalli  di 1 minuto e memorizzati nel database.
       ],"S",[]),
       ([
-            Verificare se i dati della media mobile generati dal simulatore di umidità siano correttamente inseriti nel database.
+            Verificare se i dati della media aritmetica generati dal sensore di umidità siano correttamente inseriti nel database.
       ],"S",[
 
       ]),
       ([
-            Verificare che i dati generati dal simulatore dei parcheggi siano correttamente memorizzati nel database.
+            Verificare che i dati generati dal sesnore dei parcheggi siano correttamente memorizzati nel database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal simulatore di precipitazioni siano correttamente memorizzati nel database.
+            Verificare che i dati generati dal sensore di precipitazioni atmosferiche siano correttamente memorizzati nel database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal simulatore di precipitazioni siano correttamente aggregati e memorizzati nel database.
+            Verificare che i dati generati dal sensore di precipitazioni atmosferiche siano correttamente aggregati per intervalli di 1 minuto e memorizzati nel database.
       ],"S",[]),
       ([
-            Verificare se i dati della media mobile generati dal simulatore di precipitazioni siano correttamente inseriti nel database.
+            Verificare se i dati della media aritmetica generati dal sensore di precipitazioni atmosferiche siano correttamente inseriti nel database.
       ],"S",[
 
       ]),
       
       ([
-            Verificare che i dati generati dal simulatore del livello di riempimento dei bacini idrici siano correttamente memorizzati nel database.
+            Verificare che i dati generati dal sesnore del livello di riempimento dei bacini idrici siano correttamente memorizzati nel database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal simulatore del livello di riempimento dei bacini idrici siano correttamente aggregati e memorizzati nel database.
+            Verificare che i dati generati dal sensore del livello di riempimento dei bacini idrici siano correttamente aggregati per intervalli di 1 minuto e memorizzati nel database.
       ],"S",[]),
       ([
-            Verificare se i dati della media mobile generati dal simulatore del livello di riempimento dei bacini idrici siano correttamente inseriti nel database.
+            Verificare se i dati della media aritmetica generati dal sensore del livello di riempimento dei bacini idrici siano correttamente inseriti nel database.
       ],"S",[
 
       ]),
       ([
-            Verificare che i dati generati dal simulatore di temperatura siano correttamente memorizzati nel database.
+            Verificare che i dati generati dal sensore di temperatura siano correttamente memorizzati nel database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal simulatore di temperatura siano correttamente aggregati e memorizzati nel database.
+            Verificare che i dati generati dal sensore di temperatura siano correttamente aggregati per intervalli di 1 minuto e memorizzati nel database.
       ],"S",[]),
       ([
-            Verificare se i dati della media mobile generati dal simulatore di temperatura siano correttamente inseriti nel database.
+            Verificare se i dati della media aritmetica generati dal sensore di temperatura siano correttamente inseriti nel database.
       ],"S",[
 
       ]),
       ([
-            Verificare che i dati generati dal simulatore del traffico siano correttamente memorizzati nel database.
+            Verificare che i dati generati dal sensore del traffico siano correttamente memorizzati nel database.
       ],"S",[]),
       ([
-            Verificare che i dati generati dal simulatore del vento siano correttamente memorizzati nel database.
+            Verificare che i dati generati dal sensore del vento siano correttamente memorizzati nel database.
       ],"S",[])
       
       
@@ -852,7 +852,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che il simulatore delle colonne di ricarica fornisca i dati attesi nel formato prestabilito.
+            Verificare che il sensore delle colonne di ricarica fornisca i dati attesi nel formato prestabilito.
       ],"S",[
 
       ]),
@@ -862,7 +862,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare la correttezza del recupero delle coordinate della destinazione del simulatore di biciclette elettriche.
+            Verificare la correttezza del recupero delle coordinate della destinazione del sensore di biciclette elettriche.
       ],"S",[
 
       ]),
@@ -872,86 +872,86 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che il simulatore delle biciclette elettriche fornisca i dati attesi nel formato prestabilito.
+            Verificare che il sensore delle biciclette elettriche fornisca i dati attesi nel formato prestabilito.
       ],"S",[
 
       ]),
       ([
-            Verificare che il livello di batteria del simulatore delle biciclette elettriche rimanga all'interno di un intervallo specifico (0-100).
+            Verificare che il livello di batteria del sensore delle biciclette elettriche rimanga all'interno di un intervallo specifico (0-100).
       ],"S",[
 
       ]),
       ([
-            Verificare che il simulatore delle zone ecologiche fornisca i dati attesi nel formato prestabilito.
+            Verificare che il sensore delle zone ecologiche fornisca i dati attesi nel formato prestabilito.
       ],"S",[
 
       ]),
       ([
-            Verificare che il livello di riempimento del simulatore delle zone ecologiche rimanga all'interno di un intervallo specifico (0-100).
+            Verificare che il livello di riempimento del sensore delle zone ecologiche rimanga all'interno di un intervallo specifico (0-100).
       ],"S",[
 
       ]),
       ([
-            Verificare che il simulatore di umidità fornisca i dati attesi nel formato prestabilito.
+            Verificare che il sensore di umidità fornisca i dati attesi nel formato prestabilito.
       ],"S",[
 
       ]),
       ([
-            Verificare che la percentuale generata dal simulatore di umidità rimanga all'interno di un intervallo specifico (5-100).
+            Verificare che la percentuale generata dal sensore di umidità rimanga all'interno di un intervallo specifico (5-100).
       ],"S",[
 
       ]),
       ([
-            Verificare che il simulatore delle precipitazioni fornisca i dati attesi nel formato prestabilito.
+            Verificare che il sensore delle precipitazioni atmosferiche fornisca i dati attesi nel formato prestabilito.
       ],"S",[
 
       ]),
       ([
-            Verificare che l'intensità di pioggia generata dal simulatore di precipitazioni rimanga all'interno di un intervallo specifico (0-100).
+            Verificare che l'intensità di pioggia generata dal sensore delle precipitazioni atmosferiche rimanga all'interno di un intervallo specifico (0-100).
       ],"S",[
 
       ]),
       ([
-           Verificare che il simulatore dei bacini idrici fornisca i dati attesi nel formato prestabilito.
+           Verificare che il sensore dei bacini idrici fornisca i dati attesi nel formato prestabilito.
       ],"S",[
 
       ]),
       ([
-            Verificare che la percentuale generata dal simulatore dei bacini idrici rimanga all'interno di un intervallo specifico (0-100).
+            Verificare che la percentuale generata dal sensore dei bacini idrici rimanga all'interno di un intervallo specifico (0-100).
       ],"S",[
 
       ]),
       ([
-            Verificare che il simulatore della temperatura fornisca i dati attesi nel formato prestabilito.
+            Verificare che il sensore della temperatura fornisca i dati attesi nel formato prestabilito.
       ],"S",[
 
       ]),
       ([
-            Verificare che il valore generato dal simulatore della temperatura rimanga all'interno di un intervallo specifico (3-19).
+            Verificare che il valore generato dal sensore della temperatura rimanga all'interno di un intervallo specifico (3-19).
       ],"S",[
 
       ]),
       ([
-            Verificare che il simulatore del vento fornisca i dati attesi nel formato prestabilito.
+            Verificare che il sensore del vento fornisca i dati attesi nel formato prestabilito.
       ],"S",[
 
       ]),
       ([
-            Verificare che il valore generato dal simulatore del vento rimanga all'interno di un intervallo specifico (1-9).
+            Verificare che il valore generato dal sensore del vento rimanga all'interno di un intervallo specifico (1-9).
       ],"S",[
 
       ]),
       ([
-            Verificare che il simulatore dell'inquinamento dell'aria fornisca i dati attesi nel formato prestabilito.
+            Verificare che il sensore dell'inquinamento atmosferico fornisca i dati attesi nel formato prestabilito.
 
       ],"S",[]),
       ([
-            Verificare che il valore generato dal simulatore dell'inquinamento dell'aria rimanga all'interno di un intervallo specifico (0-100).
+            Verificare che il valore generato dal sensore dell'inquinamento atmosferico rimanga all'interno di un intervallo specifico (0-100).
       ],"S",[
 
       ]),
       ([
-            Verificare che il simulatore della congestione stradale fornisca i dati attesi nel formato prestabilito.
+            Verificare che il sensore della congestione stradale fornisca i dati attesi nel formato prestabilito.
       ],"S",[
 
       ]),
@@ -961,7 +961,7 @@ In questa sezione vengono descritti i test di unità del prodotto software.
 
       ]),
       ([
-            Verificare che il simulatore dei parcheggi fornisca i dati attesi nel formato prestabilito.
+            Verificare che il sensore dei parcheggi fornisca i dati attesi nel formato prestabilito.
       ],"S",[
 
       ])
