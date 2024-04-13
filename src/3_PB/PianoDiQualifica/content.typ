@@ -1223,7 +1223,7 @@ caption: [Metriche della codifica per lo sprint 12.])*/
 #figure(
   image("./assets/valutazione-metriche/ATC_PM_LCM.png", width: 85%),
   caption: [
-    Valutazione Metriche Codifica.
+    Valutazione Metriche Codifica, in particolare il numero delle violazioni riscontrate.
   ],
 )
 
@@ -1293,16 +1293,27 @@ Per quanto riguarda il SFOUT, che si attesta intorno al valore di 5,62, questo i
 
 Durante il corso degli #glossary[sprint], il numero massimo di click necessari per accedere a tutte le funzionalità del prodotto è rimasto costante a cinque. Questo rappresenta il valore ideale, confermando l'efficacia dell'interfaccia utente nel garantire un accesso rapido e diretto alle varie funzionalità del prodotto.
 
+
+
 #figure(
+table(
+      columns:(auto,auto,auto),
+      align: (x, y) => (center, center, center).at(x),
+      fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Metrica*],[*Valore*],[*Valore accettazione*],
+      [*MPC-TA*], [8min], [10 min]
+      
+),
+caption: [Tempo di apprendimento del prodotto])
+
+/*#figure(
   image("./assets/valutazione-metriche/TA.png", width: 85%),
   caption: [
     Valutazione tempo di apprendimento.
   ],
-)
+)*/
 
-Per quanto riguarda la metrica del tempo di apprendimento (TA), è stato condotto un test regolare da parte di una persona estranea al progetto una volta a settimana al fine di valutare la facilità d'uso del prodotto. Inizialmente, durante il primo test di familiarizzazione, è stato registrato un tempo di apprendimento di circa dieci minuti. Questo periodo è stato considerato necessario per consentire alla persona di prendere confidenza con l'interfaccia e le funzionalità del prodotto.
-Tuttavia, è interessante notare che, nello #glossary[sprint] 14, il tempo di apprendimento è diminuito a otto minuti. Questa diminuzione del tempo necessario per familiarizzare con il prodotto suggerisce un miglioramento nell'usabilità e nella chiarezza dell'interfaccia utente. 
-Considerando che il test è stato effettuato una volta a settimana, è plausibile dedurre che un #glossary[amministratore pubblico] che utilizzi il prodotto quotidianamente dovrebbe riuscire a familiarizzare e comprendere il suo funzionamento in una manciata di minuti.
+Per valutare la complessità del prodotto, si è proceduto a condurre un test sul tempo di apprendimento (TA), affidandolo a un individuo esterno al progetto. I risultati hanno evidenziato che il tempo medio necessario per comprendere e familiarizzare con il prodotto è stato di circa 8 minuti. Questo dato fornisce un'indicazione preziosa sulla facilità di apprendimento del sistema o del servizio in questione, suggerendo che il processo di acquisizione delle competenze necessarie è relativamente agevole.
 
 === Affidabilità
 
