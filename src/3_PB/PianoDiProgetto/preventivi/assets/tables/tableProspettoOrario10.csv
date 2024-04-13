@@ -1,8 +1,8 @@
-Nominativo,Re,Am,An,Pt,Pr,Ve,Totale per persona
-Simone Caregnato,3,0.0,0.0,0.0,0.0,0,3.0
-Riccardo Alberto Costantin,0.0,0.0,0.0,6,0.0,0.0,6.0
-Giacomo D'Ovidio,0.0,0.0,0.0,5,0.0,2,7.0
-Nancy Kalaj,0.0,1,0.0,0.0,0.0,1,2.0
-Matteo Rango,0.0,0.0,0.0,6,0.0,0.0,6.0
-Riccardo Toniolo,0.0,1,0.0,6,0.0,0.0,7.0
-Totale per ruolo,3.0,2.0,0.0,23.0,0.0,3.0,31.0
+Nominativo,Am,An,Pt,Pr,Re,Ve,Totale per persona
+Simone Caregnato,0.0,0.0,0.0,0.0,3,0,3.0
+Riccardo Alberto Costantin,0.0,0.0,6,0.0,0.0,0.0,6.0
+Giacomo D'Ovidio,0.0,0.0,5,0.0,0.0,2,7.0
+Nancy Kalaj,1,0.0,0.0,0.0,0.0,1,2.0
+Matteo Rango,0.0,0.0,6,0.0,0.0,0.0,6.0
+Riccardo Toniolo,1,0.0,6,0.0,0.0,0.0,7.0
+Totale per ruolo,2.0,0.0,23.0,0.0,3.0,3.0,31.0

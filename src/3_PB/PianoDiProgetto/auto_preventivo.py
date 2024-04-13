@@ -124,8 +124,8 @@ with open('preventivi/assets/tables/tableProspettoEconomico'+str(sprintNum)+'.cs
     writer = csv.writer(file)
     writer.writerows(table_budget)
 
-role_colors = ["#9B59B6", "#FF6961", "#5DADE2", "#E74C3C", "#F39C12", "#58D68D"]
-role_colors_istogramma = ["#9B59B6", "#FF6961", "#5DADE2", "#E74C3C", "#F39C12", "#58D68D"]
+role_colors = ["#FF6961", "#5DADE2", "#E74C3C", "#F39C12", "#9B59B6", "#58D68D"]
+role_colors_istogramma = ["#FF6961", "#5DADE2", "#E74C3C", "#F39C12", "#9B59B6", "#58D68D"]
 
 # Filtering each vector to correspond only to positive time values
 filtered_values = [
