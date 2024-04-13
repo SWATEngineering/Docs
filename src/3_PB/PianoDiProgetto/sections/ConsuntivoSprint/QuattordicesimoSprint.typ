@@ -14,7 +14,7 @@
 
 === Analisi a posteriori
 
-La retrospettiva mostra che il team è stato in grado di rispettare le ore preventivate (61), impiegando 62.5 ore produttive per portare a termine le attività previste; questo #glossary[sprint] è stato dedicato fondamentalmente alla preparazione del prodotto software e dei documenti richiesti per la prima parte della seconda revisione #glossary[PB], ossia _Analisi dei Requisiti_ e _Specifica Tecnica_. 
+La retrospettiva mostra che il team è stato in grado di rispettare le ore preventivate (61), impiegando 62.5 ore produttive per portare a termine le attività previste; questo #glossary[sprint] è stato dedicato fondamentalmente alla preparazione del prodotto software e dei documenti richiesti per la prima parte della seconda revisione #glossary[PB], ossia _Analisi dei Requisiti v2.0_ e _Specifica Tecnica v1.0_. 
 
 ==== Aggiornamento della pianificazione e gestione dei rischi
 

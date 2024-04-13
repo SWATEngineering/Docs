@@ -94,7 +94,7 @@ Si verifica quando il ruolo di Verificatore viene assegnato ripetutamente agli s
   - *Valutazione*: pericolosità: bassa; occorrenza: media;
   - *Prevenzione*:
       - Rotazione effettiva del ruolo: assicurarsi che le attività di verifica siano distribuite equamente tra tutti i membri del team a lungo termine, evitando di assegnare ripetutamente il ruolo di Verificatore allo stesso individuo in #glossary[sprint] consecutivi; infatti, per quanto possa essere vantaggioso fare in modo che 2 o 3 componenti si specializzino nel ruolo di Verificatore (soprattutto per quanto riguarda la #glossary[documentazione]), è bene che tutti i componenti contribuiscano attivamente al processo di verifica per avere prospettive molteplici su scelte contenutistiche importanti;
-      - Formazione continua: offrire opportunità di formazione interna per tutti i membri del team, in modo che siano in grado di aderire alle aspettative del ruolo di Verificatore quando necessario; in ogni caso, le liste di controllo descritte all'interno del _Piano di Qualifica_ sono un ottimo punto di partenza per acquisire familiarità ed esperienza con tali aspettative. 
+      - Formazione continua: offrire opportunità di formazione interna per tutti i membri del team, in modo che siano in grado di aderire alle aspettative del ruolo di Verificatore quando necessario; in ogni caso, le liste di controllo descritte all'interno del _Piano di Qualifica v2.0_ sono un ottimo punto di partenza per acquisire familiarità ed esperienza con tali aspettative. 
 
 == Rischi di Pianificazione
 === RP1 - Comprensione erronea dei requisiti
