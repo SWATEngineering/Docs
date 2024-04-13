@@ -1262,12 +1262,11 @@ Durante gli #glossary[sprint] 11 e 12, la metrica CPI si è collocata entro il s
 
 Dall'analisi del grafico emerge che tutti i requisiti obbligatori sono stati soddisfatti nel corso dello #glossary[sprint] 13. Inoltre, si è registrato un notevole progresso anche per quanto riguarda i requisiti desiderabili, con una percentuale finale di soddisfacimento pari al 92%. Tuttavia, risulta evidente che i requisiti opzionali sono stati realizzati solo parzialmente, raggiungendo il 33% della loro totalità.
 
-Si rimanda al documento _Specifiche Tecniche v1.0_ per vedere la lista completa dei requisiti e il relativo soddisfacimento.
 
 === Manutenibilità
 
 #figure(
-  image("./assets/valutazione-metriche/FANIN_FANOUT.png", width: 85%),
+  image("./assets/valutazione-metriche/SFIN_SFOUT.png", width: 85%),
   caption: [
     Valutazione metrica FAN-IN FAN-OUT.
   ],
