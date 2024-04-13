@@ -16,7 +16,7 @@
 
 == Conclusione _Manuale Utente v1.0_
 
-L'incontro si è aperto discutendo dello stato di completamemnto del _Manuale Utente_, che è necessario terminare e revisionare interamente entro la fine dello sprint corrente; la stesura del documento può dirsi terminata, se non che occorre aggiungere qualche dettaglio implementativo in più:
+L'incontro si è aperto discutendo dello stato di completamemnto del _Manuale Utente_, che è necessario terminare e revisionare interamente entro la fine dello sprint corrente; la stesura del documento può dirsi terminata, se non che occorre aggiungere qualche dettaglio in più:
 
 - Nella sezione riguardante l'installazione del prodotto software, occorre specificare la procedura da seguire per ottenere ed impostare:
   - API key del servizio utilizzato per simulare percorsi realistici per le biciclette elettriche;
@@ -27,7 +27,7 @@ Matteo Rango si occupa del primo punto, mentre Nancy Kalaj si occupa degli ultim
 
 == Conclusione _Piano di Qualifica v2.0_
 
-Anche il _Piano di Qualifica_ deve essere terminato inserendo i dati pertinenti allo sprint corrente al termine dello stesso e aggiornando i grafici di conseguenza; occorre, inoltre, fare una breve analisi dell'andamento delle metriche negli sprint 9-15 (periodo pre-PB), confrontandolo anche con l'andamento nel periodo precedente, e riportarla sotto i grafici (se ne occupa Riccardo Costantin). Infine, occorre verificare che le modifiche apportate in precedenza all'_Analisi dei Requisiti_ siano di fatto riportate anche all'interno dei test di accettazione e di sistema, ove ve ne è la necessità; dell'eventuale aggiornamento dei test si occupa Nancy Kalaj.
+Anche il _Piano di Qualifica_ deve essere terminato inserendo i dati pertinenti allo sprint corrente al termine dello stesso e aggiornando i grafici di conseguenza; occorre, inoltre, fare una breve analisi dell'andamento delle metriche negli sprint 9-15 (periodo pre-PB), confrontandolo anche con l'andamento nel periodo precedente, e riportarla sotto i grafici (se ne occupa Riccardo Costantin). Infine, occorre verificare che le modifiche apportate in precedenza all'_Analisi dei Requisiti_ siano di fatto riportate anche all'interno dei test di accettazione e di sistema, ove ve ne sia la necessità; dell'eventuale aggiornamento dei test, si occupa Nancy Kalaj.
 
 == Conclusione _Specifica Tecnica v1.0_ e _Analisi dei Requisiti v2.0_
 
@@ -37,4 +37,4 @@ Una volta svolto quanto descritto, i due documenti saranno pronti per essere sot
 
 == Validazione del prodotto software come MVP
 
-In vista della presentazione programmata verso la fine dello sprint corrente (il 02/04/24 in sede Sync Lab a Padova), occorre poter garantire che il prodotto è aderente ai requisiti definiti e che l'interfaccia risulta chiara e comprensibile, oltre che esteticamente gradevole (se ne occupano Riccardo Toniolo e Giacomo D'Ovidio). Scopo della presentazione è esporre le funzionalità implementate all'interno del prodotto software ed eseguire i test di accettazione, in modo da poter ottenere la validazione di quest'ultimo come MVP da parte della Proponente. 
+In vista della presentazione programmata verso la fine dello sprint corrente (il 02/04/24 in sede Sync Lab a Padova), occorre poter garantire che il prodotto sia aderente ai requisiti definiti e che l'interfaccia risulti chiara e comprensibile, oltre che esteticamente gradevole (se ne occupano Riccardo Toniolo e Giacomo D'Ovidio). Scopo della presentazione è esporre le funzionalità implementate all'interno del prodotto software ed eseguire i test di accettazione, in modo da poter ottenere la validazione di quest'ultimo come MVP da parte della Proponente. 
