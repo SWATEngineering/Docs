@@ -1180,7 +1180,7 @@ Il fatto che queste due metriche si siano avvicinate sempre di più suggerisce c
 Si rileva che nel corso dell'ultimo #glossary[sprint] tutti i documenti hanno subito un abbassamento del loro indice di leggibilità, perciò nel corso del periodo che precede la seconda revisione #glossary[PB] il team dovrà impegnarsi ad utilizzare una scrittura più semplice.
 
 *#glossary[PB]* Tutti i documenti hanno il valore di IG al di sopra del limite accettabile. Si nota che il documento _Piano di Qualifica_ ha subito una notevole diminuzione dell'indice, dovuta principalmente all'utilizzo di parole più lunghe e frasi più complesse.
-Il documento _Analisi Dei Requisiti_, da grafico, ha l'indice più elevato tra tutti i documenti. Durante lo #glossary[sprint] 10, si può notare un significativo aumento dell'IG, infatti il documento è stato arricchito con correzioni suggerite dal Professore Cardin e con ulteriori dettagli nei casi d'uso e nei requisiti. Tuttavia, è interessante osservare che negli ultimi due #glossary[sprint] finali si è verificato un nuovo calo dell'Indice Gulpease, suggerendo possibili variazioni nella complessità del testo.
+Il documento _Analisi Dei Requisiti_, da grafico, ha l'indice più elevato tra tutti i documenti. Durante lo #glossary[sprint] 10, si può notare un significativo aumento dell'IG, infatti il documento è stato arricchito con correzioni suggerite dal Professore Cardin e con ulteriori dettagli nei casi d'uso e nei requisiti. Tuttavia, negli ultimi due #glossary[sprint] finali si è verificato un nuovo calo dell'Indice Gulpease, suggerendo possibili variazioni nella complessità del testo.
 
 
 === Correttezza Ortografica
