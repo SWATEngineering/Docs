@@ -26,7 +26,7 @@ Vengono stabiliti i seguenti i nuovi incarichi relativi allo sprint corrente:
 
 == Conclusione _Manuale Utente v1.0_
 
-L'incontro si è aperto discutendo dello stato di completamemnto del _Manuale Utente_, che è necessario terminare e revisionare interamente entro la fine dello sprint corrente; la stesura del documento può dirsi terminata, se non che occorre aggiungere qualche dettaglio implementativo in più:
+L'incontro si è aperto discutendo dello stato di completamemnto del _Manuale Utente_, che è necessario terminare e revisionare interamente entro la fine dello sprint corrente; la stesura del documento può dirsi terminata, se non che occorre aggiungere qualche dettaglio in più:
 
 - Nella sezione riguardante l'installazione del prodotto software, occorre specificare la procedura da seguire per ottenere ed impostare:
   - API key del servizio utilizzato per simulare percorsi realistici per le biciclette elettriche;
@@ -47,4 +47,4 @@ Una volta svolto quanto descritto, i due documenti saranno pronti per essere sot
 
 == Validazione del prodotto software come MVP
 
-In vista della presentazione programmata verso la fine dello sprint corrente (il 02/04/24 in sede Sync Lab a Padova), occorre poter garantire che il prodotto è aderente ai requisiti definiti e che l'interfaccia risulta chiara e comprensibile, oltre che esteticamente gradevole (se ne occupano Riccardo Toniolo e Giacomo D'Ovidio). Scopo della presentazione è esporre le funzionalità implementate all'interno del prodotto software ed eseguire i test di accettazione, in modo da poter ottenere la validazione di quest'ultimo come MVP da parte della Proponente. 
+In vista della presentazione programmata verso la fine dello sprint corrente (il 02/04/24 in sede Sync Lab a Padova), occorre poter garantire che il prodotto sia aderente ai requisiti definiti e che l'interfaccia risulti chiara e comprensibile, oltre che esteticamente gradevole (se ne occupano Riccardo Toniolo e Giacomo D'Ovidio). Scopo della presentazione è esporre le funzionalità implementate all'interno del prodotto software ed eseguire i test di accettazione, in modo da poter ottenere la validazione di quest'ultimo come MVP da parte della Proponente. 
