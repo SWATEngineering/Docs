@@ -243,11 +243,11 @@ Tali #glossary[pannelli] mostrano l'ora del giorno sull'asse x, la legenda del c
 
 ===== Mappe (formato "Geomap")
 
-Tali #glossary[pannelli] mettono a disposizione, in alto a sinistra, due pulsanti "*+*" e "*-*" per poter effettuare operazioni di zoom-in e zoom-out, rispettivamente (il zoom-in può essere effettuato anche con un doppio click); è possibile cliccare e, tenendo premuto, muovere la mappa per visualizzarne aree diverse a piacimento e posizionare il cursore sopra un qualunque #glossary[sensore] per visualizzarne le informazioni.
+Tali #glossary[pannelli] mettono a disposizione, in alto a sinistra, due pulsanti "*+*" e "*-*" per poter effettuare operazioni di zoom-in e zoom-out; lo zoom-in può essere effettuato anche con un doppio click. Inoltre cliccando e tenendo premuto, è possibile muovere la mappa per visualizzarne aree diverse a piacimento e posizionare il cursore sopra un qualunque #glossary[sensore] per visualizzarne le informazioni.
 
 ===== Tabelle (formato "Table")
 
-Sono visibili delle scroll bar che consentono di scorrere la tabella verticalmente o orizzontalmente in caso non fosse interamente visibile. Inoltre, cliccando sul nome di un determinato campo, è possibile ordinare la tabella rispetto a quel campo in ordine crescente o decrescente. 
+Sono visibili delle scroll bar che consentono di scorrere la tabella verticalmente o orizzontalmente in caso non fosse interamente visibile. Inoltre, cliccando sul nome di un determinato campo, è possibile ordinare la tabella rispetto a quel campo, in ordine crescente o decrescente. 
 
 ===== Indicatori numerici (formato "Stat")
 
@@ -256,7 +256,7 @@ Tali #glossary[pannelli] contengono un indice che riporta i dati numerici deriva
 #pagebreak()
 == Dashboard "Ambientale"
 
-La #glossary[dashboard] "Ambientale" è dedita alla visualizzazione di dati relativi all'ambiente, che includono temperatura, percentuale di umidità, direzione e velocità del vento, intensità delle precipitazioni, livello di polveri sottili e riempimento dei bacini idrici. Quelli riportati sono aspetti monitorati all'interno della #glossary[dashboard] tramite #glossary[pannelli] contenenti grafici di varia natura, in particolare si utilizza: il formato "#glossary[Time series]", il formato "Geomap", il formato "Table" e il formato "Stat". Per maggiori informazioni sulla natura di ciascun formato, si rimanda alla #glossary[documentazione] ufficiale di #glossary[Grafana]. 
+La #glossary[dashboard] "Ambientale" è dedita alla visualizzazione di dati relativi all'ambiente, che includono temperatura, percentuale di umidità, direzione e velocità del vento, intensità delle precipitazioni, livello di polveri sottili e riempimento dei bacini idrici. Quelli riportati sono aspetti monitorati all'interno della #glossary[dashboard] tramite #glossary[pannelli] contenenti grafici di varia natura, in particolare si utilizzano i formati: "#glossary[Time series]", "Geomap", "Table" e "Stat". Per maggiori informazioni sulla natura di ciascun formato, si rimanda alla #glossary[documentazione] ufficiale di #glossary[Grafana]. 
 
 === #glossary[Pannelli] con grafici in formato "#glossary[Time series]"
 
@@ -303,24 +303,24 @@ Il #glossary[pannello] contenente un grafico in formato "Table" riporta dati rel
 
 - Velocità del vento riportata da ciascun #glossary[sensore], espressa in chilometri all'ora (km/h) e direzione, espressa in gradi (con gli 0° a Est e i 180° a Ovest).
 
-Tale #glossary[pannello] contiene una tabella avente campi che indicano il nome del #glossary[sensore], la velocità del vento più recente e la sua direzione; 
+Tale #glossary[pannello] contiene una tabella i cui campi indicano il nome del #glossary[sensore], la velocità del vento più recente e la sua direzione; 
 
 === #glossary[Pannelli] con grafici in formato "Stat"
 
 Il #glossary[pannello] contenente un grafico in formato "Stat" riporta dati relativi a:
 
-- Media della temperatura riportata da tutti i sensori cumulativamente, nell'intervallo di tempo selezionato;
+- Media della temperatura riportata da tutti i sensori cumulativamente nell'intervallo di tempo selezionato;
 
 #figure(
 image("assets/screenshots/media-temperatura.png",width:25%),
 caption: [Grafico in formato Stat della temperatura.]
 )
 
-- Media dell'intensità delle precipitazioni riportata da tutti i sensori cumulativamente, nell'intervallo di tempo selezionato;
+- Media dell'intensità delle precipitazioni riportata da tutti i sensori cumulativamente nell'intervallo di tempo selezionato;
 
-- Media del livello di polveri sottili nell'aria tra quelli riportati da tutti i sensori cumulativamente, nell'ultimo minuto;
+- Media del livello di polveri sottili nell'aria tra quelli riportati da tutti i sensori cumulativamente nell'ultimo minuto;
 
-- Massimo livello di polveri sottili nell'aria tra quelli riportati da tutti i sensori cumulativamente, negli ultimi 5 minuti.
+- Massimo livello di polveri sottili nell'aria tra quelli riportati da tutti i sensori cumulativamente negli ultimi 5 minuti.
 
 #figure(
 image("assets/screenshots/media-e-massimo-inquinamento.png",width:50%),
@@ -365,14 +365,14 @@ caption: [Grafico in formato Geomap del livello di batteria delle biciclette ele
 
 Il #glossary[pannello] contenente un grafico in formato "Table" riporta dati relativi a:
 
-- Erogazione delle colonne di ricarica riportata da ciascun #glossary[sensore], espressa in chiloWatt per ora (kWh).
+- Erogazione delle colonne di ricarica riportata da ciascun #glossary[sensore], espressa in chilowatt per ora (kWh).
 
 Tale #glossary[pannello] contiene una tabella avente campi che indicano il nome del #glossary[sensore] e l'erogazione più recente.
 
 #pagebreak()
 == Dashboard "Dati grezzi"
 
-La #glossary[dashboard] "Dati grezzi" è dedita alla raccolta e alla visualizzazione dei dati inviati da tutti i sensori e comprende sia i dati storici che quelli inviati in tempo reale; la #glossary[dashboard] consente anche di filtrare tutti i dati in base al nome e alla tipologia dei sensori di interesse, per poter risalire con facilità ai dati inviati da questi ultimi. Per questo scopo, viene utilizzato un unico #glossary[pannello] di tipo "Table".
+La #glossary[dashboard] "Dati grezzi" è dedita alla raccolta e alla visualizzazione dei dati inviati da tutti i sensori e comprende sia i dati storici che quelli inviati in tempo reale. La #glossary[dashboard] consente anche di filtrare tutti i dati in base al nome e alla tipologia dei sensori di interesse, per poter risalire con facilità ai dati inviati da questi ultimi. Per questo scopo, viene utilizzato un unico #glossary[pannello] di tipo "Table".
 
 === #glossary[Pannello] con grafico in formato "Table"
 
@@ -382,14 +382,14 @@ caption: [Grafico in formato Table contenente i dati grezzi.]
 )
 
 Tale #glossary[pannello] è preceduto da un header che riporta due campi di input con etichette: "Nome Sensore" e "Tipologia". Cliccando sull'etichetta alla sinistra del campo o sul campo stesso, è possibile visualizzare il numero di valori attualmente selezionati ("Selected") ed, eventualmente, selezionarne altri utilizzando le checkbox apposite. Inoltre, è possibile inserire manualmente il valore desiderato all'interno del campo ("Enter variable value") per filtrare velocemente i valori a disposizione. Il campo "Nome Sensore" riporta i nomi di tutti sensori a disposizione e il campo "Tipologia" riporta le tipologie dei sensori. 
-La tabella vera e propria contiene i campi "Nome Sensore", "Tipologia", "Orario" e "Rilevazione", ques'ultima per i valori delle misurazioni effettuate dai sensori; i valori del campo "Tipologia" hanno un colore ditinto a seconda del tipo di #glossary[sensore] indicato.
+La tabella vera e propria contiene i campi "Nome Sensore", "Tipologia", "Orario" e "Rilevazione", quest'ultima per i valori delle misurazioni effettuate dai sensori; i valori del campo "Tipologia" hanno un colore distinto a seconda del tipo di #glossary[sensore] indicato.
 
-Come evidenziato in precedenza, è possibile ordinare i valori di tutti i campi della tabella in ordine crescente o decrescente semplicemente cliccandone il nome collocato in cima alla colonna corrispondente.
+Come evidenziato in precedenza, è possibile ordinare i valori di tutti i campi della tabella in ordine crescente o decrescente semplicemente cliccandone il nome collocato in cima alla colonna corrispondente; la direzione della freccia a fianco del nome, permette di comprendere per quale colonna si sta ordinando e secondo quale ordine.
 
 #pagebreak()
 == Dashboard "Superamento soglie"
 
-La #glossary[dashboard] "Superamento soglie" è dedita alla visualizzazione dei dati che superano determinate soglie preimpostate per i sensori che monitorano le precipitazioni, il riempimento delle zone ecologiche, il riempimento dei bacini idrici, il livello di polveri sottili nell'aria e la temperatura; in particolare, sono previsti cinque #glossary[pannelli] di tipo "Table", ognuno dedicato ad una tipologia diversa di #glossary[sensore], con campi "name", "timestamp" e "value".
+La #glossary[dashboard] "Superamento soglie" è dedita alla visualizzazione dei dati che superano determinate soglie preimpostate per i sensori che monitorano le precipitazioni, il riempimento delle zone ecologiche, il riempimento dei bacini idrici, il livello di polveri sottili nell'aria e la temperatura; in particolare, sono previsti cinque #glossary[pannelli] di tipo "Table", ognuno dedicato ad una tipologia diversa di #glossary[sensore], che riportano i campi "name", "timestamp" e "value".
 
 === #glossary[Pannelli] con grafici in formato "Table"
 
