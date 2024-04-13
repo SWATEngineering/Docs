@@ -26,7 +26,7 @@ Vengono stabiliti i seguenti i nuovi incarichi relativi allo sprint corrente:
 
 == Conclusione _Manuale Utente v1.0_
 
-L'incontro si è aperto discutendo dello stato di completamemnto del _Manuale Utente_, che è necessario terminare e revisionare interamente entro la fine dello sprint corrente; la stesura del documento può dirsi terminata, se non che occorre aggiungere qualche dettaglio in più:
+L'incontro si è aperto discutendo dello stato di completamento del _Manuale Utente_, che è necessario terminare e revisionare interamente entro la fine dello sprint corrente; la stesura del documento può dirsi terminata, se non che occorre aggiungere qualche dettaglio in più:
 
 - Nella sezione riguardante l'installazione del prodotto software, occorre specificare la procedura da seguire per ottenere ed impostare:
   - API key del servizio utilizzato per simulare percorsi realistici per le biciclette elettriche;
@@ -41,7 +41,7 @@ Anche il _Piano di Qualifica_ deve essere terminato inserendo i dati pertinenti 
 
 == Conclusione _Specifica Tecnica v1.0_ e _Analisi dei Requisiti v2.0_
 
-La _Specifica Tecnica_ è già stata terminata, occorre semplicemente assicurarsi che lo stato di soddisfacimento dei vari requisiti funzionali, di vincolo e di qualità riportati nella sezione conclusiva dedicata al tracciamento sia aggiornato rispetto a quanto sviluppato nel MVP. Se ne occupa Simone Caregnato. Allo stesso modo anche l'_Analisi dei Requisiti_ è conclusa, occore però aggiornare alcuni diagrammi UML dei casi d'uso e se ne occupa Matteo Rango. 
+La _Specifica Tecnica_ è già stata terminata, occorre semplicemente assicurarsi che lo stato di soddisfacimento dei vari requisiti funzionali, di vincolo e di qualità riportati nella sezione conclusiva dedicata al tracciamento sia aggiornato rispetto a quanto sviluppato nel MVP; questa mansione viene assegnata a Simone Caregnato. Allo stesso modo anche l'_Analisi dei Requisiti_ è conclusa, occorre tuttavia aggiornare alcuni diagrammi UML dei casi d'uso e se ne occupa Matteo Rango. 
 
 Una volta svolto quanto descritto, i due documenti saranno pronti per essere sottoposti alla valutazione del Prof. Cardin in occasione della PB imminente. Similmente, anche il resto della documentazione richiesta per la seconda parte della PB verrà terminato e revisionato a fondo prima di ottenere l'approvazione finale del Responsabile che ne sancirà anche lo "scatto" di versione.
 
