@@ -45,6 +45,7 @@ La _Specifica Tecnica_ è già stata terminata, occorre semplicemente assicurars
 
 Una volta svolto quanto descritto, i due documenti saranno pronti per essere sottoposti alla valutazione del Prof. Cardin in occasione della PB imminente. Similmente, anche il resto della documentazione richiesta per la seconda parte della PB verrà terminato e revisionato a fondo prima di ottenere l'approvazione finale del Responsabile che ne sancirà anche lo "scatto" di versione.
 
+#pagebreak()
 == Validazione del prodotto software come MVP
 
 In vista della presentazione programmata verso la fine dello sprint corrente (il 02/04/24 in sede Sync Lab a Padova), occorre poter garantire che il prodotto sia aderente ai requisiti definiti e che l'interfaccia risulti chiara e comprensibile, oltre che esteticamente gradevole (se ne occupano Riccardo Toniolo e Giacomo D'Ovidio). Scopo della presentazione è esporre le funzionalità implementate all'interno del prodotto software ed eseguire i test di accettazione, in modo da poter ottenere la validazione di quest'ultimo come MVP da parte della Proponente. 
