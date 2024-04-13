@@ -1,7 +1,7 @@
-Nominativo,Re,Am,An,Pt,Pr,Ve
-Simone C.,0.0,0.0,0.0,0,3,7
-Riccardo A.C.,0.0,1,0.0,0,3,6
-Giacomo D.,0.0,0.0,0,0.0,0,10
-Nancy K.,0.0,0,3,2,0,5
-Matteo R.,0.0,0.0,0.0,4,0,6
-Riccardo T.,4,0,0,0,3,4
+Nominativo,Am,An,Pt,Pr,Re,Ve
+Simone C.,0.0,0.0,0,3,0.0,7
+Riccardo A.C.,1,0.0,0,3,0.0,6
+Giacomo D.,0.0,0,0.0,0,0.0,10
+Nancy K.,0,3,2,0,0.0,5
+Matteo R.,0.0,0.0,4,0,0.0,6
+Riccardo T.,0,0,0,3,4,4
