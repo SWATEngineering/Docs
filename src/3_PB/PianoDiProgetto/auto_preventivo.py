@@ -18,7 +18,7 @@ PROGETTISTA = {'extended':"Progettista", 'shortened':"Pt"}
 PROGRAMMATORE = {'extended':"Programmatore", 'shortened':"Pr"}
 VERIFICATORE = {'extended':"Verificatore", 'shortened':"Ve"}
 
-roles = [RESPONSABILE, AMMINISTRATORE, ANALISTA, PROGETTISTA, PROGRAMMATORE, VERIFICATORE]
+roles = [AMMINISTRATORE, ANALISTA, PROGETTISTA, PROGRAMMATORE, RESPONSABILE, VERIFICATORE]
 short_roles = [role['shortened'] for role in roles]
 ext_roles = [role['extended'] for role in roles]
 
@@ -40,7 +40,7 @@ COST_PROGRAMMATORE = 15
 COST_RESPONSABILE = 30
 COST_VERIFICATORE = 15
 
-costs = [COST_RESPONSABILE, COST_AMMINISTRATORE, COST_ANALISTA, COST_PROGETTISTA, COST_PROGRAMMATORE, COST_VERIFICATORE]
+costs = [COST_AMMINISTRATORE, COST_ANALISTA, COST_PROGETTISTA, COST_PROGRAMMATORE, COST_RESPONSABILE, COST_VERIFICATORE]
 
 import csv
 import matplotlib.pyplot as plt
