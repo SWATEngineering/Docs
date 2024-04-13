@@ -247,7 +247,7 @@ Tali #glossary[pannelli] mettono a disposizione, in alto a sinistra, due pulsant
 
 ===== Tabelle (formato "Table")
 
-Sono visibili delle scroll bar che consentono di scorrere la tabella verticalmente o orizzontalmente in caso non fosse interamente visibile. Inoltre, cliccando sul nome di un determinato campo, è possibile ordinare la tabella rispetto a quel campo, in ordine crescente o decrescente. 
+Sono visibili delle scroll bar che consentono di scorrere la tabella verticalmente o orizzontalmente in caso non fosse interamente visibile. Inoltre, cliccando sul nome di un determinato campo, è possibile ordinare la tabella rispetto a quel campo, in ordine crescente o decrescente; la direzione della freccia affiancata al nome del campo, permette di comprendere per quale colonna si sta ordinando e secondo quale ordine.
 
 ===== Indicatori numerici (formato "Stat")
 
@@ -281,7 +281,7 @@ caption: [Grafico in formato Time series della temperatura.]
 
 I #glossary[pannelli] contenenti grafici in formato "Geomap" riportano dati relativi a:
 
-- Direzione del vento riportata da ciascun #glossary[sensore], dove i sensori vengono rappresentati tramite il proprio nome e una freccia puntata nella direzione del vento;
+- Direzione del vento riportata da ciascun #glossary[sensore], dove i sensori vengono rappresentati tramite il proprio nome e una freccia che punta nella direzione del vento; le icone rappresentanti i sensori vengono colorate in base alla velocità del vento, utilizzando un schema di colori che segue le transizioni verde-giallo-arancio-rosso, dove il verde indica una velocità bassa e il rosso una velocità elevata;
 
 #figure(
 image("assets/screenshots/mappa-vento.png",width:100%),
@@ -295,7 +295,7 @@ image("assets/screenshots/mappa-sensori.png",width:100%),
 caption: [Grafico in formato Geomap dei sensori ambientali.]
 )
 
-Nel caso della mappa che mostra il posizionamento dei sensori ambientali, queste includono il nome del #glossary[sensore], la tipologia del #glossary[sensore], latitudine e longitudine. Nel caso della mappa che mostra la direzione del vento, invece, le informazioni visualizzate includono anche la velocità e la direzione del vento più recenti. Infine, in basso a sinistra è presente una scala di colori che riporta il valore minimo e massimo dei dati riportati dal #glossary[sensore], così come la colorazione del #glossary[sensore] stesso a seconda dell'ultimo valore riportato. Quando il cursore viene posizionato sopra un determinato #glossary[sensore], anche nella scala di colori viene visualizzato il valore della velocità del vento più recente.
+Nel caso della mappa che mostra il posizionamento dei sensori ambientali, le informazioni visualizzate posizionando il cursore sopra un #glossary[sensore] includono il nome del #glossary[sensore], la tipologia del #glossary[sensore], latitudine e longitudine. Nel caso della mappa che mostra la direzione del vento, invece, le informazioni visualizzate includono anche la velocità e la direzione del vento più recenti. Infine, in basso a sinistra è presente una legenda con una scala di colori che riporta il valore minimo e massimo dei dati riportati dal #glossary[sensore], così come la colorazione del #glossary[sensore] stesso a seconda dell'ultimo valore riportato (in altre parole, i colori dello schema utilizzato nella legenda sono gli stessi colori assunti dai sensori in base alla velocità). Quando il cursore viene posizionato sopra un determinato #glossary[sensore], anche nella scala di colori viene visualizzato il valore della velocità del vento più recente.
 
 === #glossary[Pannelli] con grafici in formato "Table"
 
@@ -336,30 +336,30 @@ La #glossary[dashboard] "Urbanistica" è dedita alla visualizzazione di dati rel
 
 I #glossary[pannelli] contenenti grafici in formato "Geomap" riportano dati relativi a:
 
-- Disponibilità dei parcheggi, tramite un indicatore numerico che riporta il numero di posti liberi;
+- Disponibilità dei parcheggi, tramite un indicatore numerico che riporta il numero di posti liberi; le icone rappresentanti i sensori vengono colorate in base alla disponibilità, utilizzando un schema di colori che segue le transizioni verde-giallo-arancio-rosso, dove il verde indica un numero elevato di posti liberi e il rosso un numero esiguo di posti liberi;
 
 #figure(
 image("assets/screenshots/mappa-parcheggi.png",width:100%),
 caption: [Grafico in formato Geomap della disponibilità dei parcheggi.]
 )
 
-- Disponibilità delle colonne di ricarica, tramite icone colorate;
+- Disponibilità delle colonne di ricarica, tramite icone colorate; le icone rappresentanti i sensori vengono colorate in base alla disponibilità, utilizzando un schema di colori che segue le transizioni verde-rosso, dove il verde indica disponibilità e il rosso indica la non disponibilità;
 
-- Stato di congestione delle strade, tramite gli stati "LOW", "MEDIUM", "HIGH" e "BLOCKED";
+- Stato di congestione delle strade, tramite gli stati "LOW", "MEDIUM", "HIGH" e "BLOCKED"; le icone rappresentanti i sensori vengono colorate in base allo stato di congestione, utilizzando un schema di colori che segue le transizioni verde-giallo-arancio-rosso, dove il verde indica lo stato "LOW" e il rosso lo stato "BLOCKED";
 
 #figure(
 image("assets/screenshots/mappa-traffico.png",width:100%),
 caption: [Grafico in formato Geomap dello stato di congestione delle strade.]
 )
 
-- Livello di batteria delle biciclette elettriche, tramite un indicatore numerico che ne riporta la percentuale;
+- Livello di batteria delle biciclette elettriche, tramite un indicatore numerico che ne riporta la percentuale; le icone rappresentanti i sensori vengono colorate in base alla percentuale di batteria, utilizzando un schema di colori che segue le transizioni verde-giallo-arancio-rosso, dove il verde indica una percentuale di batteria elevata e il rosso una percentuale di batteria bassa;
 
 #figure(
 image("assets/screenshots/mappa-biciclette.png",width:100%),
 caption: [Grafico in formato Geomap del livello di batteria delle biciclette elettriche.]
 )
 
-- Riempimento delle zone ecologiche, tramite un indicatore numerico che riporta la percentuale di riempimento.
+- Riempimento delle zone ecologiche, tramite un indicatore numerico che riporta la percentuale di riempimento; le icone rappresentanti i sensori vengono colorate in base alla percentuale di riempimento, utilizzando un schema di colori che segue le transizioni verde-giallo-arancio-rosso, dove il verde indica una percentuale di riempimento bassa e il rosso una percentuale di riempimento elevata.
 
 === #glossary[Pannelli] con grafici in formato "Table"
 
@@ -384,7 +384,7 @@ caption: [Grafico in formato Table contenente i dati grezzi.]
 Tale #glossary[pannello] è preceduto da un header che riporta due campi di input con etichette: "Nome Sensore" e "Tipologia". Cliccando sull'etichetta alla sinistra del campo o sul campo stesso, è possibile visualizzare il numero di valori attualmente selezionati ("Selected") ed, eventualmente, selezionarne altri utilizzando le checkbox apposite. Inoltre, è possibile inserire manualmente il valore desiderato all'interno del campo ("Enter variable value") per filtrare velocemente i valori a disposizione. Il campo "Nome Sensore" riporta i nomi di tutti sensori a disposizione e il campo "Tipologia" riporta le tipologie dei sensori. 
 La tabella vera e propria contiene i campi "Nome Sensore", "Tipologia", "Orario" e "Rilevazione", quest'ultima per i valori delle misurazioni effettuate dai sensori; i valori del campo "Tipologia" hanno un colore distinto a seconda del tipo di #glossary[sensore] indicato.
 
-Come evidenziato in precedenza, è possibile ordinare i valori di tutti i campi della tabella in ordine crescente o decrescente semplicemente cliccandone il nome collocato in cima alla colonna corrispondente; la direzione della freccia a fianco del nome, permette di comprendere per quale colonna si sta ordinando e secondo quale ordine.
+Come evidenziato in precedenza, è possibile ordinare i valori di tutti i campi della tabella in ordine crescente o decrescente semplicemente cliccandone il nome collocato in cima alla colonna corrispondente.
 
 #pagebreak()
 == Dashboard "Superamento soglie"
