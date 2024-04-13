@@ -1240,10 +1240,10 @@ Nell'ambito delle metriche di codifica, si è verificata un'unica situazione di 
     Valutazione Metriche Non Soddisfatte.
   ],
 )
-Le Metriche Non Soddisfatte corrispondono alle metriche MPC-CO, MPC-CPI, MPC-EAC. In concomitanza con l'ottavo #glossary("sprint"), la misurazione di MPC-CO è rientrata all'interno del valore di accettazione. Per quanto riguarda MPC-CPI e MPC-EAC, essendo estremamente legate tra loro, si rimanda alle considerazioni relative a MPC-EAC.
 
+*#glossary[RTB]* Le Metriche Non Soddisfatte corrispondono alle metriche MPC-CO, MPC-CPI, MPC-EAC. In concomitanza con l'ottavo #glossary("sprint"), la misurazione di MPC-CO è rientrata all'interno del valore di accettazione. Per quanto riguarda MPC-CPI e MPC-EAC, essendo estremamente legate tra loro, si rimanda alle considerazioni relative a MPC-EAC.
 
-Durante gli #glossary[sprint] 11 e 12, la metrica CPI si è collocata entro il suo intervallo accettabile, determinando di conseguenza un posizionamento adeguato anche per la metrica EAC.  Durante lo #glossary[sprint] 12, le metriche non soddisfatte erano riconducibili ai requisiti obbligatori soddisfatti, oltre a due violazioni nella metrica ATC (ovvero il numero di attributi per classe). Nello #glossary[sprint] 13 si è verificata la violazione della metrica CO (correzione ortografica)  il che può essere attribuito al fatto che i documenti non erano stati sottoposti ad un'approfondita revisione. Tuttavia, a partire dallo #glossary[sprint] 14, tutte le metriche hanno raggiunto i valori desiderati e il numero di metriche non soddisfatte è calato a 0.
+*#glossary[PB]* Durante gli #glossary[sprint] 11 e 12, la metrica CPI si è collocata entro il suo intervallo accettabile, determinando di conseguenza un posizionamento adeguato anche per la metrica EAC.  Durante lo #glossary[sprint] 12, le metriche non soddisfatte erano riconducibili ai requisiti obbligatori soddisfatti, oltre a due violazioni nella metrica ATC (ovvero il numero di attributi per classe). Nello #glossary[sprint] 13 si è verificata la violazione della metrica CO (correzione ortografica)  il che può essere attribuito al fatto che i documenti non erano stati sottoposti ad un'approfondita revisione. Tuttavia, a partire dallo #glossary[sprint] 14, tutte le metriche hanno raggiunto i valori desiderati e il numero di metriche non soddisfatte è calato a 0.
 
 
 // == Qualità di prodotto
