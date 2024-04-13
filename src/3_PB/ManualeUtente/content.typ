@@ -372,7 +372,7 @@ Tale #glossary[pannello] contiene una tabella avente campi che indicano il nome 
 #pagebreak()
 == Dashboard "Dati grezzi"
 
-La #glossary[dashboard] "Dati grezzi" è dedita alla raccolta e alla visualizzazione dei dati inviati da tutti i sensori e comprende sia i dati storici che quelli inviati in tempo reale. La #glossary[dashboard] consente anche di filtrare tutti i dati in base al nome e alla tipologia dei sensori di interesse, per poter risalire con facilità ai dati inviati da questi ultimi. Per questo scopo, viene utilizzato un unico #glossary[pannello] di tipo "Table".
+La #glossary[dashboard] "Dati grezzi" è dedita alla raccolta dei dati inviati da tutti i sensori e permette di visualizzare tutti i dati registrati nel #glossary[sistema]. La #glossary[dashboard] consente anche di filtrare tutti i dati in base al nome e alla tipologia dei sensori di interesse, per poter risalire con facilità ai dati inviati da questi ultimi. Per questo scopo, viene utilizzato un unico #glossary[pannello] di tipo "Table".
 
 === #glossary[Pannello] con grafico in formato "Table"
 
