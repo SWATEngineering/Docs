@@ -18,7 +18,7 @@ Il documento costituisce un impegno concreto per assicurare la qualità in modo 
 
 Questo documento ha lo scopo di garantire la qualità del processo e del prodotto attraverso diversi passaggi fondamentali.
 
-La definizione di metriche quantitative e la loro periodica misurazione permettono al team di valutare l'efficacia e l'efficienza del progetto di sviluppo e di intraprendere decisioni che ne permettano la costante ottimizzazione.
+La definizione di metriche quantitative e la loro periodica misurazione permettono al team di valutare l'andamento del progetto e di intraprendere decisioni che ne permettano la costante ottimizzazione.
 
 Si propone inoltre di guidare il team attraverso tutte le fasi di testing: dalla pianificazione dei test fino alla valutazione dei risultati ottenuti.
 
@@ -1207,7 +1207,7 @@ Nella seguente tabella si mostrano il numero di infrazioni delle metriche prese 
 riguardanti la qualità del processo di codifica.
 
 /*da vedere se lasciare la tabella o mettere il grafico*/
-
+/*
 #figure(
 table(
       columns:(auto,auto,auto),
@@ -1218,7 +1218,7 @@ table(
       [*MPC-PM*], [0], [≤ 5],
       [*MPC-LCM*], [0], [≤ 25]
 ),
-caption: [Metriche della codifica per lo sprint 12.])
+caption: [Metriche della codifica per lo sprint 12.])*/
 
 #figure(
   image("./assets/valutazione-metriche/ATC_PM_LCM.png", width: 85%),
@@ -1268,16 +1268,16 @@ Dall'analisi del grafico emerge che tutti i requisiti obbligatori sono stati sod
 #figure(
   image("./assets/valutazione-metriche/SFIN_SFOUT.png", width: 85%),
   caption: [
-    Valutazione metrica FAN-IN FAN-OUT.
+    Valutazione metrica SFIN SFOUT.
   ],
 )
 
-FAN-IN rappresenta il numero di moduli o componenti direttamente collegati o dipendenti da un modulo o una funzione specifica. 
+SFIN rappresenta il numero di moduli o componenti direttamente collegati o dipendenti da un modulo o una funzione specifica. 
 SFOUT rappresenta il numero di dipendenze o connessioni che un componente o modulo particolare ha con altri componenti o moduli. Misura quanti altri elementi dipendono o interagiscono con un dato elemento all'interno di un #glossary[sistema].
 
-L'analisi dei valori numerici evidenzia che il fan-in si attesta intorno al valore 2,6, indicando che ogni modulo o componente specifico ha in media circa 2,6 altre parti del #glossary[sistema] che dipendono direttamente da esso. Questo valore suggerisce che, sebbene ci sia un certo grado di dipendenza da altre parti del #glossary[sistema], questo non è così elevato da indicare una massima utilizzazione del modulo da altre parti del #glossary[sistema].
+L'analisi dei valori numerici evidenzia che il SFIN si attesta intorno al valore 2,6, indicando che ogni modulo o componente specifico ha in media circa 2,6 altre parti del #glossary[sistema] che dipendono direttamente da esso. Questo valore suggerisce che, sebbene ci sia un certo grado di dipendenza da altre parti del #glossary[sistema], questo non è così elevato da indicare una massima utilizzazione del modulo da altre parti del #glossary[sistema].
 
-Per quanto riguarda il fan-out, che si attesta intorno al valore di 5,62, questo indica che ogni modulo ha in media circa 5,62 dipendenze o connessioni con altri moduli o componenti all'interno del #glossary[sistema]. Un valore così elevato di fan-out potrebbe suggerire che alcuni moduli hanno molte dipendenze da altri moduli, il che potrebbe aumentare la complessità del #glossary[sistema] e rendere più difficile la gestione dei moduli stessi.
+Per quanto riguarda il SFOUT, che si attesta intorno al valore di 5,62, questo indica che ogni modulo ha in media circa 5,62 dipendenze o connessioni con altri moduli o componenti all'interno del #glossary[sistema]. Un valore così elevato di fan-out potrebbe suggerire che alcuni moduli hanno molte dipendenze da altri moduli, il che potrebbe aumentare la complessità del #glossary[sistema] e rendere più difficile la gestione dei moduli stessi.
 
 
 
