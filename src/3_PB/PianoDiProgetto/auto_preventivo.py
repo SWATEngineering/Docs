@@ -63,6 +63,9 @@ with open('preventivi/budget.csv', newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter=',')
     budget_csv = [next(reader)] # skip header
     rows = list(reader)
+    # starting budget_time and budget_cash
+    starting_budget_time = int(rows[1][1])
+    starting_budget_cash = int(rows[1][2])
     budget_time = int(rows[sprintNum-1][1]) # we skip the first column
     budget_cash = int(rows[sprintNum-1][2])
     for row in rows:
@@ -182,9 +185,9 @@ plt.clf()
 # Creating the cost cash pie chart
 fig, ax = plt.subplots()
 wedges, texts, autotexts = ax.pie(
-    [budget_cash - remaining_cash, remaining_cash],
+    [starting_budget_cash - remaining_cash, remaining_cash],
     labels=None,
-    autopct=lambda p: "{:.1f}€ ({:.1f}%)".format(p * budget_cash / 100, p),
+    autopct=lambda p: "{:.1f}€ ({:.1f}%)".format(p * starting_budget_cash / 100, p),
     startangle=90,
     colors=["#FFB6C1", "#ADD8E6"],
 )
@@ -197,8 +200,8 @@ plt.clf()
 # Creating the cost time pie chart
 fig, ax = plt.subplots()
 wedges, texts, autotexts = ax.pie(
-    [budget_time - remaining_time, remaining_time],
-    autopct=lambda p: "{:.1f} ({:.1f}%)".format(p * budget_time / 100, p),
+    [starting_budget_time - remaining_time, remaining_time],
+    autopct=lambda p: "{:.1f} ({:.1f}%)".format(p * starting_budget_time / 100, p),
     startangle=90,
     colors=["#FFB6C1", "#ADD8E6"],
 )
