@@ -151,8 +151,8 @@ caption: [Tabella metriche per la funzionalità del prodotto.])
             align: (x, y) => (center, center, center,center).at(x),
             fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
             [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
-            [MPD-FIN], [Structure Fan In], [massimizzare], [massimizzare],
-            [MPD-FOUT], [Structure Fan Out], [minimizzare], [minimizzare],
+            [MPD-SFIN], [Structure Fan In], [massimizzare], [massimizzare],
+            [MPD-SFOUT], [Structure Fan Out], [minimizzare], [minimizzare],
             [MPD-CCM], [Complessità Ciclomatica per Metodo], [≤ 5], [≤ 4],
       ),
 caption: [Tabella metriche per la manutenibilità del prodotto.
@@ -1140,10 +1140,10 @@ Il grafico mostra che effettivamente il team ha mantenuto un ritmo di avanzament
 Tuttavia, si può evincere anche che il progetto risulta essere leggermente in ritardo rispetto alle tempistiche inizialmente previste.
 Considerando che gli otto #glossary[sprint] effettuati corrispondono ad un periodo temporale di 10 settimane, esattamente la metà del periodo di tempo previsto per il completamento dell'intero progetto, ci si aspettava che le due metriche delineate nel grafico si fossero già incrociate giunti a questo punto.
 
-*#glossary[PB]* Dal grafico si può notare come l'AC sia continuato a salire fino a fermarsi poco al di sotto dell'EAC. Questo indica che i costi effettivamente sostenuti sono stati inferiori alle stime previste per completare il progetto, il che suggerisce un'efficace gestione dei costi. Bisogna sottolineare, inoltre, che, come illustrato nell'ultimo consuntivo all'interno del _Piano di Progetto v2.0_, il team si è ritrovato ad avere a disposizione un budget leggermente più ampio rispetto a quanto preventivato per lo svolgimento del progetto sino alla #glossary[PB] a causa della rinuncia alla #glossary[CA]; il team ha dunque portato a termine gli obiettivi del periodo pre-#glossary[PB] disponendo ancora di alcune risorse inutilizzate, per quanto limitate.
+*#glossary[PB]* Dal grafico si può notare come l'AC sia continuato a salire fino a fermarsi poco al di sotto dell'EAC. Questo indica che i costi effettivamente sostenuti sono stati inferiori alle stime previste per completare il progetto, il che suggerisce un'efficace gestione dei costi. Bisogna sottolineare, inoltre, che, come illustrato nell'ultimo consuntivo all'interno del _Piano di Progetto v2.0_, il team si è ritrovato ad avere a disposizione un budget leggermente più ampio rispetto a quanto preventivato per lo svolgimento del progetto sino alla #glossary[PB] a causa della rinuncia alla #glossary[CA]\; il team ha dunque portato a termine gli obiettivi del periodo pre-#glossary[PB] disponendo ancora di alcune risorse inutilizzate, per quanto limitate.
 Inoltre, l'ETC è continuato a diminuire nel corso degli #glossary[sprint], indicando una riduzione progressiva nella stima dei costi necessari per completare il progetto. 
 
-
+pagebreak()
 === Earned Value e Planned Value
 
 #figure(
@@ -1198,7 +1198,7 @@ Fare in modo che non vi siano errori nei documenti prima della revisione #glossa
 Per ovviare al problema il team ha deciso di introdurre una checklist incentrata sugli errori ortografici, in modo tale che i responsabili del processo di verifica possano avvalersene nel correggere eventuali errori. Questa checklist è pensata non solo come uno strumento pratico, ma principalmente come un promemoria costante per il Verificatore.
 Tale strumento ha mostrato immediatamente i suoi effetti benefici: gli errori nel corso dell'ottavo #glossary[sprint] sono calati a zero.
 
-*#glossary[PB]* Nella revisione dei documenti _Specifica Tecnica v1.0_ e _Manuale Utente v1.0_, è emerso un certo numero di errori grammaticali e formali. Questa situazione è stata principalmente causata dal fatto che il team ha concentrato il proprio sforzo principalmente sulla revisione del codice e sui test, trascurando una revisione approfondita dei documenti stessi.
+*#glossary[PB]* Nella revisione dei documenti _Specifica Tecnica v1.0_ e _Manuale Utente v1.0_, è emerso un certo numero di errori grammaticali e formali. Questa situazione è stata principalmente causata dal fatto che il team ha inizialmente concentrato i propri sforzi principalmente sulla revisione del codice e sui test, posticipando temporaneamente la revisione approfondita dei documenti citati.
 D'altra parte, gli altri documenti non presentano errori grammaticali evidenti, suggerendo un'efficace applicazione delle checklist di controllo e dei vari strumenti di revisione.
 
 
@@ -1227,7 +1227,7 @@ caption: [Metriche della codifica per lo sprint 12.])*/
   ],
 )
 
-Nell'ambito delle metriche di codifica, si è verificata un'unica situazione di violazione riguardante la metrica ATC (Attributi per Classe), la quale è stata risolta nel corso dell'ultimo #glossary[sprint]. È importante sottolineare che gli attributi di classe, i parametri per metodo (PM) e il numero di righe per funzione (LCM) sono tutti conformi ai limiti accettabili.
+Nell'ambito delle metriche di codifica, si sono verificate esclusivamente due infrazioni della metrica ATC (Attributi per Classe), le quali sono state risolte nel corso del penultimo #glossary[sprint]. È importante sottolineare che, al termine dell'ultimo #glossary[sprint], gli attributi di classe, i parametri per metodo (PM) e il numero di righe per funzione (LCM) sono tutti conformi ai limiti accettabili.
 
 #pagebreak()
 == Qualità di processo - gestione della qualità
@@ -1243,7 +1243,7 @@ Nell'ambito delle metriche di codifica, si è verificata un'unica situazione di 
 
 *#glossary[RTB]* Le Metriche Non Soddisfatte corrispondono alle metriche MPC-CO, MPC-CPI, MPC-EAC. In concomitanza con l'ottavo #glossary("sprint"), la misurazione di MPC-CO è rientrata all'interno del valore di accettazione. Per quanto riguarda MPC-CPI e MPC-EAC, essendo estremamente legate tra loro, si rimanda alle considerazioni relative a MPC-EAC.
 
-*#glossary[PB]* Durante gli #glossary[sprint] 11 e 12, la metrica CPI si è collocata entro il suo intervallo accettabile, determinando di conseguenza un posizionamento adeguato anche per la metrica EAC.  Durante lo #glossary[sprint] 12, le metriche non soddisfatte erano riconducibili ai requisiti obbligatori soddisfatti, oltre a due violazioni nella metrica ATC (ovvero il numero di attributi per classe). Nello #glossary[sprint] 13 si è verificata la violazione della metrica CO (correzione ortografica)  il che può essere attribuito al fatto che i documenti non erano stati sottoposti ad un'approfondita revisione. Tuttavia, a partire dallo #glossary[sprint] 14, tutte le metriche hanno raggiunto i valori desiderati e il numero di metriche non soddisfatte è calato a 0.
+*#glossary[PB]* Verso il termine dello #glossary[sprint] 12, la metrica CPI si è collocata entro il suo intervallo accettabile, determinando di conseguenza un posizionamento adeguato anche per la metrica EAC.  Tuttavia, le MNS sono rimaste due perchè le metriche riconducibili ai requisiti obbligatori soddisfatti e all'ATC (ovvero il numero di attributi per classe), valutate a partire dal dodicesimo #glossary[sprint], sono risultate essere non soddisfatte. Al termine dello #glossary[sprint] 13 si è risolta la violazione della metrica CO (Correttezza Ortografica), portando il numero di MNS a uno. Infine, a partire dallo #glossary[sprint] 14, tutte le metriche hanno raggiunto i valori desiderati e il numero di MNS è calato a 0.
 
 
 // == Qualità di prodotto
