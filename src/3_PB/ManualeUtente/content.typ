@@ -113,7 +113,7 @@ Per il corretto funzionamento del simulatore di biciclette elettriche è necessa
 
 - Spostarsi nella sezione "Dashboard";
 - Se non ancora accettati, accettare i "Termini e Condizioni", nella sotto-sezione "Profile";
-- Nella sotto-sezione "Tokens" creare un nuovo token scegliendo la versione "Standard" e un nome a piacemento;
+- Nella sotto-sezione "Tokens" creare un nuovo token scegliendo la versione "Standard" e un nome a piacimento;
 - Copiare l'API Key generata a schermo e salvarla per dopo.
 
 == Creare Discord Webhook
@@ -247,7 +247,7 @@ Tali #glossary[pannelli] mettono a disposizione, in alto a sinistra, due pulsant
 
 ===== Tabelle (formato "Table")
 
-Sono visibili delle scroll bar che consentono di scorrere la tabella verticalmente o orizzontalmente in caso non fosse interamente visibile. Inoltre, cliccando sul nome di un determinato campo, è possibile ordinare la tabella rispetto a quel campo, in ordine crescente o decrescente; la direzione della freccia affiancata al nome del campo, permette di comprendere per quale colonna si sta ordinando e secondo quale ordine.
+Sono visibili delle scrollbar che consentono di scorrere la tabella verticalmente o orizzontalmente in caso non fosse interamente visibile. Inoltre, cliccando sul nome di un determinato campo, è possibile ordinare la tabella rispetto a quel campo, in ordine crescente o decrescente; la direzione della freccia affiancata al nome del campo, permette di comprendere per quale colonna si sta ordinando e secondo quale ordine.
 
 ===== Indicatori numerici (formato "Stat")
 
