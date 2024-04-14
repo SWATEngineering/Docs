@@ -972,7 +972,7 @@ All'interno della cartella `src`, sono presenti 2 cartelle organizzate nel modo 
                 - NormeDiProgetto;
                 - PianoDiProgetto;
                 - PianoDiQualifica;
-                - SpecificheTecniche;
+                - SpecificaTecnica;
                 - VerbaliEsterni;
                 - VerbaliInterni.
 
