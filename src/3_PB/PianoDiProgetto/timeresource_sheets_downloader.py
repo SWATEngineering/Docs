@@ -215,16 +215,16 @@ for sprint_key in sprints:
     time_values = [
         tot_ore_amministratore,
         tot_ore_analista,
-        tot_ore_progettista,
         tot_ore_programmatore,
+        tot_ore_progettista,
         tot_ore_responsabile,
         tot_ore_verificatore,
     ]
     role_values = [
         AMMINISTRATORE,
         ANALISTA,
-        PROGETTISTA,
         PROGRAMMATORE,
+        PROGETTISTA,
         RESPONSABILE,
         VERIFICATORE,
     ]
@@ -254,10 +254,16 @@ for sprint_key in sprints:
     rendicontazione_ore_wo_totale_persona = rendicontazione_ore.drop(
         "Totale per persona", axis=1, errors="ignore"
     )
+    rendicontazione_ore_wo_totale_persona = (
+        rendicontazione_ore_wo_totale_persona.reindex(
+            columns=["Nominativo", "Am", "An", "Pr", "Pt", "Re", "Ve"]
+        )
+    )
     rendicontazione_ore_wo_totale_persona = rendicontazione_ore_wo_totale_persona[
         rendicontazione_ore_wo_totale_persona["Nominativo"] != "Totale per ruolo"
     ]
 
+    role_colors = ["#FF6961", "#5DADE2", "#E74C3C", "#F39C12", "#9B59B6", "#58D68D"]
     # Plot a bar chart with stacked bars for each Nominativo
     ax = rendicontazione_ore_wo_totale_persona.set_index("Nominativo").plot(
         kind="bar", stacked=True, color=role_colors, figsize=(10, 6)
