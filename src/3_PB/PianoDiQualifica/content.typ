@@ -152,7 +152,7 @@ caption: [Tabella metriche per la funzionalità del prodotto.])
             fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
             [*Metrica*],[*Descrizione*],[*Valore accettazione*],[*Valore ideale*],
             [MPD-FIN], [Structure Fan In], [massimizzare], [massimizzare],
-            [MPD-FOUT], [Structure Fan Out], [minimizzare], [minimizzarre],
+            [MPD-FOUT], [Structure Fan Out], [minimizzare], [minimizzare],
             [MPD-CCM], [Complessità Ciclomatica per Metodo], [≤ 5], [≤ 4],
       ),
 caption: [Tabella metriche per la manutenibilità del prodotto.
@@ -739,7 +739,7 @@ In questa sezione vengono descritti i test di integrazione del prodotto software
 
       ]),
       ([
-            Verificare che i dati generati dal sesnore dei parcheggi siano correttamente memorizzati nel database.
+            Verificare che i dati generati dal sensore dei parcheggi siano correttamente memorizzati nel database.
       ],"S",[]),
       ([
             Verificare che i dati generati dal sensore di precipitazioni atmosferiche siano correttamente memorizzati nel database.
@@ -754,7 +754,7 @@ In questa sezione vengono descritti i test di integrazione del prodotto software
       ]),
       
       ([
-            Verificare che i dati generati dal sesnore del livello di riempimento dei bacini idrici siano correttamente memorizzati nel database.
+            Verificare che i dati generati dal sensore del livello di riempimento dei bacini idrici siano correttamente memorizzati nel database.
       ],"S",[]),
       ([
             Verificare che i dati generati dal sensore del livello di riempimento dei bacini idrici siano correttamente aggregati per intervalli di 1 minuto e memorizzati nel database.
@@ -1346,7 +1346,7 @@ Tutti i test prodotti sono stati superati con successo, senza alcun test fallito
 Le metriche di efficienza sono state calcolate utilizzando un elaboratore con le seguenti caratteristiche:
 - 16 GB RAM LPDDR5;
 - CPU M1 PRO 10 Core 3.2GHz.
-È stato valutato il rendimento del #glossary[sistema] a pieno carico, con più di quaranta simulatori di sensori attivi, ognuno generante una scrittura al secondo, per più di sei ore, senza che si verificassero rallentamenti significativi. I risultati sono rimasti invariati durante il corso del progetto, dato che le componenti sono rimaste le stesse e sono in grado di gestire una mole di dati molto superirore a quella richiesta per il progetto.
+È stato valutato il rendimento del #glossary[sistema] a pieno carico, con più di quaranta simulatori di sensori attivi, ognuno generante una scrittura al secondo, per più di sei ore, senza che si verificassero rallentamenti significativi. I risultati sono rimasti invariati durante il corso del progetto, dato che le componenti sono rimaste le stesse e sono in grado di gestire una mole di dati molto superiore a quella richiesta per il progetto.
 #figure(
 table(
       columns:(auto,auto,auto),
