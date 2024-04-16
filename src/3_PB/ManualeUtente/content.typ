@@ -311,11 +311,6 @@ Il #glossary[pannello] contenente un grafico in formato "Stat" riporta dati rela
 
 - Media della temperatura riportata da tutti i sensori cumulativamente nell'intervallo di tempo selezionato;
 
-#figure(
-image("assets/screenshots/media-temperatura.png",width:25%),
-caption: [Grafico in formato Stat della temperatura.]
-)
-
 - Media dell'intensità delle precipitazioni riportata da tutti i sensori cumulativamente nell'intervallo di tempo selezionato;
 
 - Media del livello di polveri sottili nell'aria tra quelli riportati da tutti i sensori cumulativamente nell'ultimo minuto;
@@ -399,20 +394,20 @@ La #glossary[dashboard] "Superamento soglie" è dedita alla visualizzazione dei 
 
 - Superamento soglia livello bacini idrici (70%): riporta i dati superanti la soglia del 70% di capienza;
 
+- Superamento soglia livello polveri sottili ($80#sym.mu g\/m^3$): riporta i dati superanti la soglia degli $80#sym.mu g\/m^3$ per l'inquinamento dell'aria (#glossary("PM10"));
+
+- Superamento soglia temperatura (40°C): riporta i dati superanti la soglia dei 40 gradi Celsius di temperatura.
+
 #figure(
 image("assets/screenshots/soglia-bacini.png",width:100%),
 caption: [Grafico in formato Table contenente i dati superanti la soglia dei bacini idrici.]
 )
 
-- Superamento soglia livello polveri sottili ($80#sym.mu g\/m^3$): riporta i dati superanti la soglia degli $80#sym.mu g\/m^3$ per l'inquinamento dell'aria (#glossary("PM10"));
-
-- Superamento soglia temperatura (40°C): riporta i dati superanti la soglia dei 40 gradi Celsius di temperatura.
-
 #pagebreak()
 
 == Allerte
 
-Come illustrato nella sezione precedente *Dashboard "Superamento soglie"*, esistono cinque soglie preimpostate per monitorare altrettante tipologie di sensori ambientali; nel momento in cui i dati rilevati ed inviati da un #glossary[sensore] superano una determinata soglia, questi vengono visualizzati all'interno della #glossary[dashboard] apposita, ma l'infrazione viene anche rilevata dalle "Alert rules" visibili all'interno della sezione omonima nella pagina "Alerting" e comunicata all'utente tramite una notifica sul canale Discord configurato come spiegato nella sezione "*Creare Discord Webhook*". Ogni regola o alert rule verifica, a intervalli regolari di 5 minuti, se il superamento della soglia impostata si sia verificato nei 5 minuti precedenti; inoltre, trattiene il valore massimo tra quelli superanti la soglia, per ogni singolo #glossary[sensore]. #glossary[Grafana] permette anche di configurare le modalità di invio e il formato delle notifiche nelle sezioni “Notification Policy” e “Contact Points” della pagina "Alerting", garantendo un maggiore controllo e una maggiore flessibilità nella gestione delle notifiche. 
+Come illustrato nella sezione precedente *Dashboard "Superamento soglie"*, esistono cinque soglie preimpostate per monitorare altrettante tipologie di sensori ambientali; nel momento in cui i dati rilevati ed inviati da un #glossary[sensore] superano una determinata soglia, questi vengono visualizzati all'interno della #glossary[dashboard] apposita, ma l'infrazione viene anche rilevata dalle "Alert rules" visibili all'interno della sezione omonima nella pagina "Alerting" e comunicata all'utente tramite una notifica sul canale Discord configurato come spiegato nella sezione "*Creare Discord Webhook*". #glossary[Grafana] permette anche di configurare le modalità di invio e il formato delle notifiche nelle sezioni “Notification Policy” e “Contact Points” della pagina "Alerting", garantendo un maggiore controllo e una maggiore flessibilità nella gestione delle notifiche. 
 
 Senza apportare modifiche particolari, attualmente le notifiche vengono visualizzate all'interno del canale Discord configurato dall'utente nel modo seguente:
 
