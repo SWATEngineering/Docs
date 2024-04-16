@@ -204,6 +204,18 @@ for sprint_key in sprints:
         ],
         ignore_index=True,
     )
+    rendicontazione_ore = rendicontazione_ore.reindex(
+        columns=[
+            "Nominativo",
+            AMMINISTRATORE,
+            ANALISTA,
+            PROGETTISTA,
+            PROGRAMMATORE,
+            RESPONSABILE,
+            VERIFICATORE,
+            "Totale per persona",
+        ]
+    )
 
     # Saving sprint related analyzed data to csv
     rendicontazione_ore.to_csv(
@@ -215,16 +227,16 @@ for sprint_key in sprints:
     time_values = [
         tot_ore_amministratore,
         tot_ore_analista,
-        tot_ore_programmatore,
         tot_ore_progettista,
+        tot_ore_programmatore,
         tot_ore_responsabile,
         tot_ore_verificatore,
     ]
     role_values = [
         AMMINISTRATORE,
         ANALISTA,
-        PROGRAMMATORE,
         PROGETTISTA,
+        PROGRAMMATORE,
         RESPONSABILE,
         VERIFICATORE,
     ]
@@ -256,7 +268,7 @@ for sprint_key in sprints:
     )
     rendicontazione_ore_wo_totale_persona = (
         rendicontazione_ore_wo_totale_persona.reindex(
-            columns=["Nominativo", "Am", "An", "Pr", "Pt", "Re", "Ve"]
+            columns=["Nominativo", "Am", "An", "Pt", "Pr", "Re", "Ve"]
         )
     )
     rendicontazione_ore_wo_totale_persona = rendicontazione_ore_wo_totale_persona[

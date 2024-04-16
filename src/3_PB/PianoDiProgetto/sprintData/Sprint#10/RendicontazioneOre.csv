@@ -1,8 +1,8 @@
-Nominativo,Am,Pt,Re,Ve,An,Pr,Totale per persona
-Giacomo D.,0.0,4.5,0.0,3.0,0,0,7.5
-Matteo R.,0.0,4.0,0.0,0.0,0,0,4.0
-Nancy K.,1.0,0.0,0.0,2.0,0,0,3.0
-Riccardo C.,0.0,4.5,0.0,0.0,0,0,4.5
-Riccardo T.,0.5,4.5,0.0,0.0,0,0,5.0
-Simone C.,0.0,0.0,5.0,0.0,0,0,5.0
-Totale per ruolo,1.5,17.5,5.0,5.0,0,0,29.0
+Nominativo,Am,An,Pt,Pr,Re,Ve,Totale per persona
+Giacomo D.,0.0,0,4.5,0,0.0,3.0,7.5
+Matteo R.,0.0,0,4.0,0,0.0,0.0,4.0
+Nancy K.,1.0,0,0.0,0,0.0,2.0,3.0
+Riccardo C.,0.0,0,4.5,0,0.0,0.0,4.5
+Riccardo T.,0.5,0,4.5,0,0.0,0.0,5.0
+Simone C.,0.0,0,0.0,0,5.0,0.0,5.0
+Totale per ruolo,1.5,0,17.5,0,5.0,5.0,29.0
