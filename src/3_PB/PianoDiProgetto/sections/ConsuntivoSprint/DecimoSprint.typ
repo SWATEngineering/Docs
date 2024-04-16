@@ -2,7 +2,7 @@
 #import "../../functions.typ": rendicontazioneOreAPosteriori, rendicontazioneCostiAPosteriori, glossary
 
 
-== Decimo #glossary[sprint]
+==== Consuntivo
 
 *Inizio*: Venerdì 23/02/2024
 

@@ -2,7 +2,7 @@
 #import "../../functions.typ": rendicontazioneOreAPosteriori, rendicontazioneCostiAPosteriori, glossary
 
 
-== Tredicesimo #glossary[sprint]
+==== Consuntivo
 
 *Inizio*: Venerdì 15/03/2024
 

@@ -1,7 +1,7 @@
 #import "../../const.typ": Re_cost, Am_cost, An_cost, Ve_cost, Pr_cost, Pt_cost
 #import "../../functions.typ": prospettoOrario, prospettoEconomico, glossary
 
-== Terzo #glossary[sprint]
+==== Preventivo
 
 *Inizio*: Venerdì 08/12/2023
 

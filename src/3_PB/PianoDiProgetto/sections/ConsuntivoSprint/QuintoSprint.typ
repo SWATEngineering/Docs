@@ -2,7 +2,7 @@
 #import "../../functions.typ": rendicontazioneOreAPosteriori, rendicontazioneCostiAPosteriori, glossary
 
 
-== Quinto #glossary[sprint]
+==== Consuntivo
 
 *Inizio*: Venerdì 22/12/2023
 
