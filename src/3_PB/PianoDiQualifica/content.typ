@@ -1267,12 +1267,12 @@ Dall'analisi del grafico emerge che tutti i requisiti obbligatori sono stati sod
 
 #figure(
 table(
-      columns:(auto,auto,auto),
+      columns:(auto,auto),
       align: (x, y) => (center, center, center).at(x),
       fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
-      [*Metrica*],[*Valore*],[*Valore accettazione*],
-      [*MPC-SFIN*], [12], [N/A], 
-      [*MPC-SFOUT*], [1], [N/A]
+      [*Metrica*],[*Valore*],
+      [*MPC-SFIN*], [12], 
+      [*MPC-SFOUT*], [1]
       
 ),
 caption: [Massimo e minimo delle metriche SFIN e SFOUT])
