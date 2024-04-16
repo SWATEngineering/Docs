@@ -64,8 +64,8 @@ with open('preventivi/budget.csv', newline='') as csvfile:
     budget_csv = [next(reader)] # skip header
     rows = list(reader)
     # starting budget_time and budget_cash
-    starting_budget_time = int(rows[1][1])
-    starting_budget_cash = int(rows[1][2])
+    starting_budget_time = int(rows[0][1])
+    starting_budget_cash = int(rows[0][2])
     budget_time = int(rows[sprintNum-1][1]) # we skip the first column
     budget_cash = int(rows[sprintNum-1][2])
     for row in rows:
