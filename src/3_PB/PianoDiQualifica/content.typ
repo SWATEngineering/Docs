@@ -1266,18 +1266,23 @@ Dall'analisi del grafico emerge che tutti i requisiti obbligatori sono stati sod
 === Manutenibilità
 
 #figure(
-  image("./assets/valutazione-metriche/SFIN_SFOUT.png", width: 85%),
-  caption: [
-    Valutazione metrica SFIN SFOUT.
-  ],
-)
+table(
+      columns:(auto,auto,auto),
+      align: (x, y) => (center, center, center).at(x),
+      fill:(_,row) => if row==0 {luma(150)} else if calc.odd(row) { luma(220)} else {white},
+      [*Metrica*],[*Valore*],[*Valore accettazione*],
+      [*MPC-SFIN*], [12], [N/A], 
+      [*MPC-SFOUT*], [1], [N/A]
+      
+),
+caption: [Massimo e minimo delle metriche SFIN e SFOUT])
 
 SFIN rappresenta il numero di moduli o componenti direttamente collegati o dipendenti da un modulo o una funzione specifica. 
 SFOUT rappresenta il numero di dipendenze o connessioni che un componente o modulo particolare ha con altri componenti o moduli. Misura quanti altri elementi dipendono o interagiscono con un dato elemento all'interno di un #glossary[sistema].
 
-L'analisi dei valori numerici evidenzia che il SFIN si attesta intorno al valore 2,6, indicando che ogni modulo o componente specifico ha in media circa 2,6 altre parti del #glossary[sistema] che dipendono direttamente da esso. Questo valore suggerisce che, sebbene ci sia un certo grado di dipendenza da altre parti del #glossary[sistema], questo non è così elevato da indicare una massima utilizzazione del modulo da altre parti del #glossary[sistema].
+L'analisi dei valori numerici evidenzia che il valore massimo dell'SFIN si attesta a 12, indicando che un modulo o componente specifico ha 12 altre parti del sistema che dipendono direttamente da esso. 
 
-Per quanto riguarda il SFOUT, che si attesta intorno al valore di 5,62, questo indica che ogni modulo ha in media circa 5,62 dipendenze o connessioni con altri moduli o componenti all'interno del #glossary[sistema]. Un valore così elevato di fan-out potrebbe suggerire che alcuni moduli hanno molte dipendenze da altri moduli, il che potrebbe aumentare la complessità del #glossary[sistema] e rendere più difficile la gestione dei moduli stessi.
+Il valore minimo di SFOUT è 1, suggerendo che almeno un modulo ha solo una dipendenza o connessione con un altro modulo o componente all'interno del sistema. Questo potrebbe indicare una minore interdipendenza tra alcuni moduli, sebbene altri moduli possano avere un numero maggiore di connessioni.
 
 
 
