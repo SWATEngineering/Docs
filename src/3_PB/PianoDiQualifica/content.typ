@@ -1143,7 +1143,7 @@ Considerando che gli otto #glossary[sprint] effettuati corrispondono ad un perio
 *#glossary[PB]* Dal grafico si può notare come l'AC sia continuato a salire fino a fermarsi poco al di sotto dell'EAC. Questo indica che i costi effettivamente sostenuti sono stati inferiori alle stime previste per completare il progetto, il che suggerisce un'efficace gestione dei costi. Bisogna sottolineare, inoltre, che, come illustrato nell'ultimo consuntivo all'interno del _Piano di Progetto v2.0_, il team si è ritrovato ad avere a disposizione un budget leggermente più ampio rispetto a quanto preventivato per lo svolgimento del progetto sino alla #glossary[PB] a causa della rinuncia alla #glossary[CA]\; il team ha dunque portato a termine gli obiettivi del periodo pre-#glossary[PB] disponendo ancora di alcune risorse inutilizzate, per quanto limitate.
 Inoltre, l'ETC è continuato a diminuire nel corso degli #glossary[sprint], indicando una riduzione progressiva nella stima dei costi necessari per completare il progetto. 
 
-pagebreak()
+#pagebreak()
 === Earned Value e Planned Value
 
 #figure(
