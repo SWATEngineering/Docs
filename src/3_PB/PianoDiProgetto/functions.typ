@@ -21,7 +21,7 @@
 
 #let rendicontazioneOreAPosteriori(sprintNumber: "01") = {
   let rendicontazioneOre = csv("sprintData/Sprint#" + sprintNumber + "/RendicontazioneOre.csv")
-  [=== Rendicontazione ore a posteriori]
+  [===== Rendicontazione ore a posteriori]
   [I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, durante l'attuale #glossary[sprint]:]
   figure(
     table(
@@ -49,7 +49,7 @@
 
 #let rendicontazioneCostiAPosteriori(sprintNumber: "01") = {
   let rendicontazioneCosti = csv("sprintData/Sprint#" + sprintNumber + "/RendicontazioneCosti.csv")
-  [=== Rendicontazione costi a posteriori]
+  [===== Rendicontazione costi a posteriori]
   [In questo #glossary[sprint], il costo per ogni ruolo assunto viene riportato in tabella:]
   figure(
     table(
@@ -79,7 +79,7 @@
 
 #let prospettoOrario(sprintNumber: "1") = {
   let table_time = csv("preventivi/assets/tables/tableProspettoOrario" + sprintNumber + ".csv")
-  [=== Prospetto orario]
+  [===== Prospetto orario]
   [I seguenti in tabella, sono i ruoli assunti per ogni componente del gruppo, durante questo #glossary[sprint]:]
   figure(
     table(
@@ -106,7 +106,7 @@
 
 #let prospettoEconomico(sprintNumber: "1") = {
   let table_cost = csv("preventivi/assets/tables/tableProspettoEconomico" + sprintNumber + ".csv")
-  [=== Prospetto economico]
+  [===== Prospetto economico]
   [In questo #glossary[sprint], il costo per ogni ruolo assunto viene riportato in tabella:]
   figure(
     table(

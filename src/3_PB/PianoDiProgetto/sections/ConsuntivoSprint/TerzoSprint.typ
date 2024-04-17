@@ -2,7 +2,7 @@
 #import "../../functions.typ": rendicontazioneOreAPosteriori, rendicontazioneCostiAPosteriori, glossary
 
 
-== Terzo #glossary[sprint]
+==== Consuntivo
 
 *Inizio*: Venerdì 08/12/2023
 
@@ -12,7 +12,7 @@
 
 #rendicontazioneCostiAPosteriori(sprintNumber: "03")
 
-=== Analisi a posteriori
+===== Analisi a posteriori
 
 Il consuntivo risulta essere significativamente più simile al preventivo di quanto non lo sia stato in precedenza nel numero di ore, segno che la riduzione della durata degli #glossary[sprint] a 1 settimana ha contribuito a rendere la pianificazione più precisa. L'unica discrepanza lieve consiste nell'avere più ore da Amministratore di quante preventivate inizialmente, ma ciò è dovuto semplicemente al fatto che sono state spese risorse aggiuntive per realizzare delle automazioni all'interno del sito vetrina e di determinati documenti. 
 

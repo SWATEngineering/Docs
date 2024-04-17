@@ -1,28 +1,5 @@
 #import "../functions.typ": glossary, team
 
-= Consuntivo
-
-Si esaminano attentamente le risorse effettivamente impiegate durante ciascuno #glossary[sprint], confrontandole con le previsioni iniziali. Attraverso questa analisi, si vogliono identificare eventuali scostamenti dal piano iniziale e reagire di conseguenza, in modo tale da apportare un miglioramento continuo. 
-Si riportano inoltre gli elementi positivi e negativi emersi all'interno delle retrospettive di ogni #glossary[sprint], eventuali rischi incorsi e la valutazione del relativo processo di mitigazione, in modo tale da portare eventuali miglioramenti alla sezione *Analisi dei rischi*. 
-
-
-#include "ConsuntivoSprint/PrimoSprint.typ"
-#include "ConsuntivoSprint/SecondoSprint.typ"
-#include "ConsuntivoSprint/TerzoSprint.typ"
-#include "ConsuntivoSprint/QuartoSprint.typ"
-#include "ConsuntivoSprint/QuintoSprint.typ"
-#include "ConsuntivoSprint/SestoSprint.typ"
-#include "ConsuntivoSprint/SettimoSprint.typ"
-#include "ConsuntivoSprint/OttavoSprint.typ"
-#include "ConsuntivoSprint/NonoSprint.typ"
-#include "ConsuntivoSprint/DecimoSprint.typ"
-#include "ConsuntivoSprint/UndicesimoSprint.typ"
-#include "ConsuntivoSprint/DodicesimoSprint.typ"
-#include "ConsuntivoSprint/TredicesimoSprint.typ"
-#include "ConsuntivoSprint/QuattordicesimoSprint.typ"
-#include "ConsuntivoSprint/QuindicesimoSprint.typ"
-
-#pagebreak()
 == Consuntivo generale
 
 Se si considera che secondo il preventivo aggiornato in occasione dell'#glossary[RTB] si dovevano avere 57 ore produttive rimanenti per lo svolgimento del periodo antecedente alla terza revisione #glossary[CA], è evidente che il team, una volta deciso di non volerla effettuare, ha accelerato il ritmo di lavoro per sfruttare anche le ore in più a disposizione in un lasso di tempo più breve, senza però riuscirci del tutto; tuttavia, bisogna sottolineare anche che, per quanto il team abbia tentato di riportare con accuratezza le ore produttive impiegate all'interno dello #glossary[spreadsheet] "Time & Resource Manager", è probabile che queste siano state sottostimate nella prima parte del progetto (prima della #glossary[PB]), dato che il rapporto ore orologio su ore produttive non era facilmente individuabile per ciascun componente e ha subito variazioni significative con l'avvento della sessione di esami (il che non si è verificato dopo l'#glossary[RTB]). Per questi motivi il team si ritiene comunque soddisfatto del proprio rendimento e, soprattutto, di essere riuscito a rispettare le scandenze temporali previste dopo l'#glossary[RTB]. 
