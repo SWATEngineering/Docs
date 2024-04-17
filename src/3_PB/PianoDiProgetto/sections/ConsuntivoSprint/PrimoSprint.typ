@@ -11,7 +11,7 @@
 
 #rendicontazioneCostiAPosteriori(sprintNumber: "01")
 
-=== Analisi a posteriori
+===== Analisi a posteriori
 
 Il consuntivo, relativo allo #glossary[sprint] corrente, evidenzia significative disparità rispetto al preventivo, soprattutto in merito alla distribuzione dei ruoli. Tale deviazione è imputabile al cambiamento dei ruoli assegnati, avvenuto a metà #glossary[sprint], circostanza non prevista durante la fase di pianificazione iniziale. Dato il considerevole aumento complessivo delle ore rispetto a quanto inizialmente previsto nel preventivo, diventa essenziale adottare un approccio più attento nella fase di pianificazione e apportare gli adeguamenti necessari ai futuri preventivi (in particolare, assegnare più di un ruolo ai componenti del team qualora lo si ritenga necessario).
 La turnazione straordinaria dei ruoli (e, di conseguenza, l'assunzione di almeno due ruoli da parte di ciascun componente del team) si è resa necessaria per due motivi principali: 

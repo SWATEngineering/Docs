@@ -15,8 +15,12 @@
 #include "sections/Pianificazione.typ" 
 #pagebreak()
 
-= Preventivi e Consuntivi
-=== Introduzione preventivo
+= Preventivi e consuntivi
+
+== Introduzione
+
+=== Preventivi
+
 Ogni membro del gruppo si impegna a lavorare con la modalità di intensità dichiarata (alta), offrendo una disponibilità di 95 ore produttive a testa. 
 Questo preventivo è stato calcolato sulla base del costo orario per ruolo presente nel "Regolamento del Progetto Didattico" e sulla previsione di quante, delle 570 ore totali a disposizione, verranno utilizzate in ogni ruolo, durante i vari incrementi.
 Nelle seguenti sezioni viene illustrato come sarà articolato ogni incremento e quanto sarà il suo costo.
@@ -31,7 +35,7 @@ Per praticità, verranno utilizzate le seguenti abbreviazioni:
 
 Queste sezioni vogliono essere una proiezione finanziaria dettagliata dell'intero progetto, delineando chiaramente le risorse preventivate per ciascuno #glossary[sprint].
 
-=== Introduzione consuntivo
+=== Consuntivi
 
 Si esaminano attentamente le risorse effettivamente impiegate durante ciascuno #glossary[sprint], confrontandole con le previsioni iniziali. Attraverso questa analisi, si vogliono identificare eventuali scostamenti dal piano iniziale e reagire di conseguenza, in modo tale da apportare un miglioramento continuo. 
 Si riportano inoltre gli elementi positivi e negativi emersi all'interno delle retrospettive di ogni #glossary[sprint], eventuali rischi incorsi e la valutazione del relativo processo di mitigazione, in modo tale da portare eventuali miglioramenti alla sezione *Analisi dei rischi*. 
@@ -86,3 +90,6 @@ Si riportano inoltre gli elementi positivi e negativi emersi all'interno delle r
 === Quindicesimo #glossary[sprint]
 #include "sections/PreventivoSprint/QuindicesimoSprint.typ"
 #include "sections/ConsuntivoSprint/QuindicesimoSprint.typ"
+
+#pagebreak()
+#include "sections/Consuntivo.typ"

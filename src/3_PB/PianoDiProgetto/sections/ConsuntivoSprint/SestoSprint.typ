@@ -12,6 +12,6 @@
 
 #rendicontazioneCostiAPosteriori(sprintNumber: "06")
 
-=== Analisi a posteriori
+===== Analisi a posteriori
 
 Il consuntivo delinea come le ore effettive siano minori di quelle preventivate, nonostante queste ultime fossero già pressoché la metà di quelle preventivate solitamente (applicazione di una delle misure preventive di RP4 o Impegni universitari). Nonostante il rallentamento del ritmo di evoluzione del progetto, la comunicazione tra i componenti del team è migliorata rispetto allo #glossary[sprint] 5, grazie in particolare al meeting interno effettuato come da regola a fine #glossary[sprint] e ad un meeting di emergenza, sostenuto da 3 componenti del team, che è servito a discutere di criticità legate alla modifica dell'_Analisi dei Requisiti_. 

@@ -12,7 +12,7 @@
 
 #rendicontazioneCostiAPosteriori(sprintNumber: "05")
 
-=== Analisi a posteriori
+===== Analisi a posteriori
 
 Il consuntivo delinea un ritmo di lavoro stabile e simile a quanto preventivato, seppur il numero di ore effettive è leggermente calante rispetto agli #glossary[sprint] precedenti. Ciò è da attribuire sostanzialmente al periodo di festività e all'inizio della preparazione per la sessione di esami che riveste gli #glossary[sprint] 5 e 6. Da notare come le ore da Verificatore abbiano iniziato ad incrementare, in allineamento con gli obiettivi dello #glossary[sprint] che includono una revisione in stile #glossary[walkthrough] dell'_Analisi dei Requisiti_. Ormai è ancora più evidente come le ore da Amministratore predisposte inizialmente siano del tutto insufficienti a coprire le esigenze di sviluppo della #glossary[documentazione] del team allo stadio attuale, motivo per cui si è deciso di modificare il preventivo iniziale per accomodare un maggior numero di ore dedicate a tale ruolo. Si è anche notato che i preventivi realizzati all'inizio di ogni #glossary[sprint] dal Responsabile sono estremamente diversi rispetto a quelli realizzati come parte della pianificazione a lungo termine inclusa nel _Piano di Progetto_ a partire dallo #glossary[sprint] 2. Di conseguenza, il team ha deciso di rimuovere la pianificazione a lungo termine e sostituirla con una pianificazione a breve termine (2 #glossary[sprint] in avanti), oltre ad aggiungere pianificazione e preventivo per le tre #glossary[milestone] principali (le revisioni #glossary[RTB], #glossary[PB] e #glossary[CA]).
 
