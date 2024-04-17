@@ -2,7 +2,7 @@
 #import "../../functions.typ": rendicontazioneOreAPosteriori, rendicontazioneCostiAPosteriori, glossary
 
 
-==== Consuntivo
+==== Sesto consuntivo
 
 *Inizio*: Venerdì 29/12/2023
 

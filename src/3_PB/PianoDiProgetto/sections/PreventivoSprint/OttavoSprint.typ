@@ -1,7 +1,7 @@
 #import "../../const.typ": Re_cost, Am_cost, An_cost, Ve_cost, Pr_cost, Pt_cost
 #import "../../functions.typ": prospettoOrario, prospettoEconomico, glossary
 
-==== Preventivo
+==== Ottavo preventivo
 
 *Inizio*: Venerdì 12/01/2024
 

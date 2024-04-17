@@ -2,7 +2,7 @@
 #import "../../functions.typ": rendicontazioneOreAPosteriori, rendicontazioneCostiAPosteriori, glossary
 
 
-==== Consuntivo
+==== Tredicesimo consuntivo
 
 *Inizio*: Venerdì 15/03/2024
 

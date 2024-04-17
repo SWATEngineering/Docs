@@ -2,7 +2,7 @@
 #import "../../functions.typ": rendicontazioneOreAPosteriori, rendicontazioneCostiAPosteriori, glossary, team
 
 
-==== Consuntivo
+==== Quindicesimo consuntivo
 
 *Inizio*: Venerdì 29/03/2024
 
