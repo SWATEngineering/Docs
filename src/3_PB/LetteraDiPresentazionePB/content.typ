@@ -64,7 +64,7 @@ table(
 Diversamente da quanto preventivato in occasione della prima revisione RTB, #team ha deciso di terminare il progetto una volta svolta la _Product Baseline_ e di non proseguire con la _Customer Acceptance (CA)_.
 
 #v(50pt)
-
+#pagebreak()
 Cordiali saluti,
 
 #team.
