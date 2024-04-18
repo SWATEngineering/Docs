@@ -57,7 +57,7 @@
 #set text(30pt)
 #set heading(outlined: false)
 
-= Lettera di Presentazione PB ??/04/2024
+= Lettera di Presentazione PB 18/04/2024
 
 #v(10%)
 

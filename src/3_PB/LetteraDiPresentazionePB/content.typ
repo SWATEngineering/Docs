@@ -3,6 +3,7 @@
 /*************************************/
 /*    INSERIRE SOTTO IL CONTENUTO    */ 
 /*************************************/
+= Introduzione
 
 Egregi professori Vardanega e Cardin,
 
@@ -17,6 +18,7 @@ con la presente il gruppo #team esprime la propria intenzione di candidarsi alla
 
 proposto dall'azienda _SyncLab_.
 
+= Documentazione
 
 All'interno del seguente #underline(link("https://swatengineering.github.io/","link")), sotto la sezione _3_PB_, è possibile trovare tutta la documentazione richiesta, in particolare:
 - _AnalisiDeiRequisiti_2.0.pdf_;
@@ -28,10 +30,16 @@ All'interno del seguente #underline(link("https://swatengineering.github.io/","l
 - _SpecificaTecnica_1.0.pdf_.
 oltre a tutti i _Verbali Esterni_ ed _Interni_ divisi nelle relative categorie.
 
-Viene inoltre fornito il _Minimum Viable Product_.
+= Minimum Viable Product
 
-#team ha completato il progetto entro il 08/04/2024, per un costo totale di *10,787.5€*. 
-L'importo risulta leggermente più basso rispetto a quanto preventivato in sede di candidatura; ciò è dovuto al fatto che, rispetto alle 570 ore produttive preventivate inizialmente, il team ha effettivamente utilizzato 555 ore per svolgere le attività previste dal progetto fino alla seconda revisione PB.
+Il prodotto software realizzato dal team è stato validato come Minimum Viable Product (MVP) da parte della Proponente Sync Lab in data 02/04/2024, come descritto all'interno del verbale esterno di riferimento. 
+
+== Preventivo
+
+#team ha completato il progetto con un costo totale di *10,787.5€*. 
+L'importo risulta leggermente più basso rispetto a quanto preventivato in sede di candidatura (11,070€); ciò è dovuto al fatto che, rispetto alle 570 ore produttive preventivate inizialmente, il team ha effettivamente utilizzato 555 ore per svolgere le attività previste dal progetto fino alla seconda revisione PB. Di seguito vengono dettagliate le ore produttive totali impiegate da ciascun componente del team:
+
+
 
 #v(50pt)
 
