@@ -204,6 +204,18 @@ for sprint_key in sprints:
         ],
         ignore_index=True,
     )
+    rendicontazione_ore = rendicontazione_ore.reindex(
+        columns=[
+            "Nominativo",
+            AMMINISTRATORE,
+            ANALISTA,
+            PROGETTISTA,
+            PROGRAMMATORE,
+            RESPONSABILE,
+            VERIFICATORE,
+            "Totale per persona",
+        ]
+    )
 
     # Saving sprint related analyzed data to csv
     rendicontazione_ore.to_csv(
@@ -254,10 +266,16 @@ for sprint_key in sprints:
     rendicontazione_ore_wo_totale_persona = rendicontazione_ore.drop(
         "Totale per persona", axis=1, errors="ignore"
     )
+    rendicontazione_ore_wo_totale_persona = (
+        rendicontazione_ore_wo_totale_persona.reindex(
+            columns=["Nominativo", "Am", "An", "Pt", "Pr", "Re", "Ve"]
+        )
+    )
     rendicontazione_ore_wo_totale_persona = rendicontazione_ore_wo_totale_persona[
         rendicontazione_ore_wo_totale_persona["Nominativo"] != "Totale per ruolo"
     ]
 
+    role_colors = ["#FF6961", "#5DADE2", "#E74C3C", "#F39C12", "#9B59B6", "#58D68D"]
     # Plot a bar chart with stacked bars for each Nominativo
     ax = rendicontazione_ore_wo_totale_persona.set_index("Nominativo").plot(
         kind="bar", stacked=True, color=role_colors, figsize=(10, 6)

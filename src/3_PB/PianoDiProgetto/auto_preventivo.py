@@ -18,7 +18,7 @@ PROGETTISTA = {'extended':"Progettista", 'shortened':"Pt"}
 PROGRAMMATORE = {'extended':"Programmatore", 'shortened':"Pr"}
 VERIFICATORE = {'extended':"Verificatore", 'shortened':"Ve"}
 
-roles = [RESPONSABILE, AMMINISTRATORE, ANALISTA, PROGETTISTA, PROGRAMMATORE, VERIFICATORE]
+roles = [AMMINISTRATORE, ANALISTA, PROGETTISTA, PROGRAMMATORE, RESPONSABILE, VERIFICATORE]
 short_roles = [role['shortened'] for role in roles]
 ext_roles = [role['extended'] for role in roles]
 
@@ -40,7 +40,7 @@ COST_PROGRAMMATORE = 15
 COST_RESPONSABILE = 30
 COST_VERIFICATORE = 15
 
-costs = [COST_RESPONSABILE, COST_AMMINISTRATORE, COST_ANALISTA, COST_PROGETTISTA, COST_PROGRAMMATORE, COST_VERIFICATORE]
+costs = [COST_AMMINISTRATORE, COST_ANALISTA, COST_PROGETTISTA, COST_PROGRAMMATORE, COST_RESPONSABILE, COST_VERIFICATORE]
 
 import csv
 import matplotlib.pyplot as plt
@@ -63,6 +63,9 @@ with open('preventivi/budget.csv', newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter=',')
     budget_csv = [next(reader)] # skip header
     rows = list(reader)
+    # starting budget_time and budget_cash
+    starting_budget_time = int(rows[0][1])
+    starting_budget_cash = int(rows[0][2])
     budget_time = int(rows[sprintNum-1][1]) # we skip the first column
     budget_cash = int(rows[sprintNum-1][2])
     for row in rows:
@@ -124,8 +127,8 @@ with open('preventivi/assets/tables/tableProspettoEconomico'+str(sprintNum)+'.cs
     writer = csv.writer(file)
     writer.writerows(table_budget)
 
-role_colors = ["#9B59B6", "#FF6961", "#5DADE2", "#E74C3C", "#F39C12", "#58D68D"]
-role_colors_istogramma = ["#9B59B6", "#FF6961", "#5DADE2", "#E74C3C", "#F39C12", "#58D68D"]
+role_colors = ["#FF6961", "#5DADE2", "#E74C3C", "#F39C12", "#9B59B6", "#58D68D"]
+role_colors_istogramma = ["#FF6961", "#5DADE2", "#E74C3C", "#F39C12", "#9B59B6", "#58D68D"]
 
 # Filtering each vector to correspond only to positive time values
 filtered_values = [
@@ -182,9 +185,9 @@ plt.clf()
 # Creating the cost cash pie chart
 fig, ax = plt.subplots()
 wedges, texts, autotexts = ax.pie(
-    [budget_cash - remaining_cash, remaining_cash],
+    [starting_budget_cash - remaining_cash, remaining_cash],
     labels=None,
-    autopct=lambda p: "{:.1f}€ ({:.1f}%)".format(p * budget_cash / 100, p),
+    autopct=lambda p: "{:.1f}€ ({:.1f}%)".format(p * starting_budget_cash / 100, p),
     startangle=90,
     colors=["#FFB6C1", "#ADD8E6"],
 )
@@ -197,8 +200,8 @@ plt.clf()
 # Creating the cost time pie chart
 fig, ax = plt.subplots()
 wedges, texts, autotexts = ax.pie(
-    [budget_time - remaining_time, remaining_time],
-    autopct=lambda p: "{:.1f} ({:.1f}%)".format(p * budget_time / 100, p),
+    [starting_budget_time - remaining_time, remaining_time],
+    autopct=lambda p: "{:.1f} ({:.1f}%)".format(p * starting_budget_time / 100, p),
     startangle=90,
     colors=["#FFB6C1", "#ADD8E6"],
 )

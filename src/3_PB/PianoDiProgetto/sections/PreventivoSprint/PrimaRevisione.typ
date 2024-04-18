@@ -25,7 +25,7 @@
 == Prima revisione (Requirements and Technology Baseline #glossary[RTB])
 
 === Prospetto economico
-In questa #glossary[milestone], il costo per ogni ruolo sarà come da tabella:
+Il costo per ogni ruolo sarà come da tabella:
 #table(
   columns: (120pt,60pt,100pt),
   align: center,

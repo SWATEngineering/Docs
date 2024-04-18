@@ -6,8 +6,7 @@ Stabilite come #glossary("milestone") principali le #glossary("baseline") corris
 Sulla base delle scadenze riportate nella sezione *Scadenze* si pianificano: 
 
 - 2 #glossary[sprint] di due settimane e 6 #glossary[sprint] da una settimana per arrivare alla revisione #glossary[RTB]\; 
-- 6 #glossary[sprint] della durata di una settimana per arrivare alla revisione #glossary[PB]\; 
-- 2 #glossary[sprint] della durata di una settimana per arrivare alla revisione #glossary[CA]\. 
+- 7 #glossary[sprint] della durata di una settimana per arrivare alla revisione #glossary[PB]\.
 
 Il documento _Piano di Progetto_ si evolve durante tutto il ciclo di vita del progetto. Inizialmente, il team aveva pianificato #glossary[sprint] della durata di due settimane. Tuttavia, durante lo svolgimento, è risultato preferibile passare a #glossary[sprint] della durata di una settimana. Di conseguenza, il documento del _Piano di progetto_, in particolare nelle sezioni *Pianificazione* e *Preventivo*, viene aggiornato rispetto a questa modifica. 
 Nell’intervallo di tempo tra revisione #glossary[RTB] e revisione #glossary[PB], è stata pianificata una diminuzione del carico di lavoro nelle ultime due settimane del mese di Gennaio e le prime due del mese di Febbraio, per permettere ai membri del team di dedicarsi agli altri impegni richiesti dal percorso di studio e allo svolgimento della revisione #glossary[RTB], rispettivamente.
@@ -59,9 +58,9 @@ Il team ha programmato una pausa di due settimane per consentire ai membri di co
 
 *Inizio*: 16/02/2024
 
-*Fine*: 28/03/2024 
+*Fine*: 04/04/2024 
 
-In questa fase la concentrazione, soprattutto nel periodo iniziale, si focalizza sulla progettazione. Si inizia la stesura del documento delle _Specifiche Tecniche_ e lo studio di un'#glossary[architettura] adeguata. Iniziano il loro ciclo di vita anche il _Manuale Utente_ e le _Specifiche Tecniche_.
+In questa fase la concentrazione, soprattutto nel periodo iniziale, si focalizza sulla progettazione. Si inizia la stesura del documento della _Specifica Tecnica_ e lo studio di un'#glossary[architettura] adeguata. Iniziano il loro ciclo di vita anche il _Manuale Utente_ e la _Specifica Tecnica_.
 Attraverso le fasi di progettazione e sviluppo ha inizio la creazione del progetto vero e proprio, utilizzando le conoscenze acquisite durante la creazione del #glossary[PoC]. Lo sviluppo includerà anche le fasi di testing del prodotto.
 
 #include "PianificazioneSprint/NonoSprint.typ"
@@ -70,3 +69,4 @@ Attraverso le fasi di progettazione e sviluppo ha inizio la creazione del proget
 #include "PianificazioneSprint/DodicesimoSprint.typ"
 #include "PianificazioneSprint/TredicesimoSprint.typ"
 #include "PianificazioneSprint/QuattordicesimoSprint.typ"
+#include "PianificazioneSprint/QuindicesimoSprint.typ"

@@ -7,14 +7,11 @@
 
 *Obiettivi dello #glossary[sprint]*: 
 
-- Terminare la stesura del Piano di Progetto:
-    - Aggiornare pianificazione e preventivo pertinenti allo #glossary[sprint] 14 e inserire il consuntivo pertinente allo #glossary[sprint] 13;
-    - Trattandosi dell'ultimo #glossary("sprint"), inserire anche il consuntivo dello #glossary[sprint] 14 al termine dello stesso;
-- Aggiornare il Manuale Utente con:
-    - Aggiungere le API key necessarie per il corretto funzionamento del software alla sezione riguardante l'installazione;
-    - Aggiungere una sezione riguardante la componente di allarmistica su Discord;
-    - Aggiungere screenshot rilevanti.
-- Terminare la stesura del Piano di Qualifica con l'aggiornamento di tutte le metriche;
-- Raffinare l'aspetto estetico delle #glossary[dashboard] finali in #glossary[Grafana] e inserire un numero adeguato di sensori con locazioni realistiche, prima di presentare il software alla Proponente per la validazione del prodotto come #glossary[MVP];
-- Revisione in stile #glossary("walkthrough") dei documenti e relativa approvazione;
-Presentare la candidatura alla prima fase della seconda revisione #glossary("PB") e preparare la relativa presentazione.
+- Proseguire la stesura del _Piano di Progetto_:
+    - Aggiornare pianificazione e preventivo pertinente allo #glossary[sprint] 14 e inserire il consuntivo pertinente allo #glossary[sprint] 13;
+- Aggiornare l'_Analisi dei Requisiti_ aggiungendo maggior dettaglio a casi d'uso e requisiti per riflettere i dettagli implementativi sviluppati nella creazione del #glossary[MVP]\;
+- Proseguire la stesura della _Specifica Tecnica_:
+    - Aggiungere una sezione dedicata alla struttura dei containers Docker utilizzati per gestire l'ambiente di sviluppo e produzione;
+    - Aggiornare gli schemi delle tabelle del database in #glossary[Clickhouse] con le query utilizzate nel #glossary[MVP]\;
+    - Aggiungere una sezione dedicata alle #glossary[dashboard] in #glossary[Grafana] e al sistema di allerte/notifiche;
+- Raffinare l'aspetto estetico delle #glossary[dashboard] finali in #glossary[Grafana] e inserire un numero adeguato di sensori con locazioni realistiche.
