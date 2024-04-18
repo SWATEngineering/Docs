@@ -19,7 +19,7 @@ Il progetto "InnovaCity" si concentra sulla creazione di una #glossary[dashboard
 == Glossario
 
 Al fine di evitare possibili ambiguità relative al linguaggio utilizzato nei documenti, viene
-fornito il _Glossario v1.0_, nel quale sono presenti tutte le definizioni di termini aventi un significato specifico che vuole essere disambiguato. Tali termini, sono scritti in corsivo e marcati con una #sub("G") a pedice.
+fornito il _Glossario v2.0_, nel quale sono presenti tutte le definizioni di termini aventi un significato specifico che vuole essere disambiguato. Tali termini, sono scritti in corsivo e marcati con una #sub("G") a pedice.
 L'attività di inserimento di un termine nel glossario può considerarsi completata solo quando il termine viene correttamente definito e spiegato all'interno del _Glossario_.
 
 == Riferimenti
@@ -86,7 +86,7 @@ Di seguito vengono elencati i documenti che il team #team si impegna a consegnar
 
 ==== Analisi dei Requisiti
 
-L’_Analisi dei Requisiti v1.0_, redatta dall'Analista, rappresenta un documento fondamentale per lo sviluppo del #glossary[sistema] software. Il suo obiettivo principale è definire in dettaglio le funzionalità necessarie affinché il prodotto soddisfi pienamente le richieste della Proponente. Il documento omonimo comprende una serie di elementi essenziali:
+L’_Analisi dei Requisiti v2.0_, redatta dall'Analista, rappresenta un documento fondamentale per lo sviluppo del #glossary[sistema] software. Il suo obiettivo principale è definire in dettaglio le funzionalità necessarie affinché il prodotto soddisfi pienamente le richieste della Proponente. Il documento omonimo comprende una serie di elementi essenziali:
 
         - *Definizione degli attori*: entità o persone che interagiscono con il #glossary[sistema]\;
         - *Definizione dei casi d'uso*: rappresentazione narrativa di scenari specifici che descrivono come gli attori interagiscono con il #glossary[sistema]. I casi d'uso offrono una visione chiara delle azioni eseguibili all'interno del #glossary[sistema] e delle interazioni degli utenti con esso. All'interno di ciascun caso d'uso, viene fornito un elenco preciso delle azioni intraprese dall'#glossary[attore] per attivare il caso d'uso, facilitando così l'estrazione dei requisiti corrispondenti;
@@ -98,7 +98,7 @@ L’_Analisi dei Requisiti v1.0_, redatta dall'Analista, rappresenta un document
 
 ==== Piano di Progetto
 
-Il _Piano di Progetto v1.0_, redatto dal Responsabile, offre una visione dettagliata dell'intero processo di sviluppo di un progetto. Esso fornisce al team una guida approfondita per mantenere l'allineamento con gli obiettivi, gestire le risorse in modo efficace e affrontare le sfide che possono emergere durante lo sviluppo del progetto.
+Il _Piano di Progetto v2.0_, redatto dal Responsabile, offre una visione dettagliata dell'intero processo di sviluppo di un progetto. Esso fornisce al team una guida approfondita per mantenere l'allineamento con gli obiettivi, gestire le risorse in modo efficace e affrontare le sfide che possono emergere durante lo sviluppo del progetto.
 
 Si compone delle seguenti sezioni:
 
@@ -110,7 +110,7 @@ Si compone delle seguenti sezioni:
         
 ==== Piano di Qualifica
 
-Il _Piano di Qualifica v1.0_, redatto dall'Amministratore, descrive le strategie e gli approcci adottati per garantire la qualità del prodotto o del servizio che si sta sviluppando. Il suo scopo principale è quello di definire le modalità di verifica e validazione, nonché gli standard e le procedure di qualità che verranno seguite durante l'intero ciclo di vita del progetto.
+Il _Piano di Qualifica v2.0_, redatto dall'Amministratore, descrive le strategie e gli approcci adottati per garantire la qualità del prodotto o del servizio che si sta sviluppando. Il suo scopo principale è quello di definire le modalità di verifica e validazione, nonché gli standard e le procedure di qualità che verranno seguite durante l'intero ciclo di vita del progetto.
 
 Si compone delle seguenti sezioni:
 
@@ -121,7 +121,7 @@ Si compone delle seguenti sezioni:
 
 ==== Specifica Tecnica
 
-Le _Specifica Tecnica_, redatte dal Progettista, costituiscono un resoconto dettagliato delle scelte progettuali e delle soluzioni tecniche adottate dal team per implementare il #glossary[sistema] software. Il documento fornisce una guida completa per i Programmatori delineando l'architettura generale del #glossary[sistema], inclusi i moduli principali, le interfacce, le relazioni tra i componenti e le tecnologie utilizzate.
+La _Specifica Tecnica v1.0_, redatta dal Progettista, costituisce un resoconto dettagliato delle scelte progettuali e delle soluzioni tecniche adottate dal team per implementare il #glossary[sistema] software. Il documento fornisce una guida completa per i Programmatori delineando l'architettura generale del #glossary[sistema], inclusi i moduli principali, le interfacce, le relazioni tra i componenti e le tecnologie utilizzate.
 
 Si compone delle seguenti sezioni:
 
@@ -131,7 +131,7 @@ Si compone delle seguenti sezioni:
 
 ==== Manuale Utente
 
-Il _Manuale Utente_, redatto dal Programmatore, è un documento essenziale che fornisce agli utenti finali tutte le informazioni necessarie per utilizzare in modo efficace il prodotto. Tale documento è progettato per essere una risorsa completa che accompagna l'utente lungo tutto il processo di utilizzo del software, dalla fase di installazione fino alla gestione quotidiana delle funzionalità offerte.
+Il _Manuale Utente v1.0_, redatto dal Programmatore, è un documento essenziale che fornisce agli utenti finali tutte le informazioni necessarie per utilizzare in modo efficace il prodotto. Tale documento è progettato per essere una risorsa completa che accompagna l'utente lungo tutto il processo di utilizzo del software, dalla fase di installazione fino alla gestione quotidiana delle funzionalità offerte.
 
 Si compone delle seguenti sezioni:
 
@@ -167,10 +167,10 @@ Servizio di creazione di #glossary[spreadsheet], utilizzato dal team per la rend
 Servizio per creare e partecipare a videochiamate, utilizzato dal team per gli incontri telematici con la Proponente.
 
 ==== Online Gantt
-Online software per creare diagrammi di Gantt, utilizzato dal Responsabile per delineare la distribuzione temporale delle attività pianificate per ogni #glossary[sprint] nella sezione di *Pianificazione* del _Piano di Progetto v1.0_.
+Online software per creare diagrammi di Gantt, utilizzato dal Responsabile per delineare la distribuzione temporale delle attività pianificate per ogni #glossary[sprint] nella sezione di *Pianificazione* del _Piano di Progetto v2.0_.
 
 ==== Draw.io
-Software per creare diagrammi e grafici di varia natura, utilizzato dagli Analisti per creare i diagrammi #glossary[UML] dei casi d'uso nella sezione Casi d'uso dell'_Analisi dei Requisiti v1.0_.
+Software per creare diagrammi e grafici di varia natura, utilizzato dagli Analisti per creare i diagrammi #glossary[UML] dei casi d'uso nella sezione Casi d'uso dell'_Analisi dei Requisiti v2.0_.
 
 === Metriche  
 
@@ -187,8 +187,8 @@ table(
       [*SV*],[Schedule Variance],
       [*AC*],[Actual Cost],
       [*CPI*],[Cost Performance Index],
-      [*EAC*],[Estimated At Completion],
-      [*ETC*],[Estimated To Completion],
+      [*EAC*],[Estimate At Completion],
+      [*ETC*],[Estimate To Completion],
       [*VAC*],[Variance At Completion],
       [*BV*],[Budget Variance]
 ),
@@ -212,7 +212,7 @@ Il processo di sviluppo rappresenta la serie di attività che devono essere svol
 
 ===== Descrizione 
 
-L'_Analisi dei Requisiti v1.0_ viene redatta dagli Analisti e contiene:
+L'_Analisi dei Requisiti v2.0_ viene redatta dagli Analisti e contiene:
         - *Introduzione*: esplicita lo scopo del documento, lo scopo del prodotto e i riferimenti utilizzati;
         - *Descrizione*: esplicita le funzionalità attese del prodotto e le caratteristiche degli utenti;
         - *Attori*: gli utilizzatori del prodotto finale;
@@ -221,7 +221,7 @@ L'_Analisi dei Requisiti v1.0_ viene redatta dagli Analisti e contiene:
 
 ===== Scopo   
 
-Lo scopo dell'_Analisi dei Requisiti v1.0_ è definire in modo dettagliato e chiaro le funzionalità e le caratteristiche che il prodotto software deve soddisfare. Questo processo mira a comprendere a fondo le esigenze degli utenti, gli obiettivi del #glossary[sistema] e le condizioni in cui dovrà operare. Gli obiettivi principali dell'attività di analisi dei requisiti includono:
+Lo scopo dell'_Analisi dei Requisiti v2.0_ è definire in modo dettagliato e chiaro le funzionalità e le caratteristiche che il prodotto software deve soddisfare. Questo processo mira a comprendere a fondo le esigenze degli utenti, gli obiettivi del #glossary[sistema] e le condizioni in cui dovrà operare. Gli obiettivi principali dell'attività di analisi dei requisiti includono:
 
         - Identificare e chiarire gli obiettivi e le finalità del prodotto che si intende sviluppare;
         - Fornire ai Progettisti una base chiara e comprensibile per la definizione dell'#glossary[architettura] e il design del #glossary[sistema]\;
@@ -571,7 +571,7 @@ L'architettura deve soddisfare vari criteri:
 All'interno del documento _Specifica Tecnica v1.0_, si utilizza un'automazione #glossary[Typst] per la creazione delle tabelle dei requisiti soddisfatti nella sezione *Tracciamento dei requisiti*; le tabelle importano i dati delle prime due colonne ("Codice" e "Descrizione") direttamente dall'_Analisi dei Requisiti v2.0_ per ridurre sprechi di risorse e l'introduzione di errori, e aggiungono una terza colonna ("Stato"):
         - *Codice*: il codice del requisito;
         - *Descrizione*: definizione atomica e disambigua del requisito;
-        - *Stato*: "Soddisfatto" o "Non soddisfatto", in riferimento al soddisfacimento del requisito all'interno dell'#glossary[architettura] individuata nelle _Specifica Tecnica_.
+        - *Stato*: "Soddisfatto" o "Non soddisfatto", in riferimento al soddisfacimento del requisito all'interno dell'#glossary[architettura] individuata nella _Specifica Tecnica_.
 
  In particolare, si utilizzano degli array per tenere traccia dei requisiti soddisfatti a seconda della loro tipologia (dove i requisiti vengono identificati tramite il codice univoco assegnato loro nell'_Analisi dei Requisiti v2.0_) e questi vengono successivamente utilizzati per popolare la colonna "Stato" delle tabelle in modo opportuno. 
 
@@ -731,8 +731,8 @@ Nel contesto della versione finale di un documento, spetta al Responsabile confe
 
 In cui *x* può essere:
         - 1 se per #glossary[RTB]\;
-        - 2 se per #glossary[PB]\;
-        - 3 se per #glossary[CA].
+        - 2 se per #glossary[PB]\.
+        
 
 
 === Template #glossary[Typst]
@@ -1004,17 +1004,17 @@ Per garantire la coerenza e la tempestività delle informazioni, il servizio est
 
 ==== Controllo termini glossario    
 
-È stato sviluppato uno script in #glossary[Python] per verificare la corrispondenza tra i termini presenti in un documento e quelli presenti nel _Glossario v1.0_.
-Lo script, utilizzando espressioni regolari, confronta i termini indicati nei documenti, formattati secondo lo standard del glossario, con quelli presenti nel _Glossario_. In presenza di discrepanze, genera un messaggio di errore specificando i termini mancanti nel _Glossario_. In caso contrario, l'esecuzione avviene senza problemi, indicando che i termini nel documento sono in linea con quelli del _Glossario v1.0_.
-Tutti i termini inclusi nel _Glossario v1.0_ devono essere formattati secondo la convenzione da glossario ogni volta che compaiono nel documento, non solo alla prima occorrenza. Questo assicura coerenza e facilita la consultazione, contribuendo a una migliore comprensione dei termini chiave nel contesto del documento.
+È stato sviluppato uno script in #glossary[Python] per verificare la corrispondenza tra i termini presenti in un documento e quelli presenti nel _Glossario v2.0_.
+Lo script, utilizzando espressioni regolari, confronta i termini indicati nei documenti, formattati secondo lo standard del glossario, con quelli presenti nel _Glossario_. In presenza di discrepanze, genera un messaggio di errore specificando i termini mancanti nel _Glossario_. In caso contrario, l'esecuzione avviene senza problemi, indicando che i termini nel documento sono in linea con quelli del _Glossario v2.0_.
+Tutti i termini inclusi nel _Glossario v2.0_ devono essere formattati secondo la convenzione da glossario ogni volta che compaiono nel documento, non solo alla prima occorrenza. Questo assicura coerenza e facilita la consultazione, contribuendo a una migliore comprensione dei termini chiave nel contesto del documento.
 
 == Verifica
 
 === Descrizione e scopo
 
 Qualsiasi processo istanziato durante lo svolgimento del progetto, prima di potersi considerare completato, dev’essere sottoposto a verifica.
-Lo scopo primario di questo processo è garantire la correttezza dei prodotti e la loro adesione ai vincoli di qualità individuati ed elencati all'interno del documento _Piano di Qualifica v1.0_. 
-Il _Piano di Qualifica v1.0_ funge da punto di riferimento per il Verificatore: in esso vengono fornite tutte le linee guida a cui il Verificatore deve aderire, garantendo uniformità, coerenza e ripetibilità al processo di verifica.
+Lo scopo primario di questo processo è garantire la correttezza dei prodotti e la loro adesione ai vincoli di qualità individuati ed elencati all'interno del documento _Piano di Qualifica v2.0_. 
+Il _Piano di Qualifica v2.0_ funge da punto di riferimento per il Verificatore: in esso vengono fornite tutte le linee guida a cui il Verificatore deve aderire, garantendo uniformità, coerenza e ripetibilità al processo di verifica.
 
 
 === Strumenti
@@ -1101,17 +1101,17 @@ Per poter eseguire i test di integrazione:
 ==== Test di #glossary[sistema] 
 
 I test di #glossary[sistema] vengono definiti durante la fase di analisi dei requisiti con l'obiettivo di misurare la copertura dei requisiti derivati dal capitolato d'appalto. Questa fase del processo di software testing mira a verificare l'intero #glossary[sistema] come entità unificata. Durante il test di #glossary[sistema], il software viene valutato nella sua completezza, con l'obiettivo di accertare che tutte le componenti integrate funzionino insieme in modo coerente per soddisfare gli obiettivi e i requisiti del #glossary[sistema].
-Per la definizione e lo stato dei test si rimanda al _Piano di Qualifica v1.0_.
+Per la definizione e lo stato dei test si rimanda al _Piano di Qualifica v2.0_.
 
 ==== Test di accettazione  
 
 Il superamento dei test di accettazione è fondamentale poiché dimostra il soddisfacimento della Proponente rispetto al prodotto software. L'esito positivo di questi test fornisce l'approvazione finale e la conferma che il software è conforme alle aspettative. Solo dopo il superamento dei test di accettazione il team #team potrà procedere con il rilascio ufficiale del prodotto, garantendo che sia pronto all'utilizzo nell'ambiente operativo previsto.
-Per la definizione  e lo stato dei test si rimanda al _Piano di Qualifica v1.0_.
+Per la definizione  e lo stato dei test si rimanda al _Piano di Qualifica v2.0_.
 
 
 === Classificazione dei test
 
-I test vengono identificati, all'interno del _Piano di Qualifica v1.0_, in base alla loro tipologia e tramite un codice numerico. 
+I test vengono identificati, all'interno del _Piano di Qualifica v2.0_, in base alla loro tipologia e tramite un codice numerico. 
 Nello specifico devono avere la seguente forma: *T[Tipologia Test] [Codice]*
 
 Tipologia: 
@@ -1125,11 +1125,11 @@ Il codice numerico è seriale all'interno della categoria.
 
 === Stato dei test
 
-Nella sezione relativa ai test nel _Piano di Qualifica v1.0_ a ogni test viene affiancato il suo stato: 
+Nella sezione relativa ai test nel _Piano di Qualifica v2.0_ a ogni test viene affiancato il suo stato: 
 - *N-A*: il test non è applicabile al contesto attuale o alle funzionalità correnti; 
 - *N-I*: il test non è stato implementato; 
-- *Passato*: il test ha dato esito positivo;  
-- *Non Passato*: il test ha dato esito negativo. 
+- *S*: il test ha dato esito positivo;  
+- *NS*: il test ha dato esito negativo. 
 
 == Validazione 
 
@@ -1177,7 +1177,7 @@ Per identificare  le metriche si usa la seguente formattazione:
 
 === Struttura metriche
 
-Nel _Piano di Qualifica v1.0_  le varie metriche sono descritte mediante delle tabelle organizzate secondo la seguente struttura:
+Nel _Piano di Qualifica v2.0_  le varie metriche sono descritte mediante delle tabelle organizzate secondo la seguente struttura:
 
    - *Metrica*: il codice della metrica seguendo il codice identificativo;
    - *Descrizione*: il nome della metrica;
@@ -1223,11 +1223,11 @@ Per poter prendere una qualsiasi decisione è necessario vi siano due condizioni
 
 ==== Descrizione e scopo
 
-Il Responsabile assume il ruolo cruciale di pianificare dettagliatamente gli obiettivi per ciascuno #glossary[sprint] fino alla conclusione del progetto. Questo implica una distribuzione coerente del lavoro in linea con le scadenze fissate per le revisioni #glossary[RTB], #glossary[PB] e #glossary[CA]. Il suo compito principale consiste nel delineare chiaramente come il team dovrebbe gestire e completare le attività relative allo sviluppo del software e alla redazione della #glossary[documentazione] in periodi di tempo specifici.
+Il Responsabile assume il ruolo cruciale di pianificare dettagliatamente gli obiettivi per ciascuno #glossary[sprint] fino alla conclusione del progetto. Questo implica una distribuzione coerente del lavoro in linea con le scadenze fissate per le revisioni #glossary[RTB] e #glossary[PB]. Il suo compito principale consiste nel delineare chiaramente come il team dovrebbe gestire e completare le attività relative allo sviluppo del software e alla redazione della #glossary[documentazione] in periodi di tempo specifici.
 
 Oltre a definire gli obiettivi per ogni #glossary[sprint], il Responsabile si occupa di stimare accuratamente il tempo necessario per ciascuna attività e di pianificare la distribuzione dei ruoli all'interno del team. Questa pianificazione deve sempre rimanere aggiornata e sensata rispetto all'andamento generale del progetto e agli obiettivi imminenti. Queste previsioni vengono formalizzate nel _Piano di Progetto v1.0_, che diventa un punto di riferimento durante l'evento di #glossary[sprint planning] per definire gli obiettivi del successivo #glossary[sprint].
 
-Eventuali variazioni nella distribuzione dei ruoli, rispetto alla pianificazione iniziale, vengono documentate e giustificate nel *Consuntivo* del _Piano di Progetto v1.0_. Questo approccio consente al team di adattarsi in modo flessibile alle esigenze emergenti, mantenendo costantemente un quadro chiaro delle variazioni e delle ragioni che sottendono a tali modifiche.
+Eventuali variazioni nella distribuzione dei ruoli, rispetto alla pianificazione iniziale, vengono documentate e giustificate nel *Consuntivo* del _Piano di Progetto v2.0_. Questo approccio consente al team di adattarsi in modo flessibile alle esigenze emergenti, mantenendo costantemente un quadro chiaro delle variazioni e delle ragioni che sottendono a tali modifiche.
 
 ==== #glossary[Documentazione] fine #glossary[sprint]
 
@@ -1235,7 +1235,7 @@ Il Responsabile è incaricato di sviluppare un preventivo dettagliato per le suc
 
 Nel contesto della gestione dello #glossary[sprint], il Responsabile si impegna anche a compilare un consuntivo dettagliato dello sprint appena concluso. 
 
-Per garantire un monitoraggio efficace delle prestazioni, il Responsabile utilizza e calcola le metriche, presenti nel documento _Piano di Qualifica v1.0_, rispetto allo #glossary[sprint] appena concluso, valutando l'efficacia del processo e apportando eventuali correzioni o miglioramenti per il successo continuo del progetto.
+Per garantire un monitoraggio efficace delle prestazioni, il Responsabile utilizza e calcola le metriche, presenti nel documento _Piano di Qualifica v2.0_, rispetto allo #glossary[sprint] appena concluso, valutando l'efficacia del processo e apportando eventuali correzioni o miglioramenti per il successo continuo del progetto.
 
 ==== Preventivo   
 
@@ -1335,7 +1335,6 @@ Dopo l'#glossary[RTB] il diario di bordo si tiene ogni venerdì alle 15, pertant
         - Traduzione delle Specifica Tecnica in codice funzionante;
         - Scrittura di codice chiaro, leggibile e manutenibile;
         - Creazione di test per la verifica del software;
-        - Ampliamento delle _Specifica Tecnica_ conforme alle esigenze del progetto;
         - Risoluzione di #glossary[bug] e problemi di performance;
         - Realizzazione del _Manuale Utente_;
         - Collaborazione con il team per l'integrazione del codice e il mantenimento della coerenza del progetto.
@@ -1531,11 +1530,11 @@ Qualora lo ritenesse utile ed esaustivo è pregato di condividerlo con gli altri
                 
                 Formula: $"CPI" = "EV" / "AC"$;
 
-        - *EAC*: Estimated At Completion - revisione del valore stimato per la realizzazione del progetto, ossia il BAC rivisto allo stato  corrente del progetto
+        - *EAC*: Estimate At Completion - revisione del valore stimato per la realizzazione del progetto, ossia il BAC rivisto allo stato  corrente del progetto
 
                 Formula: $"EAC" = "BAC" / "CPI"$;
 
-        - *ETC*: Estimated To Completion - stima del costo aggiuntivo necessario per completare il progetto
+        - *ETC*: Estimate To Completion - stima del costo aggiuntivo necessario per completare il progetto
 
                 Formula: $"ETC" = "EAC" - "AC"$;
 
@@ -1566,7 +1565,7 @@ Per la valutazione delle metriche di fornitura è necessario avere accesso ai da
         - *LCM*: Linee di Codice per Metodo - rappresenta il numero di linee di codice che costituiscono un metodo.
 
 ==== Calcolo metriche codifica <calcolo_metriche_codifica>
-Per la valutazione della metriche di codifica si puo utilizzare la seguente procedura. 
+Per la valutazione della metriche di codifica si può utilizzare la seguente procedura. 
 
 - Accedere da terminale alla cartella _Innovacity_, posizionarsi nel branch _dev_, assicurandosi di avere installato la dipendenza _pylint_ (anche su ambiente virtuale); 
 - Dare i permessi d'esecuzione allo script _analisiStatica.sh_;
@@ -1648,7 +1647,7 @@ Per il calcolo della percentuale di test passati si può utilizzare la seguente 
 - Eseguire il comando `python -m pytest PythonSensorsSimulator/unitTest/` ; 
 
 
-Per la valutazione della metriche di copertura del codice si puo utilizzare la seguente procedura: 
+Per la valutazione della metriche di copertura del codice si può utilizzare la seguente procedura: 
 - Accedere da terminale alla cartella _Innovacity_, posizionarsi nel branch _dev_;  
 - Assicurarsi di aver installato le dipendenze necessarie;  
 - Assicurarsi di avere un variabile d'ambiente ORS_API_KEY contenente la chiave API reperibile nel canale discord Accounts; 
