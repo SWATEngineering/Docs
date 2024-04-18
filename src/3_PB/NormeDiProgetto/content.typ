@@ -27,22 +27,22 @@ L'attività di inserimento di un termine nel glossario può considerarsi complet
 === Riferimenti normativi
         - *Capitolato d'appalto C6 - InnovaCity*:\
 
-                #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf") (22-02-2024)
+                #link("https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C6.pdf") (22-03-2024)
 
 === Riferimenti informativi
         - *#glossary[Documentazione] git*:\
-                #link("https://git-scm.com/docs") (22-02-2024)
+                #link("https://git-scm.com/docs") (06-01-2024)
 
         - *#glossary[Documentazione] GitHub*:\
-                #link("https://docs.github.com/en") (22-02-2024)
+                #link("https://docs.github.com/en") (12-12-2023)
 
         - *Materiale didattico del corso Metodi e Tecnologie per lo Sviluppo Software 2022/2023*:\
-                #link("https://stem.elearning.unipd.it/course/view.php?id=5359") (22-02-2024)
+                #link("https://stem.elearning.unipd.it/course/view.php?id=5359") (30-11-2023)
 
                 - Lezione 4: GIT;
                 - Laboratorio 2: GitHub Version Control System.
         - *#glossary[Documentazione] #glossary[Typst]*:\
-                #link("https://typst.app/docs") (22-02-2024)
+                #link("https://typst.app/docs") (15-03-2024)
 
 
 
@@ -121,7 +121,7 @@ Si compone delle seguenti sezioni:
 
 ==== Specifica Tecnica
 
-La _Specifica Tecnica v1.0_, redatta dal Progettista, costituisce un resoconto dettagliato delle scelte progettuali e delle soluzioni tecniche adottate dal team per implementare il #glossary[sistema] software. Il documento fornisce una guida completa per i Programmatori delineando l'architettura generale del #glossary[sistema], inclusi i moduli principali, le interfacce, le relazioni tra i componenti e le tecnologie utilizzate.
+La _Specifica Tecnica v1.0_, redatta dal Progettista, costituisce un resoconto dettagliato delle scelte progettuali e delle soluzioni tecniche adottate dal team per implementare il #glossary[sistema] software. Il documento fornisce una guida completa per i Programmatori delineando l'#glossary[architettura] generale del #glossary[sistema], inclusi i moduli principali, le interfacce, le relazioni tra i componenti e le tecnologie utilizzate.
 
 Si compone delle seguenti sezioni:
 
@@ -136,13 +136,13 @@ Il _Manuale Utente v1.0_, redatto dal Programmatore, è un documento essenziale 
 Si compone delle seguenti sezioni:
 
         - *Requisiti minimi*: fornisce informazioni riguardanti le specifiche hardware, software, di sistema operativo e browser necessarie per eseguire correttamente il programma;
-        - *Installazione*: guida gli utenti attraverso i passaggi necessari per configurare e avviare il software sul proprio #glossary[sistema];
+        - *Installazione*: guida gli utenti attraverso i passaggi necessari per configurare e avviare il software sul proprio #glossary[sistema]\;
         - *Istruzioni per l'uso*: offrono una panoramica completa delle funzionalità del software e forniscono istruzioni dettagliate su come utilizzarle; nel caso del prodotto software "InnovaCity", le istruzioni per l'uso devono dettagliare le modalità di interazione con le #glossary[dashboard] e i #glossary[pannelli] propri di #glossary[Grafana], in modo che l'utente sia a conoscenza del modo più efficace di visualizzare e analizzare i dati a disposizione; è bene che tale sezione sia quanto più possibile descrittiva, e dunque corredata da screenshot e immagini rilevanti;
         - *Supporto tecnico*: vengono forniti i contatti del team #team a fini di assistenza tecnica per la risoluzione di eventuali problemi.
 
 ==== Glossario
 
-Il _Glossario v1.0_ funge da catalogo esaustivo che raccoglie i termini tecnici impiegati all'interno del progetto, offrendo definizioni chiare e precise. Questo documento previene fraintendimenti e promuove una comprensione condivisa della terminologia specifica del settore, migliorando così la coerenza e la qualità della #glossary[documentazione] prodotta dal team.
+Il _Glossario v2.0_ funge da catalogo esaustivo che raccoglie i termini tecnici impiegati all'interno del progetto, offrendo definizioni chiare e precise. Questo documento previene fraintendimenti e promuove una comprensione condivisa della terminologia specifica del settore, migliorando così la coerenza e la qualità della #glossary[documentazione] prodotta dal team.
 
 ==== Lettera di Presentazione
 La _Lettera di Presentazione_ accompagna la consegna del prodotto software e della #glossary[documentazione] pertinente, sottolineando l'impegno che il team #team si assume nel completare e consegnare il prodotto entro le scadenze concordate. Inoltre, espone un preventivo aggiornato rispetto a quello presentato in occasione dell'ultima revisione. In questo contesto, costo e data di consegna del progetto sono attentamente valutati in relazione all'andamento corrente e vengono confermati o eventualmente modificati in risposta alle dinamiche emergenti durante l'evoluzione del progetto.
@@ -417,8 +417,8 @@ table(
 caption: "Esempio tabella per requisiti")
 
 ===== Aggiornamento specifiche di test
-Per agevolare la consistenza dei documenti l'Analista che abbia apportato modifiche a requisiti e casi d'uso nel documento _Analisi dei Requisiti v2.0_ deve garantire che tali modifiche siano riportate nella sezione relativa ai test di sistema e ai test di accettazione nel documento _Piano di Qualifica v2.0_ segnalandolo all'attuale Amministratore, o previa autorizzazione da parte del Responsabile occupandosene direttamente. 
-Tale procedura risulta essere di fondamentale importanza nel fare in modo che ogni requisito sia coperto da corrispettivo test, in modo tale da consentire al team di terminare la fase di qualifica con la consapevolezza di aver soddisfatto ogni requisito e realizzato ogni caso d'uso.
+Per garantire la consistenza dei documenti, l'Analista che apporta modifiche a requisiti e casi d'uso nel documento _Analisi dei Requisiti v2.0_ deve impegnarsi a riportare tali modifiche nella sezione relativa ai test di sistema e ai test di accettazione nel documento _Piano di Qualifica v2.0_, segnalandolo all'attuale Amministratore o, previa autorizzazione da parte del Responsabile, occupandosene direttamente. 
+Tale procedura risulta essere di fondamentale importanza per fare in modo che ogni requisito sia coperto da corrispettivo test, e che il team possa terminare lo sviluppo del prodotto software con la certezza di aver realizzato ogni caso d'uso e soddisfatto ogni requisito obbligatorio.
 
 
 ===== Metriche
@@ -440,23 +440,23 @@ caption:[Metriche sui requisiti],
 ==== Progettazione 
 
 ===== Descrizione e scopo 
-La progettazione segue l'analisi dei requisiti, dove sono definite le necessità e le aspettative per il prodotto. Innanzitutto, vengono selezionate e definite le tecnologie di base utilizzate per la realizzazione del #glossary[sistema], il che comprende decisioni relative a linguaggi di programmazione, librerie e #glossary[framework]; in un secondo momento i Progettisti traducono le funzionalità attese all'interno del prodotto in una struttura architetturale che le soddisfi, organizzando il #glossary[sistema] in componenti specifiche, definendo le interazioni tra di esse e specificando le linee guida per l'organizzazione e l'interazione delle varie parti. In questo modo, la progettazione costituisce un passo essenziale nel percorso di sviluppo, contribuendo a trasformare i requisiti in un piano tangibile per la creazione del prodotto finale.
+La progettazione segue l'analisi dei requisiti, dove sono definite le necessità e le aspettative per il prodotto. Innanzitutto, vengono selezionate e definite le tecnologie di base utilizzate per la realizzazione del #glossary[sistema], il che comprende decisioni relative a linguaggi di programmazione, librerie e #glossary[framework]\; in un secondo momento i Progettisti traducono le funzionalità attese all'interno del prodotto in una struttura architetturale che le soddisfi, organizzando il #glossary[sistema] in componenti specifiche, definendo le interazioni tra di esse e specificando le linee guida per l'organizzazione e l'interazione delle varie parti. In questo modo, la progettazione costituisce un passo essenziale nel percorso di sviluppo, contribuendo a trasformare i requisiti in un piano tangibile per la creazione del prodotto finale.
 
 ===== Diagrammi di flusso dati
 
-I diagrammi di flusso dati anche conosciuti come DFD #glossary("Data Flow Diagram") sono un tipo di diagramma utilizzato principalmente nell'analisi dei sistemi informatici per rappresentare il flusso ed elaborazioni dei dati all'interno di un sistema. 
+I diagrammi di flusso dati, anche conosciuti come DFD #glossary("Data Flow Diagram"), sono un tipo di diagramma utilizzato principalmente nell'analisi dei sistemi informatici per rappresentare il flusso ed elaborazioni dei dati all'interno di un sistema. 
 
 Le entità rappresentabili in questi diagrammi sono:
 
 - *Entità esterne:*  possono essere utenti o altri sistemi che inviano o ricevono dati; 
 
-- *Processi:* rappresentano le attività che trasformano i dati, possono eseguire calcoli o ordinare i dati in base alla logica o indirizzare il flusso; 
+- *Processi:* rappresentano le attività che trasformano i dati, possono eseguire calcoli, ordinare i dati in base alla logica o indirizzare il flusso; 
 
 - *Flussi di dati:* rappresentano il movimento dei dati tra le entità, i processi e i memorizzatori; 
 
-- *Memorizzatori di dati*: contengono i dati per un uso successivo,come database o archivi. 
+- *Memorizzatori di dati*: contengono i dati per un uso successivo, come database o archivi. 
 
-Il diagramma pur essendo vastamente utilizzato nell'ambito dell'ingegneria informatica non fa parte dalla specifica #glossary("UML")\. Ne risulta che esistono più sintassi di modellazione, i progettisti devono seguire la sintassi "Gane & Sarson" supportata dallo strumento StarUML.
+Il diagramma, pur essendo vastamente utilizzato nell'ambito dell'ingegneria informatica, non fa parte dalla specifica #glossary("UML")\. Ne risulta che esistono più sintassi di modellazione: i Progettisti devono seguire la sintassi "Gane & Sarson", in quanto supportata dallo strumento StarUML.
 
 #figure(
                         image(
@@ -467,7 +467,7 @@ Il diagramma pur essendo vastamente utilizzato nell'ambito dell'ingegneria infor
                 )
 
 ===== Diagrammi del database
-Per quanto riguarda la progettazione del database, il Progettista deve definire lo schema delle tabelle che vanno a costituire il database del #glossary[sistema]. Questo schema deve essere rappresentato attraverso un diagramma che mostri le tabelle coinvolte, i campi che le compongono e le relazioni tra di esse. Essendo che il database è contenuto in un DBMS di tipo OLAP, uno schema ER classico non era adatto a rappresentarlo; pertanto, si è scelto di definire una rappresentazione alternativa, che permettesse di visualizzare in modo chiaro e conciso le tabelle e le relazioni tra di esse.
+Per quanto riguarda la progettazione del database, il Progettista deve definire lo schema delle tabelle che vanno a costituire il database del #glossary[sistema]. Questo schema deve essere rappresentato attraverso un diagramma che mostri le tabelle coinvolte, i campi che le compongono e le relazioni tra di esse. Essendo che il database è contenuto in un DBMS di tipo OLAP, uno schema ER classico non è adatto a rappresentarlo; pertanto, si scelie di definire una rappresentazione alternativa, che permette di visualizzare in modo chiaro e conciso le tabelle e le relazioni tra di esse.
  Di seguito si elencano i possibili elementi di un diagramma di questo tipo:
         
         - *Tabella*: rappresenta una tabella del database e viene rappresentata con un rettangolo a linea piena, separando con una linea il nome della tabella, i nomi degli attributi e i tipi di dato;
@@ -1055,7 +1055,7 @@ Il Verificatore, nel contesto della #glossary[documentazione] o del codice, può
 
 ==== #glossary[Inspection]
 
-In questo processo, il Verificatore adotta un approccio strutturato, seguendo una sequenza di passaggi ben definiti. Utilizza liste di controllo per esaminare in dettaglio il documento o il codice. Per dettagli specifici sulle checklist usate, si rimanda al documento _Piano di Qualifica v1.0_. 
+In questo processo, il Verificatore adotta un approccio strutturato, seguendo una sequenza di passaggi ben definiti. Utilizza liste di controllo per esaminare in dettaglio il documento o il codice. Per dettagli specifici sulle checklist usate, si rimanda al documento _Piano di Qualifica v2.0_. 
 
 ==== #glossary[Walkthrough]
 
@@ -1225,7 +1225,7 @@ Per poter prendere una qualsiasi decisione è necessario vi siano due condizioni
 
 Il Responsabile assume il ruolo cruciale di pianificare dettagliatamente gli obiettivi per ciascuno #glossary[sprint] fino alla conclusione del progetto. Questo implica una distribuzione coerente del lavoro in linea con le scadenze fissate per le revisioni #glossary[RTB] e #glossary[PB]. Il suo compito principale consiste nel delineare chiaramente come il team dovrebbe gestire e completare le attività relative allo sviluppo del software e alla redazione della #glossary[documentazione] in periodi di tempo specifici.
 
-Oltre a definire gli obiettivi per ogni #glossary[sprint], il Responsabile si occupa di stimare accuratamente il tempo necessario per ciascuna attività e di pianificare la distribuzione dei ruoli all'interno del team. Questa pianificazione deve sempre rimanere aggiornata e sensata rispetto all'andamento generale del progetto e agli obiettivi imminenti. Queste previsioni vengono formalizzate nel _Piano di Progetto v1.0_, che diventa un punto di riferimento durante l'evento di #glossary[sprint planning] per definire gli obiettivi del successivo #glossary[sprint].
+Oltre a definire gli obiettivi per ogni #glossary[sprint], il Responsabile si occupa di stimare accuratamente il tempo necessario per ciascuna attività e di pianificare la distribuzione dei ruoli all'interno del team. Questa pianificazione deve sempre rimanere aggiornata e sensata rispetto all'andamento generale del progetto e agli obiettivi imminenti. Queste previsioni vengono formalizzate nel _Piano di Progetto v2.0_, che diventa un punto di riferimento durante l'evento di #glossary[sprint planning] per definire gli obiettivi del successivo #glossary[sprint].
 
 Eventuali variazioni nella distribuzione dei ruoli, rispetto alla pianificazione iniziale, vengono documentate e giustificate nel *Consuntivo* del _Piano di Progetto v2.0_. Questo approccio consente al team di adattarsi in modo flessibile alle esigenze emergenti, mantenendo costantemente un quadro chiaro delle variazioni e delle ragioni che sottendono a tali modifiche.
 
@@ -1652,11 +1652,11 @@ Per la valutazione della metriche di copertura del codice si può utilizzare la 
 - Assicurarsi di aver installato le dipendenze necessarie;  
 - Assicurarsi di avere un variabile d'ambiente ORS_API_KEY contenente la chiave API reperibile nel canale discord Accounts; 
 - Dare i permessi d'esecuzione allo script _stdcoverage.sh_;
-- Successivamente eseguirlo. 
+- Eseguire lo script. 
 
-La procedura illustrata è quella necessaria all'Amministratore a fine #glossary("Sprint").
+La procedura illustrata deve essere svolta dall'Amministratore a fine #glossary("sprint").
 
-Il Programmatore che intendesse calcolare tali metriche può farlo anche in branch diversi da _dev_ con le medesime procedure.
+Il Programmatore che intendesse calcolare tali metriche può farlo anche in branch diversi da _dev_, seguendo la medesima procedura.
         
 === Manutenibilità  
 
