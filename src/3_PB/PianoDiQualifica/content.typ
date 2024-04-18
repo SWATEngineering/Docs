@@ -1182,6 +1182,7 @@ Si rileva che nel corso dell'ultimo #glossary[sprint] tutti i documenti hanno su
 *#glossary[PB]* Tutti i documenti hanno il valore di IG al di sopra del limite accettabile. Si nota che il documento _Piano di Qualifica_ ha subito una notevole diminuzione dell'indice, dovuta principalmente all'utilizzo di parole più lunghe e frasi più complesse.
 Il documento _Analisi Dei Requisiti_, da grafico, ha l'indice più elevato tra tutti i documenti. Durante lo #glossary[sprint] 10, si può notare un significativo aumento dell'IG, infatti il documento è stato arricchito con correzioni suggerite dal Professore Cardin e con ulteriori dettagli nei casi d'uso e nei requisiti. Tuttavia, negli ultimi due #glossary[sprint] finali si è verificato un nuovo calo dell'Indice Gulpease, suggerendo possibili variazioni nella complessità del testo.
 
+#pagebreak()
 
 === Correttezza Ortografica
 
@@ -1201,6 +1202,7 @@ Tale strumento ha mostrato immediatamente i suoi effetti benefici: gli errori ne
 *#glossary[PB]* Nella revisione dei documenti _Specifica Tecnica v1.0_ e _Manuale Utente v1.0_, è emerso un certo numero di errori grammaticali e formali. Questa situazione è stata principalmente causata dal fatto che il team ha inizialmente concentrato i propri sforzi principalmente sulla revisione del codice e sui test, posticipando temporaneamente la revisione approfondita dei documenti citati.
 D'altra parte, gli altri documenti non presentano errori grammaticali evidenti, suggerendo un'efficace applicazione delle checklist di controllo e dei vari strumenti di revisione.
 
+#pagebreak()
 
 == Qualità di processo - codifica
 Nella seguente tabella si mostrano il numero di infrazioni delle metriche prese in esame
@@ -1284,8 +1286,7 @@ L'analisi dei valori numerici evidenzia che il valore massimo dell'SFIN si attes
 
 Il valore minimo di SFOUT è 1, suggerendo che almeno un modulo ha solo una dipendenza o connessione con un altro modulo o componente all'interno del sistema. Questo potrebbe indicare una minore interdipendenza tra alcuni moduli, sebbene altri moduli possano avere un numero maggiore di connessioni.
 
-
-
+#pagebreak()
 
 === Usabilità
 
@@ -1320,6 +1321,7 @@ caption: [Tempo di apprendimento del prodotto])
 
 Per valutare la complessità del prodotto, si è proceduto a condurre un test sul tempo di apprendimento (TA), affidandolo a un individuo esterno al progetto. I risultati hanno evidenziato che il tempo medio necessario per comprendere e familiarizzare con il prodotto è stato di circa 8 minuti. Questo dato fornisce un'indicazione preziosa sulla facilità di apprendimento del sistema o del servizio in questione, suggerendo che il processo di acquisizione delle competenze necessarie è relativamente agevole.
 
+#pagebreak()
 === Affidabilità
 
 #figure(
