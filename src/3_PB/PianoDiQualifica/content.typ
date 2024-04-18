@@ -1074,16 +1074,16 @@ caption: [Lista di controllo per l’_Analisi dei Requisiti_.]
 
 == Qualità di processo - fornitura
 
-=== Estimated At Completion
+=== Estimate At Completion
 
 #figure(
   image("./assets/valutazione-metriche/EAC.png", width: 85%),
   caption: [
-    Valutazione Estimated At Completion.
+    Valutazione Estimate At Completion.
   ],
 )
 
-*#glossary[RTB]* L'EAC rappresenta una revisione del valore stimato per la realizzazione del progetto, ossia il BAC (Budget At Completion) rivisto allo stato corrente del progetto; il fattore che incide maggiormente sull'andamento dell'EAC è il rapporto tra EV (Estimated Value) e AC (Actual Cost), per cui tanto più queste metriche sono vicine l'una all'altra, tanto più l'EAC risulterà vicino al BAC pianificato inizialmente.
+*#glossary[RTB]* L'EAC rappresenta una revisione del valore stimato per la realizzazione del progetto, ossia il BAC (Budget At Completion) rivisto allo stato corrente del progetto; il fattore che incide maggiormente sull'andamento dell'EAC è il rapporto tra EV (Earned Value) e AC (Actual Cost), per cui tanto più queste metriche sono vicine l'una all'altra, tanto più l'EAC risulterà vicino al BAC pianificato inizialmente.
 Concluso il secondo #glossary[sprint], il team ha rilevato che il valore associato all'EAC non rientrava all'interno della soglia accettabile: ci si è dunque attivati al fine di rimodulare la quantità di lavoro netta associata al concetto di ora produttiva.
 
 Dal grafico si può rilevare che la curva delineata dal valore dell'EAC, pur essendo rimasta sempre al di sopra del valore di accettazione, ha, già a partire dal secondo #glossary[sprint] e dunque a seguito dell'azione correttiva intrapresa, mostrato un trend decrescente; il team si aspettava che nel corso degli #glossary[sprint] successivi l'andamento avrebbe continuato la sua discesa fino a che i valori fossero rientrati nella fascia accettabile.
