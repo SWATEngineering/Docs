@@ -2,8 +2,8 @@ MPC-EV,Earned Value,≥0 ,≤ EAC
 MPC-PV,Planned Value,≥ 0, ≤ BAC
 MPC-AC,Actual Cost,≥ 0 ,≤ EAC
 MPC-CPI,Cost Performance Index,tra 0.95 e 1.05, 1
-MPC-EAC,Estimate at Completion, deviazione del ± 5% dal BAC, BAC
+MPC-EAC,Estimate At Completion, deviazione del ± 5% dal BAC, BAC
 MPC-ETC,Estimate To Completion,≥ 0,≤ EAC
-MPC-VAC,Variance at Completion,deviazione del ± 10% dal BAC,0%
+MPC-VAC,Variance At Completion,deviazione del ± 10% dal BAC,0%
 MPC-SV,Schedule Variance,deviazione del ± 10% dal BAC,0%
 MPC-BV,Budget Variance,deviazione del ± 10% dal BAC,0%
